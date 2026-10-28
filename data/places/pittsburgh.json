@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "pittsburgh",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1342",
+  "sitelinks": {
+    "count": 125,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Pittsburgh",
+    "pt": "Pittsburgh"
+  },
+  "sources": [],
+  "names": [
+    "Pittsburgh"
+  ],
+  "where": {
+    "lon": -80,
+    "lat": 40.44166666666667,
+    "precision": "city",
+    "label": "Pittsburgh"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

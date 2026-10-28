@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "anglo-spanish-war-1727-1729",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q604204",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Anglo-Spanish War (1727–1729)",
+    "pt": "Guerra Anglo-Espanhola (1727–1729)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q604204"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Spanish War (1727–1729)\", revision 1370428615"
+    }
+  ],
+  "title": "Anglo-Spanish War (1727–1729)",
+  "summary": "The English Wikipedia article \"Anglo-Spanish War (1727–1729)\", at revision 1370428615, opens: \"The Anglo-Spanish War of 1727–1729 was a limited war that took place between Great Britain and Spain during the late 1720s, and consisted of a failed Spanish attempt to capture Gibraltar and an unsuccessful British Blockade of Porto Bello with a high British death toll. It eventually ended with a return to the previous status quo ante bellum following the Treaty of Seville.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q604204, imported by tools/import/wikidata.mjs. The item's own description reads \"war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1727,
+    "end": 1729,
+    "date": "1727-02-11",
+    "endDate": "1729-11-09"
+  },
+  "place": "west-indies",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

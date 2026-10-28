@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-belmont",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2353599",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Belmont"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2353599"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Belmont\", revision 1374186086"
+    }
+  ],
+  "title": "Battle of Belmont",
+  "summary": "The English Wikipedia article \"Battle of Belmont\", at revision 1374186086, opens: \"The Battle of Belmont was fought on November 7, 1861, in Mississippi County, Missouri. It was the first combat test in the American Civil War for Brig. Gen. Ulysses S. Grant, the future Union Army general in chief and eventual U.S. president, who was fighting Major General Leonidas Polk. Grant's troops in this battle were the \"nucleus\" of what would become the Union Army of the Tennessee.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2353599, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-11-07"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

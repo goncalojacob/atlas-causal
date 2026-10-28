@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "rock-springs-wyoming",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q378071",
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Rock Springs, Wyoming",
+    "pt": "Rock Springs (Wyoming)"
+  },
+  "sources": [],
+  "names": [
+    "Rock Springs",
+    "Rock Springs, Wyoming",
+    "Rock Springs (Wyoming)"
+  ],
+  "where": {
+    "lon": -109.22138888889,
+    "lat": 41.585,
+    "precision": "city",
+    "label": "Rock Springs, Wyoming"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

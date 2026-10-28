@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "savannah-georgia",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q83813",
+  "sitelinks": {
+    "count": 82,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Savannah, Georgia",
+    "pt": "Savannah (Geórgia)"
+  },
+  "sources": [],
+  "names": [
+    "Savannah",
+    "Savannah, Georgia",
+    "Savannah (Geórgia)"
+  ],
+  "where": {
+    "lon": -81.103888888889,
+    "lat": 32.050833333333,
+    "precision": "city",
+    "label": "Savannah, Georgia"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

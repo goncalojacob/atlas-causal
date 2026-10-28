@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-paris-1763",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q156211",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Paris (1763)",
+    "pt": "Tratado de Paris (1763)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q156211"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Paris (1763)\", revision 1376680274"
+    }
+  ],
+  "title": "Treaty of Paris (1763)",
+  "summary": "The English Wikipedia article \"Treaty of Paris (1763)\", at revision 1376680274, opens: \"The Treaty of Paris, also known as the Treaty of 1763, was signed on 10 February 1763 by the kingdoms of Great Britain, France and Spain, with Portugal in agreement, following Great Britain and Prussia's victory over France and Spain during the Seven Years' War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q156211, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty ending the Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1763,
+    "end": 1763,
+    "date": "1763-02-10"
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

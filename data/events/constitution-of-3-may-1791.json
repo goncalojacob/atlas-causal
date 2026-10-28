@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "constitution-of-3-may-1791",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1129096",
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Constitution of 3 May 1791",
+    "pt": "Constituição Polonesa de 3 de maio de 1791"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1129096"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Constitution of 3 May 1791\", revision 1380261707"
+    }
+  ],
+  "title": "Constitution of 3 May 1791",
+  "summary": "The English Wikipedia article \"Constitution of 3 May 1791\", at revision 1380261707, opens: \"The Constitution of 3 May 1791, titled the Government Act, was a written constitution for the Polish–Lithuanian Commonwealth that was adopted by the Great Sejm that met between 1788 and 1792. The Commonwealth was a dual monarchy comprising the Crown of the Kingdom of Poland and the Grand Duchy of Lithuania; the new constitution was intended to address political questions following a period of political agitation and gradual reform that began with the Convocation Sejm of 1764 and the election that year of the Commonwealth's last monarch, Stanisław August Poniatowski. It was the first codified, modern constitution in Europe and the second in the world, after that of the United States.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1129096, imported by tools/import/wikidata.mjs. The item's own description reads \"Polish-Lithuanian Constitution from 1791 to 1793\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1791,
+    "end": 1793,
+    "date": "1791-05-03",
+    "endDate": "1793-11-23"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "law",
+  "actors": []
+}

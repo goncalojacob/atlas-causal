@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "slaughter-of-the-knezes",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3445471",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Slaughter of the Knezes"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3445471"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slaughter of the Knezes\", revision 1368885440"
+    }
+  ],
+  "title": "Slaughter of the Knezes",
+  "summary": "The English Wikipedia article \"Slaughter of the Knezes\", at revision 1368885440, opens: \"The Slaughter of the Knezes was a campaign of organized murders and assaults of notable Serbs in the Belgrade Pashalik in January–February 1804 by the renegade Janissaries known as \"Dahije\", who had seized power in a coup against the Vizier Hadji Mustafa Pasha in 1800–1801. Fearing Serbian plans of rebellion, they decided to execute leading Serbs throughout the pashalik. At least 95 notable Serbs were murdered, many of whose decapitated heads were put on public display. Among the notable victims were Aleksa Nenadović, Ilija Birčanin, Hadži-Ruvim. The event triggered the First Serbian Uprising, aimed at putting an end to the centuries of Ottoman occupation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3445471, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1804,
+    "end": 1804,
+    "date": "1804-01-23",
+    "endDate": "1804-01-29"
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "first-serbian-uprising"
+}

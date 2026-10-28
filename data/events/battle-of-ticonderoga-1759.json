@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-ticonderoga-1759",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q663574",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Ticonderoga (1759)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q663574"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ticonderoga (1759)\", revision 1370717242"
+    }
+  ],
+  "title": "Battle of Ticonderoga (1759)",
+  "summary": "The English Wikipedia article \"Battle of Ticonderoga (1759)\", at revision 1370717242, opens: \"The Battle of Ticonderoga was a minor confrontation at Fort Carillon on July 26 and 27, 1759, during the French and Indian War. A British military force of more than 11,000 men under the command of General Sir Jeffery Amherst moved artillery to high ground overlooking the fort, which was defended by a garrison of 400 Frenchmen under the command of Brigadier General François-Charles de Bourlamaque.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q663574, imported by tools/import/wikidata.mjs. The item's own description reads \"1759 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1759,
+    "end": 1759,
+    "date": "1759-07-27"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

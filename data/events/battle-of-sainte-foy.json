@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-sainte-foy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q689183",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Sainte-Foy"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q689183"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sainte-Foy\", revision 1370588064"
+    }
+  ],
+  "title": "Battle of Sainte-Foy",
+  "summary": "The English Wikipedia article \"Battle of Sainte-Foy\", at revision 1370588064, opens: \"The Battle of Sainte-Foy sometimes called the Battle of Quebec, was fought on April 28, 1760, near the British-held town of Quebec in the French province of Canada during the Seven Years' War. It was a victory for the French under the Chevalier de Lévis over the British army under General Murray. The battle was notably bloodier than the Battle of the Plains of Abraham of the previous September, with 833 French casualties to 1,124 British casualties.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q689183, imported by tools/import/wikidata.mjs. The item's own description reads \"1760 battle between French & British near Ste-Foy, Québec, Canada\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1760,
+    "end": 1760,
+    "date": "1760-04-28"
+  },
+  "place": "quebec-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

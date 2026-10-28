@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-pondicherry",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2662144",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Pondicherry"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2662144"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pondicherry\", revision 1370586381"
+    }
+  ],
+  "title": "Battle of Pondicherry",
+  "summary": "The English Wikipedia article \"Battle of Pondicherry\", at revision 1370586381, opens: \"The Battle of Pondicherry was a naval battle between a British squadron under Vice-Admiral George Pocock and French squadron under Comte d'Aché on 10 September 1759 off the Carnatic coast of India near Pondicherry during the Seven Years' War. Pocock attempted to intercept d'Aché, whose squadron was carrying reinforcements and money for the French forces in Pondicherry. The battle was indecisive, but d'Aché successfully completed his mission when his fleet arrived in Pondicherry on 15 September. However, these forces were insufficient to reverse the declining French situation in the Carnatic.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2662144, imported by tools/import/wikidata.mjs. The item's own description reads \"1759 naval battle in India during the Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1759,
+    "end": 1759,
+    "date": "1759-09-10"
+  },
+  "place": "pondicherry",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

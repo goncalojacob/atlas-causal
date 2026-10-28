@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "colfax-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5144758",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Colfax massacre",
+    "pt": "Massacre de Colfax"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5144758"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colfax massacre\", revision 1379296633"
+    }
+  ],
+  "title": "Colfax massacre",
+  "summary": "The English Wikipedia article \"Colfax massacre\", at revision 1379296633, opens: \"The Colfax massacre, sometimes referred to as the Colfax riot, occurred on Easter Sunday, April 13, 1873, in Colfax, Louisiana, the parish seat of Grant Parish. Between 62 and 153 black men were murdered while surrendering to a mob of former Confederate soldiers and members of the Ku Klux Klan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5144758, imported by tools/import/wikidata.mjs. The item's own description reads \"armed confrontation between Republicans and Democrats in Colfax, Louisiana\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1873,
+    "end": 1873,
+    "date": "1873-04-13"
+  },
+  "place": "colfax-louisiana",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "reconstruction-era"
+}

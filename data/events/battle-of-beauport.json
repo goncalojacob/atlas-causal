@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-beauport",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2659387",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Beauport"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2659387"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Beauport\", revision 1370433771"
+    }
+  ],
+  "title": "Battle of Beauport",
+  "summary": "The English Wikipedia article \"Battle of Beauport\", at revision 1370433771, opens: \"The Battle of Beauport, also known as the Battle of Montmorency, fought on 31 July 1759, was an important confrontation between the British and French armed forces during the Seven Years' War of the French province of Canada. The attack conducted by the British against the French defense line of Beauport, some 5 kilometres (3.1 mi) east of Quebec was checked, and the army of General James Wolfe retreated with 443 casualties and losses.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2659387, imported by tools/import/wikidata.mjs. The item's own description reads \"1759 battle of the French and Indian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1759,
+    "end": 1759,
+    "date": "1759-07-31"
+  },
+  "place": "beauport-quebec-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

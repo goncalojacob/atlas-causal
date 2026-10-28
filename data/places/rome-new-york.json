@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "rome-new-york",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6586",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Rome, New York",
+    "pt": "Roma (Nova Iorque)"
+  },
+  "sources": [],
+  "names": [
+    "Rome",
+    "Roma",
+    "Rome, New York",
+    "Roma (Nova Iorque)"
+  ],
+  "where": {
+    "lon": -75.463333333333,
+    "lat": 43.219444444444,
+    "precision": "city",
+    "label": "Rome, New York"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
