@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "rock-springs-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1059463",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Rock Springs massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1059463"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rock Springs massacre\", revision 1379516882"
+    }
+  ],
+  "title": "Rock Springs massacre",
+  "summary": "The English Wikipedia article \"Rock Springs massacre\", at revision 1379516882, opens: \"The Rock Springs massacre, also known as the Rock Springs riot, occurred on September 2, 1885, in the present-day United States city of Rock Springs in Sweetwater County, Wyoming. The riot, and resulting massacre of immigrant Chinese miners by European immigrant miners, was the result of racial prejudice toward the Chinese miners, who were accused of taking jobs from the existing miners. The Union Pacific Coal Department found it economically beneficial to give preference in hiring to Chinese miners, who were willing to work for lower wages than their European counterparts, which angered the existing miners. When the rioting ended, at least 28 Chinese miners were dead and 15 were injured. Rioters burned 78 Chinese homes, resulting in approximately $150,000 in property damage. Despite the identification of the perpetrators, no individuals were prosecuted for the murders or property destruction.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1059463, imported by tools/import/wikidata.mjs. The item's own description reads \"incident that occurred on September 2, 1885 in Rock Springs\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-09-02"
+  },
+  "place": "rock-springs-wyoming",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

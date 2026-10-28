@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "fort-oswego",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q315054",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Fort Oswego"
+  },
+  "sources": [],
+  "names": [
+    "Fort Oswego"
+  ],
+  "where": {
+    "lon": -76.514166666667,
+    "lat": 43.461666666667,
+    "precision": "point",
+    "label": "Fort Oswego"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

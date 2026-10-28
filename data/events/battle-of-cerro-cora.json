@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cerro-cora",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3504617",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Cerro Corá",
+    "pt": "Batalha de Cerro Corá"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3504617"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cerro Corá\", revision 1374679753"
+    }
+  ],
+  "title": "Battle of Cerro Corá",
+  "summary": "The English Wikipedia article \"Battle of Cerro Corá\", at revision 1374679753, opens: \"The Battle of Cerro Corá was the last major battle of the Paraguayan War, fought on 1 March 1870, in the vicinity of Cerro Corá, 454 kilometres (280 mi) northeast of Paraguay's capital Asunción. It is known for being the battle in which Francisco Solano López, Paraguayan president, was killed at the hands of the Imperial Brazilian Army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3504617, imported by tools/import/wikidata.mjs. The item's own description reads \"1870 last battle of the Paraguayan War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1870,
+    "date": "1870-03-01"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "paraguayan-war"
+}

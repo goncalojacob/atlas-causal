@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-churubusco",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2333407",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Churubusco",
+    "pt": "Batalha de Churubusco"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2333407"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Churubusco\", revision 1370628851"
+    }
+  ],
+  "title": "Battle of Churubusco",
+  "summary": "The English Wikipedia article \"Battle of Churubusco\", at revision 1370628851, opens: \"The Battle of Churubusco took place on August 20, 1847, while Santa Anna's army was in retreat from the Battle of Contreras during the Mexican–American War. It was the battle where the San Patricio Battalion, made up largely of US deserters, made their last stand against U.S. forces. The U.S. Army was victorious, outnumbering more than six-to-one the defending Mexican troops. After the battle, the U.S. Army was only 5 miles (8 km) away from Mexico City. Fifty men of Saint Patrick's Battalion were officially executed by the U.S. Army, all but two by hanging. Collectively, this was the largest mass execution in United States history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2333407, imported by tools/import/wikidata.mjs. The item's own description reads \"1847 battle of the Mexican–American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1847,
+    "end": 1847,
+    "date": "1847-08-20"
+  },
+  "place": "mexico-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mexican-american-war"
+}

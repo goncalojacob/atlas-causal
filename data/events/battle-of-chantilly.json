@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-chantilly",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2420736",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Chantilly",
+    "pt": "Batalha de Chantilly"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2420736"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chantilly\", revision 1374518450"
+    }
+  ],
+  "title": "Battle of Chantilly",
+  "summary": "The English Wikipedia article \"Battle of Chantilly\", at revision 1374518450, opens: \"The Battle of Chantilly happened on September 1, 1862, in Fairfax County, Virginia, as the concluding battle of the Northern Virginia Campaign of the American Civil War. Stonewall Jackson's corps of the Army of Northern Virginia attempted to cut off the line of retreat of the Union Army of Virginia following the Second Battle of Bull Run, but was attacked by two Union divisions. During the ensuing battle, Union division commanders Isaac Stevens and Philip Kearny were both killed, but the Union attack halted Jackson's advance.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2420736, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-09-01"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

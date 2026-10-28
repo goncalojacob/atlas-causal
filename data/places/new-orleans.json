@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "new-orleans",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q34404",
+  "sitelinks": {
+    "count": 146,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "New Orleans",
+    "pt": "Nova Orleães"
+  },
+  "sources": [],
+  "names": [
+    "New Orleans",
+    "Nova Orleães"
+  ],
+  "where": {
+    "lon": -90.07833333333333,
+    "lat": 29.976111111111113,
+    "precision": "city",
+    "label": "New Orleans"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
