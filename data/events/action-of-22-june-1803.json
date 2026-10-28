@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "action-of-22-june-1803",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4677303",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Action of 22 June 1803"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4677303"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 22 June 1803\", revision 1370426265"
+    }
+  ],
+  "title": "Action of 22 June 1803",
+  "summary": "The English Wikipedia article \"Action of 22 June 1803\", at revision 1370426265, opens: \"The action of 22 June 1803 was a naval battle between the United States Navy and the Tripolitan Navy during the First Barbary War. Two ships from the American squadron blockading Tripoli, USS John Adams and USS Enterprise, met and engaged a Tripolitan polacre along with nine gunboats. After fighting a sharp action for forty-five minutes, the gunboats veered off, and the polacre was abandoned. The Tripolitians later retook the polacre and were reengaged by the Americans before the vessel was destroyed in a large explosion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4677303, imported by tools/import/wikidata.mjs. The item's own description reads \"1803 naval battle between the United States and the Tripoli Eyalet\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1803,
+    "end": 1803,
+    "date": "1803-06-22"
+  },
+  "place": "tripoli",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-barbary-war"
+}

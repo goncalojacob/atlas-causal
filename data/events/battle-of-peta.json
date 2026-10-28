@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-peta",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889730",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Peta"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889730"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Peta\", revision 1370585896"
+    }
+  ],
+  "title": "Battle of Peta",
+  "summary": "The English Wikipedia article \"Battle of Peta\", at revision 1370585896, opens: \"The Battle of Peta or Battle of Petta was fought between the Greeks led by Alexandros Mavrokordatos with Markos Botsaris and the Ottomans led by Omer Vrioni on 16 July 1822. The conflict occurred on a hillside near the village of Peta in Epirus.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889730, imported by tools/import/wikidata.mjs. The item's own description reads \"1822 battle of the war of Greek independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1822,
+    "end": 1822,
+    "date": "1822-07-04"
+  },
+  "place": "arta-greece",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

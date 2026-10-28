@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "arta-greece",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q208573",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Arta, Greece",
+    "pt": "Arta (Grécia)"
+  },
+  "sources": [],
+  "names": [
+    "Arta",
+    "Arta, Greece",
+    "Arta (Grécia)"
+  ],
+  "where": {
+    "lon": 20.9875,
+    "lat": 39.165,
+    "precision": "city",
+    "label": "Arta, Greece"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

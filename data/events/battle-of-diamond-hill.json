@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-diamond-hill",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888406",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Diamond Hill"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888406"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Diamond Hill\", revision 1380691210"
+    }
+  ],
+  "title": "Battle of Diamond Hill",
+  "summary": "The English Wikipedia article \"Battle of Diamond Hill\", at revision 1380691210, opens: \"The Battle of Diamond Hill (Donkerhoek) was an engagement of the Second Boer War that took place on 11 and 12 June 1900 in central Transvaal.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888406, imported by tools/import/wikidata.mjs. The item's own description reads \"1900 battle of the Second Boer War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-06-12"
+  },
+  "place": "pretoria",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-boer-war"
+}

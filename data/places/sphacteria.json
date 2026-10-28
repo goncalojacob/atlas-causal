@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "sphacteria",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1303524",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Sphacteria",
+    "pt": "Esfactéria"
+  },
+  "sources": [],
+  "names": [
+    "Sphacteria",
+    "Esfactéria"
+  ],
+  "where": {
+    "lon": 21.665725,
+    "lat": 36.930136111111,
+    "precision": "region",
+    "label": "Sphacteria"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

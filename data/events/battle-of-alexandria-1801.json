@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-alexandria-1801",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2750968",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Alexandria (1801)",
+    "pt": "Batalha de Alexandria (1801)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2750968"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Alexandria (1801)\", revision 1382317982"
+    }
+  ],
+  "title": "Battle of Alexandria (1801)",
+  "summary": "The English Wikipedia article \"Battle of Alexandria (1801)\", at revision 1382317982, opens: \"The Battle of Alexandria was fought on 21 March 1801, where the British army and naval forces repelled an assault by the French army as part of the French invasion of Egypt and Syria. Led by General Sir Ralph Abercromby, the British entrenched army engaged a French force under Divisional-general Jacques-François Menou near the ruins of Nicopolis, on the narrow spit of land between the Mediterranean Sea and Abukir. The British routed Menou's army after several hours of fierce fighting, though Abercromby was mortally wounded. Part of the French casualties at Alexandria was caused by British naval force under Frederick Maitland, whose role was also important in suppressing the French attacks. John Hely-Hutchinson, who replaced Abercromby, led the British army to Alexandria and laid siege to the city, which surrendered in September.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2750968, imported by tools/import/wikidata.mjs. The item's own description reads \"1801 battle during the French Campaign in Egypt and Syria\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1801,
+    "end": 1801,
+    "date": "1801-03-21"
+  },
+  "place": "alexandria",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-egypt-and-syria"
+}

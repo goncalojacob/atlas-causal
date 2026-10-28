@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-shangi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q134389533",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Shangi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q134389533"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Shangi\", revision 1370274154"
+    }
+  ],
+  "title": "Battle of Shangi",
+  "summary": "The English Wikipedia article \"Battle of Shangi\", at revision 1370274154, opens: \"The Battle of Shangi was a border conflict fought in July 1896 between the Congo Free State and the Kingdom of Rwanda. An expedition of the Congo Free State, a colonial polity personally controlled by Leopold II of Belgium, had previously entered Rwandan territory and set up a fortified camp at Shangi, directly challenging the rule of Rwandan King Mibambwe IV Rutarindwa over his border territories. In response, the Rwandan court sent a large army led by Prince Nshozamihigo and two experienced commanders, Bisangwa and Muhigirwa, to evict the Congolese forces. Though the Rwandans repeatedly charged the Shangi camp, using spears and bows, they were defeated by the Belgian-Congolese troops who had access to modern guns and were entrenched. After the Congo Free State commander Constantin Sandrart personally shot Bisangwa, the Rwandan army retreated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q134389533, imported by tools/import/wikidata.mjs. The item's own description reads \"1896 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1896,
+    "date": "1896-07"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "scramble-for-africa"
+}

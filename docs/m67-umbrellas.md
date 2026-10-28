@@ -3438,3 +3438,63 @@ Writer B imported it from the planner's queue as item `2026-10-27-europe-077`, r
 ## Writer B, 2026-10-28: `treaty-of-fredrikshamn`, bare
 
 Writer B imported it from the planner's queue as item `2026-10-27-europe-085`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `battle-of-heliopolis-1800`, filed under `french-invasion-of-egypt-and-syria` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-27-africa-044`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-28: `battle-of-driefontein`, filed under `second-boer-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-27-africa-052`, rank `child-of:second-boer-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-28: `battle-of-poplar-grove`, filed under `second-boer-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-27-africa-054`, rank `child-of:second-boer-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-28: `battle-of-laing-s-nek-1900`, filed under `second-boer-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-27-africa-078`, rank `child-of:second-boer-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-28: `action-of-17-june-1802`, filed under `first-barbary-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-27-africa-080`, rank `child-of:first-barbary-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-28: `battle-of-nooitgedacht`, filed under `second-boer-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-27-africa-053`, rank `child-of:second-boer-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-28: `bloody-sunday-1900`, filed under `second-boer-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-27-africa-055`, rank `child-of:second-boer-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-28: `first-battle-of-tripoli-harbor`, filed under `first-barbary-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-27-africa-061`, rank `child-of:first-barbary-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-28: `battle-of-tofrek`, filed under `mahdist-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-27-africa-063`, rank `child-of:mahdist-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-28: `relief-of-ladysmith`, filed under `second-boer-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-27-africa-065`, rank `child-of:second-boer-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-28: `battle-of-nsamankow`, filed under `anglo-ashanti-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-27-africa-069`, rank `child-of:anglo-ashanti-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-28: `battle-of-shangi`, filed under `scramble-for-africa` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-27-africa-085`, rank `child-of:scramble-for-africa`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-28: `battle-of-inyezane`, filed under `anglo-zulu-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-27-africa-089`, rank `child-of:anglo-zulu-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-28: `siege-of-famagusta`, filed under `ottoman-venetian-war-1570-1573` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-27-asia-219`, rank `child-of:ottoman-venetian-war-1570-1573`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-28: `treaty-of-alinagar`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-asia-214`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.

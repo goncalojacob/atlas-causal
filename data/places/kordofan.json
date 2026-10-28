@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "kordofan",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q867052",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Kordofan",
+    "pt": "Cordofão"
+  },
+  "sources": [],
+  "names": [
+    "Kordofan",
+    "Cordofão"
+  ],
+  "where": {
+    "lon": 29.5,
+    "lat": 13,
+    "precision": "region",
+    "label": "Kordofan"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

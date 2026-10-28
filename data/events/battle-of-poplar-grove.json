@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-poplar-grove",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889668",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Poplar Grove"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889668"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Poplar Grove\", revision 1370586422"
+    }
+  ],
+  "title": "Battle of Poplar Grove",
+  "summary": "The English Wikipedia article \"Battle of Poplar Grove\", at revision 1370586422, opens: \"The Battle of Poplar Grove was an incident on 7 March 1900 during the Second Boer War in South Africa. It followed on from the Relief of Kimberley as the British Army moved to take the Boer capital of Bloemfontein. The Boers were demoralised following the surrender of Piet Cronjé at the Battle of Paardeberg. General Sir John French's cavalry attacked the Boer force from the rear while mounted infantry and horse artillery attacked from the right flank. The Boers abandoned their positions in panic before the cavalry. The commander-in-chief of the Free State forces, Christiaan de Wet, in his book called the chapter on the subject \"Wild Flight from Poplar Grove\". This battle was followed by the Battle of Driefontein on March 10, 1900.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889668, imported by tools/import/wikidata.mjs. The item's own description reads \"1900 battle of the Second Boer War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-03-07"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "second-boer-war"
+}

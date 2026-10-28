@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "yendi",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q639066",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Yendi"
+  },
+  "sources": [],
+  "names": [
+    "Yendi"
+  ],
+  "where": {
+    "lon": -0.0041666666666667,
+    "lat": 9.4319444444444,
+    "precision": "city",
+    "label": "Yendi"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

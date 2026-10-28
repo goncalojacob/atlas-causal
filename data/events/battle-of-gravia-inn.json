@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-gravia-inn",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2577392",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Gravia Inn",
+    "pt": "Batalha do caravançarai de Gravia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2577392"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gravia Inn\", revision 1370441991"
+    }
+  ],
+  "title": "Battle of Gravia Inn",
+  "summary": "The English Wikipedia article \"Battle of Gravia Inn\", at revision 1370441991, opens: \"The Battle of Gravia Inn was fought between Greek revolutionaries and the Ottoman Empire during the Greek War of Independence. The Greek leaders Odysseas Androutsos, Yannis Gouras and Angelis Govios, with a group of c. 120 men, repulsed an Ottoman army numbering 8,000 to 9,000 men and artillery under the command of Omer Vrioni and Köse Mehmed. The battle ended with heavy losses for the Ottomans and minimal casualties on the Greek side.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2577392, imported by tools/import/wikidata.mjs. The item's own description reads \"1821 battle during the Greek War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-05-08"
+  },
+  "place": "gravia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

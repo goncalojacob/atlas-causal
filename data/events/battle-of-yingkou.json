@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-yingkou",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1208970",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Yingkou"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1208970"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Yingkou\", revision 1370595759"
+    }
+  ],
+  "title": "Battle of Yingkou",
+  "summary": "The English Wikipedia article \"Battle of Yingkou\", at revision 1370595759, opens: \"The Battle of Yingkou was a land battle of the First Sino-Japanese War between the forces of Meiji Japan and Qing China, fought outside the treaty port town of Yingkou, Manchuria. It is sometimes referred to as the Battle of Niuzhuang or Newchwang.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1208970, imported by tools/import/wikidata.mjs. The item's own description reads \"Land battle of the First Sino-Japanese War (4 March 1895)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1895,
+    "end": 1895,
+    "date": "1895-03-04"
+  },
+  "place": "yingkou",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-sino-japanese-war"
+}

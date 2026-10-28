@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "relief-of-ladysmith",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3237997",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Relief of Ladysmith"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3237997"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Relief of Ladysmith\", revision 1376823468"
+    }
+  ],
+  "title": "Relief of Ladysmith",
+  "summary": "The English Wikipedia article \"Relief of Ladysmith\", at revision 1376823468, opens: \"The Relief of Ladysmith consisted of multiple efforts to relieve the city of Ladysmith by General Sir Redvers Buller during the Second Boer War. Buller and the Natal Field Force attempted to relieve the city through multiple offensive actions. The city had been under siege since 2 November 1899, and Britain had sent General Buller to relieve the city. After consolidating his Forces at Estcourt through most of November and early December, he began his relief of the city. The attempts to relieve the city started on 15 December at the Second Battle of Colenso, in which the British forces were repelled by the Boers on the Tugela River. The next two attempts were repulsed by the Boers, however at the Battle of Pieters Hill in February 1900, the Boers were eventually beaten from the city and forced to withdraw to Botha's Pass near Newcastle. Buller and his Forces entered the city on 28 February 1900, officially ending the Siege of Ladysmith.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3237997, imported by tools/import/wikidata.mjs. The item's own description reads \"1899 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-10-28"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "second-boer-war"
+}
