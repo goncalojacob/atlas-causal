@@ -238,6 +238,15 @@
         }
       ]
     },
+    "azov-campaigns-1695-1696": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "bakhtrioni-uprising": {
       "from": "git",
       "versions": [
@@ -461,6 +470,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-dalinghe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1293,6 +1311,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-saint-gotthard-1664": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4266,6 +4293,15 @@
         }
       ]
     },
+    "truce-of-andrusovo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "trunajaya-rebellion": {
       "from": "git",
       "versions": [
@@ -4315,6 +4351,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "wars-of-the-three-kingdoms": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

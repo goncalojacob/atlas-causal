@@ -2049,6 +2049,15 @@
         }
       ]
     },
+    "european-wars-of-religion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "expedition-to-mostaganem-1558": {
       "from": "git",
       "versions": [
@@ -4030,6 +4039,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "treaty-of-cateau-cambresis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

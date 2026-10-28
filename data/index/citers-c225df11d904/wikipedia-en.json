@@ -11696,6 +11696,12 @@
     },
     {
       "dissent": false,
+      "id": "april-uprising-of-1876",
+      "kind": "event",
+      "locator": "\"April Uprising of 1876\", revision 1381411553"
+    },
+    {
+      "dissent": false,
       "id": "arab-cold-war",
       "kind": "event",
       "locator": "\"Arab Cold War\", revision 1377860441"
@@ -11939,6 +11945,12 @@
       "id": "avalon-peninsula-campaign",
       "kind": "event",
       "locator": "\"Avalon Peninsula campaign\", revision 1375088567"
+    },
+    {
+      "dissent": false,
+      "id": "azov-campaigns-1695-1696",
+      "kind": "event",
+      "locator": "\"Azov campaigns (1695–1696)\", revision 1379875245"
     },
     {
       "dissent": false,
@@ -12281,6 +12293,12 @@
       "id": "battle-of-amoaful",
       "kind": "event",
       "locator": "\"Battle of Amoaful\", revision 1379702479"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-amoy",
+      "kind": "event",
+      "locator": "\"Battle of Amoy\", revision 1370431904"
     },
     {
       "dissent": false,
@@ -12896,6 +12914,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chapu",
+      "kind": "event",
+      "locator": "\"Battle of Chapu\", revision 1370436890"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chedabucto",
       "kind": "event",
       "locator": "\"Battle of Chedabucto\", revision 1375090331"
@@ -12950,6 +12974,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chinkiang",
+      "kind": "event",
+      "locator": "\"Battle of Chinkiang\", revision 1380896002"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chinsurah",
       "kind": "event",
       "locator": "\"Battle of Chinsurah\", revision 1370109011"
@@ -12971,6 +13001,12 @@
       "id": "battle-of-chotusitz",
       "kind": "event",
       "locator": "\"Battle of Chotusitz\", revision 1370437178"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chuenpi",
+      "kind": "event",
+      "locator": "\"Battle of Chuenpi\", revision 1370437230"
     },
     {
       "dissent": false,
@@ -13019,6 +13055,12 @@
       "id": "battle-of-cook-s-mills",
       "kind": "event",
       "locator": "\"Battle of Cook's Mills\", revision 1381868966"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-copenhagen-1801",
+      "kind": "event",
+      "locator": "\"Battle of Copenhagen (1801)\", revision 1376064749"
     },
     {
       "dissent": false,
@@ -13097,6 +13139,12 @@
       "id": "battle-of-dadaejin",
       "kind": "event",
       "locator": "\"Battle of Dadaejin\", revision 1370109498"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dalinghe",
+      "kind": "event",
+      "locator": "\"Battle of Dalinghe\", revision 1370438202"
     },
     {
       "dissent": false,
@@ -14120,6 +14168,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kamatero",
+      "kind": "event",
+      "locator": "\"Battle of Kamatero\", revision 1370444638"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kambula",
       "kind": "event",
       "locator": "\"Battle of Kambula\", revision 1379911823"
@@ -14276,6 +14330,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kowloon",
+      "kind": "event",
+      "locator": "\"Battle of Kowloon\", revision 1379104497"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kraaipan",
       "kind": "event",
       "locator": "\"Battle of Kraaipan\", revision 1370446169"
@@ -14291,6 +14351,12 @@
       "id": "battle-of-krtsanisi",
       "kind": "event",
       "locator": "\"Battle of Krtsanisi\", revision 1379001086"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kunersdorf",
+      "kind": "event",
+      "locator": "\"Battle of Kunersdorf\", revision 1380516441"
     },
     {
       "dissent": false,
@@ -14411,6 +14477,12 @@
       "id": "battle-of-lake-maracaibo",
       "kind": "event",
       "locator": "\"Battle of Lake Maracaibo\", revision 1370267825"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lalas",
+      "kind": "event",
+      "locator": "\"Battle of Lalas\", revision 1370447060"
     },
     {
       "dissent": false,
@@ -15032,6 +15104,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-nauplia-1822",
+      "kind": "event",
+      "locator": "\"Battle of Nauplia (1822)\", revision 1370451508"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-navarino",
       "kind": "event",
       "locator": "\"Battle of Navarino\", revision 1370270611"
@@ -15281,6 +15359,12 @@
       "id": "battle-of-peteroa",
       "kind": "event",
       "locator": "\"Battle of Peteroa\", revision 1376463913"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-petra",
+      "kind": "event",
+      "locator": "\"Battle of Petra\", revision 1370271809"
     },
     {
       "dissent": false,
@@ -15662,6 +15746,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rossbach",
+      "kind": "event",
+      "locator": "\"Battle of Rossbach\", revision 1381069746"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sabana-real",
       "kind": "event",
       "locator": "\"Battle of Sabana Real\", revision 1370587892"
@@ -15701,6 +15791,12 @@
       "id": "battle-of-sahay",
       "kind": "event",
       "locator": "\"Battle of Sahay\", revision 1370587977"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-saint-gotthard-1664",
+      "kind": "event",
+      "locator": "\"Battle of Saint Gotthard (1664)\", revision 1374233190"
     },
     {
       "dissent": false,
@@ -15857,6 +15953,12 @@
       "id": "battle-of-schuinshoogte",
       "kind": "event",
       "locator": "\"Battle of Schuinshoogte\", revision 1379907996"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sculeni",
+      "kind": "event",
+      "locator": "\"Battle of Sculeni\", revision 1370588869"
     },
     {
       "dissent": false,
@@ -16394,6 +16496,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-lerna-mills",
+      "kind": "event",
+      "locator": "\"Battle of the Lerna Mills\", revision 1370600692"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-little-bighorn",
       "kind": "event",
       "locator": "\"Battle of the Little Bighorn\", revision 1380124247"
@@ -16817,6 +16925,12 @@
       "id": "battle-of-vannarpannai",
       "kind": "event",
       "locator": "\"Battle of Vannarpannai\", revision 1370592170"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vasilika",
+      "kind": "event",
+      "locator": "\"Battle of Vasilika\", revision 1370592210"
     },
     {
       "dissent": false,
@@ -18068,6 +18182,12 @@
     },
     {
       "dissent": false,
+      "id": "chechen-russian-conflict",
+      "kind": "event",
+      "locator": "\"Chechen–Russian conflict\", revision 1377769596"
+    },
+    {
+      "dissent": false,
       "id": "chernobyl-disaster",
       "kind": "event",
       "locator": "\"Chernobyl disaster\", revision 1378032244"
@@ -19154,6 +19274,12 @@
     },
     {
       "dissent": false,
+      "id": "european-wars-of-religion",
+      "kind": "event",
+      "locator": "\"European wars of religion\", revision 1382113922"
+    },
+    {
+      "dissent": false,
       "id": "eusebio-de-queiros-law-1850",
       "kind": "event",
       "locator": "\"Eusébio de Queirós Law\", revision 1368931242"
@@ -20222,6 +20348,12 @@
     },
     {
       "dissent": false,
+      "id": "greek-raid-on-alexandria-1825",
+      "kind": "event",
+      "locator": "\"Greek raid on Alexandria (1825)\", revision 1370622020"
+    },
+    {
+      "dissent": false,
       "id": "greek-war-of-independence",
       "kind": "event",
       "locator": "\"Greek War of Independence\", revision 1379883159"
@@ -21110,6 +21242,12 @@
     },
     {
       "dissent": false,
+      "id": "keelung-campaign",
+      "kind": "event",
+      "locator": "\"Keelung campaign\", revision 1380606688"
+    },
+    {
+      "dissent": false,
       "id": "keian-uprising",
       "kind": "event",
       "locator": "\"Keian Uprising\", revision 1366215558"
@@ -21353,6 +21491,12 @@
       "id": "lewis-and-clark-expedition",
       "kind": "event",
       "locator": "\"Lewis and Clark Expedition\", revision 1375186446"
+    },
+    {
+      "dissent": false,
+      "id": "liberation-of-kalamata",
+      "kind": "event",
+      "locator": "\"Liberation of Kalamata\", revision 1370626787"
     },
     {
       "dissent": false,
@@ -22727,6 +22871,12 @@
       "id": "peace-of-augsburg",
       "kind": "event",
       "locator": "\"Peace of Augsburg\", revision 1379189394"
+    },
+    {
+      "dissent": false,
+      "id": "peace-of-basel",
+      "kind": "event",
+      "locator": "\"Peace of Basel\", revision 1368995959"
     },
     {
       "dissent": false,
@@ -24266,6 +24416,12 @@
     },
     {
       "dissent": false,
+      "id": "second-siege-of-missolonghi",
+      "kind": "event",
+      "locator": "\"Second siege of Missolonghi\", revision 1370737586"
+    },
+    {
+      "dissent": false,
       "id": "second-silesian-war",
       "kind": "event",
       "locator": "\"Second Silesian War\", revision 1370737357"
@@ -24317,6 +24473,12 @@
       "id": "september-massacres",
       "kind": "event",
       "locator": "\"September Massacres\", revision 1375967754"
+    },
+    {
+      "dissent": false,
+      "id": "serbian-revolution",
+      "kind": "event",
+      "locator": "\"Serbian Revolution\", revision 1377046960"
     },
     {
       "dissent": false,
@@ -25388,6 +25550,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-patras-1821",
+      "kind": "event",
+      "locator": "\"Siege of Patras (1821)\", revision 1370744331"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-pemaquid-1689",
       "kind": "event",
       "locator": "\"Siege of Pemaquid (1689)\", revision 1375095205"
@@ -25559,6 +25727,12 @@
       "id": "siege-of-seringapatam-1799",
       "kind": "event",
       "locator": "\"Siege of Seringapatam (1799)\", revision 1376680546"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-sevastopol-1854-1855",
+      "kind": "event",
+      "locator": "\"Siege of Sevastopol (1854–1855)\", revision 1372251749"
     },
     {
       "dissent": false,
@@ -25898,6 +26072,12 @@
     },
     {
       "dissent": false,
+      "id": "sonderbund-war",
+      "kind": "event",
+      "locator": "\"Sonderbund War\", revision 1377786538"
+    },
+    {
+      "dissent": false,
       "id": "south-african-wars-1879-1915",
       "kind": "event",
       "locator": "\"South African Wars (1879–1915)\", revision 1376241564"
@@ -26219,6 +26399,12 @@
       "id": "sveaborg-rebellion",
       "kind": "event",
       "locator": "\"Sveaborg rebellion\", revision 1370749115"
+    },
+    {
+      "dissent": false,
+      "id": "swabian-war",
+      "kind": "event",
+      "locator": "\"Swabian War\", revision 1370749126"
     },
     {
       "dissent": false,
@@ -26648,6 +26834,12 @@
     },
     {
       "dissent": false,
+      "id": "third-italian-war-of-independence",
+      "kind": "event",
+      "locator": "\"Third Italian War of Independence\", revision 1378374780"
+    },
+    {
+      "dissent": false,
       "id": "third-javanese-war-of-succession",
       "kind": "event",
       "locator": "\"Third Javanese War of Succession\", revision 1371988534"
@@ -27002,6 +27194,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-cateau-cambresis",
+      "kind": "event",
+      "locator": "\"Treaty of Cateau-Cambrésis\", revision 1346992452"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-chicago",
       "kind": "event",
       "locator": "\"Treaty of Chicago\", revision 1376051576"
@@ -27164,6 +27362,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-ghent",
+      "kind": "event",
+      "locator": "\"Treaty of Ghent\", revision 1371409266"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-ghilajharighat",
       "kind": "event",
       "locator": "\"Treaty of Ghilajharighat\", revision 1380604754"
@@ -27221,6 +27425,12 @@
       "id": "treaty-of-hopewell",
       "kind": "event",
       "locator": "\"Treaty of Hopewell\", revision 1379921118"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-hubertusburg",
+      "kind": "event",
+      "locator": "\"Treaty of Hubertusburg\", revision 1374635502"
     },
     {
       "dissent": false,
@@ -27788,6 +27998,12 @@
     },
     {
       "dissent": false,
+      "id": "truce-of-andrusovo",
+      "kind": "event",
+      "locator": "\"Truce of Andrusovo\", revision 1375162538"
+    },
+    {
+      "dissent": false,
       "id": "trunajaya-rebellion",
       "kind": "event",
       "locator": "\"Trunajaya rebellion\", revision 1370751472"
@@ -28295,6 +28511,12 @@
       "id": "wars-of-the-roses",
       "kind": "event",
       "locator": "\"Wars of the Roses\", revision 1375993311"
+    },
+    {
+      "dissent": false,
+      "id": "wars-of-the-three-kingdoms",
+      "kind": "event",
+      "locator": "\"Wars of the Three Kingdoms\", revision 1380576349"
     },
     {
       "dissent": false,

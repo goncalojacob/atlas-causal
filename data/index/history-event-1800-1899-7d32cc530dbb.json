@@ -895,6 +895,15 @@
         }
       ]
     },
+    "april-uprising-of-1876": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "arana-southern-treaty": {
       "from": "git",
       "versions": [
@@ -1269,6 +1278,15 @@
       ]
     },
     "battle-of-amoaful": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-amoy": {
       "from": "git",
       "versions": [
         {
@@ -1669,6 +1687,15 @@
         }
       ]
     },
+    "battle-of-chapu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-chillianwala": {
       "from": "git",
       "versions": [
@@ -1696,12 +1723,30 @@
         }
       ]
     },
+    "battle-of-chinkiang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-chippawa": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-chuenpi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1738,6 +1783,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-copenhagen-1801": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2352,6 +2406,15 @@
         }
       ]
     },
+    "battle-of-kamatero": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-kambula": {
       "from": "git",
       "versions": [
@@ -2434,6 +2497,15 @@
       ]
     },
     "battle-of-koshu-katsunuma": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-kowloon": {
       "from": "git",
       "versions": [
         {
@@ -2547,6 +2619,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-lalas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2862,6 +2943,15 @@
         }
       ]
     },
+    "battle-of-nauplia-1822": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-navarino": {
       "from": "git",
       "versions": [
@@ -2989,6 +3079,15 @@
       ]
     },
     "battle-of-peta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-petra": {
       "from": "git",
       "versions": [
         {
@@ -3233,6 +3332,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-sculeni": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3584,6 +3692,15 @@
         }
       ]
     },
+    "battle-of-the-lerna-mills": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-the-little-bighorn": {
       "from": "git",
       "versions": [
@@ -3780,6 +3897,15 @@
       ]
     },
     "battle-of-valtetsi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-vasilika": {
       "from": "git",
       "versions": [
         {
@@ -5985,6 +6111,15 @@
         }
       ]
     },
+    "greek-raid-on-alexandria-1825": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "greek-war-of-independence": {
       "from": "git",
       "versions": [
@@ -6420,6 +6555,15 @@
         }
       ]
     },
+    "keelung-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "kenesary-s-rebellion": {
       "from": "git",
       "versions": [
@@ -6531,6 +6675,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "liberation-of-kalamata": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -8276,6 +8429,15 @@
         }
       ]
     },
+    "second-siege-of-missolonghi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "seminole-wars": {
       "from": "git",
       "versions": [
@@ -8291,6 +8453,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "serbian-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -8672,6 +8843,15 @@
         }
       ]
     },
+    "siege-of-patras-1821": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "siege-of-port-au-prince-1803": {
       "from": "git",
       "versions": [
@@ -8687,6 +8867,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-sevastopol-1854-1855": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -8853,6 +9042,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "sonderbund-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -9139,6 +9337,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "third-italian-war-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -9536,6 +9743,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-ghent": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

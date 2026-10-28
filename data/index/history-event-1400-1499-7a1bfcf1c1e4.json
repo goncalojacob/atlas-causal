@@ -352,6 +352,15 @@
         }
       ]
     },
+    "swabian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "targa-expedition-1490": {
       "from": "git",
       "versions": [
