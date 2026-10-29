@@ -10748,6 +10748,12 @@
     },
     {
       "dissent": false,
+      "id": "1900-colombian-coup-d-etat",
+      "kind": "event",
+      "locator": "\"1900 Colombian coup d'état\", revision 1370278959"
+    },
+    {
+      "dissent": false,
       "id": "1908-portuguese-legislative-election",
       "kind": "event",
       "locator": "\"1908 Portuguese legislative election\", revision 1277160529"
@@ -11657,6 +11663,12 @@
       "id": "action-of-18-february-1639",
       "kind": "event",
       "locator": "\"Action of 18 February 1639\", revision 1374933517"
+    },
+    {
+      "dissent": false,
+      "id": "action-of-18-march-1748",
+      "kind": "event",
+      "locator": "\"Action of 18 March 1748\", revision 1370426107"
     },
     {
       "dissent": false,
@@ -13304,6 +13316,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-arroyo-grande-1818",
+      "kind": "event",
+      "locator": "\"Battle of Arroyo Grande (1818)\", revision 1382676874"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ash-hollow",
       "kind": "event",
       "locator": "\"Battle of Ash Hollow\", revision 1378240377"
@@ -14096,6 +14114,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-campichuelo",
+      "kind": "event",
+      "locator": "\"Battle of Campichuelo\", revision 1370108495"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-campo-tenese",
       "kind": "event",
       "locator": "\"Battle of Campo Tenese\", revision 1370436057"
@@ -14237,6 +14261,12 @@
       "id": "battle-of-cartagena-de-indias",
       "kind": "event",
       "locator": "\"Battle of Cartagena de Indias\", revision 1375974450"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-carumbe",
+      "kind": "event",
+      "locator": "\"Battle of Carumbé\", revision 1382442929"
     },
     {
       "dissent": false,
@@ -14684,6 +14714,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-colonia-del-sacramento-1826",
+      "kind": "event",
+      "locator": "\"Battle of Colonia del Sacramento (1826)\", revision 1375783734"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-concepcion",
       "kind": "event",
       "locator": "\"Battle of Concepción\", revision 1378726203"
@@ -14795,6 +14831,12 @@
       "id": "battle-of-crysler-s-farm",
       "kind": "event",
       "locator": "\"Battle of Crysler's Farm\", revision 1380144624"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cuchilla-del-tambo",
+      "kind": "event",
+      "locator": "\"Battle of Cuchilla del Tambo\", revision 1375450424"
     },
     {
       "dissent": false,
@@ -15086,6 +15128,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-duck-lake",
+      "kind": "event",
+      "locator": "\"Battle of Duck Lake\", revision 1370439450"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dufile",
       "kind": "event",
       "locator": "\"Battle of Dufile\", revision 1370439457"
@@ -15158,6 +15206,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-el-veladero",
+      "kind": "event",
+      "locator": "\"Battle of El Veladero\", revision 1377709479"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-elands-river-1900",
       "kind": "event",
       "locator": "\"Battle of Elands River (1900)\", revision 1374222323"
@@ -15227,6 +15281,12 @@
       "id": "battle-of-erzurum-1552",
       "kind": "event",
       "locator": "\"Battle of Erzurum (1552)\", revision 1375355369"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-escamela",
+      "kind": "event",
+      "locator": "\"Battle of Escamela\", revision 1370440322"
     },
     {
       "dissent": false,
@@ -15332,6 +15392,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fish-creek",
+      "kind": "event",
+      "locator": "\"Battle of Fish Creek\", revision 1379599428"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-fisher-s-hill",
       "kind": "event",
       "locator": "\"Battle of Fisher's Hill\", revision 1381308652"
@@ -15431,6 +15497,12 @@
       "id": "battle-of-fort-charlotte",
       "kind": "event",
       "locator": "\"Battle of Fort Charlotte\", revision 1374387321"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fort-coimbra",
+      "kind": "event",
+      "locator": "\"Battle of Fort Coimbra\", revision 1370440871"
     },
     {
       "dissent": false,
@@ -16508,6 +16580,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-izucar",
+      "kind": "event",
+      "locator": "\"Battle of Izúcar\", revision 1370443967"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jackson",
       "kind": "event",
       "locator": "\"Battle of Jackson\", revision 1370266219"
@@ -17147,6 +17225,12 @@
       "id": "battle-of-la-bombarde",
       "kind": "event",
       "locator": "\"Battle of La Bombarde\", revision 1370446722"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-la-chincua",
+      "kind": "event",
+      "locator": "\"Battle of La Chincúa\", revision 1370446733"
     },
     {
       "dissent": false,
@@ -18218,6 +18302,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-monte-cristi",
+      "kind": "event",
+      "locator": "\"Battle of Monte Cristi\", revision 1370450306"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-monte-de-las-cruces",
       "kind": "event",
       "locator": "\"Battle of Monte de las Cruces\", revision 1380776057"
@@ -18890,6 +18980,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-pampa-germania",
+      "kind": "event",
+      "locator": "\"Battle of Pampa Germania\", revision 1370271437"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-pampeluna",
       "kind": "event",
       "locator": "\"Battle of Pampeluna\", revision 1372120891"
@@ -18905,6 +19001,12 @@
       "id": "battle-of-paphos",
       "kind": "event",
       "locator": "\"Battle of Paphos\", revision 1370452808"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-paraguari",
+      "kind": "event",
+      "locator": "\"Battle of Paraguarí\", revision 1372621560"
     },
     {
       "dissent": false,
@@ -19376,9 +19478,27 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-punta-colares",
+      "kind": "event",
+      "locator": "\"Battle of Punta Colares\", revision 1378282859"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-punta-malpelo",
+      "kind": "event",
+      "locator": "\"Battle of Punta Malpelo\", revision 1370586793"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-punta-quemada",
       "kind": "event",
       "locator": "\"Battle of Punta Quemada\", revision 1370586796"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-puruaran",
+      "kind": "event",
+      "locator": "\"Battle of Puruarán\", revision 1378693289"
     },
     {
       "dissent": false,
@@ -19955,6 +20075,12 @@
       "id": "battle-of-sangju-1592",
       "kind": "event",
       "locator": "\"Battle of Sangju (1592)\", revision 1370588488"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sangrar",
+      "kind": "event",
+      "locator": "\"Battle of Sángrar\", revision 1370590274"
     },
     {
       "dissent": false,
@@ -20774,6 +20900,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tatayiba",
+      "kind": "event",
+      "locator": "\"Battle of Tatayibá\", revision 1370590671"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tayabas",
       "kind": "event",
       "locator": "\"Battle of Tayabas\", revision 1370590700"
@@ -20819,6 +20951,12 @@
       "id": "battle-of-tenancingo",
       "kind": "event",
       "locator": "\"Battle of Tenancingo\", revision 1370590829"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tenango-del-valle",
+      "kind": "event",
+      "locator": "\"Battle of Tenango del Valle\", revision 1370590832"
     },
     {
       "dissent": false,
@@ -22286,6 +22424,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-zacatecas-1811",
+      "kind": "event",
+      "locator": "\"Battle of Zacatecas (1811)\", revision 1370596065"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-zand-river",
       "kind": "event",
       "locator": "\"Battle of Zand River\", revision 1370596256"
@@ -22337,6 +22481,18 @@
       "id": "battle-of-zielence",
       "kind": "event",
       "locator": "\"Battle of Zieleńce\", revision 1370277363"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-zitacuaro",
+      "kind": "event",
+      "locator": "\"Battle of Zitácuaro\", revision 1370596901"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-zitlala",
+      "kind": "event",
+      "locator": "\"Battle of Zitlala\", revision 1370596880"
     },
     {
       "dissent": false,
@@ -22628,9 +22784,21 @@
     },
     {
       "dissent": false,
+      "id": "blockade-of-callao",
+      "kind": "event",
+      "locator": "\"Blockade of Callao\", revision 1374618289"
+    },
+    {
+      "dissent": false,
       "id": "blockade-of-eger",
       "kind": "event",
       "locator": "\"Blockade of Eger\", revision 1370749921"
+    },
+    {
+      "dissent": false,
+      "id": "blockade-of-iquique",
+      "kind": "event",
+      "locator": "\"Blockade of Iquique\", revision 1370604611"
     },
     {
       "dissent": false,
@@ -23393,6 +23561,18 @@
       "id": "capture-of-new-orleans",
       "kind": "event",
       "locator": "\"Capture of New Orleans\", revision 1381066398"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-oaxaca",
+      "kind": "event",
+      "locator": "\"Capture of Oaxaca\", revision 1370609347"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-orizaba",
+      "kind": "event",
+      "locator": "\"Capture of Orizaba\", revision 1370609371"
     },
     {
       "dissent": false,
@@ -25868,6 +26048,12 @@
     },
     {
       "dissent": false,
+      "id": "first-siege-of-callao",
+      "kind": "event",
+      "locator": "\"First siege of Callao\", revision 1372494574"
+    },
+    {
+      "dissent": false,
       "id": "first-siege-of-missolonghi",
       "kind": "event",
       "locator": "\"First siege of Missolonghi\", revision 1370619796"
@@ -27407,6 +27593,12 @@
       "id": "invasion-of-tobago",
       "kind": "event",
       "locator": "\"Invasion of Tobago\", revision 1374476457"
+    },
+    {
+      "dissent": false,
+      "id": "iquicha-war-of-1825-1828",
+      "kind": "event",
+      "locator": "\"Iquicha War of 1825–1828\", revision 1370624182"
     },
     {
       "dissent": false,
@@ -31634,6 +31826,12 @@
     },
     {
       "dissent": false,
+      "id": "rupture-of-the-blockade-of-arica",
+      "kind": "event",
+      "locator": "\"Rupture of the Blockade of Arica\", revision 1370729041"
+    },
+    {
+      "dissent": false,
       "id": "russian-civil-war",
       "kind": "event",
       "locator": "\"Russian Civil War\", revision 1372728974"
@@ -32750,6 +32948,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-acapulco-1813",
+      "kind": "event",
+      "locator": "\"Siege of Acapulco (1813)\", revision 1370738453"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-acre-1799",
       "kind": "event",
       "locator": "\"Siege of Acre (1799)\", revision 1372403085"
@@ -33455,6 +33659,12 @@
       "id": "siege-of-havana",
       "kind": "event",
       "locator": "\"Siege of Havana\", revision 1381773426"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-huajuapan-de-leon",
+      "kind": "event",
+      "locator": "\"Siege of Huajuapan de León\", revision 1370741912"
     },
     {
       "dissent": false,

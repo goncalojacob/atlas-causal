@@ -2336,6 +2336,12 @@
     },
     {
       "dissent": false,
+      "id": "1900-colombian-coup-d-etat",
+      "kind": "event",
+      "locator": "Q106194524"
+    },
+    {
+      "dissent": false,
       "id": "1908-portuguese-legislative-election",
       "kind": "event",
       "locator": "Q7232747"
@@ -3233,6 +3239,12 @@
       "id": "action-of-18-february-1639",
       "kind": "event",
       "locator": "Q2594731"
+    },
+    {
+      "dissent": false,
+      "id": "action-of-18-march-1748",
+      "kind": "event",
+      "locator": "Q4677277"
     },
     {
       "dissent": false,
@@ -5006,6 +5018,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-arroyo-grande-1818",
+      "kind": "event",
+      "locator": "Q8244028"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ash-hollow",
       "kind": "event",
       "locator": "Q2237324"
@@ -5798,6 +5816,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-campichuelo",
+      "kind": "event",
+      "locator": "Q4870625"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-campo-tenese",
       "kind": "event",
       "locator": "Q857860"
@@ -5939,6 +5963,12 @@
       "id": "battle-of-cartagena-de-indias",
       "kind": "event",
       "locator": "Q2366970"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-carumbe",
+      "kind": "event",
+      "locator": "Q4870666"
     },
     {
       "dissent": false,
@@ -6398,6 +6428,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-colonia-del-sacramento-1826",
+      "kind": "event",
+      "locator": "Q5649252"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-concepcion",
       "kind": "event",
       "locator": "Q1315700"
@@ -6509,6 +6545,12 @@
       "id": "battle-of-crysler-s-farm",
       "kind": "event",
       "locator": "Q1416369"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cuchilla-del-tambo",
+      "kind": "event",
+      "locator": "Q2890524"
     },
     {
       "dissent": false,
@@ -6806,6 +6848,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-duck-lake",
+      "kind": "event",
+      "locator": "Q2890920"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dufile",
       "kind": "event",
       "locator": "Q4870934"
@@ -6878,6 +6926,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-el-veladero",
+      "kind": "event",
+      "locator": "Q2887935"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-elands-river-1900",
       "kind": "event",
       "locator": "Q4870959"
@@ -6947,6 +7001,12 @@
       "id": "battle-of-erzurum-1552",
       "kind": "event",
       "locator": "Q114314710"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-escamela",
+      "kind": "event",
+      "locator": "Q2887956"
     },
     {
       "dissent": false,
@@ -7052,6 +7112,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fish-creek",
+      "kind": "event",
+      "locator": "Q2890611"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-fisher-s-hill",
       "kind": "event",
       "locator": "Q766944"
@@ -7151,6 +7217,12 @@
       "id": "battle-of-fort-charlotte",
       "kind": "event",
       "locator": "Q2682171"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fort-coimbra",
+      "kind": "event",
+      "locator": "Q5778798"
     },
     {
       "dissent": false,
@@ -8222,6 +8294,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-izucar",
+      "kind": "event",
+      "locator": "Q2888001"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jackson",
       "kind": "event",
       "locator": "Q2043320"
@@ -8867,6 +8945,12 @@
       "id": "battle-of-la-bombarde",
       "kind": "event",
       "locator": "Q2382626"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-la-chincua",
+      "kind": "event",
+      "locator": "Q2889026"
     },
     {
       "dissent": false,
@@ -9944,6 +10028,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-monte-cristi",
+      "kind": "event",
+      "locator": "Q2889365"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-monte-de-las-cruces",
       "kind": "event",
       "locator": "Q55635"
@@ -10634,6 +10724,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-pampa-germania",
+      "kind": "event",
+      "locator": "Q5778681"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-pampeluna",
       "kind": "event",
       "locator": "Q3174545"
@@ -10649,6 +10745,12 @@
       "id": "battle-of-paphos",
       "kind": "event",
       "locator": "Q118946728"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-paraguari",
+      "kind": "event",
+      "locator": "Q4871986"
     },
     {
       "dissent": false,
@@ -11114,9 +11216,27 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-punta-colares",
+      "kind": "event",
+      "locator": "Q5778704"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-punta-malpelo",
+      "kind": "event",
+      "locator": "Q2984826"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-punta-quemada",
       "kind": "event",
       "locator": "Q1615387"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-puruaran",
+      "kind": "event",
+      "locator": "Q934725"
     },
     {
       "dissent": false,
@@ -11687,6 +11807,12 @@
       "id": "battle-of-sangju-1592",
       "kind": "event",
       "locator": "Q497034"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sangrar",
+      "kind": "event",
+      "locator": "Q4872296"
     },
     {
       "dissent": false,
@@ -12506,6 +12632,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tatayiba",
+      "kind": "event",
+      "locator": "Q5723024"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tayabas",
       "kind": "event",
       "locator": "Q16822727"
@@ -12551,6 +12683,12 @@
       "id": "battle-of-tenancingo",
       "kind": "event",
       "locator": "Q2890160"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tenango-del-valle",
+      "kind": "event",
+      "locator": "Q2890165"
     },
     {
       "dissent": false,
@@ -14006,6 +14144,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-zacatecas-1811",
+      "kind": "event",
+      "locator": "Q3403855"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-zand-river",
       "kind": "event",
       "locator": "Q2889913"
@@ -14057,6 +14201,18 @@
       "id": "battle-of-zielence",
       "kind": "event",
       "locator": "Q2628049"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-zitacuaro",
+      "kind": "event",
+      "locator": "Q2890442"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-zitlala",
+      "kind": "event",
+      "locator": "Q2890441"
     },
     {
       "dissent": false,
@@ -14354,9 +14510,21 @@
     },
     {
       "dissent": false,
+      "id": "blockade-of-callao",
+      "kind": "event",
+      "locator": "Q5730422"
+    },
+    {
+      "dissent": false,
       "id": "blockade-of-eger",
       "kind": "event",
       "locator": "Q140662870"
+    },
+    {
+      "dissent": false,
+      "id": "blockade-of-iquique",
+      "kind": "event",
+      "locator": "Q4927232"
     },
     {
       "dissent": false,
@@ -15122,6 +15290,18 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-oaxaca",
+      "kind": "event",
+      "locator": "Q3403835"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-orizaba",
+      "kind": "event",
+      "locator": "Q3403836"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-oujda-1647",
       "kind": "event",
       "locator": "Q109312791"
@@ -15449,6 +15629,12 @@
       "id": "chilean-civil-war-of-1891",
       "kind": "event",
       "locator": "Q2704441"
+    },
+    {
+      "dissent": false,
+      "id": "chilean-occupation-of-antofagasta",
+      "kind": "event",
+      "locator": "Q5804048"
     },
     {
       "dissent": false,
@@ -17612,6 +17798,12 @@
     },
     {
       "dissent": false,
+      "id": "first-siege-of-callao",
+      "kind": "event",
+      "locator": "Q5807357"
+    },
+    {
+      "dissent": false,
       "id": "first-siege-of-missolonghi",
       "kind": "event",
       "locator": "Q3394840"
@@ -19157,6 +19349,12 @@
       "id": "invasion-of-tobago",
       "kind": "event",
       "locator": "Q536360"
+    },
+    {
+      "dissent": false,
+      "id": "iquicha-war-of-1825-1828",
+      "kind": "event",
+      "locator": "Q22667717"
     },
     {
       "dissent": false,
@@ -23462,6 +23660,12 @@
     },
     {
       "dissent": false,
+      "id": "rupture-of-the-blockade-of-arica",
+      "kind": "event",
+      "locator": "Q5812146"
+    },
+    {
+      "dissent": false,
       "id": "russian-civil-war",
       "kind": "event",
       "locator": "Q79911"
@@ -24662,6 +24866,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-acapulco-1813",
+      "kind": "event",
+      "locator": "Q3485803"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-acre-1799",
       "kind": "event",
       "locator": "Q815109"
@@ -25391,6 +25601,12 @@
       "id": "siege-of-hormuz-1552",
       "kind": "event",
       "locator": "Q124655726"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-huajuapan-de-leon",
+      "kind": "event",
+      "locator": "Q920181"
     },
     {
       "dissent": false,
@@ -29051,6 +29267,12 @@
       "id": "treaty-of-mangalore",
       "kind": "event",
       "locator": "Q7837140"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-mapasingue",
+      "kind": "event",
+      "locator": "Q5685354"
     },
     {
       "dissent": false,

@@ -338,6 +338,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "acapulco",
+      "kind": "place",
+      "names": [
+        "Acapulco de Juárez",
+        "Acapulco"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 2,
       "id": "acre-israel",
@@ -2007,6 +2035,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "antofagasta",
+      "kind": "place",
+      "names": [
+        "Antofagasta"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 3,
       "id": "antwerp",
@@ -2400,7 +2455,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 2,
+      "degree": 3,
       "id": "arica",
       "kind": "place",
       "names": [
@@ -2598,6 +2653,34 @@
       "kind": "place",
       "names": [
         "Arroyo Catalán Grande"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "arroyo-grande-california",
+      "kind": "place",
+      "names": [
+        "Arroyo Grande",
+        "Arroyo Grande, California"
       ],
       "origin": {
         "tool": "wikidata"
@@ -4454,6 +4537,33 @@
       "kind": "place",
       "names": [
         "Battle of Cut Knife Hill National Historic Site"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "battle-of-duck-lake-national-historic-site",
+      "kind": "place",
+      "names": [
+        "Battle of Duck Lake National Historic Site"
       ],
       "origin": {
         "tool": "wikidata"
@@ -8313,7 +8423,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 2,
+      "degree": 3,
       "id": "callao",
       "kind": "place",
       "names": [
@@ -11400,7 +11510,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 12,
+      "degree": 13,
       "id": "colombia-q739",
       "kind": "place",
       "names": [
@@ -11457,7 +11567,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "colonia-del-sacramento",
       "kind": "place",
       "names": [
@@ -13329,7 +13439,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "department-of-junin",
       "kind": "place",
       "names": [
@@ -14959,7 +15069,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 5,
+      "degree": 6,
       "id": "ecuador-q736",
       "kind": "place",
       "names": [
@@ -16459,6 +16569,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "fish-creek-saskatchewan",
+      "kind": "place",
+      "names": [
+        "Fish Creek",
+        "Fish Creek (Saskatchewan)"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -23032,6 +23170,33 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "iquique",
+      "kind": "place",
+      "names": [
+        "Iquique"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -36864,6 +37029,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "new-coimbra-fort",
+      "kind": "place",
+      "names": [
+        "Fort of Coimbra",
+        "Forte Novo de Coimbra",
+        "New Coimbra Fort"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 2,
       "id": "new-england",
@@ -40498,7 +40692,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 12,
+      "degree": 14,
       "id": "peru-q419",
       "kind": "place",
       "names": [
@@ -58774,6 +58968,35 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "zacatecas-city",
+      "kind": "place",
+      "names": [
+        "Zacatecas",
+        "Zacatecas (city)",
+        "Zacatecas (cidade)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

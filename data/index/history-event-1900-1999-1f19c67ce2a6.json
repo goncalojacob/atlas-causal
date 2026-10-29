@@ -26,6 +26,15 @@
         }
       ]
     },
+    "1900-colombian-coup-d-etat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1900-portuguese-legislative-election": {
       "from": "git",
       "versions": [
