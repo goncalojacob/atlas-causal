@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "rising-of-the-north",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q427513",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Rising of the North",
+    "pt": "Rebelião do Norte"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q427513"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rising of the North\", revision 1380720724"
+    }
+  ],
+  "title": "Rising of the North",
+  "summary": "The English Wikipedia article \"Rising of the North\", at revision 1380720724, opens: \"The Rising of the North of 1569, also called the Revolt of the Northern Earls, Northern Rebellion or the Rebellion of the Earls, was an unsuccessful attempt by Catholic nobles from Northern England to depose Queen Elizabeth I and replace her with Mary, Queen of Scots.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q427513, imported by tools/import/wikidata.mjs. The item's own description reads \"Catholic rebellion against Elizabeth I\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1569,
+    "end": 1569
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

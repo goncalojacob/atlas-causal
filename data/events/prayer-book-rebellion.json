@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "prayer-book-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q499763",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Prayer Book Rebellion",
+    "pt": "Rebelião do Livro de Oração"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q499763"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Prayer Book Rebellion\", revision 1378175120"
+    }
+  ],
+  "title": "Prayer Book Rebellion",
+  "summary": "The English Wikipedia article \"Prayer Book Rebellion\", at revision 1378175120, opens: \"The Prayer Book Rebellion or Western Rising was a popular revolt in Cornwall and Devon in 1549. In that year, the first Book of Common Prayer, presenting the theology of the English Reformation, was introduced. The change was widely unpopular, particularly in areas where firm Catholic religious loyalty still existed, such as Lancashire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q499763, imported by tools/import/wikidata.mjs. The item's own description reads \"popular revolt in Devon and Cornwall in 1549\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1549,
+    "end": 1549,
+    "date": "1549-06-06",
+    "endDate": "1549-08-17"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "european-wars-of-religion"
+}

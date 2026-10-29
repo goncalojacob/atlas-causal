@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-novi-1799",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1194172",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Novi (1799)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1194172"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Novi (1799)\", revision 1382460169"
+    }
+  ],
+  "title": "Battle of Novi (1799)",
+  "summary": "The English Wikipedia article \"Battle of Novi (1799)\", at revision 1382460169, opens: \"The Battle of Novi, which took place on 15 August 1799, was a battle between a combined army of the Habsburg monarchy and the Imperial Russians under Field Marshal Alexander Suvorov and a Republican French army under General Barthélemy Catherine Joubert. As soon as Joubert fell during the battle, Jean Victor Marie Moreau immediately took overall command of the French forces. After a prolonged and bloody struggle, the Austro-Russians broke through the French defenses and drove their enemies into a disorderly retreat, while French division commanders Catherine-Dominique de Pérignon and Emmanuel Grouchy were captured. Novi Ligure is in the province of Piedmont in Northern Italy a distance of 58 kilometres (36 mi) north of Genoa. The battle occurred during the War of the Second Coalition which was part of the French Revolutionary Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1194172, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 battle during the War of the Second Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-08-15"
+  },
+  "place": "novi-ligure",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-warsaw-1705",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q481334",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Warsaw (1705)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q481334"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Warsaw (1705)\", revision 1376629308"
+    }
+  ],
+  "title": "Battle of Warsaw (1705)",
+  "summary": "The English Wikipedia article \"Battle of Warsaw (1705)\", at revision 1376629308, opens: \"The Battle of Warsaw was fought on 31 July 1705 near Warsaw in the Polish–Lithuanian Commonwealth, during the Great Northern War and the 1701–1706 Swedish invasion of Poland. The battle was part of a power struggle for the Polish–Lithuanian throne, and was fought between Augustus II the Strong and Stanisław Leszczyński and their allies. Augustus entered the Great Northern War as Elector of Saxony and King of the Polish–Lithuanian Commonwealth, and had formed an alliance with Denmark–Norway and Russia. Stanisław Leszczyński had seized the Polish throne in 1704, with the support of the Swedish army of King Charles XII. The struggle for the throne forced the Polish nobility to pick sides; the Warsaw Confederation supported Leszczyński and Sweden, and the Sandomierz Confederation supported Augustus and his allies. The conflict resulted in the Polish civil war of 1704–1706.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q481334, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the forces of Polish-Lithuanian Commonwealth and Saxony, against Sweden, 1705\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1705,
+    "end": 1705,
+    "date": "1705-07-21"
+  },
+  "place": "poland-q36",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

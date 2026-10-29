@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-el-pardo-1778",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1923018",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of El Pardo (1778)",
+    "pt": "Tratado de El Pardo (1778)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1923018"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of El Pardo (1778)\", revision 1381965827"
+    }
+  ],
+  "title": "Treaty of El Pardo (1778)",
+  "summary": "The English Wikipedia article \"Treaty of El Pardo (1778)\", at revision 1381965827, opens: \"The Treaty of El Pardo signed on 11 March 1778 sought to end conflict between Spain and Portugal in the Río de la Plata region, along the modern boundary between Argentina and Uruguay. It confirmed Spanish ownership of Colonia del Sacramento, now in Uruguay, while Portugal ceded possession of strategically important territories in Africa, now the modern state of Equatorial Guinea. In return, Spain withdrew from lands to the north, most of which are in the southern Brazilian state of Rio Grande do Sul.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1923018, imported by tools/import/wikidata.mjs. The item's own description reads \"1778 treaty between Spain and Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1778,
+    "end": 1778,
+    "date": "1778-03-11"
+  },
+  "place": "spain-q29",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

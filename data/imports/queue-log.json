@@ -36604,6 +36604,614 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-510",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-laon",
+        "edges": [],
+        "place": "laon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-512",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2618761: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-514",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-cape-finisterre",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-516",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q19021: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-518",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "tumult-of-aranjuez",
+        "edges": [],
+        "place": "aranjuez"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-520",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3778623: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-522",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "massacre-of-novgorod",
+        "edges": [],
+        "place": "veliky-novgorod"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-524",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q438252: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-526",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "first-serbian-ottoman-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-528",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-scottish-war-1650-1652",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-530",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2578326: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-532",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "1783-calabrian-earthquakes",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-534",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "prayer-book-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-536",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "pride-s-purge",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-538",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "convention-of-1800",
+        "edges": [],
+        "place": "mortefontaine"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-540",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "tarnovo-constitution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-542",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "russian-famine-of-1891-1892",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-544",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-warsaw-1705",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-546",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ergeme",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-548",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-warburg",
+        "edges": [],
+        "place": "warburg"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-550",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ferrybridge",
+        "edges": [],
+        "place": "ferrybridge"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-552",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-malakoff",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-554",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ocana",
+        "edges": [],
+        "place": "ocana-spain"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-556",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "demonstration-of-20-june-1792",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-558",
+      "writer": "A",
+      "fired": "2026-10-29T01:02Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-breda-1624",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-511",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-knared",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-513",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-saint-petersburg-1723",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-515",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-torvioll",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-517",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "anjala-league",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-519",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2264242: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-521",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "galician-peasant-uprising-of-1846",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-523",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "italian-campaign-of-1796-1797",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-525",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q679589: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-527",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "russo-swedish-war-1590-1595",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-529",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "polish-swedish-war-1626-1629",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-531",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "lithuanian-civil-war-1432-1438",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-533",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "wallachian-revolution-of-1848",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-535",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "rising-of-the-north",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-537",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1342065: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-539",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "convention-of-tauroggen",
+        "edges": [],
+        "place": "taurage"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-541",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-vilnius-1561",
+        "edges": [],
+        "place": "vilnius"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-543",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-el-pardo-1778",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-545",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kay",
+        "edges": [],
+        "place": "kije-lubusz-voivodeship"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-547",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "reichstadt-agreement",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-549",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hanau",
+        "edges": [],
+        "place": "hanau"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-551",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nish-1443",
+        "edges": [],
+        "place": "nis"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-553",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-albulena",
+        "edges": [],
+        "place": "lac"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-555",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-novi-1799",
+        "edges": [],
+        "place": "novi-ligure"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-557",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "bazar-de-la-charite",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-024",
+      "writer": "B",
+      "fired": "2026-10-29T01:09Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-mers-el-kebir-1505",
+        "edges": [],
+        "place": "mers-el-kebir"
+      },
+      "refusals": []
     }
   ]
 }

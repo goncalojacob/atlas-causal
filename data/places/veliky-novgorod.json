@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "veliky-novgorod",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2235",
+  "sitelinks": {
+    "count": 105,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Veliky Novgorod",
+    "pt": "Novogárdia Magna"
+  },
+  "sources": [],
+  "names": [
+    "Veliky Novgorod",
+    "Novogárdia Magna"
+  ],
+  "where": {
+    "lon": 31.27579,
+    "lat": 58.52099,
+    "precision": "city",
+    "label": "Veliky Novgorod"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
