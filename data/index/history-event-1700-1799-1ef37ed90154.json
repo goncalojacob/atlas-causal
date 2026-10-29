@@ -990,6 +990,15 @@
         }
       ]
     },
+    "battle-of-chamchamal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-chelif": {
       "from": "git",
       "versions": [
@@ -2589,6 +2598,15 @@
         }
       ]
     },
+    "battle-of-sanandaj": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-sangarara": {
       "from": "git",
       "versions": [
@@ -3708,6 +3726,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "dzungar-conquest-of-tibet": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

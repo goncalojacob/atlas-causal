@@ -128,6 +128,15 @@
         }
       ]
     },
+    "anti-ottoman-revolts-of-1565-1572": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "arauco-war": {
       "from": "git",
       "versions": [
@@ -3363,6 +3372,15 @@
         }
       ]
     },
+    "massacre-of-the-telal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "massacre-of-vassy": {
       "from": "git",
       "versions": [
@@ -4739,6 +4757,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "siege-of-shamakhi-1578": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

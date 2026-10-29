@@ -7380,6 +7380,15 @@
         }
       ]
     },
+    "battle-of-agusan-hill": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-alegria-de-pio": {
       "from": "git",
       "versions": [
@@ -7473,6 +7482,15 @@
         }
       ]
     },
+    "battle-of-beitang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-bergendal": {
       "from": "git",
       "versions": [
@@ -7559,6 +7577,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-cagayan-de-misamis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -8213,6 +8240,24 @@
         }
       ]
     },
+    "battle-of-mabitac": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-makahambus-hill": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-mogadishu-1993": {
       "from": "git",
       "versions": [
@@ -8508,6 +8553,15 @@
         }
       ]
     },
+    "battle-of-pulang-lupa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-san-carlos": {
       "from": "git",
       "versions": [
@@ -8596,6 +8650,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-shanhaiguan-1900": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -23113,6 +23176,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "taiyuan-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

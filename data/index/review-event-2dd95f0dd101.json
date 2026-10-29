@@ -10194,6 +10194,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "anti-ottoman-revolts-of-1565-1572",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Anti-Ottoman revolts of 1565–1572"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -12110,6 +12140,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "bab-ali-demonstration",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "hamidian-massacres",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bab Ali demonstration"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "babington-plot",
       "kind": "event",
@@ -13710,6 +13770,37 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "battle-of-agusan-hill",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "philippine-american-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Agusan Hill"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "battle-of-ahmed-khel",
       "kind": "event",
       "origin": {
@@ -14905,6 +14996,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-anqing",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "taiping-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Anqing"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "battle-of-antietam",
       "kind": "event",
@@ -15815,6 +15938,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-baddowal",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-anglo-sikh-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Baddowal"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "battle-of-badeqe",
       "kind": "event",
@@ -15832,6 +15987,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Badeqe"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-badli-ki-serai",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "indian-rebellion-of-1857",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Badli-ki-Serai"
     },
     {
       "authors": [
@@ -16339,6 +16525,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Beilan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-beitang",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "boxer-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Beitang"
     },
     {
       "authors": [
@@ -18131,6 +18348,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-cagayan-de-misamis",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "philippine-american-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cagayan de Misamis"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 2,
       "id": "battle-of-cajamarca",
@@ -19827,6 +20076,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-chamchamal",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-persian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Chamchamal"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "battle-of-champaubert",
       "kind": "event",
@@ -19907,6 +20188,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Chancellorsville"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-changsha-1852",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "taiping-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Changsha (1852)"
     },
     {
       "authors": [
@@ -20822,6 +21135,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Chuvash Cape"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-cixi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "taiping-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cixi"
     },
     {
       "authors": [
@@ -23770,6 +24114,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-first-bar",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-opium-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of First Bar"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "battle-of-five-forks",
       "kind": "event",
@@ -24724,6 +25099,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-fort-zhenjiang",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "transition-from-ming-to-qing",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Fort Zhenjiang"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "battle-of-frankfurt-an-der-oder",
       "kind": "event",
@@ -24964,6 +25370,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Friedlingen"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-fushun",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "transition-from-ming-to-qing",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Fushun"
     },
     {
       "authors": [
@@ -26328,6 +26765,37 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-guangning",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "transition-from-ming-to-qing",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Guangning"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-09-23",
@@ -26943,6 +27411,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Harpers Ferry"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-hasan-abdal-1813",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "afghan-sikh-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Hasan Abdal (1813)"
     },
     {
       "authors": [
@@ -29157,6 +29657,38 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "battle-of-jhelum-1857",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "indian-rebellion-of-1857",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Jhelum (1857)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "battle-of-jiangnan-1860",
       "kind": "event",
       "origin": {
@@ -29551,6 +30083,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Kagul"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-kaiyuan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "transition-from-ming-to-qing",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Kaiyuan"
     },
     {
       "authors": [
@@ -30738,6 +31301,38 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Battle of Kombi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-kompoti",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Kompoti"
     },
     {
       "authors": [
@@ -33468,6 +34063,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-mabitac",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "philippine-american-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Mabitac"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-01",
       "id": "battle-of-macau",
       "kind": "event",
@@ -33931,6 +34558,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Majuba Hill"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-makahambus-hill",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "philippine-american-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Makahambus Hill"
     },
     {
       "authors": [
@@ -37619,6 +38277,37 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "battle-of-ning-jin",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "transition-from-ming-to-qing",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ning-Jin"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "battle-of-ningpo",
       "kind": "event",
       "origin": {
@@ -40663,6 +41352,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-pulang-lupa",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "philippine-american-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Pulang Lupa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-02",
       "id": "battle-of-pulo-buton",
       "kind": "event",
@@ -42941,6 +43662,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-sanandaj",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-persian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Sanandaj"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 2,
       "id": "battle-of-sandepu",
@@ -43702,6 +44455,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-senluo-temple",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "boxer-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Senluo Temple"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "battle-of-seonghwan",
       "kind": "event",
@@ -43923,6 +44708,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-shanhaiguan-1900",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "boxer-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Shanhaiguan (1900)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "battle-of-shaykan",
       "kind": "event",
@@ -44001,6 +44818,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Shelon"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-shen-liao",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "transition-from-ming-to-qing",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Shen-Liao"
     },
     {
       "authors": [
@@ -50884,6 +51732,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-varvarin",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-serbian-uprising",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Varvarin"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "battle-of-vasilika",
       "kind": "event",
@@ -52886,6 +53766,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-wuchang",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "taiping-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Wuchang"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "degree": 2,
       "id": "battle-of-wuhan",
@@ -53390,6 +54301,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-zapote-river",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "philippine-american-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Zapote River"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "battle-of-zenta",
       "kind": "event",
@@ -53786,6 +54729,38 @@
       "revised": null,
       "status": "active",
       "title": "Battles of Barfleur and La Hougue"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battles-of-batocina-and-jagodina",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-serbian-uprising",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battles of Batočina and Jagodina"
     },
     {
       "authors": [
@@ -66101,6 +67076,37 @@
       "revised": null,
       "status": "active",
       "title": "Dzungar conquest of Altishahr"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "other",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "dzungar-conquest-of-tibet",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dzungar-qing-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Dzungar conquest of Tibet"
     },
     {
       "authors": [
@@ -79784,6 +80790,37 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "jisi-incident",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "transition-from-ming-to-qing",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Jisi Incident"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "revolution",
       "cites": [
         "wikidata",
@@ -84207,6 +85244,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "masici-rebellion-1806",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-serbian-uprising",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mašići Rebellion (1806)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-02",
       "id": "massacre-at-matanzas-inlet",
       "kind": "event",
@@ -84380,6 +85448,36 @@
       "revised": null,
       "status": "active",
       "title": "Massacre of Novgorod"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "massacre-of-the-telal",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-mamluk-war-1516-1517",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Massacre of the Telal"
     },
     {
       "authors": [
@@ -84818,6 +85916,37 @@
       "revised": null,
       "status": "active",
       "title": "Meerut mutiny"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "meetings-at-drlupa-and-palanka",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-serbian-uprising",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Meetings at Drlupa and Palanka"
     },
     {
       "authors": [
@@ -88307,6 +89436,37 @@
       "revised": null,
       "status": "active",
       "title": "Occupation of Araucanía"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "occupation-of-ningbo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "taiping-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Occupation of Ningbo"
     },
     {
       "authors": [
@@ -111319,6 +112479,69 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "siege-of-shamakhi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-safavid-war-1603-1612",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Shamakhi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "siege-of-shamakhi-1578",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-safavid-war-1578-1590",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Shamakhi (1578)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "siege-of-shigisan",
       "kind": "event",
       "origin": {
@@ -115740,6 +116963,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "suzhou-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "taiping-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Suzhou massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -116051,6 +117305,37 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Taiping Rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "taiyuan-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "boxer-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Taiyuan massacre"
     },
     {
       "authors": [
@@ -135445,6 +136730,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "anti-ottoman-revolts-of-1565-1572",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "apache-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -135703,6 +136994,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "bab-ali-demonstration",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "babington-plot",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -135937,6 +137234,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-agusan-hill",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-ahmed-khel",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -136111,6 +137414,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-anqing",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-antietam",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -136279,7 +137588,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-baddowal",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-badeqe",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-badli-ki-serai",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -136358,6 +137679,12 @@
     },
     {
       "id": "battle-of-beilan",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-beitang",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -136639,6 +137966,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-cagayan-de-misamis",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-calcinato",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -136903,6 +138236,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-chamchamal",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-champaubert",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -136916,6 +138255,12 @@
     },
     {
       "id": "battle-of-chancellorsville",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-changsha-1852",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -137066,6 +138411,12 @@
     },
     {
       "id": "battle-of-chuvash-cape",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-cixi",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -137575,6 +138926,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-first-bar",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-five-forks",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -137713,6 +139070,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-fort-zhenjiang",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-frankfurt-an-der-oder",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -137756,6 +139119,12 @@
     },
     {
       "id": "battle-of-friedlingen",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-fushun",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -137989,6 +139358,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-guangning",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-guayabos",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -138098,6 +139473,12 @@
     },
     {
       "id": "battle-of-harpers-ferry",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-hasan-abdal-1813",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -138427,6 +139808,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-jhelum-1857",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-jiangnan-1860",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -138494,6 +139881,12 @@
     },
     {
       "id": "battle-of-kagul",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-kaiyuan",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -138680,6 +140073,12 @@
     },
     {
       "id": "battle-of-komaki-and-nagakute",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-kompoti",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -139099,6 +140498,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-mabitac",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-macau",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -139166,6 +140571,12 @@
     },
     {
       "id": "battle-of-majuba-hill",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-makahambus-hill",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -139741,6 +141152,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-ning-jin",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-ningpo",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -140173,6 +141590,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-pulang-lupa",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-pulo-buton",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -140473,6 +141896,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-sanandaj",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-sangju-1592",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -140587,6 +142016,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-senluo-temple",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-seonghwan",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -140617,6 +142052,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-shanhaiguan-1900",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-shaykan",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -140630,6 +142071,12 @@
     },
     {
       "id": "battle-of-shelon",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-shen-liao",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -141637,6 +143084,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-varvarin",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-vasilika",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -141955,6 +143408,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-wuchang",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-wyoming",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -142039,6 +143498,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-zapote-river",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-zenta",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -142100,6 +143565,12 @@
     },
     {
       "id": "battles-of-barfleur-and-la-hougue",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battles-of-batocina-and-jagodina",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -143779,6 +145250,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "dzungar-conquest-of-tibet",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "dzungar-genocide",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -145405,6 +146882,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "jisi-incident",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "john-brown-s-raid-on-harpers-ferry",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -145957,6 +147440,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "masici-rebellion-1806",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "massacre-at-matanzas-inlet",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -145982,6 +147471,12 @@
     },
     {
       "id": "massacre-of-novgorod",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "massacre-of-the-telal",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -146048,6 +147543,12 @@
     },
     {
       "id": "meerut-mutiny",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "meetings-at-drlupa-and-palanka",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -146552,6 +148053,12 @@
     },
     {
       "id": "occupation-of-araucania",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "occupation-of-ningbo",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -149893,6 +151400,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-shamakhi",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-shamakhi-1578",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-shigisan",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -150433,6 +151952,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "suzhou-massacre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "svaneti-uprising-of-1875-1876",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -150464,6 +151989,12 @@
     },
     {
       "id": "taiping-rebellion",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "taiyuan-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

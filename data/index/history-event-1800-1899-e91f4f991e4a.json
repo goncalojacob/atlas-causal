@@ -1237,6 +1237,15 @@
         }
       ]
     },
+    "bab-ali-demonstration": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "bac-ninh-campaign": {
       "from": "git",
       "versions": [
@@ -1664,6 +1673,15 @@
         }
       ]
     },
+    "battle-of-anqing": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-antietam": {
       "from": "git",
       "versions": [
@@ -1832,6 +1850,24 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-baddowal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-badli-ki-serai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2344,6 +2380,15 @@
         }
       ]
     },
+    "battle-of-changsha-1852": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-chantilly": {
       "from": "git",
       "versions": [
@@ -2458,6 +2503,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-cixi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2826,6 +2880,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-first-bar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3237,6 +3300,15 @@
         }
       ]
     },
+    "battle-of-hasan-abdal-1813": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-haslach-jungingen": {
       "from": "git",
       "versions": [
@@ -3459,6 +3531,15 @@
         }
       ]
     },
+    "battle-of-jhelum-1857": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-jiangnan-1860": {
       "from": "git",
       "versions": [
@@ -3582,6 +3663,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-kompoti": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4955,6 +5045,15 @@
         }
       ]
     },
+    "battle-of-senluo-temple": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-seonghwan": {
       "from": "git",
       "versions": [
@@ -5768,6 +5867,15 @@
         }
       ]
     },
+    "battle-of-varvarin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-vasilika": {
       "from": "git",
       "versions": [
@@ -6001,6 +6109,15 @@
         }
       ]
     },
+    "battle-of-wuchang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-yellow-tavern": {
       "from": "git",
       "versions": [
@@ -6055,6 +6172,15 @@
         }
       ]
     },
+    "battle-of-zapote-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-zhangjiawan": {
       "from": "git",
       "versions": [
@@ -6065,6 +6191,15 @@
       ]
     },
     "battle-of-zhenhai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battles-of-batocina-and-jagodina": {
       "from": "git",
       "versions": [
         {
@@ -9738,6 +9873,15 @@
         }
       ]
     },
+    "masici-rebellion-1806": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "massacres-of-diyarbekir-1895": {
       "from": "git",
       "versions": [
@@ -9793,6 +9937,15 @@
       ]
     },
     "meerut-mutiny": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "meetings-at-drlupa-and-palanka": {
       "from": "git",
       "versions": [
         {
@@ -10177,6 +10330,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "occupation-of-ningbo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -12793,6 +12955,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "suzhou-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

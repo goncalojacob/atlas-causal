@@ -1151,7 +1151,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "aleppo",
       "kind": "place",
       "names": [
@@ -1824,6 +1824,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "anqing",
+      "kind": "place",
+      "names": [
+        "Anqing"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -3807,6 +3834,33 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "batocina",
+      "kind": "place",
+      "names": [
+        "Batočina"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -7245,6 +7299,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 3,
+      "id": "cagayan-de-oro",
+      "kind": "place",
+      "names": [
+        "Cagayan de Oro",
+        "Cagayan de Ouro",
+        "Cagaiã de Ouro"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "cahuenga-california",
@@ -8938,6 +9021,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "chamchamal",
+      "kind": "place",
+      "names": [
+        "Chamchamal"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 2,
       "id": "champ-de-mars",
@@ -8973,6 +9083,33 @@
       "kind": "place",
       "names": [
         "Champaubert"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "changsha",
+      "kind": "place",
+      "names": [
+        "Changsha"
       ],
       "origin": {
         "tool": "wikidata"
@@ -10390,7 +10527,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 14,
+      "degree": 15,
       "id": "constantinople",
       "kind": "place",
       "names": [
@@ -12077,6 +12214,34 @@
       "kind": "place",
       "names": [
         "Deulino, Moscow Oblast"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "dharamkot-moga",
+      "kind": "place",
+      "names": [
+        "Dharamkot",
+        "Dharamkot, Moga"
       ],
       "origin": {
         "tool": "wikidata"
@@ -16127,7 +16292,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "fushun",
       "kind": "place",
       "names": [
@@ -18710,6 +18875,33 @@
       "names": [
         "Hartford",
         "Hartford, Connecticut"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "hasan-abdal",
+      "kind": "place",
+      "names": [
+        "Hasan Abdal"
       ],
       "origin": {
         "tool": "wikidata"
@@ -21695,6 +21887,34 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "jhelum",
+      "kind": "place",
+      "names": [
+        "Jhelum",
+        "Jelum"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "jijel",
       "kind": "place",
       "names": [
@@ -23761,6 +23981,33 @@
       "kind": "place",
       "names": [
         "Kolín"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "kompoti",
+      "kind": "place",
+      "names": [
+        "Kompoti"
       ],
       "origin": {
         "tool": "wikidata"
@@ -26067,7 +26314,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 4,
       "id": "liaodong-peninsula",
       "kind": "place",
       "names": [
@@ -28817,6 +29064,33 @@
       "kind": "place",
       "names": [
         "Maryland"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "masici",
+      "kind": "place",
+      "names": [
+        "Mašići"
       ],
       "origin": {
         "tool": "wikidata"
@@ -33278,7 +33552,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "ningbo",
       "kind": "place",
       "names": [
@@ -34903,7 +35177,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 22,
+      "degree": 23,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -35733,7 +36007,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "pearl-river",
       "kind": "place",
       "names": [
@@ -36437,7 +36711,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 9,
+      "degree": 12,
       "id": "philippines-q928",
       "kind": "place",
       "names": [
@@ -38468,7 +38742,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 9,
+      "degree": 10,
       "id": "qing-dynasty",
       "kind": "place",
       "names": [
@@ -41442,6 +41716,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "sanandaj",
+      "kind": "place",
+      "names": [
+        "Sanandaj"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -42609,6 +42910,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 2,
+      "id": "shamakhi",
+      "kind": "place",
+      "names": [
+        "Shamakhi",
+        "Shamakhi (cidade)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "shangani-river",
@@ -42643,6 +42972,34 @@
       "names": [
         "Shanghai",
         "Xangai"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "shanhai-pass",
+      "kind": "place",
+      "names": [
+        "Shanhai Pass",
+        "Passagem de Shanhai"
       ],
       "origin": {
         "tool": "wikidata"
@@ -45695,6 +46052,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "suzhou",
+      "kind": "place",
+      "names": [
+        "Suzhou",
+        "Sucheu"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "svaneti",
@@ -46008,6 +46393,34 @@
         "Taiwan Island",
         "Ilha Formosa",
         "Taiwan (island)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "taiyuan",
+      "kind": "place",
+      "names": [
+        "Taiyuan",
+        "Taiuã (cidade)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -47126,7 +47539,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "tibet-q17252",
       "kind": "place",
       "names": [
@@ -49462,6 +49875,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "varvarin",
+      "kind": "place",
+      "names": [
+        "Varvarin"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "vasvar",
@@ -51744,7 +52184,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "wuchang-district",
       "kind": "place",
       "names": [
