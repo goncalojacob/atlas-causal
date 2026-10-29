@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-missionary-ridge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2687368",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Missionary Ridge"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2687368"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Missionary Ridge\", revision 1380654691"
+    }
+  ],
+  "title": "Battle of Missionary Ridge",
+  "summary": "The English Wikipedia article \"Battle of Missionary Ridge\", at revision 1380654691, opens: \"The Battle of Missionary Ridge, also known as the Battle of Chattanooga, was fought on November 25, 1863, as part of the Chattanooga campaign of the American Civil War. Following the Union victory in the Battle of Lookout Mountain on November 24, Union forces in the Military Division of the Mississippi under Maj. Gen. Ulysses S. Grant assaulted Missionary Ridge and defeated the Confederate Army of Tennessee, commanded by Gen. Braxton Bragg, forcing it to retreat to Georgia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2687368, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-11-25"
+  },
+  "place": "chattanooga-tennessee",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

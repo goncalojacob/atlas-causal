@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "transylvanian-peasant-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q833441",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Transylvanian peasant revolt",
+    "pt": "Revolta dos camponeses da Transilvânia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q833441"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Transylvanian peasant revolt\", revision 1379590592"
+    }
+  ],
+  "title": "Transylvanian peasant revolt",
+  "summary": "The English Wikipedia article \"Transylvanian peasant revolt\", at revision 1379590592, opens: \"The Transylvanian peasant revolt, also known as the Bábolna revolt was a popular revolt in the eastern territories of the Kingdom of Hungary in 1437. The revolt broke out after George Lépes, bishop of Transylvania, had failed to collect the tithe for years because of a temporary debasement of the coinage, but then demanded the arrears in one sum when coins of higher value were again issued. Most commoners were unable to pay the demanded sum, but the bishop did not renounce his claim and applied interdict and other ecclesiastic penalties to enforce the payment.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q833441, imported by tools/import/wikidata.mjs. The item's own description reads \"Revolt in Transylvania\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1437,
+    "end": 1438,
+    "date": "1437-06",
+    "endDate": "1438-01"
+  },
+  "place": "transylvania",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

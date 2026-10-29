@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-hobkirk-s-hill",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q494318",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Hobkirk's Hill"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q494318"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hobkirk's Hill\", revision 1381571037"
+    }
+  ],
+  "title": "Battle of Hobkirk's Hill",
+  "summary": "The English Wikipedia article \"Battle of Hobkirk's Hill\", at revision 1381571037, opens: \"The Battle of Hobkirk's Hill was fought on April 25, 1781, near Camden, South Carolina, as part of the Southern theater of the American Revolutionary War. 1,550 American regulars and militia under Major General Nathanael Greene occupying Hobkirk's Hill, north of Camden, were attacked by a British force of 900 regulars and militia under Lieutenant-colonel Lord Rawdon. After a fierce clash, Greene retreated, leaving Rawdon's force in possession of the hill.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q494318, imported by tools/import/wikidata.mjs. The item's own description reads \"1781 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-04-25"
+  },
+  "place": "camden-south-carolina",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

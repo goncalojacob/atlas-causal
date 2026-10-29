@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zuriputsch",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q248743",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Züriputsch"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q248743"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Züriputsch\", revision 1366250554"
+    }
+  ],
+  "title": "Züriputsch",
+  "summary": "The English Wikipedia article \"Züriputsch\", at revision 1366250554, opens: \"The Züriputsch of 6 September 1839 was a putsch of the rural conservative population against the liberal rule of the city of Zurich on the eve of the formation of the Swiss federal state. The reason for the putsch was the appointment of the controversial German theologian David Strauss to the theological faculty of the University of Zurich by the liberal government. The rural population saw the old religious order in danger.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q248743, imported by tools/import/wikidata.mjs. The item's own description reads \"Attempted coup d'état in Switzerland, 1839\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1839,
+    "date": "1839-09-06"
+  },
+  "place": "zurich",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

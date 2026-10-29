@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "greek-civil-wars-of-1823-1825",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5601911",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Greek civil wars of 1823–1825"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5601911"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Greek civil wars of 1823–1825\", revision 1381773347"
+    }
+  ],
+  "title": "Greek civil wars of 1823–1825",
+  "summary": "The English Wikipedia article \"Greek civil wars of 1823–1825\", at revision 1381773347, opens: \"The Greek civil wars of 1823–1825 occurred alongside the Greek War of Independence. The conflict had both political and regional dimensions, as it pitted the Roumeliotes, who lived in mainland Greece, and shipowners from the Islands, primarily Hydra island, against the Peloponnesians or Moreotes. It divided the nation, and seriously weakened the military preparedness of the Greek forces in the face of the oncoming Egyptian intervention in the conflict.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5601911, imported by tools/import/wikidata.mjs. The item's own description reads \"civil conflicts in Greece\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1823,
+    "end": 1825,
+    "endDate": "1825-02"
+  },
+  "place": "peloponnese",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

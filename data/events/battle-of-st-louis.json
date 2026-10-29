@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-st-louis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2729621",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of St. Louis"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2729621"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of St. Louis\", revision 1370274641"
+    }
+  ],
+  "title": "Battle of St. Louis",
+  "summary": "The English Wikipedia article \"Battle of St. Louis\", at revision 1370274641, opens: \"The Battle of St. Louis, also known as the Attack on St. Louis and the Battle of Fort San Carlos, was fought on May 26, 1780, between British-allied Indians and defenders of the Franco-Spanish village of St. Louis, Louisiana during the American Revolutionary War. The garrison, a motley assortment of regulars and militiamen led by Upper Louisiana's lieutenant governor, Captain Fernando de Leyba, suffered a small number of casualties.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2729621, imported by tools/import/wikidata.mjs. The item's own description reads \"1780 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1780,
+    "end": 1780,
+    "date": "1780-05-26"
+  },
+  "place": "st-louis",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1749-muslim-slave-revolt-plot-in-malta",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q20556343",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1749 Muslim slave revolt plot in Malta"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20556343"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1749 Muslim slave revolt plot in Malta\", revision 1377063081"
+    }
+  ],
+  "title": "1749 Muslim slave revolt plot in Malta",
+  "summary": "The English Wikipedia article \"1749 Muslim slave revolt plot in Malta\", at revision 1377063081, opens: \"The Conspiracy of the Slaves was a failed plot by Muslim slaves in Hospitaller Malta to rebel and assassinate Grand Master Manuel Pinto da Fonseca of the Order of St John, in an attempt to facilitate the capture of Malta by the Ottoman Empire in June 1749.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20556343, imported by tools/import/wikidata.mjs. The item's own description reads \"1749 Muslim slave revolt in Malta\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1749,
+    "end": 1749,
+    "date": "1749-06-29"
+  },
+  "place": "malta-island",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

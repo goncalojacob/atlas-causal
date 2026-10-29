@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "rising-of-the-priests",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q20204978",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Rising of the Priests"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20204978"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rising of the Priests\", revision 1377063191"
+    }
+  ],
+  "title": "Rising of the Priests",
+  "summary": "The English Wikipedia article \"Rising of the Priests\", at revision 1377063191, opens: \"The Rising of the Priests, also known as the September 1775 Rebellion, was an uprising against the Knights Hospitaller which broke out in Valletta, Hospitaller Malta in September 1775. It came about after an extended period of political and economic tension following the death of Grand Master Manuel Pinto da Fonseca in 1773. The magistracy of his successor, Francisco Ximénez de Tejada, was characterised by largely unsuccessful attempts to alleviate economic problems and disputes between the Hospitallers and Bishop of Malta Giovanni Carmine Pellerano.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20204978, imported by tools/import/wikidata.mjs. The item's own description reads \"1775 revolt in Malta led by priests\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1775,
+    "date": "1775-09-08"
+  },
+  "place": "valletta",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "franco-swedish-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3362247",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Franco-Swedish War",
+    "pt": "Guerra Franco-Sueca"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3362247"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Franco-Swedish War\", revision 1380876269"
+    }
+  ],
+  "title": "Franco-Swedish War",
+  "summary": "The English Wikipedia article \"Franco-Swedish War\", at revision 1380876269, opens: \"The Franco-Swedish War or Pomeranian War was the first involvement by Sweden in the Napoleonic Wars. The country joined the Third Coalition in an effort to defeat France under Napoleon Bonaparte.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3362247, imported by tools/import/wikidata.mjs. The item's own description reads \"1805-1810 war between France and Sweden\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1805,
+    "end": 1810,
+    "date": "1805-10-31",
+    "endDate": "1810-01-06"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "napoleonic-wars"
+}

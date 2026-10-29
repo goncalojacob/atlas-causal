@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kettle-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1406399",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Kettle War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1406399"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kettle War\", revision 1370625657"
+    }
+  ],
+  "title": "Kettle War",
+  "summary": "The English Wikipedia article \"Kettle War\", at revision 1370625657, opens: \"The Kettle War was a military confrontation between the forces of both the Habsburg monarchy and the Republic of the Seven Netherlands on 8 October 1784. It was named the Kettle War because the only shot fired hit a soup kettle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1406399, imported by tools/import/wikidata.mjs. The item's own description reads \"1784 military incident in Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1784,
+    "end": 1785,
+    "date": "1784-10-06",
+    "endDate": "1785-11-08"
+  },
+  "place": "scheldt",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

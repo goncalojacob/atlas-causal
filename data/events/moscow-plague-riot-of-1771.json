@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "moscow-plague-riot-of-1771",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4518057",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Moscow plague riot of 1771"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4518057"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Moscow plague riot of 1771\", revision 1379200176"
+    }
+  ],
+  "title": "Moscow plague riot of 1771",
+  "summary": "The English Wikipedia article \"Moscow plague riot of 1771\", at revision 1379200176, opens: \"The Plague Riot was a riot in Moscow in 1771 between 15 and 17 September, caused by an outbreak of bubonic plague.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4518057, imported by tools/import/wikidata.mjs. The item's own description reads \"riot in Moscow caused by an outbreak of bubonic plague\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1771,
+    "end": 1771,
+    "date": "1771-09-15",
+    "endDate": "1771-09-17"
+  },
+  "place": "moscow",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "merthyr-rising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6820681",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Merthyr Rising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6820681"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Merthyr Rising\", revision 1361131639"
+    }
+  ],
+  "title": "Merthyr Rising",
+  "summary": "The English Wikipedia article \"Merthyr Rising\", at revision 1361131639, opens: \"The Merthyr Rising, also referred to as the Merthyr Riots, of 1831 was the violent climax to many years of simmering unrest among the large working class population of Merthyr Tydfil in Wales and the surrounding area. The Rising marked the first time the red flag was used a symbol of working class rebellion in the United Kingdom.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6820681, imported by tools/import/wikidata.mjs. The item's own description reads \"Violent labor protest in Merthyr Tydfil, Wales\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1831,
+    "end": 1831
+  },
+  "place": "merthyr-tydfil",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

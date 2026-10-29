@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "himara-revolt-of-1596",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q19895302",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Himara Revolt of 1596"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q19895302"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Himara Revolt of 1596\", revision 1370622766"
+    }
+  ],
+  "title": "Himara Revolt of 1596",
+  "summary": "The English Wikipedia article \"Himara Revolt of 1596\", at revision 1370622766, opens: \"The Himara Revolt of 1596 was an Albanian uprising organized by Archbishop Athanasius I of Ohrid in the region of Himara against the Ottoman Empire. It was part of a range of anti-Ottoman movements in the Western Balkans at the end of the 16th century during the Long Turkish War in the Balkans. The revolt received the support of various western powers and was instigated through local leaders, scholars and clergy as well as Greek military figures in their service.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q19895302, imported by tools/import/wikidata.mjs. The item's own description reads \"1596 uprising against the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1596,
+    "end": 1596,
+    "date": "1596-07",
+    "endDate": "1596-08"
+  },
+  "place": "himare-town",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "long-turkish-war"
+}
