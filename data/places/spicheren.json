@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "spicheren",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q22756",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Spicheren",
+    "pt": "Spicheren"
+  },
+  "sources": [],
+  "names": [
+    "Spicheren"
+  ],
+  "where": {
+    "lon": 6.9683333333333,
+    "lat": 49.191666666667,
+    "precision": "city",
+    "label": "Spicheren"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

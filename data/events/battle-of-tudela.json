@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-tudela",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2427013",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Tudela"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2427013"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tudela\", revision 1370591732"
+    }
+  ],
+  "title": "Battle of Tudela",
+  "summary": "The English Wikipedia article \"Battle of Tudela\", at revision 1370591732, opens: \"The Battle of Tudela saw an Imperial French army led by Marshal Jean Lannes attack a Spanish army under General Castaños. The battle resulted in the complete victory of the Imperial forces over their adversaries. The combat occurred near Tudela in Navarre, Spain during the Peninsular War, part of a wider conflict known as the Napoleonic Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2427013, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-11-23"
+  },
+  "place": "tudela",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

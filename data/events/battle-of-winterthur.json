@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-winterthur",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q685798",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Winterthur",
+    "pt": "Batalha de Winterthur (1799)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q685798"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Winterthur\", revision 1379901103"
+    }
+  ],
+  "title": "Battle of Winterthur",
+  "summary": "The English Wikipedia article \"Battle of Winterthur\", at revision 1379901103, opens: \"The Battle of Winterthur was an important action between elements of the Army of the Danube and elements of the Habsburg army, commanded by Friedrich Freiherr von Hotze, during the War of the Second Coalition, part of the French Revolutionary Wars. The small town of Winterthur lies 18 kilometers (11 mi) northeast of Zürich, in Switzerland. Because of its position at the junction of seven roads, the army that held the town controlled access to most of Switzerland and points crossing the Rhine into southern Germany. Although the forces involved were small, the ability of the Austrians to sustain their 11-hour assault on the French line resulted in the consolidation of three Austrian forces on the plateau north of Zürich, leading to the French defeat a few days later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q685798, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 battle of the French Revolutionary Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-05-27"
+  },
+  "place": "winterthur",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

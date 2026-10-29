@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kamienna-gora",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q219110",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Kamienna Góra",
+    "pt": "Kamienna Góra"
+  },
+  "sources": [],
+  "names": [
+    "Kamienna Góra"
+  ],
+  "where": {
+    "lon": 16.033333333333335,
+    "lat": 50.78333333333333,
+    "precision": "city",
+    "label": "Kamienna Góra"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

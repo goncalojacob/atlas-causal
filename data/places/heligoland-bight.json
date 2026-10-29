@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "heligoland-bight",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q702691",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Heligoland Bight"
+  },
+  "sources": [],
+  "names": [
+    "Heligoland Bight"
+  ],
+  "where": {
+    "lon": 8.15,
+    "lat": 54.05,
+    "precision": "region",
+    "label": "Heligoland Bight"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

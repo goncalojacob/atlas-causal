@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-malta-1798-1800",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2493908",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Malta (1798–1800)",
+    "pt": "Cerco de Malta (1798–1800)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2493908"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Malta (1798–1800)\", revision 1380084030"
+    }
+  ],
+  "title": "Siege of Malta (1798–1800)",
+  "summary": "The English Wikipedia article \"Siege of Malta (1798–1800)\", at revision 1380084030, opens: \"The siege of Malta, also known as the siege of Valletta or the French blockade, was a two-year siege and blockade of the French garrison in Valletta and the Three Cities, the largest settlements and main port on the Mediterranean island of Malta, between 1798 and 1800. Malta had been captured by a French expeditionary force during the Mediterranean campaign of 1798, and garrisoned with 3,000 soldiers under the command of Claude-Henri Belgrand de Vaubois. After the British Royal Navy destroyed the French Mediterranean Fleet at the Battle of the Nile on 1 August 1798, the British with the cooperation of a Portuguese naval squadron were able to initiate a blockade of Malta, assisted by an uprising among the native Maltese population against French rule. After its retreat to Valletta, the French garrison faced severe food shortages, exacerbated by the effectiveness of the British blockade. Although small quantities of supplies arrived in early 1799, there was no further traffic until early 1800, by which time starvation and disease were having a disastrous effect on the health, morale, and combat capability of the French troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2493908, imported by tools/import/wikidata.mjs. The item's own description reads \"1798 military blockade of Malta by France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1800,
+    "date": "1798-09-02",
+    "endDate": "1800-09-04"
+  },
+  "place": "valletta",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}
