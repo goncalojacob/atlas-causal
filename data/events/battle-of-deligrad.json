@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-deligrad",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4832533",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Deligrad"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4832533"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Deligrad\", revision 1370438546"
+    }
+  ],
+  "title": "Battle of Deligrad",
+  "summary": "The English Wikipedia article \"Battle of Deligrad\", at revision 1370438546, opens: \"The Battle of Deligrad was fought between Serbian revolutionaries and an army of the Ottoman Empire, and took place on 3 September 1806 during the First Serbian Uprising. A 55,000-strong Ottoman army commanded by Albanian Pasha of Scutari Ibrahim Pasha was defeated with heavy casualties and the loss of nine guns by Grand Vozhd Karađorđe Petrović's 37,000 Serbian rebels at Deligrad in Serbia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4832533, imported by tools/import/wikidata.mjs. The item's own description reads \"battle between the Ottomans and rebels from the Serbian state in 1806\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1806,
+    "end": 1806,
+    "date": "1806-09-03"
+  },
+  "place": "deligrad",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-serbian-uprising"
+}

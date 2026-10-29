@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "castle-of-saint-george-cephalonia",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q12878516",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Castle of Saint George, Cephalonia"
+  },
+  "sources": [],
+  "names": [
+    "Fortress St. George",
+    "Castle of Saint George, Cephalonia"
+  ],
+  "where": {
+    "lon": 20.552547,
+    "lat": 38.138638,
+    "precision": "point",
+    "label": "Castle of Saint George, Cephalonia"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

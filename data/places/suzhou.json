@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "suzhou",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q42622",
+  "sitelinks": {
+    "count": 87,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Suzhou",
+    "pt": "Sucheu"
+  },
+  "sources": [],
+  "names": [
+    "Suzhou",
+    "Sucheu"
+  ],
+  "where": {
+    "lon": 120.61944444444444,
+    "lat": 31.3,
+    "precision": "city",
+    "label": "Suzhou"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

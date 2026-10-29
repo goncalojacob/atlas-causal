@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-dennewitz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q647827",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Dennewitz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q647827"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dennewitz\", revision 1370109631"
+    }
+  ],
+  "title": "Battle of Dennewitz",
+  "summary": "The English Wikipedia article \"Battle of Dennewitz\", at revision 1370109631, opens: \"The Battle of Dennewitz took place on 6 September 1813 between French forces commanded by Marshal Michel Ney and the Sixth Coalition's Allied Army of the North commanded by Crown Prince Charles John of Sweden, Friedrich Wilhelm von Bülow and Bogislav von Tauentzien. It occurred in Dennewitz, a village in the Prussian province of Brandenburg, near Jüterbog, 40 kilometres (25 mi) southwest of Berlin. The battle marked a turning point in the German Campaign of 1813 as not only did the Allied victory end Napoleon's hopes of capturing Berlin and knocking Prussia out of the war, but the severity of the French defeat, inflicted by a primarily Prussian force, also led to the erosion of fidelity of German allies to the Napoleonic cause. The French losses, and consequent diplomatic reverses, that resulted from Dennewitz contributed greatly to Napoleon's defeat a month later at the Battle of Leipzig.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q647827, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle during the War of the Sixth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-09-06"
+  },
+  "place": "berlin",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-sixth-coalition"
+}

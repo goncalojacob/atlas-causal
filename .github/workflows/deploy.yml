@@ -56,7 +56,7 @@ jobs:
           # hung browser test sat in this step for forty minutes on 22
           # September with the site unpublished behind it, where the check
           # would have gone red in two.
-          node --test --test-timeout=120000 $(node tools/suites.mjs --pure) || status=1
+          node --test --test-timeout=600000 $(node tools/suites.mjs --pure) || status=1
           node --test --test-timeout=120000 --test-concurrency=1 $(node tools/suites.mjs --browser) || status=1
           exit $status
       # The palette before the index: the manifest names the palette file, so

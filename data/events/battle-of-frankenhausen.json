@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-frankenhausen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q703363",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Frankenhausen",
+    "pt": "Batalha de Frankenhausen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q703363"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Frankenhausen\", revision 1370441047"
+    }
+  ],
+  "title": "Battle of Frankenhausen",
+  "summary": "The English Wikipedia article \"Battle of Frankenhausen\", at revision 1370441047, opens: \"The Battle of Frankenhausen was fought on 14 and 15 May 1525. It was an important battle in the German Peasants' War and the final act of the war in Thuringia: joint troops of Landgrave Philip I of Hesse and Duke George of Saxony defeated the peasants under their spiritual leader Thomas Müntzer near Frankenhausen in the County of Schwarzburg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q703363, imported by tools/import/wikidata.mjs. The item's own description reads \"1525 battle of the German Peasants' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1525,
+    "end": 1525,
+    "date": "1525-05-14",
+    "endDate": "1525-05-15"
+  },
+  "place": "bad-frankenhausen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "german-peasants-war"
+}

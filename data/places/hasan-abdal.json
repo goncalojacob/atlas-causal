@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hasan-abdal",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q71037",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Hasan Abdal",
+    "pt": "Hasan Abdal"
+  },
+  "sources": [],
+  "names": [
+    "Hasan Abdal"
+  ],
+  "where": {
+    "lon": 72.689027777778,
+    "lat": 33.819486111111,
+    "precision": "city",
+    "label": "Hasan Abdal"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

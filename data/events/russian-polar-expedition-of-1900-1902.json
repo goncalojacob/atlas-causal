@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "russian-polar-expedition-of-1900-1902",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4400513",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Russian polar expedition of 1900–1902",
+    "pt": "Expedição Polar Russa de 1900"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4400513"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian polar expedition of 1900–1902\", revision 1380852871"
+    }
+  ],
+  "title": "Russian polar expedition of 1900–1902",
+  "summary": "The English Wikipedia article \"Russian polar expedition of 1900–1902\", at revision 1380852871, opens: \"The Russian polar expedition of 1900–1902 was commissioned by the Saint Petersburg Academy of Sciences to study the Arctic Ocean north of the New Siberian Islands and search for the legendary Sannikov Land. It was led by the Baltic German geologist and Arctic explorer Baron Eduard von Toll on the ship Zarya. Toll and his three assistants vanished in late 1902 while exploring Bennett Island. One of the key members of the expedition was Alexander Kolchak, then a young researcher and lieutenant of the Russian Navy, and later a leader of the White movement and anti-Bolshevik government of Russia during the civil war period. Kolchak also led the rescue mission to find Toll and his crew.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4400513, imported by tools/import/wikidata.mjs. The item's own description reads \"Expedition to study the Arctic, led by Eduard von Toll\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1902,
+    "date": "1900-06-08",
+    "endDate": "1902-12"
+  },
+  "place": "russian-empire-q34266",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

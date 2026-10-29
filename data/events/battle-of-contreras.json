@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-contreras",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2399696",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Contreras",
+    "pt": "Batalha de Contreras"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2399696"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Contreras\", revision 1370628808"
+    }
+  ],
+  "title": "Battle of Contreras",
+  "summary": "The English Wikipedia article \"Battle of Contreras\", at revision 1370628808, opens: \"The Battle of Contreras, also known as the Battle of Padierna, took place on 19–20 August 1847, in one of the final encounters of the Mexican–American War, as invading U.S. forces under Winfield Scott approached the Mexican capital. American forces surprised and then routed the Mexican forces of General Gabriel Valencia, who had disobeyed General Antonio López de Santa Anna's orders for his forces' placement. Although the battle was an overwhelming victory for U.S. forces, there are few depictions of it in contemporary popular prints. The armies re-engaged the next day in the Battle of Churubusco.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2399696, imported by tools/import/wikidata.mjs. The item's own description reads \"1847 battle of the Mexican–American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1847,
+    "end": 1847,
+    "date": "1847-08-20"
+  },
+  "place": "mexico-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mexican-american-war"
+}

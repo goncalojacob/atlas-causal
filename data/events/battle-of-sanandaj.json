@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-sanandaj",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q118929919",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Sanandaj"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q118929919"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sanandaj\", revision 1374538240"
+    }
+  ],
+  "title": "Battle of Sanandaj",
+  "summary": "The English Wikipedia article \"Battle of Sanandaj\", at revision 1374538240, opens: \"The Battle of Sanandaj was a battle in the Ottoman–Persian War (1776–1779). On May 5, 1777, an Ottoman force under the command of Babanlı Mehmed Pasha, the governor of Baban, inflicted a defeat on the Persian army under Khosrow Khan, the governor of Sanandaj of the Zand Dynasty, at Sanandaj.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q118929919, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-05-05"
+  },
+  "place": "sanandaj",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-persian-wars"
+}

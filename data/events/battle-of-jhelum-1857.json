@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-jhelum-1857",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q27628085",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Jhelum (1857)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q27628085"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Jhelum (1857)\", revision 1371284884"
+    }
+  ],
+  "title": "Battle of Jhelum (1857)",
+  "summary": "The English Wikipedia article \"Battle of Jhelum (1857)\", at revision 1371284884, opens: \"During the Indian Rebellion of 1857 a column of troops led by the commander of the 24th Regiment of Foot was sent to disarm Bengal Native Infantry units believed to be at risk of mutiny in Rawalpindi and Jhelum. At Rawalpindi, the 58th Bengal Native Infantry was disarmed peacefully, however the two companies of the 14th Bengal Native Infantry resisted the attempt by force of arms. These two companies were quickly defeated by the British, loyal native troops and the local population. In Jhelum, also garrisoned by the 14th, the concurrently timed disarmament was much more violent. Thirty five British soldiers of the 24th Regiment of Foot were killed along with a number of Loyal Indian troops, by mutinous sepoys of the 14th Bengal Native Infantry. When the mutineers realised that they, except the Sikhs, were to be disarmed, they mutinied and made a vigorous defence against the force that had arrived from Rawalpindi to disarm them. The following night a significant number of mutineers managed to slip away but most were subsequently arrested by the Kashmir authorities, into whose territory they had escaped.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q27628085, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Indian Rebellion of 1857\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1857,
+    "end": 1857,
+    "date": "1857-07-07"
+  },
+  "place": "jhelum",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "indian-rebellion-of-1857"
+}

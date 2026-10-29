@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "first-russian-antarctic-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4349082",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "First Russian Antarctic Expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4349082"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Russian Antarctic Expedition\", revision 1368284183"
+    }
+  ],
+  "title": "First Russian Antarctic Expedition",
+  "summary": "The English Wikipedia article \"First Russian Antarctic Expedition\", at revision 1368284183, opens: \"The First Russian Antarctic Expedition took place in 1819–1821 under the direction of Fabian Bellingshausen and Mikhail Lazarev. The expedition aimed to reach the Southern Ocean in order to prove or disprove the existence of a suspected seventh continent, Antarctica. The sloop Vostok was under the command of Bellingshausen, while Lazarev commanded the sloop Mirny. Overall, the crew consisted of 190 people.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4349082, imported by tools/import/wikidata.mjs. The item's own description reads \"1819–1821 expedition to explore the Southern Ocean and Antarctica\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1819,
+    "end": 1821,
+    "date": "1819-07-16",
+    "endDate": "1821-06-24"
+  },
+  "place": "russian-empire-q34266",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

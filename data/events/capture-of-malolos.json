@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-malolos",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5037031",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Capture of Malolos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5037031"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Malolos\", revision 1380529211"
+    }
+  ],
+  "title": "Capture of Malolos",
+  "summary": "The English Wikipedia article \"Capture of Malolos\", at revision 1380529211, opens: \"The Capture of Malolos, also known as the Battle of Malolos, occurred on March 31, 1899, in Malolos, Bulacan, during the Philippine–American War. General Arthur MacArthur Jr.'s division advanced to Malolos along the Manila-Dagupan Railway. By March 30, American forces were advancing toward Malolos. Meanwhile, the Aguinaldo government moved its seat from Malolos to San Isidro, Nueva Ecija.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5037031, imported by tools/import/wikidata.mjs. The item's own description reads \"1899 battle of the Philippine-American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-03-31"
+  },
+  "place": "malolos",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-american-war"
+}

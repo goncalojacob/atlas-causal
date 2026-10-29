@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "the-ruin-ukrainian-history",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2470611",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "The Ruin (Ukrainian history)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2470611"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"The Ruin (Ukrainian history)\", revision 1379897321"
+    }
+  ],
+  "title": "The Ruin (Ukrainian history)",
+  "summary": "The English Wikipedia article \"The Ruin (Ukrainian history)\", at revision 1379897321, opens: \"The Ruin is a historical term introduced by the Cossack chronicle writer Samiilo Velychko (1670–1728) for the political situation in Ukrainian history during the second half of the 17th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2470611, imported by tools/import/wikidata.mjs. The item's own description reads \"tumultuous period in Ukrainian history from 1659 to 1686\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1657,
+    "end": 1687
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

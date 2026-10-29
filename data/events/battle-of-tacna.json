@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-tacna",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q18014904",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Tacna",
+    "pt": "Batalha do Alto da Aliança"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18014904"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tacna\", revision 1370275063"
+    }
+  ],
+  "title": "Battle of Tacna",
+  "summary": "The English Wikipedia article \"Battle of Tacna\", at revision 1370275063, opens: \"The Battle of Tacna, also known as the Battle of the Alto de la Alianza, was a battle that took place on May 26, 1880, at the plateau of the Alto de la Alianza, a hill a few miles north of the Peruvian city of Tacna. It effectively destroyed the Peru-Bolivian alliance against Chile, forged by a secret treaty signed in 1873. During the battle, the Chilean Northern Operations Army led by General Manuel Baquedano González conclusively defeated the combined armies of Peru and Bolivia commanded by Bolivian President, General Narciso Campero.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18014904, imported by tools/import/wikidata.mjs. The item's own description reads \"1880 battle in Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1880,
+    "end": 1880,
+    "date": "1880-05-26"
+  },
+  "place": "tacna",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-pacific"
+}

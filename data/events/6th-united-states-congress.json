@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "6th-united-states-congress",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2395126",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "6th United States Congress"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2395126"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"6th United States Congress\", revision 1380237082"
+    }
+  ],
+  "title": "6th United States Congress",
+  "summary": "The English Wikipedia article \"6th United States Congress\", at revision 1380237082, opens: \"The 6th United States Congress was the 6th meeting of the legislative branch of the United States federal government, consisting of the Senate and the House of Representatives. It initially met at Congress Hall in Philadelphia, Pennsylvania and then was the first congress to meet in the new Capitol Building in Washington, D.C.. Its term was from March 4, 1799, to March 4, 1801, during the last two years of John Adams's presidency. It was the last Congress of the 18th century and the first to convene in the 19th. The apportionment of seats in House of Representatives was based on the 1790 United States census. Both chambers had a Federalist majority. This was the last Congress in which the Federalist Party controlled the presidency or either chamber of Congress.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2395126, imported by tools/import/wikidata.mjs. The item's own description reads \"meeting of the U.S. federal legislature from 1799 to 1801\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1801,
+    "date": "1799-03-04",
+    "endDate": "1801-03-04"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

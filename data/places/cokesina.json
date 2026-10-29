@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "cokesina",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2473300",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Čokešina",
+    "pt": "Čokešina"
+  },
+  "sources": [],
+  "names": [
+    "Čokešina"
+  ],
+  "where": {
+    "lon": 19.3908,
+    "lat": 44.6531,
+    "precision": "city",
+    "label": "Čokešina"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

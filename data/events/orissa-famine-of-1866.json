@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "orissa-famine-of-1866",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3523487",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Orissa famine of 1866"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3523487"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Orissa famine of 1866\", revision 1370325526"
+    }
+  ],
+  "title": "Orissa famine of 1866",
+  "summary": "The English Wikipedia article \"Orissa famine of 1866\", at revision 1370325526, opens: \"The Orissa famine of 1866 affected the east coast of India from Madras northwards, an area covering 180,000 miles and containing a population of 47,500,000; the impact of the famine, however, was greatest in the region of Orissa, now Odisha, which at that time was quite isolated from the rest of India. In Odisha, the total number of deaths as a result of the famine was at least a million, roughly one third of the population.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3523487, imported by tools/import/wikidata.mjs. The item's own description reads \"one of the biggest famines in India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866
+  },
+  "place": "odisha",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

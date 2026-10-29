@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "assassination-of-empress-myeongseong",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q623757",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Assassination of Empress Myeongseong"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q623757"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Assassination of Empress Myeongseong\", revision 1376380456"
+    }
+  ],
+  "title": "Assassination of Empress Myeongseong",
+  "summary": "The English Wikipedia article \"Assassination of Empress Myeongseong\", at revision 1376380456, opens: \"Around 6 a.m. on 8 October 1895, Queen Min, the consort of the Korean monarch Gojong, was assassinated by a group of Japanese agents under Miura Gorō. After her death, she was posthumously given the title of \"Empress Myeongseong\". The attack happened at the royal palace Gyeongbokgung in Seoul, Joseon. This incident is known in Korea as the Eulmi Incident.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q623757, imported by tools/import/wikidata.mjs. The item's own description reads \"assassination of Empress Myeongseong\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1895,
+    "end": 1895,
+    "date": "1895-10-08"
+  },
+  "place": "seoul",
+  "region": null,
+  "regionNote": null,
+  "category": "death",
+  "actors": []
+}

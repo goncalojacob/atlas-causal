@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-agusan-hill",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870229",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Agusan Hill"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870229"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Agusan Hill\", revision 1373821680"
+    }
+  ],
+  "title": "Battle of Agusan Hill",
+  "summary": "The English Wikipedia article \"Battle of Agusan Hill\", at revision 1373821680, opens: \"Battle of Agusan Hill, May 14, 1900. Capt. Walter B. Elliott, CO of Company I, 40th Infantry Regiment USV, with 80 men proceeded to the village of Agusan, about 16 kilometers west of Cagayan de Misamis town proper, to dislodge about 500 guerillas who were entrenched on a hill with 200 rifles and shotguns. The attack was successful; 2 Americans were killed and 3 wounded; the Filipinos suffered 38 killed, including their commander, Capt. Vicente Roa. The Americans also captured 35 Remington rifles.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870229, imported by tools/import/wikidata.mjs. The item's own description reads \"1900 battle of the Philippine–American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-05-14"
+  },
+  "place": "cagayan-de-oro",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-american-war"
+}

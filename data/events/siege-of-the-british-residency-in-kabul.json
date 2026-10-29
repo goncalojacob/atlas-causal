@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-the-british-residency-in-kabul",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510538",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of the British Residency in Kabul"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510538"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of the British Residency in Kabul\", revision 1370746659"
+    }
+  ],
+  "title": "Siege of the British Residency in Kabul",
+  "summary": "The English Wikipedia article \"Siege of the British Residency in Kabul\", at revision 1370746659, opens: \"The siege of the British Residency in Kabul was a military engagement of the Second Anglo-Afghan War. The British resident, Sir Louis Cavagnari, and his escort were massacred after an 8-hour siege by mutinous Afghan troops inside their Residency in Kabul. This event triggered the second phase of the war, during which an Anglo-Indian army invaded Afghanistan and captured Kabul.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510538, imported by tools/import/wikidata.mjs. The item's own description reads \"1879 battle of the Second Anglo-Afghan War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879,
+    "date": "1879-09-03"
+  },
+  "place": "kabul",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-anglo-afghan-war"
+}

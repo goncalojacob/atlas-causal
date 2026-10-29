@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "transformation-of-the-ottoman-empire",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q28220521",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Transformation of the Ottoman Empire"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q28220521"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Transformation of the Ottoman Empire\", revision 1381507282"
+    }
+  ],
+  "title": "Transformation of the Ottoman Empire",
+  "summary": "The English Wikipedia article \"Transformation of the Ottoman Empire\", at revision 1381507282, opens: \"The transformation of the Ottoman Empire, also known as the Era of Transformation, constitutes a period in the history of the Ottoman Empire from c. 1550 to c. 1700, spanning roughly from the end of the reign of Suleiman the Magnificent to the Treaty of Karlowitz at the conclusion of the War of the Holy League. This period was characterized by numerous dramatic political, social, and economic changes, which resulted in the empire shifting from an expansionist, patrimonial state into a bureaucratic empire based on an ideology of upholding justice and acting as the protector of Sunni Islam. These changes were in large part prompted by a series of political and economic crises in the late 16th and early 17th centuries, resulting from inflation, warfare, and political factionalism. Yet despite these crises the empire remained strong both politically and economically, and continued to adapt to the challenges of a changing world. The 17th century was once characterized as a period of decline for the Ottomans, but since the 1980s historians of the Ottoman Empire have increasingly rejected that characterization, identifying it instead as a period of crisis, adaptation, and transformation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28220521, imported by tools/import/wikidata.mjs. The item's own description reads \"Ottoman Empire from 1566 to 1703\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1550,
+    "end": 1700
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

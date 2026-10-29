@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dzungar-conquest-of-tibet",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q21660591",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Dzungar conquest of Tibet"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q21660591"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dzungar conquest of Tibet\", revision 1374483738"
+    }
+  ],
+  "title": "Dzungar conquest of Tibet",
+  "summary": "The English Wikipedia article \"Dzungar conquest of Tibet\", at revision 1374483738, opens: \"The Dzungar conquest of Tibet or the Dzungar conquest of Central Tibet was a military conflict fought between the Dzungar Khanate and the Khoshut Khanate, supported by the Qing dynasty, from 1716 to 1720. The conquest by the Dzungars was the last Mongol invasion of Tibet, as the Dzungars invaded the region over the Qing influence of Tibet. The conquest was led by Tseren Dhondup, under the authority of his brother and the ruler of the Dzungar Khanate, Tsewang Rabtan Khan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q21660591, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflict in China, 1716–1720\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1716,
+    "end": 1716
+  },
+  "place": "tibet-q17252",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": [],
+  "parent": "dzungar-qing-wars"
+}

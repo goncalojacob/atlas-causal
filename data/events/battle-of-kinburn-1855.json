@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-kinburn-1855",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2986186",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Kinburn (1855)",
+    "pt": "Batalha de Kinburn (1855)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2986186"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kinburn (1855)\", revision 1370445410"
+    }
+  ],
+  "title": "Battle of Kinburn (1855)",
+  "summary": "The English Wikipedia article \"Battle of Kinburn (1855)\", at revision 1370445410, opens: \"The Battle of Kinburn, a combined land-naval engagement during the final stage of the Crimean War, took place on the tip of the Kinburn Peninsula on 17 October 1855. During the battle a combined fleet of vessels from the French Navy and the British Royal Navy bombarded Russian coastal fortifications after an Anglo-French ground force had besieged them. Three French ironclad batteries carried out the main attack, which saw the main Russian fortress destroyed in an action that lasted about three hours.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2986186, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in 1855\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1855,
+    "end": 1855,
+    "date": "1855-10-17"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "crimean-war"
+}

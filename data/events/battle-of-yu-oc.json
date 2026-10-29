@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-yu-oc",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890423",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Yu Oc"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890423"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Yu Oc\", revision 1370277260"
+    }
+  ],
+  "title": "Battle of Yu Oc",
+  "summary": "The English Wikipedia article \"Battle of Yu Oc\", at revision 1370277260, opens: \"The Battle of Yu Oc was a French victory during the Sino-French War. The battle was fought to relieve the French garrison of Tuyên Quang, under siege by the Tang Jingsong's Yunnan Army and Liu Yongfu's Black Flag Army. The French commander at Yu Oc, Colonel Jacques Duchesne, would later distinguish himself as the conqueror of Madagascar (1895).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890423, imported by tools/import/wikidata.mjs. The item's own description reads \"1884 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1884,
+    "end": 1884,
+    "date": "1884-11-19"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "sino-french-war"
+}

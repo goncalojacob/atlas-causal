@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "danube-vilayet",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2302427",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Danube vilayet"
+  },
+  "sources": [],
+  "names": [
+    "Danube Vilayet"
+  ],
+  "where": {
+    "lon": 25,
+    "lat": 43,
+    "precision": "region",
+    "label": "Danube vilayet"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

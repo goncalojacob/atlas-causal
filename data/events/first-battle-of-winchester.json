@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-winchester",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2106454",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "First Battle of Winchester"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2106454"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Winchester\", revision 1380715082"
+    }
+  ],
+  "title": "First Battle of Winchester",
+  "summary": "The English Wikipedia article \"First Battle of Winchester\", at revision 1380715082, opens: \"The First Battle of Winchester, fought on May 25, 1862, in and around Frederick County, Virginia, and Winchester, Virginia, was a major victory in Confederate Army Maj. Gen. Thomas J. \"Stonewall\" Jackson's Campaign through the Shenandoah Valley during the American Civil War. Jackson enveloped the right flank of the Union Army under Maj. Gen. Nathaniel P. Banks and pursued it as it fled across the Potomac River into Maryland. Jackson's success in achieving force concentration early in the fighting allowed him to secure a more decisive victory which had escaped him in previous battles of the campaign.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2106454, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 American Civil War engagement in Virginia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-05-25"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

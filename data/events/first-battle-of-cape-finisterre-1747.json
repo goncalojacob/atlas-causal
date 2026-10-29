@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-cape-finisterre-1747",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q695673",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "First Battle of Cape Finisterre (1747)",
+    "pt": "Primeira Batalha do Cabo Finisterra (1747)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q695673"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Cape Finisterre (1747)\", revision 1370618508"
+    }
+  ],
+  "title": "First Battle of Cape Finisterre (1747)",
+  "summary": "The English Wikipedia article \"First Battle of Cape Finisterre (1747)\", at revision 1370618508, opens: \"The First Battle of Cape Finisterre was waged during the War of the Austrian Succession. It refers to the attack by 14 British ships of the line under Admiral George Anson against a French 30-ship convoy commanded by Admiral de la Jonquière. The French were attempting to protect their merchant ships by using warships with them. The British captured 4 ships of the line, 2 frigates, and 7 merchantmen, in a five-hour battle in the Atlantic Ocean off Cape Finisterre in northwest Spain. One French frigate, one French East India Company warship, and the other merchantmen escaped.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q695673, imported by tools/import/wikidata.mjs. The item's own description reads \"1747 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1747,
+    "end": 1747,
+    "date": "1747-05-14"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-austrian-succession"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-navarino-1572",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q116006964",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Navarino (1572)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q116006964"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Navarino (1572)\", revision 1373903262"
+    }
+  ],
+  "title": "Siege of Navarino (1572)",
+  "summary": "The English Wikipedia article \"Siege of Navarino (1572)\", at revision 1373903262, opens: \"The siege of Navarino was a military engagement between the Holy League fleet, led by John of Austria, who besieged the Ottoman garrison in Navarino as part of an operation to destroy the Ottoman fleet built after the Battle of Lepanto. The operation ended in failure by a variety of reasons, leading to the withdrawal of the Christian armada. Miguel de Cervantes, the famous Spanish writer, participated in the siege of Navarino.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q116006964, imported by tools/import/wikidata.mjs. The item's own description reads \"1572 military engagement between Holy league and Ottomans\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1572,
+    "end": 1572,
+    "date": "1572-09-21",
+    "endDate": "1572-10-07"
+  },
+  "place": "pylos",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-venetian-war-1570-1573"
+}

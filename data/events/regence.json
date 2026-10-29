@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "regence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1362712",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Régence"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1362712"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Régence\", revision 1360237585"
+    }
+  ],
+  "title": "Régence",
+  "summary": "The English Wikipedia article \"Régence\", at revision 1360237585, opens: \"The Régence was the period in French history between 1715 and 1723 when King Louis XV was considered a minor and the country was instead governed by Philippe II, Duke of Orléans as prince regent. This was not the only regency in French history, but the name is nevertheless associated with this period.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1362712, imported by tools/import/wikidata.mjs. The item's own description reads \"period in French history between 1715 and 1723\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1715,
+    "end": 1723,
+    "date": "1715-09-01",
+    "endDate": "1723-02-15"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-castelfidardo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1887932",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Castelfidardo",
+    "pt": "Batalha de Castelfidardo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1887932"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Castelfidardo\", revision 1378919366"
+    }
+  ],
+  "title": "Battle of Castelfidardo",
+  "summary": "The English Wikipedia article \"Battle of Castelfidardo\", at revision 1378919366, opens: \"The Battle of Castelfidardo was fought on 18 September 1860 near the town of Castelfidardo in the Marche region. It was an engagement between the Royal Sardinian Army and the army of the Papal States during the Piedmontese invasion of the Papal States. The battle resulted in a Sardinian victory, preventing the Papal forces from reaching the fortress of Ancona and leading to the subsequent annexation of the Marche and Umbria into the Kingdom of Sardinia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1887932, imported by tools/import/wikidata.mjs. The item's own description reads \"1860 battle of the Risorgimento fought between the Piedmontese and Papal armies\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1860,
+    "end": 1860,
+    "date": "1860-09-18",
+    "endDate": "1860-09-18"
+  },
+  "place": "castelfidardo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "taiyuan-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7676655",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Taiyuan massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7676655"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Taiyuan massacre\", revision 1356171905"
+    }
+  ],
+  "title": "Taiyuan massacre",
+  "summary": "The English Wikipedia article \"Taiyuan massacre\", at revision 1356171905, opens: \"The Taiyuan massacre took place during the Boxer Rebellion, July 9, 1900, in Taiyuan, Shanxi province, North China. Sources recall that they were killed in the presence of Yuxian, governor of Shanxi. 44 people were killed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7676655, imported by tools/import/wikidata.mjs. The item's own description reads \"massacre in Shanxi, China on July 9, 1900\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-07-09"
+  },
+  "place": "taiyuan",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "boxer-rebellion"
+}

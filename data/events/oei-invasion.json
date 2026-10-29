@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "oei-invasion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q701121",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Ōei Invasion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q701121"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ōei Invasion\", revision 1370751761"
+    }
+  ],
+  "title": "Ōei Invasion",
+  "summary": "The English Wikipedia article \"Ōei Invasion\", at revision 1370751761, opens: \"The Ōei Invasion , also known as the Kihae Expedition, was a 1419 Joseon invasion of Tsushima Island, which is located in the middle of the Tsushima Strait between the Korean Peninsula and Kyushu.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q701121, imported by tools/import/wikidata.mjs. The item's own description reads \"1419 Joseon invasion of Tsushima\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1419,
+    "end": 1419,
+    "date": "1419-06-20",
+    "endDate": "1419-07-03"
+  },
+  "place": "tsushima-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "father-le-loutre-s-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3118940",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Father Le Loutre's War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3118940"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Father Le Loutre's War\", revision 1377424164"
+    }
+  ],
+  "title": "Father Le Loutre's War",
+  "summary": "The English Wikipedia article \"Father Le Loutre's War\", at revision 1377424164, opens: \"Father Le Loutre's War (1749–1755), also known as the Indian War, the Mi'kmaq War and the Anglo-Mi'kmaq War, took place in the years between King George's War and the French and Indian War in Acadia and Nova Scotia.c On one side of the conflict, the British and New England colonists were led by British officer Charles Lawrence and New England Ranger John Gorham. On the other side, Father Jean-Louis Le Loutre led the Mi'kmaq and the Acadia militia in guerrilla warfare against Protestant settlers and British forces. At the outbreak of the war there were an estimated 2500 Mi'kmaq and 12,000 Acadians in the region.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3118940, imported by tools/import/wikidata.mjs. The item's own description reads \"colonial war between Britain and France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1749,
+    "end": 1755
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

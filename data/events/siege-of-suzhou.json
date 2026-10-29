@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-suzhou",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q137804913",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Suzhou"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q137804913"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Suzhou\", revision 1374154409"
+    }
+  ],
+  "title": "Siege of Suzhou",
+  "summary": "The English Wikipedia article \"Siege of Suzhou\", at revision 1374154409, opens: \"The Battle of Suzhou was fought on 6 December 1863 between the Anglo-Qing army and the Taiping army. This battle was also for known the Suzhou Massacre, in which by the command of Li Hongzhang, 10,000 rebels were executed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q137804913, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-09",
+    "endDate": "1863-12-05"
+  },
+  "place": "suzhou",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "taiping-rebellion"
+}

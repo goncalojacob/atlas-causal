@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "chamchamal",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q870475",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Chamchamal",
+    "pt": "Chamchamal"
+  },
+  "sources": [],
+  "names": [
+    "Chamchamal"
+  ],
+  "where": {
+    "lon": 44.834166666667,
+    "lat": 35.533333333333,
+    "precision": "city",
+    "label": "Chamchamal"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

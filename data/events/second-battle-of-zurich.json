@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-zurich",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q233426",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Second Battle of Zurich",
+    "pt": "Segunda Batalha de Zurique"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q233426"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Zurich\", revision 1370736748"
+    }
+  ],
+  "title": "Second Battle of Zurich",
+  "summary": "The English Wikipedia article \"Second Battle of Zurich\", at revision 1370736748, opens: \"The Second Battle of Zurich was a key victory by the Republican French army in Switzerland led by André Masséna over a Russian force commanded by Alexander Rimsky-Korsakov near Zürich, as it broke the stalemate that had resulted from the First Battle of Zurich three months earlier and led to the withdrawal of Russia from the Second Coalition. Masséna took full advantage of the incompetence of the Russian commander who had accidentally scattered his forces, and launched a bold assault. Most of the fighting took place on both banks of the river Limmat up to the gates of Zürich, and within the city itself. It was arguably the most significant French victory of 1799.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q233426, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 battle during the War of the Second Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-09-25",
+    "endDate": "1799-09-26"
+  },
+  "place": "zurich",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "great-locomotive-chase",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q509337",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Great Locomotive Chase"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q509337"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Locomotive Chase\", revision 1382143093"
+    }
+  ],
+  "title": "Great Locomotive Chase",
+  "summary": "The English Wikipedia article \"Great Locomotive Chase\", at revision 1382143093, opens: \"The Great Locomotive Chase was a military raid that occurred April 12, 1862, in northern Georgia during the American Civil War. Volunteers from the Union Army, led by civilian scout James J. Andrews, commandeered a steam locomotive, The General, and took it northward toward Chattanooga, Tennessee, doing as much damage as possible to the vital Western and Atlantic Railroad (W&A) line from Atlanta to Chattanooga as they went. They were pursued by Confederate forces at first on foot, and later on a succession of locomotives, including The Texas, for 87 miles (140 km).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q509337, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 Raid during the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-04-12"
+  },
+  "place": "georgia-u-s-state",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

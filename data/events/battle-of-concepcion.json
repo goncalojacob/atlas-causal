@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-concepcion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1315700",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Concepción",
+    "pt": "Batalha de Concepción"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1315700"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Concepción\", revision 1378726203"
+    }
+  ],
+  "title": "Battle of Concepción",
+  "summary": "The English Wikipedia article \"Battle of Concepción\", at revision 1378726203, opens: \"The battle of Concepción was fought on October 28, 1835, between Mexican troops under Colonel Domingo Ugartechea and Texian patriots led by James Bowie and James Fannin. The 30-minute engagement, which historian J. R. Edmondson describes as \"the first major engagement of the Texas Revolution\", occurred on the grounds of Mission Concepción, 2 miles (3.2 km) south of now Downtown San Antonio in the U.S. state of Texas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1315700, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the Texas Revolution, October 28, 1835\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1835,
+    "date": "1835-10-28"
+  },
+  "place": "texas",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

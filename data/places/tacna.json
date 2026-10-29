@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "tacna",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q272795",
+  "sitelinks": {
+    "count": 54,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Tacna",
+    "pt": "Tacna"
+  },
+  "sources": [],
+  "names": [
+    "Tacna"
+  ],
+  "where": {
+    "lon": -70.248333333333,
+    "lat": -18.055555555556,
+    "precision": "city",
+    "label": "Tacna"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

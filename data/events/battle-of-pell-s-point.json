@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-pell-s-point",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q63313",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Pell's Point"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q63313"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pell's Point\", revision 1380956096"
+    }
+  ],
+  "title": "Battle of Pell's Point",
+  "summary": "The English Wikipedia article \"Battle of Pell's Point\", at revision 1380956096, opens: \"This combat engagement fought, is variously known in American, British, and Hessian sources as the Battle of Pelham, Battle of Pelham Manor, Battle of Pell's Neck, Battle of Rodman's Neck, Battle of Pell's Point, or by other geographically related names. This day-long action was fought by American, British and Hessian troops during the New York and New Jersey campaign of the American Revolutionary War. The conflict took place in an area of the Manor of Pelham, covering what is now part of Pelham Bay Park in the Bronx, New York City, and culminating in what today are the communities of Pelham Manor, Pelham and New Rochelle in Westchester County, New York.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q63313, imported by tools/import/wikidata.mjs. The item's own description reads \"1776 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1776,
+    "end": 1776,
+    "date": "1776-10-18"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

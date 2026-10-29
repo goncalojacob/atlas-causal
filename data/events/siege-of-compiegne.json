@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-compiegne",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q668577",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Compiègne",
+    "pt": "Cerco de Compiègne"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q668577"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Compiègne\", revision 1370740333"
+    }
+  ],
+  "title": "Siege of Compiègne",
+  "summary": "The English Wikipedia article \"Siege of Compiègne\", at revision 1370740333, opens: \"The siege of Compiègne (1430) was conducted by Duke Philip III of Burgundy after the town of Compiègne had refused to transfer allegiance to him under the terms of a treaty with Charles VII of France. The siege is perhaps best known for Joan of Arc's capture by Burgundian troops while accompanying an Armagnac force during a skirmish outside the town on 23 May 1430. Although this was otherwise a minor siege, both politically and militarily, and ultimately ended in a defeat for the Burgundians, the capture of Joan of Arc was an important event of the Hundred Years' War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q668577, imported by tools/import/wikidata.mjs. The item's own description reads \"1430 Was Joan of Arc's final military action.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1430,
+    "end": 1430,
+    "date": "1430-05-29",
+    "endDate": "1430-11-06"
+  },
+  "place": "compiegne",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

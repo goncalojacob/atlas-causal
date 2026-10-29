@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "machias-maine",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2725736",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Machias, Maine"
+  },
+  "sources": [],
+  "names": [
+    "Machias",
+    "Machias, Maine"
+  ],
+  "where": {
+    "lon": -67.466666666667,
+    "lat": 44.683333333333,
+    "precision": "city",
+    "label": "Machias, Maine"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

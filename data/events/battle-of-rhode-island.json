@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-rhode-island",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2575889",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Rhode Island",
+    "pt": "Batalha de Rhode Island"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2575889"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Rhode Island\", revision 1382129861"
+    }
+  ],
+  "title": "Battle of Rhode Island",
+  "summary": "The English Wikipedia article \"Battle of Rhode Island\", at revision 1382129861, opens: \"The Battle of Rhode Island took place on August 29, 1778. Continental Army and militia forces commanded by Major-General John Sullivan had been on Aquidneck Island besieging British forces occupying Newport, Rhode Island. They chose to lift the siege and planned to withdraw to the northern part of Aquidneck Island. The British then sortied, supported by recently arrived Royal Navy ships, and attacked the retreating Americans. The battle ended inconclusively, but Continental forces then chose to withdraw further to the mainland, leaving Aquidneck Island including Newport in British hands. The soldiers in combat were about 4,875 in the American army and 2,950 in the British army, for a total of 7,825 making it the largest battle in New England based on numbers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2575889, imported by tools/import/wikidata.mjs. The item's own description reads \"1778 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1778,
+    "end": 1778,
+    "date": "1778-08-29"
+  },
+  "place": "aquidneck-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

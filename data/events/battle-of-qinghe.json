@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-qinghe",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q30672268",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Qinghe"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q30672268"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Qinghe\", revision 1370272511"
+    }
+  ],
+  "title": "Battle of Qinghe",
+  "summary": "The English Wikipedia article \"Battle of Qinghe\", at revision 1370272511, opens: \"The Battle of Qinghe was a military conflict between the Later Jin dynasty and the Ming dynasty in the summer of 1618. The battle ended with the Later Jin's takeover of Qinghe despite suffering heavy casualties.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q30672268, imported by tools/import/wikidata.mjs. The item's own description reads \"1618 military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1618,
+    "end": 1618
+  },
+  "place": "qinghe-district-tieling",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "transition-from-ming-to-qing"
+}

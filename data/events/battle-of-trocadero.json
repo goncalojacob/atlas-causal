@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-trocadero",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q104541845",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Trocadero"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q104541845"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Trocadero\", revision 1379065642"
+    }
+  ],
+  "title": "Battle of Trocadero",
+  "summary": "The English Wikipedia article \"Battle of Trocadero\", at revision 1379065642, opens: \"The Battle of Trocadero, fought on 31 August 1823, was a significant battle in France's expedition in support of the Spanish King Ferdinand VII. The French defeated the Spanish liberal forces and restored Ferdinand to absolute rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q104541845, imported by tools/import/wikidata.mjs. The item's own description reads \"1823 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1823,
+    "end": 1823,
+    "date": "1823-08-31"
+  },
+  "place": "isla-del-trocadero",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

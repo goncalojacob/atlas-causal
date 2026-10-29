@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "beaumont-en-argonne",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q473017",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Beaumont-en-Argonne",
+    "pt": "Beaumont-en-Argonne"
+  },
+  "sources": [],
+  "names": [
+    "Beaumont-en-Argonne"
+  ],
+  "where": {
+    "lon": 5.0575,
+    "lat": 49.538333333333,
+    "precision": "city",
+    "label": "Beaumont-en-Argonne"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

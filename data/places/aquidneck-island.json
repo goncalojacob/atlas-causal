@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "aquidneck-island",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1780007",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Aquidneck Island"
+  },
+  "sources": [],
+  "names": [
+    "Aquidneck Island"
+  ],
+  "where": {
+    "lon": -71.264722222222,
+    "lat": 41.555555555556,
+    "precision": "region",
+    "label": "Aquidneck Island"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

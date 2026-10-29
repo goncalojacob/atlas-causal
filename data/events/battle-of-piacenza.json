@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-piacenza",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q571675",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Piacenza",
+    "pt": "Batalha de Placência (1746)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q571675"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Piacenza\", revision 1379530111"
+    }
+  ],
+  "title": "Battle of Piacenza",
+  "summary": "The English Wikipedia article \"Battle of Piacenza\", at revision 1379530111, opens: \"The Battle of Piacenza or Battle of St. Lazaro was fought between an Austrian army and a Bourbon army near Piacenza, in Northern Italy during the War of the Austrian Succession. The Bourbon army consisted of a large Spanish force commanded by Jean Bonaventure du Mont, comte de Gages and a somewhat smaller French corps led by Jean-Baptiste Francois des Marets, marquis de Maillebois. Gages' command included allied Neapolitan and Genoese soldiers. The Austrian army was commanded by Josef Wenzel, Prince of Liechtenstein. The Bourbon generals determined to attack because the Austrians were about to be reinforced by a Sardinian corps. The Franco-Spanish assault was anticipated by the Austrian generals and it failed with heavy losses. The defeat caused the Bourbon army to retreat to Genoa, though it had to fight its way out at the subsequent Battle of Rottofreddo. Louis-Joseph de Montcalm was among the notable French combatants.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q571675, imported by tools/import/wikidata.mjs. The item's own description reads \"1746 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1746,
+    "end": 1746,
+    "date": "1746-06-16"
+  },
+  "place": "piacenza",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-austrian-succession"
+}

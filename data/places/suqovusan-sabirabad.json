@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "suqovusan-sabirabad",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4908377",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Suqovuşan, Sabirabad"
+  },
+  "sources": [],
+  "names": [
+    "Suqovuşan",
+    "Suqovuşan, Sabirabad"
+  ],
+  "where": {
+    "lon": 48.49962299820288,
+    "lat": 40.00798910781111,
+    "precision": "city",
+    "label": "Suqovuşan, Sabirabad"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

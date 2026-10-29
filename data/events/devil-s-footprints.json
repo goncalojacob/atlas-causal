@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "devil-s-footprints",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1478559",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Devil's Footprints",
+    "pt": "Pegadas do diabo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1478559"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Devil's Footprints\", revision 1370672273"
+    }
+  ],
+  "title": "Devil's Footprints",
+  "summary": "The English Wikipedia article \"Devil's Footprints\", at revision 1370672273, opens: \"The Devil's Footprints was a phenomenon that occurred during February 1855 around the Exe Estuary in east and south Devon, England. After a heavy snowfall, trails of hoof-like marks appeared overnight in the snow covering a total distance of some 40 to 100 miles. The footprints were so called because some persons suggested that they were the tracks of Satan and made comparisons to a cloven hoof. Many theories have been made to explain the incident, and some aspects of its veracity have also been questioned.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1478559, imported by tools/import/wikidata.mjs. The item's own description reads \"Trails of footmarks appeared in Feb 1855\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1855,
+    "end": 1855,
+    "date": "1855-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

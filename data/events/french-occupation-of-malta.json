@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "french-occupation-of-malta",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2984282",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "French occupation of Malta",
+    "pt": "Malta sob Ocupação Francesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2984282"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French occupation of Malta\", revision 1364796652"
+    }
+  ],
+  "title": "French occupation of Malta",
+  "summary": "The English Wikipedia article \"French occupation of Malta\", at revision 1364796652, opens: \"The island of Malta was occupied by France from 1798 to 1800. The Knights Hospitaller surrendered to Napoleon Bonaparte following the French landing in June 1798. In Malta, the French established a constitutional tradition in Maltese history, granted free education for all, and theoretically established freedom of the press, although only the pro-French newspaper Journal de Malte was actually published during the occupation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2984282, imported by tools/import/wikidata.mjs. The item's own description reads \"French occupation of Malta (1798-1800)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1800,
+    "date": "1798-06-10",
+    "endDate": "1800-09-07"
+  },
+  "place": "french-first-republic",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

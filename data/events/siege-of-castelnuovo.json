@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-castelnuovo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2621537",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Castelnuovo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2621537"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Castelnuovo\", revision 1380198635"
+    }
+  ],
+  "title": "Siege of Castelnuovo",
+  "summary": "The English Wikipedia article \"Siege of Castelnuovo\", at revision 1380198635, opens: \"The siege of Castelnuovo was an engagement during the Ottoman-Habsburg struggle for control of the Mediterranean, which took place in July 1539 at the walled town of Castelnuovo, present-day Herceg Novi, Montenegro. Castelnuovo had been conquered by elements of various Spanish tercios the year before during the failed campaign of the Holy League against the Ottoman Empire in Eastern Mediterranean waters. The walled town was besieged by land and sea by a powerful Ottoman army under Hayreddin Barbarossa, who offered an honourable surrender to the defenders. These terms were rejected by the Spanish commanding officer Francisco de Sarmiento and his captains even though they knew that the Holy League's fleet, defeated at the Battle of Preveza, could not relieve them. During the siege, Barbarossa's army suffered heavy losses due to the stubborn resistance of Sarmiento's men. Even the Venetian refused the promised naval link to Castelnuovo with the supplies and reinforcements; after a general troop parliament, the commanding officer Francisco de Sarmiento asked his captains what his answer should be to Barbarossa's offer to surrender. The captains responded: \"Que vengan cuando quieran\". However, Castelnuovo eventually fell into Ottoman hands and almost all the Spanish defenders, including Sarmiento, were killed. The loss of the town ended the Christian attempt to regain control of the Eastern Mediterranean. The courage displayed by the Old Tercio of Naples during this last stand, however, was praised and admired throughout Europe and was the subject of numerous poems and songs.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2621537, imported by tools/import/wikidata.mjs. The item's own description reads \"1539 siege during the 1515–1577 Spanish-Ottoman War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1539,
+    "end": 1539,
+    "date": "1539-07-18",
+    "endDate": "1539-08-06"
+  },
+  "place": "herceg-novi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

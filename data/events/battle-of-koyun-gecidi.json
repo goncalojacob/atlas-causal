@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-koyun-gecidi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q65557886",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Koyun Gecidi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q65557886"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Koyun Gecidi\", revision 1377534639"
+    }
+  ],
+  "title": "Battle of Koyun Gecidi",
+  "summary": "The English Wikipedia article \"Battle of Koyun Gecidi\", at revision 1377534639, opens: \"The Battle of Koyun Gecidi was a major battle during the Ottoman–Safavid War (1578–1590). The battle took place on September 9, 1578, and Ottoman victory achieved in this battle opened the way to Shirvan. The battle took place at the Koyun Gecidi crossing on the banks of the Alazani (Qanıq) River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q65557886, imported by tools/import/wikidata.mjs. The item's own description reads \"1578 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1578,
+    "end": 1578,
+    "date": "1578-09-09"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-safavid-war-1578-1590"
+}

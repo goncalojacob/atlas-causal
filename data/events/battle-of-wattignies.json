@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-wattignies",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1059732",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Wattignies",
+    "pt": "Batalha de Wattignies"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1059732"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wattignies\", revision 1370276745"
+    }
+  ],
+  "title": "Battle of Wattignies",
+  "summary": "The English Wikipedia article \"Battle of Wattignies\", at revision 1370276745, opens: \"The Battle of Wattignies saw a French army commanded by Jean-Baptiste Jourdan attack a Coalition army directed by Prince Josias of Saxe-Coburg-Saalfeld. After two days of combat Jourdan's troops compelled the Habsburg covering force led by François Sébastien Charles Joseph de Croix, Count of Clerfayt to withdraw. The War of the First Coalition victory allowed the French to raise the siege of Maubeuge. At a time when failed generals were often executed or imprisoned, Jourdan had to endure interference from Lazare Carnot from the Committee of Public Safety. The village, renamed Wattignies-la-Victoire in honor of the important success, is located 9 kilometres (6 mi) southeast of Maubeuge.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1059732, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 battle during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-10-16"
+  },
+  "place": "maubeuge",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}
