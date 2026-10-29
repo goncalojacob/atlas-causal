@@ -11,6 +11,15 @@
         }
       ]
     },
+    "albanian-venetian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "anfa-expedition-1468": {
       "from": "git",
       "versions": [
@@ -71,6 +80,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-dornach": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -578,6 +596,15 @@
         }
       ]
     },
+    "mad-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "moroccan-portuguese-conflicts": {
       "from": "git",
       "versions": [
@@ -916,12 +943,30 @@
         }
       ]
     },
+    "treaty-of-leipzig": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-lodi": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-melno": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

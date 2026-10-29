@@ -425,7 +425,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 2,
+      "degree": 3,
       "id": "adriatic-sea",
       "kind": "place",
       "names": [
@@ -1703,7 +1703,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "antwerp",
       "kind": "place",
       "names": [
@@ -3165,6 +3165,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "baltic-sea",
+      "kind": "place",
+      "names": [
+        "Baltic Sea",
+        "Mar Báltico"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -4673,7 +4701,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "bern",
       "kind": "place",
       "names": [
@@ -4876,6 +4904,33 @@
       "kind": "place",
       "names": [
         "Biskra"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "bitonto",
+      "kind": "place",
+      "names": [
+        "Bitonto"
       ],
       "origin": {
         "tool": "wikidata"
@@ -5983,6 +6038,33 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "brienne-le-chateau",
+      "kind": "place",
+      "names": [
+        "Brienne-le-Château"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -8391,6 +8473,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "chateau-thierry",
+      "kind": "place",
+      "names": [
+        "Château-Thierry"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "chatham-kent",
@@ -9097,6 +9206,34 @@
       "kind": "place",
       "names": [
         "Cieszyn"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "city-of-westminster",
+      "kind": "place",
+      "names": [
+        "City of Westminster",
+        "Cidade de Westminster"
       ],
       "origin": {
         "tool": "wikidata"
@@ -11680,6 +11817,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "dornach",
+      "kind": "place",
+      "names": [
+        "Dornach"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "dorsten",
@@ -12902,6 +13066,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "erfurt",
+      "kind": "place",
+      "names": [
+        "Erfurt"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -15142,7 +15333,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "gdansk",
       "kind": "place",
       "names": [
@@ -16066,6 +16257,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "greater-poland",
+      "kind": "place",
+      "names": [
+        "Greater Poland",
+        "Grande Polónia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -16137,6 +16356,33 @@
         "Greenville",
         "Greenville, Indiana",
         "Greenville (Indiana)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "grenoble",
+      "kind": "place",
+      "names": [
+        "Grenoble"
       ],
       "origin": {
         "tool": "wikidata"
@@ -17712,7 +17958,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 5,
+      "degree": 6,
       "id": "holy-roman-empire-q12548",
       "kind": "place",
       "names": [
@@ -23677,7 +23923,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 2,
+      "degree": 3,
       "id": "leipzig",
       "kind": "place",
       "names": [
@@ -24012,6 +24258,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "lidzbark-warminski",
+      "kind": "place",
+      "names": [
+        "Lidzbark Warmiński"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "ligny",
@@ -24289,7 +24562,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 18,
+      "degree": 19,
       "id": "london",
       "kind": "place",
       "names": [
@@ -24573,7 +24846,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "lubeck-q2843",
       "kind": "place",
       "names": [
@@ -24992,6 +25265,33 @@
       "kind": "place",
       "names": [
         "Lydenburg"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "lyon",
+      "kind": "place",
+      "names": [
+        "Lyon"
       ],
       "origin": {
         "tool": "wikidata"
@@ -26697,6 +26997,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "me-no-grudziadz-county",
+      "kind": "place",
+      "names": [
+        "Mełno",
+        "Mełno, Grudziądz County"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -28074,6 +28402,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "montebello-della-battaglia",
+      "kind": "place",
+      "names": [
+        "Montebello della Battaglia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -28356,7 +28711,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 11,
+      "degree": 12,
       "id": "moscow",
       "kind": "place",
       "names": [
@@ -30506,7 +30861,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 7,
+      "degree": 8,
       "id": "north-sea",
       "kind": "place",
       "names": [
@@ -32142,7 +32497,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 27,
+      "degree": 28,
       "id": "paris",
       "kind": "place",
       "names": [
@@ -33469,6 +33824,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "polanow",
+      "kind": "place",
+      "names": [
+        "Polanów"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -34291,6 +34673,33 @@
       "kind": "place",
       "names": [
         "Pravdinsk"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "preobrazhenskoye",
+      "kind": "place",
+      "names": [
+        "Preobrazhenskoye"
       ],
       "origin": {
         "tool": "wikidata"
@@ -36200,7 +36609,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "romania-q218",
       "kind": "place",
       "names": [
@@ -40372,6 +40781,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "southwold",
+      "kind": "place",
+      "names": [
+        "Southwold"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -40407,7 +40843,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 5,
+      "degree": 6,
       "id": "spain-q29",
       "kind": "place",
       "names": [
@@ -40435,7 +40871,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "spanish-empire",
       "kind": "place",
       "names": [
@@ -40946,6 +41382,33 @@
         "St. Simons",
         "St. Simons, Georgia",
         "St. Simons (Geórgia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "stadtlohn",
+      "kind": "place",
+      "names": [
+        "Stadtlohn"
       ],
       "origin": {
         "tool": "wikidata"
@@ -44167,6 +44630,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "turckheim",
+      "kind": "place",
+      "names": [
+        "Turckheim"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 4,
       "id": "turin",
@@ -46054,7 +46544,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "warsaw",
       "kind": "place",
       "names": [

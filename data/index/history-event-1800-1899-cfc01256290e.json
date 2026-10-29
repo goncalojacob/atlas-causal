@@ -119,6 +119,15 @@
         }
       ]
     },
+    "1854-broad-street-cholera-outbreak": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1854-macedonian-rebellion": {
       "from": "git",
       "versions": [
@@ -1174,6 +1183,15 @@
         }
       ]
     },
+    "austro-polish-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "austro-prussian-war": {
       "from": "git",
       "versions": [
@@ -1216,6 +1234,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "balmis-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1895,6 +1922,15 @@
         }
       ]
     },
+    "battle-of-brienne": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-bronkhorstspruit": {
       "from": "git",
       "versions": [
@@ -2179,6 +2215,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-chateau-thierry-1814": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2958,6 +3003,15 @@
         }
       ]
     },
+    "battle-of-heilsberg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-heligoland-1864": {
       "from": "git",
       "versions": [
@@ -3495,6 +3549,15 @@
         }
       ]
     },
+    "battle-of-lubeck": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-lundy-s-lane": {
       "from": "git",
       "versions": [
@@ -3750,6 +3813,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-montebello-1859": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4760,6 +4832,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-tarutino": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5924,6 +6005,15 @@
         }
       ]
     },
+    "canut-revolts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "capture-of-bien-hoa": {
       "from": "git",
       "versions": [
@@ -6272,6 +6362,15 @@
         }
       ]
     },
+    "congress-of-erfurt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "congress-of-vienna": {
       "from": "git",
       "versions": [
@@ -6326,6 +6425,15 @@
         }
       ]
     },
+    "constitution-of-the-year-x": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "convention-for-the-lease-of-the-liaotung-peninsula": {
       "from": "git",
       "versions": [
@@ -6350,6 +6458,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "convention-of-london-1840": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6623,6 +6740,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "dissolution-of-the-holy-roman-empire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -7070,6 +7196,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "first-battle-of-polotsk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -7762,6 +7897,24 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "greater-poland-uprising-1806": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "greater-poland-uprising-1848": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -11788,6 +11941,15 @@
         }
       ]
     },
+    "third-carlist-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "third-italian-war-of-independence": {
       "from": "git",
       "versions": [
@@ -12092,6 +12254,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "treaty-of-bern": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
