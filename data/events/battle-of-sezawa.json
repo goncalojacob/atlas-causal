@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-sezawa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1806377",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Sezawa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1806377"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sezawa\", revision 1370274128"
+    }
+  ],
+  "title": "Battle of Sezawa",
+  "summary": "The English Wikipedia article \"Battle of Sezawa\", at revision 1370274128, opens: \"The Battle of Sezawa was the first major battle fought by Takeda Shingen in his campaign to gain control of Shinano Province. He took on and defeated a coalition of Shinano daimyō including the leaders of the Suwa, Ogasawara and Murakami clans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1806377, imported by tools/import/wikidata.mjs. The item's own description reads \"1542 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1542,
+    "end": 1542,
+    "date": "1542-03-25"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

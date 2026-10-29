@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "tarbagatay-tarbagataysky-district-republic-of-buryatia",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4451925",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Tarbagatay, Tarbagataysky District, Republic of Buryatia"
+  },
+  "sources": [],
+  "names": [
+    "Tarbagatay",
+    "Tarbagatay, Tarbagataysky District, Republic of Buryatia"
+  ],
+  "where": {
+    "lon": 107.35972222222,
+    "lat": 51.480555555556,
+    "precision": "city",
+    "label": "Tarbagatay, Tarbagataysky District, Republic of Buryatia"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

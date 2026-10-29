@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "sirhind",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2672955",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Sirhind",
+    "pt": "Sirinda-Fategar"
+  },
+  "sources": [],
+  "names": [
+    "Sirhind-Fategarh",
+    "Sirhind",
+    "Sirinda-Fategar"
+  ],
+  "where": {
+    "lon": 76.386002,
+    "lat": 30.62511,
+    "precision": "city",
+    "label": "Sirhind"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

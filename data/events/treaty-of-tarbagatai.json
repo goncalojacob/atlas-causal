@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-tarbagatai",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q10871730",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Tarbagatai"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10871730"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Tarbagatai\", revision 1375585498"
+    }
+  ],
+  "title": "Treaty of Tarbagatai",
+  "summary": "The English Wikipedia article \"Treaty of Tarbagatai\", at revision 1375585498, opens: \"The Treaty of Tarbagatai or Treaty of Chuguchak of 7 October [O.S. 25 September] 1864 was a border protocol between Qing China and the Russian Empire that defined most of the western extent of their border in central Asia, between Outer Mongolia and the Khanate of Kokand. The signatories were, for Russia, Ivan Zakharov, consul-general of Ili, and Ivan Fedorovich Babkov, colonel of the Separate Siberian Corps of the General Staff, and, for China, Ming I, general of Uliastai; Hsi Lin, amban of Tarbagatai; and Bolgosu, Tarbagatai brigade commander. By this agreement, Russia gained about 350,000 square miles (910,000 km2) of territory at the expense of Chinese Xinjiang, and Lake Balkhash went from lying on the border to being entirely surrounded by Russia. It is sometimes numbered among the \"unequal treaties\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10871730, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 border treaty between Qing China and Russian Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864
+  },
+  "place": "tarbagatay-tarbagataysky-district-republic-of-buryatia",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

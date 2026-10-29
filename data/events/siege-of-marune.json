@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-marune",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1964948",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Marune"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1964948"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Marune\", revision 1376565744"
+    }
+  ],
+  "title": "Siege of Marune",
+  "summary": "The English Wikipedia article \"Siege of Marune\", at revision 1376565744, opens: \"The siege of Marune (丸根砦の戦い) was a battle during the Sengoku period of Japan.\nMarune was a frontier fortress in the possession of Oda Nobunaga.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1964948, imported by tools/import/wikidata.mjs. The item's own description reads \"1560 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1560,
+    "end": 1560,
+    "endDate": "1560-05-19"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "battle-of-okehazama"
+}

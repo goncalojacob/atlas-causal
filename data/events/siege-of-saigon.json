@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-saigon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1998999",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Saigon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1998999"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Saigon\", revision 1370744901"
+    }
+  ],
+  "title": "Siege of Saigon",
+  "summary": "The English Wikipedia article \"Siege of Saigon\", at revision 1370744901, opens: \"The siege of Saigon, a two-year siege of the city by the Vietnamese after its capture on 17 February 1859 by a Franco-Spanish flotilla under the command of the French admiral Charles Rigault de Genouilly, was one of the major events of the Cochinchina campaign (1858–1862). Saigon was of great strategic importance, both as the key food-producing area of Vietnam and as the gateway to Cochinchina.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1998999, imported by tools/import/wikidata.mjs. The item's own description reads \"two-year siege of Saigon started with its capture on February 17, 1859 by Franco-Spanish forces\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1860,
+    "end": 1861,
+    "date": "1860-03",
+    "endDate": "1861-02"
+  },
+  "place": "ho-chi-minh-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

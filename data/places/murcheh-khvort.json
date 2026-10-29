@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "murcheh-khvort",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5864296",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Murcheh Khvort"
+  },
+  "sources": [],
+  "names": [
+    "Murcheh Khvort"
+  ],
+  "where": {
+    "lon": 51.47888888888889,
+    "lat": 33.08972222222222,
+    "precision": "city",
+    "label": "Murcheh Khvort"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1586-tensho-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q11442711",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1586 Tenshō earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11442711"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1586 Tenshō earthquake\", revision 1374587191"
+    }
+  ],
+  "title": "1586 Tenshō earthquake",
+  "summary": "The English Wikipedia article \"1586 Tenshō earthquake\", at revision 1374587191, opens: \"The Tenshō earthquake  occurred in Japan on January 18, 1586, at 23:00 local time. This earthquake had an estimated seismic magnitude of 7.9, and an epicenter in Honshu's Chūbu region. It caused an estimated 8,000 fatalities and damaged 10,000 houses across the prefectures of Toyama, Hyōgo, Kyōto, Osaka, Nara, Mie, Aichi, Gifu, Fukui, Ishikawa and Shizuoka. Historical documentation of this earthquake was limited because it occurred during the tumultuous Sengoku period.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11442711, imported by tools/import/wikidata.mjs. The item's own description reads \"Earthquake in Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1586,
+    "end": 1586,
+    "date": "1586-01-18"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

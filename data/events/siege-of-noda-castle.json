@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-noda-castle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1014485",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Noda Castle"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1014485"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Noda Castle\", revision 1381491440"
+    }
+  ],
+  "title": "Siege of Noda Castle",
+  "summary": "The English Wikipedia article \"Siege of Noda Castle\", at revision 1381491440, opens: \"The siege of Noda Castle (野田城の戦い) took place from January to February 1573, between the forces of the Takeda clan, led by Takeda Shingen, against the Tokugawa clan, led by Tokugawa Ieyasu. Along with the Battle of Mikatagahara, it was one of the final battles of Takeda Shingen's career.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1014485, imported by tools/import/wikidata.mjs. The item's own description reads \"1573 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1573,
+    "end": 1573,
+    "date": "1573-01",
+    "endDate": "1573-02"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

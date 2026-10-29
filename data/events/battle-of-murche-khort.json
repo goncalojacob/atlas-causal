@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-murche-khort",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q18205173",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Murche-Khort"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18205173"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Murche-Khort\", revision 1381892835"
+    }
+  ],
+  "title": "Battle of Murche-Khort",
+  "summary": "The English Wikipedia article \"Battle of Murche-Khort\", at revision 1381892835, opens: \"The Battle of Murche-Khort was the last decisive engagement of Nader's campaign to restore Tahmasp II to the Iranian throne. Ashraf Hotak had failed to arrest Nader's advance onto Isfahan at Khwar pass where his ambush was discovered, surrounded and ambushed itself. The battle was fought in an uncharacteristic manner by the Afghans who to some extent sought to replicate their foes tactical systems which had so badly devastated their armies up to this point. Victory opened a clear road south towards Isfahan and the return of Safavid rule for a few brief years before Nader himself would overthrow it In 1736 and appointed himself as Shah, establishing the Afsharid dynasty.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18205173, imported by tools/import/wikidata.mjs. The item's own description reads \"1729 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1729,
+    "end": 1729,
+    "date": "1729-11-12"
+  },
+  "place": "murcheh-khvort",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
