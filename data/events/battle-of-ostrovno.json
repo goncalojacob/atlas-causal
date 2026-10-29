@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-ostrovno",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q903304",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Ostrovno"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q903304"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ostrovno\", revision 1370452419"
+    }
+  ],
+  "title": "Battle of Ostrovno",
+  "summary": "The English Wikipedia article \"Battle of Ostrovno\", at revision 1370452419, opens: \"The Battle of Ostrovno was a military engagement that took place on 25 July 1812, between French forces under the command of King of Naples Joachim Murat and Russian forces under General Ostermann-Tolstoy and ended with the Russian forces retreating from the battlefield.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q903304, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle during the French invasion of Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-07-25",
+    "endDate": "1812-07-27"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-russia"
+}

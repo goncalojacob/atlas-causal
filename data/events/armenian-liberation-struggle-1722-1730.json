@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "armenian-liberation-struggle-1722-1730",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q16399387",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Armenian liberation struggle (1722–1730)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16399387"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Armenian liberation struggle (1722–1730)\", revision 1380369864"
+    }
+  ],
+  "title": "Armenian liberation struggle (1722–1730)",
+  "summary": "The English Wikipedia article \"Armenian liberation struggle (1722–1730)\", at revision 1380369864, opens: \"The Armenian liberation struggle of 1722–1730 was a period of armed resistance by Armenians in the regions of Syunik and Artsakh in Iranian Armenia against Safavid rule and the Ottoman Empire. Beginning in 1722 in Syunik and 1724 in Artsakh, the movement sought to establish Armenian autonomy amid the collapse of the Safavid state and the threat of Ottoman occupation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16399387, imported by tools/import/wikidata.mjs. The item's own description reads \"rebellion against the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1722,
+    "end": 1730
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

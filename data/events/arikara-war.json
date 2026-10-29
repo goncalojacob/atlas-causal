@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "arikara-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4122579",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Arikara War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4122579"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Arikara War\", revision 1370428964"
+    }
+  ],
+  "title": "Arikara War",
+  "summary": "The English Wikipedia article \"Arikara War\", at revision 1370428964, opens: \"The Arikara War was a military conflict between the United States and Arikara in 1823 fought in the Great Plains along the Upper Missouri River in the Unorganized Territory. For the United States, the war was the first in which the United States Army was deployed for operations west of the Missouri River on the Great Plains. The war, the first and only conflict between the Arikara and the U.S., came as a response to an Arikara attack on U.S. citizens engaged in the fur trade. The Arikara War was called \"the worst disaster in the history of the Western fur trade\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4122579, imported by tools/import/wikidata.mjs. The item's own description reads \"1823 war between the US and Arikara natives\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1823,
+    "end": 1823,
+    "date": "1823-08"
+  },
+  "place": "south-dakota",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-fort-st-jean",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1779428",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Fort St. Jean",
+    "pt": "Cerco do Forte St. Jean"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1779428"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fort St. Jean\", revision 1379967771"
+    }
+  ],
+  "title": "Siege of Fort St. Jean",
+  "summary": "The English Wikipedia article \"Siege of Fort St. Jean\", at revision 1379967771, opens: \"The siege of Fort St. Jean was conducted by American Brigadier General Richard Montgomery on the town and fort of Saint-Jean, also called St. John, St. Johns, or St. John's, in the British province of Quebec during the American Revolutionary War. The siege lasted from September 17 to November 3, 1775.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1779428, imported by tools/import/wikidata.mjs. The item's own description reads \"1775 siege of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1775,
+    "date": "1775-09-17",
+    "endDate": "1775-11-03"
+  },
+  "place": "fort-saint-jean-quebec",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

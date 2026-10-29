@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-lexington",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1149680",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "First Battle of Lexington"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1149680"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Lexington\", revision 1374821026"
+    }
+  ],
+  "title": "First Battle of Lexington",
+  "summary": "The English Wikipedia article \"First Battle of Lexington\", at revision 1374821026, opens: \"The siege of Lexington, also known as the first battle of Lexington or the battle of the Hemp Bales, was a minor conflict of the American Civil War. The siege took place from September 13 to 20, 1861, between the Union army and the pro-Confederate Missouri State Guard in Lexington, county seat of Lafayette County, Missouri. The victory won by the Missouri Guard bolstered the considerable Southern sentiment in the area, and briefly consolidated Missouri State Guard control of the Missouri River Valley in the western part of the state.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1149680, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 battle of the Trans-Mississippi Theater of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-09-13",
+    "endDate": "1861-09-20"
+  },
+  "place": "lexington-missouri",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

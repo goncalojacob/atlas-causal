@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "java-war-1741-1743",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6165029",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Java War (1741–1743)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6165029"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Java War (1741–1743)\", revision 1370624935"
+    }
+  ],
+  "title": "Java War (1741–1743)",
+  "summary": "The English Wikipedia article \"Java War (1741–1743)\", at revision 1370624935, opens: \"The Java War of 1741 to 1743 was an armed struggle by a joint Chinese and Javanese army against the Dutch East India Company and pro-Dutch Javanese that took place in central and eastern Java. Ending in victory for the Dutch, the war led to the fall of the Sultanate of Mataram and, indirectly, the founding of both the Sunanate of Surakarta and the Sultanate of Yogyakarta.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6165029, imported by tools/import/wikidata.mjs. The item's own description reads \"armed struggle against Dutch colonialism\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1741,
+    "end": 1743,
+    "date": "1741-02"
+  },
+  "place": "java",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

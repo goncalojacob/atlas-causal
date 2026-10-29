@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-fort-ticonderoga-1777",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1307876",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Fort Ticonderoga (1777)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1307876"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fort Ticonderoga (1777)\", revision 1374866924"
+    }
+  ],
+  "title": "Siege of Fort Ticonderoga (1777)",
+  "summary": "The English Wikipedia article \"Siege of Fort Ticonderoga (1777)\", at revision 1374866924, opens: \"The siege of Fort Ticonderoga occurred between 2 July and 6 July 1777 at Fort Ticonderoga, near the southern end of Lake Champlain in the state of New York. Lieutenant General John Burgoyne's 8,000-man army occupied high ground above the fort, and nearly surrounded the defenses. These movements precipitated the occupying Continental Army, an under-strength force of 3,000 under the command of General Arthur St. Clair, to withdraw from Ticonderoga and the surrounding defenses. Some gunfire was exchanged, and there were some casualties, but there was no formal siege and no pitched battle. Burgoyne's army occupied Fort Ticonderoga and Mount Independence, the extensive fortifications on the Vermont side of the lake, without opposition on 6 July. Advance units pursued the retreating Americans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1307876, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-07-02",
+    "endDate": "1777-07-06"
+  },
+  "place": "new-york-state",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}
