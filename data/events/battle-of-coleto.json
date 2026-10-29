@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-coleto",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1361501",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Coleto",
+    "pt": "Batalha de Coleto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1361501"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Coleto\", revision 1378643200"
+    }
+  ],
+  "title": "Battle of Coleto",
+  "summary": "The English Wikipedia article \"Battle of Coleto\", at revision 1378643200, opens: \"The Battle of Coleto, also known as the Battle of Coleto Creek, the Battle of the Prairie, and the Batalla del Encinal del Perdido, was fought on March 19–20, 1836, during the Goliad campaign of the Texas Revolution. In February, General José de Urrea led a branch of the Mexican army up the Gulf Coast of Mexican Texas toward Goliad, where a large contingent of soldiers from the Texian Army was garrisoned under Colonel James W. Fannin. Simultaneously, Mexican president Antonio Lopez de Santa Anna led a larger force into the Texian interior, where on March 6 his troops won the Battle of the Alamo. After learning of the Alamo's defeat, Texian general Sam Houston ordered Fannin to retreat from Goliad and join the rest of the army in Victoria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1361501, imported by tools/import/wikidata.mjs. The item's own description reads \"1836 battle of the Texas Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1836,
+    "end": 1836,
+    "date": "1836-03-19",
+    "endDate": "1836-03-20"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

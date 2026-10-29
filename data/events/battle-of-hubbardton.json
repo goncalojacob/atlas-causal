@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-hubbardton",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q922790",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Hubbardton"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q922790"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hubbardton\", revision 1370443318"
+    }
+  ],
+  "title": "Battle of Hubbardton",
+  "summary": "The English Wikipedia article \"Battle of Hubbardton\", at revision 1370443318, opens: \"The Battle of Hubbardton was an engagement in the Saratoga campaign of the American Revolutionary War fought in the village of Hubbardton, Vermont. Vermont was then a disputed territory sometimes called the New Hampshire Grants, claimed by New York, New Hampshire, and the newly organized, not yet recognized, but de facto independent government of Vermont. On the morning of July 7, 1777, British forces, under General Simon Fraser, caught up with the American rear guard of the forces retreating after the withdrawal from Fort Ticonderoga. It was the only battle in Vermont during the revolution.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q922790, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-07-07"
+  },
+  "place": "hubbardton-vermont",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

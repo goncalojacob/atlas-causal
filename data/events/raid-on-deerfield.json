@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "raid-on-deerfield",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3046548",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Raid on Deerfield"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3046548"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Raid on Deerfield\", revision 1377572470"
+    }
+  ],
+  "title": "Raid on Deerfield",
+  "summary": "The English Wikipedia article \"Raid on Deerfield\", at revision 1377572470, opens: \"The Raid on Deerfield, also known as the Deerfield Massacre, was an attack on February 29, 1704, of French and Native American forces on the English colonial settlement of Deerfield, Province of Massachusetts Bay. Springing just before dawn, raiders under the command of Jean-Baptiste Hertel de Rouville burned parts of the town and killed 47 colonists. They left with 112 colonists as captives, whom they took overland the nearly 300 miles to Montreal; some died or were killed along the way because they were unable to keep up. Roughly 60 colonists were later ransomed by their associates, while others were adopted by Mohawk families at Kahnawake and became assimilated into the tribe.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3046548, imported by tools/import/wikidata.mjs. The item's own description reads \"1704 raid\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1704,
+    "end": 1704,
+    "date": "1704-02-29"
+  },
+  "place": "deerfield-massachusetts",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "queen-anne-s-war"
+}

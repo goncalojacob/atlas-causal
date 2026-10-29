@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "grass-fight",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2723005",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Grass Fight",
+    "pt": "Batalha do Pasto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2723005"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Grass Fight\", revision 1378726149"
+    }
+  ],
+  "title": "Grass Fight",
+  "summary": "The English Wikipedia article \"Grass Fight\", at revision 1378726149, opens: \"The Grass Fight was a small battle during the Texas Revolution, fought between the Mexican Army and the Texian Army. The battle took place on November 26, 1835, just south of San Antonio de Béxar in the Mexican region of Texas. The Texas Revolution had officially begun on October 2 and by the end of the month the Texians had initiated a siege of Béxar, home of the largest Mexican garrison in the province. Bored with the inactivity, many of the Texian soldiers returned home; a smaller number of adventurers from the United States arrived to replace them. After the Texian Army rejected commander-in-chief Stephen F. Austin's call to launch an assault on Béxar on November 22, Austin resigned from the army. The men elected Edward Burleson their new commander-in-chief.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2723005, imported by tools/import/wikidata.mjs. The item's own description reads \"1835 battle during the Texas Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1835,
+    "date": "1835-11-26"
+  },
+  "place": "texas",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-forts-jackson-and-st-philip",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1647769",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Forts Jackson and St. Philip"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1647769"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Forts Jackson and St. Philip\", revision 1370110507"
+    }
+  ],
+  "title": "Battle of Forts Jackson and St. Philip",
+  "summary": "The English Wikipedia article \"Battle of Forts Jackson and St. Philip\", at revision 1370110507, opens: \"The battle of Forts Jackson and St. Philip was the decisive battle for possession of New Orleans in the American Civil War. The two Confederate forts on the Mississippi River south of the city were attacked by a Union Navy fleet. As long as the forts could keep the Federal forces from moving on the city, it was safe, but if they fell or were bypassed, there were no fall-back positions to impede the Union advance.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1647769, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-04-18",
+    "endDate": "1862-04-28"
+  },
+  "place": "new-orleans",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

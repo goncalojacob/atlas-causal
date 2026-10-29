@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-blue-licks",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q325486",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Blue Licks"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q325486"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Blue Licks\", revision 1370107979"
+    }
+  ],
+  "title": "Battle of Blue Licks",
+  "summary": "The English Wikipedia article \"Battle of Blue Licks\", at revision 1370107979, opens: \"The Battle of Blue Licks, fought on August 19, 1782, was one of the last battles of the American Revolutionary War. The battle occurred ten months after Lord Cornwallis's surrender at Yorktown, which had effectively ended the war in the east. On a hill next to the Licking River in what is now Robertson County, Kentucky, a force of 50 Butler's Rangers and 300 Indigenous warriors ambushed and routed 182 Kentucky militia, who were partially led by Daniel Boone, the famed frontiersman.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q325486, imported by tools/import/wikidata.mjs. The item's own description reads \"1782 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1782,
+    "end": 1782,
+    "date": "1782-08-19"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

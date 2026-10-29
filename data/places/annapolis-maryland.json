@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "annapolis-maryland",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q28271",
+  "sitelinks": {
+    "count": 119,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Annapolis, Maryland",
+    "pt": "Annapolis (Maryland)"
+  },
+  "sources": [],
+  "names": [
+    "Annapolis",
+    "Annapolis, Maryland",
+    "Annapolis (Maryland)"
+  ],
+  "where": {
+    "lon": -76.49194444444444,
+    "lat": 38.978611111111114,
+    "precision": "city",
+    "label": "Annapolis, Maryland"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-memphis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1387983",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "First Battle of Memphis"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1387983"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Memphis\", revision 1380680244"
+    }
+  ],
+  "title": "First Battle of Memphis",
+  "summary": "The English Wikipedia article \"First Battle of Memphis\", at revision 1380680244, opens: \"The First Battle of Memphis was a naval battle fought on the Mississippi River immediately north of the city of Memphis, Tennessee on June 6, 1862, during the American Civil War. The engagement was witnessed by many of the citizens of Memphis. It resulted in a crushing defeat for the Confederate forces, and marked the virtual eradication of a Confederate naval presence on the river. Despite the lopsided outcome, the Union Army failed to grasp its strategic significance. Its primary historical importance is that it was the last time civilians with no prior military experience were permitted to command ships in combat. As such, it is a milestone in the development of professionalism in the United States Navy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1387983, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 naval battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-06-06"
+  },
+  "place": "mississippi-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

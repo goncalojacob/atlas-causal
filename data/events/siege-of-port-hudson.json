@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-port-hudson",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q860295",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Port Hudson",
+    "pt": "Cerco de Port Hudson"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q860295"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Port Hudson\", revision 1376386878"
+    }
+  ],
+  "title": "Siege of Port Hudson",
+  "summary": "The English Wikipedia article \"Siege of Port Hudson\", at revision 1376386878, opens: \"The siege of Port Hudson was the final engagement in the Union campaign to recapture the Mississippi River in the American Civil War. While Union General Ulysses Grant was besieging Vicksburg upriver, General Nathaniel Banks was ordered to capture the lower Mississippi Confederate stronghold of Port Hudson, Louisiana, then to go to Grant's aid. When his assault failed, Banks settled into a 48-day siege, the longest in US military history up to that point. A second attack also failed, and it was only after the fall of Vicksburg that the Confederate commander, General Franklin Gardner, surrendered the port. The Union gained control of the river and navigation from the Gulf of Mexico through the Deep South and to the river's upper reaches.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q860295, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-05-21",
+    "endDate": "1863-07-09"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

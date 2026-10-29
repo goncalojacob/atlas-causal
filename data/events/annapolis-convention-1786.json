@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "annapolis-convention-1786",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2996243",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Annapolis Convention (1786)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2996243"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Annapolis Convention (1786)\", revision 1368794736"
+    }
+  ],
+  "title": "Annapolis Convention (1786)",
+  "summary": "The English Wikipedia article \"Annapolis Convention (1786)\", at revision 1368794736, opens: \"The Annapolis Convention was a national political convention held September 11–14, 1786 in the old Senate Chamber of the Maryland State House in Annapolis, Maryland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2996243, imported by tools/import/wikidata.mjs. The item's own description reads \"1786 political convention among US states on inter-state trade\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1786,
+    "end": 1786,
+    "date": "1786-09-11",
+    "endDate": "1786-09-14"
+  },
+  "place": "annapolis-maryland",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}
