@@ -57016,6 +57016,618 @@
       },
       "refusals": [],
       "note": "Q2113036 is already the event \"french-expedition-to-ireland-1796\""
+    },
+    {
+      "id": "2026-10-29-europe-584",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "silent-sejm",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-586",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "revolution-of-1772",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-588",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "peace-of-paris-1783",
+        "edges": [],
+        "place": "palace-of-versailles"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-590",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "drownings-at-nantes",
+        "edges": [],
+        "place": "nantes"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-592",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q815175 is already the event \"siege-of-mantua-1796-1797\""
+    },
+    {
+      "id": "2026-10-29-europe-594",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "plot-of-the-rue-saint-nicaise",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-596",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-vauchamps",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-598",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "red-barn-murder",
+        "edges": [],
+        "place": "polstead"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-389",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1479636 is already the event \"federal-war\""
+    },
+    {
+      "id": "2026-10-29-europe-600",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q689374 is already the event \"battle-of-trautenau\""
+    },
+    {
+      "id": "2026-10-29-europe-601",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-vucji-do",
+        "edges": [],
+        "place": "vucji-do"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-603",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-pirot",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-605",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "wars-in-lombardy",
+        "edges": [],
+        "place": "lombardy-q1210"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-607",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-jargeau",
+        "edges": [],
+        "place": "jargeau"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-609",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-anghiari",
+        "edges": [],
+        "place": "anghiari"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-611",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "catalan-civil-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-613",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q506846 is already the event \"siege-of-neuss\""
+    },
+    {
+      "id": "2026-10-29-europe-615",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "polish-ottoman-war-1485-1503",
+        "edges": [],
+        "place": "wild-fields"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-617",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-solway-moss",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-619",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "fire-of-moscow-1547",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-621",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "fire-of-moscow-1571",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-623",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "battles-of-wenden-1577-1578",
+        "edges": [],
+        "place": "cesis"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-625",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2890458 is already the event \"battle-of-zutphen\""
+    },
+    {
+      "id": "2026-10-29-europe-627",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "war-against-sigismund",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-629",
+      "writer": "A",
+      "fired": "2026-10-29T22:09Z",
+      "status": "written",
+      "written": {
+        "event": "grand-siecle",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-593",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-castricum",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-595",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "assassination-of-spencer-perceval",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-597",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "ominous-decade",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-388",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "great-fire-of-new-york",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-599",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q685805 is already the event \"battle-of-bezzecca\""
+    },
+    {
+      "id": "2026-10-29-americas-390",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tuyuti",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-602",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "st-elizabeth-s-flood-1421",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-604",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-harfleur",
+        "edges": [],
+        "place": "harfleur"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-606",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "muscovite-war-of-succession",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-608",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-la-higueruela",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-610",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "navarrese-civil-war-1451-1455",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-612",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-the-bulls-of-guisando",
+        "edges": [],
+        "place": "bulls-of-guisando"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-614",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2734129 is already the event \"battle-of-toro\""
+    },
+    {
+      "id": "2026-10-29-europe-616",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "concordat-of-bologna",
+        "edges": [],
+        "place": "bologna"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-618",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2297059 is already the event \"battle-of-the-solent\""
+    },
+    {
+      "id": "2026-10-29-europe-620",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "raid-of-the-balearic-islands-1558",
+        "edges": [],
+        "place": "ciutadella-de-menorca"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-622",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q694619 is already the event \"siege-of-leiden\""
+    },
+    {
+      "id": "2026-10-29-europe-624",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-vila-franca-do-campo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-626",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q897720: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-628",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-selimbar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-630",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-moscow-1612",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-632",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hochst",
+        "edges": [],
+        "place": "hochst-frankfurt-am-main"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-634",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q641989 is already the event \"battle-of-nyborg\""
+    },
+    {
+      "id": "2026-10-29-europe-636",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-palermo",
+        "edges": [],
+        "place": "palermo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-638",
+      "writer": "B",
+      "fired": "2026-10-29T22:14Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2265621 is already the event \"battle-of-k-ge-bay-1677\""
     }
   ]
 }

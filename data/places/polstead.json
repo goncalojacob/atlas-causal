@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "polstead",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q541183",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Polstead"
+  },
+  "sources": [],
+  "names": [
+    "Polstead"
+  ],
+  "where": {
+    "lon": 0.902,
+    "lat": 52.007,
+    "precision": "city",
+    "label": "Polstead"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

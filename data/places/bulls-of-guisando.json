@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bulls-of-guisando",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2454775",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Bulls of Guisando",
+    "pt": "Touros de Guisando"
+  },
+  "sources": [],
+  "names": [
+    "Bulls of Guisando",
+    "Touros de Guisando"
+  ],
+  "where": {
+    "lon": -4.44161111,
+    "lat": 40.36069444,
+    "precision": "point",
+    "label": "Bulls of Guisando"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

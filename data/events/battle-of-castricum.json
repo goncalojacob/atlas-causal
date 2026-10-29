@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-castricum",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q370376",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Castricum",
+    "pt": "Batalha de Castricum"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q370376"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Castricum\", revision 1370108712"
+    }
+  ],
+  "title": "Battle of Castricum",
+  "summary": "The English Wikipedia article \"Battle of Castricum\", at revision 1370108712, opens: \"The Battle of Castricum saw a Franco-Batavian force defeat an Anglo-Russian force near Castricum, Netherlands, within the Anglo-Russian invasion of Holland. The battle was fought during the War of the Second Coalition against Revolutionary France between French–Batavian forces under the command of generals Guillaume Brune (commander-in-chief) and Herman Willem Daendels and British–Russian forces under the command of the Duke of York (commander-in-chief) and General Ivan Essen. The Castricum battle and its strategic outcome put an end to any hopes for the invasion's success.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q370376, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-10-06"
+  },
+  "place": "low-countries",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-russian-invasion-of-holland"
+}

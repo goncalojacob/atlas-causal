@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "revolution-of-1772",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q10511142",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Revolution of 1772"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10511142"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolution of 1772\", revision 1370707002"
+    }
+  ],
+  "title": "Revolution of 1772",
+  "summary": "The English Wikipedia article \"Revolution of 1772\", at revision 1370707002, opens: \"The Revolution of 1772, also known as The Bloodless Revolution or the Coup of Gustav III, was a Swedish coup d'état performed by King Gustav III on 19 August 1772 to introduce a division of power between the King and the Riksdag of the Estates, resulting in the end of the Age of Liberty and the introduction of the Swedish Constitution of 1772, which would strengthen the power of the monarch and the start the absolutist period known as the Gustavian era.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10511142, imported by tools/import/wikidata.mjs. The item's own description reads \"Swedish coup d'état\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1772,
+    "end": 1772,
+    "date": "1772-08-19"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

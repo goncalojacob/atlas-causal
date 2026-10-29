@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "red-barn-murder",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3844918",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Red Barn Murder"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3844918"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Red Barn Murder\", revision 1375718177"
+    }
+  ],
+  "title": "Red Barn Murder",
+  "summary": "The English Wikipedia article \"Red Barn Murder\", at revision 1375718177, opens: \"The Red Barn Murder was an 1827 murder in Polstead, Suffolk, England. A young woman, Maria Marten, was shot dead by her lover William Corder at the Red Barn, a local landmark. The two had arranged to meet before eloping to Ipswich. Corder sent letters to Marten's family claiming that she was well, but after her stepmother spoke of having dreamed that Maria had been murdered, her body was discovered in the barn the next year.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3844918, imported by tools/import/wikidata.mjs. The item's own description reads \"notorious murder committed in Polstead, Suffolk, England in 1827\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1827,
+    "end": 1827
+  },
+  "place": "polstead",
+  "region": null,
+  "regionNote": null,
+  "category": "death",
+  "actors": []
+}
