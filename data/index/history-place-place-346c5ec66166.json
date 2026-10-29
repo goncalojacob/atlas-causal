@@ -405,6 +405,15 @@
         }
       ]
     },
+    "aldenhoven": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "alegria-de-pio": {
       "from": "git",
       "versions": [
@@ -475,6 +484,15 @@
         }
       ]
     },
+    "almonacid-de-toledo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "alps": {
       "from": "git",
       "versions": [
@@ -542,6 +560,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "amberg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1661,6 +1688,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "bassano-del-grappa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4277,6 +4313,15 @@
         }
       ]
     },
+    "charlottetown": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "chateau-de-saint-cloud": {
       "from": "git",
       "versions": [
@@ -4290,6 +4335,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "chateau-gontier": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5209,6 +5263,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "czarnowo-gmina-pomiechowek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6889,6 +6952,15 @@
         }
       ]
     },
+    "flensburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "fleurus": {
       "from": "git",
       "versions": [
@@ -7928,6 +8000,15 @@
         }
       ]
     },
+    "girona": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "glen-shiel": {
       "from": "git",
       "versions": [
@@ -8046,6 +8127,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "grahovac-montenegro": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -9272,6 +9362,24 @@
         }
       ]
     },
+    "idstedt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "ile-d-aix": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "ile-de-re": {
       "from": "git",
       "versions": [
@@ -9576,6 +9684,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "irun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -11249,6 +11366,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "kurivody": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -14005,6 +14131,15 @@
         }
       ]
     },
+    "mnichovo-hradiste": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "mobile-alabama": {
       "from": "git",
       "versions": [
@@ -16235,6 +16370,15 @@
         }
       ]
     },
+    "panama-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "panipat": {
       "from": "git",
       "versions": [
@@ -17817,6 +17961,15 @@
         }
       ]
     },
+    "quiberon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "quiberon-bay": {
       "from": "git",
       "versions": [
@@ -18692,6 +18845,15 @@
         }
       ]
     },
+    "sahagun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "sahel": {
       "from": "git",
       "versions": [
@@ -19081,6 +19243,15 @@
       ]
     },
     "san-cristobal-de-la-laguna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "san-fermo-della-battaglia": {
       "from": "git",
       "versions": [
         {
@@ -20509,6 +20680,15 @@
         }
       ]
     },
+    "southern-italy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "southern-lebanon": {
       "from": "git",
       "versions": [
@@ -21165,6 +21345,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "svijany": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -22114,6 +22303,15 @@
         }
       ]
     },
+    "tory-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "touggourt": {
       "from": "git",
       "versions": [
@@ -22270,6 +22468,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "trouillas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -23994,6 +24201,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "wyoming": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

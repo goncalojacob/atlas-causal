@@ -164,6 +164,15 @@
         }
       ]
     },
+    "1852-french-second-empire-referendum": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1853-copenhagen-cholera-outbreak": {
       "from": "git",
       "versions": [
@@ -273,6 +282,15 @@
       ]
     },
     "1870-barcelona-yellow-fever-epidemic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "1870-french-constitutional-referendum": {
       "from": "git",
       "versions": [
         {
@@ -1898,6 +1916,15 @@
         }
       ]
     },
+    "battle-of-almonacid": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-alto-de-los-godos": {
       "from": "git",
       "versions": [
@@ -2594,6 +2621,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-bov": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3496,6 +3532,15 @@
         }
       ]
     },
+    "battle-of-czarnowo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-dagupan": {
       "from": "git",
       "versions": [
@@ -4080,6 +4125,15 @@
         }
       ]
     },
+    "battle-of-gamonal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-gandamak": {
       "from": "git",
       "versions": [
@@ -4248,6 +4302,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-grahovac": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4479,6 +4542,15 @@
         }
       ]
     },
+    "battle-of-hochstadt-1800": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-hohenlinden": {
       "from": "git",
       "versions": [
@@ -4530,6 +4602,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-huhnerwasser": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4635,6 +4716,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-isted": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5931,6 +6021,15 @@
         }
       ]
     },
+    "battle-of-munchengratz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-mysunde-1864": {
       "from": "git",
       "versions": [
@@ -6183,6 +6282,15 @@
         }
       ]
     },
+    "battle-of-olszynka-grochowska": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-oltenita": {
       "from": "git",
       "versions": [
@@ -6283,6 +6391,15 @@
       ]
     },
     "battle-of-pagsanjan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-pakozd": {
       "from": "git",
       "versions": [
         {
@@ -6562,6 +6679,15 @@
       ]
     },
     "battle-of-plovdiv-1878": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-podol": {
       "from": "git",
       "versions": [
         {
@@ -6908,6 +7034,15 @@
         }
       ]
     },
+    "battle-of-sahagun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-sailor-s-creek": {
       "from": "git",
       "versions": [
@@ -6998,6 +7133,15 @@
         }
       ]
     },
+    "battle-of-san-fermo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-san-francisco": {
       "from": "git",
       "versions": [
@@ -7071,6 +7215,15 @@
       ]
     },
     "battle-of-san-lorenzo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-san-marcial": {
       "from": "git",
       "versions": [
         {
@@ -7883,6 +8036,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-the-basque-roads": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -8908,6 +9070,15 @@
         }
       ]
     },
+    "bedchamber-crisis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "belgian-revolution": {
       "from": "git",
       "versions": [
@@ -9803,6 +9974,15 @@
         }
       ]
     },
+    "charlottetown-conference": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "charter-of-1814": {
       "from": "git",
       "versions": [
@@ -10043,6 +10223,15 @@
         }
       ]
     },
+    "congress-of-panama": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "congress-of-paris-1856": {
       "from": "git",
       "versions": [
@@ -10107,6 +10296,15 @@
       ]
     },
     "constitution-of-egypt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "constitution-of-the-german-confederation": {
       "from": "git",
       "versions": [
         {
@@ -10880,6 +11078,15 @@
         }
       ]
     },
+    "evacuation-of-danevirke": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "expedition-of-the-col-des-beni-aicha": {
       "from": "git",
       "versions": [
@@ -10998,6 +11205,15 @@
       ]
     },
     "fenian-rising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "fetterman-fight": {
       "from": "git",
       "versions": [
         {
@@ -11487,6 +11703,15 @@
       ]
     },
     "first-siege-of-callao": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "first-siege-of-girona-peninsular-war": {
       "from": "git",
       "versions": [
         {
@@ -12022,6 +12247,15 @@
         }
       ]
     },
+    "great-gold-robbery": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "great-hinckley-fire": {
       "from": "git",
       "versions": [
@@ -12142,6 +12376,15 @@
       ]
     },
     "greek-civil-wars-of-1823-1825": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "greek-constitution-of-1844": {
       "from": "git",
       "versions": [
         {
@@ -13402,6 +13645,15 @@
       ]
     },
     "march-unrest": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "marengo-campaign": {
       "from": "git",
       "versions": [
         {
@@ -14756,6 +15008,15 @@
         }
       ]
     },
+    "post-unification-italian-brigandage": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "pottawatomie-massacre": {
       "from": "git",
       "versions": [
@@ -16088,6 +16349,15 @@
         }
       ]
     },
+    "siege-of-antwerp-1832": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-arrah": {
       "from": "git",
       "versions": [
@@ -17368,6 +17638,15 @@
         }
       ]
     },
+    "thin-red-line-battle-of-balaclava": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "third-anglo-burmese-war": {
       "from": "git",
       "versions": [
@@ -17450,6 +17729,15 @@
       ]
     },
     "third-republic-of-venezuela": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "third-siege-of-girona-peninsular-war": {
       "from": "git",
       "versions": [
         {
@@ -18949,6 +19237,15 @@
       ]
     },
     "vienna-monetary-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "wagon-box-fight": {
       "from": "git",
       "versions": [
         {

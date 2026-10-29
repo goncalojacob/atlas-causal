@@ -1176,6 +1176,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "aldenhoven",
+      "kind": "place",
+      "names": [
+        "Aldenhoven"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "alegria-de-pio",
@@ -1372,6 +1399,33 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "almonacid-de-toledo",
+      "kind": "place",
+      "names": [
+        "Almonacid de Toledo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "alps",
       "kind": "place",
       "names": [
@@ -1535,6 +1589,33 @@
       "kind": "place",
       "names": [
         "Amba Mariam"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "amberg",
+      "kind": "place",
+      "names": [
+        "Amberg"
       ],
       "origin": {
         "tool": "wikidata"
@@ -2117,7 +2198,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 3,
+      "degree": 4,
       "id": "antwerp",
       "kind": "place",
       "names": [
@@ -4590,6 +4671,33 @@
       "names": [
         "Basra",
         "Baçorá"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "bassano-del-grappa",
+      "kind": "place",
+      "names": [
+        "Bassano del Grappa"
       ],
       "origin": {
         "tool": "wikidata"
@@ -11279,6 +11387,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "charlottetown",
+      "kind": "place",
+      "names": [
+        "Charlottetown"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "chateau-de-saint-cloud",
@@ -11299,6 +11434,33 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "chateau-gontier",
+      "kind": "place",
+      "names": [
+        "Château-Gontier"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -11637,7 +11799,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "cherasco",
       "kind": "place",
       "names": [
@@ -13733,6 +13895,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "czarnowo-gmina-pomiechowek",
+      "kind": "place",
+      "names": [
+        "Czarnowo",
+        "Czarnowo, Gmina Pomiechówek"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "da-nang",
@@ -14540,7 +14730,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 9,
+      "degree": 10,
       "id": "denmark-q35",
       "kind": "place",
       "names": [
@@ -17906,6 +18096,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "flensburg",
+      "kind": "place",
+      "names": [
+        "Flensburg",
+        "Flensburgo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 2,
       "id": "fleurus",
@@ -20601,6 +20819,33 @@
         }
       ],
       "created": "2026-10-29",
+      "degree": 2,
+      "id": "girona",
+      "kind": "place",
+      "names": [
+        "Girona"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
       "degree": 1,
       "id": "glen-shiel",
       "kind": "place",
@@ -20932,6 +21177,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "grahovac-montenegro",
+      "kind": "place",
+      "names": [
+        "Grahovac",
+        "Grahovac, Montenegro"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "grand-pre-nova-scotia",
@@ -21128,7 +21401,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "greater-poland",
       "kind": "place",
       "names": [
@@ -21156,7 +21429,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 11,
+      "degree": 12,
       "id": "greece-q41",
       "kind": "place",
       "names": [
@@ -23486,7 +23759,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "hochstadt-an-der-donau",
       "kind": "place",
       "names": [
@@ -24163,6 +24436,60 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q15231507, the Battle of In-Delimane (2012), read on 2026-09-25 — A9's first step as A12 (2) corrects it, and not the item's P276, which is the town of Ansongo a degree of longitude west. The village has no item this pass could reach; the article at revision 1370443727 calls it \"the village of Idelimane 80 kilometers from Ménaka\" and its own title spells it In-Delimane, so both names are kept.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "idstedt",
+      "kind": "place",
+      "names": [
+        "Idstedt"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "ile-d-aix",
+      "kind": "place",
+      "names": [
+        "Île-d'Aix"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -24941,6 +25268,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "irun",
+      "kind": "place",
+      "names": [
+        "Irun"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -29480,6 +29834,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "kurivody",
+      "kind": "place",
+      "names": [
+        "Kuřívody"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -31978,7 +32359,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 26,
+      "degree": 27,
       "id": "london",
       "kind": "place",
       "names": [
@@ -32813,7 +33194,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 3,
       "id": "lyon",
       "kind": "place",
       "names": [
@@ -36477,6 +36858,33 @@
       "kind": "place",
       "names": [
         "Miyako Bay"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "mnichovo-hradiste",
+      "kind": "place",
+      "names": [
+        "Mnichovo Hradiště"
       ],
       "origin": {
         "tool": "wikidata"
@@ -40603,7 +41011,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 4,
+      "degree": 5,
       "id": "northern-italy",
       "kind": "place",
       "names": [
@@ -42316,6 +42724,34 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "panama-city",
+      "kind": "place",
+      "names": [
+        "Panama City",
+        "Cidade do Panamá"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -46283,6 +46719,33 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "quiberon",
+      "kind": "place",
+      "names": [
+        "Quiberon"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "quiberon-bay",
       "kind": "place",
       "names": [
@@ -46615,7 +47078,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "rastatt",
       "kind": "place",
       "names": [
@@ -48475,6 +48938,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "sahagun",
+      "kind": "place",
+      "names": [
+        "Sahagún"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -49390,6 +49880,33 @@
       "kind": "place",
       "names": [
         "San Cristóbal de La Laguna"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "san-fermo-della-battaglia",
+      "kind": "place",
+      "names": [
+        "San Fermo della Battaglia"
       ],
       "origin": {
         "tool": "wikidata"
@@ -53056,6 +53573,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "southern-italy",
+      "kind": "place",
+      "names": [
+        "Southern Italy",
+        "Mezzogiorno"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -54768,6 +55313,33 @@
       "names": [
         "Svaneti",
         "Suanécia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "svijany",
+      "kind": "place",
+      "names": [
+        "Svijany"
       ],
       "origin": {
         "tool": "wikidata"
@@ -57325,6 +57897,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "tory-island",
+      "kind": "place",
+      "names": [
+        "Tory Island"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "touggourt",
@@ -57773,6 +58372,33 @@
         "Tripoli",
         "Tripoli, Greece",
         "Trípoli (Grécia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "trouillas",
+      "kind": "place",
+      "names": [
+        "Trouillas"
       ],
       "origin": {
         "tool": "wikidata"
@@ -60641,7 +61267,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 7,
+      "degree": 8,
       "id": "warsaw",
       "kind": "place",
       "names": [
@@ -62085,6 +62711,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 2,
+      "id": "wyoming",
+      "kind": "place",
+      "names": [
+        "Wyoming"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
