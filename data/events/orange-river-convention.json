@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "orange-river-convention",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2315131",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Orange River Convention"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2315131"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Orange River Convention\", revision 1277256677"
+    }
+  ],
+  "title": "Orange River Convention",
+  "summary": "The English Wikipedia article \"Orange River Convention\", at revision 1277256677, opens: \"The Orange River Convention was a convention whereby the British formally recognised the independence of the Boers in the area between the Orange and Vaal rivers, which had previously been known as the Orange River Sovereignty. This resulted in the formation of the independent Boer Republic of the Orange Free State (OFS).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2315131, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty 23 February 1854\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1854,
+    "date": "1854-02-23"
+  },
+  "place": "bloemfontein",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-krasnoi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q25809",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Krasnoi",
+    "pt": "Batalha de Krasnoi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q25809"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Krasnoi\", revision 1375167856"
+    }
+  ],
+  "title": "Battle of Krasnoi",
+  "summary": "The English Wikipedia article \"Battle of Krasnoi\", at revision 1375167856, opens: \"The Battle of Krasnoi unfolded from 15 to 18 November 1812 marking a critical episode in Napoleon's arduous retreat from Moscow. Over the course of six skirmishes the Russian forces under Field Marshal Kutuzov inflicted significant blows from a prepared ambush upon the remnants of the Grande Armée, already severely weakened by attrition warfare. These confrontations, though not escalated into full-scale battles, led to substantial losses for the French due to their depleted weapons and horses.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q25809, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle during the French invasion of Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-11-15",
+    "endDate": "1812-11-18"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-russia"
+}

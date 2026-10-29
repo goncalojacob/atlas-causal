@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "kum-kapu-demonstration",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6443347",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Kum Kapu demonstration"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6443347"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kum Kapu demonstration\", revision 1366264421"
+    }
+  ],
+  "title": "Kum Kapu demonstration",
+  "summary": "The English Wikipedia article \"Kum Kapu demonstration\", at revision 1366264421, opens: \"The Kum Kapu demonstration occurred in the Kumkapı district of Constantinople on July 27, 1890. It ensued in skirmishing in which several demonstrators and four police officers were killed. The intent of the demonstration was \"..to awaken the maltreated Armenians and to make the Sublime Porte fully aware of the miseries of the Armenians.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6443347, imported by tools/import/wikidata.mjs. The item's own description reads \"battles involving Armenian National movement\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1890,
+    "end": 1890,
+    "date": "1890-07-27"
+  },
+  "place": "kumkap",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

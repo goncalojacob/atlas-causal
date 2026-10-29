@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-varnakova",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16329359",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Varnakova"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16329359"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Varnakova\", revision 1370746265"
+    }
+  ],
+  "title": "Siege of Varnakova",
+  "summary": "The English Wikipedia article \"Siege of Varnakova\", at revision 1370746265, opens: \"The siege of Varnakova in 1826 was one of the military episodes of the Greek War of Independence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16329359, imported by tools/import/wikidata.mjs. The item's own description reads \"1826 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1826,
+    "end": 1826,
+    "date": "1826-05-20",
+    "endDate": "1826-05-26"
+  },
+  "place": "greece-q41",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

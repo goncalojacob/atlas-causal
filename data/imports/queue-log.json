@@ -44580,6 +44580,620 @@
       },
       "refusals": [],
       "note": "Q5742675: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-033",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "battle-off-liverpool-nova-scotia-1778",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-035",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-miranda",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-037",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "mowry-massacres",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-181",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ivankovac",
+        "edges": [],
+        "place": "ivankovac"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-183",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-loznica",
+        "edges": [],
+        "place": "loznica"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-185",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-the-acropolis-1821-1822",
+        "edges": [],
+        "place": "athens"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-187",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-monemvasia-1821",
+        "edges": [],
+        "place": "monemvasia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-189",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kastraki",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-020",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q267339: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-022",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-guinea",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-024",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "orange-river-convention",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-026",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "capitulation-of-alexandria-1801",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-173",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3076765: its classes disagree: Q1620908 → place, Q11514315 → event"
+    },
+    {
+      "id": "2026-10-29-asia-175",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q233642: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-177",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2975313: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-179",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-krasnoi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-181",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q61116375: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-183",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q708068: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-185",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gorni-dubnik",
+        "edges": [],
+        "place": "danube-vilayet"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-187",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-portuguese-conflicts-1586-1589",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-189",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "1667-shamakhi-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-191",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1848807: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-193",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-polotsk",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-195",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "assassination-of-empress-myeongseong",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-197",
+      "writer": "A",
+      "fired": "2026-10-29T14:43Z",
+      "status": "written",
+      "written": {
+        "event": "indian-famine-of-1899-1900",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-034",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-tabasco",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-036",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "lynch-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-180",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-misar",
+        "edges": [],
+        "place": "misar"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-182",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cegar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-184",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-the-acropolis-1826-1827",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-186",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-doliana",
+        "edges": [],
+        "place": "ano-doliana"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-188",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cokesina",
+        "edges": [],
+        "place": "cokesina"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-190",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-varnakova",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-021",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5403659: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-023",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "weenen-massacre",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-025",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "constitution-of-egypt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-172",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q319531: its classes disagree: Q11514315 → event, Q3024240 → actor"
+    },
+    {
+      "id": "2026-10-29-asia-174",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q617772: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-176",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2003866: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-178",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q838373: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-180",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "batak-massacre",
+        "edges": [],
+        "place": "adrianople-vilayet"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-182",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-smolensk-1609-1611",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-184",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-vedrosha",
+        "edges": [],
+        "place": "kaluga"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-186",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-taganrog",
+        "edges": [],
+        "place": "taganrog"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-188",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2280723: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-190",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "uprising-of-bolotnikov",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-192",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-pskov",
+        "edges": [],
+        "place": "pskov-q2214"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-194",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "kum-kapu-demonstration",
+        "edges": [],
+        "place": "kumkap"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-196",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5100231: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-198",
+      "writer": "B",
+      "fired": "2026-10-29T14:51Z",
+      "status": "written",
+      "written": {
+        "event": "great-tenmei-famine",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

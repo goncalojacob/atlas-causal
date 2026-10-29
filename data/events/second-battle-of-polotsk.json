@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-polotsk",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q738802",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Second Battle of Polotsk"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q738802"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Polotsk\", revision 1370736532"
+    }
+  ],
+  "title": "Second Battle of Polotsk",
+  "summary": "The English Wikipedia article \"Second Battle of Polotsk\", at revision 1370736532, opens: \"The Second Battle of Polotsk took place during Napoleon's invasion of Russia. In this encounter the Russians under General Peter Wittgenstein attacked and defeated a Franco-Bavarian force under Laurent Gouvion Saint-Cyr. In the aftermath of this success, the Russians took Polotsk and dismantled Napoleon's operations in Belarus. Wittgenstein's victory set the stage for the Battle of Berezina in November, in which three Russian armies converged on Napoleon from separate directions.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q738802, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle during the French invasion of Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-10-18",
+    "endDate": "1812-10-20"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-russia"
+}

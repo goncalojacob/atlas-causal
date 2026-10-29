@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-monemvasia-1821",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16329374",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Monemvasia (1821)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16329374"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Monemvasia (1821)\", revision 1370743591"
+    }
+  ],
+  "title": "Siege of Monemvasia (1821)",
+  "summary": "The English Wikipedia article \"Siege of Monemvasia (1821)\", at revision 1370743591, opens: \"The siege of Monemvasia was a military engagement of the Greek War of Independence, aimed at liberating Monemvasia, shortly before the outbreak of the revolution. It lasted from 15 March to 23 July 1821. According to F. Chrysanthopoulos (Fotakos), the siege began after 25 March.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16329374, imported by tools/import/wikidata.mjs. The item's own description reads \"1821 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-03-15",
+    "endDate": "1821-07-23"
+  },
+  "place": "monemvasia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}
