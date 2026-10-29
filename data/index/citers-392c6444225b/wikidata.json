@@ -2078,6 +2078,12 @@
     },
     {
       "dissent": false,
+      "id": "1859-perugia-uprising",
+      "kind": "event",
+      "locator": "Q579577"
+    },
+    {
+      "dissent": false,
       "id": "1859-shamakhi-earthquake",
       "kind": "event",
       "locator": "Q4522773"
@@ -2195,6 +2201,12 @@
       "id": "1895-ljubljana-earthquake",
       "kind": "event",
       "locator": "Q4556932"
+    },
+    {
+      "dissent": false,
+      "id": "1896-1897-macedonian-rebellion",
+      "kind": "event",
+      "locator": "Q16737770"
     },
     {
       "dissent": false,
@@ -3353,6 +3365,12 @@
       "id": "albanian-revolt-of-1845",
       "kind": "event",
       "locator": "Q18712737"
+    },
+    {
+      "dissent": false,
+      "id": "albanian-revolt-of-1847",
+      "kind": "event",
+      "locator": "Q4709160"
     },
     {
       "dissent": false,
@@ -14804,6 +14822,12 @@
     },
     {
       "dissent": false,
+      "id": "dalecarlian-rebellions",
+      "kind": "event",
+      "locator": "Q10466298"
+    },
+    {
+      "dissent": false,
       "id": "damour-massacre",
       "kind": "event",
       "locator": "Q1351462"
@@ -15329,6 +15353,12 @@
       "id": "entente-cordiale",
       "kind": "event",
       "locator": "Q464399"
+    },
+    {
+      "dissent": false,
+      "id": "epirus-revolt-of-1611",
+      "kind": "event",
+      "locator": "Q12877110"
     },
     {
       "dissent": false,
@@ -16478,6 +16508,12 @@
     },
     {
       "dissent": false,
+      "id": "froberg-mutiny",
+      "kind": "event",
+      "locator": "Q20050680"
+    },
+    {
+      "dissent": false,
       "id": "full-scale-russo-ukrainian-war",
       "kind": "event",
       "locator": "Q110999040"
@@ -17165,6 +17201,12 @@
       "id": "high-renaissance",
       "kind": "event",
       "locator": "Q1474884"
+    },
+    {
+      "dissent": false,
+      "id": "himara-revolt-of-1596",
+      "kind": "event",
+      "locator": "Q19895302"
     },
     {
       "dissent": false,
@@ -18236,6 +18278,12 @@
     },
     {
       "dissent": false,
+      "id": "kostka-napierski-uprising",
+      "kind": "event",
+      "locator": "Q6433559"
+    },
+    {
+      "dissent": false,
       "id": "krakow-uprising",
       "kind": "event",
       "locator": "Q685372"
@@ -18245,6 +18293,12 @@
       "id": "kresna-razlog-uprising",
       "kind": "event",
       "locator": "Q3043924"
+    },
+    {
+      "dissent": false,
+      "id": "krivosije-uprising-1869",
+      "kind": "event",
+      "locator": "Q22935892"
     },
     {
       "dissent": false,
@@ -18782,9 +18836,21 @@
     },
     {
       "dissent": false,
+      "id": "march-unrest",
+      "kind": "event",
+      "locator": "Q21018731"
+    },
+    {
+      "dissent": false,
       "id": "marco-polo-bridge-incident",
       "kind": "event",
       "locator": "Q219230"
+    },
+    {
+      "dissent": false,
+      "id": "marian-civil-war",
+      "kind": "event",
+      "locator": "Q6762017"
     },
     {
       "dissent": false,
@@ -19976,9 +20042,21 @@
     },
     {
       "dissent": false,
+      "id": "ostryanyn-uprising",
+      "kind": "event",
+      "locator": "Q2065551"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-campaign-against-hormuz",
       "kind": "event",
       "locator": "Q2935422"
+    },
+    {
+      "dissent": false,
+      "id": "ottoman-civil-war-1509-1513",
+      "kind": "event",
+      "locator": "Q7109927"
     },
     {
       "dissent": false,
@@ -20174,6 +20252,12 @@
     },
     {
       "dissent": false,
+      "id": "palatine-uprising",
+      "kind": "event",
+      "locator": "Q2084604"
+    },
+    {
+      "dissent": false,
       "id": "palembang-highlands-expeditions",
       "kind": "event",
       "locator": "Q7127104"
@@ -20291,6 +20375,12 @@
       "id": "patriot-war-florida",
       "kind": "event",
       "locator": "Q111973379"
+    },
+    {
+      "dissent": false,
+      "id": "patuleia",
+      "kind": "event",
+      "locator": "Q3029948"
     },
     {
       "dissent": false,
@@ -21440,6 +21530,12 @@
     },
     {
       "dissent": false,
+      "id": "revolt-of-the-barretinas",
+      "kind": "event",
+      "locator": "Q3139108"
+    },
+    {
+      "dissent": false,
       "id": "revolt-of-the-brotherhoods",
       "kind": "event",
       "locator": "Q3098752"
@@ -22016,6 +22112,18 @@
     },
     {
       "dissent": false,
+      "id": "savoyard-waldensian-wars",
+      "kind": "event",
+      "locator": "Q55632642"
+    },
+    {
+      "dissent": false,
+      "id": "saxon-peasants-revolt",
+      "kind": "event",
+      "locator": "Q616471"
+    },
+    {
+      "dissent": false,
       "id": "sayfo",
       "kind": "event",
       "locator": "Q852236"
@@ -22343,6 +22451,12 @@
       "id": "second-french-intervention-in-mexico",
       "kind": "event",
       "locator": "Q952881"
+    },
+    {
+      "dissent": false,
+      "id": "second-genoese-savoyard-war",
+      "kind": "event",
+      "locator": "Q7443317"
     },
     {
       "dissent": false,
@@ -24860,6 +24974,12 @@
     },
     {
       "dissent": false,
+      "id": "souliote-war-1803",
+      "kind": "event",
+      "locator": "Q7564494"
+    },
+    {
+      "dissent": false,
       "id": "south-african-wars-1879-1915",
       "kind": "event",
       "locator": "Q7565812"
@@ -25160,6 +25280,12 @@
     },
     {
       "dissent": false,
+      "id": "strasbourg-bishops-war",
+      "kind": "event",
+      "locator": "Q3119063"
+    },
+    {
+      "dissent": false,
       "id": "streltsy-uprising",
       "kind": "event",
       "locator": "Q243587"
@@ -25325,6 +25451,12 @@
       "id": "tambov-rebellion",
       "kind": "event",
       "locator": "Q811250"
+    },
+    {
+      "dissent": false,
+      "id": "tancament-de-caixes",
+      "kind": "event",
+      "locator": "Q610244"
     },
     {
       "dissent": false,
@@ -25661,6 +25793,12 @@
       "id": "tibet-ladakh-mughal-war",
       "kind": "event",
       "locator": "Q15643653"
+    },
+    {
+      "dissent": false,
+      "id": "tican-s-rebellion",
+      "kind": "event",
+      "locator": "Q7800572"
     },
     {
       "dissent": false,

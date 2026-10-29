@@ -14804,7 +14804,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 4,
       "id": "epirus",
       "kind": "place",
       "names": [
@@ -16259,6 +16259,33 @@
       "names": [
         "Fort Detroit",
         "Fort Pontchartrain du Détroit"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "fort-ricasoli",
+      "kind": "place",
+      "names": [
+        "Fort Ricasoli"
       ],
       "origin": {
         "tool": "wikidata"
@@ -20143,6 +20170,35 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "himare-town",
+      "kind": "place",
+      "names": [
+        "Himarë",
+        "Himarë (town)",
+        "Himara"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -36715,7 +36771,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 26,
+      "degree": 27,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -37998,6 +38054,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "perugia",
+      "kind": "place",
+      "names": [
+        "Perugia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 2,
       "id": "peshawar",
@@ -38626,6 +38709,33 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "podhale",
+      "kind": "place",
+      "names": [
+        "Podhale"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -42027,6 +42137,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "rumelia",
+      "kind": "place",
+      "names": [
+        "Rumelia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -43033,7 +43170,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "salonica-vilayet",
       "kind": "place",
       "names": [
@@ -46674,7 +46811,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 11,
+      "degree": 12,
       "id": "spain-q29",
       "kind": "place",
       "names": [
@@ -47426,7 +47563,7 @@
         }
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "stockholm",
       "kind": "place",
       "names": [

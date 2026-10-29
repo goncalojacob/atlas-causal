@@ -2756,6 +2756,15 @@
         }
       ]
     },
+    "dalecarlian-rebellions": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "day-of-the-barricades": {
       "from": "git",
       "versions": [
@@ -3080,6 +3089,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "himara-revolt-of-1596": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3420,6 +3438,15 @@
         }
       ]
     },
+    "marian-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "massacre-at-matanzas-inlet": {
       "from": "git",
       "versions": [
@@ -3579,6 +3606,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "ottoman-civil-war-1509-1513": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5401,6 +5437,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "strasbourg-bishops-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

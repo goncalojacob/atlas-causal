@@ -5605,6 +5605,15 @@
         }
       ]
     },
+    "saxon-peasants-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "second-anglo-mysore-war": {
       "from": "git",
       "versions": [

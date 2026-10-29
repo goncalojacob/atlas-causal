@@ -6397,6 +6397,15 @@
         }
       ]
     },
+    "fort-ricasoli": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "fort-saint-jean-quebec": {
       "from": "git",
       "versions": [
@@ -7907,6 +7916,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "himare-town": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -14885,6 +14903,15 @@
         }
       ]
     },
+    "perugia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "peshawar": {
       "from": "git",
       "versions": [
@@ -15128,6 +15155,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "podhale": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -16541,6 +16577,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "rumelia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

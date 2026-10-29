@@ -2883,6 +2883,15 @@
         }
       ]
     },
+    "epirus-revolt-of-1611": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "esopus-wars": {
       "from": "git",
       "versions": [
@@ -3267,6 +3276,15 @@
         }
       ]
     },
+    "kostka-napierski-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "lachine-massacre": {
       "from": "git",
       "versions": [
@@ -3525,6 +3543,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "ostryanyn-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3987,6 +4014,15 @@
         }
       ]
     },
+    "revolt-of-the-barretinas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "revolt-of-the-papier-timbre": {
       "from": "git",
       "versions": [
@@ -4179,6 +4215,15 @@
         }
       ]
     },
+    "savoyard-waldensian-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "scanian-war": {
       "from": "git",
       "versions": [
@@ -4256,6 +4301,15 @@
       ]
     },
     "second-english-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "second-genoese-savoyard-war": {
       "from": "git",
       "versions": [
         {
