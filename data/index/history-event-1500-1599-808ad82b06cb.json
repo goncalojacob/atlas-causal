@@ -3108,6 +3108,15 @@
         }
       ]
     },
+    "kett-s-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "knights-war": {
       "from": "git",
       "versions": [
@@ -3480,6 +3489,15 @@
         }
       ]
     },
+    "polish-teutonic-war-1519-1521": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "portuguese-conquest-of-goa": {
       "from": "git",
       "versions": [
@@ -3658,6 +3676,15 @@
       ]
     },
     "rising-of-the-north": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "rough-wooing": {
       "from": "git",
       "versions": [
         {
@@ -5176,6 +5203,15 @@
         }
       ]
     },
+    "treaty-of-chambord": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-constantinople-1590": {
       "from": "git",
       "versions": [
@@ -5186,6 +5222,15 @@
       ]
     },
     "treaty-of-edinburgh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-greenwich": {
       "from": "git",
       "versions": [
         {
@@ -5213,6 +5258,15 @@
       ]
     },
     "treaty-of-nagyvarad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-nemours": {
       "from": "git",
       "versions": [
         {

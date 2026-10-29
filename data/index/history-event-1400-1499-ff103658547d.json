@@ -29,6 +29,15 @@
         }
       ]
     },
+    "anglo-hanseatic-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-agincourt": {
       "from": "git",
       "versions": [
@@ -542,6 +551,15 @@
         }
       ]
     },
+    "irmandino-revolts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "italian-war-of-1494-1495": {
       "from": "git",
       "versions": [
@@ -641,6 +659,15 @@
         }
       ]
     },
+    "jack-cade-s-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "lithuanian-civil-war-1432-1438": {
       "from": "git",
       "versions": [
@@ -731,6 +758,24 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "peace-of-brzesc-kujawski": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "peace-of-olomouc": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -997,6 +1042,15 @@
         }
       ]
     },
+    "treaty-of-barcelona-1493": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-basel-1499": {
       "from": "git",
       "versions": [
@@ -1052,6 +1106,24 @@
       ]
     },
     "treaty-of-picquigny": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-ribe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-senlis": {
       "from": "git",
       "versions": [
         {

@@ -2463,6 +2463,15 @@
         }
       ]
     },
+    "croquant-rebellions": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "dano-dutch-colonial-conflict-on-the-gold-coast": {
       "from": "git",
       "versions": [
@@ -3045,6 +3054,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "lipka-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4896,6 +4914,24 @@
         }
       ]
     },
+    "treaty-of-barwalde": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-bila-tserkva": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-bongaya": {
       "from": "git",
       "versions": [
@@ -5031,6 +5067,15 @@
         }
       ]
     },
+    "treaty-of-konigsberg-1656": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-limerick": {
       "from": "git",
       "versions": [
@@ -5055,6 +5100,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-lyon-1601": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5148,7 +5202,25 @@
         }
       ]
     },
+    "treaty-of-the-hague-1625": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-the-hague-1661": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-the-hague-1698": {
       "from": "git",
       "versions": [
         {
@@ -5248,6 +5320,15 @@
       ]
     },
     "truce-of-ulm-1647": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "truce-of-vilna": {
       "from": "git",
       "versions": [
         {
