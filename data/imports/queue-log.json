@@ -55504,6 +55504,249 @@
       },
       "refusals": [],
       "note": "Q4872325: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-360",
+      "writer": "A",
+      "fired": "2026-10-29T21:25Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-arapey",
+        "edges": [],
+        "place": "salto-uruguay"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-362",
+      "writer": "A",
+      "fired": "2026-10-29T21:25Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ibiraocai",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-364",
+      "writer": "A",
+      "fired": "2026-10-29T21:25Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sao-borja-1816",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-366",
+      "writer": "A",
+      "fired": "2026-10-29T21:25Z",
+      "status": "written",
+      "written": {
+        "event": "1883-chilean-spanish-treaty",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-368",
+      "writer": "A",
+      "fired": "2026-10-29T21:25Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q9296248: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-370",
+      "writer": "A",
+      "fired": "2026-10-29T21:25Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-crooked-river",
+        "edges": [],
+        "place": "crooked-river-missouri"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-372",
+      "writer": "A",
+      "fired": "2026-10-29T21:25Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-beauharnois",
+        "edges": [],
+        "place": "beauharnois-quebec"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-374",
+      "writer": "A",
+      "fired": "2026-10-29T21:25Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-saint-denis-1837",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-376",
+      "writer": "A",
+      "fired": "2026-10-29T21:25Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-the-gunboat-anhambai",
+        "edges": [],
+        "place": "sao-lourenco-river-mato-grosso"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-378",
+      "writer": "A",
+      "fired": "2026-10-29T21:25Z",
+      "status": "written",
+      "written": {
+        "event": "raid-on-dartmouth-1751",
+        "edges": [],
+        "place": "dartmouth-nova-scotia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-361",
+      "writer": "B",
+      "fired": "2026-10-29T21:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cruces",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-363",
+      "writer": "B",
+      "fired": "2026-10-29T21:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5722760: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-365",
+      "writer": "B",
+      "fired": "2026-10-29T21:30Z",
+      "status": "written",
+      "written": {
+        "event": "santa-maria-calatrava-treaty",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-367",
+      "writer": "B",
+      "fired": "2026-10-29T21:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-combapata",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-369",
+      "writer": "B",
+      "fired": "2026-10-29T21:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-frenchman-s-butte",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-371",
+      "writer": "B",
+      "fired": "2026-10-29T21:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-san-juan-del-sur",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-373",
+      "writer": "B",
+      "fired": "2026-10-29T21:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-saint-charles",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-375",
+      "writer": "B",
+      "fired": "2026-10-29T21:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2913176: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-377",
+      "writer": "B",
+      "fired": "2026-10-29T21:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-apostoles",
+        "edges": [],
+        "place": "apostoles"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-379",
+      "writer": "B",
+      "fired": "2026-10-29T21:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-higos-urco",
+        "edges": [],
+        "place": "chachapoyas-peru"
+      },
+      "refusals": []
     }
   ]
 }

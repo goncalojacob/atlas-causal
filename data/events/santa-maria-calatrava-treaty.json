@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "santa-maria-calatrava-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q20160810",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Santa María–Calatrava Treaty"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20160810"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Santa María–Calatrava Treaty\", revision 1380773151"
+    }
+  ],
+  "title": "Santa María–Calatrava Treaty",
+  "summary": "The English Wikipedia article \"Santa María–Calatrava Treaty\", at revision 1380773151, opens: \"The Santa María–Calatrava Treaty, originally named in Spanish as the Tratado definitivo de paz y amistad entre la República Mexicana y S.M.C. la Reina Gobernadora de España, was an international treaty concluded between Mexico and Spain on December 28, 1836.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20160810, imported by tools/import/wikidata.mjs. The item's own description reads \"International treaty of 1836 that recognizes Mexico as a sovereign nation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1836,
+    "end": 1836,
+    "date": "1836-12-28"
+  },
+  "place": "madrid",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

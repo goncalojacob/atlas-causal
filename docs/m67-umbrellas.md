@@ -5566,3 +5566,31 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-29: `battle-of-zitlala`, filed under `mexican-war-of-independence` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-353`, rank `child-of:mexican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-ibiraocai`, filed under `portuguese-conquest-of-the-banda-oriental` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-362`, rank `child-of:portuguese-conquest-of-the`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-sao-borja-1816`, filed under `portuguese-conquest-of-the-banda-oriental` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-364`, rank `child-of:portuguese-conquest-of-the`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-saint-denis-1837`, filed under `lower-canada-rebellion` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-374`, rank `child-of:lower-canada-rebellion`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-combapata`, filed under `rebellion-of-tupac-amaru-ii` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-367`, rank `child-of:rebellion-of-tupac-amaru-ii`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-frenchman-s-butte`, filed under `north-west-rebellion` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-369`, rank `child-of:north-west-rebellion`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-san-juan-del-sur`, filed under `filibuster-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-371`, rank `child-of:filibuster-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-saint-charles`, filed under `lower-canada-rebellion` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-373`, rank `child-of:lower-canada-rebellion`. Its span and its subject put it inside the umbrella.
