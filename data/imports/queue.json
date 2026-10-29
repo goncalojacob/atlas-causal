@@ -3,814 +3,10 @@
   "kind": "import-queue",
   "items": [
     {
-      "id": "2026-10-29-europe-377",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q555592",
-      "title": "Treaty of Poznań",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1806, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 9. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-378",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q469776",
-      "title": "Treaty of Delft",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1428, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-379",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q7837195",
-      "title": "Treaty of Prenzlau",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1472, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-380",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q2288543",
-      "title": "Peace of Longjumeau",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1568, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-381",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q1616897",
-      "title": "Edict of Beaulieu",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1576, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-382",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q1940069",
-      "title": "Treaty of Joinville",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1584, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-383",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q977414",
-      "title": "Strasbourg Agreement (1675)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1675, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-384",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q884161",
-      "title": "Treaty of Tsarskoye Selo",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1773, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-americas-137",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q725571",
-      "title": "Rush–Bagot Treaty",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1817, in the 1415 to 1900 window. Lane americas from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-385",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q13417900",
-      "title": "Munich Coinage Treaty",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1837, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-386",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q3360666",
-      "title": "Peace of Rueil",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1649, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 7. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-387",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q514325",
-      "title": "Treaty of Conflans",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1465, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 6. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-388",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q7837038",
-      "title": "Treaty of Dorpat",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1564, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 6. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-389",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q11706521",
-      "title": "1782 Edict of Tolerance",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1782, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 6. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-asia-254",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q5043804",
-      "title": "Carnatic Treaty",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1801, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 6. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-390",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q17016848",
-      "title": "Treaty of Ripon",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1640, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 5. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-391",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q60740017",
-      "title": "Malus Intercursus",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1506, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 4. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-392",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q872150",
-      "title": "Treaty of Habenhausen",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1666, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 4. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-americas-138",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7837035",
-      "title": "Treaty of Doak's Stand",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1820, in the 1415 to 1900 window. Lane americas from the event's own geography. Sitelinks 4. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-393",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q7837171",
-      "title": "Treaty of Novgorod (1537)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1537, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 3. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-europe-394",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q7837301",
-      "title": "Treaty of Wismar",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1636, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 3. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-americas-139",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q193155",
-      "title": "Louisiana Purchase",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1803, in the 1415 to 1900 window. Lane americas from the event's own geography. Sitelinks 61. The atlas holds neither its id nor its title. Its class Q25929224 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-395",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q656545",
-      "title": "Reinsurance Treaty",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1887, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 33. The atlas holds neither its id nor its title. Its class Q1498487 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-asia-255",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q623391",
-      "title": "Japan–Korea Treaty of 1876",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1876, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 28. The atlas holds neither its id nor its title. Its class Q864737 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-396",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q1191077",
-      "title": "Secret Treaty of Dover",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1670, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 17. The atlas holds neither its id nor its title. Its class Q1498487 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-americas-140",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1782419",
-      "title": "Treaty of the Triple Alliance",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1865, in the 1415 to 1900 window. Lane americas from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title. Its class Q1498487 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-397",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q4258678",
-      "title": "Truce of Łęczyca",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1433, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 5. The atlas holds neither its id nor its title. Its class Q93288 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-398",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q7836997",
-      "title": "Treaty of Brno (1478)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1478, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 4. The atlas holds neither its id nor its title. Its class Q93288 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-399",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q7837299",
-      "title": "Treaty of Weissenburg",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1551, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 4. The atlas holds neither its id nor its title. Its class Q93288 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-400",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q5035990",
-      "title": "Capitulation of Franzburg",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of treaties, start year 1627, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 3. The atlas holds neither its id nor its title. Its class Q93288 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-asia-256",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q668811",
-      "title": "1846–1860 cholera pandemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, by death toll, start year 1846, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 16. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-asia-257",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q96359661",
-      "title": "1557 influenza pandemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, by death toll, start year 1557, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-americas-141",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7861365",
-      "title": "1847 North American typhus epidemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, by death toll, start year 1847, in the 1415 to 1900 window. Lane americas from the event's own geography. Sitelinks 5. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-asia-258",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q1259178",
-      "title": "Third plague pandemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1855, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 21. The atlas holds neither its id nor its title. Its class Q1516910 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-401",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q3115111",
-      "title": "Naples Plague (1656)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1656, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 13. The atlas holds neither its id nor its title. Its class Q1516910 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-402",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q448015",
-      "title": "Great Plague of Vienna",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1679, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 13. The atlas holds neither its id nor its title. Its class Q1516910 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-403",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q5599762",
-      "title": "Great Plague of Seville",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1647, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 10. The atlas holds neither its id nor its title. Its class Q1516910 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-404",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q20723261",
-      "title": "1675–1676 Malta plague epidemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1675, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title. Its class Q1516910 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-405",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q7382249",
-      "title": "1770–1772 Russian plague",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1770, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title. Its class Q1516910 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-406",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q20723262",
-      "title": "1813–1814 Malta plague epidemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1813, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title. Its class Q1516910 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-americas-142",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4554489",
-      "title": "1837 Great Plains smallpox epidemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1837, in the 1415 to 1900 window. Lane americas from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title. Its class Q30103545 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-407",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q4554867",
-      "title": "1853 Copenhagen cholera outbreak",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1853, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 8. The atlas holds neither its id nor its title. Its class Q959265 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-408",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q20723260",
-      "title": "1592–1593 Malta plague epidemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1592, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 7. The atlas holds neither its id nor its title. Its class Q1516910 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-americas-143",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q27926964",
-      "title": "1721 Boston smallpox outbreak",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1721, in the 1415 to 1900 window. Lane americas from the event's own geography. Sitelinks 7. The atlas holds neither its id nor its title. Its class Q30103545 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-americas-144",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q16153856",
-      "title": "1775–1782 North American smallpox epidemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1775, in the 1415 to 1900 window. Lane americas from the event's own geography. Sitelinks 7. The atlas holds neither its id nor its title. Its class Q30103545 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-409",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q64875937",
-      "title": "1592–1593 London plague",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1593, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 6. The atlas holds neither its id nor its title. Kept by plain reading of the title as an epidemic, though its own P31 names the disease and not the event."
-    },
-    {
-      "id": "2026-10-29-americas-145",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q6784453",
-      "title": "Massachusetts smallpox epidemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1633, in the 1415 to 1900 window. Lane americas from the event's own geography. Sitelinks 6. The atlas holds neither its id nor its title. Its class Q30103545 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-asia-259",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q104892373",
-      "title": "Great Plague in the late Ming dynasty",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1633, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 6. The atlas holds neither its id nor its title. Its class Q1516910 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-410",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q5037625",
-      "title": "Caragea's plague",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1813, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 6. The atlas holds neither its id nor its title. Its class Q1516910 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-asia-260",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q10843835",
-      "title": "1894 Hong Kong plague",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1894, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 5. The atlas holds neither its id nor its title. Its class Q1516910 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-411",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q16427723",
-      "title": "1707–08 Iceland smallpox epidemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1707, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 4. The atlas holds neither its id nor its title. Its class Q30103545 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-asia-261",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4940602",
-      "title": "Bombay plague epidemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1896, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 4. The atlas holds neither its id nor its title. Its class Q1516910 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-412",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q96360043",
-      "title": "1899 Porto plague outbreak",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1899, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 4. The atlas holds neither its id nor its title. Its class Q1516910 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-africa-037",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q86458874",
-      "title": "1582 Tenerife plague epidemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1582, in the 1415 to 1900 window. Lane africa from the event's own geography. Sitelinks 3. The atlas holds neither its id nor its title. Its class Q1516910 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-americas-146",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2100118",
-      "title": "1862 Pacific Northwest smallpox epidemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of epidemics and pandemics, chronology table, start year 1862, in the 1415 to 1900 window. Lane americas from the event's own geography. Sitelinks 3. The atlas holds neither its id nor its title. Its class Q30103545 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-asia-262",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q27675",
-      "title": "Northern Chinese Famine of 1876–1879",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of natural disasters by death toll, start year 1876, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 10. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-asia-263",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q3530500",
-      "title": "Deccan famine of 1630–1632",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of natural disasters by death toll, start year 1630, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 9. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-asia-264",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q3530493",
-      "title": "Chalisa famine",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of natural disasters by death toll, start year 1783, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 5. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-asia-265",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q106830288",
-      "title": "1864 Calcutta cyclone",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of natural disasters by death toll, start year 1864, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 4. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-asia-266",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q106867810",
-      "title": "1737 Calcutta cyclone",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of natural disasters by death toll, start year 1737, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 3. The atlas holds neither its id nor its title."
-    },
-    {
-      "id": "2026-10-29-asia-267",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2001581",
-      "title": "1707 Hōei earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of natural disasters by death toll, start year 1707, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 20. The atlas holds neither its id nor its title. Its class Q6963731 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-asia-268",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q715495",
-      "title": "1896 Sanriku earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of natural disasters by death toll, start year 1896, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 18. The atlas holds neither its id nor its title. Its class Q7446977 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-americas-147",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q170652",
-      "title": "Great Blizzard of 1888",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of natural disasters by death toll, start year 1888, in the 1415 to 1900 window. Lane americas from the event's own geography. Sitelinks 14. The atlas holds neither its id nor its title. Its class Q205418 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-asia-269",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4549898",
-      "title": "1498 Meiō earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of natural disasters by death toll, start year 1498, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 11. The atlas holds neither its id nor its title. Its class Q6963731 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-europe-413",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q641335",
-      "title": "St. Felix's flood",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of natural disasters by death toll, start year 1530, in the 1415 to 1900 window. Lane europe from the event's own geography. Sitelinks 10. The atlas holds neither its id nor its title. Its class Q121742 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-asia-270",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q19881323",
-      "title": "1888 Moradabad hailstorm",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of natural disasters by death toll, start year 1888, in the 1415 to 1900 window. Lane asia from the event's own geography. Sitelinks 3. The atlas holds neither its id nor its title. Its class Q61071643 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
-      "id": "2026-10-29-americas-148",
-      "planned": "2026-10-29T15:46:06Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q932149",
-      "title": "Schoolhouse Blizzard",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off List of natural disasters by death toll, start year 1888, in the 1415 to 1900 window. Lane americas from the event's own geography. Sitelinks 4. The atlas holds neither its id nor its title. Its class Q205418 is not yet in wikidata-seeds.json → classes; flagged for the assistant."
-    },
-    {
       "id": "2026-10-29-asia-271",
       "planned": "2026-10-29T17:26Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2888513",
       "title": "Battle of Focchies",
       "parents": [
@@ -824,7 +20,7 @@
       "id": "2026-10-29-asia-272",
       "planned": "2026-10-29T17:26Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q256563",
       "title": "Battle of the Dardanelles (1656)",
       "parents": [
@@ -838,7 +34,7 @@
       "id": "2026-10-29-asia-273",
       "planned": "2026-10-29T17:26Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q12689907",
       "title": "Java campaign of 1806–1807",
       "parents": [
@@ -852,7 +48,7 @@
       "id": "2026-10-29-asia-274",
       "planned": "2026-10-29T17:26Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q18162521",
       "title": "Siege of Ganja (1734–1735)",
       "parents": [
@@ -866,7 +62,7 @@
       "id": "2026-10-29-asia-275",
       "planned": "2026-10-29T17:26Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q18210470",
       "title": "Tahmasp II's campaign of 1731",
       "parents": [
@@ -880,7 +76,7 @@
       "id": "2026-10-29-asia-276",
       "planned": "2026-10-29T17:26Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q18210700",
       "title": "Western Iran campaign of 1730",
       "parents": [
@@ -894,7 +90,7 @@
       "id": "2026-10-29-asia-277",
       "planned": "2026-10-29T17:26Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2890660",
       "title": "Battle of the Dardanelles (1657)",
       "parents": [
@@ -908,7 +104,7 @@
       "id": "2026-10-29-asia-278",
       "planned": "2026-10-29T17:26Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4816420",
       "title": "Battle of the Dardanelles (1654)",
       "parents": [
@@ -922,7 +118,7 @@
       "id": "2026-10-29-asia-279",
       "planned": "2026-10-29T17:26Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q211220",
       "title": "Battle of Chandannagar",
       "parents": [
@@ -936,7 +132,7 @@
       "id": "2026-10-29-asia-280",
       "planned": "2026-10-29T17:26Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q656522",
       "title": "Battle of Condore",
       "parents": [
@@ -950,7 +146,7 @@
       "id": "2026-10-29-asia-281",
       "planned": "2026-10-29T17:26Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2889696",
       "title": "Battle of Pulo Aura",
       "parents": [
@@ -964,7 +160,7 @@
       "id": "2026-10-29-asia-282",
       "planned": "2026-10-29T17:26Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q27958319",
       "title": "Barrackpore mutiny of 1824",
       "parents": [
@@ -978,7 +174,7 @@
       "id": "2026-10-29-americas-149",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2988161",
       "title": "Southern theater of the American Revolutionary War",
       "parents": [
@@ -992,7 +188,7 @@
       "id": "2026-10-29-americas-150",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3307845",
       "title": "Battle of Tuyutí",
       "parents": [
@@ -1006,7 +202,7 @@
       "id": "2026-10-29-americas-151",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q3772977",
       "title": "Battle of San Juan and Chorrillos",
       "parents": [
@@ -1020,7 +216,7 @@
       "id": "2026-10-29-americas-152",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q886842",
       "title": "Carolinas campaign",
       "parents": [
@@ -1034,7 +230,7 @@
       "id": "2026-10-29-americas-153",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1497902",
       "title": "Battle of Blackburn's Ford",
       "parents": [
@@ -1048,7 +244,7 @@
       "id": "2026-10-29-americas-154",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1497969",
       "title": "Battle of Sailor's Creek",
       "parents": [
@@ -1062,7 +258,7 @@
       "id": "2026-10-29-americas-155",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2502519",
       "title": "Red River campaign",
       "parents": [
@@ -1076,7 +272,7 @@
       "id": "2026-10-29-americas-156",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2522212",
       "title": "Franklin–Nashville campaign",
       "parents": [
@@ -1090,7 +286,7 @@
       "id": "2026-10-29-americas-157",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1518787",
       "title": "Battle of Moore's Creek Bridge",
       "parents": [
@@ -1104,7 +300,7 @@
       "id": "2026-10-29-americas-158",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1533038",
       "title": "Gnadenhutten massacre",
       "parents": [
@@ -1118,7 +314,7 @@
       "id": "2026-10-29-americas-159",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1780878",
       "title": "Western theater of the American Revolutionary War",
       "parents": [
@@ -1132,7 +328,7 @@
       "id": "2026-10-29-americas-160",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2890866",
       "title": "Battle of Cape Henry",
       "parents": [
@@ -1146,7 +342,7 @@
       "id": "2026-10-29-americas-161",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2072080",
       "title": "Battle of San Domingo",
       "parents": [
@@ -1160,7 +356,7 @@
       "id": "2026-10-29-americas-162",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2610822",
       "title": "Battle in the Bay of Matanzas",
       "parents": [
@@ -1174,7 +370,7 @@
       "id": "2026-10-29-americas-163",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q732992",
       "title": "Quebec expedition (1711)",
       "parents": [
@@ -1188,7 +384,7 @@
       "id": "2026-10-29-americas-164",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2887897",
       "title": "Battle of Arica",
       "parents": [
@@ -1202,7 +398,7 @@
       "id": "2026-10-29-americas-165",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2282207",
       "title": "Battle of Helena",
       "parents": [
@@ -1216,7 +412,7 @@
       "id": "2026-10-29-americas-166",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q676148",
       "title": "Battle of Mansfield",
       "parents": [
@@ -1230,7 +426,7 @@
       "id": "2026-10-29-americas-167",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q773372",
       "title": "Second Battle of Fredericksburg",
       "parents": [
@@ -1244,7 +440,7 @@
       "id": "2026-10-29-americas-168",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q855913",
       "title": "Battle of McDowell",
       "parents": [
@@ -1258,7 +454,7 @@
       "id": "2026-10-29-americas-169",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1497885",
       "title": "Battle of Hoke's Run",
       "parents": [
@@ -1272,7 +468,7 @@
       "id": "2026-10-29-americas-170",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2543603",
       "title": "Valley campaigns of 1864",
       "parents": [
@@ -1286,7 +482,7 @@
       "id": "2026-10-29-americas-171",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2570177",
       "title": "Battle of Kennesaw Mountain",
       "parents": [
@@ -1300,7 +496,7 @@
       "id": "2026-10-29-americas-172",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2632927",
       "title": "Battle of Chickasaw Bayou",
       "parents": [
@@ -1314,7 +510,7 @@
       "id": "2026-10-29-americas-173",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2687368",
       "title": "Battle of Missionary Ridge",
       "parents": [
@@ -1328,7 +524,7 @@
       "id": "2026-10-29-americas-174",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2789421",
       "title": "Battle of Prairie Grove",
       "parents": [
@@ -1342,7 +538,7 @@
       "id": "2026-10-29-americas-175",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2890377",
       "title": "Battle of Waynesboro, Virginia",
       "parents": [
@@ -1356,7 +552,7 @@
       "id": "2026-10-29-americas-176",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3588241",
       "title": "1861 Baltimore riot",
       "parents": [
@@ -1370,7 +566,7 @@
       "id": "2026-10-29-americas-177",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4296967",
       "title": "Battle of Fairfax Court House (1861)",
       "parents": [
@@ -1384,7 +580,7 @@
       "id": "2026-10-29-americas-178",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4870993",
       "title": "Battle of Ezra Church",
       "parents": [
@@ -1398,7 +594,7 @@
       "id": "2026-10-29-americas-179",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q45334",
       "title": "Burning of Falmouth",
       "parents": [
@@ -1412,7 +608,7 @@
       "id": "2026-10-29-americas-180",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q111648",
       "title": "Battle of Stony Point",
       "parents": [
@@ -1426,7 +622,7 @@
       "id": "2026-10-29-americas-181",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q494318",
       "title": "Battle of Hobkirk's Hill",
       "parents": [
@@ -1440,7 +636,7 @@
       "id": "2026-10-29-americas-182",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q528183",
       "title": "Battle of Newtown",
       "parents": [
@@ -1454,7 +650,7 @@
       "id": "2026-10-29-americas-183",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q906018",
       "title": "Battle of Great Bridge",
       "parents": [
@@ -1468,7 +664,7 @@
       "id": "2026-10-29-americas-184",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2565240",
       "title": "Naval battles of the American Revolutionary War",
       "parents": [
@@ -1482,7 +678,7 @@
       "id": "2026-10-29-americas-185",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2729621",
       "title": "Battle of St. Louis",
       "parents": [
@@ -1496,7 +692,7 @@
       "id": "2026-10-29-americas-186",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2889477",
       "title": "Raid of Nassau",
       "parents": [
@@ -1510,7 +706,7 @@
       "id": "2026-10-29-americas-187",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q3062383",
       "title": "Benedict Arnold's expedition to Quebec",
       "parents": [
@@ -1524,7 +720,7 @@
       "id": "2026-10-29-americas-188",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4204344",
       "title": "Battle of Chelsea Creek",
       "parents": [
@@ -1538,7 +734,7 @@
       "id": "2026-10-29-americas-189",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871984",
       "title": "Battle of Paoli",
       "parents": [
@@ -1552,7 +748,7 @@
       "id": "2026-10-29-americas-190",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q195118",
       "title": "Battle of Old Church",
       "parents": [
@@ -1566,7 +762,7 @@
       "id": "2026-10-29-americas-191",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q305409",
       "title": "Battle of Mine Run",
       "parents": [
@@ -1580,7 +776,7 @@
       "id": "2026-10-29-americas-192",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5092505",
       "title": "Cherry Valley massacre",
       "parents": [
@@ -1594,7 +790,7 @@
       "id": "2026-10-29-americas-193",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q427891",
       "title": "Battle of Fort Ligonier",
       "parents": [
@@ -1608,7 +804,7 @@
       "id": "2026-10-29-americas-194",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3505334",
       "title": "Battle of Ytororó",
       "parents": [
@@ -1622,7 +818,7 @@
       "id": "2026-10-29-americas-195",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q3078994",
       "title": "Siege of Port Royal (1710)",
       "parents": [
@@ -1636,7 +832,7 @@
       "id": "2026-10-29-americas-196",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3474969",
       "title": "Sacking of Lawrence",
       "parents": [
@@ -1650,7 +846,7 @@
       "id": "2026-10-29-americas-197",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q956098",
       "title": "Battle of La Concepción",
       "parents": [
@@ -1664,7 +860,7 @@
       "id": "2026-10-29-americas-198",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3373123",
       "title": "Battle of Pisagua",
       "parents": [
@@ -1678,7 +874,7 @@
       "id": "2026-10-29-americas-199",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2000189",
       "title": "Battle of Glendale",
       "parents": [
@@ -1692,7 +888,7 @@
       "id": "2026-10-29-americas-200",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2043320",
       "title": "Battle of Jackson",
       "parents": [
@@ -1706,7 +902,7 @@
       "id": "2026-10-29-americas-201",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2096968",
       "title": "Battle of Hanover Court House",
       "parents": [
@@ -1720,7 +916,7 @@
       "id": "2026-10-29-americas-202",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2103752",
       "title": "Battle of Iuka",
       "parents": [
@@ -1734,7 +930,7 @@
       "id": "2026-10-29-americas-203",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2125491",
       "title": "Battle of Front Royal",
       "parents": [
@@ -1748,7 +944,7 @@
       "id": "2026-10-29-americas-204",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2168647",
       "title": "Battle of Beaver Dam Creek",
       "parents": [
@@ -1762,7 +958,7 @@
       "id": "2026-10-29-americas-205",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2253305",
       "title": "Battle of Richmond",
       "parents": [
@@ -1776,7 +972,7 @@
       "id": "2026-10-29-americas-206",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2333674",
       "title": "Battle of Jonesborough",
       "parents": [
@@ -1790,7 +986,7 @@
       "id": "2026-10-29-americas-207",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q592752",
       "title": "Battle of Honey Springs",
       "parents": [
@@ -1804,7 +1000,7 @@
       "id": "2026-10-29-americas-208",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q609495",
       "title": "Battle of Galveston",
       "parents": [
@@ -1818,7 +1014,7 @@
       "id": "2026-10-29-americas-209",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q636670",
       "title": "Battle of Peachtree Creek",
       "parents": [
@@ -1832,7 +1028,7 @@
       "id": "2026-10-29-americas-210",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q765215",
       "title": "Second Battle of Winchester",
       "parents": [
@@ -1846,7 +1042,7 @@
       "id": "2026-10-29-americas-211",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q766479",
       "title": "Battle of Aldie",
       "parents": [
@@ -1860,7 +1056,7 @@
       "id": "2026-10-29-americas-212",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q766944",
       "title": "Battle of Fisher's Hill",
       "parents": [
@@ -1874,7 +1070,7 @@
       "id": "2026-10-29-americas-213",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q774532",
       "title": "Battle of Aquia Creek",
       "parents": [
@@ -1888,7 +1084,7 @@
       "id": "2026-10-29-americas-214",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q886856",
       "title": "Knoxville campaign",
       "parents": [
@@ -1902,7 +1098,7 @@
       "id": "2026-10-29-americas-215",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1426037",
       "title": "Battle of Cheat Mountain",
       "parents": [
@@ -1916,7 +1112,7 @@
       "id": "2026-10-29-americas-216",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1626369",
       "title": "Battle of Fort Stevens",
       "parents": [
@@ -1930,7 +1126,7 @@
       "id": "2026-10-29-americas-217",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2451867",
       "title": "Battle of Boonville",
       "parents": [
@@ -1944,7 +1140,7 @@
       "id": "2026-10-29-americas-218",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2602211",
       "title": "Battle of Port Republic",
       "parents": [
@@ -1958,7 +1154,7 @@
       "id": "2026-10-29-americas-219",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2865994",
       "title": "Battle of Port Gibson",
       "parents": [
@@ -1972,7 +1168,7 @@
       "id": "2026-10-29-americas-220",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4462586",
       "title": "Third Battle of Petersburg",
       "parents": [
@@ -1986,7 +1182,7 @@
       "id": "2026-10-29-americas-221",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4801174",
       "title": "Second Battle of Petersburg",
       "parents": [
@@ -2000,7 +1196,7 @@
       "id": "2026-10-29-americas-222",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4870766",
       "title": "Battle of Cloyd's Mountain",
       "parents": [
@@ -2014,7 +1210,7 @@
       "id": "2026-10-29-americas-223",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1238033",
       "title": "Battle of Fort Anne",
       "parents": [
@@ -2028,7 +1224,7 @@
       "id": "2026-10-29-americas-224",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2112104",
       "title": "Battle of Staten Island",
       "parents": [
@@ -2042,7 +1238,7 @@
       "id": "2026-10-29-americas-225",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2425434",
       "title": "Battle of Longue-Pointe",
       "parents": [
@@ -2056,7 +1252,7 @@
       "id": "2026-10-29-americas-226",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2890385",
       "title": "Battle of White Marsh",
       "parents": [
@@ -2070,7 +1266,7 @@
       "id": "2026-10-29-americas-227",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4167569",
       "title": "Illinois campaign",
       "parents": [
@@ -2084,7 +1280,7 @@
       "id": "2026-10-29-americas-228",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872035",
       "title": "Battle of Piedmont",
       "parents": [
@@ -2098,7 +1294,7 @@
       "id": "2026-10-29-americas-229",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872423",
       "title": "Battle of Spring Hill",
       "parents": [
@@ -2112,7 +1308,7 @@
       "id": "2026-10-29-americas-230",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872730",
       "title": "Battle of White Oak Swamp",
       "parents": [
@@ -2126,7 +1322,7 @@
       "id": "2026-10-29-americas-231",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5027283",
       "title": "Camp Jackson affair",
       "parents": [
@@ -2140,7 +1336,7 @@
       "id": "2026-10-29-americas-232",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q152158",
       "title": "Battle of Totopotomoy Creek",
       "parents": [
@@ -2154,7 +1350,7 @@
       "id": "2026-10-29-americas-233",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q233360",
       "title": "Second Battle of Corinth",
       "parents": [
@@ -2168,7 +1364,7 @@
       "id": "2026-10-29-americas-234",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q543094",
       "title": "Battle of Fort Stedman",
       "parents": [
@@ -2182,7 +1378,7 @@
       "id": "2026-10-29-americas-235",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q815139",
       "title": "Siege of Fort Texas",
       "parents": [
@@ -2196,7 +1392,7 @@
       "id": "2026-10-29-americas-236",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1411096",
       "title": "Conquest of California",
       "parents": [
@@ -2210,7 +1406,7 @@
       "id": "2026-10-29-americas-237",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7796515",
       "title": "Thornton Affair",
       "parents": [
@@ -2224,7 +1420,7 @@
       "id": "2026-10-29-americas-238",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3775020",
       "title": "Battle of Yatay",
       "parents": [
@@ -2238,7 +1434,7 @@
       "id": "2026-10-29-americas-239",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5722546",
       "title": "Battle of Lomas Valentinas",
       "parents": [
@@ -2252,7 +1448,7 @@
       "id": "2026-10-29-americas-240",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3289878",
       "title": "Battle of Curuzú",
       "parents": [
@@ -2266,7 +1462,7 @@
       "id": "2026-10-29-americas-241",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1635922",
       "title": "Battles of Tobago",
       "parents": [
@@ -2280,7 +1476,7 @@
       "id": "2026-10-29-americas-242",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1851266",
       "title": "Battle of Cepeda (1820)",
       "parents": [
@@ -2294,7 +1490,7 @@
       "id": "2026-10-29-americas-243",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2888531",
       "title": "Fort Mims massacre",
       "parents": [
@@ -2308,7 +1504,7 @@
       "id": "2026-10-29-americas-244",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3944738",
       "title": "Anglo-French blockade of the Río de la Plata",
       "parents": [
@@ -2322,7 +1518,7 @@
       "id": "2026-10-29-americas-245",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q55635",
       "title": "Battle of Monte de las Cruces",
       "parents": [
@@ -2336,7 +1532,7 @@
       "id": "2026-10-29-americas-246",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2889343",
       "title": "Battle of Miraflores",
       "parents": [
@@ -2350,7 +1546,7 @@
       "id": "2026-10-29-americas-247",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1886301",
       "title": "Battle of Wilson's Wharf",
       "parents": [
@@ -2364,7 +1560,7 @@
       "id": "2026-10-29-americas-248",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1970207",
       "title": "Battle of Cross Keys",
       "parents": [
@@ -2378,7 +1574,7 @@
       "id": "2026-10-29-europe-414",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q686099",
       "title": "Battle of Borny–Colombey",
       "parents": [
@@ -2392,7 +1588,7 @@
       "id": "2026-10-29-europe-415",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q815146",
       "title": "Siege of Jasna Góra",
       "parents": [
@@ -2406,7 +1602,7 @@
       "id": "2026-10-29-europe-416",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q689007",
       "title": "Battle of Villinghausen",
       "parents": [
@@ -2420,7 +1616,7 @@
       "id": "2026-10-29-europe-417",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2639377",
       "title": "Siege of Kolberg (Seven Years' War)",
       "parents": [
@@ -2434,7 +1630,7 @@
       "id": "2026-10-29-europe-418",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q6059644",
       "title": "Invasion of Gozo (1551)",
       "parents": [
@@ -2448,7 +1644,7 @@
       "id": "2026-10-29-europe-419",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q246200",
       "title": "Battle of Medina de Rioseco",
       "parents": [
@@ -2462,7 +1658,7 @@
       "id": "2026-10-29-europe-420",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2724886",
       "title": "Siege of Ochakov (1788)",
       "parents": [
@@ -2476,7 +1672,7 @@
       "id": "2026-10-29-europe-421",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q558435",
       "title": "Siege of Mainz (1793)",
       "parents": [
@@ -2490,7 +1686,7 @@
       "id": "2026-10-29-europe-422",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2667561",
       "title": "Battle of Nikopol",
       "parents": [
@@ -2504,7 +1700,7 @@
       "id": "2026-10-29-europe-423",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q681814",
       "title": "Siege of Groningen (1672)",
       "parents": [
@@ -2518,7 +1714,7 @@
       "id": "2026-10-29-europe-424",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2540658",
       "title": "Battle of Călugăreni",
       "parents": [
@@ -2532,7 +1728,7 @@
       "id": "2026-10-29-europe-425",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q130271137",
       "title": "Battle of Qbaada",
       "parents": [
@@ -2546,7 +1742,7 @@
       "id": "2026-10-29-europe-426",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q40559",
       "title": "Battle of Le Mans",
       "parents": [
@@ -2560,7 +1756,7 @@
       "id": "2026-10-29-europe-427",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q547651",
       "title": "Battle of Bazeilles",
       "parents": [
@@ -2574,7 +1770,7 @@
       "id": "2026-10-29-europe-428",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q551428",
       "title": "Battle of Beaune-la-Rolande",
       "parents": [
@@ -2588,7 +1784,7 @@
       "id": "2026-10-29-europe-429",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q570919",
       "title": "Battle of Coulmiers",
       "parents": [
@@ -2602,7 +1798,7 @@
       "id": "2026-10-29-europe-430",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1073320",
       "title": "Réveillon riots",
       "parents": [
@@ -2616,7 +1812,7 @@
       "id": "2026-10-29-europe-431",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q574500",
       "title": "Siege of Kolberg (1807)",
       "parents": [
@@ -2630,7 +1826,7 @@
       "id": "2026-10-29-europe-432",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q163959",
       "title": "Battle of Héricourt",
       "parents": [
@@ -2644,7 +1840,7 @@
       "id": "2026-10-29-europe-433",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q938724",
       "title": "Battle of Goito",
       "parents": [
@@ -2657,7 +1853,7 @@
       "id": "2026-10-29-europe-434",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2237038",
       "title": "Battle of Maciejowice",
       "parents": [
@@ -2671,7 +1867,7 @@
       "id": "2026-10-29-europe-435",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2443770",
       "title": "Battle of Korsuń",
       "parents": [
@@ -2685,7 +1881,7 @@
       "id": "2026-10-29-europe-436",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q541362",
       "title": "Battle of Lutterberg (1758)",
       "parents": [
@@ -2699,7 +1895,7 @@
       "id": "2026-10-29-europe-437",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q663450",
       "title": "Battle of Krefeld",
       "parents": [
@@ -2713,7 +1909,7 @@
       "id": "2026-10-29-europe-438",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q677892",
       "title": "Battle of Freiberg",
       "parents": [
@@ -2727,7 +1923,7 @@
       "id": "2026-10-29-europe-439",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q688986",
       "title": "Battle of Hoyerswerda",
       "parents": [
@@ -2741,7 +1937,7 @@
       "id": "2026-10-29-europe-440",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4141642",
       "title": "Anglo-Russian invasion of Holland",
       "parents": [
@@ -2755,7 +1951,7 @@
       "id": "2026-10-29-europe-441",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q13581715",
       "title": "Mediterranean campaign of 1798",
       "parents": [
@@ -2769,7 +1965,7 @@
       "id": "2026-10-29-europe-442",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q902181",
       "title": "Battle of Cape Ortegal",
       "parents": [
@@ -2783,7 +1979,7 @@
       "id": "2026-10-29-europe-443",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q945596",
       "title": "Battle of Golymin",
       "parents": [
@@ -2797,7 +1993,7 @@
       "id": "2026-10-29-europe-444",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q815207",
       "title": "Siege of Silistria (1854)",
       "parents": [
@@ -2811,7 +2007,7 @@
       "id": "2026-10-29-europe-445",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q640100",
       "title": "Battles of El Bruch",
       "parents": [
@@ -2825,7 +2021,7 @@
       "id": "2026-10-29-europe-446",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q761009",
       "title": "Battle of Espinosa de los Monteros",
       "parents": [
@@ -2839,7 +2035,7 @@
       "id": "2026-10-29-europe-447",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1643008",
       "title": "Battle of the Gebora",
       "parents": [
@@ -2853,7 +2049,7 @@
       "id": "2026-10-29-europe-448",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q840790",
       "title": "Battle of Saltanovka",
       "parents": [
@@ -2867,7 +2063,7 @@
       "id": "2026-10-29-europe-449",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2889345",
       "title": "Battle of Mir (1812)",
       "parents": [
@@ -2881,7 +2077,7 @@
       "id": "2026-10-29-europe-450",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q904495",
       "title": "Siege of Luxembourg (1794–1795)",
       "parents": [
@@ -2895,7 +2091,7 @@
       "id": "2026-10-29-europe-451",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q183447",
       "title": "Capture of the Dutch fleet at Den Helder",
       "parents": [
@@ -2909,7 +2105,7 @@
       "id": "2026-10-29-europe-452",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q815175",
       "title": "Siege of Mantua (1796–1797)",
       "parents": [
@@ -2923,7 +2119,7 @@
       "id": "2026-10-29-europe-453",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2113036",
       "title": "French expedition to Ireland (1796)",
       "parents": [
@@ -2937,7 +2133,7 @@
       "id": "2026-10-29-europe-454",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q646895",
       "title": "Siege of Ostend",
       "parents": [
@@ -2951,7 +2147,7 @@
       "id": "2026-10-29-europe-455",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q685805",
       "title": "Battle of Bezzecca",
       "parents": [
@@ -2965,7 +2161,7 @@
       "id": "2026-10-29-europe-456",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q689374",
       "title": "Battle of Trautenau",
       "parents": [
@@ -2979,7 +2175,7 @@
       "id": "2026-10-29-europe-457",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q672198",
       "title": "Battle of Sinsheim",
       "parents": [
@@ -2993,7 +2189,7 @@
       "id": "2026-10-29-europe-458",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q939845",
       "title": "Battle of Augusta",
       "parents": [
@@ -3007,7 +2203,7 @@
       "id": "2026-10-29-europe-459",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q181480",
       "title": "Battle of Vítkov Hill",
       "parents": [
@@ -3021,7 +2217,7 @@
       "id": "2026-10-29-europe-460",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q575737",
       "title": "Battle of Scheveningen",
       "parents": [
@@ -3035,7 +2231,7 @@
       "id": "2026-10-29-europe-461",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1438686",
       "title": "Battle of Plymouth (1652)",
       "parents": [
@@ -3049,7 +2245,7 @@
       "id": "2026-10-29-europe-462",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1501750",
       "title": "Battle of Vågen",
       "parents": [
@@ -3063,7 +2259,7 @@
       "id": "2026-10-29-europe-463",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2063617",
       "title": "Battle of the Gabbard",
       "parents": [
@@ -3077,7 +2273,7 @@
       "id": "2026-10-29-europe-464",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2204664",
       "title": "Battle of Leghorn",
       "parents": [
@@ -3091,7 +2287,7 @@
       "id": "2026-10-29-europe-465",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2888946",
       "title": "Battle of Killiecrankie",
       "parents": [
@@ -3105,7 +2301,7 @@
       "id": "2026-10-29-europe-466",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q909154",
       "title": "Battle of Schleiz",
       "parents": [
@@ -3119,7 +2315,7 @@
       "id": "2026-10-29-europe-467",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2237649",
       "title": "Battle of Olasch",
       "parents": [
@@ -3133,7 +2329,7 @@
       "id": "2026-10-29-europe-468",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2297059",
       "title": "Battle of the Solent",
       "parents": [
@@ -3147,7 +2343,7 @@
       "id": "2026-10-29-europe-469",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q506846",
       "title": "Siege of Neuss",
       "parents": [
@@ -3161,7 +2357,7 @@
       "id": "2026-10-29-europe-470",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q689204",
       "title": "Battle of Palestro",
       "parents": [
@@ -3174,7 +2370,7 @@
       "id": "2026-10-29-europe-471",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2734129",
       "title": "Battle of Toro",
       "parents": [
@@ -3188,7 +2384,7 @@
       "id": "2026-10-29-europe-472",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q580417",
       "title": "Skirmish of Pastrengo (1848)",
       "parents": [
@@ -3201,7 +2397,7 @@
       "id": "2026-10-29-europe-473",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q641989",
       "title": "Battle of Nyborg",
       "parents": [
@@ -3215,7 +2411,7 @@
       "id": "2026-10-29-europe-474",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q508088",
       "title": "Siege of Olomouc",
       "parents": [
@@ -3229,7 +2425,7 @@
       "id": "2026-10-29-europe-475",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q573963",
       "title": "Battle of Kloster Kampen",
       "parents": [
@@ -3243,7 +2439,7 @@
       "id": "2026-10-29-europe-476",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1037476",
       "title": "Battle of Tornow",
       "parents": [
@@ -3257,7 +2453,7 @@
       "id": "2026-10-29-europe-477",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1075269",
       "title": "Battle of Meissen",
       "parents": [
@@ -3271,7 +2467,7 @@
       "id": "2026-10-29-europe-478",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q693265",
       "title": "Battle of Assietta",
       "parents": [
@@ -3285,7 +2481,7 @@
       "id": "2026-10-29-europe-479",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3558438",
       "title": "Suvorov's Swiss campaign",
       "parents": [
@@ -3299,7 +2495,7 @@
       "id": "2026-10-29-europe-480",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q573358",
       "title": "Battle of Teugen–Hausen",
       "parents": [
@@ -3313,7 +2509,7 @@
       "id": "2026-10-29-europe-481",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q702099",
       "title": "Battle of Znaim",
       "parents": [
@@ -3327,7 +2523,7 @@
       "id": "2026-10-29-europe-482",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q897933",
       "title": "Battle of Raab (1809)",
       "parents": [
@@ -3341,7 +2537,7 @@
       "id": "2026-10-29-europe-483",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1059938",
       "title": "Battle of Piave River (1809)",
       "parents": [
@@ -3355,7 +2551,7 @@
       "id": "2026-10-29-europe-484",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872056",
       "title": "Battle of Pirano",
       "parents": [
@@ -3369,7 +2565,7 @@
       "id": "2026-10-29-europe-485",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q209716",
       "title": "Siege of Zaragoza (1808)",
       "parents": [
@@ -3383,7 +2579,7 @@
       "id": "2026-10-29-europe-486",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q209721",
       "title": "Battle of Cabezón",
       "parents": [
@@ -3397,7 +2593,7 @@
       "id": "2026-10-29-europe-487",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5601911",
       "title": "Greek civil wars of 1823–1825",
       "parents": [
@@ -3411,7 +2607,7 @@
       "id": "2026-10-29-europe-488",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1028247",
       "title": "Battle of Groix",
       "parents": [
@@ -3425,7 +2621,7 @@
       "id": "2026-10-29-europe-489",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1450451",
       "title": "French invasion of Switzerland",
       "parents": [
@@ -3439,7 +2635,7 @@
       "id": "2026-10-29-europe-490",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q72454",
       "title": "Battle of Kerch Strait (1790)",
       "parents": [
@@ -3453,7 +2649,7 @@
       "id": "2026-10-29-europe-491",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q814235",
       "title": "German campaign of 1813",
       "parents": [
@@ -3467,7 +2663,7 @@
       "id": "2026-10-29-europe-492",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q428035",
       "title": "Battle of Millesimo",
       "parents": [
@@ -3481,7 +2677,7 @@
       "id": "2026-10-29-europe-493",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q942257",
       "title": "Battle of Famars",
       "parents": [
@@ -3495,7 +2691,7 @@
       "id": "2026-10-29-europe-494",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q949590",
       "title": "Second Battle of Dego",
       "parents": [
@@ -3509,7 +2705,7 @@
       "id": "2026-10-29-europe-495",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q561512",
       "title": "Battle of Blumenau",
       "parents": [
@@ -3523,7 +2719,7 @@
       "id": "2026-10-29-europe-496",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q574365",
       "title": "Battle of Gitschin",
       "parents": [
@@ -3537,7 +2733,7 @@
       "id": "2026-10-29-europe-497",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q670005",
       "title": "Battle of Skalitz",
       "parents": [
@@ -3551,7 +2747,7 @@
       "id": "2026-10-29-europe-498",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q695680",
       "title": "Battle of Náchod",
       "parents": [
@@ -3565,7 +2761,7 @@
       "id": "2026-10-29-europe-499",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q694619",
       "title": "Siege of Leiden",
       "parents": [
@@ -3579,7 +2775,7 @@
       "id": "2026-10-29-europe-500",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2890458",
       "title": "Battle of Zutphen",
       "parents": [
@@ -3593,7 +2789,7 @@
       "id": "2026-10-29-europe-501",
       "planned": "2026-10-29T17:26Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2265621",
       "title": "Battle of Køge Bay (1677)",
       "parents": [
@@ -3602,7 +2798,720 @@
       "edges": [],
       "rank": "child-of:scanian-war",
       "why": "P361 child of the held scanian-war; 12 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-502",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q164679",
+      "title": "Great Fire of London",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q838718 = city fire); the class was added to data/imports/wikidata-seeds.json on 29 October. 72 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-249",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q638530",
+      "title": "Texas Revolution",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q3119121 = revolutionary war); the class was added to data/imports/wikidata-seeds.json on 29 October. 52 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-503",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q656545",
+      "title": "Reinsurance Treaty",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1498487 = secret treaty); the class was added to data/imports/wikidata-seeds.json on 29 October. 33 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-283",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q8094772",
+      "title": "1883 eruption of Krakatoa",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q7692360 = volcanic eruption); the class was added to data/imports/wikidata-seeds.json on 29 October. 32 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-284",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q623391",
+      "title": "Japan–Korea Treaty of 1876",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q864737 = unequal treaties); the class was added to data/imports/wikidata-seeds.json on 29 October. 28 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-285",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q3591483",
+      "title": "1815 eruption of Mount Tambora",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q7692360 = volcanic eruption); the class was added to data/imports/wikidata-seeds.json on 29 October. 24 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-286",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1259178",
+      "title": "third plague pandemic",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1516910 = plague epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 21 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-287",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2001581",
+      "title": "1707 Hōei earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q6963731 = Nankai megathrust earthquake); the class was added to data/imports/wikidata-seeds.json on 29 October. 20 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-288",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q715495",
+      "title": "1896 Sanriku earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q7446977, Q727990 = off Sanriku earthquake, megathrust earthquake); the class was added to data/imports/wikidata-seeds.json on 29 October. 18 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-504",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1191077",
+      "title": "Secret Treaty of Dover",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1498487 = secret treaty); the class was added to data/imports/wikidata-seeds.json on 29 October. 17 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-289",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q139871",
+      "title": "Kinmon Incident",
+      "parents": [
+        "bakumatsu"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q11371169 = incident); the class was added to data/imports/wikidata-seeds.json on 29 October. 16 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-250",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q6268269",
+      "title": "Johnson County War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q7292715 = range war); the class was added to data/imports/wikidata-seeds.json on 29 October. 14 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-290",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q715559",
+      "title": "Fall of Edo",
+      "parents": [
+        "boshin-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q3769366 = surrender); the class was added to data/imports/wikidata-seeds.json on 29 October. 14 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-505",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q448015",
+      "title": "Great Plague of Vienna",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1516910 = plague epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 13 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-251",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1479636",
+      "title": "Federal War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q2908804 = Venezuelan civil war); the class was added to data/imports/wikidata-seeds.json on 29 October. 13 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-506",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q581254",
+      "title": "Zebrzydowski Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1325214 = rokosz); the class was added to data/imports/wikidata-seeds.json on 29 October. 13 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-507",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3115111",
+      "title": "Naples plague",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1516910 = plague epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 13 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-291",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q3591486",
+      "title": "1792 eruption of Mount Unzen",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q7692360, Q3541302 = volcanic eruption, volcano tectonic earthquake); the class was added to data/imports/wikidata-seeds.json on 29 October. 11 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-292",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1661404",
+      "title": "Indigo revolt",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q7897387 = unrest); the class was added to data/imports/wikidata-seeds.json on 29 October. 11 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-293",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q4549898",
+      "title": "1498 Meiō earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q6963731 = Nankai megathrust earthquake); the class was added to data/imports/wikidata-seeds.json on 29 October. 11 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-508",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q5599762",
+      "title": "Great Plague of Seville",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1516910 = plague epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 10 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-509",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q641335",
+      "title": "St. Felix's Flood",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q121742 = storm surge); the class was added to data/imports/wikidata-seeds.json on 29 October. 10 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-294",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2377085",
+      "title": "Anglo-Japanese Treaty of Amity and Commerce",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q3824506 = commercial treaty); the class was added to data/imports/wikidata-seeds.json on 29 October. 9 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-295",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2617147",
+      "title": "Fall of Osaka Castle",
+      "parents": [
+        "boshin-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q3769366 = surrender); the class was added to data/imports/wikidata-seeds.json on 29 October. 9 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-296",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q3536741",
+      "title": "Treaty of Amity and Commerce between France and Japan",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q3824506 = commercial treaty); the class was added to data/imports/wikidata-seeds.json on 29 October. 8 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-252",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q3067868",
+      "title": "Colombian Civil War of 1859–62",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q3119160 = Colombian civil war); the class was added to data/imports/wikidata-seeds.json on 29 October. 8 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-253",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1782419",
+      "title": "Treaty of the Triple Alliance",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1498487 = secret treaty); the class was added to data/imports/wikidata-seeds.json on 29 October. 8 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-254",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4554489",
+      "title": "1837–1838 smallpox epidemic",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q30103545 = smallpox epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 8 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-510",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4554867",
+      "title": "1853 Copenhagen cholera outbreak",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q959265 = cholera outbreak); the class was added to data/imports/wikidata-seeds.json on 29 October. 8 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-511",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q20723261",
+      "title": "1675–76 Malta plague epidemic",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1516910 = plague epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 8 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-512",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q7382249",
+      "title": "1770–1772 Russian plague",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1516910 = plague epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 8 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-255",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q7414187",
+      "title": "San Francisco plague of 1900–1904",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1516910 = plague epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 7 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-256",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q27926964",
+      "title": "Boston smallpox epidemic of 1721",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q30103545 = smallpox epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 7 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-513",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q20723260",
+      "title": "1592–93 Malta plague epidemic",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1516910 = plague epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 7 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-297",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q104892373",
+      "title": "Great Plague in late Ming Dynasty",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1516910 = plague epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 6 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-257",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q6784453",
+      "title": "Massachusetts smallpox epidemic",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q30103545 = smallpox epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 6 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-514",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3799261",
+      "title": "Radical War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q7897387 = unrest); the class was added to data/imports/wikidata-seeds.json on 29 October. 6 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-298",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q10843835",
+      "title": "Hong Kong Plague of 1894",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1516910 = plague epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 5 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-258",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q3068530",
+      "title": "Colombian Civil War of 1876",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q3119160 = Colombian civil war); the class was added to data/imports/wikidata-seeds.json on 29 October. 5 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-299",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q4940602",
+      "title": "Bombay plague epidemic",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1516910 = plague epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 4 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-259",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q7204086",
+      "title": "Pleasant Valley War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q7292715 = range war); the class was added to data/imports/wikidata-seeds.json on 29 October. 4 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-300",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q11510437",
+      "title": "1858 Treaty of Amity and Commerce between the Netherlands and Japan",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q3824506 = commercial treaty); the class was added to data/imports/wikidata-seeds.json on 29 October. 3 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-260",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2882649",
+      "title": "Venezuelan Civil War of 1848–1849",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q2908804 = Venezuelan civil war); the class was added to data/imports/wikidata-seeds.json on 29 October. 3 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-515",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q86458874",
+      "title": "1582 San Cristóbal de La Laguna plague",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1516910 = plague epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 3 sitelinks."
+    },
+    {
+      "id": "2026-10-29-africa-038",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q104879437",
+      "title": "Sagbadre War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q582956 = punitive expedition); the class was added to data/imports/wikidata-seeds.json on 29 October. 2 sitelinks."
+    },
+    {
+      "id": "2026-10-29-asia-301",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q13652394",
+      "title": "Negros Revolution",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q3827292 = nonviolent revolution); the class was added to data/imports/wikidata-seeds.json on 29 October. 2 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-261",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q6783561",
+      "title": "Mason County War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q7292715 = range war); the class was added to data/imports/wikidata-seeds.json on 29 October. 2 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-262",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q7492431",
+      "title": "Sheep Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q7292715 = range war); the class was added to data/imports/wikidata-seeds.json on 29 October. 2 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-263",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q6492180",
+      "title": "Las Cuevas War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q107637520 = border conflict); the class was added to data/imports/wikidata-seeds.json on 29 October. 2 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-264",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q193155",
+      "title": "Louisiana Purchase",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q25929224 = transfer of sovereignty); the class was added to data/imports/wikidata-seeds.json on 29 October. 61 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-265",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q170652",
+      "title": "Great Blizzard of 1888",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q205418 = blizzard); the class was added to data/imports/wikidata-seeds.json on 29 October. 14 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-516",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3756219",
+      "title": "Salt Tax Revolt",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q6024855 = tax riot); the class was added to data/imports/wikidata-seeds.json on 29 October. 5 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-517",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q96360043",
+      "title": "1899 Porto plague outbreak",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q1516910 = plague epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 4 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-518",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q16427723",
+      "title": "1707–1709 Iceland smallpox epidemic",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q30103545 = smallpox epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 4 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-519",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2665576",
+      "title": "Auspicious Incident",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q11371169 = incident); the class was added to data/imports/wikidata-seeds.json on 29 October. 29 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-266",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q16153856",
+      "title": "1775–82 North American smallpox epidemic",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q30103545 = smallpox epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 7 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-520",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q7911959",
+      "title": "Grand Harbour of Malta tornado",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q8081 = tornado); the class was added to data/imports/wikidata-seeds.json on 29 October. 5 sitelinks."
+    },
+    {
+      "id": "2026-10-29-americas-267",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q932149",
+      "title": "Schoolhouse Blizzard",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q205418 = blizzard); the class was added to data/imports/wikidata-seeds.json on 29 October. 4 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-521",
+      "planned": "2026-10-29T18:31:09Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3157839",
+      "title": "Revolt of the Pitauds",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Reclaimed: refused earlier for a class with no row (Q6024855 = tax riot); the class was added to data/imports/wikidata-seeds.json on 29 October. 3 sitelinks."
     }
-  ],
-  "generated": "2026-10-29"
+  ]
 }
