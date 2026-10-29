@@ -3,1662 +3,6 @@
   "kind": "import-queue",
   "items": [
     {
-      "id": "2026-10-29-americas-265",
-      "planned": "2026-10-29T18:31:09Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q170652",
-      "title": "Great Blizzard of 1888",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Reclaimed: refused earlier for a class with no row (Q205418 = blizzard); the class was added to data/imports/wikidata-seeds.json on 29 October. 14 sitelinks."
-    },
-    {
-      "id": "2026-10-29-europe-516",
-      "planned": "2026-10-29T18:31:09Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q3756219",
-      "title": "Salt Tax Revolt",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Reclaimed: refused earlier for a class with no row (Q6024855 = tax riot); the class was added to data/imports/wikidata-seeds.json on 29 October. 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-europe-517",
-      "planned": "2026-10-29T18:31:09Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q96360043",
-      "title": "1899 Porto plague outbreak",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Reclaimed: refused earlier for a class with no row (Q1516910 = plague epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-europe-518",
-      "planned": "2026-10-29T18:31:09Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q16427723",
-      "title": "1707–1709 Iceland smallpox epidemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Reclaimed: refused earlier for a class with no row (Q30103545 = smallpox epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-europe-519",
-      "planned": "2026-10-29T18:31:09Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q2665576",
-      "title": "Auspicious Incident",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Reclaimed: refused earlier for a class with no row (Q11371169 = incident); the class was added to data/imports/wikidata-seeds.json on 29 October. 29 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-266",
-      "planned": "2026-10-29T18:31:09Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q16153856",
-      "title": "1775–82 North American smallpox epidemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Reclaimed: refused earlier for a class with no row (Q30103545 = smallpox epidemic); the class was added to data/imports/wikidata-seeds.json on 29 October. 7 sitelinks."
-    },
-    {
-      "id": "2026-10-29-europe-520",
-      "planned": "2026-10-29T18:31:09Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q7911959",
-      "title": "Grand Harbour of Malta tornado",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Reclaimed: refused earlier for a class with no row (Q8081 = tornado); the class was added to data/imports/wikidata-seeds.json on 29 October. 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-267",
-      "planned": "2026-10-29T18:31:09Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q932149",
-      "title": "Schoolhouse Blizzard",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Reclaimed: refused earlier for a class with no row (Q205418 = blizzard); the class was added to data/imports/wikidata-seeds.json on 29 October. 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-europe-521",
-      "planned": "2026-10-29T18:31:09Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q3157839",
-      "title": "Revolt of the Pitauds",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Reclaimed: refused earlier for a class with no row (Q6024855 = tax riot); the class was added to data/imports/wikidata-seeds.json on 29 October. 3 sitelinks."
-    },
-    {
-      "id": "2026-10-29-africa-039",
-      "planned": "2026-10-29T19:27Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q1252684",
-      "title": "Battle of Toski",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Mahdist War (1881-1899); 8 sitelinks."
-    },
-    {
-      "id": "2026-10-29-africa-040",
-      "planned": "2026-10-29T19:27Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1276340",
-      "title": "Battle of Atbara",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Mahdist War (1881-1899); 8 sitelinks."
-    },
-    {
-      "id": "2026-10-29-africa-041",
-      "planned": "2026-10-29T19:27Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q2889955",
-      "title": "Battle of Senafe",
-      "parents": [
-        "first-italo-ethiopian-war"
-      ],
-      "edges": [],
-      "rank": "child-of:first-italo-ethiopian-war",
-      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held First Italo-Ethiopian War (1895-1896); 7 sitelinks."
-    },
-    {
-      "id": "2026-10-29-africa-042",
-      "planned": "2026-10-29T19:27Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q2984893",
-      "title": "Battle of Serobeti",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Mahdist War (1881-1899); 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-africa-043",
-      "planned": "2026-10-29T19:27Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q722047",
-      "title": "Ashanti–Fante War",
-      "parents": [],
-      "edges": [],
-      "rank": "child-of:anglo-ashanti-wars",
-      "why": "Africa trails every other lane (616 active against europe's 1755); a P361 child of the held Anglo-Ashanti wars, but it starts in 1806 and that umbrella starts in 1823, so rule 12's span check drops the parent; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-africa-044",
-      "planned": "2026-10-29T19:27Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q2237506",
-      "title": "Battle of Ferkeh",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Mahdist War (1881-1899); 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-africa-045",
-      "planned": "2026-10-29T19:27Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q2888919",
-      "title": "Battle of Kirbekan",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Mahdist War (1881-1899); 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-africa-046",
-      "planned": "2026-10-29T19:27Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q27627676",
-      "title": "Battle of Abu Kru",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Mahdist War (1881-1899); 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-africa-047",
-      "planned": "2026-10-29T19:27Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q111699632",
-      "title": "Black Week",
-      "parents": [
-        "second-boer-war"
-      ],
-      "edges": [],
-      "rank": "child-of:second-boer-war",
-      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Second Boer War (1899-1902); 3 sitelinks."
-    },
-    {
-      "id": "2026-10-29-africa-048",
-      "planned": "2026-10-29T19:27Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q105616758",
-      "title": "First Battle of Boudouaou",
-      "parents": [
-        "french-conquest-of-algeria"
-      ],
-      "edges": [],
-      "rank": "child-of:french-conquest-of-algeria",
-      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held French conquest of Algeria (1830-1904); 3 sitelinks."
-    },
-    {
-      "id": "2026-10-29-africa-049",
-      "planned": "2026-10-29T19:27Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q4871605",
-      "title": "Battle of Lougou",
-      "parents": [
-        "scramble-for-africa"
-      ],
-      "edges": [],
-      "rank": "child-of:scramble-for-africa",
-      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Scramble for Africa (1885-1914); 3 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-302",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4087414",
-      "title": "Battle of Beicang",
-      "parents": [
-        "boxer-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:boxer-rebellion",
-      "why": "P361 child of the held boxer-rebellion; 8 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-303",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q22947760",
-      "title": "Siege of Mosul",
-      "parents": [
-        "ottoman-persian-war-1743-1746"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-persian-war-1743-1746",
-      "why": "P361 child of the held ottoman-persian-war-1743-1746; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-304",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4087483",
-      "title": "Battle of Yangcun",
-      "parents": [
-        "boxer-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:boxer-rebellion",
-      "why": "P361 child of the held boxer-rebellion; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-305",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4924112",
-      "title": "Paknam Incident",
-      "parents": [
-        "1893-franco-siamese-crisis"
-      ],
-      "edges": [],
-      "rank": "child-of:1893-franco-siamese-crisis",
-      "why": "P361 child of the held 1893-franco-siamese-crisis; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-306",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4438410",
-      "title": "Battle of Chinhat",
-      "parents": [
-        "indian-rebellion-of-1857"
-      ],
-      "edges": [],
-      "rank": "child-of:indian-rebellion-of-1857",
-      "why": "P361 child of the held indian-rebellion-of-1857; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-307",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q14542358",
-      "title": "Battle of Binakayan–Dalahican",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-308",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q22947522",
-      "title": "Battle of Mosul",
-      "parents": [
-        "ottoman-persian-war-1743-1746"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-persian-war-1743-1746",
-      "why": "P361 child of the held ottoman-persian-war-1743-1746; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-309",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4870242",
-      "title": "Battle of Alapan",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-310",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4872624",
-      "title": "Battle of Ugeumchi",
-      "parents": [
-        "donghak-peasant-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:donghak-peasant-revolution",
-      "why": "P361 child of the held donghak-peasant-revolution; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-311",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4871368",
-      "title": "Battle of Kakarong de Sili",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-312",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4872284",
-      "title": "Battle of San Juan del Monte",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-313",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4872591",
-      "title": "Battle of Tres de Abril",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-314",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q5190436",
-      "title": "Cry of Nueva Ecija",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-315",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q12966900",
-      "title": "Battle of Imus",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-316",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q5526415",
-      "title": "Gaselee Expedition",
-      "parents": [
-        "boxer-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:boxer-rebellion",
-      "why": "P361 child of the held boxer-rebellion; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-317",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q27958319",
-      "title": "Barrackpore Mutiny of 1824",
-      "parents": [
-        "first-anglo-burmese-war"
-      ],
-      "edges": [],
-      "rank": "child-of:first-anglo-burmese-war",
-      "why": "P361 child of the held first-anglo-burmese-war; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-318",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4438403",
-      "title": "Battle of Ürümqi",
-      "parents": [
-        "dungan-revolt-1862-1877"
-      ],
-      "edges": [],
-      "rank": "child-of:dungan-revolt-1862-1877",
-      "why": "P361 child of the held dungan-revolt-1862-1877; 3 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-319",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q25477810",
-      "title": "Varvar Ali Pasha's Revolt",
-      "parents": [
-        "celali-rebellions"
-      ],
-      "edges": [],
-      "rank": "child-of:celali-rebellions",
-      "why": "P361 child of the held celali-rebellions; 3 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-320",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q108523769",
-      "title": "Japanese occupation of Gyeongbokgung",
-      "parents": [
-        "donghak-peasant-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:donghak-peasant-revolution",
-      "why": "P361 child of the held donghak-peasant-revolution; 3 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-321",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4872146",
-      "title": "Battle of Quingua",
-      "parents": [
-        "philippine-american-war"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-american-war",
-      "why": "P361 child of the held philippine-american-war; 3 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-322",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q131696429",
-      "title": "First Battle of Mount Pamaton",
-      "parents": [
-        "banjarmasin-war"
-      ],
-      "edges": [],
-      "rank": "child-of:banjarmasin-war",
-      "why": "P361 child of the held banjarmasin-war; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-323",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q134272435",
-      "title": "Battle of Mount Pamaton",
-      "parents": [
-        "banjarmasin-war"
-      ],
-      "edges": [],
-      "rank": "child-of:banjarmasin-war",
-      "why": "P361 child of the held banjarmasin-war; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-324",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q16056918",
-      "title": "1896 Manila mutiny",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-325",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q16822600",
-      "title": "Battle of Camalig",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-326",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q16822722",
-      "title": "Battle of Talisay",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-327",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q16931487",
-      "title": "Siege of Zamboanga",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-328",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q133521430",
-      "title": "Battle of Kejiwan",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361 child of the held java-war; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-329",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133696273",
-      "title": "Skirmish at Tegalreja",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361 child of the held java-war; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-330",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q133802796",
-      "title": "Ambush at Mount Kelir",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361 child of the held java-war; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-331",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q21187956",
-      "title": "Raid on Paombong",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-332",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q24204936",
-      "title": "Battle of Sambat",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-333",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q51169006",
-      "title": "Battle of San Rafael",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-334",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q56063332",
-      "title": "Battle of San Jose de Buenavista",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-335",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q106610261",
-      "title": "Battle of Mount Puray",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-336",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q126454316",
-      "title": "Liberation of Nueva Cáceres",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-337",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4870262",
-      "title": "Battle of Aliaga",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-338",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4871918",
-      "title": "Battle of Noveleta",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-339",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4872016",
-      "title": "Battle of Perez Dasmariñas",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-340",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4872272",
-      "title": "Battle of San Francisco De Malabon",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-341",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4872285",
-      "title": "Battle of San Mateo and Montalban",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-342",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4872803",
-      "title": "Battle of Zapote Bridge",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-343",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q28458443",
-      "title": "Battle of Wai",
-      "parents": [
-        "deccan-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:deccan-wars",
-      "why": "P361 child of the held deccan-wars; 2 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-344",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q24913278",
-      "title": "Uprising against the Dahije",
-      "parents": [
-        "first-serbian-uprising"
-      ],
-      "edges": [],
-      "rank": "child-of:first-serbian-uprising",
-      "why": "P361 child of the held first-serbian-uprising; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-345",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q16822566",
-      "title": "Battle of Barrio Yating",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-346",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q16822596",
-      "title": "Battle of Calamba",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-347",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q16822703",
-      "title": "Battle of Sapong Hills",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-348",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q16822727",
-      "title": "Battle of Tayabas",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-349",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q16828511",
-      "title": "Cry of Tarlac",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-350",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q126721244",
-      "title": "Battle of Budla-an",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-351",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133850436",
-      "title": "Battle of Siluk",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361 child of the held java-war; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-352",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q134445839",
-      "title": "Siege of Kayseri",
-      "parents": [
-        "celali-rebellions"
-      ],
-      "edges": [],
-      "rank": "child-of:celali-rebellions",
-      "why": "P361 child of the held celali-rebellions; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-353",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q134740137",
-      "title": "Battle of Dagupan",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-354",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q139760871",
-      "title": "Siege of Biak-na-Bato",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-355",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4871990",
-      "title": "Battle of Pasong Tamo",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-356",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4873197",
-      "title": "Battles of Batangas",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-357",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q6379999",
-      "title": "Kawit Revolt",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-358",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q7316931",
-      "title": "Retreat to Montalban",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-asia-359",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q7510230",
-      "title": "Siege of Masbate",
-      "parents": [
-        "philippine-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-revolution",
-      "why": "P361 child of the held philippine-revolution; 1 sitelink."
-    },
-    {
-      "id": "2026-10-29-americas-268",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2480544",
-      "title": "Battle of Ituzaingó",
-      "parents": [
-        "cisplatine-war"
-      ],
-      "edges": [],
-      "rank": "child-of:cisplatine-war",
-      "why": "P361 child of the held cisplatine-war; 8 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-269",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2984801",
-      "title": "Batalha de Aquila/Arbolito",
-      "parents": [
-        "cisplatine-war"
-      ],
-      "edges": [],
-      "rank": "child-of:cisplatine-war",
-      "why": "P361 child of the held cisplatine-war; 8 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-270",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1364902",
-      "title": "Whitman massacre",
-      "parents": [
-        "cayuse-war"
-      ],
-      "edges": [],
-      "rank": "child-of:cayuse-war",
-      "why": "P361 child of the held cayuse-war; 8 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-271",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2387020",
-      "title": "Battle of Sarandí",
-      "parents": [
-        "cisplatine-war"
-      ],
-      "edges": [],
-      "rank": "child-of:cisplatine-war",
-      "why": "P361 child of the held cisplatine-war; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-272",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2825907",
-      "title": "Virginius Affair",
-      "parents": [
-        "ten-years-war"
-      ],
-      "edges": [],
-      "rank": "child-of:ten-years-war",
-      "why": "P361 child of the held ten-years-war; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-273",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q246652",
-      "title": "Battle of Tacuarí",
-      "parents": [
-        "paraguay-campaign"
-      ],
-      "edges": [],
-      "rank": "child-of:paraguay-campaign",
-      "why": "P361 child of the held paraguay-campaign; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-274",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2339774",
-      "title": "Wolseley Expedition",
-      "parents": [],
-      "edges": [],
-      "rank": "child-of:red-river-rebellion",
-      "why": "a P361 child of the held red-river-rebellion, but it is dated 1870-1870 and that umbrella spans 1869-1869, so rule 12 drops the parent; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-275",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2713453",
-      "title": "Voyage of the Glorioso",
-      "parents": [
-        "war-of-jenkins-ear"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-jenkins-ear",
-      "why": "P361 child of the held war-of-jenkins-ear; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-276",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q517262",
-      "title": "Battle of Veracruz",
-      "parents": [
-        "pastry-war"
-      ],
-      "edges": [],
-      "rank": "child-of:pastry-war",
-      "why": "P361 child of the held pastry-war; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-277",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5406414",
-      "title": "Frog Lake Massacre",
-      "parents": [
-        "north-west-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:north-west-rebellion",
-      "why": "P361 child of the held north-west-rebellion; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-278",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2888283",
-      "title": "Battle of Chalchuapa",
-      "parents": [
-        "barrios-war-of-reunification"
-      ],
-      "edges": [],
-      "rank": "child-of:barrios-war-of-reunification",
-      "why": "P361 child of the held barrios-war-of-reunification; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-279",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5722798",
-      "title": "Battle of Piribebuy",
-      "parents": [
-        "campaign-of-the-hills"
-      ],
-      "edges": [],
-      "rank": "child-of:campaign-of-the-hills",
-      "why": "P361 child of the held campaign-of-the-hills; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-280",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4872073",
-      "title": "Battle of Point Pleasant",
-      "parents": [
-        "lord-dunmore-s-war"
-      ],
-      "edges": [],
-      "rank": "child-of:lord-dunmore-s-war",
-      "why": "P361 child of the held lord-dunmore-s-war; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-281",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2887992",
-      "title": "Battle of India Muerta",
-      "parents": [
-        "portuguese-conquest-of-the-banda-oriental"
-      ],
-      "edges": [],
-      "rank": "child-of:portuguese-conquest-of-the",
-      "why": "P361 child of the held portuguese-conquest-of-the-banda-oriental; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-282",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q21010243",
-      "title": "Spanish conquest of Chiapas",
-      "parents": [],
-      "edges": [],
-      "rank": "child-of:spanish-conquest-of-the-aztec",
-      "why": "a P361 child of the held spanish-conquest-of-the-aztec-empire, but it is dated 1523-1523 and that umbrella spans 1519-1521, so rule 12 drops the parent; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-283",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q166218",
-      "title": "Battle of Tacuarembó",
-      "parents": [
-        "portuguese-conquest-of-the-banda-oriental"
-      ],
-      "edges": [],
-      "rank": "child-of:portuguese-conquest-of-the",
-      "why": "P361 child of the held portuguese-conquest-of-the-banda-oriental; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-284",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q5723296",
-      "title": "Battle of Catalán",
-      "parents": [
-        "portuguese-conquest-of-the-banda-oriental"
-      ],
-      "edges": [],
-      "rank": "child-of:portuguese-conquest-of-the",
-      "why": "P361 child of the held portuguese-conquest-of-the-banda-oriental; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-285",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q6130130",
-      "title": "Siege of Uruguaiana",
-      "parents": [
-        "corrientes-campaign"
-      ],
-      "edges": [],
-      "rank": "child-of:corrientes-campaign",
-      "why": "P361 child of the held corrientes-campaign; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-286",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4677387",
-      "title": "Action of 8 April 1740",
-      "parents": [
-        "war-of-jenkins-ear"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-jenkins-ear",
-      "why": "P361 child of the held war-of-jenkins-ear; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-287",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4871978",
-      "title": "Battle of Palonegro",
-      "parents": [
-        "thousand-days-war"
-      ],
-      "edges": [],
-      "rank": "child-of:thousand-days-war",
-      "why": "P361 child of the held thousand-days-war; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-288",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q275736",
-      "title": "Battle of San Francisco",
-      "parents": [
-        "war-of-the-pacific"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-the-pacific",
-      "why": "P361 child of the held war-of-the-pacific; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-289",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7075767",
-      "title": "occupation of Lima",
-      "parents": [
-        "war-of-the-pacific"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-the-pacific",
-      "why": "P361 child of the held war-of-the-pacific; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-290",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3378101",
-      "title": "Battle of Punta Gruesa",
-      "parents": [
-        "war-of-the-pacific"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-the-pacific",
-      "why": "P361 child of the held war-of-the-pacific; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-291",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4871774",
-      "title": "Battle of Monte Santiago",
-      "parents": [
-        "cisplatine-war"
-      ],
-      "edges": [],
-      "rank": "child-of:cisplatine-war",
-      "why": "P361 child of the held cisplatine-war; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-292",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q963444",
-      "title": "Battle of Cut Knife",
-      "parents": [
-        "north-west-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:north-west-rebellion",
-      "why": "P361 child of the held north-west-rebellion; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-293",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4872303",
-      "title": "Battle of Santa Ana",
-      "parents": [
-        "portuguese-conquest-of-the-banda-oriental"
-      ],
-      "edges": [],
-      "rank": "child-of:portuguese-conquest-of-the",
-      "why": "P361 child of the held portuguese-conquest-of-the-banda-oriental; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-294",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q5722782",
-      "title": "Battle of Corrales",
-      "parents": [
-        "corrientes-campaign"
-      ],
-      "edges": [],
-      "rank": "child-of:corrientes-campaign",
-      "why": "P361 child of the held corrientes-campaign; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-295",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2888113",
-      "title": "Battle of Batoche",
-      "parents": [
-        "north-west-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:north-west-rebellion",
-      "why": "P361 child of the held north-west-rebellion; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-296",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q747266",
-      "title": "Battle of Tarqui",
-      "parents": [
-        "gran-colombia-peru-war"
-      ],
-      "edges": [],
-      "rank": "child-of:gran-colombia-peru-war",
-      "why": "P361 child of the held gran-colombia-peru-war; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-297",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q862220",
-      "title": "Battle of Saint-Eustache",
-      "parents": [
-        "lower-canada-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:lower-canada-rebellion",
-      "why": "P361 child of the held lower-canada-rebellion; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-298",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q9068360",
-      "title": "Laguna Retreat",
-      "parents": [
-        "mato-grosso-campaign"
-      ],
-      "edges": [],
-      "rank": "child-of:mato-grosso-campaign",
-      "why": "P361 child of the held mato-grosso-campaign; 5 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-299",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2887923",
-      "title": "Battle of Azcapotzalco",
-      "parents": [
-        "mexican-war-of-independence"
-      ],
-      "edges": [],
-      "rank": "child-of:mexican-war-of-independence",
-      "why": "P361 child of the held mexican-war-of-independence; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-300",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2890160",
-      "title": "Battle of Tenancingo",
-      "parents": [
-        "mexican-war-of-independence"
-      ],
-      "edges": [],
-      "rank": "child-of:mexican-war-of-independence",
-      "why": "P361 child of the held mexican-war-of-independence; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-301",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5722376",
-      "title": "Battle of Corpahuaico",
-      "parents": [
-        "peruvian-war-of-independence"
-      ],
-      "edges": [],
-      "rank": "child-of:peruvian-war-of-independence",
-      "why": "P361 child of the held peruvian-war-of-independence; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-302",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q5723183",
-      "title": "Battle of Zepita",
-      "parents": [
-        "peruvian-war-of-independence"
-      ],
-      "edges": [],
-      "rank": "child-of:peruvian-war-of-independence",
-      "why": "P361 child of the held peruvian-war-of-independence; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-303",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q6086122",
-      "title": "Battle of Pino de Baire",
-      "parents": [
-        "ten-years-war"
-      ],
-      "edges": [],
-      "rank": "child-of:ten-years-war",
-      "why": "P361 child of the held ten-years-war; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-304",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q8244643",
-      "title": "Battle of Rincón",
-      "parents": [
-        "cisplatine-war"
-      ],
-      "edges": [],
-      "rank": "child-of:cisplatine-war",
-      "why": "P361 child of the held cisplatine-war; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-305",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q8256513",
-      "title": "Breña campaign",
-      "parents": [
-        "war-of-the-pacific"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-the-pacific",
-      "why": "P361 child of the held war-of-the-pacific; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-306",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3485870",
-      "title": "Siege of Cuautla",
-      "parents": [
-        "mexican-war-of-independence"
-      ],
-      "edges": [],
-      "rank": "child-of:mexican-war-of-independence",
-      "why": "P361 child of the held mexican-war-of-independence; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-307",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5722272",
-      "title": "Battle of Camacuã",
-      "parents": [
-        "cisplatine-war"
-      ],
-      "edges": [],
-      "rank": "child-of:cisplatine-war",
-      "why": "P361 child of the held cisplatine-war; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-308",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q5722289",
-      "title": "Battle of Carmen de Patagones",
-      "parents": [
-        "cisplatine-war"
-      ],
-      "edges": [],
-      "rank": "child-of:cisplatine-war",
-      "why": "P361 child of the held cisplatine-war; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-309",
-      "planned": "2026-10-29T20:25Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5723219",
-      "title": "Battle of Las Guásimas",
-      "parents": [
-        "ten-years-war"
-      ],
-      "edges": [],
-      "rank": "child-of:ten-years-war",
-      "why": "P361 child of the held ten-years-war; 4 sitelinks."
-    },
-    {
       "id": "2026-10-29-americas-310",
       "planned": "2026-10-29T20:25Z",
       "lane": "americas",
@@ -2631,6 +975,2468 @@
       "edges": [],
       "rank": "child-of:peruvian-war-of-independence",
       "why": "P361 child of the held peruvian-war-of-independence; 2 sitelinks."
+    },
+    {
+      "id": "2026-10-29-europe-522",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q133132",
+      "title": "Paris Commune",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 88 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-523",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q164679",
+      "title": "Great Fire of London",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 72 sitelinks"
+    },
+    {
+      "id": "2026-10-29-americas-380",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q193155",
+      "title": "Louisiana Purchase",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 61 sitelinks"
+    },
+    {
+      "id": "2026-10-29-americas-381",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q638530",
+      "title": "Texas Revolution",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 52 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-360",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q319531",
+      "title": "Azuchi-Momoyama period",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 47 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-524",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q217429",
+      "title": "Metre Convention",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 47 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-525",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q209312",
+      "title": "Eighth Russo-Turkish War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 45 sitelinks"
+    },
+    {
+      "id": "2026-10-29-americas-382",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q70520",
+      "title": "Great Chicago Fire",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 42 sitelinks"
+    },
+    {
+      "id": "2026-10-29-americas-383",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q827212",
+      "title": "Gadsden Purchase",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 38 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-361",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q8094772",
+      "title": "1883 eruption of Krakatoa",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 32 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-362",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q3076765",
+      "title": "Ottoman Syria",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 30 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-526",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q656545",
+      "title": "Reinsurance Treaty",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 33 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-527",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q595545",
+      "title": "Rákóczi’s War of Independence",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 33 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-528",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q6542740",
+      "title": "Austro-Turkish War of 1788–1791",
+      "parents": [
+        "ottoman-habsburg-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 33 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-363",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2665576",
+      "title": "Auspicious Incident",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 29 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-364",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q617772",
+      "title": "Anglo-Persian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 29 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-365",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q623391",
+      "title": "Japan–Korea Treaty of 1876",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 28 sitelinks"
+    },
+    {
+      "id": "2026-10-29-africa-050",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q807741",
+      "title": "Barbary Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 27 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-529",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q238809",
+      "title": "Kingdom of Spain (1820-1823)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 30 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-366",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q233642",
+      "title": "Second Anglo-Maratha War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 26 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-530",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1780850",
+      "title": "Swedish-Norwegian War 1814",
+      "parents": [
+        "french-revolutionary-and-napoleonic-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 27 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-531",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q897785",
+      "title": "Fire of Moscow",
+      "parents": [
+        "french-invasion-of-russia"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 27 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-367",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2003866",
+      "title": "Sugauli Treaty",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 23 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-368",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1259178",
+      "title": "third plague pandemic",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 21 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-532",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q277392",
+      "title": "Polish–Ottoman War of 1620–1621",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 24 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-369",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2001581",
+      "title": "1707 Hōei earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 20 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-370",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q715495",
+      "title": "1896 Sanriku earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 18 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-533",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1021160",
+      "title": "Armagnac–Burgundian Civil War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 24 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-534",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1080711",
+      "title": "Ottoman–Hungarian Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 20 sitelinks"
+    },
+    {
+      "id": "2026-10-29-americas-384",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q3136592",
+      "title": "1689 Boston revolt",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 20 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-535",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q688802",
+      "title": "Battle of Torgau",
+      "parents": [
+        "third-silesian-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 20 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-371",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q139871",
+      "title": "Kinmon Incident",
+      "parents": [
+        "bakumatsu"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 16 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-536",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q896479",
+      "title": "Brabant Revolution",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 19 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-537",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1204808",
+      "title": "history of modern Greece",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 19 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-538",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q493565",
+      "title": "All Saints' Flood",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 18 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-539",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3142505",
+      "title": "First English Civil War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 21 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-372",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q838373",
+      "title": "Convention of Chuenpee",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 14 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-373",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q715559",
+      "title": "Fall of Edo",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 14 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-374",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q708068",
+      "title": "Japan–Korea Treaty of 1882",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-540",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q775045",
+      "title": "Copenhagen Fire of 1728",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 16 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-541",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1659789",
+      "title": "Koliivshchyna",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 16 sitelinks"
+    },
+    {
+      "id": "2026-10-29-americas-385",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2740393",
+      "title": "Great Fire of New York",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 19 sitelinks"
+    },
+    {
+      "id": "2026-10-29-africa-051",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q5403659",
+      "title": "Ethiopian–Egyptian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-542",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q6740",
+      "title": "Burchardi flood",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 15 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-543",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q169491",
+      "title": "Budapest Convention 1877",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 15 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-375",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q1848807",
+      "title": "Lam Sơn uprising",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 11 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-376",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4549898",
+      "title": "1498 Meiō earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 11 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-377",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q1107697",
+      "title": "Portuguese–Safavid wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 11 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-378",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4208075",
+      "title": "Kazakh–Dzungar Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 11 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-379",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2887900",
+      "title": "Battle of Aspindza",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 11 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-380",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2280723",
+      "title": "Burmese–Siamese War of 1785–86",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 11 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-381",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q1661404",
+      "title": "Indigo revolt",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 11 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-382",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2011005",
+      "title": "Khanasor Expedition",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 11 sitelinks"
+    },
+    {
+      "id": "2026-10-29-africa-052",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q3027801",
+      "title": "Battle of Wolf Ravine",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 11 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-544",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2064362",
+      "title": "Battle of Texel",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 14 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-545",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2744242",
+      "title": "Battle of Sheriffmuir",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 14 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-546",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q5420971",
+      "title": "Expedition to Lapland",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 14 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-547",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q700866",
+      "title": "Battle of Grocka",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 14 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-548",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3402214",
+      "title": "Invasion of Portugal",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 14 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-549",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q745543",
+      "title": "Battle of Montmirail",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 14 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-550",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1657839",
+      "title": "Ten Days' Campaign",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 14 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-551",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1191077",
+      "title": "Secret Treaty of Dover",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 17 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-552",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2989671",
+      "title": "Great Fire of Turku",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 17 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-553",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2119318",
+      "title": "1886 Bulgarian coup d'état",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 14 sitelinks"
+    },
+    {
+      "id": "2026-10-29-americas-386",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q170652",
+      "title": "Great Blizzard of 1888",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 14 sitelinks"
+    },
+    {
+      "id": "2026-10-29-americas-387",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q6268269",
+      "title": "Johnson County War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 14 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-554",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2996254",
+      "title": "Brussels Conference Act of 1890",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 14 sitelinks"
+    },
+    {
+      "id": "2026-10-29-asia-383",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q20627484",
+      "title": "Ottoman conquest of Lesbos",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 10 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-555",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1500532",
+      "title": "Battle of Cravant",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-556",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q283015",
+      "title": "Battle of Beaugency",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-557",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1411508",
+      "title": "Battle of Wilkomierz",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-558",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1711538",
+      "title": "Battle of Hermannstadt",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-559",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q61116375",
+      "title": "Skanderbeg's rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-560",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q960449",
+      "title": "Siege of Krujë",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-561",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3622772",
+      "title": "Siege of Negroponte",
+      "parents": [
+        "ottoman-venetian-war-1463-1479"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-562",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3502774",
+      "title": "Hundred Years' Croatian–Ottoman War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-563",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q653379",
+      "title": "Union of Kraków and Vilna",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-564",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4871030",
+      "title": "Battle of Formentera",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-565",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q904938",
+      "title": "Battle of Đakovo",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-566",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4207737",
+      "title": "Siege of Esztergom",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-567",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2368123",
+      "title": "Battle of Pinkie",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-568",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q371409",
+      "title": "Battle of Stångebro",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-569",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q646895",
+      "title": "Siege of Ostend",
+      "parents": [
+        "eighty-years-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-570",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q510943",
+      "title": "Battle of Preston",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-571",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1438686",
+      "title": "Battle of Plymouth",
+      "parents": [
+        "first-anglo-dutch-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-572",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q575737",
+      "title": "Battle of Scheveningen",
+      "parents": [
+        "first-anglo-dutch-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-573",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2204664",
+      "title": "Battle of Leghorn",
+      "parents": [
+        "first-anglo-dutch-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-574",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2063617",
+      "title": "Battle of the Gabbard",
+      "parents": [
+        "first-anglo-dutch-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-575",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3115111",
+      "title": "Naples plague",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-576",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1501750",
+      "title": "Battle of Vågen",
+      "parents": [
+        "second-anglo-dutch-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-577",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q672198",
+      "title": "Battle of Sinsheim",
+      "parents": [
+        "franco-dutch-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-578",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q939845",
+      "title": "Battle of Augusta",
+      "parents": [
+        "franco-dutch-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-579",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q448015",
+      "title": "Great Plague of Vienna",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-580",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2888946",
+      "title": "Battle of Killiecrankie",
+      "parents": [
+        "jacobite-risings"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-581",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1549050",
+      "title": "Great Storm of 1703",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-582",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q694068",
+      "title": "Battle of Fraustadt",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-583",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q691729",
+      "title": "Battle of Matapan",
+      "parents": [
+        "ottoman-venetian-war-1714-1718"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-584",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q561415",
+      "title": "Silent Sejm",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-585",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3106687",
+      "title": "Gin Craze",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-586",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q10511142",
+      "title": "Revolution of 1772",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-587",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1635316",
+      "title": "Flour War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-588",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3776326",
+      "title": "Peace of Paris (1783)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-589",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2506756",
+      "title": "Priestley Riots",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-590",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2436102",
+      "title": "drownings at Nantes",
+      "parents": [
+        "reign-of-terror"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-591",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2113036",
+      "title": "Expédition d'Irlande",
+      "parents": [
+        "war-of-the-first-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-592",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q815175",
+      "title": "Siege of Mantua",
+      "parents": [
+        "war-of-the-first-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-593",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q370376",
+      "title": "Battle of Castricum",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-594",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q10858956",
+      "title": "Plot of the rue Saint-Nicaise",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-595",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q21005831",
+      "title": "assassination of Spencer Perceval",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-596",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1192053",
+      "title": "Battle of Vauchamps",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-597",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2378204",
+      "title": "Ominous Decade",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-598",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3844918",
+      "title": "Red Barn Murder",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-americas-388",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2516056",
+      "title": "Great Fire of New York",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-americas-389",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1479636",
+      "title": "Federal War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-599",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q685805",
+      "title": "Battle of Bezzecca",
+      "parents": [
+        "austro-prussian-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-600",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q689374",
+      "title": "Battle of Trautenau",
+      "parents": [
+        "austro-prussian-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-americas-390",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q3307845",
+      "title": "Battle of Tuyutí",
+      "parents": [
+        "paraguayan-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-601",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2586933",
+      "title": "Battle of Vučji Do",
+      "parents": [
+        "herzegovina-uprising-1875-1877"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-602",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q524797",
+      "title": "St. Elizabeth's flood",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 16 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-603",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3658001",
+      "title": "Battle of Pirot",
+      "parents": [
+        "serbo-bulgarian-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 13 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-604",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q815148",
+      "title": "Siege of Harfleur",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-605",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2506432",
+      "title": "Wars in Lombardy",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-606",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4288097",
+      "title": "Muscovite Civil War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-607",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q600016",
+      "title": "Battle of Jargeau",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-608",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1807251",
+      "title": "Battle of La Higueruela",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-609",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1779008",
+      "title": "Battle of Anghiari",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-610",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1584610",
+      "title": "Navarrese Civil War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-611",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2476062",
+      "title": "Catalan Civil War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-612",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2656396",
+      "title": "Treaty of the Bulls of Guisando",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-613",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q506846",
+      "title": "Siege of Neuss",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-614",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2734129",
+      "title": "Battle of Toro",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-615",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q9377322",
+      "title": "Polish-Ottoman War of 1485–1503",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-616",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1627409",
+      "title": "Concordat of Bologna",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-617",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2890025",
+      "title": "Battle of Solway Moss",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-618",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2297059",
+      "title": "Battle of the Solent",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-619",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2530002",
+      "title": "Fire of Moscow",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-620",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3720898",
+      "title": "Raid of the Balearic islands",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-621",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q686961",
+      "title": "Fire of Moscow",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-622",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q694619",
+      "title": "Siege of Leiden",
+      "parents": [
+        "eighty-years-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-623",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2364604",
+      "title": "Battles of Wenden",
+      "parents": [
+        "livonian-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-624",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3099190",
+      "title": "Battle of Ponta Delgada",
+      "parents": [
+        "war-of-the-portuguese-succession"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-625",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2890458",
+      "title": "Battle of Zutphen",
+      "parents": [
+        "eighty-years-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-626",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q897720",
+      "title": "Moldavian Magnate Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-627",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q924600",
+      "title": "War against Sigismund",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-628",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q592069",
+      "title": "Battle of Sellenberk",
+      "parents": [
+        "long-turkish-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-629",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1434013",
+      "title": "Grand Siècle",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-630",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4303874",
+      "title": "Battle of Moscow",
+      "parents": [
+        "polish-russian-war-1609-1618"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-631",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3480202",
+      "title": "Slaying of the Basques",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-632",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q661686",
+      "title": "Battle of Höchst",
+      "parents": [
+        "palatinate-campaign"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-633",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1576717",
+      "title": "Battle of Dungeness",
+      "parents": [
+        "first-anglo-dutch-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-634",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q641989",
+      "title": "Battle of Nyborg",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-635",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q944506",
+      "title": "St. James's Day Battle",
+      "parents": [
+        "second-anglo-dutch-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-636",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q717322",
+      "title": "Battle of Palermo",
+      "parents": [
+        "franco-dutch-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-637",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1814863",
+      "title": "Battle of Stromboli",
+      "parents": [
+        "franco-dutch-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-638",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2265621",
+      "title": "Battle of Køge Bay",
+      "parents": [
+        "scanian-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-639",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2889883",
+      "title": "Battle of Saint-Denis",
+      "parents": [
+        "franco-dutch-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-640",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2557155",
+      "title": "Battle of Sedgemoor",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-641",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3424747",
+      "title": "Modern Greek Enlightenment",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-642",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2237649",
+      "title": "Battle of Ulaş",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-643",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2312517",
+      "title": "Battle of San Pietro",
+      "parents": [
+        "war-of-the-polish-succession"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-644",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q693265",
+      "title": "Battle of Assietta",
+      "parents": [
+        "war-of-the-austrian-succession"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-645",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q508088",
+      "title": "Siege of Olomouc",
+      "parents": [
+        "seven-years-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-646",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1037476",
+      "title": "Battle of Tornow",
+      "parents": [
+        "seven-years-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-647",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1075269",
+      "title": "Battle of Meissen",
+      "parents": [
+        "seven-years-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-648",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q573963",
+      "title": "Battle of Kloster Kampen",
+      "parents": [
+        "seven-years-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-649",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1883498",
+      "title": "Esquilache Riots",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-650",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q72454",
+      "title": "Battle of Kerch Strait",
+      "parents": [
+        "russo-turkish-war-1787-1792"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-651",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q942257",
+      "title": "Battle of Famars",
+      "parents": [
+        "war-of-the-first-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-652",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1108820",
+      "title": "Battle of Cholet",
+      "parents": [
+        "war-in-the-vendee"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-653",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1661055",
+      "title": "Grodno Sejm",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-654",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1028247",
+      "title": "Battle of Groix",
+      "parents": [
+        "french-revolutionary-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-655",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q428035",
+      "title": "Battle of Millesimo",
+      "parents": [
+        "war-of-the-first-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-656",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q949590",
+      "title": "Second Battle of Dego",
+      "parents": [
+        "war-of-the-first-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-657",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1545288",
+      "title": "Veronese Easters",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-658",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1450451",
+      "title": "French invasion of Switzerland",
+      "parents": [
+        "french-revolutionary-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-659",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3558438",
+      "title": "Swiss Campaign of Suvorov",
+      "parents": [
+        "war-of-the-second-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-660",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q432515",
+      "title": "First Battle of Algeciras",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-661",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4118371",
+      "title": "1802 Vrancea earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-662",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q909154",
+      "title": "Battle of Schleiz",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-663",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2659098",
+      "title": "Battle of Athos",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-664",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q209721",
+      "title": "Battle of Cabezón",
+      "parents": [
+        "peninsular-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-665",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q209716",
+      "title": "First Siege of Zaragoza",
+      "parents": [
+        "peninsular-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-666",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q702099",
+      "title": "Battle of Znaim",
+      "parents": [
+        "war-of-the-fifth-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-667",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q897933",
+      "title": "Battle of Raab",
+      "parents": [
+        "war-of-the-fifth-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-668",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1059938",
+      "title": "Battle of Piave River",
+      "parents": [
+        "war-of-the-fifth-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-669",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q573358",
+      "title": "Battle of Teugen-Hausen",
+      "parents": [
+        "war-of-the-fifth-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-670",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4872056",
+      "title": "Battle of Pirano",
+      "parents": [
+        "napoleonic-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-671",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q814235",
+      "title": "German campaign of 1813",
+      "parents": [
+        "war-of-the-sixth-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-672",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q976655",
+      "title": "Battle of Montereau",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-673",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1060780",
+      "title": "Chambre introuvable",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-674",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2237094",
+      "title": "Battle of Ostrołęka",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-americas-391",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1186774",
+      "title": "Texas Declaration of Independence",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-675",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2996259",
+      "title": "Convention of Vergara",
+      "parents": [
+        "first-carlist-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-676",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q580417",
+      "title": "Skirmish of Pastrengo",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
+    },
+    {
+      "id": "2026-10-29-europe-677",
+      "planned": "2026-10-29T21:29:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q11826441",
+      "title": "Kraków Fire of 1850",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, docs/candidates-1415-1900.md, 12 sitelinks"
     }
   ]
 }
