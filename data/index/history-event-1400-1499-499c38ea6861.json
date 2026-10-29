@@ -83,7 +83,25 @@
         }
       ]
     },
+    "battle-of-fornovo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-gallipoli-1416": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-grandson": {
       "from": "git",
       "versions": [
         {
@@ -236,6 +254,15 @@
         }
       ]
     },
+    "battle-of-verneuil": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-wakefield": {
       "from": "git",
       "versions": [
@@ -269,6 +296,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "congress-of-arras": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -599,6 +635,15 @@
         }
       ]
     },
+    "rout-of-ludford-bridge": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "second-battle-of-st-albans": {
       "from": "git",
       "versions": [
@@ -796,6 +841,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "treaty-of-basel-1499": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

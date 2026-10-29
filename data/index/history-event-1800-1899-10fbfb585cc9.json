@@ -191,6 +191,15 @@
         }
       ]
     },
+    "1880-zagreb-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "1881-1896-cholera-pandemic": {
       "from": "git",
       "versions": [
@@ -621,6 +630,15 @@
         }
       ]
     },
+    "act-of-mediation": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "action-of-1-august-1801": {
       "from": "git",
       "versions": [
@@ -953,6 +971,15 @@
       ]
     },
     "ansei-purge": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "anti-hungarian-slovak-armed-actions-in-1848-1849": {
       "from": "git",
       "versions": [
         {
@@ -2053,6 +2080,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-champaubert": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3528,6 +3564,15 @@
         }
       ]
     },
+    "battle-of-maloyaroslavets": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-malvern-hill": {
       "from": "git",
       "versions": [
@@ -3822,6 +3867,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-oltenita": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5155,6 +5209,15 @@
         }
       ]
     },
+    "battle-of-wissembourg-1870": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-woosung": {
       "from": "git",
       "versions": [
@@ -5646,6 +5709,15 @@
       ]
     },
     "brooks-baxter-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "bulgarian-unification": {
       "from": "git",
       "versions": [
         {
@@ -6161,6 +6233,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "convention-of-moss": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -6764,6 +6845,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "finnish-famine-of-1866-1868": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -7721,6 +7811,15 @@
         }
       ]
     },
+    "hep-hep-riots": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "herzegovina-uprising-1852-1862": {
       "from": "git",
       "versions": [
@@ -8139,6 +8238,15 @@
         }
       ]
     },
+    "kautokeino-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "keelung-campaign": {
       "from": "git",
       "versions": [
@@ -8389,6 +8497,15 @@
       ]
     },
     "macedonian-struggle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "madrid-protocol": {
       "from": "git",
       "versions": [
         {
@@ -9097,6 +9214,15 @@
       ]
     },
     "paris-convention-for-the-protection-of-industrial-property": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "paris-declaration-respecting-maritime-law": {
       "from": "git",
       "versions": [
         {
@@ -10481,6 +10607,15 @@
         }
       ]
     },
+    "sicilian-revolution-of-1848": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "siege-of-akka-1832": {
       "from": "git",
       "versions": [
@@ -10878,6 +11013,15 @@
       ]
     },
     "siege-of-sevastopol-1854-1855": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "siege-of-strasbourg": {
       "from": "git",
       "versions": [
         {
@@ -11708,6 +11852,15 @@
         }
       ]
     },
+    "treaty-of-badajoz-1801": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-balta-liman": {
       "from": "git",
       "versions": [
@@ -11736,6 +11889,15 @@
       ]
     },
     "treaty-of-bucharest-1812": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-bucharest-1886": {
       "from": "git",
       "versions": [
         {
