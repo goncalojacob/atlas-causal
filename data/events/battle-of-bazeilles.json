@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-bazeilles",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q547651",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Bazeilles"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q547651"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bazeilles\", revision 1370433683"
+    }
+  ],
+  "title": "Battle of Bazeilles",
+  "summary": "The English Wikipedia article \"Battle of Bazeilles\", at revision 1370433683, opens: \"The Battle of Bazeilles was fought on 1 September 1870 during the Franco-Prussian War as a portion of the larger Battle of Sedan and was one of the first battles to feature modern urban warfare tactics. It took place in Bazeilles, France, a small village in the department of Ardennes near Sedan, and involved a force of Bavarian soldiers battling against French marines and partisans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q547651, imported by tools/import/wikidata.mjs. The item's own description reads \"1870 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1870,
+    "date": "1870-08-31",
+    "endDate": "1870-09-01"
+  },
+  "place": "bazeilles",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-prussian-war"
+}

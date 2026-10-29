@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-mir-1812",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889345",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Mir (1812)",
+    "pt": "Batalha de Mir"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889345"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mir (1812)\", revision 1370449911"
+    }
+  ],
+  "title": "Battle of Mir (1812)",
+  "summary": "The English Wikipedia article \"Battle of Mir (1812)\", at revision 1370449911, opens: \"The Battle of Mir took place on 9 and 10 July 1812 during Napoleon's invasion of Russia. Three Polish Lancers divisions battled against Russian cavalry, ending in the first major Russian victory in the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889345, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle during the French invasion of Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-07-09",
+    "endDate": "1812-07-10"
+  },
+  "place": "mir-belarus",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-russia"
+}

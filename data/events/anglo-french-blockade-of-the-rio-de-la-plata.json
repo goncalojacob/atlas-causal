@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "anglo-french-blockade-of-the-rio-de-la-plata",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3944738",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Anglo-French blockade of the Río de la Plata",
+    "pt": "Bloqueio anglo-francês do Rio da Prata"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3944738"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-French blockade of the Río de la Plata\", revision 1381262452"
+    }
+  ],
+  "title": "Anglo-French blockade of the Río de la Plata",
+  "summary": "The English Wikipedia article \"Anglo-French blockade of the Río de la Plata\", at revision 1381262452, opens: \"The Anglo-French blockade of the Río de la Plata, also known as Paraná War, was a five-year naval blockade imposed by France and the United Kingdom on the Argentine Confederation during the Uruguayan Civil War. It was imposed by the Royal Navy and French Navy in 1845 against the Río de la Plata Basin to support the Colorado Party in Uruguay's civil war, resulting in the closure of Buenos Aires to maritime commerce. The Argentine government, led by Juan Manuel de Rosas, refused to drop their support for the Uruguayan White Party, which supported Argentina's resistance to the blockade. Eventually, both Britain and France ended the blockade, signing the Arana–Southern Treaty in 1849 and 1850 respectively, which acknowledged Argentine sovereignty over its rivers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3944738, imported by tools/import/wikidata.mjs. The item's own description reads \"1845 naval blockade\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1845,
+    "end": 1850,
+    "date": "1845-09-18",
+    "endDate": "1850-08-31"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "uruguayan-civil-war"
+}

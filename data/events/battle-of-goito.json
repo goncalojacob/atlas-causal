@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-goito",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q938724",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Goito"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q938724"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Goito\", revision 1382463409"
+    }
+  ],
+  "title": "Battle of Goito",
+  "summary": "The English Wikipedia article \"Battle of Goito\", at revision 1382463409, opens: \"The Battle of Goito was fought between the Piedmontese and the Austrian army on 30 May 1848, in the course of the First Italian War of Independence. The Piedmontese army won the battle, as the Austrians were unable to break through to relieve the siege of Peschiera and prevent its surrender which happened on the day before the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q938724, imported by tools/import/wikidata.mjs. The item's own description reads \"1848 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-05-30"
+  },
+  "place": "mantua",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-italian-war-of-independence"
+}

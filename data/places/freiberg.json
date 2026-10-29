@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "freiberg",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q14819",
+  "sitelinks": {
+    "count": 62,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Freiberg",
+    "pt": "Freiberga"
+  },
+  "sources": [],
+  "names": [
+    "Freiberg",
+    "Freiberga"
+  ],
+  "where": {
+    "lon": 13.342777777778,
+    "lat": 50.911944444444,
+    "precision": "city",
+    "label": "Freiberg"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
