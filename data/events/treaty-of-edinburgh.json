@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-edinburgh",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q947050",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Edinburgh",
+    "pt": "Tratado de Edimburgo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q947050"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Edinburgh\", revision 1381613049"
+    }
+  ],
+  "title": "Treaty of Edinburgh",
+  "summary": "The English Wikipedia article \"Treaty of Edinburgh\", at revision 1381613049, opens: \"The Treaty of Edinburgh was a treaty drawn up on 5 July 1560 between the Commissioners of Queen Elizabeth I of England with the assent of the Scottish Lords of the Congregation, and the French representatives of King Francis II of France to formally conclude the siege of Leith and replace the Auld Alliance with France with a new Anglo-Scottish accord, while maintaining the peace between England and France agreed by the Treaty of Cateau-Cambrésis.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q947050, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty to formally conclude the Siege of Leith and forge a new Anglo-Scottish accord\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1560,
+    "end": 1560,
+    "date": "1560-07-06"
+  },
+  "place": "edinburgh",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

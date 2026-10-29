@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "treaty-of-limerick",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1860162",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Limerick",
+    "pt": "Tratado de Limerick"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1860162"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Limerick\", revision 1374072972"
+    }
+  ],
+  "title": "Treaty of Limerick",
+  "summary": "The English Wikipedia article \"Treaty of Limerick\", at revision 1374072972, opens: \"The Treaty of Limerick, signed on 3 October 1691, ended the Williamite War in Ireland, a conflict related to the Nine Years' War (1688–1697). It consisted of two separate agreements, one with military terms of surrender, signed by commanders of a French expeditionary force and Irish Jacobites loyal to the exiled James II. Lieutenant-General de Ginkell, leader of government forces in Ireland, signed on behalf of William III and his wife Mary II. It allowed Jacobite units to be transported to France, the diaspora known as the Flight of the Wild Geese.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1860162, imported by tools/import/wikidata.mjs. The item's own description reads \"1691 treaty ending war in Ireland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1691,
+    "end": 1691
+  },
+  "place": "limerick",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": [],
+  "parent": "williamite-war-in-ireland"
+}

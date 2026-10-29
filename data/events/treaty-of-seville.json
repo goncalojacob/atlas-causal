@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-seville",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1195251",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Seville",
+    "pt": "Tratado de Sevilha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1195251"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Seville\", revision 1348136350"
+    }
+  ],
+  "title": "Treaty of Seville",
+  "summary": "The English Wikipedia article \"Treaty of Seville\", at revision 1348136350, opens: \"The Treaty of Seville was signed on 9 November 1729 between Britain, France, and Spain, formally ending the 1727–1729 Anglo-Spanish War; the Dutch Republic joined the Treaty on 29 November.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1195251, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1729,
+    "end": 1729,
+    "date": "1729-11-09"
+  },
+  "place": "seville",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
