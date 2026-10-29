@@ -5594,3 +5594,11 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-29: `battle-of-saint-charles`, filed under `lower-canada-rebellion` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-373`, rank `child-of:lower-canada-rebellion`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `armagnac-burgundian-civil-war`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-29-europe-533`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-29: `all-saints-flood-1570`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-29-europe-538`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.

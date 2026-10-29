@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "great-chicago-fire",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q70520",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Great Chicago Fire",
+    "pt": "Grande incêndio de Chicago"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q70520"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Chicago Fire\", revision 1381953593"
+    }
+  ],
+  "title": "Great Chicago Fire",
+  "summary": "The English Wikipedia article \"Great Chicago Fire\", at revision 1381953593, opens: \"The Great Chicago Fire burned in Chicago, Illinois, United States, during October 8–10, 1871. The fire killed approximately 300 people, destroyed 17,000 structures across roughly 3.3 square miles (9 km2), and left more than 100,000 residents homeless. The fire began in a neighborhood southwest of the city center. A long period of hot, dry, windy conditions, and the wooden construction prevalent in the city, led to the conflagration spreading quickly. The fire leapt the south branch of the Chicago River and destroyed much of central Chicago and then crossed the main stem of the river, consuming the Near North Side.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q70520, imported by tools/import/wikidata.mjs. The item's own description reads \"1871 conflagration in Chicago, Illinois\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1871,
+    "end": 1871,
+    "date": "1871-10-08",
+    "endDate": "1871-10-10"
+  },
+  "place": "chicago",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

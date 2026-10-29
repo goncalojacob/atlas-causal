@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-aspindza",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2887900",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Aspindza",
+    "pt": "Batalha de Aspindza"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2887900"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Aspindza\", revision 1381681958"
+    }
+  ],
+  "title": "Battle of Aspindza",
+  "summary": "The English Wikipedia article \"Battle of Aspindza\", at revision 1381681958, opens: \"The Battle of Aspindza was a meeting engagement fought on 20 April 1770 between the Georgians, led by king of Kartli-Kakheti Erekle II, and the Ottoman Empire. The Georgians won a victory over the Turks, defeating them in detail at the river crossing.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2887900, imported by tools/import/wikidata.mjs. The item's own description reads \"1770 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1770,
+    "end": 1770,
+    "date": "1770-04-20"
+  },
+  "place": "aspindza",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1768-1774"
+}
