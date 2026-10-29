@@ -2520,7 +2520,6 @@
         "Q324438",
         "Q7263697",
         "Q92056662",
-        "Q96359661",
         "Q3119025",
         "Q3018913",
         "Q7902616",
@@ -2529,7 +2528,6 @@
         "Q697654",
         "Q5599700",
         "Q699902",
-        "Q5037625",
         "Q3775537",
         "Q2276912",
         "Q641479",
@@ -3215,7 +3213,6 @@
         "Q3536910",
         "Q2805651",
         "Q3337680",
-        "Q725571",
         "Q940076",
         "Q3119117",
         "Q2523337",
@@ -3252,12 +3249,10 @@
         "Q7837100",
         "Q1566313",
         "Q2518862",
-        "Q7861365",
         "Q5150532",
         "Q16473092",
         "Q6843829",
         "Q16573170",
-        "Q7837035",
         "Q3536790",
         "Q3997905",
         "Q2518901",
@@ -4160,7 +4155,6 @@
         "Q926447",
         "Q2646216",
         "Q233260",
-        "Q668811",
         "Q1152499",
         "Q1191091",
         "Q119129",
@@ -4494,11 +4488,8 @@
         "Q715495",
         "Q3591486",
         "Q3536741",
-        "Q10843835",
         "Q11510437",
-        "Q4554489",
         "Q7414187",
-        "Q656545",
         "Q252775",
         "Q1533027",
         "Q1893619",
@@ -4513,17 +4504,11 @@
         "Q3179531",
         "Q2917546",
         "Q500395",
-        "Q623391",
-        "Q1259178",
         "Q278815",
         "Q4549898",
         "Q2377085",
-        "Q104892373",
         "Q4940602",
-        "Q1782419",
-        "Q27926964",
         "Q16246888",
-        "Q1191077",
         "Q2701253",
         "Q2383784",
         "Q2004236",
@@ -4538,7 +4523,6 @@
         "Q11136035",
         "Q3100354",
         "Q3043924",
-        "Q3115111",
         "Q2060853",
         "Q2803538",
         "Q2119018",
@@ -4553,7 +4537,6 @@
         "Q2300960",
         "Q348701",
         "Q2300308",
-        "Q5599762",
         "Q1414387",
         "Q478059",
         "Q2629695",
@@ -4562,7 +4545,6 @@
         "Q3157842",
         "Q6556526",
         "Q2414192",
-        "Q448015",
         "Q3443265",
         "Q690096",
         "Q2379459",
@@ -4591,8 +4573,6 @@
         "Q319554",
         "Q1995471",
         "Q3124572",
-        "Q4554867",
-        "Q20723261",
         "Q2508091",
         "Q503499",
         "Q4164071",
@@ -4600,14 +4580,12 @@
         "Q3536945",
         "Q7837256",
         "Q1145341",
-        "Q20723260",
         "Q7836981",
         "Q1456592",
         "Q3536839",
         "Q4400933",
         "Q3332396",
         "Q3813652",
-        "Q6784453",
         "Q3360681",
         "Q9089606",
         "Q7837092",
@@ -4615,7 +4593,6 @@
         "Q559400",
         "Q2538456",
         "Q2890346",
-        "Q7382249",
         "Q65057558",
         "Q2361458",
         "Q427840",
@@ -4631,7 +4608,6 @@
         "Q2935365",
         "Q3799261",
         "Q6734943",
-        "Q64875937",
         "Q7510186",
         "Q5036989",
         "Q5023728",
@@ -4650,7 +4626,6 @@
         "Q7165306",
         "Q30602197",
         "Q96360043",
-        "Q5035990",
         "Q133443",
         "Q3536949",
         "Q7837074",
@@ -4660,9 +4635,7 @@
         "Q6168026",
         "Q17630734",
         "Q7837160",
-        "Q193155",
         "Q170652",
-        "Q4258678",
         "Q4890925",
         "Q4091834",
         "Q3756219",
@@ -5283,7 +5256,57 @@
         "Q7837137",
         "Q277204",
         "Q1967582",
-        "Q1500894"
+        "Q1500894",
+        "Q555592",
+        "Q7837195",
+        "Q1616897",
+        "Q977414",
+        "Q725571",
+        "Q3360666",
+        "Q7837038",
+        "Q5043804",
+        "Q60740017",
+        "Q7837035",
+        "Q7837301",
+        "Q656545",
+        "Q1191077",
+        "Q4258678",
+        "Q7837299",
+        "Q668811",
+        "Q7861365",
+        "Q3115111",
+        "Q5599762",
+        "Q7382249",
+        "Q4554489",
+        "Q20723260",
+        "Q16153856",
+        "Q6784453",
+        "Q5037625",
+        "Q469776",
+        "Q2288543",
+        "Q1940069",
+        "Q884161",
+        "Q13417900",
+        "Q514325",
+        "Q11706521",
+        "Q17016848",
+        "Q872150",
+        "Q7837171",
+        "Q193155",
+        "Q623391",
+        "Q1782419",
+        "Q7836997",
+        "Q5035990",
+        "Q96359661",
+        "Q1259178",
+        "Q448015",
+        "Q20723261",
+        "Q20723262",
+        "Q4554867",
+        "Q27926964",
+        "Q64875937",
+        "Q104892373",
+        "Q10843835"
       ]
     }
   },
@@ -7039,6 +7062,94 @@
     "Q1500894": {
       "on": "2026-10-29",
       "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q555592": {
+      "on": "2026-10-29",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q7837195": {
+      "on": "2026-10-29",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q977414": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q3360666": {
+      "on": "2026-10-29",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q7837038": {
+      "on": "2026-10-29",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q5043804": {
+      "on": "2026-10-29",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q60740017": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q7837301": {
+      "on": "2026-10-29",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q7837299": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q93288) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q16153856": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q30103545) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q469776": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q2288543": {
+      "on": "2026-10-29",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q1940069": {
+      "on": "2026-10-29",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q884161": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q13417900": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q514325": {
+      "on": "2026-10-29",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q11706521": {
+      "on": "2026-10-29",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q17016848": {
+      "on": "2026-10-29",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q872150": {
+      "on": "2026-10-29",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q7837171": {
+      "on": "2026-10-29",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q7836997": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q93288) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q20723262": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
     }
   }
 }
