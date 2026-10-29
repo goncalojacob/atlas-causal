@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "michelade",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2350993",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Michelade"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2350993"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Michelade\", revision 1366202751"
+    }
+  ],
+  "title": "Michelade",
+  "summary": "The English Wikipedia article \"Michelade\", at revision 1366202751, opens: \"The Michelade is the name given to the massacre of Catholics, including 18 Catholic priests and monks, by Protestant coup officials in Nîmes on Michaelmas 1567, after the outbreak of the second French War of Religion after the failure of the Surprise of Meaux. The massacre represented one of the largest non-military massacres by Protestants during the civil wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2350993, imported by tools/import/wikidata.mjs. The item's own description reads \"mass murder of Catholics during the French Wars of Religion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1567,
+    "end": 1567,
+    "date": "1567-09-29"
+  },
+  "place": "nimes",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

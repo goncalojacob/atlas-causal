@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-oliwa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1967790",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Oliwa",
+    "pt": "Batalha de Oliwa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1967790"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Oliwa\", revision 1371614973"
+    }
+  ],
+  "title": "Battle of Oliwa",
+  "summary": "The English Wikipedia article \"Battle of Oliwa\", at revision 1371614973, opens: \"The Battle of Oliwa, also known as the Battle of Oliva or the Battle of Gdańsk Roadstead, was a naval battle that took place on 28 November, 1627, slightly north of the port of Danzig (Gdańsk) off of the coast of the village of Oliva during the Polish–Swedish War. It was the largest naval engagement to be fought by the Polish–Lithuanian Commonwealth Navy and resulted in defeating a Swedish squadron led by Niels Stiernsköld that conducted a blockade of the harbour of Gdańsk. The Poles sailed out of the Danzig harbour and engaged the Swedish squadron capturing the Swedish flagship and sinking another Swedish warship.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1967790, imported by tools/import/wikidata.mjs. The item's own description reads \"1627 naval battle during the Polish-Swedish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1627,
+    "end": 1627,
+    "date": "1627-11-28"
+  },
+  "place": "gdansk",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "polish-swedish-war-1626-1629"
+}

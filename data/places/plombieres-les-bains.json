@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "plombieres-les-bains",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q632969",
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Plombières-les-Bains",
+    "pt": "Plombières-les-Bains"
+  },
+  "sources": [],
+  "names": [
+    "Plombières-les-Bains"
+  ],
+  "where": {
+    "lon": 6.4630555555556,
+    "lat": 47.966388888889,
+    "precision": "city",
+    "label": "Plombières-les-Bains"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

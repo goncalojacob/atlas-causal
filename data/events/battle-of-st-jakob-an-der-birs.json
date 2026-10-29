@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-st-jakob-an-der-birs",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q451853",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of St. Jakob an der Birs",
+    "pt": "Batalha de St. Jakob an der Birs"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q451853"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of St. Jakob an der Birs\", revision 1370589828"
+    }
+  ],
+  "title": "Battle of St. Jakob an der Birs",
+  "summary": "The English Wikipedia article \"Battle of St. Jakob an der Birs\", at revision 1370589828, opens: \"The Battle of St. Jakob an der Birs was fought between the Old Swiss Confederacy and French mercenaries, on the banks of the river Birs. The battle took place on 26 August 1444 and was part of the Old Zürich War. The site of the battle was near Münchenstein, Switzerland, just over 1 km outside the city walls of Basel, today within Basel's St-Alban district.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q451853, imported by tools/import/wikidata.mjs. The item's own description reads \"1444 battle between Swiss and French troops\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1444,
+    "end": 1444,
+    "date": "1444-08-26"
+  },
+  "place": "basel",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

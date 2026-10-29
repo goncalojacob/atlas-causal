@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-haarlem",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q652271",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Haarlem",
+    "pt": "Cerco de Haarlem"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q652271"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Haarlem\", revision 1370741716"
+    }
+  ],
+  "title": "Siege of Haarlem",
+  "summary": "The English Wikipedia article \"Siege of Haarlem\", at revision 1370741716, opens: \"The siege of Haarlem was an episode of the Eighty Years' War. From 11 December 1572 to 13 July 1573 an army of Philip II of Spain laid bloody siege to the city of Haarlem in the Netherlands, whose loyalties had begun wavering during the previous summer. After the naval battle of Haarlemmermeer and the defeat of a land relief force, the starving city surrendered and the garrison was massacred. The resistance nonetheless was taken as a heroic example by the Orangists at the sieges of Alkmaar and Leiden.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q652271, imported by tools/import/wikidata.mjs. The item's own description reads \"1572–1573 siege in the Northern Netherlands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1572,
+    "end": 1573,
+    "date": "1572-12-11",
+    "endDate": "1573-07-13"
+  },
+  "place": "haarlem",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

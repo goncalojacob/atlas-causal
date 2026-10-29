@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-wiener-neustadt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q853921",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Wiener Neustadt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q853921"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Wiener Neustadt\", revision 1361515514"
+    }
+  ],
+  "title": "Treaty of Wiener Neustadt",
+  "summary": "The English Wikipedia article \"Treaty of Wiener Neustadt\", at revision 1361515514, opens: \"The Treaty of Wiener Neustadt was a treaty between the Kingdom of Hungary and the Holy Roman Empire. It was preceded by the Truce of Radkersburg and followed by the Peace of Pressburg. It deals with succession issues and ascertains the territory mortgages in Moson, Sopron and Vas counties.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q853921, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty of 1463 between Emperor Charles III and Mathias King of Hungary\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1463,
+    "end": 1463,
+    "date": "1463-07-19"
+  },
+  "place": "wiener-neustadt",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

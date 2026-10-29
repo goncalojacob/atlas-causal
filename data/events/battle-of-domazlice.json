@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-domazlice",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1968819",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Domažlice",
+    "pt": "Batalha de Domažlice"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1968819"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Domažlice\", revision 1382465662"
+    }
+  ],
+  "title": "Battle of Domažlice",
+  "summary": "The English Wikipedia article \"Battle of Domažlice\", at revision 1382465662, opens: \"The Battle of Domažlice or Battle of Taus or Battle of Tausch was fought on 14 August 1431 as the part of the 5th crusade against Hussites. The crusade was sent to Bohemia after negotiations, held in Pressburg and Cheb, between Hussites and the emperor Sigismund had failed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1968819, imported by tools/import/wikidata.mjs. The item's own description reads \"1431 battle during the crusades\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1431,
+    "end": 1431,
+    "date": "1431-08-14"
+  },
+  "place": "domazlice",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "hussite-wars"
+}

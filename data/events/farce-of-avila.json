@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "farce-of-avila",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1841884",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Farce of Ávila",
+    "pt": "Farsa de Ávila"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1841884"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Farce of Ávila\", revision 1325977909"
+    }
+  ],
+  "title": "Farce of Ávila",
+  "summary": "The English Wikipedia article \"Farce of Ávila\", at revision 1325977909, opens: \"On 5 June 1465, in a location around Ávila, a group of Castilian noblemen deposed King Henry IV of Castile in effigy, and instead proclaimed his half-brother Prince Alfonso, better known as \"Alfonso the Innocent\", as king. This ceremony became known by its detractors as the farce of Ávila.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1841884, imported by tools/import/wikidata.mjs. The item's own description reads \"protest action by Castilian noblemen\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1465,
+    "end": 1465,
+    "date": "1465-06-05"
+  },
+  "place": "avila",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

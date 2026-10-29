@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sieges-of-boulogne-1544-1546",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7885742",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Sieges of Boulogne (1544–1546)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7885742"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sieges of Boulogne (1544–1546)\", revision 1375609298"
+    }
+  ],
+  "title": "Sieges of Boulogne (1544–1546)",
+  "summary": "The English Wikipedia article \"Sieges of Boulogne (1544–1546)\", at revision 1375609298, opens: \"The sieges of Boulogne were two sieges which took place between England and France during the Rough Wooing and Italian War of 1542–1546. The first took place from 19 July to 14 September 1544 and the second from September 1544 to 16 May 1550. An earlier siege of Boulogne had taken place in 1492 when the English Tudor King Henry VII laid siege to the lightly defended lower town of Boulogne in the Pas-de-Calais, France. Fifty years later as allies of the Holy Roman Emperor Charles V, during the war against the French, the English returned led by Henry VII's son and heir, Henry VIII. Boulogne was fortified and defended as an English possession on the French mainland between 14 September 1544 and March 1550.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7885742, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the Italian War of 1542-1546\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1544,
+    "end": 1546,
+    "date": "1544-07-19",
+    "endDate": "1544-09-18"
+  },
+  "place": "boulogne-sur-mer",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "italian-war-of-1542-1546"
+}
