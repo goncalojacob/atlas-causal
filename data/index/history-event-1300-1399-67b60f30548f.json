@@ -1,0 +1,17 @@
+{
+  "from": 1300,
+  "kind": "event",
+  "records": {
+    "hungarian-ottoman-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1399
+}

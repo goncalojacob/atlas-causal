@@ -1070,6 +1070,15 @@
         }
       ]
     },
+    "aspindza": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "assam-q1164": {
       "from": "git",
       "versions": [
@@ -14724,6 +14733,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "north-frisia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

@@ -862,6 +862,15 @@
         }
       ]
     },
+    "battle-of-aspindza": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-assietta": {
       "from": "git",
       "versions": [
@@ -4269,6 +4278,15 @@
         }
       ]
     },
+    "copenhagen-fire-of-1728": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "coup-of-18-brumaire": {
       "from": "git",
       "versions": [
@@ -4870,6 +4888,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "great-fire-of-new-york-1776": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
