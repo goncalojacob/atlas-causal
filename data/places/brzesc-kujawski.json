@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "brzesc-kujawski",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q985649",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Brześć Kujawski",
+    "pt": "Brześć Kujawski"
+  },
+  "sources": [],
+  "names": [
+    "Brześć Kujawski"
+  ],
+  "where": {
+    "lon": 18.898055555556,
+    "lat": 52.605,
+    "precision": "city",
+    "label": "Brześć Kujawski"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

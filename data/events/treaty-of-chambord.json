@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-chambord",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1414387",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Chambord"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1414387"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Chambord\", revision 1315312194"
+    }
+  ],
+  "title": "Treaty of Chambord",
+  "summary": "The English Wikipedia article \"Treaty of Chambord\", at revision 1315312194, opens: \"The Treaty of Chambord was an agreement signed on 15 January 1552 at the Château de Chambord between the Catholic King Henry II of France and three Protestant princes of the Holy Roman Empire led by Elector Maurice of Saxony. Based on the terms of the treaty, Maurice ceded the vicariate over the Three Bishoprics of Toul, Verdun, and Metz to France. In return, he was promised military and economic aid from Henry II in order to fight against the forces of Emperor Charles V of Habsburg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1414387, imported by tools/import/wikidata.mjs. The item's own description reads \"1552 treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1552,
+    "end": 1552,
+    "date": "1552-01-15"
+  },
+  "place": "chambord-loir-et-cher",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

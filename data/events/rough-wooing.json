@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "rough-wooing",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3443265",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Rough Wooing"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3443265"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rough Wooing\", revision 1381230333"
+    }
+  ],
+  "title": "Rough Wooing",
+  "summary": "The English Wikipedia article \"Rough Wooing\", at revision 1381230333, opens: \"The Rough Wooing, also known as the Eight Years' War, was part of the Anglo-Scottish Wars of the 16th century. Following the English Reformation, the break from the Catholic Church, England attacked Scotland, partly to break the Auld Alliance and prevent Scotland being used as a springboard for a future invasion by France, partly to weaken Scotland, and partly to force the Scottish Parliament to confirm the existing marriage alliance between Mary, Queen of Scots, and the English heir apparent Edward, son of King Henry VIII, under the terms of the Treaty of Greenwich of July 1543. An invasion of France was also contemplated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3443265, imported by tools/import/wikidata.mjs. The item's own description reads \"16th century war between Scotland and England\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1542,
+    "end": 1542,
+    "date": "1542-11-24"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "other",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "polish-teutonic-war-1519-1521",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q558423",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Polish–Teutonic War (1519–1521)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q558423"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Polish–Teutonic War (1519–1521)\", revision 1371446231"
+    }
+  ],
+  "title": "Polish–Teutonic War (1519–1521)",
+  "summary": "The English Wikipedia article \"Polish–Teutonic War (1519–1521)\", at revision 1371446231, opens: \"The Polish–Teutonic War of 1519–1521 was fought between the Kingdom of Poland and the Teutonic Knights, ending with the Compromise of Thorn in April 1521. Four years later, under the Treaty of Kraków, part of the Catholic Monastic State of the Teutonic Order became secularized as the Duchy of Prussia. The reigning Grand Master Albert of Hohenzollern-Brandenburg-Ansbach became the first Duke of Prussia by paying the Prussian Homage as vassal to his uncle, Polish king and grand Duke of Lithuania, Sigismund I the Old.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q558423, imported by tools/import/wikidata.mjs. The item's own description reads \"war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1519,
+    "end": 1521,
+    "date": "1519-12-31",
+    "endDate": "1521-04-05"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -40304,6 +40304,610 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-032",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "kresna-razlog-uprising",
+        "edges": [],
+        "place": "pirin-mountains"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-034",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3115111: none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-europe-036",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "treaties-of-orebro",
+        "edges": [],
+        "place": "orebro"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-038",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-london-1700",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-040",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-the-hague-1698",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-042",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-narva",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-044",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "spanish-revolution-of-1854",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-046",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "polish-teutonic-war-1519-1521",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-048",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "eden-agreement",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-050",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-kalisz-1813",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-052",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-warsaw-1705",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-054",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "jack-cade-s-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-056",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "peace-of-olomouc",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-058",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-lyon-1601",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-060",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-reichenbach-1790",
+        "edges": [],
+        "place": "reichenbach-upper-franconia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-062",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "irmandino-revolts",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-064",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5599762: none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-europe-066",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-chambord",
+        "edges": [],
+        "place": "chambord-loir-et-cher"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-068",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-ribe",
+        "edges": [],
+        "place": "ribe"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-070",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-aranjuez-1779",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-072",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-greifswald",
+        "edges": [],
+        "place": "greifswald"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-074",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-thorn-1709",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-076",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "croquant-rebellions",
+        "edges": [],
+        "place": "occitania"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-078",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "lipka-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-080",
+      "writer": "A",
+      "fired": "2026-10-29T02:40Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-barcelona-1493",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-033",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q448015: none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-europe-035",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "rough-wooing",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-037",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "toggenburg-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-039",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-bila-tserkva",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-041",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-the-hague-1701",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-043",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "franco-monegasque-treaties",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-045",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "peace-of-brzesc-kujawski",
+        "edges": [],
+        "place": "brzesc-kujawski"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-047",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-greenwich",
+        "edges": [],
+        "place": "greenwich"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-049",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-hanover-1725",
+        "edges": [],
+        "place": "hanover-q1715"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-051",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "truce-of-vilna",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-053",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "kett-s-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-055",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-camisards",
+        "edges": [],
+        "place": "cevennes"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-057",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-barwalde",
+        "edges": [],
+        "place": "mieszkowice"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-059",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-the-three-black-eagles",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-061",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-ried",
+        "edges": [],
+        "place": "ried"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-063",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "prague-uprising-1848",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-065",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q641335: none of its classes (Q121742) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-europe-067",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-nemours",
+        "edges": [],
+        "place": "nemours"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-069",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-senlis",
+        "edges": [],
+        "place": "shenley"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-071",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-konigsberg-1656",
+        "edges": [],
+        "place": "konigsberg"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-073",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-the-hague-1795",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-075",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-schwedt",
+        "edges": [],
+        "place": "schwedt"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-077",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "french-conquest-of-corsica",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-079",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-hanseatic-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-081",
+      "writer": "B",
+      "fired": "2026-10-29T02:48Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-the-hague-1625",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

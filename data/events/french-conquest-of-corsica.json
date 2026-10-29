@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "french-conquest-of-corsica",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q16931155",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "French conquest of Corsica"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16931155"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French conquest of Corsica\", revision 1370620367"
+    }
+  ],
+  "title": "French conquest of Corsica",
+  "summary": "The English Wikipedia article \"French conquest of Corsica\", at revision 1370620367, opens: \"The French conquest of Corsica was a successful expedition by French forces of the Kingdom of France under the Comte de Vaux, against Corsican forces under Pasquale Paoli of the Corsican Republic. The expedition was launched in May 1768, in the aftermath of the Seven Years' War. A French expeditionary force was landed on the island of Corsica, then ruled by the Corsican Republic. Marching inland to overcome any Corsican opposition, the French force initially suffered an unexpected defeat at the Battle of Borgo. But a new commander, the Comte de Vaux, was appointed to lead the expedition, and decisively defeated the Corsican army at the Battle of Ponte Novu in 1769, effectively bringing an end to Corsican resistance.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16931155, imported by tools/import/wikidata.mjs. The item's own description reads \"French expedition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1768,
+    "end": 1769,
+    "date": "1768-05-15",
+    "endDate": "1769-05-09"
+  },
+  "place": "corsica-q14112",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

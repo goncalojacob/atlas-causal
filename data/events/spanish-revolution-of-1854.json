@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "spanish-revolution-of-1854",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q11703010",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Spanish Revolution of 1854"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11703010"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish Revolution of 1854\", revision 1319537934"
+    }
+  ],
+  "title": "Spanish Revolution of 1854",
+  "summary": "The English Wikipedia article \"Spanish Revolution of 1854\", at revision 1319537934, opens: \"The Spanish Revolution of 1854, also known by the name Vicalvarada, started with a confrontation between rebel troops under General Leopoldo O'Donnell, 1st Duke of Tetuan and government troops near the village of Vicálvaro.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11703010, imported by tools/import/wikidata.mjs. The item's own description reads \"revolution in 1854\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1854,
+    "date": "1854-06-28",
+    "endDate": "1854-07-28"
+  },
+  "place": "spain-q29",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

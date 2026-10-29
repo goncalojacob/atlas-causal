@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaties-of-orebro",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2060853",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaties of Örebro",
+    "pt": "Tratados de Orebro"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2060853"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaties of Örebro\", revision 1373555376"
+    }
+  ],
+  "title": "Treaties of Örebro",
+  "summary": "The English Wikipedia article \"Treaties of Örebro\", at revision 1373555376, opens: \"Two Treaties of Örebro were signed on the same day, 18 July 1812, in Örebro, Sweden. Negotiated by the British minister-plenipotentiary in Sweden, Edward Thornton, they formally ended the Anglo-Russian War (1807–1812) and the Anglo-Swedish War (1810–1812), neither of which had seen serious military action.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2060853, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-07-06"
+  },
+  "place": "orebro",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

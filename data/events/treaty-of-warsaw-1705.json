@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-warsaw-1705",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q481342",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Warsaw (1705)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q481342"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Warsaw (1705)\", revision 1253714733"
+    }
+  ],
+  "title": "Treaty of Warsaw (1705)",
+  "summary": "The English Wikipedia article \"Treaty of Warsaw (1705)\", at revision 1253714733, opens: \"The Treaty of Warsaw was concluded on 18 November (O.S.) / 28 November 1705 during the Great Northern War. It was a peace treaty and an alliance between the Swedish Empire and the faction of the Polish–Lithuanian Commonwealth loyal to Stanisław Leszczyński.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q481342, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty (1705)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1705,
+    "end": 1705,
+    "date": "1705-11-18"
+  },
+  "place": "warsaw",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
