@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-leybar-bridge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q106880868",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Leybar Bridge"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q106880868"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Leybar Bridge\", revision 1370268110"
+    }
+  ],
+  "title": "Battle of Leybar Bridge",
+  "summary": "The English Wikipedia article \"Battle of Leybar Bridge\", at revision 1370268110, opens: \"The Battle of Leybar Bridge was fought on 21 April 1855 between the Trarza army of Mohammed al-Habib and the French garrison of the tower on Leybar Bridge, outside of Saint-Louis in the French colony of Senegal, during the Second Franco-Trarza War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q106880868, imported by tools/import/wikidata.mjs. The item's own description reads \"1855 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1855,
+    "end": 1855,
+    "date": "1855-04-21"
+  },
+  "place": "saint-louis-senegal",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

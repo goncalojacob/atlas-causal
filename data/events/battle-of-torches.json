@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-torches",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872575",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Torches"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872575"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Torches\", revision 1379051521"
+    }
+  ],
+  "title": "Battle of Torches",
+  "summary": "The English Wikipedia article \"Battle of Torches\", at revision 1379051521, opens: \"The Battle of Torches was fought in 1583 during the Ottoman–Safavid War (1578–1590). The name of the battle refers to the torches used during night clashes. The battle resulted in an Ottoman victory, thereby securing Dagestan and Shirvan until the end of the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872575, imported by tools/import/wikidata.mjs. The item's own description reads \"1583 battle between the Ottoman Empire and Iran\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1583,
+    "end": 1583,
+    "date": "1583-05-09",
+    "endDate": "1583-05-11"
+  },
+  "place": "derbent",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-safavid-war-1578-1590"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "british-capture-of-senegal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5037057",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "British capture of Senegal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5037057"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"British capture of Senegal\", revision 1370606327"
+    }
+  ],
+  "title": "British capture of Senegal",
+  "summary": "The English Wikipedia article \"British capture of Senegal\", at revision 1370606327, opens: \"The British capture of Senegal took place in 1758 during the Seven Years' War with France, as part of a concerted British strategy to weaken the French economy by damaging her international trade. To this end, a succession of small British military expeditions landed in Senegal and captured Gorée and Fort Saint Louis, the French slave fort located at Saint-Louis, seizing French vessels and supplies. By late 1758 the whole of the French colony on the Senegalese coast had been captured by the British, with administrative matters being handled by the first British Governor of Senegal, Lieutenant Colonel Richard Worge.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5037057, imported by tools/import/wikidata.mjs. The item's own description reads \"1758 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1758,
+    "end": 1758
+  },
+  "place": "saint-louis-senegal",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

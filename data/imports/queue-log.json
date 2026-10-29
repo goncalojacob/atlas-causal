@@ -37212,6 +37212,617 @@
         "place": "mers-el-kebir"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-025",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-ethiopian-treaty-of-1897",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-027",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-marracuene",
+        "edges": [],
+        "place": "marracuene"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-029",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "1755-meknes-earthquake",
+        "edges": [],
+        "place": "meknes"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-031",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mhlatuze-river",
+        "edges": [],
+        "place": "mhlathuze-river"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-033",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "1790-oran-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-035",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-congella",
+        "edges": [],
+        "place": "durban"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-037",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q722047: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-africa-039",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "larache-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-041",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-embabo",
+        "edges": [],
+        "place": "embabo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-043",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-italeni",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-045",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mandora",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-047",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-helvetia",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-049",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-poredaka",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-051",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-leybar-bridge",
+        "edges": [],
+        "place": "saint-louis-senegal"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-053",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q722041: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-africa-055",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "portuguese-campaigns-of-pacification-and-occupation",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-057",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-centane",
+        "edges": [],
+        "place": "centane"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-059",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-beni-mered",
+        "edges": [],
+        "place": "beni-mered"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-061",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-jigjiga-1900",
+        "edges": [],
+        "place": "jijiga"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-063",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "djidjelli-expedition",
+        "edges": [],
+        "place": "jijel"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-065",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5529300: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-asia-183",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q8543350: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-asia-185",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1661404: none of its classes (Q7897387) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-28-asia-187",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-torches",
+        "edges": [],
+        "place": "derbent"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-189",
+      "writer": "A",
+      "fired": "2026-10-29T01:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chuvash-cape",
+        "edges": [],
+        "place": "qashliq"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-026",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "conventions-of-la-marsa",
+        "edges": [],
+        "place": "la-marsa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-028",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q71630263: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-africa-030",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-vegkop",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-032",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-biddulphsberg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-034",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3536721: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-africa-036",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-willow-grange",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-038",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-coolela",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-040",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-goree",
+        "edges": [],
+        "place": "goree"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-042",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-boomplaats",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-044",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-logandeme",
+        "edges": [],
+        "place": "fatick"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-046",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "british-capture-of-senegal",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-048",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-salt-river",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-050",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mers-el-kebir-1507",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-052",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-medina-fort",
+        "edges": [],
+        "place": "medine-mali"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-054",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q98233405: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-africa-056",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zand-river",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-058",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-barawa",
+        "edges": [],
+        "place": "barawa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-060",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ammal",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-062",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-madana",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-064",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q104879437: none of its classes (Q582956) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-28-africa-066",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q96386035: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-asia-184",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4116387: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-asia-186",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "nishi-rosen-agreement",
+        "edges": [],
+        "place": "tokyo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-188",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-c-ld-r",
+        "edges": [],
+        "place": "c-ld-r"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-190",
+      "writer": "B",
+      "fired": "2026-10-29T01:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-jamrud",
+        "edges": [],
+        "place": "jamrud"
+      },
+      "refusals": []
     }
   ]
 }

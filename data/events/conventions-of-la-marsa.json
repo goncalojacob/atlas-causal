@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "conventions-of-la-marsa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2996359",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Conventions of La Marsa",
+    "pt": "Convenção de Marsa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2996359"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conventions of La Marsa\", revision 1279121848"
+    }
+  ],
+  "title": "Conventions of La Marsa",
+  "summary": "The English Wikipedia article \"Conventions of La Marsa\", at revision 1279121848, opens: \"The Conventions of La Marsa supplementing the Treaty of Bardo were signed by the Bey of Tunis Ali III ibn al-Husayn and the French Resident General Paul Cambon in the Dar al-Taj Palace on 8 June 1883. They provided for France to repay Tunisia's international debt so it could abolish the International Debt Commission and thereby remove any obstacles to a French protectorate in Tunisia. It was in the Conventions of La Marsa that the term 'protectorate' was first employed to describe the relationship between France and the Regency of Tunis. As the first protectorate to be established, Tunisia provided a working model for later French interventions in Morocco and Syria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2996359, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty between France and Tunisia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1883,
+    "end": 1883,
+    "date": "1883-06-08"
+  },
+  "place": "la-marsa",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
