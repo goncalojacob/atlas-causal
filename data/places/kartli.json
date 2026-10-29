@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "kartli",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q459875",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Kartli",
+    "pt": "Ibéria (região do Cáucaso)"
+  },
+  "sources": [],
+  "names": [
+    "Kartli",
+    "Ibéria (região do Cáucaso)"
+  ],
+  "where": {
+    "lon": 44.1152,
+    "lat": 41.9861,
+    "precision": "region",
+    "label": "Kartli"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

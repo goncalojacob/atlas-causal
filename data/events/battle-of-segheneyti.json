@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-segheneyti",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3636604",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Segheneyti"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3636604"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Segheneyti\", revision 1375201816"
+    }
+  ],
+  "title": "Battle of Segheneyti",
+  "summary": "The English Wikipedia article \"Battle of Segheneyti\", at revision 1375201816, opens: \"The Battle of Segheneyti, or Saganèiti, was a small clash fought on August 8, 1888 between the troops of the Kingdom of Italy and Abyssinian irregulars towards the end of the Italo-Ethiopian War of 1887–1889. The Dejazmatch Debeb, who had previously betrayed the Ethiopian Empire, turned against the Italians. The battle resulted in the destruction of an Italian attachment that was deployed to Segheneyti. Five Italian officers and c.250 Askaris died in the action.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3636604, imported by tools/import/wikidata.mjs. The item's own description reads \"1888 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1888,
+    "end": 1888,
+    "date": "1888-08-08"
+  },
+  "place": "segeneiti",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "italo-ethiopian-war-of-1887-1889"
+}

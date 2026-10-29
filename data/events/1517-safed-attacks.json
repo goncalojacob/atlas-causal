@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "1517-safed-attacks",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4550237",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1517 Safed attacks",
+    "pt": "Massacre de Safed de 1517"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4550237"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1517 Safed attacks\", revision 1382254444"
+    }
+  ],
+  "title": "1517 Safed attacks",
+  "summary": "The English Wikipedia article \"1517 Safed attacks\", at revision 1382254444, opens: \"The Safed attacks were an incident that took place in Safed soon after the Turkish Ottomans had ousted the Mamluks and taken Levant during the Ottoman–Mamluk War in 1517. At the time the town had roughly 300 Jewish households. The severe blow took place as Mamluks clashed bloodily with the new Ottoman authorities. The view that the riot's impact on the Jews of Safed was severe is contested.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4550237, imported by tools/import/wikidata.mjs. The item's own description reads \"clash between Mamluks and Ottoman rulers in Safed, Israel\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1517,
+    "end": 1517
+  },
+  "place": "safed",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "ottoman-mamluk-war-1516-1517"
+}
