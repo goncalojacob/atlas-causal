@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-futamata",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1014528",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Futamata"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1014528"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Futamata\", revision 1370741346"
+    }
+  ],
+  "title": "Siege of Futamata",
+  "summary": "The English Wikipedia article \"Siege of Futamata\", at revision 1370741346, opens: \"Futamata fortress was Takeda Shingen's first objective in his campaign against Tokugawa Ieyasu. In 1572 he left the siege of Futamata in the hands of his son and heir Takeda Katsuyori.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1014528, imported by tools/import/wikidata.mjs. The item's own description reads \"1572 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1572,
+    "end": 1573,
+    "date": "1572-11-21",
+    "endDate": "1573-01-22"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

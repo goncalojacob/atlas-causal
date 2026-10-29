@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1847-zenkoji-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q11418893",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1847 Zenkoji earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11418893"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1847 Zenkoji earthquake\", revision 1366164234"
+    }
+  ],
+  "title": "1847 Zenkoji earthquake",
+  "summary": "The English Wikipedia article \"1847 Zenkoji earthquake\", at revision 1366164234, opens: \"The 1847 Zenkoji earthquake  occurred at about 21:30 local time on 8 May at Nagano, Japan. It had a magnitude of 7.4 on the surface-wave magnitude scale. It caused the destruction of many houses in Nagano and at least 8,600 people were killed. The earthquake triggered many landslides, the largest of which dammed the Sai River. 19 days later, the failure of this earthquake dam caused a flood that destroyed many more houses and killed 35 people.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11418893, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake in Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1847,
+    "end": 1847,
+    "date": "1847-05-08"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

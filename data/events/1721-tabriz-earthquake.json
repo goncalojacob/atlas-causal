@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1721-tabriz-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4552537",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1721 Tabriz earthquake",
+    "pt": "Terremoto de Tabriz de 1721"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4552537"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1721 Tabriz earthquake\", revision 1366163623"
+    }
+  ],
+  "title": "1721 Tabriz earthquake",
+  "summary": "The English Wikipedia article \"1721 Tabriz earthquake\", at revision 1366163623, opens: \"The 1721 Tabriz earthquake occurred on April 26, with an epicenter near the city of Tabriz, Iran. It leveled some three-quarters of the city, including many prominent mosques and schools in the city, and resulted in the deaths of tens of thousands of people. The total number of casualties caused by the earthquake is between 8,000 and 250,000; it was most likely approximately 80,000. At the time that it occurred, the earthquake was popularly interpreted as an omen of misfortune, or a demonstration of godly wrath. The destruction that the earthquake caused was a significant factor in the successful Ottoman Empire takeover of Tabriz in 1725, as well as contributing to Tabriz's economic difficulties during that period. It also caused the destruction of some of the city's significant historical monuments. Accounts of the earthquake are often confused with descriptions of the 1727 Tabriz earthquake.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4552537, imported by tools/import/wikidata.mjs. The item's own description reads \"1721 catastrophic earthquake centered near Tabriz, Iran\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1721,
+    "end": 1721,
+    "date": "1721-04-26"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}
