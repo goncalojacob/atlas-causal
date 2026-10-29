@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "westfjords",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q727267",
+  "sitelinks": {
+    "count": 60,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Westfjords",
+    "pt": "Fiordes Ocidentais (Islândia)"
+  },
+  "sources": [],
+  "names": [
+    "Westfjords",
+    "Vestfirðir",
+    "Fiordes Ocidentais (Islândia)"
+  ],
+  "where": {
+    "lon": -22.170556,
+    "lat": 65.7375,
+    "precision": "region",
+    "label": "Westfjords"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

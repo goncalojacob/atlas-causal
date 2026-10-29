@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "krakow-fire-of-1850",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q11826441",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Kraków Fire of 1850"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11826441"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kraków Fire of 1850\", revision 1379548726"
+    }
+  ],
+  "title": "Kraków Fire of 1850",
+  "summary": "The English Wikipedia article \"Kraków Fire of 1850\", at revision 1379548726, opens: \"The Kraków Fire of 1850 started on 18 July and lasted several days. It is estimated to have destroyed about 10 percent of the city of Kraków, which was then part of the Austrian Empire's district of the Grand Duchy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11826441, imported by tools/import/wikidata.mjs. The item's own description reads \"urban fire (Kraków, Austrian Empire; 1850)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1850,
+    "end": 1850,
+    "date": "1850-07-18"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

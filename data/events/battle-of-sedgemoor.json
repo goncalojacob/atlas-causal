@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-sedgemoor",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2557155",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Sedgemoor",
+    "pt": "Batalha de Sedgemoor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2557155"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sedgemoor\", revision 1382332382"
+    }
+  ],
+  "title": "Battle of Sedgemoor",
+  "summary": "The English Wikipedia article \"Battle of Sedgemoor\", at revision 1382332382, opens: \"The Battle of Sedgemoor was the final and decisive engagement of the Monmouth Rebellion, between forces loyal to James II and rebel forces led by the Duke of Monmouth. It was fought on 6 July 1685 at Westonzoyland near Bridgwater in Somerset, England.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2557155, imported by tools/import/wikidata.mjs. The item's own description reads \"1685 final battle of the Monmouth Rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1685,
+    "end": 1685,
+    "date": "1685-07-06"
+  },
+  "place": "bridgwater",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "monmouth-rebellion"
+}

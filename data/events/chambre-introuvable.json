@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "chambre-introuvable",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1060780",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Chambre introuvable"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1060780"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chambre introuvable\", revision 1299139300"
+    }
+  ],
+  "title": "Chambre introuvable",
+  "summary": "The English Wikipedia article \"Chambre introuvable\", at revision 1299139300, opens: \"The Chambre introuvable was the first Chamber of Deputies elected after the Second Bourbon Restoration in 1815. It was dominated by Ultra-royalists who completely refused to accept the results of the French Revolution. The name was coined by King Louis XVIII, referring to the impossibility of cooperating with the chamber.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1060780, imported by tools/import/wikidata.mjs. The item's own description reads \"chamber of deputies in power after the second Bourbon Restoration\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1816,
+    "date": "1815-10-07",
+    "endDate": "1816-09-05"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "other",
+  "actors": []
+}
