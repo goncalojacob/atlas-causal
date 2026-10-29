@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-imus",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q12966900",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Imus"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12966900"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Imus\", revision 1370443701"
+    }
+  ],
+  "title": "Battle of Imus",
+  "summary": "The English Wikipedia article \"Battle of Imus\", at revision 1370443701, opens: \"The Battle of Imus, or the Siege of Imus, was the first major battle of the Philippine revolution against the Spanish colonial government in the province of Cavite. It was fought between September 1–3, 1896 at Imus, Cavite province in the Philippines, right after Bonifacio's attack on the gunpowder magazine at the Battle of San Juan del Monte in Manila.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12966900, imported by tools/import/wikidata.mjs. The item's own description reads \"1896 battle etween Spain and the Philippines\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1896,
+    "date": "1896-09-01",
+    "endDate": "1896-09-03"
+  },
+  "place": "imus",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

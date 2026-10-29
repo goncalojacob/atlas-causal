@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "cry-of-tarlac",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16828511",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Cry of Tarlac"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16828511"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cry of Tarlac\", revision 1370614378"
+    }
+  ],
+  "title": "Cry of Tarlac",
+  "summary": "The English Wikipedia article \"Cry of Tarlac\", at revision 1370614378, opens: \"The Cry of Tarlac was an uprising led by General Francisco Macabulos in La Paz, Tarlac in January 1897. Although the province of Tarlac was already classified to be in a state of rebellion even before the uprising, major hostilities unfolded after the cry.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16828511, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1897,
+    "end": 1897,
+    "date": "1897-01-24"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "gyeongbokgung",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q482485",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Gyeongbokgung",
+    "pt": "Gyeongbokgung"
+  },
+  "sources": [],
+  "names": [
+    "Gyeongbokgung"
+  ],
+  "where": {
+    "lon": 126.9767996,
+    "lat": 37.5798841,
+    "precision": "point",
+    "label": "Gyeongbokgung"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

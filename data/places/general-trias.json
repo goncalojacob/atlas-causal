@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "general-trias",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q62723",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "General Trias",
+    "pt": "General Trias"
+  },
+  "sources": [],
+  "names": [
+    "General Trias"
+  ],
+  "where": {
+    "lon": 120.88333333333,
+    "lat": 14.383333333333,
+    "precision": "city",
+    "label": "General Trias"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

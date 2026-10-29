@@ -53665,6 +53665,619 @@
       },
       "refusals": [],
       "note": "Q4871605: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-302",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4087414: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-304",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4087483: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-306",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4438410: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-308",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mosul-1745",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-310",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4872624: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-312",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-san-juan-del-monte",
+        "edges": [],
+        "place": "san-juan-metro-manila"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-314",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "cry-of-nueva-ecija",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-316",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5526415: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-318",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-urumqi-1870",
+        "edges": [],
+        "place": "urumqi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-320",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "japanese-occupation-of-gyeongbokgung",
+        "edges": [],
+        "place": "gyeongbokgung"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-322",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-mount-pamaton",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-324",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "1896-manila-mutiny",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-326",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-talisay",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-328",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q133521430: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-330",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q133802796: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-332",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sambat",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-334",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-san-jose-de-buenavista",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-336",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "liberation-of-nueva-caceres-1898",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-338",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-noveleta",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-340",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-san-francisco-de-malabon",
+        "edges": [],
+        "place": "general-trias"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-342",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zapote-bridge-1897",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-344",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q24913278: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-29-asia-346",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-calamba",
+        "edges": [],
+        "place": "calamba-laguna"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-348",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tayabas",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-350",
+      "writer": "A",
+      "fired": "2026-10-29T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-budla-an",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-303",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-mosul-1743",
+        "edges": [],
+        "place": "mosul"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-305",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "paknam-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-307",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-binakayan-dalahican",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-309",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-alapan",
+        "edges": [],
+        "place": "imus"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-311",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kakarong-de-sili",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-313",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tres-de-abril",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-315",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-imus",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-317",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q27958319: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-29-asia-319",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "varvar-ali-pasha-s-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-321",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4872146: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-323",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "battles-of-mount-pamaton",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-325",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-camalig",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-327",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-fort-pilar",
+        "edges": [],
+        "place": "zamboanga-city"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-329",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q133696273: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-331",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "raid-on-paombong",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-333",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-san-rafael",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-335",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mount-puray",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-337",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-aliaga",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-339",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-perez-dasmarinas",
+        "edges": [],
+        "place": "dasmarinas"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-341",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-san-mateo-and-montalban",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-343",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q28458443: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-345",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-barrio-yating",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-347",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sapong-hills",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-349",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "written",
+      "written": {
+        "event": "cry-of-tarlac",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-351",
+      "writer": "B",
+      "fired": "2026-10-29T20:47Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q133850436: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   ]
 }

@@ -5426,3 +5426,23 @@ Writer A imported it from the planner's queue as item `2026-10-29-europe-521`, r
 ## Writer B, 2026-10-29: `1707-08-iceland-smallpox-epidemic`, bare
 
 Writer B imported it from the planner's queue as item `2026-10-29-europe-518`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-29: `battle-of-mosul-1745`, filed under `ottoman-persian-war-1743-1746` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-asia-308`, rank `child-of:ottoman-persian-war-1743-1746`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `first-battle-of-mount-pamaton`, filed under `banjarmasin-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-asia-322`, rank `child-of:banjarmasin-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-tayabas`, filed under `philippine-revolution` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-asia-348`, rank `child-of:philippine-revolution`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `paknam-incident`, filed under `1893-franco-siamese-crisis` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-305`, rank `child-of:1893-franco-siamese-crisis`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `raid-on-paombong`, filed under `philippine-revolution` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-331`, rank `child-of:philippine-revolution`. Its span and its subject put it inside the umbrella.

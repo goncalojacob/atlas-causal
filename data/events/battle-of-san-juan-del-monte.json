@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-san-juan-del-monte",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872284",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of San Juan del Monte"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872284"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of San Juan del Monte\", revision 1372099882"
+    }
+  ],
+  "title": "Battle of San Juan del Monte",
+  "summary": "The English Wikipedia article \"Battle of San Juan del Monte\", at revision 1372099882, opens: \"The Battle of San Juan del Monte, also referred to as Battle of Pinaglabanan, took place on August 30, 1896. It is considered as the first major battle of the Philippine Revolution, which sought Philippine independence from Spain. The first battle cry of the Katipunan coincided with the pealing of church bells at nine o'clock on the night of August 29, 1896.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872284, imported by tools/import/wikidata.mjs. The item's own description reads \"1896 battle of the Philippine Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1896,
+    "date": "1896-08-30"
+  },
+  "place": "san-juan-metro-manila",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

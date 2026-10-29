@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-noveleta",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871918",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Noveleta"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871918"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Noveleta\", revision 1370662822"
+    }
+  ],
+  "title": "Battle of Noveleta",
+  "summary": "The English Wikipedia article \"Battle of Noveleta\", at revision 1370662822, opens: \"The Battle of Noveleta known as Battle of Calero Bridge was a major battle during the Philippine revolution and was one of the first engagements of the revolution in Cavite. In the latter part of the revolution, Noveleta played a key role for the Magdalo and Magdiwang factions. From its capture by the Magdiwang at the start of the revolution, various battles were fought and won by Filipino rebels in Cavite. Noveleta became the seat of the Magdiwang faction of the Katipunan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871918, imported by tools/import/wikidata.mjs. The item's own description reads \"Philippine revolution battle (1896)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1896,
+    "date": "1896-08-30"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

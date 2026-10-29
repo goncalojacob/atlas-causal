@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-calamba",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16822596",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Calamba"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16822596"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Calamba\", revision 1370435822"
+    }
+  ],
+  "title": "Battle of Calamba",
+  "summary": "The English Wikipedia article \"Battle of Calamba\", at revision 1370435822, opens: \"The Battle of Calamba was fought between Filipino Revolutionaries in La Laguna in the Philippines and the colonial forces of the Spanish Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16822596, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-05"
+  },
+  "place": "calamba-laguna",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-sapong-hills",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16822703",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Sapong Hills"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16822703"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sapong Hills\", revision 1370588647"
+    }
+  ],
+  "title": "Battle of Sapong Hills",
+  "summary": "The English Wikipedia article \"Battle of Sapong Hills\", at revision 1370588647, opens: \"The Battle of Sapong Hills was fought in Sara, Iloilo province, between the forces of Spanish colonial government and Visayan revolutionaries led by the \"female General\" Teresa Magbanua. The Filipino revolutionaries decisively won the battle, and in this battle where Teresa herself was considered the \"Visayan Joan of Arc\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16822703, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-12"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}
