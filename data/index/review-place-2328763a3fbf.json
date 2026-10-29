@@ -452,6 +452,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "adrianople-vilayet",
+      "kind": "place",
+      "names": [
+        "Adrianople vilayet"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 3,
       "id": "adriatic-sea",
@@ -1179,7 +1206,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 5,
+      "degree": 6,
       "id": "alexandria",
       "kind": "place",
       "names": [
@@ -1824,6 +1851,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "ano-doliana",
+      "kind": "place",
+      "names": [
+        "Ano Doliana"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -2738,6 +2792,34 @@
       "names": [
         "Astrakhan",
         "Astracã"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "athens",
+      "kind": "place",
+      "names": [
+        "Athens",
+        "Atenas"
       ],
       "origin": {
         "tool": "wikidata"
@@ -5532,7 +5614,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "bloemfontein",
       "kind": "place",
       "names": [
@@ -6601,7 +6683,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "british-raj-q129286",
       "kind": "place",
       "names": [
@@ -10188,6 +10270,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "cokesina",
+      "kind": "place",
+      "names": [
+        "Čokešina"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -11570,6 +11679,33 @@
       "names": [
         "Danish West Indies",
         "Índias Ocidentais Dinamarquesas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "danube-vilayet",
+      "kind": "place",
+      "names": [
+        "Danube Vilayet"
       ],
       "origin": {
         "tool": "wikidata"
@@ -14007,7 +14143,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 2,
+      "degree": 3,
       "id": "elmina",
       "kind": "place",
       "names": [
@@ -17638,7 +17774,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 9,
       "id": "greece-q41",
       "kind": "place",
       "names": [
@@ -21275,6 +21411,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "ivankovac",
+      "kind": "place",
+      "names": [
+        "Ivankovac"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "ivry-la-bataille",
@@ -21665,7 +21828,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 77,
+      "degree": 78,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -22424,6 +22587,33 @@
       "kind": "place",
       "names": [
         "Kalisz"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "kaluga",
+      "kind": "place",
+      "names": [
+        "Kaluga"
       ],
       "origin": {
         "tool": "wikidata"
@@ -24765,6 +24955,33 @@
       "names": [
         "Kumamoto",
         "Kumamoto (cidade)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "kumkap",
+      "kind": "place",
+      "names": [
+        "Kumkapı"
       ],
       "origin": {
         "tool": "wikidata"
@@ -27133,6 +27350,34 @@
         "Lower Burma",
         "Baixa Birmânia",
         "Lower Myanmar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "loznica",
+      "kind": "place",
+      "names": [
+        "Loznica",
+        "Loznica (Mačva)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -30529,6 +30774,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "misar",
+      "kind": "place",
+      "names": [
+        "Mišar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-23",
       "degree": 1,
       "id": "misiones-orientales",
@@ -31076,6 +31348,33 @@
       "names": [
         "Mondovì",
         "Mondovì (Itália)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "monemvasia",
+      "kind": "place",
+      "names": [
+        "Monemvasia"
       ],
       "origin": {
         "tool": "wikidata"
@@ -36513,7 +36812,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 9,
+      "degree": 10,
       "id": "peru-q419",
       "kind": "place",
       "names": [
@@ -38358,6 +38657,33 @@
       "names": [
         "Psara",
         "Psara (Grécia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "pskov-q2214",
+      "kind": "place",
+      "names": [
+        "Pskov"
       ],
       "origin": {
         "tool": "wikidata"
@@ -42800,7 +43126,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 3,
+      "degree": 4,
       "id": "seoul",
       "kind": "place",
       "names": [
@@ -43022,7 +43348,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 3,
       "id": "shamakhi",
       "kind": "place",
       "names": [
@@ -43945,7 +44271,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "smolensk",
       "kind": "place",
       "names": [
@@ -46448,6 +46774,33 @@
       "names": [
         "Taedong River",
         "Rio Taedong"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "taganrog",
+      "kind": "place",
+      "names": [
+        "Taganrog"
       ],
       "origin": {
         "tool": "wikidata"
@@ -50651,7 +51004,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "villahermosa",
       "kind": "place",
       "names": [

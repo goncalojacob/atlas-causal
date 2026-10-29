@@ -3149,6 +3149,15 @@
         }
       ]
     },
+    "battle-off-liverpool-nova-scotia-1778": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-on-snowshoes": {
       "from": "git",
       "versions": [
@@ -4222,6 +4231,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "great-tenmei-famine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
