@@ -3703,6 +3703,15 @@
         }
       ]
     },
+    "chandannagar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "changsha": {
       "from": "git",
       "versions": [
@@ -6187,6 +6196,15 @@
         }
       ]
     },
+    "foca": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "foglo": {
       "from": "git",
       "versions": [
@@ -6550,6 +6568,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "fredericksburg-virginia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -12030,6 +12057,15 @@
         }
       ]
     },
+    "matanzas-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "maturin": {
       "from": "git",
       "versions": [
@@ -13481,6 +13517,15 @@
         }
       ]
     },
+    "nassau-bahamas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "nazi-germany-q7318": {
       "from": "git",
       "versions": [
@@ -13854,6 +13899,15 @@
         }
       ]
     },
+    "north-carolina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "north-caucasus": {
       "from": "git",
       "versions": [
@@ -13938,6 +13992,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "north-louisiana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -14930,6 +14993,15 @@
         }
       ]
     },
+    "persis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "peru-q419": {
       "from": "git",
       "versions": [
@@ -15395,6 +15467,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "portland-maine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -18833,6 +18914,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "stony-point-new-york": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

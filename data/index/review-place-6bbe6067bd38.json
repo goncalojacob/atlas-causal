@@ -2345,7 +2345,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "arica",
       "kind": "place",
       "names": [
@@ -3707,7 +3707,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 2,
+      "degree": 3,
       "id": "baltimore",
       "kind": "place",
       "names": [
@@ -8067,7 +8067,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 1,
+      "degree": 2,
       "id": "camden-south-carolina",
       "kind": "place",
       "names": [
@@ -9544,6 +9544,33 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "chandannagar",
+      "kind": "place",
+      "names": [
+        "Chandannagar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "changsha",
       "kind": "place",
       "names": [
@@ -9738,7 +9765,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "chattanooga-tennessee",
       "kind": "place",
       "names": [
@@ -12138,7 +12165,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 4,
       "id": "dardanelles",
       "kind": "place",
       "names": [
@@ -15729,6 +15756,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "foca",
+      "kind": "place",
+      "names": [
+        "Foça district",
+        "Foça"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "foglo",
@@ -16724,6 +16779,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "fredericksburg-virginia",
+      "kind": "place",
+      "names": [
+        "Fredericksburg",
+        "Fredericksburg, Virginia",
+        "Fredericksburg (Virgínia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 2,
       "id": "freiburg-im-breisgau",
@@ -17332,7 +17416,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "ganja-azerbaijan",
       "kind": "place",
       "names": [
@@ -17646,7 +17730,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 3,
+      "degree": 4,
       "id": "georgia-u-s-state",
       "kind": "place",
       "names": [
@@ -22791,7 +22875,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 6,
+      "degree": 7,
       "id": "java",
       "kind": "place",
       "names": [
@@ -30677,6 +30761,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "matanzas-bay",
+      "kind": "place",
+      "names": [
+        "Matanzas Bay"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "maturin",
@@ -34524,6 +34635,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "nassau-bahamas",
+      "kind": "place",
+      "names": [
+        "Nassau",
+        "Nassau, Bahamas",
+        "Nassau (Bahamas)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -35418,6 +35558,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "north-carolina",
+      "kind": "place",
+      "names": [
+        "North Carolina",
+        "Carolina do Norte"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 3,
       "id": "north-caucasus",
@@ -35594,6 +35762,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "north-louisiana",
+      "kind": "place",
+      "names": [
+        "North Louisiana",
+        "Norte da Louisiana"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -36245,7 +36441,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "ohio",
       "kind": "place",
       "names": [
@@ -38130,6 +38326,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 2,
+      "id": "persis",
+      "kind": "place",
+      "names": [
+        "Persis",
+        "Pérsia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -39302,6 +39526,35 @@
       "names": [
         "Portage Des Sioux",
         "Portage Des Sioux, Missouri"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "portland-maine",
+      "kind": "place",
+      "names": [
+        "Portland",
+        "Portland, Maine",
+        "Portland (Maine)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -45253,7 +45506,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "shenandoah-valley",
       "kind": "place",
       "names": [
@@ -47367,7 +47620,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 2,
       "id": "st-lawrence-river",
       "kind": "place",
       "names": [
@@ -47396,7 +47649,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 3,
+      "degree": 4,
       "id": "st-louis",
       "kind": "place",
       "names": [
@@ -47688,6 +47941,34 @@
           "place"
         ],
         "note": "The coordinates are the city centre, written from memory; no cached lead exists for Stockholm, so the record carries no identity fields.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "stony-point-new-york",
+      "kind": "place",
+      "names": [
+        "Stony Point",
+        "Stony Point, New York"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -52745,7 +53026,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 2,
+      "degree": 3,
       "id": "vicksburg-mississippi",
       "kind": "place",
       "names": [
@@ -52989,7 +53270,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 7,
+      "degree": 9,
       "id": "virginia-q1370",
       "kind": "place",
       "names": [

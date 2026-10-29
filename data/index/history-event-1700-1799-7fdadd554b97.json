@@ -994,6 +994,15 @@
         }
       ]
     },
+    "battle-of-cape-henry": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-cape-passaro": {
       "from": "git",
       "versions": [
@@ -1107,6 +1116,15 @@
         }
       ]
     },
+    "battle-of-chandannagar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-chelif": {
       "from": "git",
       "versions": [
@@ -1157,6 +1175,15 @@
             "regionNote"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-condore": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1537,6 +1564,15 @@
         }
       ]
     },
+    "battle-of-great-bridge": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-grenada": {
       "from": "git",
       "versions": [
@@ -1671,6 +1707,15 @@
             "regionNote"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-hobkirk-s-hill": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2228,6 +2273,15 @@
         }
       ]
     },
+    "battle-of-moore-s-creek-bridge": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-mount-tabor-1799": {
       "from": "git",
       "versions": [
@@ -2285,6 +2339,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-newtown": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2921,6 +2984,15 @@
         }
       ]
     },
+    "battle-of-st-louis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-st-lucia": {
       "from": "git",
       "versions": [
@@ -2946,6 +3018,15 @@
       ]
     },
     "battle-of-stockach-1799": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-stony-point": {
       "from": "git",
       "versions": [
         {
@@ -3512,6 +3593,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "burning-of-falmouth": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4432,6 +4522,15 @@
         }
       ]
     },
+    "gnadenhutten-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "gordon-riots": {
       "from": "git",
       "versions": [
@@ -5330,12 +5429,30 @@
         }
       ]
     },
+    "quebec-expedition-1711": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "queen-anne-s-war": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "raid-of-nassau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6008,6 +6125,15 @@
         }
       ]
     },
+    "siege-of-ganja-1734-1735": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-goorumconda": {
       "from": "git",
       "versions": [
@@ -6611,6 +6737,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "tahmasp-ii-s-campaign-of-1731": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -7775,6 +7910,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "western-iran-campaign-of-1730": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

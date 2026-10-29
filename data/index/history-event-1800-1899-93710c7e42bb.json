@@ -182,6 +182,15 @@
         }
       ]
     },
+    "1861-baltimore-riot": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1863-1875-cholera-pandemic": {
       "from": "git",
       "versions": [
@@ -1853,6 +1862,15 @@
         }
       ]
     },
+    "battle-of-arica": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-arkansas-post": {
       "from": "git",
       "versions": [
@@ -2171,6 +2189,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-blackburn-s-ford": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2620,6 +2647,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-chickasaw-bayou": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3117,6 +3153,24 @@
         }
       ]
     },
+    "battle-of-ezra-church": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-fairfax-court-house-1861": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-fatshan-creek": {
       "from": "git",
       "versions": [
@@ -3606,6 +3660,15 @@
         }
       ]
     },
+    "battle-of-helena": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-heligoland-1864": {
       "from": "git",
       "versions": [
@@ -3657,6 +3720,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-hoke-s-run": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3964,6 +4036,15 @@
       ]
     },
     "battle-of-kastraki": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-kennesaw-mountain": {
       "from": "git",
       "versions": [
         {
@@ -4581,6 +4662,15 @@
         }
       ]
     },
+    "battle-of-mansfield": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-marengo": {
       "from": "git",
       "versions": [
@@ -4623,6 +4713,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-mcdowell": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4681,6 +4780,15 @@
       ]
     },
     "battle-of-misar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-missionary-ridge": {
       "from": "git",
       "versions": [
         {
@@ -5265,6 +5373,15 @@
         }
       ]
     },
+    "battle-of-prairie-grove": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-prome": {
       "from": "git",
       "versions": [
@@ -5280,6 +5397,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-pulo-aura": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5477,6 +5603,15 @@
         }
       ]
     },
+    "battle-of-sailor-s-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-salamanca": {
       "from": "git",
       "versions": [
@@ -5504,12 +5639,30 @@
         }
       ]
     },
+    "battle-of-san-domingo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-san-jacinto": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-san-juan-and-chorrillos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6685,6 +6838,15 @@
         }
       ]
     },
+    "battle-of-waynesboro-virginia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-weihaiwei": {
       "from": "git",
       "versions": [
@@ -7658,6 +7820,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "carolinas-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -9394,6 +9565,15 @@
         }
       ]
     },
+    "franklin-nashville-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "franklin-s-lost-expedition": {
       "from": "git",
       "versions": [
@@ -10314,6 +10494,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "java-campaign-of-1806-1807": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -12374,6 +12563,15 @@
         }
       ]
     },
+    "red-river-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "red-river-rebellion": {
       "from": "git",
       "versions": [
@@ -12841,6 +13039,15 @@
       ]
     },
     "second-battle-of-fort-wagner": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "second-battle-of-fredericksburg": {
       "from": "git",
       "versions": [
         {
@@ -15912,6 +16119,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "valley-campaigns-of-1864": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
