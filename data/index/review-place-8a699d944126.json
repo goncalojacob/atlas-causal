@@ -1874,6 +1874,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "aranjuez",
+      "kind": "place",
+      "names": [
+        "Aranjuez"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "arapiles-castile-and-leon",
@@ -3184,7 +3211,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 3,
       "id": "baltic-sea",
       "kind": "place",
       "names": [
@@ -5804,7 +5831,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "breda",
       "kind": "place",
       "names": [
@@ -6105,7 +6132,7 @@
         }
       ],
       "created": "2026-10-15",
-      "degree": 2,
+      "degree": 3,
       "id": "british-isles",
       "kind": "place",
       "names": [
@@ -13614,6 +13641,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "ferrybridge",
+      "kind": "place",
+      "names": [
+        "Ferrybridge"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -17196,6 +17250,33 @@
       "names": [
         "Hampton Court",
         "Hampton Court, Guyana"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "hanau",
+      "kind": "place",
+      "names": [
+        "Hanau"
       ],
       "origin": {
         "tool": "wikidata"
@@ -21715,6 +21796,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "kije-lubusz-voivodeship",
+      "kind": "place",
+      "names": [
+        "Kije, Lubusz Voivodeship"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-30",
       "degree": 1,
       "id": "kimberley-south-africa",
@@ -22331,7 +22439,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "kosovo-and-metohija",
       "kind": "place",
       "names": [
@@ -23169,6 +23277,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "lac",
+      "kind": "place",
+      "names": [
+        "Laç"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "lachine-quebec",
@@ -23532,6 +23667,33 @@
         "Lạng Sơn",
         "Lạng Sơn (city)",
         "Lang Son (cidade)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "laon",
+      "kind": "place",
+      "names": [
+        "Laon"
       ],
       "origin": {
         "tool": "wikidata"
@@ -27424,6 +27586,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "mers-el-kebir",
+      "kind": "place",
+      "names": [
+        "Mers El Kebir"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "merv",
@@ -28692,6 +28881,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "mortefontaine",
+      "kind": "place",
+      "names": [
+        "Mortefontaine"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -30529,6 +30745,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "nis",
+      "kind": "place",
+      "names": [
+        "Niš"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "nizip",
@@ -31037,7 +31280,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 3,
+      "degree": 4,
       "id": "northern-italy",
       "kind": "place",
       "names": [
@@ -31110,6 +31353,33 @@
           "a9-place"
         ],
         "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record the event item's P276 names was not here, so the engagement came out placeless. The point and the name are the locality item's own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "novi-ligure",
+      "kind": "place",
+      "names": [
+        "Novi Ligure"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -31212,6 +31482,34 @@
         "Oak Ridge",
         "Oak Ridge, Tennessee",
         "Oak Ridge (Tennessee)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "ocana-spain",
+      "kind": "place",
+      "names": [
+        "Ocaña",
+        "Ocaña, Spain"
       ],
       "origin": {
         "tool": "wikidata"
@@ -32497,7 +32795,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 28,
+      "degree": 29,
       "id": "paris",
       "kind": "place",
       "names": [
@@ -33800,7 +34098,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "poland-q36",
       "kind": "place",
       "names": [
@@ -36896,7 +37194,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 8,
+      "degree": 9,
       "id": "russian-empire-q34266",
       "kind": "place",
       "names": [
@@ -37369,7 +37667,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 7,
+      "degree": 8,
       "id": "saint-petersburg",
       "kind": "place",
       "names": [
@@ -39007,7 +39305,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "sevastopol",
       "kind": "place",
       "names": [
@@ -40843,7 +41141,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 6,
+      "degree": 7,
       "id": "spain-q29",
       "kind": "place",
       "names": [
@@ -42633,6 +42931,33 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q2409264, Battle of Tashihchiao, read on 2026-09-24, and the article at revision 1370590643 puts the town \"about 25 kilometres (16 mi) southwest of the city of Haicheng\", which this coordinate is. The item names no location A9's second step could read. The record carries no `wikidata` key: a place claiming to be the battle would be a worse record than one claiming nothing.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "taurage",
+      "kind": "place",
+      "names": [
+        "Tauragė"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -45666,6 +45991,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "veliky-novgorod",
+      "kind": "place",
+      "names": [
+        "Veliky Novgorod",
+        "Novogárdia Magna"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -46032,6 +46385,33 @@
       "kind": "place",
       "names": [
         "Villafranca di Verona"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "vilnius",
+      "kind": "place",
+      "names": [
+        "Vilnius"
       ],
       "origin": {
         "tool": "wikidata"
@@ -46525,6 +46905,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "warburg",
+      "kind": "place",
+      "names": [
+        "Warburg"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [

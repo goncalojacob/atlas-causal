@@ -686,6 +686,15 @@
         }
       ]
     },
+    "aranjuez": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "arapiles-castile-and-leon": {
       "from": "git",
       "versions": [
@@ -5472,6 +5481,15 @@
         }
       ]
     },
+    "ferrybridge": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "fez-morocco": {
       "from": "git",
       "versions": [
@@ -6920,6 +6938,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "hanau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -8648,6 +8675,15 @@
         }
       ]
     },
+    "kije-lubusz-voivodeship": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "kimberley-south-africa": {
       "from": "git",
       "versions": [
@@ -9225,6 +9261,15 @@
         }
       ]
     },
+    "lac": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "lachine-quebec": {
       "from": "git",
       "versions": [
@@ -9379,6 +9424,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "laon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -10990,6 +11044,15 @@
         }
       ]
     },
+    "mers-el-kebir": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "merv": {
       "from": "git",
       "versions": [
@@ -11495,6 +11558,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "mortefontaine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -12233,6 +12305,15 @@
         }
       ]
     },
+    "nis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "nizip": {
       "from": "git",
       "versions": [
@@ -12483,6 +12564,15 @@
         }
       ]
     },
+    "novi-ligure": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "novy-jicin": {
       "from": "git",
       "versions": [
@@ -12534,6 +12624,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "ocana-spain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -17217,6 +17316,15 @@
         }
       ]
     },
+    "taurage": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "taza": {
       "from": "git",
       "versions": [
@@ -18442,6 +18550,15 @@
         }
       ]
     },
+    "veliky-novgorod": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "venezuela-q717": {
       "from": "git",
       "versions": [
@@ -18597,6 +18714,15 @@
       ]
     },
     "villafranca-di-verona": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "vilnius": {
       "from": "git",
       "versions": [
         {
@@ -18782,6 +18908,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "warburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

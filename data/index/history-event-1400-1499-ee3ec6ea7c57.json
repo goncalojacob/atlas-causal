@@ -38,6 +38,15 @@
         }
       ]
     },
+    "battle-of-albulena": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-barnet": {
       "from": "git",
       "versions": [
@@ -93,6 +102,15 @@
       ]
     },
     "battle-of-edgcote": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-ferrybridge": {
       "from": "git",
       "versions": [
         {
@@ -209,6 +227,15 @@
         }
       ]
     },
+    "battle-of-nish-1443": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-northampton-1460": {
       "from": "git",
       "versions": [
@@ -273,6 +300,15 @@
       ]
     },
     "battle-of-the-herrings": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-torvioll": {
       "from": "git",
       "versions": [
         {
@@ -593,6 +629,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "lithuanian-civil-war-1432-1438": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
