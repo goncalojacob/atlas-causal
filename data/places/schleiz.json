@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "schleiz",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q506738",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Schleiz",
+    "pt": "Schleiz"
+  },
+  "sources": [],
+  "names": [
+    "Schleiz"
+  ],
+  "where": {
+    "lon": 11.816666666667,
+    "lat": 50.583333333333,
+    "precision": "city",
+    "label": "Schleiz"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

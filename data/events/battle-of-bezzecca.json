@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-bezzecca",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q685805",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Bezzecca",
+    "pt": "Batalha de Bezzecca"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q685805"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bezzecca\", revision 1382469280"
+    }
+  ],
+  "title": "Battle of Bezzecca",
+  "summary": "The English Wikipedia article \"Battle of Bezzecca\", at revision 1382469280, opens: \"The Battle of Bezzecca was fought on 21 July 1866 between Italy and Austria during the Third Italian War of Independence. It was a victory of Italian volunteers, the Corpo Truppe Volontarie led by Giuseppe Garibaldi, against Austrian forces and occurred during an Italian invasion of Trentino.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q685805, imported by tools/import/wikidata.mjs. The item's own description reads \"1866 III Italian Independence War battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866,
+    "date": "1866-07-21"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "austro-prussian-war"
+}

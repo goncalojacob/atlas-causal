@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-pirano",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872056",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Pirano"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872056"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pirano\", revision 1370586162"
+    }
+  ],
+  "title": "Battle of Pirano",
+  "summary": "The English Wikipedia article \"Battle of Pirano\", at revision 1370586162, opens: \"The Battle of Pirano on 22 February 1812 was a minor naval action of the Adriatic campaign of the Napoleonic Wars fought between a British and a French ship of the line in the vicinity of the towns of Pirano and Grado in Adriatic Sea. The French Rivoli, named for Napoleon's victory 15 years earlier, had been recently completed at Venice. The French naval authorities intended her to bolster French forces in the Adriatic, following a succession of defeats in the preceding year.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872056, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 naval battle of the Napoleonic Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-02-22"
+  },
+  "place": "adriatic-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "napoleonic-wars"
+}

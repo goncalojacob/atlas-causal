@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-mantua-1796-1797",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q815175",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Mantua (1796–1797)",
+    "pt": "Cerco de Mântua"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q815175"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Mantua (1796–1797)\", revision 1375545734"
+    }
+  ],
+  "title": "Siege of Mantua (1796–1797)",
+  "summary": "The English Wikipedia article \"Siege of Mantua (1796–1797)\", at revision 1375545734, opens: \"The siege of Mantua lasted from 4 June 1796 to 2 February 1797 with a short break where French forces under the overall command of Napoleon Bonaparte besieged and blockaded a large Austrian garrison at Mantua for many months until it surrendered. The siege was the focal point of the Italian Campaign of 1796-1797, lasting the vast majority of the campaign and being the hinge point that would determine which side would control Northern Italy. The eventual surrender, together with the heavy losses incurred during four unsuccessful relief attempts, led to Napoleon invading Austria and convincing the Austrians to sue for peace in 1797. The siege occurred during the War of the First Coalition, which is part of the French Revolutionary Wars. Mantua, a city in the Lombardy region of Italy, lies on the Mincio River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q815175, imported by tools/import/wikidata.mjs. The item's own description reads \"1797 siege during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1796,
+    "end": 1797,
+    "date": "1796-05-30",
+    "endDate": "1796-08-01"
+  },
+  "place": "mantua",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}

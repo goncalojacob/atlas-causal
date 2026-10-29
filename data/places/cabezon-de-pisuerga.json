@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "cabezon-de-pisuerga",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1650608",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Cabezón de Pisuerga",
+    "pt": "Cabezón de Pisuerga"
+  },
+  "sources": [],
+  "names": [
+    "Cabezón de Pisuerga"
+  ],
+  "where": {
+    "lon": -4.6458137,
+    "lat": 41.7339524,
+    "precision": "city",
+    "label": "Cabezón de Pisuerga"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

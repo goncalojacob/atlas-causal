@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-schleiz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q909154",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Schleiz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q909154"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Schleiz\", revision 1370588821"
+    }
+  ],
+  "title": "Battle of Schleiz",
+  "summary": "The English Wikipedia article \"Battle of Schleiz\", at revision 1370588821, opens: \"The Battle of Schleiz took place on 9 October 1806 in Schleiz, Germany between a Prussian-Saxon division under Bogislav Friedrich Emanuel von Tauentzien and a part of Jean-Baptiste Bernadotte's I Corps under the command of Jean-Baptiste Drouet, Comte d'Erlon. It was the first clash of the War of the Fourth Coalition, part of the Napoleonic Wars. As Emperor Napoleon I of France's Grande Armée advanced north through the Franconian Forest it struck the left wing of the armies belonging to the Kingdom of Prussia and the Electorate of Saxony, which were deployed on a long front. Schleiz is located 30 kilometers north of Hof and 145 kilometers southwest of Dresden at the intersection of Routes 2 and 94.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q909154, imported by tools/import/wikidata.mjs. The item's own description reads \"1806 battle during the War of the Fourth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1806,
+    "end": 1806,
+    "date": "1806-10-09"
+  },
+  "place": "schleiz",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-fourth-coalition"
+}

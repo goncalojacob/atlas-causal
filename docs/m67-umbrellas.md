@@ -5350,3 +5350,27 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-29: `battles-of-el-bruch`, filed under `peninsular-war` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-445`, rank `child-of:peninsular-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-kerch-strait-1790`, filed under `russo-turkish-war-1787-1792` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-europe-490`, rank `child-of:russo-turkish-war-1787-1792`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-bezzecca`, filed under `austro-prussian-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-455`, rank `child-of:austro-prussian-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-vitkov-hill`, filed under `hussite-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-459`, rank `child-of:hussite-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-the-gabbard`, filed under `first-anglo-dutch-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-463`, rank `child-of:first-anglo-dutch-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `french-invasion-of-switzerland`, filed under `french-revolutionary-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-489`, rank `child-of:french-revolutionary-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `german-campaign-of-1813`, filed under `war-of-the-sixth-coalition` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-491`, rank `child-of:war-of-the-sixth-coalition`. Its span and its subject put it inside the umbrella.

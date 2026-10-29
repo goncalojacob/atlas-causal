@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-nachod",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q695680",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Náchod"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q695680"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Náchod\", revision 1372434191"
+    }
+  ],
+  "title": "Battle of Náchod",
+  "summary": "The English Wikipedia article \"Battle of Náchod\", at revision 1372434191, opens: \"The Battle of Náchod on 27 June 1866 was the first major action of the Austro-Prussian War. The advance guard of General Karl Friedrich von Steinmetz's 5th Corps occupied some high ground near Náchod as part of a Prussian advance into Bohemia from Silesia. Elements of the Austrian 6th Corps under General Von Ramming came on the scene and attacked the Prussians but were repulsed. As more Austrians arrived, they were ordered into attacks which proved both costly and unsuccessful. Finally, the badly mauled Austrians retreated from the field. The Prussian infantry enjoyed a technical advantage in having the needle gun, a breech-loading rifle that could be fired and loaded from a prone position. Consequently, the Austrian infantry, which were only equipped with muzzle-loading rifles, suffered a disproportionate number of casualties.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q695680, imported by tools/import/wikidata.mjs. The item's own description reads \"1866 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866,
+    "date": "1866-06-27"
+  },
+  "place": "nachod",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "austro-prussian-war"
+}

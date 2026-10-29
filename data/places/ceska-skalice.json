@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ceska-skalice",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q341053",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Česká Skalice",
+    "pt": "Česká Skalice"
+  },
+  "sources": [],
+  "names": [
+    "Česká Skalice"
+  ],
+  "where": {
+    "lon": 16.042847327524,
+    "lat": 50.394705559401,
+    "precision": "city",
+    "label": "Česká Skalice"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

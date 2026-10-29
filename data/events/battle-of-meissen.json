@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-meissen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1075269",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Meissen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1075269"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Meissen\", revision 1370449474"
+    }
+  ],
+  "title": "Battle of Meissen",
+  "summary": "The English Wikipedia article \"Battle of Meissen\", at revision 1370449474, opens: \"The Battle of Meissen was an Austrian victory over a smaller Prussian force during the Third Silesian War. An Austrian force under the command of general Beck assaulted 3,500 Prussian troops under Diericke at Meissen, overwhelming them and driving the survivors across the Elbe. The Prussians lost 400 men in the action and 1,543 fell prisoner. Austrian losses were few, totalling only 72 killed and 115 wounded. The Austrians secured an important victory, which effectively kept their ally Saxony in the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1075269, imported by tools/import/wikidata.mjs. The item's own description reads \"1759 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1759,
+    "end": 1759,
+    "date": "1759-12-03"
+  },
+  "place": "meissen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

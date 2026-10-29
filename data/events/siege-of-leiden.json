@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-leiden",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q694619",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Leiden",
+    "pt": "Cerco de Leida"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q694619"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Leiden\", revision 1375808582"
+    }
+  ],
+  "title": "Siege of Leiden",
+  "summary": "The English Wikipedia article \"Siege of Leiden\", at revision 1375808582, opens: \"The siege of Leiden occurred during the Eighty Years' War in 1573 and 1574, when the Spanish under Francisco de Valdez attempted to capture the rebellious city of Leiden, South Holland, the Netherlands. The siege failed when the city was successfully relieved in October 1574.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q694619, imported by tools/import/wikidata.mjs. The item's own description reads \"siege of Leiden by the Spanish army, 1573-1574\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1573,
+    "end": 1574,
+    "date": "1573-10-30",
+    "endDate": "1574-10-03"
+  },
+  "place": "leiden",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

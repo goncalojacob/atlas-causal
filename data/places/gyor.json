@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "gyor",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q134494",
+  "sitelinks": {
+    "count": 91,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Győr",
+    "pt": "Győr"
+  },
+  "sources": [],
+  "names": [
+    "Győr"
+  ],
+  "where": {
+    "lon": 17.634444444444,
+    "lat": 47.684166666667,
+    "precision": "city",
+    "label": "Győr"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

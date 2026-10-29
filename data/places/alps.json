@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "alps",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1286",
+  "sitelinks": {
+    "count": 187,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Alps",
+    "pt": "Alpes"
+  },
+  "sources": [],
+  "names": [
+    "Alps",
+    "Alpes"
+  ],
+  "where": {
+    "lon": 8.615,
+    "lat": 46.57805555555556,
+    "precision": "region",
+    "label": "Alps"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
