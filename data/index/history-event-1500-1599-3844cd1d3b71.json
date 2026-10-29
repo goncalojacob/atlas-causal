@@ -3101,6 +3101,15 @@
         }
       ]
     },
+    "hvar-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "iguape-war": {
       "from": "git",
       "versions": [
@@ -3918,6 +3927,24 @@
         }
       ]
     },
+    "revolt-of-ghent-1539-1540": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "revolt-of-the-brotherhoods": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "revolt-of-the-comuneros": {
       "from": "git",
       "versions": [
@@ -4059,6 +4086,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "second-margrave-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5365,6 +5401,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "suleiman-i-s-campaign-of-1529": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

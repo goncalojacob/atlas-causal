@@ -8036,6 +8036,15 @@
         }
       ]
     },
+    "coup-of-1809": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "creek-war": {
       "from": "git",
       "versions": [
@@ -9304,6 +9313,15 @@
         }
       ]
     },
+    "franco-swedish-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "franco-trarzan-war-of-1825": {
       "from": "git",
       "versions": [
@@ -9690,6 +9708,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "greek-civil-wars-of-1823-1825": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -11197,6 +11224,15 @@
         }
       ]
     },
+    "newport-rising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "nez-perce-war": {
       "from": "git",
       "versions": [
@@ -12290,6 +12326,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "revolution-of-maria-da-fonte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -16109,6 +16154,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "zuriputsch": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     }

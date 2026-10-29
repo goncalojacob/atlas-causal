@@ -2616,6 +2616,15 @@
         }
       ]
     },
+    "copper-riot": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "cretan-war-1645-1669": {
       "from": "git",
       "versions": [
@@ -2958,6 +2967,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "franco-savoyard-war-1600-1601": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3348,6 +3366,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "messina-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3957,6 +3984,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "revolt-of-the-papier-timbre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5832,6 +5868,15 @@
         }
       ]
     },
+    "upper-austrian-peasant-war-of-1626": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "uprising-of-bolotnikov": {
       "from": "git",
       "versions": [
@@ -5894,6 +5939,15 @@
       ]
     },
     "war-of-the-reunions": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "wars-of-castro": {
       "from": "git",
       "versions": [
         {

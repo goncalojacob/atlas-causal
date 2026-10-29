@@ -10322,6 +10322,12 @@
     },
     {
       "dissent": false,
+      "id": "1749-muslim-slave-revolt-plot-in-malta",
+      "kind": "event",
+      "locator": "\"1749 Muslim slave revolt plot in Malta\", revision 1377063081"
+    },
+    {
+      "dissent": false,
       "id": "1755-lisbon-earthquake",
       "kind": "event",
       "locator": "\"1755 Lisbon earthquake\", revision 1378145316"
@@ -21116,6 +21122,12 @@
     },
     {
       "dissent": false,
+      "id": "bavarian-uprising-of-1705-1706",
+      "kind": "event",
+      "locator": "\"Bavarian uprising of 1705–1706\", revision 1370603877"
+    },
+    {
+      "dissent": false,
       "id": "bayano-wars",
       "kind": "event",
       "locator": "\"Bayano Wars\", revision 1370603899"
@@ -22754,6 +22766,12 @@
     },
     {
       "dissent": false,
+      "id": "copper-riot",
+      "kind": "event",
+      "locator": "\"Copper Riot\", revision 1366217521"
+    },
+    {
+      "dissent": false,
       "id": "cornish-rebellion-of-1497",
       "kind": "event",
       "locator": "\"Cornish rebellion of 1497\", revision 1380049447"
@@ -22793,6 +22811,12 @@
       "id": "coup-of-18-fructidor",
       "kind": "event",
       "locator": "\"Coup of 18 Fructidor\", revision 1370613793"
+    },
+    {
+      "dissent": false,
+      "id": "coup-of-1809",
+      "kind": "event",
+      "locator": "\"Coup of 1809\", revision 1366241050"
     },
     {
       "dissent": false,
@@ -23063,6 +23087,12 @@
       "id": "danish-golden-age",
       "kind": "event",
       "locator": "\"Danish Golden Age\", revision 1366089003"
+    },
+    {
+      "dissent": false,
+      "id": "dano-algerian-war",
+      "kind": "event",
+      "locator": "\"Dano-Algerian War\", revision 1370614743"
     },
     {
       "dissent": false,
@@ -23822,6 +23852,12 @@
     },
     {
       "dissent": false,
+      "id": "fall-of-the-republic-of-venice",
+      "kind": "event",
+      "locator": "\"Fall of the Republic of Venice\", revision 1377600455"
+    },
+    {
+      "dissent": false,
       "id": "fall-of-tlemcen-1518",
       "kind": "event",
       "locator": "\"Fall of Tlemcen (1518)\", revision 1370617996"
@@ -24524,9 +24560,21 @@
     },
     {
       "dissent": false,
+      "id": "franco-savoyard-war-1600-1601",
+      "kind": "event",
+      "locator": "\"Franco-Savoyard War (1600–1601)\", revision 1370620141"
+    },
+    {
+      "dissent": false,
       "id": "franco-spanish-war-1635-1659",
       "kind": "event",
       "locator": "\"Franco-Spanish War (1635–1659)\", revision 1377785411"
+    },
+    {
+      "dissent": false,
+      "id": "franco-swedish-war",
+      "kind": "event",
+      "locator": "\"Franco-Swedish War\", revision 1380876269"
     },
     {
       "dissent": false,
@@ -25136,6 +25184,12 @@
     },
     {
       "dissent": false,
+      "id": "greek-civil-wars-of-1823-1825",
+      "kind": "event",
+      "locator": "\"Greek civil wars of 1823–1825\", revision 1381773347"
+    },
+    {
+      "dissent": false,
       "id": "greek-raid-on-alexandria-1825",
       "kind": "event",
       "locator": "\"Greek raid on Alexandria (1825)\", revision 1370622020"
@@ -25469,6 +25523,12 @@
       "id": "hussite-wars",
       "kind": "event",
       "locator": "\"Hussite Wars\", revision 1380410254"
+    },
+    {
+      "dissent": false,
+      "id": "hvar-rebellion",
+      "kind": "event",
+      "locator": "\"Hvar rebellion\", revision 1377314837"
     },
     {
       "dissent": false,
@@ -26279,6 +26339,12 @@
       "id": "kett-s-rebellion",
       "kind": "event",
       "locator": "\"Kett's Rebellion\", revision 1370625656"
+    },
+    {
+      "dissent": false,
+      "id": "kettle-war",
+      "kind": "event",
+      "locator": "\"Kettle War\", revision 1370625657"
     },
     {
       "dissent": false,
@@ -27110,6 +27176,12 @@
     },
     {
       "dissent": false,
+      "id": "messina-revolt",
+      "kind": "event",
+      "locator": "\"Messina revolt\", revision 1377060970"
+    },
+    {
+      "dissent": false,
       "id": "methuen-treaty",
       "kind": "event",
       "locator": "\"Methuen Treaty\", revision 1337784669"
@@ -27263,6 +27335,12 @@
       "id": "moscow-peace-treaty",
       "kind": "event",
       "locator": "\"Moscow Peace Treaty\", revision 1355516673"
+    },
+    {
+      "dissent": false,
+      "id": "moscow-plague-riot-of-1771",
+      "kind": "event",
+      "locator": "\"Moscow plague riot of 1771\", revision 1379200176"
     },
     {
       "dissent": false,
@@ -27599,6 +27677,12 @@
       "id": "newlands-resolution",
       "kind": "event",
       "locator": "\"Newlands Resolution\", revision 1382192780"
+    },
+    {
+      "dissent": false,
+      "id": "newport-rising",
+      "kind": "event",
+      "locator": "\"Newport Rising\", revision 1370629576"
     },
     {
       "dissent": false,
@@ -28526,6 +28610,12 @@
     },
     {
       "dissent": false,
+      "id": "peasants-war-1798",
+      "kind": "event",
+      "locator": "\"Peasants' War (1798)\", revision 1375121634"
+    },
+    {
+      "dissent": false,
       "id": "pemmican-war",
       "kind": "event",
       "locator": "\"Pemmican War\", revision 1376708778"
@@ -29120,6 +29210,12 @@
     },
     {
       "dissent": false,
+      "id": "prussian-invasion-of-holland",
+      "kind": "event",
+      "locator": "\"Prussian invasion of Holland\", revision 1370705144"
+    },
+    {
+      "dissent": false,
       "id": "pueblo-revolt",
       "kind": "event",
       "locator": "\"Pueblo Revolt\", revision 1373524502"
@@ -29498,6 +29594,12 @@
     },
     {
       "dissent": false,
+      "id": "revolt-of-ghent-1539-1540",
+      "kind": "event",
+      "locator": "\"Revolt of Ghent (1539–1540)\", revision 1381589563"
+    },
+    {
+      "dissent": false,
       "id": "revolt-of-horea-closca-and-crisan",
       "kind": "event",
       "locator": "\"Revolt of Horea, Cloșca, and Crișan\", revision 1377765776"
@@ -29507,6 +29609,12 @@
       "id": "revolt-of-the-altishahr-khojas",
       "kind": "event",
       "locator": "\"Revolt of the Altishahr Khojas\", revision 1382061284"
+    },
+    {
+      "dissent": false,
+      "id": "revolt-of-the-brotherhoods",
+      "kind": "event",
+      "locator": "\"Revolt of the Brotherhoods\", revision 1375275173"
     },
     {
       "dissent": false,
@@ -29534,6 +29642,12 @@
     },
     {
       "dissent": false,
+      "id": "revolt-of-the-papier-timbre",
+      "kind": "event",
+      "locator": "\"Revolt of the papier timbré\", revision 1366219259"
+    },
+    {
+      "dissent": false,
       "id": "revolt-of-the-three-feudatories",
       "kind": "event",
       "locator": "\"Revolt of the Three Feudatories\", revision 1370706968"
@@ -29555,6 +29669,12 @@
       "id": "revolution-of-dignity",
       "kind": "event",
       "locator": "\"Revolution of Dignity\", revision 1376152819"
+    },
+    {
+      "dissent": false,
+      "id": "revolution-of-maria-da-fonte",
+      "kind": "event",
+      "locator": "\"Revolution of Maria da Fonte\", revision 1379879466"
     },
     {
       "dissent": false,
@@ -29633,6 +29753,12 @@
       "id": "rising-of-the-north",
       "kind": "event",
       "locator": "\"Rising of the North\", revision 1380720724"
+    },
+    {
+      "dissent": false,
+      "id": "rising-of-the-priests",
+      "kind": "event",
+      "locator": "\"Rising of the Priests\", revision 1377063191"
     },
     {
       "dissent": false,
@@ -30419,6 +30545,12 @@
       "id": "second-madagascar-expedition",
       "kind": "event",
       "locator": "\"Second Madagascar expedition\", revision 1370737123"
+    },
+    {
+      "dissent": false,
+      "id": "second-margrave-war",
+      "kind": "event",
+      "locator": "\"Second Margrave War\", revision 1370737137"
     },
     {
       "dissent": false,
@@ -33044,6 +33176,12 @@
     },
     {
       "dissent": false,
+      "id": "spithead-and-nore-mutinies",
+      "kind": "event",
+      "locator": "\"Spithead and Nore mutinies\", revision 1379631137"
+    },
+    {
+      "dissent": false,
       "id": "splendid-isolation",
       "kind": "event",
       "locator": "\"Splendid isolation\", revision 1378086402"
@@ -33137,6 +33275,12 @@
       "id": "suez-crisis",
       "kind": "event",
       "locator": "\"Suez Crisis\", revision 1374851403"
+    },
+    {
+      "dissent": false,
+      "id": "suleiman-i-s-campaign-of-1529",
+      "kind": "event",
+      "locator": "\"Suleiman I's campaign of 1529\", revision 1370748941"
     },
     {
       "dissent": false,
@@ -33620,6 +33764,12 @@
     },
     {
       "dissent": false,
+      "id": "theatre-war",
+      "kind": "event",
+      "locator": "\"Theatre War\", revision 1370750248"
+    },
+    {
+      "dissent": false,
       "id": "thermidorian-reaction",
       "kind": "event",
       "locator": "\"Thermidorian Reaction\", revision 1379638691"
@@ -33923,6 +34073,12 @@
       "id": "transition-from-ming-to-qing",
       "kind": "event",
       "locator": "\"Transition from Ming to Qing\", revision 1379283440"
+    },
+    {
+      "dissent": false,
+      "id": "transylvanian-peasant-revolt",
+      "kind": "event",
+      "locator": "\"Transylvanian peasant revolt\", revision 1379590592"
     },
     {
       "dissent": false,
@@ -36164,6 +36320,12 @@
     },
     {
       "dissent": false,
+      "id": "upper-austrian-peasant-war-of-1626",
+      "kind": "event",
+      "locator": "\"Upper Austrian peasant war of 1626\", revision 1370752539"
+    },
+    {
+      "dissent": false,
       "id": "upper-canada-rebellion",
       "kind": "event",
       "locator": "\"Upper Canada Rebellion\", revision 1370752547"
@@ -36638,6 +36800,12 @@
     },
     {
       "dissent": false,
+      "id": "wars-of-castro",
+      "kind": "event",
+      "locator": "\"Wars of Castro\", revision 1370750321"
+    },
+    {
+      "dissent": false,
       "id": "wars-of-the-roses",
       "kind": "event",
       "locator": "\"Wars of the Roses\", revision 1375993311"
@@ -36911,6 +37079,12 @@
       "id": "zong-massacre",
       "kind": "event",
       "locator": "\"Zong massacre\", revision 1380878972"
+    },
+    {
+      "dissent": false,
+      "id": "zuriputsch",
+      "kind": "event",
+      "locator": "\"Züriputsch\", revision 1366250554"
     },
     {
       "dissent": false,

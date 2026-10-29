@@ -1123,6 +1123,15 @@
         }
       ]
     },
+    "transylvanian-peasant-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-alcacovas": {
       "from": "git",
       "versions": [
