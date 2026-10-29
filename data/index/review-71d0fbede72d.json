@@ -1,5 +1,5 @@
 {
-  "drafts": 16759,
+  "drafts": 16758,
   "kinds": [
     {
       "count": 6691,
@@ -8,12 +8,12 @@
     },
     {
       "count": 81,
-      "file": "index/review-source-359341e3774b.json",
+      "file": "index/review-source-365e30458463.json",
       "kind": "source"
     },
     {
       "count": 1806,
-      "file": "index/review-place-d740e76a3f8f.json",
+      "file": "index/review-place-b414a145be18.json",
       "kind": "place"
     },
     {
@@ -22,8 +22,8 @@
       "kind": "actor"
     },
     {
-      "count": 4041,
-      "file": "index/review-event-0f8dc27486b1.json",
+      "count": 4040,
+      "file": "index/review-event-ebac394a1a65.json",
       "kind": "event"
     },
     {
@@ -53,5 +53,5 @@
     }
   ],
   "schema": 1,
-  "total": 10386
+  "total": 10385
 }
