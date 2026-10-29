@@ -1279,6 +1279,15 @@
         }
       ]
     },
+    "barawa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "barcelona": {
       "from": "git",
       "versions": [
@@ -1720,6 +1729,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "beni-mered": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2632,6 +2650,15 @@
         }
       ]
     },
+    "c-ld-r": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "cabo-manglares": {
       "from": "git",
       "versions": [
@@ -3149,6 +3176,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "centane": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4452,6 +4488,15 @@
         }
       ]
     },
+    "derbent": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "derna-libya": {
       "from": "git",
       "versions": [
@@ -4881,6 +4926,15 @@
         }
       ]
     },
+    "durban": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "dutch-cape-colony": {
       "from": "git",
       "versions": [
@@ -5148,6 +5202,15 @@
         }
       ]
     },
+    "embabo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "empire-of-brazil-q217230": {
       "from": "git",
       "versions": [
@@ -5409,6 +5472,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "fatick": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6462,6 +6534,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "goree": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -7968,6 +8049,15 @@
         }
       ]
     },
+    "jamrud": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "jankov-benesov-district": {
       "from": "git",
       "versions": [
@@ -8074,6 +8164,24 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "jijel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "jijiga": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -9201,6 +9309,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "la-marsa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -10697,6 +10814,15 @@
         }
       ]
     },
+    "marracuene": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "marrakesh": {
       "from": "git",
       "versions": [
@@ -10936,6 +11062,15 @@
         }
       ]
     },
+    "medine-mali": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "mehmandust-semnan": {
       "from": "git",
       "versions": [
@@ -10951,6 +11086,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "meknes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -11125,6 +11269,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "mhlathuze-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -14322,6 +14475,15 @@
         }
       ]
     },
+    "qashliq": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "qing-dynasty": {
       "from": "git",
       "versions": [
@@ -15141,6 +15303,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "saint-louis-senegal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -17761,6 +17932,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "tokyo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

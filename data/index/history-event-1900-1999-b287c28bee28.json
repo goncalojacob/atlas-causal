@@ -7482,6 +7482,15 @@
         }
       ]
     },
+    "battle-of-biddulphsberg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-bloody-ridge": {
       "from": "git",
       "versions": [
@@ -7808,6 +7817,15 @@
         }
       ]
     },
+    "battle-of-helvetia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-hsimucheng": {
       "from": "git",
       "versions": [
@@ -7921,6 +7939,15 @@
         {
           "first": true,
           "on": "2026-10-12"
+        }
+      ]
+    },
+    "battle-of-jigjiga-1900": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -9033,6 +9060,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-zand-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
