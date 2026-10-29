@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "shopian",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2575938",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Shopian",
+    "pt": "Shupiyan"
+  },
+  "sources": [],
+  "names": [
+    "Shopian",
+    "Shupiyan"
+  ],
+  "where": {
+    "lon": 74.83,
+    "lat": 33.72,
+    "precision": "city",
+    "label": "Shopian"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

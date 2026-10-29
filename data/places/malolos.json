@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "malolos",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2180",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Malolos",
+    "pt": "Malolos"
+  },
+  "sources": [],
+  "names": [
+    "Malolos"
+  ],
+  "where": {
+    "lon": 120.81138888888889,
+    "lat": 14.84361111111111,
+    "precision": "city",
+    "label": "Malolos"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

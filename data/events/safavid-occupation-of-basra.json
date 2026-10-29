@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "safavid-occupation-of-basra",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q65117742",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Safavid occupation of Basra"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q65117742"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Safavid occupation of Basra\", revision 1378917368"
+    }
+  ],
+  "title": "Safavid occupation of Basra",
+  "summary": "The English Wikipedia article \"Safavid occupation of Basra\", at revision 1378917368, opens: \"The Safavid occupation of Basra (1697–1701) took place between 26 March 1697 and 9 March 1701. It was the second time that the important Persian Gulf city had fallen to Safavid Iran.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q65117742, imported by tools/import/wikidata.mjs. The item's own description reads \"occupation of the city (1697 to 1701)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1697,
+    "end": 1701,
+    "date": "1697-03-26",
+    "endDate": "1701-03-09"
+  },
+  "place": "basra",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-persian-wars"
+}

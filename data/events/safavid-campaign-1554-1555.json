@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "safavid-campaign-1554-1555",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q28169752",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Safavid campaign (1554–1555)",
+    "pt": "Campanha Safávida de 1554–1555"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q28169752"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Safavid campaign (1554–1555)\", revision 1370729778"
+    }
+  ],
+  "title": "Safavid campaign (1554–1555)",
+  "summary": "The English Wikipedia article \"Safavid campaign (1554–1555)\", at revision 1370729778, opens: \"The Safavid campaign of 1554–1555 was the final bout of hostilities between the Ottomans and the Safavids during the Ottoman-Safavid War of 1532–1555. It was launched by Suleiman the Magnificent, and took place between June 1554 and May 1555. It was part of the wider conflict between the Sunni and Shia Muslims.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28169752, imported by tools/import/wikidata.mjs. The item's own description reads \"1554–1555 military campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1554,
+    "end": 1555,
+    "date": "1554-06",
+    "endDate": "1555-05-29"
+  },
+  "place": "armenian-highlands",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-safavid-war-1532-1555"
+}

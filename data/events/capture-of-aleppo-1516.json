@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-aleppo-1516",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q118946840",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Capture of Aleppo (1516)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q118946840"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Aleppo (1516)\", revision 1380068091"
+    }
+  ],
+  "title": "Capture of Aleppo (1516)",
+  "summary": "The English Wikipedia article \"Capture of Aleppo (1516)\", at revision 1380068091, opens: \"The Capture of Aleppo was a phase of the Ottoman–Mamluk War (1516–1517).\nAfter inflicting a heavy defeat on the Mamluk army commanded by Qansuh al-Ghawri at the Battle of Marj Dabiq on 24 August 1516, the Ottoman army under Selim I continued its advance and entered Aleppo on 28 August 1516.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q118946840, imported by tools/import/wikidata.mjs. The item's own description reads \"1516 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1516,
+    "end": 1516,
+    "date": "1516-08-28"
+  },
+  "place": "aleppo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-mamluk-war-1516-1517"
+}

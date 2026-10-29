@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "nam-inh-city",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q33682",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Nam Định (city)"
+  },
+  "sources": [],
+  "names": [
+    "Nam Định",
+    "Nam Định (city)"
+  ],
+  "where": {
+    "lon": 106.16833333333,
+    "lat": 20.42,
+    "precision": "city",
+    "label": "Nam Định (city)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

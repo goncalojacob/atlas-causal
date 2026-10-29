@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "najd",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q208154",
+  "sitelinks": {
+    "count": 74,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Najd",
+    "pt": "Négede"
+  },
+  "sources": [],
+  "names": [
+    "Najd",
+    "Néjede",
+    "Négede"
+  ],
+  "where": {
+    "lon": 43.588054,
+    "lat": 24.291334,
+    "precision": "region",
+    "label": "Najd"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

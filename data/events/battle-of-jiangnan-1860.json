@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-jiangnan-1860",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q6141638",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Jiangnan (1860)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6141638"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Jiangnan (1860)\", revision 1380788198"
+    }
+  ],
+  "title": "Battle of Jiangnan (1860)",
+  "summary": "The English Wikipedia article \"Battle of Jiangnan (1860)\", at revision 1380788198, opens: \"The Battle of Jiangnan, also known as the Second Rout of the Jiangnan Battalion took place in 1860 between the Qing dynasty's Green Standard Army and the army of the Taiping Heavenly Kingdom during the Taiping Rebellion. The Green Standard Army twice attempted to besiege Nanjing, capital of the Taiping Heavenly Kingdom, but was unable to break through. To break the siege of Nanjing, the Taiping forces maneuvered to divert Qing forces by sacking Hangzhou, before quickly moving back to Nanjing to counter-encircle the Qing siege forces and routing the Green Standard Army garrison completely, breaking the siege of Nanjing.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6141638, imported by tools/import/wikidata.mjs. The item's own description reads \"1860 battle of the Taiping Rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1860,
+    "end": 1860,
+    "date": "1860-05-15"
+  },
+  "place": "nanjing",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "taiping-rebellion"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-alvar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q118929912",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Alvar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q118929912"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Alvar\", revision 1370431822"
+    }
+  ],
+  "title": "Battle of Alvar",
+  "summary": "The English Wikipedia article \"Battle of Alvar\", at revision 1370431822, opens: \"The Battle of Alvar was a significant engagement during the Ottoman-Safavid War of 1578–1590. On September 21, 1585, the Ottoman army, under the command of Özdemiroğlu Osman Pasha, defeated the Safavid forces led by Hamza Mirza. Following this victory, the Ottoman military advanced to capture Tabriz on September 25, 1585.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q118929912, imported by tools/import/wikidata.mjs. The item's own description reads \"1585 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1585,
+    "end": 1585,
+    "date": "1585-09-21"
+  },
+  "place": "alvar-e-sofla",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-safavid-war-1578-1590"
+}

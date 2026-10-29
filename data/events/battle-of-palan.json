@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-palan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q519060",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Palan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q519060"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Palan\", revision 1370452653"
+    }
+  ],
+  "title": "Battle of Palan",
+  "summary": "The English Wikipedia article \"Battle of Palan\", at revision 1370452653, opens: \"The Battle of Palan was one of several clashes between the Tonkin Expeditionary Corps and Liu Yongfu's Black Flag Army during the Tonkin campaign (1883–1886).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q519060, imported by tools/import/wikidata.mjs. The item's own description reads \"1883 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1883,
+    "end": 1883,
+    "date": "1883-09-01"
+  },
+  "place": "hanoi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "tonkin-campaign"
+}

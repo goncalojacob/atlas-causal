@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "capture-of-hung-hoa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5037025",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Capture of Hưng Hóa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5037025"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Hưng Hóa\", revision 1370608852"
+    }
+  ],
+  "title": "Capture of Hưng Hóa",
+  "summary": "The English Wikipedia article \"Capture of Hưng Hóa\", at revision 1370608852, opens: \"The Capture of Hưng Hóa was an important French victory in the Tonkin Campaign (1883–86).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5037025, imported by tools/import/wikidata.mjs. The item's own description reads \"1884 battle in the Tonkin Campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1884,
+    "end": 1884,
+    "date": "1884-04-12"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "tonkin-campaign"
+}
