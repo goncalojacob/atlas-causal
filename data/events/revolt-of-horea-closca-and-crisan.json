@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "revolt-of-horea-closca-and-crisan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q694246",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Revolt of Horea, Cloșca, and Crișan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q694246"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolt of Horea, Cloșca, and Crișan\", revision 1377765776"
+    }
+  ],
+  "title": "Revolt of Horea, Cloșca, and Crișan",
+  "summary": "The English Wikipedia article \"Revolt of Horea, Cloșca, and Crișan\", at revision 1377765776, opens: \"The revolt of Horea, Cloșca, and Crișan was a Romanian-led revolt that began in the Metaliferi Mountains, Transylvania, but it soon spread throughout all Transylvania and the Apuseni Mountains. The leaders were Horea, Cloșca and Crișan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q694246, imported by tools/import/wikidata.mjs. The item's own description reads \"peasant revolt in Transylvania\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1784,
+    "end": 1784,
+    "date": "1784-10-31",
+    "endDate": "1784-12-14"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

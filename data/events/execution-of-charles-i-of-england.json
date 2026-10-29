@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "execution-of-charles-i-of-england",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q65088700",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Execution of Charles I of England",
+    "pt": "Execução de Carlos I"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q65088700"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Execution of Charles I of England\", revision 1382213947"
+    }
+  ],
+  "title": "Execution of Charles I of England",
+  "summary": "The English Wikipedia article \"Execution of Charles I of England\", at revision 1382213947, opens: \"Charles I, King of England, Scotland and Ireland, was publicly executed on 30 January 1649 outside the Banqueting House on Whitehall, London. The execution was the culmination of political and military conflicts between the royalists and the parliamentarians in England during the English Civil War, leading to Charles's capture and his trial. On 27 January 1649 the parliamentarian High Court of Justice had declared Charles guilty of attempting to \"uphold in himself an unlimited and tyrannical power to rule according to his will, and to overthrow the rights and liberties of the people\" and sentenced him to death by beheading.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q65088700, imported by tools/import/wikidata.mjs. The item's own description reads \"1649 beheading of Charles I of England\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1649,
+    "end": 1649,
+    "date": "1649-01-30"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "death",
+  "actors": [],
+  "parent": "english-civil-war"
+}
