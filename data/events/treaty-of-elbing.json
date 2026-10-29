@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-elbing",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7837045",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Elbing"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837045"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Elbing\", revision 1255501064"
+    }
+  ],
+  "title": "Treaty of Elbing",
+  "summary": "The English Wikipedia article \"Treaty of Elbing\", at revision 1255501064, opens: \"The Treaty of Elbing was signed between the Dutch Republic and the Swedish Empire on 1 September (OS) / 11 September 1656, during the Second Northern War, in Swedish-held Elbing (Elbląg). It served to protect Dutch interests in the Baltic Sea, ended the Dutch intervention in the Swedish siege of Danzig, and renewed a fragile peace between the Dutch Republic and Sweden. Within the former, there was opposition to the treaty demanding elucidations, which were agreed upon only on 29 November (OS) / 9 December 1659 in the Convention of Helsingör. Earlier in 1659, in the Concert of The Hague, England, France, and the Dutch Republic had agreed to include the treaty of Elbing in their common agenda regarding the Second Northern War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837045, imported by tools/import/wikidata.mjs. The item's own description reads \"signed between the Dutch Republic and the Swedish Empire in 1656\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1656,
+    "end": 1656,
+    "date": "1656-09-11"
+  },
+  "place": "elblag",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

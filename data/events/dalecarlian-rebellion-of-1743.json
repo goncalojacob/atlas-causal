@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "dalecarlian-rebellion-of-1743",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4091834",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Dalecarlian Rebellion of 1743"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4091834"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dalecarlian Rebellion of 1743\", revision 1378904227"
+    }
+  ],
+  "title": "Dalecarlian Rebellion of 1743",
+  "summary": "The English Wikipedia article \"Dalecarlian Rebellion of 1743\", at revision 1378904227, opens: \"The Dalecarlian Rebellion of 1743, also known as the Fourth Dalecarlian Rebellion, was a rebellion that broke out in the Swedish province of Dalecarlia in 1743. Its cause was the peasants' dissatisfaction with the \"lords' government\" of the Age of Liberty. This dissatisfaction was strongest in Dalecarlia, partly because the Hats had introduced restrictions in the Dalecarlians' free exchange of goods with neighboring Norway, but mainly because of the unlucky Russo-Swedish War (1741–43) to which the peasants had to provide soldiers. It was the last major uprising in Sweden to have started in rural areas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4091834, imported by tools/import/wikidata.mjs. The item's own description reads \"peasant uprising in Sweden\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1743,
+    "end": 1743
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

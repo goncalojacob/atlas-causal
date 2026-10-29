@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "treaty-of-pavia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7837183",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Pavia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837183"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Pavia\", revision 1341278629"
+    }
+  ],
+  "title": "Treaty of Pavia",
+  "summary": "The English Wikipedia article \"Treaty of Pavia\", at revision 1341278629, opens: \"The Treaty of Pavia was signed in Pavia on October 9, 1617, between representatives of the Spanish Empire and the Duchy of Savoy ending the War of the Montferrat Succession.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837183, imported by tools/import/wikidata.mjs. The item's own description reads \"1617 treaty between Spain and Savoy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1617,
+    "end": 1617
+  },
+  "place": "pavia",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

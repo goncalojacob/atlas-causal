@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "thessaly-rebellion-1600",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q30602197",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Thessaly rebellion (1600)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q30602197"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Thessaly rebellion (1600)\", revision 1370750266"
+    }
+  ],
+  "title": "Thessaly rebellion (1600)",
+  "summary": "The English Wikipedia article \"Thessaly rebellion (1600)\", at revision 1370750266, opens: \"The Thessaly rebellion was a Greek revolt against the Ottoman Empire in Thessaly in 1600–01 led by Bishop Dionysios of Larissa. Educated in Italy, and serving since 1592 as the metropolitan bishop of Larissa, Dionysios had in 1598 sent a monk from Ioannina to the Republic of Venice to urge the Greek community there to request ammunition and arms from Rudolf II, Holy Roman Emperor, Philip III of Spain, and Pope Clement VIII for a Greek rebellion. Orthodox Christian leaders had requested aid from Western powers in the previous years. In 1599 or early 1600, inhabitants of Epirus, Macedonia, and Thessaly assured the Pope through correspondence that they were ready to die for Christianity and asked him to rise against the Ottoman Empire, to save them from 'the relentless tyrant'. Although the mission was deemed a failure, Dionysios was persistent, and began holding on to the poll tax and ecclesiastical revenues which in fact was to be handed over to the Orthodox Patriarchate. Breaking out in the autumn of 1600, the rebellion was quickly suppressed, with harsh reprisal. Laymen and priests were executed, including Bishop Serapheim of Phanari.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q30602197, imported by tools/import/wikidata.mjs. The item's own description reads \"1600–1601 rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1600,
+    "end": 1601
+  },
+  "place": "thessaly",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "long-turkish-war"
+}

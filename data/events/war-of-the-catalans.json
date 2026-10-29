@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "war-of-the-catalans",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q15650559",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "War of the Catalans"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15650559"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Catalans\", revision 1375518179"
+    }
+  ],
+  "title": "War of the Catalans",
+  "summary": "The English Wikipedia article \"War of the Catalans\", at revision 1375518179, opens: \"The War of the Catalans or Particular War of Catalonia was a separate conflict derived from the last phase of the War of the Spanish Succession, which affected the Principality of Catalonia. This last phase of the conflict began when, despite the armistice signed between Philip V and Charles VI of Austria that put an end to the war from July 1, 1713, the Three Commons of Catalonia —a consultive body made up by the most prominent Catalan political institutions: the Generalitat, the Military Arm of Catalonia and the Consell de Cent of Barcelona— proclaimed on 9 July 1713 the continuation of the war against Philip V and France, thus prolonging the war until 12 September 1714.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15650559, imported by tools/import/wikidata.mjs. The item's own description reads \"military campaign (1713-14) of the War of the Spanish Succession between the Principality of Catalonia and the Crowns of Spain and France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1713,
+    "end": 1714,
+    "date": "1713-07-09",
+    "endDate": "1714-09-12"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

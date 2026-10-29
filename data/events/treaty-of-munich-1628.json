@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "treaty-of-munich-1628",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7837160",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Munich (1628)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837160"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Munich (1628)\", revision 1332417123"
+    }
+  ],
+  "title": "Treaty of Munich (1628)",
+  "summary": "The English Wikipedia article \"Treaty of Munich (1628)\", at revision 1332417123, opens: \"The Treaty of Munich was signed in 1628 between Holy Roman Emperor Ferdinand II and Duke Maximilian of Bavaria. Based on the terms of the treaty, Ferdinand guaranteed Maximilian dignity as a prince-elector. Moreover, the Emperor allowed Maximilian to control for thirty years the right bank of the Rhine River and the Upper Palatinate.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837160, imported by tools/import/wikidata.mjs. The item's own description reads \"1628 treaty between Holy Roman Empire and Bavaria\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1628,
+    "end": 1628
+  },
+  "place": "munich",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

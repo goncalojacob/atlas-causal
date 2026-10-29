@@ -1751,7 +1751,6 @@
         "Q4373",
         "Q4871878",
         "Q2890865",
-        "Q5035990",
         "Q102227734",
         "Q111819926",
         "Q3636439",
@@ -4756,7 +4755,57 @@
         "Q5036989",
         "Q5023728",
         "Q7837158",
-        "Q2929388"
+        "Q2929388",
+        "Q2518934",
+        "Q4890548",
+        "Q546581",
+        "Q4197178",
+        "Q12277460",
+        "Q59466726",
+        "Q17750244",
+        "Q908060",
+        "Q16680905",
+        "Q7928317",
+        "Q7165306",
+        "Q30602197",
+        "Q96360043",
+        "Q5035990",
+        "Q133443",
+        "Q3536949",
+        "Q7837074",
+        "Q15650559",
+        "Q7836986",
+        "Q7837183",
+        "Q6168026",
+        "Q17630734",
+        "Q7837160",
+        "Q193155",
+        "Q170652",
+        "Q4258678",
+        "Q4890925",
+        "Q4091834",
+        "Q3756219",
+        "Q5383234",
+        "Q3536729",
+        "Q7837159",
+        "Q7837045",
+        "Q2649155",
+        "Q24932348",
+        "Q7443141",
+        "Q3119032",
+        "Q16427723",
+        "Q7836987",
+        "Q7837128",
+        "Q7837201",
+        "Q3157839",
+        "Q7157527",
+        "Q3134144",
+        "Q127162983",
+        "Q10423630",
+        "Q7837037",
+        "Q116188912",
+        "Q2665576",
+        "Q7911959"
       ]
     }
   },
@@ -6160,6 +6209,54 @@
     "Q64875937": {
       "on": "2026-10-29",
       "why": "none of its classes (Q133780) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q2518934": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q93288) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q908060": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q4167410) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q96360043": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q193155": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q25929224) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q170652": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q205418) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q4258678": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q93288) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q3756219": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q6024855) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q16427723": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q30103545) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q3157839": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q6024855) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q10423630": {
+      "on": "2026-10-29",
+      "why": "it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    "Q2665576": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q5282797, Q11371169) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q7911959": {
+      "on": "2026-10-29",
+      "why": "none of its classes (Q8081) is in data/imports/wikidata-seeds.json → classes"
     }
   }
 }
