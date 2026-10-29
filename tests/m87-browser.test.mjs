@@ -287,8 +287,29 @@ test('§9: on a phone the graph fills the pane and every name it draws is legibl
       'a name under 8 px on screen is ink over the mark it names');
 
     // And what the reader has open is named too, as it always was.
-    const id = await page.eval(`return (document.querySelector('#graph circle.node[data-id]') || {}).getAttribute
-      ? document.querySelector('#graph circle.node[data-id]').getAttribute('data-id') : null;`);
+    //
+    // **The mark nearest the middle of the pane, not the first in the page**
+    // (M100). The first circle in the document is whichever the layout wrote
+    // first, and at 4,980 events that was a mark 10 px inside the left edge of
+    // the resting picture. Opening an event moves the camera a little (the
+    // panel takes its room and the picture is fitted again), and that mark went
+    // 77 px off the pane: it was open, it was in the page, and nothing could
+    // draw its name on a screen it was not on. A deep link to an event the
+    // resting picture does not reach is its own question; this test is about
+    // the name of an event the reader can see. So it opens one that is well
+    // inside the pane.
+    const id = await page.eval(`
+      const pane = document.querySelector('#graph').getBoundingClientRect();
+      const mx = pane.left + pane.width / 2;
+      const my = pane.top + pane.height / 2;
+      let best = null;
+      for (const mark of document.querySelectorAll('#graph circle.node[data-id]')) {
+        const r = mark.getBoundingClientRect();
+        if (r.width === 0) continue;
+        const d = Math.hypot(r.left + r.width / 2 - mx, r.top + r.height / 2 - my);
+        if (!best || d < best.d) best = { d, id: mark.getAttribute('data-id') };
+      }
+      return best ? best.id : null;`);
     assert.ok(id, 'there is a mark to open');
     await open(page, url(`?view=graph&selected=${id}`), 'return document.querySelectorAll("#graph circle.node").length > 0;');
     await settledShards(page);
