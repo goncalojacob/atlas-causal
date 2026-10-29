@@ -948,6 +948,15 @@
         }
       ]
     },
+    "battle-of-hochst": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-honnecourt": {
       "from": "git",
       "versions": [
@@ -1470,6 +1479,15 @@
         }
       ]
     },
+    "battle-of-moscow-1612": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-moulouya": {
       "from": "git",
       "versions": [
@@ -1584,6 +1602,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-palermo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3210,6 +3237,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "grand-siecle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

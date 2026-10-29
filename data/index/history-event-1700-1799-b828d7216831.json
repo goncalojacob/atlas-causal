@@ -1197,6 +1197,15 @@
         }
       ]
     },
+    "battle-of-castricum": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-chamchamal": {
       "from": "git",
       "versions": [
@@ -4413,6 +4422,15 @@
         }
       ]
     },
+    "drownings-at-nantes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "dummer-s-war": {
       "from": "git",
       "versions": [
@@ -5735,6 +5753,15 @@
         }
       ]
     },
+    "peace-of-paris-1783": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "peace-of-travendal": {
       "from": "git",
       "versions": [
@@ -6057,6 +6084,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "revolution-of-1772": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -7115,6 +7151,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "silent-sejm": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

@@ -4160,6 +4160,12 @@
     },
     {
       "dissent": false,
+      "id": "assassination-of-spencer-perceval",
+      "kind": "event",
+      "locator": "Q21005831"
+    },
+    {
+      "dissent": false,
       "id": "assault-on-greifenhagen",
       "kind": "event",
       "locator": "Q111819926"
@@ -4907,6 +4913,12 @@
       "id": "battle-of-angamos",
       "kind": "event",
       "locator": "Q369893"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-anghiari",
+      "kind": "event",
+      "locator": "Q1779008"
     },
     {
       "dissent": false,
@@ -6083,6 +6095,12 @@
       "id": "battle-of-castillon",
       "kind": "event",
       "locator": "Q932613"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-castricum",
+      "kind": "event",
+      "locator": "Q370376"
     },
     {
       "dissent": false,
@@ -8138,6 +8156,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-hochst",
+      "kind": "event",
+      "locator": "Q661686"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-hohenfriedberg",
       "kind": "event",
       "locator": "Q688448"
@@ -8465,6 +8489,12 @@
       "id": "battle-of-jaquijahuana",
       "kind": "event",
       "locator": "Q2338093"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jargeau",
+      "kind": "event",
+      "locator": "Q600016"
     },
     {
       "dissent": false,
@@ -9077,6 +9107,12 @@
       "id": "battle-of-la-guaira",
       "kind": "event",
       "locator": "Q4871513"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-la-higueruela",
+      "kind": "event",
+      "locator": "Q1807251"
     },
     {
       "dissent": false,
@@ -10226,6 +10262,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-moscow-1612",
+      "kind": "event",
+      "locator": "Q4303874"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mosul-1745",
       "kind": "event",
       "locator": "Q22947522"
@@ -10826,6 +10868,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-palermo",
+      "kind": "event",
+      "locator": "Q717322"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-palestro",
       "kind": "event",
       "locator": "Q689204"
@@ -11081,6 +11129,12 @@
       "id": "battle-of-piribebuy",
       "kind": "event",
       "locator": "Q5722798"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-pirot",
+      "kind": "event",
+      "locator": "Q3658001"
     },
     {
       "dissent": false,
@@ -12134,6 +12188,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-selimbar",
+      "kind": "event",
+      "locator": "Q592069"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-seneffe",
       "kind": "event",
       "locator": "Q1783252"
@@ -12425,6 +12485,12 @@
       "id": "battle-of-solferino",
       "kind": "event",
       "locator": "Q324916"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-solway-moss",
+      "kind": "event",
+      "locator": "Q2890025"
     },
     {
       "dissent": false,
@@ -13616,6 +13682,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tuyuti",
+      "kind": "event",
+      "locator": "Q3307845"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-two-sisters",
       "kind": "event",
       "locator": "Q4872617"
@@ -13790,6 +13862,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-vauchamps",
+      "kind": "event",
+      "locator": "Q1192053"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-vedrosha",
       "kind": "event",
       "locator": "Q2034641"
@@ -13847,6 +13925,12 @@
       "id": "battle-of-vigo-bay",
       "kind": "event",
       "locator": "Q311759"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vila-franca-do-campo",
+      "kind": "event",
+      "locator": "Q3099190"
     },
     {
       "dissent": false,
@@ -13913,6 +13997,12 @@
       "id": "battle-of-vlotho",
       "kind": "event",
       "locator": "Q1411470"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vucji-do",
+      "kind": "event",
+      "locator": "Q2586933"
     },
     {
       "dissent": false,
@@ -14543,6 +14633,12 @@
       "id": "battles-of-tobago",
       "kind": "event",
       "locator": "Q1635922"
+    },
+    {
+      "dissent": false,
+      "id": "battles-of-wenden-1577-1578",
+      "kind": "event",
+      "locator": "Q2364604"
     },
     {
       "dissent": false,
@@ -15698,6 +15794,12 @@
     },
     {
       "dissent": false,
+      "id": "catalan-civil-war",
+      "kind": "event",
+      "locator": "Q2476062"
+    },
+    {
+      "dissent": false,
       "id": "catatumbo-campaign",
       "kind": "event",
       "locator": "Q66474138"
@@ -16079,6 +16181,12 @@
       "id": "concordat-of-1801",
       "kind": "event",
       "locator": "Q1428015"
+    },
+    {
+      "dissent": false,
+      "id": "concordat-of-bologna",
+      "kind": "event",
+      "locator": "Q1627409"
     },
     {
       "dissent": false,
@@ -16928,6 +17036,12 @@
     },
     {
       "dissent": false,
+      "id": "drownings-at-nantes",
+      "kind": "event",
+      "locator": "Q2436102"
+    },
+    {
+      "dissent": false,
       "id": "druze-power-struggle-1658-1667",
       "kind": "event",
       "locator": "Q5309423"
@@ -17603,6 +17717,18 @@
       "id": "finnish-war",
       "kind": "event",
       "locator": "Q736268"
+    },
+    {
+      "dissent": false,
+      "id": "fire-of-moscow-1547",
+      "kind": "event",
+      "locator": "Q2530002"
+    },
+    {
+      "dissent": false,
+      "id": "fire-of-moscow-1571",
+      "kind": "event",
+      "locator": "Q686961"
     },
     {
       "dissent": false,
@@ -18698,6 +18824,12 @@
     },
     {
       "dissent": false,
+      "id": "grand-siecle",
+      "kind": "event",
+      "locator": "Q1434013"
+    },
+    {
+      "dissent": false,
       "id": "grass-fight",
       "kind": "event",
       "locator": "Q2723005"
@@ -18749,6 +18881,12 @@
       "id": "great-fire-of-london",
       "kind": "event",
       "locator": "Q164679"
+    },
+    {
+      "dissent": false,
+      "id": "great-fire-of-new-york",
+      "kind": "event",
+      "locator": "Q2516056"
     },
     {
       "dissent": false,
@@ -21470,6 +21608,12 @@
     },
     {
       "dissent": false,
+      "id": "muscovite-war-of-succession",
+      "kind": "event",
+      "locator": "Q4288097"
+    },
+    {
+      "dissent": false,
       "id": "mutiny-on-the-bounty",
       "kind": "event",
       "locator": "Q749811"
@@ -21641,6 +21785,12 @@
       "id": "naval-campaign-of-the-war-of-the-pacific",
       "kind": "event",
       "locator": "Q11680452"
+    },
+    {
+      "dissent": false,
+      "id": "navarrese-civil-war-1451-1455",
+      "kind": "event",
+      "locator": "Q1584610"
     },
     {
       "dissent": false,
@@ -21935,6 +22085,12 @@
       "id": "oman-zanzibar-war",
       "kind": "event",
       "locator": "Q16935425"
+    },
+    {
+      "dissent": false,
+      "id": "ominous-decade",
+      "kind": "event",
+      "locator": "Q2378204"
     },
     {
       "dissent": false,
@@ -22610,6 +22766,12 @@
     },
     {
       "dissent": false,
+      "id": "peace-of-paris-1783",
+      "kind": "event",
+      "locator": "Q3776326"
+    },
+    {
+      "dissent": false,
       "id": "peace-of-passau",
       "kind": "event",
       "locator": "Q703081"
@@ -22928,6 +23090,12 @@
     },
     {
       "dissent": false,
+      "id": "plot-of-the-rue-saint-nicaise",
+      "kind": "event",
+      "locator": "Q10858956"
+    },
+    {
+      "dissent": false,
       "id": "polish-cossack-tatar-war-1666-1671",
       "kind": "event",
       "locator": "Q1132940"
@@ -22937,6 +23105,12 @@
       "id": "polish-golden-age",
       "kind": "event",
       "locator": "Q3485791"
+    },
+    {
+      "dissent": false,
+      "id": "polish-ottoman-war-1485-1503",
+      "kind": "event",
+      "locator": "Q9377322"
     },
     {
       "dissent": false,
@@ -23414,6 +23588,12 @@
     },
     {
       "dissent": false,
+      "id": "raid-of-the-balearic-islands-1558",
+      "kind": "event",
+      "locator": "Q3720898"
+    },
+    {
+      "dissent": false,
       "id": "raid-on-bone",
       "kind": "event",
       "locator": "Q7283724"
@@ -23591,6 +23771,12 @@
       "id": "reconstruction-era",
       "kind": "event",
       "locator": "Q623429"
+    },
+    {
+      "dissent": false,
+      "id": "red-barn-murder",
+      "kind": "event",
+      "locator": "Q3844918"
     },
     {
       "dissent": false,
@@ -23831,6 +24017,12 @@
       "id": "revolution-in-the-kingdom-of-poland",
       "kind": "event",
       "locator": "Q7318712"
+    },
+    {
+      "dissent": false,
+      "id": "revolution-of-1772",
+      "kind": "event",
+      "locator": "Q10511142"
     },
     {
       "dissent": false,
@@ -25922,6 +26114,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-harfleur",
+      "kind": "event",
+      "locator": "Q815148"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-havana",
       "kind": "event",
       "locator": "Q562277"
@@ -27272,6 +27470,12 @@
     },
     {
       "dissent": false,
+      "id": "silent-sejm",
+      "kind": "event",
+      "locator": "Q561415"
+    },
+    {
+      "dissent": false,
       "id": "silesian-wars",
       "kind": "event",
       "locator": "Q699849"
@@ -27743,6 +27947,12 @@
       "id": "st-clair-s-defeat",
       "kind": "event",
       "locator": "Q962450"
+    },
+    {
+      "dissent": false,
+      "id": "st-elizabeth-s-flood-1421",
+      "kind": "event",
+      "locator": "Q524797"
     },
     {
       "dissent": false,
@@ -30236,6 +30446,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-the-bulls-of-guisando",
+      "kind": "event",
+      "locator": "Q2656396"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-the-dardanelles",
       "kind": "event",
       "locator": "Q2718318"
@@ -31058,6 +31274,12 @@
     },
     {
       "dissent": false,
+      "id": "war-against-sigismund",
+      "kind": "event",
+      "locator": "Q924600"
+    },
+    {
+      "dissent": false,
       "id": "war-in-afghanistan-2001-2021",
       "kind": "event",
       "locator": "Q182865"
@@ -31355,6 +31577,12 @@
       "id": "war-over-water",
       "kind": "event",
       "locator": "Q2904516"
+    },
+    {
+      "dissent": false,
+      "id": "wars-in-lombardy",
+      "kind": "event",
+      "locator": "Q2506432"
     },
     {
       "dissent": false,

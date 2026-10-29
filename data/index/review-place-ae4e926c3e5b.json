@@ -1781,6 +1781,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "anghiari",
+      "kind": "place",
+      "names": [
+        "Anghiari"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -3955,7 +3982,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 3,
+      "degree": 4,
       "id": "baltic-sea",
       "kind": "place",
       "names": [
@@ -6744,6 +6771,34 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "bologna",
+      "kind": "place",
+      "names": [
+        "Bologna",
+        "Bolonha"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "boonville-missouri",
       "kind": "place",
       "names": [
@@ -7887,6 +7942,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "bulls-of-guisando",
+      "kind": "place",
+      "names": [
+        "Bulls of Guisando",
+        "Touros de Guisando"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -10069,6 +10152,33 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "cesis",
+      "kind": "place",
+      "names": [
+        "Cēsis"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "ceska-skalice",
       "kind": "place",
       "names": [
@@ -11526,6 +11636,34 @@
       "review": {
         "flags": [
           "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "ciutadella-de-menorca",
+      "kind": "place",
+      "names": [
+        "Ciutadella",
+        "Ciutadella de Menorca"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
         ],
         "status": "draft"
       },
@@ -21426,6 +21564,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "harfleur",
+      "kind": "place",
+      "names": [
+        "Harfleur"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "harpers-ferry-west-virginia",
@@ -22204,6 +22369,35 @@
       "kind": "place",
       "names": [
         "Hochkirch"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "hochst-frankfurt-am-main",
+      "kind": "place",
+      "names": [
+        "Höchst",
+        "Höchst am Main",
+        "Höchst (Frankfurt am Main)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -24630,6 +24824,33 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q2338093, the Battle of Jaquijahuana, read on 2026-09-30 — A9’s first step as A12 (2) corrects it. The item’s P276 is Saqsaywaman (Q828336), some 25 km east of the point the item itself gives, so the item’s own point is what this record carries.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "jargeau",
+      "kind": "place",
+      "names": [
+        "Jargeau"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -30442,6 +30663,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "lombardy-q1210",
+      "kind": "place",
+      "names": [
+        "Lombardy",
+        "Lombardia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -30646,7 +30895,7 @@
         }
       ],
       "created": "2026-10-13",
-      "degree": 4,
+      "degree": 5,
       "id": "low-countries",
       "kind": "place",
       "names": [
@@ -35359,7 +35608,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "montmirail-marne",
       "kind": "place",
       "names": [
@@ -35640,7 +35889,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 15,
+      "degree": 17,
       "id": "moscow",
       "kind": "place",
       "names": [
@@ -37007,6 +37256,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "nantes",
+      "kind": "place",
+      "names": [
+        "Nantes"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "naousa-imathia",
@@ -37674,7 +37950,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 10,
+      "degree": 11,
       "id": "new-york",
       "kind": "place",
       "names": [
@@ -40028,6 +40304,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "palace-of-versailles",
+      "kind": "place",
+      "names": [
+        "Palace of Versailles",
+        "Palácio de Versalhes"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "palacio-federal-legislativo",
@@ -40104,6 +40408,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "palermo",
+      "kind": "place",
+      "names": [
+        "Palermo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -42136,6 +42467,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "polstead",
+      "kind": "place",
+      "names": [
+        "Polstead"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "pomerelia",
@@ -42604,7 +42962,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 56,
+      "degree": 57,
       "id": "portugal-q45",
       "kind": "place",
       "names": [
@@ -45309,7 +45667,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "romania-q218",
       "kind": "place",
       "names": [
@@ -50488,7 +50846,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 13,
+      "degree": 14,
       "id": "spain-q29",
       "kind": "place",
       "names": [
@@ -57188,6 +57546,33 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "vucji-do",
+      "kind": "place",
+      "names": [
+        "Vučji Do"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "vyazma",
       "kind": "place",
       "names": [
@@ -57460,7 +57845,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "warsaw",
       "kind": "place",
       "names": [
@@ -58233,6 +58618,33 @@
       "kind": "place",
       "names": [
         "Wijnendale"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "wild-fields",
+      "kind": "place",
+      "names": [
+        "Wild Fields"
       ],
       "origin": {
         "tool": "wikidata"

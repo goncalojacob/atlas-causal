@@ -1981,6 +1981,15 @@
         }
       ]
     },
+    "battle-of-selimbar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-sezawa": {
       "from": "git",
       "versions": [
@@ -2036,6 +2045,15 @@
       ]
     },
     "battle-of-sokhoista": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-solway-moss": {
       "from": "git",
       "versions": [
         {
@@ -2347,6 +2365,15 @@
         }
       ]
     },
+    "battle-of-vila-franca-do-campo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-vilcaconga": {
       "from": "git",
       "versions": [
@@ -2457,6 +2484,15 @@
       ]
     },
     "battles-of-kizugawaguchi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battles-of-wenden-1577-1578": {
       "from": "git",
       "versions": [
         {
@@ -2744,6 +2780,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "concordat-of-bologna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3041,6 +3086,24 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "fire-of-moscow-1547": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "fire-of-moscow-1571": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4071,6 +4134,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "raid-of-the-balearic-islands-1558": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6117,6 +6189,15 @@
             "summary"
           ],
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "war-against-sigismund": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

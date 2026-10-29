@@ -74,6 +74,15 @@
         }
       ]
     },
+    "battle-of-anghiari": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-barnet": {
       "from": "git",
       "versions": [
@@ -245,6 +254,15 @@
         }
       ]
     },
+    "battle-of-jargeau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-kosovo-1448": {
       "from": "git",
       "versions": [
@@ -260,6 +278,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-la-higueruela": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -512,6 +539,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "catalan-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -842,6 +878,24 @@
         }
       ]
     },
+    "muscovite-war-of-succession": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "navarrese-civil-war-1451-1455": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "night-attack-at-targoviste": {
       "from": "git",
       "versions": [
@@ -933,6 +987,15 @@
       ]
     },
     "peace-of-olomouc": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "polish-ottoman-war-1485-1503": {
       "from": "git",
       "versions": [
         {
@@ -1067,6 +1130,15 @@
         }
       ]
     },
+    "siege-of-harfleur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-kruje-1466-1467": {
       "from": "git",
       "versions": [
@@ -1168,6 +1240,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "st-elizabeth-s-flood-1421": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1411,6 +1492,15 @@
         }
       ]
     },
+    "treaty-of-the-bulls-of-guisando": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-tordesillas-1494": {
       "from": "git",
       "versions": [
@@ -1523,6 +1613,15 @@
       ]
     },
     "war-of-the-remences": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "wars-in-lombardy": {
       "from": "git",
       "versions": [
         {
