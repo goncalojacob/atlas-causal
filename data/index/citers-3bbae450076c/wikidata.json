@@ -2240,6 +2240,12 @@
     },
     {
       "dissent": false,
+      "id": "1883-chilean-spanish-treaty",
+      "kind": "event",
+      "locator": "Q50684017"
+    },
+    {
+      "dissent": false,
       "id": "1883-eruption-of-krakatoa",
       "kind": "event",
       "locator": "Q8094772"
@@ -4946,6 +4952,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-apostoles",
+      "kind": "event",
+      "locator": "Q6394358"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-appomattox-court-house",
       "kind": "event",
       "locator": "Q1355391"
@@ -4967,6 +4979,12 @@
       "id": "battle-of-arakere",
       "kind": "event",
       "locator": "Q4870321"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-arapey",
+      "kind": "event",
+      "locator": "Q5722200"
     },
     {
       "dissent": false,
@@ -5249,6 +5267,12 @@
       "id": "battle-of-beachy-head-1690",
       "kind": "event",
       "locator": "Q1248605"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-beauharnois",
+      "kind": "event",
+      "locator": "Q2888123"
     },
     {
       "dissent": false,
@@ -6434,6 +6458,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-combapata",
+      "kind": "event",
+      "locator": "Q9172888"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-concepcion",
       "kind": "event",
       "locator": "Q1315700"
@@ -6536,9 +6566,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-crooked-river",
+      "kind": "event",
+      "locator": "Q4870807"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cross-keys",
       "kind": "event",
       "locator": "Q1970207"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cruces",
+      "kind": "event",
+      "locator": "Q5722388"
     },
     {
       "dissent": false,
@@ -7388,6 +7430,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-frenchman-s-butte",
+      "kind": "event",
+      "locator": "Q2888576"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-frenchman-s-creek",
       "kind": "event",
       "locator": "Q1390639"
@@ -8000,6 +8048,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-higos-urco",
+      "kind": "event",
+      "locator": "Q16942167"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-hims-1832",
       "kind": "event",
       "locator": "Q125727611"
@@ -8141,6 +8195,12 @@
       "id": "battle-of-ibarra-1812",
       "kind": "event",
       "locator": "Q10858446"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ibiraocai",
+      "kind": "event",
+      "locator": "Q5722534"
     },
     {
       "dissent": false,
@@ -11606,6 +11666,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-saint-charles",
+      "kind": "event",
+      "locator": "Q2889850"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-saint-denis-1837",
+      "kind": "event",
+      "locator": "Q2889862"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-saint-eustache",
       "kind": "event",
       "locator": "Q862220"
@@ -11750,6 +11822,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-san-juan-del-sur",
+      "kind": "event",
+      "locator": "Q111729720"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-san-juan-hill",
       "kind": "event",
       "locator": "Q1215310"
@@ -11867,6 +11945,12 @@
       "id": "battle-of-santo-tomas",
       "kind": "event",
       "locator": "Q4872307"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sao-borja-1816",
+      "kind": "event",
+      "locator": "Q5722870"
     },
     {
       "dissent": false,
@@ -15377,6 +15461,12 @@
       "id": "capture-of-the-galleon-san-joaquin",
       "kind": "event",
       "locator": "Q5037078"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-the-gunboat-anhambai",
+      "kind": "event",
+      "locator": "Q5748697"
     },
     {
       "dissent": false,
@@ -23120,6 +23210,12 @@
     },
     {
       "dissent": false,
+      "id": "raid-on-dartmouth-1751",
+      "kind": "event",
+      "locator": "Q7283742"
+    },
+    {
+      "dissent": false,
       "id": "raid-on-deerfield",
       "kind": "event",
       "locator": "Q3046548"
@@ -24029,6 +24125,12 @@
       "id": "sanna-s-post",
       "kind": "event",
       "locator": "Q2889933"
+    },
+    {
+      "dissent": false,
+      "id": "santa-maria-calatrava-treaty",
+      "kind": "event",
+      "locator": "Q20160810"
     },
     {
       "dissent": false,

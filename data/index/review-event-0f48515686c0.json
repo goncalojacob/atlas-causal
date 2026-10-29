@@ -2444,6 +2444,37 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "1883-chilean-spanish-treaty",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-pacific",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1883 Chilean–Spanish Treaty"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -16788,6 +16819,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-apostoles",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "portuguese-conquest-of-the-banda-oriental",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Apóstoles"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "battle-of-appomattox-court-house",
       "kind": "event",
@@ -16901,6 +16964,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Arakere"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-arapey",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "portuguese-conquest-of-the-banda-oriental",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Arapey"
     },
     {
       "authors": [
@@ -18374,6 +18469,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Beachy Head (1690)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-beauharnois",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "lower-canada-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Beauharnois"
     },
     {
       "authors": [
@@ -24604,6 +24731,37 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "battle-of-combapata",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "rebellion-of-tupac-amaru-ii",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Combapata"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "battle-of-concepcion",
       "kind": "event",
       "origin": {
@@ -25134,6 +25292,38 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "battle-of-crooked-river",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "1838-mormon-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Crooked River"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "battle-of-cross-keys",
       "kind": "event",
       "origin": {
@@ -25151,6 +25341,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Cross Keys"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-cruces",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "gran-colombia-peru-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cruces"
     },
     {
       "authors": [
@@ -29621,6 +29843,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-frenchman-s-butte",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "north-west-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Frenchman's Butte"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "battle-of-frenchman-s-creek",
       "kind": "event",
@@ -32834,6 +33087,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-higos-urco",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "peruvian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Higos Urco"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "battle-of-hims-1832",
       "kind": "event",
@@ -33598,6 +33883,37 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Battle of Ibarra (1812)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-ibiraocai",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "portuguese-conquest-of-the-banda-oriental",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ibiraocaí"
     },
     {
       "authors": [
@@ -51941,6 +52257,68 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "battle-of-saint-charles",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "lower-canada-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Saint-Charles"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-saint-denis-1837",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "lower-canada-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Saint-Denis (1837)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "battle-of-saint-eustache",
       "kind": "event",
       "origin": {
@@ -52697,6 +53075,37 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "battle-of-san-juan-del-sur",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "filibuster-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of San Juan del Sur"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "battle-of-san-juan-hill",
       "kind": "event",
       "origin": {
@@ -53316,6 +53725,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Santo Tomas"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-sao-borja-1816",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "portuguese-conquest-of-the-banda-oriental",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of São Borja (1816)"
     },
     {
       "authors": [
@@ -71897,6 +72337,37 @@
       "revised": null,
       "status": "active",
       "title": "Capture of the galleon San Joaquin"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "capture-of-the-gunboat-anhambai",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mato-grosso-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of the gunboat Anhambaí"
     },
     {
       "authors": [
@@ -113047,6 +113518,38 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "raid-on-dartmouth-1751",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "father-le-loutre-s-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Raid on Dartmouth (1751)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "raid-on-deerfield",
       "kind": "event",
       "origin": {
@@ -117748,6 +118251,35 @@
       "revised": null,
       "status": "active",
       "title": "Sanna's Post"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "santa-maria-calatrava-treaty",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Santa María–Calatrava Treaty"
     },
     {
       "authors": [
@@ -156205,6 +156737,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1883-chilean-spanish-treaty",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1883-eruption-of-krakatoa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -157873,6 +158411,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-apostoles",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-appomattox-court-house",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -157892,6 +158436,12 @@
     },
     {
       "id": "battle-of-arakere",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-arapey",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -158150,6 +158700,12 @@
     },
     {
       "id": "battle-of-beachy-head-1690",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-beauharnois",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -159187,6 +159743,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-combapata",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-concepcion",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -159277,7 +159839,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-crooked-river",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-cross-keys",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-cruces",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -160051,6 +160625,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-frenchman-s-butte",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-frenchman-s-creek",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -160609,6 +161189,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-higos-urco",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-hims-1832",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -160736,6 +161322,12 @@
     },
     {
       "id": "battle-of-ibarra-1812",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-ibiraocai",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -163627,6 +164219,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-saint-charles",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-saint-denis-1837",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-saint-eustache",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -163741,6 +164345,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-san-juan-del-sur",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-san-juan-hill",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -163832,6 +164442,12 @@
     },
     {
       "id": "battle-of-santo-tomas",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-sao-borja-1816",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -166688,6 +167304,12 @@
     },
     {
       "id": "capture-of-the-galleon-san-joaquin",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "capture-of-the-gunboat-anhambai",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -172351,6 +172973,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "raid-on-dartmouth-1751",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "raid-on-deerfield",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -173048,6 +173676,12 @@
     },
     {
       "id": "sanna-s-post",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "santa-maria-calatrava-treaty",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

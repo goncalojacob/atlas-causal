@@ -1268,6 +1268,15 @@
         }
       ]
     },
+    "battle-of-combapata": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-condore": {
       "from": "git",
       "versions": [
@@ -5772,6 +5781,15 @@
       ]
     },
     "raid-of-nassau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "raid-on-dartmouth-1751": {
       "from": "git",
       "versions": [
         {

@@ -10652,6 +10652,12 @@
     },
     {
       "dissent": false,
+      "id": "1883-chilean-spanish-treaty",
+      "kind": "event",
+      "locator": "\"1883 Chilean–Spanish Treaty\", revision 1254249725"
+    },
+    {
+      "dissent": false,
       "id": "1883-eruption-of-krakatoa",
       "kind": "event",
       "locator": "\"1883 eruption of Krakatoa\", revision 1381107509"
@@ -13244,6 +13250,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-apostoles",
+      "kind": "event",
+      "locator": "\"Battle of Apóstoles\", revision 1370432270"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-appomattox-court-house",
       "kind": "event",
       "locator": "\"Battle of Appomattox Court House\", revision 1378752752"
@@ -13265,6 +13277,12 @@
       "id": "battle-of-arakere",
       "kind": "event",
       "locator": "\"Battle of Arakere\", revision 1370106906"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-arapey",
+      "kind": "event",
+      "locator": "\"Battle of Arapey\", revision 1382676649"
     },
     {
       "dissent": false,
@@ -13541,6 +13559,12 @@
       "id": "battle-of-beachy-head-1690",
       "kind": "event",
       "locator": "\"Battle of Beachy Head (1690)\", revision 1378648784"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-beauharnois",
+      "kind": "event",
+      "locator": "\"Battle of Beauharnois\", revision 1370433745"
     },
     {
       "dissent": false,
@@ -14720,6 +14744,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-combapata",
+      "kind": "event",
+      "locator": "\"Battle of Combapata\", revision 1376321346"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-concepcion",
       "kind": "event",
       "locator": "\"Battle of Concepción\", revision 1378726203"
@@ -14822,9 +14852,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-crooked-river",
+      "kind": "event",
+      "locator": "\"Battle of Crooked River\", revision 1377492334"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cross-keys",
       "kind": "event",
       "locator": "\"Battle of Cross Keys\", revision 1381880366"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cruces",
+      "kind": "event",
+      "locator": "\"Battle of Cruces\", revision 1380024641"
     },
     {
       "dissent": false,
@@ -15668,6 +15710,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-frenchman-s-butte",
+      "kind": "event",
+      "locator": "\"Battle of Frenchman's Butte\", revision 1381599535"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-frenchman-s-creek",
       "kind": "event",
       "locator": "\"Battle of Frenchman's Creek\", revision 1381627170"
@@ -16280,6 +16328,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-higos-urco",
+      "kind": "event",
+      "locator": "\"Battle of Higos Urco\", revision 1370442971"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-hims-1832",
       "kind": "event",
       "locator": "\"Battle of Hims (1832)\", revision 1381816304"
@@ -16427,6 +16481,12 @@
       "id": "battle-of-ibarra-1812",
       "kind": "event",
       "locator": "\"Battle of Ibarra (1812)\", revision 1370443500"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ibiraocai",
+      "kind": "event",
+      "locator": "\"Battle of Ibiraocaí\", revision 1370443517"
     },
     {
       "dissent": false,
@@ -19874,6 +19934,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-saint-charles",
+      "kind": "event",
+      "locator": "\"Battle of Saint-Charles\", revision 1370588011"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-saint-denis-1837",
+      "kind": "event",
+      "locator": "\"Battle of Saint-Denis (1837)\", revision 1370588022"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-saint-eustache",
       "kind": "event",
       "locator": "\"Battle of Saint-Eustache\", revision 1370588024"
@@ -20018,6 +20090,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-san-juan-del-sur",
+      "kind": "event",
+      "locator": "\"Battle of San Juan del Sur\", revision 1370588371"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-san-juan-hill",
       "kind": "event",
       "locator": "\"Battle of San Juan Hill\", revision 1379949299"
@@ -20135,6 +20213,12 @@
       "id": "battle-of-santo-tomas",
       "kind": "event",
       "locator": "\"Battle of Santo Tomas\", revision 1370588633"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sao-borja-1816",
+      "kind": "event",
+      "locator": "\"Battle of São Borja (1816)\", revision 1382589972"
     },
     {
       "dissent": false,
@@ -23651,6 +23735,12 @@
       "id": "capture-of-the-galleon-san-joaquin",
       "kind": "event",
       "locator": "\"Capture of the galleon San Joaquin\", revision 1370610099"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-the-gunboat-anhambai",
+      "kind": "event",
+      "locator": "\"Capture of the gunboat Anhambaí\", revision 1370610105"
     },
     {
       "dissent": false,
@@ -31280,6 +31370,12 @@
     },
     {
       "dissent": false,
+      "id": "raid-on-dartmouth-1751",
+      "kind": "event",
+      "locator": "\"Raid on Dartmouth (1751)\", revision 1375230093"
+    },
+    {
+      "dissent": false,
       "id": "raid-on-deerfield",
       "kind": "event",
       "locator": "\"Raid on Deerfield\", revision 1377572470"
@@ -32177,6 +32273,12 @@
       "id": "sanna-s-post",
       "kind": "event",
       "locator": "\"Sanna's Post\", revision 1379044256"
+    },
+    {
+      "dissent": false,
+      "id": "santa-maria-calatrava-treaty",
+      "kind": "event",
+      "locator": "\"Santa María–Calatrava Treaty\", revision 1380773151"
     },
     {
       "dissent": false,

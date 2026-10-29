@@ -2121,6 +2121,34 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "apostoles",
+      "kind": "place",
+      "names": [
+        "Apóstoles",
+        "Apóstoles (Misiones)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "aquidneck-island",
       "kind": "place",
       "names": [
@@ -5056,6 +5084,35 @@
       "names": [
         "Bear River",
         "Bear River (Great Salt Lake)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "beauharnois-quebec",
+      "kind": "place",
+      "names": [
+        "Beauharnois",
+        "Beauharnois, Quebec",
+        "Beauharnois (Quebec)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -10037,6 +10094,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "chachapoyas-peru",
+      "kind": "place",
+      "names": [
+        "Chachapoyas",
+        "Chachapoyas, Peru",
+        "Chachapoias"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -12266,6 +12352,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "crooked-river-missouri",
+      "kind": "place",
+      "names": [
+        "Crooked River",
+        "Crooked River (Missouri)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 1,
       "id": "cuanza-river",
@@ -13000,6 +13114,35 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "dartmouth-nova-scotia",
+      "kind": "place",
+      "names": [
+        "Dartmouth",
+        "Dartmouth, Nova Scotia",
+        "Dartmouth (Nova Escócia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -15069,7 +15212,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 6,
+      "degree": 7,
       "id": "ecuador-q736",
       "kind": "place",
       "names": [
@@ -29725,7 +29868,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "lima",
       "kind": "place",
       "names": [
@@ -31135,7 +31278,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 5,
+      "degree": 6,
       "id": "madrid",
       "kind": "place",
       "names": [
@@ -46143,6 +46286,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "salto-uruguay",
+      "kind": "place",
+      "names": [
+        "Salto",
+        "Salto, Uruguay",
+        "Salto (Uruguai)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -47108,6 +47280,36 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "sao-lourenco-river-mato-grosso",
+      "kind": "place",
+      "names": [
+        "São Lourenço River",
+        "Rio São Lourenço",
+        "São Lourenço River (Mato Grosso)",
+        "Rio São Lourenço (Mato Grosso)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
