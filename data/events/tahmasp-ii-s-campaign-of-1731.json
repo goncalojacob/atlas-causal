@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tahmasp-ii-s-campaign-of-1731",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q18210470",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Tahmasp II's campaign of 1731"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18210470"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tahmasp II's campaign of 1731\", revision 1371124669"
+    }
+  ],
+  "title": "Tahmasp II's campaign of 1731",
+  "summary": "The English Wikipedia article \"Tahmasp II's campaign of 1731\", at revision 1371124669, opens: \"The campaign of 1731 was a failed attempt by Tahmasp II of the Safavid dynasty to launch an offensive into Ottoman held Caucasus which ended in a disastrous defeat with all of Nader's gains during the previous year being lost. The result of this particular military catastrophe was still overturned with Nader's return from the east but would have much more significant impact on the Safavid dynasty itself as Tahmasp II sealed his own fate by initiating this ill fated expedition.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18210470, imported by tools/import/wikidata.mjs. The item's own description reads \"1731 disastrous Persian campaign into the Caucasus\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1731,
+    "end": 1731
+  },
+  "place": "persis",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-persian-war-1730-1735"
+}

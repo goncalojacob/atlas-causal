@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "quebec-expedition-1711",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q732992",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Quebec expedition (1711)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q732992"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Quebec expedition (1711)\", revision 1370730365"
+    }
+  ],
+  "title": "Quebec expedition (1711)",
+  "summary": "The English Wikipedia article \"Quebec expedition (1711)\", at revision 1370730365, opens: \"The Quebec expedition was a British attempt to attack French-held Quebec City in mid-1711 during Queen Anne's War, the North American theatre of the War of the Spanish Succession. It failed when seven troopships and one storeship were wrecked and 890 soldiers, sailors and women drowned in one of the worst naval disasters in British history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q732992, imported by tools/import/wikidata.mjs. The item's own description reads \"1711 military campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1711,
+    "end": 1711,
+    "date": "1711-08-22"
+  },
+  "place": "st-lawrence-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "queen-anne-s-war"
+}

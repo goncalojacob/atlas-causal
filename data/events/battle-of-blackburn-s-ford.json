@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-blackburn-s-ford",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1497902",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Blackburn's Ford",
+    "pt": "Batalha de Blackburn's Ford"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1497902"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Blackburn's Ford\", revision 1373519505"
+    }
+  ],
+  "title": "Battle of Blackburn's Ford",
+  "summary": "The English Wikipedia article \"Battle of Blackburn's Ford\", at revision 1373519505, opens: \"The Battle of Blackburn's Ford took place on July 18, 1861, in the Confederate state of Virginia, as part of the Manassas campaign of the American Civil War. Union general Irvin McDowell's Army of Northeastern Virginia was marching south towards the Confederate capital of Richmond, and encountered the Confederate Army of the Potomac under the command of P. G. T. Beauregard. McDowell sent troops from Daniel Tyler's division to probe the Confederate defenses along Bull Run Creek to locate the Confederate left flank. At Blackburn's Ford, the Union troops attempted to cross but Confederate fire broke up the attack. The repulse at Blackburn's Ford led McDowell to seek to attack the Confederates at a different point along their line, leading to the First Battle of Bull Run three days later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1497902, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-07-18"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

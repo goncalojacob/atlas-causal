@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "1861-baltimore-riot",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3588241",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1861 Baltimore riot"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3588241"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1861 Baltimore riot\", revision 1380956273"
+    }
+  ],
+  "title": "1861 Baltimore riot",
+  "summary": "The English Wikipedia article \"1861 Baltimore riot\", at revision 1380956273, opens: \"The Baltimore riot of 1861 was a civil conflict on Friday, April 19, 1861, on Pratt Street, Baltimore, Maryland. It occurred between antiwar \"Copperhead\" Democrats and other Confederate sympathizers on one side, and on the other, members of Massachusetts and Pennsylvania state militia regiments en route to the national capital at Washington who had been called up for federal service. The fighting began at the President Street Station, spreading throughout President Street and subsequently to Howard Street, where it ended at the Camden Street Station. The riot produced the first deaths of Union volunteers by hostile action, although caused by civilians, in the American Civil War. Civilians among the attackers also were killed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3588241, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 civil riot against Union troops during the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-04-19"
+  },
+  "place": "baltimore",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "american-civil-war"
+}
