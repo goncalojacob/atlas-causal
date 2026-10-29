@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "djidjelli-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3062384",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Djidjelli expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3062384"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Djidjelli expedition\", revision 1370615645"
+    }
+  ],
+  "title": "Djidjelli expedition",
+  "summary": "The English Wikipedia article \"Djidjelli expedition\", at revision 1370615645, opens: \"The Djidjelli expedition was a 1664 military expedition by Louis XIV to seize the port of Djidjelli and establish a naval base against the Barbary corsairs. There was a disagreement among the leaders of the expedition as to what its objectives should be. Ultimately the town of Djidjelli was taken easily, but after three months, heavily besieged and deprived of reinforcements by an outbreak of plague, the French abandoned the city and returned home.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3062384, imported by tools/import/wikidata.mjs. The item's own description reads \"1664 military expedition by Louis XIV to seize the port of Djidjelli\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1664,
+    "end": 1664,
+    "date": "1664-07-22",
+    "endDate": "1664-10-30"
+  },
+  "place": "jijel",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

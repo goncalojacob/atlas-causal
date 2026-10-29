@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1755-meknes-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q115809087",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1755 Meknes earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q115809087"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1755 Meknes earthquake\", revision 1366163698"
+    }
+  ],
+  "title": "1755 Meknes earthquake",
+  "summary": "The English Wikipedia article \"1755 Meknes earthquake\", at revision 1366163698, opens: \"The 1755 Meknes earthquake affected Morocco on 27 November 1755. The earthquake had a moment magnitude (Mw) estimated at between 6.5 and 7.0. It devastated the cities of Fes and Meknes—killing at least 15,000 people in both cities. The earthquake struck less than a month after another earthquake that devastated Morocco and Lisbon on 1 November. Previously regarded as an aftershock, this earthquake likely represented rupture of a separate fault due to changes in tectonic stress following their first event.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q115809087, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake in Morocco\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1755,
+    "end": 1755,
+    "date": "1755-11-27"
+  },
+  "place": "meknes",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

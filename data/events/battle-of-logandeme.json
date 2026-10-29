@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-logandeme",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2889150",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Logandème",
+    "pt": "Batalha de Logandème"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889150"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Logandème\", revision 1370268389"
+    }
+  ],
+  "title": "Battle of Logandème",
+  "summary": "The English Wikipedia article \"Battle of Logandème\", at revision 1370268389, opens: \"The Battle of Logandème was an uprising led by the Serer King Maad a Sinig Kumba Ndoffene Famak Joof, king of Sine, against the French Empire. The battle took place at Logandème which was a part of Sine at the time. The battle was also a revenge attack against the Serer people after their resounding victory against France at the Battle of Djilass on 13 May 1859. It was the first time that France decided to employ cannonball in the Senegambia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889150, imported by tools/import/wikidata.mjs. The item's own description reads \"uprising led by Maad a Sinig Kumba Ndoffene Famak Joof, king of Sine, against the French Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1859,
+    "end": 1859,
+    "date": "1859-05-18"
+  },
+  "place": "fatick",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

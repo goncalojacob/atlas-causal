@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-madana",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q131626187",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Madana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q131626187"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Madana\", revision 1370448479"
+    }
+  ],
+  "title": "Battle of Madana",
+  "summary": "The English Wikipedia article \"Battle of Madana\", at revision 1370448479, opens: \"The Battle of Madana was a military confrontation that took place in June 1887 between the army of the Ethiopian Empire led by Tekle Haymanot of Gojjam and the Mahdist army led by Mohammad Wad Arbab. The Ethiopians were victorious and Wad Arbab was killed on the battlefield. The Ethiopians then followed up on their victory by capturing and sacking the town of Gallabat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q131626187, imported by tools/import/wikidata.mjs. The item's own description reads \"1887 battle between the Ethiopian Empire and Mahdist Sudan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1888,
+    "end": 1888,
+    "date": "1888-06"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

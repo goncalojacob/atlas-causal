@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-beni-mered",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q28717510",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Beni Mered"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q28717510"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Beni Mered\", revision 1370107675"
+    }
+  ],
+  "title": "Battle of Beni Mered",
+  "summary": "The English Wikipedia article \"Battle of Beni Mered\", at revision 1370107675, opens: \"The Battle of Beni Mered took place in April 1842 between the French forces and the Algerian resistance from southern Algiers. The French had established a military reserve camp around the town of Beni Mered between Blida and Boufarik.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28717510, imported by tools/import/wikidata.mjs. The item's own description reads \"1842 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1842,
+    "end": 1842,
+    "date": "1842-04-11",
+    "endDate": "1842-04-12"
+  },
+  "place": "beni-mered",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

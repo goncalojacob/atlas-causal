@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-medina-fort",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3486065",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Medina Fort"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3486065"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Medina Fort\", revision 1381078783"
+    }
+  ],
+  "title": "Siege of Medina Fort",
+  "summary": "The English Wikipedia article \"Siege of Medina Fort\", at revision 1381078783, opens: \"The siege of Fort Medina took place in 1857 at Médine, on the left bank of the Senegal River in present-day Mali. The Toucouleur forces of Omar Saidou Tall unsuccessfully besieged native and French colonial troops commanded by Paul Holle. After 97 days of siege, a relief force under French Governor Louis Faidherbe lifted the siege and forced the Toucouleur army to retreat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3486065, imported by tools/import/wikidata.mjs. The item's own description reads \"1857 battle in present-day Mali\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1857,
+    "end": 1857,
+    "date": "1857-04-12",
+    "endDate": "1857-07-18"
+  },
+  "place": "medine-mali",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

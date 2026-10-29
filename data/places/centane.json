@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "centane",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6391996",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Centane"
+  },
+  "sources": [],
+  "names": [
+    "Kentani",
+    "Centane"
+  ],
+  "where": {
+    "lon": 28.3167,
+    "lat": -32.5167,
+    "precision": "city",
+    "label": "Centane"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
