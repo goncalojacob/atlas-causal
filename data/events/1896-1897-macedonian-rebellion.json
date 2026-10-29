@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1896-1897-macedonian-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q16737770",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1896–1897 Macedonian rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16737770"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1896–1897 Macedonian rebellion\", revision 1370278953"
+    }
+  ],
+  "title": "1896–1897 Macedonian rebellion",
+  "summary": "The English Wikipedia article \"1896–1897 Macedonian rebellion\", at revision 1370278953, opens: \"The 1896–1897 Macedonian Rebellion was a Greek rebellion, launched in 1896, and a guerrilla movement that took place in Macedonia in order to preserve the conscience and ready-mindedness of the Macedonian Greek populations, to create a rivalrous awe against the Bulgarians the demarcation of the Greek territorial claims in the Ottoman area and the creation of a distraction for the events of Crete. The movement was of Macedonian character, as the regiments invading Macedonia from Thessaly consisted primarily of Macedonian chieftains and fighters, most of whom were from Northwestern Macedonia. The initial impetus was given by the Ethniki Etaireia (Greek National Company), but then several Macedonian chieftains spontaneously and without coordination were involved in the events, while in some regions of Macedonia the events took the form of massive uprisings. The main rebels of the Macedonian Revolution of 1896 were the areas of Sanjak of Monastir (Florina, Bitola, Prespes), Sanjak of Korytsa (Kastoria), Sanjak of Servia, Sanjak of Salonica (Thessaloniki, Pieria, Imathia, Pella, Tikveš) and Sanjak of Serres (Serres, Upper Nevrokopi, Lower Nevrokopi).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16737770, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1897,
+    "date": "1896-07",
+    "endDate": "1897-05-20"
+  },
+  "place": "salonica-vilayet",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

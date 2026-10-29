@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "epirus-revolt-of-1611",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q12877110",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Epirus revolt of 1611"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12877110"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Epirus revolt of 1611\", revision 1373950135"
+    }
+  ],
+  "title": "Epirus revolt of 1611",
+  "summary": "The English Wikipedia article \"Epirus revolt of 1611\", at revision 1373950135, opens: \"The uprising in Epirus of 1611, also known as uprising of Dionysios Skylosophos, was an anti-Ottoman rebellion by Albanian and Greek peasants, organized and led by the former Greek Orthodox bishop Dionysios. The peasants and shepherds who rebelled, attacked the city of Ioannina, the seat of the Ottoman governor of the region, on September 10, 1611. The following day the uprising was brutally suppressed by the Ottoman authorities with support from the local Greek Orthodox notables and the ringleaders were executed. As a result of the revolt the privileges which the native inhabitants of Ioannina enjoyed since the beginning of Ottoman rule (1430) were annulled.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12877110, imported by tools/import/wikidata.mjs. The item's own description reads \"Anti-Ottoman rebellion by Albanian peasants\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1611,
+    "end": 1611,
+    "date": "1611-09-10",
+    "endDate": "1611-09-11"
+  },
+  "place": "epirus",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

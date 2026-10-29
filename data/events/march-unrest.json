@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "march-unrest",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q21018731",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "March Unrest"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q21018731"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"March Unrest\", revision 1370627694"
+    }
+  ],
+  "title": "March Unrest",
+  "summary": "The English Wikipedia article \"March Unrest\", at revision 1370627694, opens: \"The March Unrest, sometimes called the battle for Stockholm, was a brief series of riots which occurred in the Swedish capital Stockholm during the Revolutions of 1848.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q21018731, imported by tools/import/wikidata.mjs. The item's own description reads \"March 1848 unrest in Stockholm, Sweden\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-03"
+  },
+  "place": "stockholm",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "revolutions-of-1848"
+}

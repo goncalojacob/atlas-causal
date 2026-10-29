@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "marian-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q6762017",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Marian civil war"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6762017"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Marian civil war\", revision 1378448390"
+    }
+  ],
+  "title": "Marian civil war",
+  "summary": "The English Wikipedia article \"Marian civil war\", at revision 1378448390, opens: \"The Marian civil war in Scotland (1568–1573) was a period of conflict which followed the abdication of Mary, Queen of Scots, and her escape from Lochleven Castle in May 1568. Those who ruled in the name of her infant son James VI fought against the supporters of the Queen, who was exiled in England. Edinburgh Castle, which was garrisoned in her name, became the focus of the conflict and surrendered only after an English intervention in May 1573. The conflict in 1570 was called an \"internecine war in the bowels of this commonwealth\", and the period was called soon after an \"internecine war driven by questions against authority.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6762017, imported by tools/import/wikidata.mjs. The item's own description reads \"period of conflict which followed the abdication of Mary, Queen of Scots, and her escape from Loch Leven Castle in May 1568\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1568,
+    "end": 1573,
+    "date": "1568-05",
+    "endDate": "1573-05-28"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "european-wars-of-religion"
+}

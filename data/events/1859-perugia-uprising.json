@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "1859-perugia-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q579577",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1859 Perugia uprising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q579577"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1859 Perugia uprising\", revision 1366885187"
+    }
+  ],
+  "title": "1859 Perugia uprising",
+  "summary": "The English Wikipedia article \"1859 Perugia uprising\", at revision 1366885187, opens: \"The 1859 Perugia uprising occurred on 20 June 1859, in Perugia, central Italy. The inhabitants rebelled against the temporal authority of the pope and established a provisional government, but the insurrection was bloodily suppressed by Pope Pius IX's troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q579577, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1859,
+    "end": 1859,
+    "date": "1859-06-14",
+    "endDate": "1859-06-20"
+  },
+  "place": "perugia",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "second-italian-war-of-independence"
+}

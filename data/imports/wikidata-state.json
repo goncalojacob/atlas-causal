@@ -2566,7 +2566,6 @@
         "Q55627998",
         "Q7828916",
         "Q2887920",
-        "Q4818516",
         "Q5309423",
         "Q7833286",
         "Q18353636",
@@ -3208,7 +3207,6 @@
         "Q124683233",
         "Q4687537",
         "Q5350624",
-        "Q7382025",
         "Q1481957",
         "Q1972316",
         "Q553024",
@@ -4351,7 +4349,6 @@
         "Q20613666",
         "Q94796398",
         "Q106880868",
-        "Q722041",
         "Q18469222",
         "Q16626785",
         "Q28717510",
@@ -4375,7 +4372,6 @@
         "Q102045794",
         "Q104902074",
         "Q3486065",
-        "Q98233405",
         "Q2889913",
         "Q55605022",
         "Q28717525",
@@ -4453,8 +4449,6 @@
         "Q7510367",
         "Q2593996",
         "Q11172490",
-        "Q12866905",
-        "Q60771401",
         "Q6886390",
         "Q5339486",
         "Q86750730",
@@ -4477,7 +4471,6 @@
         "Q6132231",
         "Q11242477",
         "Q4242030",
-        "Q4763642",
         "Q19708170",
         "Q65012963",
         "Q10747183",
@@ -4489,11 +4482,7 @@
         "Q4557264",
         "Q6268269",
         "Q3071310",
-        "Q3118971",
-        "Q24204921",
         "Q3068530",
-        "Q4867844",
-        "Q686731",
         "Q6102459",
         "Q111940467",
         "Q6107284",
@@ -4508,9 +4497,6 @@
         "Q130711778",
         "Q638530",
         "Q1479636",
-        "Q4553950",
-        "Q39194",
-        "Q1382989",
         "Q2935426",
         "Q7204086",
         "Q5140854",
@@ -4750,7 +4736,6 @@
         "Q932149",
         "Q1252684",
         "Q2984870",
-        "Q722047",
         "Q2888919",
         "Q105616758",
         "Q4871605",
@@ -5219,7 +5204,57 @@
         "Q617281",
         "Q2663083",
         "Q3817778",
-        "Q7018976"
+        "Q7018976",
+        "Q3118971",
+        "Q6762017",
+        "Q6433559",
+        "Q12866905",
+        "Q4553950",
+        "Q3029948",
+        "Q18210813",
+        "Q3395274",
+        "Q7109927",
+        "Q60771401",
+        "Q670984",
+        "Q3139108",
+        "Q39194",
+        "Q1382989",
+        "Q13422413",
+        "Q19895302",
+        "Q12877110",
+        "Q616471",
+        "Q722041",
+        "Q1455019",
+        "Q686731",
+        "Q21018731",
+        "Q7443382",
+        "Q651277",
+        "Q4818516",
+        "Q22935892",
+        "Q2065551",
+        "Q65042005",
+        "Q20050680",
+        "Q4763642",
+        "Q7382025",
+        "Q24204921",
+        "Q610244",
+        "Q10466298",
+        "Q12908420",
+        "Q55632642",
+        "Q722047",
+        "Q2084604",
+        "Q579577",
+        "Q3119063",
+        "Q4867844",
+        "Q4552449",
+        "Q7564494",
+        "Q98233405",
+        "Q4709160",
+        "Q16737770",
+        "Q1181756",
+        "Q11030407",
+        "Q7443317",
+        "Q7800572"
       ]
     }
   },
@@ -6853,6 +6888,54 @@
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     },
     "Q617281": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q18210813": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q3395274": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q670984": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q13422413": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q1455019": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q7443382": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q651277": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q65042005": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q12908420": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q4552449": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q1181756": {
+      "on": "2026-10-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q11030407": {
       "on": "2026-10-29",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
