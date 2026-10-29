@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-montjuic-1705",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2889395",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Montjuïc (1705)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889395"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Montjuïc (1705)\", revision 1366222503"
+    }
+  ],
+  "title": "Battle of Montjuïc (1705)",
+  "summary": "The English Wikipedia article \"Battle of Montjuïc (1705)\", at revision 1366222503, opens: \"The Battle of Montjuïc took place between 13 and 17 September 1705 during the War of the Spanish Succession. In the War of the Spanish Succession, a multinational force of the Second Grand Alliance, which supported Archduke Charles of Austria the Habsburg pretender to the Spanish throne, under the command of English general Charles Mordaunt, 3rd Earl of Peterborough landed on the Catalan coast on August 22, 1705, intending to capture Barcelona. However, the force first had to take possession of Montjuïc Castle which defended the city. The Spanish and Neapolitan defenders were commanded by Francisco de Velasco\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889395, imported by tools/import/wikidata.mjs. The item's own description reads \"1705 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1705,
+    "end": 1705,
+    "date": "1705-09-13",
+    "endDate": "1705-09-17"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-ypres-1678",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485833",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Ypres (1678)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485833"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Ypres (1678)\", revision 1370746535"
+    }
+  ],
+  "title": "Siege of Ypres (1678)",
+  "summary": "The English Wikipedia article \"Siege of Ypres (1678)\", at revision 1370746535, opens: \"The siege of Ypres in the Spanish Netherlands took place between March 18 and March 25, 1678, as part of the Franco-Dutch War, and ended with the conquest of the city by the French.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485833, imported by tools/import/wikidata.mjs. The item's own description reads \"1678 during the Franco-Dutch War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1678,
+    "end": 1678,
+    "date": "1678-03-18",
+    "endDate": "1678-03-25"
+  },
+  "place": "ypres",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-dutch-war"
+}

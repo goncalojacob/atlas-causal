@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-bonn-1673",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q557258",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Bonn (1673)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q557258"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Bonn (1673)\", revision 1370739656"
+    }
+  ],
+  "title": "Siege of Bonn (1673)",
+  "summary": "The English Wikipedia article \"Siege of Bonn (1673)\", at revision 1370739656, opens: \"The Siege of Bonn took place from 3 to 12 November 1673, during the Franco-Dutch War. Bonn, located in present-day Germany, was the residence of the Elector of Cologne and held by a garrison composed of troops from France and the Electorate of Cologne. The city was strategically significant due to its location on the Rhine and the capture of the city disrupted French lines of communication and logistics so much that they were forced to evacuate their troops in the Dutch Republic. The siege formed part of a broader Allied counteroffensive.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q557258, imported by tools/import/wikidata.mjs. The item's own description reads \"1673 siege during the Franco-Dutch War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1673,
+    "end": 1673,
+    "date": "1673-11-03",
+    "endDate": "1673-11-12"
+  },
+  "place": "bonn",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-dutch-war"
+}

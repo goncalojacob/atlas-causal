@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "bashkir-rebellion-of-1735-1740",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4080180",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Bashkir rebellion of 1735–1740"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4080180"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bashkir rebellion of 1735–1740\", revision 1372484833"
+    }
+  ],
+  "title": "Bashkir rebellion of 1735–1740",
+  "summary": "The English Wikipedia article \"Bashkir rebellion of 1735–1740\", at revision 1372484833, opens: \"The Bashkir rebellion of 1735–1740 refers to a rebellion by the Bashkirs against the Russian Empire. It started in 1735, but was put down by Russian troops in 1740 after a series of heavy clashes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4080180, imported by tools/import/wikidata.mjs. The item's own description reads \"rebellion in the Russian Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1735,
+    "end": 1740,
+    "date": "1735-07"
+  },
+  "place": "russian-empire-q34266",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

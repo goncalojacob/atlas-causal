@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-newbury",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2058454",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "First Battle of Newbury",
+    "pt": "Primeira Batalha de Newbury"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2058454"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Newbury\", revision 1370618832"
+    }
+  ],
+  "title": "First Battle of Newbury",
+  "summary": "The English Wikipedia article \"First Battle of Newbury\", at revision 1370618832, opens: \"The First Battle of Newbury was a battle of the First English Civil War that was fought on 20 September 1643 between a Royalist army, under the personal command of King Charles, and a Parliamentarian force led by the Earl of Essex. Following a year of Royalist battlefield successes, in which they took Banbury, Oxford and Reading without conflict before storming Bristol, the Parliamentarians were left without an effective army in the west of England. When Charles laid siege to Gloucester, Parliament was forced to muster a force under Essex with which to beat Charles' forces off. After a long march, Essex surprised the Royalists and forced them away from Gloucester before beginning a retreat to London. Charles rallied his forces and pursued Essex, overtaking the Parliamentarian army at Newbury and forcing them to march past the Royalist force to continue their retreat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2058454, imported by tools/import/wikidata.mjs. The item's own description reads \"battle near Newbury, Berkshire in September 1643\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1643,
+    "end": 1643,
+    "date": "1643-09-20"
+  },
+  "place": "newbury-berkshire",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

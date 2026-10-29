@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "liuqiu-island",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6480986",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Liuqiu Island"
+  },
+  "sources": [],
+  "names": [
+    "Lamay Island",
+    "Liuqiu Island"
+  ],
+  "where": {
+    "lon": 120.36981666667,
+    "lat": 22.338644444444,
+    "precision": "region",
+    "label": "Liuqiu Island"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

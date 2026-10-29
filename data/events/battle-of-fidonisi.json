@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-fidonisi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2008820",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Fidonisi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2008820"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fidonisi\", revision 1382487389"
+    }
+  ],
+  "title": "Battle of Fidonisi",
+  "summary": "The English Wikipedia article \"Battle of Fidonisi\", at revision 1382487389, opens: \"The Battle of Fidonisi took place on 14 July 1788 between the fleets of the Russian Empire under Marko Voinovich's lead and the Ottoman Empire under Cezayirli Gazi Hasan Pasha during the Russo-Turkish War (1787–1792) in the area of Snake Island, which in Greek was called Fidonisi (Φιδονήσι). It was a Russian victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2008820, imported by tools/import/wikidata.mjs. The item's own description reads \"1788 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1788,
+    "end": 1788,
+    "date": "1788-07-14"
+  },
+  "place": "snake-island-ukraine",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1787-1792"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lamey-island-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5968311",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Lamey Island Massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5968311"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lamey Island Massacre\", revision 1370626474"
+    }
+  ],
+  "title": "Lamey Island Massacre",
+  "summary": "The English Wikipedia article \"Lamey Island Massacre\", at revision 1370626474, opens: \"The Lamey or Liuqiu Island Massacre was the slaughter of aboriginal inhabitants of Liuqiu Island off the coast of Taiwan by Dutch soldiers in 1636. The killings were part of a punitive campaign in retaliation for the massacre of shipwrecked Dutch sailors in two separate incidents in 1622 and 1631 by natives of the island.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5968311, imported by tools/import/wikidata.mjs. The item's own description reads \"massacre of Taiwanese aboriginals by Dutch soldiers\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1636,
+    "end": 1636,
+    "date": "1636-04",
+    "endDate": "1636-05"
+  },
+  "place": "liuqiu-island",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

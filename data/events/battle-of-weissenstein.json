@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-weissenstein",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q643027",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Weissenstein"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q643027"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Weissenstein\", revision 1373819120"
+    }
+  ],
+  "title": "Battle of Weissenstein",
+  "summary": "The English Wikipedia article \"Battle of Weissenstein\", at revision 1373819120, opens: \"The Battle of Weissenstein, or Battle of Biały Kamień, was fought during the Polish–Swedish War (1600–1611), between Sweden and the Polish–Lithuanian Commonwealth on 25 September 1604. The Swedish army was commanded by Arvid Stålarm and the Polish army under Jan Karol Chodkiewicz. The battle ended with a victory for Poland, which had sent a relief party against the Swedish forces besieging Weissenstein castle, modern day Paide in Estonia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q643027, imported by tools/import/wikidata.mjs. The item's own description reads \"1604 battle of the Polish–Swedish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1604,
+    "end": 1604,
+    "date": "1604-09-25"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "polish-swedish-war-1600-1611"
+}

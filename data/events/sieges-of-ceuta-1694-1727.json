@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sieges-of-ceuta-1694-1727",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q18149882",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Sieges of Ceuta (1694–1727)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18149882"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sieges of Ceuta (1694–1727)\", revision 1378184143"
+    }
+  ],
+  "title": "Sieges of Ceuta (1694–1727)",
+  "summary": "The English Wikipedia article \"Sieges of Ceuta (1694–1727)\", at revision 1378184143, opens: \"The sieges of Ceuta, also known as the thirty-year siege, were a series of blockades by Moroccan forces of the Spanish-held city of Ceuta on the North African coast. The first siege began on 23 October 1694 and finished in 1720 when reinforcements arrived. During the 26 years of the first siege, the city underwent changes leading to the loss of its Portuguese character. While most of the military operations took place around the city walls, there were also small-scale penetrations by Spanish forces at various points on the Moroccan coast, and the seizure of shipping in the Strait of Gibraltar. The city was placed under a second siege in 1721 until 22 April 1727. The engagements are considered to be the longest siege in history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18149882, imported by tools/import/wikidata.mjs. The item's own description reads \"1694–1727 sieges\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1694,
+    "end": 1727,
+    "date": "1694-10-23",
+    "endDate": "1727-04-22"
+  },
+  "place": "ceuta",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
