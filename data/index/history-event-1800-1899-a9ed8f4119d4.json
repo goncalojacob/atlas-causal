@@ -101,6 +101,15 @@
         }
       ]
     },
+    "1847-zenkoji-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1851-chilean-revolution": {
       "from": "git",
       "versions": [
@@ -1228,6 +1237,15 @@
         }
       ]
     },
+    "baikal-insurrection": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "bakumatsu": {
       "from": "git",
       "versions": [
@@ -1638,6 +1656,15 @@
       ]
     },
     "battle-of-arcis-sur-aube": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-argaon": {
       "from": "git",
       "versions": [
         {
@@ -3645,6 +3672,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-laswari": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -11327,6 +11363,15 @@
         }
       ]
     },
+    "siege-of-akhoulgo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-akka-1832": {
       "from": "git",
       "versions": [
@@ -11564,6 +11609,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "siege-of-kumamoto-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

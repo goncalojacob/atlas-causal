@@ -11384,6 +11384,15 @@
         }
       ]
     },
+    "mindanao": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "minden": {
       "from": "git",
       "versions": [
@@ -12530,6 +12539,15 @@
         }
       ]
     },
+    "niiniin-taka-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "nis": {
       "from": "git",
       "versions": [
@@ -13386,6 +13404,15 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "pasinler": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -15581,6 +15608,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "samarkand": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -19796,6 +19832,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "yamato-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

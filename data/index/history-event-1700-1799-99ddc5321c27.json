@@ -47,6 +47,15 @@
         }
       ]
     },
+    "1721-tabriz-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1733-slave-insurrection-on-st-john": {
       "from": "git",
       "versions": [
@@ -586,6 +595,15 @@
         }
       ]
     },
+    "bashkir-rebellion-of-1704-1711": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-at-the-lizard": {
       "from": "git",
       "versions": [
@@ -641,6 +659,15 @@
       ]
     },
     "battle-of-almenar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-ambur": {
       "from": "git",
       "versions": [
         {
@@ -1635,6 +1662,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-khyber-pass-1738": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

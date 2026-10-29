@@ -752,6 +752,15 @@
         }
       ]
     },
+    "rebellion-of-cao-qin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "rout-of-ludford-bridge": {
       "from": "git",
       "versions": [
@@ -839,6 +848,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "siege-of-samarkand-1497": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

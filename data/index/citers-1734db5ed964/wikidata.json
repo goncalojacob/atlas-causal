@@ -1856,6 +1856,12 @@
     },
     {
       "dissent": false,
+      "id": "1721-tabriz-earthquake",
+      "kind": "event",
+      "locator": "Q4552537"
+    },
+    {
+      "dissent": false,
       "id": "1733-slave-insurrection-on-st-john",
       "kind": "event",
       "locator": "Q4552666"
@@ -1991,6 +1997,12 @@
       "id": "1842-slave-revolt-in-the-cherokee-nation",
       "kind": "event",
       "locator": "Q4554596"
+    },
+    {
+      "dissent": false,
+      "id": "1847-zenkoji-earthquake",
+      "kind": "event",
+      "locator": "Q11418893"
     },
     {
       "dissent": false,
@@ -3980,6 +3992,12 @@
     },
     {
       "dissent": false,
+      "id": "baikal-insurrection",
+      "kind": "event",
+      "locator": "Q4242030"
+    },
+    {
+      "dissent": false,
       "id": "bakhchisarai-war-1525",
       "kind": "event",
       "locator": "Q111940658"
@@ -4103,6 +4121,12 @@
       "id": "bashkir-rebellion-of-1662-1664",
       "kind": "event",
       "locator": "Q4080178"
+    },
+    {
+      "dissent": false,
+      "id": "bashkir-rebellion-of-1704-1711",
+      "kind": "event",
+      "locator": "Q2019589"
     },
     {
       "dissent": false,
@@ -4388,6 +4412,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ambur",
+      "kind": "event",
+      "locator": "Q4870289"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ammal",
       "kind": "event",
       "locator": "Q28717525"
@@ -4499,6 +4529,12 @@
       "id": "battle-of-arcole",
       "kind": "event",
       "locator": "Q776609"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-argaon",
+      "kind": "event",
+      "locator": "Q2887871"
     },
     {
       "dissent": false,
@@ -6752,6 +6788,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-herat-1598",
+      "kind": "event",
+      "locator": "Q16537278"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-herbsthausen",
       "kind": "event",
       "locator": "Q913821"
@@ -6893,6 +6935,12 @@
       "id": "battle-of-ile-ronde",
       "kind": "event",
       "locator": "Q19902501"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-imafuku",
+      "kind": "event",
+      "locator": "Q2274112"
     },
     {
       "dissent": false,
@@ -7178,6 +7226,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kannagawa",
+      "kind": "event",
+      "locator": "Q1058786"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kapyong",
       "kind": "event",
       "locator": "Q713018"
@@ -7277,6 +7331,12 @@
       "id": "battle-of-khotyn-1673",
       "kind": "event",
       "locator": "Q3636391"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-khyber-pass-1738",
+      "kind": "event",
+      "locator": "Q18124347"
     },
     {
       "dissent": false,
@@ -7643,6 +7703,12 @@
       "id": "battle-of-las-tres-acequias",
       "kind": "event",
       "locator": "Q4871541"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-laswari",
+      "kind": "event",
+      "locator": "Q4087440"
     },
     {
       "dissent": false,
@@ -8216,6 +8282,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mimasetoge",
+      "kind": "event",
+      "locator": "Q1133861"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mimigawa",
+      "kind": "event",
+      "locator": "Q4871739"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-minden",
       "kind": "event",
       "locator": "Q683044"
@@ -8699,6 +8777,12 @@
       "id": "battle-of-ocana",
       "kind": "event",
       "locator": "Q601872"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-odaihara",
+      "kind": "event",
+      "locator": "Q1056249"
     },
     {
       "dissent": false,
@@ -9776,6 +9860,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-shigino",
+      "kind": "event",
+      "locator": "Q2274135"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-shiloh",
       "kind": "event",
       "locator": "Q943277"
@@ -9791,6 +9881,12 @@
       "id": "battle-of-shimonoseki-straits",
       "kind": "event",
       "locator": "Q2889974"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-shiojiritoge",
+      "kind": "event",
+      "locator": "Q1076079"
     },
     {
       "dissent": false,
@@ -9911,6 +10007,12 @@
       "id": "battle-of-sobraon",
       "kind": "event",
       "locator": "Q1573825"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sokhoista",
+      "kind": "event",
+      "locator": "Q4872408"
     },
     {
       "dissent": false,
@@ -10835,6 +10937,12 @@
       "id": "battle-of-tudela",
       "kind": "event",
       "locator": "Q2427013"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tukaroi",
+      "kind": "event",
+      "locator": "Q3297309"
     },
     {
       "dissent": false,
@@ -19106,6 +19214,12 @@
     },
     {
       "dissent": false,
+      "id": "rebellion-of-cao-qin",
+      "kind": "event",
+      "locator": "Q7302105"
+    },
+    {
+      "dissent": false,
       "id": "rebellion-of-the-alpujarras-1568-1571",
       "kind": "event",
       "locator": "Q685757"
@@ -19688,6 +19802,12 @@
     },
     {
       "dissent": false,
+      "id": "safavid-capture-of-tabriz-1603",
+      "kind": "event",
+      "locator": "Q5935848"
+    },
+    {
+      "dissent": false,
       "id": "safavid-invasions-of-basra",
       "kind": "event",
       "locator": "Q125496718"
@@ -19973,6 +20093,12 @@
       "id": "second-battle-of-seoul",
       "kind": "event",
       "locator": "Q646336"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-simtokha-dzong",
+      "kind": "event",
+      "locator": "Q2564494"
     },
     {
       "dissent": false,
@@ -20459,6 +20585,12 @@
       "id": "siege-of-agadir-1533",
       "kind": "event",
       "locator": "Q126727785"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-akhoulgo",
+      "kind": "event",
+      "locator": "Q4116960"
     },
     {
       "dissent": false,
@@ -21038,6 +21170,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-futamata",
+      "kind": "event",
+      "locator": "Q1014528"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-genoa-1522",
       "kind": "event",
       "locator": "Q9291683"
@@ -21089,6 +21227,18 @@
       "id": "siege-of-isfahan",
       "kind": "event",
       "locator": "Q5913740"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-itami-1579",
+      "kind": "event",
+      "locator": "Q7510108"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-iwamura-castle",
+      "kind": "event",
+      "locator": "Q2593996"
     },
     {
       "dissent": false,
@@ -21215,6 +21365,18 @@
       "id": "siege-of-koszeg",
       "kind": "event",
       "locator": "Q673641"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kumamoto-castle",
+      "kind": "event",
+      "locator": "Q7510168"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kuwabara",
+      "kind": "event",
+      "locator": "Q304135"
     },
     {
       "dissent": false,
@@ -21434,6 +21596,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-miki",
+      "kind": "event",
+      "locator": "Q11242477"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-minden",
       "kind": "event",
       "locator": "Q136735759"
@@ -21587,6 +21755,12 @@
       "id": "siege-of-osaka",
       "kind": "event",
       "locator": "Q475780"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-oshi",
+      "kind": "event",
+      "locator": "Q15663170"
     },
     {
       "dissent": false,
@@ -21818,6 +21992,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-samarkand-1497",
+      "kind": "event",
+      "locator": "Q7510367"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-savannah-1779",
       "kind": "event",
       "locator": "Q2744875"
@@ -21833,6 +22013,12 @@
       "id": "siege-of-sevastopol-1854-1855",
       "kind": "event",
       "locator": "Q815216"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-shigisan",
+      "kind": "event",
+      "locator": "Q6132231"
     },
     {
       "dissent": false,
@@ -21932,6 +22118,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-tottori",
+      "kind": "event",
+      "locator": "Q7510455"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-toulon-1707",
       "kind": "event",
       "locator": "Q708610"
@@ -21953,6 +22145,12 @@
       "id": "siege-of-tournai-1745",
       "kind": "event",
       "locator": "Q16677044"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-toyama",
+      "kind": "event",
+      "locator": "Q997625"
     },
     {
       "dissent": false,
@@ -21995,6 +22193,12 @@
       "id": "siege-of-ulsan",
       "kind": "event",
       "locator": "Q490935"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-uozu",
+      "kind": "event",
+      "locator": "Q11172490"
     },
     {
       "dissent": false,
@@ -22469,6 +22673,12 @@
       "id": "spanish-flu",
       "kind": "event",
       "locator": "Q178275"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-moro-conflict",
+      "kind": "event",
+      "locator": "Q6355746"
     },
     {
       "dissent": false,

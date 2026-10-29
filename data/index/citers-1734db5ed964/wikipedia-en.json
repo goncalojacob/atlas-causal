@@ -10268,6 +10268,12 @@
     },
     {
       "dissent": false,
+      "id": "1721-tabriz-earthquake",
+      "kind": "event",
+      "locator": "\"1721 Tabriz earthquake\", revision 1366163623"
+    },
+    {
+      "dissent": false,
       "id": "1733-slave-insurrection-on-st-john",
       "kind": "event",
       "locator": "\"1733 slave insurrection on St. John\", revision 1378560675"
@@ -10403,6 +10409,12 @@
       "id": "1842-slave-revolt-in-the-cherokee-nation",
       "kind": "event",
       "locator": "\"1842 Slave Revolt in the Cherokee Nation\", revision 1367564184"
+    },
+    {
+      "dissent": false,
+      "id": "1847-zenkoji-earthquake",
+      "kind": "event",
+      "locator": "\"1847 Zenkoji earthquake\", revision 1366164234"
     },
     {
       "dissent": false,
@@ -12308,6 +12320,12 @@
     },
     {
       "dissent": false,
+      "id": "baikal-insurrection",
+      "kind": "event",
+      "locator": "\"Baikal Insurrection\", revision 1370430001"
+    },
+    {
+      "dissent": false,
       "id": "bakhtrioni-uprising",
       "kind": "event",
       "locator": "\"Bakhtrioni uprising\", revision 1381856172"
@@ -12419,6 +12437,12 @@
       "id": "bashkir-rebellion-of-1662-1664",
       "kind": "event",
       "locator": "\"Bashkir rebellion of 1662–1664\", revision 1370430433"
+    },
+    {
+      "dissent": false,
+      "id": "bashkir-rebellion-of-1704-1711",
+      "kind": "event",
+      "locator": "\"Bashkir rebellion of 1704–1711\", revision 1377838076"
     },
     {
       "dissent": false,
@@ -12698,6 +12722,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ambur",
+      "kind": "event",
+      "locator": "\"Battle of Ambur\", revision 1378418870"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ammal",
       "kind": "event",
       "locator": "\"Battle of Ammal\", revision 1370106710"
@@ -12809,6 +12839,12 @@
       "id": "battle-of-arcole",
       "kind": "event",
       "locator": "\"Battle of Arcole\", revision 1379687387"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-argaon",
+      "kind": "event",
+      "locator": "\"Battle of Argaon\", revision 1370106949"
     },
     {
       "dissent": false,
@@ -15044,6 +15080,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-herat-1598",
+      "kind": "event",
+      "locator": "\"Battle of Herat (1598)\", revision 1378916159"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-herbsthausen",
       "kind": "event",
       "locator": "\"Battle of Herbsthausen\", revision 1370442917"
@@ -15191,6 +15233,12 @@
       "id": "battle-of-ile-ronde",
       "kind": "event",
       "locator": "\"Battle of Île Ronde\", revision 1370602888"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-imafuku",
+      "kind": "event",
+      "locator": "\"Battle of Imafuku\", revision 1370265990"
     },
     {
       "dissent": false,
@@ -15470,6 +15518,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kannagawa",
+      "kind": "event",
+      "locator": "\"Battle of Kannagawa\", revision 1381722908"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kapyong",
       "kind": "event",
       "locator": "\"Battle of Kapyong\", revision 1376150205"
@@ -15569,6 +15623,12 @@
       "id": "battle-of-khotyn-1673",
       "kind": "event",
       "locator": "\"Battle of Khotyn (1673)\", revision 1375563491"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-khyber-pass-1738",
+      "kind": "event",
+      "locator": "\"Battle of Khyber Pass (1738)\", revision 1370445280"
     },
     {
       "dissent": false,
@@ -15935,6 +15995,12 @@
       "id": "battle-of-las-tres-acequias",
       "kind": "event",
       "locator": "\"Battle of Las Tres Acequias\", revision 1370447283"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-laswari",
+      "kind": "event",
+      "locator": "\"Battle of Laswari\", revision 1379234057"
     },
     {
       "dissent": false,
@@ -16508,6 +16574,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mimasetoge",
+      "kind": "event",
+      "locator": "\"Battle of Mimasetoge\", revision 1370449835"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mimigawa",
+      "kind": "event",
+      "locator": "\"Battle of Mimigawa\", revision 1373645344"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-minden",
       "kind": "event",
       "locator": "\"Battle of Minden\", revision 1380383430"
@@ -16979,6 +17057,12 @@
       "id": "battle-of-ocana",
       "kind": "event",
       "locator": "\"Battle of Ocaña\", revision 1370452037"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-odaihara",
+      "kind": "event",
+      "locator": "\"Battle of Odaihara\", revision 1370452065"
     },
     {
       "dissent": false,
@@ -18068,6 +18152,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-shigino",
+      "kind": "event",
+      "locator": "\"Battle of Shigino\", revision 1370274201"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-shiloh",
       "kind": "event",
       "locator": "\"Battle of Shiloh\", revision 1379069369"
@@ -18083,6 +18173,12 @@
       "id": "battle-of-shimonoseki-straits",
       "kind": "event",
       "locator": "\"Battle of Shimonoseki Straits\", revision 1373598186"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-shiojiritoge",
+      "kind": "event",
+      "locator": "\"Battle of Shiojiritoge\", revision 1370274219"
     },
     {
       "dissent": false,
@@ -18203,6 +18299,12 @@
       "id": "battle-of-sobraon",
       "kind": "event",
       "locator": "\"Battle of Sobraon\", revision 1378592214"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sokhoista",
+      "kind": "event",
+      "locator": "\"Battle of Sokhoista\", revision 1370786013"
     },
     {
       "dissent": false,
@@ -19139,6 +19241,12 @@
       "id": "battle-of-tudela",
       "kind": "event",
       "locator": "\"Battle of Tudela\", revision 1370591732"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tukaroi",
+      "kind": "event",
+      "locator": "\"Battle of Tukaroi\", revision 1370591751"
     },
     {
       "dissent": false,
@@ -27320,6 +27428,12 @@
     },
     {
       "dissent": false,
+      "id": "rebellion-of-cao-qin",
+      "kind": "event",
+      "locator": "\"Rebellion of Cao Qin\", revision 1370706425"
+    },
+    {
+      "dissent": false,
       "id": "rebellion-of-the-alpujarras-1568-1571",
       "kind": "event",
       "locator": "\"Rebellion of the Alpujarras (1568–1571)\", revision 1381401508"
@@ -27884,6 +27998,12 @@
     },
     {
       "dissent": false,
+      "id": "safavid-capture-of-tabriz-1603",
+      "kind": "event",
+      "locator": "\"Safavid capture of Tabriz (1603)\", revision 1370729781"
+    },
+    {
+      "dissent": false,
       "id": "safavid-invasions-of-basra",
       "kind": "event",
       "locator": "\"Safavid invasions of Basra\", revision 1378917348"
@@ -28163,6 +28283,12 @@
       "id": "second-battle-of-seoul",
       "kind": "event",
       "locator": "\"Second Battle of Seoul\", revision 1370736593"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-simtokha-dzong",
+      "kind": "event",
+      "locator": "\"Second Battle of Simtokha Dzong\", revision 1370736595"
     },
     {
       "dissent": false,
@@ -28601,6 +28727,12 @@
       "id": "siege-of-agadir-1533",
       "kind": "event",
       "locator": "\"Siege of Agadir (1533)\", revision 1370738512"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-akhoulgo",
+      "kind": "event",
+      "locator": "\"Siege of Akhoulgo\", revision 1370738573"
     },
     {
       "dissent": false,
@@ -29168,6 +29300,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-futamata",
+      "kind": "event",
+      "locator": "\"Siege of Futamata\", revision 1370741346"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-genoa-1522",
       "kind": "event",
       "locator": "\"Siege of Genoa (1522)\", revision 1370741464"
@@ -29213,6 +29351,18 @@
       "id": "siege-of-isfahan",
       "kind": "event",
       "locator": "\"Siege of Isfahan\", revision 1378917474"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-itami-1579",
+      "kind": "event",
+      "locator": "\"Siege of Itami (1579)\", revision 1373666581"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-iwamura-castle",
+      "kind": "event",
+      "locator": "\"Siege of Iwamura Castle\", revision 1370742030"
     },
     {
       "dissent": false,
@@ -29339,6 +29489,18 @@
       "id": "siege-of-koszeg",
       "kind": "event",
       "locator": "\"Siege of Kőszeg\", revision 1375078191"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kumamoto-castle",
+      "kind": "event",
+      "locator": "\"Siege of Kumamoto Castle\", revision 1370742652"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kuwabara",
+      "kind": "event",
+      "locator": "\"Siege of Kuwabara\", revision 1370742678"
     },
     {
       "dissent": false,
@@ -29558,6 +29720,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-miki",
+      "kind": "event",
+      "locator": "\"Siege of Miki\", revision 1370743521"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-minden",
       "kind": "event",
       "locator": "\"Siege of Minden\", revision 1370743541"
@@ -29711,6 +29879,12 @@
       "id": "siege-of-osaka",
       "kind": "event",
       "locator": "\"Siege of Osaka\", revision 1378683811"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-oshi",
+      "kind": "event",
+      "locator": "\"Siege of Oshi\", revision 1370744223"
     },
     {
       "dissent": false,
@@ -29942,6 +30116,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-samarkand-1497",
+      "kind": "event",
+      "locator": "\"Siege of Samarkand (1497)\", revision 1370744965"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-savannah-1779",
       "kind": "event",
       "locator": "\"Siege of Savannah (1779)\", revision 1380550458"
@@ -29957,6 +30137,12 @@
       "id": "siege-of-sevastopol-1854-1855",
       "kind": "event",
       "locator": "\"Siege of Sevastopol (1854–1855)\", revision 1372251749"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-shigisan",
+      "kind": "event",
+      "locator": "\"Siege of Shigisan\", revision 1376553137"
     },
     {
       "dissent": false,
@@ -30056,6 +30242,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-tottori",
+      "kind": "event",
+      "locator": "\"Siege of Tottori\", revision 1370745908"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-toulon-1707",
       "kind": "event",
       "locator": "\"Siege of Toulon (1707)\", revision 1382486452"
@@ -30077,6 +30269,12 @@
       "id": "siege-of-tournai-1745",
       "kind": "event",
       "locator": "\"Siege of Tournai (1745)\", revision 1370745959"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-toyama",
+      "kind": "event",
+      "locator": "\"Siege of Toyama\", revision 1370745965"
     },
     {
       "dissent": false,
@@ -30119,6 +30317,12 @@
       "id": "siege-of-ulsan",
       "kind": "event",
       "locator": "\"Siege of Ulsan\", revision 1370746161"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-uozu",
+      "kind": "event",
+      "locator": "\"Siege of Uozu\", revision 1376565112"
     },
     {
       "dissent": false,
@@ -30605,6 +30809,12 @@
       "id": "spanish-flu",
       "kind": "event",
       "locator": "\"Spanish flu\", revision 1379623881"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-moro-conflict",
+      "kind": "event",
+      "locator": "\"Spanish–Moro conflict\", revision 1380466030"
     },
     {
       "dissent": false,
