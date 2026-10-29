@@ -191,6 +191,15 @@
         }
       ]
     },
+    "battle-of-calven": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-castillon": {
       "from": "git",
       "versions": [
@@ -210,6 +219,15 @@
       ]
     },
     "battle-of-cravant": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-crevola": {
       "from": "git",
       "versions": [
         {
@@ -291,6 +309,15 @@
       ]
     },
     "battle-of-guinea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-guinegate-1479": {
       "from": "git",
       "versions": [
         {
@@ -389,6 +416,15 @@
         }
       ]
     },
+    "battle-of-montlhery": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-morat": {
       "from": "git",
       "versions": [
@@ -434,6 +470,15 @@
         }
       ]
     },
+    "battle-of-ohrid": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-otlukbeli": {
       "from": "git",
       "versions": [
@@ -453,6 +498,24 @@
       ]
     },
     "battle-of-saint-aubin-du-cormier-1488": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-sandwich-1460": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-seminara": {
       "from": "git",
       "versions": [
         {
@@ -641,6 +704,15 @@
         }
       ]
     },
+    "battle-of-zlatitsa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-zonchio": {
       "from": "git",
       "versions": [
@@ -683,6 +755,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "concordat-of-vienna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -800,6 +881,15 @@
         }
       ]
     },
+    "first-margrave-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "golub-war": {
       "from": "git",
       "versions": [
@@ -842,6 +932,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "hundred-years-war-1415-1453": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1010,6 +1109,15 @@
         }
       ]
     },
+    "lithuanian-muscovite-war-1487-1494": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "mad-war": {
       "from": "git",
       "versions": [
@@ -1166,6 +1274,15 @@
         }
       ]
     },
+    "persecution-of-jews-and-muslims-by-manuel-i-of-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "polish-ottoman-war-1485-1503": {
       "from": "git",
       "versions": [
@@ -1199,6 +1316,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "portuguese-expedition-to-otranto": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1337,6 +1463,15 @@
         }
       ]
     },
+    "siege-of-meaux": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-negroponte-1470": {
       "from": "git",
       "versions": [
@@ -1374,6 +1509,15 @@
       ]
     },
     "siege-of-samarkand-1497": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-svetigrad": {
       "from": "git",
       "versions": [
         {
@@ -1775,6 +1919,15 @@
       ]
     },
     "union-of-krakow-and-vilna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "vienna-gesera": {
       "from": "git",
       "versions": [
         {

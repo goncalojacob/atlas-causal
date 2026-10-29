@@ -413,6 +413,15 @@
         }
       ]
     },
+    "battle-of-arques": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-azemmour": {
       "from": "git",
       "versions": [
@@ -2017,6 +2026,15 @@
         }
       ]
     },
+    "battle-of-san-juan-de-ulua-1568": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-sangju-1592": {
       "from": "git",
       "versions": [
@@ -2441,6 +2459,15 @@
         }
       ]
     },
+    "battle-of-villalar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-wadi-al-laban": {
       "from": "git",
       "versions": [
@@ -2654,7 +2681,25 @@
         }
       ]
     },
+    "capture-of-breda-1581": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "capture-of-brielle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "capture-of-cadiz-1596": {
       "from": "git",
       "versions": [
         {
@@ -2828,6 +2873,15 @@
         }
       ]
     },
+    "colloquy-of-poissy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "cologne-war": {
       "from": "git",
       "versions": [
@@ -2964,6 +3018,15 @@
       ]
     },
     "dalecarlian-rebellions": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "dano-swedish-war-1501-1512": {
       "from": "git",
       "versions": [
         {
@@ -3297,6 +3360,15 @@
       ]
     },
     "guelders-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "habsburg-ottoman-war-of-1540-1547": {
       "from": "git",
       "versions": [
         {
@@ -3648,12 +3720,37 @@
         }
       ]
     },
+    "list-of-indigenous-rebellions-in-mexico-and-central-america": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        },
+        {
+          "fields": [
+            "created",
+            "sitelinks"
+          ],
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "livonian-war": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "loaisa-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3768,6 +3865,15 @@
         }
       ]
     },
+    "merindol-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "michelade": {
       "from": "git",
       "versions": [
@@ -3810,6 +3916,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "narvaez-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3949,6 +4064,15 @@
       ]
     },
     "ottoman-portuguese-conflicts-1586-1589": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "ottoman-raid-on-the-balearic-islands-1501": {
       "from": "git",
       "versions": [
         {

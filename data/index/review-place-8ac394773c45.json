@@ -2674,6 +2674,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "arques-la-bataille",
+      "kind": "place",
+      "names": [
+        "Arques-la-Bataille"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "arrah",
@@ -3947,6 +3974,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "balearic-islands",
+      "kind": "place",
+      "names": [
+        "Balearic Islands",
+        "Ilhas Baleares"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 2,
       "id": "bali-island",
@@ -4005,7 +4060,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 9,
+      "degree": 10,
       "id": "balkans",
       "kind": "place",
       "names": [
@@ -4292,6 +4347,33 @@
       "names": [
         "Bantry Bay",
         "Baía de Bantry"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "bapaume",
+      "kind": "place",
+      "names": [
+        "Bapaume"
       ],
       "origin": {
         "tool": "wikidata"
@@ -5157,6 +5239,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "bay-of-cadiz",
+      "kind": "place",
+      "names": [
+        "Bay of Cádiz",
+        "Baía de Cádis"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 2,
       "id": "bay-of-fundy",
@@ -5685,6 +5795,33 @@
       "names": [
         "eMakhazeni",
         "Belfast, Mpumalanga"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "belfort",
+      "kind": "place",
+      "names": [
+        "Belfort"
       ],
       "origin": {
         "tool": "wikidata"
@@ -7454,7 +7591,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 2,
+      "degree": 3,
       "id": "breda",
       "kind": "place",
       "names": [
@@ -8235,7 +8372,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 8,
+      "degree": 11,
       "id": "bulgaria-q219",
       "kind": "place",
       "names": [
@@ -12976,6 +13113,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "crevoladossola",
+      "kind": "place",
+      "names": [
+        "Crevoladossola"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -16653,7 +16817,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 2,
       "id": "enguinegatte",
       "kind": "place",
       "names": [
@@ -22002,7 +22166,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 3,
       "id": "hamburg-q1055",
       "kind": "place",
       "names": [
@@ -28181,6 +28345,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "kodzadzik",
+      "kind": "place",
+      "names": [
+        "Kodžadžik"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "kolding",
@@ -31568,7 +31759,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 24,
+      "degree": 26,
       "id": "london",
       "kind": "place",
       "names": [
@@ -34532,7 +34723,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "meaux",
       "kind": "place",
       "names": [
@@ -35394,7 +35585,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 14,
+      "degree": 15,
       "id": "mexico-q96",
       "kind": "place",
       "names": [
@@ -36734,6 +36925,33 @@
         "Montijo",
         "Montijo, Spain",
         "Montijo (Espanha)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "montlhery",
+      "kind": "place",
+      "names": [
+        "Montlhéry"
       ],
       "origin": {
         "tool": "wikidata"
@@ -38655,7 +38873,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "nazi-germany-q7318",
       "kind": "place",
       "names": [
@@ -40646,6 +40864,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "ohrid",
+      "kind": "place",
+      "names": [
+        "Ohrid",
+        "Ocrida"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "oklahoma",
@@ -41116,7 +41362,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "orleans",
       "kind": "place",
       "names": [
@@ -42008,7 +42254,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 30,
+      "degree": 31,
       "id": "paris",
       "kind": "place",
       "names": [
@@ -43675,6 +43921,33 @@
         "Point Pleasant",
         "Point Pleasant, West Virginia",
         "Point Pleasant (Virgínia Ocidental)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "poissy",
+      "kind": "place",
+      "names": [
+        "Poissy"
       ],
       "origin": {
         "tool": "wikidata"
@@ -48843,7 +49116,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "san-juan-de-ulua",
       "kind": "place",
       "names": [
@@ -49159,6 +49432,35 @@
       "kind": "place",
       "names": [
         "Sanandaj"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "sandwich-kent",
+      "kind": "place",
+      "names": [
+        "Sandwich",
+        "Sandwich, Kent",
+        "Sandwich (Kent)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -49929,7 +50231,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 4,
+      "degree": 5,
       "id": "scandinavia",
       "kind": "place",
       "names": [
@@ -50158,6 +50460,33 @@
       "kind": "place",
       "names": [
         "Segeneiti"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "seminara",
+      "kind": "place",
+      "names": [
+        "Seminara"
       ],
       "origin": {
         "tool": "wikidata"
@@ -52489,7 +52818,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 2,
+      "degree": 3,
       "id": "spanish-empire",
       "kind": "place",
       "names": [
@@ -55366,6 +55695,34 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "the-liberties-dublin",
+      "kind": "place",
+      "names": [
+        "The Liberties",
+        "The Liberties, Dublin"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "the-lizard",
       "kind": "place",
       "names": [
@@ -58168,6 +58525,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "val-mustair",
+      "kind": "place",
+      "names": [
+        "Val Müstair"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "valcour-island",
@@ -58449,6 +58833,33 @@
       "kind": "place",
       "names": [
         "Vannarpannai"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "varese",
+      "kind": "place",
+      "names": [
+        "Varese"
       ],
       "origin": {
         "tool": "wikidata"
@@ -59051,6 +59462,33 @@
         }
       ],
       "created": "2026-10-29",
+      "degree": 1,
+      "id": "villalar-de-los-comuneros",
+      "kind": "place",
+      "names": [
+        "Villalar de los Comuneros"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
       "degree": 3,
       "id": "vilnius",
       "kind": "place",
@@ -59337,6 +59775,34 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "volturno",
+      "kind": "place",
+      "names": [
+        "Volturno",
+        "Rio Volturno"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
