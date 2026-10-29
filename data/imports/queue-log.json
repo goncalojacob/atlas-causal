@@ -50181,6 +50181,227 @@
       },
       "refusals": [],
       "note": "Q10843835: none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-europe-411",
+      "writer": "A",
+      "fired": "2026-10-29T17:28Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q16427723: none of its classes (Q30103545) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-europe-412",
+      "writer": "A",
+      "fired": "2026-10-29T17:28Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q96360043: none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-americas-146",
+      "writer": "A",
+      "fired": "2026-10-29T17:28Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2100118: none of its classes (Q30103545) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-asia-263",
+      "writer": "A",
+      "fired": "2026-10-29T17:28Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3530500: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-265",
+      "writer": "A",
+      "fired": "2026-10-29T17:28Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q106830288: no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    {
+      "id": "2026-10-29-asia-267",
+      "writer": "A",
+      "fired": "2026-10-29T17:28Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2001581: none of its classes (Q6963731) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-americas-147",
+      "writer": "A",
+      "fired": "2026-10-29T17:28Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q170652: none of its classes (Q205418) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-europe-413",
+      "writer": "A",
+      "fired": "2026-10-29T17:28Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q641335: none of its classes (Q121742) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-americas-148",
+      "writer": "A",
+      "fired": "2026-10-29T17:28Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q932149: none of its classes (Q205418) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-asia-261",
+      "writer": "B",
+      "fired": "2026-10-29T17:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4940602: none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-africa-037",
+      "writer": "B",
+      "fired": "2026-10-29T17:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q86458874: none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-asia-262",
+      "writer": "B",
+      "fired": "2026-10-29T17:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q27675: no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    {
+      "id": "2026-10-29-asia-264",
+      "writer": "B",
+      "fired": "2026-10-29T17:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3530493: no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    {
+      "id": "2026-10-29-asia-266",
+      "writer": "B",
+      "fired": "2026-10-29T17:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q106867810: no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    {
+      "id": "2026-10-29-asia-268",
+      "writer": "B",
+      "fired": "2026-10-29T17:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q715495: none of its classes (Q7446977, Q727990) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-asia-269",
+      "writer": "B",
+      "fired": "2026-10-29T17:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4549898: none of its classes (Q6963731) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-asia-270",
+      "writer": "B",
+      "fired": "2026-10-29T17:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q19881323: none of its classes (Q61071643) is in data/imports/wikidata-seeds.json → classes"
     }
   ]
 }
