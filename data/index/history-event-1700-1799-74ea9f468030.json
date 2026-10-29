@@ -448,6 +448,15 @@
         }
       ]
     },
+    "action-of-8-april-1740": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "action-of-8-january-1780": {
       "from": "git",
       "versions": [
@@ -2661,6 +2670,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-point-pleasant": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

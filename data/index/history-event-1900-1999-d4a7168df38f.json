@@ -25659,6 +25659,15 @@
         }
       ]
     },
+    "whitman-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "winter-war": {
       "from": "git",
       "versions": [

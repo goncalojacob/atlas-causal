@@ -2342,7 +2342,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 11,
+      "degree": 12,
       "id": "argentina-q414",
       "kind": "place",
       "names": [
@@ -2583,6 +2583,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "arroyo-catalan-grande",
+      "kind": "place",
+      "names": [
+        "Arroyo Catalán Grande"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -3009,7 +3036,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 3,
       "id": "ayacucho",
       "kind": "place",
       "names": [
@@ -3426,6 +3453,33 @@
         "Baden",
         "Baden, Switzerland",
         "Baden (Suíça)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "bage",
+      "kind": "place",
+      "names": [
+        "Bagé"
       ],
       "origin": {
         "tool": "wikidata"
@@ -4175,6 +4229,33 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "batoche",
+      "kind": "place",
+      "names": [
+        "Batoche"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "batocina",
       "kind": "place",
       "names": [
@@ -4346,6 +4427,33 @@
       "kind": "place",
       "names": [
         "Battle of Crysler's Farm National Historic Site"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "battle-of-cut-knife-hill-national-historic-site",
+      "kind": "place",
+      "names": [
+        "Battle of Cut Knife Hill National Historic Site"
       ],
       "origin": {
         "tool": "wikidata"
@@ -6794,7 +6902,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 7,
+      "degree": 8,
       "id": "brazil-q155",
       "kind": "place",
       "names": [
@@ -8259,6 +8367,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "camaguey",
+      "kind": "place",
+      "names": [
+        "Camagüey"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "camaret-sur-mer",
@@ -8594,7 +8729,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 3,
       "id": "captaincy-general-of-the-philippines",
       "kind": "place",
       "names": [
@@ -8725,6 +8860,33 @@
         "status": "draft"
       },
       "revised": "2026-10-13",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "carmen-de-patagones",
+      "kind": "place",
+      "names": [
+        "Carmen de Patagones"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -9237,7 +9399,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 2,
+      "degree": 3,
       "id": "cavite-city",
       "kind": "place",
       "names": [
@@ -9779,6 +9941,33 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "chalchuapa",
+      "kind": "place",
+      "names": [
+        "Chalchuapa"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -10565,7 +10754,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 7,
       "id": "chile-q298",
       "kind": "place",
       "names": [
@@ -14770,7 +14959,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 4,
+      "degree": 5,
       "id": "ecuador-q736",
       "kind": "place",
       "names": [
@@ -15430,6 +15619,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "ensenada-buenos-aires",
+      "kind": "place",
+      "names": [
+        "Ensenada",
+        "Ensenada, Buenos Aires"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -17731,6 +17948,33 @@
       "names": [
         "Friuli",
         "Friul"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "frog-lake-national-historic-site",
+      "kind": "place",
+      "names": [
+        "Frog Lake National Historic Site"
       ],
       "origin": {
         "tool": "wikidata"
@@ -24532,6 +24776,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "juncal-island",
+      "kind": "place",
+      "names": [
+        "Juncal Island",
+        "Ilha Juncal"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "juterbog",
@@ -25454,6 +25726,34 @@
       "names": [
         "Kawagoe",
         "Kawagoe, Saitama"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "kayseri",
+      "kind": "place",
+      "names": [
+        "Kayseri",
+        "Caiseri"
       ],
       "origin": {
         "tool": "wikidata"
@@ -29238,6 +29538,33 @@
       "kind": "place",
       "names": [
         "Lille"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "lima",
+      "kind": "place",
+      "names": [
+        "Lima"
       ],
       "origin": {
         "tool": "wikidata"
@@ -34362,7 +34689,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "monterrey",
       "kind": "place",
       "names": [
@@ -40171,7 +40498,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 11,
+      "degree": 12,
       "id": "peru-q419",
       "kind": "place",
       "names": [
@@ -40479,7 +40806,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 35,
+      "degree": 37,
       "id": "philippines-q928",
       "kind": "place",
       "names": [
@@ -40953,6 +41280,35 @@
       "kind": "place",
       "names": [
         "Podolia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "point-pleasant-west-virginia",
+      "kind": "place",
+      "names": [
+        "Point Pleasant",
+        "Point Pleasant, West Virginia",
+        "Point Pleasant (Virgínia Ocidental)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -42876,6 +43232,34 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "quezon-city",
+      "kind": "place",
+      "names": [
+        "Quezon City",
+        "Cidade Quezon"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "quiberon-bay",
       "kind": "place",
       "names": [
@@ -43868,6 +44252,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "rincon-de-las-gallinas",
+      "kind": "place",
+      "names": [
+        "Rincón de las Gallinas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "ringstorp",
@@ -44053,6 +44464,35 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "rocha-uruguay",
+      "kind": "place",
+      "names": [
+        "Rocha",
+        "Rocha, Uruguay",
+        "Rocha (Uruguai)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -44984,6 +45424,34 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "saint-eustache-quebec",
+      "kind": "place",
+      "names": [
+        "Saint-Eustache",
+        "Saint-Eustache, Quebec"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "saint-germain-en-laye",
       "kind": "place",
       "names": [
@@ -45761,6 +46229,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "san-juan-de-ulua",
+      "kind": "place",
+      "names": [
+        "Castle of San Juan de Ulúa",
+        "Forte de San Juan de Ulúa",
+        "San Juan de Ulúa"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "san-juan-islands",
@@ -46466,6 +46963,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "sarandi-creek",
+      "kind": "place",
+      "names": [
+        "Sarandí creek",
+        "arroio Sarandi"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -48551,7 +49076,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 4,
+      "degree": 5,
       "id": "south-america",
       "kind": "place",
       "names": [
@@ -50876,6 +51401,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "tacuarembo",
+      "kind": "place",
+      "names": [
+        "Tacuarembó",
+        "Tacuarembó (cidade)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 1,
       "id": "tadla",
@@ -52011,6 +52564,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "the-lizard",
+      "kind": "place",
+      "names": [
+        "The Lizard"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -54427,6 +55007,33 @@
       "kind": "place",
       "names": [
         "Urmia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "uruguaiana",
+      "kind": "place",
+      "names": [
+        "Uruguaiana"
       ],
       "origin": {
         "tool": "wikidata"
