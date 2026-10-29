@@ -391,6 +391,15 @@
         }
       ]
     },
+    "bashkir-rebellion-of-1662-1664": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-in-the-bay-of-sao-salvador": {
       "from": "git",
       "versions": [
@@ -665,6 +674,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-domyoji": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1419,6 +1437,15 @@
         }
       ]
     },
+    "battle-of-pratapgarh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-pre-nitz": {
       "from": "git",
       "versions": [
@@ -1743,6 +1770,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-tennoji": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4072,6 +4108,15 @@
         }
       ]
     },
+    "siege-of-dimdim": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-dorsten": {
       "from": "git",
       "versions": [
@@ -4527,6 +4572,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-ueda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
