@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-longue-pointe",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2425434",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Longue-Pointe"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2425434"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Longue-Pointe\", revision 1370448005"
+    }
+  ],
+  "title": "Battle of Longue-Pointe",
+  "summary": "The English Wikipedia article \"Battle of Longue-Pointe\", at revision 1370448005, opens: \"The Battle of Longue-Pointe was an attempt by Ethan Allen and a small force of American and Quebec militia to capture Montreal from British forces on September 25, 1775, early in the American Revolutionary War. Allen, who had been instructed only to raise militia forces among the local inhabitants, had long had thoughts of taking the lightly defended city. When he reached the southern shore of the St. Lawrence River with about 110 men, he seized the opportunity to try. Major John Brown, whom Allen claimed was supposed to provide additional forces, did not appear as they had planned, isolating Allen and his men on the north side of the river.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2425434, imported by tools/import/wikidata.mjs. The item's own description reads \"1775 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1775,
+    "date": "1775-09-25"
+  },
+  "place": "montreal",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

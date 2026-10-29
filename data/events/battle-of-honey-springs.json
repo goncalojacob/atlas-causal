@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-honey-springs",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q592752",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Honey Springs"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q592752"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Honey Springs\", revision 1376380735"
+    }
+  ],
+  "title": "Battle of Honey Springs",
+  "summary": "The English Wikipedia article \"Battle of Honey Springs\", at revision 1376380735, opens: \"The Battle of Honey Springs, also known as the Affair at Elk Creek, on July 17, 1863, was an American Civil War engagement and an important victory for Union forces in their efforts to gain control of the Indian Territory. It was the largest confrontation between Union and Confederate forces in the area that would eventually become Oklahoma. The engagement was also unique in the fact that white soldiers were the minority in both fighting forces. Native Americans made up a significant portion of each of the opposing armies and the Union force contained African-American units.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q592752, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 American Civil War battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-07-17"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

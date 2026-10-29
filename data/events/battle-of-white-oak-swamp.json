@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-white-oak-swamp",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872730",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of White Oak Swamp"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872730"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of White Oak Swamp\", revision 1377991364"
+    }
+  ],
+  "title": "Battle of White Oak Swamp",
+  "summary": "The English Wikipedia article \"Battle of White Oak Swamp\", at revision 1377991364, opens: \"The Battle of White Oak Swamp took place on June 30, 1862, in Henrico County, Virginia, as part of the Seven Days Battles of the American Civil War. As the Union Army of the Potomac retreated southeast toward the James River, its rearguard under Maj. Gen. William B. Franklin stopped Maj. Gen. Thomas J. \"Stonewall\" Jackson's divisions at the White Oak Bridge crossing, resulting in an artillery duel, while the main Battle of Glendale raged two miles (3 km) farther south around Frayser's Farm. White Oak Swamp is generally considered to be part of the larger Glendale engagement. Because of this resistance from Brig. Gen. William B. Franklin's VI Corps, Jackson was prevented from joining the consolidated assault on the Union Army at Glendale that had been ordered by General Robert E. Lee, producing an inconclusive result, but one in which the Union Army avoided destruction and was able to assume a strong defensive position at Malvern Hill.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872730, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle in the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-06-30"
+  },
+  "place": "virginia-q1370",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

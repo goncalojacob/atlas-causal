@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-qbaada",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q130271137",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Qbaada"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q130271137"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Qbaada\", revision 1370272477"
+    }
+  ],
+  "title": "Battle of Qbaada",
+  "summary": "The English Wikipedia article \"Battle of Qbaada\", at revision 1370272477, opens: \"The Battle of Qbaada took place in today's Krasnaya Polyana on 2 June [O.S. 21 May] 1864. It is widely accepted as the final military engagement of the Russo-Circassian War, as the Circassian people could no longer continue to resist the invading Imperial Russian Army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q130271137, imported by tools/import/wikidata.mjs. The item's own description reads \"last battle of Russo-Circassian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-06-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "caucasian-war"
+}

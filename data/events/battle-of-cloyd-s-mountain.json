@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cloyd-s-mountain",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870766",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Cloyd's Mountain",
+    "pt": "Batalha da Montanha Cloyd"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870766"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cloyd's Mountain\", revision 1370437412"
+    }
+  ],
+  "title": "Battle of Cloyd's Mountain",
+  "summary": "The English Wikipedia article \"Battle of Cloyd's Mountain\", at revision 1370437412, opens: \"The Battle of Cloyd's Mountain occurred in Pulaski County, Virginia, on May 9, 1864, during the American Civil War. The fight has also been called the Battle of Cloyd's Farm. A Union Army division led by Brigadier General George Crook defeated a Confederate Army consisting of three regiments, one battalion, and Confederate Home Guard. The Confederate force was led by Brigadier General Albert G. Jenkins and Colonel John McCausland. Although the intense fighting portion of this battle may have lasted for only one hour, it was southwestern Virginia's largest fight of the Civil War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870766, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-05-09"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

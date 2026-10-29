@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-front-royal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2125491",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Front Royal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2125491"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Front Royal\", revision 1370441128"
+    }
+  ],
+  "title": "Battle of Front Royal",
+  "summary": "The English Wikipedia article \"Battle of Front Royal\", at revision 1370441128, opens: \"The Battle of Front Royal, also known as Guard Hill or Cedarville, was fought on May 23, 1862, during the American Civil War, as part of Jackson's Valley campaign. Confederate forces commanded by Major General Thomas J. \"Stonewall\" Jackson were trying to keep Union forces engaged in the Shenandoah Valley to prevent them from joining the Peninsula campaign. After defeating Major General John C. Frémont's force in the Battle of McDowell, Jackson turned against the forces of Major General Nathaniel Banks.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2125491, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-05-23"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

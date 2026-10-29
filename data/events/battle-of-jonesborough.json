@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-jonesborough",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2333674",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Jonesborough"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2333674"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Jonesborough\", revision 1370266424"
+    }
+  ],
+  "title": "Battle of Jonesborough",
+  "summary": "The English Wikipedia article \"Battle of Jonesborough\", at revision 1370266424, opens: \"The Battle of Jonesborough was fought between Union Army forces led by William Tecumseh Sherman and Confederate forces under William J. Hardee during the Atlanta campaign in the American Civil War. On the first day, on orders from Army of Tennessee commander John Bell Hood, Hardee's troops attacked the Federals and were repulsed with heavy losses. That evening, Hood ordered Hardee to send half his troops back to Atlanta. On the second day, five Union corps converged on Jonesborough. For the only time during the Atlanta Campaign, a major Federal frontal assault succeeded in breaching the Confederate defenses. The attack took 900 prisoners, but the defenders were able to halt the breakthrough and improvise new defenses. Despite facing overwhelming odds, Hardee's corps escaped undetected to the south that evening.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2333674, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-08-31",
+    "endDate": "1864-09-01"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

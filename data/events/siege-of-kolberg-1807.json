@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-kolberg-1807",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q574500",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Kolberg (1807)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q574500"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Kolberg (1807)\", revision 1371489403"
+    }
+  ],
+  "title": "Siege of Kolberg (1807)",
+  "summary": "The English Wikipedia article \"Siege of Kolberg (1807)\", at revision 1371489403, opens: \"The siege of Kolberg took place from March to 2 July 1807 during the War of the Fourth Coalition, part of the Napoleonic Wars. An army of the First French Empire and several foreign troops of France besieged the fortified town of Kolberg, the only remaining Prussian-held fortress in the Province of Pomerania. The siege was unsuccessful and was lifted upon the announcement of the Peace of Tilsit.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q574500, imported by tools/import/wikidata.mjs. The item's own description reads \"1807 Siege during the War of the Fourth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1807,
+    "end": 1807,
+    "date": "1807-03",
+    "endDate": "1807-07-02"
+  },
+  "place": "poland-q36",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-fourth-coalition"
+}

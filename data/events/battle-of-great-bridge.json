@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-great-bridge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q906018",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Great Bridge",
+    "pt": "Batalha da Grande Ponte"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q906018"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Great Bridge\", revision 1371430024"
+    }
+  ],
+  "title": "Battle of Great Bridge",
+  "summary": "The English Wikipedia article \"Battle of Great Bridge\", at revision 1371430024, opens: \"The Battle of Great Bridge was fought December 9, 1775, in the area of Great Bridge, Virginia, early in the American Revolutionary War. The refusal by colonial Virginia militia forces led to the departure of Royal Governor Lord Dunmore and any remaining vestiges of British power over the Colony of Virginia during the early days of the conflict.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q906018, imported by tools/import/wikidata.mjs. The item's own description reads \"1775 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1775,
+    "date": "1775-12-09"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

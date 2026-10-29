@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-lutterberg-1758",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q541362",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Lutterberg (1758)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q541362"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lutterberg (1758)\", revision 1370448309"
+    }
+  ],
+  "title": "Battle of Lutterberg (1758)",
+  "summary": "The English Wikipedia article \"Battle of Lutterberg (1758)\", at revision 1370448309, opens: \"The Battle of Lutterberg took place on 10 October 1758 during the Seven Years' War between a French force of 42,000 commanded by Charles, Prince of Soubise and a much smaller Anglo-German force commanded by General Christoph Ludwig von Oberg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q541362, imported by tools/import/wikidata.mjs. The item's own description reads \"battle 1758\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1758,
+    "end": 1758,
+    "date": "1758-10-10"
+  },
+  "place": "staufenberg-lower-saxony",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dano-algerian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q28949606",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Dano-Algerian War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q28949606"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dano-Algerian War\", revision 1370614743"
+    }
+  ],
+  "title": "Dano-Algerian War",
+  "summary": "The English Wikipedia article \"Dano-Algerian War\", at revision 1370614743, opens: \"The Dano-Algerian War was a conflict lasting from 1769 to 1772 between Denmark–Norway and the Regency of Algiers. The latter of which was functionally and mostly independent from the Ottoman Empire. It is also known as the Algerian Expedition, or in Denmark as The War Against Algeria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28949606, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1769,
+    "end": 1772,
+    "date": "1769-09-14",
+    "endDate": "1772-05-16"
+  },
+  "place": "denmark-q35",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

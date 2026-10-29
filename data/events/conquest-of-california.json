@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "conquest-of-california",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1411096",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Conquest of California"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1411096"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conquest of California\", revision 1378024326"
+    }
+  ],
+  "title": "Conquest of California",
+  "summary": "The English Wikipedia article \"Conquest of California\", at revision 1378024326, opens: \"The Conquest of California, also known as the Conquest of Alta California or the California Campaign, was a military campaign during the Mexican–American War carried out by the United States in Alta California, then part of Mexico, lasting from 1846 to 1847, and ending with signing of the Treaty of Cahuenga by military leaders from both the Californios and Americans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1411096, imported by tools/import/wikidata.mjs. The item's own description reads \"early military operation of the Mexican–American War where the United States was able to occupy and eventually annex Alta California\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1846,
+    "end": 1847,
+    "date": "1846-06-15",
+    "endDate": "1847-01-13"
+  },
+  "place": "alta-california",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mexican-american-war"
+}

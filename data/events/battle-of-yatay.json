@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-yatay",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3775020",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Yatay",
+    "pt": "Batalha de Jataí"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3775020"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Yatay\", revision 1372602725"
+    }
+  ],
+  "title": "Battle of Yatay",
+  "summary": "The English Wikipedia article \"Battle of Yatay\", at revision 1372602725, opens: \"In the Paraguayan War, the Battle of Yatay was fought on August 17, 1865, between the troops of the Triple Alliance (Argentina, Brazil and and the soldiers of Paraguay near Paso de los Libres, Corrientes, Argentina. It was a victory for the Alliance.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3775020, imported by tools/import/wikidata.mjs. The item's own description reads \"1865 allied victory in the Paraguayan War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1865,
+    "end": 1865,
+    "date": "1865-08-17"
+  },
+  "place": "argentina-q414",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "paraguayan-war"
+}

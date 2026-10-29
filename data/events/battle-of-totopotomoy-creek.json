@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-totopotomoy-creek",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q152158",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Totopotomoy Creek"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q152158"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Totopotomoy Creek\", revision 1370591341"
+    }
+  ],
+  "title": "Battle of Totopotomoy Creek",
+  "summary": "The English Wikipedia article \"Battle of Totopotomoy Creek\", at revision 1370591341, opens: \"The Battle of Totopotomoy Creek, also called the Battle of Bethesda Church, Crumps Creek, Shady Grove Road, and Hanovertown, was fought in Hanover County, Virginia on May 28–30, 1864, as part of Union Lt. Gen. Ulysses Grant's Overland Campaign against Confederate Gen. Robert E. Lee's Army of Northern Virginia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q152158, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-05-28",
+    "endDate": "1864-05-30"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

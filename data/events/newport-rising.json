@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "newport-rising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7018976",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Newport Rising",
+    "pt": "Newport Rising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7018976"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Newport Rising\", revision 1370629576"
+    }
+  ],
+  "title": "Newport Rising",
+  "summary": "The English Wikipedia article \"Newport Rising\", at revision 1370629576, opens: \"The Newport Rising was the last large-scale armed rising in Wales, by Chartists whose demands included democracy and the right to vote with a secret ballot.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7018976, imported by tools/import/wikidata.mjs. The item's own description reads \"Chartist protest in Newport, Monmouthshire, 1839\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1839,
+    "date": "1839-11-04"
+  },
+  "place": "newport-wales",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

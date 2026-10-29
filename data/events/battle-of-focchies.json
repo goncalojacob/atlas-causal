@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-focchies",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888513",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Focchies"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888513"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Focchies\", revision 1370951054"
+    }
+  ],
+  "title": "Battle of Focchies",
+  "summary": "The English Wikipedia article \"Battle of Focchies\", at revision 1370951054, opens: \"The Battle of Focchies was a significant naval engagement that took place on 12 May 1649, in the harbour of Focchies, Smyrna between a Venetian fleet of nineteen warships under the command of Giacomo da Riva, and an Ottoman fleet of eleven warships, ten galleasses, and seventy-two galleys, with the battle resulting in a crushing victory for the Venetian fleet. The battle was an episode in the Cretan War from 1645 to 1669 between the Republic of Venice and the Ottoman Empire over dominance of various territories in the Mediterranean Sea, focused around Crete, the largest and most profitable overseas holding of the Venetian Republic.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888513, imported by tools/import/wikidata.mjs. The item's own description reads \"1649 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1649,
+    "end": 1649,
+    "date": "1649-05-12"
+  },
+  "place": "foca",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "cretan-war-1645-1669"
+}

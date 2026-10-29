@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-silistria-1854",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q815207",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Silistria (1854)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q815207"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Silistria (1854)\", revision 1370745274"
+    }
+  ],
+  "title": "Siege of Silistria (1854)",
+  "summary": "The English Wikipedia article \"Siege of Silistria (1854)\", at revision 1370745274, opens: \"The siege of Silistria, or siege of Silistra, was a key engagement in the Crimean War, fought from 11 May to 23 June 1854 between the Russian Empire and the Ottoman Empire in present-day Bulgaria. The Russian army, numbering up to 90,000 men with 266 guns, attempted to capture the Danubian fortress of Silistria as part of a broader strategy to outflank Ottoman defences and pre-empt an expected Allied landing at Varna. The garrison, 12,000 to 18,000 Ottoman troops and Egyptian auxiliaries, was bolstered by British military advisers and successfully withstood a six-week siege.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q815207, imported by tools/import/wikidata.mjs. The item's own description reads \"5th April - 24th June 1854\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1854,
+    "date": "1854-04-05",
+    "endDate": "1854-06-24"
+  },
+  "place": "bulgaria-q219",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "crimean-war"
+}

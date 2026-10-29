@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "western-iran-campaign-of-1730",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q18210700",
+  "wikipedia": {
+    "en": "Western Iran campaign of 1730"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18210700"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Western Iran campaign of 1730\", revision 1370750593"
+    }
+  ],
+  "title": "Western Iran campaign of 1730",
+  "summary": "The English Wikipedia article \"Western Iran campaign of 1730\", at revision 1370750593, opens: \"Nader's Western Iran campaign of 1730 was his first against perhaps his most formidable of adversaries, namely the Ottomans, where he proved triumphant in conquest. The great successes of his expedition, however, were rendered null when Shah Tahmasp II decided to take personal command of the theatre in Nader's absence, forcing a furious Nader to return and rectify the situation after forcing Tahmasp's abdication in favour of his infant son Abbas III.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18210700, imported by tools/import/wikidata.mjs. The item's own description reads \"1730 Nader Shah's invasion of the Ottoman Empire to reclaim formerly Persian lands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1730,
+    "end": 1730,
+    "date": "1730-03",
+    "endDate": "1730-08"
+  },
+  "place": "persis",
+  "region": null,
+  "regionNote": null,
+  "parent": "ottoman-persian-war-1730-1735",
+  "category": "war",
+  "actors": []
+}

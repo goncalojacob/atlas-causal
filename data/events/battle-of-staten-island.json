@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-staten-island",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2112104",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Staten Island"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2112104"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Staten Island\", revision 1370589902"
+    }
+  ],
+  "title": "Battle of Staten Island",
+  "summary": "The English Wikipedia article \"Battle of Staten Island\", at revision 1370589902, opens: \"The Battle of Staten Island was a failed raid by Continental Army troops under Major General John Sullivan against British forces on Staten Island on August 22, 1777, during the American Revolutionary War. After British Lieutenant General William Howe sailed with most of his army from New York City in July, Sullivan recognized that the British position on Staten Island was vulnerable, and planned an attack. He carried it out in spite of commanding general George Washington's request that Sullivan reinforce the main army with his troops as soon as possible to support Washington's planned Colonial assault on British-held Philadelphia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2112104, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 Part of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-08-22"
+  },
+  "place": "new-york",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

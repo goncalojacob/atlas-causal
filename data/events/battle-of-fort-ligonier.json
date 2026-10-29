@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-fort-ligonier",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q427891",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Fort Ligonier"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q427891"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Ligonier\", revision 1381457969"
+    }
+  ],
+  "title": "Battle of Fort Ligonier",
+  "summary": "The English Wikipedia article \"Battle of Fort Ligonier\", at revision 1381457969, opens: \"The Battle of Fort Ligonier was a battle of the French and Indian War. On 12 October 1758, French and Indian forces directed from nearby Fort Duquesne were repulsed in an attack on the British outpost of Fort Ligonier, then still under construction.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q427891, imported by tools/import/wikidata.mjs. The item's own description reads \"1758 battle of the French and Indian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1758,
+    "end": 1758,
+    "date": "1758-10-12"
+  },
+  "place": "fort-ligonier",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

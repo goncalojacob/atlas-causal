@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "second-margrave-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q233649",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Second Margrave War",
+    "pt": "Segunda Guerra Margrave"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q233649"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Margrave War\", revision 1370737137"
+    }
+  ],
+  "title": "Second Margrave War",
+  "summary": "The English Wikipedia article \"Second Margrave War\", at revision 1370737137, opens: \"The Second Margrave War was a conflict in the Holy Roman Empire between 1552 and 1555. Instigated by Albert Alcibiades, Margrave of Brandenburg-Kulmbach and Brandenburg-Bayreuth, who was attempting to form a Duchy of Franconia under his rule, the war resulted in widespread devastation in Franconia, while also affecting the Rhineland and Lower Saxony.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q233649, imported by tools/import/wikidata.mjs. The item's own description reads \"war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1552,
+    "end": 1555
+  },
+  "place": "franconia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

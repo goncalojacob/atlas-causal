@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "savoyard-waldensian-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q55632642",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Savoyard–Waldensian wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q55632642"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Savoyard–Waldensian wars\", revision 1379845295"
+    }
+  ],
+  "title": "Savoyard–Waldensian wars",
+  "summary": "The English Wikipedia article \"Savoyard–Waldensian wars\", at revision 1379845295, opens: \"The Savoyard–Waldensian wars were a series of conflicts between the community of Waldensians and the Savoyard troops in the Duchy of Savoy from 1655 to 1690. The Piedmontese Easter in 1655 sparked the conflict. It was largely a period of persecution of the Waldensian Church, rather than a military conflict. Joshua Janavel (1617–1690) was one of the Waldensian military leaders against the Savoyard ducal troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q55632642, imported by tools/import/wikidata.mjs. The item's own description reads \"series of conflicts\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1655,
+    "end": 1655,
+    "date": "1655-04-24"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "european-wars-of-religion"
+}

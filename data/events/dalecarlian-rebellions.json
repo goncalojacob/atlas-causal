@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "dalecarlian-rebellions",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q10466298",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Dalecarlian rebellions",
+    "pt": "Rebeliões de Dalarna"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10466298"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dalecarlian rebellions\", revision 1366199171"
+    }
+  ],
+  "title": "Dalecarlian rebellions",
+  "summary": "The English Wikipedia article \"Dalecarlian rebellions\", at revision 1366199171, opens: \"The Dalecarlian rebellions were a series of Swedish rebellions which took place in Dalarna in Sweden: the First Dalecarlian Rebellion in 1524-1525, the Second Dalecarlian Rebellion in 1527–1528, and the Third Dalecarlian Rebellion in 1531–1533. The rebellions were conducted by the peasantry of Dalarna against the Swedish monarch, King Gustav Vasa. Mutual reasons for all three rebellions were loss of support of Gustav I among the Dalecarlian peasantry because of the economic crisis, the increased royal power, and the unpopular Swedish Reformation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10466298, imported by tools/import/wikidata.mjs. The item's own description reads \"series of three rebellions in Sweden\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1524,
+    "end": 1533
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

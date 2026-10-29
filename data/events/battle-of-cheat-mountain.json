@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cheat-mountain",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1426037",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Cheat Mountain"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1426037"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cheat Mountain\", revision 1380654446"
+    }
+  ],
+  "title": "Battle of Cheat Mountain",
+  "summary": "The English Wikipedia article \"Battle of Cheat Mountain\", at revision 1380654446, opens: \"The Battle of Cheat Mountain, also known as the Battle of Cheat Summit Fort, took place from September 12 to 15, 1861, in Pocahontas County and Randolph County, Virginia as part of the Western Virginia Campaign during the American Civil War. It was the first battle of the Civil War in which Robert E. Lee led troops into combat. During the battle, Lee attempted to surround the Union garrison atop Cheat Mountain, but the attack was never launched, due to false information from prisoners and poor communications among the various Confederate commands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1426037, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-09-12",
+    "endDate": "1861-09-15"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

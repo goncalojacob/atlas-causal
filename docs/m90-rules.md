@@ -143,6 +143,13 @@ does not read the pool files.
     them:** Q3136592, the 1689 Boston revolt (its P571 says 1869-04-18, and
     the import takes that day), and Q714820, the Satsuma Rebellion (its P580
     says 2005-01-29).
+    **Since 29 October the first source is `docs/candidates-1415-1900.md`.**
+    The listed pages were spent by 28 October and the query service throttles
+    the planner's own queries. The assistant ran one query from outside the
+    sandbox and wrote every unheld event of a known class from 1415 to 1900
+    with an English article, ranked by sitelinks. The planner takes rows from
+    the top, skips rows it already queued or the atlas holds by title, and
+    still checks class, dates, lane and filing for each.
     **Before it counts what waits, the planner drops duplicates.** It
     removes every waiting item whose Wikidata id the atlas already holds on
     `m0` or `m42`, and every item whose id an earlier waiting item already

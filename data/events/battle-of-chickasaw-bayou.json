@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-chickasaw-bayou",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2632927",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Chickasaw Bayou",
+    "pt": "Batalha de Chickasaw Bayou"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2632927"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chickasaw Bayou\", revision 1380654464"
+    }
+  ],
+  "title": "Battle of Chickasaw Bayou",
+  "summary": "The English Wikipedia article \"Battle of Chickasaw Bayou\", at revision 1380654464, opens: \"The Battle of Chickasaw Bayou, also called the Battle of Walnut Hills, fought December 26–29, 1862, was the opening engagement of the Vicksburg Campaign during the American Civil War. Confederate forces under Lt. Gen. John C. Pemberton repulsed an advance by Union Maj. Gen. William T. Sherman that was intended to lead to the capture of Vicksburg, Mississippi.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2632927, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-12-26",
+    "endDate": "1862-12-29"
+  },
+  "place": "vicksburg-mississippi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

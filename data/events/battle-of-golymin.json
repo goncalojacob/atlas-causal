@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-golymin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q945596",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Golymin",
+    "pt": "Batalha de Golymin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q945596"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Golymin\", revision 1370441795"
+    }
+  ],
+  "title": "Battle of Golymin",
+  "summary": "The English Wikipedia article \"Battle of Golymin\", at revision 1370441795, opens: \"The Battle of Golymin took place on 26 December 1806 during the War of the Fourth Coalition at Gołymin, Poland, between around 22,000 Russian soldiers with 28 guns under Prince Golitsyn and 38,000 French soldiers under Marshal Murat. The Russian forces disengaged successfully from the superior French forces. The battle took place on the same day as the Battle of Pułtusk.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q945596, imported by tools/import/wikidata.mjs. The item's own description reads \"1806 battle during the War of the Fourth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1806,
+    "end": 1806,
+    "date": "1806-12-26"
+  },
+  "place": "go-ymin-osrodek",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "napoleonic-wars"
+}

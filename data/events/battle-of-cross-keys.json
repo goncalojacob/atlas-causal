@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-cross-keys",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1970207",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Cross Keys"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1970207"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cross Keys\", revision 1381880366"
+    }
+  ],
+  "title": "Battle of Cross Keys",
+  "summary": "The English Wikipedia article \"Battle of Cross Keys\", at revision 1381880366, opens: \"The Battle of Cross Keys was fought on June 8, 1862, in Rockingham County, Virginia, as part of Confederate Army Maj. Gen. Thomas J. \"Stonewall\" Jackson's campaign through the Shenandoah Valley during the American Civil War. Together, the battles of Cross Keys and Port Republic the following day were the decisive victories in Jackson's Valley campaign, forcing the Union armies to retreat and leaving Jackson free to reinforce Gen. Robert E. Lee for the Seven Days Battles outside Richmond, Virginia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1970207, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-06-08"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

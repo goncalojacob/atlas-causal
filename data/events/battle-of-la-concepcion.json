@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-la-concepcion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q956098",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of La Concepción",
+    "pt": "Batalha de La Concepción"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q956098"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of La Concepción\", revision 1380437082"
+    }
+  ],
+  "title": "Battle of La Concepción",
+  "summary": "The English Wikipedia article \"Battle of La Concepción\", at revision 1380437082, opens: \"The Battle of La Concepción was fought between Chilean and Peruvian forces on July 9 and 10, 1882, during the Breña campaign of the War of the Pacific. Heavily outnumbered, the Chilean detachment of 77 men under the command of Captain Ignacio Carrera Pinto was annihilated by a 1,300-strong Peruvian force, many of them armed with spears, commanded by Col. Juan Gasto and Ambrosio Salazar after a 27-hour fight in the small town of Concepción in the Peruvian Andes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q956098, imported by tools/import/wikidata.mjs. The item's own description reads \"1882 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1882,
+    "end": 1882,
+    "date": "1882-07-10"
+  },
+  "place": "concepcion-junin",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-pacific"
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "richmond-kentucky",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q757390",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Richmond, Kentucky",
+    "pt": "Richmond (Kentucky)"
+  },
+  "sources": [],
+  "names": [
+    "Richmond",
+    "Richmond, Kentucky",
+    "Richmond (Kentucky)"
+  ],
+  "where": {
+    "lon": -84.293611111111,
+    "lat": 37.744722222222,
+    "precision": "city",
+    "label": "Richmond, Kentucky"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
