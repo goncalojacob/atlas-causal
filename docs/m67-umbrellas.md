@@ -5198,3 +5198,99 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-29: `battle-of-great-bridge`, filed under `american-revolutionary-war` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-183`, rank `child-of:american-revolutionary-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-mine-run`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-191`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-glendale`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-199`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-hanover-court-house`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-201`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-front-royal`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-203`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-peachtree-creek`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-209`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-aldie`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-211`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-aquia-creek`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-213`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-cheat-mountain`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-215`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-port-gibson`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-219`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `second-battle-of-petersburg`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-221`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-fort-anne`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-223`, rank `child-of:american-revolutionary-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-spring-hill`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-229`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-chelsea-creek`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-188`, rank `child-of:american-revolutionary-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-old-church`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-190`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-ytororo`, filed under `paraguayan-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-194`, rank `child-of:paraguayan-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-beaver-dam-creek`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-204`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-jonesborough`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-206`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `second-battle-of-winchester`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-210`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-fisher-s-hill`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-212`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `third-battle-of-petersburg`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-220`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-cloyd-s-mountain`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-222`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-white-marsh`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-226`, rank `child-of:american-revolutionary-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-totopotomoy-creek`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-232`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-fort-stedman`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-234`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.

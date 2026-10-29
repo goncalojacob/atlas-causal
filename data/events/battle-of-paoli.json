@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-paoli",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871984",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Paoli"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871984"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Paoli\", revision 1381794581"
+    }
+  ],
+  "title": "Battle of Paoli",
+  "summary": "The English Wikipedia article \"Battle of Paoli\", at revision 1381794581, opens: \"The Battle of Paoli was fought on September 20, 1777, near present-day Malvern, Pennsylvania as part of the Philadelphia campaign of the American Revolutionary War. Following the Continental Army's retreat due to the Battle of Brandywine and the aborted Battle of the Clouds, General George Washington left a force of 1,500 regulars and 1,000 militia behind under Brigadier General Anthony Wayne to monitor and resist advancing British forces as they prepared to attack the American capital of Philadelphia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871984, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 battle of the American Revolutionary War in Pennsylvania\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-09-20"
+  },
+  "place": "paoli-battlefield-site-and-parade-grounds",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

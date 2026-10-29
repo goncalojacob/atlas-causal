@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "knoxville-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q886856",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Knoxville campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q886856"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Knoxville campaign\", revision 1373071086"
+    }
+  ],
+  "title": "Knoxville campaign",
+  "summary": "The English Wikipedia article \"Knoxville campaign\", at revision 1373071086, opens: \"The Knoxville campaign was a series of American Civil War battles and maneuvers in East Tennessee, United States, during the fall of 1863, designed to secure control of the city of Knoxville and with it the railroad that linked the Confederacy east and west, and position the First Corps under Lt. Gen. James Longstreet for return to the Army of Northern Virginia. Union Army forces under Maj. Gen. Ambrose Burnside occupied Knoxville, Tennessee, and Confederate States Army forces under Longstreet were detached from Gen. Braxton Bragg's Army of Tennessee at Chattanooga to prevent Burnside's reinforcement of the besieged Federal forces there. Ultimately, Longstreet's Siege of Knoxville ended when Union Maj. Gen. William Tecumseh Sherman led elements of the Army of the Tennessee and other troops to Burnside's relief after Union troops had broken the Confederate siege of Chattanooga. Although Longstreet was one of Gen. Robert E. Lee's best corps commanders in the East in the Army of Northern Virginia, he was unsuccessful in his attempt to penetrate the Knoxville defenses and take the city.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q886856, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 Military campaign of the American Civil War in Tennessee\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-08",
+    "endDate": "1863-12-14"
+  },
+  "place": "tennessee",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

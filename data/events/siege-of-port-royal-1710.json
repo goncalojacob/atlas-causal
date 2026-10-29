@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-port-royal-1710",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3078994",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Port Royal (1710)",
+    "pt": "Cerco de Port Royal (1710)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3078994"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Port Royal (1710)\", revision 1379977684"
+    }
+  ],
+  "title": "Siege of Port Royal (1710)",
+  "summary": "The English Wikipedia article \"Siege of Port Royal (1710)\", at revision 1379977684, opens: \"The siege of Port Royal, also known as the Conquest of Acadia, was a military siege conducted by British regular and provincial forces under the command of Francis Nicholson against a French Acadian garrison and the Wabanaki Confederacy under the command of Daniel d'Auger de Subercase, at the Acadian capital, Port Royal. The successful British siege marked the beginning of permanent British control over the peninsular portion of Acadia, which had been referred to as Nova Scotia by the British since 1621. It was the first time the British permanently took and held a French colonial possession. After the French surrender, the British occupied the fort in the capital with all the pomp and ceremony of having captured one of the great fortresses of Europe, and renamed it Annapolis Royal.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3078994, imported by tools/import/wikidata.mjs. The item's own description reads \"military siege by British regular and provincial forces against a French Acadian garrison and the Wabanaki Confederacy at the Acadian capital, Port Royal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1710,
+    "end": 1710,
+    "date": "1710-10-05",
+    "endDate": "1710-10-13"
+  },
+  "place": "port-royal-acadia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "queen-anne-s-war"
+}

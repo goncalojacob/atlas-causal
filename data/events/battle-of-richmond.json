@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-richmond",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2253305",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Richmond"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2253305"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Richmond\", revision 1378510743"
+    }
+  ],
+  "title": "Battle of Richmond",
+  "summary": "The English Wikipedia article \"Battle of Richmond\", at revision 1378510743, opens: \"The Battle of Richmond, Kentucky, fought August 29–30, 1862, was one of the most complete Confederate victories in the American Civil War by Major General Edmund Kirby Smith against Union major general William \"Bull\" Nelson's forces, which were defending the town. It was the first major battle in the Kentucky Campaign. The battle took place on and around what is now the grounds of the Blue Grass Army Depot, outside Richmond, Kentucky.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2253305, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in Kentucky during American Civil War (1862)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-08-29",
+    "endDate": "1862-08-30"
+  },
+  "place": "richmond-kentucky",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}
