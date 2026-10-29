@@ -2392,6 +2392,15 @@
         }
       ]
     },
+    "battle-of-turnhout-1597": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-uedahara": {
       "from": "git",
       "versions": [

@@ -1850,6 +1850,12 @@
     },
     {
       "dissent": false,
+      "id": "1639-amatrice-earthquake",
+      "kind": "event",
+      "locator": "Q26703059"
+    },
+    {
+      "dissent": false,
       "id": "1667-dubrovnik-earthquake",
       "kind": "event",
       "locator": "Q2576277"
@@ -1883,6 +1889,12 @@
       "id": "1679-armenia-earthquake",
       "kind": "event",
       "locator": "Q4551791"
+    },
+    {
+      "dissent": false,
+      "id": "1692-jamaica-earthquake",
+      "kind": "event",
+      "locator": "Q4191082"
     },
     {
       "dissent": false,
@@ -4538,6 +4550,12 @@
     },
     {
       "dissent": false,
+      "id": "bashkir-rebellion-of-1735-1740",
+      "kind": "event",
+      "locator": "Q4080180"
+    },
+    {
+      "dissent": false,
       "id": "basi-revolt",
       "kind": "event",
       "locator": "Q141492989"
@@ -5159,6 +5177,12 @@
       "id": "battle-of-attock-1813",
       "kind": "event",
       "locator": "Q4870360"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-aughrim",
+      "kind": "event",
+      "locator": "Q2887916"
     },
     {
       "dissent": false,
@@ -7070,6 +7094,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-dubienka",
+      "kind": "event",
+      "locator": "Q2888467"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-duck-lake",
       "kind": "event",
       "locator": "Q2890920"
@@ -7358,6 +7388,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fidonisi",
+      "kind": "event",
+      "locator": "Q2008820"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-finta",
+      "kind": "event",
+      "locator": "Q2576318"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-first-bar",
       "kind": "event",
       "locator": "Q4871017"
@@ -7421,6 +7463,12 @@
       "id": "battle-of-focsani",
       "kind": "event",
       "locator": "Q1025134"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fontenay-le-comte",
+      "kind": "event",
+      "locator": "Q1114300"
     },
     {
       "dissent": false,
@@ -8036,6 +8084,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-grodno-1706",
+      "kind": "event",
+      "locator": "Q1153384"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-groix",
       "kind": "event",
       "locator": "Q1028247"
@@ -8057,6 +8111,12 @@
       "id": "battle-of-guangning",
       "kind": "event",
       "locator": "Q11064574"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-guastalla",
+      "kind": "event",
+      "locator": "Q1760280"
     },
     {
       "dissent": false,
@@ -8738,6 +8798,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-jersey",
+      "kind": "event",
+      "locator": "Q2501743"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jhelum-1857",
       "kind": "event",
       "locator": "Q27628085"
@@ -9032,6 +9098,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-khresili",
+      "kind": "event",
+      "locator": "Q4871427"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-khyber-pass-1738",
       "kind": "event",
       "locator": "Q18124347"
@@ -9218,6 +9290,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kozludzha",
+      "kind": "event",
+      "locator": "Q1985387"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kraaipan",
       "kind": "event",
       "locator": "Q845845"
@@ -9356,6 +9434,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-la-tremblaye",
+      "kind": "event",
+      "locator": "Q733705"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-la-victoria-1812",
       "kind": "event",
       "locator": "Q17622613"
@@ -9461,6 +9545,12 @@
       "id": "battle-of-landshut-1809",
       "kind": "event",
       "locator": "Q367966"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-landskrona",
+      "kind": "event",
+      "locator": "Q2889107"
     },
     {
       "dissent": false,
@@ -9719,6 +9809,12 @@
       "id": "battle-of-lubeck",
       "kind": "event",
       "locator": "Q551247"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lugos",
+      "kind": "event",
+      "locator": "Q4871614"
     },
     {
       "dissent": false,
@@ -10493,6 +10589,18 @@
       "id": "battle-of-montijo",
       "kind": "event",
       "locator": "Q2889392"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-montjuic-1641",
+      "kind": "event",
+      "locator": "Q331170"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-montjuic-1705",
+      "kind": "event",
+      "locator": "Q2889395"
     },
     {
       "dissent": false,
@@ -11480,6 +11588,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-podhajce-1698",
+      "kind": "event",
+      "locator": "Q2633088"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-point-pleasant",
       "kind": "event",
       "locator": "Q4872073"
@@ -11489,6 +11603,12 @@
       "id": "battle-of-polesella",
       "kind": "event",
       "locator": "Q3636579"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-polonka",
+      "kind": "event",
+      "locator": "Q2011225"
     },
     {
       "dissent": false,
@@ -11507,6 +11627,12 @@
       "id": "battle-of-poniec",
       "kind": "event",
       "locator": "Q649567"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ponte-novu",
+      "kind": "event",
+      "locator": "Q2342985"
     },
     {
       "dissent": false,
@@ -12500,6 +12626,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-savenay",
+      "kind": "event",
+      "locator": "Q829443"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-saylla",
       "kind": "event",
       "locator": "Q140068655"
@@ -12746,6 +12878,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-shklow",
+      "kind": "event",
+      "locator": "Q2657186"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-shopian",
       "kind": "event",
       "locator": "Q4872373"
@@ -12857,6 +12995,12 @@
       "id": "battle-of-slivnitsa",
       "kind": "event",
       "locator": "Q1861319"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sluis-1603",
+      "kind": "event",
+      "locator": "Q2114424"
     },
     {
       "dissent": false,
@@ -13568,6 +13712,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-faubourg-st-antoine",
+      "kind": "event",
+      "locator": "Q2890900"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-gabbard",
       "kind": "event",
       "locator": "Q2063617"
@@ -14156,6 +14306,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-turnhout-1597",
+      "kind": "event",
+      "locator": "Q646525"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tuttlingen",
       "kind": "event",
       "locator": "Q1436705"
@@ -14396,6 +14552,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-velletri",
+      "kind": "event",
+      "locator": "Q2280582"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-veracruz-1838",
       "kind": "event",
       "locator": "Q517262"
@@ -14582,6 +14744,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-warksow",
+      "kind": "event",
+      "locator": "Q323735"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-warsaw-1656",
       "kind": "event",
       "locator": "Q426926"
@@ -14639,6 +14807,12 @@
       "id": "battle-of-weihaiwei",
       "kind": "event",
       "locator": "Q1185335"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-weissenstein",
+      "kind": "event",
+      "locator": "Q643027"
     },
     {
       "dissent": false,
@@ -15869,6 +16043,12 @@
       "id": "canadian-american-reciprocity-treaty",
       "kind": "event",
       "locator": "Q2718109"
+    },
+    {
+      "dissent": false,
+      "id": "canal-mania",
+      "kind": "event",
+      "locator": "Q2936125"
     },
     {
       "dissent": false,
@@ -18158,6 +18338,12 @@
     },
     {
       "dissent": false,
+      "id": "falklands-crisis-of-1770",
+      "kind": "event",
+      "locator": "Q1773491"
+    },
+    {
+      "dissent": false,
       "id": "falklands-war",
       "kind": "event",
       "locator": "Q48249"
@@ -18533,6 +18719,12 @@
       "id": "first-battle-of-mount-pamaton",
       "kind": "event",
       "locator": "Q131696429"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-newbury",
+      "kind": "event",
+      "locator": "Q2058454"
     },
     {
       "dissent": false,
@@ -19145,6 +19337,12 @@
       "id": "french-expedition-to-korea",
       "kind": "event",
       "locator": "Q134142"
+    },
+    {
+      "dissent": false,
+      "id": "french-expedition-to-sardinia",
+      "kind": "event",
+      "locator": "Q1283625"
     },
     {
       "dissent": false,
@@ -20582,6 +20780,12 @@
     },
     {
       "dissent": false,
+      "id": "irish-famine-1740-1741",
+      "kind": "event",
+      "locator": "Q2517366"
+    },
+    {
+      "dissent": false,
       "id": "irish-rebellion-of-1641",
       "kind": "event",
       "locator": "Q1461147"
@@ -21317,6 +21521,12 @@
       "id": "lala-mustafa-pasha-s-caucasian-campaign",
       "kind": "event",
       "locator": "Q8140679"
+    },
+    {
+      "dissent": false,
+      "id": "lamey-island-massacre",
+      "kind": "event",
+      "locator": "Q5968311"
     },
     {
       "dissent": false,
@@ -23705,6 +23915,12 @@
       "id": "peninsular-war",
       "kind": "event",
       "locator": "Q152499"
+    },
+    {
+      "dissent": false,
+      "id": "penobscot-expedition",
+      "kind": "event",
+      "locator": "Q2575844"
     },
     {
       "dissent": false,
@@ -26480,6 +26696,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-bonn-1673",
+      "kind": "event",
+      "locator": "Q557258"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-boston",
       "kind": "event",
       "locator": "Q815128"
@@ -26774,6 +26996,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-drogheda",
+      "kind": "event",
+      "locator": "Q815234"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-dunkirk-1646",
       "kind": "event",
       "locator": "Q3485880"
@@ -26954,6 +27182,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-gaeta-1734",
+      "kind": "event",
+      "locator": "Q628086"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-ganja-1734-1735",
       "kind": "event",
       "locator": "Q18162521"
@@ -27131,6 +27365,12 @@
       "id": "siege-of-julich-1621-1622",
       "kind": "event",
       "locator": "Q17122425"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kamenets",
+      "kind": "event",
+      "locator": "Q949294"
     },
     {
       "dissent": false,
@@ -27323,6 +27563,12 @@
       "id": "siege-of-lille-1708",
       "kind": "event",
       "locator": "Q694492"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-lille-1792",
+      "kind": "event",
+      "locator": "Q3485925"
     },
     {
       "dissent": false,
@@ -28076,6 +28322,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-stralsund-1678",
+      "kind": "event",
+      "locator": "Q323943"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-stralsund-1807",
       "kind": "event",
       "locator": "Q970890"
@@ -28376,6 +28628,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-ypres-1678",
+      "kind": "event",
+      "locator": "Q3485833"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-zaragoza-1808",
       "kind": "event",
       "locator": "Q209716"
@@ -28388,9 +28646,21 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-zbarazh",
+      "kind": "event",
+      "locator": "Q831792"
+    },
+    {
+      "dissent": false,
       "id": "sieges-of-boulogne-1544-1546",
       "kind": "event",
       "locator": "Q7885742"
+    },
+    {
+      "dissent": false,
+      "id": "sieges-of-ceuta-1694-1727",
+      "kind": "event",
+      "locator": "Q18149882"
     },
     {
       "dissent": false,
@@ -28565,6 +28835,12 @@
       "id": "skirmish-of-pastrengo-1848",
       "kind": "event",
       "locator": "Q580417"
+    },
+    {
+      "dissent": false,
+      "id": "skopje-fire-of-1689",
+      "kind": "event",
+      "locator": "Q3409504"
     },
     {
       "dissent": false,
@@ -28790,6 +29066,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-conquest-of-sardinia",
+      "kind": "event",
+      "locator": "Q8349925"
+    },
+    {
+      "dissent": false,
       "id": "spanish-conquest-of-the-aztec-empire",
       "kind": "event",
       "locator": "Q828435"
@@ -28934,6 +29216,12 @@
     },
     {
       "dissent": false,
+      "id": "staten-island-peace-conference",
+      "kind": "event",
+      "locator": "Q5933851"
+    },
+    {
+      "dissent": false,
       "id": "statuto-albertino",
       "kind": "event",
       "locator": "Q598854"
@@ -28973,6 +29261,12 @@
       "id": "streltsy-uprising",
       "kind": "event",
       "locator": "Q243587"
+    },
+    {
+      "dissent": false,
+      "id": "stuart-period",
+      "kind": "event",
+      "locator": "Q2366054"
     },
     {
       "dissent": false,

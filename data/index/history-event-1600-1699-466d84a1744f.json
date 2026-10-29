@@ -20,6 +20,15 @@
         }
       ]
     },
+    "1639-amatrice-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1667-dubrovnik-earthquake": {
       "from": "git",
       "versions": [
@@ -71,6 +80,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "1692-jamaica-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -466,6 +484,15 @@
         }
       ]
     },
+    "battle-of-aughrim": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-augusta": {
       "from": "git",
       "versions": [
@@ -825,6 +852,15 @@
       ]
     },
     "battle-of-fehrbellin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-finta": {
       "from": "git",
       "versions": [
         {
@@ -1271,6 +1307,15 @@
         }
       ]
     },
+    "battle-of-landskrona": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-leghorn": {
       "from": "git",
       "versions": [
@@ -1339,6 +1384,15 @@
       ]
     },
     "battle-of-lowestoft": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-lugos": {
       "from": "git",
       "versions": [
         {
@@ -1524,6 +1578,15 @@
         }
       ]
     },
+    "battle-of-montjuic-1641": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-moscow-1612": {
       "from": "git",
       "versions": [
@@ -1702,6 +1765,24 @@
       ]
     },
     "battle-of-plymouth-1652": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-podhajce-1698": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-polonka": {
       "from": "git",
       "versions": [
         {
@@ -2043,6 +2124,15 @@
         }
       ]
     },
+    "battle-of-shklow": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-sinsheim": {
       "from": "git",
       "versions": [
@@ -2058,6 +2148,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-sluis-1603": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2275,6 +2374,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-the-faubourg-st-antoine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2541,12 +2649,30 @@
         }
       ]
     },
+    "battle-of-warksow": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-warsaw-1656": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-weissenstein": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3321,6 +3447,15 @@
         }
       ]
     },
+    "first-battle-of-newbury": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "first-bishops-war": {
       "from": "git",
       "versions": [
@@ -3711,6 +3846,15 @@
             "parent"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "lamey-island-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4966,6 +5110,15 @@
         }
       ]
     },
+    "siege-of-bonn-1673": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-breda-1624": {
       "from": "git",
       "versions": [
@@ -5044,6 +5197,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-drogheda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5183,6 +5345,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-kamenets": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5559,6 +5730,15 @@
         }
       ]
     },
+    "siege-of-stralsund-1678": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-turin-1640": {
       "from": "git",
       "versions": [
@@ -5601,6 +5781,33 @@
         }
       ]
     },
+    "siege-of-ypres-1678": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-zbarazh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "sieges-of-ceuta-1694-1727": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "sinking-of-the-nossa-senhora-da-conceicao": {
       "from": "git",
       "versions": [
@@ -5616,6 +5823,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "skopje-fire-of-1689": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5656,6 +5872,15 @@
       ]
     },
     "streltsy-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "stuart-period": {
       "from": "git",
       "versions": [
         {

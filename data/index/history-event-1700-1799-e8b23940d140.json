@@ -757,6 +757,15 @@
         }
       ]
     },
+    "bashkir-rebellion-of-1735-1740": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-at-the-lizard": {
       "from": "git",
       "versions": [
@@ -1428,6 +1437,15 @@
         }
       ]
     },
+    "battle-of-dubienka": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-dynekilen": {
       "from": "git",
       "versions": [
@@ -1500,6 +1518,15 @@
         }
       ]
     },
+    "battle-of-fidonisi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-flamborough-head": {
       "from": "git",
       "versions": [
@@ -1519,6 +1546,15 @@
       ]
     },
     "battle-of-focsani": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-fontenay-le-comte": {
       "from": "git",
       "versions": [
         {
@@ -1813,6 +1849,15 @@
         }
       ]
     },
+    "battle-of-grodno-1706": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-groix": {
       "from": "git",
       "versions": [
@@ -1843,6 +1888,15 @@
             "review"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-guastalla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2043,6 +2097,15 @@
         }
       ]
     },
+    "battle-of-jersey": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-jumonville-glen": {
       "from": "git",
       "versions": [
@@ -2124,6 +2187,15 @@
         }
       ]
     },
+    "battle-of-khresili": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-khyber-pass-1738": {
       "from": "git",
       "versions": [
@@ -2178,6 +2250,15 @@
         }
       ]
     },
+    "battle-of-kozludzha": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-krefeld": {
       "from": "git",
       "versions": [
@@ -2229,6 +2310,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-la-tremblaye": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2624,6 +2714,15 @@
         }
       ]
     },
+    "battle-of-montjuic-1705": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-moore-s-creek-bridge": {
       "from": "git",
       "versions": [
@@ -2859,6 +2958,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-ponte-novu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3318,6 +3426,15 @@
         }
       ]
     },
+    "battle-of-savenay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-saylla": {
       "from": "git",
       "versions": [
@@ -3764,6 +3881,15 @@
         }
       ]
     },
+    "battle-of-velletri": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-vigo-bay": {
       "from": "git",
       "versions": [
@@ -4119,6 +4245,15 @@
       ]
     },
     "campaigns-of-nader-shah": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "canal-mania": {
       "from": "git",
       "versions": [
         {
@@ -4692,6 +4827,15 @@
         }
       ]
     },
+    "falklands-crisis-of-1770": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "fall-of-ghent": {
       "from": "git",
       "versions": [
@@ -4994,6 +5138,15 @@
       ]
     },
     "french-expedition-to-ireland-1796": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "french-expedition-to-sardinia": {
       "from": "git",
       "versions": [
         {
@@ -5480,6 +5633,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "irish-famine-1740-1741": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6015,6 +6177,15 @@
       ]
     },
     "peasants-war-1798": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "penobscot-expedition": {
       "from": "git",
       "versions": [
         {
@@ -6890,6 +7061,15 @@
         }
       ]
     },
+    "siege-of-gaeta-1734": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-ganja-1734-1735": {
       "from": "git",
       "versions": [
@@ -7004,6 +7184,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "siege-of-lille-1792": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -7478,6 +7667,15 @@
         }
       ]
     },
+    "spanish-conquest-of-sardinia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "spanish-enlightenment": {
       "from": "git",
       "versions": [
@@ -7529,6 +7727,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "staten-island-peace-conference": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
