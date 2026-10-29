@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-penghu",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q276656",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Penghu",
+    "pt": "Batalha de Penghu"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q276656"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Penghu\", revision 1370453046"
+    }
+  ],
+  "title": "Battle of Penghu",
+  "summary": "The English Wikipedia article \"Battle of Penghu\", at revision 1370453046, opens: \"The Battle of Penghu was a naval battle fought in 1683 between the Qing dynasty and the Kingdom of Tungning. The Qing admiral Shi Lang led a fleet to attack the Tungning forces in Penghu. Each side possessed more than 200 warships, while the Tungning admiral Liu Guoxuan's forces were outnumbered by Shi Lang's three to one. Liu surrendered when his flagship ran out of ammunition and fled back to Taiwan. The loss of Penghu resulted in the surrender of Zheng Keshuang, the last king of Tungning, to the Qing dynasty.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q276656, imported by tools/import/wikidata.mjs. The item's own description reads \"Qing conquest of Taiwan in 1683\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1683,
+    "end": 1683,
+    "date": "1683-07-16"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

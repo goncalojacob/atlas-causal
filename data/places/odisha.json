@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "odisha",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q22048",
+  "sitelinks": {
+    "count": 133,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Odisha",
+    "pt": "Odixa"
+  },
+  "sources": [],
+  "names": [
+    "Odisha",
+    "Orissa",
+    "Odixa"
+  ],
+  "where": {
+    "lon": 83.5,
+    "lat": 20.15,
+    "precision": "region",
+    "label": "Odisha"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

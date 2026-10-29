@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "epirus-revolt-of-1854",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5383233",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Epirus Revolt of 1854"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5383233"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Epirus Revolt of 1854\", revision 1370617060"
+    }
+  ],
+  "title": "Epirus Revolt of 1854",
+  "summary": "The English Wikipedia article \"Epirus Revolt of 1854\", at revision 1370617060, opens: \"The 1854 revolt in Epirus was one of the most important of a series of Greek uprisings that occurred in Epirus during that period. When the Crimean War (1854–1856) broke out, many Epirotes, with tacit support from the Greek state, revolted against the Ottoman rule. Although this movement was supported by distinguished military personalities, the correlation of forces doomed it from the start, leading to its suppression after a few months.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5383233, imported by tools/import/wikidata.mjs. The item's own description reads \"Greek uprising against the Ottomans\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1854
+  },
+  "place": "epirus",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

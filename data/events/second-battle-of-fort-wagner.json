@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-fort-wagner",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2676019",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Second Battle of Fort Wagner"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2676019"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Fort Wagner\", revision 1381331084"
+    }
+  ],
+  "title": "Second Battle of Fort Wagner",
+  "summary": "The English Wikipedia article \"Second Battle of Fort Wagner\", at revision 1381331084, opens: \"The Second Battle of Fort Wagner, also known as the Second Assault on Morris Island or the Battle of Fort Wagner, Morris Island, was fought on July 18, 1863, during the American Civil War. Union Army troops commanded by Brig. Gen. Quincy Gillmore launched an unsuccessful assault on the Confederate fortress of Fort Wagner, which protected Morris Island, south of Charleston Harbor. The battle occurred one week after the First Battle of Fort Wagner. Although it was a Confederate victory, the valor of the black Union soldiers was widely praised. This had long-term strategic benefits by encouraging more African Americans to enlist, affording the Union a manpower resource that the Confederacy could not match for the remainder of the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2676019, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-07-18"
+  },
+  "place": "morris-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

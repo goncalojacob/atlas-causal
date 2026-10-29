@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-drewry-s-bluff",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1362294",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Drewry's Bluff"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1362294"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Drewry's Bluff\", revision 1370439308"
+    }
+  ],
+  "title": "Battle of Drewry's Bluff",
+  "summary": "The English Wikipedia article \"Battle of Drewry's Bluff\", at revision 1370439308, opens: \"The Battle of Drewry's Bluff, also known as the Battle of Fort Darling, or Fort Drewry, took place on May 15, 1862, in Chesterfield County, Virginia, as part of the Peninsula Campaign of the American Civil War. Four Union Navy warships, including the ironclads USS Monitor and Galena, and the United States Revenue Cutter Service's ironclad USRC Naugatuck steamed up the James River to test the defenses of Richmond, Virginia, the Confederate capital. They encountered submerged obstacles, and the batteries of Fort Darling at Drewry's Bluff inflicted severe damage on Galena, forcing the ships to turn back.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1362294, imported by tools/import/wikidata.mjs. The item's own description reads \"Civil War battle wherein five Union Navy warships steamed up the James River to test the defenses of Richmond, Virginia, the Confederate capital\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-05-15"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

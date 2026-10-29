@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-callao",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2394918",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Callao",
+    "pt": "Batalha do Callao"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2394918"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Callao\", revision 1381423327"
+    }
+  ],
+  "title": "Battle of Callao",
+  "summary": "The English Wikipedia article \"Battle of Callao\", at revision 1381423327, opens: \"The Battle of Callao occurred on May 2, 1866, between a Spanish fleet under the command of Admiral Casto Méndez Núñez and the fortified battery emplacements of the Peruvian port city of Callao during the Chincha Islands War. The Spanish fleet bombarded the port of Callao, and eventually withdrew without any notable damage to the city structures, according to the Peruvian and American sources; or after having silenced almost all the guns of the coastal defenses, according to the Spanish accounts and French observers. This proved to be the final battle of the war between Spanish and Peruvian forces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2394918, imported by tools/import/wikidata.mjs. The item's own description reads \"1866 naval battle between Spain and Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866,
+    "date": "1866-05-02"
+  },
+  "place": "callao",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "chincha-islands-war"
+}

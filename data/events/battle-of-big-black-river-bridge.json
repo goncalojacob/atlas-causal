@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-big-black-river-bridge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2161150",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Big Black River Bridge"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2161150"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Big Black River Bridge\", revision 1370107836"
+    }
+  ],
+  "title": "Battle of Big Black River Bridge",
+  "summary": "The English Wikipedia article \"Battle of Big Black River Bridge\", at revision 1370107836, opens: \"The Battle of Big Black River Bridge was fought on May 17, 1863, as part of the Vicksburg Campaign of the American Civil War. During the war, the city of Vicksburg, Mississippi, was a key point on the Mississippi River. On April 30, 1863, a Union army commanded by Major General Ulysses S. Grant began crossing onto the east side of the Mississippi River as part of a campaign against Vicksburg. After engaging and defeating Confederate forces in several intermediate battles, Grant's army defeated Lieutenant General John C. Pemberton's troops at the decisive Battle of Champion Hill on May 16. During the retreat from Champion Hill battlefield, one division of Pemberton's army, commanded by Major General William W. Loring, was cut off from Pemberton's main body. Pemberton, retreating westwards towards Vicksburg, did not know the location of Loring's division, and he held a bridgehead on the east side of the Big Black River to cover Loring's anticipated withdrawal across the river on the morning of May 17.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2161150, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-05-17"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-san-lorenzo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3268356",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of San Lorenzo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3268356"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of San Lorenzo\", revision 1370588378"
+    }
+  ],
+  "title": "Battle of San Lorenzo",
+  "summary": "The English Wikipedia article \"Battle of San Lorenzo\", at revision 1370588378, opens: \"The Battle of San Lorenzo was fought on 3 February 1813 in San Lorenzo, Argentina, then part of the United Provinces of the Río de la Plata. The royalist troops were composed of militiamen recruited in Montevideo under the command of militia captain Antonio Zabala, who were defeated by the Regiment of Mounted Grenadiers under the command of José de San Martín. This battle was the baptism by fire for this military unit, as well as for San Martín in the Spanish American wars of independence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3268356, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle of the Argentine War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-02-03"
+  },
+  "place": "san-lorenzo-santa-fe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

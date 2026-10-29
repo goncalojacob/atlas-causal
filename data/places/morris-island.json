@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "morris-island",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1545258",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Morris Island",
+    "pt": "Ilha Morris"
+  },
+  "sources": [],
+  "names": [
+    "Morris Island",
+    "Ilha Morris"
+  ],
+  "where": {
+    "lon": -79.890365,
+    "lat": 32.7157337,
+    "precision": "region",
+    "label": "Morris Island"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

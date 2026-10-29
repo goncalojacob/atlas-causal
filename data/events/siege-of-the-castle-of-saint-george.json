@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-the-castle-of-saint-george",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3820587",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of the Castle of Saint George"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3820587"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of the Castle of Saint George\", revision 1370746662"
+    }
+  ],
+  "title": "Siege of the Castle of Saint George",
+  "summary": "The English Wikipedia article \"Siege of the Castle of Saint George\", at revision 1370746662, opens: \"The siege of the Castle of Saint George, also known as the siege of Cephalonia, occurred from 8 November until 24 December 1500, when following a series of Venetian disasters at the hands of the Turks, the Spanish-Venetian army under Captain Gonzalo Fernández de Córdoba and Benedetto Pesaro succeeded in capturing the Ottoman stronghold of Cephalonia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3820587, imported by tools/import/wikidata.mjs. The item's own description reads \"1500 siege of the Second Ottoman-Venetian war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1500,
+    "end": 1500,
+    "date": "1500-11-08",
+    "endDate": "1500-12-24"
+  },
+  "place": "castle-of-saint-george-cephalonia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-venetian-war-1499-1503"
+}
