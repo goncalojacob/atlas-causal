@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-port-republic",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2602211",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Port Republic"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2602211"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Port Republic\", revision 1373343016"
+    }
+  ],
+  "title": "Battle of Port Republic",
+  "summary": "The English Wikipedia article \"Battle of Port Republic\", at revision 1373343016, opens: \"The Battle of Port Republic was fought on June 9, 1862, in Rockingham County, Virginia, as part of Confederate Army Maj. Gen. Thomas J. \"Stonewall\" Jackson's campaign through the Shenandoah Valley during the American Civil War. Port Republic was a fierce contest between two equally determined foes and was the most costly battle fought by Jackson's Army of the Valley during its campaign. Together, the battles of Cross Keys and Port Republic were the decisive victories in Jackson's Valley Campaign, forcing the Union armies to retreat and leaving Jackson free to reinforce Gen. Robert E. Lee for the Seven Days Battles outside Richmond, Virginia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2602211, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-06-09"
+  },
+  "place": "virginia-q1370",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

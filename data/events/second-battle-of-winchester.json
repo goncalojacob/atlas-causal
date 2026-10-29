@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-winchester",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q765215",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Second Battle of Winchester"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q765215"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Winchester\", revision 1380704455"
+    }
+  ],
+  "title": "Second Battle of Winchester",
+  "summary": "The English Wikipedia article \"Second Battle of Winchester\", at revision 1380704455, opens: \"The Second Battle of Winchester was fought between June 13 and June 15, 1863, in Frederick County and Winchester, Virginia as part of the Gettysburg campaign during the American Civil War. As Confederate Lieutenant General Richard S. Ewell moved north through the Shenandoah Valley in the direction of Pennsylvania, his corps defeated the Union Army garrison commanded by Major General Robert H. Milroy, who had already received numerous orders to retreat, that he had ignored. The rebel army stormed the heavily fortified union positions around the city, prompting the unionist army to retreat to a fort overlooking the city. This was abandoned in the evening. The rebel army closely pursued the retreating union army, intercepting its line of retreat and causing heavy casualties and chaos among the retreating baggage train and columns of the Union army. A large number of union soldiers and stores were captured in the ensuing rout, though the union commander escaped, in what became one of the worst defeats the union had suffered in the war, prompting the severe censure of the Union general Milroy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q765215, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 American Civil War battle in the Gettysburg Campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-06-13",
+    "endDate": "1863-06-15"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

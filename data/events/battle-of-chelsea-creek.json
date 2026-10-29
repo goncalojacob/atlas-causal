@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-chelsea-creek",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4204344",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Chelsea Creek",
+    "pt": "Batalha de Chelsea Creek"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4204344"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chelsea Creek\", revision 1380176040"
+    }
+  ],
+  "title": "Battle of Chelsea Creek",
+  "summary": "The English Wikipedia article \"Battle of Chelsea Creek\", at revision 1380176040, opens: \"The Battle of Chelsea Creek was the second military engagement of the Boston campaign of the American Revolutionary War. It is also known as the Battle of Noddle's Island, Battle of Hog Island and the Battle of the Chelsea Estuary. This battle was fought on May 27 and 28, 1775, on Chelsea Creek and on salt marshes, mudflats, and islands of Boston Harbor, northeast of the Boston peninsula. Most of these areas have since been united with the mainland by land reclamation and are now part of East Boston, Chelsea, Winthrop, and Revere.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4204344, imported by tools/import/wikidata.mjs. The item's own description reads \"1775 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1775,
+    "date": "1775-05-28"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

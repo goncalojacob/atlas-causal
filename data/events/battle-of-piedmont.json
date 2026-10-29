@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-piedmont",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872035",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Piedmont",
+    "pt": "Batalha do Piemonte"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872035"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Piedmont\", revision 1370586041"
+    }
+  ],
+  "title": "Battle of Piedmont",
+  "summary": "The English Wikipedia article \"Battle of Piedmont\", at revision 1370586041, opens: \"The Battle of Piedmont was fought June 5, 1864, in the village of Piedmont, Augusta County, Virginia. Union Major General David Hunter engaged Confederates under Brigadier General William E. \"Grumble\" Jones north of Piedmont. After severe fighting, Jones was killed and the Confederates were routed. Hunter occupied Staunton on June 6 and soon began to advance on Lynchburg, destroying military stores and public property in his wake.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872035, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-06-05"
+  },
+  "place": "virginia-q1370",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

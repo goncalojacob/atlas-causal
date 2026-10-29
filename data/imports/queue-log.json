@@ -51007,6 +51007,608 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-187",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3062383: none of its classes (Q11682252) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-americas-189",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-paoli",
+        "edges": [],
+        "place": "paoli-battlefield-site-and-parade-grounds"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-191",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mine-run",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-193",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fort-ligonier",
+        "edges": [],
+        "place": "fort-ligonier"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-195",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-port-royal-1710",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-197",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-la-concepcion",
+        "edges": [],
+        "place": "concepcion-junin"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-199",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-glendale",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-201",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hanover-court-house",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-203",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-front-royal",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-205",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-richmond",
+        "edges": [],
+        "place": "richmond-kentucky"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-207",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-honey-springs",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-209",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-peachtree-creek",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-211",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-aldie",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-213",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-aquia-creek",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-215",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cheat-mountain",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-217",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-boonville",
+        "edges": [],
+        "place": "boonville-missouri"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-219",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-port-gibson",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-221",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-petersburg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-223",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fort-anne",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-225",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-longue-pointe",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-227",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4167569: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-29-americas-229",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-spring-hill",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-231",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "camp-jackson-affair",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-233",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-corinth",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-235",
+      "writer": "A",
+      "fired": "2026-10-29T19:08Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-fort-texas",
+        "edges": [],
+        "place": "fort-brown"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-188",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chelsea-creek",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-190",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-old-church",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-192",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "cherry-valley-massacre",
+        "edges": [],
+        "place": "cherry-valley-new-york"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-194",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ytororo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-196",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "sacking-of-lawrence",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-198",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-pisagua",
+        "edges": [],
+        "place": "pisagua-chile"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-200",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-jackson",
+        "edges": [],
+        "place": "jackson-mississippi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-202",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-iuka",
+        "edges": [],
+        "place": "iuka-mississippi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-204",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-beaver-dam-creek",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-206",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-jonesborough",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-208",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-galveston",
+        "edges": [],
+        "place": "galveston-texas"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-210",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-winchester",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-212",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fisher-s-hill",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-214",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "knoxville-campaign",
+        "edges": [],
+        "place": "tennessee"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-216",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fort-stevens",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-218",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-port-republic",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-220",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "third-battle-of-petersburg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-222",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cloyd-s-mountain",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-224",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-staten-island",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-226",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-white-marsh",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-228",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-piedmont",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-230",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-white-oak-swamp",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-232",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-totopotomoy-creek",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-234",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fort-stedman",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-236",
+      "writer": "B",
+      "fired": "2026-10-29T19:14Z",
+      "status": "written",
+      "written": {
+        "event": "conquest-of-california",
+        "edges": [],
+        "place": "alta-california"
+      },
+      "refusals": []
     }
   ]
 }

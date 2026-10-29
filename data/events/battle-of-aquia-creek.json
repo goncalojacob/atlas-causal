@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-aquia-creek",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q774532",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Aquia Creek",
+    "pt": "Batalha de Aquia Creek"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q774532"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Aquia Creek\", revision 1370432288"
+    }
+  ],
+  "title": "Battle of Aquia Creek",
+  "summary": "The English Wikipedia article \"Battle of Aquia Creek\", at revision 1370432288, opens: \"The Battle of Aquia Creek was an exchange of cannon fire between Union Navy gunboats and Confederate shore batteries on the Potomac River at its confluence with Aquia Creek in Stafford County, Virginia. The battle took place from May 29, 1861 to June 1, 1861 during the early days of the American Civil War. The Confederates set up several shore batteries to block Union military and commercial vessels from moving in the Chesapeake Bay and along the lower Potomac River as well as for defensive purposes. The battery at Aquia also was intended to protect the railroad terminal at that location. The Union forces sought to destroy or remove these batteries as part of the effort to blockade Confederate States coastal and Chesapeake Bay ports. The battle was tactically inconclusive. Each side inflicted little damage and no serious casualties on the other. The Union vessels were unable to dislodge the Confederates from their positions or to inflict serious casualties on their garrisons or serious damage to their batteries. The Confederates manning the batteries were unable to inflict serious casualties on the Union sailors or cause serious damage to the Union vessels. Soon after the battle, on Sunday, July 7, 1861, the Confederates first used naval mines, unsuccessfully, off the Aquia Landing batteries. The Confederates ultimately abandoned the batteries on March 9, 1862 as they moved forces to meet the threat created by the Union Army's Peninsula Campaign. The U. S. National Park Service includes this engagement in its list of 384 principal battles of the American Civil War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q774532, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-05-29",
+    "endDate": "1861-06-01"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

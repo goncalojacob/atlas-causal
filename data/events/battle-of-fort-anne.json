@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-fort-anne",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1238033",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Fort Anne"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1238033"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Anne\", revision 1370440852"
+    }
+  ],
+  "title": "Battle of Fort Anne",
+  "summary": "The English Wikipedia article \"Battle of Fort Anne\", at revision 1370440852, opens: \"The Battle of Fort Anne, fought on July 8, 1777, was an engagement between Continental Army forces in retreat from Fort Ticonderoga and forward elements of John Burgoyne's much larger British army that had driven them from Ticonderoga, early in the Saratoga campaign of the American Revolutionary War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1238033, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-07-08"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}
