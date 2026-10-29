@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "negros-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q13652394",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Negros Revolution"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q13652394"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Negros Revolution\", revision 1380909013"
+    }
+  ],
+  "title": "Negros Revolution",
+  "summary": "The English Wikipedia article \"Negros Revolution\", at revision 1380909013, opens: \"The Negros Revolution, commemorated and popularly known as the Fifth of November or Negros Day was a political movement in the Philippines that established a government on Negros Island in 1898, during the Spanish-American War, ending Spanish control of the island and paving the way for a republican government run by the Negrense natives. The newly established Negros Republic lasted for approximately three months. American forces landed unopposed on the island on February 2, 1899, ending the island's independence. Negros was then annexed to the Philippine Islands on 20 April 1901.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q13652394, imported by tools/import/wikidata.mjs. The item's own description reads \"1898 declaration of the Negros Republic during the Philippine Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-11-03",
+    "endDate": "1898-11-24"
+  },
+  "place": "negros",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "philippine-revolution"
+}

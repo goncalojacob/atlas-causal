@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "jicin",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q656603",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Jičín",
+    "pt": "Jičín"
+  },
+  "sources": [],
+  "names": [
+    "Jičín"
+  ],
+  "where": {
+    "lon": 15.3516528,
+    "lat": 50.4370452,
+    "precision": "city",
+    "label": "Jičín"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

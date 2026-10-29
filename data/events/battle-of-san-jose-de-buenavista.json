@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-san-jose-de-buenavista",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q56063332",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of San Jose de Buenavista"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q56063332"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of San Jose de Buenavista\", revision 1370588320"
+    }
+  ],
+  "title": "Battle of San Jose de Buenavista",
+  "summary": "The English Wikipedia article \"Battle of San Jose de Buenavista\", at revision 1370588320, opens: \"The Battle of Antique was fought in Antique province, between the forces of Spanish colonial government and the Antiqueño Katipuneros led by the Visayan General Leandro Fullon. The Katipuneros decisively won the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q56063332, imported by tools/import/wikidata.mjs. The item's own description reads \"1898 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-09-21"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

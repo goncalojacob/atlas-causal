@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-fort-pilar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16931487",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Fort Pilar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16931487"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fort Pilar\", revision 1370741229"
+    }
+  ],
+  "title": "Siege of Fort Pilar",
+  "summary": "The English Wikipedia article \"Siege of Fort Pilar\", at revision 1370741229, opens: \"The siege of Fort Pilar was fought between April and May 1898 on then-town of Zamboanga in Mindanao as a part of the Philippine Revolution. One of the only few actions against Spanish colonials forces in Mindanao, the victory brought about by the Zamboangueño Ethnolinguistic Nation, after their capture of Fort Pilar several weeks later, paved way for the foundation of the short-lived Republic of Zamboanga.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16931487, imported by tools/import/wikidata.mjs. The item's own description reads \"1898 siege part of the Philippine Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-04-27",
+    "endDate": "1898-05-18"
+  },
+  "place": "zamboanga-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

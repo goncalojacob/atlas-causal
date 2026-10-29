@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-batoche",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888113",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Batoche",
+    "pt": "Batalha de Batoche"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888113"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Batoche\", revision 1379281260"
+    }
+  ],
+  "title": "Battle of Batoche",
+  "summary": "The English Wikipedia article \"Battle of Batoche\", at revision 1379281260, opens: \"The Battle of Batoche was the decisive battle of the North-West Resistance, which pitted Canadian Militia units against a force of First Nations and Métis people. Fought from May 9 to 12, 1885, at the ad hoc Provisional Government of Saskatchewan capital of Batoche, the greater numbers and superior firepower of General Frederick Middleton's force eventually overwhelmed the Métis fighters.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888113, imported by tools/import/wikidata.mjs. The item's own description reads \"1885 decisive battle of the North-West Rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-05-09",
+    "endDate": "1885-05-12"
+  },
+  "place": "batoche",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "north-west-rebellion"
+}

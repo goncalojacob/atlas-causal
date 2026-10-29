@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-san-francisco-de-malabon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872272",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of San Francisco de Malabon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872272"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of San Francisco de Malabon\", revision 1370273558"
+    }
+  ],
+  "title": "Battle of San Francisco de Malabon",
+  "summary": "The English Wikipedia article \"Battle of San Francisco de Malabon\", at revision 1370273558, opens: \"The Battle of San Francisco De Malabon was the first attack staged by revolutionaries in Cavite. The battle occurred at approximately 10 in the morning on 31 August 1896 near Pasong Kalabaw and the town tribune. The uprising was fought by Magdiwang faction of the Katipunan led by Diego Mojica which signaled the start of the revolution in Cavite. Numerous uprisings occurred later that day.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872272, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1896,
+    "date": "1896-08-31"
+  },
+  "place": "general-trias",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

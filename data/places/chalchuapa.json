@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "chalchuapa",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2565837",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Chalchuapa",
+    "pt": "Chalchuapa"
+  },
+  "sources": [],
+  "names": [
+    "Chalchuapa"
+  ],
+  "where": {
+    "lon": -89.68024444444444,
+    "lat": 13.985291666666667,
+    "precision": "city",
+    "label": "Chalchuapa"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

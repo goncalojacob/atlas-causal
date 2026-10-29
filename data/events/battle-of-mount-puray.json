@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-mount-puray",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q106610261",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Mount Puray"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q106610261"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mount Puray\", revision 1370450618"
+    }
+  ],
+  "title": "Battle of Mount Puray",
+  "summary": "The English Wikipedia article \"Battle of Mount Puray\", at revision 1370450618, opens: \"The Battle of Mount Puray, sometimes known as Battle of Mount Purog was a significant engagement fought on June 14, 1897, during the Philippine Revolution. It took place between the Philippine revolutionary forces led by Revolutionary President Emilio Aguinaldo and the Spanish colonial forces acting under the command of Governor-General Fernando Primo de Rivera.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q106610261, imported by tools/import/wikidata.mjs. The item's own description reads \"1897 battle during the Philippine Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1897,
+    "end": 1897,
+    "date": "1897-06-14"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

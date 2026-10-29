@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-amity-and-commerce-between-france-and-japan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3536741",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Amity and Commerce between France and Japan",
+    "pt": "Tratado de Amizade e Comércio entre a França e o Japão"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3536741"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Amity and Commerce between France and Japan\", revision 1306680709"
+    }
+  ],
+  "title": "Treaty of Amity and Commerce between France and Japan",
+  "summary": "The English Wikipedia article \"Treaty of Amity and Commerce between France and Japan\", at revision 1306680709, opens: \"The Treaty of Amity and Commerce between France and Japan (1858) opened diplomatic relations and trade between the two counties.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3536741, imported by tools/import/wikidata.mjs. The item's own description reads \"1858 treaty between France and Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1858,
+    "date": "1858-10-09"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

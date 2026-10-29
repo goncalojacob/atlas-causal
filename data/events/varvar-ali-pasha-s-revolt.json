@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "varvar-ali-pasha-s-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q25477810",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Varvar Ali Pasha's Revolt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q25477810"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Varvar Ali Pasha's Revolt\", revision 1371076193"
+    }
+  ],
+  "title": "Varvar Ali Pasha's Revolt",
+  "summary": "The English Wikipedia article \"Varvar Ali Pasha's Revolt\", at revision 1371076193, opens: \"The Varvar Ali Pasha Revolt was a revolt led by Varvar Ali Pasha during his governorship of Sivas in 1647. Varvar Ali Pasha revolted after Ottoman Sultan Ibrahim demanded the hand of Perihan Hanım, the wife of Ibşir Mustafa Pasha, from Sivas, and ordered her to be brought to Istanbul. Varvar Ali Pasha refused to bring another man's wife to Sultan Ibrahim and did not carry out the order. He was removed from his post and sentenced to death. Varvar Ali Pasha prevented the soldiers assigned to kill him from entering the city. Although attempts were made to remove him from Sivas by inviting him to Istanbul, he refused to leave Sivas. Furthermore, attempts were made to weaken support for him by declaring him a Celali. Varvar Ali Pasha was attacked by İpşir Pasha, whose wife he had refused to hand over to Sultan Ibrahim. In response to this attack, Varvar Ali Pasha's army was scattered, and he was captured while trying to escape. İpşir Pasha had him executed, and Varvar Ali Pasha's severed head was sent to Istanbul. İpşir Pasha was then rewarded with the governorship of Aleppo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q25477810, imported by tools/import/wikidata.mjs. The item's own description reads \"1647–1648 revolt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1647,
+    "end": 1648
+  },
+  "place": "anatolia",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "celali-rebellions"
+}

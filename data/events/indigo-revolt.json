@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "indigo-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1661404",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Indigo revolt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1661404"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Indigo revolt\", revision 1368174729"
+    }
+  ],
+  "title": "Indigo revolt",
+  "summary": "The English Wikipedia article \"Indigo revolt\", at revision 1368174729, opens: \"The Indigo revolt was a peasant movement and subsequent uprising of indigo farmers against the indigo planters, that arose in Bengal in 1859, and continued for over a year. The village headmen (Mandals) and substantial ryots were the most active and numerous groups who led the peasants. Sometimes disgruntled former employees of European planters - 'gomashta' or 'diwan' of the Indigo factories, took the lead to mobilise the peasants against the Indigo planters.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1661404, imported by tools/import/wikidata.mjs. The item's own description reads \"peasant revolt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1859,
+    "end": 1862
+  },
+  "place": "bengal-q80338",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

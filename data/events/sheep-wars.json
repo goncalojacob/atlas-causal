@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "sheep-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7492431",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Sheep wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7492431"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sheep wars\", revision 1380579129"
+    }
+  ],
+  "title": "Sheep wars",
+  "summary": "The English Wikipedia article \"Sheep wars\", at revision 1380579129, opens: \"The sheep wars, or the sheep and cattle wars, were a series of armed conflicts in the Western United States fought between sheepmen and cattlemen over grazing rights. Sheep wars occurred in many western states, though they were most common in Texas, Arizona, and the border region of Wyoming and Colorado. Generally, the cattlemen saw the sheepherders as invaders who destroyed the public grazing lands, which they had to share on a first-come, first-served basis. Between 1870 and 1920, approximately 120 engagements occurred in eight states or territories. At least 54 men were killed and some 50,000 to over 100,000 sheep were slaughtered.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7492431, imported by tools/import/wikidata.mjs. The item's own description reads \"series of armed conflicts in the Western United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1921
+  },
+  "place": "western-united-states",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

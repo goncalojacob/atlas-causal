@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "great-fire-of-london",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q164679",
+  "sitelinks": {
+    "count": 71,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Great Fire of London",
+    "pt": "Grande Incêndio de Londres"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q164679"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Fire of London\", revision 1376270657"
+    }
+  ],
+  "title": "Great Fire of London",
+  "summary": "The English Wikipedia article \"Great Fire of London\", at revision 1376270657, opens: \"The Great Fire of London occurred from Sunday 2 September to Wednesday 5 September 1666, gutting the medieval City of London inside the old Roman city wall, while also extending past the wall to the west. The death toll is generally thought to have been relatively small, although some historians have challenged this belief.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q164679, imported by tools/import/wikidata.mjs. The item's own description reads \"disaster in 17th century England\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1666,
+    "end": 1666,
+    "date": "1666-09-02",
+    "endDate": "1666-09-06"
+  },
+  "place": "london",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

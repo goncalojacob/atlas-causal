@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-talisay",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16822722",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Talisay"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16822722"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Talisay\", revision 1371439860"
+    }
+  ],
+  "title": "Battle of Talisay",
+  "summary": "The English Wikipedia article \"Battle of Talisay\", at revision 1371439860, opens: \"The Battle of Talisay in Batangas province, Philippines, was fought during the Philippine Revolution on October 12, 1896, that led to Filipino victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16822722, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1896,
+    "date": "1896-10-12"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

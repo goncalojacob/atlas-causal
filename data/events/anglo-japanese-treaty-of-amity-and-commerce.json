@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anglo-japanese-treaty-of-amity-and-commerce",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2377085",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Anglo-Japanese Treaty of Amity and Commerce",
+    "pt": "Tratado de amizade e comércio anglo-japonês"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2377085"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Japanese Treaty of Amity and Commerce\", revision 1283260919"
+    }
+  ],
+  "title": "Anglo-Japanese Treaty of Amity and Commerce",
+  "summary": "The English Wikipedia article \"Anglo-Japanese Treaty of Amity and Commerce\", at revision 1283260919, opens: \"The Anglo–Japanese Treaty of Amity and Commerce  was signed on 26 August 1858 by Lord Elgin and the then representatives of the Japanese government, and was ratified between Queen Victoria and the Tycoon of Japan at Yedo on 11 July 1859.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2377085, imported by tools/import/wikidata.mjs. The item's own description reads \"1858 treaty between the United Kingdom and Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1858,
+    "date": "1858-08-26"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

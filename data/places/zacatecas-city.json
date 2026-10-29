@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "zacatecas-city",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q139242",
+  "sitelinks": {
+    "count": 63,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Zacatecas (city)",
+    "pt": "Zacatecas (cidade)"
+  },
+  "sources": [],
+  "names": [
+    "Zacatecas",
+    "Zacatecas (city)",
+    "Zacatecas (cidade)"
+  ],
+  "where": {
+    "lon": -102.57527777778,
+    "lat": 22.771666666667,
+    "precision": "city",
+    "label": "Zacatecas (city)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "iquicha-war-of-1825-1828",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q22667717",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Iquicha War of 1825–1828"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q22667717"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iquicha War of 1825–1828\", revision 1370624182"
+    }
+  ],
+  "title": "Iquicha War of 1825–1828",
+  "summary": "The English Wikipedia article \"Iquicha War of 1825–1828\", at revision 1370624182, opens: \"The First Iquichan War, Iquicha campaign of 1825–1828 or Iquicha War of 1825–1828 was a rebellion that broke out between 1825 and 1828 between local royalist peasants from Huanta known as Iquichanos and the army of the newly formed Peruvian Republic. The war ended with a Republican victory\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q22667717, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict in Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1825,
+    "end": 1828,
+    "date": "1825-03",
+    "endDate": "1828-06-08"
+  },
+  "place": "peru-q419",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

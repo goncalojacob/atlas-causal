@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1498-meio-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4549898",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1498 Meiō earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4549898"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1498 Meiō earthquake\", revision 1375850683"
+    }
+  ],
+  "title": "1498 Meiō earthquake",
+  "summary": "The English Wikipedia article \"1498 Meiō earthquake\", at revision 1375850683, opens: \"The 1498 Meiō earthquake struck off the coast of Nankaidō, Japan, at approximately 08:00 local time on September 20, 1498. With an estimated magnitude of 8.6 Ms, it triggered a massive tsunami. The exact death toll from this event remains uncertain, but reports range from 5,000 to 41,000 casualties. The tsunami, caused by the Meiō Nankaidō earthquake, washed away the building that housed the statue of the Great Buddha at Kōtoku-in in Kamakura, although the statue itself remained intact.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4549898, imported by tools/import/wikidata.mjs. The item's own description reads \"event near America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1498,
+    "end": 1498,
+    "date": "1498-09-20"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

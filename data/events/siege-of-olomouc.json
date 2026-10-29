@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-olomouc",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q508088",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Olomouc"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q508088"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Olomouc\", revision 1370744173"
+    }
+  ],
+  "title": "Siege of Olomouc",
+  "summary": "The English Wikipedia article \"Siege of Olomouc\", at revision 1370744173, opens: \"The Siege of Olomouc took place in 1758 when a Prussian army led by Frederick the Great besieged the Austrian city of Olmütz during the Prussian invasion of Moravia in the Third Silesian War. The attempt stalled as the besiegers faced stronger resistance than Frederick had expected. With a lack of supplies and the approach of an Austrian relief force following the Battle of Domstadtl, Frederick abandoned the siege and withdrew from Moravia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q508088, imported by tools/import/wikidata.mjs. The item's own description reads \"1758 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1758,
+    "end": 1758,
+    "date": "1758-05-04",
+    "endDate": "1758-07-02"
+  },
+  "place": "olomouc",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

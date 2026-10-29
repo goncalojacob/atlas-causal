@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "shikoku",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q13991",
+  "sitelinks": {
+    "count": 111,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Shikoku",
+    "pt": "Shikoku"
+  },
+  "sources": [],
+  "names": [
+    "Shikoku"
+  ],
+  "where": {
+    "lon": 133.5,
+    "lat": 33.75,
+    "precision": "region",
+    "label": "Shikoku"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

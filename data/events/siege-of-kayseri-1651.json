@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-kayseri-1651",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q134445839",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Kayseri (1651)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q134445839"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Kayseri (1651)\", revision 1370742393"
+    }
+  ],
+  "title": "Siege of Kayseri (1651)",
+  "summary": "The English Wikipedia article \"Siege of Kayseri (1651)\", at revision 1370742393, opens: \"The 1651 siege of Kayseri took place during the Celali rebellions in central Anatolia. Rebel forces led by Kurd Mehmed Agha, Ibşir Mustafa Pasha, and Abaza Hasan Pasha besieged the city of Kayseri, capturing it after a prolonged blockade. The siege was one of the major blows to Ottoman authority during the widespread uprisings of the mid-17th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q134445839, imported by tools/import/wikidata.mjs. The item's own description reads \"1651 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1651,
+    "end": 1651
+  },
+  "place": "kayseri",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "celali-rebellions"
+}

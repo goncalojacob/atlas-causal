@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-catalan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5723296",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Catalán",
+    "pt": "Batalha de Catalão"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5723296"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Catalán\", revision 1382668255"
+    }
+  ],
+  "title": "Battle of Catalán",
+  "summary": "The English Wikipedia article \"Battle of Catalán\", at revision 1382668255, opens: \"The Battle of Catalán was fought between the Luso-Brazilian forces under the command of Luís Teles da Silva Caminha e Meneses, the Marquis of Alegrete, and the artiguistas commanded by Andrés Latorre in Arroyo Catalán, present-day Uruguay.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5723296, imported by tools/import/wikidata.mjs. The item's own description reads \"1817 conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1817,
+    "end": 1817,
+    "date": "1817-01-04"
+  },
+  "place": "arroyo-catalan-grande",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "portuguese-conquest-of-the-banda-oriental"
+}

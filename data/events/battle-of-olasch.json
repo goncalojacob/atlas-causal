@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-olasch",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2237649",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Olasch"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2237649"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Olasch\", revision 1370271153"
+    }
+  ],
+  "title": "Battle of Olasch",
+  "summary": "The English Wikipedia article \"Battle of Olasch\", at revision 1370271153, opens: \"The Battle of Olasch took place after a Habsburg Imperial army led by Saxon Elector General, Augustus II the Strong, laid siege to Turkish held Temesvár. On 26 August 1696, after learning that Sultan Mustafa II's relief army was crossing the Danube at Pancsova, Augustus gave up the siege and headed to meet the Ottoman army. The battle near the Bega River resulted in a draw after both armies retreated with heavy casualties on both sides. Strategically, the Ottoman army's campaign can be considered a success, as it achieved its goal of retaining Temesvár.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2237649, imported by tools/import/wikidata.mjs. The item's own description reads \"1696 battle in the Great Turkish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1696,
+    "end": 1696,
+    "date": "1696-08-26"
+  },
+  "place": "hetin",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-turkish-war"
+}

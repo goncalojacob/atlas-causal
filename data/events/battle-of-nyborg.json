@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-nyborg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q641989",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Nyborg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q641989"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nyborg\", revision 1382431544"
+    }
+  ],
+  "title": "Battle of Nyborg",
+  "summary": "The English Wikipedia article \"Battle of Nyborg\", at revision 1382431544, opens: \"The Battle of Nyborg took place between Sweden and the combined forces of Denmark, Dutch naval forces under Michiel de Ruyter, troops of Brandenburg-Prussia, and Polish–Lithuanian Commonwealth forces under Stefan Czarniecki. The battle was engaged on 14 November 1659 at Nyborg on the Danish island of Funen. Nyborg was the final major battle of the Dano-Swedish War of 1658 to 1660.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q641989, imported by tools/import/wikidata.mjs. The item's own description reads \"1659 Swedish-Danish battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1659,
+    "end": 1659,
+    "date": "1659-11-14"
+  },
+  "place": "nyborg",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "northern-war-of-1655-1660"
+}

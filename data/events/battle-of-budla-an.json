@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-budla-an",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q126721244",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Budla-an"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q126721244"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Budla-an\", revision 1370435487"
+    }
+  ],
+  "title": "Battle of Budla-an",
+  "summary": "The English Wikipedia article \"Battle of Budla-an\", at revision 1370435487, opens: \"The Battle of Budla-an was fought on June 2, 1898, between the Philippine Cebuano rebel forces and Spanish and loyalist forces. It took place near Budla-an Falls in Talamban, Cebu, Philippines. Filipino forces won a victory in this battle in which a Spanish army pursuing them was crushed and routed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q126721244, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-06-02"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

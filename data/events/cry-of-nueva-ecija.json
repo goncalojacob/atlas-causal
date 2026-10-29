@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "cry-of-nueva-ecija",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5190436",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Cry of Nueva Ecija"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5190436"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cry of Nueva Ecija\", revision 1370614371"
+    }
+  ],
+  "title": "Cry of Nueva Ecija",
+  "summary": "The English Wikipedia article \"Cry of Nueva Ecija\", at revision 1370614371, opens: \"The first Cry of Nueva Ecija occurred on September 2–5, 1896, in the province of Nueva Ecija, in the Philippines under Spanish rule. It followed shortly after the Cry of Pugad Lawin and was the first call for revolution in central Luzon. Roughly 3,000 volunteers were led by Mariano Llanera and Pantaleon Valmonte. They marched towards San Isidro, the provincial capital, where after fighting several battles with the Spanish forces, their army was finally forced to retreat and to undertake guerrilla warfare.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5190436, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the Philippine Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1896,
+    "date": "1896-09-02",
+    "endDate": "1896-09-05"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

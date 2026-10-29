@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-punta-colares",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5778704",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Punta Colares"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5778704"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Punta Colares\", revision 1378282859"
+    }
+  ],
+  "title": "Battle of Punta Colares",
+  "summary": "The English Wikipedia article \"Battle of Punta Colares\", at revision 1378282859, opens: \"The naval Battle of Punta Colares, also known as the Battle of Corales, was the first major naval engagement of the Cisplatine War. It took place between a fleet of the Empire of Brazil, commanded by admiral Rodrigo José Ferreira Lobo, and a squadron of the United Provinces of the Río de la Plata under the command of admiral William Brown. The confrontations began at around 10 o'clock on 9 February 1826 and lasted for seven hours.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5778704, imported by tools/import/wikidata.mjs. The item's own description reads \"First major naval engagement of the Cisplatine War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1826,
+    "end": 1826,
+    "date": "1826-02-09"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "cisplatine-war"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-campichuelo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870625",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Campichuelo",
+    "pt": "Batalha de Campichuelo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870625"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Campichuelo\", revision 1370108495"
+    }
+  ],
+  "title": "Battle of Campichuelo",
+  "summary": "The English Wikipedia article \"Battle of Campichuelo\", at revision 1370108495, opens: \"The Battle of Campichuelo was a skirmish that took place on 19 December 1810 when the military expedition sent by the Primera Junta crossed the Paraná River from Candelaria to Campichuelo de la Candelaria, where a Paraguayan outpost was positioned. The action ended without casualties from either side.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870625, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1810,
+    "date": "1810-12-19"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "paraguay-campaign"
+}
