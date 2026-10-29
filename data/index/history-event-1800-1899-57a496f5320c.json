@@ -2210,6 +2210,15 @@
         }
       ]
     },
+    "battle-of-bezzecca": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-big-bethel": {
       "from": "git",
       "versions": [
@@ -2270,6 +2279,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-blumenau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2390,6 +2408,15 @@
       ]
     },
     "battle-of-byssel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-cabezon": {
       "from": "git",
       "versions": [
         {
@@ -3645,6 +3672,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-gitschin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5238,6 +5274,15 @@
         }
       ]
     },
+    "battle-of-nachod": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-nahr-al-kalb": {
       "from": "git",
       "versions": [
@@ -5562,6 +5607,15 @@
         }
       ]
     },
+    "battle-of-palestro": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-palikao": {
       "from": "git",
       "versions": [
@@ -5697,6 +5751,15 @@
         }
       ]
     },
+    "battle-of-piave-river-1809": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-pichincha": {
       "from": "git",
       "versions": [
@@ -5707,6 +5770,15 @@
       ]
     },
     "battle-of-piedmont": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-pirano": {
       "from": "git",
       "versions": [
         {
@@ -5847,6 +5919,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-raab-1809": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6170,6 +6251,15 @@
         }
       ]
     },
+    "battle-of-schleiz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-schongrabern": {
       "from": "git",
       "versions": [
@@ -6392,6 +6482,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-skalitz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6686,6 +6785,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-teugen-hausen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -7001,6 +7109,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-trautenau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -7514,6 +7631,15 @@
       ]
     },
     "battle-of-zhenhai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-znaim": {
       "from": "git",
       "versions": [
         {
@@ -10255,6 +10381,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "german-campaign-of-1813": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -14738,6 +14873,15 @@
         }
       ]
     },
+    "siege-of-zaragoza-1808": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-zaragoza-1809": {
       "from": "git",
       "versions": [
@@ -14805,6 +14949,15 @@
             "retraction"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "skirmish-of-pastrengo-1848": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

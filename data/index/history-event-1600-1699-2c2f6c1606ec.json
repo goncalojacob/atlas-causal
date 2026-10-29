@@ -457,6 +457,15 @@
         }
       ]
     },
+    "battle-of-augusta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-bantam": {
       "from": "git",
       "versions": [
@@ -1019,6 +1028,15 @@
         }
       ]
     },
+    "battle-of-k-ge-bay-1677": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-kaiyuan": {
       "from": "git",
       "versions": [
@@ -1070,6 +1088,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-killiecrankie": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1178,6 +1205,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-leghorn": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1497,7 +1533,25 @@
         }
       ]
     },
+    "battle-of-nyborg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-oland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-olasch": {
       "from": "git",
       "versions": [
         {
@@ -1549,6 +1603,15 @@
       ]
     },
     "battle-of-penghu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-plymouth-1652": {
       "from": "git",
       "versions": [
         {
@@ -1791,6 +1854,15 @@
         }
       ]
     },
+    "battle-of-scheveningen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-sekigahara": {
       "from": "git",
       "versions": [
@@ -1828,6 +1900,15 @@
       ]
     },
     "battle-of-shigino": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-sinsheim": {
       "from": "git",
       "versions": [
         {
@@ -2044,6 +2125,15 @@
         }
       ]
     },
+    "battle-of-the-gabbard": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-the-lake-of-two-mountains": {
       "from": "git",
       "versions": [
@@ -2172,6 +2262,15 @@
       ]
     },
     "battle-of-urmia-1604": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-vagen": {
       "from": "git",
       "versions": [
         {
@@ -4943,6 +5042,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "siege-of-ostend": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

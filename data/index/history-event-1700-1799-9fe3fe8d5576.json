@@ -799,6 +799,15 @@
         }
       ]
     },
+    "battle-of-assietta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-baton-rouge-1779": {
       "from": "git",
       "versions": [
@@ -1356,6 +1365,15 @@
         }
       ]
     },
+    "battle-of-famars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-flamborough-head": {
       "from": "git",
       "versions": [
@@ -1642,6 +1660,15 @@
         }
       ]
     },
+    "battle-of-groix": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-gross-jagersdorf": {
       "from": "git",
       "versions": [
@@ -1917,6 +1944,15 @@
         }
       ]
     },
+    "battle-of-kerch-strait-1790": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-kesselsdorf": {
       "from": "git",
       "versions": [
@@ -1959,6 +1995,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-kloster-kampen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2276,6 +2321,15 @@
         }
       ]
     },
+    "battle-of-meissen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-melle": {
       "from": "git",
       "versions": [
@@ -2289,6 +2343,15 @@
             "regionNote"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-millesimo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3302,6 +3365,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-tornow": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4552,12 +4624,30 @@
         }
       ]
     },
+    "french-expedition-to-ireland-1796": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "french-invasion-of-egypt-and-syria": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "french-invasion-of-switzerland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5920,6 +6010,15 @@
         }
       ]
     },
+    "second-battle-of-dego": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "second-battle-of-zurich": {
       "from": "git",
       "versions": [
@@ -6487,6 +6586,15 @@
         }
       ]
     },
+    "siege-of-mantua-1796-1797": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-masulipatam": {
       "from": "git",
       "versions": [
@@ -6558,6 +6666,15 @@
       ]
     },
     "siege-of-ochakov-1788": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-olomouc": {
       "from": "git",
       "versions": [
         {
@@ -6926,6 +7043,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "suvorov-s-swiss-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
