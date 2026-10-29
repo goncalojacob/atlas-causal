@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-shklow",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2657186",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Shklow"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2657186"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Shklow\", revision 1374809046"
+    }
+  ],
+  "title": "Battle of Shklow",
+  "summary": "The English Wikipedia article \"Battle of Shklow\", at revision 1374809046, opens: \"The Battle of Shklov took place on August 12, 1654, and was one of the first battles of the Russo-Polish War (1654–67); it ended with a indecisive, however, by other sources. A small Polish–Lithuanian force of about 6,000–7,000 under Great Lithuanian Hetman Janusz Radziwiłł surprised a numerically superior Russian force under knyaz Yakov Cherkassky near Shklow. The battle took place during a solar eclipse. The Russian forces, due to their surprise, were engaged by the Poles unprepared and in smaller portions, which were defeated in turn. Eventually the Poles forced the entire Russian army to retreat; the losses are estimated at 700 for the Poles and 7,000 for the Russians.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2657186, imported by tools/import/wikidata.mjs. The item's own description reads \"1654 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1654,
+    "end": 1654,
+    "date": "1654-08-12"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "polish-russian-war-1654-1667"
+}

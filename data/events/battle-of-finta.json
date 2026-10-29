@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-finta",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2576318",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Finta"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2576318"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Finta\", revision 1370110263"
+    }
+  ],
+  "title": "Battle of Finta",
+  "summary": "The English Wikipedia article \"Battle of Finta\", at revision 1370110263, opens: \"The Battle of Finta was a confrontation between Prince Matei Basarab's Wallachian army and a combined Moldavian–Cossack–Tatar force under Prince Vasile Lupu and Tymofiy Khmelnytsky. It took place around Finta, now a commune in Dâmbovița County, Romania.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2576318, imported by tools/import/wikidata.mjs. The item's own description reads \"1653 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1653,
+    "end": 1653,
+    "date": "1653-05-27"
+  },
+  "place": "romania-q218",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

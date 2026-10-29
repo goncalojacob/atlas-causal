@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-khresili",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4871427",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Khresili",
+    "pt": "Batalha de Cresili"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871427"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Khresili\", revision 1379710034"
+    }
+  ],
+  "title": "Battle of Khresili",
+  "summary": "The English Wikipedia article \"Battle of Khresili\", at revision 1379710034, opens: \"The Battle of Khresili was fought on December 14, 1757, between the armies of the Kingdom of Imereti and the Ottoman Empire. King Solomon I of Imereti established a strong monarchy and unified western Georgia. His actions strained the relations between him and the Ottoman Empire. The Ottomans, in particular, sought to stop Solomon's struggle against slavery. They were in an alliance with rebellious Georgian nobles who opposed their monarch. One of them was Levan Abashidze, who led an Ottoman army to the Kingdom of Imereti. Solomon enticed his enemies into a strategically adroit place near Khresili where his forces would gather to engage them.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871427, imported by tools/import/wikidata.mjs. The item's own description reads \"1757 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1757,
+    "date": "1757-12-14"
+  },
+  "place": "khresili",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

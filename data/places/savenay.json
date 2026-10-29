@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "savenay",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q816233",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Savenay",
+    "pt": "Savenay"
+  },
+  "sources": [],
+  "names": [
+    "Savenay"
+  ],
+  "where": {
+    "lon": -1.9419444444444,
+    "lat": 47.361111111111,
+    "precision": "city",
+    "label": "Savenay"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

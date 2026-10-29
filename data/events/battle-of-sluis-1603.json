@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-sluis-1603",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2114424",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Sluis (1603)",
+    "pt": "Batalha de Sluis"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2114424"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sluis (1603)\", revision 1370589564"
+    }
+  ],
+  "title": "Battle of Sluis (1603)",
+  "summary": "The English Wikipedia article \"Battle of Sluis (1603)\", at revision 1370589564, opens: \"The Battle of Sluis was a naval battle during the Eighty Years' War in which a Spanish squadron commanded by the Italian captain Federico Spinola tried to break through a blockade of Sluis by Dutch ships under the command of Joos de Moor. After about two hours of fighting the heavily damaged Spanish ships returned to Sluis. Federico Spinola was killed during the action.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2114424, imported by tools/import/wikidata.mjs. The item's own description reads \"1603 naval battle between a Spanish royal and a Dutch rebel fleet\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1603,
+    "end": 1603,
+    "date": "1603-05-26"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-montjuic-1641",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q331170",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Montjuïc (1641)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q331170"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Montjuïc (1641)\", revision 1370450433"
+    }
+  ],
+  "title": "Battle of Montjuïc (1641)",
+  "summary": "The English Wikipedia article \"Battle of Montjuïc (1641)\", at revision 1370450433, opens: \"The Battle of Montjuïc took place on 26 January 1641 during the Reapers' War. A Spanish force under Pedro Fajardo launched an attack on the Catalan army led by Francesc de Tamarit, with French cavalry support. The Spanish force had recently massacred hundreds of rebels who had tried to surrender at Cambrils.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q331170, imported by tools/import/wikidata.mjs. The item's own description reads \"1641 battle in the Reapers' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1641,
+    "end": 1641,
+    "date": "1641-01-26"
+  },
+  "place": "barcelona",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": [
+    "thirty-years-war",
+    "reapers-war"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "irish-famine-1740-1741",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2517366",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Irish Famine (1740–1741)",
+    "pt": "Grande fome de 1740–1741 na Irlanda"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2517366"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Irish Famine (1740–1741)\", revision 1376781899"
+    }
+  ],
+  "title": "Irish Famine (1740–1741)",
+  "summary": "The English Wikipedia article \"Irish Famine (1740–1741)\", at revision 1376781899, opens: \"The Irish Famine of 1740–1741 in the Kingdom of Ireland, is estimated to have killed between 13% and 20% of the 1740 population of 2.4 million people, which was a proportionately greater loss than during the Great Famine of 1845–1852.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2517366, imported by tools/import/wikidata.mjs. The item's own description reads \"famine in the Kingdom of Ireland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1740,
+    "end": 1741
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
