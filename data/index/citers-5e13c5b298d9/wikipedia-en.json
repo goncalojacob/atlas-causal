@@ -12932,6 +12932,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-arakere",
+      "kind": "event",
+      "locator": "\"Battle of Arakere\", revision 1370106906"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-araure",
       "kind": "event",
       "locator": "\"Battle of Araure\", revision 1370432332"
@@ -13514,6 +13520,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-byssel",
+      "kind": "event",
+      "locator": "\"Battle of Byssel\", revision 1376302275"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-c-ld-r",
       "kind": "event",
       "locator": "\"Battle of Çıldır\", revision 1381376903"
@@ -13835,6 +13847,12 @@
       "id": "battle-of-cerro-cora",
       "kind": "event",
       "locator": "\"Battle of Cerro Corá\", revision 1374679753"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cerro-gordo",
+      "kind": "event",
+      "locator": "\"Battle of Cerro Gordo\", revision 1376435267"
     },
     {
       "dissent": false,
@@ -15038,6 +15056,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gozo-1570",
+      "kind": "event",
+      "locator": "\"Battle of Gozo (1570)\", revision 1377061294"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gqokli-hill",
       "kind": "event",
       "locator": "\"Battle of Gqokli Hill\", revision 1370441903"
@@ -15632,6 +15656,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-javad",
+      "kind": "event",
+      "locator": "\"Battle of Javad\", revision 1375001895"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jean-rabel",
       "kind": "event",
       "locator": "\"Battle of Jean-Rabel\", revision 1370444142"
@@ -15758,6 +15788,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kam-dakka",
+      "kind": "event",
+      "locator": "\"Battle of Kam Dakka\", revision 1373152431"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kamatero",
       "kind": "event",
       "locator": "\"Battle of Kamatero\", revision 1370444638"
@@ -15791,6 +15827,12 @@
       "id": "battle-of-karameh",
       "kind": "event",
       "locator": "\"Battle of Karameh\", revision 1374545421"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-karanovac",
+      "kind": "event",
+      "locator": "\"Battle of Karanovac\", revision 1370444786"
     },
     {
       "dissent": false,
@@ -16484,6 +16526,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-macao-fort",
+      "kind": "event",
+      "locator": "\"Battle of Macao Fort\", revision 1370448442"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-macau",
       "kind": "event",
       "locator": "\"Battle of Macau\", revision 1370448450"
@@ -16697,6 +16745,12 @@
       "id": "battle-of-marihuenu",
       "kind": "event",
       "locator": "\"Battle of Marihueñu\", revision 1370449036"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-marilao-river",
+      "kind": "event",
+      "locator": "\"Battle of Marilao River\", revision 1382311812"
     },
     {
       "dissent": false,
@@ -17516,9 +17570,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-paete",
+      "kind": "event",
+      "locator": "\"Battle of Paete\", revision 1370452608"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-pagallos",
       "kind": "event",
       "locator": "\"Battle of Pagallos\", revision 1370271396"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-pagsanjan",
+      "kind": "event",
+      "locator": "\"Battle of Pagsanjan\", revision 1380529269"
     },
     {
       "dissent": false,
@@ -17579,6 +17645,12 @@
       "id": "battle-of-pavon",
       "kind": "event",
       "locator": "\"Battle of Pavón\", revision 1373364883"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-paye",
+      "kind": "event",
+      "locator": "\"Battle of Paye\", revision 1370271651"
     },
     {
       "dissent": false,
@@ -17897,6 +17969,12 @@
       "id": "battle-of-pyongyang-1894",
       "kind": "event",
       "locator": "\"Battle of Pyongyang (1894)\", revision 1370586840"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-qinghe",
+      "kind": "event",
+      "locator": "\"Battle of Qinghe\", revision 1370272511"
     },
     {
       "dissent": false,
@@ -18353,6 +18431,12 @@
       "id": "battle-of-santiago-de-cuba-1748",
       "kind": "event",
       "locator": "\"Battle of Santiago de Cuba (1748)\", revision 1370588626"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-santo-tomas",
+      "kind": "event",
+      "locator": "\"Battle of Santo Tomas\", revision 1370588633"
     },
     {
       "dissent": false,
@@ -19034,6 +19118,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tellicherry",
+      "kind": "event",
+      "locator": "\"Battle of Tellicherry\", revision 1370590802"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tenmokuzan",
       "kind": "event",
       "locator": "\"Battle of Tenmokuzan\", revision 1374265384"
@@ -19427,6 +19517,12 @@
       "id": "battle-of-ticonderoga-1759",
       "kind": "event",
       "locator": "\"Battle of Ticonderoga (1759)\", revision 1370717242"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tieling",
+      "kind": "event",
+      "locator": "\"Battle of Tieling\", revision 1370275474"
     },
     {
       "dissent": false,
@@ -21014,6 +21110,12 @@
     },
     {
       "dissent": false,
+      "id": "campaign-of-the-hills",
+      "kind": "event",
+      "locator": "\"Campaign of the Hills\", revision 1379996756"
+    },
+    {
+      "dissent": false,
       "id": "campaign-of-tlemcen-1551",
       "kind": "event",
       "locator": "\"Campaign of Tlemcen (1551)\", revision 1376495158"
@@ -21359,6 +21461,12 @@
       "id": "capture-of-tabriz-1635",
       "kind": "event",
       "locator": "\"Capture of Tabriz (1635)\", revision 1370609683"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-the-french-folly-fort",
+      "kind": "event",
+      "locator": "\"Capture of the French Folly Fort\", revision 1370610020"
     },
     {
       "dissent": false,
@@ -22037,6 +22145,12 @@
       "id": "cornish-rebellion-of-1497",
       "kind": "event",
       "locator": "\"Cornish rebellion of 1497\", revision 1380049447"
+    },
+    {
+      "dissent": false,
+      "id": "corrientes-campaign",
+      "kind": "event",
+      "locator": "\"Corrientes campaign\", revision 1374607517"
     },
     {
       "dissent": false,
@@ -23306,6 +23420,12 @@
     },
     {
       "dissent": false,
+      "id": "first-battle-of-tabasco",
+      "kind": "event",
+      "locator": "\"First Battle of Tabasco\", revision 1370618990"
+    },
+    {
+      "dissent": false,
       "id": "first-battle-of-the-lucala",
       "kind": "event",
       "locator": "\"First Battle of the Lucala\", revision 1370619097"
@@ -24554,6 +24674,12 @@
     },
     {
       "dissent": false,
+      "id": "humaita-campaign",
+      "kind": "event",
+      "locator": "\"Humaitá campaign\", revision 1374868129"
+    },
+    {
+      "dissent": false,
       "id": "humboldt-7-massacre",
       "kind": "event",
       "locator": "\"Humboldt 7 massacre\", revision 1361104810"
@@ -24641,6 +24767,18 @@
       "id": "independence-of-brazil-1822",
       "kind": "event",
       "locator": "\"Independence of Brazil\", revision 1373868391"
+    },
+    {
+      "dissent": false,
+      "id": "independence-of-panama-from-spain",
+      "kind": "event",
+      "locator": "\"Independence of Panama from Spain\", revision 1361104966"
+    },
+    {
+      "dissent": false,
+      "id": "independence-of-paraguay",
+      "kind": "event",
+      "locator": "\"Independence of Paraguay\", revision 1379727650"
     },
     {
       "dissent": false,
@@ -26078,6 +26216,12 @@
     },
     {
       "dissent": false,
+      "id": "mato-grosso-campaign",
+      "kind": "event",
+      "locator": "\"Mato Grosso campaign\", revision 1379802413"
+    },
+    {
+      "dissent": false,
       "id": "mau-mau-rebellion",
       "kind": "event",
       "locator": "\"Mau Mau rebellion\", revision 1379848238"
@@ -26558,6 +26702,12 @@
     },
     {
       "dissent": false,
+      "id": "naval-campaign-of-the-war-of-the-pacific",
+      "kind": "event",
+      "locator": "\"Naval campaign of the War of the Pacific\", revision 1374620512"
+    },
+    {
+      "dissent": false,
       "id": "ndwandwe-zulu-war",
       "kind": "event",
       "locator": "\"Ndwandwe–Zulu War\", revision 1370629469"
@@ -26771,6 +26921,12 @@
       "id": "ochomogo-war",
       "kind": "event",
       "locator": "\"Ochomogo War\", revision 1372904988"
+    },
+    {
+      "dissent": false,
+      "id": "october-9-revolution",
+      "kind": "event",
+      "locator": "\"October 9 Revolution\", revision 1370630335"
     },
     {
       "dissent": false,
@@ -27695,6 +27851,12 @@
       "id": "pig-war-1859",
       "kind": "event",
       "locator": "\"Pig War (1859)\", revision 1381132969"
+    },
+    {
+      "dissent": false,
+      "id": "pikysyry-campaign",
+      "kind": "event",
+      "locator": "\"Pikysyry campaign\", revision 1374608168"
     },
     {
       "dissent": false,
@@ -29096,6 +29258,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-charasiab",
+      "kind": "event",
+      "locator": "\"Second Battle of Charasiab\", revision 1370736014"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-chuenpi",
       "kind": "event",
       "locator": "\"Second Battle of Chuenpi\", revision 1370736031"
@@ -30206,6 +30374,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-goorumconda",
+      "kind": "event",
+      "locator": "\"Siege of Goorumconda\", revision 1370741555"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-graciosa-1489",
       "kind": "event",
       "locator": "\"Siege of Graciosa (1489)\", revision 1370741574"
@@ -30215,6 +30389,12 @@
       "id": "siege-of-guadeloupe",
       "kind": "event",
       "locator": "\"Siege of Guadeloupe\", revision 1370741652"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-guilin-1647",
+      "kind": "event",
+      "locator": "\"Siege of Guilin (1647)\", revision 1379698377"
     },
     {
       "dissent": false,
@@ -30938,6 +31118,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-puebla-1863",
+      "kind": "event",
+      "locator": "\"Siege of Puebla (1863)\", revision 1370744601"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-pyongyang-1592",
       "kind": "event",
       "locator": "\"Siege of Pyongyang (1592)\", revision 1375175893"
@@ -31106,9 +31292,21 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-suzhou",
+      "kind": "event",
+      "locator": "\"Siege of Suzhou\", revision 1374154409"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-szigetvar",
       "kind": "event",
       "locator": "\"Siege of Szigetvár\", revision 1377514825"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-taif-1814",
+      "kind": "event",
+      "locator": "\"Siege of Taif (1814)\", revision 1371019867"
     },
     {
       "dissent": false,
@@ -31469,6 +31667,12 @@
       "id": "skirmish-at-bender",
       "kind": "event",
       "locator": "\"Skirmish at Bender\", revision 1378400908"
+    },
+    {
+      "dissent": false,
+      "id": "skirmish-at-cerigo-channel",
+      "kind": "event",
+      "locator": "\"Skirmish at Cerigo Channel\", revision 1376031717"
     },
     {
       "dissent": false,
@@ -32027,6 +32231,12 @@
       "id": "taos-revolt",
       "kind": "event",
       "locator": "\"Taos Revolt\", revision 1379335031"
+    },
+    {
+      "dissent": false,
+      "id": "tarapaca-campaign",
+      "kind": "event",
+      "locator": "\"Tarapacá campaign\", revision 1370749694"
     },
     {
       "dissent": false,
@@ -34955,6 +35165,12 @@
       "id": "venezuelan-declaration-of-independence",
       "kind": "event",
       "locator": "\"Venezuelan Declaration of Independence\", revision 1370625449"
+    },
+    {
+      "dissent": false,
+      "id": "venezuelan-independence",
+      "kind": "event",
+      "locator": "\"Venezuelan independence\", revision 1372097577"
     },
     {
       "dissent": false,

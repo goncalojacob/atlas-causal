@@ -700,6 +700,15 @@
         }
       ]
     },
+    "battle-of-arakere": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-arcole": {
       "from": "git",
       "versions": [
@@ -2757,6 +2766,15 @@
       ]
     },
     "battle-of-stockach-1799": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-tellicherry": {
       "from": "git",
       "versions": [
         {
@@ -5555,6 +5573,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-goorumconda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

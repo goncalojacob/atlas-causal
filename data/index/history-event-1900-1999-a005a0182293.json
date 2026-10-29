@@ -8512,6 +8512,15 @@
         }
       ]
     },
+    "battle-of-paye": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-peking-1900": {
       "from": "git",
       "versions": [

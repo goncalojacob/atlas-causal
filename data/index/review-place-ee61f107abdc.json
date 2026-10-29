@@ -592,7 +592,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 10,
+      "degree": 12,
       "id": "afghanistan-q889",
       "kind": "place",
       "names": [
@@ -2177,7 +2177,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 9,
+      "degree": 10,
       "id": "argentina-q414",
       "kind": "place",
       "names": [
@@ -8633,7 +8633,7 @@
         }
       ],
       "created": "2026-10-14",
-      "degree": 2,
+      "degree": 3,
       "id": "central-america",
       "kind": "place",
       "names": [
@@ -18083,6 +18083,61 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "guayaquil",
+      "kind": "place",
+      "names": [
+        "Guayaquil",
+        "Guaiaquil"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "guilin",
+      "kind": "place",
+      "names": [
+        "Guilin"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -24954,6 +25009,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "kythira",
+      "kind": "place",
+      "names": [
+        "Kythira",
+        "Citera"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "la-albuera",
@@ -30088,7 +30171,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 12,
+      "degree": 13,
       "id": "mexico-q96",
       "kind": "place",
       "names": [
@@ -35177,7 +35260,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 23,
+      "degree": 24,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -36007,7 +36090,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 4,
       "id": "pearl-river",
       "kind": "place",
       "names": [
@@ -36711,7 +36794,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 12,
+      "degree": 17,
       "id": "philippines-q928",
       "kind": "place",
       "names": [
@@ -38754,6 +38837,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "qinghe-district-tieling",
+      "kind": "place",
+      "names": [
+        "Qinghe District",
+        "Qinghe District, Tieling"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -41301,7 +41412,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 7,
+      "degree": 8,
       "id": "salvador",
       "kind": "place",
       "names": [
@@ -46026,6 +46137,34 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "suqovusan-sabirabad",
+      "kind": "place",
+      "names": [
+        "Suqovuşan",
+        "Suqovuşan, Sabirabad"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "suvi-do-tutin",
       "kind": "place",
       "names": [
@@ -46053,7 +46192,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "suzhou",
       "kind": "place",
       "names": [
@@ -46346,6 +46485,36 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q15231376, the Tagarangabotte ambush, read on 2026-09-25 — A9's first step as A12 (2) corrects it. The ground has no item this pass could reach and the item names no P276; the article at revision 1370749494 places it \"at Tagarangabotte, in the east, from Ansongo on the road to Ménaka\".",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "taif",
+      "kind": "place",
+      "names": [
+        "Ta'if",
+        "Ta’if",
+        "Taif",
+        "Taife"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -47152,6 +47321,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "thalassery",
+      "kind": "place",
+      "names": [
+        "Thalassery"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "thann-haut-rhin",
@@ -47576,6 +47772,33 @@
       "names": [
         "Ticonderoga",
         "Ticonderoga, New York"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "tieling",
+      "kind": "place",
+      "names": [
+        "Tieling"
       ],
       "origin": {
         "tool": "wikidata"
@@ -50044,7 +50267,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 9,
+      "degree": 10,
       "id": "venezuela-q717",
       "kind": "place",
       "names": [
@@ -50406,6 +50629,34 @@
       "kind": "place",
       "names": [
         "Villafranca di Verona"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "villahermosa",
+      "kind": "place",
+      "names": [
+        "Villahermosa",
+        "Villahermosa (México)"
       ],
       "origin": {
         "tool": "wikidata"

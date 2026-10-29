@@ -7181,6 +7181,24 @@
         }
       ]
     },
+    "guayaquil": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "guilin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "guinea-bissau-q1007": {
       "from": "git",
       "versions": [
@@ -9789,6 +9807,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "kythira": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -15351,6 +15378,15 @@
         }
       ]
     },
+    "qinghe-district-tieling": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "quang-tri": {
       "from": "git",
       "versions": [
@@ -18306,6 +18342,15 @@
         }
       ]
     },
+    "suqovusan-sabirabad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "suvi-do-tutin": {
       "from": "git",
       "versions": [
@@ -18417,6 +18462,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "taif": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -18731,6 +18785,15 @@
         }
       ]
     },
+    "thalassery": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "thann-haut-rhin": {
       "from": "git",
       "versions": [
@@ -18909,6 +18972,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "tieling": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -20028,6 +20100,15 @@
       ]
     },
     "villafranca-di-verona": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "villahermosa": {
       "from": "git",
       "versions": [
         {

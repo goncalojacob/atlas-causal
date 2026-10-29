@@ -1129,6 +1129,15 @@
         }
       ]
     },
+    "armenian-kurdish-conflicts-in-agr": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "armistice-of-villafranca": {
       "from": "git",
       "versions": [
@@ -2155,6 +2164,15 @@
         }
       ]
     },
+    "battle-of-byssel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-caldiero-1805": {
       "from": "git",
       "versions": [
@@ -2341,6 +2359,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-cerro-gordo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3522,6 +3549,15 @@
         }
       ]
     },
+    "battle-of-javad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-jena-auerstedt": {
       "from": "git",
       "versions": [
@@ -3594,6 +3630,15 @@
         }
       ]
     },
+    "battle-of-kam-dakka": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-kamatero": {
       "from": "git",
       "versions": [
@@ -3618,6 +3663,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-karanovac": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4008,6 +4062,15 @@
         }
       ]
     },
+    "battle-of-macao-fort": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-mackinac-island-1814": {
       "from": "git",
       "versions": [
@@ -4191,6 +4254,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-marilao-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4590,12 +4662,30 @@
         }
       ]
     },
+    "battle-of-paete": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-pagallos": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-pagsanjan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4988,6 +5078,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-santo-tomas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6752,6 +6851,15 @@
         }
       ]
     },
+    "campaign-of-the-hills": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "canadian-american-reciprocity-treaty": {
       "from": "git",
       "versions": [
@@ -6911,6 +7019,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "capture-of-the-french-folly-fort": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -7344,6 +7461,15 @@
       ]
     },
     "conventions-of-la-marsa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "corrientes-campaign": {
       "from": "git",
       "versions": [
         {
@@ -8096,6 +8222,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "first-battle-of-tabasco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -9089,6 +9224,15 @@
         }
       ]
     },
+    "humaita-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "hundred-days": {
       "from": "git",
       "versions": [
@@ -9122,6 +9266,15 @@
         {
           "first": true,
           "on": "2026-10-12"
+        }
+      ]
+    },
+    "independence-of-argentina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -9164,6 +9317,33 @@
             "actors"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "independence-of-central-america": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "independence-of-panama-from-spain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "independence-of-paraguay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -9900,6 +10080,15 @@
         }
       ]
     },
+    "mato-grosso-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "may-revolution": {
       "from": "git",
       "versions": [
@@ -10189,6 +10378,15 @@
         }
       ]
     },
+    "naval-campaign-of-the-war-of-the-pacific": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "ndwandwe-zulu-war": {
       "from": "git",
       "versions": [
@@ -10348,6 +10546,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "october-9-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -10946,6 +11153,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "pikysyry-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -11616,6 +11832,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "second-battle-of-charasiab": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -12488,6 +12713,15 @@
         }
       ]
     },
+    "siege-of-puebla-1863": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-rustenburg": {
       "from": "git",
       "versions": [
@@ -12530,6 +12764,24 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "siege-of-suzhou": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-taif-1814": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -13006,6 +13258,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "tarapaca-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -14535,6 +14796,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "venezuelan-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
