@@ -2824,6 +2824,15 @@
         }
       ]
     },
+    "bridgwater": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "brienne-le-chateau": {
       "from": "git",
       "versions": [
@@ -4339,6 +4348,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "cholet": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -13702,6 +13720,15 @@
         }
       ]
     },
+    "montereau-fault-yonne": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "monterrey": {
       "from": "git",
       "versions": [
@@ -15321,6 +15348,15 @@
         }
       ]
     },
+    "onati": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "oradea": {
       "from": "git",
       "versions": [
@@ -15428,6 +15464,15 @@
       ]
     },
     "ostend": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "ostro-eka": {
       "from": "git",
       "versions": [
         {
@@ -15719,6 +15764,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "parma-q2683": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -18042,6 +18096,15 @@
         }
       ]
     },
+    "saint-denis-mons": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "saint-domingue-q861551": {
       "from": "git",
       "versions": [
@@ -20208,6 +20271,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "stromboli": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -22744,6 +22816,15 @@
       ]
     },
     "western-united-states": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "westfjords": {
       "from": "git",
       "versions": [
         {

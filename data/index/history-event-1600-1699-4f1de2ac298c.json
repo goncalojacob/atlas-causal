@@ -752,6 +752,15 @@
         }
       ]
     },
+    "battle-of-dungeness": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-edgehill": {
       "from": "git",
       "versions": [
@@ -1881,6 +1890,15 @@
         }
       ]
     },
+    "battle-of-saint-denis-1678": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-saint-gotthard-1664": {
       "from": "git",
       "versions": [
@@ -1900,6 +1918,15 @@
       ]
     },
     "battle-of-scheveningen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-sedgemoor": {
       "from": "git",
       "versions": [
         {
@@ -2046,6 +2073,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-stromboli": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3676,6 +3712,15 @@
       ]
     },
     "messina-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "modern-greek-enlightenment": {
       "from": "git",
       "versions": [
         {
@@ -5421,6 +5466,15 @@
         }
       ]
     },
+    "slaying-of-the-basques": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "smolensk-war": {
       "from": "git",
       "versions": [
@@ -5436,6 +5490,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "st-james-day-battle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

@@ -10442,6 +10442,12 @@
     },
     {
       "dissent": false,
+      "id": "1802-vrancea-earthquake",
+      "kind": "event",
+      "locator": "\"1802 Vrancea earthquake\", revision 1371231767"
+    },
+    {
+      "dissent": false,
       "id": "1804-haitian-massacre",
       "kind": "event",
       "locator": "\"1804 Haitian massacre\", revision 1381403436"
@@ -13406,6 +13412,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-athos",
+      "kind": "event",
+      "locator": "\"Battle of Athos\", revision 1370432687"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-atlanta",
       "kind": "event",
       "locator": "\"Battle of Atlanta\", revision 1380654396"
@@ -15233,6 +15245,12 @@
       "id": "battle-of-dunbar-1650",
       "kind": "event",
       "locator": "\"Battle of Dunbar (1650)\", revision 1375910502"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dungeness",
+      "kind": "event",
+      "locator": "\"Battle of Dungeness\", revision 1382431475"
     },
     {
       "dissent": false,
@@ -18494,6 +18512,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-montereau",
+      "kind": "event",
+      "locator": "\"Battle of Montereau\", revision 1370269786"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-monterrey",
       "kind": "event",
       "locator": "\"Battle of Monterrey\", revision 1374111268"
@@ -19061,6 +19085,12 @@
       "id": "battle-of-oshakan",
       "kind": "event",
       "locator": "\"Battle of Oshakan\", revision 1371931615"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ostro-eka-1831",
+      "kind": "event",
+      "locator": "\"Battle of Ostrołęka (1831)\", revision 1377469299"
     },
     {
       "dissent": false,
@@ -20072,6 +20102,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-saint-denis-1678",
+      "kind": "event",
+      "locator": "\"Battle of Saint-Denis (1678)\", revision 1370588020"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-saint-denis-1837",
       "kind": "event",
       "locator": "\"Battle of Saint-Denis (1837)\", revision 1370588022"
@@ -20258,6 +20294,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-san-pietro",
+      "kind": "event",
+      "locator": "\"Battle of San Pietro\", revision 1370588435"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-san-rafael",
       "kind": "event",
       "locator": "\"Battle of San Rafael\", revision 1370588444"
@@ -20441,6 +20483,12 @@
       "id": "battle-of-sedan",
       "kind": "event",
       "locator": "\"Battle of Sedan\", revision 1381666030"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sedgemoor",
+      "kind": "event",
+      "locator": "\"Battle of Sedgemoor\", revision 1382332382"
     },
     {
       "dissent": false,
@@ -20957,6 +21005,12 @@
       "id": "battle-of-strasbourg-bridge",
       "kind": "event",
       "locator": "\"Battle of Strasbourg Bridge\", revision 1370590004"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-stromboli",
+      "kind": "event",
+      "locator": "\"Battle of Stromboli\", revision 1382431810"
     },
     {
       "dissent": false,
@@ -24116,6 +24170,12 @@
     },
     {
       "dissent": false,
+      "id": "chambre-introuvable",
+      "kind": "event",
+      "locator": "\"Chambre introuvable\", revision 1299139300"
+    },
+    {
+      "dissent": false,
       "id": "champ-de-mars-massacre",
       "kind": "event",
       "locator": "\"Champ de Mars massacre\", revision 1370703702"
@@ -24683,6 +24743,12 @@
       "id": "convention-of-tientsin",
       "kind": "event",
       "locator": "\"Convention of Tientsin\", revision 1284299743"
+    },
+    {
+      "dissent": false,
+      "id": "convention-of-vergara",
+      "kind": "event",
+      "locator": "\"Convention of Vergara\", revision 1365286038"
     },
     {
       "dissent": false,
@@ -25634,6 +25700,12 @@
     },
     {
       "dissent": false,
+      "id": "esquilache-riots",
+      "kind": "event",
+      "locator": "\"Esquilache Riots\", revision 1366228869"
+    },
+    {
+      "dissent": false,
       "id": "estado-novo-1933-1974",
       "kind": "event",
       "locator": "\"Estado Novo (Portugal)\", revision 1372069303"
@@ -26051,6 +26123,12 @@
       "id": "first-battle-of-agordat",
       "kind": "event",
       "locator": "\"First Battle of Agordat\", revision 1376368437"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-algeciras",
+      "kind": "event",
+      "locator": "\"First Battle of Algeciras\", revision 1378412031"
     },
     {
       "dissent": false,
@@ -27371,6 +27449,12 @@
       "id": "grito-de-lares",
       "kind": "event",
       "locator": "\"Grito de Lares\", revision 1376535795"
+    },
+    {
+      "dissent": false,
+      "id": "grodno-sejm",
+      "kind": "event",
+      "locator": "\"Grodno Sejm\", revision 1363791922"
     },
     {
       "dissent": false,
@@ -28700,6 +28784,12 @@
     },
     {
       "dissent": false,
+      "id": "krakow-fire-of-1850",
+      "kind": "event",
+      "locator": "\"Kraków Fire of 1850\", revision 1379548726"
+    },
+    {
+      "dissent": false,
       "id": "krakow-uprising",
       "kind": "event",
       "locator": "\"Kraków Uprising\", revision 1370626178"
@@ -29561,6 +29651,12 @@
       "id": "mixton-war",
       "kind": "event",
       "locator": "\"Mixtón War\", revision 1380208261"
+    },
+    {
+      "dissent": false,
+      "id": "modern-greek-enlightenment",
+      "kind": "event",
+      "locator": "\"Modern Greek Enlightenment\", revision 1370291039"
     },
     {
       "dissent": false,
@@ -32876,6 +32972,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-cholet",
+      "kind": "event",
+      "locator": "\"Second Battle of Cholet\", revision 1370820732"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-chuenpi",
       "kind": "event",
       "locator": "\"Second Battle of Chuenpi\", revision 1370736031"
@@ -35690,6 +35792,12 @@
     },
     {
       "dissent": false,
+      "id": "slaying-of-the-basques",
+      "kind": "event",
+      "locator": "\"Slaying of the Basques\", revision 1366209640"
+    },
+    {
+      "dissent": false,
       "id": "slovak-hungarian-war",
       "kind": "event",
       "locator": "\"Slovak–Hungarian War\", revision 1370747590"
@@ -36029,6 +36137,12 @@
       "id": "st-francis-raid",
       "kind": "event",
       "locator": "\"St. Francis raid\", revision 1370748583"
+    },
+    {
+      "dissent": false,
+      "id": "st-james-day-battle",
+      "kind": "event",
+      "locator": "\"St. James' Day Battle\", revision 1382431650"
     },
     {
       "dissent": false,
@@ -39353,6 +39467,12 @@
       "id": "venezuelan-war-of-independence",
       "kind": "event",
       "locator": "\"Venezuelan War of Independence\", revision 1376108556"
+    },
+    {
+      "dissent": false,
+      "id": "veronese-easter",
+      "kind": "event",
+      "locator": "\"Veronese Easter\", revision 1377601062"
     },
     {
       "dissent": false,
