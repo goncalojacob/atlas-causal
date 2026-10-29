@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ottoman-conquest-of-lesbos",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q20627484",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Ottoman conquest of Lesbos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20627484"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman conquest of Lesbos\", revision 1370787109"
+    }
+  ],
+  "title": "Ottoman conquest of Lesbos",
+  "summary": "The English Wikipedia article \"Ottoman conquest of Lesbos\", at revision 1370787109, opens: \"The Ottoman conquest of Lesbos took place in September 1462. The Ottoman Empire, under Sultan Mehmed II, laid siege to the island's capital, Mytilene. After its surrender, the other forts of the island surrendered as well. The event put an end to the semi-independent Genoese lordship that the Gattilusio family had established in the northeastern Aegean since the mid-14th century, and heralded the beginning of the First Ottoman–Venetian War in the following year.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20627484, imported by tools/import/wikidata.mjs. The item's own description reads \"1462 conquest\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1462,
+    "end": 1462,
+    "date": "1462-09-01",
+    "endDate": "1462-09-15"
+  },
+  "place": "lesbos",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

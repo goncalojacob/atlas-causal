@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "war-against-sigismund",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q924600",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "War against Sigismund"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q924600"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War against Sigismund\", revision 1371449306"
+    }
+  ],
+  "title": "War against Sigismund",
+  "summary": "The English Wikipedia article \"War against Sigismund\", at revision 1371449306, opens: \"The war against Sigismund was a war between Duke Charles, later known as King Charles IX of Sweden, and Sigismund, who was at the time the king of both Sweden and the Polish–Lithuanian Commonwealth. Lasting from 1597 to 1599, it is also called the War of Deposition against Sigismund, since the focus of the conflict was the attempt to depose the latter from the throne of Sweden. The war eventually resulted in the deposition of Sigismund, the dissolution of the Polish–Swedish union, and the beginning of an eleven-year war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q924600, imported by tools/import/wikidata.mjs. The item's own description reads \"late 1500s Polish-Swedish conflict ending in the deposition of the Swedish king Sigismund\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1598,
+    "end": 1599
+  },
+  "place": "baltic-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-vila-franca-do-campo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3099190",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Vila Franca do Campo",
+    "pt": "Batalha Naval de Vila Franca"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3099190"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vila Franca do Campo\", revision 1381315572"
+    }
+  ],
+  "title": "Battle of Vila Franca do Campo",
+  "summary": "The English Wikipedia article \"Battle of Vila Franca do Campo\", at revision 1381315572, opens: \"The naval Battle of Vila Franca do Campo, also known as Battle of Ponta Delgada and Naval Battle of Terceira Island, took place on 26 July 1582, off the coast of the island of São Miguel in the Portuguese archipelago of the Azores, during the War of the Portuguese Succession. A combined corsair expedition, mainly French, sailed against a Spanish naval force made up of Portuguese and Castilian ships, to preserve control of the Azores under the pretender António, Prior of Crato and to defend the islands from incorporation into the Iberian Union, the largest French force sent overseas before the age of Louis XIV.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3099190, imported by tools/import/wikidata.mjs. The item's own description reads \"1582 battle during the War of the Portuguese Succession\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1582,
+    "end": 1582,
+    "date": "1582-07-26"
+  },
+  "place": "portugal-q45",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-portuguese-succession"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-fraustadt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q694068",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Fraustadt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q694068"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fraustadt\", revision 1370441065"
+    }
+  ],
+  "title": "Battle of Fraustadt",
+  "summary": "The English Wikipedia article \"Battle of Fraustadt\", at revision 1370441065, opens: \"The Battle of Fraustadt was fought on 2 February 1706 (O.S.) / 3 February 1706 / 13 February 1706 (N.S.) near Fraustadt, now Wschowa, Poland, during the Great Northern War. A Swedish army under Carl Gustaf Rehnskiöld defeated a larger Saxon–Russian force commanded by Johann Matthias von der Schulenburg, consisting of troops from Saxony, the Polish–Lithuanian Commonwealth, German mercenaries, and the Tsardom of Russia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q694068, imported by tools/import/wikidata.mjs. The item's own description reads \"1706 battle of the Great Northern War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1706,
+    "end": 1706,
+    "date": "1706-02-13"
+  },
+  "place": "wschowa",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

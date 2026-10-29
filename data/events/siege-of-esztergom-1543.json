@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-esztergom-1543",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4207737",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Esztergom (1543)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4207737"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Esztergom (1543)\", revision 1370741066"
+    }
+  ],
+  "title": "Siege of Esztergom (1543)",
+  "summary": "The English Wikipedia article \"Siege of Esztergom (1543)\", at revision 1370741066, opens: \"The siege of Esztergom occurred between 25 July and 10 August 1543, when the Ottoman army, led by Sultan Suleiman the Magnificent, besieged the city of Esztergom in modern Hungary. The city was captured by the Ottomans after two weeks.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4207737, imported by tools/import/wikidata.mjs. The item's own description reads \"1543 battle in the Age of castle wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1543,
+    "end": 1543,
+    "date": "1543-07-25",
+    "endDate": "1543-08-10"
+  },
+  "place": "esztergom",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

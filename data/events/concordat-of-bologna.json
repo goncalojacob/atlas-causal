@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "concordat-of-bologna",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1627409",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Concordat of Bologna",
+    "pt": "Concordata de Bolonha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1627409"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Concordat of Bologna\", revision 1365865874"
+    }
+  ],
+  "title": "Concordat of Bologna",
+  "summary": "The English Wikipedia article \"Concordat of Bologna\", at revision 1365865874, opens: \"The Concordat of Bologna (1516) was an agreement between King Francis I of France and Pope Leo X that Francis negotiated in the wake of his victory at Marignano in September 1515. The groundwork was laid in a series of personal meetings of king and pope in Bologna, 11–15 December 1515. The concordat was signed in Rome on 18 August 1516. It marked a stage in the evolution of the Gallican Church.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1627409, imported by tools/import/wikidata.mjs. The item's own description reads \"1515 treaty between France & Pope Leo X\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1516,
+    "end": 1516,
+    "date": "1516-08-18"
+  },
+  "place": "bologna",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

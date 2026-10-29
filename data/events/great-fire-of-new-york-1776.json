@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "great-fire-of-new-york-1776",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2740393",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Great Fire of New York (1776)",
+    "pt": "Grande Incêndio de Nova Iorque (1776)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2740393"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Fire of New York (1776)\", revision 1376063096"
+    }
+  ],
+  "title": "Great Fire of New York (1776)",
+  "summary": "The English Wikipedia article \"Great Fire of New York (1776)\", at revision 1376063096, opens: \"The Great Fire of New York burned through the night of September 20, 1776, and into the morning of September 21, on the West Side of what then constituted New York City at the southern end of the island of Manhattan. It broke out in the early days of the military occupation of the city by British forces during the American Revolutionary War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2740393, imported by tools/import/wikidata.mjs. The item's own description reads \"Major fire in New York\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1776,
+    "end": 1776,
+    "date": "1776-09-21"
+  },
+  "place": "new-york",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-palermo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q717322",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Palermo",
+    "pt": "Batalha de Palermo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q717322"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Palermo\", revision 1370452675"
+    }
+  ],
+  "title": "Battle of Palermo",
+  "summary": "The English Wikipedia article \"Battle of Palermo\", at revision 1370452675, opens: \"The Battle of Palermo took place on 2 June 1676 during the Franco-Dutch War, between a French force sent to support a revolt in the city of Messina against the Spanish rule in Sicily, and a Spanish force supported by a Dutch maritime expedition force.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q717322, imported by tools/import/wikidata.mjs. The item's own description reads \"1676 naval battle during the Franco-Dutch War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1676,
+    "end": 1676,
+    "date": "1676-06-02"
+  },
+  "place": "palermo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-dutch-war"
+}

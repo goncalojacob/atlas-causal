@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "aspindza",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2344454",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Aspindza"
+  },
+  "sources": [],
+  "names": [
+    "Aspindza"
+  ],
+  "where": {
+    "lon": 43.25055555555556,
+    "lat": 41.57388888888889,
+    "precision": "city",
+    "label": "Aspindza"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battles-of-wenden-1577-1578",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2364604",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battles of Wenden (1577–1578)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2364604"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battles of Wenden (1577–1578)\", revision 1370603832"
+    }
+  ],
+  "title": "Battles of Wenden (1577–1578)",
+  "summary": "The English Wikipedia article \"Battles of Wenden (1577–1578)\", at revision 1370603832, opens: \"The Battles of Wenden were a series of battles for control of the stronghold of Wenden, in present-day Latvia, fought during the Livonian War in 1577 and 1578. Magnus of Livonia besieged the town in August 1577, but was deposed and replaced by Russian forces under Tsar Ivan IV, who eventually sacked the town and castle in what became a symbolic victory. Polish forces, however, re-captured the stronghold in November and beat back a Russian counter-attack in February 1578.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2364604, imported by tools/import/wikidata.mjs. The item's own description reads \"1578 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1577,
+    "end": 1578,
+    "date": "1578-10-21"
+  },
+  "place": "cesis",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "livonian-war"
+}

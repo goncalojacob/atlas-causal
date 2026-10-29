@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-hochst",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q661686",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Höchst",
+    "pt": "Batalha de Höchst"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q661686"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Höchst\", revision 1370265911"
+    }
+  ],
+  "title": "Battle of Höchst",
+  "summary": "The English Wikipedia article \"Battle of Höchst\", at revision 1370265911, opens: \"The Battle of Höchst was fought between a Catholic League army led by Johan Tzerclaes, Count of Tilly and a Protestant army commanded by Christian the Younger, Duke of Brunswick-Lüneburg, close to the town of Höchst, today a suburb of the city of Frankfurt am Main. The result was a one-sided Catholic League victory. The action occurred during the Thirty Years' War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q661686, imported by tools/import/wikidata.mjs. The item's own description reads \"1622 battle of the thirty years war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1622,
+    "end": 1622,
+    "date": "1622-06-20"
+  },
+  "place": "hochst-frankfurt-am-main",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "palatinate-campaign"
+}

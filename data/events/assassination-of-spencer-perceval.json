@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "assassination-of-spencer-perceval",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q21005831",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Assassination of Spencer Perceval",
+    "pt": "Assassinato de Spencer Perceval"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q21005831"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Assassination of Spencer Perceval\", revision 1379273413"
+    }
+  ],
+  "title": "Assassination of Spencer Perceval",
+  "summary": "The English Wikipedia article \"Assassination of Spencer Perceval\", at revision 1379273413, opens: \"On 11 May 1812, at about 5:15 pm, Spencer Perceval, the prime minister of the United Kingdom of Great Britain and Ireland, was shot dead in the lobby of the House of Commons by John Bellingham, a Liverpool merchant with a grievance against the government. Bellingham was detained; four days after the murder, he was tried, convicted and sentenced to death. He was hanged at Newgate Prison on 18 May, one week after the assassination and one month before the start of the War of 1812. Perceval remains the sole British prime minister to have been assassinated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q21005831, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 murder of the British prime minister\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-05-11"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "death",
+  "actors": []
+}

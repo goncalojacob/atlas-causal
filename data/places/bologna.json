@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bologna",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1891",
+  "sitelinks": {
+    "count": 140,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Bologna",
+    "pt": "Bolonha"
+  },
+  "sources": [],
+  "names": [
+    "Bologna",
+    "Bolonha"
+  ],
+  "where": {
+    "lon": 11.342777777778,
+    "lat": 44.493888888889,
+    "precision": "city",
+    "label": "Bologna"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

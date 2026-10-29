@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-moscow-1612",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4303874",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Moscow (1612)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4303874"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Moscow (1612)\", revision 1370450535"
+    }
+  ],
+  "title": "Battle of Moscow (1612)",
+  "summary": "The English Wikipedia article \"Battle of Moscow (1612)\", at revision 1370450535, opens: \"The Battle of Moscow was a series of two engagements that took place in Moscow on 1 and 3 September 1612, during the Polish–Russian War of 1609–1618 and the Time of Troubles. The forces of the Polish–Lithuanian Commonwealth were commanded by Field Hetman Jan Karol Chodkiewicz, while the Russians were led by Prince Dmitry Pozharsky. The engagements ended in decisive Russian victories.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4303874, imported by tools/import/wikidata.mjs. The item's own description reads \"series of two battles, which took place in Moscow, on September 1 and 3, 1612\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1612,
+    "end": 1612,
+    "date": "1612-09-03"
+  },
+  "place": "moscow",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "polish-russian-war-1609-1618"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "invasion-of-portugal-1807",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3402214",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Invasion of Portugal (1807)",
+    "pt": "Primeira invasão francesa de Portugal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3402214"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Portugal (1807)\", revision 1370786622"
+    }
+  ],
+  "title": "Invasion of Portugal (1807)",
+  "summary": "The English Wikipedia article \"Invasion of Portugal (1807)\", at revision 1370786622, opens: \"French and Spanish forces invaded Portugal from 19–30 November 1807 during the Napoleonic Wars, sparking the Peninsular War. The Franco-Spanish invasion force was led by General Jean-Andoche Junot, while the Portuguese were under the nominal command of Prince Regent John, the future King John VI of Portugal. French and Spanish troops swiftly occupied the country in the face of little resistance due to the poor state of the Portuguese military.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3402214, imported by tools/import/wikidata.mjs. The item's own description reads \"1807 invasion during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1807,
+    "end": 1807,
+    "date": "1807-11-19",
+    "endDate": "1807-11-30"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

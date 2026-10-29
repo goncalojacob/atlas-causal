@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "cesis",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q107582",
+  "sitelinks": {
+    "count": 56,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Cēsis",
+    "pt": "Cēsis"
+  },
+  "sources": [],
+  "names": [
+    "Cēsis"
+  ],
+  "where": {
+    "lon": 25.274722222222,
+    "lat": 57.313055555556,
+    "precision": "city",
+    "label": "Cēsis"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
