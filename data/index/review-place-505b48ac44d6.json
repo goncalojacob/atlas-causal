@@ -1342,6 +1342,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "alta-california",
+      "kind": "place",
+      "names": [
+        "Alta California"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "altranstadt",
@@ -6219,6 +6246,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "boonville-missouri",
+      "kind": "place",
+      "names": [
+        "Boonville",
+        "Boonville, Missouri",
+        "Boonville (Missouri)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 2,
       "id": "borneo",
@@ -10065,6 +10121,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "cherry-valley-new-york",
+      "kind": "place",
+      "names": [
+        "Cherry Valley",
+        "Cherry Valley, New York"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "chiari-lombardy",
@@ -11013,6 +11097,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "concepcion-junin",
+      "kind": "place",
+      "names": [
+        "Concepción",
+        "Concepción, Junín",
+        "Concepção (Peru)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "concordia-entre-rios",
@@ -11185,7 +11298,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "corinth-mississippi",
       "kind": "place",
       "names": [
@@ -16005,6 +16118,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "fort-brown",
+      "kind": "place",
+      "names": [
+        "Fort Brown"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 2,
       "id": "fort-de-rocher",
@@ -16241,6 +16381,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "fort-ligonier",
+      "kind": "place",
+      "names": [
+        "Fort Ligonier"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -17366,6 +17533,34 @@
       "names": [
         "Gallipoli",
         "Galípoli"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "galveston-texas",
+      "kind": "place",
+      "names": [
+        "Galveston",
+        "Galveston, Texas"
       ],
       "origin": {
         "tool": "wikidata"
@@ -22374,6 +22569,35 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "iuka-mississippi",
+      "kind": "place",
+      "names": [
+        "Iuka",
+        "Iuka, Mississippi",
+        "Iuka (Mississippi)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "ivankovac",
       "kind": "place",
       "names": [
@@ -22471,6 +22695,35 @@
           "a9-place"
         ],
         "note": "Place written by the run that imported the event, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record its P276 names was not here, so the event came out placeless. The point and the names are the item’s own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "jackson-mississippi",
+      "kind": "place",
+      "names": [
+        "Jackson",
+        "Jackson, Mississippi",
+        "Jackson (Mississippi)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -23816,7 +24069,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 2,
+      "degree": 3,
       "id": "kansas",
       "kind": "place",
       "names": [
@@ -32990,7 +33243,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "montreal",
       "kind": "place",
       "names": [
@@ -35056,7 +35309,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 8,
+      "degree": 9,
       "id": "new-york",
       "kind": "place",
       "names": [
@@ -37520,6 +37773,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "paoli-battlefield-site-and-parade-grounds",
+      "kind": "place",
+      "names": [
+        "Paoli Battlefield Site and Parade Grounds"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -38834,6 +39114,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "pisagua-chile",
+      "kind": "place",
+      "names": [
+        "Pisagua",
+        "Pisagua, Chile"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "piseux",
@@ -39463,7 +39771,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "port-royal-acadia",
       "kind": "place",
       "names": [
@@ -41812,6 +42120,35 @@
       "kind": "place",
       "names": [
         "Ribe"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "richmond-kentucky",
+      "kind": "place",
+      "names": [
+        "Richmond",
+        "Richmond, Kentucky",
+        "Richmond (Kentucky)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -47649,7 +47986,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 4,
+      "degree": 5,
       "id": "st-louis",
       "kind": "place",
       "names": [
@@ -49458,6 +49795,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "tennessee",
+      "kind": "place",
+      "names": [
+        "Tennessee"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -51996,7 +52360,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 52,
+      "degree": 53,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -53270,7 +53634,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 9,
+      "degree": 12,
       "id": "virginia-q1370",
       "kind": "place",
       "names": [
@@ -53815,7 +54179,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 16,
+      "degree": 17,
       "id": "washington",
       "kind": "place",
       "names": [

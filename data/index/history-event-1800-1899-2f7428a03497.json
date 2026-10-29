@@ -1691,6 +1691,15 @@
         }
       ]
     },
+    "battle-of-aldie": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-alexandria-1801": {
       "from": "git",
       "versions": [
@@ -1823,6 +1832,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-aquia-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2060,6 +2078,15 @@
         }
       ]
     },
+    "battle-of-beaver-dam-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-beaver-dams": {
       "from": "git",
       "versions": [
@@ -2220,6 +2247,15 @@
       ]
     },
     "battle-of-boomplaats": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-boonville": {
       "from": "git",
       "versions": [
         {
@@ -2641,6 +2677,15 @@
         }
       ]
     },
+    "battle-of-cheat-mountain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-chickamauga": {
       "from": "git",
       "versions": [
@@ -2737,6 +2782,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-cloyd-s-mountain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3198,6 +3252,15 @@
         }
       ]
     },
+    "battle-of-fisher-s-hill": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-five-forks": {
       "from": "git",
       "versions": [
@@ -3261,12 +3324,30 @@
         }
       ]
     },
+    "battle-of-fort-stedman": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-fort-stephenson": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-fort-stevens": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3342,6 +3423,15 @@
         }
       ]
     },
+    "battle-of-front-royal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-fuzhou": {
       "from": "git",
       "versions": [
@@ -3366,6 +3456,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-galveston": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3456,6 +3555,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-glendale": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3624,6 +3732,15 @@
         }
       ]
     },
+    "battle-of-hanover-court-house": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-harpers-ferry": {
       "from": "git",
       "versions": [
@@ -3741,6 +3858,15 @@
         }
       ]
     },
+    "battle-of-honey-springs": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-horseshoe-bend": {
       "from": "git",
       "versions": [
@@ -3846,7 +3972,25 @@
         }
       ]
     },
+    "battle-of-iuka": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-ivankovac": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-jackson": {
       "from": "git",
       "versions": [
         {
@@ -3933,6 +4077,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-jonesborough": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4185,6 +4338,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-la-concepcion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4770,6 +4932,15 @@
         }
       ]
     },
+    "battle-of-mine-run": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-miranda": {
       "from": "git",
       "versions": [
@@ -5103,6 +5274,15 @@
         }
       ]
     },
+    "battle-of-old-church": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-olongapo": {
       "from": "git",
       "versions": [
@@ -5265,6 +5445,15 @@
         }
       ]
     },
+    "battle-of-peachtree-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-peiwar-kotal": {
       "from": "git",
       "versions": [
@@ -5346,6 +5535,24 @@
         }
       ]
     },
+    "battle-of-piedmont": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-pisagua": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-plattsburgh": {
       "from": "git",
       "versions": [
@@ -5365,6 +5572,24 @@
       ]
     },
     "battle-of-poredaka": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-port-gibson": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-port-republic": {
       "from": "git",
       "versions": [
         {
@@ -5550,6 +5775,15 @@
       ]
     },
     "battle-of-rich-mountain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-richmond": {
       "from": "git",
       "versions": [
         {
@@ -6053,6 +6287,15 @@
         }
       ]
     },
+    "battle-of-spring-hill": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-st-michaels": {
       "from": "git",
       "versions": [
@@ -6536,6 +6779,15 @@
         }
       ]
     },
+    "battle-of-totopotomoy-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-toulouse-1814": {
       "from": "git",
       "versions": [
@@ -6883,6 +7135,15 @@
         }
       ]
     },
+    "battle-of-white-oak-swamp": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-whitestone-hill": {
       "from": "git",
       "versions": [
@@ -6979,6 +7240,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-ytororo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -7580,6 +7850,15 @@
         }
       ]
     },
+    "camp-jackson-affair": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "campaign-in-north-east-france-1814": {
       "from": "git",
       "versions": [
@@ -8087,6 +8366,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "conquest-of-california": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -10701,6 +10989,15 @@
         }
       ]
     },
+    "knoxville-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "krakow-uprising": {
       "from": "git",
       "versions": [
@@ -12815,6 +13112,15 @@
         }
       ]
     },
+    "sacking-of-lawrence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "saga-rebellion": {
       "from": "git",
       "versions": [
@@ -13029,6 +13335,15 @@
         }
       ]
     },
+    "second-battle-of-corinth": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "second-battle-of-fort-sumter": {
       "from": "git",
       "versions": [
@@ -13065,6 +13380,15 @@
         }
       ]
     },
+    "second-battle-of-petersburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "second-battle-of-polotsk": {
       "from": "git",
       "versions": [
@@ -13098,6 +13422,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "second-battle-of-winchester": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -13706,6 +14039,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "siege-of-fort-texas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -14692,6 +15034,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "third-battle-of-petersburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
