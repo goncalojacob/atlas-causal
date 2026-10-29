@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-negroponte-1470",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3622772",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Negroponte (1470)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3622772"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Negroponte (1470)\", revision 1370743955"
+    }
+  ],
+  "title": "Siege of Negroponte (1470)",
+  "summary": "The English Wikipedia article \"Siege of Negroponte (1470)\", at revision 1370743955, opens: \"The siege of Negroponte was fought between the forces of the Ottoman Empire, led by Sultan Mehmed II in person, and the garrison of the Venetian colony of Negroponte (Chalcis), the capital of the Venetian possession of Euboea in Central Greece. The Ottoman sultan Mehmed II laid siege to the fortress at Negroponte. The siege lasted for almost a month, and, despite great Ottoman casualties, ended in the capture of the city and the island of Euboea by the Ottomans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3622772, imported by tools/import/wikidata.mjs. The item's own description reads \"1470 siege during the First Ottoman–Venetian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1470,
+    "end": 1470,
+    "date": "1470-07-10",
+    "endDate": "1470-08-05"
+  },
+  "place": "chalcis",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-venetian-war-1463-1479"
+}

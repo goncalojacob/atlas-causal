@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-montmirail",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q745543",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Montmirail",
+    "pt": "Batalha de Montmirail"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q745543"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Montmirail\", revision 1370331339"
+    }
+  ],
+  "title": "Battle of Montmirail",
+  "summary": "The English Wikipedia article \"Battle of Montmirail\", at revision 1370331339, opens: \"The Battle of Montmirail was fought between a French force led by Emperor Napoleon and two Allied corps commanded by Fabian Wilhelm von Osten-Sacken and Ludwig Yorck von Wartenburg. In hard fighting that lasted until evening, French troops including the Imperial Guard defeated Sacken's Russian soldiers and compelled them to retreat to the north. Part of Yorck's Prussian I Corps tried to intervene in the struggle but it was also driven off. The battle occurred near Montmirail, France, during the Six Days Campaign of the Napoleonic Wars. Montmirail is located 51 kilometres (32 mi) east of Meaux.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q745543, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 battle during the War of the Sixth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-02-11"
+  },
+  "place": "montmirail-marne",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "german-campaign-of-1813"
+}

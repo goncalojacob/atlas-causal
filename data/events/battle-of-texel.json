@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-texel",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2064362",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Texel",
+    "pt": "Batalha de Texel"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2064362"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Texel\", revision 1382431789"
+    }
+  ],
+  "title": "Battle of Texel",
+  "summary": "The English Wikipedia article \"Battle of Texel\", at revision 1382431789, opens: \"The naval Battle of Texel or Battle of Kijkduin took place off the western coast of the island of Texel on 21 August 1673 between the Dutch and the combined English and French fleets. It was the last major battle of the Third Anglo-Dutch War, which was itself part of the Franco-Dutch War (1672–1678), during which Louis XIV of France invaded the Republic and sought to establish control over the Spanish Netherlands. English involvement came about because of the Treaty of Dover, secretly concluded by Charles II of England, and which was highly unpopular with the English Parliament.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2064362, imported by tools/import/wikidata.mjs. The item's own description reads \"naval battle off the island of Texel (1673) between Dutch and combined English and French fleets\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1673,
+    "end": 1673,
+    "date": "1673-08-21"
+  },
+  "place": "texel",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

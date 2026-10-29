@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1886-bulgarian-coup-d-etat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2119318",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1886 Bulgarian coup d'état"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2119318"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1886 Bulgarian coup d'état\", revision 1359290818"
+    }
+  ],
+  "title": "1886 Bulgarian coup d'état",
+  "summary": "The English Wikipedia article \"1886 Bulgarian coup d'état\", at revision 1359290818, opens: \"The Bulgarian coup d'état of 1886, also known as the 9 August coup d'état was an attempted dethronement of Knyaz Alexander Battenberg in Principality of Bulgaria, carried out on 9 August 1886. Although unsuccessful, the event led to the abdication of Alexander Battenberg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2119318, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1886,
+    "end": 1886,
+    "date": "1886-08-09"
+  },
+  "place": "bulgaria-q219",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

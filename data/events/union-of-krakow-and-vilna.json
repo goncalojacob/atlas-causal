@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "union-of-krakow-and-vilna",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q653379",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Union of Kraków and Vilna"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q653379"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Union of Kraków and Vilna\", revision 1303475103"
+    }
+  ],
+  "title": "Union of Kraków and Vilna",
+  "summary": "The English Wikipedia article \"Union of Kraków and Vilna\", at revision 1303475103, opens: \"The Union of Kraków and Vilna, also known as Union of Vilnius, was one of the agreements of the Polish–Lithuanian union. It was signed in Kraków by the Polish nobility on 6 May 1499, and in Vilnius by the Lithuanian nobility on 24 July 1499.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q653379, imported by tools/import/wikidata.mjs. The item's own description reads \"agreement between Poland and Lithuania (1499)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1499,
+    "end": 1499,
+    "date": "1499-05-06"
+  },
+  "place": "krakow",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
