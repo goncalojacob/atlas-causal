@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-calais-1558",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2701253",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Calais (1558)",
+    "pt": "Cerco de Calais (1558)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2701253"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Calais (1558)\", revision 1370739975"
+    }
+  ],
+  "title": "Siege of Calais (1558)",
+  "summary": "The English Wikipedia article \"Siege of Calais (1558)\", at revision 1370739975, opens: \"The French siege of Calais in early 1558 was part of the Italian War of 1551–1559 between France and England and their respective allies. It resulted in the seizure of the town and its dependencies by France.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2701253, imported by tools/import/wikidata.mjs. The item's own description reads \"1558 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1558,
+    "end": 1558,
+    "date": "1558-01-01",
+    "endDate": "1558-01-08"
+  },
+  "place": "calais",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

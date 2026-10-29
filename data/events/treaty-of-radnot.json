@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-radnot",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2917546",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Radnot"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2917546"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Radnot\", revision 1380033470"
+    }
+  ],
+  "title": "Treaty of Radnot",
+  "summary": "The English Wikipedia article \"Treaty of Radnot\", at revision 1380033470, opens: \"The Treaty of Radnot was a bilateral treaty signed on 6 December 1656 during the Second Northern War in Radnot in Transylvania between Charles X Gustav of the Swedish Empire and George II Rákóczi, Prince of Transylvania. Sometimes, a wider set of agreements concluded in December 1656 between Sweden and its allies is \"collectively called the Treaty of Radnot\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2917546, imported by tools/import/wikidata.mjs. The item's own description reads \"1656 treaty to divide the Polish–Lithuanian Commonwealth between the signing parties\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1656,
+    "end": 1656,
+    "date": "1656-12-06"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "hamburg-q1055",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1055",
+  "sitelinks": {
+    "count": 195,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Hamburg",
+    "pt": "Hamburgo"
+  },
+  "sources": [],
+  "names": [
+    "Hamburg",
+    "Hamburgo"
+  ],
+  "where": {
+    "lon": 10,
+    "lat": 53.55,
+    "precision": "city",
+    "label": "Hamburg"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

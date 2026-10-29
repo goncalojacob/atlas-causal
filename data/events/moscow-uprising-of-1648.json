@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "moscow-uprising-of-1648",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q600898",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Moscow uprising of 1648"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q600898"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Moscow uprising of 1648\", revision 1375004353"
+    }
+  ],
+  "title": "Moscow uprising of 1648",
+  "summary": "The English Wikipedia article \"Moscow uprising of 1648\", at revision 1375004353, opens: \"The Moscow uprising of 1648, sometimes known as the salt riot, started because of the government's replacement of different taxes with a universal salt tax for the purpose of replenishing the state treasury after the Time of Troubles. This drove up the price of salt, leading to violent riots in the streets of Moscow. The riot was an early challenge to the reign of Alexei I, eventually resulting in the exile of Alexei's advisor Boris Morozov.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q600898, imported by tools/import/wikidata.mjs. The item's own description reads \"food riot in June 1648 in Moscow, Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1648,
+    "end": null,
+    "date": "1648-06-01"
+  },
+  "place": "moscow",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cornish-rebellion-of-1497",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q500395",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Cornish rebellion of 1497",
+    "pt": "Rebelião da Cornualha de 1497"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q500395"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cornish rebellion of 1497\", revision 1380049447"
+    }
+  ],
+  "title": "Cornish rebellion of 1497",
+  "summary": "The English Wikipedia article \"Cornish rebellion of 1497\", at revision 1380049447, opens: \"The Cornish rebellion of 1497, also known as the First Cornish rebellion, was a popular uprising in the Kingdom of England, which began in Cornwall and culminated with the Battle of Deptford Bridge near London on 17 June 1497.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q500395, imported by tools/import/wikidata.mjs. The item's own description reads \"popular uprising by the people of Cornwall in the far southwest of Britain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1497,
+    "end": 1497,
+    "endDate": "1497-06-17"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

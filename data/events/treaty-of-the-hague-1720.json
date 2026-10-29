@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-the-hague-1720",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1893619",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of The Hague (1720)",
+    "pt": "Tratado de Haia (1720)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1893619"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of The Hague (1720)\", revision 1354851022"
+    }
+  ],
+  "title": "Treaty of The Hague (1720)",
+  "summary": "The English Wikipedia article \"Treaty of The Hague (1720)\", at revision 1354851022, opens: \"The Treaty of The Hague was signed on 17 February 1720 between Spain and the Quadruple Alliance, established by the 1718 Treaty of London. Its members included Britain, France, the Dutch Republic and Austria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1893619, imported by tools/import/wikidata.mjs. The item's own description reads \"1720 treaty ending the War of the Quadruple Alliance\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1720,
+    "end": 1720,
+    "date": "1720-02-17"
+  },
+  "place": "the-hague",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

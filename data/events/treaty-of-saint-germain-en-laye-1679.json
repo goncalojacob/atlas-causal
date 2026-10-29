@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-saint-germain-en-laye-1679",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q551302",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Saint-Germain-en-Laye (1679)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q551302"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Saint-Germain-en-Laye (1679)\", revision 1378813910"
+    }
+  ],
+  "title": "Treaty of Saint-Germain-en-Laye (1679)",
+  "summary": "The English Wikipedia article \"Treaty of Saint-Germain-en-Laye (1679)\", at revision 1378813910, opens: \"The Treaty or Peace of Saint-Germain-en-Laye of 19 June (OS) or 29 June (NS) 1679 was a peace treaty between France and the Electorate of Brandenburg. It restored to France's ally Sweden her dominions Bremen-Verden and Swedish Pomerania, lost to Brandenburg in the Scanian War. Sweden ratified the treaty on 28 July 1679.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q551302, imported by tools/import/wikidata.mjs. The item's own description reads \"1679 peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1679,
+    "end": 1679,
+    "date": "1679-06-29"
+  },
+  "place": "saint-germain-en-laye",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

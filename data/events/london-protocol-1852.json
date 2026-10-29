@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "london-protocol-1852",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q11136035",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "London Protocol (1852)",
+    "pt": "Protocolo de Londres (1852)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11136035"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"London Protocol (1852)\", revision 1328309063"
+    }
+  ],
+  "title": "London Protocol (1852)",
+  "summary": "The English Wikipedia article \"London Protocol (1852)\", at revision 1328309063, opens: \"On 8 May 1852, after the First War of Schleswig, an agreement called the London Protocol was signed. This international treaty was the revision of an earlier protocol, which had been ratified on 2 August 1850, by the major German powers of Austria and Prussia. The second London Protocol was recognised by the five major European powers—Austria, France, Prussia, Russia, and the United Kingdom—as well as by the Baltic Sea powers of \nDenmark and Sweden.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11136035, imported by tools/import/wikidata.mjs. The item's own description reads \"1852 treaty about Danemark\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1852,
+    "end": 1852
+  },
+  "place": "london",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
