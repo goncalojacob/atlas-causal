@@ -3,706 +3,6 @@
   "kind": "import-queue",
   "items": [
     {
-      "id": "2026-10-29-asia-271",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2888513",
-      "title": "Battle of Focchies",
-      "parents": [
-        "cretan-war-1645-1669"
-      ],
-      "edges": [],
-      "rank": "child-of:cretan-war-1645-1669",
-      "why": "P361 child of the held cretan-war-1645-1669; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-272",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q256563",
-      "title": "Battle of the Dardanelles (1656)",
-      "parents": [
-        "cretan-war-1645-1669"
-      ],
-      "edges": [],
-      "rank": "child-of:cretan-war-1645-1669",
-      "why": "P361 child of the held cretan-war-1645-1669; 8 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-273",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q12689907",
-      "title": "Java campaign of 1806–1807",
-      "parents": [
-        "napoleonic-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:napoleonic-wars",
-      "why": "P361 child of the held napoleonic-wars; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-274",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q18162521",
-      "title": "Siege of Ganja (1734–1735)",
-      "parents": [
-        "ottoman-persian-war-1730-1735"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-persian-war-1730-1735",
-      "why": "P361 child of the held ottoman-persian-war-1730-1735; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-275",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q18210470",
-      "title": "Tahmasp II's campaign of 1731",
-      "parents": [
-        "ottoman-persian-war-1730-1735"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-persian-war-1730-1735",
-      "why": "P361 child of the held ottoman-persian-war-1730-1735; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-276",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q18210700",
-      "title": "Western Iran campaign of 1730",
-      "parents": [
-        "ottoman-persian-war-1730-1735"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-persian-war-1730-1735",
-      "why": "P361 child of the held ottoman-persian-war-1730-1735; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-277",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2890660",
-      "title": "Battle of the Dardanelles (1657)",
-      "parents": [
-        "cretan-war-1645-1669"
-      ],
-      "edges": [],
-      "rank": "child-of:cretan-war-1645-1669",
-      "why": "P361 child of the held cretan-war-1645-1669; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-278",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4816420",
-      "title": "Battle of the Dardanelles (1654)",
-      "parents": [
-        "cretan-war-1645-1669"
-      ],
-      "edges": [],
-      "rank": "child-of:cretan-war-1645-1669",
-      "why": "P361 child of the held cretan-war-1645-1669; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-279",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q211220",
-      "title": "Battle of Chandannagar",
-      "parents": [
-        "seven-years-war"
-      ],
-      "edges": [],
-      "rank": "child-of:seven-years-war",
-      "why": "P361 child of the held seven-years-war; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-280",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q656522",
-      "title": "Battle of Condore",
-      "parents": [
-        "seven-years-war"
-      ],
-      "edges": [],
-      "rank": "child-of:seven-years-war",
-      "why": "P361 child of the held seven-years-war; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-281",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2889696",
-      "title": "Battle of Pulo Aura",
-      "parents": [
-        "napoleonic-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:napoleonic-wars",
-      "why": "P361 child of the held napoleonic-wars; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-29-asia-282",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q27958319",
-      "title": "Barrackpore mutiny of 1824",
-      "parents": [
-        "first-anglo-burmese-war"
-      ],
-      "edges": [],
-      "rank": "child-of:first-anglo-burmese-war",
-      "why": "P361 child of the held first-anglo-burmese-war; 4 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-149",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2988161",
-      "title": "Southern theater of the American Revolutionary War",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-revolutionary-war",
-      "why": "P361 child of the held american-revolutionary-war; 14 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-150",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3307845",
-      "title": "Battle of Tuyutí",
-      "parents": [
-        "paraguayan-war"
-      ],
-      "edges": [],
-      "rank": "child-of:paraguayan-war",
-      "why": "P361 child of the held paraguayan-war; 13 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-151",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3772977",
-      "title": "Battle of San Juan and Chorrillos",
-      "parents": [
-        "war-of-the-pacific"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-the-pacific",
-      "why": "P361 child of the held war-of-the-pacific; 11 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-152",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q886842",
-      "title": "Carolinas campaign",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 10 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-153",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1497902",
-      "title": "Battle of Blackburn's Ford",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 10 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-154",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1497969",
-      "title": "Battle of Sailor's Creek",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 10 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-155",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2502519",
-      "title": "Red River campaign",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 10 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-156",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2522212",
-      "title": "Franklin–Nashville campaign",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 10 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-157",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1518787",
-      "title": "Battle of Moore's Creek Bridge",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-revolutionary-war",
-      "why": "P361 child of the held american-revolutionary-war; 10 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-158",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1533038",
-      "title": "Gnadenhutten massacre",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-revolutionary-war",
-      "why": "P361 child of the held american-revolutionary-war; 10 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-159",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1780878",
-      "title": "Western theater of the American Revolutionary War",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-revolutionary-war",
-      "why": "P361 child of the held american-revolutionary-war; 10 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-160",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2890866",
-      "title": "Battle of Cape Henry",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-revolutionary-war",
-      "why": "P361 child of the held american-revolutionary-war; 10 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-161",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2072080",
-      "title": "Battle of San Domingo",
-      "parents": [
-        "napoleonic-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:napoleonic-wars",
-      "why": "P361 child of the held napoleonic-wars; 10 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-162",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2610822",
-      "title": "Battle in the Bay of Matanzas",
-      "parents": [
-        "eighty-years-war"
-      ],
-      "edges": [],
-      "rank": "child-of:eighty-years-war",
-      "why": "P361 child of the held eighty-years-war; 10 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-163",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q732992",
-      "title": "Quebec expedition (1711)",
-      "parents": [
-        "queen-anne-s-war"
-      ],
-      "edges": [],
-      "rank": "child-of:queen-anne-s-war",
-      "why": "P361 child of the held queen-anne-s-war; 10 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-164",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2887897",
-      "title": "Battle of Arica",
-      "parents": [
-        "war-of-the-pacific"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-the-pacific",
-      "why": "P361 child of the held war-of-the-pacific; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-165",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2282207",
-      "title": "Battle of Helena",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-166",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q676148",
-      "title": "Battle of Mansfield",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-167",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q773372",
-      "title": "Second Battle of Fredericksburg",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-168",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q855913",
-      "title": "Battle of McDowell",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-169",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1497885",
-      "title": "Battle of Hoke's Run",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-170",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2543603",
-      "title": "Valley campaigns of 1864",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-171",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2570177",
-      "title": "Battle of Kennesaw Mountain",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-172",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2632927",
-      "title": "Battle of Chickasaw Bayou",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-173",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2687368",
-      "title": "Battle of Missionary Ridge",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-174",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2789421",
-      "title": "Battle of Prairie Grove",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-175",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2890377",
-      "title": "Battle of Waynesboro, Virginia",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-176",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3588241",
-      "title": "1861 Baltimore riot",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-177",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4296967",
-      "title": "Battle of Fairfax Court House (1861)",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-178",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4870993",
-      "title": "Battle of Ezra Church",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "P361 child of the held american-civil-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-179",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q45334",
-      "title": "Burning of Falmouth",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-revolutionary-war",
-      "why": "P361 child of the held american-revolutionary-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-180",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q111648",
-      "title": "Battle of Stony Point",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-revolutionary-war",
-      "why": "P361 child of the held american-revolutionary-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-181",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q494318",
-      "title": "Battle of Hobkirk's Hill",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-revolutionary-war",
-      "why": "P361 child of the held american-revolutionary-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-182",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q528183",
-      "title": "Battle of Newtown",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-revolutionary-war",
-      "why": "P361 child of the held american-revolutionary-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-183",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q906018",
-      "title": "Battle of Great Bridge",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-revolutionary-war",
-      "why": "P361 child of the held american-revolutionary-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-184",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2565240",
-      "title": "Naval battles of the American Revolutionary War",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-revolutionary-war",
-      "why": "P361 child of the held american-revolutionary-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-185",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2729621",
-      "title": "Battle of St. Louis",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-revolutionary-war",
-      "why": "P361 child of the held american-revolutionary-war; 9 sitelinks."
-    },
-    {
-      "id": "2026-10-29-americas-186",
-      "planned": "2026-10-29T17:26Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2889477",
-      "title": "Raid of Nassau",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-revolutionary-war",
-      "why": "P361 child of the held american-revolutionary-war; 9 sitelinks."
-    },
-    {
       "id": "2026-10-29-americas-187",
       "planned": "2026-10-29T17:26Z",
       "lane": "americas",
@@ -3512,6 +2812,158 @@
       "edges": [],
       "rank": "list",
       "why": "Reclaimed: refused earlier for a class with no row (Q6024855 = tax riot); the class was added to data/imports/wikidata-seeds.json on 29 October. 3 sitelinks."
+    },
+    {
+      "id": "2026-10-29-africa-039",
+      "planned": "2026-10-29T19:27Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q1252684",
+      "title": "Battle of Toski",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Mahdist War (1881-1899); 8 sitelinks."
+    },
+    {
+      "id": "2026-10-29-africa-040",
+      "planned": "2026-10-29T19:27Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1276340",
+      "title": "Battle of Atbara",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Mahdist War (1881-1899); 8 sitelinks."
+    },
+    {
+      "id": "2026-10-29-africa-041",
+      "planned": "2026-10-29T19:27Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q2889955",
+      "title": "Battle of Senafe",
+      "parents": [
+        "first-italo-ethiopian-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-italo-ethiopian-war",
+      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held First Italo-Ethiopian War (1895-1896); 7 sitelinks."
+    },
+    {
+      "id": "2026-10-29-africa-042",
+      "planned": "2026-10-29T19:27Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2984893",
+      "title": "Battle of Serobeti",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Mahdist War (1881-1899); 6 sitelinks."
+    },
+    {
+      "id": "2026-10-29-africa-043",
+      "planned": "2026-10-29T19:27Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q722047",
+      "title": "Ashanti–Fante War",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:anglo-ashanti-wars",
+      "why": "Africa trails every other lane (616 active against europe's 1755); a P361 child of the held Anglo-Ashanti wars, but it starts in 1806 and that umbrella starts in 1823, so rule 12's span check drops the parent; 5 sitelinks."
+    },
+    {
+      "id": "2026-10-29-africa-044",
+      "planned": "2026-10-29T19:27Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2237506",
+      "title": "Battle of Ferkeh",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Mahdist War (1881-1899); 5 sitelinks."
+    },
+    {
+      "id": "2026-10-29-africa-045",
+      "planned": "2026-10-29T19:27Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q2888919",
+      "title": "Battle of Kirbekan",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Mahdist War (1881-1899); 4 sitelinks."
+    },
+    {
+      "id": "2026-10-29-africa-046",
+      "planned": "2026-10-29T19:27Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q27627676",
+      "title": "Battle of Abu Kru",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Mahdist War (1881-1899); 4 sitelinks."
+    },
+    {
+      "id": "2026-10-29-africa-047",
+      "planned": "2026-10-29T19:27Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q111699632",
+      "title": "Black Week",
+      "parents": [
+        "second-boer-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-boer-war",
+      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Second Boer War (1899-1902); 3 sitelinks."
+    },
+    {
+      "id": "2026-10-29-africa-048",
+      "planned": "2026-10-29T19:27Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q105616758",
+      "title": "First Battle of Boudouaou",
+      "parents": [
+        "french-conquest-of-algeria"
+      ],
+      "edges": [],
+      "rank": "child-of:french-conquest-of-algeria",
+      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held French conquest of Algeria (1830-1904); 3 sitelinks."
+    },
+    {
+      "id": "2026-10-29-africa-049",
+      "planned": "2026-10-29T19:27Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q4871605",
+      "title": "Battle of Lougou",
+      "parents": [
+        "scramble-for-africa"
+      ],
+      "edges": [],
+      "rank": "child-of:scramble-for-africa",
+      "why": "Africa trails every other lane (616 active against europe's 1755); P361 child of the held Scramble for Africa (1885-1914); 3 sitelinks."
     }
   ]
 }
