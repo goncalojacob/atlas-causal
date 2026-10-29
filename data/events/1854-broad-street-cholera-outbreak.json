@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1854-broad-street-cholera-outbreak",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2035019",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1854 Broad Street cholera outbreak"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2035019"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1854 Broad Street cholera outbreak\", revision 1380080422"
+    }
+  ],
+  "title": "1854 Broad Street cholera outbreak",
+  "summary": "The English Wikipedia article \"1854 Broad Street cholera outbreak\", at revision 1380080422, opens: \"A severe outbreak of cholera occurred in 1854 near Broad Street and Golden Square in Soho, London, England, during the worldwide 1846–1860 cholera pandemic. The outbreak, which killed 420 people, is best known for the physician John Snow's study of its causes and his hypothesis that germ-contaminated water was the cause, rather than something in the air called \"miasma\". This discovery influenced public health and the construction of improved sanitation facilities beginning in the mid-19th century. Later, the term \"focus of infection\" was used to describe sites, such as the Broad Street pump, where conditions are favourable for transmission of infection. Snow unknowingly took advantage of a natural experiment during his endeavours to identify the cause of cholera transmission.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2035019, imported by tools/import/wikidata.mjs. The item's own description reads \"Severe outbreak of cholera that occurred in London in 1854\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": null,
+    "date": "1854-08-31"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

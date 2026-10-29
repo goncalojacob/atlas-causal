@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "brienne-le-chateau",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q498869",
+  "sitelinks": {
+    "count": 48,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Brienne-le-Château",
+    "pt": "Brienne-le-Château"
+  },
+  "sources": [],
+  "names": [
+    "Brienne-le-Château"
+  ],
+  "where": {
+    "lon": 4.5255555555556,
+    "lat": 48.391666666667,
+    "precision": "city",
+    "label": "Brienne-le-Château"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "congress-of-erfurt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q677844",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Congress of Erfurt",
+    "pt": "Congresso de Erfurt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q677844"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Congress of Erfurt\", revision 1295247885"
+    }
+  ],
+  "title": "Congress of Erfurt",
+  "summary": "The English Wikipedia article \"Congress of Erfurt\", at revision 1295247885, opens: \"The Congress of Erfurt was the meeting between Napoleon, Emperor of the French, and Alexander I, Emperor of All Russia, from Tuesday 27 September to Friday 14 October 1808 intended to reaffirm the alliance concluded the previous year with the Treaties of Tilsit which followed the end of the War of the Fourth Coalition.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q677844, imported by tools/import/wikidata.mjs. The item's own description reads \"convention\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-10-14"
+  },
+  "place": "erfurt",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

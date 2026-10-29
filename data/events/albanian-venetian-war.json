@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "albanian-venetian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q60489",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Albanian–Venetian War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q60489"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Albanian–Venetian War\", revision 1378465137"
+    }
+  ],
+  "title": "Albanian–Venetian War",
+  "summary": "The English Wikipedia article \"Albanian–Venetian War\", at revision 1378465137, opens: \"The Albanian–Venetian War of 1447–48 was waged between Venetian and Ottoman forces against the Albanians under George Kastrioti Skanderbeg. The war was the result of a dispute between the Republic of Venice and the Dukagjini family over the possession of the Dagnum fortress. Skanderbeg, then ally of the Dukagjini family, moved against several Venetian held towns along the Albanian coastline, in order to pressure the Venetians into restoring Dagnum. In response, the Republic sent a local force to relieve the besieged fortress of Dagnum, and urged the Ottoman Empire to send an expeditionary force into Albania. At that time the Ottomans were already besieging the fortress of Svetigrad, stretching Skanderbeg's efforts thin.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q60489, imported by tools/import/wikidata.mjs. The item's own description reads \"war between the League of Lezhë and the Ottoma–Venice Coalition in 1447 and 1448\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1447,
+    "end": 1448,
+    "date": "1447-12",
+    "endDate": "1448-10-04"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

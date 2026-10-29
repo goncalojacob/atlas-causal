@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "fall-of-antwerp",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q697823",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Fall of Antwerp",
+    "pt": "Queda de Antuérpia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q697823"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fall of Antwerp\", revision 1375863582"
+    }
+  ],
+  "title": "Fall of Antwerp",
+  "summary": "The English Wikipedia article \"Fall of Antwerp\", at revision 1375863582, opens: \"The fall of Antwerp on 17 August 1585 took place during the Eighty Years' War, after a siege lasting over a year from July 1584 until August 1585. The city of Antwerp was the focal point of the Protestant-dominated Dutch Revolt, but was forced to surrender to the Spanish forces under the command of Alessandro Farnese. Under the terms agreed, all the Protestants of Antwerp were given four years to settle their affairs and leave the city. Many migrated north, especially to Amsterdam. Apart from losing a high proportion of its middle class and mercantile population, Antwerp's trade suffered for two centuries afterwards as Dutch forts blockaded the River Scheldt until 1795.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q697823, imported by tools/import/wikidata.mjs. The item's own description reads \"1584 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1584,
+    "end": 1585,
+    "date": "1584-07",
+    "endDate": "1585-08-17"
+  },
+  "place": "antwerp",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

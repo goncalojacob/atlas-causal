@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "greater-poland-uprising-1848",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q835649",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Greater Poland Uprising (1848)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q835649"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Greater Poland Uprising (1848)\", revision 1370871493"
+    }
+  ],
+  "title": "Greater Poland Uprising (1848)",
+  "summary": "The English Wikipedia article \"Greater Poland Uprising (1848)\", at revision 1370871493, opens: \"The Greater Poland uprising of 1848 or Poznań Uprising was an unsuccessful military insurrection of Poles against forces of the Kingdom of Prussia during the Revolutions of 1848. The main fighting in the Prussian Partition of Poland was concentrated in the Greater Poland region but some fighting also occurred in Pomerelia. Protests were also held in Polish-inhabited regions of Silesia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q835649, imported by tools/import/wikidata.mjs. The item's own description reads \"1848 military insurrection in Prussian-occupied Greater Poland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-05"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
