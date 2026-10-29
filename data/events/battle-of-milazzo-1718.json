@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-milazzo-1718",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2053203",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Milazzo (1718)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2053203"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Milazzo (1718)\", revision 1375715960"
+    }
+  ],
+  "title": "Battle of Milazzo (1718)",
+  "summary": "The English Wikipedia article \"Battle of Milazzo (1718)\", at revision 1375715960, opens: \"The Battle of Milazzo was fought on 15 October 1718 near the city of Milazzo in Sicily between Spain and Austria as part of the War of the Quadruple Alliance.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2053203, imported by tools/import/wikidata.mjs. The item's own description reads \"1718 during the War of the Quadruple Alliance\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1718,
+    "end": 1718,
+    "date": "1718-10-15"
+  },
+  "place": "milazzo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

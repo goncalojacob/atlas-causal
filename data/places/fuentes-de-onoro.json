@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "fuentes-de-onoro",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q927947",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Fuentes de Oñoro",
+    "pt": "Fontes de Onor"
+  },
+  "sources": [],
+  "names": [
+    "Fuentes de Oñoro",
+    "Fontes de Onor"
+  ],
+  "where": {
+    "lon": -6.8130555555556,
+    "lat": 40.588333333333,
+    "precision": "city",
+    "label": "Fuentes de Oñoro"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

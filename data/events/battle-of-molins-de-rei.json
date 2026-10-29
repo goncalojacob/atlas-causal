@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-molins-de-rei",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q8244307",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Molins de Rei"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8244307"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Molins de Rei\", revision 1370450187"
+    }
+  ],
+  "title": "Battle of Molins de Rei",
+  "summary": "The English Wikipedia article \"Battle of Molins de Rei\", at revision 1370450187, opens: \"The Battle of Molins de Rei or Battle of Molins de Rey or Battle of Molins del Rey saw an Imperial French corps led by Laurent Gouvion Saint-Cyr attack a Spanish army temporarily led by Theodor von Reding and the Conde de Caldagues because its commander Juan Miguel de Vives y Feliu was absent. Saint-Cyr outmaneuvered his opponents, distracting them with a false attack in front while sending the bulk of his force across Llobregat River in a turning movement around the Spanish right flank. The Spanish defensive lines crumbled and the French captured 1,200 soldiers, all the Spanish artillery and Caldagues himself. The Peninsular War engagement was fought near Molins de Rei, located 15 kilometres (9 mi) west of Barcelona, Catalonia, Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q8244307, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-12-21"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "low-countries-theatre-of-the-war-of-the-first-coalition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5457361",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Low Countries theatre of the War of the First Coalition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5457361"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Low Countries theatre of the War of the First Coalition\", revision 1377807188"
+    }
+  ],
+  "title": "Low Countries theatre of the War of the First Coalition",
+  "summary": "The English Wikipedia article \"Low Countries theatre of the War of the First Coalition\", at revision 1377807188, opens: \"The Low Countries theatre of the War of the First Coalition, also known as the Flanders campaign, was a series of campaigns in the Low Countries conducted from 20 April 1792 to 7 June 1795 during the first years of the War of the First Coalition. As the French Revolution radicalised, the revolutionary National Convention and its predecessors broke the Catholic Church's power (1790), abolished the monarchy (1792) and even executed the deposed king Louis XVI (1793), vying to spread the Revolution beyond the new French Republic's borders, by violent means if necessary. The First Coalition, an alliance of reactionary states representing the Ancien Régime in Central and Western Europe – Habsburg Austria, Prussia, Great Britain, the Dutch Republic, Hanover and Hesse-Kassel – mobilised military forces along all the French frontiers, threatening to invade Revolutionary France and violently restore the monarchy. The subsequent combat operations along the French borders with the Low Countries and Germany became the primary theatre of the War of the First Coalition until March 1796, when Napoleon took over French command on the Italian front.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5457361, imported by tools/import/wikidata.mjs. The item's own description reads \"Campaign in War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1792,
+    "end": 1795,
+    "date": "1792-11-06",
+    "endDate": "1795-06-07"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

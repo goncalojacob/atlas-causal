@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-svensksund",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2578430",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Svensksund",
+    "pt": "Batalha de Svensksund"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2578430"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Svensksund\", revision 1381657975"
+    }
+  ],
+  "title": "Battle of Svensksund",
+  "summary": "The English Wikipedia article \"Battle of Svensksund\", at revision 1381657975, opens: \"The Second Battle of Svensksund was a naval battle fought in the Gulf of Finland outside the present day city of Kotka on 9 and 10 July 1790. The Swedish naval forces dealt the Russian fleet a devastating defeat that brought an end to the Russo-Swedish War (1788–1790). The battle is the biggest Swedish naval victory and the largest naval battle ever in the Baltic Sea. It qualifies among the largest naval battles in history in terms of the number of vessels involved.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2578430, imported by tools/import/wikidata.mjs. The item's own description reads \"1790 naval battle between Sweden and the Russian Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1790,
+    "end": 1790,
+    "date": "1790-07-09",
+    "endDate": "1790-07-10"
+  },
+  "place": "gulf-of-finland",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

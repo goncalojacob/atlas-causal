@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-valenciennes-1676-1677",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3108282",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Valenciennes (1676–1677)",
+    "pt": "Cerco de Utreque"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3108282"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Valenciennes (1676–1677)\", revision 1376157444"
+    }
+  ],
+  "title": "Siege of Valenciennes (1676–1677)",
+  "summary": "The English Wikipedia article \"Siege of Valenciennes (1676–1677)\", at revision 1376157444, opens: \"The Siege of Valenciennes, 28 February to 17 March 1677, took place during the 1672 to 1678 Franco-Dutch War. Valenciennes, then in the Spanish Netherlands, was assaulted by a French army under Luxembourg, with siege operations conducted by Vauban. Over the winter of 1676 to 1677, Valenciennes had been subjected to a tight blockade, preventing the receipt of reinforcements or supplies. With no hope of support, the town surrendered on 17 March, and was formally ceded by Spain to France under the August 1678 Treaty of Nijmegen.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3108282, imported by tools/import/wikidata.mjs. The item's own description reads \"siege in 1677\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1676,
+    "end": 1677,
+    "date": "1676-11",
+    "endDate": "1677-03-17"
+  },
+  "place": "valenciennes",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-dutch-war"
+}

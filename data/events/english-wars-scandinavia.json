@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "english-wars-scandinavia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3044986",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "English Wars (Scandinavia)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3044986"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"English Wars (Scandinavia)\", revision 1370616949"
+    }
+  ],
+  "title": "English Wars (Scandinavia)",
+  "summary": "The English Wikipedia article \"English Wars (Scandinavia)\", at revision 1370616949, opens: \"The English Wars were a series of conflicts pitting the United Kingdom and Sweden against Denmark–Norway as part of the Napoleonic Wars. It is named after England, the common name in Scandinavia for the United Kingdom, which declared war on Denmark–Norway due to disagreements over the neutrality of Danish trade and to prevent the Danish fleet falling into the hands of the First French Empire. It began with the Battle of Copenhagen (1801) and its latter stage from 1807 onwards was followed by the Gunboat War, the Dano-Swedish War of 1808–09 and the Swedish invasion of Holstein in 1814.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3044986, imported by tools/import/wikidata.mjs. The item's own description reads \"1807-1814 war in Northern and Western Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1801,
+    "end": 1814
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

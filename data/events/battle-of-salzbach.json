@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-salzbach",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q303445",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Salzbach",
+    "pt": "Batalha de Salzbach"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q303445"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Salzbach\", revision 1370588153"
+    }
+  ],
+  "title": "Battle of Salzbach",
+  "summary": "The English Wikipedia article \"Battle of Salzbach\", at revision 1370588153, opens: \"The Battle of Salzbach, or Sasbach, took place on 27 July 1675 during the Franco-Dutch War, when an Imperial army under Raimondo Montecuccoli confronted a French force commanded by Marshal Turenne. The \"battle\" consisted primarily of an artillery duel, during which Turenne was killed by a cannonball.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q303445, imported by tools/import/wikidata.mjs. The item's own description reads \"1675 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1675,
+    "end": 1675,
+    "date": "1675-07-27"
+  },
+  "place": "sasbach-ortenau",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-dutch-war"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-pozzolo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q745096",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Pozzolo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q745096"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pozzolo\", revision 1370272235"
+    }
+  ],
+  "title": "Battle of Pozzolo",
+  "summary": "The English Wikipedia article \"Battle of Pozzolo\", at revision 1370272235, opens: \"The Battle of Pozzolo also known as the Battle of the Mincio River and Monzambano was fought during the War of the Second Coalition. A French army under General Guillaume Brune crossed the Mincio River and defeated an Austrian force under General Heinrich von Bellegarde. The Austrians were subsequently pushed back to Treviso where the Armistice of Treviso was signed. This truce would lead to the Treaty of Lunéville and the withdrawal of Austria from the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q745096, imported by tools/import/wikidata.mjs. The item's own description reads \"1800 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1800,
+    "end": 1800,
+    "date": "1800-12-25"
+  },
+  "place": "monzambano",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}
