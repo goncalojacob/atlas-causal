@@ -52810,6 +52810,609 @@
         "place": "k-ge-bay"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-502",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "great-fire-of-london",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-503",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "reinsurance-treaty",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-284",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "japan-korea-treaty-of-1876",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-286",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "third-plague-pandemic",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-288",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "1896-sanriku-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-289",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "kinmon-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-290",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "fall-of-edo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-251",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "federal-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-507",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "naples-plague-1656",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-292",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "indigo-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-508",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "great-plague-of-seville",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-294",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-japanese-treaty-of-amity-and-commerce",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-296",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-amity-and-commerce-between-france-and-japan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-253",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-the-triple-alliance",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-510",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "1853-copenhagen-cholera-outbreak",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-512",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "1770-1772-russian-plague",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-256",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "1721-boston-smallpox-outbreak",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-297",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "great-plague-in-the-late-ming-dynasty",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-514",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "radical-war",
+        "edges": [],
+        "place": "central-lowlands"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-258",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "colombian-civil-war-of-1876",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-259",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "pleasant-valley-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-260",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "1848-1849-venezuelan-civil-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-038",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q104879437: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-261",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "mason-county-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-263",
+      "writer": "A",
+      "fired": "2026-10-29T19:52Z",
+      "status": "written",
+      "written": {
+        "event": "las-cuevas-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-249",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "texas-revolution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-283",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "1883-eruption-of-krakatoa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-285",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3591483: none of its classes (Q1075339) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-asia-287",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "1707-hoei-earthquake",
+        "edges": [],
+        "place": "shikoku"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-504",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "secret-treaty-of-dover",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-250",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "johnson-county-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-505",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "great-plague-of-vienna",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-506",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q581254: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-291",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "1792-unzen-landslide-and-tsunami",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-293",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "1498-meio-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-509",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "st-felix-s-flood",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-295",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "fall-of-osaka-castle",
+        "edges": [],
+        "place": "osaka"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-252",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "colombian-civil-war-1860-1862",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-254",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "1837-great-plains-smallpox-epidemic",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-511",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "1675-1676-malta-plague-epidemic",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-255",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "1900-1904-san-francisco-plague",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-513",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "1592-1593-malta-plague-epidemic",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-257",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "massachusetts-smallpox-epidemic",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-298",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "1894-hong-kong-plague",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-299",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "bombay-plague-epidemic",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-300",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "1858-treaty-of-amity-and-commerce-between-the-netherlands-and-japan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-515",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "1582-tenerife-plague-epidemic",
+        "edges": [],
+        "place": "san-cristobal-de-la-laguna"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-301",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "negros-revolution",
+        "edges": [],
+        "place": "negros"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-262",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "sheep-wars",
+        "edges": [],
+        "place": "western-united-states"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-264",
+      "writer": "B",
+      "fired": "2026-10-29T20:00Z",
+      "status": "written",
+      "written": {
+        "event": "louisiana-purchase",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

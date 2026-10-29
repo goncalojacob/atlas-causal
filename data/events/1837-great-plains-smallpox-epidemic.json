@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1837-great-plains-smallpox-epidemic",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4554489",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1837 Great Plains smallpox epidemic",
+    "pt": "Epidemia de varíola de 1837"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4554489"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1837 Great Plains smallpox epidemic\", revision 1375904630"
+    }
+  ],
+  "title": "1837 Great Plains smallpox epidemic",
+  "summary": "The English Wikipedia article \"1837 Great Plains smallpox epidemic\", at revision 1375904630, opens: \"Between 1836 and 1840, smallpox became widespread across the Great Plains. The epidemic reached its height following the spring of 1837, when an American Fur Company steamboat, the SS St. Peter's, carried infected people and supplies up the Missouri River in the Midwestern United States. The disease spread rapidly to indigenous populations with no natural immunity, causing widespread illness and death across the Great Plains, especially in the Upper Missouri River watershed. More than 17,000 Indigenous people died along the Missouri River alone, with some bands becoming nearly extinct.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4554489, imported by tools/import/wikidata.mjs. The item's own description reads \"disease outbreak in the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1837,
+    "end": 1838
+  },
+  "place": "kansas",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

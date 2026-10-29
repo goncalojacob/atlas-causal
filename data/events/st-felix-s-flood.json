@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "st-felix-s-flood",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q641335",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "St. Felix's flood"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q641335"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"St. Felix's flood\", revision 1361434338"
+    }
+  ],
+  "title": "St. Felix's flood",
+  "summary": "The English Wikipedia article \"St. Felix's flood\", at revision 1361434338, opens: \"The St. Felix's flood happened on Saturday, 5 November 1530, the name day of St. Felix. This day was later known as Evil Saturday (kwade zaterdag). Large parts of Flanders and Zeeland were washed away, including the Verdronken Land van Reimerswaal. According to Audrey M. Lambert, \"all the Oost Wetering of Zuid-Beveland was lost, save only the town of Reimerswaal.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q641335, imported by tools/import/wikidata.mjs. The item's own description reads \"Flood in the Netherlands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1530,
+    "end": null,
+    "date": "1530-11-05"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

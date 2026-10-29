@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "las-cuevas-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6492180",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Las Cuevas War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6492180"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Las Cuevas War\", revision 1381732901"
+    }
+  ],
+  "title": "Las Cuevas War",
+  "summary": "The English Wikipedia article \"Las Cuevas War\", at revision 1381732901, opens: \"The Las Cuevas War was a brief armed conflict fought mainly between a force of Texas Rangers, commanded by Captain Leander McNelly, and an irregular force of Mexican bandits. It took place in November 1875, in and around Las Cuevas, Tamaulipas. The Texans crossed the Rio Grande into Mexican territory with the purpose of returning stolen cattle to the American side of the river but they were drawn into a battle with local militia forces. When the fighting was over the Mexicans returned the cattle to the Texans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6492180, imported by tools/import/wikidata.mjs. The item's own description reads \"November 1875 armed conflict between Mexico and the USA\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1875,
+    "end": 1875,
+    "date": "1875-11-20",
+    "endDate": "1875-11-21"
+  },
+  "place": "texas",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

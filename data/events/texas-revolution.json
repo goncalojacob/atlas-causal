@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "texas-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q638530",
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Texas Revolution",
+    "pt": "Revolução do Texas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q638530"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Texas Revolution\", revision 1381450517"
+    }
+  ],
+  "title": "Texas Revolution",
+  "summary": "The English Wikipedia article \"Texas Revolution\", at revision 1381450517, opens: \"The Texas Revolution was a rebellion by Anglo-American immigrants as well as Hispanic Texans against the centralist government of Mexico in the Mexican state of Coahuila y Tejas. Although the uprising was part of a larger revolt that included other provinces opposed to the regime of President Miguel Barragán and General Antonio López de Santa Anna, the Mexican government believed the United States had instigated the Texas insurrection with the goal of annexation. The Mexican Congress passed the Tornel Decree, declaring that any foreigners fighting against Mexican troops \"will be deemed pirates and dealt with as such, being citizens of no nation presently at war with the Republic and fighting under no recognized flag\". Only the province of Texas succeeded in breaking with Mexico, establishing the Republic of Texas. It was eventually annexed by the United States about a decade later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q638530, imported by tools/import/wikidata.mjs. The item's own description reads \"war between Texans and Mexico, 1835-1836, resulting in the independent Republic of Texas\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1836,
+    "date": "1835-10-02",
+    "endDate": "1836-04-21"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
