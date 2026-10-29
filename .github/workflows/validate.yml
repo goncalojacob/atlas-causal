@@ -89,6 +89,12 @@ jobs:
         # The slowest single test takes about 6s, so 120s is not a deadline an
         # honest test comes near.
         #
+        # The pass outside the browser has ten minutes since 29 October 2026.
+        # A test file counts as one test under this limit, and
+        # tests/build-index.test.mjs builds the index of the real corpus
+        # several times: at 4,773 events it ran past 120 s on the runner
+        # twice (snapshot 46) and took 326 s on a busy local machine.
+        #
         # Two passes since M63, and the reason is docs/m63-load.md: at the
         # default concurrency three of the suites that drive a headless
         # Chromium are scheduled together on four cores, and a page that is
@@ -106,7 +112,7 @@ jobs:
         run: |
           set -u
           status=0
-          node --test --test-timeout=120000 $(node tools/suites.mjs --pure) || status=1
+          node --test --test-timeout=600000 $(node tools/suites.mjs --pure) || status=1
           node --test --test-timeout=120000 --test-concurrency=1 $(node tools/suites.mjs --browser) || status=1
           # The machine, said again at the end. Only the tail of a job's log can
           # be fetched from the sandbox these runs are driven from (deviation
