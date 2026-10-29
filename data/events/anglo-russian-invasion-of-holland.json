@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "anglo-russian-invasion-of-holland",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4141642",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Anglo-Russian invasion of Holland",
+    "pt": "Invasão anglo-russa da Holanda"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4141642"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Russian invasion of Holland\", revision 1373915367"
+    }
+  ],
+  "title": "Anglo-Russian invasion of Holland",
+  "summary": "The English Wikipedia article \"Anglo-Russian invasion of Holland\", at revision 1373915367, opens: \"The Anglo-Russian invasion of Holland was a military campaign from 27 August to 19 November 1799 during the War of the Second Coalition, in which an expeditionary force of British and Russian troops invaded the North Holland peninsula in the Batavian Republic. The campaign had two strategic objectives: to neutralize the Batavian fleet and to promote an uprising by followers of the former stadtholder William V against the Batavian government. The invasion was opposed by a smaller joint Franco-Batavian army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4141642, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflict in the Batavian Republic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-08-27",
+    "endDate": "1799-11-19"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

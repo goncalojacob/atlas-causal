@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "calugareni",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2717351",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "sources": [],
+  "names": [
+    "Călugăreni"
+  ],
+  "where": {
+    "lon": 26,
+    "lat": 44.1833,
+    "precision": "city",
+    "label": "Călugăreni"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

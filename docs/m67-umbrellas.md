@@ -5294,3 +5294,59 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-29: `battle-of-fort-stedman`, filed under `american-civil-war` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-234`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `thornton-affair`, filed under `mexican-american-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-237`, rank `child-of:mexican-american-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-lomas-valentinas`, filed under `paraguayan-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-239`, rank `child-of:paraguayan-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-monte-de-las-cruces`, filed under `mexican-war-of-independence` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-245`, rank `child-of:mexican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `siege-of-ochakov-1788`, filed under `russo-turkish-war-1787-1792` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-europe-420`, rank `child-of:russo-turkish-war-1787-1792`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `reveillon-riots`, filed under `french-revolution` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-europe-430`, rank `child-of:french-revolution`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `anglo-russian-invasion-of-holland`, filed under `war-of-the-second-coalition` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-europe-440`, rank `child-of:war-of-the-second-coalition`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-saltanovka`, filed under `french-invasion-of-russia` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-europe-448`, rank `child-of:french-invasion-of-russia`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-curuzu`, filed under `paraguayan-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-240`, rank `child-of:paraguayan-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `anglo-french-blockade-of-the-rio-de-la-plata`, filed under `uruguayan-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-244`, rank `child-of:uruguayan-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-cross-keys`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-248`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-qbaada`, filed under `caucasian-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-425`, rank `child-of:caucasian-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-korsun`, filed under `khmelnytsky-uprising` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-435`, rank `child-of:khmelnytsky-uprising`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `mediterranean-campaign-of-1798`, filed under `war-of-the-second-coalition` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-441`, rank `child-of:war-of-the-second-coalition`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battles-of-el-bruch`, filed under `peninsular-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-445`, rank `child-of:peninsular-war`. Its span and its subject put it inside the umbrella.

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-espinosa-de-los-monteros",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q761009",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Espinosa de los Monteros"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q761009"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Espinosa de los Monteros\", revision 1370440335"
+    }
+  ],
+  "title": "Battle of Espinosa de los Monteros",
+  "summary": "The English Wikipedia article \"Battle of Espinosa de los Monteros\", at revision 1370440335, opens: \"The Battle of Espinosa de los Monteros took place during the Napoleonic Wars, on 10 and 11 November 1808 at the village of Espinosa de los Monteros in the Cantabrian Mountains. It resulted in a French victory under Marshal Victor against Lieutenant General Joaquín Blake's Army of Galicia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q761009, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-11-10",
+    "endDate": "1808-11-11"
+  },
+  "place": "espinosa-de-los-monteros",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

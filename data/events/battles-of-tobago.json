@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battles-of-tobago",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1635922",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battles of Tobago",
+    "pt": "Batalha de Tobago"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1635922"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battles of Tobago\", revision 1377056277"
+    }
+  ],
+  "title": "Battles of Tobago",
+  "summary": "The English Wikipedia article \"Battles of Tobago\", at revision 1377056277, opens: \"The Battles of Tobago were two naval battles between the French Navy and the Dutch States Navy during the Franco-Dutch War in 1677.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1635922, imported by tools/import/wikidata.mjs. The item's own description reads \"3 March 1677 battle between a Dutch fleet and a French force attempting to recapture Tobago\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1677,
+    "end": 1677,
+    "date": "1677-03-03"
+  },
+  "place": "tobago",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-dutch-war"
+}

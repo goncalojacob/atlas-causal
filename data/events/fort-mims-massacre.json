@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "fort-mims-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888531",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Fort Mims massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888531"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fort Mims massacre\", revision 1380173760"
+    }
+  ],
+  "title": "Fort Mims massacre",
+  "summary": "The English Wikipedia article \"Fort Mims massacre\", at revision 1380173760, opens: \"The Fort Mims massacre occurred on August 30, 1813, at a fortified homestead site 35–40 miles north of Mobile, Alabama, during the Creek War. A large force of Creek Indians belonging to the Red Sticks faction, under the command of Peter McQueen and William Weatherford, stormed the fort and defeated the militia garrison.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888531, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Creek War (1813)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-08-30"
+  },
+  "place": "bay-minette-alabama",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "creek-war"
+}

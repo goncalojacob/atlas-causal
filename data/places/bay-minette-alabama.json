@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bay-minette-alabama",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q79775",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Bay Minette, Alabama",
+    "pt": "Bay Minette"
+  },
+  "sources": [],
+  "names": [
+    "Bay Minette",
+    "Bay Minette, Alabama"
+  ],
+  "where": {
+    "lon": -87.777183,
+    "lat": 30.883446,
+    "precision": "city",
+    "label": "Bay Minette, Alabama"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

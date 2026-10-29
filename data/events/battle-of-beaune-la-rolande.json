@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-beaune-la-rolande",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q551428",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Beaune-la-Rolande"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q551428"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Beaune-la-Rolande\", revision 1370433766"
+    }
+  ],
+  "title": "Battle of Beaune-la-Rolande",
+  "summary": "The English Wikipedia article \"Battle of Beaune-la-Rolande\", at revision 1370433766, opens: \"The Battle of Beaune-la-Rolande on 28 November 1870 took place during the Franco-Prussian War, which was won by Prussia. In an attempt to relieve the Siege of Paris, French General Crouzat's XX Corps launched an attack against three Prussian brigades resting in Beaune-la-Rolande. These brigades were from the Prussian X Corps which was detailed to guard the flanks and rear of the force besieging Paris and provide early warning of any French counter-attacks. The French committed a force of 60,000 men, largely conscripts of the Garde Mobile, and 140 guns against the Prussians' 9,000 men and 70 guns, mostly drawn from regular troops, although military historian Gaston Bodart estimated their strength at 40,000 men and 174 guns. Despite the superiority of numbers the French attack failed to take the village and was ultimately forced to retreat by Prussian reinforcements.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q551428, imported by tools/import/wikidata.mjs. The item's own description reads \"1870 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1870,
+    "date": "1870-11-28"
+  },
+  "place": "beaune-la-rolande",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-prussian-war"
+}

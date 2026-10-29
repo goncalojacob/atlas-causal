@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-borny-colombey",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q686099",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Borny–Colombey"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q686099"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Borny–Colombey\", revision 1370785504"
+    }
+  ],
+  "title": "Battle of Borny–Colombey",
+  "summary": "The English Wikipedia article \"Battle of Borny–Colombey\", at revision 1370785504, opens: \"The Battle of Borny–Colombey or the Battle of Colombey-Nouilly took place on 14 August 1870 as part of the Franco-Prussian War. During the battle the escape route of the French army under François Bazaine was blocked when the French encountered the First Army under von Steinmetz. The outcome of the battle itself was a French victory as the French were able to escape to Metz, although they were delayed for 12 hours.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q686099, imported by tools/import/wikidata.mjs. The item's own description reads \"1870 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1870,
+    "date": "1870-08-14"
+  },
+  "place": "metz",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-prussian-war"
+}

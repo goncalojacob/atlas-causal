@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mediterranean-campaign-of-1798",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q13581715",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Mediterranean campaign of 1798",
+    "pt": "Campanha do Mediterrâneo (1798)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q13581715"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mediterranean campaign of 1798\", revision 1382487916"
+    }
+  ],
+  "title": "Mediterranean campaign of 1798",
+  "summary": "The English Wikipedia article \"Mediterranean campaign of 1798\", at revision 1382487916, opens: \"The Mediterranean campaign of 1798 was a series of major naval operations surrounding a French expeditionary force sent to Egypt under Napoleon Bonaparte during the French Revolutionary Wars. The French Republic sought to capture Egypt as the first stage in an effort to threaten British India and support Tipu Sultan, and thus force Great Britain to make peace. Departing Toulon in May 1798 with over 40,000 troops and hundreds of ships, Bonaparte's fleet sailed southeastwards across the Mediterranean Sea. They were followed by a small British squadron under Rear-Admiral Sir Horatio Nelson, later reinforced to 13 ships of the line, whose pursuit was hampered by a lack of scouting frigates and reliable information. Bonaparte's first target was the island of Malta, which was under the government of the Knights of St. John and theoretically granted its owner control of the Central Mediterranean. Bonaparte's forces landed on the island and rapidly overwhelmed the defenders, securing the port city of Valletta before continuing to Egypt. When Nelson learned of the French capture of the island, he guessed the French target to be Egypt and sailed for Alexandria, but passed the French during the night of 22 June without discovering them and arrived off Egypt first.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q13581715, imported by tools/import/wikidata.mjs. The item's own description reads \"failed French military campaign led by Napoleon Bonaparte to support the Sultanate of Mysore against Britain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1798,
+    "date": "1798-06",
+    "endDate": "1798-12"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

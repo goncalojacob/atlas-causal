@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mir-belarus",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q922668",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Mir, Belarus"
+  },
+  "sources": [],
+  "names": [
+    "Mir",
+    "Mir, Belarus"
+  ],
+  "where": {
+    "lon": 26.466666666666665,
+    "lat": 53.45472222222222,
+    "precision": "city",
+    "label": "Mir, Belarus"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

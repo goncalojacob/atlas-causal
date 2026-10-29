@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-luxembourg-1794-1795",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q904495",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Luxembourg (1794–1795)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q904495"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Luxembourg (1794–1795)\", revision 1370743061"
+    }
+  ],
+  "title": "Siege of Luxembourg (1794–1795)",
+  "summary": "The English Wikipedia article \"Siege of Luxembourg (1794–1795)\", at revision 1370743061, opens: \"The siege of Luxembourg was a siege by France of the Habsburg-held Fortress of Luxembourg that lasted from 1794 until 7 June 1795, during the French Revolutionary Wars. Although the French army failed to breach the walls of the city, which were renowned as amongst the best in the world, the fortress was forced to surrender after more than seven months.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q904495, imported by tools/import/wikidata.mjs. The item's own description reads \"1794-1795 siege during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1794,
+    "end": 1795,
+    "date": "1794-11-22",
+    "endDate": "1795-06-07"
+  },
+  "place": "luxembourg-q1842",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}
