@@ -2,6 +2,15 @@
   "from": 1600,
   "kind": "event",
   "records": {
+    "1603-london-plague": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1629-1631-italian-plague": {
       "from": "git",
       "versions": [
@@ -2754,6 +2763,15 @@
         }
       ]
     },
+    "first-bishops-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "four-days-battle": {
       "from": "git",
       "versions": [
@@ -3322,6 +3340,15 @@
       ]
     },
     "peace-of-ales": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "peace-of-asti": {
       "from": "git",
       "versions": [
         {
@@ -3950,6 +3977,15 @@
       ]
     },
     "second-battle-of-simtokha-dzong": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "second-brotherhood": {
       "from": "git",
       "versions": [
         {
@@ -4833,6 +4869,15 @@
         }
       ]
     },
+    "thessaly-rebellion-1600": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "third-anglo-dutch-war": {
       "from": "git",
       "versions": [
@@ -4923,6 +4968,15 @@
         }
       ]
     },
+    "treaty-of-antwerp-1609": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-bakhchisarai": {
       "from": "git",
       "versions": [
@@ -4933,6 +4987,15 @@
       ]
     },
     "treaty-of-barwalde": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-berwick-1639": {
       "from": "git",
       "versions": [
         {
@@ -4983,6 +5046,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-brussol": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5037,6 +5109,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-elbing": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5148,6 +5229,15 @@
         }
       ]
     },
+    "treaty-of-loudun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-lubeck": {
       "from": "git",
       "versions": [
@@ -5167,6 +5257,15 @@
       ]
     },
     "treaty-of-marienburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-montmartre": {
       "from": "git",
       "versions": [
         {
@@ -5202,6 +5301,24 @@
         }
       ]
     },
+    "treaty-of-munich-1628": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-munster-october-1648": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-nerchinsk": {
       "from": "git",
       "versions": [
@@ -5217,6 +5334,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-pavia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

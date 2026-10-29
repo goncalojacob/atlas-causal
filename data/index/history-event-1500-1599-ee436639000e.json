@@ -5230,6 +5230,15 @@
         }
       ]
     },
+    "treaty-of-berwick-1586": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-blois-1572": {
       "from": "git",
       "versions": [
@@ -5293,6 +5302,15 @@
         }
       ]
     },
+    "treaty-of-gorinchem": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-greenwich": {
       "from": "git",
       "versions": [
@@ -5312,6 +5330,15 @@
       ]
     },
     "treaty-of-madrid-1526": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-mozhaysk": {
       "from": "git",
       "versions": [
         {

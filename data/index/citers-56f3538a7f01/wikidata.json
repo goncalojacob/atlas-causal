@@ -1796,6 +1796,12 @@
     },
     {
       "dissent": false,
+      "id": "1603-london-plague",
+      "kind": "event",
+      "locator": "Q116188912"
+    },
+    {
+      "dissent": false,
       "id": "1629-1631-italian-plague",
       "kind": "event",
       "locator": "Q3307987"
@@ -2054,6 +2060,12 @@
     },
     {
       "dissent": false,
+      "id": "1870-barcelona-yellow-fever-epidemic",
+      "kind": "event",
+      "locator": "Q59466726"
+    },
+    {
+      "dissent": false,
       "id": "1871-guatemalan-revolution",
       "kind": "event",
       "locator": "Q6107157"
@@ -2069,6 +2081,12 @@
       "id": "1876-bengal-cyclone",
       "kind": "event",
       "locator": "Q5598680"
+    },
+    {
+      "dissent": false,
+      "id": "1878-macedonian-rebellion",
+      "kind": "event",
+      "locator": "Q12277460"
     },
     {
       "dissent": false,
@@ -13526,6 +13544,12 @@
     },
     {
       "dissent": false,
+      "id": "dalecarlian-rebellion-of-1743",
+      "kind": "event",
+      "locator": "Q4091834"
+    },
+    {
+      "dissent": false,
       "id": "damour-massacre",
       "kind": "event",
       "locator": "Q1351462"
@@ -14009,6 +14033,12 @@
       "id": "entente-cordiale",
       "kind": "event",
       "locator": "Q464399"
+    },
+    {
+      "dissent": false,
+      "id": "epirus-revolt-of-1878",
+      "kind": "event",
+      "locator": "Q5383234"
     },
     {
       "dissent": false,
@@ -14507,6 +14537,12 @@
       "id": "first-battle-of-zawiya",
       "kind": "event",
       "locator": "Q923890"
+    },
+    {
+      "dissent": false,
+      "id": "first-bishops-war",
+      "kind": "event",
+      "locator": "Q127162983"
     },
     {
       "dissent": false,
@@ -15107,6 +15143,12 @@
       "id": "geneva-conference",
       "kind": "event",
       "locator": "Q482407"
+    },
+    {
+      "dissent": false,
+      "id": "geneva-revolution-of-1782",
+      "kind": "event",
+      "locator": "Q24932348"
     },
     {
       "dissent": false,
@@ -16112,6 +16154,12 @@
     },
     {
       "dissent": false,
+      "id": "irish-rebellion-of-1803",
+      "kind": "event",
+      "locator": "Q4197178"
+    },
+    {
+      "dissent": false,
       "id": "irmandino-revolts",
       "kind": "event",
       "locator": "Q2300308"
@@ -16334,6 +16382,12 @@
     },
     {
       "dissent": false,
+      "id": "jay-gardoqui-treaty",
+      "kind": "event",
+      "locator": "Q6168026"
+    },
+    {
+      "dissent": false,
       "id": "jay-treaty",
       "kind": "event",
       "locator": "Q1568837"
@@ -16343,6 +16397,12 @@
       "id": "jementah-civil-war",
       "kind": "event",
       "locator": "Q6177105"
+    },
+    {
+      "dissent": false,
+      "id": "jerez-uprising",
+      "kind": "event",
+      "locator": "Q17630734"
     },
     {
       "dissent": false,
@@ -18560,6 +18620,12 @@
     },
     {
       "dissent": false,
+      "id": "peace-of-asti",
+      "kind": "event",
+      "locator": "Q7157527"
+    },
+    {
+      "dissent": false,
       "id": "peace-of-augsburg",
       "kind": "event",
       "locator": "Q154577"
@@ -18707,6 +18773,12 @@
       "id": "peninsular-war",
       "kind": "event",
       "locator": "Q152499"
+    },
+    {
+      "dissent": false,
+      "id": "pentrich-rising",
+      "kind": "event",
+      "locator": "Q7165306"
     },
     {
       "dissent": false,
@@ -20351,6 +20423,12 @@
       "id": "second-boer-war",
       "kind": "event",
       "locator": "Q215112, P31 Q198"
+    },
+    {
+      "dissent": false,
+      "id": "second-brotherhood",
+      "kind": "event",
+      "locator": "Q7443141"
     },
     {
       "dissent": false,
@@ -23288,6 +23366,12 @@
     },
     {
       "dissent": false,
+      "id": "thessaly-rebellion-1600",
+      "kind": "event",
+      "locator": "Q30602197"
+    },
+    {
+      "dissent": false,
       "id": "third-anglo-burmese-war",
       "kind": "event",
       "locator": "Q1209946"
@@ -23720,6 +23804,18 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-antwerp-1609",
+      "kind": "event",
+      "locator": "Q3536729"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-aranjuez-1752",
+      "kind": "event",
+      "locator": "Q4890548"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-aranjuez-1777",
       "kind": "event",
       "locator": "Q3118987"
@@ -23729,6 +23825,12 @@
       "id": "treaty-of-aranjuez-1779",
       "kind": "event",
       "locator": "Q2629695"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-aranjuez-1780",
+      "kind": "event",
+      "locator": "Q4890925"
     },
     {
       "dissent": false,
@@ -23828,6 +23930,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-bergen",
+      "kind": "event",
+      "locator": "Q17750244"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-bergerac",
       "kind": "event",
       "locator": "Q7836981"
@@ -23849,6 +23957,18 @@
       "id": "treaty-of-bern",
       "kind": "event",
       "locator": "Q2629126"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-berwick-1586",
+      "kind": "event",
+      "locator": "Q7836986"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-berwick-1639",
+      "kind": "event",
+      "locator": "Q7836987"
     },
     {
       "dissent": false,
@@ -23909,6 +24029,12 @@
       "id": "treaty-of-bromsebro-1645",
       "kind": "event",
       "locator": "Q850497"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-brussol",
+      "kind": "event",
+      "locator": "Q133443"
     },
     {
       "dissent": false,
@@ -24074,6 +24200,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-dordrecht",
+      "kind": "event",
+      "locator": "Q7837037"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-dresden",
       "kind": "event",
       "locator": "Q700716"
@@ -24101,6 +24233,12 @@
       "id": "treaty-of-el-pardo-1778",
       "kind": "event",
       "locator": "Q1923018"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-elbing",
+      "kind": "event",
+      "locator": "Q7837045"
     },
     {
       "dissent": false,
@@ -24242,6 +24380,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-fulda",
+      "kind": "event",
+      "locator": "Q7837074"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-fussen",
       "kind": "event",
       "locator": "Q571556"
@@ -24275,6 +24419,12 @@
       "id": "treaty-of-giyanti",
       "kind": "event",
       "locator": "Q2978493"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-gorinchem",
+      "kind": "event",
+      "locator": "Q3134144"
     },
     {
       "dissent": false,
@@ -24590,6 +24740,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-loudun",
+      "kind": "event",
+      "locator": "Q7837128"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-lubeck",
       "kind": "event",
       "locator": "Q708862"
@@ -24674,6 +24830,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-montmartre",
+      "kind": "event",
+      "locator": "Q546581"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-montpellier",
       "kind": "event",
       "locator": "Q3536839"
@@ -24692,9 +24854,27 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-mozhaysk",
+      "kind": "event",
+      "locator": "Q7837159"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-munich-1619",
       "kind": "event",
       "locator": "Q7837158"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-munich-1628",
+      "kind": "event",
+      "locator": "Q7837160"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-munster-october-1648",
+      "kind": "event",
+      "locator": "Q16680905"
     },
     {
       "dissent": false,
@@ -24842,6 +25022,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-pavia",
+      "kind": "event",
+      "locator": "Q7837183"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-peace-with-italy",
       "kind": "event",
       "locator": "Q2314717"
@@ -24914,6 +25100,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-pyritz",
+      "kind": "event",
+      "locator": "Q7837201"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-radnot",
       "kind": "event",
       "locator": "Q2917546"
@@ -24983,6 +25175,12 @@
       "id": "treaty-of-ruby-valley-1863",
       "kind": "event",
       "locator": "Q7837216"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-sable",
+      "kind": "event",
+      "locator": "Q3536949"
     },
     {
       "dissent": false,
@@ -25295,6 +25493,12 @@
       "id": "treaty-of-tolentino",
       "kind": "event",
       "locator": "Q2004236"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-toplitz",
+      "kind": "event",
+      "locator": "Q2649155"
     },
     {
       "dissent": false,
@@ -25904,6 +26108,12 @@
     },
     {
       "dissent": false,
+      "id": "vienna-monetary-treaty",
+      "kind": "event",
+      "locator": "Q7928317"
+    },
+    {
+      "dissent": false,
       "id": "vietnam-war",
       "kind": "event",
       "locator": "Q8740"
@@ -26090,6 +26300,12 @@
     },
     {
       "dissent": false,
+      "id": "war-of-the-catalans",
+      "kind": "event",
+      "locator": "Q15650559"
+    },
+    {
+      "dissent": false,
       "id": "war-of-the-confederation",
       "kind": "event",
       "locator": "Q601811"
@@ -26141,6 +26357,12 @@
       "id": "war-of-the-league-of-the-indies",
       "kind": "event",
       "locator": "Q27958733"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-maidens",
+      "kind": "event",
+      "locator": "Q3119032"
     },
     {
       "dissent": false,

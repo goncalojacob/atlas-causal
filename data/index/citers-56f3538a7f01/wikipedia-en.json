@@ -10208,6 +10208,12 @@
     },
     {
       "dissent": false,
+      "id": "1603-london-plague",
+      "kind": "event",
+      "locator": "\"1603 London plague\", revision 1380977638"
+    },
+    {
+      "dissent": false,
       "id": "1629-1631-italian-plague",
       "kind": "event",
       "locator": "\"1629–1631 Italian plague\", revision 1377519308"
@@ -10466,6 +10472,12 @@
     },
     {
       "dissent": false,
+      "id": "1870-barcelona-yellow-fever-epidemic",
+      "kind": "event",
+      "locator": "\"1870 Barcelona yellow fever epidemic\", revision 1357861872"
+    },
+    {
+      "dissent": false,
       "id": "1871-guatemalan-revolution",
       "kind": "event",
       "locator": "\"1871 Guatemalan Revolution\", revision 1380768164"
@@ -10481,6 +10493,12 @@
       "id": "1876-bengal-cyclone",
       "kind": "event",
       "locator": "\"1876 Bengal cyclone\", revision 1380320142"
+    },
+    {
+      "dissent": false,
+      "id": "1878-macedonian-rebellion",
+      "kind": "event",
+      "locator": "\"1878 Macedonian rebellion\", revision 1381888395"
     },
     {
       "dissent": false,
@@ -21812,6 +21830,12 @@
     },
     {
       "dissent": false,
+      "id": "dalecarlian-rebellion-of-1743",
+      "kind": "event",
+      "locator": "\"Dalecarlian Rebellion of 1743\", revision 1378904227"
+    },
+    {
+      "dissent": false,
       "id": "damour-massacre",
       "kind": "event",
       "locator": "\"Damour massacre\", revision 1356232011"
@@ -22310,6 +22334,12 @@
     },
     {
       "dissent": false,
+      "id": "epirus-revolt-of-1878",
+      "kind": "event",
+      "locator": "\"Epirus Revolt of 1878\", revision 1366262630"
+    },
+    {
+      "dissent": false,
       "id": "eritrean-ethiopian-war",
       "kind": "event",
       "locator": "\"Eritrean–Ethiopian War\", revision 1372677015, first sentence: \"took place from May 6, 1998 to June 18, 2000\""
@@ -22787,6 +22817,12 @@
       "id": "first-battle-of-zawiya",
       "kind": "event",
       "locator": "\"First Battle of Zawiya\", revision 1370619040"
+    },
+    {
+      "dissent": false,
+      "id": "first-bishops-war",
+      "kind": "event",
+      "locator": "\"First Bishops' War\", revision 1381471810"
     },
     {
       "dissent": false,
@@ -23375,6 +23411,12 @@
       "id": "geneva-conference",
       "kind": "event",
       "locator": "\"1954 Geneva Conference\", revision 1369041532"
+    },
+    {
+      "dissent": false,
+      "id": "geneva-revolution-of-1782",
+      "kind": "event",
+      "locator": "\"Geneva Revolution of 1782\", revision 1367734531"
     },
     {
       "dissent": false,
@@ -24386,6 +24428,12 @@
     },
     {
       "dissent": false,
+      "id": "irish-rebellion-of-1803",
+      "kind": "event",
+      "locator": "\"Irish rebellion of 1803\", revision 1376810436"
+    },
+    {
+      "dissent": false,
       "id": "irmandino-revolts",
       "kind": "event",
       "locator": "\"Irmandiño revolts\", revision 1380850852"
@@ -24596,6 +24644,12 @@
     },
     {
       "dissent": false,
+      "id": "jay-gardoqui-treaty",
+      "kind": "event",
+      "locator": "\"Jay–Gardoqui Treaty\", revision 1379424552"
+    },
+    {
+      "dissent": false,
       "id": "jay-treaty",
       "kind": "event",
       "locator": "\"Jay Treaty\", revision 1380688155"
@@ -24605,6 +24659,12 @@
       "id": "jementah-civil-war",
       "kind": "event",
       "locator": "\"Jementah Civil War\", revision 1381758666"
+    },
+    {
+      "dissent": false,
+      "id": "jerez-uprising",
+      "kind": "event",
+      "locator": "\"Jerez uprising\", revision 1366264728"
     },
     {
       "dissent": false,
@@ -26762,6 +26822,12 @@
     },
     {
       "dissent": false,
+      "id": "peace-of-asti",
+      "kind": "event",
+      "locator": "\"Peace of Asti\", revision 1360728013"
+    },
+    {
+      "dissent": false,
       "id": "peace-of-augsburg",
       "kind": "event",
       "locator": "\"Peace of Augsburg\", revision 1379189394"
@@ -26897,6 +26963,12 @@
       "id": "peninsular-war",
       "kind": "event",
       "locator": "\"Peninsular War\", revision 1370787208"
+    },
+    {
+      "dissent": false,
+      "id": "pentrich-rising",
+      "kind": "event",
+      "locator": "\"Pentrich rising\", revision 1381286403"
     },
     {
       "dissent": false,
@@ -28529,6 +28601,12 @@
       "id": "second-boer-war",
       "kind": "event",
       "locator": "\"Second Boer War\", revision 1372994797"
+    },
+    {
+      "dissent": false,
+      "id": "second-brotherhood",
+      "kind": "event",
+      "locator": "\"Second Brotherhood\", revision 1366221269"
     },
     {
       "dissent": false,
@@ -31634,6 +31712,12 @@
     },
     {
       "dissent": false,
+      "id": "thessaly-rebellion-1600",
+      "kind": "event",
+      "locator": "\"Thessaly rebellion (1600)\", revision 1370750266"
+    },
+    {
+      "dissent": false,
       "id": "third-anglo-burmese-war",
       "kind": "event",
       "locator": "\"Third Anglo-Burmese War\", revision 1370750284"
@@ -32060,6 +32144,18 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-antwerp-1609",
+      "kind": "event",
+      "locator": "\"Treaty of Antwerp (1609)\", revision 1068652472"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-aranjuez-1752",
+      "kind": "event",
+      "locator": "\"Treaty of Aranjuez (1752)\", revision 1368310261"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-aranjuez-1777",
       "kind": "event",
       "locator": "\"Treaty of Aranjuez (1777)\", revision 1368931506"
@@ -32069,6 +32165,12 @@
       "id": "treaty-of-aranjuez-1779",
       "kind": "event",
       "locator": "\"Treaty of Aranjuez (1779)\", revision 1368931563"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-aranjuez-1780",
+      "kind": "event",
+      "locator": "\"Treaty of Aranjuez (1780)\", revision 1279334707"
     },
     {
       "dissent": false,
@@ -32168,6 +32270,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-bergen",
+      "kind": "event",
+      "locator": "\"Treaty of Bergen\", revision 1200802598"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-bergerac",
       "kind": "event",
       "locator": "\"Treaty of Bergerac\", revision 1358491594"
@@ -32189,6 +32297,18 @@
       "id": "treaty-of-bern",
       "kind": "event",
       "locator": "\"Treaty of Bern\", revision 1356266729"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-berwick-1586",
+      "kind": "event",
+      "locator": "\"Treaty of Berwick (1586)\", revision 1382113170"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-berwick-1639",
+      "kind": "event",
+      "locator": "\"Treaty of Berwick (1639)\", revision 1344864525"
     },
     {
       "dissent": false,
@@ -32243,6 +32363,12 @@
       "id": "treaty-of-bromsebro-1645",
       "kind": "event",
       "locator": "\"Treaty of Brömsebro (1645)\", revision 1379078404"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-brussol",
+      "kind": "event",
+      "locator": "\"Treaty of Brussol\", revision 1314903137"
     },
     {
       "dissent": false,
@@ -32402,6 +32528,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-dordrecht",
+      "kind": "event",
+      "locator": "\"Treaty of Dordrecht\", revision 1346903095"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-dresden",
       "kind": "event",
       "locator": "\"Treaty of Dresden\", revision 1352187201"
@@ -32429,6 +32561,12 @@
       "id": "treaty-of-el-pardo-1778",
       "kind": "event",
       "locator": "\"Treaty of El Pardo (1778)\", revision 1381965827"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-elbing",
+      "kind": "event",
+      "locator": "\"Treaty of Elbing\", revision 1255501064"
     },
     {
       "dissent": false,
@@ -32570,6 +32708,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-fulda",
+      "kind": "event",
+      "locator": "\"Treaty of Fulda\", revision 1332417312"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-fussen",
       "kind": "event",
       "locator": "\"Treaty of Füssen\", revision 1332417337"
@@ -32603,6 +32747,12 @@
       "id": "treaty-of-giyanti",
       "kind": "event",
       "locator": "\"Treaty of Giyanti\", revision 1352679394"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-gorinchem",
+      "kind": "event",
+      "locator": "\"Treaty of Gorinchem\", revision 1332417003"
     },
     {
       "dissent": false,
@@ -32906,6 +33056,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-loudun",
+      "kind": "event",
+      "locator": "\"Treaty of Loudun\", revision 1352351090"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-lubeck",
       "kind": "event",
       "locator": "\"Treaty of Lübeck\", revision 1355481706"
@@ -32984,6 +33140,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-montmartre",
+      "kind": "event",
+      "locator": "\"Treaty of Montmartre\", revision 1329682728"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-montpellier",
       "kind": "event",
       "locator": "\"Treaty of Montpellier\", revision 1367727077"
@@ -33002,9 +33164,27 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-mozhaysk",
+      "kind": "event",
+      "locator": "\"Treaty of Mozhaysk\", revision 1354822908"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-munich-1619",
       "kind": "event",
       "locator": "\"Treaty of Munich (1619)\", revision 1277449281"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-munich-1628",
+      "kind": "event",
+      "locator": "\"Treaty of Munich (1628)\", revision 1332417123"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-munster-october-1648",
+      "kind": "event",
+      "locator": "\"Treaty of Münster (October 1648)\", revision 1354520028"
     },
     {
       "dissent": false,
@@ -33140,6 +33320,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-pavia",
+      "kind": "event",
+      "locator": "\"Treaty of Pavia\", revision 1341278629"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-peace-with-italy",
       "kind": "event",
       "locator": "\"Treaty of Paris between Italy and the Allied Powers\", revision 1373123064"
@@ -33197,6 +33383,12 @@
       "id": "treaty-of-purandar-1665",
       "kind": "event",
       "locator": "\"Treaty of Purandar (1665)\", revision 1381668190"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-pyritz",
+      "kind": "event",
+      "locator": "\"Treaty of Pyritz\", revision 1046140146"
     },
     {
       "dissent": false,
@@ -33263,6 +33455,12 @@
       "id": "treaty-of-ruby-valley-1863",
       "kind": "event",
       "locator": "\"Treaty of Ruby Valley (1863)\", revision 1380425562"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-sable",
+      "kind": "event",
+      "locator": "\"Treaty of Sablé\", revision 1263689929"
     },
     {
       "dissent": false,
@@ -33557,6 +33755,12 @@
       "id": "treaty-of-tolentino",
       "kind": "event",
       "locator": "\"Treaty of Tolentino\", revision 1364156578"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-toplitz",
+      "kind": "event",
+      "locator": "\"Treaty of Töplitz\", revision 1344249326"
     },
     {
       "dissent": false,
@@ -34148,6 +34352,12 @@
     },
     {
       "dissent": false,
+      "id": "vienna-monetary-treaty",
+      "kind": "event",
+      "locator": "\"Vienna Monetary Treaty\", revision 1376163380"
+    },
+    {
+      "dissent": false,
       "id": "vietnam-war",
       "kind": "event",
       "locator": "\"Vietnam War\", revision 1373025356"
@@ -34316,6 +34526,12 @@
     },
     {
       "dissent": false,
+      "id": "war-of-the-catalans",
+      "kind": "event",
+      "locator": "\"War of the Catalans\", revision 1375518179"
+    },
+    {
+      "dissent": false,
       "id": "war-of-the-confederation",
       "kind": "event",
       "locator": "\"War of the Confederation\", revision 1380778167"
@@ -34367,6 +34583,12 @@
       "id": "war-of-the-league-of-the-indies",
       "kind": "event",
       "locator": "\"War of the League of the Indies\", revision 1379561724"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-maidens",
+      "kind": "event",
+      "locator": "\"War of the Maidens\", revision 1294476258"
     },
     {
       "dissent": false,

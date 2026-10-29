@@ -1078,12 +1078,30 @@
         }
       ]
     },
+    "treaty-of-bergen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-constantinople-1479": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-dordrecht": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1159,7 +1177,25 @@
         }
       ]
     },
+    "treaty-of-pyritz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-ribe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-sable": {
       "from": "git",
       "versions": [
         {

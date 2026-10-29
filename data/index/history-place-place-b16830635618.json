@@ -935,6 +935,15 @@
         }
       ]
     },
+    "asti": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "astrakhan": {
       "from": "git",
       "versions": [
@@ -1798,6 +1807,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "bergen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4896,6 +4914,15 @@
         }
       ]
     },
+    "dordrecht": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "dornach": {
       "from": "git",
       "versions": [
@@ -5301,6 +5328,15 @@
         }
       ]
     },
+    "elblag": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "elchingen": {
       "from": "git",
       "versions": [
@@ -5394,6 +5430,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "epirus": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6254,6 +6299,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "fulda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -8347,6 +8401,15 @@
         }
       ]
     },
+    "jerez-de-la-frontera": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "jerusalem": {
       "from": "git",
       "versions": [
@@ -10338,6 +10401,15 @@
         }
       ]
     },
+    "loudun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "louvre-museum": {
       "from": "git",
       "versions": [
@@ -11981,6 +12053,15 @@
         }
       ]
     },
+    "montmartre-abbey": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "montpellier": {
       "from": "git",
       "versions": [
@@ -12215,6 +12296,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "mozhaysk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -13892,6 +13982,15 @@
         }
       ]
     },
+    "pentrich": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "people-s-republic-of-bulgaria": {
       "from": "git",
       "versions": [
@@ -14898,6 +14997,15 @@
         }
       ]
     },
+    "pyrzyce": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "qal-at-al-bahrain": {
       "from": "git",
       "versions": [
@@ -15686,6 +15794,15 @@
         }
       ]
     },
+    "sable-sur-sarthe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "sacheon": {
       "from": "git",
       "versions": [
@@ -15953,6 +16070,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "salonica-vilayet": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -18124,6 +18250,15 @@
         }
       ]
     },
+    "teplice": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "terre-haute-indiana": {
       "from": "git",
       "versions": [
@@ -18272,6 +18407,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "thessaly": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
