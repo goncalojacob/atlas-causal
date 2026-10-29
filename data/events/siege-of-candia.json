@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-candia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q701094",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Candia",
+    "pt": "Cerco de Cândia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q701094"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Candia\", revision 1375283997"
+    }
+  ],
+  "title": "Siege of Candia",
+  "summary": "The English Wikipedia article \"Siege of Candia\", at revision 1375283997, opens: \"In the siege of Candia, Ottoman forces besieged the Venetian-ruled capital city of the Kingdom of Candia. It lasted from 1648 to 1669 and is one of the longest sieges in history. It ended with an Ottoman victory, but the effort and cost of the siege contributed to the decline of the Ottoman Empire, especially after the Great Turkish War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q701094, imported by tools/import/wikidata.mjs. The item's own description reads \"1648–1669 siege of the Cretan War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1648,
+    "end": 1669,
+    "date": "1648-05-01",
+    "endDate": "1669-09-27"
+  },
+  "place": "heraklion",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "cretan-war-1645-1669"
+}

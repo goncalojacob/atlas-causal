@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "yamato-river",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q9001527",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Yamato River"
+  },
+  "sources": [],
+  "names": [
+    "Yamato River"
+  ],
+  "where": {
+    "lon": 135.441,
+    "lat": 34.6084,
+    "precision": "region",
+    "label": "Yamato River"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

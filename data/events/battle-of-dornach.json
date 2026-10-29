@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-dornach",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q251597",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Dornach",
+    "pt": "Batalha de Dornach"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q251597"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dornach\", revision 1370439205"
+    }
+  ],
+  "title": "Battle of Dornach",
+  "summary": "The English Wikipedia article \"Battle of Dornach\", at revision 1370439205, opens: \"The Battle of Dornach was fought on 22 July 1499 between the troops of Emperor Maximilian I and the Old Swiss Confederacy, close to the Swiss village of Dornach. The battle ended in a decisive defeat for Maximilian, and concluded the Swabian War between the Swiss and the Swabian League.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q251597, imported by tools/import/wikidata.mjs. The item's own description reads \"1499 battle of the Swabian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1499,
+    "end": 1499,
+    "date": "1499-07-22"
+  },
+  "place": "dornach",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "swabian-war"
+}

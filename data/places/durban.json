@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "durban",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5468",
+  "sitelinks": {
+    "count": 120,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Durban",
+    "pt": "Durban"
+  },
+  "sources": [],
+  "names": [
+    "Durban"
+  ],
+  "where": {
+    "lon": 31.025,
+    "lat": -29.858333333333,
+    "precision": "city",
+    "label": "Durban"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

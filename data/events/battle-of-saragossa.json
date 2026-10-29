@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-saragossa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q833861",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Saragossa",
+    "pt": "Batalha de Saragoça"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q833861"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Saragossa\", revision 1377647912"
+    }
+  ],
+  "title": "Battle of Saragossa",
+  "summary": "The English Wikipedia article \"Battle of Saragossa\", at revision 1377647912, opens: \"The Battle of Saragossa, 20 August 1710, took place during the War of the Spanish Succession, near Zaragoza in Spain. A slightly inferior Franco-Bourbon Spanish army commanded by the Marquis de Bay was severely defeated by a Grand Alliance force under Guido Starhemberg, which included Habsburg Spanish troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q833861, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in 1710\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1710,
+    "end": 1710,
+    "date": "1710-08-20"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mad-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q777345",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Mad War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q777345"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mad War\", revision 1370627338"
+    }
+  ],
+  "title": "Mad War",
+  "summary": "The English Wikipedia article \"Mad War\", at revision 1370627338, opens: \"The Mad War was a late medieval conflict between a coalition of feudal lords and the French monarchy. It occurred during the regency of Anne of Beaujeu in the period after the death of Louis XI and before the majority of Charles VIII. The war began in 1485 and ended in 1488.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q777345, imported by tools/import/wikidata.mjs. The item's own description reads \"late Medieval conflict between a coalition of feudal lords and the French monarchy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1485,
+    "end": 1488
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

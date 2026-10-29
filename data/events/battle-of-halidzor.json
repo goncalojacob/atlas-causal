@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-halidzor",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q13053399",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Halidzor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q13053399"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Halidzor\", revision 1373076404"
+    }
+  ],
+  "title": "Battle of Halidzor",
+  "summary": "The English Wikipedia article \"Battle of Halidzor\", at revision 1373076404, opens: \"The Battle of Halidzor took place in the spring of 1727 at Halidzor Fortress, in what is now the Syunik region of Armenia, near the modern-day city of Kapan, between the Armenian forces under the leadership of David Bek and the Ottoman army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q13053399, imported by tools/import/wikidata.mjs. The item's own description reads \"1727 battle in Syunik\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1727,
+    "end": 1727,
+    "date": "1727-03-26",
+    "endDate": "1727-03-07"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

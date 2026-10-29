@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-danzig-1807",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q901954",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Danzig (1807)",
+    "pt": "Cerco de Danzigue (1807)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q901954"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Danzig (1807)\", revision 1370740624"
+    }
+  ],
+  "title": "Siege of Danzig (1807)",
+  "summary": "The English Wikipedia article \"Siege of Danzig (1807)\", at revision 1370740624, opens: \"The siege of Danzig was the French encirclement and capture of Danzig during the War of the Fourth Coalition. On 19 March 1807, around 27,000 French troops under Marshal Lefebvre besieged around 14,400 Prussian troops under Marshal Kalckreuth garrisoning the city of Danzig.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q901954, imported by tools/import/wikidata.mjs. The item's own description reads \"1807 Siege during the War of the Fourth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1807,
+    "end": 1807,
+    "date": "1807-03-19",
+    "endDate": "1807-05-02"
+  },
+  "place": "gdansk",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

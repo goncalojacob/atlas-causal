@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-minden",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q683044",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Minden",
+    "pt": "Batalha de Minden"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q683044"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Minden\", revision 1380383430"
+    }
+  ],
+  "title": "Battle of Minden",
+  "summary": "The English Wikipedia article \"Battle of Minden\", at revision 1380383430, opens: \"The Battle of Minden was a major engagement during the Seven Years' War, fought on 1 August 1759. An Allied army, under the overall command of Prussian Field Marshal Ferdinand of Brunswick, defeated a Franco-Saxon army commanded by Marshal of France, Marquis de Contades. Two years previously, the French had launched a successful invasion of Hanover and attempted to impose an unpopular peace treaty upon the Allied nations of Britain, Hanover and Prussia. After a Prussian victory at Rossbach and under pressure from the Prussian king Frederick the Great and the British prime minister William Pitt, King George II disavowed the treaty. In 1758, the Allies launched a counter-offensive against the French and Saxon forces and drove them back across the Rhine.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q683044, imported by tools/import/wikidata.mjs. The item's own description reads \"1759 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1759,
+    "end": 1759,
+    "date": "1759-08-01"
+  },
+  "place": "minden",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

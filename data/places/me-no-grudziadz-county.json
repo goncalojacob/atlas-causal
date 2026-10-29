@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "me-no-grudziadz-county",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2200306",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Mełno, Grudziądz County"
+  },
+  "sources": [],
+  "names": [
+    "Mełno",
+    "Mełno, Grudziądz County"
+  ],
+  "where": {
+    "lon": 18.93666667,
+    "lat": 53.435,
+    "precision": "city",
+    "label": "Mełno, Grudziądz County"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

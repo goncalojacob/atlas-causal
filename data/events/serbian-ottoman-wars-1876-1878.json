@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "serbian-ottoman-wars-1876-1878",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4416705",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Serbian–Ottoman Wars (1876–1878)",
+    "pt": "Guerra Sérvio-Otomana (1876–1878)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4416705"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Serbian–Ottoman Wars (1876–1878)\", revision 1378644762"
+    }
+  ],
+  "title": "Serbian–Ottoman Wars (1876–1878)",
+  "summary": "The English Wikipedia article \"Serbian–Ottoman Wars (1876–1878)\", at revision 1378644762, opens: \"The Serbian–Ottoman Wars, also known as the Serbian–Turkish Wars or Serbian Wars for Independence, were two consequent wars, fought between the Principality of Serbia and the Ottoman Empire. In conjunction with the Principality of Montenegro, Serbia declared war on the Ottoman Empire on 30 June 1876. By the intervention of major European powers, ceasefire was concluded in autumn, and the Constantinople Conference was organized. Peace was signed on 28 February 1877 on the basis of status quo ante bellum. After a brief period of formal peace, Serbia declared war on the Ottoman Empire on 13 December 1877. Renewed hostilities lasted until February 1878.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4416705, imported by tools/import/wikidata.mjs. The item's own description reads \"war between Principality of Serbia and Ottoman Empire from 1876 to 1878\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1878,
+    "date": "1876-06-30",
+    "endDate": "1878-03-03"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

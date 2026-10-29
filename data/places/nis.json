@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "nis",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q129259",
+  "sitelinks": {
+    "count": 86,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Niš",
+    "pt": "Nis"
+  },
+  "sources": [],
+  "names": [
+    "Niš"
+  ],
+  "where": {
+    "lon": 21.896111111111,
+    "lat": 43.319166666667,
+    "precision": "city",
+    "label": "Niš"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

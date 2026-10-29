@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-argaon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2887871",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Argaon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2887871"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Argaon\", revision 1370106949"
+    }
+  ],
+  "title": "Battle of Argaon",
+  "summary": "The English Wikipedia article \"Battle of Argaon\", at revision 1370106949, opens: \"The Battle of Argaon took place on 29 November 1803, between the British under the command of Major-General Arthur Wellesley and the forces of the Bhonsles of Berar and the Scindias of Gwalior.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2887871, imported by tools/import/wikidata.mjs. The item's own description reads \"1803 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1803,
+    "end": 1803,
+    "date": "1803-11-29"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

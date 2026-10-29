@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "revolt-of-1-prairial-year-iii",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1151536",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Revolt of 1 Prairial Year III"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1151536"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolt of 1 Prairial Year III\", revision 1370706842"
+    }
+  ],
+  "title": "Revolt of 1 Prairial Year III",
+  "summary": "The English Wikipedia article \"Revolt of 1 Prairial Year III\", at revision 1370706842, opens: \"The Revolt of 1 Prairial Year III was the final major popular uprising of the French Revolution. Sans-culottes from eastern Paris marched on the National Convention demanding \"du pain et la Constitution de l'An I\"—bread and enforcement of the radical Constitution of Year I. They briefly occupied the hall, murdered deputy Jean-Bertrand Féraud, and called for renewed price controls and direct democracy. Loyal National Guard units cleared the Convention by nightfall. A second mobilization on 2 Prairial collapsed, and by 4 Prairial the faubourgs were disarmed. Fourteen deputies were ordered arrested; eight were seized. Six deputies were condemned to death. Romme, Goujon, and Duquesnoy committed suicide, while the others were guillotined. The defeat of the uprising marked the end of sans-culotte political influence and consolidated the Thermidorian Reaction.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1151536, imported by tools/import/wikidata.mjs. The item's own description reads \"popular revolt in Paris on 20 May 1795 against the policies of the Thermidorian Convention\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1795,
+    "end": 1795,
+    "date": "1795-05-20"
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "french-revolution"
+}

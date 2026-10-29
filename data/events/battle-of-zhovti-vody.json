@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-zhovti-vody",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1073645",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Zhovti Vody"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1073645"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Zhovti Vody\", revision 1378294626"
+    }
+  ],
+  "title": "Battle of Zhovti Vody",
+  "summary": "The English Wikipedia article \"Battle of Zhovti Vody\", at revision 1378294626, opens: \"The Battle of Zhovti Vody or Yellow Waters was the first significant battle of the Khmelnytsky Uprising. Near the site of the present-day city of Zhovti Vody on the Zhovta River in Ukraine, the forces of the Zaporozhian Host and Crimean Khanate under the command of Hetman Bohdan Khmelnytsky, Colonels Mykhailo Krychevsky, Maksym Kryvonis, and Fylon Dzhalaliy with Tugay Bey attacked and defeated the Polish–Lithuanian Commonwealth's forces under the command of Hetman Stefan Potocki and General Stefan Czarniecki, both of them were captured in the battle by the Zaporozhian Cossacks and Crimean Tatars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1073645, imported by tools/import/wikidata.mjs. The item's own description reads \"1648 battle during the Khmelnytsky Uprising\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1648,
+    "end": 1648,
+    "date": "1648-04-29",
+    "endDate": "1648-05-16"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "khmelnytsky-uprising"
+}

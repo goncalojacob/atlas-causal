@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-lipany",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q935088",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Lipany"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q935088"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lipany\", revision 1382465699"
+    }
+  ],
+  "title": "Battle of Lipany",
+  "summary": "The English Wikipedia article \"Battle of Lipany\", at revision 1382465699, opens: \"The Battle of Lipany, also called the Battle of Český Brod, was fought at Lipany 40 km east of Prague on 30 May 1434 and virtually ended the Hussite Wars. An army of moderate Hussite nobility and Catholics, called the Bohemian League, defeated the radical Taborites and Orphans led by Prokop the Great, the overall commander, and by Jan Čapek of Sány, the cavalry commander.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q935088, imported by tools/import/wikidata.mjs. The item's own description reads \"fought at Lipany, Vitice in 1434 during the Hussite Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1434,
+    "end": 1434,
+    "date": "1434-05-30"
+  },
+  "place": "lipany-vitice",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "hussite-wars"
+}

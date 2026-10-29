@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-focsani",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1025134",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Focșani"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1025134"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Focșani\", revision 1382459815"
+    }
+  ],
+  "title": "Battle of Focșani",
+  "summary": "The English Wikipedia article \"Battle of Focșani\", at revision 1382459815, opens: \"The Battle of Focșani took place during the Russo-Turkish War (1787–1792) on 1 August 1789 between the Ottoman Empire and the alliance of the Russian Empire and the Habsburg monarchy near Focșani, Moldavia. The Russians were led by Alexander Suvorov, the Austrians by Prince Josias of Coburg, and the Ottomans by Grand Vizier Koca Yusuf Pasha.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1025134, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in 1789 during the Russo-Turkish war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1789,
+    "end": 1789,
+    "date": "1789-08-01"
+  },
+  "place": "romania-q218",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1787-1792"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-sirhind-1555",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q30600900",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Sirhind (1555)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q30600900"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sirhind (1555)\", revision 1374783523"
+    }
+  ],
+  "title": "Battle of Sirhind (1555)",
+  "summary": "The English Wikipedia article \"Battle of Sirhind (1555)\", at revision 1374783523, opens: \"The Battle of Sirhind was fought between the Mughal Empire and the Sur Empire in 1555.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q30600900, imported by tools/import/wikidata.mjs. The item's own description reads \"1555 battle between the Mughal and Suri empires\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1555,
+    "end": 1555,
+    "date": "1555-06-22"
+  },
+  "place": "sirhind",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-vegkop",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2890303",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Vegkop"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890303"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vegkop\", revision 1370592279"
+    }
+  ],
+  "title": "Battle of Vegkop",
+  "summary": "The English Wikipedia article \"Battle of Vegkop\", at revision 1370592279, opens: \"The Battle of Vegkop, alternatively spelled as Vechtkop, took place on 16 October 1836 near the present day town of Heilbron, Free State, South Africa. After an impi of about 600 Matebele murdered 15 to 17 Afrikaner voortrekkers on the Vaal River, abducting three children, King Mzilikazi ordered another attack. The Voortrekkers, under the command of Andries Potgieter, repulsed them, but at the cost of abandoning their livestock.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890303, imported by tools/import/wikidata.mjs. The item's own description reads \"1836 battle between Voortrekkers and the Matebele\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1836,
+    "end": 1836,
+    "date": "1836-10-16"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

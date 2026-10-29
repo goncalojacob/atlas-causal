@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-sokhoista",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4872408",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Sokhoista"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872408"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sokhoista\", revision 1370786013"
+    }
+  ],
+  "title": "Battle of Sokhoista",
+  "summary": "The English Wikipedia article \"Battle of Sokhoista\", at revision 1370786013, opens: \"The Battle of Sokhoista was fought between the Ottoman and Georgian armies at the Sokhoista field in what is now northeastern Turkey in 1545. It was the last attempt of the separate Georgian dynasts to fight as one unit against the Ottoman expansion, but ended in their decisive defeat. This might be the same battle as mentioned by Rüstem Pasha to have been fought at nearby Zivin.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872408, imported by tools/import/wikidata.mjs. The item's own description reads \"1545 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1545,
+    "end": 1545
+  },
+  "place": "pasinler",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

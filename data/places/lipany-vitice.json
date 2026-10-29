@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "lipany-vitice",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1113619",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Lipany (Vitice)"
+  },
+  "sources": [],
+  "names": [
+    "Lipany",
+    "Lipany (Vitice)"
+  ],
+  "where": {
+    "lon": 14.93916667,
+    "lat": 50.03472222,
+    "precision": "city",
+    "label": "Lipany (Vitice)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

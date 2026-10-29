@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "russo-swedish-war-1590-1595",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1634776",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Russo-Swedish War (1590–1595)",
+    "pt": "Guerra Russo-Sueca (1590–1595)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1634776"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Swedish War (1590–1595)\", revision 1370729291"
+    }
+  ],
+  "title": "Russo-Swedish War (1590–1595)",
+  "summary": "The English Wikipedia article \"Russo-Swedish War (1590–1595)\", at revision 1370729291, opens: \"The Russo-Swedish War of 1590–1595 was instigated by Boris Godunov in the hope of gaining the territory of the Duchy of Estonia along the Gulf of Finland belonging to Sweden since the previous Livonian War.\nAs soon as the Truce of Plussa expired early in 1590, a large Russian army led by Godunov and his sickly brother-in-law, Feodor I of Russia, marched from Moscow towards Novgorod. On 18 January they crossed the river Narva, defeated a Swedish detachment in a counter battle and laid siege to the Swedish castle of Narva, commanded by Arvid Stålarm. Another important fortress, Jama (Jamburg), fell to Russian forces within two weeks. Simultaneously, the Russians ravaged Estonia as far as Reval (Tallinn) and Finland as far as Helsinki.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1634776, imported by tools/import/wikidata.mjs. The item's own description reads \"war between Tsardom of Russia and Sweden\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1590,
+    "end": 1595
+  },
+  "place": "baltic-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

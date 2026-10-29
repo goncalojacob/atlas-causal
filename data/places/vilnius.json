@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "vilnius",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q216",
+  "sitelinks": {
+    "count": 201,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Vilnius",
+    "pt": "Vilnius"
+  },
+  "sources": [],
+  "names": [
+    "Vilnius"
+  ],
+  "where": {
+    "lon": 25.28,
+    "lat": 54.687222222222225,
+    "precision": "city",
+    "label": "Vilnius"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

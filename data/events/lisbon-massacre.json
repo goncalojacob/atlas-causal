@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lisbon-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q60830",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Lisbon massacre",
+    "pt": "Massacre de Lisboa de 1506"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q60830"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lisbon massacre\", revision 1366196368"
+    }
+  ],
+  "title": "Lisbon massacre",
+  "summary": "The English Wikipedia article \"Lisbon massacre\", at revision 1366196368, opens: \"On 19 April 1506, a crowd of churchgoers in Lisbon attacked and killed several people in the congregation whom they suspected were Jews. The violence escalated into a city-wide, antisemitic riot that killed between 500 and 4,000 \"New Christians\", the name for Jews who had been forcibly converted to Christianity.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q60830, imported by tools/import/wikidata.mjs. The item's own description reads \"antisemitic massacre on April 19, 1506 in Lisbon, Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1506,
+    "end": 1506,
+    "date": "1506-04-19",
+    "endDate": "1506-04-21"
+  },
+  "place": "lisbon",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "triple-alliance-1717",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q283511",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Triple Alliance (1717)",
+    "pt": "Tríplice Aliança (1717)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q283511"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Triple Alliance (1717)\", revision 1380426391"
+    }
+  ],
+  "title": "Triple Alliance (1717)",
+  "summary": "The English Wikipedia article \"Triple Alliance (1717)\", at revision 1380426391, opens: \"The Triple Alliance was a defence pact signed on 4 January 1717 in The Hague between the Dutch Republic, France and Great Britain, against Bourbon Spain in an attempt to maintain the agreements of the 1713–15 Peace of Utrecht. The three states were concerned about Spain becoming a superpower in Europe. As a result, militarisation took place and caused great havoc to civilians. That enraged Spain and other states and led to brinkmanship. The alliance became the Quadruple Alliance the next year, after the accession of Holy Roman Emperor Charles VI.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q283511, imported by tools/import/wikidata.mjs. The item's own description reads \"1717 treaty between the Netherlands, France, and Britain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1717,
+    "end": null,
+    "date": "1717-01-04"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

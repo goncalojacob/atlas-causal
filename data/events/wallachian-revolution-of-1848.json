@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "wallachian-revolution-of-1848",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2175943",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Wallachian Revolution of 1848",
+    "pt": "Revolução Valaquiana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2175943"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Wallachian Revolution of 1848\", revision 1375170117"
+    }
+  ],
+  "title": "Wallachian Revolution of 1848",
+  "summary": "The English Wikipedia article \"Wallachian Revolution of 1848\", at revision 1375170117, opens: \"The Wallachian Revolution of 1848 was a Romanian liberal and nationalist uprising in the Principality of Wallachia. Part of the Revolutions of 1848, and closely connected with the unsuccessful revolt in the Principality of Moldavia, it sought to overturn the administration imposed by Imperial Russian authorities under the Regulamentul Organic regime, and, through many of its leaders, demanded the abolition of boyar privilege. Led by a group of young intellectuals and officers in the Wallachian Militia, the movement succeeded in toppling the ruling Prince Gheorghe Bibescu, whom it replaced with a provisional government and a regency, and in passing a series of major progressive reforms, announced in the Proclamation of Islaz.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2175943, imported by tools/import/wikidata.mjs. The item's own description reads \"Liberal and Romanian nationalist uprising\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-09-25"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

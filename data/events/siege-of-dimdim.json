@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-dimdim",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2236880",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Dimdim"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2236880"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Dimdim\", revision 1370740744"
+    }
+  ],
+  "title": "Siege of Dimdim",
+  "summary": "The English Wikipedia article \"Siege of Dimdim\", at revision 1370740744, opens: \"The siege of Dimdim was an operation orchestrated by the Safavid ruler Shah Abbas I, in which his forces besieged the Dimdim Castle of the rebellious Kurdish Emirate of Bradost from November 1609 to the summer of 1610. The siege was led by the grand vizier Hatem Beg Ordubadi, who captured the castle and massacred its garrison.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2236880, imported by tools/import/wikidata.mjs. The item's own description reads \"battle between the Safavid Empire and the Sunni Kurds of the Ottoman Empire (1609-1610)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1609,
+    "end": 1610,
+    "date": "1609-11"
+  },
+  "place": "dimdim-castle",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-safavid-war-1603-1612"
+}

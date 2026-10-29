@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "irish-confederate-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1672808",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Irish Confederate Wars",
+    "pt": "Guerras confederadas irlandesas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1672808"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Irish Confederate Wars\", revision 1381477583"
+    }
+  ],
+  "title": "Irish Confederate Wars",
+  "summary": "The English Wikipedia article \"Irish Confederate Wars\", at revision 1381477583, opens: \"The Irish Confederate Wars took place from 1641 to 1653. The conflict began with the Irish rising of 1641 and evolved into a prolonged struggle over Ireland's future, as Irish forces sought to defend their land, political rights and autonomy against foreign control, plantation policies and continued encroachment on Irish self-government. Although linked to the wider Wars of the Three Kingdoms, the war in Ireland had its own distinct causes and objectives rooted in resistance to English rule, the recovery of confiscated lands and the defence of Irish interests. The conflict caused an estimated 200,000 deaths from fighting, as well as war-related famine and disease.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1672808, imported by tools/import/wikidata.mjs. The item's own description reads \"war which took place in Ireland between 1641 and 1653\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1641,
+    "end": 1653,
+    "date": "1641-10",
+    "endDate": "1653-04"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

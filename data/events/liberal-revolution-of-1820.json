@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "liberal-revolution-of-1820",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1822923",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Liberal Revolution of 1820",
+    "pt": "Revolução liberal do Porto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1822923"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Liberal Revolution of 1820\", revision 1360504706"
+    }
+  ],
+  "title": "Liberal Revolution of 1820",
+  "summary": "The English Wikipedia article \"Liberal Revolution of 1820\", at revision 1360504706, opens: \"The Liberal Revolution of 1820 was a Portuguese political revolution that erupted in 1820. It began with a military insurrection in the city of Porto, in northern Portugal, that quickly and peacefully spread to the rest of the country. The Revolution resulted in the return in 1821 of the Portuguese court to Portugal from Brazil, where it had fled during the Peninsular War, and initiated a constitutional period in which the 1822 Constitution was ratified and implemented. The movement's liberal ideas had an important influence on Portuguese society and political organization in the nineteenth century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1822923, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese revolution establishing a constitutional monarchy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1820,
+    "end": 1820,
+    "date": "1820-08-24"
+  },
+  "place": "porto",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

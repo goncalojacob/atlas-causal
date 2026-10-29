@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anglo-scottish-war-1650-1652",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3540197",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Anglo-Scottish war (1650–1652)",
+    "pt": "Guerra Anglo-Escocesa (1650–1652)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3540197"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Scottish war (1650–1652)\", revision 1381445747"
+    }
+  ],
+  "title": "Anglo-Scottish war (1650–1652)",
+  "summary": "The English Wikipedia article \"Anglo-Scottish war (1650–1652)\", at revision 1381445747, opens: \"The Anglo-Scottish war (1650–1652), also known as the Third Civil War, was the final conflict in the Wars of the Three Kingdoms, a series of armed conflicts and political machinations between shifting alliances of religious and political factions in England, Scotland and Ireland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3540197, imported by tools/import/wikidata.mjs. The item's own description reads \"1650-1652 English invasion of Scotland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1650,
+    "end": 1652
+  },
+  "place": "british-isles",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

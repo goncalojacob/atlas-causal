@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "june-days-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q671542",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "June Days uprising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q671542"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"June Days uprising\", revision 1381209520"
+    }
+  ],
+  "title": "June Days uprising",
+  "summary": "The English Wikipedia article \"June Days uprising\", at revision 1381209520, opens: \"The June Days were an uprising staged by workers in Paris from 22 to 26 June 1848. It was in response to plans to close the National Workshops, created by the Second Republic in order to provide work and a minimal source of income for the unemployed. The National Guard, led by General Louis-Eugène Cavaignac, was called out to quell the rebellion. Over 4,500 people were either killed or injured, while 4,000 insurgents were deported to French Algeria. The uprising marked the end of the hopes of a \"democratic and social republic\" and the victory of the liberals over the Radical Republicans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q671542, imported by tools/import/wikidata.mjs. The item's own description reads \"June 1848 revolt in France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-06-22",
+    "endDate": "1848-06-26"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

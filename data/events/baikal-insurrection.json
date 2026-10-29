@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "baikal-insurrection",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4242030",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Baikal Insurrection"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4242030"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Baikal Insurrection\", revision 1370430001"
+    }
+  ],
+  "title": "Baikal Insurrection",
+  "summary": "The English Wikipedia article \"Baikal Insurrection\", at revision 1370430001, opens: \"The Baikal Insurrection, also known as the Siberian Uprising, was a short-lived uprising of about 700 Polish political prisoners and exiles (Sybiracy) in Siberia, Russian Empire, that started on 24 June 1866 and lasted for a few days, until their defeat on 28 June.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4242030, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866,
+    "date": "1866-06"
+  },
+  "place": "siberia",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

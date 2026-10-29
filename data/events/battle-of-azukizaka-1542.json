@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-azukizaka-1542",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q859756",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Azukizaka (1542)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q859756"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Azukizaka (1542)\", revision 1370107279"
+    }
+  ],
+  "title": "Battle of Azukizaka (1542)",
+  "summary": "The English Wikipedia article \"Battle of Azukizaka (1542)\", at revision 1370107279, opens: \"In the First Battle of Azukizaka  Oda Nobuhide defeated Imagawa Yoshimoto, setting the stage for his son, Oda Nobunaga, to become one of Japan's greatest warlords. Despite the defeat, later in 1548, Yoshimoto defeated Nobuhide in the Second Battle of Azukizaka and continued to expand his territory until 1560, when he faced Nobunaga and was killed in the Battle of Okehazama.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q859756, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of 1542 in which Oda Nobuhide defeated Imagawa Yoshimoto\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1542,
+    "end": 1542,
+    "date": "1542-09-19"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

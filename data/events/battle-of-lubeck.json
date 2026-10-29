@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-lubeck",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q551247",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Lübeck",
+    "pt": "Batalha de Lübeck"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q551247"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lübeck\", revision 1370328665"
+    }
+  ],
+  "title": "Battle of Lübeck",
+  "summary": "The English Wikipedia article \"Battle of Lübeck\", at revision 1370328665, opens: \"The Battle of Lübeck took place on 6 November 1806 in Lübeck, Germany between soldiers of the Kingdom of Prussia led by Gebhard Leberecht von Blücher, who were retreating from defeat at the Battle of Jena–Auerstedt, and troops of the First French Empire under Marshals Murat, Bernadotte, and Soult, who were pursuing them. In this War of the Fourth Coalition action, the French inflicted a severe defeat on the Prussians, driving them from the neutral city. Lübeck is an old Baltic Sea port approximately 50 kilometres (31 mi) northeast of Hamburg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q551247, imported by tools/import/wikidata.mjs. The item's own description reads \"1806 battle during the War of the Fourth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1806,
+    "end": 1806,
+    "date": "1806-11-07"
+  },
+  "place": "lubeck-q2843",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-fourth-coalition"
+}

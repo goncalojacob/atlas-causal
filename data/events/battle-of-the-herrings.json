@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-herrings",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1314054",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of the Herrings"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1314054"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Herrings\", revision 1370600108"
+    }
+  ],
+  "title": "Battle of the Herrings",
+  "summary": "The English Wikipedia article \"Battle of the Herrings\", at revision 1370600108, opens: \"The Battle of the Herrings, also called the Battle of Rouvray, was a military action near the town of Rouvray in France, just north of Orléans, which took place on 12 February 1429, during the siege of Orléans in the Hundred Years' War. The immediate cause of the battle was an attempt by French and Scottish forces, led by Charles of Bourbon and Sir John Stewart of Darnley, to intercept a supply convoy headed for the English army at Orléans. The English had been laying siege to the city since the previous October. This supply convoy was escorted by an English force under Sir John Fastolf and had been outfitted in Paris, from whence it had departed some time earlier. The battle was decisively won by the English.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1314054, imported by tools/import/wikidata.mjs. The item's own description reads \"1429 military action near the town of Rouvray in France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1429,
+    "end": 1429,
+    "date": "1429-02-21"
+  },
+  "place": "rouvray-sainte-croix",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "siege-of-orleans-1428-1429"
+}

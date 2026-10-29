@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-vilnius-1561",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1267481",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Vilnius (1561)",
+    "pt": "Tratado de Vilnius (1561)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1267481"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Vilnius (1561)\", revision 1375997337"
+    }
+  ],
+  "title": "Treaty of Vilnius (1561)",
+  "summary": "The English Wikipedia article \"Treaty of Vilnius (1561)\", at revision 1375997337, opens: \"The Treaty of Vilnius was concluded on 28 November 1561, during the Livonian War, between the Livonian Confederation and the Grand Duchy of Lithuania in Vilnius. With the treaty, the non-Danish and non-Swedish part of Livonia, with the exception of the Free imperial city of Riga, subjected itself to the Grand Duke of Lithuania, Sigismund II Augustus with the Pacta subiectionis (Provisio ducalis). In turn, Sigismund granted protection from the Tsardom of Russia and confirmed the Livonian estates' traditional privileges, laid out in the Privilegium Sigismundi Augusti.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1267481, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1561,
+    "end": 1561,
+    "date": "1561-11-28"
+  },
+  "place": "vilnius",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

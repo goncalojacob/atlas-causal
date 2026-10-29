@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-landeshut-1760",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q697913",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Landeshut (1760)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q697913"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Landeshut (1760)\", revision 1382471718"
+    }
+  ],
+  "title": "Battle of Landeshut (1760)",
+  "summary": "The English Wikipedia article \"Battle of Landeshut (1760)\", at revision 1382471718, opens: \"The Battle of Landeshut was an engagement fought on 23 June 1760 during the Third Silesian War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q697913, imported by tools/import/wikidata.mjs. The item's own description reads \"1760 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1760,
+    "end": 1760,
+    "date": "1760-06-23"
+  },
+  "place": "kamienna-gora",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

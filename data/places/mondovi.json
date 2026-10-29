@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mondovi",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q20188",
+  "sitelinks": {
+    "count": 62,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Mondovì",
+    "pt": "Mondovì (Itália)"
+  },
+  "sources": [],
+  "names": [
+    "Mondovì",
+    "Mondovì (Itália)"
+  ],
+  "where": {
+    "lon": 7.8166666666667,
+    "lat": 44.383333333333,
+    "precision": "city",
+    "label": "Mondovì"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

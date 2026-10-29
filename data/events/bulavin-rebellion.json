@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "bulavin-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4098701",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Bulavin Rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4098701"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bulavin Rebellion\", revision 1378405722"
+    }
+  ],
+  "title": "Bulavin Rebellion",
+  "summary": "The English Wikipedia article \"Bulavin Rebellion\", at revision 1378405722, opens: \"The Bulavin Rebellion was a war which took place in the years 1707 and 1708 between the Don Cossacks and the Tsardom of Russia. Kondraty Bulavin, a democratically elected Ataman of the Don Cossacks, led the Cossack rebels. The conflict was triggered by a number of underlying tensions between the Moscow government under Peter I of Russia, the Cossacks, and Russian peasants fleeing from serfdom in Russia to gain freedom in the autonomous Don area. It started with the 1707 assassination of Prince Yury Vladimirovich Dolgorukov, the leader of Imperial army's punitive expedition to the Don area, by Don Cossacks under Bulavin's command. The end of the rebellion came with Bulavin's death in 1708.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4098701, imported by tools/import/wikidata.mjs. The item's own description reads \"1707-1708 Cassock revolt against Russian rule\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1707,
+    "end": 1708,
+    "date": "1707-10-09",
+    "endDate": "1708-07-07"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

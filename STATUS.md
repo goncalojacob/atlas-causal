@@ -24072,6 +24072,14 @@ browser failure did not reproduce, here or on the runner, so this fire reads 313
 where the previous stand carried it as standing.
 
 ## Milestones landed
+Local writer 2026-10-29T02:02:35Z: 35 written, 0 filing(s) removed ( A:recache: wikipedia-en citations on active records: 17 B:recache: wikipedia-en citations on active records: 18 )
+Local writer 2026-10-29T01:49:08Z: 50 written, 0 filing(s) removed ( A:recache: wikipedia-en citations on active records: 25 B:recache: wikipedia-en citations on active records: 25 )
+Local writer 2026-10-29T01:32:32Z: 39 written, 0 filing(s) removed ( A:recache: wikipedia-en citations on active records: 20 B:recache: wikipedia-en citations on active records: 19 )
+Local writer 2026-10-29T01:16:35Z: 42 written, 0 filing(s) removed ( A:recache: wikipedia-en citations on active records: 20 B:recache: wikipedia-en citations on active records: 22 )
+Local writer 2026-10-29T01:02:17Z: 47 written, 0 filing(s) removed ( A:recache: wikipedia-en citations on active records: 23 B:recache: wikipedia-en citations on active records: 24 )
+Local writer 2026-10-29T00:46:54Z: 40 written, 0 filing(s) removed ( A:recache: wikipedia-en citations on active records: 20 B:recache: wikipedia-en citations on active records: 20 )
+Local writer 2026-10-29T00:31:17Z: 2 written, 0 filing(s) removed ( A:recache: skipped: this fire wrote no record, so it cites nothing B:recache: wikipedia-en citations on active records: 2 )
+Local writer 2026-10-29T00:17:57Z: 49 written, 0 filing(s) removed ( A:recache: wikipedia-en citations on active records: 24 B:recache: wikipedia-en citations on active records: 24 )
 Local writer 2026-10-29T00:03:13Z: 50 written, 0 filing(s) removed ( A:recache: wikipedia-en citations on active records: 25 B:recache: wikipedia-en citations on active records: 25 )
 Local writer 2026-10-28T23:48:34Z: 49 written, 0 filing(s) removed ( A:recache: wikipedia-en citations on active records: 24 B:recache: wikipedia-en citations on active records: 24 )
 Local writer 2026-10-28T23:34:12Z: 41 written, 0 filing(s) removed ( A:recache: wikipedia-en citations on active records: 21 B:recache: wikipedia-en citations on active records: 20 )

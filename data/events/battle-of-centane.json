@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-centane",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q16626785",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Centane"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16626785"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Centane\", revision 1382071603"
+    }
+  ],
+  "title": "Battle of Centane",
+  "summary": "The English Wikipedia article \"Battle of Centane\", at revision 1382071603, opens: \"The battle of Centane, also the battle of Kentani or the battle of Quintana, was fought on 7 February 1878 near Kentani (\"Centane\") in South Africa's Cape Province during the Ninth Xhosa War between 1877 and 1879. A Xhosa forces, composed of Gcalaka and Rharhabe warriors, attacked a British camp in the Centane Mountains and suffered a severe defeat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16626785, imported by tools/import/wikidata.mjs. The item's own description reads \"1878 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1878,
+    "end": 1878,
+    "date": "1878-02-07"
+  },
+  "place": "centane",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

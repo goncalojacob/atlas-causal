@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "massacre-of-novgorod",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2663703",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Massacre of Novgorod"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2663703"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Massacre of Novgorod\", revision 1382441094"
+    }
+  ],
+  "title": "Massacre of Novgorod",
+  "summary": "The English Wikipedia article \"Massacre of Novgorod\", at revision 1382441094, opens: \"The massacre of Novgorod was an attack launched by Ivan the Terrible's oprichniki on the city of Novgorod, Russia, in 1570. Although initially an act of vengeance against the perceived treason of the local Orthodox church, the massacre quickly became possibly the most vicious in the brutal legacy of the oprichnina, with casualties estimated between two thousand and fifteen thousand and innumerable acts of extreme, violent cruelty. In the aftermath of the attack, Novgorod lost its status as one of Russia's leading cities, crippled by decimation of its citizenry combined with Ivan's assault on the surrounding farmlands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2663703, imported by tools/import/wikidata.mjs. The item's own description reads \"1570 attack by Russian forces\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1570,
+    "end": 1570,
+    "date": "1570-01-02",
+    "endDate": "1570-02-12"
+  },
+  "place": "veliky-novgorod",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

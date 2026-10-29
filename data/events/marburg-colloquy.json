@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "marburg-colloquy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q672138",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Marburg Colloquy",
+    "pt": "Disputa de Marburgo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q672138"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Marburg Colloquy\", revision 1377717188"
+    }
+  ],
+  "title": "Marburg Colloquy",
+  "summary": "The English Wikipedia article \"Marburg Colloquy\", at revision 1377717188, opens: \"The Marburg Colloquy was a meeting at Marburg Castle, Marburg, Hesse, Germany, which attempted to solve a disputation between Martin Luther and Ulrich Zwingli over the Real Presence of Christ in the Eucharist. It took place between 1 October and 4 October 1529. The leading Protestant reformers of the time attended at the behest of Philip I of Hessen. Philip's primary motivation for this conference was political; he wished to unite the Protestant states in political alliance, and to this end, religious harmony was an important consideration.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q672138, imported by tools/import/wikidata.mjs. The item's own description reads \"meeting at Marburg Castle, Marburg, Hesse, Germany, which unsuccessfully attempted to solve a dispute between Luther and Zwingli over the Eucharist\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1529,
+    "end": 1529,
+    "date": "1529-10-01",
+    "endDate": "1529-10-04"
+  },
+  "place": "marburger-schloss",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

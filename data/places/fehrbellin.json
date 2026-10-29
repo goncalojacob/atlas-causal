@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "fehrbellin",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q626792",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Fehrbellin",
+    "pt": "Fehrbellin"
+  },
+  "sources": [],
+  "names": [
+    "Fehrbellin"
+  ],
+  "where": {
+    "lon": 12.766139,
+    "lat": 52.814359,
+    "precision": "city",
+    "label": "Fehrbellin"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

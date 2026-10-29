@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-salt-river",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q102045794",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Salt River"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q102045794"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Salt River\", revision 1370588123"
+    }
+  ],
+  "title": "Battle of Salt River",
+  "summary": "The English Wikipedia article \"Battle of Salt River\", at revision 1370588123, opens: \"The Battle of Salt River was a small military engagement between the crew of a Portuguese fleet led by Francisco de Almeida and the indigenous ǃUriǁʼaekua, notable for being the first military encounter between Europeans and indigenous people in what would later become South Africa. The battle resulted in a massacre of Portuguese forces and a victory for the ǃUriǁʼaekua.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q102045794, imported by tools/import/wikidata.mjs. The item's own description reads \"Portugal v. indigenous group, 1510\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1510,
+    "end": 1510,
+    "date": "1510-03-01"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

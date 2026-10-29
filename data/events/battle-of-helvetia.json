@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-helvetia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q20613666",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Helvetia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20613666"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Helvetia\", revision 1370265575"
+    }
+  ],
+  "title": "Battle of Helvetia",
+  "summary": "The English Wikipedia article \"Battle of Helvetia\", at revision 1370265575, opens: \"The Battle of Helvetia was an engagement in the Second Boer War fought by Boer and British troops on 29 December 1900 in Helvetia 10 km north of Machadodorp, eastern South African Republic.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20613666, imported by tools/import/wikidata.mjs. The item's own description reads \"Second Boer War battle on 29 December 1900\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-12-29"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

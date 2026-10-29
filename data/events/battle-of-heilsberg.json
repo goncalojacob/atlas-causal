@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-heilsberg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q926489",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Heilsberg",
+    "pt": "Batalha de Heilsberg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q926489"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Heilsberg\", revision 1380189313"
+    }
+  ],
+  "title": "Battle of Heilsberg",
+  "summary": "The English Wikipedia article \"Battle of Heilsberg\", at revision 1380189313, opens: \"The Battle of Heilsberg took place on 10 June [O.S. 29 May] 1807 off the town of Heilsberg, during the Napoleonic Wars. In it, Joachim Murat's French troops began the offensive on Leonty (Levin) Bennigsen's Russian force ahead of schedule. The opponents fought until nightfall, by which time the French attacks had produced no results. They concluded an operational armistice. Napoleon, French supreme commander, intended to bring up more forces and continue the encounter, but Bennigsen eluded this, heading towards Königsberg. Due to Bennigsen's illness, corps-level commander Andrei Gorchakov temporarily replaced him during the action until the very end of it. Napoleon also arrived on the battlefield, but it was Murat who initiated the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q926489, imported by tools/import/wikidata.mjs. The item's own description reads \"1807 battle during the War of the Fourth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1807,
+    "end": 1807,
+    "date": "1807-06-10"
+  },
+  "place": "lidzbark-warminski",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-fourth-coalition"
+}

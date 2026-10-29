@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-chausa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q12427302",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Chausa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12427302"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chausa\", revision 1375682953"
+    }
+  ],
+  "title": "Battle of Chausa",
+  "summary": "The English Wikipedia article \"Battle of Chausa\", at revision 1375682953, opens: \"The Battle of Chausa was a notable military engagement between the Mughal Emperor, Humayun, and the Afghan ruler, Sher Shah Suri. It was fought on 26 June 1539 at Chausa, 10 miles southwest of Buxar in modern-day Bihar, India. Sher Shah Suri was assisted by his allies, the Ujjainiya Rajputs of Bhojpur, as well as the Lohtamia and Gautam Rajputs who were led by the commander, Gajpati Ujjainia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12427302, imported by tools/import/wikidata.mjs. The item's own description reads \"1539 military engagement between Humayun and Sher Shah Suri\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1539,
+    "end": 1539,
+    "date": "1539-06-26"
+  },
+  "place": "chausa",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "constitution-of-the-year-x",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2995115",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Constitution of the Year X",
+    "pt": "Constituição Francesa de 1802 (Ano X)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2995115"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Constitution of the Year X\", revision 1365483747"
+    }
+  ],
+  "title": "Constitution of the Year X",
+  "summary": "The English Wikipedia article \"Constitution of the Year X\", at revision 1365483747, opens: \"The Constitution of the Year X was a national constitution of France adopted during the Year X (10) on 16 Thermidor of the French Revolutionary Calendar. It amended the Constitution of the Year VIII, revising the Consulate to augment Napoleon Bonaparte's authority by making him First Consul for Life.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2995115, imported by tools/import/wikidata.mjs. The item's own description reads \"1802 French Constitution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1802,
+    "end": 1802,
+    "date": "1802-08-04"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "law",
+  "actors": []
+}

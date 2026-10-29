@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "october-diploma",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q697734",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "October Diploma"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q697734"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"October Diploma\", revision 1380049334"
+    }
+  ],
+  "title": "October Diploma",
+  "summary": "The English Wikipedia article \"October Diploma\", at revision 1380049334, opens: \"The October Diploma was a constitution of the Austrian Empire adopted by Habsburg Emperor Franz Joseph on 20 October 1860. The Diploma was written by the Minister of Interior, Agenor Gołuchowski. It attempted to increase the power of the conservative nobles by giving them more power over their own lands through a program of aristocratic federalism. This policy was a failure almost from the start, and Franz Joseph was forced to make further concessions in the February Patent of 1861. Even so, historians have argued that the October Diploma began the \"constitutional\" period of the empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q697734, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1860,
+    "end": 1860,
+    "date": "1860-10-20"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "law",
+  "actors": []
+}

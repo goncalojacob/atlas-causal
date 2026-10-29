@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "treaty-of-london-1827",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q616951",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of London (1827)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q616951"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of London (1827)\", revision 1381773372"
+    }
+  ],
+  "title": "Treaty of London (1827)",
+  "summary": "The English Wikipedia article \"Treaty of London (1827)\", at revision 1381773372, opens: \"The Treaty of London was signed in London on 6 July, 1827 by the United Kingdom of Great Britain and Ireland, Bourbon Restoration France and the Russian Empire. The three main European powers had called upon Greece and the Ottoman Empire to cease hostilities that had been going on since the Greeks revolted against the Ottoman rule on 17 March 1821. After years of negotiation, the European allied powers had finally decided to intervene in the war on the side of the Greeks. The Allied powers wanted the treaty mainly to cause the Ottoman Empire to create an independent Greek state. It stated that while the Ottoman Empire would recognise the independence of Greece, the Ottoman Sultan would be the supreme ruler of Greece. The treaty declared the intention of the three allies to mediate between the Greeks and the Ottomans. The base arrangement was that Greece would become an Ottoman dependency and pay tribute as such. Additional articles were added to detail the response if the Sultan refused the offer of mediation and continued hostilities in Greece. The articles detailed that the Turks had one month to accept the mediation or the Allied powers forming a partnership with the Greeks through commercial relations. Measures were also adopted that if the Sultan refused the armistice, the Allies would use the appropriate force to ensure the adoption of the armistice.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q616951, imported by tools/import/wikidata.mjs. The item's own description reads \"signed by the United Kingdom, France, and Russia on 6 July 1827\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1827,
+    "end": 1827
+  },
+  "place": "london",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

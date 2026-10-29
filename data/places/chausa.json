@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "chausa",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q11913632",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Chausa"
+  },
+  "sources": [],
+  "names": [
+    "Chausa"
+  ],
+  "where": {
+    "lon": 83.8823147,
+    "lat": 25.5075447,
+    "precision": "city",
+    "label": "Chausa"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

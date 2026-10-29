@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-dunbar-1650",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2605977",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Dunbar (1650)",
+    "pt": "Batalha de Dunbar (1650)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2605977"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dunbar (1650)\", revision 1375910502"
+    }
+  ],
+  "title": "Battle of Dunbar (1650)",
+  "summary": "The English Wikipedia article \"Battle of Dunbar (1650)\", at revision 1375910502, opens: \"The Battle of Dunbar was fought between the English New Model Army, under Oliver Cromwell, and a Scottish army commanded by David Leslie on 3 September 1650 near Dunbar, Scotland. The battle resulted in a decisive victory for the English. It was the first major battle of the 1650 invasion of Scotland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2605977, imported by tools/import/wikidata.mjs. The item's own description reads \"battle during the 1650 English invasion of Scotland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1650,
+    "end": 1650,
+    "date": "1650-09-03"
+  },
+  "place": "dunbar",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "wars-of-the-three-kingdoms"
+}

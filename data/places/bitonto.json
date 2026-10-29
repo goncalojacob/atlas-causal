@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bitonto",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q19278",
+  "sitelinks": {
+    "count": 67,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Bitonto",
+    "pt": "Bitonto"
+  },
+  "sources": [],
+  "names": [
+    "Bitonto"
+  ],
+  "where": {
+    "lon": 16.691666666667,
+    "lat": 41.108333333333,
+    "precision": "city",
+    "label": "Bitonto"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

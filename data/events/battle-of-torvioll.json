@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-torvioll",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1934137",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Torvioll",
+    "pt": "Batalha de Torvioll"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1934137"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Torvioll\", revision 1381696617"
+    }
+  ],
+  "title": "Battle of Torvioll",
+  "summary": "The English Wikipedia article \"Battle of Torvioll\", at revision 1381696617, opens: \"The Battle of Torvioll, also known as the Battle of Lower Dibra, was fought on 29 June 1444 on the Plain of Torvioll, in what is now Albania. Gjergj Kastrioti Skanderbeg was an Albanian nobleman who decided to return to his homeland and take the reins of a new Albanian league against the Ottoman Empire. He and 300 other Albanians who fought in the Battle of Niš deserted the Ottoman Army and made their way to Krujë, which quickly fell due to subversion. He then formed the League of Lezhë, a confederation of Albanian princes united in war against the Ottoman Empire. Realising the threat, Murad II sent one of his most experienced generals, Ali Pasha, to crush the new state with a force of 25,000–40,000 men.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1934137, imported by tools/import/wikidata.mjs. The item's own description reads \"1444 battle during an Albanian uprising against the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1444,
+    "end": 1444,
+    "date": "1444-06-29"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
