@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-blois-1572",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3780839",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Blois (1572)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3780839"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Blois (1572)\", revision 1301214839"
+    }
+  ],
+  "title": "Treaty of Blois (1572)",
+  "summary": "The English Wikipedia article \"Treaty of Blois (1572)\", at revision 1301214839, opens: \"The Treaty of Blois was signed on 19 April 1572 in Blois between Elizabeth I of England and Catherine de' Medici of France. Based on the terms of the treaty, France and England relinquished their historic rivalry and established an alliance against Spain. The treaty also entailed France to be kept out of Mary, Queen of Scots and Scotland's affair with England. Elizabeth expected the defensive treaty to isolate Spain and prevent France from invading Flanders.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3780839, imported by tools/import/wikidata.mjs. The item's own description reads \"1572 treaty between England and France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1572,
+    "end": 1572,
+    "date": "1572-04-19"
+  },
+  "place": "blois",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

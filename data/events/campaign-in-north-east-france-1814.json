@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "campaign-in-north-east-france-1814",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2935365",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Campaign in north-east France (1814)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2935365"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Campaign in north-east France (1814)\", revision 1370607680"
+    }
+  ],
+  "title": "Campaign in north-east France (1814)",
+  "summary": "The English Wikipedia article \"Campaign in north-east France (1814)\", at revision 1370607680, opens: \"The 1814 campaign in north-east France was Napoleon's final campaign of the War of the Sixth Coalition. Following their victory at Leipzig in 1813, the Austrian, Prussian, Russian, and other German armies of the Sixth Coalition invaded France. Despite the disproportionate forces in favour of the Coalition, Napoleon managed to inflict several defeats, the Six Days' Campaign being the most well-known. However, the campaign ended in total defeat for Napoleon as the Coalition kept advancing towards Paris. Napoleon was out of position to defend the capital, which capitulated in late March 1814. When Napoleon proposed the army march on Paris, his Marshals decided to unanimously overrule Napoleon in order to save the city from further destruction. As a result, the victorious Coalition negotiated the Treaty of Paris, under which Napoleon was exiled to the island of Elba and the borders of France were returned to where they had been in 1792.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2935365, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 campaign during the Napoleonic Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-03"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-sixth-coalition"
+}

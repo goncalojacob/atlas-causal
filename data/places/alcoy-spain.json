@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "alcoy-spain",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q494777",
+  "sitelinks": {
+    "count": 54,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Alcoy, Spain",
+    "pt": "Alcoi"
+  },
+  "sources": [],
+  "names": [
+    "Alcoy",
+    "Alcoi",
+    "Alcoy, Spain"
+  ],
+  "where": {
+    "lon": -0.47361111111111,
+    "lat": 38.698333333333,
+    "precision": "city",
+    "label": "Alcoy, Spain"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

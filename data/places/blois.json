@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "blois",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q160927",
+  "sitelinks": {
+    "count": 86,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Blois",
+    "pt": "Blois"
+  },
+  "sources": [],
+  "names": [
+    "Blois"
+  ],
+  "where": {
+    "lon": 1.3272222222222,
+    "lat": 47.593055555556,
+    "precision": "city",
+    "label": "Blois"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

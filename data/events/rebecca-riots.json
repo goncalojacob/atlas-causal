@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "rebecca-riots",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3124572",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Rebecca Riots"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3124572"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rebecca Riots\", revision 1375547736"
+    }
+  ],
+  "title": "Rebecca Riots",
+  "summary": "The English Wikipedia article \"Rebecca Riots\", at revision 1375547736, opens: \"The Rebecca Riots took place between 1839 and 1843 in West and Mid Wales. They were a series of protests undertaken by local farmers and agricultural workers in response to levels of taxation. The rioters, often men dressed as women, took their actions against toll-gates, as they were tangible representations of taxes and tolls. The rioters went by the name of Merched Beca which translates directly from Welsh as 'Rebecca's Daughters'. The riots ceased prior to 1844 due to several factors, including increased troop levels, a desire by the protestors to avoid violence, and the appearance of criminal groups using the guise of the biblical character Rebecca for their own purposes. In 1844 an act of Parliament to consolidate and amend the laws relating to turnpike trusts in Wales was passed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3124572, imported by tools/import/wikidata.mjs. The item's own description reads \"a series of civil disorder between 1839 and 1843 in South and Mid Wales\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1843,
+    "date": "1839-05-13"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

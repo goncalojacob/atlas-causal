@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "bergerac-dordogne",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q187911",
+  "sitelinks": {
+    "count": 68,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Bergerac, Dordogne",
+    "pt": "Bergerac (Dordonha)"
+  },
+  "sources": [],
+  "names": [
+    "Bergerac",
+    "Bergerac, Dordogne",
+    "Bergerac (Dordonha)"
+  ],
+  "where": {
+    "lon": 0.4875,
+    "lat": 44.853611111111114,
+    "precision": "city",
+    "label": "Bergerac, Dordogne"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
