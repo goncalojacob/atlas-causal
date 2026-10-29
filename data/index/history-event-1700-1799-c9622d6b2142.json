@@ -3245,6 +3245,15 @@
         }
       ]
     },
+    "capitulation-of-estonia-and-livonia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "capture-of-alexandria-1798": {
       "from": "git",
       "versions": [
@@ -4778,6 +4787,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "pinckney-s-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6420,6 +6438,15 @@
         }
       ]
     },
+    "treaty-of-hamburg-1762": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-hamedan": {
       "from": "git",
       "versions": [
@@ -6627,6 +6654,15 @@
         }
       ]
     },
+    "treaty-of-seville": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-sistova": {
       "from": "git",
       "versions": [
@@ -6654,12 +6690,30 @@
         }
       ]
     },
+    "treaty-of-the-hague-1720": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-the-pruth": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-tolentino": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

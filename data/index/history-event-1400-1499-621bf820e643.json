@@ -425,6 +425,15 @@
         }
       ]
     },
+    "cornish-rebellion-of-1497": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "european-colonization-of-the-americas": {
       "from": "git",
       "versions": [
@@ -979,6 +988,15 @@
         }
       ]
     },
+    "treaty-of-arras-1482": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-basel-1499": {
       "from": "git",
       "versions": [
@@ -1025,6 +1043,15 @@
       ]
     },
     "treaty-of-melno": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-picquigny": {
       "from": "git",
       "versions": [
         {
@@ -1087,6 +1114,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "war-of-ferrara-1482-1484": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

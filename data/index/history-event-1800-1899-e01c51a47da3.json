@@ -6320,6 +6320,15 @@
         }
       ]
     },
+    "cantonal-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "canut-revolts": {
       "from": "git",
       "versions": [
@@ -9141,6 +9150,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "london-protocol-1852": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -12680,6 +12698,15 @@
         }
       ]
     },
+    "treaty-of-aranjuez-1801": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-badajoz-1801": {
       "from": "git",
       "versions": [
@@ -13420,6 +13447,15 @@
         }
       ]
     },
+    "treaty-of-valencay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-versailles-1871": {
       "from": "git",
       "versions": [
@@ -13578,6 +13614,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "tyrolean-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

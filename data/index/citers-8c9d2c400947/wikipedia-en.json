@@ -20546,9 +20546,21 @@
     },
     {
       "dissent": false,
+      "id": "cantonal-rebellion",
+      "kind": "event",
+      "locator": "\"Cantonal Rebellion\", revision 1380209948"
+    },
+    {
+      "dissent": false,
       "id": "canut-revolts",
       "kind": "event",
       "locator": "\"Canut revolts\", revision 1363506202"
+    },
+    {
+      "dissent": false,
+      "id": "capitulation-of-estonia-and-livonia",
+      "kind": "event",
+      "locator": "\"Capitulation of Estonia and Livonia\", revision 1368931390"
     },
     {
       "dissent": false,
@@ -21479,6 +21491,12 @@
       "id": "conventions-of-la-marsa",
       "kind": "event",
       "locator": "\"Conventions of La Marsa\", revision 1279121848"
+    },
+    {
+      "dissent": false,
+      "id": "cornish-rebellion-of-1497",
+      "kind": "event",
+      "locator": "\"Cornish rebellion of 1497\", revision 1380049447"
     },
     {
       "dissent": false,
@@ -25052,6 +25070,12 @@
     },
     {
       "dissent": false,
+      "id": "london-protocol-1852",
+      "kind": "event",
+      "locator": "\"London Protocol (1852)\", revision 1328309063"
+    },
+    {
+      "dissent": false,
       "id": "long-march",
       "kind": "event",
       "locator": "\"Long March\", revision 1377236140"
@@ -26624,6 +26648,12 @@
     },
     {
       "dissent": false,
+      "id": "peace-of-ales",
+      "kind": "event",
+      "locator": "\"Peace of Alès\", revision 1336775771"
+    },
+    {
+      "dissent": false,
       "id": "peace-of-augsburg",
       "kind": "event",
       "locator": "\"Peace of Augsburg\", revision 1379189394"
@@ -26633,6 +26663,12 @@
       "id": "peace-of-basel",
       "kind": "event",
       "locator": "\"Peace of Basel\", revision 1368995959"
+    },
+    {
+      "dissent": false,
+      "id": "peace-of-busza",
+      "kind": "event",
+      "locator": "\"Peace of Busza\", revision 1259516499"
     },
     {
       "dissent": false,
@@ -26903,6 +26939,12 @@
       "id": "pima-revolt-1751",
       "kind": "event",
       "locator": "\"Pima Revolt (1751)\", revision 1381454233"
+    },
+    {
+      "dissent": false,
+      "id": "pinckney-s-treaty",
+      "kind": "event",
+      "locator": "\"Pinckney's Treaty\", revision 1381875400"
     },
     {
       "dissent": false,
@@ -28997,6 +29039,12 @@
       "id": "siege-of-cairo-1801",
       "kind": "event",
       "locator": "\"Siege of Cairo (1801)\", revision 1371087718"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-calais-1558",
+      "kind": "event",
+      "locator": "\"Siege of Calais (1558)\", revision 1370739975"
     },
     {
       "dissent": false,
@@ -31826,6 +31874,18 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-aranjuez-1801",
+      "kind": "event",
+      "locator": "\"Treaty of Aranjuez (1801)\", revision 1365328529"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-arras-1482",
+      "kind": "event",
+      "locator": "\"Treaty of Arras (1482)\", revision 1373325407"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-aynal-kavak",
       "kind": "event",
       "locator": "\"Treaty of Aynalıkavak\", revision 1327240348"
@@ -31931,6 +31991,12 @@
       "id": "treaty-of-brest-litovsk",
       "kind": "event",
       "locator": "\"Treaty of Brest-Litovsk\", revision 1368334684"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-bromberg",
+      "kind": "event",
+      "locator": "\"Treaty of Bromberg\", revision 1381665101"
     },
     {
       "dissent": false,
@@ -32093,6 +32159,12 @@
       "id": "treaty-of-easton",
       "kind": "event",
       "locator": "\"Treaty of Easton\", revision 1375686339"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-edinburgh",
+      "kind": "event",
+      "locator": "\"Treaty of Edinburgh\", revision 1381613049"
     },
     {
       "dissent": false,
@@ -32288,6 +32360,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-hamburg-1762",
+      "kind": "event",
+      "locator": "\"Treaty of Hamburg (1762)\", revision 1352218213"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-hamedan",
       "kind": "event",
       "locator": "\"Treaty of Hamedan\", revision 1303319070"
@@ -32429,6 +32507,12 @@
       "id": "treaty-of-lhasa",
       "kind": "event",
       "locator": "\"Convention of Lhasa\", revision 1305728166"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-limerick",
+      "kind": "event",
+      "locator": "\"Treaty of Limerick\", revision 1374072972"
     },
     {
       "dissent": false,
@@ -32678,6 +32762,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-picquigny",
+      "kind": "event",
+      "locator": "\"Treaty of Picquigny\", revision 1371242270"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-polyanovka",
       "kind": "event",
       "locator": "\"Treaty of Polyanovka\", revision 1273828974"
@@ -32705,6 +32795,12 @@
       "id": "treaty-of-purandar-1665",
       "kind": "event",
       "locator": "\"Treaty of Purandar (1665)\", revision 1381668190"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-radnot",
+      "kind": "event",
+      "locator": "\"Treaty of Radnot\", revision 1380033470"
     },
     {
       "dissent": false,
@@ -32762,6 +32858,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-saint-germain-en-laye-1679",
+      "kind": "event",
+      "locator": "\"Treaty of Saint-Germain-en-Laye (1679)\", revision 1378813910"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-saint-petersburg-1723",
       "kind": "event",
       "locator": "\"Treaty of Saint Petersburg (1723)\", revision 1381668349"
@@ -32801,6 +32903,12 @@
       "id": "treaty-of-schonbrunn",
       "kind": "event",
       "locator": "\"Treaty of Schönbrunn\", revision 1381668492"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-seville",
+      "kind": "event",
+      "locator": "\"Treaty of Seville\", revision 1348136350"
     },
     {
       "dissent": false,
@@ -32870,6 +32978,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-stuhmsdorf",
+      "kind": "event",
+      "locator": "\"Treaty of Stuhmsdorf\", revision 1301365645"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-surji-anjangaon",
       "kind": "event",
       "locator": "\"Treaty of Surji-Anjangaon\", revision 1380666708"
@@ -32924,6 +33038,18 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-the-hague-1661",
+      "kind": "event",
+      "locator": "\"Treaty of The Hague (1661)\", revision 1349940834"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-the-hague-1720",
+      "kind": "event",
+      "locator": "\"Treaty of The Hague (1720)\", revision 1354851022"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-the-pruth",
       "kind": "event",
       "locator": "\"Treaty of the Pruth\", revision 1365721554"
@@ -32945,6 +33071,12 @@
       "id": "treaty-of-titalia",
       "kind": "event",
       "locator": "\"Treaty of Titalia\", revision 1361550907"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-tolentino",
+      "kind": "event",
+      "locator": "\"Treaty of Tolentino\", revision 1364156578"
     },
     {
       "dissent": false,
@@ -32993,6 +33125,12 @@
       "id": "treaty-of-union",
       "kind": "event",
       "locator": "\"Treaty of Union\", revision 1369361527"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-valencay",
+      "kind": "event",
+      "locator": "\"Treaty of Valençay\", revision 1315371278"
     },
     {
       "dissent": false,
@@ -33206,6 +33344,12 @@
     },
     {
       "dissent": false,
+      "id": "truce-of-ulm-1647",
+      "kind": "event",
+      "locator": "\"Truce of Ulm (1647)\", revision 1365309499"
+    },
+    {
+      "dissent": false,
       "id": "trunajaya-rebellion",
       "kind": "event",
       "locator": "\"Trunajaya rebellion\", revision 1370751472"
@@ -33287,6 +33431,12 @@
       "id": "twelve-day-war",
       "kind": "event",
       "locator": "\"Twelve-Day War\", revision 1370751931"
+    },
+    {
+      "dissent": false,
+      "id": "tyrolean-rebellion",
+      "kind": "event",
+      "locator": "\"Tyrolean Rebellion\", revision 1370751929"
     },
     {
       "dissent": false,
@@ -33611,6 +33761,12 @@
       "id": "war-of-devolution",
       "kind": "event",
       "locator": "\"War of Devolution\", revision 1375086353"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-ferrara-1482-1484",
+      "kind": "event",
+      "locator": "\"War of Ferrara (1482–1484)\", revision 1379037434"
     },
     {
       "dissent": false,
