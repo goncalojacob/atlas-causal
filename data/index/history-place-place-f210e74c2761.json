@@ -704,6 +704,15 @@
         }
       ]
     },
+    "arcis-sur-aube": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "arcole": {
       "from": "git",
       "versions": [
@@ -1179,6 +1188,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "banat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3529,6 +3547,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "chorna-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6272,6 +6299,15 @@
         }
       ]
     },
+    "glen-shiel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "glencoe-highland": {
       "from": "git",
       "versions": [
@@ -7716,6 +7752,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "izmail": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -9295,6 +9340,15 @@
         }
       ]
     },
+    "larga-prut-cantemir": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "las-cabezas-de-san-juan": {
       "from": "git",
       "versions": [
@@ -9388,6 +9442,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "legnica": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -11110,6 +11173,15 @@
         }
       ]
     },
+    "molodi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "mombasa": {
       "from": "git",
       "versions": [
@@ -12462,6 +12534,15 @@
         }
       ]
     },
+    "olomouc": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "olsztyn": {
       "from": "git",
       "versions": [
@@ -12501,6 +12582,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "oradea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -14205,6 +14295,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "raszyn": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -16570,6 +16669,15 @@
         }
       ]
     },
+    "stockach": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "stockholm": {
       "from": "git",
       "versions": [
@@ -16764,6 +16872,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "syntagma-square": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -17566,6 +17683,15 @@
         }
       ]
     },
+    "trebbia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "trebel": {
       "from": "git",
       "versions": [
@@ -18227,6 +18353,15 @@
         }
       ]
     },
+    "vervins": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "vestmannaeyjar": {
       "from": "git",
       "versions": [
@@ -18410,6 +18545,15 @@
         }
       ]
     },
+    "w-rth": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "wadi-al-laban": {
       "from": "git",
       "versions": [
@@ -18425,6 +18569,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "walcheren": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -19399,6 +19552,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "zurich": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

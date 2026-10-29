@@ -655,6 +655,15 @@
         }
       ]
     },
+    "battle-of-bergen-1759": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-blenheim": {
       "from": "git",
       "versions": [
@@ -697,6 +706,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-breslau-1757": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1207,12 +1225,30 @@
         }
       ]
     },
+    "battle-of-gemauerthof": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-germantown": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-glen-shiel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1602,6 +1638,15 @@
         }
       ]
     },
+    "battle-of-larga": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-lauffeld": {
       "from": "git",
       "versions": [
@@ -1633,6 +1678,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-liegnitz-1760": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1794,6 +1848,15 @@
             "regionNote"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-minden": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2486,6 +2549,15 @@
         }
       ]
     },
+    "battle-of-stockach-1799": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-the-assunpink-creek": {
       "from": "git",
       "versions": [
@@ -2640,6 +2712,15 @@
       ]
     },
     "battle-of-toulon-1744": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-trebbia-1799": {
       "from": "git",
       "versions": [
         {
@@ -2918,6 +2999,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "bulavin-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3682,6 +3772,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "glorious-first-of-june": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5054,6 +5153,15 @@
         }
       ]
     },
+    "siege-of-izmail": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-jacmel": {
       "from": "git",
       "versions": [
@@ -5927,6 +6035,15 @@
         }
       ]
     },
+    "treaty-of-frederiksborg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-friendship-and-alliance": {
       "from": "git",
       "versions": [
@@ -6156,6 +6273,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-saint-petersburg-1762": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
