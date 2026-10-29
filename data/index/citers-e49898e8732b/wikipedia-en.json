@@ -13604,6 +13604,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-barrosa",
+      "kind": "event",
+      "locator": "\"Battle of Barrosa\", revision 1379210960"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bassignano",
+      "kind": "event",
+      "locator": "\"Battle of Bassignano\", revision 1370433548"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-batih",
       "kind": "event",
       "locator": "\"Battle of Batih\", revision 1382550486"
@@ -14234,6 +14246,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-campo-santo",
+      "kind": "event",
+      "locator": "\"Battle of Campo Santo\", revision 1378197532"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-campo-tenese",
       "kind": "event",
       "locator": "\"Battle of Campo Tenese\", revision 1370436057"
@@ -14285,6 +14303,12 @@
       "id": "battle-of-cape-henry",
       "kind": "event",
       "locator": "\"Battle of Cape Henry\", revision 1370436183"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cape-kaliakra",
+      "kind": "event",
+      "locator": "\"Battle of Cape Kaliakra\", revision 1382487557"
     },
     {
       "dissent": false,
@@ -14936,6 +14960,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-craonne",
+      "kind": "event",
+      "locator": "\"Battle of Craonne\", revision 1370109342"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cravant",
       "kind": "event",
       "locator": "\"Battle of Cravant\", revision 1370437787"
@@ -15338,6 +15368,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ebelsberg",
+      "kind": "event",
+      "locator": "\"Battle of Ebelsberg\", revision 1370109969"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-eckmuhl",
       "kind": "event",
       "locator": "\"Battle of Eckmühl\", revision 1370109983"
@@ -15425,6 +15461,18 @@
       "id": "battle-of-empel",
       "kind": "event",
       "locator": "\"Battle of Empel\", revision 1370110103"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-emsdorf",
+      "kind": "event",
+      "locator": "\"Battle of Emsdorf\", revision 1370439967"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-entzheim",
+      "kind": "event",
+      "locator": "\"Battle of Entzheim\", revision 1370440030"
     },
     {
       "dissent": false,
@@ -15890,6 +15938,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fuentes-de-onoro",
+      "kind": "event",
+      "locator": "\"Battle of Fuentes de Oñoro\", revision 1381647637"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-fushun",
       "kind": "event",
       "locator": "\"Battle of Fushun\", revision 1370110606"
@@ -16175,6 +16229,12 @@
       "id": "battle-of-graspan",
       "kind": "event",
       "locator": "\"Battle of Graspan\", revision 1370441965"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-grauholz",
+      "kind": "event",
+      "locator": "\"Battle of Grauholz\", revision 1375236926"
     },
     {
       "dissent": false,
@@ -17021,6 +17081,12 @@
       "id": "battle-of-kagul",
       "kind": "event",
       "locator": "\"Battle of Kagul\", revision 1372105344"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kaiserslautern",
+      "kind": "event",
+      "locator": "\"Battle of Kaiserslautern\", revision 1370266564"
     },
     {
       "dissent": false,
@@ -17996,6 +18062,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-madonna-dell-olmo",
+      "kind": "event",
+      "locator": "\"Battle of Madonna dell'Olmo\", revision 1370448487"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-madras",
       "kind": "event",
       "locator": "\"Battle of Madras\", revision 1370448492"
@@ -18200,6 +18272,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-marquain",
+      "kind": "event",
+      "locator": "\"Battle of Marquain\", revision 1370449122"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-marracuene",
       "kind": "event",
       "locator": "\"Battle of Marracuene\", revision 1370449127"
@@ -18308,6 +18386,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-medellin",
+      "kind": "event",
+      "locator": "\"Battle of Medellín\", revision 1370449420"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-medina-1812",
       "kind": "event",
       "locator": "\"Battle of Medina (1812)\", revision 1381372257"
@@ -18377,6 +18461,12 @@
       "id": "battle-of-mikatagahara",
       "kind": "event",
       "locator": "\"Battle of Mikatagahara\", revision 1378914052"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-milazzo-1718",
+      "kind": "event",
+      "locator": "\"Battle of Milazzo (1718)\", revision 1375715960"
     },
     {
       "dissent": false,
@@ -18521,6 +18611,12 @@
       "id": "battle-of-molino-del-rey",
       "kind": "event",
       "locator": "\"Battle of Molino del Rey\", revision 1370628895"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-molins-de-rei",
+      "kind": "event",
+      "locator": "\"Battle of Molins de Rei\", revision 1370450187"
     },
     {
       "dissent": false,
@@ -18707,6 +18803,12 @@
       "id": "battle-of-mount-tumbledown",
       "kind": "event",
       "locator": "\"Battle of Mount Tumbledown\", revision 1372389478"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-moys",
+      "kind": "event",
+      "locator": "\"Battle of Moys\", revision 1370450684"
     },
     {
       "dissent": false,
@@ -19670,6 +19772,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-pozzolo",
+      "kind": "event",
+      "locator": "\"Battle of Pozzolo\", revision 1370272235"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-praga",
       "kind": "event",
       "locator": "\"Battle of Praga\", revision 1382459978"
@@ -20012,6 +20120,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-reims-1814",
+      "kind": "event",
+      "locator": "\"Battle of Reims (1814)\", revision 1370272852"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-rejaf",
       "kind": "event",
       "locator": "\"Battle of Rejaf\", revision 1370587366"
@@ -20144,6 +20258,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rovereto",
+      "kind": "event",
+      "locator": "\"Battle of Rovereto\", revision 1370273148"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-rymnik",
       "kind": "event",
       "locator": "\"Battle of Rymnik\", revision 1370587818"
@@ -20213,6 +20333,12 @@
       "id": "battle-of-saint-aubin-du-cormier-1488",
       "kind": "event",
       "locator": "\"Battle of Saint-Aubin-du-Cormier (1488)\", revision 1370587999"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-saint-cast",
+      "kind": "event",
+      "locator": "\"Battle of Saint-Cast\", revision 1372536684"
     },
     {
       "dissent": false,
@@ -20297,6 +20423,12 @@
       "id": "battle-of-saltanovka",
       "kind": "event",
       "locator": "\"Battle of Saltanovka\", revision 1370588132"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-salzbach",
+      "kind": "event",
+      "locator": "\"Battle of Salzbach\", revision 1370588153"
     },
     {
       "dissent": false,
@@ -21188,6 +21320,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-svensksund",
+      "kind": "event",
+      "locator": "\"Battle of Svensksund\", revision 1381657975"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-swally",
       "kind": "event",
       "locator": "\"Battle of Swally\", revision 1371286628"
@@ -21488,6 +21626,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-black-mountain",
+      "kind": "event",
+      "locator": "\"Battle of the Black Mountain\", revision 1370598337"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-black-river",
       "kind": "event",
       "locator": "\"Battle of the Black River\", revision 1370598348"
@@ -21509,6 +21653,12 @@
       "id": "battle-of-the-boyne",
       "kind": "event",
       "locator": "\"Battle of the Boyne\", revision 1382257978"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-cedars",
+      "kind": "event",
+      "locator": "\"Battle of the Cedars\", revision 1374397180"
     },
     {
       "dissent": false,
@@ -21671,6 +21821,12 @@
       "id": "battle-of-the-malacca-strait-1714",
       "kind": "event",
       "locator": "\"Battle of the Malacca Strait (1714)\", revision 1370600923"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-mincio-river-1814",
+      "kind": "event",
+      "locator": "\"Battle of the Mincio River (1814)\", revision 1370601281"
     },
     {
       "dissent": false,
@@ -22010,6 +22166,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tourcoing",
+      "kind": "event",
+      "locator": "\"Battle of Tourcoing\", revision 1370275695"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-towton",
       "kind": "event",
       "locator": "\"Battle of Towton\", revision 1380895540"
@@ -22031,6 +22193,12 @@
       "id": "battle-of-trebbia-1799",
       "kind": "event",
       "locator": "\"Battle of Trebbia (1799)\", revision 1382460117"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-trencsen",
+      "kind": "event",
+      "locator": "\"Battle of Trencsén\", revision 1370786151"
     },
     {
       "dissent": false,
@@ -22268,6 +22436,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-vac-1684",
+      "kind": "event",
+      "locator": "\"Battle of Vác (1684)\", revision 1370592784"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-vagen",
       "kind": "event",
       "locator": "\"Battle of Vågen\", revision 1370592794"
@@ -22289,6 +22463,12 @@
       "id": "battle-of-valenciennes-1656",
       "kind": "event",
       "locator": "\"Battle of Valenciennes (1656)\", revision 1372289367"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-valmaseda",
+      "kind": "event",
+      "locator": "\"Battle of Valmaseda\", revision 1370592132"
     },
     {
       "dissent": false,
@@ -22445,6 +22625,12 @@
       "id": "battle-of-villinghausen",
       "kind": "event",
       "locator": "\"Battle of Villinghausen\", revision 1379579453"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vilnius-1655",
+      "kind": "event",
+      "locator": "\"Battle of Vilnius (1655)\", revision 1370786180"
     },
     {
       "dissent": false,
@@ -22685,6 +22871,12 @@
       "id": "battle-of-wijnendale",
       "kind": "event",
       "locator": "\"Battle of Wijnendale\", revision 1370593943"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wilhelmsthal",
+      "kind": "event",
+      "locator": "\"Battle of Wilhelmsthal\", revision 1370593975"
     },
     {
       "dissent": false,
@@ -23075,6 +23267,12 @@
       "id": "battles-of-batocina-and-jagodina",
       "kind": "event",
       "locator": "\"Battles of Batočina and Jagodina\", revision 1370603511"
+    },
+    {
+      "dissent": false,
+      "id": "battles-of-bergisel",
+      "kind": "event",
+      "locator": "\"Battles of Bergisel\", revision 1370603515"
     },
     {
       "dissent": false,
@@ -24302,6 +24500,12 @@
     },
     {
       "dissent": false,
+      "id": "caucasus-campaign-of-1734-1735",
+      "kind": "event",
+      "locator": "\"Caucasus campaign of 1734–1735\", revision 1371086741"
+    },
+    {
+      "dissent": false,
       "id": "cayuse-war",
       "kind": "event",
       "locator": "\"Cayuse War\", revision 1370610454"
@@ -25352,6 +25556,12 @@
     },
     {
       "dissent": false,
+      "id": "death-of-wolfgang-amadeus-mozart",
+      "kind": "event",
+      "locator": "\"Death of Wolfgang Amadeus Mozart\", revision 1382022866"
+    },
+    {
+      "dissent": false,
       "id": "deccan-wars",
       "kind": "event",
       "locator": "\"Deccan wars\", revision 1370615029"
@@ -25820,6 +26030,12 @@
     },
     {
       "dissent": false,
+      "id": "english-wars-scandinavia",
+      "kind": "event",
+      "locator": "\"English Wars (Scandinavia)\", revision 1370616949"
+    },
+    {
+      "dissent": false,
       "id": "entente-cordiale",
       "kind": "event",
       "locator": "\"Entente Cordiale\", revision 1370844455"
@@ -26135,6 +26351,12 @@
       "id": "feast-of-the-pheasant",
       "kind": "event",
       "locator": "\"Feast of the Pheasant\", revision 1379072164"
+    },
+    {
+      "dissent": false,
+      "id": "february-flood-of-1825",
+      "kind": "event",
+      "locator": "\"February flood of 1825\", revision 1372828871"
     },
     {
       "dissent": false,
@@ -27416,6 +27638,12 @@
     },
     {
       "dissent": false,
+      "id": "great-gypsy-round-up",
+      "kind": "event",
+      "locator": "\"Great Gypsy Round-up\", revision 1380803897"
+    },
+    {
+      "dissent": false,
       "id": "great-hinckley-fire",
       "kind": "event",
       "locator": "\"Great Hinckley Fire\", revision 1382186871"
@@ -28163,6 +28391,12 @@
       "id": "insurrection-of-10-august-1792",
       "kind": "event",
       "locator": "\"Insurrection of 10 August 1792\", revision 1373130455"
+    },
+    {
+      "dissent": false,
+      "id": "insurrection-of-12-germinal-year-iii",
+      "kind": "event",
+      "locator": "\"Insurrection of 12 Germinal Year III\", revision 1370623829"
     },
     {
       "dissent": false,
@@ -29270,6 +29504,12 @@
     },
     {
       "dissent": false,
+      "id": "lithuanian-civil-war-1697-1702",
+      "kind": "event",
+      "locator": "\"Lithuanian Civil War (1697–1702)\", revision 1377939058"
+    },
+    {
+      "dissent": false,
       "id": "little-war-cuba",
       "kind": "event",
       "locator": "\"Little War (Cuba)\", revision 1370626979"
@@ -29345,6 +29585,12 @@
       "id": "louvre-accord",
       "kind": "event",
       "locator": "\"Louvre Accord\", revision 1325248410"
+    },
+    {
+      "dissent": false,
+      "id": "low-countries-theatre-of-the-war-of-the-first-coalition",
+      "kind": "event",
+      "locator": "\"Low Countries theatre of the War of the First Coalition\", revision 1377807188"
     },
     {
       "dissent": false,
@@ -29519,6 +29765,12 @@
       "id": "marburg-colloquy",
       "kind": "event",
       "locator": "\"Marburg Colloquy\", revision 1377717188"
+    },
+    {
+      "dissent": false,
+      "id": "march-across-the-belts",
+      "kind": "event",
+      "locator": "\"March Across the Belts\", revision 1370627688"
     },
     {
       "dissent": false,
@@ -31601,6 +31853,12 @@
       "id": "polish-ottoman-war-1683-1699",
       "kind": "event",
       "locator": "\"Polish–Ottoman War (1683–1699)\", revision 1371450433"
+    },
+    {
+      "dissent": false,
+      "id": "polish-prussian-alliance",
+      "kind": "event",
+      "locator": "\"Polish–Prussian alliance\", revision 1379645834"
     },
     {
       "dissent": false,
@@ -34184,6 +34442,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-corfu-1716",
+      "kind": "event",
+      "locator": "\"Siege of Corfu (1716)\", revision 1381326904"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-corinth",
       "kind": "event",
       "locator": "\"Siege of Corinth\", revision 1381800397"
@@ -35498,6 +35762,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-san-sebastian",
+      "kind": "event",
+      "locator": "\"Siege of San Sebastián\", revision 1379509397"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-savannah-1779",
       "kind": "event",
       "locator": "\"Siege of Savannah (1779)\", revision 1380550458"
@@ -35567,6 +35837,12 @@
       "id": "siege-of-stralsund-1628",
       "kind": "event",
       "locator": "\"Siege of Stralsund (1628)\", revision 1371910129"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-stralsund-1807",
+      "kind": "event",
+      "locator": "\"Siege of Stralsund (1807)\", revision 1381025017"
     },
     {
       "dissent": false,
@@ -35684,6 +35960,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-thionville-1792",
+      "kind": "event",
+      "locator": "\"Siege of Thionville (1792)\", revision 1370745796"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-tonning",
       "kind": "event",
       "locator": "\"Siege of Tönning\", revision 1379537876"
@@ -35783,6 +36065,12 @@
       "id": "siege-of-uruguaiana",
       "kind": "event",
       "locator": "\"Siege of Uruguaiana\", revision 1370746195"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-valenciennes-1676-1677",
+      "kind": "event",
+      "locator": "\"Siege of Valenciennes (1676–1677)\", revision 1376157444"
     },
     {
       "dissent": false,
@@ -37163,6 +37451,12 @@
       "id": "third-treaty-of-san-ildefonso",
       "kind": "event",
       "locator": "\"Third Treaty of San Ildefonso\", revision 1378545877"
+    },
+    {
+      "dissent": false,
+      "id": "third-voyage-of-james-cook",
+      "kind": "event",
+      "locator": "\"Third voyage of James Cook\", revision 1381489628"
     },
     {
       "dissent": false,

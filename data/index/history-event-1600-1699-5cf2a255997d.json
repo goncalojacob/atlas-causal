@@ -797,6 +797,15 @@
         }
       ]
     },
+    "battle-of-entzheim": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-falmouth-1690": {
       "from": "git",
       "versions": [
@@ -1944,6 +1953,15 @@
         }
       ]
     },
+    "battle-of-salzbach": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-sarhu": {
       "from": "git",
       "versions": [
@@ -2414,6 +2432,15 @@
         }
       ]
     },
+    "battle-of-vac-1684": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-vagen": {
       "from": "git",
       "versions": [
@@ -2484,6 +2511,15 @@
             "review"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-vilnius-1655": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3696,6 +3732,15 @@
         }
       ]
     },
+    "lithuanian-civil-war-1697-1702": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "maghrebi-war-1699-1702": {
       "from": "git",
       "versions": [
@@ -3726,6 +3771,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "march-across-the-belts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5515,6 +5569,15 @@
       ]
     },
     "siege-of-ueda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-valenciennes-1676-1677": {
       "from": "git",
       "versions": [
         {
