@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-medina-del-campo-1489",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7837148",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Medina del Campo (1489)",
+    "pt": "Tratado de Medina do Campo (1489)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837148"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Medina del Campo (1489)\", revision 1343148812"
+    }
+  ],
+  "title": "Treaty of Medina del Campo (1489)",
+  "summary": "The English Wikipedia article \"Treaty of Medina del Campo (1489)\", at revision 1343148812, opens: \"The Treaty of Medina del Campo was an agreement developed on March 26, 1489 between England and the nascent Spain. Its provisions accomplished three goals: the establishment of a common policy for the two countries regarding France, the reduction of tariffs between the two countries, and, most centrally, the arrangement of a marriage contract between Arthur Tudor, eldest son of Henry VII of England, and Catherine of Aragon, daughter of Isabella I of Castile and Ferdinand II of Aragon. The treaty was signed on March 27 by the Spanish sovereigns, but its ratification by Henry did not occur until September 1490 by the Treaty of Woking.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837148, imported by tools/import/wikidata.mjs. The item's own description reads \"1489 treaty between England and Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1489,
+    "end": 1489,
+    "date": "1489-03-26"
+  },
+  "place": "medina-del-campo",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-arras-1579",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1456592",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Arras (1579)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1456592"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Arras (1579)\", revision 1301214918"
+    }
+  ],
+  "title": "Treaty of Arras (1579)",
+  "summary": "The English Wikipedia article \"Treaty of Arras (1579)\", at revision 1301214918, opens: \"The Treaty of Arras of 17 May 1579 was a peace treaty that was concluded between the Spanish Crown, represented by Alexander Farnese, Duke of Parma, and representatives of the County of Hainaut; the County of Artois; and the cities of Douai, Lille, Orchies and Arras, all of which were members of the Union of Arras, which had been formed on the 6 January 1579.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1456592, imported by tools/import/wikidata.mjs. The item's own description reads \"1579 peace treaty between Spain and Parma\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1579,
+    "end": 1579,
+    "date": "1579-05-17"
+  },
+  "place": "arras",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

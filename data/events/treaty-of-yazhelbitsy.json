@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-yazhelbitsy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4536370",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Yazhelbitsy"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4536370"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Yazhelbitsy\", revision 1280320099"
+    }
+  ],
+  "title": "Treaty of Yazhelbitsy",
+  "summary": "The English Wikipedia article \"Treaty of Yazhelbitsy\", at revision 1280320099, opens: \"The Treaty of Yazhelbitsy was a peace treaty signed by Vasili II, Grand Prince of Moscow and Vladimir, and the government of Novgorod the Great in the village of Yazhelbitsy in February 1456. This treaty was a significant setback for Novgorod, which would culminate, almost quarter of a century later, in the city being brought under the direct control of the Muscovite Grand Prince in 1478.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4536370, imported by tools/import/wikidata.mjs. The item's own description reads \"1456 treaty between Moscow and Novgorod\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1456,
+    "end": 1456,
+    "date": "1456-02-25"
+  },
+  "place": "yazhelbitsy",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

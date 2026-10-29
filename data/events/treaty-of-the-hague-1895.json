@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-the-hague-1895",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7837256",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of The Hague (1895)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837256"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of The Hague (1895)\", revision 1153345175"
+    }
+  ],
+  "title": "Treaty of The Hague (1895)",
+  "summary": "The English Wikipedia article \"Treaty of The Hague (1895)\", at revision 1153345175, opens: \"The Treaty of Den Haag was signed on 16 May 1895. The accord established the borders of British New Guinea.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837256, imported by tools/import/wikidata.mjs. The item's own description reads \"1895 treaty between the United Kingdom and the Netherlands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1895,
+    "end": 1895,
+    "date": "1895-05-16"
+  },
+  "place": "the-hague",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

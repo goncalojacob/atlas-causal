@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-worms-1743",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1995471",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Worms (1743)",
+    "pt": "Tratado de Worms (1743)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1995471"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Worms (1743)\", revision 1368310226"
+    }
+  ],
+  "title": "Treaty of Worms (1743)",
+  "summary": "The English Wikipedia article \"Treaty of Worms (1743)\", at revision 1368310226, opens: \"The Treaty of Worms was a political alliance formed between Great Britain, Austria and the Kingdom of Sardinia, signed on 13 September 1743, during the War of the Austrian Succession.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1995471, imported by tools/import/wikidata.mjs. The item's own description reads \"1743 alliance between Great Britain, Austria, and Sardinia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1743,
+    "end": 1743
+  },
+  "place": "worms-germany",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

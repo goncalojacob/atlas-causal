@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-monzon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3888452",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Monzón"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3888452"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Monzón\", revision 1329323346"
+    }
+  ],
+  "title": "Treaty of Monzón",
+  "summary": "The English Wikipedia article \"Treaty of Monzón\", at revision 1329323346, opens: \"The Treaty of Monçon or Treaty of Monzón was signed on 5 March 1626 by Cardinal Richelieu, the chief minister of Louis XIII and Gaspar de Guzmán, Count-Duke of Olivares, the chief minister of Philip IV of Spain, at Monçon in Aragon. It was signed in the aftermath of the French capture of Valtellina from Papal troops, ending the Valtellina War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3888452, imported by tools/import/wikidata.mjs. The item's own description reads \"1626 treaty ending the Valtellina War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1626,
+    "end": 1626,
+    "date": "1626-03-05"
+  },
+  "place": "monzon",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

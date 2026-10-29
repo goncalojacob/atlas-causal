@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-leith",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7510186",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Leith",
+    "pt": "Cerco de Leith"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510186"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Leith\", revision 1379302236"
+    }
+  ],
+  "title": "Siege of Leith",
+  "summary": "The English Wikipedia article \"Siege of Leith\", at revision 1379302236, opens: \"The siege of Leith ended a twelve-year encampment of French troops at Leith, the port near Edinburgh, Scotland. French troops arrived in Scotland by invitation in 1548. In 1560 the French soldiers opposed Scottish supporters of religious reformation, and an English army arrived to besiege the French garrison at Leith. The town was not taken by force and the French troops finally left peacefully under the terms of a treaty signed by Scotland, England and France.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510186, imported by tools/import/wikidata.mjs. The item's own description reads \"1560 Siege at Leith\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1560,
+    "end": 1560,
+    "date": "1560-01",
+    "endDate": "1560-06-20"
+  },
+  "place": "leith",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

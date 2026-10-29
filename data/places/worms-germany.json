@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "worms-germany",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3852",
+  "sitelinks": {
+    "count": 89,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Worms, Germany",
+    "pt": "Worms"
+  },
+  "sources": [],
+  "names": [
+    "Worms",
+    "Worms, Germany"
+  ],
+  "where": {
+    "lon": 8.3620898,
+    "lat": 49.6302618,
+    "precision": "city",
+    "label": "Worms, Germany"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
