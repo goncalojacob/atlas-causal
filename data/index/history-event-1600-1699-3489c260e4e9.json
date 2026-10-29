@@ -1194,6 +1194,15 @@
         }
       ]
     },
+    "battle-of-lowestoft": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-lund": {
       "from": "git",
       "versions": [
@@ -1341,6 +1350,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-mingolsheim": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1500,6 +1518,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-portland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1954,6 +1981,15 @@
         }
       ]
     },
+    "battle-of-the-sound": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-tieling": {
       "from": "git",
       "versions": [
@@ -2211,6 +2247,15 @@
             "parent"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-wimpfen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3036,6 +3081,15 @@
         }
       ]
     },
+    "jacobean-era": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "jacobite-risings": {
       "from": "git",
       "versions": [
@@ -3483,6 +3537,15 @@
         }
       ]
     },
+    "peace-of-lund": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "peace-of-prague-1635": {
       "from": "git",
       "versions": [
@@ -3620,6 +3683,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "polish-swedish-war-1600-1629": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5028,6 +5100,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "the-ruin-ukrainian-history": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

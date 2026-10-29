@@ -101,6 +101,15 @@
         }
       ]
     },
+    "battle-of-brunkeberg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-castillon": {
       "from": "git",
       "versions": [
@@ -219,6 +228,15 @@
       ]
     },
     "battle-of-lipany": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-losecoat-field": {
       "from": "git",
       "versions": [
         {
@@ -518,6 +536,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "golub-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

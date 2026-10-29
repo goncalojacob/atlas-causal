@@ -463,6 +463,15 @@
         }
       ]
     },
+    "age-of-liberty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "american-revolution": {
       "from": "git",
       "versions": [
@@ -904,6 +913,15 @@
         }
       ]
     },
+    "battle-of-burkersdorf-1762": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-buxar": {
       "from": "git",
       "versions": [
@@ -1209,6 +1227,15 @@
             "regionNote"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-domstadtl": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3242,6 +3269,15 @@
         }
       ]
     },
+    "battle-of-zielence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-zorndorf": {
       "from": "git",
       "versions": [
@@ -4012,6 +4048,15 @@
         }
       ]
     },
+    "first-battle-of-cape-finisterre-1747": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "first-battle-of-hochstadt": {
       "from": "git",
       "versions": [
@@ -4198,6 +4243,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "french-occupation-of-malta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4856,6 +4910,15 @@
         }
       ]
     },
+    "napoleonic-era": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "naqib-al-ashraf-revolt": {
       "from": "git",
       "versions": [
@@ -5208,6 +5271,15 @@
         }
       ]
     },
+    "regence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "regulator-movement-in-north-carolina": {
       "from": "git",
       "versions": [
@@ -5417,6 +5489,15 @@
       ]
     },
     "second-battle-of-cape-finisterre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "second-battle-of-zurich": {
       "from": "git",
       "versions": [
         {
