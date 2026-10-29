@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-the-hague-1698",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2119018",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of The Hague (1698)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2119018"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of The Hague (1698)\", revision 1380426394"
+    }
+  ],
+  "title": "Treaty of The Hague (1698)",
+  "summary": "The English Wikipedia article \"Treaty of The Hague (1698)\", at revision 1380426394, opens: \"The 1698 Treaty of The Hague, also known as the 1698 Treaty of Den Haag or First Partition Treaty was one of two attempts by France, Great Britain, and the Dutch Republic to achieve a diplomatic solution to the issues that led to the 1701–1714 War of the Spanish Succession.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2119018, imported by tools/import/wikidata.mjs. The item's own description reads \"1698 treaty between France, Britain and the Dutch republic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1698,
+    "end": 1698,
+    "date": "1698-10-11"
+  },
+  "place": "the-hague",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

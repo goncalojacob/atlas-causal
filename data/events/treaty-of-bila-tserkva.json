@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-bila-tserkva",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2379459",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Bila Tserkva"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2379459"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Bila Tserkva\", revision 1380013609"
+    }
+  ],
+  "title": "Treaty of Bila Tserkva",
+  "summary": "The English Wikipedia article \"Treaty of Bila Tserkva\", at revision 1380013609, opens: \"The Treaty of Bila Tserkva was a peace treaty signed on 28 September 1651, between the Polish–Lithuanian Commonwealth and the Ukrainian Cossacks in the aftermath of the Battle of Bila Tserkva. It was signed for the Poles by Mikołaj Potocki, Marcin Kalinowski, Adam Kisiel, Stanisław Lanckoroński, palatine of Bratslav, Zbigniew Gorajski, castellan of Kyiv, and Mikolaj Kazimierz Kossakowski, deputy judge of Bratslav. Signing for Lithuania were Prince Janusz Radziwill (1612-1655), Palatine Jerzy Karol Hlebowicz, and Wincenty Gosiewski. Signing for the Zaporozhian Host was Bohdan Khmelnytsky \"on behalf of the entire host\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2379459, imported by tools/import/wikidata.mjs. The item's own description reads \"1651 peace treaty between Ukrainian Cossacks and Poland-Lithuania\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1651,
+    "end": 1651,
+    "date": "1651-09-18"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

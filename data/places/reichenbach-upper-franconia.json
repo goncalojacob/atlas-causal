@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "reichenbach-upper-franconia",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q528127",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Reichenbach, Upper Franconia",
+    "pt": "Reichenbach (Kronach)"
+  },
+  "sources": [],
+  "names": [
+    "Reichenbach",
+    "Reichenbach, Upper Franconia",
+    "Reichenbach (Kronach)"
+  ],
+  "where": {
+    "lon": 11.413888888889,
+    "lat": 50.425,
+    "precision": "city",
+    "label": "Reichenbach, Upper Franconia"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

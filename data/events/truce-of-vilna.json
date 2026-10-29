@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "truce-of-vilna",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1502680",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Truce of Vilna"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1502680"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Truce of Vilna\", revision 1374649761"
+    }
+  ],
+  "title": "Truce of Vilna",
+  "summary": "The English Wikipedia article \"Truce of Vilna\", at revision 1374649761, opens: \"The Truce of Vilna, Treaty of Wilno or Truce or Treaty of Niemieża was a treaty signed at Niemieża near Vilnius on 3 November 1656 between the Tsardom of Russia and Polish–Lithuanian Commonwealth, introducing a truce during the Russo-Polish War (1654–67) and an anti-Swedish alliance in the contemporaneous Second Northern War. In return for ceasing hostilities and fighting Sweden alongside Poland–Lithuania, the treaty promised tsar Alexis of Russia to succeed the Polish–Lithuanian throne as soon as John II Casimir Vasa would die. Thus began the Russo-Swedish War (1656–1658), which Russia would lose.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1502680, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1656,
+    "end": 1656,
+    "date": "1656-10-24"
+  },
+  "place": "vilnius",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

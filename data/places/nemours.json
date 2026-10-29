@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "nemours",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q321067",
+  "sitelinks": {
+    "count": 48,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Nemours",
+    "pt": "Nemours"
+  },
+  "sources": [],
+  "names": [
+    "Nemours"
+  ],
+  "where": {
+    "lon": 2.6936111111111,
+    "lat": 48.268611111111,
+    "precision": "city",
+    "label": "Nemours"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
