@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "polish-prussian-alliance",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q326676",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Polish–Prussian alliance"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q326676"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Polish–Prussian alliance\", revision 1379645834"
+    }
+  ],
+  "title": "Polish–Prussian alliance",
+  "summary": "The English Wikipedia article \"Polish–Prussian alliance\", at revision 1379645834, opens: \"The Polish-Lithuanian and Prussian Alliance was a mutual defense alliance signed on 29 March 1790 in Warsaw between representatives of the Polish–Lithuanian Commonwealth and the Kingdom of Prussia. It was signed in the brief period when Prussia was seeking an ally against either Austria or Russia, and the Commonwealth was seeking guarantees that it would be able to carry out significant governmental reforms without foreign intervention.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q326676, imported by tools/import/wikidata.mjs. The item's own description reads \"alliance between the Commonwealth of Poland and Prussia (Warsaw, Polish-Lithuanian Commonwealth; 1790)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1790,
+    "end": 1790,
+    "date": "1790-03-29"
+  },
+  "place": "warsaw",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

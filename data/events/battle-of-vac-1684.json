@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-vac-1684",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872699",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Vác (1684)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872699"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vác (1684)\", revision 1370592784"
+    }
+  ],
+  "title": "Battle of Vác (1684)",
+  "summary": "The English Wikipedia article \"Battle of Vác (1684)\", at revision 1370592784, opens: \"The Battle of Vác was fought on June 27, 1684, near the city of Vác in central Hungary, between the forces of the Ottoman Empire, and the forces of the Holy Roman Empire as part of the Great Turkish War. The Austrian army was victorious.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872699, imported by tools/import/wikidata.mjs. The item's own description reads \"1684 battle in the Great Turkish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1684,
+    "end": 1684,
+    "date": "1684-06-27"
+  },
+  "place": "vac",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-turkish-war"
+}

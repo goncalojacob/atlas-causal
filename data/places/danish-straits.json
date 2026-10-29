@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "danish-straits",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q816210",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Danish Straits",
+    "pt": "Estreitos dinamarqueses"
+  },
+  "sources": [],
+  "names": [
+    "Danish straits",
+    "estreitos dinamarqueses"
+  ],
+  "where": {
+    "lon": 11,
+    "lat": 55.5,
+    "precision": "region",
+    "label": "Danish Straits"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

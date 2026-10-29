@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-corfu-1716",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q11794876",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Corfu (1716)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11794876"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Corfu (1716)\", revision 1381326904"
+    }
+  ],
+  "title": "Siege of Corfu (1716)",
+  "summary": "The English Wikipedia article \"Siege of Corfu (1716)\", at revision 1381326904, opens: \"The siege of Corfu took place on 8 July – 21 August 1716, when the Ottoman Empire besieged the city of Corfu, on the namesake island, then held by the Republic of Venice. The siege was part of the Seventh Ottoman–Venetian War, and, coming in the aftermath of the lightning conquest of the Morea by the Ottoman forces in the previous year, was a major success for Venice, representing its last major military success and allowing it to preserve its rule over the Ionian Islands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11794876, imported by tools/import/wikidata.mjs. The item's own description reads \"1716 part of the Seventh Ottoman–Venetian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1716,
+    "end": 1716,
+    "date": "1716-07-08",
+    "endDate": "1716-08-21"
+  },
+  "place": "corfu",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-venetian-war-1714-1718"
+}

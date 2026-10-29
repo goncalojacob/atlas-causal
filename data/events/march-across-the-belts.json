@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "march-across-the-belts",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q647694",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "March Across the Belts"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q647694"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"March Across the Belts\", revision 1370627688"
+    }
+  ],
+  "title": "March Across the Belts",
+  "summary": "The English Wikipedia article \"March Across the Belts\", at revision 1370627688, opens: \"The March Across the Belts was a military campaign waged by the Swedish Empire across the ice between the Danish islands. It lasted between 30 January and 15 February 1658, ending with a decisive victory for Swedish King Charles X Gustav during his first Danish war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q647694, imported by tools/import/wikidata.mjs. The item's own description reads \"Swedish military campaign 1658\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1658,
+    "end": 1658,
+    "date": "1658-01-30",
+    "endDate": "1658-02-06"
+  },
+  "place": "danish-straits",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dano-swedish-war-1657-1658"
+}

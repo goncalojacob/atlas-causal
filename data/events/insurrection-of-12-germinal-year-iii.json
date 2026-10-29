@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "insurrection-of-12-germinal-year-iii",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3152958",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Insurrection of 12 Germinal Year III"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3152958"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Insurrection of 12 Germinal Year III\", revision 1370623829"
+    }
+  ],
+  "title": "Insurrection of 12 Germinal Year III",
+  "summary": "The English Wikipedia article \"Insurrection of 12 Germinal Year III\", at revision 1370623829, opens: \"The insurrection of 12 Germinal Year III was a popular revolt in Paris on 1 April 1795 against the policies of the Thermidorian Convention. It was provoked by poverty and hunger resulting from the abandonment of the controlled economy after the dismantling of the Revolutionary Government during the Thermidorian Reaction.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3152958, imported by tools/import/wikidata.mjs. The item's own description reads \"revolt during the French Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1795,
+    "end": 1795
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "french-revolution"
+}

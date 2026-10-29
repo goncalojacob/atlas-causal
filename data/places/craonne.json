@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "craonne",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q839780",
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Craonne",
+    "pt": "Craonne"
+  },
+  "sources": [],
+  "names": [
+    "Craonne"
+  ],
+  "where": {
+    "lon": 3.7866666666667,
+    "lat": 49.44,
+    "precision": "city",
+    "label": "Craonne"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

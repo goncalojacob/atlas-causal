@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "san-sebastian",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q10313",
+  "sitelinks": {
+    "count": 98,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "San Sebastián",
+    "pt": "São Sebastião (País Basco)"
+  },
+  "sources": [],
+  "names": [
+    "San Sebastián",
+    "São Sebastião (País Basco)"
+  ],
+  "where": {
+    "lon": -1.98,
+    "lat": 43.32,
+    "precision": "city",
+    "label": "San Sebastián"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cape-kaliakra",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q648223",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Cape Kaliakra"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q648223"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cape Kaliakra\", revision 1382487557"
+    }
+  ],
+  "title": "Battle of Cape Kaliakra",
+  "summary": "The English Wikipedia article \"Battle of Cape Kaliakra\", at revision 1382487557, opens: \"The Battle of Cape Kaliakra was the last naval battle of the Russo-Turkish War (1787–1792). It took place on 11 August 1791 off the coast of Cape Kaliakra, Bulgaria, in the Black Sea. Neither side lost a ship, but the Ottomans retreated to Istanbul afterwards.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q648223, imported by tools/import/wikidata.mjs. The item's own description reads \"1791 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1791,
+    "end": 1791,
+    "date": "1791-08-11"
+  },
+  "place": "bulgaria-q219",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1787-1792"
+}

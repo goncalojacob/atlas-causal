@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "calden",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q622111",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Calden",
+    "pt": "Calden"
+  },
+  "sources": [],
+  "names": [
+    "Calden"
+  ],
+  "where": {
+    "lon": 9.40188888888889,
+    "lat": 51.40943055555555,
+    "precision": "city",
+    "label": "Calden"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

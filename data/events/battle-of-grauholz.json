@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-grauholz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q281461",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Grauholz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q281461"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Grauholz\", revision 1375236926"
+    }
+  ],
+  "title": "Battle of Grauholz",
+  "summary": "The English Wikipedia article \"Battle of Grauholz\", at revision 1375236926, opens: \"The Battle of Grauholz on 5 March 1798 was a battle between a Bernese army under Karl Ludwig von Erlach against the French Revolutionary Army under Balthazar Alexis Henri Schauenburg. The battle took place at Grauholz, a wooded hill in what is now the municipalities of Urtenen-Schönbühl and Moosseedorf in the canton of Bern in Switzerland. The government of Bern had already surrendered the previous day, and the Bernese defeat at Grauholz ended their resistance to the French in the north of the canton.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q281461, imported by tools/import/wikidata.mjs. The item's own description reads \"1798 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1798,
+    "date": "1798-03-05"
+  },
+  "place": "urtenen-schonbuhl",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-switzerland"
+}

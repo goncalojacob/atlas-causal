@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-rovereto",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q902524",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Rovereto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q902524"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Rovereto\", revision 1370273148"
+    }
+  ],
+  "title": "Battle of Rovereto",
+  "summary": "The English Wikipedia article \"Battle of Rovereto\", at revision 1370273148, opens: \"In the Battle of Rovereto on 4 September 1796 a French army commanded by Napoleon Bonaparte defeated an Austrian corps led by Paul Davidovich during the War of the First Coalition, part of the French Revolutionary Wars. The battle was fought near the town of Rovereto, in the upper Adige River valley in northern Italy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q902524, imported by tools/import/wikidata.mjs. The item's own description reads \"1796 battle during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1796,
+    "end": 1796,
+    "date": "1796-09-04"
+  },
+  "place": "rovereto",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}
