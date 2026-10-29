@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-lund",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1536103",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Lund",
+    "pt": "Batalha de Lund"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1536103"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lund\", revision 1382229600"
+    }
+  ],
+  "title": "Battle of Lund",
+  "summary": "The English Wikipedia article \"Battle of Lund\", at revision 1382229600, opens: \"The Battle of Lund, part of the Scanian War, was fought on 4 December 1676, in an area north of the city of Lund in Scania in southern Sweden, between the invading Danish army and the army of Charles XI of Sweden. The Danish had an army of about 13,000 under the personal command of 30-year-old King Christian V of Denmark, aided by General Carl von Arensdorff. The victorious Swedish army, which numbered about 8,000, was commanded by Field Marshal Simon Grundel-Helmfelt and the 21-year-old Swedish king Charles XI. It is one of the bloodiest battles going by casualty percentage of both sides ever fought in Scandinavia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1536103, imported by tools/import/wikidata.mjs. The item's own description reads \"1676 battle of the Scanian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1676,
+    "end": 1676,
+    "date": "1676-12-04"
+  },
+  "place": "lund",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "scanian-war"
+}

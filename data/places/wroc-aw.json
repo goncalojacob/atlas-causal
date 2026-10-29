@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "wroc-aw",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1799",
+  "sitelinks": {
+    "count": 132,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Wrocław",
+    "pt": "Breslávia"
+  },
+  "sources": [],
+  "names": [
+    "Wrocław",
+    "Breslávia"
+  ],
+  "where": {
+    "lon": 17.0325,
+    "lat": 51.11,
+    "precision": "city",
+    "label": "Wrocław"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

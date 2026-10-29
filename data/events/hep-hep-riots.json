@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "hep-hep-riots",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q542289",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Hep-Hep riots"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q542289"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hep-Hep riots\", revision 1375925331"
+    }
+  ],
+  "title": "Hep-Hep riots",
+  "summary": "The English Wikipedia article \"Hep-Hep riots\", at revision 1375925331, opens: \"The Hep-Hep riots from August to October 1819 were riots against Jews, beginning in the Kingdom of Bavaria, during the period of Jewish emancipation in the German Confederation. The antisemitic communal violence began on August 2, 1819, in Würzburg and soon reached the outer regions of the German Confederation. Many Jews were injured and much Jewish property was destroyed, although no deaths were reported.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q542289, imported by tools/import/wikidata.mjs. The item's own description reads \"series of antisemitic riots in Germany and neighbouring countries in 1819\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1819,
+    "end": 1819
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

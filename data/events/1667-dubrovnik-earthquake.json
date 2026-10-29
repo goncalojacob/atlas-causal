@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1667-dubrovnik-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2576277",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1667 Dubrovnik earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2576277"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1667 Dubrovnik earthquake\", revision 1374311802"
+    }
+  ],
+  "title": "1667 Dubrovnik earthquake",
+  "summary": "The English Wikipedia article \"1667 Dubrovnik earthquake\", at revision 1374311802, opens: \"The 1667 Dubrovnik earthquake was one of the three most devastating earthquakes to hit what is now modern Croatia in the last 2,400 years, since records began. The entire city was almost destroyed and around 3,000 to 5,000 people were killed. The city's Rector Simone Ghetaldi was killed and over three quarters of all public buildings were destroyed. At the time, Dubrovnik was the capital of the Republic of Ragusa. The earthquake marked the beginning of the end of the Republic.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2576277, imported by tools/import/wikidata.mjs. The item's own description reads \"Earthquake in present-day Croatia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1667,
+    "end": 1667,
+    "date": "1667-04-06"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}
