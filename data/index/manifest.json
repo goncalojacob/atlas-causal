@@ -13,19 +13,19 @@
       "to": 1299
     },
     {
-      "file": "index/attributes-1300-1399-dc1aaab63b13.json",
+      "file": "index/attributes-1300-1399-d7470542af50.json",
       "from": 1300,
       "key": "1300-1399",
       "to": 1399
     },
     {
-      "file": "index/attributes-1400-1499-d346ee6b5ba3.json",
+      "file": "index/attributes-1400-1499-5533251e73e2.json",
       "from": 1400,
       "key": "1400-1499",
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-f1eb8d6647f3.json",
+      "file": "index/attributes-1500-1599-bc499eb31f19.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
@@ -956,7 +956,7 @@
       "id": "treaty"
     },
     {
-      "count": 3314,
+      "count": 3312,
       "id": "war"
     }
   ],
@@ -1025,7 +1025,7 @@
   "counts": {
     "actors": 2699,
     "edges": 1283,
-    "events": 5262,
+    "events": 5260,
     "narratives": 2,
     "offices": 11,
     "places": 2165,
@@ -1073,25 +1073,18 @@
     }
   ],
   "files": {
-    "citers": "index/citers-55496740f435",
-    "core": "index/core-2dc3f55c9b4e.json",
+    "citers": "index/citers-bb56a28a6def",
+    "core": "index/core-1ed5cb9a89d7.json",
     "grounds": "index/grounds-4373e7bfa94d.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-d13ae0093871.json",
-    "search": "index/search-6709ed6fdc6a.json",
-    "sources": "index/sources-a40f5ab023ff.json",
-    "territories": "index/territories-ceac4925640c.json"
+    "review": "index/review-745d0b6712fa.json",
+    "search": "index/search-ac674ce82bfe.json",
+    "sources": "index/sources-a4a513e76cb5.json",
+    "territories": "index/territories-0b4f57a4e291.json"
   },
   "historyShards": [
     {
-      "file": "index/history-event-1300-1399-67b60f30548f.json",
-      "from": 1300,
-      "key": "1300-1399",
-      "kind": "event",
-      "to": 1399
-    },
-    {
-      "file": "index/history-event-1400-1499-4f075ae54203.json",
+      "file": "index/history-event-1400-1499-3084ce329992.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "event",

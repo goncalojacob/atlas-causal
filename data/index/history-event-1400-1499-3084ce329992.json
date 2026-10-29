@@ -56,15 +56,6 @@
         }
       ]
     },
-    "armagnac-burgundian-civil-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-29"
-        }
-      ]
-    },
     "battle-of-agincourt": {
       "from": "git",
       "versions": [

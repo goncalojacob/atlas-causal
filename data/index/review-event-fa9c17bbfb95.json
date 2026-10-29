@@ -12198,35 +12198,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
-      "created": "2026-10-29",
-      "id": "armagnac-burgundian-civil-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts",
-          "summary-from-lead"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Armagnac–Burgundian Civil War"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -92925,35 +92896,6 @@
         "wikidata",
         "wikipedia-en"
       ],
-      "created": "2026-10-29",
-      "id": "hungarian-ottoman-wars",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts",
-          "summary-from-lead"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Hungarian–Ottoman Wars"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
       "created": "2026-10-17",
       "id": "hungarian-revolution-of-1848",
       "kind": "event",
@@ -159023,12 +158965,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "armagnac-burgundian-civil-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "armenian-kurdish-conflicts-in-agr",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -171486,12 +171422,6 @@
     },
     {
       "id": "hungarian-campaign-of-1527-1528",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "hungarian-ottoman-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
