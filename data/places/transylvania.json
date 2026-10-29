@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "transylvania",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q39473",
+  "sitelinks": {
+    "count": 98,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Transylvania",
+    "pt": "Transilvânia"
+  },
+  "sources": [],
+  "names": [
+    "Transylvania",
+    "Transilvânia"
+  ],
+  "where": {
+    "lon": 23.583333333333,
+    "lat": 46.766666666667,
+    "precision": "region",
+    "label": "Transylvania"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

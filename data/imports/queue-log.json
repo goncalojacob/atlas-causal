@@ -47645,6 +47645,627 @@
       },
       "refusals": [],
       "note": "Q48785102: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-282",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "theatre-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-284",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "greek-civil-wars-of-1823-1825",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-286",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "spithead-and-nore-mutinies",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-288",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "suleiman-i-s-campaign-of-1529",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-289",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "wars-of-castro",
+        "edges": [],
+        "place": "castro-lazio"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-291",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "peasants-war-1798",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-293",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "franco-swedish-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-120",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3128939: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-295",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q321452: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-028",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "dano-algerian-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-121",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1292493: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-299",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "second-margrave-war",
+        "edges": [],
+        "place": "franconia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-301",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "moscow-plague-riot-of-1771",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-303",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "zuriputsch",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-305",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "revolt-of-the-brotherhoods",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-227",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6165289: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-308",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q9377279: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-309",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "rising-of-the-priests",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-311",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q12759550: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-312",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q12907952: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-314",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "1749-muslim-slave-revolt-plot-in-malta",
+        "edges": [],
+        "place": "malta-island"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-315",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "hvar-rebellion",
+        "edges": [],
+        "place": "hvar"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-317",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "franco-savoyard-war-1600-1601",
+        "edges": [],
+        "place": "savoy-q14118"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-319",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "written",
+      "written": {
+        "event": "bavarian-uprising-of-1705-1706",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-231",
+      "writer": "A",
+      "fired": "2026-10-29T16:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q13012465: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-283",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "written",
+      "written": {
+        "event": "coup-of-1809",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-285",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2980852: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-287",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "written",
+      "written": {
+        "event": "fall-of-the-republic-of-venice",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-225",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4208075: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-290",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "written",
+      "written": {
+        "event": "kettle-war",
+        "edges": [],
+        "place": "scheldt"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-292",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q338618: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-294",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1116646: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-226",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4379152: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-296",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2748243: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-297",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "written",
+      "written": {
+        "event": "transylvanian-peasant-revolt",
+        "edges": [],
+        "place": "transylvania"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-298",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "written",
+      "written": {
+        "event": "revolt-of-ghent-1539-1540",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-300",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "written",
+      "written": {
+        "event": "upper-austrian-peasant-war-of-1626",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-302",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "written",
+      "written": {
+        "event": "prussian-invasion-of-holland",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-304",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q18639721: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-306",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "written",
+      "written": {
+        "event": "copper-riot",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-307",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2980846: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-228",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6428897: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-310",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "written",
+      "written": {
+        "event": "revolution-of-maria-da-fonte",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-229",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1164157: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-313",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "written",
+      "written": {
+        "event": "messina-revolt",
+        "edges": [],
+        "place": "messina"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-230",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2135001: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-316",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q617281: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-318",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "written",
+      "written": {
+        "event": "revolt-of-the-papier-timbre",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-122",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3817778: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-320",
+      "writer": "B",
+      "fired": "2026-10-29T16:17Z",
+      "status": "written",
+      "written": {
+        "event": "newport-rising",
+        "edges": [],
+        "place": "newport-wales"
+      },
+      "refusals": []
     }
   ]
 }

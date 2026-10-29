@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bavarian-uprising-of-1705-1706",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q812312",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Bavarian uprising of 1705–1706"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q812312"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bavarian uprising of 1705–1706\", revision 1370603877"
+    }
+  ],
+  "title": "Bavarian uprising of 1705–1706",
+  "summary": "The English Wikipedia article \"Bavarian uprising of 1705–1706\", at revision 1370603877, opens: \"The Bavarian uprising of 1705–1706 was a revolt against the occupation of the Electorate of Bavaria by the Imperial Army of the Habsburg Monarchy during the War of the Spanish Succession (1701–1714). It lasted from early November 1705 to 18 January 1706, approximately 75 days. Henric L. Wuermeling speaks of this as \"the first revolution of modern history.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q812312, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1705,
+    "end": 1706,
+    "date": "1705-11"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}
