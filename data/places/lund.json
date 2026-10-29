@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "lund",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2167",
+  "sitelinks": {
+    "count": 90,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Lund",
+    "pt": "Lund (Suécia)"
+  },
+  "sources": [],
+  "names": [
+    "Lund",
+    "Lund (Suécia)"
+  ],
+  "where": {
+    "lon": 13.199164196669,
+    "lat": 55.708313018551,
+    "precision": "city",
+    "label": "Lund"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

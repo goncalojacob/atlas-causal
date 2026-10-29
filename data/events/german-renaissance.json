@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "german-renaissance",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2455000",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "German Renaissance",
+    "pt": "Renascimento na Alemanha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2455000"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"German Renaissance\", revision 1359561249"
+    }
+  ],
+  "title": "German Renaissance",
+  "summary": "The English Wikipedia article \"German Renaissance\", at revision 1359561249, opens: \"The German Renaissance, part of the Northern Renaissance, was a cultural and artistic movement that spread among German thinkers in the 15th and 16th centuries, which developed from the Italian Renaissance. Many areas of the arts and sciences were influenced, notably by the spread of Renaissance humanism to the various German states and principalities. There were many advances made in the fields of architecture, the arts, and the sciences. Germany produced two developments that were to dominate the 16th century all over Europe: printing and the Protestant Reformation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2455000, imported by tools/import/wikidata.mjs. The item's own description reads \"cultural and artistic movement, part of the Northern Renaissance\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1500,
+      "max": 1599
+    },
+    "end": {
+      "min": 1600,
+      "max": 1699
+    }
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

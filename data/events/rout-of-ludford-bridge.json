@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "rout-of-ludford-bridge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q281089",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Rout of Ludford Bridge"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q281089"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rout of Ludford Bridge\", revision 1381812790"
+    }
+  ],
+  "title": "Rout of Ludford Bridge",
+  "summary": "The English Wikipedia article \"Rout of Ludford Bridge\", at revision 1381812790, opens: \"The Rout of Ludford Bridge was a largely bloodless confrontation fought in the early years of the Wars of the Roses. It took place on 12 October 1459, and resulted in a setback for the Yorkists. Although this seemed to be a triumph for the rival Lancastrians at the time, they had thrown away their advantage within six months.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q281089, imported by tools/import/wikidata.mjs. The item's own description reads \"1459 battle of the Wars of the Roses\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1459,
+    "end": 1459,
+    "date": "1459-10-12"
+  },
+  "place": "ludlow",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "wars-of-the-roses"
+}

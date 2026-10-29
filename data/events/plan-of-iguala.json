@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "plan-of-iguala",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1606520",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Plan of Iguala",
+    "pt": "Plano de Iguala"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1606520"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Plan of Iguala\", revision 1360717732"
+    }
+  ],
+  "title": "Plan of Iguala",
+  "summary": "The English Wikipedia article \"Plan of Iguala\", at revision 1360717732, opens: \"The Plan of Iguala, also known as the Plan of the Three Guarantees or Act of Independence of North America, was a revolutionary proclamation promulgated on 24 February 1821, in the final stage of the Mexican War of Independence from Spain. The Plan stated that Mexico was to become a constitutional monarchy, whose sole official religion would be Roman Catholicism, in which both the Peninsulares and the Americanos would enjoy equal political and social rights. It took its name from the city of Iguala in the modern-day state of Guerrero.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1606520, imported by tools/import/wikidata.mjs. The item's own description reads \"revolutionary proclamation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-02-24"
+  },
+  "place": "mexico-q96",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

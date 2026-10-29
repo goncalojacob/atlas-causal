@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rebellion-of-the-alpujarras-1568-1571",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q685757",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Rebellion of the Alpujarras (1568–1571)",
+    "pt": "Rebelião das Alpujarras"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q685757"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rebellion of the Alpujarras (1568–1571)\", revision 1381401508"
+    }
+  ],
+  "title": "Rebellion of the Alpujarras (1568–1571)",
+  "summary": "The English Wikipedia article \"Rebellion of the Alpujarras (1568–1571)\", at revision 1381401508, opens: \"The second rebellion of the Alpujarras, sometimes called the War of the Alpujarras or the Morisco Revolt, was triggered by Philip II of Spain's Pragmatic Sanction of 1567 and was the second Morisco revolt against the Castilian Crown in the mountainous Alpujarra region and on the Granada Altiplano region, northeast of the city of Granada. The rebels were Moriscos, the nominally Catholic descendants of the Mudéjares following the first rebellion of the Alpujarras.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q685757, imported by tools/import/wikidata.mjs. The item's own description reads \"1568–1571 rebellion of the Moriscos of the Kingdom of Granada\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1568,
+    "end": 1571,
+    "date": "1568-12-24",
+    "endDate": "1571-03"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

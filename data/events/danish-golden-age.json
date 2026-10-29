@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "danish-golden-age",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q934618",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Danish Golden Age"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q934618"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Danish Golden Age\", revision 1366089003"
+    }
+  ],
+  "title": "Danish Golden Age",
+  "summary": "The English Wikipedia article \"Danish Golden Age\", at revision 1366089003, opens: \"The Danish Golden Age covers a period of exceptional creative production in Denmark, especially during the first half of the 19th century. Although Copenhagen had suffered from fires, bombardment and national bankruptcy, the arts took on a new period of creativity catalysed by Romanticism from Germany. The period is probably most commonly associated with the Golden Age of Danish Painting from 1800 to around 1850 which encompasses the work of Christoffer Wilhelm Eckersberg and his students, including Wilhelm Bendz, Christen Købke, Martinus Rørbye, Constantin Hansen and Wilhelm Marstrand, as well as the sculpture of Bertel Thorvaldsen.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q934618, imported by tools/import/wikidata.mjs. The item's own description reads \"period in Denmark during the first half of the 19th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1800,
+    "end": 1850
+  },
+  "place": "denmark-q35",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

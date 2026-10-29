@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ten-years-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q184637",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Ten Years' War",
+    "pt": "Guerra dos Dez Anos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q184637"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ten Years' War\", revision 1370749884"
+    }
+  ],
+  "title": "Ten Years' War",
+  "summary": "The English Wikipedia article \"Ten Years' War\", at revision 1370749884, opens: \"The Ten Years' War, also known as the Great War and the War of '68, was a war of independence of Cuba from Spain. The uprising was led by Cuban-born planters and other wealthy natives. On 10 October 1868, sugar mill owner Carlos Manuel de Céspedes and his followers proclaimed independence, beginning the conflict. This was the first of three liberation wars that Cuba fought against Spain, the other two being the Little War (1879–1880) and the Cuban War of Independence (1895–1898). The final three months of the last conflict escalated with United States involvement, leading to the Spanish–American War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q184637, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict in Cuba between 1868 and 1878\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1878,
+    "date": "1868-10-10"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

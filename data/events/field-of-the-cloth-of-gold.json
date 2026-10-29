@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "field-of-the-cloth-of-gold",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1030061",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Field of the Cloth of Gold",
+    "pt": "Campo do Pano de Ouro"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1030061"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Field of the Cloth of Gold\", revision 1374954214"
+    }
+  ],
+  "title": "Field of the Cloth of Gold",
+  "summary": "The English Wikipedia article \"Field of the Cloth of Gold\", at revision 1374954214, opens: \"The Field of the Cloth of Gold was a summit meeting between King Henry VIII of England and King Francis I of France from 7 to 24 June 1520. Held at Balinghem, between Ardres in France and Guînes in the English Pale of Calais, it was an opulent display of wealth by both kings.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1030061, imported by tools/import/wikidata.mjs. The item's own description reads \"summit meeting in Pale of Calais in 1520\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1520,
+    "end": 1520,
+    "date": "1520-06-07",
+    "endDate": "1520-06-20"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

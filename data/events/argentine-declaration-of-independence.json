@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "argentine-declaration-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3248484",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Argentine Declaration of Independence"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3248484"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Argentine Declaration of Independence\", revision 1367580681"
+    }
+  ],
+  "title": "Argentine Declaration of Independence",
+  "summary": "The English Wikipedia article \"Argentine Declaration of Independence\", at revision 1367580681, opens: \"What today is commonly referred as the Independence of Argentina was declared on July 9, 1816, by the Congress of Tucumán. In reality, the congressmen who were assembled in Tucumán declared the independence of the United Provinces of South America, which is one of the official names of the Argentine Republic. The Federal League Provinces, at war with the United Provinces, were not allowed into the Congress. At the same time, several provinces from the Upper Peru that would later become part of present-day Bolivia, were represented at the Congress.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3248484, imported by tools/import/wikidata.mjs. The item's own description reads \"historical proclamation of Argentinean independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1816,
+    "end": 1816,
+    "date": "1816-07-09"
+  },
+  "place": "argentina-q414",
+  "region": null,
+  "regionNote": null,
+  "category": "founding",
+  "actors": []
+}

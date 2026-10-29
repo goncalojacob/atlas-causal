@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-badajoz-1801",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1456423",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Badajoz (1801)",
+    "pt": "Tratado de Badajoz (1801)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1456423"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Badajoz (1801)\", revision 1346116033"
+    }
+  ],
+  "title": "Treaty of Badajoz (1801)",
+  "summary": "The English Wikipedia article \"Treaty of Badajoz (1801)\", at revision 1346116033, opens: \"The Treaty of Badajoz is a peace treaty of the 19th century signed by Spain and Portugal on 6 June 1801. Portugal ceded the border town of Olivenza to Spain and closed its ports to British military and commercial shipping.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1456423, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty signed between Spain and the Kingdom of Portugal on 6 June 1801\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1801,
+    "end": 1801,
+    "date": "1801-06-06"
+  },
+  "place": "badajoz",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

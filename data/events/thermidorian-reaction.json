@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "thermidorian-reaction",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q474757",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Thermidorian Reaction",
+    "pt": "Reação termidoriana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q474757"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Thermidorian Reaction\", revision 1379638691"
+    }
+  ],
+  "title": "Thermidorian Reaction",
+  "summary": "The English Wikipedia article \"Thermidorian Reaction\", at revision 1379638691, opens: \"In the historiography of the French Revolution, the Thermidorian Reaction is the common term for the period between the ousting of Maximilien Robespierre and politically-aligned deputies on 9 Thermidor II, or 27 July 1794, and the inauguration of the French Directory on 2 November 1795.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q474757, imported by tools/import/wikidata.mjs. The item's own description reads \"The period in the French Revolution between Robespierre's fall on 27 July '94 (9 Thermidor II) and the installment of the Directory on 1 November '95, marked by liberalization, right-wing reaction and suppression of the Montagnards/Jacobins.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1794,
+    "end": 1795,
+    "date": "1794-07-27",
+    "endDate": "1795-10-26"
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

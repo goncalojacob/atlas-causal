@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-continental-congress",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q252612",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "First Continental Congress",
+    "pt": "Primeiro Congresso Continental"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q252612"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Continental Congress\", revision 1370027612"
+    }
+  ],
+  "title": "First Continental Congress",
+  "summary": "The English Wikipedia article \"First Continental Congress\", at revision 1370027612, opens: \"The First Continental Congress was a meeting of delegates of twelve of the Thirteen Colonies held from September 5 to October 26, 1774, at Carpenters' Hall in Philadelphia at the beginning of the American Revolution. The meeting was organized by the delegates just after the British Navy implemented a blockade of Boston Harbor and the Parliament of Great Britain passed the punitive Intolerable Acts in response to the Boston Tea Party.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q252612, imported by tools/import/wikidata.mjs. The item's own description reads \"1774 meeting of delegates from twelve British colonies of what would become the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1774,
+    "end": 1774,
+    "date": "1774-09-05",
+    "endDate": "1774-10-26"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "other",
+  "actors": []
+}

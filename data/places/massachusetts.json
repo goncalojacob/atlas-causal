@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "massachusetts",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q771",
+  "sitelinks": {
+    "count": 197,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Massachusetts",
+    "pt": "Massachusetts"
+  },
+  "sources": [],
+  "names": [
+    "Massachusetts"
+  ],
+  "where": {
+    "lon": -71.8,
+    "lat": 42.3,
+    "precision": "region",
+    "label": "Massachusetts"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-riachuelo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2236812",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Riachuelo",
+    "pt": "Batalha Naval do Riachuelo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2236812"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Riachuelo\", revision 1375733393"
+    }
+  ],
+  "title": "Battle of Riachuelo",
+  "summary": "The English Wikipedia article \"Battle of Riachuelo\", at revision 1375733393, opens: \"The Battle of Riachuelo was a large and decisive naval battle of the Paraguayan War between Paraguay and the Empire of Brazil. By late 1864, Paraguay had scored a series of victories in the war, but on 11 June 1865, its naval defeat by the Brazilians on the Paraná River began to turn the tide in favor of the allies.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2236812, imported by tools/import/wikidata.mjs. The item's own description reads \"1865 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1865,
+    "end": 1865,
+    "date": "1865-06-11"
+  },
+  "place": "riachuelo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "paraguayan-war"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "black-friday-1869",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q843687",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Black Friday (1869)",
+    "pt": "Black Friday (1869)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q843687"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Black Friday (1869)\", revision 1357530768"
+    }
+  ],
+  "title": "Black Friday (1869)",
+  "summary": "The English Wikipedia article \"Black Friday (1869)\", at revision 1357530768, opens: \"On September 24, 1869, a gold panic broke out in the United States, triggering a financial crisis. The panic, which became known as Black Friday, was the result of a conspiracy between two investors, Jay Gould, later joined by his partner James Fisk, and Abel Corbin, a small time speculator who had married Virginia (Jennie) Grant, the younger sister of President Ulysses S. Grant. They formed the Gold Ring to corner the gold market and force up the price of the metal on the New York Gold Exchange. The scandal took place during the Grant Presidency. The Secretary of the Treasury, George S. Boutwell, had a policy to sell Treasury gold at biweekly intervals for a sinking fund to pay off the national debt. Along with other, non-routine gold sales, this infusion of cash acted to stabilize the dollar. The economy had gone through tremendous upheaval during the Civil War 1861–1865 and was not yet fully restored.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q843687, imported by tools/import/wikidata.mjs. The item's own description reads \"gold panic on 24 September 1869 caused by the efforts of two investors, Jay Gould and his partner James Fisk (the Gold Ring), to corner the gold market on the New York Gold Exchange\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1869,
+    "end": 1869,
+    "date": "1869-09-24"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

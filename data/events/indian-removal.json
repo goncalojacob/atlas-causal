@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "indian-removal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2519192",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Indian removal",
+    "pt": "Remoção indígena"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2519192"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Indian removal\", revision 1382099584"
+    }
+  ],
+  "title": "Indian removal",
+  "summary": "The English Wikipedia article \"Indian removal\", at revision 1382099584, opens: \"Indian removal was the United States government's policy of ethnic cleansing through the forced displacement of self-governing tribes of American Indians from their ancestral homelands in the eastern United States to lands west of the Mississippi River—specifically, to a designated Indian Territory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2519192, imported by tools/import/wikidata.mjs. The item's own description reads \"early 19th-century United States domestic policy involving forced resettlement of indigenous peoples\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1830,
+    "end": 1845
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

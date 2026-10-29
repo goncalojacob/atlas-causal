@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cape-passaro",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q241110",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Cape Passaro",
+    "pt": "Batalha do Cabo Passaro"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q241110"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cape Passaro\", revision 1381564542"
+    }
+  ],
+  "title": "Battle of Cape Passaro",
+  "summary": "The English Wikipedia article \"Battle of Cape Passaro\", at revision 1381564542, opens: \"The Battle of Cape Passaro was fought on 11–12 August 1718 off Cape Passaro between a British fleet under Admiral of the Fleet Sir George Byng and a Spanish fleet under Lieutenant-general José Antonio de Gaztañeta during the War of the Quadruple Alliance. Fought off the southern tip of Sicily, which Spanish forces had invaded and occupied earlier that year, the battle proved to be the most significant event of the entire war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q241110, imported by tools/import/wikidata.mjs. The item's own description reads \"defeat of a Spanish fleet near Cape Passero, Sicily, on 11 August 1718\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1718,
+    "end": 1718,
+    "date": "1718-08-11"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-quadruple-alliance"
+}

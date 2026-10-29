@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-sterboholy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q223622",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Štěrboholy",
+    "pt": "Batalha de Praga"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q223622"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Štěrboholy\", revision 1370603153"
+    }
+  ],
+  "title": "Battle of Štěrboholy",
+  "summary": "The English Wikipedia article \"Battle of Štěrboholy\", at revision 1370603153, opens: \"The Battle of Prague, also known as Battle of Štěrboholy, was fought on 6 May 1757, during the Third Silesian War and the broader Seven Years' War, between the Kingdom of Prussia and Habsburg Austria. Although Frederick the Great's army of 64,000 Prussians forced 60,000 Austrians to retreat, he lost 14,300 men and decided he was not strong enough to attack Prague.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q223622, imported by tools/import/wikidata.mjs. The item's own description reads \"1757 battle of the Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1757,
+    "date": "1757-05-06"
+  },
+  "place": "prague",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

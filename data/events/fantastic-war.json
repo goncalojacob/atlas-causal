@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fantastic-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q431001",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Fantastic War",
+    "pt": "Guerra Fantástica"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q431001"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fantastic War\", revision 1380908951"
+    }
+  ],
+  "title": "Fantastic War",
+  "summary": "The English Wikipedia article \"Fantastic War\", at revision 1380908951, opens: \"The Spanish–Portuguese War (1762–1763) or Fantastic War was fought as part of the Seven Years' War. The first and main theatre of the war was an invasion of Portugal by Spain in alliance with France against the Anglo-Portuguese Alliance, which ended after three disastrous invasions. The second theatre was a Spanish invasion of Portuguese colonies in South America. Though tactically successful for the Spanish in the strategically important area on and near the River Plate, their gains there were largely given up in the peace negotiations, resulting in a strategic success for the Portuguese in South America.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q431001, imported by tools/import/wikidata.mjs. The item's own description reads \"1762–1763 war between Spain and Portugal as part of the Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1762,
+    "end": 1763
+  },
+  "place": "iberian-peninsula",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

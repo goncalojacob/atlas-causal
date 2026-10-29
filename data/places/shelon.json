@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "shelon",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1047568",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Shelon",
+    "pt": "Rio Shelon"
+  },
+  "sources": [],
+  "names": [
+    "Shelon",
+    "Rio Shelon"
+  ],
+  "where": {
+    "lon": 30.782661111111,
+    "lat": 58.214488888889,
+    "precision": "region",
+    "label": "Shelon"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

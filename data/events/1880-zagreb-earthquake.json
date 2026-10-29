@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1880-zagreb-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2618441",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1880 Zagreb earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2618441"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1880 Zagreb earthquake\", revision 1367026490"
+    }
+  ],
+  "title": "1880 Zagreb earthquake",
+  "summary": "The English Wikipedia article \"1880 Zagreb earthquake\", at revision 1367026490, opens: \"The 1880 earthquake which struck Zagreb, and is also known as The Great Zagreb earthquake, occurred with a moment magnitude of 6.3 on 9 November 1880. Its epicenter was in the Medvednica mountain north of Zagreb. Although only one person was killed in the earthquake, it destroyed or damaged many buildings and spurred a renovation program in the city's historic center. It remained the most severe quake to hit the city for 140 years, until the 2020 Zagreb earthquake.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2618441, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake in Croatia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1880,
+    "end": 1880,
+    "date": "1880-11-09"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

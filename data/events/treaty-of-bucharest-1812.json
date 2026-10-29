@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-bucharest-1812",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q849286",
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Bucharest (1812)",
+    "pt": "Tratado de Bucareste (1812)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q849286"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Bucharest (1812)\", revision 1379681143"
+    }
+  ],
+  "title": "Treaty of Bucharest (1812)",
+  "summary": "The English Wikipedia article \"Treaty of Bucharest (1812)\", at revision 1379681143, opens: \"The Treaty of Bucharest between the Ottoman Empire and the Russian Empire, was signed on 28 May 1812, in Manuc's Inn in Bucharest, and ratified on 5 July 1812, at the end of the Russo-Turkish War of 1806–1812. The Ottomans had done poorly in the war. The Sublime Porte above all wanted to stay out of the impending conflict between Napoleon's France and Russia. The Russians did not want a war on two fronts, thus they made peace in order to be free for the upcoming war with France. The Ottomans had extricated themselves from a potentially disastrous war with a slight loss of territory. This treaty became the basis for future Russo-Ottoman relations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q849286, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty in 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-05-28"
+  },
+  "place": "bucharest",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

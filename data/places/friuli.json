@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "friuli",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q160570",
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Friuli",
+    "pt": "Friul"
+  },
+  "sources": [],
+  "names": [
+    "Friuli",
+    "Friul"
+  ],
+  "where": {
+    "lon": 13,
+    "lat": 46.166388888889,
+    "precision": "region",
+    "label": "Friuli"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

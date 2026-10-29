@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "versailles-kentucky",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q960109",
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Versailles, Kentucky",
+    "pt": "Versailles (Kentucky)"
+  },
+  "sources": [],
+  "names": [
+    "Versailles",
+    "Versailles, Kentucky",
+    "Versailles (Kentucky)"
+  ],
+  "where": {
+    "lon": -84.7308,
+    "lat": 38.0547,
+    "precision": "city",
+    "label": "Versailles, Kentucky"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

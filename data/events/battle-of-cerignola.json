@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-cerignola",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2264459",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Cerignola"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2264459"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cerignola\", revision 1381502545"
+    }
+  ],
+  "title": "Battle of Cerignola",
+  "summary": "The English Wikipedia article \"Battle of Cerignola\", at revision 1381502545, opens: \"The Battle of Cerignola was fought on 28 April 1503 between Spanish and French armies outside the town of Cerignola, Apulia, Kingdom of Naples, approximately 80 kilometres (50 mi) west of Bari. \nThe Spanish force under the command of Gonzalo Fernández de Córdoba comprising around 9,000 men, including 2,000 Landsknecht pikemen, 1,000 arquebusiers and 20 cannons, defeated the French force of 9,000 men, mainly gendarme heavy cavalry and Swiss mercenary pikemen, with about 40 cannons, led by Louis d'Armagnac, Duke of Nemours, who was killed during the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2264459, imported by tools/import/wikidata.mjs. The item's own description reads \"1503 battle in the Third Italian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1503,
+    "end": 1503,
+    "date": "1503-04-28"
+  },
+  "place": "cerignola",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

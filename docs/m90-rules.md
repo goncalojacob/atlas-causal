@@ -143,6 +143,12 @@ does not read the pool files.
     them:** Q3136592, the 1689 Boston revolt (its P571 says 1869-04-18, and
     the import takes that day), and Q714820, the Satsuma Rebellion (its P580
     says 2005-01-29).
+    **Before it counts what waits, the planner drops duplicates.** It
+    removes every waiting item whose Wikidata id the atlas already holds on
+    `m0` or `m42`, and every item whose id an earlier waiting item already
+    carries. On 28 October about 130 of 500 waiting items were events the
+    atlas held, the writer skipped them one by one, and the planner stopped
+    queueing because the inflated count passed four hundred.
 14. **The recache (A15(2)).** The last step of every writer fire is
     `node tools/cache-evidence.mjs --fill` over the fire's own citations.
 15. **Records first, then the rebuild, then the index commit** (798).

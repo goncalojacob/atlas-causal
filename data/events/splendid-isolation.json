@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "splendid-isolation",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1505242",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Splendid isolation",
+    "pt": "Isolamento esplêndido"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1505242"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Splendid isolation\", revision 1378086402"
+    }
+  ],
+  "title": "Splendid isolation",
+  "summary": "The English Wikipedia article \"Splendid isolation\", at revision 1378086402, opens: \"Splendid isolation is a term used to describe the 19th-century British diplomatic practice of avoiding permanent alliances from 1815 to 1902. The concept developed as early as 1822, when Britain left the post-1815 Concert of Europe, and continued until the 1902 Anglo-Japanese Alliance and the 1904 Entente Cordiale with France. As Europe was divided into two power blocs, Britain became aligned with the French Third Republic and the Russian Empire against the German Empire, Austria-Hungary and the Kingdom of Italy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1505242, imported by tools/import/wikidata.mjs. The item's own description reads \"popular conception of British foreign policy in the late 19th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1880,
+      "max": 1889
+    },
+    "end": 1902,
+    "endDate": "1902-01-30"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

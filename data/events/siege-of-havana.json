@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-havana",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q562277",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Siege of Havana",
+    "pt": "Cerco de Havana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q562277"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Havana\", revision 1381773426"
+    }
+  ],
+  "title": "Siege of Havana",
+  "summary": "The English Wikipedia article \"Siege of Havana\", at revision 1381773426, opens: \"The siege of Havana was the capture of the Spanish-held city of Havana, Cuba in 1762 as part of the war between Britain and Spain which formed part of the larger Seven Years' War. After the Spanish abandoned their former policy of neutrality by signing the family compact with France, Britain declared war on Spain in January 1762. The British government decided to mount an attack on the important Spanish naval base of Havana, with the intention of weakening the Spanish West Indies and improving the security of its own American colonies. A Royal Navy force consisting of squadrons from Britain and the West Indies, escorting 160 troopships, were able to approach Havana from a direction that neither Governor Juan de Prado nor Admiral Gutierre de Hevia expected and were able to trap de Hevia's fleet in the Havana harbour and land their troops with relatively little resistance.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q562277, imported by tools/import/wikidata.mjs. The item's own description reads \"1762 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1762,
+    "end": 1762,
+    "date": "1762-06-06",
+    "endDate": "1762-08-13"
+  },
+  "place": "havana",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-spanish-war-1762-1763"
+}

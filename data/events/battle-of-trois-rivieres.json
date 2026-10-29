@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-trois-rivieres",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1247957",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Trois-Rivières",
+    "pt": "Batalha de Trois-Rivières"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1247957"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Trois-Rivières\", revision 1381194372"
+    }
+  ],
+  "title": "Battle of Trois-Rivières",
+  "summary": "The English Wikipedia article \"Battle of Trois-Rivières\", at revision 1381194372, opens: \"The Battle of Trois-Rivières was fought on June 8, 1776, during the American Revolutionary War. A British army under Quebec Governor Sir Guy Carleton defeated an attempt by units from the Continental Army under the command of Brigadier General William Thompson to stop a British advance up the Saint Lawrence River valley. The battle occurred as a part of the American invasion of Quebec, which had begun in September 1775 with the goal of removing the province from British rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1247957, imported by tools/import/wikidata.mjs. The item's own description reads \"1776 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1776,
+    "end": 1776,
+    "date": "1776-06-08"
+  },
+  "place": "battle-of-trois-rivieres-national-historic-site",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "1811-1812-new-madrid-earthquakes",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q455408",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1811–1812 New Madrid earthquakes"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q455408"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1811–1812 New Madrid earthquakes\", revision 1379092219"
+    }
+  ],
+  "title": "1811–1812 New Madrid earthquakes",
+  "summary": "The English Wikipedia article \"1811–1812 New Madrid earthquakes\", at revision 1379092219, opens: \"The 1811–1812 New Madrid earthquakes were a series of intense intraplate earthquakes beginning with an initial earthquake of moment magnitude 7.2–8.2 on December 16, 1811, followed by a moment magnitude 7.4 aftershock on the same day. Two additional earthquakes of similar magnitude followed in January and February 1812. They remain the most powerful earthquakes to hit the contiguous United States east of the Rocky Mountains in recorded history. The earthquakes, as well as the seismic zone of their occurrence, were named for the Mississippi River town of New Madrid, then part of the Louisiana Territory and now within the U.S. state of Missouri.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q455408, imported by tools/import/wikidata.mjs. The item's own description reads \"Series of earthquakes from December 1811 to February 1812 affecting the Louisiana Territory (now Missouri)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1811,
+    "end": 1812,
+    "date": "1811-12-16"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

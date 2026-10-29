@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-northampton-1460",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q916295",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Northampton (1460)",
+    "pt": "Batalha de Northampton"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q916295"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Northampton (1460)\", revision 1370451883"
+    }
+  ],
+  "title": "Battle of Northampton (1460)",
+  "summary": "The English Wikipedia article \"Battle of Northampton (1460)\", at revision 1370451883, opens: \"The Battle of Northampton was fought on 10 July 1460 near the River Nene, Northamptonshire. It was a major battle of the Wars of the Roses. The opposing forces were an army led by nobles loyal to King Henry VI of the House of Lancaster, his Queen Margaret of Anjou and their six-year-old son Edward, Prince of Wales, on one side, and the army of Edward, Earl of March, and Warwick the Kingmaker on the other. The battle was the first in which artillery was used in England.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q916295, imported by tools/import/wikidata.mjs. The item's own description reads \"1460 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1460,
+    "end": 1460,
+    "date": "1460-07-10"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "wars-of-the-roses"
+}

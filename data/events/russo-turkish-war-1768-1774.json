@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "russo-turkish-war-1768-1774",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q123070",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Russo-Turkish War (1768–1774)",
+    "pt": "Guerra Russo-Turca (1768–1774)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q123070"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Turkish War (1768–1774)\", revision 1371325960"
+    }
+  ],
+  "title": "Russo-Turkish War (1768–1774)",
+  "summary": "The English Wikipedia article \"Russo-Turkish War (1768–1774)\", at revision 1371325960, opens: \"The Russo-Turkish War of 1768–1774 was a major armed conflict that saw Russian armies victorious against the Ottoman Empire. Russia's victory brought the Yedisan between the rivers Bug and Dnieper, and Crimea into the Russian sphere of influence. Though a series of victories accrued by the Russian Empire led to substantial territorial conquests, including direct conquest over much of the Pontic–Caspian steppe, less Ottoman territory was directly annexed than might otherwise be expected due to a complex struggle within the European diplomatic system to maintain a balance of power that was acceptable to other European states and avoided direct Russian hegemony over Eastern Europe.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q123070, imported by tools/import/wikidata.mjs. The item's own description reads \"1768-1774 part of the Russo-Turkish Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1768,
+    "end": 1774
+  },
+  "place": "eastern-europe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

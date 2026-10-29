@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "maryland-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2342042",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Maryland campaign",
+    "pt": "Campanha de Maryland"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2342042"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Maryland campaign\", revision 1380695562"
+    }
+  ],
+  "title": "Maryland campaign",
+  "summary": "The English Wikipedia article \"Maryland campaign\", at revision 1380695562, opens: \"The Maryland campaign occurred September 4–20, 1862, during the American Civil War. The campaign was Confederate General Robert E. Lee's first invasion of the Union. It was repulsed by the Army of the Potomac under Maj. Gen. George B. McClellan, who moved to intercept Lee and his Army of Northern Virginia and eventually attacked it near Sharpsburg, Maryland. The resulting Battle of Antietam was the bloodiest day of battle in American history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2342042, imported by tools/import/wikidata.mjs. The item's own description reads \"also known as the Antietam Campaign, an American Civil War invasion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-09-04",
+    "endDate": "1862-09-20"
+  },
+  "place": "maryland",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

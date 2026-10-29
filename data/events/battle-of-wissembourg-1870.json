@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-wissembourg-1870",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q697306",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Wissembourg (1870)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q697306"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wissembourg (1870)\", revision 1370276969"
+    }
+  ],
+  "title": "Battle of Wissembourg (1870)",
+  "summary": "The English Wikipedia article \"Battle of Wissembourg (1870)\", at revision 1370276969, opens: \"The Battle of Wissembourg or Battle of Weissenburg, the first of the Franco-Prussian War, was joined when three German army corps surprised the small French garrison at Wissembourg on 4 August 1870. The defenders, greatly outnumbered, fought stubbornly \"especially considering they were surprised and greatly outnumbered, that the French sustained their old renown as fighting men and that the first defeat, although severe, reflected no discredit on the soldiers of the 1st Corps.\" The fall of Wissembourg allowed the Prussian army to move into France and compelled Marshal Patrice MacMahon to give battle, and suffer defeat, at the Battle of Wörth on 6 August.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q697306, imported by tools/import/wikidata.mjs. The item's own description reads \"1870 first battle of the Franco-Prussian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1870,
+    "date": "1870-08-04"
+  },
+  "place": "wissembourg",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-prussian-war"
+}

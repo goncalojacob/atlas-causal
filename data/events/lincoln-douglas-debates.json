@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lincoln-douglas-debates",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q622354",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Lincoln–Douglas debates",
+    "pt": "Debates Lincoln–Douglas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q622354"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lincoln–Douglas debates\", revision 1382091593"
+    }
+  ],
+  "title": "Lincoln–Douglas debates",
+  "summary": "The English Wikipedia article \"Lincoln–Douglas debates\", at revision 1382091593, opens: \"The Lincoln–Douglas debates were a series of seven debates in 1858 between Abraham Lincoln, the Republican Party candidate for the United States Senate from Illinois, and incumbent Senator Stephen Douglas, the Democratic Party candidate. Until the Seventeenth Amendment to the United States Constitution, which provides that senators shall be elected by the people of their states, was ratified in 1913, senators were elected by their respective state legislatures. Therefore, Lincoln and Douglas were trying to win the people's votes for legislators in the Illinois General Assembly, aligned with their respective political parties.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q622354, imported by tools/import/wikidata.mjs. The item's own description reads \"series of debates between Abraham Lincoln and Stephen Douglas\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1859,
+    "end": 1859,
+    "date": "1859-01-05"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "election",
+  "actors": []
+}

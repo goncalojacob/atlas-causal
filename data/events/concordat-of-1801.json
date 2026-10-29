@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "concordat-of-1801",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1428015",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Concordat of 1801",
+    "pt": "Concordata de 1801"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1428015"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Concordat of 1801\", revision 1381025738"
+    }
+  ],
+  "title": "Concordat of 1801",
+  "summary": "The English Wikipedia article \"Concordat of 1801\", at revision 1381025738, opens: \"The Concordat of 1801 is an agreement between the First French Republic and the Holy See, signed by First Consul Napoleon Bonaparte and Pope Pius VII on 15 July 1801 in Paris. It remained in effect until 1905, except in Alsace–Lorraine, where it remains in force. It sought national reconciliation between the French Revolution and Catholics and solidified the Catholic Church as the majority church of France, with most of its civil status restored. This resolved the hostility of devout French Catholics against the revolutionary state. It did not restore the vast Church lands and endowments that had been seized during the Revolution and sold off. Catholic clergy returned from exile, or from hiding, and resumed their traditional positions in their traditional churches. Very few parishes continued to employ the priests who had accepted the Civil Constitution of the Clergy of the revolutionary regime. While the Concordat restored much power to the papacy, the balance of church-state relations tilted firmly in Bonaparte's favour. He selected the bishops and supervised church finances.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1428015, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1801,
+    "end": 1801,
+    "date": "1801-07-15"
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

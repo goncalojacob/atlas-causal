@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "1797-riobamba-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4553468",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1797 Riobamba earthquake",
+    "pt": "Terremoto de Riobamba"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4553468"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1797 Riobamba earthquake\", revision 1367348689"
+    }
+  ],
+  "title": "1797 Riobamba earthquake",
+  "summary": "The English Wikipedia article \"1797 Riobamba earthquake\", at revision 1367348689, opens: \"The 1797 Riobamba earthquake occurred at 12:30 UTC on 4 February. It devastated the city of Riobamba and many other cities in the Interandean valley, causing between 6,000 and 40,000 casualties. It is estimated that seismic intensities in the epicentral area reached at least XI (Extreme) on the Mercalli intensity scale, and that the earthquake had a magnitude of 7.6–8.3, the most powerful historical event known in Ecuador. The earthquake was studied by Prussian geographer Alexander von Humboldt, when he visited the area in 1801–1802.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4553468, imported by tools/import/wikidata.mjs. The item's own description reads \"South American natural disaster\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1797,
+    "end": 1797,
+    "date": "1797-02-04"
+  },
+  "place": "riobamba",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

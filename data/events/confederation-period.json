@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "confederation-period",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4742531",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Confederation period",
+    "pt": "Período da Confederação"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4742531"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Confederation period\", revision 1380707080"
+    }
+  ],
+  "title": "Confederation period",
+  "summary": "The English Wikipedia article \"Confederation period\", at revision 1380707080, opens: \"The Confederation period was the era of the United States' history in the 1780s after the American Revolution and prior to the ratification of the United States Constitution. In 1781, the United States ratified the Articles of Confederation and Perpetual Union and prevailed in the siege of Yorktown, the last major battle between British and American forces in the American Revolutionary War. American independence was confirmed with the 1783 signing of the Treaty of Paris. The fledgling United States faced several challenges, many of which stemmed from the lack of an effective central government and unified political culture. The period ended in 1789 following the ratification of the United States Constitution, which established a new, more effective, federal government.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4742531, imported by tools/import/wikidata.mjs. The item's own description reads \"era of United States history in the 1780s\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1789
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

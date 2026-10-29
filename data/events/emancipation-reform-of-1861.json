@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "emancipation-reform-of-1861",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1192212",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Emancipation reform of 1861",
+    "pt": "Reforma Emancipadora de 1861 na Rússia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1192212"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Emancipation reform of 1861\", revision 1380958365"
+    }
+  ],
+  "title": "Emancipation reform of 1861",
+  "summary": "The English Wikipedia article \"Emancipation reform of 1861\", at revision 1380958365, opens: \"The emancipation reform of 1861 in Russia, also known as the Edict of Emancipation of Russia, was the first and most important of the liberal reforms enacted during the reign of Emperor Alexander II of Russia. The reform effectively abolished serfdom throughout the Russian Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1192212, imported by tools/import/wikidata.mjs. The item's own description reads \"reform passed by Tsar Alexander II of Russia which effectively abolished serfdom throughout the Russian Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861
+  },
+  "place": "russian-empire-q34266",
+  "region": null,
+  "regionNote": null,
+  "category": "law",
+  "actors": []
+}

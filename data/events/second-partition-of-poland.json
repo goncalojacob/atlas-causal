@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "second-partition-of-poland",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3025374",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Second Partition of Poland",
+    "pt": "Segunda Partilha da Polônia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3025374"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Partition of Poland\", revision 1368931403"
+    }
+  ],
+  "title": "Second Partition of Poland",
+  "summary": "The English Wikipedia article \"Second Partition of Poland\", at revision 1368931403, opens: \"The 1793 Second Partition of Poland was the second of three partitions that ended the existence of the Polish–Lithuanian Commonwealth by 1795. The second partition occurred in the aftermath of the Polish–Russian War of 1792 and the Targowica Confederation of 1792, and was approved by its territorial beneficiaries, the Russian Empire and the Kingdom of Prussia. The division was ratified by the coerced Polish parliament (Sejm) in 1793 in a short-lived attempt to prevent the inevitable complete annexation of Poland, the Third Partition.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3025374, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 division of Poland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-01-23"
+  },
+  "place": "saint-petersburg",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

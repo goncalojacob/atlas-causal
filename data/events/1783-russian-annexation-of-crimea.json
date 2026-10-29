@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1783-russian-annexation-of-crimea",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q18408564",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1783 Russian annexation of Crimea",
+    "pt": "Anexação da Crimeia pelo Império Russo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18408564"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1783 Russian annexation of Crimea\", revision 1369316135"
+    }
+  ],
+  "title": "1783 Russian annexation of Crimea",
+  "summary": "The English Wikipedia article \"1783 Russian annexation of Crimea\", at revision 1369316135, opens: \"The Russian Empire formally annexed the Crimean Khanate on 19 April [O.S. 8 April] 1783, following a decade-long campaign of intervention in the Crimean Peninsula. Russia aimed to control the Black Sea and end raids by Crimean slavers into its territory. To accomplish this, the Russians waged a series of wars against the Ottoman Empire and its Crimean vassal state, culminating in victory in the 1768–1774 Russo-Turkish War. The Treaty of Küçük Kaynarca, signed in 1774, granted the Crimean Khanate nominal independence from the Ottomans under Russian influence. In subsequent years, Russia would intervene widely in Crimean affairs, provoking a series of revolts by the Crimean Tatars, while the Ottomans watched in ambivalence. Crimea was finally annexed by Russia on 19 April 1783, after Russian imperial advisor Prince Grigory Potemkin encouraged Empress Catherine the Great to dissolve the khanate and formally claim its territory. The annexation ended the centuries-long Crimean slave trade. Under Russian administration, the former khanate was subjected to a long-term policy of de-Tatarisation. Tatar property was confiscated, and Russians were encouraged to settle in the region, sparking waves of Tatar emigration.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18408564, imported by tools/import/wikidata.mjs. The item's own description reads \"1783 annexation of territory\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1783,
+    "end": 1783,
+    "date": "1783-04-08"
+  },
+  "place": "crimea",
+  "region": null,
+  "regionNote": null,
+  "category": "founding",
+  "actors": []
+}

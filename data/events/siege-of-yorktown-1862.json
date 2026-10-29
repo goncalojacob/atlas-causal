@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-yorktown-1862",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2551797",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Siege of Yorktown (1862)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2551797"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Yorktown (1862)\", revision 1380716966"
+    }
+  ],
+  "title": "Siege of Yorktown (1862)",
+  "summary": "The English Wikipedia article \"Siege of Yorktown (1862)\", at revision 1380716966, opens: \"The Battle of Yorktown or Siege of Yorktown was fought from April 5 to May 4, 1862, as part of the Peninsula campaign of the American Civil War. Marching from Fort Monroe, Union Maj. Gen. George B. McClellan's Army of the Potomac encountered Maj. Gen. John B. Magruder's small Confederate force at Yorktown behind the Warwick Line. McClellan suspended his march up the Peninsula toward Richmond and settled in for siege operations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2551797, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-04-05",
+    "endDate": "1862-05-04"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "peninsula-campaign"
+}

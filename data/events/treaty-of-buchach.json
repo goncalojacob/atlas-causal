@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-buchach",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2165429",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Buchach"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2165429"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Buchach\", revision 1209404571"
+    }
+  ],
+  "title": "Treaty of Buchach",
+  "summary": "The English Wikipedia article \"Treaty of Buchach\", at revision 1209404571, opens: \"The Treaty of Buchach was signed on 18 October 1672 in Buczacz (Buchach) between the Polish–Lithuanian Commonwealth under King Michał Korybut Wiśniowiecki, who had been unable to raise a suitable army, on the one side and the Ottoman Empire on the other side, ending the first phase of the Polish–Ottoman War (1672–1676).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2165429, imported by tools/import/wikidata.mjs. The item's own description reads \"polish-ottoman treaty of 1672\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1672,
+    "end": 1672,
+    "date": "1672-10-18"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": [],
+  "parent": "polish-ottoman-war-1672-1676"
+}

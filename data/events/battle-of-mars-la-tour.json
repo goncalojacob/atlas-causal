@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-mars-la-tour",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q699262",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Mars-la-Tour",
+    "pt": "Batalha de Mars-la-Tour"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q699262"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mars-la-Tour\", revision 1381525005"
+    }
+  ],
+  "title": "Battle of Mars-la-Tour",
+  "summary": "The English Wikipedia article \"Battle of Mars-la-Tour\", at revision 1381525005, opens: \"The Battle of Mars-la-Tour was fought on 16 August 1870, during the Franco-Prussian War, near the village of Mars-la-Tour in northeast France. One Prussian corps, reinforced by two more later in the day, encountered the entire French Army of the Rhine in a meeting engagement and, following the course of battle, the Army of the Rhine retreated toward the fortress of Metz.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q699262, imported by tools/import/wikidata.mjs. The item's own description reads \"1870 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1870,
+    "date": "1870-08-16"
+  },
+  "place": "mars-la-tour",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-prussian-war"
+}

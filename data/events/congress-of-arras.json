@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "congress-of-arras",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2092225",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Congress of Arras",
+    "pt": "Tratado de Arras (1435)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2092225"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Congress of Arras\", revision 1338831906"
+    }
+  ],
+  "title": "Congress of Arras",
+  "summary": "The English Wikipedia article \"Congress of Arras\", at revision 1338831906, opens: \"The Congress of Arras was a diplomatic congregation established at Arras in the summer of 1435 during the Hundred Years' War, between representatives of England, France and Burgundy. It was the first negotiation since the Treaty of Troyes and replaced the fifteen-year agreement between Burgundy and England that would have seen the dynasty of Henry V inherit the French crown. Historian Richard Vaughan has called it \"Europe's first real peace congress\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2092225, imported by tools/import/wikidata.mjs. The item's own description reads \"1435 diplomatic meeting during the Hundred Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1435,
+    "end": 1435,
+    "date": "1435-09-20"
+  },
+  "place": "arras",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-shelon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2536997",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Shelon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2536997"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Shelon\", revision 1374111333"
+    }
+  ],
+  "title": "Battle of Shelon",
+  "summary": "The English Wikipedia article \"Battle of Shelon\", at revision 1374111333, opens: \"The Battle of Shelon was a decisive battle between the forces of the Grand Principality of Moscow under Ivan III and the Novgorod Republic, which took place on the Shelon River on 14 July 1471.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2536997, imported by tools/import/wikidata.mjs. The item's own description reads \"1471 battle in Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1471,
+    "end": 1471,
+    "date": "1471-07-14"
+  },
+  "place": "shelon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

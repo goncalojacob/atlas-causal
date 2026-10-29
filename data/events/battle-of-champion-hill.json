@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-champion-hill",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q793922",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Champion Hill"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q793922"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Champion Hill\", revision 1380654426"
+    }
+  ],
+  "title": "Battle of Champion Hill",
+  "summary": "The English Wikipedia article \"Battle of Champion Hill\", at revision 1380654426, opens: \"The Battle of Champion Hill, also known as the Battle of Champion's Hill and the Battle of Baker's Creek, of May 16, 1863, was the pivotal battle in the Vicksburg campaign of the American Civil War (1861–1865). Union Army commander Major General Ulysses S. Grant and the Army of the Tennessee pursued the retreating Confederate States Army under Lieutenant General John C. Pemberton and defeated it twenty miles to the east of Vicksburg, Mississippi, leading inevitably to the Siege of Vicksburg and surrender.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q793922, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-05-16"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

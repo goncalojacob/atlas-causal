@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "southern-cross-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1636166",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Southern Cross Expedition",
+    "pt": "Expedição Southern Cross"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1636166"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Southern Cross Expedition\", revision 1341519754"
+    }
+  ],
+  "title": "Southern Cross Expedition",
+  "summary": "The English Wikipedia article \"Southern Cross Expedition\", at revision 1341519754, opens: \"The Southern Cross Expedition, otherwise known as the British Antarctic Expedition, 1898–1900, was the first British venture of the Heroic Age of Antarctic Exploration, and the forerunner of the more celebrated journeys of Robert Falcon Scott and Ernest Shackleton. The brainchild of the Norwegian explorer Carsten Borchgrevink, it was the first expedition to over-winter on the Antarctic mainland, the first to visit the Great Ice Barrier—later known as the Ross Ice Shelf—since Sir James Clark Ross's groundbreaking expedition of 1839 to 1843, and the first to effect a landing on the Barrier's surface. It also pioneered the use of dogs and sledges in Antarctic travel.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1636166, imported by tools/import/wikidata.mjs. The item's own description reads \"1898–1900 research expedition to Antarctica\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1900,
+    "date": "1898-08-22",
+    "endDate": "1900-04-01"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

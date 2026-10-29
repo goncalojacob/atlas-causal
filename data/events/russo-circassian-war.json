@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "russo-circassian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2737628",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Russo–Circassian War",
+    "pt": "Guerra russo-circassiana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2737628"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo–Circassian War\", revision 1377840359"
+    }
+  ],
+  "title": "Russo–Circassian War",
+  "summary": "The English Wikipedia article \"Russo–Circassian War\", at revision 1377840359, opens: \"The Russo–Circassian War, also known as the Russian invasion of Circassia, or termed by the Circassians as the Great War with the Tsar took place in the North Caucasus between July 1763 and June 1864. It began when the Russian Empire entered Circassia and occupied Mozdok, which prompted the Circassian people to organize a resistance movement to preserve their independence. Over the next century, the Imperial Russian Army expanded across the country until the last Circassian fighters were defeated in the Battle of Qbaada. It remains the longest war to have ever occurred in the Caucasus and in the history of Russia, as well as the longest and final war in the history of Circassia. Although it initially involved only Russia and Circassia, the conflict soon drew in a number of other Caucasian nations after they also became targets for Russian conquests, and it is consequently sometimes considered to be the western half of the Caucasian War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2737628, imported by tools/import/wikidata.mjs. The item's own description reads \"invasion and annexation of Circassia by the Russian Empire (1763-1864)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1711,
+    "end": 1864,
+    "endDate": "1864-05-21"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

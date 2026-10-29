@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "awa-uq-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2367644",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Awa'uq Massacre",
+    "pt": "Massacre de Awa'uq"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2367644"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Awa'uq Massacre\", revision 1374232802"
+    }
+  ],
+  "title": "Awa'uq Massacre",
+  "summary": "The English Wikipedia article \"Awa'uq Massacre\", at revision 1374232802, opens: \"The Awa'uq Massacre or Refuge Rock Massacre, or more recently known as the Wounded Knee of Alaska, was an attack and massacre of Koniag Alutiiq (Sugpiaq) people in August 1784 at Refuge Rock near Kodiak Island by Russian fur trader Grigory Shelekhov and 130 armed Russian men and cannoneers of his Shelikhov-Golikov Company.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2367644, imported by tools/import/wikidata.mjs. The item's own description reads \"1784 massacre in Alaska\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1784,
+    "end": 1784,
+    "date": "1784-08-14"
+  },
+  "place": "alaska-q797",
+  "region": null,
+  "regionNote": null,
+  "category": "death",
+  "actors": []
+}

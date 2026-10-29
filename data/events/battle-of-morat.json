@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-morat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q688502",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Morat"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q688502"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Morat\", revision 1370269840"
+    }
+  ],
+  "title": "Battle of Morat",
+  "summary": "The English Wikipedia article \"Battle of Morat\", at revision 1370269840, opens: \"The Battle of Morat ( took place during the Burgundian Wars that was fought on 22 June 1476 between Charles the Bold, the Duke of Burgundy, and a Swiss Confederation army at Morat, about 30 kilometres from Bern. It was the second major engagement of the Burgundian Wars, and ended in a crippling defeat for Charles the Bold. The severity of the losses permanently crippled the Burgundian army and their military efforts.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q688502, imported by tools/import/wikidata.mjs. The item's own description reads \"Swiss victory in the Burgundian Wars, 22 June 1476\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1476,
+    "end": 1476,
+    "date": "1476-06-22"
+  },
+  "place": "murten",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "burgundian-wars"
+}

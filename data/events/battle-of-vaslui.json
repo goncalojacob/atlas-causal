@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-vaslui",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1073358",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Vaslui"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1073358"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vaslui\", revision 1370592221"
+    }
+  ],
+  "title": "Battle of Vaslui",
+  "summary": "The English Wikipedia article \"Battle of Vaslui\", at revision 1370592221, opens: \"The Battle of Vaslui was a battle that was fought on 10 January 1475, between Stephen III of Moldavia and the Ottoman governor of Rumelia, Hadım Suleiman Pasha. The battle took place at Podul Înalt, near the town of Vaslui, in Moldavia. The Ottoman troops numbered up to 30,000 or 120,000, facing about 40,000 Moldavian troops, plus smaller numbers of allied and mercenary troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1073358, imported by tools/import/wikidata.mjs. The item's own description reads \"battle between Stephen III of Moldavia and the Ottoman governor of Rumelia, Hadım Suleiman Pasha\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1475,
+    "end": 1475,
+    "date": "1475-01-10"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

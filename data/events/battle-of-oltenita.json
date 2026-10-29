@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-oltenita",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q601152",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Oltenița",
+    "pt": "Batalha de Oltenitza"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q601152"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Oltenița\", revision 1370452163"
+    }
+  ],
+  "title": "Battle of Oltenița",
+  "summary": "The English Wikipedia article \"Battle of Oltenița\", at revision 1370452163, opens: \"The Battle of Oltenița was fought on 4 November 1853\nand was the first engagement of the Crimean War. In this battle an Ottoman army under the command of Omar Pasha was defending its fortified positions from the Russian forces led by General Peter Dannenberg, until the Russians were ordered to withdraw. The Russian attack was called off just when they reached the Ottoman fortifications, and they retreated in good order, but suffered heavy losses. The Turks held their positions, but did not pursue the enemy, and later retreated to the other side of Danube.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q601152, imported by tools/import/wikidata.mjs. The item's own description reads \"1853 battle of the crimean war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1853,
+    "end": 1853,
+    "date": "1853-11-04"
+  },
+  "place": "oltenita",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "crimean-war"
+}
