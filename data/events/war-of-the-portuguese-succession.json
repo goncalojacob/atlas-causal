@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "war-of-the-portuguese-succession",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3298746",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "War of the Portuguese Succession",
+    "pt": "Guerra da Sucessão Portuguesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3298746"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Portuguese Succession\", revision 1377783908"
+    }
+  ],
+  "title": "War of the Portuguese Succession",
+  "summary": "The English Wikipedia article \"War of the Portuguese Succession\", at revision 1377783908, opens: \"The War of the Portuguese Succession, a result of the impending extinction of the Portuguese royal line after the Battle of Alcácer Quibir and the ensuing Portuguese succession crisis of 1580, was fought from 1580 to 1583 between the two main claimants to the Portuguese throne: António, Prior of Crato, proclaimed in several towns as King of Portugal, and his first cousin Philip II of Spain, who eventually succeeded in claiming the crown, reigning as Philip I of Portugal.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3298746, imported by tools/import/wikidata.mjs. The item's own description reads \"1580-1583 armed conflict in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1580,
+    "end": 1583
+  },
+  "place": "portugal-q45",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

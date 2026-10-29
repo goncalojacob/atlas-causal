@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "peace-of-ales",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1533027",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Peace of Alès",
+    "pt": "Paz de Alès"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1533027"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peace of Alès\", revision 1336775771"
+    }
+  ],
+  "title": "Peace of Alès",
+  "summary": "The English Wikipedia article \"Peace of Alès\", at revision 1336775771, opens: \"The Peace of Alais, also known as the Edict of Alès or the Edict of Grace, was a treaty negotiated by Cardinal Richelieu with Huguenot leaders and signed by King Louis XIII of France on 28 June 1629. It confirmed the basic religious principles of the Edict of Nantes but differed in that it contained additional clauses that stated that the Huguenots no longer had political rights and further demanded for them to relinquish all cities and fortresses immediately.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1533027, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1629,
+    "end": 1629,
+    "date": "1629-06-28"
+  },
+  "place": "ledignan",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "huguenot-rebellions"
+}

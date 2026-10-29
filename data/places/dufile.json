@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "dufile",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5312410",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Dufile"
+  },
+  "sources": [],
+  "names": [
+    "Dufile"
+  ],
+  "where": {
+    "lon": 31.92361111111111,
+    "lat": 3.563888888888889,
+    "precision": "city",
+    "label": "Dufile"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "lipka-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q6556526",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Lipka rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6556526"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lipka rebellion\", revision 1370626904"
+    }
+  ],
+  "title": "Lipka rebellion",
+  "summary": "The English Wikipedia article \"Lipka rebellion\", at revision 1370626904, opens: \"The Lipka rebellion was a mutiny from 1672 of several cavalry chorągwie (regiments) of Lipka Tatars, who had been serving in the forces of the Polish–Lithuanian Commonwealth since the 14th century. The immediate cause of the rebellion was overdue pay, although increasing restrictions on their established privileges and religious freedom also played a role.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6556526, imported by tools/import/wikidata.mjs. The item's own description reads \"successful rebellion in Eastern Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1672,
+    "end": 1672
+  },
+  "place": "podolia",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "polish-ottoman-war-1672-1676"
+}

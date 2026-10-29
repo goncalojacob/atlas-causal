@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "peace-of-brzesc-kujawski",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1456425",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Peace of Brześć Kujawski"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1456425"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peace of Brześć Kujawski\", revision 1352758752"
+    }
+  ],
+  "title": "Peace of Brześć Kujawski",
+  "summary": "The English Wikipedia article \"Peace of Brześć Kujawski\", at revision 1352758752, opens: \"Peace of Brześć Kujawski was a peace treaty signed on December 31, 1435, in Brześć Kujawski that ended the Polish–Teutonic War (1431–1435). The treaty was signed in the aftermath of the Livonian Order's defeat at the hands of the allied Polish-Lithuanian force in the Battle of Wiłkomierz. The Teutonic Knights agreed to cease their support to Švitrigaila and in the future to support only Grand Dukes properly elected jointly by Poland and Lithuania. The treaty did not change borders determined by the Treaty of Melno in 1422. The Peace of Brześć Kujawski showed that Teutonic Knights lost their universal missionary status. Teutonic and Livonian Order no longer interfered with Polish–Lithuanian affairs; instead Poland and Lithuania involved themselves in the Thirteen Years' War, the civil war in Prussia that tore it in half.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1456425, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1435,
+    "end": 1435,
+    "date": "1435-12-31"
+  },
+  "place": "brzesc-kujawski",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

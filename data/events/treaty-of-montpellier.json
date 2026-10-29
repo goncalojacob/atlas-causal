@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-montpellier",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3536839",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Montpellier"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3536839"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Montpellier\", revision 1367727077"
+    }
+  ],
+  "title": "Treaty of Montpellier",
+  "summary": "The English Wikipedia article \"Treaty of Montpellier\", at revision 1367727077, opens: \"The Treaty of Montpellier was signed in Montpellier, France on 18 October 1622 between François de Bonne, Duke of Lesdiguières, on behalf of King Louis XIII and Duke Henry II of Rohan. The treaty followed the siege of Montpellier and ended hostilities between French royalists and the Huguenots. It confirmed the religious tenets of the Edict of Nantes and pardoned Rohan, but reduced the number of Huguenot places de sûreté to two: in La Rochelle and Montauban. The Huguenots would have to raze their other fortifications. They also would thenceforth be forbidden from holding their general assemblies and synods.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3536839, imported by tools/import/wikidata.mjs. The item's own description reads \"1622 treaty between France and the Huguenots\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1622,
+    "end": 1622,
+    "date": "1622-10-18"
+  },
+  "place": "montpellier",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

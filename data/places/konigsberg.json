@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "konigsberg",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4120832",
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Königsberg",
+    "pt": "Königsberg"
+  },
+  "sources": [],
+  "names": [
+    "Königsberg"
+  ],
+  "where": {
+    "lon": 20.509305555555557,
+    "lat": 54.71147222222222,
+    "precision": "point",
+    "label": "Königsberg"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

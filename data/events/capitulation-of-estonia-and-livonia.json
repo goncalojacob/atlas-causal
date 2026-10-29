@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "capitulation-of-estonia-and-livonia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q611682",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Capitulation of Estonia and Livonia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q611682"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capitulation of Estonia and Livonia\", revision 1368931390"
+    }
+  ],
+  "title": "Capitulation of Estonia and Livonia",
+  "summary": "The English Wikipedia article \"Capitulation of Estonia and Livonia\", at revision 1368931390, opens: \"With the Capitulation of Estonia and Livonia in 1710 the Swedish dominions Estonia and Livonia were integrated into the Russian Empire following their conquest during the Great Northern War. The Livonian nobility and the city of Riga capitulated on 4 July (O.S.) / 15 July 1710 (N.S.), Pernau (Pärnu) in August, and the Estonian nobility and the city of Reval (Tallinn) on 29 September (O.S.) / 10 October (N.S.). Russia left the local institutions in place and confirmed the traditional privileges of the German nobles and burghers as was established in Privilegium Sigismundi Augusti, especially with respect to the Protestant faith. The land reform of the so-called reduction which had been introduced by the Swedish king Charles XI, and transformed many serfs to subjects of the Crown, was reversed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q611682, imported by tools/import/wikidata.mjs. The item's own description reads \"1710 peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1710,
+    "end": 1710,
+    "date": "1710-07-15"
+  },
+  "place": "riga",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

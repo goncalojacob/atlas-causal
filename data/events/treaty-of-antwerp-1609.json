@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-antwerp-1609",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3536729",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Antwerp (1609)",
+    "pt": "Tratado de Antuérpia (1609)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3536729"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Antwerp (1609)\", revision 1068652472"
+    }
+  ],
+  "title": "Treaty of Antwerp (1609)",
+  "summary": "The English Wikipedia article \"Treaty of Antwerp (1609)\", at revision 1068652472, opens: \"The Treaty of Antwerp, which initiated the Twelve Years' Truce, was an armistice signed in Antwerp on 9 April 1609 between Spain and the Netherlands, creating the major break in hostilities during the Eighty Years' War for independence conducted by the Seventeen Provinces in the Low Countries.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3536729, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1609,
+    "end": 1609
+  },
+  "place": "antwerp",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

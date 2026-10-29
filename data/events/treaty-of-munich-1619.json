@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "treaty-of-munich-1619",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7837158",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Munich (1619)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837158"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Munich (1619)\", revision 1277449281"
+    }
+  ],
+  "title": "Treaty of Munich (1619)",
+  "summary": "The English Wikipedia article \"Treaty of Munich (1619)\", at revision 1277449281, opens: \"The Treaty of Munich was signed on 8 October 1619 in Munich between Holy Roman Emperor Ferdinand II and Duke Maximilian of Bavaria. Spanish ambassador Oñate persuaded Ferdinand to grant Maximilian any part of the Electorate of the Palatinate to occupy, as well as the Elector title of Frederick V. Moreover, Oñate exceeded his duties by guaranteeing Ferdinand Spanish support in dealing with the Bohemian rebels. Based on the terms of the treaty, Maximilian, leader of the Catholic League, made his Bavarian forces available to Emperor Ferdinand. In return, Maximilian was granted territories in the Palatine in order to maintain his forces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837158, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty signed 1619 in Munich between Holy Roman Emperor Ferdinand II and Duke Maximilian of Bavaria\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1619,
+    "end": 1619
+  },
+  "place": "munich",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

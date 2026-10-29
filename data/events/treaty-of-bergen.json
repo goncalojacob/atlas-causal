@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-bergen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q17750244",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Bergen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17750244"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Bergen\", revision 1200802598"
+    }
+  ],
+  "title": "Treaty of Bergen",
+  "summary": "The English Wikipedia article \"Treaty of Bergen\", at revision 1200802598, opens: \"Treaty of Bergen, signed on 29 August 1450 in Bergen, between Norway and Denmark. The agreement was in many ways a continuation of the Kalmar Union founded in 1397, between Norway, Denmark and Sweden, while Norway and Denmark had been in a personal union with a common king since 1380. The Bergen Treaty stipulated that Norway and Denmark should belong together forever. The choice of king was to be made jointly, and the first king elected was Christian I, from the House of Oldenburg. Furthermore, the kingdoms were to be equal and self-governed. The latter meant that the Norwegian National Council continued its work of governing the country, so that Norway retained a large degree of independence. The treaty lasted for 87 years, and ended when king Christian III in 1537 did a Coup d'état, and made Norway a puppet kingdom.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17750244, imported by tools/import/wikidata.mjs. The item's own description reads \"1450 treaty between Norway and Denmark\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1450,
+    "end": 1450,
+    "date": "1450-08-29"
+  },
+  "place": "bergen",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

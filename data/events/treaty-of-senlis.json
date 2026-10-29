@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-senlis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q693070",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Senlis"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q693070"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Senlis\", revision 1373325455"
+    }
+  ],
+  "title": "Treaty of Senlis",
+  "summary": "The English Wikipedia article \"Treaty of Senlis\", at revision 1373325455, opens: \"The Treaty of Senlis concerning the Burgundian succession was signed at the French city of Senlis on 23 May 1493, between King Charles VIII of France and Maximilian I, who was King of the Romans and future Holy Roman Emperor and acted on behalf of his young son Philip the Handsome, the Habsburg claimant to the Burgundian inheritance. The treaty contained 48 clauses dealing with various political, dynastic and territorial questions that had been addressed by the Treaty of Arras (1482).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q693070, imported by tools/import/wikidata.mjs. The item's own description reads \"1493 treaty between Austria and France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1493,
+    "end": 1493,
+    "date": "1493-05-23"
+  },
+  "place": "shenley",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

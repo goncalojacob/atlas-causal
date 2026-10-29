@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "tuyen-quang-city",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q33389",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Tuyên Quang (city)",
+    "pt": "Tuyen Quang (cidade)"
+  },
+  "sources": [],
+  "names": [
+    "Tuyên Quang",
+    "Tuyên Quang (city)",
+    "Tuyen Quang (cidade)"
+  ],
+  "where": {
+    "lon": 105.21564,
+    "lat": 21.82806,
+    "precision": "city",
+    "label": "Tuyên Quang (city)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

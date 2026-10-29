@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "montmartre-abbey",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q14397431",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Montmartre Abbey",
+    "pt": "Abadia de Montmartre"
+  },
+  "sources": [],
+  "names": [
+    "Royal Abbey of Montmartre",
+    "Abadia de Montmartre",
+    "Montmartre Abbey"
+  ],
+  "where": {
+    "lon": 2.34,
+    "lat": 48.888,
+    "precision": "point",
+    "label": "Montmartre Abbey"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

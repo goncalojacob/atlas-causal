@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-ribe",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q478059",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Ribe",
+    "pt": "Tratado de Ribe"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q478059"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Ribe\", revision 1367689613"
+    }
+  ],
+  "title": "Treaty of Ribe",
+  "summary": "The English Wikipedia article \"Treaty of Ribe\", at revision 1367689613, opens: \"The Treaty of Ribe was a proclamation at Ribe made in 1460 by King Christian I of Denmark to a number of Holsatian nobles enabling himself to become Count of Holstein and gain control of the Duchy of Schleswig, on Denmark's southern border. The most famous line of the proclamation was that the Danish Duchy of Schleswig and the County of Holstein within the Holy Roman Empire, should now be, in the original Middle Low German language, Up Ewig Ungedeelt, or \"Forever Undivided\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q478059, imported by tools/import/wikidata.mjs. The item's own description reads \"1460 proclamation by King Christian I of Denmark\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1460,
+    "end": 1460,
+    "date": "1460-03-05"
+  },
+  "place": "ribe",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

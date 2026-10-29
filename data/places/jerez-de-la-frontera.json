@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "jerez-de-la-frontera",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q12303",
+  "sitelinks": {
+    "count": 87,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Jerez de la Frontera",
+    "pt": "Jerez de la Frontera"
+  },
+  "sources": [],
+  "names": [
+    "Jerez de la Frontera"
+  ],
+  "where": {
+    "lon": -6.1166666666667,
+    "lat": 36.7,
+    "precision": "city",
+    "label": "Jerez de la Frontera"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

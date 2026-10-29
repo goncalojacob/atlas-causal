@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-barcelona-1529",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q9089606",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Barcelona (1529)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q9089606"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Barcelona (1529)\", revision 1356816987"
+    }
+  ],
+  "title": "Treaty of Barcelona (1529)",
+  "summary": "The English Wikipedia article \"Treaty of Barcelona (1529)\", at revision 1356816987, opens: \"The Treaty of Barcelona was a pact of alliance between Holy Roman Emperor Charles V and Pope Clement VII that was signed in Barcelona on June 29, 1529.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q9089606, imported by tools/import/wikidata.mjs. The item's own description reads \"1529 alliance between Holy Roman Emperor Charles V and Pope Clement VII\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1529,
+    "end": 1529,
+    "date": "1529-06-29"
+  },
+  "place": "barcelona",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

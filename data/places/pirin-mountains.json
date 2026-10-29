@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "pirin-mountains",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q726158",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Pirin Mountains"
+  },
+  "sources": [],
+  "names": [
+    "Pirin",
+    "Pirin Mountains"
+  ],
+  "where": {
+    "lon": 23.4,
+    "lat": 41.777777777778,
+    "precision": "region",
+    "label": "Pirin Mountains"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

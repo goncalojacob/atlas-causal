@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "pomeranian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2471586",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Pomeranian War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2471586"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pomeranian War\", revision 1370704643"
+    }
+  ],
+  "title": "Pomeranian War",
+  "summary": "The English Wikipedia article \"Pomeranian War\", at revision 1370704643, opens: \"The Pomeranian War was a theatre of the Seven Years' War. The term is used to describe the fighting between Sweden and Prussia between 1757 and 1762 in Swedish Pomerania, Prussian Pomerania, northern Brandenburg and eastern Mecklenburg-Schwerin.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2471586, imported by tools/import/wikidata.mjs. The item's own description reads \"fighting between Sweden and Prussia between 1757 and 1762\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1762,
+    "date": "1757-09-13",
+    "endDate": "1762-05-22"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

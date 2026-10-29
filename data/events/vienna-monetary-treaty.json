@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "vienna-monetary-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7928317",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Vienna Monetary Treaty"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7928317"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Vienna Monetary Treaty\", revision 1376163380"
+    }
+  ],
+  "title": "Vienna Monetary Treaty",
+  "summary": "The English Wikipedia article \"Vienna Monetary Treaty\", at revision 1376163380, opens: \"The Vienna Monetary Treaty of 1857 was a treaty that set a currency standard for use across the German Zollverein states, Austria, and Liechtenstein. The official name of the treaty was Monetary Treaty Between the German States of 24 January 1857.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7928317, imported by tools/import/wikidata.mjs. The item's own description reads \"1857 currency treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1857,
+    "end": 1857,
+    "date": "1857-01-24"
+  },
+  "place": "vienna",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

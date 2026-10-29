@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-ong-ang-1885",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870894",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Đồng Đăng (1885)",
+    "pt": "Batalha de Đồng Đăng (1885)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870894"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Đồng Đăng (1885)\", revision 1370603011"
+    }
+  ],
+  "title": "Battle of Đồng Đăng (1885)",
+  "summary": "The English Wikipedia article \"Battle of Đồng Đăng (1885)\", at revision 1370603011, opens: \"The Battle of Đồng Đăng was an important French victory during the Sino-French War. The battle formed part of the French advance following the Lạng Sơn campaign and resulted in the temporary expulsion of Chinese forces from the Tonkin border region. After the battle, French forces destroyed the Gate of China at Zhennan Pass before withdrawing back toward Lạng Sơn. Three weeks later Chinese forces counterattacked, leading to the events that culminated in the Battle of Bang Bo. It is named after the town of Đồng Đăng, then in northern Tonkin, close to the border between China and Vietnam.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870894, imported by tools/import/wikidata.mjs. The item's own description reads \"1885 battle of the Sino-French War in northern Vietnam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-02-23"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "sino-french-war"
+}

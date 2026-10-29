@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "treaty-of-arras-1482",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q700156",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Arras (1482)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q700156"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Arras (1482)\", revision 1373325407"
+    }
+  ],
+  "title": "Treaty of Arras (1482)",
+  "summary": "The English Wikipedia article \"Treaty of Arras (1482)\", at revision 1373325407, opens: \"The Treaty of Arras was concluded at Arras on 23 December 1482 between King Louis XI of France and Archduke Maximilian I of Austria. It ended the first phase of the War of the Burgundian Succession, which had broken out in 1477 over the Burgundian inheritance, a collection of Valois-Burgundy domains that included the Burgundian Netherlands and several other possessions of the House of Valois-Burgundy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q700156, imported by tools/import/wikidata.mjs. The item's own description reads \"1482 treaty between Austria and France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1482,
+    "end": 1482
+  },
+  "place": "arras",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

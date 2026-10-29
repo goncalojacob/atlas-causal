@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-reichenbach-1790",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q348701",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Reichenbach (1790)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q348701"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Reichenbach (1790)\", revision 1349938103"
+    }
+  ],
+  "title": "Treaty of Reichenbach (1790)",
+  "summary": "The English Wikipedia article \"Treaty of Reichenbach (1790)\", at revision 1349938103, opens: \"The Treaty of Reichenbach was signed on July 27, 1790 in Reichenbach between Prussia under King Frederick William II and Austria under Leopold II, who was also Holy Roman Emperor. The two countries tried to settle their differences, specifically Leopold attempted to be conciliatory toward Prussia, as Austria and Russia had recently made gains against the Ottoman Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q348701, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1790,
+    "end": 1790,
+    "date": "1790-07-27"
+  },
+  "place": "reichenbach-upper-franconia",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

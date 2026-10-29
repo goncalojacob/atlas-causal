@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "shenley",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2490153",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Shenley"
+  },
+  "sources": [],
+  "names": [
+    "Shenley"
+  ],
+  "where": {
+    "lon": -0.282,
+    "lat": 51.692,
+    "precision": "city",
+    "label": "Shenley"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

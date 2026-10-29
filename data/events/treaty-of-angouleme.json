@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-angouleme",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7836965",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Angoulême"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7836965"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Angoulême\", revision 1381665083"
+    }
+  ],
+  "title": "Treaty of Angoulême",
+  "summary": "The English Wikipedia article \"Treaty of Angoulême\", at revision 1381665083, opens: \"The Treaty of Angoulême was signed on 30 April 1619 between Queen Marie de Medici and her son, King Louis XIII in Angoulême, France. The accord was negotiated by Cardinal Richelieu and it officially ended the civil war in France between supporters of Queen Marie and supporters of King Louis. Moreover, the agreement established lines of reconciliation between mother and son.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7836965, imported by tools/import/wikidata.mjs. The item's own description reads \"accord signed on 10 August 1619 between Queen Marie de Medici and her son, King Louis XIII of France in Angoulême\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1619,
+    "end": 1619,
+    "date": "1619-08-12"
+  },
+  "place": "angouleme",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

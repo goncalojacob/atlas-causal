@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-nemours",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q491951",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Nemours",
+    "pt": "Tratado de Nemours"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q491951"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Nemours\", revision 1380426427"
+    }
+  ],
+  "title": "Treaty of Nemours",
+  "summary": "The English Wikipedia article \"Treaty of Nemours\", at revision 1380426427, opens: \"The Treaty of Nemours were articles that were agreed upon in writing and signed in Nemours on 7 July 1585 between the Queen Mother, Catherine de' Medici, acting for the King, and representatives of the House of Guise, including the Duke of Lorraine. Catherine hastened to Saint-Maur-des-Fossés, where on 13 July the treaty was signed between King Henry III of France and the leaders of the Catholic League, including Henri, duc de Guise. The King was pressured by members of the Catholic League to sign the accord which was recognized by contemporaries as a renewal of the old French Wars of Religion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q491951, imported by tools/import/wikidata.mjs. The item's own description reads \"1585 treaty between King Henry III of France and the Catholic League\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1585,
+    "end": 1585,
+    "date": "1585-07-07"
+  },
+  "place": "nemours",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

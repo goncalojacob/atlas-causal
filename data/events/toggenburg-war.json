@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "toggenburg-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q690096",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Toggenburg War",
+    "pt": "Guerra de Toggenburg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q690096"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Toggenburg War\", revision 1370751117"
+    }
+  ],
+  "title": "Toggenburg War",
+  "summary": "The English Wikipedia article \"Toggenburg War\", at revision 1370751117, opens: \"The Toggenburg War, also known as the Second War of Villmergen or the Swiss Civil War of 1712, was a Swiss civil war during the Old Swiss Confederacy from 12 April to 11 August 1712. The Catholic \"inner cantons\" and the Imperial Abbey of Saint Gall fought the Protestant cantons of Bern and Zürich as well as the abbatial subjects of Toggenburg. The conflict was a religious war, a war for hegemony in the Confederacy and an uprising of subjects. The war ended in a Protestant victory and upset the balance of political power within the Confederacy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q690096, imported by tools/import/wikidata.mjs. The item's own description reads \"Swiss religious war in 1712\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1712,
+    "end": 1712,
+    "date": "1712-04-12",
+    "endDate": "1712-08-11"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

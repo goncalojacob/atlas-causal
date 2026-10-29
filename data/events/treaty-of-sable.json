@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-sable",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3536949",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Sablé"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3536949"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Sablé\", revision 1263689929"
+    }
+  ],
+  "title": "Treaty of Sablé",
+  "summary": "The English Wikipedia article \"Treaty of Sablé\", at revision 1263689929, opens: \"The Treaty of Sablé was signed on 20 August 1488 in Sablé, between Duke Francis II of Brittany and King Charles VIII of France. A year after the signing of Sablé, the treaty was reneged upon in favour of a tripartite alliance at Amiens with Burgundy and England. The town of Sablé was therefore chosen for a summit in 1488 when the duchy was forced to do homage to the King of France for the last time. The duchy was later merged into the kingdom. Francis, who, under the terms of the treaty, was integrated a member of the French nobility, died on 9 September 1488.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3536949, imported by tools/import/wikidata.mjs. The item's own description reads \"1488 treaty between Brittany and France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1488,
+    "end": 1488,
+    "date": "1488-08-19"
+  },
+  "place": "sable-sur-sarthe",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

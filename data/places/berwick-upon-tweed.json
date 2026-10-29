@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "berwick-upon-tweed",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q504678",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Berwick-upon-Tweed",
+    "pt": "Berwick-upon-Tweed"
+  },
+  "sources": [],
+  "names": [
+    "Berwick-upon-Tweed"
+  ],
+  "where": {
+    "lon": -2.0025,
+    "lat": 55.76916666666666,
+    "precision": "city",
+    "label": "Berwick-upon-Tweed"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

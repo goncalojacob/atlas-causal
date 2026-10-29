@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "safed",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q188336",
+  "sitelinks": {
+    "count": 59,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Safed",
+    "pt": "Safed"
+  },
+  "sources": [],
+  "names": [
+    "Safed"
+  ],
+  "where": {
+    "lon": 35.498333333333,
+    "lat": 32.965833333333,
+    "precision": "city",
+    "label": "Safed"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "nader-shah-s-sindh-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q22948432",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Nader Shah's Sindh expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q22948432"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nader Shah's Sindh expedition\", revision 1370629175"
+    }
+  ],
+  "title": "Nader Shah's Sindh expedition",
+  "summary": "The English Wikipedia article \"Nader Shah's Sindh expedition\", at revision 1370629175, opens: \"The Sindh expedition was one of Nader Shah's last campaigns during his war in northern India. After his victory over Muhammad Shah, the Mughal Emperor, Nader had compelled him to cede all the lands to the west of the Indus River. His return to this region from Delhi was honoured by all the governors of the newly annexed territories save for Khudayar Khan, ruler of Sindh, who was conspicuously absent despite being given a summons like the rest of the governors.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q22948432, imported by tools/import/wikidata.mjs. The item's own description reads \"1740 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1740,
+    "end": 1740,
+    "date": "1740-02"
+  },
+  "place": "hindu-kush",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "nader-shah-s-invasion-of-india"
+}

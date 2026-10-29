@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-schwedt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3823095",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Schwedt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3823095"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Schwedt\", revision 1318744855"
+    }
+  ],
+  "title": "Treaty of Schwedt",
+  "summary": "The English Wikipedia article \"Treaty of Schwedt\", at revision 1318744855, opens: \"The Treaty of Schwedt was concluded on 6 October 1713, during the Great Northern War, between the Tsardom of Russia and Brandenburg-Prussia in Schwedt. Brandenburg-Prussia was promised southern Swedish Pomerania up to the Peene river, which had just been conquered by Russia. In turn, Brandenburg-Prussia accepted Russia's annexation of Swedish Ingria, Estonia and Karelia, and agreed to pay 400,000 thalers to Russia. Southern Swedish Pomerania was to be administered by Brandenburg-Prussia until a definite ruling in a peace treaty was reached.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3823095, imported by tools/import/wikidata.mjs. The item's own description reads \"1713 treaty between Russia and Brandenburg\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1713,
+    "end": 1713,
+    "date": "1713-10-06"
+  },
+  "place": "schwedt",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

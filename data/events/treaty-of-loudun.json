@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-loudun",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7837128",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Loudun",
+    "pt": "Tratado de Loudun"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837128"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Loudun\", revision 1352351090"
+    }
+  ],
+  "title": "Treaty of Loudun",
+  "summary": "The English Wikipedia article \"Treaty of Loudun\", at revision 1352351090, opens: \"The Treaty of Loudun was signed on 3 May 1616 in Loudun, France, and ended the war that originally began as a power struggle between Queen Mother Marie de Medici's favorite Concino Concini and Henry II de Condé, the next in line for Louis XIII's throne. The war gained religious undertones when rebellious Huguenot princes joined Condé's revolt.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837128, imported by tools/import/wikidata.mjs. The item's own description reads \"1616 peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1616,
+    "end": 1616,
+    "date": "1616-05-03"
+  },
+  "place": "loudun",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
