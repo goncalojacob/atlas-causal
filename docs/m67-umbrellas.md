@@ -4618,3 +4618,23 @@ Writer B imported it from the planner's queue as item `2026-10-29-europe-169`, r
 ## Writer B, 2026-10-29: `first-bishops-war`, filed under `bishops-wars` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-171`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `second-battle-of-chuenpi`, filed under `first-opium-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-asia-027`, rank `child-of:first-opium-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-oshakan`, filed under `russo-persian-war-1826-1828` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-asia-033`, rank `child-of:russo-persian-war-1826-1828`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `siege-of-saati`, filed under `italo-ethiopian-war-of-1887-1889` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-africa-005`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-attock-1813`, filed under `afghan-sikh-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-026`, rank `child-of:afghan-sikh-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-ong-ang-1885`, filed under `sino-french-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-034`, rank `child-of:sino-french-war`. Its span and its subject put it inside the umbrella.

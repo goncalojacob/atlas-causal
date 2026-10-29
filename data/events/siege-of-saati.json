@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-saati",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2984870",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Saati"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2984870"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Saati\", revision 1381386305"
+    }
+  ],
+  "title": "Siege of Saati",
+  "summary": "The English Wikipedia article \"Siege of Saati\", at revision 1381386305, opens: \"The siege of Saati, also known as battle of Saati or combat of Saati, was the first battle of the Italo-Ethiopian War of 1887–1889 between Italian colonial troops and Ethiopian forces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2984870, imported by tools/import/wikidata.mjs. The item's own description reads \"first battle of the Italo-Ethiopian War of 1887–1889\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1887,
+    "end": 1887,
+    "date": "1887-01-25"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "italo-ethiopian-war-of-1887-1889"
+}

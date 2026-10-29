@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-dufile",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870934",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Dufile"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870934"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dufile\", revision 1370439457"
+    }
+  ],
+  "title": "Battle of Dufile",
+  "summary": "The English Wikipedia article \"Battle of Dufile\", at revision 1370439457, opens: \"The Battle of Dufile was fought at the fort of Dufile, Uganda on 28 November 1888 between Mahdist forces and a garrison loyal to the Khedive of Egypt. This followed a three-day siege in which the fort was penetrated and members of steamer crews were killed in the harbour. The 1,200 garrison troops were led by Selim Bey while 1,400 Mahdists were led by Umar Sālih. Between 210 and 250 Mahdists were killed and they then retreated from the area for a period.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870934, imported by tools/import/wikidata.mjs. The item's own description reads \"1888 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1888,
+    "end": 1888,
+    "date": "1888-11-28"
+  },
+  "place": "dufile",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mahdist-war"
+}

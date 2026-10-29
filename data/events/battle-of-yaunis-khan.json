@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-yaunis-khan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872776",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Yaunis Khan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872776"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Yaunis Khan\", revision 1370595396"
+    }
+  ],
+  "title": "Battle of Yaunis Khan",
+  "summary": "The English Wikipedia article \"Battle of Yaunis Khan\", at revision 1370595396, opens: \"The Battle of Yaunis Khan, also known as the Battle of Khan Yunis, was fought on October 28, 1516, between the Ottoman Empire and the Mamluk Sultanate. The Mamluk cavalry forces led by Janbirdi al-Ghazali attacked the Ottomans that were trying to cross Gaza on their way to Egypt. The Ottomans, led by Grand Vizier Hadım Sinan Pasha, were able to break the Egyptian Mamluk cavalry charge. Al-Ghazali was wounded during the confrontation, and the left-over Mamluk forces and their commander Al-Ghazali retreated to Cairo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872776, imported by tools/import/wikidata.mjs. The item's own description reads \"1516 battle during the Ottoman–Mamluk War of 1516-17\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1516,
+    "end": 1516,
+    "date": "1516-10-28"
+  },
+  "place": "khan-yunis",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-mamluk-war-1516-1517"
+}

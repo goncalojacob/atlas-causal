@@ -42130,6 +42130,629 @@
       },
       "refusals": [],
       "note": "Q7911959: none of its classes (Q8081) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-europe-179",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q378534: none of its classes (Q1393724) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-americas-008",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7200933: none of its classes (Q104783349) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-africa-002",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1276340: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-004",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2889955: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-006",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2984893: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-008",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2237506: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-010",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q27627676: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-012",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-segheneyti",
+        "edges": [],
+        "place": "segeneiti"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-014",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q111699632: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-016",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-habrah",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-018",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-dufile",
+        "edges": [],
+        "place": "dufile"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-017",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q700883: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-019",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "written",
+      "written": {
+        "event": "campaigns-of-nader-shah",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-021",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "written",
+      "written": {
+        "event": "abbas-i-s-kakhetian-and-kartlian-campaigns",
+        "edges": [],
+        "place": "kartli"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-023",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q18124347 is already the event \"battle-of-khyber-pass-1738\""
+    },
+    {
+      "id": "2026-10-29-asia-025",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4872549: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-027",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-chuenpi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-029",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "written",
+      "written": {
+        "event": "1517-safed-attacks",
+        "edges": [],
+        "place": "safed"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-031",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-urmia-1604",
+        "edges": [],
+        "place": "urmia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-033",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-oshakan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-035",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-tuyen-quang",
+        "edges": [],
+        "place": "tuyen-quang-city"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-037",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4871096: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-039",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-noheji",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-041",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ningpo",
+        "edges": [],
+        "place": "ningbo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-043",
+      "writer": "A",
+      "fired": "2026-10-29T13:27Z",
+      "status": "written",
+      "written": {
+        "event": "nader-shah-s-sindh-expedition",
+        "edges": [],
+        "place": "hindu-kush"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-007",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q538766: none of its classes (Q1371819) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-americas-009",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q932149: none of its classes (Q205418) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-africa-003",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1252684: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-005",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-saati",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-007",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q722047: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-009",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2888919: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-011",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q105616758: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-013",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4871605: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-015",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "written",
+      "written": {
+        "event": "action-of-15-august-1799",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-017",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "written",
+      "written": {
+        "event": "french-expedition-to-bejaia-1831",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-019",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-new-moscow",
+        "edges": [],
+        "place": "sagallo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-018",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-yaunis-khan",
+        "edges": [],
+        "place": "khan-yunis"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-020",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ganja-1826",
+        "edges": [],
+        "place": "ganja-azerbaijan"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-022",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4087414: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-024",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5935848 is already the event \"safavid-capture-of-tabriz-1603\""
+    },
+    {
+      "id": "2026-10-29-asia-026",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-attock-1813",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-028",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-mitsuji",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-030",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "written",
+      "written": {
+        "event": "lala-mustafa-pasha-s-caucasian-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-032",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ghazdewan",
+        "edges": [],
+        "place": "gijduvon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-034",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ong-ang-1885",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-036",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zhenhai",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-038",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4871920: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-040",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4087483: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-042",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-najafgarh",
+        "edges": [],
+        "place": "najafgarh"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-044",
+      "writer": "B",
+      "fired": "2026-10-29T13:32Z",
+      "status": "written",
+      "written": {
+        "event": "1517-hebron-attacks",
+        "edges": [],
+        "place": "hebron"
+      },
+      "refusals": []
     }
   ]
 }
