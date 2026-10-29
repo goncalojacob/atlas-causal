@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "peace-of-asti",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7157527",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Peace of Asti"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7157527"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peace of Asti\", revision 1360728013"
+    }
+  ],
+  "title": "Peace of Asti",
+  "summary": "The English Wikipedia article \"Peace of Asti\", at revision 1360728013, opens: \"The Peace of Asti was signed on 21 June 1615, between representatives of King Philip III of Spain and Charles Emmanuel I, Duke of Savoy. It was a truce during the War of the Montferrat Succession, but the conflict resumed and ended in 1617 with the treaties of Madrid and Pavia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7157527, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1615,
+    "end": 1615,
+    "date": "1615-06-21"
+  },
+  "place": "asti",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

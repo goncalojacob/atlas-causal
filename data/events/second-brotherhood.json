@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "second-brotherhood",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7443141",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Second Brotherhood"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7443141"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Brotherhood\", revision 1366221269"
+    }
+  ],
+  "title": "Second Brotherhood",
+  "summary": "The English Wikipedia article \"Second Brotherhood\", at revision 1366221269, opens: \"The Second Brotherhood was an uprising in the central regions of the Kingdom of Valencia of Habsburg Spain in 1693. The protesters named themselves agermanats after the germanies (\"brotherhoods\") or guilds of Valencia who had revolted in 1519 in the Revolt of the Brotherhoods, but the two revolts are quite different in their supporters and the social context in which they occurred. Rather than a revolt by middle-class guildsmen, the Second Brotherhood was a peasant revolt against high rents on farmland and crops. Additionally, the Second Brotherhood was resolved far faster and far more peaceably than the violence of the 1519 revolt in both the rebels' actions and the government's subsequent repression.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7443141, imported by tools/import/wikidata.mjs. The item's own description reads \"17th century uprising\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1693,
+    "end": 1693,
+    "date": "1693-07-09",
+    "endDate": "1693-07-15"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

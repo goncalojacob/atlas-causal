@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-munster-october-1648",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16680905",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Münster (October 1648)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16680905"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Münster (October 1648)\", revision 1354520028"
+    }
+  ],
+  "title": "Treaty of Münster (October 1648)",
+  "summary": "The English Wikipedia article \"Treaty of Münster (October 1648)\", at revision 1354520028, opens: \"The Treaty of Münster of 24 October 1648 was a treaty signed in Münster between, on the one hand, the Kingdom of France with regent cardinal Jules Mazarin for the underage king Louis XIV, plus his allies, and, on the other hand, Holy Roman Emperor Ferdinand III and his allies.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16680905, imported by tools/import/wikidata.mjs. The item's own description reads \"1648 peace treaty between France and the Holy Roman Empire signed on 24 October 1648 in Münster\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1648,
+    "end": 1648,
+    "date": "1648-10-24"
+  },
+  "place": "munster",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": [],
+  "parent": "peace-of-westphalia"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "elblag",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q104712",
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Elbląg",
+    "pt": "Elbląg"
+  },
+  "sources": [],
+  "names": [
+    "Elbląg"
+  ],
+  "where": {
+    "lon": 19.408888888889,
+    "lat": 54.152222222222,
+    "precision": "city",
+    "label": "Elbląg"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

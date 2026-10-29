@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-montmartre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q546581",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Montmartre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q546581"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Montmartre\", revision 1329682728"
+    }
+  ],
+  "title": "Treaty of Montmartre",
+  "summary": "The English Wikipedia article \"Treaty of Montmartre\", at revision 1329682728, opens: \"The Treaty of Montmartre was signed on 6 February 1662 between Louis XIV and Duke Charles IV of Lorraine. The treaty was negotiated by Hugues de Lionne. Based on the terms of the accord, Louis XIV was given control of the Duchy of Lorraine, and Charles IV's family would become princes in the French royal family. However, it failed to take hold and Charles IV publicly repudiated it.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q546581, imported by tools/import/wikidata.mjs. The item's own description reads \"1662 treaty between France and Lorraine\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1662,
+    "end": 1662,
+    "date": "1662-02-06"
+  },
+  "place": "montmartre-abbey",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-pyritz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7837201",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Pyritz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837201"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Pyritz\", revision 1046140146"
+    }
+  ],
+  "title": "Treaty of Pyritz",
+  "summary": "The English Wikipedia article \"Treaty of Pyritz\", at revision 1046140146, opens: \"The Treaty of Pyritz settled claims of the House of Pomerania and the House of Hohenzollern regarding the legal status and succession in the Duchy of Pomerania on 26 and 28 March 1493. John Cicero, Elector of Brandenburg of the Hohenzollern renounced the Electorate of Brandenburg's claims to hold the Pomeranian duchy as a fief on 26 March in Pyritz. In turn, Bogislaw X, Duke of Pomerania acknowledged Brandenburgian succession in his duchy in case of the extinction of his dynasty on 28 March in Königsberg. The treaty was the most important achievement of Bogislaw X's foreign policy. It was confirmed and amended when a final settlement between the two houses was reached in the Treaty of Grimnitz in 1529.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837201, imported by tools/import/wikidata.mjs. The item's own description reads \"1493 treaty between the Houses of Pomerania and Hohenzollern\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1493,
+    "end": 1493,
+    "date": "1493-03-28"
+  },
+  "place": "pyrzyce",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
