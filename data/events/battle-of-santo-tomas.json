@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-santo-tomas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872307",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Santo Tomas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872307"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Santo Tomas\", revision 1370588633"
+    }
+  ],
+  "title": "Battle of Santo Tomas",
+  "summary": "The English Wikipedia article \"Battle of Santo Tomas\", at revision 1370588633, opens: \"The Battle of Santo Tomas was fought on May 4, 1899, in Santo Tomas, Pampanga, during the Philippine–American War. During this battle, General Antonio Luna, the commander of the Filipino forces, was wounded. The Battle of Santo Tomas followed the Battle of Calumpit, wherein Luna's main force had fought that of General Arthur MacArthur, Jr. The battle resulted in a defeat of the Filipino forces around Santo Tomas and their withdrawal from the town.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872307, imported by tools/import/wikidata.mjs. The item's own description reads \"1899 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-05-04"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-american-war"
+}

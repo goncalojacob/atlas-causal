@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "naval-campaign-of-the-war-of-the-pacific",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q11680452",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Naval campaign of the War of the Pacific"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11680452"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Naval campaign of the War of the Pacific\", revision 1374620512"
+    }
+  ],
+  "title": "Naval campaign of the War of the Pacific",
+  "summary": "The English Wikipedia article \"Naval campaign of the War of the Pacific\", at revision 1374620512, opens: \"The Naval campaign of the War of the Pacific or Saltpeter war, was a naval campaign that took place from 1879 to 1884, involving Peru, and Chile, undertaken in order to support land forces in the Atacama Desert. Although the conflict lasted until 1884, the primary naval engagements occurred in 1879 and 1880. Due to the rough terrain and few transport methods it was imperative to have control of the ports in order to have a good supply source in the region. It resulted in a successful campaign by Chile, and the success of their land campaigns eventually led to a Chilean victory, which cut off Bolivia's access to the coast.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11680452, imported by tools/import/wikidata.mjs. The item's own description reads \"naval campaign that took place from 1879 to 1884\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-pacific"
+}

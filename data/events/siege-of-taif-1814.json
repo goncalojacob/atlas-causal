@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-taif-1814",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q120176362",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Taif (1814)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q120176362"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Taif (1814)\", revision 1371019867"
+    }
+  ],
+  "title": "Siege of Taif (1814)",
+  "summary": "The English Wikipedia article \"Siege of Taif (1814)\", at revision 1371019867, opens: \"In 1814, in a counter attack during the Second Campaign of the Ottoman–Wahhabi war, Abdullah bin Saud Al Saud's forces laid siege to the Ottoman held city of Taif. However, troops of Ottoman Egypt governor Muhammad Ali Pasha successfully lifted the siege.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q120176362, imported by tools/import/wikidata.mjs. The item's own description reads \"Saudi battle in Hejaz, 19th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-06"
+  },
+  "place": "taif",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-wahhabi-war"
+}

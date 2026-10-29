@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-goorumconda",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510054",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Goorumconda"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510054"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Goorumconda\", revision 1370741555"
+    }
+  ],
+  "title": "Siege of Goorumconda",
+  "summary": "The English Wikipedia article \"Siege of Goorumconda\", at revision 1370741555, opens: \"The Siege of Goorumconda was a series of conflicts fought at Goorumconda, a hill fort northeast of Bangalore, during the Third Anglo-Mysore War. An army of the Nizam of Hyderabad, assisted by British East India Company forces, captured the outer works of the town on 20 November, after a one-month siege. Following this, the British troops, which had stormed the works, turned the town over to a detachment of the Nizam's troops. These were surprised and slaughtered by a detachment of Mysorean troops led by Shezada Hyder Ali, the eldest son of Tipu Sultan, on 20 November 1791, who resupplied the fort. The works were again captured by the British on 25 December 1791.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510054, imported by tools/import/wikidata.mjs. The item's own description reads \"1791 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1791,
+    "end": 1791,
+    "date": "1791-09-15",
+    "endDate": "1791-12-25"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "third-anglo-mysore-war"
+}

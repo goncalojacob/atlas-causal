@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "independence-of-panama-from-spain",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q5558443",
+  "wikipedia": {
+    "en": "Independence of Panama from Spain",
+    "pt": "Independência do Panamá da Espanha"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5558443"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Independence of Panama from Spain\", revision 1361104966"
+    }
+  ],
+  "title": "Independence of Panama from Spain",
+  "summary": "The English Wikipedia article \"Independence of Panama from Spain\", at revision 1361104966, opens: \"Independence of Panama from Spain was accomplished through a bloodless revolt between 10 November 1821 and 28 November 1821. Seizing the opportunity, when the Spanish governor left Panama to march on rebellious Ecuadorians, José de Fábrega led a push for independence. Rebels in the small town of Villa de Los Santos made the first declaration for independence and the movement quickly spread to the capital. Fearing that Spain would retake the country, the rebels quickly joined the Republic of Gran Colombia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5558443, imported by tools/import/wikidata.mjs. The item's own description reads \"Independence after 1821 revolt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-11-10",
+    "endDate": "1821-11-28"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "spanish-american-wars-of-independence",
+  "category": "founding",
+  "actors": []
+}

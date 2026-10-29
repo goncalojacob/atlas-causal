@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-byssel",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q120398471",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Byssel"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q120398471"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Byssel\", revision 1376302275"
+    }
+  ],
+  "title": "Battle of Byssel",
+  "summary": "The English Wikipedia article \"Battle of Byssel\", at revision 1376302275, opens: \"The Battle of Byssel was the last major military engagement in the Second Campaign of the Ottoman–Wahhabi war. It was fought between Ottoman-Egyptian forces and Abdullah bin Saud's Wahhabi and Bedouin tribal forces in Byssel. The Ottomans decisivley won the battle and broke Abdullah bin Saud's power.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q120398471, imported by tools/import/wikidata.mjs. The item's own description reads \"ottoman battle in Hejaz, 19th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-01"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-wahhabi-war"
+}

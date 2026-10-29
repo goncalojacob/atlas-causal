@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cerro-gordo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888281",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Cerro Gordo",
+    "pt": "Batalha de Cerro Gordo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888281"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cerro Gordo\", revision 1376435267"
+    }
+  ],
+  "title": "Battle of Cerro Gordo",
+  "summary": "The English Wikipedia article \"Battle of Cerro Gordo\", at revision 1376435267, opens: \"The Battle of Cerro Gordo, or Battle of Sierra Gordo, was an engagement in the Mexican–American War on April 18, 1847. The battle saw Winfield Scott's United States troops outflank Antonio López de Santa Anna's larger Mexican army, driving it from a strong defensive position.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888281, imported by tools/import/wikidata.mjs. The item's own description reads \"1847 battle of the Mexican-American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1847,
+    "end": 1847,
+    "date": "1847-04-18"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "mexican-american-war"
+}

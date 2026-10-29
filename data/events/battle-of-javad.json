@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-javad",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q139711173",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Javad"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q139711173"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Javad\", revision 1375001895"
+    }
+  ],
+  "title": "Battle of Javad",
+  "summary": "The English Wikipedia article \"Battle of Javad\", at revision 1375001895, opens: \"The Battle of Javad was a military engagement of the Russo-Persian War (1826–1828), fought on 14 October [N.S. 26 October] 1826 at the confluence of the Kura and Aras rivers near the village of Javad. A Russian detachment under Colonel Pyotr Mishchenko defeated the combined forces of Mostafa Khan of Shirvan and accompanying Persian regular infantry, driving them from the right (Russian) bank of the Kura and effectively ending the Persian-backed military occupation of Shirvan that had begun in July 1826.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q139711173, imported by tools/import/wikidata.mjs. The item's own description reads \"1826 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1826,
+    "end": 1826,
+    "date": "1826-10-26"
+  },
+  "place": "suqovusan-sabirabad",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-persian-war-1826-1828"
+}

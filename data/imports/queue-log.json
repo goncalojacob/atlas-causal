@@ -43970,6 +43970,616 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-145",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gozo-1570",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-147",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-marilao-river",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-149",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-charasiab",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-151",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-the-french-folly-fort",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-153",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tellicherry",
+        "edges": [],
+        "place": "thalassery"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-155",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tieling",
+        "edges": [],
+        "place": "tieling"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-157",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "armenian-kurdish-conflicts-in-agr",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-159",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-karanovac",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-161",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q133850436: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-163",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-taif-1814",
+        "edges": [],
+        "place": "taif"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-165",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-paete",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-167",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-javad",
+        "edges": [],
+        "place": "suqovusan-sabirabad"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-169",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-suzhou",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-171",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-guilin-1647",
+        "edges": [],
+        "place": "guilin"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-011",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cerro-gordo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-013",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "mato-grosso-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-015",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-puebla-1863",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-017",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "venezuelan-independence",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-019",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "humaita-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-021",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "independence-of-central-america",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-023",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-tabasco",
+        "edges": [],
+        "place": "villahermosa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-025",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "independence-of-argentina",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-027",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "tarapaca-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-029",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "written",
+      "written": {
+        "event": "october-9-revolution",
+        "edges": [],
+        "place": "guayaquil"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-031",
+      "writer": "A",
+      "fired": "2026-10-29T14:28Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5742647: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-146",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "skirmish-at-cerigo-channel",
+        "edges": [],
+        "place": "kythira"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-148",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-santo-tomas",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-150",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kam-dakka",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-152",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4872960: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-154",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-arakere",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-156",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-qinghe",
+        "edges": [],
+        "place": "qinghe-district-tieling"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-158",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q24913278: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-29-asia-160",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4872341: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-asia-162",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-byssel",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-164",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-pagsanjan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-166",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-paye",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-168",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-macao-fort",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-170",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-goorumconda",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-010",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1780878: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-29-americas-012",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6123903: none of its classes (Q3337280) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-29-americas-014",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "independence-of-panama-from-spain",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-016",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "campaign-of-the-hills",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-018",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q21010243: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-29-americas-020",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "pikysyry-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-022",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-salvador-da-bahia",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-024",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "corrientes-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-026",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "independence-of-paraguay",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-028",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q8256513: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-030",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "written",
+      "written": {
+        "event": "naval-campaign-of-the-war-of-the-pacific",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-032",
+      "writer": "B",
+      "fired": "2026-10-29T14:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5742675: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   ]
 }
