@@ -5414,3 +5414,15 @@ Writer B imported it from the planner's queue as item `2026-10-29-americas-257`,
 ## Writer B, 2026-10-29: `1894-hong-kong-plague`, filed under `third-plague-pandemic` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-298`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `grand-harbour-of-malta-tornado`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-29-europe-520`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-29: `revolt-of-the-pitauds`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-29-europe-521`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-29: `1707-08-iceland-smallpox-epidemic`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-29-europe-518`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.

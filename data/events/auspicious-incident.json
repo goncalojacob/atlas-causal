@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "auspicious-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2665576",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Auspicious Incident",
+    "pt": "Evento auspicioso"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2665576"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Auspicious Incident\", revision 1381089790"
+    }
+  ],
+  "title": "Auspicious Incident",
+  "summary": "The English Wikipedia article \"Auspicious Incident\", at revision 1381089790, opens: \"The Auspicious Incident or Auspicious Event was the forced disbandment of the centuries-old janissary corps by Ottoman Sultan Mahmud II on 15 June 1826. Most of the 135,000 janissaries revolted against Mahmud II, and after the rebellion was suppressed, many of them were executed, exiled or imprisoned. The disbanded janissary corps was replaced with a more modern military force.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2665576, imported by tools/import/wikidata.mjs. The item's own description reads \"Disbandment of the Ottoman Janissary Corps\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1826,
+    "end": 1826,
+    "date": "1826-06-15"
+  },
+  "place": "istanbul",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

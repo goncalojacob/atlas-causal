@@ -53413,6 +53413,258 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-265",
+      "writer": "A",
+      "fired": "2026-10-29T20:07Z",
+      "status": "written",
+      "written": {
+        "event": "great-blizzard-of-1888",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-517",
+      "writer": "A",
+      "fired": "2026-10-29T20:07Z",
+      "status": "written",
+      "written": {
+        "event": "1899-porto-plague-outbreak",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-519",
+      "writer": "A",
+      "fired": "2026-10-29T20:07Z",
+      "status": "written",
+      "written": {
+        "event": "auspicious-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-520",
+      "writer": "A",
+      "fired": "2026-10-29T20:07Z",
+      "status": "written",
+      "written": {
+        "event": "grand-harbour-of-malta-tornado",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-521",
+      "writer": "A",
+      "fired": "2026-10-29T20:07Z",
+      "status": "written",
+      "written": {
+        "event": "revolt-of-the-pitauds",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-040",
+      "writer": "A",
+      "fired": "2026-10-29T20:07Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1276340: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-042",
+      "writer": "A",
+      "fired": "2026-10-29T20:07Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2984893: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-044",
+      "writer": "A",
+      "fired": "2026-10-29T20:07Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2237506: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-046",
+      "writer": "A",
+      "fired": "2026-10-29T20:07Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q27627676: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-048",
+      "writer": "A",
+      "fired": "2026-10-29T20:07Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q105616758: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-516",
+      "writer": "B",
+      "fired": "2026-10-29T20:12Z",
+      "status": "written",
+      "written": {
+        "event": "salt-tax-revolt",
+        "edges": [],
+        "place": "biscay"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-518",
+      "writer": "B",
+      "fired": "2026-10-29T20:12Z",
+      "status": "written",
+      "written": {
+        "event": "1707-08-iceland-smallpox-epidemic",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-266",
+      "writer": "B",
+      "fired": "2026-10-29T20:12Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q16153856: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-267",
+      "writer": "B",
+      "fired": "2026-10-29T20:12Z",
+      "status": "written",
+      "written": {
+        "event": "schoolhouse-blizzard",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-039",
+      "writer": "B",
+      "fired": "2026-10-29T20:12Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1252684: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-041",
+      "writer": "B",
+      "fired": "2026-10-29T20:12Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2889955: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-043",
+      "writer": "B",
+      "fired": "2026-10-29T20:12Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q722047: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-045",
+      "writer": "B",
+      "fired": "2026-10-29T20:12Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2888919: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-047",
+      "writer": "B",
+      "fired": "2026-10-29T20:12Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q111699632: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-africa-049",
+      "writer": "B",
+      "fired": "2026-10-29T20:12Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4871605: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   ]
 }

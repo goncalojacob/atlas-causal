@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "great-blizzard-of-1888",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q170652",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Great Blizzard of 1888",
+    "pt": "Grande Nevasca de 1888"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q170652"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Blizzard of 1888\", revision 1378632971"
+    }
+  ],
+  "title": "Great Blizzard of 1888",
+  "summary": "The English Wikipedia article \"Great Blizzard of 1888\", at revision 1378632971, opens: \"The Great Blizzard of 1888, also known as the Great Blizzard of '88 or the Great White Hurricane, was one of the most severe recorded blizzards and deadliest blizzard in American history. The storm paralyzed the East Coast from the Chesapeake Bay to Maine, as well as the Atlantic provinces of Canada. Snow from 10 to 58 inches fell in parts of New Jersey, New York, Massachusetts, Rhode Island, and Connecticut, and sustained winds of more than 45 miles per hour produced snowdrifts in excess of 50 feet (15 m). Railroads were shut down and people were confined to their homes for up to a week. Railway and telegraph lines were disabled, and this provided the impetus to move these pieces of infrastructure underground. Emergency services were also affected during this blizzard.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q170652, imported by tools/import/wikidata.mjs. The item's own description reads \"severe blizzard that hit the USA in March 1888\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1888,
+    "end": 1888
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}
