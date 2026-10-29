@@ -5934,3 +5934,35 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-29: `canal-mania`, bare
 
 Writer B imported it from the planner's queue as item `2026-10-29-europe-863`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-29: `1798-revolt-of-the-alfaiates`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-29-americas-401`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-29: `1852-french-second-empire-referendum`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-29-europe-902`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-29: `1870-french-constitutional-referendum`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-29-europe-913`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-29: `battle-of-gamonal`, filed under `peninsular-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-888`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `constitution-of-the-german-confederation`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-29-europe-894`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-29: `bedchamber-crisis`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-29-europe-897`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-29: `battle-of-pakozd`, filed under `hungarian-revolution-of-1848` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-899`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `thin-red-line-battle-of-balaclava`, filed under `battle-of-balaclava` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-903`, rank `list`. Its span and its subject put it inside the umbrella.

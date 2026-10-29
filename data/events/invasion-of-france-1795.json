@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "invasion-of-france-1795",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1190029",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Invasion of France (1795)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1190029"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of France (1795)\", revision 1370623970"
+    }
+  ],
+  "title": "Invasion of France (1795)",
+  "summary": "The English Wikipedia article \"Invasion of France (1795)\", at revision 1370623970, opens: \"The invasion of France was a major landing on the Quiberon peninsula by émigré, counter-revolutionary troops in support of the Chouannerie and Vendée Revolt, beginning on 23 June and finally definitively repulsed on 21 July. It aimed to raise the whole of western France in revolt, bring an end to the French Revolution and restore the French monarchy. The invasion failed; it had a major negative impact, dealing a disastrous blow to the royalist cause.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1190029, imported by tools/import/wikidata.mjs. The item's own description reads \"unsuccessful 1795 invasion by counter-revolutionaries and the United Kingdom to restore the monarchy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1795,
+    "end": 1795,
+    "date": "1795-07-21"
+  },
+  "place": "quiberon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}

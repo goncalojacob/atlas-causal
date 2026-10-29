@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "flensburg",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3798",
+  "sitelinks": {
+    "count": 93,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Flensburg",
+    "pt": "Flensburgo"
+  },
+  "sources": [],
+  "names": [
+    "Flensburg",
+    "Flensburgo"
+  ],
+  "where": {
+    "lon": 9.4366666666667,
+    "lat": 54.781944444444,
+    "precision": "city",
+    "label": "Flensburg"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

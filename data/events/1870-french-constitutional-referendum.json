@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1870-french-constitutional-referendum",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2317839",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1870 French constitutional referendum",
+    "pt": "Referendo Constitucional de 1870 (França)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2317839"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1870 French constitutional referendum\", revision 1296604246"
+    }
+  ],
+  "title": "1870 French constitutional referendum",
+  "summary": "The English Wikipedia article \"1870 French constitutional referendum\", at revision 1296604246, opens: \"A constitutional referendum was held in France on 8 May 1870. Voters were asked whether they approved of the liberal reforms made to the constitution since 1860 and passed by the Sénatus-consulte on 20 April 1870. The changes were approved by 83% of voters with an 81% turnout. However, France's defeat in the Franco-Prussian War caused the Empire to be abolished later that year. Although this was the ninth constitutional referendum in French history, it was the first to have more than 8% oppose the motion; four of the previous seven had officially gained 99% approval.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2317839, imported by tools/import/wikidata.mjs. The item's own description reads \"1870 constitutional referendum in France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1870,
+    "date": "1870-05-08"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
