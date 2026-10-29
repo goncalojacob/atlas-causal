@@ -600,6 +600,15 @@
         }
       ]
     },
+    "1896-manila-mutiny": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1896-sanriku-earthquake": {
       "from": "git",
       "versions": [
@@ -1781,6 +1790,15 @@
         }
       ]
     },
+    "battle-of-alapan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-albuera": {
       "from": "git",
       "versions": [
@@ -1814,6 +1832,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-aliaga": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2159,6 +2186,15 @@
         }
       ]
     },
+    "battle-of-barrio-yating": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-bautzen-1813": {
       "from": "git",
       "versions": [
@@ -2336,6 +2372,15 @@
         }
       ]
     },
+    "battle-of-binakayan-dalahican": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-blaauwberg": {
       "from": "git",
       "versions": [
@@ -2479,6 +2524,15 @@
         }
       ]
     },
+    "battle-of-budla-an": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-buena-vista": {
       "from": "git",
       "versions": [
@@ -2507,6 +2561,15 @@
       ]
     },
     "battle-of-cabezon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-calamba": {
       "from": "git",
       "versions": [
         {
@@ -2557,6 +2620,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-camalig": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4143,6 +4215,15 @@
         }
       ]
     },
+    "battle-of-imus": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-inkerman": {
       "from": "git",
       "versions": [
@@ -4347,6 +4428,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-kakarong-de-sili": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5337,6 +5427,15 @@
         }
       ]
     },
+    "battle-of-mount-puray": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-muddy-flat": {
       "from": "git",
       "versions": [
@@ -5541,6 +5640,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-noveleta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5793,6 +5901,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-perez-dasmarinas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6224,6 +6341,15 @@
         }
       ]
     },
+    "battle-of-sambat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-samos": {
       "from": "git",
       "versions": [
@@ -6242,6 +6368,15 @@
         }
       ]
     },
+    "battle-of-san-francisco-de-malabon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-san-jacinto": {
       "from": "git",
       "versions": [
@@ -6251,7 +6386,25 @@
         }
       ]
     },
+    "battle-of-san-jose-de-buenavista": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-san-juan-and-chorrillos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-san-juan-del-monte": {
       "from": "git",
       "versions": [
         {
@@ -6287,12 +6440,30 @@
         }
       ]
     },
+    "battle-of-san-mateo-and-montalban": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-san-patricio": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-san-rafael": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6324,6 +6495,15 @@
       ]
     },
     "battle-of-santo-tomas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-sapong-hills": {
       "from": "git",
       "versions": [
         {
@@ -6824,6 +7004,15 @@
         }
       ]
     },
+    "battle-of-talisay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-tamai": {
       "from": "git",
       "versions": [
@@ -6852,6 +7041,15 @@
       ]
     },
     "battle-of-tarutino": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-tayabas": {
       "from": "git",
       "versions": [
         {
@@ -7211,6 +7409,15 @@
         }
       ]
     },
+    "battle-of-tres-de-abril": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-tres-forcas": {
       "from": "git",
       "versions": [
@@ -7313,6 +7520,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-urumqi-1870": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -7702,6 +7918,15 @@
         }
       ]
     },
+    "battle-of-zapote-bridge-1897": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-zapote-river": {
       "from": "git",
       "versions": [
@@ -7748,6 +7973,15 @@
       ]
     },
     "battles-of-el-bruch": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battles-of-mount-pamaton": {
       "from": "git",
       "versions": [
         {
@@ -9113,6 +9347,24 @@
         }
       ]
     },
+    "cry-of-nueva-ecija": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "cry-of-tarlac": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "cuban-war-of-independence-1895-1898": {
       "from": "git",
       "versions": [
@@ -9846,6 +10098,15 @@
       ]
     },
     "first-battle-of-memphis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "first-battle-of-mount-pamaton": {
       "from": "git",
       "versions": [
         {
@@ -11325,6 +11586,15 @@
         }
       ]
     },
+    "japanese-occupation-of-gyeongbokgung": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "java-campaign-of-1806-1807": {
       "from": "git",
       "versions": [
@@ -11733,6 +12003,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "liberation-of-nueva-caceres-1898": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -12655,6 +12934,15 @@
         }
       ]
     },
+    "paknam-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "palatine-uprising": {
       "from": "git",
       "versions": [
@@ -13424,6 +13712,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "raid-on-paombong": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -14678,6 +14975,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "siege-of-fort-pilar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

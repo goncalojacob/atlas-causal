@@ -10718,6 +10718,12 @@
     },
     {
       "dissent": false,
+      "id": "1896-manila-mutiny",
+      "kind": "event",
+      "locator": "\"1896 Manila mutiny\", revision 1370278951"
+    },
+    {
+      "dissent": false,
       "id": "1896-sanriku-earthquake",
       "kind": "event",
       "locator": "\"1896 Sanriku earthquake\", revision 1379584584"
@@ -13004,6 +13010,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-alapan",
+      "kind": "event",
+      "locator": "\"Battle of Alapan\", revision 1370431422"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-albuera",
       "kind": "event",
       "locator": "\"Battle of Albuera\", revision 1373550746"
@@ -13055,6 +13067,12 @@
       "id": "battle-of-ali-masjid",
       "kind": "event",
       "locator": "\"Battle of Ali Masjid\", revision 1370431667"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-aliaga",
+      "kind": "event",
+      "locator": "\"Battle of Aliaga\", revision 1370431675"
     },
     {
       "dissent": false,
@@ -13460,6 +13478,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-barrio-yating",
+      "kind": "event",
+      "locator": "\"Battle of Barrio Yating\", revision 1370433442"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-baton-rouge-1779",
       "kind": "event",
       "locator": "\"Battle of Baton Rouge (1779)\", revision 1370433595"
@@ -13637,6 +13661,12 @@
       "id": "battle-of-bin-jawad",
       "kind": "event",
       "locator": "\"Battle of Bin Jawad\", revision 1375769079"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-binakayan-dalahican",
+      "kind": "event",
+      "locator": "\"Battle of Binakayan–Dalahican\", revision 1370107866"
     },
     {
       "dissent": false,
@@ -13874,6 +13904,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-budla-an",
+      "kind": "event",
+      "locator": "\"Battle of Budla-an\", revision 1370435487"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-buena-vista",
       "kind": "event",
       "locator": "\"Battle of Buena Vista\", revision 1378434013"
@@ -13958,6 +13994,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-calamba",
+      "kind": "event",
+      "locator": "\"Battle of Calamba\", revision 1370435822"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-calcinato",
       "kind": "event",
       "locator": "\"Battle of Calcinato\", revision 1370435843"
@@ -13997,6 +14039,12 @@
       "id": "battle-of-calumpit",
       "kind": "event",
       "locator": "\"Battle of Calumpit\", revision 1370435935"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-camalig",
+      "kind": "event",
+      "locator": "\"Battle of Camalig\", revision 1370435950"
     },
     {
       "dissent": false,
@@ -16292,6 +16340,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-imus",
+      "kind": "event",
+      "locator": "\"Battle of Imus\", revision 1370443701"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-in-delimane-2012",
       "kind": "event",
       "locator": "\"Battle of In-Delimane (2012)\", revision 1370443727"
@@ -16583,6 +16637,12 @@
       "id": "battle-of-kaiyuan",
       "kind": "event",
       "locator": "\"Battle of Kaiyuan\", revision 1370266567"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kakarong-de-sili",
+      "kind": "event",
+      "locator": "\"Battle of Kakarong de Sili\", revision 1375957789"
     },
     {
       "dissent": false,
@@ -18158,6 +18218,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mount-puray",
+      "kind": "event",
+      "locator": "\"Battle of Mount Puray\", revision 1370450618"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mount-tabor-1799",
       "kind": "event",
       "locator": "\"Battle of Mount Tabor (1799)\", revision 1373988420"
@@ -18479,6 +18545,12 @@
       "id": "battle-of-novara-1849",
       "kind": "event",
       "locator": "\"Battle of Novara (1849)\", revision 1370270954"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-noveleta",
+      "kind": "event",
+      "locator": "\"Battle of Noveleta\", revision 1370662822"
     },
     {
       "dissent": false,
@@ -18833,6 +18905,12 @@
       "id": "battle-of-pequereque",
       "kind": "event",
       "locator": "\"Battle of Pequereque\", revision 1376917957"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-perez-dasmarinas",
+      "kind": "event",
+      "locator": "\"Battle of Perez Dasmariñas\", revision 1370585870"
     },
     {
       "dissent": false,
@@ -19622,6 +19700,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sambat",
+      "kind": "event",
+      "locator": "\"Battle of Sambat\", revision 1372108205"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-samos",
       "kind": "event",
       "locator": "\"Battle of Samos\", revision 1370588247"
@@ -19646,9 +19730,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-san-francisco-de-malabon",
+      "kind": "event",
+      "locator": "\"Battle of San Francisco de Malabon\", revision 1370273558"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-san-jacinto",
       "kind": "event",
       "locator": "\"Battle of San Jacinto\", revision 1378726034"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-san-jose-de-buenavista",
+      "kind": "event",
+      "locator": "\"Battle of San Jose de Buenavista\", revision 1370588320"
     },
     {
       "dissent": false,
@@ -19661,6 +19757,12 @@
       "id": "battle-of-san-juan-and-chorrillos",
       "kind": "event",
       "locator": "\"Battle of San Juan and Chorrillos\", revision 1370588363"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-san-juan-del-monte",
+      "kind": "event",
+      "locator": "\"Battle of San Juan del Monte\", revision 1372099882"
     },
     {
       "dissent": false,
@@ -19682,9 +19784,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-san-mateo-and-montalban",
+      "kind": "event",
+      "locator": "\"Battle of San Mateo and Montalban\", revision 1372632305"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-san-patricio",
       "kind": "event",
       "locator": "\"Battle of San Patricio\", revision 1378642970"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-san-rafael",
+      "kind": "event",
+      "locator": "\"Battle of San Rafael\", revision 1370588444"
     },
     {
       "dissent": false,
@@ -19763,6 +19877,12 @@
       "id": "battle-of-sao-salvador",
       "kind": "event",
       "locator": "\"Battle of São Salvador\", revision 1370590283"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sapong-hills",
+      "kind": "event",
+      "locator": "\"Battle of Sapong Hills\", revision 1370588647"
     },
     {
       "dissent": false,
@@ -20444,6 +20564,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-talisay",
+      "kind": "event",
+      "locator": "\"Battle of Talisay\", revision 1371439860"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tamai",
       "kind": "event",
       "locator": "\"Battle of Tamai\", revision 1370590470"
@@ -20483,6 +20609,12 @@
       "id": "battle-of-tashihchiao",
       "kind": "event",
       "locator": "\"Battle of Tashihchiao\", revision 1370590643"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tayabas",
+      "kind": "event",
+      "locator": "\"Battle of Tayabas\", revision 1370590700"
     },
     {
       "dissent": false,
@@ -21152,6 +21284,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tres-de-abril",
+      "kind": "event",
+      "locator": "\"Battle of Tres de Abril\", revision 1370591494"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tres-forcas",
       "kind": "event",
       "locator": "\"Battle of Tres Forcas\", revision 1379525970"
@@ -21335,6 +21473,12 @@
       "id": "battle-of-urmia-1604",
       "kind": "event",
       "locator": "\"Battle of Urmia (1604)\", revision 1379886770"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-urumqi-1870",
+      "kind": "event",
+      "locator": "\"Battle of Ürümqi (1870)\", revision 1370602934"
     },
     {
       "dissent": false,
@@ -21974,6 +22118,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-zapote-bridge-1897",
+      "kind": "event",
+      "locator": "\"Battle of Zapote Bridge (1897)\", revision 1372006387"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-zapote-river",
       "kind": "event",
       "locator": "\"Battle of Zapote River\", revision 1370277315"
@@ -22115,6 +22265,12 @@
       "id": "battles-of-lexington-and-concord",
       "kind": "event",
       "locator": "\"Battles of Lexington and Concord\", revision 1376384213"
+    },
+    {
+      "dissent": false,
+      "id": "battles-of-mount-pamaton",
+      "kind": "event",
+      "locator": "\"Battles of Mount Pamaton\", revision 1370603705"
     },
     {
       "dissent": false,
@@ -24089,6 +24245,18 @@
       "id": "crossing-of-the-duna",
       "kind": "event",
       "locator": "\"Crossing of the Düna\", revision 1377273485"
+    },
+    {
+      "dissent": false,
+      "id": "cry-of-nueva-ecija",
+      "kind": "event",
+      "locator": "\"Cry of Nueva Ecija\", revision 1370614371"
+    },
+    {
+      "dissent": false,
+      "id": "cry-of-tarlac",
+      "kind": "event",
+      "locator": "\"Cry of Tarlac\", revision 1370614378"
     },
     {
       "dissent": false,
@@ -27338,6 +27506,12 @@
     },
     {
       "dissent": false,
+      "id": "japanese-occupation-of-gyeongbokgung",
+      "kind": "event",
+      "locator": "\"Japanese occupation of Gyeongbokgung\", revision 1370624907"
+    },
+    {
+      "dissent": false,
       "id": "jaragua-massacre",
       "kind": "event",
       "locator": "\"Jaragua massacre\", revision 1365112001"
@@ -27929,6 +28103,12 @@
       "id": "liberation-of-kalamata",
       "kind": "event",
       "locator": "\"Liberation of Kalamata\", revision 1370626787"
+    },
+    {
+      "dissent": false,
+      "id": "liberation-of-nueva-caceres-1898",
+      "kind": "event",
+      "locator": "\"Liberation of Nueva Cáceres (1898)\", revision 1375246895"
     },
     {
       "dissent": false,
@@ -29678,6 +29858,12 @@
     },
     {
       "dissent": false,
+      "id": "paknam-incident",
+      "kind": "event",
+      "locator": "\"Paknam incident\", revision 1370701827"
+    },
+    {
+      "dissent": false,
       "id": "palace-of-justice-siege",
       "kind": "event",
       "locator": "\"Palace of Justice siege\", revision 1374219418"
@@ -30743,6 +30929,12 @@
       "id": "raid-on-oyster-river",
       "kind": "event",
       "locator": "\"Raid on Oyster River\", revision 1374990608"
+    },
+    {
+      "dissent": false,
+      "id": "raid-on-paombong",
+      "kind": "event",
+      "locator": "\"Raid on Paombong\", revision 1374927375"
     },
     {
       "dissent": false,
@@ -32924,6 +33116,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-fort-pilar",
+      "kind": "event",
+      "locator": "\"Siege of Fort Pilar\", revision 1370741229"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-fort-st-jean",
       "kind": "event",
       "locator": "\"Siege of Fort St. Jean\", revision 1379967771"
@@ -33521,6 +33719,12 @@
       "id": "siege-of-montauban",
       "kind": "event",
       "locator": "\"Siege of Montauban\", revision 1370743622"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mosul-1743",
+      "kind": "event",
+      "locator": "\"Siege of Mosul (1743)\", revision 1381020942"
     },
     {
       "dissent": false,
@@ -38099,6 +38303,12 @@
       "id": "valtellina-war",
       "kind": "event",
       "locator": "\"Valtellina War\", revision 1370749053"
+    },
+    {
+      "dissent": false,
+      "id": "varvar-ali-pasha-s-revolt",
+      "kind": "event",
+      "locator": "\"Varvar Ali Pasha's Revolt\", revision 1371076193"
     },
     {
       "dissent": false,

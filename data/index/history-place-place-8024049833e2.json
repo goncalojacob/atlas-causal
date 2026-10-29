@@ -3104,6 +3104,15 @@
         }
       ]
     },
+    "calamba-laguna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "calcinato": {
       "from": "git",
       "versions": [
@@ -4879,6 +4888,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "dasmarinas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -7124,6 +7142,15 @@
         }
       ]
     },
+    "general-trias": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "geneseo-village-new-york": {
       "from": "git",
       "versions": [
@@ -7862,6 +7889,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "gyeongbokgung": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -8669,6 +8705,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "imus": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -13457,6 +13502,15 @@
         }
       ]
     },
+    "mosul": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "moudros": {
       "from": "git",
       "versions": [
@@ -17860,6 +17914,15 @@
         }
       ]
     },
+    "san-juan-metro-manila": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "san-juan-puerto-rico": {
       "from": "git",
       "versions": [
@@ -21221,6 +21284,15 @@
         }
       ]
     },
+    "urumqi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "ushant": {
       "from": "git",
       "versions": [
@@ -22710,6 +22782,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "zamboanga-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

@@ -2306,6 +2306,12 @@
     },
     {
       "dissent": false,
+      "id": "1896-manila-mutiny",
+      "kind": "event",
+      "locator": "Q16056918"
+    },
+    {
+      "dissent": false,
       "id": "1896-sanriku-earthquake",
       "kind": "event",
       "locator": "Q715495"
@@ -4706,6 +4712,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-alapan",
+      "kind": "event",
+      "locator": "Q4870242"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-albuera",
       "kind": "event",
       "locator": "Q689471"
@@ -4757,6 +4769,12 @@
       "id": "battle-of-ali-masjid",
       "kind": "event",
       "locator": "Q2237297"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-aliaga",
+      "kind": "event",
+      "locator": "Q4870262"
     },
     {
       "dissent": false,
@@ -5168,6 +5186,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-barrio-yating",
+      "kind": "event",
+      "locator": "Q16822566"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-baton-rouge-1779",
       "kind": "event",
       "locator": "Q2888231"
@@ -5345,6 +5369,12 @@
       "id": "battle-of-bin-jawad",
       "kind": "event",
       "locator": "Q588059"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-binakayan-dalahican",
+      "kind": "event",
+      "locator": "Q14542358"
     },
     {
       "dissent": false,
@@ -5576,6 +5606,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-budla-an",
+      "kind": "event",
+      "locator": "Q126721244"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-buena-vista",
       "kind": "event",
       "locator": "Q1808450"
@@ -5660,6 +5696,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-calamba",
+      "kind": "event",
+      "locator": "Q16822596"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-calcinato",
       "kind": "event",
       "locator": "Q698166"
@@ -5699,6 +5741,12 @@
       "id": "battle-of-calumpit",
       "kind": "event",
       "locator": "Q4870618"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-camalig",
+      "kind": "event",
+      "locator": "Q16822600"
     },
     {
       "dissent": false,
@@ -8006,6 +8054,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-imus",
+      "kind": "event",
+      "locator": "Q12966900"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-in-delimane-2012",
       "kind": "event",
       "locator": "Q15231507"
@@ -8297,6 +8351,12 @@
       "id": "battle-of-kaiyuan",
       "kind": "event",
       "locator": "Q29469176"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kakarong-de-sili",
+      "kind": "event",
+      "locator": "Q4871368"
     },
     {
       "dissent": false,
@@ -9860,6 +9920,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mosul-1745",
+      "kind": "event",
+      "locator": "Q22947522"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-motien-pass",
       "kind": "event",
       "locator": "Q2469370"
@@ -9881,6 +9947,12 @@
       "id": "battle-of-mount-longdon",
       "kind": "event",
       "locator": "Q4871802"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mount-puray",
+      "kind": "event",
+      "locator": "Q106610261"
     },
     {
       "dissent": false,
@@ -10217,6 +10289,12 @@
       "id": "battle-of-novara-1849",
       "kind": "event",
       "locator": "Q837787"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-noveleta",
+      "kind": "event",
+      "locator": "Q4871918"
     },
     {
       "dissent": false,
@@ -10571,6 +10649,12 @@
       "id": "battle-of-pequereque",
       "kind": "event",
       "locator": "Q4872017"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-perez-dasmarinas",
+      "kind": "event",
+      "locator": "Q4872016"
     },
     {
       "dissent": false,
@@ -11348,6 +11432,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sambat",
+      "kind": "event",
+      "locator": "Q24204936"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-samos",
       "kind": "event",
       "locator": "Q3394869"
@@ -11372,9 +11462,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-san-francisco-de-malabon",
+      "kind": "event",
+      "locator": "Q4872272"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-san-jacinto",
       "kind": "event",
       "locator": "Q841278"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-san-jose-de-buenavista",
+      "kind": "event",
+      "locator": "Q56063332"
     },
     {
       "dissent": false,
@@ -11387,6 +11489,12 @@
       "id": "battle-of-san-juan-and-chorrillos",
       "kind": "event",
       "locator": "Q3772977"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-san-juan-del-monte",
+      "kind": "event",
+      "locator": "Q4872284"
     },
     {
       "dissent": false,
@@ -11408,9 +11516,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-san-mateo-and-montalban",
+      "kind": "event",
+      "locator": "Q4872285"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-san-patricio",
       "kind": "event",
       "locator": "Q1186733"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-san-rafael",
+      "kind": "event",
+      "locator": "Q51169006"
     },
     {
       "dissent": false,
@@ -11489,6 +11609,12 @@
       "id": "battle-of-sao-salvador",
       "kind": "event",
       "locator": "Q4872479"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sapong-hills",
+      "kind": "event",
+      "locator": "Q16822703"
     },
     {
       "dissent": false,
@@ -12170,6 +12296,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-talisay",
+      "kind": "event",
+      "locator": "Q16822722"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tamai",
       "kind": "event",
       "locator": "Q604356"
@@ -12209,6 +12341,12 @@
       "id": "battle-of-tashihchiao",
       "kind": "event",
       "locator": "Q2409264"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tayabas",
+      "kind": "event",
+      "locator": "Q16822727"
     },
     {
       "dissent": false,
@@ -12872,6 +13010,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tres-de-abril",
+      "kind": "event",
+      "locator": "Q4872591"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tres-forcas",
       "kind": "event",
       "locator": "Q1497956"
@@ -13049,6 +13193,12 @@
       "id": "battle-of-urmia-1604",
       "kind": "event",
       "locator": "Q18385359"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-urumqi-1870",
+      "kind": "event",
+      "locator": "Q4438403"
     },
     {
       "dissent": false,
@@ -13688,6 +13838,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-zapote-bridge-1897",
+      "kind": "event",
+      "locator": "Q4872803"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-zapote-river",
       "kind": "event",
       "locator": "Q4872804"
@@ -13829,6 +13985,12 @@
       "id": "battles-of-lexington-and-concord",
       "kind": "event",
       "locator": "Q778010"
+    },
+    {
+      "dissent": false,
+      "id": "battles-of-mount-pamaton",
+      "kind": "event",
+      "locator": "Q134272435"
     },
     {
       "dissent": false,
@@ -15824,6 +15986,18 @@
     },
     {
       "dissent": false,
+      "id": "cry-of-nueva-ecija",
+      "kind": "event",
+      "locator": "Q5190436"
+    },
+    {
+      "dissent": false,
+      "id": "cry-of-tarlac",
+      "kind": "event",
+      "locator": "Q16828511"
+    },
+    {
+      "dissent": false,
       "id": "cuanza-river-campaign",
       "kind": "event",
       "locator": "Q130493316"
@@ -16961,6 +17135,12 @@
       "id": "first-battle-of-memphis",
       "kind": "event",
       "locator": "Q1387983"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-mount-pamaton",
+      "kind": "event",
+      "locator": "Q131696429"
     },
     {
       "dissent": false,
@@ -19106,6 +19286,12 @@
     },
     {
       "dissent": false,
+      "id": "japanese-occupation-of-gyeongbokgung",
+      "kind": "event",
+      "locator": "Q108523769"
+    },
+    {
+      "dissent": false,
       "id": "jaragua-massacre",
       "kind": "event",
       "locator": "Q6159472"
@@ -19733,6 +19919,12 @@
       "id": "liberation-of-kalamata",
       "kind": "event",
       "locator": "Q13628984"
+    },
+    {
+      "dissent": false,
+      "id": "liberation-of-nueva-caceres-1898",
+      "kind": "event",
+      "locator": "Q126454316"
     },
     {
       "dissent": false,
@@ -21500,6 +21692,12 @@
     },
     {
       "dissent": false,
+      "id": "paknam-incident",
+      "kind": "event",
+      "locator": "Q4924112"
+    },
+    {
+      "dissent": false,
       "id": "palace-of-justice-siege",
       "kind": "event",
       "locator": "Q829836"
@@ -22565,6 +22763,12 @@
       "id": "raid-on-oyster-river",
       "kind": "event",
       "locator": "Q14474392"
+    },
+    {
+      "dissent": false,
+      "id": "raid-on-paombong",
+      "kind": "event",
+      "locator": "Q21187956"
     },
     {
       "dissent": false,
@@ -24842,6 +25046,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-fort-pilar",
+      "kind": "event",
+      "locator": "Q16931487"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-fort-st-jean",
       "kind": "event",
       "locator": "Q1779428"
@@ -25451,6 +25661,12 @@
       "id": "siege-of-montauban",
       "kind": "event",
       "locator": "Q3072570"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mosul-1743",
+      "kind": "event",
+      "locator": "Q22947760"
     },
     {
       "dissent": false,
@@ -29903,6 +30119,12 @@
       "id": "valtellina-war",
       "kind": "event",
       "locator": "Q3778677"
+    },
+    {
+      "dissent": false,
+      "id": "varvar-ali-pasha-s-revolt",
+      "kind": "event",
+      "locator": "Q25477810"
     },
     {
       "dissent": false,

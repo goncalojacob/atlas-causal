@@ -2480,6 +2480,15 @@
         }
       ]
     },
+    "battle-of-mosul-1745": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-mount-tabor-1799": {
       "from": "git",
       "versions": [
@@ -6664,6 +6673,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "siege-of-mosul-1743": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
