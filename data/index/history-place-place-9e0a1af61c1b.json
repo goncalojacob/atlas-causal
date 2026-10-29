@@ -3280,6 +3280,15 @@
         }
       ]
     },
+    "castle-of-saint-george-cephalonia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "castrovillari": {
       "from": "git",
       "versions": [
@@ -5757,6 +5766,15 @@
         }
       ]
     },
+    "eutawville-south-carolina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "evian-les-bains": {
       "from": "git",
       "versions": [
@@ -6223,6 +6241,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "fort-saint-jean-quebec": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -10436,6 +10463,15 @@
         }
       ]
     },
+    "lexington-missouri": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "liaodong-peninsula": {
       "from": "git",
       "versions": [
@@ -12524,6 +12560,15 @@
         }
       ]
     },
+    "morris-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "mortefontaine": {
       "from": "git",
       "versions": [
@@ -13710,6 +13755,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "odisha": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -16690,6 +16744,15 @@
         }
       ]
     },
+    "san-lorenzo-santa-fe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "san-mateo-aragua": {
       "from": "git",
       "versions": [
@@ -18468,6 +18531,15 @@
         }
       ]
     },
+    "suzdal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "suzhou": {
       "from": "git",
       "versions": [
@@ -18538,6 +18610,15 @@
       ]
     },
     "sztumska-wies": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "tacna": {
       "from": "git",
       "versions": [
         {
@@ -19498,6 +19579,15 @@
         }
       ]
     },
+    "tsushima-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "tsushima-strait": {
       "from": "git",
       "versions": [
@@ -20342,6 +20432,15 @@
         {
           "first": true,
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "vyazma": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

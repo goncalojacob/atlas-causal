@@ -535,6 +535,15 @@
         }
       ]
     },
+    "armenian-liberation-struggle-1722-1730": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "atlantic-revolutions": {
       "from": "git",
       "versions": [
@@ -1182,6 +1191,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-eutaw-springs": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3783,6 +3801,15 @@
         }
       ]
     },
+    "edirne-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "estates-general-of-1789": {
       "from": "git",
       "versions": [
@@ -3982,6 +4009,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "fortification-of-dorchester-heights": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4496,6 +4532,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "java-war-1741-1743": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5585,6 +5630,24 @@
         }
       ]
     },
+    "siege-of-fort-st-jean": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-fort-ticonderoga-1777": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-fort-william-henry": {
       "from": "git",
       "versions": [
@@ -6134,6 +6197,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "sullivan-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

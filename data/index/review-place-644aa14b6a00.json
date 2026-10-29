@@ -453,7 +453,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "adrianople-vilayet",
       "kind": "place",
       "names": [
@@ -7655,7 +7655,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "callao",
       "kind": "place",
       "names": [
@@ -8443,6 +8443,34 @@
       "kind": "place",
       "names": [
         "Castillon-la-Bataille"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "castle-of-saint-george-cephalonia",
+      "kind": "place",
+      "names": [
+        "Fortress St. George",
+        "Castle of Saint George, Cephalonia"
       ],
       "origin": {
         "tool": "wikidata"
@@ -14311,7 +14339,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "epirus",
       "kind": "place",
       "names": [
@@ -14669,6 +14697,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "eutawville-south-carolina",
+      "kind": "place",
+      "names": [
+        "Eutawville",
+        "Eutawville, South Carolina"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -15738,6 +15794,34 @@
       "names": [
         "Fort Detroit",
         "Fort Pontchartrain du Détroit"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "fort-saint-jean-quebec",
+      "kind": "place",
+      "names": [
+        "Fort Saint-Jean",
+        "Fort Saint-Jean (Quebec)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -21159,7 +21243,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 5,
+      "degree": 6,
       "id": "istanbul",
       "kind": "place",
       "names": [
@@ -21828,7 +21912,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 78,
+      "degree": 80,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -21914,7 +21998,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 5,
+      "degree": 6,
       "id": "java",
       "kind": "place",
       "names": [
@@ -26613,6 +26697,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "lexington-missouri",
+      "kind": "place",
+      "names": [
+        "Lexington",
+        "Lexington, Missouri",
+        "Lexington (Missouri)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-23",
       "degree": 4,
       "id": "liaodong-peninsula",
@@ -30388,7 +30501,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 2,
+      "degree": 4,
       "id": "mexico-city",
       "kind": "place",
       "names": [
@@ -31557,7 +31670,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "montevideo",
       "kind": "place",
       "names": [
@@ -31821,6 +31934,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "morris-island",
+      "kind": "place",
+      "names": [
+        "Morris Island",
+        "Ilha Morris"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -32795,7 +32936,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "nagasaki",
       "kind": "place",
       "names": [
@@ -33705,7 +33846,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 3,
+      "degree": 5,
       "id": "new-york-state",
       "kind": "place",
       "names": [
@@ -34802,6 +34943,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "odisha",
+      "kind": "place",
+      "names": [
+        "Odisha",
+        "Orissa",
+        "Odixa"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -35559,7 +35729,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 24,
+      "degree": 26,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -40795,7 +40965,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 9,
+      "degree": 11,
       "id": "russian-empire-q34266",
       "kind": "place",
       "names": [
@@ -42026,6 +42196,35 @@
         "Rio San Juan (Nicarágua)",
         "San Juan River (Nicaragua)",
         "Rio São João (Nicarágua)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "san-lorenzo-santa-fe",
+      "kind": "place",
+      "names": [
+        "San Lorenzo",
+        "San Lorenzo, Santa Fe",
+        "San Lorenzo (Santa Fé)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -44639,7 +44838,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "south-dakota",
       "kind": "place",
       "names": [
@@ -46518,6 +46717,34 @@
         }
       ],
       "created": "2026-10-29",
+      "degree": 1,
+      "id": "suzdal",
+      "kind": "place",
+      "names": [
+        "Suzdal",
+        "Susdália"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
       "degree": 2,
       "id": "suzhou",
       "kind": "place",
@@ -46719,6 +46946,33 @@
       "kind": "place",
       "names": [
         "Sztumska Wieś"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "tacna",
+      "kind": "place",
+      "names": [
+        "Tacna"
       ],
       "origin": {
         "tool": "wikidata"
@@ -49274,6 +49528,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "tsushima-island",
+      "kind": "place",
+      "names": [
+        "Tsushima Island",
+        "Ilha de Tsushima",
+        "Tsushima (ilha)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 2,
       "id": "tsushima-strait",
@@ -51113,7 +51396,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 6,
+      "degree": 7,
       "id": "virginia-q1370",
       "kind": "place",
       "names": [
@@ -51318,6 +51601,34 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "vyazma",
+      "kind": "place",
+      "names": [
+        "Vyazma",
+        "Viazma"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,

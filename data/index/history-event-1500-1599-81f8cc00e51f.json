@@ -3615,6 +3615,15 @@
         }
       ]
     },
+    "pax-hispanica": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "peace-of-augsburg": {
       "from": "git",
       "versions": [
@@ -4850,6 +4859,15 @@
         }
       ]
     },
+    "siege-of-the-castle-of-saint-george": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-tottori": {
       "from": "git",
       "versions": [
@@ -5416,6 +5434,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "transformation-of-the-ottoman-empire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

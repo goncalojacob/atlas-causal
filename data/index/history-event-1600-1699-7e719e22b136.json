@@ -1485,6 +1485,15 @@
         }
       ]
     },
+    "battle-of-penghu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-port-royal-1690": {
       "from": "git",
       "versions": [
