@@ -47,6 +47,30 @@
         }
       ]
     },
+    "1689-boston-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        },
+        {
+          "fields": [
+            "created",
+            "parent",
+            "sitelinks"
+          ],
+          "on": "2026-10-28"
+        },
+        {
+          "fields": [
+            "created",
+            "sitelinks"
+          ],
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1693-sicily-earthquake": {
       "from": "git",
       "versions": [

@@ -5428,7 +5428,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 3,
+      "degree": 4,
       "id": "boston",
       "kind": "place",
       "names": [
@@ -44508,6 +44508,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "valletta",
+      "kind": "place",
+      "names": [
+        "Valletta",
+        "Valeta"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

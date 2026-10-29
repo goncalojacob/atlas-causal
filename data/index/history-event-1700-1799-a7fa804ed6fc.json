@@ -5155,6 +5155,15 @@
         }
       ]
     },
+    "siege-of-malta-1798-1800": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-masulipatam": {
       "from": "git",
       "versions": [

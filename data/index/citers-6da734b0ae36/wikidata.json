@@ -1814,6 +1814,12 @@
     },
     {
       "dissent": false,
+      "id": "1689-boston-revolt",
+      "kind": "event",
+      "locator": "Q3136592"
+    },
+    {
+      "dissent": false,
       "id": "1693-sicily-earthquake",
       "kind": "event",
       "locator": "Q2706283"
@@ -20291,6 +20297,12 @@
       "id": "siege-of-malakand",
       "kind": "event",
       "locator": "Q64879"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-malta-1798-1800",
+      "kind": "event",
+      "locator": "Q2493908"
     },
     {
       "dissent": false,

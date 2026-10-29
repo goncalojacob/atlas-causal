@@ -10226,6 +10226,12 @@
     },
     {
       "dissent": false,
+      "id": "1689-boston-revolt",
+      "kind": "event",
+      "locator": "\"1689 Boston revolt\", revision 1381594889"
+    },
+    {
+      "dissent": false,
       "id": "1693-sicily-earthquake",
       "kind": "event",
       "locator": "\"1693 Sicily earthquake\", revision 1377061044"
@@ -28415,6 +28421,12 @@
       "id": "siege-of-malakand",
       "kind": "event",
       "locator": "\"Siege of Malakand\", revision 1370743214"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-malta-1798-1800",
+      "kind": "event",
+      "locator": "\"Siege of Malta (1798–1800)\", revision 1380084030"
     },
     {
       "dissent": false,
