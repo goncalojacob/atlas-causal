@@ -2906,6 +2906,15 @@
         }
       ]
     },
+    "captaincy-general-of-the-philippines": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "captaincy-of-sao-vicente": {
       "from": "git",
       "versions": [
@@ -9896,6 +9905,15 @@
       ]
     },
     "lidzbark-warminski": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "liege": {
       "from": "git",
       "versions": [
         {

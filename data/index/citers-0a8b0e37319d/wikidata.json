@@ -4130,6 +4130,12 @@
     },
     {
       "dissent": false,
+      "id": "basi-revolt",
+      "kind": "event",
+      "locator": "Q141492989"
+    },
+    {
+      "dissent": false,
       "id": "basmachi-movement",
       "kind": "event",
       "locator": "Q255352"
@@ -15392,6 +15398,12 @@
     },
     {
       "dissent": false,
+      "id": "guelders-wars",
+      "kind": "event",
+      "locator": "Q572291"
+    },
+    {
+      "dissent": false,
       "id": "guinea-bissau-war-of-independence",
       "kind": "event",
       "locator": "Q2609193"
@@ -16760,6 +16772,12 @@
     },
     {
       "dissent": false,
+      "id": "liege-revolution",
+      "kind": "event",
+      "locator": "Q1527921"
+    },
+    {
+      "dissent": false,
       "id": "lincoln-county-war",
       "kind": "event",
       "locator": "Q1784900"
@@ -17351,6 +17369,12 @@
       "id": "moscow-peace-treaty",
       "kind": "event",
       "locator": "Q695285"
+    },
+    {
+      "dissent": false,
+      "id": "moscow-uprising-of-1648",
+      "kind": "event",
+      "locator": "Q600898"
     },
     {
       "dissent": false,
@@ -18770,6 +18794,12 @@
     },
     {
       "dissent": false,
+      "id": "pomeranian-war",
+      "kind": "event",
+      "locator": "Q2471586"
+    },
+    {
+      "dissent": false,
       "id": "pontiac-s-war",
       "kind": "event",
       "locator": "Q179077"
@@ -20144,6 +20174,12 @@
     },
     {
       "dissent": false,
+      "id": "second-carlist-war",
+      "kind": "event",
+      "locator": "Q3025312"
+    },
+    {
+      "dissent": false,
       "id": "second-choshu-expedition",
       "kind": "event",
       "locator": "Q711793"
@@ -20153,6 +20189,12 @@
       "id": "second-congo-war",
       "kind": "event",
       "locator": "Q75756"
+    },
+    {
+      "dissent": false,
+      "id": "second-english-civil-war",
+      "kind": "event",
+      "locator": "Q3025332"
     },
     {
       "dissent": false,
@@ -25463,6 +25505,12 @@
       "id": "war-of-the-polish-succession",
       "kind": "event",
       "locator": "Q212658"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-portuguese-succession",
+      "kind": "event",
+      "locator": "Q3298746"
     },
     {
       "dissent": false,

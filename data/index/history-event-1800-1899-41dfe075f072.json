@@ -1349,6 +1349,15 @@
         }
       ]
     },
+    "basi-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "basuto-gun-war": {
       "from": "git",
       "versions": [
@@ -11031,6 +11040,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "second-carlist-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

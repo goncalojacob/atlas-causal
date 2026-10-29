@@ -4436,6 +4436,15 @@
         }
       ]
     },
+    "liege-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "lord-dunmore-s-war": {
       "from": "git",
       "versions": [
@@ -4778,6 +4787,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "pomeranian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

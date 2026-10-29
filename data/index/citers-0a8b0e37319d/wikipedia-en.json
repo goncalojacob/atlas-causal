@@ -23666,6 +23666,12 @@
     },
     {
       "dissent": false,
+      "id": "guelders-wars",
+      "kind": "event",
+      "locator": "\"Guelders Wars\", revision 1374242003"
+    },
+    {
+      "dissent": false,
       "id": "guinea-bissau-war-of-independence",
       "kind": "event",
       "locator": "\"Guinea-Bissau War of Independence\", revision 1372113350"
@@ -24986,6 +24992,12 @@
     },
     {
       "dissent": false,
+      "id": "liege-revolution",
+      "kind": "event",
+      "locator": "\"Liège Revolution\", revision 1379151769"
+    },
+    {
+      "dissent": false,
       "id": "lincoln-county-war",
       "kind": "event",
       "locator": "\"Lincoln County War\", revision 1381854329"
@@ -25571,6 +25583,12 @@
       "id": "moscow-peace-treaty",
       "kind": "event",
       "locator": "\"Moscow Peace Treaty\", revision 1355516673"
+    },
+    {
+      "dissent": false,
+      "id": "moscow-uprising-of-1648",
+      "kind": "event",
+      "locator": "\"Moscow uprising of 1648\", revision 1375004353"
     },
     {
       "dissent": false,
@@ -26984,6 +27002,12 @@
     },
     {
       "dissent": false,
+      "id": "pomeranian-war",
+      "kind": "event",
+      "locator": "\"Pomeranian War\", revision 1370704643"
+    },
+    {
+      "dissent": false,
       "id": "pontiac-s-war",
       "kind": "event",
       "locator": "\"Pontiac's War\", revision 1378831083"
@@ -28328,6 +28352,12 @@
     },
     {
       "dissent": false,
+      "id": "second-carlist-war",
+      "kind": "event",
+      "locator": "\"Second Carlist War\", revision 1370736885"
+    },
+    {
+      "dissent": false,
       "id": "second-choshu-expedition",
       "kind": "event",
       "locator": "\"Second Chōshū expedition\", revision 1370736913"
@@ -28337,6 +28367,12 @@
       "id": "second-congo-war",
       "kind": "event",
       "locator": "\"Second Congo War\", revision 1370736925"
+    },
+    {
+      "dissent": false,
+      "id": "second-english-civil-war",
+      "kind": "event",
+      "locator": "\"Second English Civil War\", revision 1381563477"
     },
     {
       "dissent": false,
@@ -33695,6 +33731,12 @@
       "id": "war-of-the-polish-succession",
       "kind": "event",
       "locator": "\"War of the Polish Succession\", revision 1377782695"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-portuguese-succession",
+      "kind": "event",
+      "locator": "\"War of the Portuguese Succession\", revision 1377783908"
     },
     {
       "dissent": false,
