@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-westminster-1674",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q953063",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Westminster (1674)",
+    "pt": "Tratado de Westminster (1674)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q953063"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Westminster (1674)\", revision 1351417159"
+    }
+  ],
+  "title": "Treaty of Westminster (1674)",
+  "summary": "The English Wikipedia article \"Treaty of Westminster (1674)\", at revision 1351417159, opens: \"The Treaty of Westminster of 1674 was the peace treaty that ended the Third Anglo-Dutch War. Signed by the Dutch Republic and the Kingdom of England, the treaty provided for the return of the colony of New Netherland to England and renewed the Treaty of Breda of 1667. The treaty also provided for a mixed commission for the regulation of commerce, particularly in the East Indies.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q953063, imported by tools/import/wikidata.mjs. The item's own description reads \"1674 peace treaty that ended the Third Anglo-Dutch War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1674,
+    "end": 1674
+  },
+  "place": "city-of-westminster",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

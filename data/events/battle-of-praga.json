@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-praga",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1347209",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Praga"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1347209"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Praga\", revision 1382459978"
+    }
+  ],
+  "title": "Battle of Praga",
+  "summary": "The English Wikipedia article \"Battle of Praga\", at revision 1382459978, opens: \"The Battle of Praga or the Second Battle of Warsaw of 1794, also known in Russian and German as the Storming of Praga and in Polish as the Defence of Praga, was a successful Russian assault on Praga, the easternmost community of Warsaw, during the Kościuszko Uprising in 1794. It was followed by a massacre of the civilian population of Praga.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1347209, imported by tools/import/wikidata.mjs. The item's own description reads \"1794 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1794,
+    "end": 1794,
+    "date": "1794-11-04"
+  },
+  "place": "warsaw",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "kosciuszko-uprising"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-melno",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q693964",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Melno"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q693964"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Melno\", revision 1352758741"
+    }
+  ],
+  "title": "Treaty of Melno",
+  "summary": "The English Wikipedia article \"Treaty of Melno\", at revision 1352758741, opens: \"The Treaty of Melno or Treaty of Lake Melno was a peace treaty ending the Gollub War. It was signed on 27 September 1422, between the Teutonic Knights and an alliance of the Kingdom of Poland and the Grand Duchy of Lithuania at Lake Melno, east of Graudenz (Grudziądz). The treaty resolved territorial disputes between the Knights and Lithuania regarding Lithuania Minor and Samogitia, which had dragged on since 1382, and determined the Prussian–Lithuanian border, which afterwards remained unchanged for about 500 years. A portion of the original border survives as a portion of the modern border between the Republic of Lithuania and Kaliningrad Oblast, Russia, making it one of the oldest and most stable borders in Europe.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q693964, imported by tools/import/wikidata.mjs. The item's own description reads \"Peace treaty (1422) between the Teutonic Knights, the Kingdom of Poland and the Duchy of Lithuania\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1422,
+    "end": 1422,
+    "date": "1422-09-27"
+  },
+  "place": "me-no-grudziadz-county",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

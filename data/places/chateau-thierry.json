@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "chateau-thierry",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q194145",
+  "sitelinks": {
+    "count": 68,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Château-Thierry",
+    "pt": "Château-Thierry"
+  },
+  "sources": [],
+  "names": [
+    "Château-Thierry"
+  ],
+  "where": {
+    "lon": 3.4030555555556,
+    "lat": 49.046388888889,
+    "precision": "city",
+    "label": "Château-Thierry"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

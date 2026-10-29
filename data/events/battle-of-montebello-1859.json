@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-montebello-1859",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q694606",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Montebello (1859)",
+    "pt": "Batalha de Montebello"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q694606"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Montebello (1859)\", revision 1377222154"
+    }
+  ],
+  "title": "Battle of Montebello (1859)",
+  "summary": "The English Wikipedia article \"Battle of Montebello (1859)\", at revision 1377222154, opens: \"The Battle of Montebello was fought on 20 May 1859 at Montebello in Lombardy, northern Italy. The first major engagement of the Second Italian War of Independence, it was fought between Austrian troops commanded by Field Marshal Philipp von Stadion und Thannhausen against Piedmontese cavalry and French infantry headed by General Élie Frédéric Forey.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q694606, imported by tools/import/wikidata.mjs. The item's own description reads \"1859 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1859,
+    "end": 1859,
+    "date": "1859-05-20"
+  },
+  "place": "montebello-della-battaglia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-italian-war-of-independence"
+}

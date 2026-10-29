@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-tarutino",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1083718",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Tarutino",
+    "pt": "Batalha de Tarutino"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1083718"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tarutino\", revision 1374530441"
+    }
+  ],
+  "title": "Battle of Tarutino",
+  "summary": "The English Wikipedia article \"Battle of Tarutino\", at revision 1374530441, opens: \"The Battle of Tarutino was a part of Napoleon's invasion of Russia. In the battle, Russian troops under the general command of Bennigsen, acting on instructions from Kutuzov and being part of his army, launched a surprise attack and defeated French troops under Murat's command. However, despite the pleas of Miloradovich and Yermolov, Kutuzov did not extend his own offensive, fearing to encounter Napoleon himself in battle, while Murat was not pursued as Bennigsen decided not to use the available forces for this purpose. The Russian infantry, stuffed with new recruits, performed heavy-handedly in this battle, and the Russians were also hampered by night delays. All this led to the Russians not being able to achieve greater success, despite their numerical superiority and surprise method. The Tarutino battle led to a breakdown in relations between Kutuzov and Bennigsen, who lost his influence in the army for certain time. In any event, the lost battle convinced Napoleon to commence the disastrous French retreat from Russia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1083718, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle during the French invasion of Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-10-18"
+  },
+  "place": "moscow",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-russia"
+}

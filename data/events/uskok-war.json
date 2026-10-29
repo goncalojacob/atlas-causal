@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "uskok-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q598089",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Uskok War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q598089"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Uskok War\", revision 1370748938"
+    }
+  ],
+  "title": "Uskok War",
+  "summary": "The English Wikipedia article \"Uskok War\", at revision 1370748938, opens: \"The Uskok War, also known as the War of Gradisca or the War of Friuli, was fought by the Austrians, Slovenes, Croats and Spanish on one side and the Venetians, Croats, Slovenes, Dutch, and English on the other. It is named for the Uskoks, soldiers from Croatia used by the Austrians for irregular warfare.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q598089, imported by tools/import/wikidata.mjs. The item's own description reads \"1615–1617 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1615,
+    "end": 1617,
+    "date": "1615-12",
+    "endDate": "1617-09-26"
+  },
+  "place": "adriatic-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

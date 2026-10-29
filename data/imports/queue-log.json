@@ -36001,6 +36001,609 @@
         "place": "molodi"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-460",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "congress-of-erfurt",
+        "edges": [],
+        "place": "erfurt"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-462",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "balmis-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-464",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-oland",
+        "edges": [],
+        "place": "baltic-sea"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-466",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "dissolution-of-the-holy-roman-empire",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-468",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "albanian-venetian-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-470",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-reunions",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-472",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "irish-confederate-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-474",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "constitution-of-the-year-x",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-476",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "1854-broad-street-cholera-outbreak",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-478",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "greater-poland-uprising-1848",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-480",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1659789: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-482",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1997647: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-484",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-polotsk",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-486",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "third-carlist-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-488",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "convention-of-london-1840",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-490",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "day-of-the-tiles",
+        "edges": [],
+        "place": "grenoble"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-492",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-praga",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-494",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-montebello-1859",
+        "edges": [],
+        "place": "montebello-della-battaglia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-496",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-turckheim",
+        "edges": [],
+        "place": "turckheim"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-498",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-stadtlohn",
+        "edges": [],
+        "place": "stadtlohn"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-500",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tarutino",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-502",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-danzig-1734",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-504",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-dornach",
+        "edges": [],
+        "place": "dornach"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-506",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-westminster-1674",
+        "edges": [],
+        "place": "city-of-westminster"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-508",
+      "writer": "A",
+      "fired": "2026-10-29T00:46Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-polyanovka",
+        "edges": [],
+        "place": "polanow"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-461",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cape-st-vincent-1780",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-463",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-camperdown",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-465",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-solebay",
+        "edges": [],
+        "place": "southwold"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-467",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q629965: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-469",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "austro-polish-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-471",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "uskok-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-473",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "mad-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-475",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "canut-revolts",
+        "edges": [],
+        "place": "lyon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-477",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "greater-poland-uprising-1806",
+        "edges": [],
+        "place": "greater-poland"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-479",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-leipzig",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-481",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chateau-thierry-1814",
+        "edges": [],
+        "place": "chateau-thierry"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-483",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-heilsberg",
+        "edges": [],
+        "place": "lidzbark-warminski"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-485",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-bern",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-487",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lubeck",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-489",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bitonto",
+        "edges": [],
+        "place": "bitonto"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-491",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "revolt-of-1-prairial-year-iii",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-493",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "fall-of-antwerp",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-495",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-almenar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-497",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-focsani",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-499",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zhovti-vody",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-501",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-brienne",
+        "edges": [],
+        "place": "brienne-le-chateau"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-503",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-saragossa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-505",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-melno",
+        "edges": [],
+        "place": "me-no-grudziadz-county"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-507",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-preobrazhenskoye",
+        "edges": [],
+        "place": "preobrazhenskoye"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-509",
+      "writer": "B",
+      "fired": "2026-10-29T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-varala",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

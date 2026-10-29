@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-leipzig",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q314076",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Leipzig"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q314076"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Leipzig\", revision 1341354116"
+    }
+  ],
+  "title": "Treaty of Leipzig",
+  "summary": "The English Wikipedia article \"Treaty of Leipzig\", at revision 1341354116, opens: \"The Treaty of Leipzig or Partition of Leipzig was signed on 11 November 1485 in the city of Leipzig, between Ernest, Elector of Saxony and his younger brother Albert III, the sons and heirs of Frederick II, Elector of Saxony from the House of Wettin. The treaty ended the period of joint rule by two brothers, that lasted from 1464 to 1485. Under the Leipzig treaty provisions, Ernest kept the Saxon electoral title and several domains in southern parts of Thuringia, while Albert received the Saxon ducal title and rule over the old Margraviate of Meissen, together with various domains in northern parts of Thuringia. The Leipzig treaty and its arrangements perpetuated the division of Wettin lands in two distinctive domains, administered separately, by rulers from Ernestine and Albertine branches of the dynasty.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q314076, imported by tools/import/wikidata.mjs. The item's own description reads \"1485 treaty dividing the Wettin lands of Saxony\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1485,
+    "end": 1485,
+    "date": "1485-11-11"
+  },
+  "place": "leipzig",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

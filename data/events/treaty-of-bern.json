@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-bern",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2629126",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Bern"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2629126"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Bern\", revision 1356266729"
+    }
+  ],
+  "title": "Treaty of Bern",
+  "summary": "The English Wikipedia article \"Treaty of Bern\", at revision 1356266729, opens: \"The Treaty of Bern, signed on 9 October 1874, established the General Postal Union, which is today known as the Universal Postal Union. Named for the Swiss city of Bern, where it was signed, the treaty was the result of an international conference convened by the Swiss Government on 15 September 1874. It was attended by representatives of 22 nations. Plans for the conference had been drawn up by Heinrich von Stephan, Postmaster-General of the German Reichspost who demanded from the neutral Switzerland the organization of an International Postal Congress following the end of the French-German war of 1870–1871.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2629126, imported by tools/import/wikidata.mjs. The item's own description reads \"International treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1874,
+    "end": 1874,
+    "date": "1874-10-09"
+  },
+  "place": "bern",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
