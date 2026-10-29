@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-bauge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1785755",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Baugé"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1785755"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Baugé\", revision 1378266712"
+    }
+  ],
+  "title": "Battle of Baugé",
+  "summary": "The English Wikipedia article \"Battle of Baugé\", at revision 1378266712, opens: \"The Battle of Baugé, fought between the English and a Franco-Scots army on 22 March 1421 at Baugé, France, east of Angers, was a major defeat for the English in the Hundred Years' War. The Franco-Scots, 5,000 strong, were led by both John Stewart, Earl of Buchan, and Gilbert Motier de La Fayette, the Marshal of France, while the 4,000 strong English army was led by the king's brother Thomas, Duke of Clarence, who was killed in the action.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1785755, imported by tools/import/wikidata.mjs. The item's own description reads \"1421 battle during the Hundred Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1421,
+    "end": 1421,
+    "date": "1421-03-21"
+  },
+  "place": "bauge",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "feast-of-the-pheasant",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q937328",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Feast of the Pheasant",
+    "pt": "Festa do Faisão"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q937328"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Feast of the Pheasant\", revision 1379072164"
+    }
+  ],
+  "title": "Feast of the Pheasant",
+  "summary": "The English Wikipedia article \"Feast of the Pheasant\", at revision 1379072164, opens: \"The Feast of the Pheasant was a banquet given by Philip the Good, Duke of Burgundy on 17 February 1454 in Lille, now in France. Its purpose was to promote a crusade against the Turks, who had taken Constantinople the year before. The crusade never took place.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q937328, imported by tools/import/wikidata.mjs. The item's own description reads \"banquet given by Philip the Good, Duke of Burgundy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1454,
+    "end": 1454,
+    "date": "1454-02-17"
+  },
+  "place": "lille",
+  "region": null,
+  "regionNote": null,
+  "category": "culture",
+  "actors": []
+}

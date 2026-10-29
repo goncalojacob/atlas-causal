@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "north-german-constitution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2995128",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "North German Constitution"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2995128"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"North German Constitution\", revision 1376186439"
+    }
+  ],
+  "title": "North German Constitution",
+  "summary": "The English Wikipedia article \"North German Constitution\", at revision 1376186439, opens: \"The North German Constitution, officially the Constitution of the North German Confederation was the constitution of the North German Confederation, which existed as a state from 1 July 1867 to 31 December 1870. The Constitution of the German Empire of 1871 was closely based on it.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2995128, imported by tools/import/wikidata.mjs. The item's own description reads \"Constitution of the North German Confederation 1867–1870\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1867,
+    "end": 1870,
+    "date": "1867-07-01",
+    "endDate": "1870-12-31"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "law",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-brielle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2112779",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Capture of Brielle"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2112779"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Brielle\", revision 1370608395"
+    }
+  ],
+  "title": "Capture of Brielle",
+  "summary": "The English Wikipedia article \"Capture of Brielle\", at revision 1370608395, opens: \"The Capture of Brielle by the Watergeuzen, on 1 April 1572 marked a turning point in the uprising of the Low Countries against Spain in the Eighty Years' War. Militarily the success was minor as the port of Brielle was undefended, but it provided the first foothold on land for the rebels at a time when the rebellion was all but crushed, and it offered the sign for a new revolt throughout the Netherlands which led to the formation of the Dutch Republic.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2112779, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1572,
+    "end": 1572,
+    "date": "1572-04-01"
+  },
+  "place": "brielle",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

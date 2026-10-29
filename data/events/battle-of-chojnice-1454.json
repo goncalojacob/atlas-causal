@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-chojnice-1454",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q551549",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Chojnice (1454)",
+    "pt": "Batalha de Chojnice"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q551549"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chojnice (1454)\", revision 1371050072"
+    }
+  ],
+  "title": "Battle of Chojnice (1454)",
+  "summary": "The English Wikipedia article \"Battle of Chojnice (1454)\", at revision 1371050072, opens: \"The Battle of Chojnice occurred on 18 September 1454 near the town of Chojnice, between Poland and the Teutonic Knights during the Thirteen Years' War. The battle was won by the Teutonic Knights.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q551549, imported by tools/import/wikidata.mjs. The item's own description reads \"1454 battle of the Thirteen Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1454,
+    "end": 1454,
+    "date": "1454-09-18"
+  },
+  "place": "chojnice",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirteen-years-war-1454-1466"
+}

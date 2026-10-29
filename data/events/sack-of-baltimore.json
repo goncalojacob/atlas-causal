@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sack-of-baltimore",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4118844",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Sack of Baltimore",
+    "pt": "Saque de Baltimore"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4118844"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sack of Baltimore\", revision 1379360084"
+    }
+  ],
+  "title": "Sack of Baltimore",
+  "summary": "The English Wikipedia article \"Sack of Baltimore\", at revision 1379360084, opens: \"The sack of Baltimore took place on 20 June 1631, when the village of Baltimore in West Cork, Ireland, was attacked by pirates from the Barbary Coast of North Africa – the raiders included Algerians and Ottoman Turks. The attack was the largest by Barbary slave traders on Ireland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4118844, imported by tools/import/wikidata.mjs. The item's own description reads \"1631 Slaver raid on Irish village\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1631,
+    "end": 1631,
+    "date": "1631-06-20"
+  },
+  "place": "baltimore-county-cork",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

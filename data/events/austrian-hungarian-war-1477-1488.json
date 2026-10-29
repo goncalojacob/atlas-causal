@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "austrian-hungarian-war-1477-1488",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4825457",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Austrian–Hungarian War (1477–1488)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4825457"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Austrian–Hungarian War (1477–1488)\", revision 1370429790"
+    }
+  ],
+  "title": "Austrian–Hungarian War (1477–1488)",
+  "summary": "The English Wikipedia article \"Austrian–Hungarian War (1477–1488)\", at revision 1370429790, opens: \"The Austrian–Hungarian War was a military conflict between the Kingdom of Hungary under Matthias Corvinus and the Habsburg Archduchy of Austria under Frederick V. The war lasted from 1477 to 1488 and resulted in significant gains for Matthias, which humiliated Frederick, but which were reversed upon Matthias' sudden death in 1490.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4825457, imported by tools/import/wikidata.mjs. The item's own description reads \"1477–1488 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1477,
+    "end": 1488
+  },
+  "place": "lower-austria",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

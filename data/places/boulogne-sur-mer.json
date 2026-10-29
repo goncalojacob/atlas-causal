@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "boulogne-sur-mer",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q81997",
+  "sitelinks": {
+    "count": 88,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Boulogne-sur-Mer",
+    "pt": "Bolonha do Mar"
+  },
+  "sources": [],
+  "names": [
+    "Boulogne-sur-Mer",
+    "Bolonha-sobre-o-Mar",
+    "Bolonha do Mar"
+  ],
+  "where": {
+    "lon": 1.6138888888889,
+    "lat": 50.725555555556,
+    "precision": "city",
+    "label": "Boulogne-sur-Mer"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

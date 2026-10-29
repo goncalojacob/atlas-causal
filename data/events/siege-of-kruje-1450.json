@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-kruje-1450",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q73670",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Krujë (1450)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q73670"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Krujë (1450)\", revision 1382552439"
+    }
+  ],
+  "title": "Siege of Krujë (1450)",
+  "summary": "The English Wikipedia article \"Siege of Krujë (1450)\", at revision 1382552439, opens: \"The first siege of Krujë occurred in 1450 when an Ottoman army led by Sultan Murad II and his crown prince Mehmed II tried to besiege the Albanian town of Krujë. The League of Lezhë, led by Skanderbeg, experienced low morale after losing Svetigrad and Berat between 1448 and 1450. Nevertheless, Skanderbeg's exhortations and the support of the clergy, who claimed to have had visions of angels and victory, motivated the Albanians to defend the capital of the League, Krujë, at all costs. After leaving a protective garrison of 4,000 men under his trusted lieutenant Vrana Konti, Skanderbeg harassed the Ottoman camps around Krujë and attacked the supply caravans of Sultan Murad II's army. By September, the Ottoman camp was in disarray as morale sank and disease ran rampant. The Ottoman army acknowledged that the castle of Krujë would not fall by strength of arms, lifted the siege, and made its way to Edirne. Soon thereafter, in the winter of 1450–51, Murad died in Edirne and was succeeded by his son, Mehmed II.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q73670, imported by tools/import/wikidata.mjs. The item's own description reads \"1450 first siege of Krujë\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1450,
+    "end": 1450,
+    "date": "1450-05-14",
+    "endDate": "1450-11-23"
+  },
+  "place": "kruje",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

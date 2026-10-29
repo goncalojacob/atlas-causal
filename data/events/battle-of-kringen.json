@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-kringen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q951270",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Kringen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q951270"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kringen\", revision 1376199859"
+    }
+  ],
+  "title": "Battle of Kringen",
+  "summary": "The English Wikipedia article \"Battle of Kringen\", at revision 1376199859, opens: \"Battle of Kringen involved an ambush by Norwegian peasant militia of Scottish mercenary soldiers who were on their way to enlist in the Swedish army for the Kalmar War. The battle has since become a part of folklore in Norway, giving names to local places in the Ottadalen valley.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q951270, imported by tools/import/wikidata.mjs. The item's own description reads \"1612 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1612,
+    "end": 1612,
+    "date": "1612-08-26"
+  },
+  "place": "otta-norway",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

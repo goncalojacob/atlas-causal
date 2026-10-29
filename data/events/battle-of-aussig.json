@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-aussig",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1787589",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Aussig"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1787589"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Aussig\", revision 1382465532"
+    }
+  ],
+  "title": "Battle of Aussig",
+  "summary": "The English Wikipedia article \"Battle of Aussig\", at revision 1382465532, opens: \"The Battle of Aussig was fought on 16 June 1426, between Roman Catholic crusaders and the Hussites during the Fourth Crusade of the Hussite Wars. It was fought near Aussig in northern Bohemia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1787589, imported by tools/import/wikidata.mjs. The item's own description reads \"1426 battle of the Hussite Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1426,
+    "end": 1426,
+    "date": "1426-06-16"
+  },
+  "place": "usti-nad-labem",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "hussite-wars"
+}

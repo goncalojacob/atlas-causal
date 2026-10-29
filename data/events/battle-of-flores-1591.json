@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-flores-1591",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4871029",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Flores (1591)",
+    "pt": "Batalha das Flores (1591)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871029"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Flores (1591)\", revision 1371696375"
+    }
+  ],
+  "title": "Battle of Flores (1591)",
+  "summary": "The English Wikipedia article \"Battle of Flores (1591)\", at revision 1371696375, opens: \"The Battle of Flores was a naval engagement during the Brittany Campaign of the Anglo-Spanish War of 1585 fought off the Island of Flores between an English fleet of 22 ships under Lord Thomas Howard and a Spanish fleet of 55 ships under Alonso de Bazán. Sent to the Azores to capture the annual Spanish treasure convoy, when a stronger Spanish fleet appeared off Flores, Howard ordered his ships to flee to the north, saving all of them except the galleon Revenge commanded by Admiral Sir Richard Grenville.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871029, imported by tools/import/wikidata.mjs. The item's own description reads \"1591 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1591,
+    "end": 1591,
+    "date": "1591-08-30",
+    "endDate": "1591-09-01"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (from Q45670, the country the item names): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

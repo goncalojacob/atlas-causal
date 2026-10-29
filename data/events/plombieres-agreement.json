@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "plombieres-agreement",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q978331",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Plombières Agreement"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q978331"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Plombières Agreement\", revision 1379015133"
+    }
+  ],
+  "title": "Plombières Agreement",
+  "summary": "The English Wikipedia article \"Plombières Agreement\", at revision 1379015133, opens: \"The Plombières Agreement of 21 July 1858 was a secret verbal agreement that took place at Plombières-les-Bains between the chief minister of Piedmont-Sardinia, Camillo Benso, Count of Cavour, and the French Emperor, Napoleon III. Some older English sources refer to it as the Treaty of Plombières. In modern times, it is merely referred to as an \"agreement\", since nothing was signed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q978331, imported by tools/import/wikidata.mjs. The item's own description reads \"1858 secret agreement between Piedmont-Sardinia and France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1858,
+    "date": "1858-07-21"
+  },
+  "place": "plombieres-les-bains",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

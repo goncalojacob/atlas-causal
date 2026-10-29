@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hague-congress-1872",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2632679",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Hague Congress (1872)",
+    "pt": "Congresso de Haia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2632679"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hague Congress (1872)\", revision 1382214246"
+    }
+  ],
+  "title": "Hague Congress (1872)",
+  "summary": "The English Wikipedia article \"Hague Congress (1872)\", at revision 1382214246, opens: \"The Hague Congress, held from 2 to 7 September 1872, in the eponymous city, was a congress of the International Workingmen's Association (IWA), more commonly known as the First International. It is one of the fundamental events in the history of the workers' movement, marking the split between the Marxists and the anti-authoritarians/anarchists, two political movements that separated during this congress.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2632679, imported by tools/import/wikidata.mjs. The item's own description reads \"socialism conference\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1872,
+    "end": 1872,
+    "date": "1872-09-02",
+    "endDate": "1872-09-07"
+  },
+  "place": "the-hague",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}
