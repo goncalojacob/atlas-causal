@@ -3635,6 +3635,15 @@
         }
       ]
     },
+    "central-lowlands": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "central-portugal": {
       "from": "git",
       "versions": [
@@ -14022,6 +14031,15 @@
         }
       ]
     },
+    "negros": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "neiva": {
       "from": "git",
       "versions": [
@@ -14911,6 +14929,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "osaka": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -17775,6 +17802,15 @@
         }
       ]
     },
+    "san-cristobal-de-la-laguna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "san-francisco": {
       "from": "git",
       "versions": [
@@ -18469,6 +18505,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "shikoku": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -22029,6 +22074,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "western-united-states": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

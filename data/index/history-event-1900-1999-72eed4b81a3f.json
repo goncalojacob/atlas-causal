@@ -17,6 +17,15 @@
         }
       ]
     },
+    "1900-1904-san-francisco-plague": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1900-portuguese-legislative-election": {
       "from": "git",
       "versions": [

@@ -2455,7 +2455,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 2,
+      "degree": 3,
       "id": "arizona",
       "kind": "place",
       "names": [
@@ -5273,7 +5273,7 @@
         }
       ],
       "created": "2026-10-13",
-      "degree": 2,
+      "degree": 3,
       "id": "bengal-q80338",
       "kind": "place",
       "names": [
@@ -5582,7 +5582,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 10,
+      "degree": 11,
       "id": "berlin",
       "kind": "place",
       "names": [
@@ -6528,7 +6528,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 3,
+      "degree": 4,
       "id": "boston",
       "kind": "place",
       "names": [
@@ -7493,7 +7493,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 6,
+      "degree": 7,
       "id": "buenos-aires",
       "kind": "place",
       "names": [
@@ -9459,6 +9459,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "central-lowlands",
+      "kind": "place",
+      "names": [
+        "Central Lowlands",
+        "Vale Midland"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -11127,7 +11155,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 10,
+      "degree": 12,
       "id": "colombia-q739",
       "kind": "place",
       "names": [
@@ -11490,7 +11518,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 3,
+      "degree": 4,
       "id": "copenhagen",
       "kind": "place",
       "names": [
@@ -13963,7 +13991,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "dover",
       "kind": "place",
       "names": [
@@ -18023,7 +18051,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 3,
+      "degree": 4,
       "id": "ganghwa-island",
       "kind": "place",
       "names": [
@@ -23674,7 +23702,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 80,
+      "degree": 87,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -24755,7 +24783,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 3,
+      "degree": 4,
       "id": "kansas",
       "kind": "place",
       "names": [
@@ -29371,7 +29399,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 23,
+      "degree": 24,
       "id": "london",
       "kind": "place",
       "names": [
@@ -35014,7 +35042,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 2,
       "id": "mumbai",
       "kind": "place",
       "names": [
@@ -35877,7 +35905,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "naples-q2634",
       "kind": "place",
       "names": [
@@ -36101,6 +36129,34 @@
       "kind": "place",
       "names": [
         "Neerwinden"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "negros",
+      "kind": "place",
+      "names": [
+        "Negros",
+        "Negros (ilha)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -38373,6 +38429,33 @@
       "names": [
         "Vorsha",
         "Orsha"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "osaka",
+      "kind": "place",
+      "names": [
+        "Ōsaka"
       ],
       "origin": {
         "tool": "wikidata"
@@ -41483,7 +41566,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 2,
+      "degree": 3,
       "id": "powder-river-country",
       "kind": "place",
       "names": [
@@ -44212,7 +44295,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 12,
+      "degree": 13,
       "id": "russian-empire-q34266",
       "kind": "place",
       "names": [
@@ -45395,11 +45478,38 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "san-cristobal-de-la-laguna",
+      "kind": "place",
+      "names": [
+        "San Cristóbal de La Laguna"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "san-francisco",
       "kind": "place",
       "names": [
@@ -46847,7 +46957,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "seville",
       "kind": "place",
       "names": [
@@ -47229,6 +47339,33 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "shikoku",
+      "kind": "place",
+      "names": [
+        "Shikoku"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -51479,7 +51616,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 4,
+      "degree": 5,
       "id": "texas",
       "kind": "place",
       "names": [
@@ -53894,7 +54031,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 53,
+      "degree": 55,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -54675,7 +54812,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 12,
+      "degree": 14,
       "id": "venezuela-q717",
       "kind": "place",
       "names": [
@@ -54953,7 +55090,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 8,
+      "degree": 9,
       "id": "vienna",
       "kind": "place",
       "names": [
@@ -56266,6 +56403,35 @@
       "names": [
         "Western Europe",
         "Europa Ocidental"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "western-united-states",
+      "kind": "place",
+      "names": [
+        "Western United States",
+        "Região Oeste",
+        "Região Oeste (Estados Unidos)"
       ],
       "origin": {
         "tool": "wikidata"

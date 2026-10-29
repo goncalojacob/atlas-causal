@@ -80,7 +80,25 @@
         }
       ]
     },
+    "1582-tenerife-plague-epidemic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1586-tensho-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "1592-1593-malta-plague-epidemic": {
       "from": "git",
       "versions": [
         {
@@ -5500,6 +5518,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "st-felix-s-flood": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

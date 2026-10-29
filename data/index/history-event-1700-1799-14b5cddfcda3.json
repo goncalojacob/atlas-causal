@@ -20,6 +20,15 @@
         }
       ]
     },
+    "1707-hoei-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1711-karamanli-coup": {
       "from": "git",
       "versions": [
@@ -44,6 +53,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "1721-boston-smallpox-outbreak": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -101,6 +119,15 @@
         }
       ]
     },
+    "1770-1772-russian-plague": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1772-1773-persian-plague": {
       "from": "git",
       "versions": [
@@ -138,6 +165,15 @@
       ]
     },
     "1790-oran-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "1792-unzen-landslide-and-tsunami": {
       "from": "git",
       "versions": [
         {

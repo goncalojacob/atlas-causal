@@ -1766,6 +1766,12 @@
     },
     {
       "dissent": false,
+      "id": "1498-meio-earthquake",
+      "kind": "event",
+      "locator": "Q4549898"
+    },
+    {
+      "dissent": false,
       "id": "1509-constantinople-earthquake",
       "kind": "event",
       "locator": "Q1188930"
@@ -1814,9 +1820,21 @@
     },
     {
       "dissent": false,
+      "id": "1582-tenerife-plague-epidemic",
+      "kind": "event",
+      "locator": "Q86458874"
+    },
+    {
+      "dissent": false,
       "id": "1586-tensho-earthquake",
       "kind": "event",
       "locator": "Q11442711"
+    },
+    {
+      "dissent": false,
+      "id": "1592-1593-malta-plague-epidemic",
+      "kind": "event",
+      "locator": "Q20723260"
     },
     {
       "dissent": false,
@@ -1856,6 +1874,12 @@
     },
     {
       "dissent": false,
+      "id": "1675-1676-malta-plague-epidemic",
+      "kind": "event",
+      "locator": "Q20723261"
+    },
+    {
+      "dissent": false,
       "id": "1679-armenia-earthquake",
       "kind": "event",
       "locator": "Q4551791"
@@ -1874,6 +1898,12 @@
     },
     {
       "dissent": false,
+      "id": "1707-hoei-earthquake",
+      "kind": "event",
+      "locator": "Q2001581"
+    },
+    {
+      "dissent": false,
       "id": "1711-karamanli-coup",
       "kind": "event",
       "locator": "Q4552433"
@@ -1889,6 +1919,12 @@
       "id": "1718-tongwei-gansu-earthquake",
       "kind": "event",
       "locator": "Q97180975"
+    },
+    {
+      "dissent": false,
+      "id": "1721-boston-smallpox-outbreak",
+      "kind": "event",
+      "locator": "Q27926964"
     },
     {
       "dissent": false,
@@ -1928,6 +1964,12 @@
     },
     {
       "dissent": false,
+      "id": "1770-1772-russian-plague",
+      "kind": "event",
+      "locator": "Q7382249"
+    },
+    {
+      "dissent": false,
       "id": "1772-1773-persian-plague",
       "kind": "event",
       "locator": "Q88772394"
@@ -1955,6 +1997,12 @@
       "id": "1790-oran-earthquake",
       "kind": "event",
       "locator": "Q109229623"
+    },
+    {
+      "dissent": false,
+      "id": "1792-unzen-landslide-and-tsunami",
+      "kind": "event",
+      "locator": "Q3591486"
     },
     {
       "dissent": false,
@@ -2030,6 +2078,12 @@
     },
     {
       "dissent": false,
+      "id": "1837-great-plains-smallpox-epidemic",
+      "kind": "event",
+      "locator": "Q4554489"
+    },
+    {
+      "dissent": false,
       "id": "1838-mormon-war",
       "kind": "event",
       "locator": "Q2572004"
@@ -2054,6 +2108,12 @@
     },
     {
       "dissent": false,
+      "id": "1848-1849-venezuelan-civil-war",
+      "kind": "event",
+      "locator": "Q2882649"
+    },
+    {
+      "dissent": false,
       "id": "1851-chilean-revolution",
       "kind": "event",
       "locator": "Q4554827"
@@ -2066,6 +2126,12 @@
     },
     {
       "dissent": false,
+      "id": "1853-copenhagen-cholera-outbreak",
+      "kind": "event",
+      "locator": "Q4554867"
+    },
+    {
+      "dissent": false,
       "id": "1854-broad-street-cholera-outbreak",
       "kind": "event",
       "locator": "Q2035019"
@@ -2075,6 +2141,12 @@
       "id": "1854-macedonian-rebellion",
       "kind": "event",
       "locator": "Q17156269"
+    },
+    {
+      "dissent": false,
+      "id": "1858-treaty-of-amity-and-commerce-between-the-netherlands-and-japan",
+      "kind": "event",
+      "locator": "Q11510437"
     },
     {
       "dissent": false,
@@ -2162,6 +2234,12 @@
     },
     {
       "dissent": false,
+      "id": "1883-eruption-of-krakatoa",
+      "kind": "event",
+      "locator": "Q8094772"
+    },
+    {
+      "dissent": false,
       "id": "1887-yellow-river-flood",
       "kind": "event",
       "locator": "Q1142904"
@@ -2192,6 +2270,12 @@
     },
     {
       "dissent": false,
+      "id": "1894-hong-kong-plague",
+      "kind": "event",
+      "locator": "Q10843835"
+    },
+    {
+      "dissent": false,
       "id": "1894-sasun-rebellion",
       "kind": "event",
       "locator": "Q2047022"
@@ -2216,9 +2300,21 @@
     },
     {
       "dissent": false,
+      "id": "1896-sanriku-earthquake",
+      "kind": "event",
+      "locator": "Q715495"
+    },
+    {
+      "dissent": false,
       "id": "1897-assam-earthquake",
       "kind": "event",
       "locator": "Q738843"
+    },
+    {
+      "dissent": false,
+      "id": "1900-1904-san-francisco-plague",
+      "kind": "event",
+      "locator": "Q7414187"
     },
     {
       "dissent": false,
@@ -3569,6 +3665,12 @@
       "id": "anglo-japanese-friendship-treaty",
       "kind": "event",
       "locator": "Q1342523"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-japanese-treaty-of-amity-and-commerce",
+      "kind": "event",
+      "locator": "Q2377085"
     },
     {
       "dissent": false,
@@ -14012,6 +14114,12 @@
     },
     {
       "dissent": false,
+      "id": "bombay-plague-epidemic",
+      "kind": "event",
+      "locator": "Q4940602"
+    },
+    {
+      "dissent": false,
       "id": "bombing-in-zona-rosa-of-bogota-of-2003",
       "kind": "event",
       "locator": "Q5710644"
@@ -15125,6 +15233,18 @@
       "id": "cologne-war",
       "kind": "event",
       "locator": "Q524189"
+    },
+    {
+      "dissent": false,
+      "id": "colombian-civil-war-1860-1862",
+      "kind": "event",
+      "locator": "Q3067868"
+    },
+    {
+      "dissent": false,
+      "id": "colombian-civil-war-of-1876",
+      "kind": "event",
+      "locator": "Q3068530"
     },
     {
       "dissent": false,
@@ -16520,6 +16640,12 @@
     },
     {
       "dissent": false,
+      "id": "fall-of-edo",
+      "kind": "event",
+      "locator": "Q715559"
+    },
+    {
+      "dissent": false,
       "id": "fall-of-ghent",
       "kind": "event",
       "locator": "Q3485894"
@@ -16535,6 +16661,12 @@
       "id": "fall-of-maximilien-robespierre",
       "kind": "event",
       "locator": "Q12989672"
+    },
+    {
+      "dissent": false,
+      "id": "fall-of-osaka-castle",
+      "kind": "event",
+      "locator": "Q2617147"
     },
     {
       "dissent": false,
@@ -16595,6 +16727,12 @@
       "id": "federal-pact",
       "kind": "event",
       "locator": "Q3888700"
+    },
+    {
+      "dissent": false,
+      "id": "federal-war",
+      "kind": "event",
+      "locator": "Q1479636"
     },
     {
       "dissent": false,
@@ -17762,6 +17900,12 @@
     },
     {
       "dissent": false,
+      "id": "great-fire-of-london",
+      "kind": "event",
+      "locator": "Q164679"
+    },
+    {
+      "dissent": false,
       "id": "great-flood-of-1862",
       "kind": "event",
       "locator": "Q4274684"
@@ -17810,6 +17954,12 @@
     },
     {
       "dissent": false,
+      "id": "great-plague-in-the-late-ming-dynasty",
+      "kind": "event",
+      "locator": "Q104892373"
+    },
+    {
+      "dissent": false,
       "id": "great-plague-of-1738",
       "kind": "event",
       "locator": "Q5599759"
@@ -17825,6 +17975,18 @@
       "id": "great-plague-of-marseille",
       "kind": "event",
       "locator": "Q1936002"
+    },
+    {
+      "dissent": false,
+      "id": "great-plague-of-seville",
+      "kind": "event",
+      "locator": "Q5599762"
+    },
+    {
+      "dissent": false,
+      "id": "great-plague-of-vienna",
+      "kind": "event",
+      "locator": "Q448015"
     },
     {
       "dissent": false,
@@ -18416,6 +18578,12 @@
     },
     {
       "dissent": false,
+      "id": "indigo-revolt",
+      "kind": "event",
+      "locator": "Q1661404"
+    },
+    {
+      "dissent": false,
       "id": "indo-pakistani-war-of-1947-1948",
       "kind": "event",
       "locator": "Q652285"
@@ -18854,6 +19022,12 @@
     },
     {
       "dissent": false,
+      "id": "japan-korea-treaty-of-1876",
+      "kind": "event",
+      "locator": "Q623391"
+    },
+    {
+      "dissent": false,
       "id": "japan-korea-treaty-of-1885",
       "kind": "event",
       "locator": "Q912109"
@@ -18977,6 +19151,12 @@
       "id": "john-brown-s-raid-on-harpers-ferry",
       "kind": "event",
       "locator": "Q6223430"
+    },
+    {
+      "dissent": false,
+      "id": "johnson-county-war",
+      "kind": "event",
+      "locator": "Q6268269"
     },
     {
       "dissent": false,
@@ -19214,6 +19394,12 @@
     },
     {
       "dissent": false,
+      "id": "kinmon-incident",
+      "kind": "event",
+      "locator": "Q139871"
+    },
+    {
+      "dissent": false,
       "id": "knights-war",
       "kind": "event",
       "locator": "Q569485"
@@ -19415,6 +19601,12 @@
       "id": "larache-landing",
       "kind": "event",
       "locator": "Q5804054"
+    },
+    {
+      "dissent": false,
+      "id": "las-cuevas-war",
+      "kind": "event",
+      "locator": "Q6492180"
     },
     {
       "dissent": false,
@@ -19631,6 +19823,12 @@
       "id": "los-andes-vs-prueba",
       "kind": "event",
       "locator": "Q52696693"
+    },
+    {
+      "dissent": false,
+      "id": "louisiana-purchase",
+      "kind": "event",
+      "locator": "Q193155"
     },
     {
       "dissent": false,
@@ -19865,6 +20063,18 @@
       "id": "masici-rebellion-1806",
       "kind": "event",
       "locator": "Q61355138"
+    },
+    {
+      "dissent": false,
+      "id": "mason-county-war",
+      "kind": "event",
+      "locator": "Q6783561"
+    },
+    {
+      "dissent": false,
+      "id": "massachusetts-smallpox-epidemic",
+      "kind": "event",
+      "locator": "Q6784453"
     },
     {
       "dissent": false,
@@ -20444,6 +20654,12 @@
     },
     {
       "dissent": false,
+      "id": "naples-plague-1656",
+      "kind": "event",
+      "locator": "Q3115111"
+    },
+    {
+      "dissent": false,
       "id": "napoleon-s-planned-invasion-of-the-united-kingdom",
       "kind": "event",
       "locator": "Q729861"
@@ -20531,6 +20747,12 @@
       "id": "neapolitan-war",
       "kind": "event",
       "locator": "Q298864"
+    },
+    {
+      "dissent": false,
+      "id": "negros-revolution",
+      "kind": "event",
+      "locator": "Q13652394"
     },
     {
       "dissent": false,
@@ -21770,6 +21992,12 @@
     },
     {
       "dissent": false,
+      "id": "pleasant-valley-war",
+      "kind": "event",
+      "locator": "Q7204086"
+    },
+    {
+      "dissent": false,
       "id": "polish-cossack-tatar-war-1666-1671",
       "kind": "event",
       "locator": "Q1132940"
@@ -22220,6 +22448,12 @@
     },
     {
       "dissent": false,
+      "id": "radical-war",
+      "kind": "event",
+      "locator": "Q3799261"
+    },
+    {
+      "dissent": false,
       "id": "ragamuffin-war",
       "kind": "event",
       "locator": "Q209297"
@@ -22493,6 +22727,12 @@
       "id": "reign-of-terror",
       "kind": "event",
       "locator": "Q193547"
+    },
+    {
+      "dissent": false,
+      "id": "reinsurance-treaty",
+      "kind": "event",
+      "locator": "Q656545"
     },
     {
       "dissent": false,
@@ -23744,6 +23984,12 @@
     },
     {
       "dissent": false,
+      "id": "secret-treaty-of-dover",
+      "kind": "event",
+      "locator": "Q1191077"
+    },
+    {
+      "dissent": false,
       "id": "selk-nam-genocide",
       "kind": "event",
       "locator": "Q4135525"
@@ -23849,6 +24095,12 @@
       "id": "shays-s-rebellion",
       "kind": "event",
       "locator": "Q392601"
+    },
+    {
+      "dissent": false,
+      "id": "sheep-wars",
+      "kind": "event",
+      "locator": "Q7492431"
     },
     {
       "dissent": false,
@@ -26426,6 +26678,12 @@
     },
     {
       "dissent": false,
+      "id": "st-felix-s-flood",
+      "kind": "event",
+      "locator": "Q641335"
+    },
+    {
+      "dissent": false,
       "id": "st-francis-raid",
       "kind": "event",
       "locator": "Q7587989"
@@ -26762,6 +27020,12 @@
     },
     {
       "dissent": false,
+      "id": "texas-revolution",
+      "kind": "event",
+      "locator": "Q638530"
+    },
+    {
+      "dissent": false,
       "id": "the-extermination-of-the-jews-1941-1945",
       "kind": "event",
       "locator": "Q2763"
@@ -26915,6 +27179,12 @@
       "id": "third-mandingo-war",
       "kind": "event",
       "locator": "Q139406732"
+    },
+    {
+      "dissent": false,
+      "id": "third-plague-pandemic",
+      "kind": "event",
+      "locator": "Q1259178"
     },
     {
       "dissent": false,
@@ -27257,6 +27527,12 @@
       "id": "treaty-of-amiens",
       "kind": "event",
       "locator": "Q112183"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-amity-and-commerce-between-france-and-japan",
+      "kind": "event",
+      "locator": "Q3536741"
     },
     {
       "dissent": false,
@@ -28949,6 +29225,12 @@
       "id": "treaty-of-the-three-black-eagles",
       "kind": "event",
       "locator": "Q9360733"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-the-triple-alliance",
+      "kind": "event",
+      "locator": "Q1782419"
     },
     {
       "dissent": false,

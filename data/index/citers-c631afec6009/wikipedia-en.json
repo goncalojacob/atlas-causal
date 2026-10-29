@@ -10178,6 +10178,12 @@
     },
     {
       "dissent": false,
+      "id": "1498-meio-earthquake",
+      "kind": "event",
+      "locator": "\"1498 Meiō earthquake\", revision 1375850683"
+    },
+    {
+      "dissent": false,
       "id": "1509-constantinople-earthquake",
       "kind": "event",
       "locator": "\"1509 Constantinople earthquake\", revision 1380981610"
@@ -10226,9 +10232,21 @@
     },
     {
       "dissent": false,
+      "id": "1582-tenerife-plague-epidemic",
+      "kind": "event",
+      "locator": "\"1582 Tenerife plague epidemic\", revision 1359969621"
+    },
+    {
+      "dissent": false,
       "id": "1586-tensho-earthquake",
       "kind": "event",
       "locator": "\"1586 Tenshō earthquake\", revision 1374587191"
+    },
+    {
+      "dissent": false,
+      "id": "1592-1593-malta-plague-epidemic",
+      "kind": "event",
+      "locator": "\"1592–1593 Malta plague epidemic\", revision 1377061441"
     },
     {
       "dissent": false,
@@ -10268,6 +10286,12 @@
     },
     {
       "dissent": false,
+      "id": "1675-1676-malta-plague-epidemic",
+      "kind": "event",
+      "locator": "\"1675–1676 Malta plague epidemic\", revision 1377062584"
+    },
+    {
+      "dissent": false,
       "id": "1679-armenia-earthquake",
       "kind": "event",
       "locator": "\"1679 Armenia earthquake\", revision 1366163520"
@@ -10286,6 +10310,12 @@
     },
     {
       "dissent": false,
+      "id": "1707-hoei-earthquake",
+      "kind": "event",
+      "locator": "\"1707 Hōei earthquake\", revision 1366163597"
+    },
+    {
+      "dissent": false,
       "id": "1711-karamanli-coup",
       "kind": "event",
       "locator": "\"1711 Karamanli coup\", revision 1366223253"
@@ -10301,6 +10331,12 @@
       "id": "1718-tongwei-gansu-earthquake",
       "kind": "event",
       "locator": "\"1718 Tongwei–Gansu earthquake\", revision 1366163614"
+    },
+    {
+      "dissent": false,
+      "id": "1721-boston-smallpox-outbreak",
+      "kind": "event",
+      "locator": "\"1721 Boston smallpox outbreak\", revision 1354765526"
     },
     {
       "dissent": false,
@@ -10340,6 +10376,12 @@
     },
     {
       "dissent": false,
+      "id": "1770-1772-russian-plague",
+      "kind": "event",
+      "locator": "\"1770–1772 Russian plague\", revision 1379719836"
+    },
+    {
+      "dissent": false,
       "id": "1772-1773-persian-plague",
       "kind": "event",
       "locator": "\"1772–1773 Persian Plague\", revision 1356708545"
@@ -10367,6 +10409,12 @@
       "id": "1790-oran-earthquake",
       "kind": "event",
       "locator": "\"1790 Oran earthquake\", revision 1373116857"
+    },
+    {
+      "dissent": false,
+      "id": "1792-unzen-landslide-and-tsunami",
+      "kind": "event",
+      "locator": "\"1792 Unzen landslide and tsunami\", revision 1377949052"
     },
     {
       "dissent": false,
@@ -10442,6 +10490,12 @@
     },
     {
       "dissent": false,
+      "id": "1837-great-plains-smallpox-epidemic",
+      "kind": "event",
+      "locator": "\"1837 Great Plains smallpox epidemic\", revision 1375904630"
+    },
+    {
+      "dissent": false,
       "id": "1838-mormon-war",
       "kind": "event",
       "locator": "\"1838 Mormon War\", revision 1381821095"
@@ -10466,6 +10520,12 @@
     },
     {
       "dissent": false,
+      "id": "1848-1849-venezuelan-civil-war",
+      "kind": "event",
+      "locator": "\"1848–1849 Venezuelan civil war\", revision 1370278878"
+    },
+    {
+      "dissent": false,
       "id": "1851-chilean-revolution",
       "kind": "event",
       "locator": "\"1851 Chilean revolution\", revision 1370278887"
@@ -10478,6 +10538,12 @@
     },
     {
       "dissent": false,
+      "id": "1853-copenhagen-cholera-outbreak",
+      "kind": "event",
+      "locator": "\"1853 Copenhagen cholera outbreak\", revision 1332150446"
+    },
+    {
+      "dissent": false,
       "id": "1854-broad-street-cholera-outbreak",
       "kind": "event",
       "locator": "\"1854 Broad Street cholera outbreak\", revision 1380080422"
@@ -10487,6 +10553,12 @@
       "id": "1854-macedonian-rebellion",
       "kind": "event",
       "locator": "\"1854 Macedonian rebellion\", revision 1370278889"
+    },
+    {
+      "dissent": false,
+      "id": "1858-treaty-of-amity-and-commerce-between-the-netherlands-and-japan",
+      "kind": "event",
+      "locator": "\"1858 Treaty of Amity and Commerce between the Netherlands and Japan\", revision 1359883143"
     },
     {
       "dissent": false,
@@ -10574,6 +10646,12 @@
     },
     {
       "dissent": false,
+      "id": "1883-eruption-of-krakatoa",
+      "kind": "event",
+      "locator": "\"1883 eruption of Krakatoa\", revision 1381107509"
+    },
+    {
+      "dissent": false,
       "id": "1887-yellow-river-flood",
       "kind": "event",
       "locator": "\"1887 Yellow River flood\", revision 1379364844"
@@ -10604,6 +10682,12 @@
     },
     {
       "dissent": false,
+      "id": "1894-hong-kong-plague",
+      "kind": "event",
+      "locator": "\"1894 Hong Kong plague\", revision 1363259662"
+    },
+    {
+      "dissent": false,
       "id": "1894-sasun-rebellion",
       "kind": "event",
       "locator": "\"1894 Sasun rebellion\", revision 1370278941"
@@ -10628,9 +10712,21 @@
     },
     {
       "dissent": false,
+      "id": "1896-sanriku-earthquake",
+      "kind": "event",
+      "locator": "\"1896 Sanriku earthquake\", revision 1379584584"
+    },
+    {
+      "dissent": false,
       "id": "1897-assam-earthquake",
       "kind": "event",
       "locator": "\"1897 Assam earthquake\", revision 1377090506"
+    },
+    {
+      "dissent": false,
+      "id": "1900-1904-san-francisco-plague",
+      "kind": "event",
+      "locator": "\"1900–1904 San Francisco plague\", revision 1380774523"
     },
     {
       "dissent": false,
@@ -11945,6 +12041,12 @@
       "id": "anglo-japanese-friendship-treaty",
       "kind": "event",
       "locator": "\"Anglo-Japanese Friendship Treaty\", revision 1316160821"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-japanese-treaty-of-amity-and-commerce",
+      "kind": "event",
+      "locator": "\"Anglo-Japanese Treaty of Amity and Commerce\", revision 1283260919"
     },
     {
       "dissent": false,
@@ -22292,6 +22394,12 @@
     },
     {
       "dissent": false,
+      "id": "bombay-plague-epidemic",
+      "kind": "event",
+      "locator": "\"Bombay plague epidemic\", revision 1382475509"
+    },
+    {
+      "dissent": false,
       "id": "bombing-in-zona-rosa-of-bogota-of-2003",
       "kind": "event",
       "locator": "\"2003 Zona Rosa attacks\", revision 1350326644"
@@ -23393,6 +23501,18 @@
       "id": "cologne-war",
       "kind": "event",
       "locator": "\"Cologne War\", revision 1374675504"
+    },
+    {
+      "dissent": false,
+      "id": "colombian-civil-war-1860-1862",
+      "kind": "event",
+      "locator": "\"Colombian Civil War (1860–1862)\", revision 1370611848"
+    },
+    {
+      "dissent": false,
+      "id": "colombian-civil-war-of-1876",
+      "kind": "event",
+      "locator": "\"Colombian Civil War of 1876\", revision 1375769364"
     },
     {
       "dissent": false,
@@ -24794,6 +24914,12 @@
     },
     {
       "dissent": false,
+      "id": "fall-of-edo",
+      "kind": "event",
+      "locator": "\"Fall of Edo\", revision 1370617738"
+    },
+    {
+      "dissent": false,
       "id": "fall-of-ghent",
       "kind": "event",
       "locator": "\"Fall of Ghent\", revision 1370617755"
@@ -24809,6 +24935,12 @@
       "id": "fall-of-maximilien-robespierre",
       "kind": "event",
       "locator": "\"Fall of Maximilien Robespierre\", revision 1370782731"
+    },
+    {
+      "dissent": false,
+      "id": "fall-of-osaka-castle",
+      "kind": "event",
+      "locator": "\"Fall of Osaka Castle\", revision 1366260266"
     },
     {
       "dissent": false,
@@ -24869,6 +25001,12 @@
       "id": "federal-pact",
       "kind": "event",
       "locator": "\"Federal Pact\", revision 1297824429"
+    },
+    {
+      "dissent": false,
+      "id": "federal-war",
+      "kind": "event",
+      "locator": "\"Federal War\", revision 1370618168"
     },
     {
       "dissent": false,
@@ -26024,6 +26162,12 @@
     },
     {
       "dissent": false,
+      "id": "great-fire-of-london",
+      "kind": "event",
+      "locator": "\"Great Fire of London\", revision 1376270657"
+    },
+    {
+      "dissent": false,
       "id": "great-flood-of-1862",
       "kind": "event",
       "locator": "\"Great Flood of 1862\", revision 1379620303"
@@ -26072,6 +26216,12 @@
     },
     {
       "dissent": false,
+      "id": "great-plague-in-the-late-ming-dynasty",
+      "kind": "event",
+      "locator": "\"Great Plague in the late Ming dynasty\", revision 1380219266"
+    },
+    {
+      "dissent": false,
       "id": "great-plague-of-1738",
       "kind": "event",
       "locator": "\"Great Plague of 1738\", revision 1354703383"
@@ -26087,6 +26237,18 @@
       "id": "great-plague-of-marseille",
       "kind": "event",
       "locator": "\"Great Plague of Marseille\", revision 1365027875"
+    },
+    {
+      "dissent": false,
+      "id": "great-plague-of-seville",
+      "kind": "event",
+      "locator": "\"Great Plague of Seville\", revision 1345284680"
+    },
+    {
+      "dissent": false,
+      "id": "great-plague-of-vienna",
+      "kind": "event",
+      "locator": "\"Great Plague of Vienna\", revision 1272266851"
     },
     {
       "dissent": false,
@@ -26672,6 +26834,12 @@
     },
     {
       "dissent": false,
+      "id": "indigo-revolt",
+      "kind": "event",
+      "locator": "\"Indigo revolt\", revision 1368174729"
+    },
+    {
+      "dissent": false,
       "id": "indo-pakistani-war-of-1947-1948",
       "kind": "event",
       "locator": "\"India–Pakistan war of 1947–1948\", revision 1373782125"
@@ -27092,6 +27260,12 @@
     },
     {
       "dissent": false,
+      "id": "japan-korea-treaty-of-1876",
+      "kind": "event",
+      "locator": "\"Japan–Korea Treaty of 1876\", revision 1360457342"
+    },
+    {
+      "dissent": false,
       "id": "japan-korea-treaty-of-1885",
       "kind": "event",
       "locator": "\"Japan–Korea Treaty of 1885\", revision 1344861208"
@@ -27209,6 +27383,12 @@
       "id": "john-brown-s-raid-on-harpers-ferry",
       "kind": "event",
       "locator": "\"John Brown's raid on Harpers Ferry\", revision 1380561022"
+    },
+    {
+      "dissent": false,
+      "id": "johnson-county-war",
+      "kind": "event",
+      "locator": "\"Johnson County War\", revision 1380752619"
     },
     {
       "dissent": false,
@@ -27434,6 +27614,12 @@
     },
     {
       "dissent": false,
+      "id": "kinmon-incident",
+      "kind": "event",
+      "locator": "\"Kinmon incident\", revision 1370625872"
+    },
+    {
+      "dissent": false,
       "id": "knights-war",
       "kind": "event",
       "locator": "\"Knights' War\", revision 1370947288"
@@ -27617,6 +27803,12 @@
       "id": "larache-landing",
       "kind": "event",
       "locator": "\"Larache landing\", revision 1379388284"
+    },
+    {
+      "dissent": false,
+      "id": "las-cuevas-war",
+      "kind": "event",
+      "locator": "\"Las Cuevas War\", revision 1381732901"
     },
     {
       "dissent": false,
@@ -27821,6 +28013,12 @@
       "id": "los-andes-vs-prueba",
       "kind": "event",
       "locator": "\"Los Andes vs Prueba\", revision 1370627114"
+    },
+    {
+      "dissent": false,
+      "id": "louisiana-purchase",
+      "kind": "event",
+      "locator": "\"Louisiana Purchase\", revision 1382192502"
     },
     {
       "dissent": false,
@@ -28055,6 +28253,18 @@
       "id": "masici-rebellion-1806",
       "kind": "event",
       "locator": "\"Mašići Rebellion (1806)\", revision 1370627962"
+    },
+    {
+      "dissent": false,
+      "id": "mason-county-war",
+      "kind": "event",
+      "locator": "\"Mason County War\", revision 1360506843"
+    },
+    {
+      "dissent": false,
+      "id": "massachusetts-smallpox-epidemic",
+      "kind": "event",
+      "locator": "\"Massachusetts smallpox epidemic\", revision 1343429943"
     },
     {
       "dissent": false,
@@ -28604,6 +28814,12 @@
     },
     {
       "dissent": false,
+      "id": "naples-plague-1656",
+      "kind": "event",
+      "locator": "\"Naples Plague (1656)\", revision 1378847065"
+    },
+    {
+      "dissent": false,
       "id": "napoleon-s-planned-invasion-of-the-united-kingdom",
       "kind": "event",
       "locator": "\"Napoleon's planned invasion of the United Kingdom\", revision 1381807580"
@@ -28691,6 +28907,12 @@
       "id": "neapolitan-war",
       "kind": "event",
       "locator": "\"Neapolitan War\", revision 1380950638"
+    },
+    {
+      "dissent": false,
+      "id": "negros-revolution",
+      "kind": "event",
+      "locator": "\"Negros Revolution\", revision 1380909013"
     },
     {
       "dissent": false,
@@ -29948,6 +30170,12 @@
     },
     {
       "dissent": false,
+      "id": "pleasant-valley-war",
+      "kind": "event",
+      "locator": "\"Pleasant Valley War\", revision 1380609392"
+    },
+    {
+      "dissent": false,
       "id": "polish-cossack-tatar-war-1666-1671",
       "kind": "event",
       "locator": "\"Polish–Cossack–Tatar War (1666–1671)\", revision 1371626928"
@@ -30398,6 +30626,12 @@
     },
     {
       "dissent": false,
+      "id": "radical-war",
+      "kind": "event",
+      "locator": "\"Radical War\", revision 1372181630"
+    },
+    {
+      "dissent": false,
       "id": "ragamuffin-war",
       "kind": "event",
       "locator": "\"Ragamuffin War\", revision 1376343215"
@@ -30671,6 +30905,12 @@
       "id": "reign-of-terror",
       "kind": "event",
       "locator": "\"Reign of Terror\", revision 1375254240"
+    },
+    {
+      "dissent": false,
+      "id": "reinsurance-treaty",
+      "kind": "event",
+      "locator": "\"Reinsurance Treaty\", revision 1380043334"
     },
     {
       "dissent": false,
@@ -31856,6 +32096,12 @@
     },
     {
       "dissent": false,
+      "id": "secret-treaty-of-dover",
+      "kind": "event",
+      "locator": "\"Secret Treaty of Dover\", revision 1376157471"
+    },
+    {
+      "dissent": false,
       "id": "selk-nam-genocide",
       "kind": "event",
       "locator": "\"Selkʼnam genocide\", revision 1382216091"
@@ -31955,6 +32201,12 @@
       "id": "shays-s-rebellion",
       "kind": "event",
       "locator": "\"Shays's Rebellion\", revision 1377911720"
+    },
+    {
+      "dissent": false,
+      "id": "sheep-wars",
+      "kind": "event",
+      "locator": "\"Sheep wars\", revision 1380579129"
     },
     {
       "dissent": false,
@@ -34508,6 +34760,12 @@
     },
     {
       "dissent": false,
+      "id": "st-felix-s-flood",
+      "kind": "event",
+      "locator": "\"St. Felix's flood\", revision 1361434338"
+    },
+    {
+      "dissent": false,
       "id": "st-francis-raid",
       "kind": "event",
       "locator": "\"St. Francis raid\", revision 1370748583"
@@ -34853,6 +35111,12 @@
       "id": "texas-indian-wars",
       "kind": "event",
       "locator": "\"Texas–Indian wars\", revision 1377659372"
+    },
+    {
+      "dissent": false,
+      "id": "texas-revolution",
+      "kind": "event",
+      "locator": "\"Texas Revolution\", revision 1381450517"
     },
     {
       "dissent": false,
@@ -35210,6 +35474,12 @@
     },
     {
       "dissent": false,
+      "id": "third-plague-pandemic",
+      "kind": "event",
+      "locator": "\"Third plague pandemic\", revision 1382152991"
+    },
+    {
+      "dissent": false,
       "id": "third-portuguese-republic-since-1974",
       "kind": "event",
       "locator": "\"Third Portuguese Republic\", revision 1374733623"
@@ -35549,6 +35819,12 @@
       "id": "treaty-of-amiens",
       "kind": "event",
       "locator": "\"Treaty of Amiens\", revision 1369821972"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-amity-and-commerce-between-france-and-japan",
+      "kind": "event",
+      "locator": "\"Treaty of Amity and Commerce between France and Japan\", revision 1306680709"
     },
     {
       "dissent": false,
@@ -37163,6 +37439,12 @@
       "id": "treaty-of-the-three-black-eagles",
       "kind": "event",
       "locator": "\"Treaty of the Three Black Eagles\", revision 1354410977"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-the-triple-alliance",
+      "kind": "event",
+      "locator": "\"Treaty of the Triple Alliance\", revision 1373019608"
     },
     {
       "dissent": false,
