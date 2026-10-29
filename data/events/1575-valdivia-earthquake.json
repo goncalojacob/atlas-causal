@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1575-valdivia-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1348911",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1575 Valdivia earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1348911"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1575 Valdivia earthquake\", revision 1367032455"
+    }
+  ],
+  "title": "1575 Valdivia earthquake",
+  "summary": "The English Wikipedia article \"1575 Valdivia earthquake\", at revision 1367032455, opens: \"The 1575 Valdivia earthquake occurred at 14:30 local time on December 16. It had an estimated magnitude of 8.5 of on the surface-wave magnitude scale and an estimated magnitude of 9.0+ on the Moment magnitude scale and led to the flood of Valdivia, Chile.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1348911, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake in Chile\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1575,
+    "end": 1575,
+    "date": "1575-12-16"
+  },
+  "place": "valdivia",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-lipantitlan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2496774",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Lipantitlán",
+    "pt": "Batalha de Lipantitlán"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2496774"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lipantitlán\", revision 1378642873"
+    }
+  ],
+  "title": "Battle of Lipantitlán",
+  "summary": "The English Wikipedia article \"Battle of Lipantitlán\", at revision 1378642873, opens: \"The Battle of Lipantitlán, also known as the Battle of Nueces Crossing, was fought along the Nueces River on November 4, 1835 between the Mexican Army and Texian insurgents, as part of the Texas Revolution. After the Texian victory at the Battle of Goliad, only two Mexican garrisons remained in Texas, Fort Lipantitlán near San Patricio and the Alamo Mission at San Antonio de Béxar. Fearing that Lipantitlán could be used as a base for the Mexican army to retake Goliad and angry that two of his men were imprisoned there, Texian commander Philip Dimmitt ordered his adjutant, Captain Ira Westover, to capture the fort.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2496774, imported by tools/import/wikidata.mjs. The item's own description reads \"battle along the Nueces River on November 4, 1835 between the Mexican Army and Texian insurgents\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1835,
+    "date": "1835-11-04"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

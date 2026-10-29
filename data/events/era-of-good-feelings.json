@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "era-of-good-feelings",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5384794",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Era of Good Feelings",
+    "pt": "Era dos Bons Sentimentos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5384794"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Era of Good Feelings\", revision 1365522740"
+    }
+  ],
+  "title": "Era of Good Feelings",
+  "summary": "The English Wikipedia article \"Era of Good Feelings\", at revision 1365522740, opens: \"The Era of Good Feelings marked a period in the political history of the United States that reflected a sense of national purpose and a desire for unity among Americans in the aftermath of the War of 1812. The era saw the collapse of the Federalist Party and an end to the bitter partisan disputes between it and the dominant Democratic-Republican Party during the First Party System.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5384794, imported by tools/import/wikidata.mjs. The item's own description reads \"period in the political history of the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1825
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

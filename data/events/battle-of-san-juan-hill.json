@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-san-juan-hill",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1215310",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of San Juan Hill",
+    "pt": "Batalha de San Juan Hill"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1215310"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of San Juan Hill\", revision 1379949299"
+    }
+  ],
+  "title": "Battle of San Juan Hill",
+  "summary": "The English Wikipedia article \"Battle of San Juan Hill\", at revision 1379949299, opens: \"The Battle of San Juan Hill, also known as the Battle for the San Juan Heights, was a major battle of the Spanish–American War fought July 1, 1898, between an American force under the command of William Rufus Shafter and Joseph Wheeler against a Spanish force led by Arsenio Linares y Pombo. The combined assaults on Kettle Hill and San Juan Hill that together form San Juan Heights proved to be one of the most significant battles of the war and, along with the Siege of Santiago, a decisive battle in deciding the fate of the United States Army campaign in Cuba. The American forces, outnumbering the Spanish defenders 16-to-one, charged upon the heights and dispersed the Spanish after suffering heavy casualties.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1215310, imported by tools/import/wikidata.mjs. The item's own description reads \"1898 decisive battle of the Spanish–American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-07-01"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

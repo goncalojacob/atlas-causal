@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "declaration-of-independence-mexico",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1131780",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Declaration of Independence (Mexico)",
+    "pt": "Declaração de Independência do Império Mexicano"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1131780"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Declaration of Independence (Mexico)\", revision 1377898337"
+    }
+  ],
+  "title": "Declaration of Independence (Mexico)",
+  "summary": "The English Wikipedia article \"Declaration of Independence (Mexico)\", at revision 1377898337, opens: \"The Declaration of Independence of the Mexican Empire is the document by which Mexico declared independence from the Spanish Empire. This founding document of the Mexican nation was drafted in the National Palace in Mexico City on 28 September 1821, by Juan José Espinosa de los Monteros, secretary of the Provisional Governmental Board.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1131780, imported by tools/import/wikidata.mjs. The item's own description reads \"document proclaiming Mexican independence from Spain, ratified 28 September 1821\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-09-28"
+  },
+  "place": "mexico-q96",
+  "region": null,
+  "regionNote": null,
+  "category": "founding",
+  "actors": []
+}

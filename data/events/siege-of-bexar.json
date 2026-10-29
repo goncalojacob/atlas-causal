@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-bexar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2722368",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Béxar",
+    "pt": "Cerco de Béxar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2722368"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Béxar\", revision 1377357857"
+    }
+  ],
+  "title": "Siege of Béxar",
+  "summary": "The English Wikipedia article \"Siege of Béxar\", at revision 1377357857, opens: \"The siege of Béxar was an early campaign of the Texas Revolution in which a volunteer Texian army defeated Mexican forces at San Antonio de Béxar. Texians had become disillusioned with the Mexican government as president and General Antonio López de Santa Anna's tenure became increasingly dictatorial. In early October 1835, Texas settlers gathered in Gonzales to stop Mexican troops from reclaiming a small cannon. The resulting skirmish, known as the Battle of Gonzales, launched the Texas Revolution. Men continued to assemble in Gonzales and soon established the Texian Army. Despite a lack of military training, well-respected local leader General Stephen F. Austin was elected commander.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2722368, imported by tools/import/wikidata.mjs. The item's own description reads \"1835 early campaign of the Texas Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1835,
+    "date": "1835-10-12",
+    "endDate": "1835-12-11"
+  },
+  "place": "san-antonio",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

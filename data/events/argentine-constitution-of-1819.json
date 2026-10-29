@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "argentine-constitution-of-1819",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4789386",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Argentine Constitution of 1819",
+    "pt": "Constituição Argentina de 1819"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4789386"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Argentine Constitution of 1819\", revision 1345432964"
+    }
+  ],
+  "title": "Argentine Constitution of 1819",
+  "summary": "The English Wikipedia article \"Argentine Constitution of 1819\", at revision 1345432964, opens: \"The Argentine Constitution of 1819 was a Constitution drafted by the Congress of Tucumán in 1819, shortly after the Argentine War of Independence. It was promoted by Buenos Aires but rejected by the other provinces and did not come into force.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4789386, imported by tools/import/wikidata.mjs. The item's own description reads \"proposed constitution of Argentina shortly after its independence from Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1819,
+    "end": 1819
+  },
+  "place": "buenos-aires",
+  "region": null,
+  "regionNote": null,
+  "category": "law",
+  "actors": []
+}

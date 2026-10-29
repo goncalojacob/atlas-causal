@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pottawatomie-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3489516",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Pottawatomie massacre",
+    "pt": "Massacre de Pottawatomie"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3489516"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pottawatomie massacre\", revision 1374859516"
+    }
+  ],
+  "title": "Pottawatomie massacre",
+  "summary": "The English Wikipedia article \"Pottawatomie massacre\", at revision 1374859516, opens: \"The Pottawatomie massacre occurred on the night of May 24–25, 1856, in the Kansas Territory, United States. In reaction to the sacking of Lawrence by pro-slavery forces on May 21, and the telegraphed news of the severe attack on Massachusetts Senator Charles Sumner, John Brown and a band of abolitionist settlers—some of them members of the Pottawatomie Rifles—responded violently. Just north of Pottawatomie Creek, in Franklin County, they abducted and murdered five pro-slavery settlers. One teenage son of one of the settlers was also abducted by Brown and his fellow perpetrators, but was ultimately spared.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3489516, imported by tools/import/wikidata.mjs. The item's own description reads \"Violent Attack by Abolitionists prior to the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1856,
+    "end": 1856
+  },
+  "place": "kansas",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "bleeding-kansas"
+}
