@@ -1139,6 +1139,15 @@
         }
       ]
     },
+    "battle-of-korsun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-la-prairie": {
       "from": "git",
       "versions": [
@@ -2425,6 +2434,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battles-of-tobago": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4682,6 +4700,15 @@
         }
       ]
     },
+    "siege-of-groningen-1672": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-guilin-1647": {
       "from": "git",
       "versions": [
@@ -4706,6 +4733,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "siege-of-jasna-gora": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

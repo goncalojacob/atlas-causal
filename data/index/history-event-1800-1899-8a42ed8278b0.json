@@ -963,6 +963,15 @@
         }
       ]
     },
+    "anglo-french-blockade-of-the-rio-de-la-plata": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "anglo-japanese-friendship-treaty": {
       "from": "git",
       "versions": [
@@ -2069,7 +2078,25 @@
         }
       ]
     },
+    "battle-of-bazeilles": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-beaumont": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-beaune-la-rolande": {
       "from": "git",
       "versions": [
         {
@@ -2256,6 +2283,15 @@
       ]
     },
     "battle-of-boonville": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-borny-colombey": {
       "from": "git",
       "versions": [
         {
@@ -2470,6 +2506,15 @@
         }
       ]
     },
+    "battle-of-cape-ortegal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-carabobo": {
       "from": "git",
       "versions": [
@@ -2552,6 +2597,15 @@
       ]
     },
     "battle-of-centane": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-cepeda-1820": {
       "from": "git",
       "versions": [
         {
@@ -2920,12 +2974,30 @@
         }
       ]
     },
+    "battle-of-coulmiers": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-crete-a-pierrot": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-cross-keys": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2953,6 +3025,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-curuzu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3177,6 +3258,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-espinosa-de-los-monteros": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3576,12 +3666,30 @@
         }
       ]
     },
+    "battle-of-goito": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-goliad": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-golymin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4521,6 +4629,15 @@
         }
       ]
     },
+    "battle-of-le-mans": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-leipzig": {
       "from": "git",
       "versions": [
@@ -4576,6 +4693,15 @@
       ]
     },
     "battle-of-logandeme": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-lomas-valentinas": {
       "from": "git",
       "versions": [
         {
@@ -4896,6 +5022,15 @@
         }
       ]
     },
+    "battle-of-medina-de-rioseco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-melilla-1860": {
       "from": "git",
       "versions": [
@@ -4933,6 +5068,24 @@
       ]
     },
     "battle-of-mine-run": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-mir-1812": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-miraflores": {
       "from": "git",
       "versions": [
         {
@@ -5019,6 +5172,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-monte-de-las-cruces": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5181,6 +5343,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-nikopol": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5652,6 +5823,15 @@
         }
       ]
     },
+    "battle-of-qbaada": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-quatre-bras": {
       "from": "git",
       "versions": [
@@ -5861,6 +6041,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-saltanovka": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6590,6 +6779,15 @@
         }
       ]
     },
+    "battle-of-the-gebora": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-the-habrah": {
       "from": "git",
       "versions": [
@@ -7180,6 +7378,15 @@
         }
       ]
     },
+    "battle-of-wilson-s-wharf": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-wissembourg-1870": {
       "from": "git",
       "versions": [
@@ -7208,6 +7415,15 @@
       ]
     },
     "battle-of-wuchang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-yatay": {
       "from": "git",
       "versions": [
         {
@@ -7307,6 +7523,15 @@
       ]
     },
     "battles-of-batocina-and-jagodina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battles-of-el-bruch": {
       "from": "git",
       "versions": [
         {
@@ -9749,6 +9974,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "fort-mims-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -14096,6 +14330,15 @@
         }
       ]
     },
+    "siege-of-kolberg-1807": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-kumamoto-castle": {
       "from": "git",
       "versions": [
@@ -14339,6 +14582,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "siege-of-silistria-1854": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -15115,6 +15367,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "thornton-affair": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

@@ -505,6 +505,15 @@
         }
       ]
     },
+    "battle-of-calugareni": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-cannanore-1506": {
       "from": "git",
       "versions": [
@@ -3209,6 +3218,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "invasion-of-gozo-1551": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

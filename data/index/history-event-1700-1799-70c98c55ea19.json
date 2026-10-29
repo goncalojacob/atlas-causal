@@ -526,6 +526,15 @@
         }
       ]
     },
+    "anglo-russian-invasion-of-holland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "anglo-spanish-war-1727-1729": {
       "from": "git",
       "versions": [
@@ -1504,6 +1513,15 @@
         }
       ]
     },
+    "battle-of-freiberg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-friedlingen": {
       "from": "git",
       "versions": [
@@ -1782,6 +1800,15 @@
         }
       ]
     },
+    "battle-of-hoyerswerda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-hubbardton": {
       "from": "git",
       "versions": [
@@ -1944,6 +1971,15 @@
         }
       ]
     },
+    "battle-of-krefeld": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-krtsanisi": {
       "from": "git",
       "versions": [
@@ -2095,6 +2131,15 @@
         }
       ]
     },
+    "battle-of-lutterberg-1758": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-luzzara": {
       "from": "git",
       "versions": [
@@ -2105,6 +2150,15 @@
       ]
     },
     "battle-of-machias": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-maciejowice": {
       "from": "git",
       "versions": [
         {
@@ -3350,6 +3404,15 @@
         }
       ]
     },
+    "battle-of-villinghausen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-vinegar-hill": {
       "from": "git",
       "versions": [
@@ -3842,6 +3905,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "capture-of-the-dutch-fleet-at-den-helder": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5099,6 +5171,15 @@
         }
       ]
     },
+    "mediterranean-campaign-of-1798": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "menashi-kunashir-rebellion": {
       "from": "git",
       "versions": [
@@ -5610,6 +5691,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "reveillon-riots": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6287,6 +6377,15 @@
         }
       ]
     },
+    "siege-of-kolberg-seven-years-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-koppal": {
       "from": "git",
       "versions": [
@@ -6336,6 +6435,15 @@
         }
       ]
     },
+    "siege-of-luxembourg-1794-1795": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-maastricht-1748": {
       "from": "git",
       "versions": [
@@ -6358,6 +6466,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "siege-of-mainz-1793": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6437,6 +6554,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "siege-of-ochakov-1788": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

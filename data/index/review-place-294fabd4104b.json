@@ -2314,7 +2314,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 10,
+      "degree": 11,
       "id": "argentina-q414",
       "kind": "place",
       "names": [
@@ -4522,6 +4522,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "bay-minette-alabama",
+      "kind": "place",
+      "names": [
+        "Bay Minette",
+        "Bay Minette, Alabama"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -4719,6 +4747,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "bazeilles",
+      "kind": "place",
+      "names": [
+        "Bazeilles"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "bear-river-great-salt-lake",
@@ -4780,6 +4835,33 @@
       "kind": "place",
       "names": [
         "Beaumont-en-Argonne"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "beaune-la-rolande",
+      "kind": "place",
+      "names": [
+        "Beaune-la-Rolande"
       ],
       "origin": {
         "tool": "wikidata"
@@ -7381,7 +7463,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 6,
       "id": "bulgaria-q219",
       "kind": "place",
       "names": [
@@ -7989,6 +8071,33 @@
       "names": [
         "Callao",
         "El Callao"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "calugareni",
+      "kind": "place",
+      "names": [
+        "Călugăreni"
       ],
       "origin": {
         "tool": "wikidata"
@@ -9325,6 +9434,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "cepeda",
+      "kind": "place",
+      "names": [
+        "Cepeda",
+        "Cepeda (Santa Fé)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "ceresole-alba",
@@ -9699,6 +9836,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "charles-city-virginia",
+      "kind": "place",
+      "names": [
+        "Charles City",
+        "Charles City, Virginia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -11370,6 +11535,33 @@
           "a9-place"
         ],
         "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record the event item's P276 names was not here, so the engagement came out placeless. The point and the name are the locality item's own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "coulmiers",
+      "kind": "place",
+      "names": [
+        "Coulmiers"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -15166,6 +15358,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "espinosa-de-los-monteros",
+      "kind": "place",
+      "names": [
+        "Espinosa de los Monteros"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "essaouira",
@@ -16975,6 +17194,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "freiberg",
+      "kind": "place",
+      "names": [
+        "Freiberg",
+        "Freiberga"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 2,
       "id": "freiburg-im-breisgau",
@@ -18069,6 +18316,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "gevora",
+      "kind": "place",
+      "names": [
+        "Gévora",
+        "Gévora (Badajoz)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "ghazni",
@@ -18269,6 +18544,33 @@
       "names": [
         "Glencoe",
         "Glencoe, Highland"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "go-ymin-osrodek",
+      "kind": "place",
+      "names": [
+        "Gołymin-Ośrodek"
       ],
       "origin": {
         "tool": "wikidata"
@@ -19016,7 +19318,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "groningen",
       "kind": "place",
       "names": [
@@ -20514,6 +20816,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "hericourt-haute-saone",
+      "kind": "place",
+      "names": [
+        "Héricourt",
+        "Héricourt, Haute-Saône",
+        "Héricourt (Haute-Saône)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "hessisch-oldendorf",
@@ -21047,6 +21378,33 @@
       "kind": "place",
       "names": [
         "Hormuz Island"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "hoyerswerda",
+      "kind": "place",
+      "names": [
+        "Hoyerswerda"
       ],
       "origin": {
         "tool": "wikidata"
@@ -25376,6 +25734,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "ko-obrzeg",
+      "kind": "place",
+      "names": [
+        "Kołobrzeg",
+        "Colberga"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -26053,6 +26439,33 @@
       "kind": "place",
       "names": [
         "Krbavsko Plain"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "krefeld",
+      "kind": "place",
+      "names": [
+        "Krefeld"
       ],
       "origin": {
         "tool": "wikidata"
@@ -27629,6 +28042,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "le-mans",
+      "kind": "place",
+      "names": [
+        "Le Mans"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -28694,7 +29134,7 @@
         }
       ],
       "created": "2026-10-13",
-      "degree": 3,
+      "degree": 4,
       "id": "low-countries",
       "kind": "place",
       "names": [
@@ -29190,7 +29630,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "luxembourg-q1842",
       "kind": "place",
       "names": [
@@ -29471,6 +29911,33 @@
       "names": [
         "Machilipatnam",
         "Masulipatão"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "maciejowice",
+      "kind": "place",
+      "names": [
+        "Maciejowice"
       ],
       "origin": {
         "tool": "wikidata"
@@ -29939,6 +30406,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "mainz",
+      "kind": "place",
+      "names": [
+        "Mainz"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "maiwand",
@@ -30164,7 +30658,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "malta-island",
       "kind": "place",
       "names": [
@@ -30475,6 +30969,33 @@
         "Mannar Island",
         "Mannar",
         "Ilha de Manar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "mantua",
+      "kind": "place",
+      "names": [
+        "Mantua"
       ],
       "origin": {
         "tool": "wikidata"
@@ -31379,6 +31900,33 @@
       ],
       "created": "2026-10-29",
       "degree": 1,
+      "id": "medina-de-rioseco",
+      "kind": "place",
+      "names": [
+        "Medina de Rioseco"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
       "id": "medina-del-campo",
       "kind": "place",
       "names": [
@@ -31934,7 +32482,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 2,
+      "degree": 3,
       "id": "metz",
       "kind": "place",
       "names": [
@@ -32326,6 +32874,34 @@
       "kind": "place",
       "names": [
         "Minnesota"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "mir-belarus",
+      "kind": "place",
+      "names": [
+        "Mir",
+        "Mir, Belarus"
       ],
       "origin": {
         "tool": "wikidata"
@@ -38638,7 +39214,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 10,
+      "degree": 11,
       "id": "peru-q419",
       "kind": "place",
       "names": [
@@ -39415,7 +39991,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 5,
       "id": "poland-q36",
       "kind": "place",
       "names": [
@@ -47511,7 +48087,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 12,
+      "degree": 13,
       "id": "spain-q29",
       "kind": "place",
       "names": [
@@ -48158,6 +48734,35 @@
       "kind": "place",
       "names": [
         "Stary Targ"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "staufenberg-lower-saxony",
+      "kind": "place",
+      "names": [
+        "Staufenberg",
+        "Staufenberg, Lower Saxony",
+        "Staufenberg (Baixa Saxônia)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -50865,7 +51470,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 2,
       "id": "tobago",
       "kind": "place",
       "names": [
@@ -54411,6 +55016,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "welver",
+      "kind": "place",
+      "names": [
+        "Welver"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

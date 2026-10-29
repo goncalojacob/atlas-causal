@@ -200,6 +200,15 @@
         }
       ]
     },
+    "battle-of-hericourt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-hexham": {
       "from": "git",
       "versions": [
