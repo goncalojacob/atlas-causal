@@ -493,6 +493,15 @@
         }
       ]
     },
+    "battle-of-batih": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-beachy-head-1690": {
       "from": "git",
       "versions": [
@@ -1160,6 +1169,15 @@
         }
       ]
     },
+    "battle-of-kokenhausen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-kolding-1644": {
       "from": "git",
       "versions": [
@@ -1194,6 +1212,15 @@
       ]
     },
     "battle-of-korsun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-kringen": {
       "from": "git",
       "versions": [
         {
@@ -1605,6 +1632,15 @@
         }
       ]
     },
+    "battle-of-oliwa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-orbetello": {
       "from": "git",
       "versions": [
@@ -1971,6 +2007,15 @@
         }
       ]
     },
+    "battle-of-shepeleviche": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-shigino": {
       "from": "git",
       "versions": [
@@ -2216,6 +2261,15 @@
       ]
     },
     "battle-of-the-gabbard": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-the-kentish-knock": {
       "from": "git",
       "versions": [
         {
@@ -2964,6 +3018,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "delft-explosion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4109,6 +4172,15 @@
         }
       ]
     },
+    "polish-swedish-war-1617-1618": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "polish-swedish-war-1626-1629": {
       "from": "git",
       "versions": [
@@ -4467,6 +4539,15 @@
             "parent"
           ],
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "sack-of-baltimore": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5052,6 +5133,15 @@
       ]
     },
     "siege-of-kayseri-1651": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-kinsale": {
       "from": "git",
       "versions": [
         {

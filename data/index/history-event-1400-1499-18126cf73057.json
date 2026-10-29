@@ -56,6 +56,15 @@
         }
       ]
     },
+    "austrian-hungarian-war-1477-1488": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-agincourt": {
       "from": "git",
       "versions": [
@@ -74,7 +83,43 @@
         }
       ]
     },
+    "battle-of-alfarrobeira": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-anghiari": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-arbedo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-aussig": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-baia": {
       "from": "git",
       "versions": [
         {
@@ -89,6 +134,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-bauge": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -146,7 +200,25 @@
         }
       ]
     },
+    "battle-of-chojnice-1454": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-cravant": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-domazlice": {
       "from": "git",
       "versions": [
         {
@@ -308,6 +380,15 @@
         }
       ]
     },
+    "battle-of-meung-sur-loire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-morat": {
       "from": "git",
       "versions": [
@@ -371,6 +452,15 @@
         }
       ]
     },
+    "battle-of-saint-aubin-du-cormier-1488": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-shelon": {
       "from": "git",
       "versions": [
@@ -380,12 +470,30 @@
         }
       ]
     },
+    "battle-of-st-jakob-an-der-birs": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-stoke-field": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-sudomer": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -461,6 +569,15 @@
         }
       ]
     },
+    "battle-of-valea-alba": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-varna": {
       "from": "git",
       "versions": [
@@ -533,6 +650,15 @@
         }
       ]
     },
+    "battle-on-the-planta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "burgundian-wars": {
       "from": "git",
       "versions": [
@@ -566,6 +692,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "congress-of-lutsk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -638,6 +773,24 @@
         }
       ]
     },
+    "farce-of-avila": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "feast-of-the-pheasant": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "first-battle-of-st-albans": {
       "from": "git",
       "versions": [
@@ -662,6 +815,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "great-irmandino-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -849,6 +1011,15 @@
       ]
     },
     "mad-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "moldavian-ottoman-wars": {
       "from": "git",
       "versions": [
         {
@@ -1094,6 +1265,15 @@
         }
       ]
     },
+    "siege-of-berat-1455": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-ceuta-1419": {
       "from": "git",
       "versions": [
@@ -1131,6 +1311,15 @@
       ]
     },
     "siege-of-harfleur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-kruje-1450": {
       "from": "git",
       "versions": [
         {
@@ -1532,6 +1721,15 @@
       ]
     },
     "treaty-of-utrecht-1474": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-wiener-neustadt": {
       "from": "git",
       "versions": [
         {
