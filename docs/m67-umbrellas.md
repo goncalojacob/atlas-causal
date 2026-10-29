@@ -5482,3 +5482,87 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-29: `battle-of-azcapotzalco`, filed under `mexican-war-of-independence` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-299`, rank `child-of:mexican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-paraguari`, filed under `paraguay-campaign` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-314`, rank `child-of:paraguay-campaign`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-tatayiba`, filed under `humaita-campaign` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-320`, rank `child-of:humaita-campaign`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-escamela`, filed under `mexican-war-of-independence` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-324`, rank `child-of:mexican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-puruaran`, filed under `mexican-war-of-independence` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-334`, rank `child-of:mexican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-cuchilla-del-tambo`, filed under `spanish-reconquest-of-new-granada` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-336`, rank `child-of:spanish-reconquest-of-new`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-pampa-germania`, filed under `war-of-the-pacific` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-342`, rank `child-of:war-of-the-pacific`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `capture-of-oaxaca`, filed under `mexican-war-of-independence` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-346`, rank `child-of:mexican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-zitacuaro`, filed under `mexican-war-of-independence` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-354`, rank `child-of:mexican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-campichuelo`, filed under `paraguay-campaign` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-313`, rank `child-of:paraguay-campaign`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `treaty-of-mapasingue`, filed under `ecuadorian-peruvian-war-1857-1860` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-315`, rank `child-of:ecuadorian-peruvian-war-1857`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-carumbe`, filed under `portuguese-conquest-of-the-banda-oriental` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-317`, rank `child-of:portuguese-conquest-of-the`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-monte-cristi`, filed under `dominican-restoration-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-319`, rank `child-of:dominican-restoration-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-el-veladero`, filed under `mexican-war-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-323`, rank `child-of:mexican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-izucar`, filed under `mexican-war-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-325`, rank `child-of:mexican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-la-chincua`, filed under `mexican-war-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-327`, rank `child-of:mexican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `siege-of-huajuapan-de-leon`, filed under `mexican-war-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-333`, rank `child-of:mexican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-tenango-del-valle`, filed under `mexican-war-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-335`, rank `child-of:mexican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `action-of-18-march-1748`, filed under `war-of-jenkins-ear` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-337`, rank `child-of:war-of-jenkins-ear`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-punta-colares`, filed under `cisplatine-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-343`, rank `child-of:cisplatine-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `capture-of-orizaba`, filed under `mexican-war-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-347`, rank `child-of:mexican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-zitlala`, filed under `mexican-war-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-353`, rank `child-of:mexican-war-of-independence`. Its span and its subject put it inside the umbrella.

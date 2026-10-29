@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-acapulco-1813",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485803",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Acapulco (1813)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485803"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Acapulco (1813)\", revision 1370738453"
+    }
+  ],
+  "title": "Siege of Acapulco (1813)",
+  "summary": "The English Wikipedia article \"Siege of Acapulco (1813)\", at revision 1370738453, opens: \"The siege of Acapulco was a battle of the War of Mexican Independence that occurred on 12 April 1813 at Acapulco de Juárez. The battle was fought between the royalist forces loyal to the Spanish crown, commanded by Pedro Antonio Vélez, and the Mexican rebels fighting for independence from the Spanish Empire, commanded by José María Morelos. The prestigious battle resulted in a victory for the Mexican rebels.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485803, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle in Mexico\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-04-12"
+  },
+  "place": "acapulco",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mexican-war-of-independence"
+}

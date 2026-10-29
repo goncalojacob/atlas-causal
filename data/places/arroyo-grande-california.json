@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "arroyo-grande-california",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q703206",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Arroyo Grande, California",
+    "pt": "Arroyo Grande"
+  },
+  "sources": [],
+  "names": [
+    "Arroyo Grande",
+    "Arroyo Grande, California"
+  ],
+  "where": {
+    "lon": -120.58666666667,
+    "lat": 35.120833333333,
+    "precision": "city",
+    "label": "Arroyo Grande, California"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-colonia-del-sacramento-1826",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5649252",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Colonia del Sacramento (1826)",
+    "pt": "Batalha da Colônia do Sacramento"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5649252"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Colonia del Sacramento (1826)\", revision 1375783734"
+    }
+  ],
+  "title": "Battle of Colonia del Sacramento (1826)",
+  "summary": "The English Wikipedia article \"Battle of Colonia del Sacramento (1826)\", at revision 1375783734, opens: \"The battle of Colonia del Sacramento consisted of a series of failed attempts made by admiral William Brown of capturing the town of Colonia del Sacramento, which was under Brazilian control and being sieged on land by insurgent Uruguayan forces, in the context of the Cisplatine War between the Empire of Brazil and the United Provinces of the Río de la Plata. The confrontations began in the morning of 26 February 1826 and ended on 14 March 1826.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5649252, imported by tools/import/wikidata.mjs. The item's own description reads \"1826 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1826,
+    "end": 1826,
+    "date": "1826-02-26",
+    "endDate": "1826-03-14"
+  },
+  "place": "colonia-del-sacramento",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "cisplatine-war"
+}

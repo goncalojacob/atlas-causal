@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "acapulco",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q81398",
+  "sitelinks": {
+    "count": 94,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Acapulco",
+    "pt": "Acapulco"
+  },
+  "sources": [],
+  "names": [
+    "Acapulco de Juárez",
+    "Acapulco"
+  ],
+  "where": {
+    "lon": -99.8870087,
+    "lat": 16.8628695,
+    "precision": "city",
+    "label": "Acapulco"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

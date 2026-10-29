@@ -54891,6 +54891,619 @@
         "place": "camaguey"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-310",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2890631: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-312",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-duck-lake",
+        "edges": [],
+        "place": "battle-of-duck-lake-national-historic-site"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-314",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-paraguari",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-316",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-punta-malpelo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-318",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q55109500: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-320",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tatayiba",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-322",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-arroyo-grande-1818",
+        "edges": [],
+        "place": "arroyo-grande-california"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-324",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-escamela",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-326",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2888067: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-328",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2889147: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-330",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2889708: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-332",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2890158: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-334",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-puruaran",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-336",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cuchilla-del-tambo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-338",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "first-siege-of-callao",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-340",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5742647: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-342",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-pampa-germania",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-344",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "chilean-occupation-of-antofagasta",
+        "edges": [],
+        "place": "antofagasta"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-346",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-oaxaca",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-348",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zacatecas-1811",
+        "edges": [],
+        "place": "zacatecas-city"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-350",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sangrar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-352",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-colonia-del-sacramento-1826",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-354",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zitacuaro",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-356",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "1900-colombian-coup-d-etat",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-358",
+      "writer": "A",
+      "fired": "2026-10-29T21:09Z",
+      "status": "written",
+      "written": {
+        "event": "rupture-of-the-blockade-of-arica",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-311",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fish-creek",
+        "edges": [],
+        "place": "fish-creek-saskatchewan"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-313",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-campichuelo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-315",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-mapasingue",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-317",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-carumbe",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-319",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-monte-cristi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-321",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fort-coimbra",
+        "edges": [],
+        "place": "new-coimbra-fort"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-323",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-el-veladero",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-325",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-izucar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-327",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-la-chincua",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-329",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2889192: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-331",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2890148: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-333",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-huajuapan-de-leon",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-335",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tenango-del-valle",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-337",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "action-of-18-march-1748",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-339",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "blockade-of-callao",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-341",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5742675: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-343",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-punta-colares",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-345",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q8244343: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-347",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-orizaba",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-349",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-acapulco-1813",
+        "edges": [],
+        "place": "acapulco"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-351",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "blockade-of-iquique",
+        "edges": [],
+        "place": "iquique"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-353",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zitlala",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-355",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "written",
+      "written": {
+        "event": "iquicha-war-of-1825-1828",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-357",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5722741: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-americas-359",
+      "writer": "B",
+      "fired": "2026-10-29T21:16Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4872325: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   ]
 }

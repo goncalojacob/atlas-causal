@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "1900-colombian-coup-d-etat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q106194524",
+  "wikipedia": {
+    "en": "1900 Colombian coup d'état"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q106194524"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1900 Colombian coup d'état\", revision 1370278959"
+    }
+  ],
+  "title": "1900 Colombian coup d'état",
+  "summary": "The English Wikipedia article \"1900 Colombian coup d'état\", at revision 1370278959, opens: \"The 1900 Colombian coup d'état occurred on 31 July of that year, and consisted of the peaceful seizure of power by Vice President José Manuel Marroquín, who, supported by the Conservative Party and the Liberal Party, overthrew Manuel Antonio Sanclemente, member of the National Party. The coup occurred in the context of the Thousand Days' War, and took advantage of President Sanclemente's delicate state of health, advanced age, and unpopularity.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q106194524, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": null,
+    "date": "1900-07-31"
+  },
+  "place": "colombia-q739",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}
