@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-verneuil",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q425617",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Verneuil",
+    "pt": "Batalha de Verneuil"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q425617"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Verneuil\", revision 1382310759"
+    }
+  ],
+  "title": "Battle of Verneuil",
+  "summary": "The English Wikipedia article \"Battle of Verneuil\", at revision 1382310759, opens: \"The Battle of Verneuil was a battle of the Hundred Years' War, fought on 17 August 1424 near Verneuil-sur-Avre in Normandy between an English army and a combined Franco-Scottish force, augmented by Milanese heavy cavalry. The battle was a significant English victory, and was described by them as a second Agincourt.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q425617, imported by tools/import/wikidata.mjs. The item's own description reads \"1424 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1424,
+    "end": 1424,
+    "date": "1424-08-17"
+  },
+  "place": "piseux",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

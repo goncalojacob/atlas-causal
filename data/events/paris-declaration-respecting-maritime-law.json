@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "paris-declaration-respecting-maritime-law",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q684311",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Paris Declaration Respecting Maritime Law"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q684311"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Paris Declaration Respecting Maritime Law\", revision 1376163799"
+    }
+  ],
+  "title": "Paris Declaration Respecting Maritime Law",
+  "summary": "The English Wikipedia article \"Paris Declaration Respecting Maritime Law\", at revision 1376163799, opens: \"The Paris Declaration Respecting Maritime Law of 16 April 1856 was an international multilateral treaty agreed to by the warring parties in the Crimean War gathered at the Congress at Paris after the peace treaty of Paris had been signed in March 1856. As an important juridical novelty in international law, the treaty for the first time created the possibility for nations that were not involved in the establishment of the agreement and did not sign, to become a party by acceding the declaration afterwards. So did altogether 55 nations, which otherwise would have been impossible in such a short period. This represented a large step in the globalisation of international law.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q684311, imported by tools/import/wikidata.mjs. The item's own description reads \"1856 treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1856,
+    "end": 1856,
+    "date": "1856-04-16"
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

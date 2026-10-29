@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "act-of-mediation",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q666909",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Act of Mediation",
+    "pt": "Ata de Mediação"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q666909"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Act of Mediation\", revision 1382113892"
+    }
+  ],
+  "title": "Act of Mediation",
+  "summary": "The English Wikipedia article \"Act of Mediation\", at revision 1382113892, opens: \"The Act of Mediation was issued by Napoleon Bonaparte, First Consul of the French Republic on 19 February 1803 to abolish the Helvetic Republic, which had existed since the invasion of Switzerland by French troops in 1798, and replace it with the Swiss Confederation. After the withdrawal of French troops in July 1802, the Republic collapsed. The Act of Mediation was Napoleon's attempt at a compromise between the Ancien Régime and a republic. This intermediary stage of Swiss history lasted until the Restoration of 1815. The Act also destroyed the statehood of Tarasp and gave it to Graubunden.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q666909, imported by tools/import/wikidata.mjs. The item's own description reads \"decree by Napoleon Bonaparte on 19 February 1803, re-establishing the Swiss cantons and the Confederation, abolishing the Helvetic Republic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1803,
+    "end": 1813,
+    "date": "1803-02-19"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "law",
+  "actors": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "strasbourg",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6602",
+  "sitelinks": {
+    "count": 157,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Strasbourg",
+    "pt": "Estrasburgo"
+  },
+  "sources": [],
+  "names": [
+    "Strasbourg",
+    "Estrasburgo"
+  ],
+  "where": {
+    "lon": 7.7522222222222,
+    "lat": 48.573333333333,
+    "precision": "city",
+    "label": "Strasbourg"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-fornovo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q764793",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Fornovo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q764793"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fornovo\", revision 1370110386"
+    }
+  ],
+  "title": "Battle of Fornovo",
+  "summary": "The English Wikipedia article \"Battle of Fornovo\", at revision 1370110386, opens: \"The Battle of Fornovo took place 30 km southwest of the city of Parma on 6 July 1495. It was fought as King Charles VIII of France left Naples upon hearing the news of the grand coalition assembled against him. Despite the numerical advantage of their opponents, the French won the engagement and Charles was able to march his army out of Italy. It was nonetheless devoid of any strategic result as all of their conquests in the Italian Peninsula were abandoned. Fornovo was the first major pitched battle of the Italian Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q764793, imported by tools/import/wikidata.mjs. The item's own description reads \"1495 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1495,
+    "end": 1495,
+    "date": "1495-07-06"
+  },
+  "place": "fornovo-di-taro",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "italian-war-of-1494-1495"
+}

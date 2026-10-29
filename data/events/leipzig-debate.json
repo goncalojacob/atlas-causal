@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "leipzig-debate",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q688998",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Leipzig Debate",
+    "pt": "Debate de Leipzig"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q688998"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Leipzig Debate\", revision 1368357730"
+    }
+  ],
+  "title": "Leipzig Debate",
+  "summary": "The English Wikipedia article \"Leipzig Debate\", at revision 1368357730, opens: \"The Leipzig Debate was a theological disputation originally between Andreas Karlstadt, Martin Luther and Johann Eck. Karlstadt, the dean of the Wittenberg theological faculty, felt that he had to defend Luther against Eck's critical commentary on the 95 Theses and so challenged Johann Eck, a professor of theology at the University of Ingolstadt, to a public debate concerning the doctrines of free will and grace.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q688998, imported by tools/import/wikidata.mjs. The item's own description reads \"religious debate between Martin Luther and Johann Eck in Pleissenburg, Germany, in 1519; a re-enactment of 1863 was painted circa 1865 (destroyed in Dresden in 1945)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1519,
+    "end": 1519
+  },
+  "place": "leipzig",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

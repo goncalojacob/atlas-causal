@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-cecora-1620",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q650411",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Cecora (1620)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q650411"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cecora (1620)\", revision 1376359740"
+    }
+  ],
+  "title": "Battle of Cecora (1620)",
+  "summary": "The English Wikipedia article \"Battle of Cecora (1620)\", at revision 1376359740, opens: \"The Battle of Cecora took place during the Polish–Ottoman War (1620–21) between the Polish–Lithuanian Commonwealth and Ottoman forces, fought from 17 September to 7 October 1620 in Moldavia, near the Prut River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q650411, imported by tools/import/wikidata.mjs. The item's own description reads \"1620 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1620,
+    "end": 1620,
+    "date": "1620-09-17",
+    "endDate": "1620-10-07"
+  },
+  "place": "prut",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

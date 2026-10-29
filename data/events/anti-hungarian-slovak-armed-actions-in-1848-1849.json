@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "anti-hungarian-slovak-armed-actions-in-1848-1849",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q751143",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Anti-Hungarian Slovak Armed Actions in 1848–1849"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q751143"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anti-Hungarian Slovak Armed Actions in 1848–1849\", revision 1382295981"
+    }
+  ],
+  "title": "Anti-Hungarian Slovak Armed Actions in 1848–1849",
+  "summary": "The English Wikipedia article \"Anti-Hungarian Slovak Armed Actions in 1848–1849\", at revision 1382295981, opens: \"The Slovak Volunteer Campaigns, Slovak uprising of 1848–1849, Slovak Revolt or the Slovak Revolution occurred in Western parts of Upper Hungary with the aim of equalizing Slovaks, democratizing political life and achieving social justice within the 1848–49 revolutions in the Habsburg Monarchy. It lasted from September 1848 to November 1849. In October 1848, Slovak leaders replaced their original Hungaro-federal program by Austro-federal, called for the separation of a Slovak district from the Kingdom of Hungary and for the formation of a new autonomous district within the framework of the Habsburg Monarchy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q751143, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1849,
+    "date": "1848-09-19",
+    "endDate": "1849-11-21"
+  },
+  "place": "upper-hungary",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "hungarian-revolution-of-1848"
+}

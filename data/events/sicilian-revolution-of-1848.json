@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sicilian-revolution-of-1848",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2708273",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Sicilian revolution of 1848",
+    "pt": "Revolução siciliana de 1848"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2708273"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sicilian revolution of 1848\", revision 1370738410"
+    }
+  ],
+  "title": "Sicilian revolution of 1848",
+  "summary": "The English Wikipedia article \"Sicilian revolution of 1848\", at revision 1370738410, opens: \"The Sicilian revolution of 1848 was the first of the numerous Revolutions of 1848 which swept across Europe. It was a popular rebellion against the rule of Ferdinand II of the House of Bourbon, King of the Two Sicilies. Three revolutions against the Bourbon ruled Kingdom of the Two Sicilies had previously occurred on the island of Sicily starting from 1800: this final one, which commenced on 12 January 1848, resulted in an independent state which survived for 16 months. The Sicilian Constitution of 1848 which survived the 16 months was advanced for its time in liberal democratic terms, as was the proposal of a unified Italian confederation of states. It was in effect a curtain-raiser to the end of the Bourbon kingdom of the Two Sicilies, finally completed by Giuseppe Garibaldi's Expedition of the Thousand in 1860, the Siege of Gaeta of 1860–1861 and the proclamation of the unified Kingdom of Italy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2708273, imported by tools/import/wikidata.mjs. The item's own description reads \"1848 rebellion against Bourbon rule in the Kingdom of Sicily\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1849,
+    "date": "1848-01-12",
+    "endDate": "1849-05-15"
+  },
+  "place": "sicily-q1460",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}
