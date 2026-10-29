@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-mentana",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2530200",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Mentana",
+    "pt": "Batalha de Mentana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2530200"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mentana\", revision 1380973709"
+    }
+  ],
+  "title": "Battle of Mentana",
+  "summary": "The English Wikipedia article \"Battle of Mentana\", at revision 1380973709, opens: \"The Battle of Mentana was fought on November 3, 1867, near the village of Mentana, located north-east of Rome, between French-Papal troops and the Italian volunteers led by Giuseppe Garibaldi. Garibaldi's troops tried to capture Rome, which was at that time the main Italian city not yet incorporated into the newly unified Kingdom of Italy. The battle ended in victory for the French-Papal troops, maintaining the independence of the Papal States until 1870.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2530200, imported by tools/import/wikidata.mjs. The item's own description reads \"1867 military engagement, part of the Unification of Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1867,
+    "end": 1867,
+    "date": "1867-11-03"
+  },
+  "place": "mentana",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

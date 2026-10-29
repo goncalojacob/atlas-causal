@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-ratisbon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q337960",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Ratisbon",
+    "pt": "Batalha de Ratisbona"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q337960"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ratisbon\", revision 1370272793"
+    }
+  ],
+  "title": "Battle of Ratisbon",
+  "summary": "The English Wikipedia article \"Battle of Ratisbon\", at revision 1370272793, opens: \"The Battle of Ratisbon, also called the Battle of Regensburg, was a meeting engagement fought on 23 April 1809, during the Napoleonic Wars, between the army of the French Empire, led by Napoleon I, and that of the Austrian Empire, led by Archduke Charles. Scene of the last engagement of the Bavaria phase of the campaign of 1809, the brief defense of the city and installation of a pontoon bridge to the east enabled the retreating Austrian army to escape into Bohemia. During the assault, Marshal Jean Lannes led his troops up ladders onto the walls, and Napoleon was wounded in his ankle by a small artillery round. The shot had been fired at great distance and did not severely hurt the Emperor, but caused a contusion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q337960, imported by tools/import/wikidata.mjs. The item's own description reads \"1809 battle of the War of the Fifth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1809,
+    "end": 1809,
+    "date": "1809-04-23"
+  },
+  "place": "regensburg",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "napoleonic-wars"
+}

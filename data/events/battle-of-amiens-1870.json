@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-amiens-1870",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q661418",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Amiens (1870)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q661418"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Amiens (1870)\", revision 1370106668"
+    }
+  ],
+  "title": "Battle of Amiens (1870)",
+  "summary": "The English Wikipedia article \"Battle of Amiens (1870)\", at revision 1370106668, opens: \"The Battle of Amiens, also known as the Battle of Villers-Bretonneux, was fought on 27 November 1870 between French and Prussian forces during the Franco-Prussian War (1870–1871). It ended in a Prussian victory, forcing the French to retreat and allowing the Prussians to capture Amiens, France.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q661418, imported by tools/import/wikidata.mjs. The item's own description reads \"1870 battle of the Franco-Prussian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1870,
+    "date": "1870-11-27"
+  },
+  "place": "amiens",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-prussian-war"
+}

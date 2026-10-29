@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "polish-golden-age",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3485791",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Polish Golden Age"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485791"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Polish Golden Age\", revision 1379633364"
+    }
+  ],
+  "title": "Polish Golden Age",
+  "summary": "The English Wikipedia article \"Polish Golden Age\", at revision 1379633364, opens: \"The Polish Golden Age was the Renaissance period in the Kingdom of Poland and subsequently in the Polish–Lithuanian Commonwealth, which started in the late 15th century. Historians argue that the Polish Golden Age ended by the mid-17th century, when Poland was ravaged by the Khmelnytsky Uprising (1648–57) and by the Swedish and Russian invasion. During its Golden Age, the Commonwealth became one of the largest kingdoms of Europe and at its peak stretched from modern-day Estonia in the north to Moldavia in the south and from Moscow in the east to Brandenburg in the west.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485791, imported by tools/import/wikidata.mjs. The item's own description reads \"period of Polish history\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1507,
+    "end": 1572
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

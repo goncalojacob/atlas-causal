@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "herceg-novi",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q193103",
+  "sitelinks": {
+    "count": 62,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Herceg Novi",
+    "pt": "Herceg Novi"
+  },
+  "sources": [],
+  "names": [
+    "Herceg Novi"
+  ],
+  "where": {
+    "lon": 18.5375,
+    "lat": 42.453055555556,
+    "precision": "city",
+    "label": "Herceg Novi"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

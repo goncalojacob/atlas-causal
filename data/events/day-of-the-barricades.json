@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "day-of-the-barricades",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3187015",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Day of the Barricades",
+    "pt": "Dia das Barricadas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3187015"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Day of the Barricades\", revision 1363928315"
+    }
+  ],
+  "title": "Day of the Barricades",
+  "summary": "The English Wikipedia article \"Day of the Barricades\", at revision 1363928315, opens: \"In the French Wars of Religion, the Day of the Barricades, 12 May 1588, was an outwardly spontaneous public uprising in staunchly Catholic Paris against the moderate, hesitant, temporising policies of Henry III. It was in fact called forth by the \"Council of Sixteen\", representing the sixteen quartiers of Paris, led by Henry I, Duke of Guise, head of the Catholic League, and coordinated in detail by Philip II of Spain's ambassador, Bernardino de Mendoza.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3187015, imported by tools/import/wikidata.mjs. The item's own description reads \"public uprising in the French Wars of Religion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1588,
+    "end": 1588,
+    "date": "1588-05-12"
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

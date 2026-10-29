@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ten-days-of-brescia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1054657",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Ten Days of Brescia",
+    "pt": "Dez Dias de Bréscia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1054657"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ten Days of Brescia\", revision 1370749862"
+    }
+  ],
+  "title": "Ten Days of Brescia",
+  "summary": "The English Wikipedia article \"Ten Days of Brescia\", at revision 1370749862, opens: \"The Ten Days of Brescia was a revolt which broke out on 23 March 1849 in the Italian city of Brescia, then part of the Kingdom of Lombardy–Venetia, a Crown land of the Austrian Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1054657, imported by tools/import/wikidata.mjs. The item's own description reads \"1849 revolt in Brescia, Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1849,
+    "end": 1849,
+    "date": "1849-03-23",
+    "endDate": "1849-04-01"
+  },
+  "place": "brescia",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "first-italian-war-of-independence"
+}

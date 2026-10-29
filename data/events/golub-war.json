@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "golub-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q687151",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Golub War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q687151"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Golub War\", revision 1370621511"
+    }
+  ],
+  "title": "Golub War",
+  "summary": "The English Wikipedia article \"Golub War\", at revision 1370621511, opens: \"The Golub War was a two-month war of the Teutonic Knights against the Kingdom of Poland and the Grand Duchy of Lithuania in 1422. It resulted in a Polish–Lithuanian–Moldavian victory. The Treaty of Melno officially ended the war, which resolved territorial disputes between the Knights and Lithuania over Samogitia that had dragged on since 1398.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q687151, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1422,
+    "end": 1422,
+    "date": "1422-07-17",
+    "endDate": "1422-09-27"
+  },
+  "place": "che-mno-land",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
