@@ -1369,6 +1369,15 @@
         }
       ]
     },
+    "union-of-grodno-1432": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "voyages-of-christopher-columbus": {
       "from": "git",
       "versions": [

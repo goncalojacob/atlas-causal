@@ -8805,6 +8805,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "albanian-revolts-of-1833-1839",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Albanian revolts of 1833–1839"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -10731,6 +10761,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "appeal-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Appeal War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "appomattox-campaign",
       "kind": "event",
@@ -11189,6 +11248,34 @@
       "revised": null,
       "status": "active",
       "title": "Argentine War of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "argyll-s-rising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Argyll's Rising"
     },
     {
       "authors": [
@@ -59192,6 +59279,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "bigod-s-rebellion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "european-wars-of-religion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bigod's rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -64906,6 +65023,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "chernigov-regiment-revolt",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Chernigov Regiment revolt"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-14",
       "id": "chernobyl-disaster",
       "kind": "event",
@@ -67299,6 +67445,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "convention-of-cintra",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Convention of Cintra"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -68717,6 +68892,36 @@
       "revised": null,
       "status": "active",
       "title": "Crimean campaigns (1687–1689)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "crimean-circassian-war-1552-1556",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "span-from-title",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Crimean–Circassian war (1552–1556)"
     },
     {
       "authors": [
@@ -73386,6 +73591,36 @@
       "revised": null,
       "status": "active",
       "title": "Expulsion of Jews from Spain"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "expulsion-of-otto-of-greece",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Expulsion of Otto of Greece"
     },
     {
       "authors": [
@@ -91718,6 +91953,35 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "merthyr-rising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Merthyr Rising"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "messina-revolt",
       "kind": "event",
       "origin": {
@@ -102459,6 +102723,35 @@
       "revised": null,
       "status": "active",
       "title": "Pride's Purge"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "priest-jovica-s-rebellion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Priest Jovica's Rebellion"
     },
     {
       "authors": [
@@ -139774,6 +140067,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "union-of-grodno-1432",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Union of Grodno (1432)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "union-of-lublin",
       "kind": "event",
@@ -144996,6 +145319,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "albanian-revolts-of-1833-1839",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "albanian-venetian-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -145266,6 +145595,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "appeal-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "appomattox-campaign",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -145321,6 +145656,12 @@
     },
     {
       "id": "argentine-revolution-of-1893",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "argyll-s-rising",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -152826,6 +153167,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "bigod-s-rebellion",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "bishops-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -153624,6 +153971,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "chernigov-regiment-revolt",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "chernobyl-disaster",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -153948,6 +154301,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "convention-of-cintra",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "convention-of-constantinople",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -154129,6 +154488,12 @@
     },
     {
       "id": "crimean-campaigns-1687-1689",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "crimean-circassian-war-1552-1556",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -154717,6 +155082,12 @@
     },
     {
       "id": "expulsion-of-jews-from-spain",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "expulsion-of-otto-of-greece",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -157128,6 +157499,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "merthyr-rising",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "messina-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -158629,6 +159006,12 @@
     },
     {
       "id": "pride-s-purge",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "priest-jovica-s-rebellion",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -164377,6 +164760,12 @@
     },
     {
       "id": "union-of-arras",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "union-of-grodno-1432",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

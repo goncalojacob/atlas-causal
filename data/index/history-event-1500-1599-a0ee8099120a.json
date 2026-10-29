@@ -2402,6 +2402,15 @@
         }
       ]
     },
+    "bigod-s-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "blockade-of-the-tetuan-river": {
       "from": "git",
       "versions": [
@@ -2717,6 +2726,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "crimean-circassian-war-1552-1556": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

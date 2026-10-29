@@ -12703,6 +12703,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "derventa",
+      "kind": "place",
+      "names": [
+        "Derventa"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "dessau-ro-lau",
@@ -18633,6 +18660,34 @@
       "kind": "place",
       "names": [
         "Großbeeren"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "grodno",
+      "kind": "place",
+      "names": [
+        "Hrodna",
+        "Grodno"
       ],
       "origin": {
         "tool": "wikidata"
@@ -24794,7 +24849,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "kingdom-of-greece",
       "kind": "place",
       "names": [
@@ -31377,6 +31432,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "merthyr-tydfil",
+      "kind": "place",
+      "names": [
+        "Merthyr Tydfil",
+        "Merthyr Tudful"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "merv",
@@ -36771,7 +36854,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 27,
+      "degree": 28,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -42227,7 +42310,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 11,
+      "degree": 12,
       "id": "russian-empire-q34266",
       "kind": "place",
       "names": [

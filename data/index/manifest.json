@@ -19,31 +19,31 @@
       "to": 1399
     },
     {
-      "file": "index/attributes-1400-1499-ae6a3a09714a.json",
+      "file": "index/attributes-1400-1499-735ab4e9aa81.json",
       "from": 1400,
       "key": "1400-1499",
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-a4179026f428.json",
+      "file": "index/attributes-1500-1599-a352a79658d6.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-9335d54c895c.json",
+      "file": "index/attributes-1600-1699-8b93fbac731c.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-bbca492da898.json",
+      "file": "index/attributes-1700-1799-f1531f2f07a4.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-7aa8fa011234.json",
+      "file": "index/attributes-1800-1899-ab16ede27409.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
@@ -67,7 +67,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-b8afd4372e9f.json",
+      "file": "index/attributes-place-4612278b818c.json",
       "from": null,
       "key": "place",
       "to": null
@@ -948,15 +948,15 @@
       "id": "other"
     },
     {
-      "count": 149,
+      "count": 151,
       "id": "revolution"
     },
     {
-      "count": 489,
+      "count": 491,
       "id": "treaty"
     },
     {
-      "count": 2976,
+      "count": 2978,
       "id": "war"
     }
   ],
@@ -1025,10 +1025,10 @@
   "counts": {
     "actors": 2699,
     "edges": 1283,
-    "events": 4825,
+    "events": 4836,
     "narratives": 2,
     "offices": 11,
-    "places": 2009,
+    "places": 2012,
     "presences": 6691,
     "regions": 5,
     "relations": 138,
@@ -1073,46 +1073,46 @@
     }
   ],
   "files": {
-    "citers": "index/citers-392c6444225b",
-    "core": "index/core-328be1688f52.json",
-    "grounds": "index/grounds-4942800bc41d.json",
+    "citers": "index/citers-3c3fabad5156",
+    "core": "index/core-4dd151f685f1.json",
+    "grounds": "index/grounds-badae44f0c7d.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-b1bf5503936f.json",
-    "search": "index/search-e1d594180e79.json",
-    "sources": "index/sources-6c40b38e5771.json",
-    "territories": "index/territories-960f50633434.json"
+    "review": "index/review-6e8be158c3ed.json",
+    "search": "index/search-2843ffb7c4f0.json",
+    "sources": "index/sources-c6dca5384e29.json",
+    "territories": "index/territories-2608a41d5125.json"
   },
   "historyShards": [
     {
-      "file": "index/history-event-1400-1499-573012d5a529.json",
+      "file": "index/history-event-1400-1499-6a2e9bad14f4.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "event",
       "to": 1499
     },
     {
-      "file": "index/history-event-1500-1599-07eed2e7920b.json",
+      "file": "index/history-event-1500-1599-a0ee8099120a.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "event",
       "to": 1599
     },
     {
-      "file": "index/history-event-1600-1699-c13f7ff60444.json",
+      "file": "index/history-event-1600-1699-7cc10e227de2.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "event",
       "to": 1699
     },
     {
-      "file": "index/history-event-1700-1799-bceec9d3f5f4.json",
+      "file": "index/history-event-1700-1799-4e1be6c4a886.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "event",
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-6e3451488650.json",
+      "file": "index/history-event-1800-1899-2739c62a280c.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
@@ -1245,7 +1245,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-a85985324eda.json",
+      "file": "index/history-place-place-2d017dac00ee.json",
       "from": null,
       "key": "place",
       "kind": "place",

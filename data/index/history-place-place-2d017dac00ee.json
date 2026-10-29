@@ -4938,6 +4938,15 @@
         }
       ]
     },
+    "derventa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "dessau-ro-lau": {
       "from": "git",
       "versions": [
@@ -7329,6 +7338,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "grodno": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -12278,6 +12296,15 @@
       ]
     },
     "mers-el-kebir": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "merthyr-tydfil": {
       "from": "git",
       "versions": [
         {

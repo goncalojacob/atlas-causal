@@ -580,6 +580,15 @@
         }
       ]
     },
+    "appeal-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "armada-of-1779": {
       "from": "git",
       "versions": [
