@@ -887,6 +887,15 @@
         }
       ]
     },
+    "praguerie": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "rebellion-of-cao-qin": {
       "from": "git",
       "versions": [
@@ -947,6 +956,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "siege-of-compiegne": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

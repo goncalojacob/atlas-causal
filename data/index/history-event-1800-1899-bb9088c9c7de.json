@@ -2398,6 +2398,15 @@
         }
       ]
     },
+    "battle-of-castelfidardo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-castillejos": {
       "from": "git",
       "versions": [
@@ -2867,6 +2876,15 @@
       ]
     },
     "battle-of-deligrad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-dennewitz": {
       "from": "git",
       "versions": [
         {
@@ -4053,6 +4071,15 @@
         }
       ]
     },
+    "battle-of-la-rothiere": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-la-victoria-1812": {
       "from": "git",
       "versions": [
@@ -4144,6 +4171,15 @@
       ]
     },
     "battle-of-landshut-1809": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-langensalza-1866": {
       "from": "git",
       "versions": [
         {
@@ -4860,6 +4896,15 @@
         }
       ]
     },
+    "battle-of-noisseville": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-north-anna": {
       "from": "git",
       "versions": [
@@ -5375,6 +5420,24 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-saalfeld": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-sacile": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

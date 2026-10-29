@@ -5618,6 +5618,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-castelfidardo",
+      "kind": "event",
+      "locator": "Q1887932"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-castiglione-1706",
       "kind": "event",
       "locator": "Q701808"
@@ -6188,6 +6194,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-dennewitz",
+      "kind": "event",
+      "locator": "Q647827"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-derna-1805",
       "kind": "event",
       "locator": "Q2888407"
@@ -6299,6 +6311,12 @@
       "id": "battle-of-dornach",
       "kind": "event",
       "locator": "Q251597"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dover-1652",
+      "kind": "event",
+      "locator": "Q592927"
     },
     {
       "dissent": false,
@@ -7370,6 +7388,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-hondschoote",
+      "kind": "event",
+      "locator": "Q1054868"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-honnecourt",
       "kind": "event",
       "locator": "Q1740516"
@@ -8168,6 +8192,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-la-rothiere",
+      "kind": "event",
+      "locator": "Q568253"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-la-victoria-1812",
       "kind": "event",
       "locator": "Q17622613"
@@ -8273,6 +8303,12 @@
       "id": "battle-of-landshut-1809",
       "kind": "event",
       "locator": "Q367966"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-langensalza-1866",
+      "kind": "event",
+      "locator": "Q535811"
     },
     {
       "dissent": false,
@@ -9440,6 +9476,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-noisseville",
+      "kind": "event",
+      "locator": "Q541081"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-nooitgedacht",
       "kind": "event",
       "locator": "Q2889543"
@@ -9851,6 +9893,12 @@
       "id": "battle-of-philippi-1861",
       "kind": "event",
       "locator": "Q1061090"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-piacenza",
+      "kind": "event",
+      "locator": "Q571675"
     },
     {
       "dissent": false,
@@ -10376,6 +10424,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-saalfeld",
+      "kind": "event",
+      "locator": "Q602786"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sabana-real",
       "kind": "event",
       "locator": "Q23640828"
@@ -10397,6 +10451,12 @@
       "id": "battle-of-sacheon-1592",
       "kind": "event",
       "locator": "Q482970"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sacile",
+      "kind": "event",
+      "locator": "Q508387"
     },
     {
       "dissent": false,
@@ -12335,6 +12395,12 @@
       "id": "battle-of-waterloo",
       "kind": "event",
       "locator": "Q48314"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wattignies",
+      "kind": "event",
+      "locator": "Q1059732"
     },
     {
       "dissent": false,
@@ -15362,6 +15428,12 @@
     },
     {
       "dissent": false,
+      "id": "execution-of-charles-i-of-england",
+      "kind": "event",
+      "locator": "Q65088700"
+    },
+    {
+      "dissent": false,
       "id": "execution-of-louis-xvi",
       "kind": "event",
       "locator": "Q3062714"
@@ -15791,6 +15863,12 @@
       "id": "first-battle-of-zawiya",
       "kind": "event",
       "locator": "Q923890"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-zurich",
+      "kind": "event",
+      "locator": "Q575973"
     },
     {
       "dissent": false,
@@ -20786,6 +20864,12 @@
     },
     {
       "dissent": false,
+      "id": "praguerie",
+      "kind": "event",
+      "locator": "Q1935427"
+    },
+    {
+      "dissent": false,
       "id": "praieira-revolt",
       "kind": "event",
       "locator": "Q2635125"
@@ -21242,6 +21326,12 @@
     },
     {
       "dissent": false,
+      "id": "revolt-of-horea-closca-and-crisan",
+      "kind": "event",
+      "locator": "Q694246"
+    },
+    {
+      "dissent": false,
       "id": "revolt-of-the-altishahr-khojas",
       "kind": "event",
       "locator": "Q10935020"
@@ -21347,6 +21437,12 @@
       "id": "rhodesian-bush-war",
       "kind": "event",
       "locator": "Q2444955"
+    },
+    {
+      "dissent": false,
+      "id": "ridolfi-plot",
+      "kind": "event",
+      "locator": "Q1971473"
     },
     {
       "dissent": false,
@@ -22877,6 +22973,12 @@
       "id": "siege-of-colonia-del-sacramento",
       "kind": "event",
       "locator": "Q12717499"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-compiegne",
+      "kind": "event",
+      "locator": "Q668577"
     },
     {
       "dissent": false,

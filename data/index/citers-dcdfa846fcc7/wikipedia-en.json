@@ -13916,6 +13916,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-castelfidardo",
+      "kind": "event",
+      "locator": "\"Battle of Castelfidardo\", revision 1378919366"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-castiglione-1706",
       "kind": "event",
       "locator": "\"Battle of Castiglione (1706)\", revision 1370436540"
@@ -14474,6 +14480,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-dennewitz",
+      "kind": "event",
+      "locator": "\"Battle of Dennewitz\", revision 1370109631"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-derna-1805",
       "kind": "event",
       "locator": "\"Battle of Derna (1805)\", revision 1379954325"
@@ -14579,6 +14591,12 @@
       "id": "battle-of-dornach",
       "kind": "event",
       "locator": "\"Battle of Dornach\", revision 1370439205"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dover-1652",
+      "kind": "event",
+      "locator": "\"Battle of Dover (1652)\", revision 1381367281"
     },
     {
       "dissent": false,
@@ -15650,6 +15668,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-hondschoote",
+      "kind": "event",
+      "locator": "\"Battle of Hondschoote\", revision 1370265746"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-honnecourt",
       "kind": "event",
       "locator": "\"Battle of Honnecourt\", revision 1370443189"
@@ -16448,6 +16472,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-la-rothiere",
+      "kind": "event",
+      "locator": "\"Battle of La Rothière\", revision 1372459494"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-la-victoria-1812",
       "kind": "event",
       "locator": "\"Battle of La Victoria (1812)\", revision 1370446845"
@@ -16553,6 +16583,12 @@
       "id": "battle-of-landshut-1809",
       "kind": "event",
       "locator": "\"Battle of Landshut (1809)\", revision 1374486969"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-langensalza-1866",
+      "kind": "event",
+      "locator": "\"Battle of Langensalza (1866)\", revision 1370447132"
     },
     {
       "dissent": false,
@@ -17702,6 +17738,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-noisseville",
+      "kind": "event",
+      "locator": "\"Battle of Noisseville\", revision 1370451815"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-nooitgedacht",
       "kind": "event",
       "locator": "\"Battle of Nooitgedacht\", revision 1370451840"
@@ -18113,6 +18155,12 @@
       "id": "battle-of-philippi-1861",
       "kind": "event",
       "locator": "\"Battle of Philippi (1861)\", revision 1374446016"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-piacenza",
+      "kind": "event",
+      "locator": "\"Battle of Piacenza\", revision 1379530111"
     },
     {
       "dissent": false,
@@ -18650,6 +18698,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-saalfeld",
+      "kind": "event",
+      "locator": "\"Battle of Saalfeld\", revision 1380907733"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sabana-real",
       "kind": "event",
       "locator": "\"Battle of Sabana Real\", revision 1370587892"
@@ -18671,6 +18725,12 @@
       "id": "battle-of-sacheon-1592",
       "kind": "event",
       "locator": "\"Battle of Sacheon (1592)\", revision 1371749113"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sacile",
+      "kind": "event",
+      "locator": "\"Battle of Sacile\", revision 1370587923"
     },
     {
       "dissent": false,
@@ -20621,6 +20681,12 @@
       "id": "battle-of-waterloo",
       "kind": "event",
       "locator": "\"Battle of Waterloo\", revision 1380652941"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wattignies",
+      "kind": "event",
+      "locator": "\"Battle of Wattignies\", revision 1370276745"
     },
     {
       "dissent": false,
@@ -23630,6 +23696,12 @@
     },
     {
       "dissent": false,
+      "id": "execution-of-charles-i-of-england",
+      "kind": "event",
+      "locator": "\"Execution of Charles I of England\", revision 1382213947"
+    },
+    {
+      "dissent": false,
       "id": "execution-of-louis-xvi",
       "kind": "event",
       "locator": "\"Execution of Louis XVI\", revision 1373172133"
@@ -24059,6 +24131,12 @@
       "id": "first-battle-of-zawiya",
       "kind": "event",
       "locator": "\"First Battle of Zawiya\", revision 1370619040"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-zurich",
+      "kind": "event",
+      "locator": "\"First Battle of Zurich\", revision 1370619060"
     },
     {
       "dissent": false,
@@ -28952,6 +29030,12 @@
     },
     {
       "dissent": false,
+      "id": "praguerie",
+      "kind": "event",
+      "locator": "\"Praguerie\", revision 1377889239"
+    },
+    {
+      "dissent": false,
       "id": "praieira-revolt",
       "kind": "event",
       "locator": "\"Praieira revolt\", revision 1370704983"
@@ -29414,6 +29498,12 @@
     },
     {
       "dissent": false,
+      "id": "revolt-of-horea-closca-and-crisan",
+      "kind": "event",
+      "locator": "\"Revolt of Horea, Cloșca, and Crișan\", revision 1377765776"
+    },
+    {
+      "dissent": false,
       "id": "revolt-of-the-altishahr-khojas",
       "kind": "event",
       "locator": "\"Revolt of the Altishahr Khojas\", revision 1382061284"
@@ -29519,6 +29609,12 @@
       "id": "rhodesian-bush-war",
       "kind": "event",
       "locator": "\"Rhodesian Bush War\", revision 1373754851"
+    },
+    {
+      "dissent": false,
+      "id": "ridolfi-plot",
+      "kind": "event",
+      "locator": "\"Ridolfi plot\", revision 1381679792"
     },
     {
       "dissent": false,
@@ -30965,6 +31061,12 @@
       "id": "siege-of-colonia-del-sacramento",
       "kind": "event",
       "locator": "\"Siege of Colonia del Sacramento\", revision 1370740324"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-compiegne",
+      "kind": "event",
+      "locator": "\"Siege of Compiègne\", revision 1370740333"
     },
     {
       "dissent": false,

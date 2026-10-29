@@ -1683,6 +1683,15 @@
         }
       ]
     },
+    "battle-of-hondschoote": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-hubbardton": {
       "from": "git",
       "versions": [
@@ -2328,6 +2337,15 @@
             "regionNote"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-piacenza": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3215,6 +3233,15 @@
         }
       ]
     },
+    "battle-of-wattignies": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-waxhaws": {
       "from": "git",
       "versions": [
@@ -4063,6 +4090,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "first-battle-of-zurich": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5322,6 +5358,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "revolt-of-horea-closca-and-crisan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
