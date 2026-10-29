@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "slaying-of-the-basques",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3480202",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Slaying of the Basques"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3480202"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slaying of the Basques\", revision 1366209640"
+    }
+  ],
+  "title": "Slaying of the Basques",
+  "summary": "The English Wikipedia article \"Slaying of the Basques\", at revision 1366209640, opens: \"The Slaying of the Basques was the last documented massacre in Icelandic history. A party of Basque whalers went on a whaling expedition to Iceland and were killed after a conflict in 1615 with local people in the region of the Westfjords.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3480202, imported by tools/import/wikidata.mjs. The item's own description reads \"1615 killings of Basque whalers in Iceland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1615,
+    "end": 1615
+  },
+  "place": "westfjords",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "veronese-easter",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1545288",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Veronese Easter",
+    "pt": "Páscoa veronesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1545288"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Veronese Easter\", revision 1377601062"
+    }
+  ],
+  "title": "Veronese Easter",
+  "summary": "The English Wikipedia article \"Veronese Easter\", at revision 1377601062, opens: \"The Veronese Easter was a rebellion during the Italian campaign of 1797, in which inhabitants of Verona and the surrounding areas revolted against the French occupying forces under Antoine Balland, while Napoleon Bonaparte was fighting in Austria. The uprising received its name through association with the anti-French uprising of the Sicilian Vespers of the 13th century. Incited by oppressive behaviour by the French, it began on the morning of 17 April 1797, the second day of Easter: the enraged population succeeded in defeating more than a thousand French soldiers in the first hour of fighting, forcing them to take refuge in the town's fortifications, which the mob then captured by force. The revolt ended on 25 April 1797 with the encirclement and capture of the town by 15,000 soldiers, who then forced it to pay a huge fine and hand over various assets, including artwork.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1545288, imported by tools/import/wikidata.mjs. The item's own description reads \"Veronese rebellion against French occupation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1797,
+    "end": 1797,
+    "date": "1797-04-17"
+  },
+  "place": "verona",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

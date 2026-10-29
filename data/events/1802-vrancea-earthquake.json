@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1802-vrancea-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4118371",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1802 Vrancea earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4118371"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1802 Vrancea earthquake\", revision 1371231767"
+    }
+  ],
+  "title": "1802 Vrancea earthquake",
+  "summary": "The English Wikipedia article \"1802 Vrancea earthquake\", at revision 1371231767, opens: \"The 1802 Vrancea earthquake occurred in the Vrancea Mountains of today's Romania on 26 October [O.S. 14 October] 1802, on St. Paraskeva's Day. With an estimated intensity of 7.9 on the moment magnitude scale, it is the strongest earthquake ever recorded in Romania and one of the strongest in European history. It was felt across an area of more than two million square kilometers in Eastern Europe and the Balkans, from Saint Petersburg to the Aegean Sea.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4118371, imported by tools/import/wikidata.mjs. The item's own description reads \"early days of the Romanian earthquakes\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1802,
+    "end": 1802
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

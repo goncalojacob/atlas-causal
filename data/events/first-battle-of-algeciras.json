@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-algeciras",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q432515",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "First Battle of Algeciras",
+    "pt": "Primeira Batalha de Algeciras"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q432515"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Algeciras\", revision 1378412031"
+    }
+  ],
+  "title": "First Battle of Algeciras",
+  "summary": "The English Wikipedia article \"First Battle of Algeciras\", at revision 1378412031, opens: \"The First Battle of Algeciras was fought on 6 July 1801 between a Royal Navy squadron and a smaller French Navy squadron lying at anchor in the Spanish port of Algeciras during the Algeciras campaign of the War of the Second Coalition. The French squadron, under Counter-admiral Charles-Alexandre Léon Durand Linois, had stopped at Algeciras en route to the major Spanish naval base at Cádiz, where they were to form a combined French and Spanish fleet for operations against Britain and its allies in the French Revolutionary Wars. The British, under Rear-Admiral Sir James Saumarez, sought to eliminate the French squadron before it could reach Cádiz and form a force powerful enough to overwhelm Saumarez and launch attacks against British forces in the Mediterranean Sea. Although the British heavily outnumbered their opponents, Linois found a strong defensive position that combined Spanish coastal defences with the complicated shoals that obscured the entrance to Algeciras Bay. During the battle, Linois effectively utilized warping tactics to prevent the opponent from flanking his line.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q432515, imported by tools/import/wikidata.mjs. The item's own description reads \"1801 naval battle during the War of the Second Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1801,
+    "end": 1801,
+    "date": "1801-07-06"
+  },
+  "place": "bay-of-gibraltar",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
