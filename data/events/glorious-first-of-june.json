@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "glorious-first-of-june",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1083872",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Glorious First of June",
+    "pt": "Glorioso primeiro de junho"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1083872"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Glorious First of June\", revision 1381031616"
+    }
+  ],
+  "title": "Glorious First of June",
+  "summary": "The English Wikipedia article \"Glorious First of June\", at revision 1381031616, opens: \"The Glorious First of June, also known as the Third Battle of Ushant and the Fourth Battle of Ushant, was a fleet action fought on 1 June 1794 between the British and French navies during the War of the First Coalition. It was the first and largest fleet action of the French Revolutionary Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1083872, imported by tools/import/wikidata.mjs. The item's own description reads \"1794 naval battle of the French Revolutionary Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1794,
+    "end": 1794,
+    "date": "1794-06-01"
+  },
+  "place": "ushant",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

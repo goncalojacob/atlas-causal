@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "polish-cossack-tatar-war-1666-1671",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1132940",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Polish–Cossack–Tatar War (1666–1671)",
+    "pt": "Guerra Polaco-Cossaco-Tártara (1666–1671)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1132940"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Polish–Cossack–Tatar War (1666–1671)\", revision 1371626928"
+    }
+  ],
+  "title": "Polish–Cossack–Tatar War (1666–1671)",
+  "summary": "The English Wikipedia article \"Polish–Cossack–Tatar War (1666–1671)\", at revision 1371626928, opens: \"The Polish — Cossack–Tatar War was fought between the Polish–Lithuanian Commonwealth, Polish-allied Zaporozhian Cossacks and the Ottoman-allied states of the Cossack Hetmanate and the Crimean Khanate. It occurred in the aftermath of the Russo–Polish War of 1654–1667 and was a prelude to the Ottoman–Polish War of 1672—1676.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1132940, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict in eastern Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1666,
+    "end": 1671
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

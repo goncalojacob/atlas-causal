@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "zurich",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q72",
+  "sitelinks": {
+    "count": 167,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Zurich",
+    "pt": "Zurique"
+  },
+  "sources": [],
+  "names": [
+    "Zurich",
+    "Zurique"
+  ],
+  "where": {
+    "lon": 8.54111111111111,
+    "lat": 47.37444444444444,
+    "precision": "city",
+    "label": "Zurich"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

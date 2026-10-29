@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-glen-shiel",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2485365",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Glen Shiel",
+    "pt": "Batalha de Glen Shiel"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2485365"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Glen Shiel\", revision 1375543908"
+    }
+  ],
+  "title": "Battle of Glen Shiel",
+  "summary": "The English Wikipedia article \"Battle of Glen Shiel\", at revision 1375543908, opens: \"The Battle of Glen Shiel, 10 June 1719, was the decisive military engagement of the Jacobite rising of 1719. Fought near Glen Shiel in the Scottish Highlands, a Jacobite army composed of Highland levies and Spanish marines was defeated by British government troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2485365, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in Highland, Scotland, UK\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1719,
+    "end": 1719,
+    "date": "1719-06-10"
+  },
+  "place": "glen-shiel",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

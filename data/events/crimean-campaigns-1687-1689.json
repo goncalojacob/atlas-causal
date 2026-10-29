@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "crimean-campaigns-1687-1689",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q700859",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Crimean campaigns (1687–1689)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q700859"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Crimean campaigns (1687–1689)\", revision 1370614014"
+    }
+  ],
+  "title": "Crimean campaigns (1687–1689)",
+  "summary": "The English Wikipedia article \"Crimean campaigns (1687–1689)\", at revision 1370614014, opens: \"The Crimean campaigns (1687–1689) were two military campaigns of the Tsardom of Russia against the Crimean Khanate. They were a part of the Russo-Turkish War (1686–1700) and Russo-Crimean Wars. These were the first Russian forces to come close to Crimea since 1569. They failed due to poor planning and the practical problem of moving such a large force across the steppe but nonetheless played a key role in halting the Ottoman expansion in Europe. The campaigns came as a surprise for the Ottoman leadership, spoiled its plans to invade Poland and Hungary and forced it to move significant forces from Europe to the east, which greatly helped the League in its struggle against the Ottomans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q700859, imported by tools/import/wikidata.mjs. The item's own description reads \"1687 military campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1687,
+    "end": 1689
+  },
+  "place": "crimea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1686-1700"
+}
