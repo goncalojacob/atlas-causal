@@ -1687,6 +1687,15 @@
         }
       ]
     },
+    "battle-of-preston-1648": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-puerto-de-cavite": {
       "from": "git",
       "versions": [
@@ -2038,6 +2047,15 @@
       ]
     },
     "battle-of-tennoji": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-texel": {
       "from": "git",
       "versions": [
         {

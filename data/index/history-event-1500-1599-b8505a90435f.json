@@ -835,6 +835,15 @@
         }
       ]
     },
+    "battle-of-formentera": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-frankenhausen": {
       "from": "git",
       "versions": [
@@ -891,6 +900,15 @@
       ]
     },
     "battle-of-ghazdewan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-gorjani": {
       "from": "git",
       "versions": [
         {
@@ -1753,6 +1771,15 @@
         }
       ]
     },
+    "battle-of-pinkie": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-polesella": {
       "from": "git",
       "versions": [
@@ -2038,6 +2065,15 @@
             "title"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-stangebro": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4518,6 +4554,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "siege-of-esztergom-1543": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

@@ -2503,6 +2503,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "1886-bulgarian-coup-d-etat",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1886 Bulgarian coup d'état"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "disaster",
       "cites": [
         "wikidata",
@@ -18573,6 +18602,36 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "battle-of-beaugency-1429",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Beaugency (1429)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "battle-of-beauharnois",
       "kind": "event",
       "origin": {
@@ -25289,6 +25348,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-cravant",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cravant"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "battle-of-cremona",
       "kind": "event",
@@ -28791,6 +28880,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-formentera",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Formentera"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "battle-of-formigny",
       "kind": "event",
@@ -29826,6 +29945,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Franklin"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-fraustadt",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Fraustadt"
     },
     {
       "authors": [
@@ -31314,6 +31463,35 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "battle-of-gorjani",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Gorjani"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "battle-of-gorni-dubnik",
       "kind": "event",
       "origin": {
@@ -31748,6 +31926,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Großbeeren"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-grocka",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-turkish-war-1735-1739",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Grocka"
     },
     {
       "authors": [
@@ -42437,6 +42646,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-matapan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-venetian-war-1714-1718",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Matapan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 2,
       "id": "battle-of-mataquito",
@@ -44255,6 +44495,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Montijo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-montmirail",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "german-campaign-of-1813",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Montmirail"
     },
     {
       "authors": [
@@ -48833,6 +49105,36 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "battle-of-pinkie",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Pinkie"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "battle-of-pirano",
       "kind": "event",
       "origin": {
@@ -49697,6 +49999,38 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Battle of Preßnitz"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-preston-1648",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-english-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Preston (1648)"
     },
     {
       "authors": [
@@ -54896,6 +55230,35 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "battle-of-sheriffmuir",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Sheriffmuir"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "battle-of-shigino",
       "kind": "event",
       "origin": {
@@ -56518,6 +56881,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Stalingrad"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-stangebro",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Stångebro"
     },
     {
       "authors": [
@@ -58344,6 +58737,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-texel",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Texel"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "battle-of-thann-1638",
       "kind": "event",
@@ -59389,6 +59811,35 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Battle of the Imjin River"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "battle-of-the-iron-gate",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Iron Gate"
     },
     {
       "authors": [
@@ -64696,6 +65147,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-wi-komierz",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "lithuanian-civil-war-1432-1438",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Wiłkomierz"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "battle-of-wiesloch-1632",
       "kind": "event",
@@ -69462,6 +69945,35 @@
       "revised": null,
       "status": "active",
       "title": "Bruneian Civil War of 1660"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "other",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "brussels-conference-act-of-1890",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Brussels Conference Act of 1890"
     },
     {
       "authors": [
@@ -86077,6 +86589,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "flour-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Flour War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -88751,6 +89292,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "gin-craze",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Gin Craze"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -89481,6 +90051,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "great-fire-of-turku",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Great Fire of Turku"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "disaster",
       "cites": [
         "wikidata",
@@ -90160,6 +90758,34 @@
       "revised": null,
       "status": "active",
       "title": "Great Stink"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "great-storm-of-1703",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Great storm of 1703"
     },
     {
       "authors": [
@@ -94012,6 +94638,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "invasion-of-portugal-1807",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Invasion of Portugal (1807)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "invasion-of-ryukyu",
       "kind": "event",
@@ -97070,6 +97725,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "khanasor-expedition",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Khanasor Expedition"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -99303,6 +99987,35 @@
       "revised": null,
       "status": "active",
       "title": "Lincoln–Douglas debates"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "linnaeus-expedition-to-lapland",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Linnaeus' expedition to Lapland"
     },
     {
       "authors": [
@@ -107622,6 +108335,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "ottoman-conquest-of-lesbos",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Ottoman conquest of Lesbos"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "ottoman-conquest-of-otranto",
       "kind": "event",
@@ -113002,6 +113745,35 @@
       "revised": null,
       "status": "active",
       "title": "Priest Jovica's Rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "priestley-riots",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Priestley Riots"
     },
     {
       "authors": [
@@ -125952,6 +126724,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "siege-of-esztergom-1543",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Esztergom (1543)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "siege-of-famagusta",
       "kind": "event",
@@ -127863,6 +128665,36 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Kőszeg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "siege-of-kruje-1466-1467",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Krujë (1466–1467)"
     },
     {
       "authors": [
@@ -129885,6 +130717,38 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Navarino (1572)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "siege-of-negroponte-1470",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-venetian-war-1463-1479",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Negroponte (1470)"
     },
     {
       "authors": [
@@ -137807,6 +138671,35 @@
       "revised": null,
       "status": "active",
       "title": "Tehran Conference"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "ten-days-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Ten Days' Campaign"
     },
     {
       "authors": [
@@ -152199,6 +153092,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "union-of-krakow-and-vilna",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Union of Kraków and Vilna"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "union-of-lublin",
       "kind": "event",
@@ -157129,6 +158051,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1886-bulgarian-coup-d-etat",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1887-yellow-river-flood",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -159103,6 +160031,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-beaugency-1429",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-beauharnois",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -160219,6 +161153,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-cravant",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-cremona",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -160837,6 +161777,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-formentera",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-formigny",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -161000,6 +161946,12 @@
     },
     {
       "id": "battle-of-franklin",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-fraustadt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -161275,6 +162227,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-gorjani",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-gorni-dubnik",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -161336,6 +162294,12 @@
     },
     {
       "id": "battle-of-gro-beeren",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-grocka",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -163069,6 +164033,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-matapan",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-maxen",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -163364,6 +164334,12 @@
     },
     {
       "id": "battle-of-montijo",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-montmirail",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -164113,6 +165089,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-pinkie",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-pirano",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -164240,6 +165222,12 @@
     },
     {
       "id": "battle-of-pre-nitz",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-preston-1648",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -165031,6 +166019,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-sheriffmuir",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-shigino",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -165308,6 +166302,12 @@
     },
     {
       "id": "battle-of-stalingrad",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-stangebro",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -165613,6 +166613,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-texel",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-thann-1638",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -165764,6 +166770,12 @@
     },
     {
       "id": "battle-of-the-hill-of-the-jews",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-the-iron-gate",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -166555,6 +167567,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-wi-komierz",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-wiesloch-1632",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -167282,6 +168300,12 @@
     },
     {
       "id": "bruneian-civil-war-of-1660",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "brussels-conference-act-of-1890",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -169561,6 +170585,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "flour-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "football-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -169927,6 +170957,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "gin-craze",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "glorious-first-of-june",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -170036,6 +171072,12 @@
     },
     {
       "id": "great-fire-of-new-york-1776",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "great-fire-of-turku",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -170156,6 +171198,12 @@
     },
     {
       "id": "great-stink",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "great-storm-of-1703",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -170641,6 +171689,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "invasion-of-portugal-1807",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "invasion-of-ryukyu",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -171037,6 +172091,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "khanasor-expedition",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "khivan-campaign-of-1839-1840",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -171302,6 +172362,12 @@
     },
     {
       "id": "lincoln-douglas-debates",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "linnaeus-expedition-to-lapland",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -172417,6 +173483,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "ottoman-conquest-of-lesbos",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "ottoman-conquest-of-otranto",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -173264,6 +174336,12 @@
     },
     {
       "id": "priest-jovica-s-rebellion",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "priestley-riots",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -175255,6 +176333,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-esztergom-1543",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-famagusta",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -175603,6 +176687,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-kruje-1466-1467",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-kumamoto-castle",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -175928,6 +177018,12 @@
     },
     {
       "id": "siege-of-navarino-1572",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-negroponte-1470",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -177008,6 +178104,12 @@
     },
     {
       "id": "tecumseh-s-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "ten-days-campaign",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -179384,6 +180486,12 @@
     },
     {
       "id": "union-of-grodno-1432",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "union-of-krakow-and-vilna",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

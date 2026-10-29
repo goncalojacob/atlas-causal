@@ -92,6 +92,15 @@
         }
       ]
     },
+    "battle-of-beaugency-1429": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-blore-heath": {
       "from": "git",
       "versions": [
@@ -134,6 +143,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-cravant": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -389,6 +407,15 @@
         }
       ]
     },
+    "battle-of-the-iron-gate": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-toro": {
       "from": "git",
       "versions": [
@@ -467,6 +494,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-wi-komierz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -842,6 +878,15 @@
         }
       ]
     },
+    "ottoman-conquest-of-lesbos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "ottoman-conquest-of-otranto": {
       "from": "git",
       "versions": [
@@ -1028,6 +1073,24 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "siege-of-kruje-1466-1467": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-negroponte-1470": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1424,6 +1487,15 @@
       ]
     },
     "union-of-grodno-1432": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "union-of-krakow-and-vilna": {
       "from": "git",
       "versions": [
         {
