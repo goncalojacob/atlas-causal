@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-tottori",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7510455",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Tottori"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510455"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Tottori\", revision 1370745908"
+    }
+  ],
+  "title": "Siege of Tottori",
+  "summary": "The English Wikipedia article \"Siege of Tottori\", at revision 1370745908, opens: \"The siege of Tottori Castle occurred in 1581 and was part of Oda Nobunaga's campaign to consolidate his power in western Honshu in an effort to unite Japan during the late 16th century. The siege was fought between Hashiba Hideyoshi, an Oda clan general, against a garrison under an ally of the Mōri clan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510455, imported by tools/import/wikidata.mjs. The item's own description reads \"1581 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1581,
+    "end": 1581,
+    "date": "1581-05"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

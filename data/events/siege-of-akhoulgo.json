@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-akhoulgo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4116960",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Akhoulgo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4116960"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Akhoulgo\", revision 1370738573"
+    }
+  ],
+  "title": "Siege of Akhoulgo",
+  "summary": "The English Wikipedia article \"Siege of Akhoulgo\", at revision 1370738573, opens: \"The siege of Akhulgo took place in June–August 1839 during the Caucasian War between the Russian Empire and the Caucasian Imamate led by Shamil. General Pavel Grabbe besieged Imam Shamil in the rock-fortress of Akhulgo. After 80 days the rock was taken and most of the defenders were killed, but Shamil managed to escape.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4116960, imported by tools/import/wikidata.mjs. The item's own description reads \"siege during the Murid War in the Caucasus, 1839\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1839,
+    "date": "1839-06",
+    "endDate": "1839-08"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "caucasian-war"
+}

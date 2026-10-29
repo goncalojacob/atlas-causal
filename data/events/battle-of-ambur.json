@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-ambur",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4870289",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Ambur"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870289"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ambur\", revision 1378418870"
+    }
+  ],
+  "title": "Battle of Ambur",
+  "summary": "The English Wikipedia article \"Battle of Ambur\", at revision 1378418870, opens: \"The Battle of Ambur was the first major battle of the Second Carnatic War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870289, imported by tools/import/wikidata.mjs. The item's own description reads \"1749 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1749,
+    "end": 1749,
+    "date": "1749-08-03"
+  },
+  "place": "ambur-q584854",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "safavid-capture-of-tabriz-1603",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5935848",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Safavid capture of Tabriz (1603)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5935848"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Safavid capture of Tabriz (1603)\", revision 1370729781"
+    }
+  ],
+  "title": "Safavid capture of Tabriz (1603)",
+  "summary": "The English Wikipedia article \"Safavid capture of Tabriz (1603)\", at revision 1370729781, opens: \"The siege of Tabriz was a military conflict during the Ottoman–Safavid war of 1603–1612. As a result of a successful Persian siege initiated by Shah Abbas the Great, Tabriz was returned to the Safavids after 18 years of Ottoman rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5935848, imported by tools/import/wikidata.mjs. The item's own description reads \"1603 battle between the Ottoman Turks and the Safavid army of Shah Abbas I\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1603,
+    "end": 1603,
+    "date": "1603-09-26",
+    "endDate": "1603-10-21"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-safavid-war-1603-1612"
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-herat-1598",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q16537278",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Herat (1598)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16537278"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Herat (1598)\", revision 1378916159"
+    }
+  ],
+  "title": "Battle of Herat (1598)",
+  "summary": "The English Wikipedia article \"Battle of Herat (1598)\", at revision 1378916159, opens: \"Battle of Herat took place on August 9, 1598, between the Shaybanid Khanate and the Safavid Empire for Khorasan and Balkh. The battle resulted in the complete defeat of the Uzbeks and Safavid Empire fully restored its power in Khorasan and got back the region.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16537278, imported by tools/import/wikidata.mjs. The item's own description reads \"1598 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1598,
+    "end": 1598,
+    "date": "1598-08-09"
+  },
+  "place": "herat",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

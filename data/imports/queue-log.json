@@ -38423,6 +38423,621 @@
         "place": "dimdim-castle"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-241",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "spanish-moro-conflict",
+        "edges": [],
+        "place": "mindanao"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-243",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6165289: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-asia-245",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1164157: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-asia-247",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "1847-zenkoji-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-249",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "rebellion-of-cao-qin",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-251",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mimasetoge",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-253",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mimigawa",
+        "edges": [],
+        "place": "niiniin-taka-castle"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-255",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "safavid-capture-of-tabriz-1603",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-257",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-khyber-pass-1738",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-259",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-laswari",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-261",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-odaihara",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-263",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-simtokha-dzong",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-265",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-futamata",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-267",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-shigino",
+        "edges": [],
+        "place": "yamato-river"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-269",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-kuwabara",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-271",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-akhoulgo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-273",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-samarkand-1497",
+        "edges": [],
+        "place": "samarkand"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-275",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-iwamura-castle",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-277",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-uozu",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-279",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q13012465: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-asia-281",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q12866905: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-asia-283",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q60771401: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-asia-285",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6886390: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-28-asia-287",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5339486: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-28-asia-289",
+      "writer": "A",
+      "fired": "2026-10-29T01:49Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q86750730: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-28-asia-242",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-oshi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-244",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6428897: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-asia-246",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4209365: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-28-asia-248",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "1721-tabriz-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-250",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-shiojiritoge",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-252",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ambur",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-254",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sokhoista",
+        "edges": [],
+        "place": "pasinler"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-256",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-herat-1598",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-258",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tukaroi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-260",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-argaon",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-262",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kannagawa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-264",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-toyama",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-266",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-imafuku",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-268",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-itami-1579",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-270",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "bashkir-rebellion-of-1704-1711",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-272",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-kumamoto-castle",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-274",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-tottori",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-276",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-shigisan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-278",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-miki",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-280",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "written",
+      "written": {
+        "event": "baikal-insurrection",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-282",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4763642: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-asia-284",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q19708170: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-28-asia-286",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q65012963: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-28-asia-288",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q10747183: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-28-asia-290",
+      "writer": "B",
+      "fired": "2026-10-29T01:56Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q12244168: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   ]
 }

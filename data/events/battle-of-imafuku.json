@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-imafuku",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2274112",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Imafuku"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2274112"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Imafuku\", revision 1370265990"
+    }
+  ],
+  "title": "Battle of Imafuku",
+  "summary": "The English Wikipedia article \"Battle of Imafuku\", at revision 1370265990, opens: \"The Battle of Imafuku  was fought on November 26th, 1614 between the forces of Tokugawa Ieyasu and the Toyotomi clan. This battle was one of the first of the series of battles fought near Osaka over the course of two years. The village of Imafuku stood on the northeast approach to Osaka, and so Tokugawa Ieyasu sent 1,500 men under the command of Satake Yoshinobu to secure the site for a fort. They faced off against 600 men loyal to the Toyotomi \"Western Army,\" under two generals named Iida and Masatomo Yano.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2274112, imported by tools/import/wikidata.mjs. The item's own description reads \"1600 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1600,
+    "end": 1600,
+    "date": "1600-12-26"
+  },
+  "place": "yamato-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
