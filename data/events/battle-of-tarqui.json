@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-tarqui",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q747266",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Tarqui"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q747266"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tarqui\", revision 1378495059"
+    }
+  ],
+  "title": "Battle of Tarqui",
+  "summary": "The English Wikipedia article \"Battle of Tarqui\", at revision 1378495059, opens: \"The Battle of Tarqui, also known as the Battle of Portete de Tarqui, took place on 27 February 1829 at Tarqui, near Cuenca, today part of Ecuador. It was fought between troops from Gran Colombia, commanded by Antonio José de Sucre, and Peruvian troops under José de La Mar. Although the Colombian troops achieved victory over the Peruvian vanguard, destroying it and forcing the rest of their forces to withdraw, they suffered heavy losses in their cavalry with the Peruvian charge, which made it difficult to continue the campaign and caused the stabilization of the front.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q747266, imported by tools/import/wikidata.mjs. The item's own description reads \"1829 battle of the Gran Colombia–Peru War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1829,
+    "end": 1829,
+    "date": "1829-02-26"
+  },
+  "place": "ecuador-q736",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "gran-colombia-peru-war"
+}

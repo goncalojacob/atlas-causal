@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "juncal-island",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1132717",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Juncal Island",
+    "pt": "Ilha Juncal"
+  },
+  "sources": [],
+  "names": [
+    "Juncal Island",
+    "Ilha Juncal"
+  ],
+  "where": {
+    "lon": -58.378,
+    "lat": -33.97,
+    "precision": "region",
+    "label": "Juncal Island"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "san-juan-de-ulua",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1696230",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "San Juan de Ulúa",
+    "pt": "Forte de San Juan de Ulúa"
+  },
+  "sources": [],
+  "names": [
+    "Castle of San Juan de Ulúa",
+    "Forte de San Juan de Ulúa",
+    "San Juan de Ulúa"
+  ],
+  "where": {
+    "lon": -96.131388888889,
+    "lat": 19.209166666667,
+    "precision": "point",
+    "label": "San Juan de Ulúa"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "retreat-from-laguna",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q9068360",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Retreat from Laguna",
+    "pt": "Retirada da Laguna"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q9068360"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Retreat from Laguna\", revision 1370706816"
+    }
+  ],
+  "title": "Retreat from Laguna",
+  "summary": "The English Wikipedia article \"Retreat from Laguna\", at revision 1370706816, opens: \"The Retreat from Laguna, also called the Battle of Laguna, was a decisive military engagement fought between the forces of Paraguay and Brazil.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q9068360, imported by tools/import/wikidata.mjs. The item's own description reads \"1868 withdrawal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1868,
+    "date": "1868-01-02"
+  },
+  "place": "brazil-q155",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mato-grosso-campaign"
+}

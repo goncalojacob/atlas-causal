@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-cuautla",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485870",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Cuautla"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485870"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Cuautla\", revision 1370740491"
+    }
+  ],
+  "title": "Siege of Cuautla",
+  "summary": "The English Wikipedia article \"Siege of Cuautla\", at revision 1370740491, opens: \"The siege of Cuautla was a battle of the War of Mexican Independence that occurred from 19 February through 2 May 1812 at Cuautla, Morelos. The Spanish royalist forces loyal to the Spanish, commanded by Félix María Calleja, besieged the town of Cuautla and its Mexican rebel defenders fighting for independence from the Spanish Empire. The rebels were commanded by José María Morelos y Pavón, Hermenegildo Galeana, and Mariano Matamoros. The battle results are disputed, but it is generally agreed that the battle resulted more favorably for the Spanish whose siege was ultimately successful with the Mexican withdrawal on 2 May 1812.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485870, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle of the Mexican War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-02-09",
+    "endDate": "1812-05-02"
+  },
+  "place": "monterrey",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mexican-war-of-independence"
+}

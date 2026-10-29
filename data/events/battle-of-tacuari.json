@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-tacuari",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q246652",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Tacuarí",
+    "pt": "Batalha de Tacuarí"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q246652"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tacuarí\", revision 1370590350"
+    }
+  ],
+  "title": "Battle of Tacuarí",
+  "summary": "The English Wikipedia article \"Battle of Tacuarí\", at revision 1370590350, opens: \"The Battle of Tacuarí was a battle in Southern Paraguay between forces sent by the Junta of Buenos Aires under the command of General Manuel Belgrano, and Paraguayan troops under Colonel Manuel Atanasio Cabañas, at the service of the Council of Regency.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q246652, imported by tools/import/wikidata.mjs. The item's own description reads \"1811 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1811,
+    "end": 1811,
+    "date": "1811-03-09"
+  },
+  "place": "chile-q298",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "paraguay-campaign"
+}

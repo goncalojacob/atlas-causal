@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-piribebuy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5722798",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Piribebuy",
+    "pt": "Batalha de Piribebuy"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5722798"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Piribebuy\", revision 1379996249"
+    }
+  ],
+  "title": "Battle of Piribebuy",
+  "summary": "The English Wikipedia article \"Battle of Piribebuy\", at revision 1379996249, opens: \"The Battle of Piribebuy was fought on 12 August 1869 in the Paraguayan town of Piribebuy, which was then serving as a temporary capital of the Paraguayan government. The Paraguayan defenders, who were poorly armed and included children, fought the attacks of the Allied forces, led by French-born Brazilian general prince Gaston of Orleans, the Count of Eu, son-in-law of Emperor Pedro II of Brazil. The town refused two peace envoys calling for surrender, sent by the Count of Eu. At 04:00, the Brazilian batteries surrounding the town started a bombardment which lasted until 08:00, when the infantry charged. General João Manuel Mena Barreto was mortally wounded leading a cavalry charge against the Paraguayans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5722798, imported by tools/import/wikidata.mjs. The item's own description reads \"1869 battle of the Paraguayan War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1869,
+    "end": 1869,
+    "date": "1869-08-12"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "campaign-of-the-hills"
+}

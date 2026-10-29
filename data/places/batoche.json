@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "batoche",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q810869",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Batoche"
+  },
+  "sources": [],
+  "names": [
+    "Batoche"
+  ],
+  "where": {
+    "lon": -106.116,
+    "lat": 52.755,
+    "precision": "city",
+    "label": "Batoche"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
