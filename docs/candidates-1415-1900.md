@@ -1,6 +1,6 @@
 # Candidates, 1415 to 1900
 
-Written by the assistant on 29 October 2026 from one query of Wikidata's query service. Each row is an item whose class has an `event` row in `data/imports/wikidata-seeds.json`, whose start (`P580`) or point in time (`P585`) falls from 1415 to 1900, that has an English Wikipedia article and at least eight sitelinks, and whose Wikidata id no event record on `m0` carried that day. The rows are ranked by sitelink count, biggest first. Nothing here is a claim about the past: the label and the counts are Wikidata's.
+Written by the assistant on 29 October 2026 from one query of Wikidata's query service. Each row is an item whose class has an `event` row in `data/imports/wikidata-seeds.json`, whose start (`P580`) or point in time (`P585`) falls from 1415 to 1900, that has an English Wikipedia article and at least eight sitelinks, whose earliest start, point in time or inception is not before 1415, and whose Wikidata id no event record on `m0` carried that day. The rows are ranked by sitelink count, biggest first. Nothing here is a claim about the past: the label and the counts are Wikidata's.
 
 The planner reads this list first (rules card 13). Some rows are held under another title with no Wikidata id, so the title match still applies, and the class, date and lane checks still apply.
 
@@ -33,7 +33,6 @@ The planner reads this list first (rules card 13). Some rows are held under anot
 | Q6495391 | late modern period | 1800 | 42 |
 | Q70520 | Great Chicago Fire | 1871 | 42 |
 | Q751880 | Japonisme | 1858 | 41 |
-| Q838794 | jubilee | 1900 | 41 |
 | Q871792 | Ottoman Greece | 1453 | 38 |
 | Q827212 | Gadsden Purchase | 1853 | 38 |
 | Q1514908 | Cuban War of Independence | 1895 | 38 |
@@ -75,7 +74,6 @@ The planner reads this list first (rules card 13). Some rows are held under anot
 | Q681416 | French and Indian Wars | 1688 | 25 |
 | Q377542 | Whiskey Rebellion | 1791 | 25 |
 | Q3238584 | Great Divergence | 1900 | 25 |
-| Q1021160 | Armagnac–Burgundian Civil War | 1435 | 24 |
 | Q277392 | Polish–Ottoman War of 1620–1621 | 1620 | 24 |
 | Q1192398 | Musket Wars | 1807 | 23 |
 | Q2003866 | Sugauli Treaty | 1815 | 23 |
@@ -90,7 +88,6 @@ The planner reads this list first (rules card 13). Some rows are held under anot
 | Q1191091 | Webster–Ashburton Treaty | 1842 | 21 |
 | Q2164870 | Eureka Rebellion | 1854 | 21 |
 | Q1259178 | third plague pandemic | 1855 | 21 |
-| Q1080711 | Ottoman–Hungarian Wars | 1526 | 20 |
 | Q934238 | Twelve Years' Truce | 1609 | 20 |
 | Q3136592 | 1689 Boston revolt | 1689 | 20 |
 | Q2001581 | 1707 Hōei earthquake | 1707 | 20 |
