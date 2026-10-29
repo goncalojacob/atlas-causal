@@ -38,6 +38,15 @@
         }
       ]
     },
+    "abensberg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "abeokuta": {
       "from": "git",
       "versions": [
@@ -2611,6 +2620,15 @@
         }
       ]
     },
+    "cahul": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "cairo": {
       "from": "git",
       "versions": [
@@ -2953,6 +2971,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "cassel-nord": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3956,6 +3983,15 @@
         }
       ]
     },
+    "culworth": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "cundinamarca-department": {
       "from": "git",
       "versions": [
@@ -4713,6 +4749,15 @@
         }
       ]
     },
+    "dunbar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "dundee-kwazulu-natal": {
       "from": "git",
       "versions": [
@@ -4860,6 +4905,24 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "edge-hill-warwickshire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "edinburgh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5292,6 +5355,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "fehrbellin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5990,6 +6062,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "gdansk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6830,6 +6911,15 @@
         }
       ]
     },
+    "heligoland-bight": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "hemmingstedt": {
       "from": "git",
       "versions": [
@@ -6860,6 +6950,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "heraklion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -8017,6 +8116,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "kamienna-gora": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -9397,6 +9505,15 @@
         }
       ]
     },
+    "liberec": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "liberia-q1014": {
       "from": "git",
       "versions": [
@@ -9442,6 +9559,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "lipany-vitice": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -10322,6 +10448,15 @@
         }
       ]
     },
+    "marburger-schloss": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "marciano-della-chiana": {
       "from": "git",
       "versions": [
@@ -10488,6 +10623,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "maxen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -11020,6 +11164,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "mondovi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -11855,6 +12008,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "nieuwpoort-belgium": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -13902,6 +14064,15 @@
         }
       ]
     },
+    "quiberon-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "quispicanchi-province": {
       "from": "git",
       "versions": [
@@ -14279,6 +14450,15 @@
         }
       ]
     },
+    "river-medway": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "rivoli-veronese": {
       "from": "git",
       "versions": [
@@ -14408,6 +14588,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "rouvray-sainte-croix": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -16144,6 +16333,15 @@
         }
       ]
     },
+    "spicheren": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "spotsylvania-county-virginia": {
       "from": "git",
       "versions": [
@@ -16581,6 +16779,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "szczecin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -17466,6 +17673,15 @@
         }
       ]
     },
+    "tudela": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "tuen-mun": {
       "from": "git",
       "versions": [
@@ -18074,6 +18290,15 @@
         }
       ]
     },
+    "villafranca-di-verona": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "vimeiro": {
       "from": "git",
       "versions": [
@@ -18344,6 +18569,15 @@
         }
       ]
     },
+    "wavre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "weihai": {
       "from": "git",
       "versions": [
@@ -18579,6 +18813,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "winterthur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -18894,6 +19137,15 @@
         }
       ]
     },
+    "yevpatoria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "yingkou": {
       "from": "git",
       "versions": [
@@ -19111,6 +19363,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "zhuravno": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

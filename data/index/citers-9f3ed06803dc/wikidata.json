@@ -3644,6 +3644,12 @@
     },
     {
       "dissent": false,
+      "id": "armistice-of-villafranca",
+      "kind": "event",
+      "locator": "Q305176"
+    },
+    {
+      "dissent": false,
       "id": "aroostook-war",
       "kind": "event",
       "locator": "Q698312"
@@ -4049,6 +4055,12 @@
       "id": "battle-of-abancay",
       "kind": "event",
       "locator": "Q283288"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-abensberg",
+      "kind": "event",
+      "locator": "Q479979"
     },
     {
       "dissent": false,
@@ -5036,6 +5048,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cassel-1677",
+      "kind": "event",
+      "locator": "Q1586264"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-castiglione-1706",
       "kind": "event",
       "locator": "Q701808"
@@ -5612,6 +5630,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-dunbar-1650",
+      "kind": "event",
+      "locator": "Q2605977"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dunkirk",
       "kind": "event",
       "locator": "Q208529"
@@ -5645,6 +5669,18 @@
       "id": "battle-of-eckmuhl",
       "kind": "event",
       "locator": "Q700860"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-edgcote",
+      "kind": "event",
+      "locator": "Q1849818"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-edgehill",
+      "kind": "event",
+      "locator": "Q1478525"
     },
     {
       "dissent": false,
@@ -5720,6 +5756,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-eupatoria",
+      "kind": "event",
+      "locator": "Q1573604"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-eylau",
       "kind": "event",
       "locator": "Q331347"
@@ -5741,6 +5783,12 @@
       "id": "battle-of-fehmarn-1644",
       "kind": "event",
       "locator": "Q392121"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fehrbellin",
+      "kind": "event",
+      "locator": "Q695057"
     },
     {
       "dissent": false,
@@ -6344,6 +6392,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-heligoland-1864",
+      "kind": "event",
+      "locator": "Q696815"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-heliopolis-1800",
       "kind": "event",
       "locator": "Q2887968"
@@ -6371,6 +6425,12 @@
       "id": "battle-of-herbsthausen",
       "kind": "event",
       "locator": "Q913821"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-hexham",
+      "kind": "event",
+      "locator": "Q1635231"
     },
     {
       "dissent": false,
@@ -6713,6 +6773,12 @@
       "id": "battle-of-kafr-el-dawwar",
       "kind": "event",
       "locator": "Q4871366"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kagul",
+      "kind": "event",
+      "locator": "Q700218"
     },
     {
       "dissent": false,
@@ -7154,6 +7220,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-landeshut-1760",
+      "kind": "event",
+      "locator": "Q697913"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-landriano",
       "kind": "event",
       "locator": "Q2746040"
@@ -7253,6 +7325,12 @@
       "id": "battle-of-ligny",
       "kind": "event",
       "locator": "Q855429"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lipany",
+      "kind": "event",
+      "locator": "Q935088"
     },
     {
       "dissent": false,
@@ -7616,6 +7694,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-maxen",
+      "kind": "event",
+      "locator": "Q699758"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mazagran",
       "kind": "event",
       "locator": "Q2889297"
@@ -7667,6 +7751,12 @@
       "id": "battle-of-millarapue",
       "kind": "event",
       "locator": "Q2339158"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-minorca-1756",
+      "kind": "event",
+      "locator": "Q1196554"
     },
     {
       "dissent": false,
@@ -7751,6 +7841,12 @@
       "id": "battle-of-moncontour",
       "kind": "event",
       "locator": "Q591727"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mondovi",
+      "kind": "event",
+      "locator": "Q1093286"
     },
     {
       "dissent": false,
@@ -8015,6 +8111,12 @@
       "id": "battle-of-ngoc-hoi-ong-a",
       "kind": "event",
       "locator": "Q3539853"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-nieuwpoort",
+      "kind": "event",
+      "locator": "Q1392"
     },
     {
       "dissent": false,
@@ -8438,6 +8540,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-prestonpans",
+      "kind": "event",
+      "locator": "Q546317"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-preveza",
       "kind": "event",
       "locator": "Q1054975"
@@ -8576,6 +8684,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-quiberon-bay",
+      "kind": "event",
+      "locator": "Q450318"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-quilacura",
       "kind": "event",
       "locator": "Q3636592"
@@ -8651,6 +8765,12 @@
       "id": "battle-of-ravine-a-couleuvres",
       "kind": "event",
       "locator": "Q2890563"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-reichenberg",
+      "kind": "event",
+      "locator": "Q694061"
     },
     {
       "dissent": false,
@@ -9266,6 +9386,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-spicheren",
+      "kind": "event",
+      "locator": "Q699238"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-spion-kop",
       "kind": "event",
       "locator": "Q1072592"
@@ -9668,6 +9794,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-herrings",
+      "kind": "event",
+      "locator": "Q1314054"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-hill-of-the-jews",
       "kind": "event",
       "locator": "Q4872927"
@@ -9980,6 +10112,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-toulon-1744",
+      "kind": "event",
+      "locator": "Q677929"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-towton",
       "kind": "event",
       "locator": "Q634629"
@@ -10049,6 +10187,12 @@
       "id": "battle-of-tucuman",
       "kind": "event",
       "locator": "Q2890270"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tudela",
+      "kind": "event",
+      "locator": "Q2427013"
     },
     {
       "dissent": false,
@@ -10370,6 +10514,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-wavre",
+      "kind": "event",
+      "locator": "Q920107"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-waxhaws",
       "kind": "event",
       "locator": "Q1811438"
@@ -10457,6 +10607,12 @@
       "id": "battle-of-wilton-new-york",
       "kind": "event",
       "locator": "Q24204942"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-winterthur",
+      "kind": "event",
+      "locator": "Q685798"
     },
     {
       "dissent": false,
@@ -12458,6 +12614,12 @@
     },
     {
       "dissent": false,
+      "id": "dano-swedish-war-1808-1809",
+      "kind": "event",
+      "locator": "Q1269777"
+    },
+    {
+      "dissent": false,
       "id": "darfur-genocide",
       "kind": "event",
       "locator": "Q42915906"
@@ -12851,6 +13013,12 @@
       "id": "empire-of-brazil-1822-1889",
       "kind": "event",
       "locator": "Q217230"
+    },
+    {
+      "dissent": false,
+      "id": "english-armada",
+      "kind": "event",
+      "locator": "Q145934"
     },
     {
       "dissent": false,
@@ -15560,6 +15728,18 @@
     },
     {
       "dissent": false,
+      "id": "li-lobanov-treaty",
+      "kind": "event",
+      "locator": "Q708385"
+    },
+    {
+      "dissent": false,
+      "id": "liberal-revolution-of-1820",
+      "kind": "event",
+      "locator": "Q1822923"
+    },
+    {
+      "dissent": false,
       "id": "liberal-wars",
       "kind": "event",
       "locator": "Q1237867"
@@ -15599,6 +15779,12 @@
       "id": "lincoln-douglas-debates",
       "kind": "event",
       "locator": "Q622354"
+    },
+    {
+      "dissent": false,
+      "id": "lisbon-massacre",
+      "kind": "event",
+      "locator": "Q60830"
     },
     {
       "dissent": false,
@@ -15824,6 +16010,12 @@
     },
     {
       "dissent": false,
+      "id": "marburg-colloquy",
+      "kind": "event",
+      "locator": "Q672138"
+    },
+    {
+      "dissent": false,
       "id": "march-on-rome",
       "kind": "event",
       "locator": "Q468823"
@@ -15995,6 +16187,12 @@
       "id": "merger-treaty",
       "kind": "event",
       "locator": "Q622766"
+    },
+    {
+      "dissent": false,
+      "id": "methuen-treaty",
+      "kind": "event",
+      "locator": "Q1435156"
     },
     {
       "dissent": false,
@@ -16490,6 +16688,12 @@
     },
     {
       "dissent": false,
+      "id": "nine-years-war-ireland",
+      "kind": "event",
+      "locator": "Q1361354"
+    },
+    {
+      "dissent": false,
       "id": "north-african-campaign",
       "kind": "event",
       "locator": "Q218678"
@@ -16583,6 +16787,12 @@
       "id": "ochomogo-war",
       "kind": "event",
       "locator": "Q16573164"
+    },
+    {
+      "dissent": false,
+      "id": "october-diploma",
+      "kind": "event",
+      "locator": "Q697734"
     },
     {
       "dissent": false,
@@ -17900,6 +18110,12 @@
     },
     {
       "dissent": false,
+      "id": "raid-on-the-medway",
+      "kind": "event",
+      "locator": "Q331740"
+    },
+    {
+      "dissent": false,
       "id": "raid-on-wells-1692",
       "kind": "event",
       "locator": "Q5931014"
@@ -19076,6 +19292,12 @@
     },
     {
       "dissent": false,
+      "id": "serbian-ottoman-wars-1876-1878",
+      "kind": "event",
+      "locator": "Q4416705"
+    },
+    {
+      "dissent": false,
       "id": "serbian-revolution",
       "kind": "event",
       "locator": "Q2092429"
@@ -19388,6 +19610,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-belgrade-1717",
+      "kind": "event",
+      "locator": "Q2631076"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-bergen-op-zoom-1622",
       "kind": "event",
       "locator": "Q1838038"
@@ -19475,6 +19703,12 @@
       "id": "siege-of-campar",
       "kind": "event",
       "locator": "Q130520296"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-candia",
+      "kind": "event",
+      "locator": "Q701094"
     },
     {
       "dissent": false,
@@ -19583,6 +19817,12 @@
       "id": "siege-of-cusco-1781",
       "kind": "event",
       "locator": "Q11794853"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-danzig-1807",
+      "kind": "event",
+      "locator": "Q901954"
     },
     {
       "dissent": false,
@@ -21902,6 +22142,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-berlin-1742",
+      "kind": "event",
+      "locator": "Q657970"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-berlin-1878",
       "kind": "event",
       "locator": "Q1048169"
@@ -22004,9 +22250,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-cardis",
+      "kind": "event",
+      "locator": "Q1456449"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-cateau-cambresis",
       "kind": "event",
       "locator": "Q836963"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-chaumont",
+      "kind": "event",
+      "locator": "Q338935"
     },
     {
       "dissent": false,
@@ -22085,6 +22343,12 @@
       "id": "treaty-of-detroit",
       "kind": "event",
       "locator": "Q1639077"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-dresden",
+      "kind": "event",
+      "locator": "Q700716"
     },
     {
       "dissent": false,
@@ -22436,6 +22700,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-london-1827",
+      "kind": "event",
+      "locator": "Q616951"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-london-1839",
       "kind": "event",
       "locator": "Q1160895"
@@ -22475,6 +22745,12 @@
       "id": "treaty-of-madrid-13-january-1750",
       "kind": "event",
       "locator": "Q1422396"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-madrid-1526",
+      "kind": "event",
+      "locator": "Q1322711"
     },
     {
       "dissent": false,
@@ -22826,6 +23102,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-stettin-1570",
+      "kind": "event",
+      "locator": "Q703763"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-stolbovo",
       "kind": "event",
       "locator": "Q928848"
@@ -23054,6 +23336,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-zurawno",
+      "kind": "event",
+      "locator": "Q1779177"
+    },
+    {
+      "dissent": false,
       "id": "treaty-on-the-final-settlement-with-respect-to-germany",
       "kind": "event",
       "locator": "Q159644"
@@ -23099,6 +23387,12 @@
       "id": "tripartite-pact",
       "kind": "event",
       "locator": "Q153122"
+    },
+    {
+      "dissent": false,
+      "id": "triple-alliance-1717",
+      "kind": "event",
+      "locator": "Q283511"
     },
     {
       "dissent": false,
