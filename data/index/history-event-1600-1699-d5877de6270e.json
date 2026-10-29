@@ -65,6 +65,15 @@
         }
       ]
     },
+    "abbas-i-s-kakhetian-and-kartlian-campaigns": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "acadian-civil-war": {
       "from": "git",
       "versions": [
@@ -1961,6 +1970,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-urmia-1604": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

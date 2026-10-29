@@ -20,6 +20,24 @@
         }
       ]
     },
+    "1517-hebron-attacks": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "1517-safed-attacks": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1556-shaanxi-earthquake": {
       "from": "git",
       "versions": [
@@ -770,6 +788,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-ghazdewan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -2195,6 +2222,15 @@
         }
       ]
     },
+    "battle-of-yaunis-khan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-yonan": {
       "from": "git",
       "versions": [
@@ -3141,6 +3177,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "lala-mustafa-pasha-s-caucasian-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4373,6 +4418,15 @@
       ]
     },
     "siege-of-miki": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-mitsuji": {
       "from": "git",
       "versions": [
         {

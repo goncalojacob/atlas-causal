@@ -1763,6 +1763,15 @@
         }
       ]
     },
+    "battle-of-attock-1813": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-austerlitz": {
       "from": "git",
       "versions": [
@@ -2640,6 +2649,15 @@
         }
       ]
     },
+    "battle-of-dufile": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-durenstein": {
       "from": "git",
       "versions": [
@@ -2898,6 +2916,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-ganja-1826": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4167,6 +4194,15 @@
         }
       ]
     },
+    "battle-of-najafgarh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-nalapani": {
       "from": "git",
       "versions": [
@@ -4221,6 +4257,15 @@
         }
       ]
     },
+    "battle-of-new-moscow": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-new-orleans": {
       "from": "git",
       "versions": [
@@ -4239,12 +4284,30 @@
         }
       ]
     },
+    "battle-of-ningpo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-niquitao": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-noheji": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4320,12 +4383,30 @@
         }
       ]
     },
+    "battle-of-ong-ang-1885": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-ordashu": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-oshakan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4763,6 +4844,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-segheneyti": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5246,6 +5336,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-the-habrah": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5791,6 +5890,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-zhenhai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -8126,6 +8234,15 @@
       ]
     },
     "french-constitutional-laws-of-1875": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "french-expedition-to-bejaia-1831": {
       "from": "git",
       "versions": [
         {
@@ -11097,6 +11214,15 @@
         }
       ]
     },
+    "second-battle-of-chuenpi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "second-battle-of-colenso": {
       "from": "git",
       "versions": [
@@ -11966,6 +12092,15 @@
         }
       ]
     },
+    "siege-of-saati": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-saigon": {
       "from": "git",
       "versions": [
@@ -12026,6 +12161,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "siege-of-tuyen-quang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

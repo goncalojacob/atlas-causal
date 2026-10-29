@@ -10190,6 +10190,18 @@
     },
     {
       "dissent": false,
+      "id": "1517-hebron-attacks",
+      "kind": "event",
+      "locator": "\"1517 Hebron attacks\", revision 1366197360"
+    },
+    {
+      "dissent": false,
+      "id": "1517-safed-attacks",
+      "kind": "event",
+      "locator": "\"1517 Safed attacks\", revision 1382254444"
+    },
+    {
+      "dissent": false,
       "id": "1556-shaanxi-earthquake",
       "kind": "event",
       "locator": "\"1556 Shaanxi earthquake\", revision 1370898423"
@@ -11312,6 +11324,12 @@
     },
     {
       "dissent": false,
+      "id": "abbas-i-s-kakhetian-and-kartlian-campaigns",
+      "kind": "event",
+      "locator": "\"Abbas I's Kakhetian and Kartlian campaigns\", revision 1378915857"
+    },
+    {
+      "dissent": false,
       "id": "abeibara-massacres",
       "kind": "event",
       "locator": "\"Abeïbara massacres\", revision 1326919232"
@@ -11417,6 +11435,12 @@
       "id": "action-of-12-december-1782",
       "kind": "event",
       "locator": "\"Action of 12 December 1782\", revision 1370425869"
+    },
+    {
+      "dissent": false,
+      "id": "action-of-15-august-1799",
+      "kind": "event",
+      "locator": "\"Action of 15 August 1799\", revision 1370425953"
     },
     {
       "dissent": false,
@@ -12932,6 +12956,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-attock-1813",
+      "kind": "event",
+      "locator": "\"Battle of Attock (1813)\", revision 1379758275"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-austerlitz",
       "kind": "event",
       "locator": "\"Battle of Austerlitz\", revision 1378712638"
@@ -14252,6 +14282,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-dufile",
+      "kind": "event",
+      "locator": "\"Battle of Dufile\", revision 1370439457"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dunbar-1650",
       "kind": "event",
       "locator": "\"Battle of Dunbar (1650)\", revision 1375910502"
@@ -14702,6 +14738,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ganja-1826",
+      "kind": "event",
+      "locator": "\"Battle of Ganja (1826)\", revision 1370441287"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gannoruwa",
       "kind": "event",
       "locator": "\"Battle of Gannoruwa\", revision 1371454057"
@@ -14765,6 +14807,12 @@
       "id": "battle-of-gettysburg",
       "kind": "event",
       "locator": "\"Battle of Gettysburg\", revision 1380654585"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ghazdewan",
+      "kind": "event",
+      "locator": "\"Battle of Ghazdewan\", revision 1381263384"
     },
     {
       "dissent": false,
@@ -16880,6 +16928,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-najafgarh",
+      "kind": "event",
+      "locator": "\"Battle of Najafgarh\", revision 1370451187"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-nalapani",
       "kind": "event",
       "locator": "\"Battle of Nalapani\", revision 1379666095"
@@ -17000,6 +17054,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ningpo",
+      "kind": "event",
+      "locator": "\"Battle of Ningpo\", revision 1370451767"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ningyuan",
       "kind": "event",
       "locator": "\"Battle of Ningyuan\", revision 1370451771"
@@ -17021,6 +17081,12 @@
       "id": "battle-of-noain",
       "kind": "event",
       "locator": "\"Battle of Noáin\", revision 1375299067"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-noheji",
+      "kind": "event",
+      "locator": "\"Battle of Noheji\", revision 1381645582"
     },
     {
       "dissent": false,
@@ -17156,6 +17222,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ong-ang-1885",
+      "kind": "event",
+      "locator": "\"Battle of Đồng Đăng (1885)\", revision 1370603011"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-onjong",
       "kind": "event",
       "locator": "\"Battle of Onjong\", revision 1377425566"
@@ -17189,6 +17261,12 @@
       "id": "battle-of-osan",
       "kind": "event",
       "locator": "\"Battle of Osan\", revision 1375327001"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-oshakan",
+      "kind": "event",
+      "locator": "\"Battle of Oshakan\", revision 1371931615"
     },
     {
       "dissent": false,
@@ -18110,6 +18188,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-segheneyti",
+      "kind": "event",
+      "locator": "\"Battle of Segheneyti\", revision 1375201816"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sekigahara",
       "kind": "event",
       "locator": "\"Battle of Sekigahara\", revision 1380043536"
@@ -18842,6 +18926,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-habrah",
+      "kind": "event",
+      "locator": "\"Battle of the Habrah\", revision 1370600017"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-herrings",
       "kind": "event",
       "locator": "\"Battle of the Herrings\", revision 1370600108"
@@ -19370,6 +19460,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-urmia-1604",
+      "kind": "event",
+      "locator": "\"Battle of Urmia (1604)\", revision 1379886770"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ushant-1781",
       "kind": "event",
       "locator": "\"Battle of Ushant (1781)\", revision 1370592021"
@@ -19838,6 +19934,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-yaunis-khan",
+      "kind": "event",
+      "locator": "\"Battle of Yaunis Khan\", revision 1370595396"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-yeghevard",
       "kind": "event",
       "locator": "\"Battle of Yeghevārd\", revision 1380934958"
@@ -19895,6 +19997,12 @@
       "id": "battle-of-zenta",
       "kind": "event",
       "locator": "\"Battle of Zenta\", revision 1380934621"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-zhenhai",
+      "kind": "event",
+      "locator": "\"Battle of Zhenhai\", revision 1382212045"
     },
     {
       "dissent": false,
@@ -20585,6 +20693,12 @@
       "id": "campaign-of-tlemcen-1557",
       "kind": "event",
       "locator": "\"Campaign of Tlemcen (1557)\", revision 1370607753"
+    },
+    {
+      "dissent": false,
+      "id": "campaigns-of-nader-shah",
+      "kind": "event",
+      "locator": "\"Campaigns of Nader Shah\", revision 1381286306"
     },
     {
       "dissent": false,
@@ -23288,6 +23402,12 @@
     },
     {
       "dissent": false,
+      "id": "french-expedition-to-bejaia-1831",
+      "kind": "event",
+      "locator": "\"French Expedition to Béjaia (1831)\", revision 1370620264"
+    },
+    {
+      "dissent": false,
       "id": "french-expedition-to-korea",
       "kind": "event",
       "locator": "\"French expedition to Korea\", revision 1370620397"
@@ -25016,6 +25136,12 @@
     },
     {
       "dissent": false,
+      "id": "lala-mustafa-pasha-s-caucasian-campaign",
+      "kind": "event",
+      "locator": "\"Lala Mustafa Pasha's Caucasian campaign\", revision 1378916763"
+    },
+    {
+      "dissent": false,
       "id": "landing-at-kip-s-bay",
       "kind": "event",
       "locator": "\"Landing at Kip's Bay\", revision 1371409679"
@@ -25895,6 +26021,12 @@
       "id": "nader-shah-s-invasion-of-india",
       "kind": "event",
       "locator": "\"Nader Shah's invasion of India\", revision 1379473633"
+    },
+    {
+      "dissent": false,
+      "id": "nader-shah-s-sindh-expedition",
+      "kind": "event",
+      "locator": "\"Nader Shah's Sindh expedition\", revision 1370629175"
     },
     {
       "dissent": false,
@@ -28520,6 +28652,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-chuenpi",
+      "kind": "event",
+      "locator": "\"Second Battle of Chuenpi\", revision 1370736031"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-colenso",
       "kind": "event",
       "locator": "\"Second Battle of Colenso\", revision 1370736054"
@@ -30050,6 +30188,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-mitsuji",
+      "kind": "event",
+      "locator": "\"Siege of Mitsuji\", revision 1370743571"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-mitu",
       "kind": "event",
       "locator": "\"Siege of Mitú\", revision 1370743579"
@@ -30404,6 +30548,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-saati",
+      "kind": "event",
+      "locator": "\"Siege of Saati\", revision 1381386305"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-saigon",
       "kind": "event",
       "locator": "\"Siege of Saigon\", revision 1370744901"
@@ -30623,6 +30773,12 @@
       "id": "siege-of-turin-1640",
       "kind": "event",
       "locator": "\"Siege of Turin (1640)\", revision 1370746106"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-tuyen-quang",
+      "kind": "event",
+      "locator": "\"Siege of Tuyên Quang\", revision 1370746117"
     },
     {
       "dissent": false,

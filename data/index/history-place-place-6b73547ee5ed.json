@@ -5013,6 +5013,15 @@
         }
       ]
     },
+    "dufile": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "duman-ri": {
       "from": "git",
       "versions": [
@@ -6404,6 +6413,15 @@
         }
       ]
     },
+    "ganja-azerbaijan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "gao": {
       "from": "git",
       "versions": [
@@ -6638,6 +6656,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "gijduvon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -7370,6 +7397,15 @@
         }
       ]
     },
+    "hebron": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "heiligerlee": {
       "from": "git",
       "versions": [
@@ -7466,6 +7502,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "hindu-kush": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -8795,6 +8840,15 @@
         }
       ]
     },
+    "kartli": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "kashgar": {
       "from": "git",
       "versions": [
@@ -8966,6 +9020,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "khan-yunis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -12542,6 +12605,15 @@
         }
       ]
     },
+    "najafgarh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "nallur-jaffna": {
       "from": "git",
       "versions": [
@@ -12918,6 +12990,15 @@
       ]
     },
     "niiniin-taka-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "ningbo": {
       "from": "git",
       "versions": [
         {
@@ -15821,6 +15902,24 @@
         }
       ]
     },
+    "safed": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "sagallo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "saginaw-michigan": {
       "from": "git",
       "versions": [
@@ -16581,6 +16680,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "segeneiti": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -19054,6 +19162,15 @@
         }
       ]
     },
+    "tuyen-quang-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "ueda-nagano": {
       "from": "git",
       "versions": [
@@ -19223,6 +19340,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "urmia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
