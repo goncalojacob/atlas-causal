@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "yazhelbitsy",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4351871",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Yazhelbitsy"
+  },
+  "sources": [],
+  "names": [
+    "Yazhelbitsy"
+  ],
+  "where": {
+    "lon": 32.964722222222,
+    "lat": 58.033611111111,
+    "precision": "city",
+    "label": "Yazhelbitsy"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

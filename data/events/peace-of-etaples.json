@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "peace-of-etaples",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2508091",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Peace of Étaples"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2508091"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peace of Étaples\", revision 1336774695"
+    }
+  ],
+  "title": "Peace of Étaples",
+  "summary": "The English Wikipedia article \"Peace of Étaples\", at revision 1336774695, opens: \"The Peace of Étaples was signed on 3 November 1492 in Étaples between Charles VIII of France and Henry VII of England. Charles agreed to end his support for the Yorkist Pretender Perkin Warbeck, in return for being recognised as ruler of the Duchy of Brittany.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2508091, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty between England and France in 1492\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1492,
+    "end": 1492,
+    "date": "1492-11-03"
+  },
+  "place": "etaples",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
