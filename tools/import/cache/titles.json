@@ -30313,12 +30313,6 @@
    "redirect": false,
    "missing": false
   },
-  "Armagnac–Burgundian Civil War": {
-   "canonical": "Armagnac–Burgundian Civil War",
-   "qid": "Q1021160",
-   "redirect": false,
-   "missing": false
-  },
   "Budapest Convention of 1877": {
    "canonical": "Budapest Convention of 1877",
    "qid": "Q169491",
@@ -30370,12 +30364,6 @@
   "History of modern Greece": {
    "canonical": "History of modern Greece",
    "qid": "Q1204808",
-   "redirect": false,
-   "missing": false
-  },
-  "Hungarian–Ottoman Wars": {
-   "canonical": "Hungarian–Ottoman Wars",
-   "qid": "Q1080711",
    "redirect": false,
    "missing": false
   },
@@ -30568,6 +30556,234 @@
   "Union of Kraków and Vilna": {
    "canonical": "Union of Kraków and Vilna",
    "qid": "Q653379",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Anghiari": {
+   "canonical": "Battle of Anghiari",
+   "qid": "Q1779008",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Jargeau": {
+   "canonical": "Battle of Jargeau",
+   "qid": "Q600016",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Pirot": {
+   "canonical": "Battle of Pirot",
+   "qid": "Q3658001",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Solway Moss": {
+   "canonical": "Battle of Solway Moss",
+   "qid": "Q2890025",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Vauchamps": {
+   "canonical": "Battle of Vauchamps",
+   "qid": "Q1192053",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Vučji Do": {
+   "canonical": "Battle of Vučji Do",
+   "qid": "Q2586933",
+   "redirect": false,
+   "missing": false
+  },
+  "Battles of Wenden (1577–1578)": {
+   "canonical": "Battles of Wenden (1577–1578)",
+   "qid": "Q2364604",
+   "redirect": false,
+   "missing": false
+  },
+  "Catalan Civil War": {
+   "canonical": "Catalan Civil War",
+   "qid": "Q2476062",
+   "redirect": false,
+   "missing": false
+  },
+  "Drownings at Nantes": {
+   "canonical": "Drownings at Nantes",
+   "qid": "Q2436102",
+   "redirect": false,
+   "missing": false
+  },
+  "Fire of Moscow (1547)": {
+   "canonical": "Fire of Moscow (1547)",
+   "qid": "Q2530002",
+   "redirect": false,
+   "missing": false
+  },
+  "Fire of Moscow (1571)": {
+   "canonical": "Fire of Moscow (1571)",
+   "qid": "Q686961",
+   "redirect": false,
+   "missing": false
+  },
+  "Grand Siècle": {
+   "canonical": "Grand Siècle",
+   "qid": "Q1434013",
+   "redirect": false,
+   "missing": false
+  },
+  "Peace of Paris (1783)": {
+   "canonical": "Peace of Paris (1783)",
+   "qid": "Q3776326",
+   "redirect": false,
+   "missing": false
+  },
+  "Plot of the rue Saint-Nicaise": {
+   "canonical": "Plot of the rue Saint-Nicaise",
+   "qid": "Q10858956",
+   "redirect": false,
+   "missing": false
+  },
+  "Polish–Ottoman War (1485–1503)": {
+   "canonical": "Polish–Ottoman War (1485–1503)",
+   "qid": "Q9377322",
+   "redirect": false,
+   "missing": false
+  },
+  "Red Barn Murder": {
+   "canonical": "Red Barn Murder",
+   "qid": "Q3844918",
+   "redirect": false,
+   "missing": false
+  },
+  "Revolution of 1772": {
+   "canonical": "Revolution of 1772",
+   "qid": "Q10511142",
+   "redirect": false,
+   "missing": false
+  },
+  "Silent Sejm": {
+   "canonical": "Silent Sejm",
+   "qid": "Q561415",
+   "redirect": false,
+   "missing": false
+  },
+  "War against Sigismund": {
+   "canonical": "War against Sigismund",
+   "qid": "Q924600",
+   "redirect": false,
+   "missing": false
+  },
+  "Wars in Lombardy": {
+   "canonical": "Wars in Lombardy",
+   "qid": "Q2506432",
+   "redirect": false,
+   "missing": false
+  },
+  "Assassination of Spencer Perceval": {
+   "canonical": "Assassination of Spencer Perceval",
+   "qid": "Q21005831",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Castricum": {
+   "canonical": "Battle of Castricum",
+   "qid": "Q370376",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Höchst": {
+   "canonical": "Battle of Höchst",
+   "qid": "Q661686",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of La Higueruela": {
+   "canonical": "Battle of La Higueruela",
+   "qid": "Q1807251",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Moscow (1612)": {
+   "canonical": "Battle of Moscow (1612)",
+   "qid": "Q4303874",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Palermo": {
+   "canonical": "Battle of Palermo",
+   "qid": "Q717322",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Tuyutí": {
+   "canonical": "Battle of Tuyutí",
+   "qid": "Q3307845",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Vila Franca do Campo": {
+   "canonical": "Battle of Vila Franca do Campo",
+   "qid": "Q3099190",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Șelimbăr": {
+   "canonical": "Battle of Șelimbăr",
+   "qid": "Q592069",
+   "redirect": false,
+   "missing": false
+  },
+  "Concordat of Bologna": {
+   "canonical": "Concordat of Bologna",
+   "qid": "Q1627409",
+   "redirect": false,
+   "missing": false
+  },
+  "Great Fire of New York": {
+   "canonical": "Great Fire of New York",
+   "qid": "Q2516056",
+   "redirect": false,
+   "missing": false
+  },
+  "Muscovite War of Succession": {
+   "canonical": "Muscovite War of Succession",
+   "qid": "Q4288097",
+   "redirect": false,
+   "missing": false
+  },
+  "Navarrese Civil War (1451–1455)": {
+   "canonical": "Navarrese Civil War (1451–1455)",
+   "qid": "Q1584610",
+   "redirect": false,
+   "missing": false
+  },
+  "Ominous Decade": {
+   "canonical": "Ominous Decade",
+   "qid": "Q2378204",
+   "redirect": false,
+   "missing": false
+  },
+  "Raid of the Balearic Islands (1558)": {
+   "canonical": "Raid of the Balearic Islands (1558)",
+   "qid": "Q3720898",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Harfleur": {
+   "canonical": "Siege of Harfleur",
+   "qid": "Q815148",
+   "redirect": false,
+   "missing": false
+  },
+  "St. Elizabeth's flood (1421)": {
+   "canonical": "St. Elizabeth's flood (1421)",
+   "qid": "Q524797",
+   "redirect": false,
+   "missing": false
+  },
+  "Treaty of the Bulls of Guisando": {
+   "canonical": "Treaty of the Bulls of Guisando",
+   "qid": "Q2656396",
    "redirect": false,
    "missing": false
   }
