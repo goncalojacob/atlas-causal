@@ -90,6 +90,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "abbasabad-fortress",
+      "kind": "place",
+      "names": [
+        "Abbasabad fortress",
+        "Abbasabad (fortress)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "abeibara",
@@ -564,7 +592,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 9,
+      "degree": 10,
       "id": "afghanistan-q889",
       "kind": "place",
       "names": [
@@ -1122,6 +1150,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "aleppo",
+      "kind": "place",
+      "names": [
+        "Aleppo",
+        "Alepo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 5,
       "id": "alexandria",
@@ -1265,6 +1321,33 @@
       "kind": "place",
       "names": [
         "Altranstädt"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "alvar-e-sofla",
+      "kind": "place",
+      "names": [
+        "Alvar-e Sofla"
       ],
       "origin": {
         "tool": "wikidata"
@@ -2213,6 +2296,34 @@
       "names": [
         "Arkansas Post",
         "Correio do Arkansas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "armenian-highlands",
+      "kind": "place",
+      "names": [
+        "Armenian Highlands",
+        "Planalto Armênio"
       ],
       "origin": {
         "tool": "wikidata"
@@ -3650,7 +3761,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "basra",
       "kind": "place",
       "names": [
@@ -4217,6 +4328,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "bayburt",
+      "kind": "place",
+      "names": [
+        "Bayburt",
+        "Baiburte"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -11204,6 +11343,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "damascus",
+      "kind": "place",
+      "names": [
+        "Damascus",
+        "Damasco"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 1,
       "id": "damour",
@@ -11349,6 +11516,33 @@
       "names": [
         "Delhi",
         "Deli"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "deligrad",
+      "kind": "place",
+      "names": [
+        "Deligrad"
       ],
       "origin": {
         "tool": "wikidata"
@@ -17613,7 +17807,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "guangzhou",
       "kind": "place",
       "names": [
@@ -18351,6 +18545,33 @@
       "names": [
         "Hanko Peninsula",
         "Península de Hanko"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "hanoi",
+      "kind": "place",
+      "names": [
+        "Hanoi"
       ],
       "origin": {
         "tool": "wikidata"
@@ -21808,7 +22029,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "kabul",
       "kind": "place",
       "names": [
@@ -22752,6 +22973,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "kemah-erzincan",
+      "kind": "place",
+      "names": [
+        "Kemah",
+        "Quemaque (Erzincã)",
+        "Kemah, Erzincan",
+        "Quemaque (Erzinjane)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "kentucky",
@@ -23374,6 +23625,33 @@
       "names": [
         "Kirkuk",
         "Quircuque"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "kizu-river",
+      "kind": "place",
+      "names": [
+        "Kizu River"
       ],
       "origin": {
         "tool": "wikidata"
@@ -27875,6 +28153,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "malolos",
+      "kind": "place",
+      "names": [
+        "Malolos"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "manassas-national-battlefield-park",
@@ -29014,6 +29319,33 @@
       "names": [
         "Madina-Diassa",
         "Médine, Mali"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "meerut",
+      "kind": "place",
+      "names": [
+        "Meerut"
       ],
       "origin": {
         "tool": "wikidata"
@@ -31941,14 +32273,71 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "najd",
+      "kind": "place",
+      "names": [
+        "Najd",
+        "Néjede",
+        "Négede"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
-      "degree": 2,
+      "degree": 3,
       "id": "nallur-jaffna",
       "kind": "place",
       "names": [
         "Nallur",
         "Nalur",
         "Nallur, Jaffna"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "nam-inh-city",
+      "kind": "place",
+      "names": [
+        "Nam Định",
+        "Nam Định (city)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -32080,7 +32469,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 3,
+      "degree": 4,
       "id": "nanjing",
       "kind": "place",
       "names": [
@@ -32730,6 +33119,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "nicosia",
+      "kind": "place",
+      "names": [
+        "Nicosia"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -35771,7 +36187,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "peshawar",
       "kind": "place",
       "names": [
@@ -36021,7 +36437,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 8,
+      "degree": 9,
       "id": "philippines-q928",
       "kind": "place",
       "names": [
@@ -37046,7 +37462,7 @@
         }
       ],
       "created": "2026-10-01",
-      "degree": 2,
+      "degree": 3,
       "id": "portuguese-macau",
       "kind": "place",
       "names": [
@@ -37857,7 +38273,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 3,
       "id": "pylos",
       "kind": "place",
       "names": [
@@ -42500,6 +42916,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "shopian",
+      "kind": "place",
+      "names": [
+        "Shopian",
+        "Shupiyan"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 1,
       "id": "shubra-khit",
@@ -45223,6 +45667,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "suvi-do-tutin",
+      "kind": "place",
+      "names": [
+        "Suvi Do",
+        "Suvi Do (Tutin)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "svaneti",
@@ -47110,6 +47582,34 @@
       "kind": "place",
       "names": [
         "Tongyeong"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "tongzhou-beijing",
+      "kind": "place",
+      "names": [
+        "Tongzhou District",
+        "Tongzhou, Beijing"
       ],
       "origin": {
         "tool": "wikidata"
@@ -51471,6 +51971,35 @@
       "kind": "place",
       "names": [
         "Yamato River"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "yanbu",
+      "kind": "place",
+      "names": [
+        "Yanbu",
+        "Iambo",
+        "Iambo (Arábia Saudita)"
       ],
       "origin": {
         "tool": "wikidata"

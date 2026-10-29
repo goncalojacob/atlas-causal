@@ -29,6 +29,15 @@
         }
       ]
     },
+    "abbasabad-fortress": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "abeibara": {
       "from": "git",
       "versions": [
@@ -394,6 +403,15 @@
         }
       ]
     },
+    "aleppo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "alexandria": {
       "from": "git",
       "versions": [
@@ -445,6 +463,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "alvar-e-sofla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -806,6 +833,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "armenian-highlands": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1586,6 +1622,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "bayburt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -4390,6 +4435,15 @@
         }
       ]
     },
+    "damascus": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "damour": {
       "from": "git",
       "versions": [
@@ -4447,6 +4501,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "deligrad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -7301,6 +7364,15 @@
         }
       ]
     },
+    "hanoi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "hanover-q1715": {
       "from": "git",
       "versions": [
@@ -8972,6 +9044,15 @@
         }
       ]
     },
+    "kemah-erzincan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "kentucky": {
       "from": "git",
       "versions": [
@@ -9218,6 +9299,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "kizu-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -11066,6 +11156,15 @@
         }
       ]
     },
+    "malolos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "manassas-national-battlefield-park": {
       "from": "git",
       "versions": [
@@ -11495,6 +11594,15 @@
       ]
     },
     "medine-mali": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "meerut": {
       "from": "git",
       "versions": [
         {
@@ -12614,12 +12722,30 @@
         }
       ]
     },
+    "najd": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "nallur-jaffna": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "nam-inh-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -12953,6 +13079,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "nicosia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -16924,6 +17059,15 @@
         }
       ]
     },
+    "shopian": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "shubra-khit": {
       "from": "git",
       "versions": [
@@ -18045,6 +18189,15 @@
         }
       ]
     },
+    "suvi-do-tutin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "svaneti": {
       "from": "git",
       "versions": [
@@ -18769,6 +18922,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "tongzhou-beijing": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -20538,6 +20700,15 @@
       ]
     },
     "yamato-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "yanbu": {
       "from": "git",
       "versions": [
         {
