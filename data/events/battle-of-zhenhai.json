@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-zhenhai",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872810",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Zhenhai"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872810"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Zhenhai\", revision 1382212045"
+    }
+  ],
+  "title": "Battle of Zhenhai",
+  "summary": "The English Wikipedia article \"Battle of Zhenhai\", at revision 1382212045, opens: \"The Battle of Zhenhai was a minor confrontation that took place on 1 March 1885 between Admiral Amédée Courbet's Far East Squadron and Chinese warships and shore batteries near the coastal city of Zhenhai, 12 miles (19 km) downstream from Ningbo, China during the Sino-French War. French and Chinese sources disagree sharply as to what happened; French sources treat the encounter as a minor incident, while Chinese sources consider it a striking defensive victory. The Battle of Zhenhai is still commemorated in China as an important Chinese victory in the Sino-French War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872810, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-03-01"
+  },
+  "place": "zhenhai-ningbo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "sino-french-war"
+}

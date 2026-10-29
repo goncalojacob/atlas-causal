@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lala-mustafa-pasha-s-caucasian-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q8140679",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Lala Mustafa Pasha's Caucasian campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8140679"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lala Mustafa Pasha's Caucasian campaign\", revision 1378916763"
+    }
+  ],
+  "title": "Lala Mustafa Pasha's Caucasian campaign",
+  "summary": "The English Wikipedia article \"Lala Mustafa Pasha's Caucasian campaign\", at revision 1378916763, opens: \"Lala Mustafa Pasha's Caucasian campaign was a military expedition launched in 1578 by Lala Mustafa Pasha, a grand-vizier of the expanding Ottoman Empire. It is also considered a part of the larger conflict, Ottoman–Safavid War (1578–90).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q8140679, imported by tools/import/wikidata.mjs. The item's own description reads \"1578 military expedition of the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1578,
+    "end": 1578
+  },
+  "place": "caucasus",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-safavid-war-1578-1590"
+}

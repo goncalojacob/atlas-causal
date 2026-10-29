@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "najafgarh",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6959903",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Najafgarh"
+  },
+  "sources": [],
+  "names": [
+    "Najafgarh"
+  ],
+  "where": {
+    "lon": 76.984722222222,
+    "lat": 28.6125,
+    "precision": "city",
+    "label": "Najafgarh"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
