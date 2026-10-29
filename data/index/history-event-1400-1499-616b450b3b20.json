@@ -443,6 +443,15 @@
         }
       ]
     },
+    "english-invasion-of-scotland-1482": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "european-colonization-of-the-americas": {
       "from": "git",
       "versions": [
@@ -762,6 +771,15 @@
       ]
     },
     "peace-of-brzesc-kujawski": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "peace-of-etaples": {
       "from": "git",
       "versions": [
         {
@@ -1096,7 +1114,34 @@
         }
       ]
     },
+    "treaty-of-medina-del-campo-1431": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-medina-del-campo-1489": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-melno": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-peronne-1468": {
       "from": "git",
       "versions": [
         {
@@ -1162,6 +1207,24 @@
         }
       ]
     },
+    "treaty-of-utrecht-1474": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-yazhelbitsy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "tudor-period": {
       "from": "git",
       "versions": [
@@ -1204,6 +1267,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "war-of-the-remences": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

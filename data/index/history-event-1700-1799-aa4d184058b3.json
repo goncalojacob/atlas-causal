@@ -2990,6 +2990,15 @@
         }
       ]
     },
+    "battle-of-vinegar-hill": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-wandiwash": {
       "from": "git",
       "versions": [
@@ -6233,6 +6242,15 @@
         }
       ]
     },
+    "treaty-of-aranjuez-1777": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-aranjuez-1779": {
       "from": "git",
       "versions": [
@@ -6356,6 +6374,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-el-pardo-1761": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6498,6 +6525,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-hanover-1710": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -6903,6 +6939,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-worms-1743": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

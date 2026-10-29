@@ -35,6 +35,15 @@
         }
       ]
     },
+    "1563-london-plague": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1586-tensho-earthquake": {
       "from": "git",
       "versions": [
@@ -4278,6 +4287,15 @@
         }
       ]
     },
+    "siege-of-leith": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "siege-of-malacca-1551": {
       "from": "git",
       "versions": [
@@ -5176,12 +5194,48 @@
         }
       ]
     },
+    "treaty-of-arras-1579": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-barcelona-1529": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-bassein-1534": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "treaty-of-bergerac": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-blois-1572": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5222,6 +5276,15 @@
       ]
     },
     "treaty-of-edinburgh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-fleix": {
       "from": "git",
       "versions": [
         {
@@ -5281,6 +5344,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "treaty-of-plessis-les-tours": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

@@ -6311,6 +6311,15 @@
         }
       ]
     },
+    "campaign-in-north-east-france-1814": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "canadian-american-reciprocity-treaty": {
       "from": "git",
       "versions": [
@@ -7451,6 +7460,15 @@
         }
       ]
     },
+    "fenian-rising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "filibuster-war": {
       "from": "git",
       "versions": [
@@ -8388,6 +8406,15 @@
         }
       ]
     },
+    "groningen-epidemic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "gunboat-war": {
       "from": "git",
       "versions": [
@@ -9240,6 +9267,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "mahtra-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -10190,6 +10226,15 @@
         }
       ]
     },
+    "petroleum-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "philippine-american-war": {
       "from": "git",
       "versions": [
@@ -10544,6 +10589,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "rebecca-riots": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -12896,6 +12950,15 @@
         }
       ]
     },
+    "treaty-of-florence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "treaty-of-fontainebleau-1814": {
       "from": "git",
       "versions": [
@@ -13136,6 +13199,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-maastricht-1843": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -13462,6 +13534,24 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-the-eighteen-articles": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-the-hague-1895": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

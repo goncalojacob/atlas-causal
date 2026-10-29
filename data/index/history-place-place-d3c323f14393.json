@@ -369,6 +369,15 @@
         }
       ]
     },
+    "alcoy-spain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "alegria-de-pio": {
       "from": "git",
       "versions": [
@@ -575,6 +584,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "angouleme": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1798,6 +1816,15 @@
         }
       ]
     },
+    "bergerac-dordogne": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "berlin": {
       "from": "git",
       "versions": [
@@ -1844,6 +1871,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "berwick-upon-tweed": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1980,6 +2016,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "blois": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -3573,6 +3618,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "cherasco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -5418,6 +5472,15 @@
         }
       ]
     },
+    "etaples": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "ethiopia-q115": {
       "from": "git",
       "versions": [
@@ -6816,6 +6879,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "groningen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -8765,6 +8837,15 @@
         }
       ]
     },
+    "kedainiai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "kehl": {
       "from": "git",
       "versions": [
@@ -9826,6 +9907,15 @@
         }
       ]
     },
+    "le-fleix": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "lebanon-q822": {
       "from": "git",
       "versions": [
@@ -9865,6 +9955,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "leith": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -10808,6 +10907,15 @@
         }
       ]
     },
+    "malbork-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "mali-q912": {
       "from": "git",
       "versions": [
@@ -11234,6 +11342,15 @@
       ]
     },
     "medina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "medina-del-campo": {
       "from": "git",
       "versions": [
         {
@@ -11864,6 +11981,15 @@
         }
       ]
     },
+    "montpellier": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "montreal": {
       "from": "git",
       "versions": [
@@ -11876,6 +12002,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "monzon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -13814,6 +13949,15 @@
         }
       ]
     },
+    "peronne-somme": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "persian-gulf": {
       "from": "git",
       "versions": [
@@ -14108,6 +14252,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "polessk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -19755,6 +19908,15 @@
         }
       ]
     },
+    "wexford": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "white-plains-new-york": {
       "from": "git",
       "versions": [
@@ -19965,6 +20127,15 @@
         }
       ]
     },
+    "worms-germany": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "wounded-knee-creek": {
       "from": "git",
       "versions": [
@@ -20138,6 +20309,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "yazhelbitsy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

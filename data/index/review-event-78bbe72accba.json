@@ -223,6 +223,35 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "1563-london-plague",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1563 London plague"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "1586-tensho-earthquake",
       "kind": "event",
       "origin": {
@@ -12564,6 +12593,34 @@
       "revised": null,
       "status": "active",
       "title": "Bashkir rebellion of 1662–1664"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "bashkir-rebellion-of-1681-1684",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bashkir rebellion of 1681–1684"
     },
     {
       "authors": [
@@ -50082,6 +50139,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "battle-of-vinegar-hill",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "irish-rebellion-of-1798",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Vinegar Hill"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 2,
       "id": "battle-of-vitoria",
@@ -55533,6 +55622,37 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Camp David Accords"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "campaign-in-north-east-france-1814",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-sixth-coalition",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Campaign in north-east France (1814)"
     },
     {
       "authors": [
@@ -65211,6 +65331,36 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "english-invasion-of-scotland-1482",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "English invasion of Scotland (1482)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -66697,6 +66847,34 @@
       "revised": null,
       "status": "active",
       "title": "Fenian raids"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "fenian-rising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Fenian Rising"
     },
     {
       "authors": [
@@ -72767,6 +72945,36 @@
       "revised": null,
       "status": "active",
       "title": "Grito de Lares"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "groningen-epidemic",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Groningen epidemic"
     },
     {
       "authors": [
@@ -81390,6 +81598,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "mahtra-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mahtra War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -89317,6 +89554,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "peace-of-etaples",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Peace of Étaples"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "peace-of-leoben",
       "kind": "event",
@@ -90487,6 +90754,36 @@
       "revised": null,
       "status": "active",
       "title": "Petrobras and the state monopoly of oil, 1953"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "petroleum-revolution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Petroleum Revolution"
     },
     {
       "authors": [
@@ -93703,6 +94000,35 @@
       "revised": null,
       "status": "active",
       "title": "Reapers' War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "rebecca-riots",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Rebecca Riots"
     },
     {
       "authors": [
@@ -105385,6 +105711,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "siege-of-leith",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Leith"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "siege-of-lens",
       "kind": "event",
@@ -116852,6 +117208,65 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "treaty-of-angouleme",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Angoulême"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-aranjuez-1777",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Aranjuez (1777)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "treaty-of-aranjuez-1779",
       "kind": "event",
       "origin": {
@@ -116925,6 +117340,35 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Arras (1482)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-arras-1579",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Arras (1579)"
     },
     {
       "authors": [
@@ -117101,6 +117545,35 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Barcelona (1493)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-barcelona-1529",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Barcelona (1529)"
     },
     {
       "authors": [
@@ -117293,6 +117766,36 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "treaty-of-bergerac",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Bergerac"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "treaty-of-berlin-1742",
       "kind": "event",
       "origin": {
@@ -117427,6 +117930,36 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Bila Tserkva"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-blois-1572",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Blois (1572)"
     },
     {
       "authors": [
@@ -117989,6 +118522,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "treaty-of-cherasco",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Cherasco"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "treaty-of-chicago",
       "kind": "event",
@@ -118459,6 +119022,36 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "treaty-of-el-pardo-1761",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of El Pardo (1761)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "treaty-of-el-pardo-1778",
       "kind": "event",
       "origin": {
@@ -118537,6 +119130,66 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Finckenstein"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-fleix",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Fleix"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-florence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Florence"
     },
     {
       "authors": [
@@ -119481,6 +120134,35 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "treaty-of-hamburg-1638",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Hamburg (1638)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "treaty-of-hamburg-1762",
       "kind": "event",
       "origin": {
@@ -119557,6 +120239,35 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Hampton Court (1562)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-hanover-1710",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Hanover (1710)"
     },
     {
       "authors": [
@@ -120016,6 +120727,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "treaty-of-kedainiai",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Kėdainiai"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "treaty-of-kerden",
       "kind": "event",
@@ -120211,6 +120952,36 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Kyakhta (1727)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-labiau",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Labiau"
     },
     {
       "authors": [
@@ -120791,6 +121562,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "treaty-of-maastricht-1843",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Maastricht (1843)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 2,
       "id": "treaty-of-madrid-13-january-1750",
@@ -120880,6 +121680,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "treaty-of-marienburg",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Marienburg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "treaty-of-medicine-creek",
       "kind": "event",
@@ -120896,6 +121726,65 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Medicine Creek"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-medina-del-campo-1431",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Medina del Campo (1431)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-medina-del-campo-1489",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Medina del Campo (1489)"
     },
     {
       "authors": [
@@ -120999,6 +121888,66 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "treaty-of-montpellier",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Montpellier"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-monzon",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Monzón"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "treaty-of-moultrie-creek",
       "kind": "event",
@@ -121016,6 +121965,35 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Moultrie Creek"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-munich-1619",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Munich (1619)"
     },
     {
       "authors": [
@@ -121746,6 +122724,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "treaty-of-peronne-1468",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Péronne (1468)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "degree": 1,
       "id": "treaty-of-petropolis",
@@ -121795,6 +122803,35 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Picquigny"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-plessis-les-tours",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Plessis-les-Tours"
     },
     {
       "authors": [
@@ -123338,6 +124375,35 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "id": "treaty-of-the-eighteen-articles",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of the Eighteen Articles"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
       "id": "treaty-of-the-hague-1625",
       "kind": "event",
       "origin": {
@@ -123499,6 +124565,35 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of The Hague (1795)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-the-hague-1895",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of The Hague (1895)"
     },
     {
       "authors": [
@@ -123949,6 +125044,35 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Union"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-utrecht-1474",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Utrecht (1474)"
     },
     {
       "authors": [
@@ -124453,6 +125577,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-29",
+      "id": "treaty-of-worms-1743",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Worms (1743)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "treaty-of-xanten",
       "kind": "event",
@@ -124500,6 +125654,36 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Yandabo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "treaty-of-yazhelbitsy",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Yazhelbitsy"
     },
     {
       "authors": [
@@ -128128,6 +129312,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-29",
+      "id": "war-of-the-remences",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War of the Remences"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -129899,6 +131111,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1563-london-plague",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1586-tensho-earthquake",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -131292,6 +132510,12 @@
     },
     {
       "id": "bashkir-rebellion-of-1662-1664",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "bashkir-rebellion-of-1681-1684",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -136985,6 +138209,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-vinegar-hill",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-vlotho",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -137766,6 +138996,12 @@
     },
     {
       "id": "cambodian-spanish-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "campaign-in-north-east-france-1814",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -139049,6 +140285,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "english-invasion-of-scotland-1482",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "esopus-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -139182,6 +140424,12 @@
     },
     {
       "id": "fenian-raids",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "fenian-rising",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -139980,6 +141228,12 @@
     },
     {
       "id": "grito-de-lares",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "groningen-epidemic",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -140970,6 +142224,12 @@
     },
     {
       "id": "mahdist-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "mahtra-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -142007,6 +143267,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "peace-of-etaples",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "peace-of-leoben",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -142200,6 +143466,12 @@
     },
     {
       "id": "peterloo-massacre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "petroleum-revolution",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -142662,6 +143934,12 @@
     },
     {
       "id": "reapers-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "rebecca-riots",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -144389,6 +145667,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-leith",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-lens",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -145889,6 +147173,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-angouleme",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-aranjuez-1777",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-aranjuez-1779",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -145902,6 +147198,12 @@
     },
     {
       "id": "treaty-of-arras-1482",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-arras-1579",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -145943,6 +147245,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-barcelona-1529",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-bardo",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -145979,6 +147287,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-bergerac",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-berlin-1742",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -146004,6 +147318,12 @@
     },
     {
       "id": "treaty-of-bila-tserkva",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-blois-1572",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -146105,6 +147425,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-cherasco",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-chicago",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -146201,6 +147527,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-el-pardo-1761",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-el-pardo-1778",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -146208,6 +147540,18 @@
     },
     {
       "id": "treaty-of-finckenstein",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-fleix",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-florence",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -146381,6 +147725,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-hamburg-1638",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-hamburg-1762",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -146394,6 +147744,12 @@
     },
     {
       "id": "treaty-of-hampton-court-1562",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-hanover-1710",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -146489,6 +147845,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-kedainiai",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-kerden",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -146526,6 +147888,12 @@
     },
     {
       "id": "treaty-of-kyakhta-1727",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-labiau",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -146609,6 +147977,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-maastricht-1843",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-madrid-1526",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -146627,7 +148001,25 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-marienburg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-medicine-creek",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-medina-del-campo-1431",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-medina-del-campo-1489",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -146651,7 +148043,25 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-montpellier",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-monzon",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-moultrie-creek",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-munich-1619",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -146759,7 +148169,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-peronne-1468",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-picquigny",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-plessis-les-tours",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -147029,6 +148451,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-the-eighteen-articles",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-the-hague-1625",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -147060,6 +148488,12 @@
     },
     {
       "id": "treaty-of-the-hague-1795",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-the-hague-1895",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -147138,6 +148572,12 @@
     },
     {
       "id": "treaty-of-union",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-utrecht-1474",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -147227,6 +148667,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-worms-1743",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-xanten",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -147234,6 +148680,12 @@
     },
     {
       "id": "treaty-of-yandabo",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-yazhelbitsy",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -147702,6 +149154,12 @@
     },
     {
       "id": "war-of-the-quadruple-alliance",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "war-of-the-remences",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
