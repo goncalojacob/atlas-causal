@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "beaulieu-les-loches",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1136125",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Beaulieu-lès-Loches",
+    "pt": "Beaulieu-lès-Loches"
+  },
+  "sources": [],
+  "names": [
+    "Beaulieu-lès-Loches"
+  ],
+  "where": {
+    "lon": 1.0152777777778,
+    "lat": 47.128611111111,
+    "precision": "city",
+    "label": "Beaulieu-lès-Loches"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

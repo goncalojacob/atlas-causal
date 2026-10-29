@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gnadenhutten-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1533038",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Gnadenhutten massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1533038"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gnadenhutten massacre\", revision 1376594051"
+    }
+  ],
+  "title": "Gnadenhutten massacre",
+  "summary": "The English Wikipedia article \"Gnadenhutten massacre\", at revision 1376594051, opens: \"The Gnadenhutten massacre, also known as the Moravian massacre, was the killing of 96 pacifist Moravian Christian Indians by U.S. militiamen from Pennsylvania, under the command of David Williamson, on March 8, 1782, at the Moravian missionary village of Gnadenhutten, Ohio Country, during the American Revolutionary War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1533038, imported by tools/import/wikidata.mjs. The item's own description reads \"massacre\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1782,
+    "end": 1782,
+    "date": "1782-03-08"
+  },
+  "place": "ohio",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

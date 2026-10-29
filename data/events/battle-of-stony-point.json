@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-stony-point",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q111648",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Stony Point",
+    "pt": "Batalha de Stony Point"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q111648"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Stony Point\", revision 1370589980"
+    }
+  ],
+  "title": "Battle of Stony Point",
+  "summary": "The English Wikipedia article \"Battle of Stony Point\", at revision 1370589980, opens: \"The Battle of Stony Point took place on July 16, 1779, during the American Revolutionary War. In a well-planned and -executed nighttime attack, a highly trained select group of George Washington's Continental Army troops under the command of Brigadier General \"Mad Anthony\" Wayne defeated British troops in a quick and daring assault on their outpost in Stony Point, New York, located in present day Rockland County, approximately 30 mi (48 km) north of New York City.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q111648, imported by tools/import/wikidata.mjs. The item's own description reads \"1779 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1779,
+    "end": 1779,
+    "date": "1779-07-16"
+  },
+  "place": "stony-point-new-york",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

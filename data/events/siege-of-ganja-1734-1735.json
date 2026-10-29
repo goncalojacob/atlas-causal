@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-ganja-1734-1735",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q18162521",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Ganja (1734–1735)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18162521"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Ganja (1734–1735)\", revision 1381577998"
+    }
+  ],
+  "title": "Siege of Ganja (1734–1735)",
+  "summary": "The English Wikipedia article \"Siege of Ganja (1734–1735)\", at revision 1381577998, opens: \"The siege of Ganja, during the last phase of the Ottoman–Persian War (1730–1735), resulted in the surrender of the city by its Ottoman garrison after the main Turkish army marching to its relief was decisively defeated at the battle of Baghavard.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18162521, imported by tools/import/wikidata.mjs. The item's own description reads \"1734 successful siege of the city of Ganja by the Safavids\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1734,
+    "end": 1735,
+    "date": "1734-11-03",
+    "endDate": "1735-07-09"
+  },
+  "place": "ganja-azerbaijan",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-persian-war-1730-1735"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "foca",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1921294",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Foça"
+  },
+  "sources": [],
+  "names": [
+    "Foça district",
+    "Foça"
+  ],
+  "where": {
+    "lon": 26.752777777777776,
+    "lat": 38.66888888888889,
+    "precision": "city",
+    "label": "Foça"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

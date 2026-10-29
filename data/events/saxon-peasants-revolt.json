@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "saxon-peasants-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q616471",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Saxon Peasants' Revolt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q616471"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Saxon Peasants' Revolt\", revision 1375680428"
+    }
+  ],
+  "title": "Saxon Peasants' Revolt",
+  "summary": "The English Wikipedia article \"Saxon Peasants' Revolt\", at revision 1375680428, opens: \"The Saxon Peasants' Revolt of 1790 was a military conflict between the nobility and the peasants. The hot spots of the insurrection were large areas around Dresden, Leipzig and Zwickau.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q616471, imported by tools/import/wikidata.mjs. The item's own description reads \"Peasant revolt in the Electorate of Saxony, 1790\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1790,
+    "end": 1790
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

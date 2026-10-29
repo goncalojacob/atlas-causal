@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "revolt-of-the-barretinas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3139108",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Revolt of the Barretinas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3139108"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolt of the Barretinas\", revision 1366961881"
+    }
+  ],
+  "title": "Revolt of the Barretinas",
+  "summary": "The English Wikipedia article \"Revolt of the Barretinas\", at revision 1366961881, opens: \"The Revolt of the Barretines also known as the Revolt of the Gorretes, was a Catalan rebellion fought against the government of King Charles II of Spain. The most salient complaint was against the government's quartering of soldiers. Other issues of contention were tax protests and Catalan nationalistic tensions. The revolt was funded and intensified by agents of France as part of the War of the Grand Alliance. Civil disorder lasted from 1687 to 1689.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3139108, imported by tools/import/wikidata.mjs. The item's own description reads \"Catalan revolt against King Charles II of Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1687,
+    "end": 1689,
+    "date": "1687-04"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

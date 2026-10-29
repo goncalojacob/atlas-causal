@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "revolt-of-ghent-1539-1540",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7318593",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Revolt of Ghent (1539–1540)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7318593"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolt of Ghent (1539–1540)\", revision 1381589563"
+    }
+  ],
+  "title": "Revolt of Ghent (1539–1540)",
+  "summary": "The English Wikipedia article \"Revolt of Ghent (1539–1540)\", at revision 1381589563, opens: \"The Revolt of Ghent was an uprising by the citizens of Ghent against the regime of the Holy Roman Emperor and Spanish king Charles V in 1539. The revolt was a reaction to high taxes, which the Flemish felt were used solely to fight wars abroad. Charles marched his army into the city the following year and the rebels surrendered without a fight. Charles humiliated the rebels by parading their leaders in undershirts with hangman nooses around their necks. Since then Ghent citizens informally call themselves \"noose bearers\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7318593, imported by tools/import/wikidata.mjs. The item's own description reads \"1540\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1539,
+    "end": 1540
+  },
+  "place": "ghent",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

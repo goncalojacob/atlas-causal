@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-san-juan-and-chorrillos",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3772977",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of San Juan and Chorrillos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3772977"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of San Juan and Chorrillos\", revision 1370588363"
+    }
+  ],
+  "title": "Battle of San Juan and Chorrillos",
+  "summary": "The English Wikipedia article \"Battle of San Juan and Chorrillos\", at revision 1370588363, opens: \"The Battle of San Juan and Chorrillos was the first of two main battles in the Lima campaign during the War of the Pacific, and was fought on 13 January 1881. This battle is really a group of smaller, yet fierce confrontations at the defensive strongholds of Villa, Chorrillos, Santiago de Surco, San Juan de Miraflores, Santa Teresa and Morro Solar. The Chilean army led by Gen. Manuel Baquedano inflicted a harsh defeat on the Peruvian army commanded by the Supreme Chief Nicolás de Piérola. The Chilean triumph eliminated the first defensive line guarding Lima, and almost obliterated the Peruvian army defending it.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3772977, imported by tools/import/wikidata.mjs. The item's own description reads \"1881 battle of the War of the Pacific\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1881,
+    "end": 1881,
+    "date": "1881-01-13"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-pacific"
+}

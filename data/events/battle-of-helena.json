@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-helena",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2282207",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Helena"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2282207"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Helena\", revision 1370265514"
+    }
+  ],
+  "title": "Battle of Helena",
+  "summary": "The English Wikipedia article \"Battle of Helena\", at revision 1370265514, opens: \"The Battle of Helena was fought on July 4, 1863, near Helena, Arkansas, during the American Civil War. Union troops captured the city in July 1862, and had been using it as a base of operations. Over 7,500 Confederate troops led by Lieutenant General Theophilus Holmes attempted to capture Helena in hopes of relieving some of the pressure on the Confederate army besieged in Vicksburg, Mississippi. Helena was defended by about 4,100 Union troops led by Major General Benjamin Prentiss, manning one fort and four batteries of artillery.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2282207, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-07-04"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

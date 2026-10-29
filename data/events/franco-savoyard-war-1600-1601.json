@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "franco-savoyard-war-1600-1601",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3119092",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Franco-Savoyard War (1600–1601)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3119092"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Franco-Savoyard War (1600–1601)\", revision 1370620141"
+    }
+  ],
+  "title": "Franco-Savoyard War (1600–1601)",
+  "summary": "The English Wikipedia article \"Franco-Savoyard War (1600–1601)\", at revision 1370620141, opens: \"The Franco-Savoyard War of 1600–1601 was an armed conflict between the Kingdom of France, led by Henry IV, and the Duchy of Savoy, led by Charles Emmanuel I. The war was fought to determine the fate of the former Marquisate of Saluzzo, and ended with the Treaty of Lyon which was favorable to France.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3119092, imported by tools/import/wikidata.mjs. The item's own description reads \"European war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1600,
+    "end": 1601
+  },
+  "place": "savoy-q14118",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

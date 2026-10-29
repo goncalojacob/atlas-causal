@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "raid-of-nassau",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889477",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Raid of Nassau",
+    "pt": "Batalha de Nassau"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889477"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Raid of Nassau\", revision 1374377858"
+    }
+  ],
+  "title": "Raid of Nassau",
+  "summary": "The English Wikipedia article \"Raid of Nassau\", at revision 1374377858, opens: \"The raid of Nassau on March 3–4, 1776, was a naval operation and amphibious assault by American forces against the British port of Nassau, Bahamas, during the American Revolutionary War. The raid, designed to resolve the issue of gunpowder shortages, resulted in the seizure of two forts and large quantities of military supplies before the raiders drew back to New England.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889477, imported by tools/import/wikidata.mjs. The item's own description reads \"1776 naval operation and amphibious assault by Colonial forces against the British port of Nassau, Bahamas, during the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1776,
+    "end": 1776,
+    "date": "1776-03-03",
+    "endDate": "1776-03-04"
+  },
+  "place": "nassau-bahamas",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

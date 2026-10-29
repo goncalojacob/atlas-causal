@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "patuleia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3029948",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Patuleia",
+    "pt": "Patuleia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3029948"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Patuleia\", revision 1377783904"
+    }
+  ],
+  "title": "Patuleia",
+  "summary": "The English Wikipedia article \"Patuleia\", at revision 1377783904, opens: \"The Patuleia, Guerra da Patuleia, or Little Civil War was a civil war in Portugal in 1846-47, so called to distinguish it from the 'great' civil war between Pedro IV and Miguel I (1828-1834). The Patuleia occurred after the Revolution of Maria da Fonte, and was closely associated with her. It was caused by the nomination, as a result of the palace coup of 6 October 1846, known as the \"Emboscada\", to set up a clearly Cartista government presided over by marshal João Oliveira e Daun, Duke of Saldanha.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3029948, imported by tools/import/wikidata.mjs. The item's own description reads \"civil wars involving the states and peoples of Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1846,
+    "end": 1847,
+    "date": "1846-10-08",
+    "endDate": "1847-06-30"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

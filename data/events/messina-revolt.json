@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "messina-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q760026",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Messina revolt",
+    "pt": "Revolta de Messina"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q760026"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Messina revolt\", revision 1377060970"
+    }
+  ],
+  "title": "Messina revolt",
+  "summary": "The English Wikipedia article \"Messina revolt\", at revision 1377060970, opens: \"The Messina revolt of 1672–78 began with a revolt against the patrician government of Messina on the island of Sicily by skilled workers in 1672.\nWhen the patricians regained control in 1674 they turned the movement into a revolt against Spanish rule.\nThey obtained support from the French, and Messina was independent until the end of the Franco-Dutch War of 1672–78, when the Spanish regained control.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q760026, imported by tools/import/wikidata.mjs. The item's own description reads \"1674–1678 revolt against the patrician government of Messina\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1674,
+    "end": 1678,
+    "date": "1674-07",
+    "endDate": "1678-04"
+  },
+  "place": "messina",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "franco-dutch-war"
+}
