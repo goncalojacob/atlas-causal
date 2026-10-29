@@ -90,10 +90,10 @@ jobs:
         # honest test comes near.
         #
         # The pass outside the browser has ten minutes since 29 October 2026.
-        # A test file counts as one test under this limit, and
-        # tests/build-index.test.mjs builds the index of the real corpus
-        # several times: at 4,773 events it ran past 120 s on the runner
-        # twice (snapshot 46) and took 326 s on a busy local machine.
+        # A test file counts as one test under this limit, and the tests of
+        # the index builder build the index of the real corpus several
+        # times: at 4,773 events that file ran past 120 s on the runner twice
+        # (snapshot 46) and took 326 s on a busy local machine.
         #
         # Two passes since M63, and the reason is docs/m63-load.md: at the
         # default concurrency three of the suites that drive a headless
