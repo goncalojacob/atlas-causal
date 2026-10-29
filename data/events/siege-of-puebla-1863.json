@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-puebla-1863",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3277366",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Puebla (1863)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3277366"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Puebla (1863)\", revision 1370744601"
+    }
+  ],
+  "title": "Siege of Puebla (1863)",
+  "summary": "The English Wikipedia article \"Siege of Puebla (1863)\", at revision 1370744601, opens: \"The siege of Puebla occurred between 16 March and 17 May 1863 during the Second French intervention in Mexico, between forces of the Second French Empire and forces of the Second Federal Republic of Mexico. The French were advancing toward Mexico City, and were blocked by Mexican troops at Puebla.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3277366, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle in the Second French Intervention in Mexico\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-03-16",
+    "endDate": "1863-05-17"
+  },
+  "place": "mexico-q96",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-french-intervention-in-mexico"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-macao-fort",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q55605035",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Macao Fort"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q55605035"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Macao Fort\", revision 1370448442"
+    }
+  ],
+  "title": "Battle of Macao Fort",
+  "summary": "The English Wikipedia article \"Battle of Macao Fort\", at revision 1370448442, opens: \"The Battle of Macao Fort was fought between British and Chinese forces in the Pearl River, Guangdong, China on 4 January 1857 during the Second Opium War. Macao Fort was located on an islet about 3 miles south of Canton (Guangzhou).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q55605035, imported by tools/import/wikidata.mjs. The item's own description reads \"1857 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1857,
+    "end": 1857,
+    "date": "1857-01-04"
+  },
+  "place": "pearl-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-opium-war"
+}

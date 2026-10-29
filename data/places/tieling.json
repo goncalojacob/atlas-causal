@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "tieling",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q75268",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Tieling"
+  },
+  "sources": [],
+  "names": [
+    "Tieling"
+  ],
+  "where": {
+    "lon": 123.83654,
+    "lat": 42.28407,
+    "precision": "city",
+    "label": "Tieling"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

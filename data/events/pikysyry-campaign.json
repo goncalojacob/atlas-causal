@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "pikysyry-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2883152",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Pikysyry campaign",
+    "pt": "Campanha do Piquissiri"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2883152"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pikysyry campaign\", revision 1374608168"
+    }
+  ],
+  "title": "Pikysyry campaign",
+  "summary": "The English Wikipedia article \"Pikysyry campaign\", at revision 1374608168, opens: \"The Pikysyry campaign was the Paraguayan War's fourth phase. It lasted from August 1868 to January 1869 and was a comprehensive Allied victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2883152, imported by tools/import/wikidata.mjs. The item's own description reads \"1868 fourth phase of the War of the Triple Alliance\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1869,
+    "date": "1868-08",
+    "endDate": "1869-01"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "paraguayan-war"
+}

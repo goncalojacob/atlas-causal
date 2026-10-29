@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "qinghe-district-tieling",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1197332",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Qinghe District, Tieling"
+  },
+  "sources": [],
+  "names": [
+    "Qinghe District",
+    "Qinghe District, Tieling"
+  ],
+  "where": {
+    "lon": 124.1411,
+    "lat": 42.53973,
+    "precision": "city",
+    "label": "Qinghe District, Tieling"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

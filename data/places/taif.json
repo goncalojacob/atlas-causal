@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "taif",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q182640",
+  "sitelinks": {
+    "count": 75,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Taif",
+    "pt": "Taife"
+  },
+  "sources": [],
+  "names": [
+    "Ta'if",
+    "Ta’if",
+    "Taif",
+    "Taife"
+  ],
+  "where": {
+    "lon": 40.416666666667,
+    "lat": 21.266666666667,
+    "precision": "city",
+    "label": "Taif"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

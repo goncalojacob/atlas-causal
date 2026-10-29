@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "october-9-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3460070",
+  "wikipedia": {
+    "en": "October 9 Revolution"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3460070"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"October 9 Revolution\", revision 1370630335"
+    }
+  ],
+  "title": "October 9 Revolution",
+  "summary": "The English Wikipedia article \"October 9 Revolution\", at revision 1370630335, opens: \"The October 9 Revolution was a successful revolt against the Spanish Empire in Guayaquil on October 9, 1820. It was led by the General Antonio José de Sucre and directed by Simón Bolívar. The revolt established a revolutionary junta and created the Free Province of Guayaquil, an independent state. The independence of Guayaquil revived the war of independence of the Real Audiencia de Quito as part of the Spanish American wars of independence. Prominent events in the revolution include the uprising of the Spanish garrison in the city of Guayaquil and the control of the Pacific by the Liberating Expedition of Peru, under the command of José de San Martín.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3460070, imported by tools/import/wikidata.mjs. The item's own description reads \"declaration of independence of Guayaquil from the Spanish Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1820,
+    "end": 1820,
+    "date": "1820-10-09"
+  },
+  "place": "guayaquil",
+  "region": null,
+  "regionNote": null,
+  "parent": "spanish-american-wars-of-independence",
+  "category": "war",
+  "actors": []
+}

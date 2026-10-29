@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "thalassery",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q367354",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Thalassery"
+  },
+  "sources": [],
+  "names": [
+    "Thalassery"
+  ],
+  "where": {
+    "lon": 75.49,
+    "lat": 11.75,
+    "precision": "city",
+    "label": "Thalassery"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -4722,3 +4722,63 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-29: `battle-of-guangning`, filed under `transition-from-ming-to-qing` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-130`, rank `child-of:transition-from-ming-to-qing`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-gozo-1570`, filed under `ottoman-venetian-war-1570-1573` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-asia-145`, rank `child-of:ottoman-venetian-war-1570-1573`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-karanovac`, filed under `first-serbian-uprising` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-asia-159`, rank `child-of:first-serbian-uprising`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-cerro-gordo`, filed under `mexican-american-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-011`, rank `child-of:mexican-american-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `mato-grosso-campaign`, filed under `paraguayan-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-013`, rank `child-of:paraguayan-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `humaita-campaign`, filed under `paraguayan-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-019`, rank `child-of:paraguayan-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `tarapaca-campaign`, filed under `war-of-the-pacific` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-americas-027`, rank `child-of:war-of-the-pacific`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-arakere`, filed under `third-anglo-mysore-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-154`, rank `child-of:third-anglo-mysore-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-byssel`, filed under `ottoman-wahhabi-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-162`, rank `child-of:ottoman-wahhabi-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `siege-of-goorumconda`, filed under `third-anglo-mysore-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-170`, rank `child-of:third-anglo-mysore-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `independence-of-panama-from-spain`, filed under `spanish-american-wars-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-014`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `campaign-of-the-hills`, filed under `paraguayan-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-016`, rank `child-of:paraguayan-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `pikysyry-campaign`, filed under `paraguayan-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-020`, rank `child-of:paraguayan-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `corrientes-campaign`, filed under `paraguayan-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-024`, rank `child-of:paraguayan-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `independence-of-paraguay`, filed under `spanish-american-wars-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-026`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `naval-campaign-of-the-war-of-the-pacific`, filed under `war-of-the-pacific` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-americas-030`, rank `child-of:war-of-the-pacific`. Its span and its subject put it inside the umbrella.
