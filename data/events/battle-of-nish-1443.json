@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-nish-1443",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3339470",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Nish (1443)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3339470"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nish (1443)\", revision 1370451783"
+    }
+  ],
+  "title": "Battle of Nish (1443)",
+  "summary": "The English Wikipedia article \"Battle of Nish (1443)\", at revision 1370451783, opens: \"The Battle of Nish was fought between the Crusaders led by John Hunyadi and Đurađ Branković and the Ottoman Empire led by Kasım Pasha. It saw the Crusaders capture the Ottoman stronghold of Nish (Niš) in Serbia, and defeat two armies of the Ottoman Empire. The Battle of Nish was part of Hunyadi's expedition known as the long campaign. Hunyadi, at the head of the vanguard, crossed the Balkans through the Gate of Trajan, captured Nish, defeated three Ottoman pashas, and after taking Sofia from the Ottomans, united with the royal army and defeated Sultan Murad II at Snaim (Kustinitza). The impatience of the king and the severity of the winter then compelled him to return home.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3339470, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of 1443 between Christian alliance and Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1443,
+    "end": 1443,
+    "date": "1443-11"
+  },
+  "place": "nis",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

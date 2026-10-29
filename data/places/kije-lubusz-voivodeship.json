@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "kije-lubusz-voivodeship",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6406124",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Kije, Lubusz Voivodeship"
+  },
+  "sources": [],
+  "names": [
+    "Kije, Lubusz Voivodeship"
+  ],
+  "where": {
+    "lon": 15.5333,
+    "lat": 52.1,
+    "precision": "city",
+    "label": "Kije, Lubusz Voivodeship"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1783-calabrian-earthquakes",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1348869",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1783 Calabrian earthquakes"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1348869"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1783 Calabrian earthquakes\", revision 1368926378"
+    }
+  ],
+  "title": "1783 Calabrian earthquakes",
+  "summary": "The English Wikipedia article \"1783 Calabrian earthquakes\", at revision 1368926378, opens: \"Five strong earthquakes hit Calabria, a region of the Kingdom of Naples, in 1783. The first two produced significant tsunamis. The epicenters form a clear alignment extending nearly 100 km from the Straits of Messina to about 18 km SSW of Catanzaro. The epicenter of the first earthquake occurred in the plain of Palmi. The earthquakes occurred over a period of nearly two months, all with estimated magnitudes of 5.9 or greater. Estimates of the total number of deaths lie in the range 32,000 to 50,000.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1348869, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake in Calabria, Italy in 1783\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1783,
+    "end": 1783,
+    "date": "1783-02-05"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-knared",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2138526",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Knäred"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2138526"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Knäred\", revision 1332419292"
+    }
+  ],
+  "title": "Treaty of Knäred",
+  "summary": "The English Wikipedia article \"Treaty of Knäred\", at revision 1332419292, opens: \"The Treaty of Knäred was signed on 21 January 1613 and ended the Kalmar War (1611–1613) between Denmark-Norway and Sweden. The peace negotiations came about under an English initiative. The peace was guaranteed by King James I of England and VI of Scotland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2138526, imported by tools/import/wikidata.mjs. The item's own description reads \"1613 treaty ending the Kalmar War between Denmark-Norway and Sweden\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1613,
+    "end": 1613,
+    "date": "1613-01-21"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

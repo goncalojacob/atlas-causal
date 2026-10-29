@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-ocana",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q601872",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Ocaña"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q601872"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ocaña\", revision 1370452037"
+    }
+  ],
+  "title": "Battle of Ocaña",
+  "summary": "The English Wikipedia article \"Battle of Ocaña\", at revision 1370452037, opens: \"The Battle of Ocaña was fought on 19 November 1809 between French forces under Marshal Jean-de-Dieu Soult against the Spanish army under General Juan Carlos Aréizaga, which suffered its greatest single defeat in the Peninsular War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q601872, imported by tools/import/wikidata.mjs. The item's own description reads \"1809 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1809,
+    "end": 1809,
+    "date": "1809-11-19"
+  },
+  "place": "ocana-spain",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

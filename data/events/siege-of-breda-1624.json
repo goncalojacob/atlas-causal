@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-breda-1624",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q431488",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Breda (1624)",
+    "pt": "Assédio de Breda (1625)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q431488"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Breda (1624)\", revision 1380110480"
+    }
+  ],
+  "title": "Siege of Breda (1624)",
+  "summary": "The English Wikipedia article \"Siege of Breda (1624)\", at revision 1380110480, opens: \"The siege of Breda of 1624–1625 occurred during the Eighty Years' War and was carried out by the Army of Flanders. The siege resulted in the fortified city of Breda passing from the control of the Dutch Republic to that of the Habsburg Netherlands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q431488, imported by tools/import/wikidata.mjs. The item's own description reads \"1624–1625 siege during the Eighty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1624,
+    "end": 1625,
+    "date": "1624-08-28",
+    "endDate": "1625-06-05"
+  },
+  "place": "breda",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

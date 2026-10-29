@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-malakoff",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q586204",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Malakoff",
+    "pt": "Batalha de Malakoff"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q586204"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Malakoff\", revision 1370448672"
+    }
+  ],
+  "title": "Battle of Malakoff",
+  "summary": "The English Wikipedia article \"Battle of Malakoff\", at revision 1370448672, opens: \"The Battle of Malakoff or the Storming of the Malakhov Kurgan was a series of French attacks against Russian forces on the Malakoff redoubt. The first attack was unsuccessful, and occurred on 18 June 1855; subsequent capture of the redoubt was on 8 September 1855. The assaults were parts of the Crimean War and the siege of Sevastopol. The French army under General MacMahon successfully stormed the Malakoff redoubt on 8th, while a simultaneous British attack on the Redan to the south of the Malakoff was repulsed. In one of the war's defining moments, the French zouave Eugène Libaut raised the French flag on the top of the Russian redoubt. The battle of Malakoff resulted in the fall of Sevastopol on 9 September, bringing the 11-month siege to an end.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q586204, imported by tools/import/wikidata.mjs. The item's own description reads \"1855 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1855,
+    "end": 1855,
+    "date": "1855-06-18",
+    "endDate": "1855-09-08"
+  },
+  "place": "sevastopol",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "crimean-war"
+}

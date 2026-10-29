@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "capture-of-mers-el-kebir-1505",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q603279",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Capture of Mers-el-Kébir (1505)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q603279"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Mers-el-Kébir (1505)\", revision 1373842260"
+    }
+  ],
+  "title": "Capture of Mers-el-Kébir (1505)",
+  "summary": "The English Wikipedia article \"Capture of Mers-el-Kébir (1505)\", at revision 1373842260, opens: \"The Capture of Mers-el-Kébir on September 13, 1505 was the first campaign carried out by the Spanish Empire in its war against the Zayyanid Kingdom of Tlemcen. Mers-el-Kébir was a roadstead open to the southwest winds, and a refuge for corsairs. The port was protected by a strong and well-armed castle, and it had already been unsuccessfully attacked by Portuguese troops in 1496 and 1501.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q603279, imported by tools/import/wikidata.mjs. The item's own description reads \"1505 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1505,
+    "end": 1505,
+    "date": "1505-09-13"
+  },
+  "place": "mers-el-kebir",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
