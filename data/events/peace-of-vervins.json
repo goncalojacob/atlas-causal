@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "peace-of-vervins",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1188688",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Peace of Vervins",
+    "pt": "Tratado de Vervins"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1188688"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peace of Vervins\", revision 1376676922"
+    }
+  ],
+  "title": "Peace of Vervins",
+  "summary": "The English Wikipedia article \"Peace of Vervins\", at revision 1376676922, opens: \"The Peace of Vervins or Treaty of Vervins was signed between the representatives of Henry IV of France and Philip II of Spain under the auspices of the papal legates of Clement VIII, on 2 May 1598 at the small town of Vervins in Picardy, northern France, close to the territory of the Habsburg Netherlands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1188688, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1598,
+    "end": 1598,
+    "date": "1598-05-02"
+  },
+  "place": "vervins",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

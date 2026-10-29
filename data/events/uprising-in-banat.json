@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "uprising-in-banat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1153261",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Uprising in Banat"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1153261"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Uprising in Banat\", revision 1376653566"
+    }
+  ],
+  "title": "Uprising in Banat",
+  "summary": "The English Wikipedia article \"Uprising in Banat\", at revision 1376653566, opens: \"The Uprising in Banat was a rebellion organized and led by Serbian Orthodox bishop Teodor of Vršac and Sava Temišvarac against the Ottomans in the Eyalet of Temeşvar. The uprising broke out in 1594, in the initial stage of the Long Turkish War, and was fought by local Serbs, numbering some 5,000, who managed to quickly take over several towns in the region before being crushed by the Ottoman army. The relics of Saint Sava were burnt by the Ottomans as a retaliation. Although short-lived, it inspired future rebellions.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1153261, imported by tools/import/wikidata.mjs. The item's own description reads \"1594 rebellion against the Ottomans in central Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1594,
+    "end": 1594,
+    "date": "1594-03",
+    "endDate": "1594-07-10"
+  },
+  "place": "banat",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "long-turkish-war"
+}

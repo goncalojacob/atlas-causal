@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-molodi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1760784",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Molodi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1760784"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Molodi\", revision 1381221895"
+    }
+  ],
+  "title": "Battle of Molodi",
+  "summary": "The English Wikipedia article \"Battle of Molodi\", at revision 1381221895, opens: \"The Battle of Molodi was one of the key battles of Ivan the Terrible's reign. It was fought near the village of Molodi, circa 50 km (31 mi) south of Moscow, in July–August 1572 between the 120,000 horde of Devlet I Giray of Crimea and about 60,000–70,000 Russians and Cossacks led by Prince Mikhail Vorotynsky. The Crimeans had burned Moscow the previous year, but this time they were thoroughly defeated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1760784, imported by tools/import/wikidata.mjs. The item's own description reads \"1572 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1572,
+    "end": 1572,
+    "date": "1572-07-30",
+    "endDate": "1572-08-03"
+  },
+  "place": "molodi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-crimean-wars"
+}

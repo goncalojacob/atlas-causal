@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-arcis-sur-aube",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q776552",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Arcis-sur-Aube",
+    "pt": "Batalha de Arcis-sur-Aube"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q776552"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Arcis-sur-Aube\", revision 1370106931"
+    }
+  ],
+  "title": "Battle of Arcis-sur-Aube",
+  "summary": "The English Wikipedia article \"Battle of Arcis-sur-Aube\", at revision 1370106931, opens: \"The Battle of Arcis-sur-Aube saw an Imperial French army under Napoleon face a much larger Allied army led by Karl Philipp, Prince of Schwarzenberg during the War of the Sixth Coalition. On the second day of fighting, Emperor Napoleon finally realized he had blundered into battle as he was massively outnumbered, and immediately ordered a masked retreat. By the time the Austrian Field Marshal Schwarzenberg realized Napoleon was retreating, most of the French had already disengaged and the Allied pursuit afterwards failed to prevent the remaining French army from safely withdrawing to the north. This was Napoleon's penultimate battle before his abdication and exile to Elba, the last being the Battle of Saint-Dizier.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q776552, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 battle during the War of the Sixth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-03-20",
+    "endDate": "1814-03-21"
+  },
+  "place": "arcis-sur-aube",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-sixth-coalition"
+}

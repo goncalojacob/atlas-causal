@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "batavian-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2603206",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Batavian Revolution",
+    "pt": "Revolução Batava"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2603206"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Batavian Revolution\", revision 1361100241"
+    }
+  ],
+  "title": "Batavian Revolution",
+  "summary": "The English Wikipedia article \"Batavian Revolution\", at revision 1361100241, opens: \"The Batavian Revolution was a time of political, social and cultural turmoil at the end of the 18th century that marked the end of the Dutch Republic and saw the proclamation of the Batavian Republic.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2603206, imported by tools/import/wikidata.mjs. The item's own description reads \"period between the Dutch and Batavian Republics\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1800,
+      "max": 1899
+    },
+    "end": {
+      "min": 1800,
+      "max": 1899
+    }
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

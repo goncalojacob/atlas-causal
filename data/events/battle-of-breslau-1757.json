@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-breslau-1757",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q695312",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Breslau (1757)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q695312"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Breslau (1757)\", revision 1370717421"
+    }
+  ],
+  "title": "Battle of Breslau (1757)",
+  "summary": "The English Wikipedia article \"Battle of Breslau (1757)\", at revision 1370717421, opens: \"The Battle of Breslau was fought on 22 November 1757 in Breslau during the Third Silesian War. A Prussian army of 28,000 men fought an Austrian army of 60,000 men. The Prussians held off the Austrian attack, losing 6,000 men to the Austrians' 5,000 men. But one day later the Prussians beat a retreat. Breslau's garrison surrendered on 25 November 1757.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q695312, imported by tools/import/wikidata.mjs. The item's own description reads \"1757 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1757,
+    "date": "1757-11-22"
+  },
+  "place": "wroc-aw",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

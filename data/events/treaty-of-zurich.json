@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-zurich",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q672743",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Zürich",
+    "pt": "Tratado de Zurique"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q672743"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Zürich\", revision 1368310602"
+    }
+  ],
+  "title": "Treaty of Zürich",
+  "summary": "The English Wikipedia article \"Treaty of Zürich\", at revision 1368310602, opens: \"The Treaty of Zurich was signed by the Austrian Empire, the French Empire, and the Kingdom of Sardinia on 10 November 1859. The agreement was a reaffirmation of the terms of the preliminary \npeace of Villafranca, which brought the Austro-Sardinian War to an official close. The treaty actually consisted of three separate treaties – a treaty between France and Austria, which reaffirmed the terms of the preliminary peace, re-established peace between the two emperors, and ceded Lombardy to France. A second treaty, between France and Sardinia, saw France cede Lombardy to Sardinia. The third treaty, signed by all three powers, re-established a state of peace between Austria and Sardinia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q672743, imported by tools/import/wikidata.mjs. The item's own description reads \"1859 treaty between Austria, France, and Vienna\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1859,
+    "end": 1859,
+    "date": "1859-11-10"
+  },
+  "place": "zurich",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

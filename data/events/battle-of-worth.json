@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-worth",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q684479",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Wörth",
+    "pt": "Batalha de Wörth"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q684479"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wörth\", revision 1370277039"
+    }
+  ],
+  "title": "Battle of Wörth",
+  "summary": "The English Wikipedia article \"Battle of Wörth\", at revision 1370277039, opens: \"The Battle of Wörth, also known as the Battle of Reichshoffen or as the Battle of Frœschwiller, refers to the second battle of Wörth, which took place on 6 August 1870 in the opening stages of the Franco-Prussian War. In the second battle, troops from Germany commanded by Crown Prince Frederick William and directed by his chief of staff, General Leonhard Graf von Blumenthal, defeated the French under Marshal MacMahon near the village of Wœrth in Alsace, on the Sauer River, 10 kilometres (6.2 mi) north of Haguenau.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q684479, imported by tools/import/wikidata.mjs. The item's own description reads \"1870 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1870,
+    "date": "1870-08-06"
+  },
+  "place": "w-rth",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-prussian-war"
+}

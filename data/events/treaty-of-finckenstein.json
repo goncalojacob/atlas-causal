@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-finckenstein",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1430709",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Finckenstein",
+    "pt": "Tratado de Finkenstein"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1430709"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Finckenstein\", revision 1341207186"
+    }
+  ],
+  "title": "Treaty of Finckenstein",
+  "summary": "The English Wikipedia article \"Treaty of Finckenstein\", at revision 1341207186, opens: \"The Treaty of Finckenstein, often spelled Finkenstein, was a treaty concluded between France and Iran (Persia) in the Finckenstein Palace on 4 May 1807 and formalised the Franco-Persian alliance.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1430709, imported by tools/import/wikidata.mjs. The item's own description reads \"1807 treaty between France and Persia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1807,
+    "end": 1807,
+    "date": "1807-05-04"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

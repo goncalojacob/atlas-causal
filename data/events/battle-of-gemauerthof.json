@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-gemauerthof",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q704567",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Gemauerthof"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q704567"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gemauerthof\", revision 1377991502"
+    }
+  ],
+  "title": "Battle of Gemauerthof",
+  "summary": "The English Wikipedia article \"Battle of Gemauerthof\", at revision 1377991502, opens: \"The Battle of Gemauerthof took place during the Great Northern War, fought south of Riga near Jelgava, in present-day Latvia in July 1705. The Swedish forces under Adam Ludwig Lewenhaupt fought a Russian army under Boris Sheremetev. The Swedes were victorious, but the victory was only symbolic. In August, the Russians conquered Courland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q704567, imported by tools/import/wikidata.mjs. The item's own description reads \"1705 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1705,
+    "end": 1705,
+    "date": "1705-07-26"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

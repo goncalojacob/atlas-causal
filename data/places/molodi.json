@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "molodi",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4300606",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "sources": [],
+  "names": [
+    "Molodi"
+  ],
+  "where": {
+    "lon": 37.508611111111,
+    "lat": 55.275,
+    "precision": "city",
+    "label": "Molodi"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-trebbia-1799",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1088879",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Trebbia (1799)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1088879"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Trebbia (1799)\", revision 1382460117"
+    }
+  ],
+  "title": "Battle of Trebbia (1799)",
+  "summary": "The English Wikipedia article \"Battle of Trebbia (1799)\", at revision 1382460117, opens: \"The Battle of (the) Trebbia was fought near the rivers of Tidone, Trebbia, and Nure in northern Italy between the joint Russian and Habsburg army under Alexander Suvorov and the Republican French army of Étienne-Jacques-Joseph-Alexandre Macdonald. Though French forces were moderately more numerous, the Austro-Russians severely defeated the French using the oblique order tactics, sustaining about 5,500 casualties while inflicting losses of 16,500 on their enemies. The Russian contingent was on the right flank of the coalition force and in the center, and it was the Russian units that played the main attacking role; the Austrians dealt with the French on the left flank, and they helped the Russians in the center. The War of the Second Coalition engagement occurred west of Piacenza, a city located 70 kilometres (43 mi) southeast of Milan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1088879, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 battle during the War of the Second Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-06-17",
+    "endDate": "1799-06-19"
+  },
+  "place": "trebbia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

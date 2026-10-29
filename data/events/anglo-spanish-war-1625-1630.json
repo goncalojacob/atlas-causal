@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "anglo-spanish-war-1625-1630",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q168442",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Anglo-Spanish War (1625–1630)",
+    "pt": "Guerra Anglo-Espanhola (1625–1630)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q168442"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Spanish War (1625–1630)\", revision 1380075191"
+    }
+  ],
+  "title": "Anglo-Spanish War (1625–1630)",
+  "summary": "The English Wikipedia article \"Anglo-Spanish War (1625–1630)\", at revision 1380075191, opens: \"The Anglo-Spanish War of 1625–1630 was fought between Spain and England, with the Dutch Republic and Scotland participating on the English side. An offshoot of the Eighty Years' War between the Dutch and Spanish, the conflict's battles consisted of a mixture of land and naval engagements. The war ended with the signing of the Treaty of Madrid in 1630, resulting in a status quo ante bellum. However, the conflict resulted in English cloth merchants losing access to profitable markets in Flanders, leading to widespread discontent. It also increased divisions between the Parliament of England and the English monarchy, which would ultimately result in the First English Civil War in 1642.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q168442, imported by tools/import/wikidata.mjs. The item's own description reads \"war fought by Spain against the Kingdom of England and the United Provinces\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1625,
+    "end": 1630,
+    "date": "1625-11-01",
+    "endDate": "1630-11-15"
+  },
+  "place": "english-channel",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}
