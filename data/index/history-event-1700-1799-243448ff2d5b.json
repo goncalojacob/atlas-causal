@@ -20,6 +20,15 @@
         }
       ]
     },
+    "1707-08-iceland-smallpox-epidemic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1707-hoei-earthquake": {
       "from": "git",
       "versions": [

@@ -3116,6 +3116,15 @@
         }
       ]
     },
+    "grand-harbour-of-malta-tornado": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "great-siege-of-malta": {
       "from": "git",
       "versions": [
@@ -4068,6 +4077,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "revolt-of-the-pitauds": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

@@ -5832,6 +5832,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "biscay",
+      "kind": "place",
+      "names": [
+        "Biscay",
+        "Biscaia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "biskra",
@@ -22975,7 +23003,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 6,
+      "degree": 7,
       "id": "istanbul",
       "kind": "place",
       "names": [
@@ -41253,7 +41281,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 3,
+      "degree": 4,
       "id": "porto",
       "kind": "place",
       "names": [
@@ -54031,7 +54059,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 55,
+      "degree": 57,
       "id": "united-states-q30",
       "kind": "place",
       "names": [

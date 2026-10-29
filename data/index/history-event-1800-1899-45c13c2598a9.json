@@ -655,6 +655,15 @@
         }
       ]
     },
+    "1899-porto-plague-outbreak": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1899-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -1378,6 +1387,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "auspicious-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -10591,6 +10609,15 @@
         }
       ]
     },
+    "great-blizzard-of-1888": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "great-famine-ireland": {
       "from": "git",
       "versions": [
@@ -13788,6 +13815,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "schoolhouse-blizzard": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },

@@ -4449,6 +4449,15 @@
         }
       ]
     },
+    "salt-tax-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "savoyard-waldensian-wars": {
       "from": "git",
       "versions": [
