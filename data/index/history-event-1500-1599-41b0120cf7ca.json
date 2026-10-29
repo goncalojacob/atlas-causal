@@ -71,6 +71,15 @@
         }
       ]
     },
+    "1575-valdivia-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "1586-tensho-earthquake": {
       "from": "git",
       "versions": [

@@ -1838,6 +1838,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "annapolis-maryland",
+      "kind": "place",
+      "names": [
+        "Annapolis",
+        "Annapolis, Maryland",
+        "Annapolis (Maryland)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -1968,6 +1997,33 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q280468, the Battle of Ap Bac, read on 2026-09-23; the hamlet itself has no item this pass could reach.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "aquidneck-island",
+      "kind": "place",
+      "names": [
+        "Aquidneck Island"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -4152,6 +4208,33 @@
       "kind": "place",
       "names": [
         "Battle of Lundy's Lane National Historic Site"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "battle-of-seven-oaks-national-historic-site",
+      "kind": "place",
+      "names": [
+        "Battle of Seven Oaks National Historic Site"
       ],
       "origin": {
         "tool": "wikidata"
@@ -7053,7 +7136,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 5,
+      "degree": 6,
       "id": "buenos-aires",
       "kind": "place",
       "names": [
@@ -9298,7 +9381,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "charleston-south-carolina",
       "kind": "place",
       "names": [
@@ -11792,6 +11875,35 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "deerfield-massachusetts",
+      "kind": "place",
+      "names": [
+        "Deerfield",
+        "Deerfield, Massachusetts",
+        "Deerfield (Massachusetts)"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -17046,7 +17158,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 2,
+      "degree": 3,
       "id": "georgia-u-s-state",
       "kind": "place",
       "names": [
@@ -20134,6 +20246,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "hubbardton-vermont",
+      "kind": "place",
+      "names": [
+        "Hubbardton",
+        "Hubbardton, Vermont"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 2,
       "id": "hudson-bay",
@@ -22912,7 +23052,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "kansas",
       "kind": "place",
       "names": [
@@ -26310,6 +26450,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "lawrence-kansas",
+      "kind": "place",
+      "names": [
+        "Lawrence",
+        "Lawrence, Kansas",
+        "Lawrence (Kansas)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "le-bardo",
@@ -28148,6 +28317,34 @@
         "Macedonia",
         "Macedonia (region)",
         "Macedônia (região)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "machias-maine",
+      "kind": "place",
+      "names": [
+        "Machias",
+        "Machias, Maine"
       ],
       "origin": {
         "tool": "wikidata"
@@ -30529,7 +30726,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 13,
+      "degree": 14,
       "id": "mexico-q96",
       "kind": "place",
       "names": [
@@ -30975,7 +31172,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 2,
       "id": "mississippi-river",
       "kind": "place",
       "names": [
@@ -33736,7 +33933,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 2,
+      "degree": 3,
       "id": "new-mexico",
       "kind": "place",
       "names": [
@@ -33764,7 +33961,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "new-orleans",
       "kind": "place",
       "names": [
@@ -35506,7 +35703,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 3,
       "id": "oregon",
       "kind": "place",
       "names": [
@@ -40459,6 +40656,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "rio-de-la-plata",
+      "kind": "place",
+      "names": [
+        "Río de la Plata",
+        "Rio da Prata"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "riobamba",
@@ -42021,6 +42246,33 @@
       "kind": "place",
       "names": [
         "Samos"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "san-antonio",
+      "kind": "place",
+      "names": [
+        "San Antonio"
       ],
       "origin": {
         "tool": "wikidata"
@@ -47874,7 +48126,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 4,
       "id": "texas",
       "kind": "place",
       "names": [
@@ -50150,7 +50402,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 46,
+      "degree": 52,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -50466,6 +50718,34 @@
       "kind": "place",
       "names": [
         "Valcour Island"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-29",
+      "degree": 1,
+      "id": "valdivia",
+      "kind": "place",
+      "names": [
+        "Valdivia",
+        "Valdivia (cidade)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -50903,7 +51183,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 10,
+      "degree": 12,
       "id": "venezuela-q717",
       "kind": "place",
       "names": [
