@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "winterthur",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q9125",
+  "sitelinks": {
+    "count": 94,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Winterthur",
+    "pt": "Winterthur"
+  },
+  "sources": [],
+  "names": [
+    "Winterthur"
+  ],
+  "where": {
+    "lon": 8.72671,
+    "lat": 47.4992,
+    "precision": "city",
+    "label": "Winterthur"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

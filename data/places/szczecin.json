@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "szczecin",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q393",
+  "sitelinks": {
+    "count": 127,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Szczecin",
+    "pt": "Estetino"
+  },
+  "sources": [],
+  "names": [
+    "Szczecin",
+    "Estetino"
+  ],
+  "where": {
+    "lon": 14.555277777778,
+    "lat": 53.424722222222,
+    "precision": "city",
+    "label": "Szczecin"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

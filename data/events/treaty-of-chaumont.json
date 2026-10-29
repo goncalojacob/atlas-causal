@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-chaumont",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q338935",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Chaumont",
+    "pt": "Tratado de Chaumont"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q338935"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Chaumont\", revision 1381665217"
+    }
+  ],
+  "title": "Treaty of Chaumont",
+  "summary": "The English Wikipedia article \"Treaty of Chaumont\", at revision 1381665217, opens: \"The Treaty of Chaumont was a series of separately-signed but identically-worded agreements in 1814 between the Austrian Empire, the Kingdom of Prussia, the Russian Empire and the United Kingdom. They were dated 1 March 1814, although the actual signings took place on 9 March. The treaty was intended to draw the powers of the Sixth Coalition into a closer alliance in case France rejected the peace terms they had recently offered. Each power agreed to put 150,000 soldiers in the field and to guarantee European peace, once the war had finished, against French aggression for twenty years.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q338935, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-03-01"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "yevpatoria",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q33345",
+  "sitelinks": {
+    "count": 73,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Yevpatoria",
+    "pt": "Eupatória"
+  },
+  "sources": [],
+  "names": [
+    "Yevpatoriya",
+    "Yevpatoria",
+    "Eupatória"
+  ],
+  "where": {
+    "lon": 33.358333333333,
+    "lat": 45.2,
+    "precision": "city",
+    "label": "Yevpatoria"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

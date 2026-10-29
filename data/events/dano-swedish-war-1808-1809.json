@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dano-swedish-war-1808-1809",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1269777",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Dano-Swedish War (1808–1809)",
+    "pt": "Guerra Dano-Sueca (1808–1809)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1269777"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dano-Swedish War (1808–1809)\", revision 1380087786"
+    }
+  ],
+  "title": "Dano-Swedish War (1808–1809)",
+  "summary": "The English Wikipedia article \"Dano-Swedish War (1808–1809)\", at revision 1380087786, opens: \"The Dano-Swedish War of 1808–1809 was a war between Denmark–Norway and Sweden due to Denmark–Norway's alliance with France and Sweden's alliance with the United Kingdom during the Napoleonic Wars. Neither Sweden nor Denmark-Norway had wanted war to begin with but once pushed into it through their respective alliances, Sweden made a bid to acquire Norway by way of invasion while Denmark-Norway made ill-fated attempts to reconquer territories lost to Sweden in the 17th century. Peace was concluded on grounds of status quo ante bellum on 10 December 1809.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1269777, imported by tools/import/wikidata.mjs. The item's own description reads \"war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1809,
+    "date": "1808-03-14",
+    "endDate": "1809-12-10"
+  },
+  "place": "scandinavia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

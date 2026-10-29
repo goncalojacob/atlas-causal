@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-reichenberg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q694061",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Reichenberg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q694061"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Reichenberg\", revision 1370587352"
+    }
+  ],
+  "title": "Battle of Reichenberg",
+  "summary": "The English Wikipedia article \"Battle of Reichenberg\", at revision 1370587352, opens: \"The Battle of Reichenberg took place during the Third Silesian War on 21 April 1757 near the town of Reichenberg in Bohemia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q694061, imported by tools/import/wikidata.mjs. The item's own description reads \"1757 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1757,
+    "date": "1757-04-21"
+  },
+  "place": "liberec",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

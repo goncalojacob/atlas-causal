@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-berlin-1742",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q657970",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of Berlin (1742)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q657970"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Berlin (1742)\", revision 1381367708"
+    }
+  ],
+  "title": "Treaty of Berlin (1742)",
+  "summary": "The English Wikipedia article \"Treaty of Berlin (1742)\", at revision 1381367708, opens: \"The Treaty of Berlin was a treaty between the Habsburg archduchess Maria Theresa of Austria, who was also Queen of Bohemia, and the Prussian king Frederick the Great, signed on 28 July 1742 in Berlin. It was the formal peace treaty that confirmed the preliminary agreement achieved with English mediation by the 11 June Treaty of Breslau, and officially ended the First Silesian War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q657970, imported by tools/import/wikidata.mjs. The item's own description reads \"1742 treaty between Austria and Prussia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1742,
+    "end": 1742,
+    "date": "1742-07-28"
+  },
+  "place": "berlin",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
