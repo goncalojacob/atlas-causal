@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-hondschoote",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1054868",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Hondschoote",
+    "pt": "Batalha de Hondschoote"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1054868"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hondschoote\", revision 1370265746"
+    }
+  ],
+  "title": "Battle of Hondschoote",
+  "summary": "The English Wikipedia article \"Battle of Hondschoote\", at revision 1370265746, opens: \"The Battle of Hondschoote took place during the Flanders Campaign of the Campaign of 1793 in the French Revolutionary Wars. It was fought during operations surrounding the siege of Dunkirk between 6 and 8 September 1793 at Hondschoote, Nord, France, and resulted in a French victory under General Jean Nicolas Houchard and General Jean-Baptiste Jourdan against the command of Marshal Freytag, part of the Anglo-Hanoverian corps of the Duke of York.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1054868, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 battle during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-09-08"
+  },
+  "place": "hondschoote",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}
