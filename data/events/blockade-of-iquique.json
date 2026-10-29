@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "blockade-of-iquique",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4927232",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Blockade of Iquique"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4927232"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Blockade of Iquique\", revision 1370604611"
+    }
+  ],
+  "title": "Blockade of Iquique",
+  "summary": "The English Wikipedia article \"Blockade of Iquique\", at revision 1370604611, opens: \"The Blockade of Iquique was a military operation that occurred during the War of the Pacific. Once war was declared by Chile upon Peru on Saturday, April 5, 1879, the first Chilean naval action for the War of the Pacific was set in motion. The plan was to block the Peruvian port of Iquique the same day the declaration of war was made. The first phase of the blockade ended on May 21, 1879, after the clashes between the Peruvian ships Huascar and Independencia versus the Chilean ships Esmeralda and Covadonga.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4927232, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879,
+    "date": "1879-04-05"
+  },
+  "place": "iquique",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-pacific"
+}

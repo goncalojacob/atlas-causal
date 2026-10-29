@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-huajuapan-de-leon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q920181",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Huajuapan de León"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q920181"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Huajuapan de León\", revision 1370741912"
+    }
+  ],
+  "title": "Siege of Huajuapan de León",
+  "summary": "The English Wikipedia article \"Siege of Huajuapan de León\", at revision 1370741912, opens: \"The siege of Huajuapan de León was a battle of the Mexican War of Independence that was fought from 5 April to 23 July 1812 at Huajuapan de León, in the Mexican state of Oaxaca. The battle was fought between the royalist forces loyal to the Spanish crown, and the Mexican rebels fighting for independence from the Spanish Empire. This Spanish siege of the town, lasting 111 days, was the longest of the entire war. The battle resulted in a victory for the Mexican insurgents.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q920181, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-04-05",
+    "endDate": "1812-07-23"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "mexican-war-of-independence"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-paraguari",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871986",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Paraguarí"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871986"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Paraguarí\", revision 1372621560"
+    }
+  ],
+  "title": "Battle of Paraguarí",
+  "summary": "The English Wikipedia article \"Battle of Paraguarí\", at revision 1372621560, opens: \"The Battle of Paraguarí, also known as Battle of Cerro Porteño, took place on January 19, 1811 nearby Paraguarí between the army sent by the Primera Junta and the forces of the Intendency of Paraguay under the command of their governor Bernardo de Velasco. The battle ended with a Paraguayan victory and boosted confidence to declare independence from both Buenos Aires and Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871986, imported by tools/import/wikidata.mjs. The item's own description reads \"1811 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1811,
+    "end": 1811,
+    "date": "1811-01-19"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "paraguay-campaign"
+}

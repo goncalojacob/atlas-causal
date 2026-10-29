@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-el-veladero",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2887935",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of El Veladero"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2887935"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of El Veladero\", revision 1377709479"
+    }
+  ],
+  "title": "Battle of El Veladero",
+  "summary": "The English Wikipedia article \"Battle of El Veladero\", at revision 1377709479, opens: \"The Battle of El Veladero was a battle of the War of Mexican Independence that occurred from 1810 to 30 April 1811 at Cerro El Veladero, Acapulco de Juárez. The battle was fought between royalist forces loyal to the Spanish crown, commanded by Juan Antonio Fuentes, and Mexican rebels, commanded by José María Morelos and Rafael Valdovinos, fighting for independence from the Spanish Empire. The rebels won.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2887935, imported by tools/import/wikidata.mjs. The item's own description reads \"1811 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1811,
+    "end": 1811,
+    "date": "1811-04-30"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "mexican-war-of-independence"
+}
