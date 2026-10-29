@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-smolensk-1609-1611",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q937828",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Smolensk (1609–1611)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q937828"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Smolensk (1609–1611)\", revision 1370745361"
+    }
+  ],
+  "title": "Siege of Smolensk (1609–1611)",
+  "summary": "The English Wikipedia article \"Siege of Smolensk (1609–1611)\", at revision 1370745361, opens: \"The siege of Smolensk, also known as the Smolensk Defense in Russia, lasted 20 months between 29 September 1609 to 13 June 1611, when the Polish army besieged the Russian city of Smolensk during the Polish–Russian War of 1609–1618.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q937828, imported by tools/import/wikidata.mjs. The item's own description reads \"1609-1611 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1609,
+    "end": 1611,
+    "date": "1609-09-29",
+    "endDate": "1611-06-13"
+  },
+  "place": "smolensk",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "polish-russian-war-1609-1618"
+}

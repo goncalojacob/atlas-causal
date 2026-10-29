@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-the-acropolis-1821-1822",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510534",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of the Acropolis (1821–1822)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510534"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of the Acropolis (1821–1822)\", revision 1370746641"
+    }
+  ],
+  "title": "Siege of the Acropolis (1821–1822)",
+  "summary": "The English Wikipedia article \"Siege of the Acropolis (1821–1822)\", at revision 1370746641, opens: \"The first siege of the Acropolis in 1821–1822 was the siege of the Acropolis of Athens by the Greek revolutionary forces, during the early stages of the Greek War of Independence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510534, imported by tools/import/wikidata.mjs. The item's own description reads \"1821 battle between Greeks and Ottomans in the Acropolis of Athens\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1822,
+    "date": "1821-05-07",
+    "endDate": "1822-06-09"
+  },
+  "place": "athens",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

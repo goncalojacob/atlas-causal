@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kaluga",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2837",
+  "sitelinks": {
+    "count": 94,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Kaluga",
+    "pt": "Kaluga"
+  },
+  "sources": [],
+  "names": [
+    "Kaluga"
+  ],
+  "where": {
+    "lon": 36.266666666667,
+    "lat": 54.533333333333,
+    "precision": "city",
+    "label": "Kaluga"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

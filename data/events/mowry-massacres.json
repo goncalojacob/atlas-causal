@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mowry-massacres",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16242747",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Mowry massacres"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16242747"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mowry massacres\", revision 1370628784"
+    }
+  ],
+  "title": "Mowry massacres",
+  "summary": "The English Wikipedia article \"Mowry massacres\", at revision 1370628784, opens: \"The Mowry massacres, also known as the Mowry murders, were a series of Apache attacks in and around the mining town of Mowry, Arizona between 1863 and 1865. At least sixteen American settlers were killed during the period.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16242747, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Apache Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1865
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "apache-wars"
+}
