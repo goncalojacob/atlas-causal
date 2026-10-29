@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "kompoti",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q12879244",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "sources": [],
+  "names": [
+    "Kompoti"
+  ],
+  "where": {
+    "lon": 21.08372,
+    "lat": 39.102225,
+    "precision": "city",
+    "label": "Kompoti"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

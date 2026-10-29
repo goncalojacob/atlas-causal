@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-kaiyuan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q29469176",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Kaiyuan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q29469176"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kaiyuan\", revision 1370266567"
+    }
+  ],
+  "title": "Battle of Kaiyuan",
+  "summary": "The English Wikipedia article \"Battle of Kaiyuan\", at revision 1370266567, opens: \"The Battle of Kaiyuan was a conflict between the Later Jin and Ming dynasty in the summer of 1619. Following the victory at the Battle of Sarhu, Nurhaci continued the attack on Ming by assaulting the city of Kaiyuan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q29469176, imported by tools/import/wikidata.mjs. The item's own description reads \"1619 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1619,
+    "end": 1619,
+    "date": "1619-07-26"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "transition-from-ming-to-qing"
+}

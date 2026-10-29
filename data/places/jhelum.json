@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "jhelum",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q121551",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Jhelum",
+    "pt": "Jelum"
+  },
+  "sources": [],
+  "names": [
+    "Jhelum",
+    "Jelum"
+  ],
+  "where": {
+    "lon": 73.73333333333333,
+    "lat": 32.93333333333333,
+    "precision": "city",
+    "label": "Jhelum"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -4690,3 +4690,35 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-29: `battle-of-whampoa`, filed under `first-opium-war` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-080`, rank `child-of:first-opium-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-beitang`, filed under `boxer-rebellion` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-asia-099`, rank `child-of:boxer-rebellion`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `meetings-at-drlupa-and-palanka`, filed under `first-serbian-uprising` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-asia-105`, rank `child-of:first-serbian-uprising`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-29: `battle-of-ning-jin`, filed under `transition-from-ming-to-qing` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-asia-131`, rank `child-of:transition-from-ming-to-qing`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-cixi`, filed under `taiping-rebellion` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-096`, rank `child-of:taiping-rebellion`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `jisi-incident`, filed under `transition-from-ming-to-qing` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-098`, rank `child-of:transition-from-ming-to-qing`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-badli-ki-serai`, filed under `indian-rebellion-of-1857` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-108`, rank `child-of:indian-rebellion-of-1857`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-kaiyuan`, filed under `transition-from-ming-to-qing` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-126`, rank `child-of:transition-from-ming-to-qing`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `battle-of-guangning`, filed under `transition-from-ming-to-qing` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-asia-130`, rank `child-of:transition-from-ming-to-qing`. Its span and its subject put it inside the umbrella.
