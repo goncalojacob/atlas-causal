@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-crevola",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q670094",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Crevola"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q670094"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Crevola\", revision 1370437805"
+    }
+  ],
+  "title": "Battle of Crevola",
+  "summary": "The English Wikipedia article \"Battle of Crevola\", at revision 1370437805, opens: \"The Battle of Crevola was fought in the spring of 1487, between a marauding Swiss army from the Valais and Lucerne and troops from the Duchy of Milan, for the supremacy of the Val d'Ossola (Eschental).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q670094, imported by tools/import/wikidata.mjs. The item's own description reads \"battle between a marauding Swiss army and troops from the Duchy of Milan, for the supremacy of the Val d'Ossola\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1487,
+    "end": 1487,
+    "date": "1487-04-28"
+  },
+  "place": "crevoladossola",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

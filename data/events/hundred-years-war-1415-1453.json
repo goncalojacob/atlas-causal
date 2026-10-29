@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "hundred-years-war-1415-1453",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3778618",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Hundred Years' War, 1415–1453"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3778618"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hundred Years' War, 1415–1453\", revision 1370623059"
+    }
+  ],
+  "title": "Hundred Years' War, 1415–1453",
+  "summary": "The English Wikipedia article \"Hundred Years' War, 1415–1453\", at revision 1370623059, opens: \"The Lancastrian War was the third and final phase of the Hundred Years' War between England and France. It lasted from 1415, when Henry V of England invaded Normandy, to 1453, when the English were definitively defeated in Aquitaine. It followed a long period of peace from the end of the Caroline War in 1389. The phase is named after the House of Lancaster, the ruling house of the Kingdom of England, to which Henry V belonged. The early years of the Lancastrian War were dominated by the forces of the House of Plantagenet, who held the English throne and also claimed that of France. Initial English successes, notably at the Battle of Agincourt, coupled with divisions among the French ruling class, allowed Henry V to win the allegiance of large parts of France. Under the terms of the Treaty of Troyes of 1420, Henry V married the French princess Catherine of Valois and was made regent of the kingdom and heir to the throne of France. A victory on paper was thus achieved by the English, with their claims now having legal standing. Some of the French nobility refused to recognise the agreement, however, and so military conflict continued. Henry V and, after his death, his brother John, Duke of Bedford, brought the English to the height of their power in France, with a Plantagenet crowned in Paris.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3778618, imported by tools/import/wikidata.mjs. The item's own description reads \"final phase of the Anglo-French Hundred Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1415,
+    "end": 1453
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

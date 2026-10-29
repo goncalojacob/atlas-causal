@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "lithuanian-muscovite-war-1487-1494",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2493468",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Lithuanian–Muscovite War (1487–1494)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2493468"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lithuanian–Muscovite War (1487–1494)\", revision 1370626956"
+    }
+  ],
+  "title": "Lithuanian–Muscovite War (1487–1494)",
+  "summary": "The English Wikipedia article \"Lithuanian–Muscovite War (1487–1494)\", at revision 1370626956, opens: \"The Lithuanian-Muscovite War of 1487–1494 was the war of the Principality of Moscow, in alliance with the Crimean Khanate, against the Grand Duchy of Lithuania in alliance with the Golden Horde Khan Akhmat, and united by personal union with the Kingdom of Poland under the leadership of Grand Duke Casimir IV Jagiellon.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2493468, imported by tools/import/wikidata.mjs. The item's own description reads \"1487-1494 part of the Muscovite-Lithuanian Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1487,
+    "end": 1494
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

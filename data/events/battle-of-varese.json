@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-varese",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q676761",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Varese",
+    "pt": "Batalha de Varese"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q676761"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Varese\", revision 1375992286"
+    }
+  ],
+  "title": "Battle of Varese",
+  "summary": "The English Wikipedia article \"Battle of Varese\", at revision 1375992286, opens: \"The Battle of Varese was fought on 26 May 1859 at Varese (Lombardy). It was an engagement of the Second Italian War of Independence, fought between the Italian volunteers formation of the Hunters of the Alps, led by Giuseppe Garibaldi, against Austrian troops led by Karl von Urban. The Austrian defeat allowed the movement of the Hunters towards Como, and obliged the Austrians to keep troops on the northern part of the front.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q676761, imported by tools/import/wikidata.mjs. The item's own description reads \"1859 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1859,
+    "end": 1859,
+    "date": "1859-05-26"
+  },
+  "place": "varese",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-italian-war-of-independence"
+}

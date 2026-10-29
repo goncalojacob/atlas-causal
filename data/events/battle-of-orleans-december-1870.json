@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-orleans-december-1870",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q551822",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Orléans (December 1870)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q551822"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Orléans (December 1870)\", revision 1370452333"
+    }
+  ],
+  "title": "Battle of Orléans (December 1870)",
+  "summary": "The English Wikipedia article \"Battle of Orléans (December 1870)\", at revision 1370452333, opens: \"The Second Battle of Orléans of Battle of Vaumainbert was fought during the Franco-Prussian War of 1870. It took place on December 3 and 4, 1870 and was part of the Loire Campaign. The Germans recaptured Orléans, which had been retaken by the French on November 11, 1870 after the Battle of Coulmiers, and divided the French Army of the Loire in two. Future king of Serbia, Peter, took part in the battle on the French side. The French lost 20,000 men in two days of combat, including 18,000 captured or missing, as well as 74 guns and four gunboats. German manpower losses amounted to 2,000, of which 400 killed and 1,600 wounded. The Germans lost 368 horses, including 175 killed, 183 wounded and 10 missing.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q551822, imported by tools/import/wikidata.mjs. The item's own description reads \"1870 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1870,
+    "date": "1870-12-03",
+    "endDate": "1870-12-04"
+  },
+  "place": "orleans",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-prussian-war"
+}

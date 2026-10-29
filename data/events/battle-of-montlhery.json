@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-montlhery",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q265032",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Montlhéry"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q265032"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Montlhéry\", revision 1370450437"
+    }
+  ],
+  "title": "Battle of Montlhéry",
+  "summary": "The English Wikipedia article \"Battle of Montlhéry\", at revision 1370450437, opens: \"The Battle of Montlhéry was fought between Louis XI and the League of the Public Weal on 16 July 1465 in the vicinity of Longpont-sur-Orge. It had no clear winner and therefore did not decide the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q265032, imported by tools/import/wikidata.mjs. The item's own description reads \"1465 battle between Louis XI and the League of the Public Weal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1465,
+    "end": 1465,
+    "date": "1465-07-16"
+  },
+  "place": "montlhery",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

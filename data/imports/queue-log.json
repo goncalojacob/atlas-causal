@@ -59382,6 +59382,607 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-777",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kulevicha",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-779",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "great-fire-of-hamburg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-781",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-temesvar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-783",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "congress-of-paris-1856",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-785",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "1860-boden-professor-of-sanskrit-election",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-787",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "gastein-convention",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-789",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bapaume-1871",
+        "edges": [],
+        "place": "bapaume"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-791",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "semaine-sanglante",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-793",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "london-convention-1884",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-795",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "wilhelminism",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-797",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "vienna-gesera",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-799",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zlatitsa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-801",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "concordat-of-vienna",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-803",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q18409651: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-29-europe-805",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ohrid",
+        "edges": [],
+        "place": "ohrid"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-807",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-guinegate-1479",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-809",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "lithuanian-muscovite-war-1487-1494",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-811",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-seminara",
+        "edges": [],
+        "place": "seminara"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-813",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-calven",
+        "edges": [],
+        "place": "val-mustair"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-815",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-raid-on-the-balearic-islands-1501",
+        "edges": [],
+        "place": "balearic-islands"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-816",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-villalar",
+        "edges": [],
+        "place": "villalar-de-los-comuneros"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-818",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "narvaez-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-820",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "merindol-massacre",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-394",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-san-juan-de-ulua-1568",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-823",
+      "writer": "A",
+      "fired": "2026-10-29T23:02Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-arques",
+        "edges": [],
+        "place": "arques-la-bataille"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-778",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "london-conference-of-1830",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-780",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-santa-lucia",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-782",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bomarsund",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-784",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-varese",
+        "edges": [],
+        "place": "varese"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-786",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-volturno",
+        "edges": [],
+        "place": "volturno"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-788",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-orleans-december-1870",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-790",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-lisaine",
+        "edges": [],
+        "place": "belfort"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-792",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "dublin-whiskey-fire",
+        "edges": [],
+        "place": "the-liberties-dublin"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-794",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-slivnitsa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-796",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "hundred-years-war-1415-1453",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-798",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-meaux",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-800",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-svetigrad",
+        "edges": [],
+        "place": "kodzadzik"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-802",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "first-margrave-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-804",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sandwich-1460",
+        "edges": [],
+        "place": "sandwich-kent"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-806",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-montlhery",
+        "edges": [],
+        "place": "montlhery"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-808",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "portuguese-expedition-to-otranto",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-810",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-crevola",
+        "edges": [],
+        "place": "crevoladossola"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-812",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "persecution-of-jews-and-muslims-by-manuel-i-of-portugal",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-814",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "dano-swedish-war-1501-1512",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-393",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "list-of-indigenous-rebellions-in-mexico-and-central-america",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-817",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "loaisa-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-819",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "habsburg-ottoman-war-of-1540-1547",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-821",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "colloquy-of-poissy",
+        "edges": [],
+        "place": "poissy"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-822",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-breda-1581",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-824",
+      "writer": "B",
+      "fired": "2026-10-29T23:09Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-cadiz-1596",
+        "edges": [],
+        "place": "bay-of-cadiz"
+      },
+      "refusals": []
     }
   ]
 }

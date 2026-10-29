@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bay-of-cadiz",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q662059",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Bay of Cádiz",
+    "pt": "Baía de Cádis"
+  },
+  "sources": [],
+  "names": [
+    "Bay of Cádiz",
+    "Baía de Cádis"
+  ],
+  "where": {
+    "lon": -6.2169444444444,
+    "lat": 36.494166666667,
+    "precision": "region",
+    "label": "Bay of Cádiz"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

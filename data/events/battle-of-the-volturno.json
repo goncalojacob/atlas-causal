@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-volturno",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2165919",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of the Volturno",
+    "pt": "Batalha do Volturno (1860)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2165919"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Volturno\", revision 1382469217"
+    }
+  ],
+  "title": "Battle of the Volturno",
+  "summary": "The English Wikipedia article \"Battle of the Volturno\", at revision 1382469217, opens: \"The Battle of the Volturno refers to a series of military clashes between Giuseppe Garibaldi's volunteers and the troops of the Kingdom of Two Sicilies occurring around the River Volturno, between the cities of Capua, Santa Maria Capua Vetere and Caserta in northern Campania, in September and October 1860. The main battle took place on 1 October 1860 between 30,000 Garibaldines and 25,000 Bourbon troops (Neapolitans).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2165919, imported by tools/import/wikidata.mjs. The item's own description reads \"1860 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1860,
+    "end": 1860,
+    "date": "1860-09-26",
+    "endDate": "1860-10-02"
+  },
+  "place": "volturno",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "unification-of-italy"
+}

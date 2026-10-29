@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "list-of-indigenous-rebellions-in-mexico-and-central-america",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3280731",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "List of Indigenous rebellions in Mexico and Central America"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3280731"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"List of Indigenous rebellions in Mexico and Central America\", revision 1370680279"
+    }
+  ],
+  "title": "List of Indigenous rebellions in Mexico and Central America",
+  "summary": "The English Wikipedia article \"List of Indigenous rebellions in Mexico and Central America\", at revision 1370680279, opens: \"Indigenous rebellions in Mexico and Central America were conflicts of resistance initiated by American Indian peoples against European colonial empires and their succeeding nation settler states that occurred in the territory of the continental Viceroyalty of New Spain and British Honduras, as well as their respective successor states. The latter include Mexico, Guatemala, Honduras, Belize, El Salvador, Nicaragua, Costa Rica, and parts of the Southern and Western United States.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3280731, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflicts between indigenous peoples and people of the Vice royalty of New Spain in Mexico, between 1519 and 1933\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1519,
+    "end": 1933
+  },
+  "place": "mexico-q96",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "colloquy-of-poissy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2426625",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Colloquy of Poissy",
+    "pt": "Colóquio de Poissy"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2426625"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colloquy of Poissy\", revision 1381586792"
+    }
+  ],
+  "title": "Colloquy of Poissy",
+  "summary": "The English Wikipedia article \"Colloquy of Poissy\", at revision 1381586792, opens: \"The Colloquy at Poissy was a religious conference which took place in Poissy, France, in 1561. Its object was to effect a reconciliation between the Catholics and Protestants (Huguenots) of France.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2426625, imported by tools/import/wikidata.mjs. The item's own description reads \"1561 conference between Catholics and Protestants (Huguenots) in Poissy, France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1561,
+    "end": 1561,
+    "date": "1561-09-09",
+    "endDate": "1561-10-14"
+  },
+  "place": "poissy",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

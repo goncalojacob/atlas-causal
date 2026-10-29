@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dublin-whiskey-fire",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q66761981",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Dublin whiskey fire",
+    "pt": "Incêndio de uísque em Dublin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q66761981"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dublin whiskey fire\", revision 1358493185"
+    }
+  ],
+  "title": "Dublin whiskey fire",
+  "summary": "The English Wikipedia article \"Dublin whiskey fire\", at revision 1358493185, opens: \"On the night of 18 June 1875 a fire broke out in a whiskey storehouse in the Liberties area of Dublin. The escaped whiskey formed a burning river six inches (15 cm) deep that is said to have flowed as far as the Coombe, destroying 35 houses and killing several pigs. While there were no human fatalities as a direct result of the fire or flood, 13 people died of alcohol poisoning after drinking from the stream of whiskey, which was of undiluted cask strength. Total property damage was estimated at over £100,000, of which the lost whiskey constituted £54,000.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q66761981, imported by tools/import/wikidata.mjs. The item's own description reads \"1875 fire in The Liberties district of Dublin\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1875,
+    "end": 1875,
+    "date": "1875-06-18"
+  },
+  "place": "the-liberties-dublin",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "seminara",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q54667",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Seminara",
+    "pt": "Seminara"
+  },
+  "sources": [],
+  "names": [
+    "Seminara"
+  ],
+  "where": {
+    "lon": 15.866666666667,
+    "lat": 38.333333333333,
+    "precision": "city",
+    "label": "Seminara"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

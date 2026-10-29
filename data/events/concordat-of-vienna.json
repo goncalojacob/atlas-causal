@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "concordat-of-vienna",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2568988",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Concordat of Vienna"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2568988"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Concordat of Vienna\", revision 1368843598"
+    }
+  ],
+  "title": "Concordat of Vienna",
+  "summary": "The English Wikipedia article \"Concordat of Vienna\", at revision 1368843598, opens: \"The Concordat of Vienna was a treaty concluded on 17 February 1448 between the Holy Roman Empire and the Holy See.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2568988, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty concluded on 17 February 1448 between the Holy Roman Empire and the Holy See\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1448,
+    "end": 1448,
+    "date": "1448-03-19"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

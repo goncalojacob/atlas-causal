@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-slivnitsa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1861319",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Slivnitsa",
+    "pt": "Batalha de Slivnitsa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1861319"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Slivnitsa\", revision 1370589555"
+    }
+  ],
+  "title": "Battle of Slivnitsa",
+  "summary": "The English Wikipedia article \"Battle of Slivnitsa\", at revision 1370589555, opens: \"The Battle of Slivnitsa was a battle between the Bulgarian Army and the Royal Serbian Army from 17 to 19 November 1885, in the Serbo-Bulgarian War. The Bulgarian victory solidified the unification between the Principality of Bulgaria and Eastern Rumelia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1861319, imported by tools/import/wikidata.mjs. The item's own description reads \"1885 decisive battle in Serbo-Bulgarian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-11-17",
+    "endDate": "1885-11-19"
+  },
+  "place": "bulgaria-q219",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "serbo-bulgarian-war"
+}
