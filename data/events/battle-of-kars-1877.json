@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-kars-1877",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1374378",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Kars (1877)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1374378"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kars (1877)\", revision 1379372668"
+    }
+  ],
+  "title": "Battle of Kars (1877)",
+  "summary": "The English Wikipedia article \"Battle of Kars (1877)\", at revision 1379372668, opens: \"The Battle of Kars was a Russian victory over the Ottoman Empire during the Russo-Turkish War (1877–1878). The battle for the city took place on November 17, 1877, and resulted in the Russians capturing the city along with a large portion of the Ottoman forces defending the city. Although the actual battle for the city lasted a single night, fighting for the city began in the summer of that year. The idea of taking the city was considered impossible by some in Russian high command and many soldiers, who thought it would lead to needlessly high Russian casualties without any hopes of success due to the strength of the Ottoman position. Loris Melikov and others among the Russian command, however, devised a plan of attack that saw Russian forces conquer the city after a night of long and hard fighting. The Ottoman defeat at Kars had widespread consequences regionally, and the city was formally annexed at the Treaty of Berlin.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1374378, imported by tools/import/wikidata.mjs. The item's own description reads \"decisive battle of the Russo-Turkish War (1877)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1877,
+    "end": 1877,
+    "date": "1877-11-17"
+  },
+  "place": "kars",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1877-1878"
+}

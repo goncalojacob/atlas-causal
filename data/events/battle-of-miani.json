@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-miani",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3246392",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Miani"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3246392"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Miani\", revision 1370449708"
+    }
+  ],
+  "title": "Battle of Miani",
+  "summary": "The English Wikipedia article \"Battle of Miani\", at revision 1370449708, opens: \"The Battle of Miani, also known as the Battle of Meeanee, was a battle between a British army under Charles James Napier and the Talpur army of Sindh, composed mainly of Baloch troops under the Talpur Amirs. led by Amir Nasir Khan Talpur. The battle took place on 17 February 1843 at Miani, Sindh, in what is now modern-day Pakistan. This battle and the subsequent Battle of Hyderabad eventually led to the capture of parts of Sindh, first territorial possession by the East India Company in what is the modern-day state of Pakistan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3246392, imported by tools/import/wikidata.mjs. The item's own description reads \"1843 part of the British conquest of Sindh\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1843,
+    "end": 1843,
+    "date": "1843-02-17"
+  },
+  "place": "miani-sindh",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

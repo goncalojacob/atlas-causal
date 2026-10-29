@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-k-z-l-tepe",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2888951",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Kızıl Tepe"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888951"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kızıl Tepe\", revision 1370446683"
+    }
+  ],
+  "title": "Battle of Kızıl Tepe",
+  "summary": "The English Wikipedia article \"Battle of Kızıl Tepe\", at revision 1370446683, opens: \"The Battle of Kizil-tepe was fought on August 25, 1877, between the Russian Empire and the Ottoman Empire. The Russian were attempting to besiege Kars. The Ottomans, vastly superior in numbers, successfully lifted the siege. The Ottoman forces were supported by the Polish legion in Turkey.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888951, imported by tools/import/wikidata.mjs. The item's own description reads \"1877 battle of the Russo-Turkish War (1877–1878)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1877,
+    "end": null,
+    "date": "1877-08-25"
+  },
+  "place": "kars",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

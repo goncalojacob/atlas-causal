@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-kawagoe-castle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1064720",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Kawagoe Castle"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1064720"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Kawagoe Castle\", revision 1370742385"
+    }
+  ],
+  "title": "Siege of Kawagoe Castle",
+  "summary": "The English Wikipedia article \"Siege of Kawagoe Castle\", at revision 1370742385, opens: \"The 1545–1546 Siege of Kawagoe Castle  was part of a failed attempt by the Uesugi clan to regain Kawagoe Castle from the Later Hōjō clan in the Sengoku period of Japan. \nUesugi Tomosada of the Ogigayatsu branch of the Uesugi clan attacking Kawagoe castle, he was joined by his more powerful relative Uesugi Norimasa from Yamanouchi branch Uesugi clan, who held the post of Kantō Kanrei, the shōgun's deputy in the Kantō region by Ashikaga Haruuji, the Kantō kubō in Koga, and by a host of anti-Hōjō daimyō from the Kantō region.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1064720, imported by tools/import/wikidata.mjs. The item's own description reads \"1545 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1545,
+    "end": 1546,
+    "date": "1545-10",
+    "endDate": "1546-05-19"
+  },
+  "place": "kawagoe-saitama",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

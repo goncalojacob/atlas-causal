@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-nagara-gawa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4871846",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Nagara-gawa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871846"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nagara-gawa\", revision 1370270437"
+    }
+  ],
+  "title": "Battle of Nagara-gawa",
+  "summary": "The English Wikipedia article \"Battle of Nagara-gawa\", at revision 1370270437, opens: \"The Battle of Nagara-gawa  took place along the banks of the Nagara River in the former Mino Province in April 1556. The site of the battle is in present-day Gifu city, Gifu Prefecture, Japan. It was a battle between Saitō Dōsan and his son, Saitō Yoshitatsu, who had instigated a coup d'etat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871846, imported by tools/import/wikidata.mjs. The item's own description reads \"1556 battle between Saitō Dōsan and Saitō Yoshitatsu\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1556,
+    "end": 1556,
+    "date": "1556-04"
+  },
+  "place": "nagara-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-kurekdere",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2596320",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Kurekdere",
+    "pt": "Batalha de Kurekdere"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2596320"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kurekdere\", revision 1371137487"
+    }
+  ],
+  "title": "Battle of Kurekdere",
+  "summary": "The English Wikipedia article \"Battle of Kurekdere\", at revision 1371137487, opens: \"The Battle of Kürekdere took place on 6 August 1854 as part of the Crimean War. The battle occurred when an Ottoman army from the Ottoman fortress of Kars marched out to confront a marauding Russian detachment near the village of Kürekdere in the Trans-Caucasus.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2596320, imported by tools/import/wikidata.mjs. The item's own description reads \"battle that took place during the Crimean War in 1854\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1854,
+    "date": "1854-08-06"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-inabayama-castle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5962857",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Inabayama Castle"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5962857"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Inabayama Castle\", revision 1376148362"
+    }
+  ],
+  "title": "Siege of Inabayama Castle",
+  "summary": "The English Wikipedia article \"Siege of Inabayama Castle\", at revision 1376148362, opens: \"The siege of Inabayama Castle  of 1567 was the final battle in Oda Nobunaga's campaign to defeat the Saitō clan in their mountaintop castle and conquer Mino Province, Japan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5962857, imported by tools/import/wikidata.mjs. The item's own description reads \"1567 Part of Oda Nobunaga's campaign to defeat the Saitō clan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1567,
+    "end": 1567,
+    "date": "1567-09-13",
+    "endDate": "1567-09-27"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "sieges-of-nagashima",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1073030",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Sieges of Nagashima"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1073030"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sieges of Nagashima\", revision 1370746821"
+    }
+  ],
+  "title": "Sieges of Nagashima",
+  "summary": "The English Wikipedia article \"Sieges of Nagashima\", at revision 1370746821, opens: \"The Sieges of Nagashima , taking place in 1571, 1573, and 1574, were part of Oda Nobunaga's campaigns against the Ikkō-ikki, arguably among his greatest enemies. Nagashima, in Owari Province along Japan's Pacific coast, was the location of a string of river island fortresses and defensive works controlled by the Ikkō-ikki, which surrounded their Ganshō-ji monastery. This string of defenses included Nagashima Castle, which they had captured previously. Oda Nobunaga attacked three times over the course of four years, before finally destroying the entire Nagashima complex. These sieges were executed concurrently with Nobunaga's eleven-year siege against the Ikki's primary fortress of Ishiyama Hongan-ji.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1073030, imported by tools/import/wikidata.mjs. The item's own description reads \"1571 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1570,
+    "end": 1574,
+    "endDate": "1574-10-13"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ishiyama-hongan-ji-war"
+}
