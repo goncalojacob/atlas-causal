@@ -25,7 +25,7 @@
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-a352a79658d6.json",
+      "file": "index/attributes-1500-1599-b68d64eb8ecb.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
@@ -67,7 +67,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-4612278b818c.json",
+      "file": "index/attributes-place-714076e33436.json",
       "from": null,
       "key": "place",
       "to": null
@@ -940,7 +940,7 @@
       "id": "founding"
     },
     {
-      "count": 23,
+      "count": 24,
       "id": "law"
     },
     {
@@ -1025,10 +1025,10 @@
   "counts": {
     "actors": 2699,
     "edges": 1283,
-    "events": 4836,
+    "events": 4837,
     "narratives": 2,
     "offices": 11,
-    "places": 2012,
+    "places": 2013,
     "presences": 6691,
     "regions": 5,
     "relations": 138,
@@ -1073,14 +1073,14 @@
     }
   ],
   "files": {
-    "citers": "index/citers-3c3fabad5156",
-    "core": "index/core-4dd151f685f1.json",
-    "grounds": "index/grounds-badae44f0c7d.json",
+    "citers": "index/citers-7336a3a5c57d",
+    "core": "index/core-fd620b9af781.json",
+    "grounds": "index/grounds-61ac138d0085.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-6e8be158c3ed.json",
-    "search": "index/search-2843ffb7c4f0.json",
-    "sources": "index/sources-c6dca5384e29.json",
-    "territories": "index/territories-2608a41d5125.json"
+    "review": "index/review-69fd76f71a75.json",
+    "search": "index/search-3bccccaa80fa.json",
+    "sources": "index/sources-a7e976b595c0.json",
+    "territories": "index/territories-f648fbeb1b1f.json"
   },
   "historyShards": [
     {
@@ -1091,7 +1091,7 @@
       "to": 1499
     },
     {
-      "file": "index/history-event-1500-1599-a0ee8099120a.json",
+      "file": "index/history-event-1500-1599-2a214b7d67c0.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "event",
@@ -1245,7 +1245,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-2d017dac00ee.json",
+      "file": "index/history-place-place-ac34fc70cdaf.json",
       "from": null,
       "key": "place",
       "kind": "place",

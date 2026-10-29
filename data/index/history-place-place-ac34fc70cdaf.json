@@ -1751,6 +1751,15 @@
         }
       ]
     },
+    "beaulieu-les-loches": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "beaumont-en-argonne": {
       "from": "git",
       "versions": [

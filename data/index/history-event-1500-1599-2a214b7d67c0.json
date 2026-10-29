@@ -2823,6 +2823,15 @@
         }
       ]
     },
+    "edict-of-beaulieu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "eighty-years-war": {
       "from": "git",
       "versions": [
