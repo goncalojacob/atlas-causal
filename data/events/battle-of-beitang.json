@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-beitang",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4087302",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Beitang"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4087302"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Beitang\", revision 1370433844"
+    }
+  ],
+  "title": "Battle of Beitang",
+  "summary": "The English Wikipedia article \"Battle of Beitang\", at revision 1370433844, opens: \"The Battle of Beitang, during the Boxer Rebellion, was fought on September 20, 1900, between the Eight Nation Alliance and the Great Qing army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4087302, imported by tools/import/wikidata.mjs. The item's own description reads \"battle fought on September 20,1900 between the Eight National Alliance And the Great Qing army\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-09-20"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "boxer-rebellion"
+}

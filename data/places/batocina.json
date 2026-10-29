@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "batocina",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q810884",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Batočina",
+    "pt": "Batočina"
+  },
+  "sources": [],
+  "names": [
+    "Batočina"
+  ],
+  "where": {
+    "lon": 21.083333333333,
+    "lat": 44.15,
+    "precision": "city",
+    "label": "Batočina"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

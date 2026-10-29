@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cixi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870758",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Cixi",
+    "pt": "Batalha de Cixi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870758"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cixi\", revision 1370437375"
+    }
+  ],
+  "title": "Battle of Cixi",
+  "summary": "The English Wikipedia article \"Battle of Cixi\", at revision 1370437375, opens: \"The Battle of Cixi or Battle of Tzeki (慈溪之戰) was an armed engagement in the Taiping Rebellion fought between the Ever Victorious Army of the Qing dynasty and forces of the Taiping Heavenly Kingdom on September 21, 1862, at Cixi. The battle, which was won by the Ever Victorious Army, resulted in the mortal wounding of Frederick Townsend Ward, the American mercenary who founded and commanded the force. Ward's death after the battle led to the succession of Henry Andres Burgevine as commander of the Ever Victorious Army and initiated a period of decline for the force.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870758, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the Taiping Rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-09-20"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "taiping-rebellion"
+}

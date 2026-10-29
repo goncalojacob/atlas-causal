@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-baddowal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q47005393",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Baddowal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q47005393"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Baddowal\", revision 1370432884"
+    }
+  ],
+  "title": "Battle of Baddowal",
+  "summary": "The English Wikipedia article \"Battle of Baddowal\", at revision 1370432884, opens: \"The battle of Baddowal was an engagement between the Sikh Khalsa Army and British forces which occurred on 21 January 1846 during the First Anglo-Sikh War. After the Khalsa Army was defeated at the battles of Mudki and Ferozeshah, Ranjodh Singh Majithia led a large Sikh army to attack the British cantonment at Ludhiana. Harry Smith led a column of troops to intercept them, and both armies met at Baddowal but did not engage. Smith's column marched to Ludhiana having suffered several casualties from Sikh artillery and cavalry attacks.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q47005393, imported by tools/import/wikidata.mjs. The item's own description reads \"1846 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1846,
+    "end": 1846
+  },
+  "place": "dharamkot-moga",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-anglo-sikh-war"
+}

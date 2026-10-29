@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-shopian",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872373",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Shopian"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872373"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Shopian\", revision 1370274284"
+    }
+  ],
+  "title": "Battle of Shopian",
+  "summary": "The English Wikipedia article \"Battle of Shopian\", at revision 1370274284, opens: \"The Battle of Shopian took place on 3 July 1819 between an expeditionary force from the Sikh Empire and Jabbar Khan, the governor of the Kashmir Valley province of the Durrani Empire. It was the decisive battle during the Sikh expedition into Kashmir in 1819.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872373, imported by tools/import/wikidata.mjs. The item's own description reads \"1819 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1819,
+    "end": 1819,
+    "date": "1819-07-03"
+  },
+  "place": "shopian",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "afghan-sikh-wars"
+}

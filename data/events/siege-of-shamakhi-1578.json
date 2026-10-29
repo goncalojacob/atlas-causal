@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-shamakhi-1578",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q137216924",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Shamakhi (1578)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q137216924"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Shamakhi (1578)\", revision 1378625603"
+    }
+  ],
+  "title": "Siege of Shamakhi (1578)",
+  "summary": "The English Wikipedia article \"Siege of Shamakhi (1578)\", at revision 1378625603, opens: \"The Siege of Shamakhi \n(Persian: محاصره شماخی) occurred during the Ottoman–Safavid War (1578–1590), as an attempt by the Safavids to capture the Ottoman stronghold of Shamakhi in 9-12 November 1578. Shamakhi had been conquered by the Ottomans at the onset of the war by the mid-autumn of 1578, together with the region of Georgia, and the major cities of Derbent and Baku. The author Asafi, secretary and hagiographer of Osman Pasha, was also present in Shamakhi during this period.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q137216924, imported by tools/import/wikidata.mjs. The item's own description reads \"1578 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1578,
+    "end": 1578,
+    "date": "1578-11-09",
+    "endDate": "1578-11-12"
+  },
+  "place": "shamakhi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-safavid-war-1578-1590"
+}

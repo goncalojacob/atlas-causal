@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "shamakhi",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q388224",
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Shamakhi",
+    "pt": "Shamakhi (cidade)"
+  },
+  "sources": [],
+  "names": [
+    "Shamakhi",
+    "Shamakhi (cidade)"
+  ],
+  "where": {
+    "lon": 48.639166666667,
+    "lat": 40.633888888889,
+    "precision": "city",
+    "label": "Shamakhi"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-changsha-1852",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q56277317",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Changsha (1852)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q56277317"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Changsha (1852)\", revision 1370108887"
+    }
+  ],
+  "title": "Battle of Changsha (1852)",
+  "summary": "The English Wikipedia article \"Battle of Changsha (1852)\", at revision 1370108887, opens: \"The Battle of Changsha was fought in the early years of the Taiping Rebellion throughout 1852. After defeating Qing forces in Guangxi, the Taipings advanced into neighboring Hunan province. The city was heavily defended and a delay in the Taiping advance allowed Qing forces to reinforce the city. The first attempt to advance north was stopped at an ambush at the Suoyi ford in the Xiang River, where over 10,000 Taiping sailors and soldiers were killed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q56277317, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1852,
+    "end": 1852
+  },
+  "place": "changsha",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "taiping-rebellion"
+}

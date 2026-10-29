@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-kompoti",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16331864",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Kompoti"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16331864"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kompoti\", revision 1370267318"
+    }
+  ],
+  "title": "Battle of Kompoti",
+  "summary": "The English Wikipedia article \"Battle of Kompoti\", at revision 1370267318, opens: \"The Battle of Kompoti was a military engagement of the Greek War of Independence, with a victorious outcome for the Greeks.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16331864, imported by tools/import/wikidata.mjs. The item's own description reads \"1822\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1822,
+    "end": 1822,
+    "date": "1822-06-10"
+  },
+  "place": "kompoti",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

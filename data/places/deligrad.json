@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "deligrad",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2720854",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Deligrad",
+    "pt": "Deligrad"
+  },
+  "sources": [],
+  "names": [
+    "Deligrad"
+  ],
+  "where": {
+    "lon": 21.5794,
+    "lat": 43.6147,
+    "precision": "city",
+    "label": "Deligrad"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

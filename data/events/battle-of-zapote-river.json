@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-zapote-river",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872804",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Zapote River"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872804"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Zapote River\", revision 1370277315"
+    }
+  ],
+  "title": "Battle of Zapote River",
+  "summary": "The English Wikipedia article \"Battle of Zapote River\", at revision 1370277315, opens: \"The Battle of Zapote River, also known as the Battle of Zapote Bridge, was fought on the 13 June 1899 between 1,200 Americans and between 4,000~5,000 Filipinos. It was the second largest battle of the Philippine–American War after the Battle of Manila five months before in February 1899. Zapote River separates the town of Las Piñas in what was then Manila province from Bacoor in the province of Cavite. The ruins of Zapote Bridge still stands next to its replacement bridge on Aguinaldo Highway.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872804, imported by tools/import/wikidata.mjs. The item's own description reads \"1899 battle during the Philippine–American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-06-13"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-american-war"
+}

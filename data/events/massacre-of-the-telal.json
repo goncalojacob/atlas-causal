@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "massacre-of-the-telal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q116147735",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Massacre of the Telal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q116147735"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Massacre of the Telal\", revision 1355853233"
+    }
+  ],
+  "title": "Massacre of the Telal",
+  "summary": "The English Wikipedia article \"Massacre of the Telal\", at revision 1355853233, opens: \"Massacre of the Telal occurred in 1517 when Ottoman Turks fully took control of Syria at the end of the Ottoman-Mamluk war. The massacre began when the Ottoman Sultan Selim I summoned some Sunnite religious leaders and obtained from them a fatwa to fight \"infidel\" Alawis. The ensuing massacre resulted in the deaths of 9,400 Shiite men assembled in Aleppo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q116147735, imported by tools/import/wikidata.mjs. The item's own description reads \"1517 massacre\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1517,
+    "end": 1517
+  },
+  "place": "aleppo",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "ottoman-mamluk-war-1516-1517"
+}

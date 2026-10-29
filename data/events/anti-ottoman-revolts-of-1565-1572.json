@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "anti-ottoman-revolts-of-1565-1572",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q104852948",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Anti-Ottoman revolts of 1565–1572"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q104852948"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anti-Ottoman revolts of 1565–1572\", revision 1371063996"
+    }
+  ],
+  "title": "Anti-Ottoman revolts of 1565–1572",
+  "summary": "The English Wikipedia article \"Anti-Ottoman revolts of 1565–1572\", at revision 1371063996, opens: \"The anti-Ottoman revolts of 1567–1572 were a series of conflicts between Albanian, Greek and other rebels and the Ottoman Empire. Social tensions intensified at this time by the debilitation of the Ottoman administration, the chronic economic crisis, and arbitrary conduct of the Ottoman state authorities. The leaders of the uprisings were initially successful and controlled several strategic locations and fortresses, especially in Albania, Central Greece, and the Peloponnese. However, the movement lacked the necessary organization. They were instigated and assisted by western powers; mainly by the Republic of Venice, and the victory of the Holy League against the Ottoman fleet in the Battle of Lepanto, in November 1571, triggered further revolutionary activity. However, Venice withdrew its support to the rebels and signed a unilateral peace with the Ottomans. As such the rebellions were doomed to end and the Ottoman forces committed a number of massacres in the aftermath of the revolt during the suppression of the uprising. Throughout the pacification process, various primarily isolated areas were still out of Ottoman control and new rebellions erupted, like that of Dionysios Skylosophos in 1611.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q104852948, imported by tools/import/wikidata.mjs. The item's own description reads \"Rebellions against the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1565,
+    "end": 1572
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

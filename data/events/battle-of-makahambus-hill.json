@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-makahambus-hill",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871643",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Makahambus Hill"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871643"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Makahambus Hill\", revision 1379130590"
+    }
+  ],
+  "title": "Battle of Makahambus Hill",
+  "summary": "The English Wikipedia article \"Battle of Makahambus Hill\", at revision 1379130590, opens: \"The Battle of Makahambus Hill was one of the victories won by the Filipinos over the Americans during the Philippine–American War. It was fought on June 4, 1900, in Cagayan de Misamis. The Filipinos were under the command of Colonel Apolinar Velez of the Western Mindanao Division. Most of them were volunteers apart from some Filipino army men who joined.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871643, imported by tools/import/wikidata.mjs. The item's own description reads \"1900 battle of the Philippine–American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-06-04"
+  },
+  "place": "cagayan-de-oro",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-american-war"
+}
