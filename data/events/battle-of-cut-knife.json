@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cut-knife",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q963444",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Cut Knife"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q963444"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cut Knife\", revision 1375419587"
+    }
+  ],
+  "title": "Battle of Cut Knife",
+  "summary": "The English Wikipedia article \"Battle of Cut Knife\", at revision 1375419587, opens: \"The Battle of Cut Knife, fought on May 2, 1885, during the North-West Rebellion, occurred when elements of North-West Mounted Police, Canadian militia, and Canadian regulars attacked a Cree and Assiniboine teepee settlement near Battleford in the North-West Territories' District of Saskatchewan. First Nations fighters forced the Canadian forces to retreat, with losses on both sides.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q963444, imported by tools/import/wikidata.mjs. The item's own description reads \"1885 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-05-02"
+  },
+  "place": "battle-of-cut-knife-hill-national-historic-site",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "north-west-rebellion"
+}

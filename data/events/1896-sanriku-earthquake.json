@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1896-sanriku-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q715495",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1896 Sanriku earthquake",
+    "pt": "Terremoto de Sanriku de 1896"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q715495"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1896 Sanriku earthquake\", revision 1379584584"
+    }
+  ],
+  "title": "1896 Sanriku earthquake",
+  "summary": "The English Wikipedia article \"1896 Sanriku earthquake\", at revision 1379584584, opens: \"An 8.5 magnitude earthquake occurred at 19:32 on June 15, 1896, on the Sanriku coast in Honshu, Japan. It resulted in two tsunami waves which destroyed about 9,000 homes and caused at least 22,000 deaths. It was one of the most destructive seismic events in Japanese history. The waves reached a then-record height of 38.2 metres (125 ft); this would remain the highest on record until waves from the 2011 Tōhoku earthquake exceeded that height by more than 2 metres.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q715495, imported by tools/import/wikidata.mjs. The item's own description reads \"one of the most destructive seismic events in Japanese history\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1896,
+    "date": "1896-06-15"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

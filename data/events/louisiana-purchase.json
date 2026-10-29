@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "louisiana-purchase",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q193155",
+  "sitelinks": {
+    "count": 60,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Louisiana Purchase",
+    "pt": "Compra da Luisiana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q193155"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Louisiana Purchase\", revision 1382192502"
+    }
+  ],
+  "title": "Louisiana Purchase",
+  "summary": "The English Wikipedia article \"Louisiana Purchase\", at revision 1382192502, opens: \"The Louisiana Purchase was the acquisition of the territory of Louisiana by the United States from the French First Republic in 1803. This consisted of most of the land in the Mississippi River's drainage basin west of the river. In return for $15 million, or approximately $18 per square mile ($7/km2), the United States nominally acquired a total of 828,000 sq mi of land now in the Central United States. However, France only controlled a small fraction of this area, most of which was inhabited by Native Americans; effectively, for the majority of the area, the United States bought the preemptive right to obtain Indian lands by treaty or by conquest, to the exclusion of other colonial powers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q193155, imported by tools/import/wikidata.mjs. The item's own description reads \"1803 acquisition by the U.S. of France's claim to the territory of Louisiana\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1803,
+    "end": 1803,
+    "date": "1803-04-30"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

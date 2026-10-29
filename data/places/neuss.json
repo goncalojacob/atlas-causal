@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "neuss",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2948",
+  "sitelinks": {
+    "count": 86,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Neuss",
+    "pt": "Neuss"
+  },
+  "sources": [],
+  "names": [
+    "Neuss"
+  ],
+  "where": {
+    "lon": 6.6938888888889,
+    "lat": 51.200277777778,
+    "precision": "city",
+    "label": "Neuss"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

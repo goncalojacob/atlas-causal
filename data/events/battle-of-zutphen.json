@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-zutphen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890458",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Zutphen",
+    "pt": "Batalha de Zutphen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890458"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Zutphen\", revision 1374044346"
+    }
+  ],
+  "title": "Battle of Zutphen",
+  "summary": "The English Wikipedia article \"Battle of Zutphen\", at revision 1374044346, opens: \"The Battle of Zutphen was fought on 22 September 1586, near the village of Warnsveld and the town of Zutphen, the Netherlands, during the Eighty Years' War and the Anglo-Spanish War (1585–1604). It was fought between the forces of the United Provinces of the Netherlands, aided by the English, against the Spanish. In 1585, England signed the Treaty of Nonsuch with the States-General of the Netherlands and formally entered the war against Spain. Robert Dudley, Earl of Leicester, was appointed as the Governor-General of the Netherlands and sent there in command of an English army to support the Dutch rebels. When Alessandro Farnese, Duke of Parma and commander of the Spanish Army of Flanders, besieged the town of Rheinberg during the Cologne War, Leicester, in turn, besieged the town of Zutphen, in the province of Gelderland and on the eastern bank of the river IJssel.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890458, imported by tools/import/wikidata.mjs. The item's own description reads \"1586 European battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1586,
+    "end": 1586,
+    "date": "1586-09-22"
+  },
+  "place": "zutphen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "1896-manila-mutiny",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16056918",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1896 Manila mutiny"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16056918"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1896 Manila mutiny\", revision 1370278951"
+    }
+  ],
+  "title": "1896 Manila mutiny",
+  "summary": "The English Wikipedia article \"1896 Manila mutiny\", at revision 1370278951, opens: \"The 1896 Manila mutiny was a short uprising in a military installation in Manila, the capital and seat of the Spanish colonial Government in the Philippines. The skirmish was the only recorded incident of rebellion during the revolution that happened within the walls of Manila.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16056918, imported by tools/import/wikidata.mjs. The item's own description reads \"uprising against the Spanish colonial government in the Philippines\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1896,
+    "date": "1896-12-05"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "philippine-revolution"
+}

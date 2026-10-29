@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-tayabas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16822727",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Tayabas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16822727"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tayabas\", revision 1370590700"
+    }
+  ],
+  "title": "Battle of Tayabas",
+  "summary": "The English Wikipedia article \"Battle of Tayabas\", at revision 1370590700, opens: \"The Siege of Tayabas was a 2-month campaign of the Philippine Revolution that saw intense guerrilla warfare and bloodshed for the province. The battle occurred shortly after Aguinaldo's return from Hong Kong in May of the same year. Tayabas was just one of the many triumphs for the revolutionaries in that year, which led towards Philippine independence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16822727, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict during the Philippine Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-05-28",
+    "endDate": "1898-06-15"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "whitman-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1364902",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Whitman massacre",
+    "pt": "Massacre Whitman"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1364902"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Whitman massacre\", revision 1380891202"
+    }
+  ],
+  "title": "Whitman massacre",
+  "summary": "The English Wikipedia article \"Whitman massacre\", at revision 1380891202, opens: \"The Whitman massacre was the killing of American missionaries Marcus and Narcissa Whitman, along with eleven others, on November 29, 1847. They were killed by a small group of Cayuse men who suspected that Whitman had poisoned the 200 Cayuse in his medical care during an outbreak of measles that included the Whitman household. The killings occurred at the Whitman Mission at the junction of the Walla Walla River and Mill Creek in what is now southeastern Washington near Walla Walla. The massacre became a decisive episode in the U.S. settlement of the Pacific Northwest, causing the United States Congress to take action declaring the territorial status of the Oregon Country. The Oregon Territory was established on August 14, 1848, to protect the white settlers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1364902, imported by tools/import/wikidata.mjs. The item's own description reads \"The 1847 massacre by Cayuse Indians of Dr. Marcus Whitman, his wife Narcissa and 11 other missionaries in the Pacific Northwest.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1936,
+    "end": null,
+    "date": "1936-06-29"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-camacua",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5722272",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Camacuã",
+    "pt": "Batalha de Camacuã"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5722272"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Camacuã\", revision 1370435941"
+    }
+  ],
+  "title": "Battle of Camacuã",
+  "summary": "The English Wikipedia article \"Battle of Camacuã\", at revision 1370435941, opens: \"The Battle of Camacuã was fought in April 1827 by troops of the United Provinces and of the Empire of Brazil during the Cisplatine War. After their victory in the Battle of Ituzaingó, the Argentine army had left Brazil due to the lack of supplies and a bad state of their horses, but by April 13 had returned, retaken Bagé and marched towards the Brazilian army, which it made withdraw after this brief engagement.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5722272, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1827,
+    "end": 1827,
+    "date": "1827-04-23"
+  },
+  "place": "bage",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "cisplatine-war"
+}

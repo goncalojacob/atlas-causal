@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-vagen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1501750",
+  "wikipedia": {
+    "en": "Battle of Vågen",
+    "pt": "Batalha de Vågen"
+  },
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1501750"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vågen\", revision 1370592794"
+    }
+  ],
+  "title": "Battle of Vågen",
+  "summary": "The English Wikipedia article \"Battle of Vågen\", at revision 1370592794, opens: \"The Battle of Vågen was a naval battle between a Dutch merchant and treasure fleet and an English flotilla of warships on 2 August 1665 as part of the Second Anglo-Dutch War. The battle took place in Vågen, the main port area of neutral Bergen, Norway. Due to a delay in orders, the Norwegian commanders took the side of the Dutch, contrary to the secret intentions of the King of Norway and Denmark. The battle ended with the retreat of the English fleet, which was much damaged but had lost no ships. The treasure fleet was relieved by the Dutch home fleet 17 days later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1501750, imported by tools/import/wikidata.mjs. The item's own description reads \"1665 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1665,
+    "end": null,
+    "date": "1665-08-02"
+  },
+  "place": "bergen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

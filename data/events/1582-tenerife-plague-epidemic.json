@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1582-tenerife-plague-epidemic",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q86458874",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1582 Tenerife plague epidemic"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q86458874"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1582 Tenerife plague epidemic\", revision 1359969621"
+    }
+  ],
+  "title": "1582 Tenerife plague epidemic",
+  "summary": "The English Wikipedia article \"1582 Tenerife plague epidemic\", at revision 1359969621, opens: \"The 1582 Tenerife plague epidemic or 1582 San Cristóbal de La Laguna plague epidemic was an outbreak of bubonic plague that occurred between 1582 and 1583 on the island of Tenerife in the Canary Islands. The epidemic is believed to have caused between 5,000 and 9,000 deaths on an island that at the time had fewer than 20,000 inhabitants. This epidemic is also known as the Plague of Landres.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q86458874, imported by tools/import/wikidata.mjs. The item's own description reads \"disease outbreak in Tenerife, Canary Islands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1582,
+    "end": 1583
+  },
+  "place": "san-cristobal-de-la-laguna",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

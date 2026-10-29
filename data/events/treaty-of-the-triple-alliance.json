@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-the-triple-alliance",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1782419",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Treaty of the Triple Alliance",
+    "pt": "Tratado da Tríplice Aliança"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1782419"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of the Triple Alliance\", revision 1373019608"
+    }
+  ],
+  "title": "Treaty of the Triple Alliance",
+  "summary": "The English Wikipedia article \"Treaty of the Triple Alliance\", at revision 1373019608, opens: \"The Treaty of the Triple Alliance allied the Empire of Brazil, Argentina, and Uruguay against Paraguay. Signed in 1865, after the outbreak of the Paraguayan War, its articles prescribed the allies' actions both during and after the war. An English translation of the text is reproduced in this article.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1782419, imported by tools/import/wikidata.mjs. The item's own description reads \"South American military alliance against Paraguay\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1865,
+    "end": null,
+    "date": "1865-05-01"
+  },
+  "place": "buenos-aires",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

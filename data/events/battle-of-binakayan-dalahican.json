@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-binakayan-dalahican",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q14542358",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Binakayan–Dalahican"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q14542358"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Binakayan–Dalahican\", revision 1370107866"
+    }
+  ],
+  "title": "Battle of Binakayan–Dalahican",
+  "summary": "The English Wikipedia article \"Battle of Binakayan–Dalahican\", at revision 1370107866, opens: \"The Battle of Binakayan–Dalahican was a simultaneous battle during the Philippine Revolution that was fought on November 9–11, 1896 that led to a decisive Filipino victory. The twin battle took place at the shores of Binakayan, in the town of Cavite Viejo ; Dalahican and Dagatan in Noveleta; and, to minimal extent, in Imus and Bacoor towns in Cavite, Philippines that lasted for two days before the Spanish army retreated demoralized and in disarray. The result of the battle was the first significant Filipino victory in the country's history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q14542358, imported by tools/import/wikidata.mjs. The item's own description reads \"1896 battle during the Philippine Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1896,
+    "date": "1896-11-09",
+    "endDate": "1896-11-11"
+  },
+  "place": "cavite-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

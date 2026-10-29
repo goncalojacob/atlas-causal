@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-zepita",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5723183",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Zepita"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5723183"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Zepita\", revision 1370596625"
+    }
+  ],
+  "title": "Battle of Zepita",
+  "summary": "The English Wikipedia article \"Battle of Zepita\", at revision 1370596625, opens: \"The Battle of Zepita, also known as the Battle of Chua Chua, was fought between the forces of future Peruvian president Santa Cruz and the Viceroyalty of Peru. Santa Cruz's army captured 240 rifles, 52 saddles, 240 lances and 63 sabers from the Royalist army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5723183, imported by tools/import/wikidata.mjs. The item's own description reads \"1823 battle during the Peruvian War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1823,
+    "end": 1823,
+    "date": "1823-08-25"
+  },
+  "place": "peru-q419",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peruvian-war-of-independence"
+}

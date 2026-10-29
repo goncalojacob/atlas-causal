@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1848-1849-venezuelan-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2882649",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1848–1849 Venezuelan civil war"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2882649"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1848–1849 Venezuelan civil war\", revision 1370278878"
+    }
+  ],
+  "title": "1848–1849 Venezuelan civil war",
+  "summary": "The English Wikipedia article \"1848–1849 Venezuelan civil war\", at revision 1370278878, opens: \"The civil war of 1848-1849 was an armed conflict in Venezuela between the conservatives, led by José Antonio Páez, against the newly established Great Liberal Party, founded and led by José Tadeo Monagas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2882649, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war in Venezuela\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1849,
+    "date": "1848-02-04"
+  },
+  "place": "venezuela-q717",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

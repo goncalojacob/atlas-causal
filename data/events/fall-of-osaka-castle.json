@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "fall-of-osaka-castle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2617147",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Fall of Osaka Castle",
+    "pt": "Queda do Castelo de Osaka"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2617147"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fall of Osaka Castle\", revision 1366260266"
+    }
+  ],
+  "title": "Fall of Osaka Castle",
+  "summary": "The English Wikipedia article \"Fall of Osaka Castle\", at revision 1366260266, opens: \"The fall of Osaka Castle occurred between Imperial and Tokugawa shogunate forces during the Boshin War in Japan, where soon after the Battle of Toba–Fushimi, the Tokugawa-held Osaka Castle was captured by pro-Imperial \"Kangun\" forces on February 2, 1868.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2617147, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Boshin War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1868,
+    "date": "1868-02-02"
+  },
+  "place": "osaka",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "boshin-war"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-leghorn",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2204664",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Leghorn",
+    "pt": "Batalha de Livorno"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2204664"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Leghorn\", revision 1370447404"
+    }
+  ],
+  "title": "Battle of Leghorn",
+  "summary": "The English Wikipedia article \"Battle of Leghorn\", at revision 1370447404, opens: \"The naval Battle of Leghorn took place on 4 March 1653, during the First Anglo-Dutch War, near Leghorn (Livorno), Italy. It was a victory of a Dutch squadron under Commodore Johan van Galen over an English squadron under Captain Henry Appleton. Afterwards, another English squadron under Captain Richard Badiley, which Appleton had been trying to join up with, reached the scene in time to observe the capture of the last ships of Appleton's squadron, but was outnumbered and forced to return to Porto Longone.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2204664, imported by tools/import/wikidata.mjs. The item's own description reads \"1653 battle of the First Anglo-Dutch War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1653,
+    "end": 1653,
+    "date": "1653-03-14"
+  },
+  "place": "livorno",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-anglo-dutch-war"
+}

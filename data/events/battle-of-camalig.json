@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-camalig",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16822600",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Camalig"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16822600"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Camalig\", revision 1370435950"
+    }
+  ],
+  "title": "Battle of Camalig",
+  "summary": "The English Wikipedia article \"Battle of Camalig\", at revision 1370435950, opens: \"The Battle of Camalig in Albay province, Philippines, was fought on April 2, 1898 between the forces of colonial Spanish government in Bicol Region and Bicolanos under Bicolano revolutionaries General Vito Belarmino, Simeón Ola, and Glicerio Delgado during the Philippine Revolutionary War. The latter were victorious in this battle, and General Vito Belarmino, in gratitude to his leadership, promoted Ola to the rank of Captain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16822600, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in Philippine Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-04-02"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

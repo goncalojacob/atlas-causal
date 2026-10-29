@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mosul",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q83317",
+  "sitelinks": {
+    "count": 106,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Mosul",
+    "pt": "Mossul"
+  },
+  "sources": [],
+  "names": [
+    "Mosul",
+    "Mossul"
+  ],
+  "where": {
+    "lon": 43.12916666666667,
+    "lat": 36.34166666666667,
+    "precision": "city",
+    "label": "Mosul"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

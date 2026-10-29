@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battles-of-mount-pamaton",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q134272435",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battles of Mount Pamaton"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q134272435"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battles of Mount Pamaton\", revision 1370603705"
+    }
+  ],
+  "title": "Battles of Mount Pamaton",
+  "summary": "The English Wikipedia article \"Battles of Mount Pamaton\", at revision 1370603705, opens: \"The Battles of Mount Pamaton consisted of two fierce engagements between the Sultanate of Banjar and the Dutch colonial empire on Pamaton mountain in Borneo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q134272435, imported by tools/import/wikidata.mjs. The item's own description reads \"1861–1862 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1862,
+    "date": "1861-06-19",
+    "endDate": "1862-03-02"
+  },
+  "place": "borneo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "banjarmasin-war"
+}

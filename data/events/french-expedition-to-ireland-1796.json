@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "french-expedition-to-ireland-1796",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2113036",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "French expedition to Ireland (1796)",
+    "pt": "Expedição francesa à Irlanda (1796)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2113036"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French expedition to Ireland (1796)\", revision 1379388655"
+    }
+  ],
+  "title": "French expedition to Ireland (1796)",
+  "summary": "The English Wikipedia article \"French expedition to Ireland (1796)\", at revision 1379388655, opens: \"The French expedition to Ireland, known in French as the Expédition d'Irlande, was an unsuccessful attempt by the French Republic to assist the outlawed Society of United Irishmen in their planned rebellion against British rule during the War of the First Coalition. France intended to land a large expeditionary force in Ireland during the winter of 1796–1797 which would join forces with the United Irishmen and overthrow British rule in Ireland. The French anticipated that a successful invasion would not only be a major blow to British morale, prestige and military effectiveness but allow for Ireland to serve as a staging point for an eventual invasion of Britain. In late 1796, the French Directory gathered a force of between 12,000 and 25,000 French Revolutionary Army troops at Brest under General Lazare Hoche in readiness for a landing at Bantry Bay in December.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2113036, imported by tools/import/wikidata.mjs. The item's own description reads \"1796 expedition during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1796,
+    "end": 1796,
+    "date": "1796-12-15",
+    "endDate": "1796-12-30"
+  },
+  "place": "bantry-bay",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "johnson-county-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6268269",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Johnson County War",
+    "pt": "Guerra do Condado de Johnson"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6268269"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Johnson County War\", revision 1380752619"
+    }
+  ],
+  "title": "Johnson County War",
+  "summary": "The English Wikipedia article \"Johnson County War\", at revision 1380752619, opens: \"The Johnson County War, also known as the War on Powder River and the Wyoming Range War, was a range war in Northern Wyoming from 1889 to 1893. The conflict began when cattle companies started ruthlessly persecuting alleged rustlers, many of whom were settlers who competed with them for livestock, land and water rights. As violence swelled between the large established ranchers and the smaller settlers in the state, it culminated in the Powder River Country, when the ranchers hired gunmen to invade the county. The gunmen's initial incursion in the territory alerted the small farmers and ranchers, as well as the state lawmen, and they formed a posse of 200 men that led to a grueling standoff, ending when the United States Cavalry on the orders of President Benjamin Harrison relieved the two forces, although further fighting persisted.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6268269, imported by tools/import/wikidata.mjs. The item's own description reads \"1888-1893 range conflicts in Johnson, Wyoming\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1888,
+    "end": 1893
+  },
+  "place": "powder-river-country",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

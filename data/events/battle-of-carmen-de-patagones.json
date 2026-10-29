@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-carmen-de-patagones",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5722289",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Carmen de Patagones",
+    "pt": "Batalha de Carmen de Patagones"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5722289"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Carmen de Patagones\", revision 1377726571"
+    }
+  ],
+  "title": "Battle of Carmen de Patagones",
+  "summary": "The English Wikipedia article \"Battle of Carmen de Patagones\", at revision 1377726571, opens: \"The Battle of Carmen de Patagones was a confrontation that occurred on March 7, 1827 between militias of the United Provinces of the Río de la Plata and troops from the Imperial Brazilian Navy, during the course of the Cisplatine War. It took place around the town of Carmen de Patagones, in southern Buenos Aires Province, in today's Argentina.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5722289, imported by tools/import/wikidata.mjs. The item's own description reads \"1827 battle of the Cisplatine War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1827,
+    "end": 1827,
+    "date": "1827-03-07"
+  },
+  "place": "carmen-de-patagones",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "cisplatine-war"
+}

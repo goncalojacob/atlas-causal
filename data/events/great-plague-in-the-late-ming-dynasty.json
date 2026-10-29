@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "great-plague-in-the-late-ming-dynasty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q104892373",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Great Plague in the late Ming dynasty"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q104892373"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Plague in the late Ming dynasty\", revision 1380219266"
+    }
+  ],
+  "title": "Great Plague in the late Ming dynasty",
+  "summary": "The English Wikipedia article \"Great Plague in the late Ming dynasty\", at revision 1380219266, opens: \"The Great Plague in the late Ming dynasty, also known as the North China Plague in the late Ming dynasty, or the Great Plague of Jingshi, was a major epidemic between 1633 and 1644, the last phase of the Ming dynasty in China, during the Chongzhen Emperor's reign (1627–1644). The epidemic started in Shanxi in 1633 and reached Beijing in 1641, where the plague caused the deaths of more than 200,000 people in 1643, directly contributing to the collapse of the Ming dynasty in 1644.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q104892373, imported by tools/import/wikidata.mjs. The item's own description reads \"disease outbreak in China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1633,
+    "end": 1644
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "suvorov-s-swiss-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3558438",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Suvorov's Swiss campaign",
+    "pt": "Campanha suíça de Suvorov"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3558438"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Suvorov's Swiss campaign\", revision 1381459381"
+    }
+  ],
+  "title": "Suvorov's Swiss campaign",
+  "summary": "The English Wikipedia article \"Suvorov's Swiss campaign\", at revision 1381459381, opens: \"Suvorov's Swiss campaign took place on Swiss territory between September and October 1799 during the War of the Second Coalition. Russo-Austrian troops, who had already repeatedly defeated the French in Italy between April and August, crossed St. Gotthard under the command of Field Marshal Alexander Vasilyevich Suvorov-Rymniksky, with orders to march against General André Masséna to drive him out of the Helvetic Republic. The campaign was an instance of mountain warfare.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3558438, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 alexander Suvorov's campaign in Switzerland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-09-10",
+    "endDate": "1799-09-27"
+  },
+  "place": "alps",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

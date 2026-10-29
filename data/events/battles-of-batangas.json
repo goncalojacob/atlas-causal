@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battles-of-batangas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4873197",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battles of Batangas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4873197"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battles of Batangas\", revision 1380531577"
+    }
+  ],
+  "title": "Battles of Batangas",
+  "summary": "The English Wikipedia article \"Battles of Batangas\", at revision 1380531577, opens: \"The Battles of Batangas were fought on October 23, 1896, in the towns of Lemery, Bayungyungan, Calaca, and Taal in Batangas province, Philippines. The Katipunan army of Batangas, under General Miguel Malvar, was formed by the elite class in the province. They attempted to destroy Spanish installations in the towns, but failed after the Spanish garrison at Taal, having breaking off the siege earlier in the battle, came in the aid of the besieged towns. The rebels then abandoned their attack and retreated back to the hills, but they managed to save its northern neighbor, the province of Cavite, from recapture by the afterwards much weakened Spanish troops about few weeks later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4873197, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1896,
+    "date": "1896-10-23"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-revolution"
+}

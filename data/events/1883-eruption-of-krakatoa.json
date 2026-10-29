@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1883-eruption-of-krakatoa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q8094772",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1883 eruption of Krakatoa",
+    "pt": "Erupção do Krakatoa em 1883"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8094772"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1883 eruption of Krakatoa\", revision 1381107509"
+    }
+  ],
+  "title": "1883 eruption of Krakatoa",
+  "summary": "The English Wikipedia article \"1883 eruption of Krakatoa\", at revision 1381107509, opens: \"Between 19 May and 21 October 1883, the volcanic island of Krakatoa began erupting, lasting more than five months. On 27 August, the island had its most significant eruption, which destroyed over 70% of the island and its surrounding archipelago, the island collapsing into a caldera. The eruption of 27 August had an estimated volcanic explosivity index of 6, and is one of the deadliest and most destructive volcanic events in recorded history; the third explosion of that day, that occurred at 10:02 a.m., remains the loudest-known sound in history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q8094772, imported by tools/import/wikidata.mjs. The item's own description reads \"catastrophic volcanic eruption\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1883,
+    "end": 1883,
+    "date": "1883-05-20",
+    "endDate": "1883-10-21"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

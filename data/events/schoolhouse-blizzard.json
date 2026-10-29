@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "schoolhouse-blizzard",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q932149",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Schoolhouse Blizzard"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q932149"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Schoolhouse Blizzard\", revision 1356712285"
+    }
+  ],
+  "title": "Schoolhouse Blizzard",
+  "summary": "The English Wikipedia article \"Schoolhouse Blizzard\", at revision 1356712285, opens: \"The Schoolhouse Blizzard, also known as the Schoolchildren's Blizzard, School Children's Blizzard, or Children's Blizzard, hit the U.S. Great Plains on January 12, 1888. With an estimated 235 deaths, it is the world's 10th deadliest winter storm on record.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q932149, imported by tools/import/wikidata.mjs. The item's own description reads \"January 1888 blizzard in the USA\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1888,
+    "end": 1888,
+    "date": "1888-01-12"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

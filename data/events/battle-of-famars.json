@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-famars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q942257",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Famars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q942257"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Famars\", revision 1370110201"
+    }
+  ],
+  "title": "Battle of Famars",
+  "summary": "The English Wikipedia article \"Battle of Famars\", at revision 1370110201, opens: \"The Battle of Famars was fought on 23 May 1793 during the Flanders Campaign of the War of the First Coalition. An Allied Austrian, Hanoverian, and British army under Prince Josias of Saxe-Coburg-Saalfeld defeated the French Army of the North led by François Joseph Drouot de Lamarche. The battle occurred near the village of Famars in northern France, five km south of Valenciennes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q942257, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 battle during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-05-23"
+  },
+  "place": "famars",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}

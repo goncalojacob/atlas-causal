@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1858-treaty-of-amity-and-commerce-between-the-netherlands-and-japan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q11510437",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1858 Treaty of Amity and Commerce between the Netherlands and Japan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11510437"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1858 Treaty of Amity and Commerce between the Netherlands and Japan\", revision 1359883143"
+    }
+  ],
+  "title": "1858 Treaty of Amity and Commerce between the Netherlands and Japan",
+  "summary": "The English Wikipedia article \"1858 Treaty of Amity and Commerce between the Netherlands and Japan\", at revision 1359883143, opens: \"The Treaty of Amity and Commerce between Japan and the Netherlands was signed between the Netherlands and Tokugawa Shogunate in Edo on August 18, 1858. It opened several Japanese ports and cities for Dutch trade and confirmed extraterritoriality to Dutch nationals in Japan. It was one of the so-called Ansei Treaties.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11510437, imported by tools/import/wikidata.mjs. The item's own description reads \"one of the Ansei Treaties\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1858,
+    "date": "1858-08-18"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cabezon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q209721",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Cabezón"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q209721"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cabezón\", revision 1370435733"
+    }
+  ],
+  "title": "Battle of Cabezón",
+  "summary": "The English Wikipedia article \"Battle of Cabezón\", at revision 1370435733, opens: \"The Battle of Cabezón was an engagement early in the Peninsular War on 12 June 1808 between Spain's Army of Castile, under Cuesta, based at Valladolid, and detachments of Marshal Bessières' French Army Corps under generals General Lasalle and Merle. Lasalle occupied Valladolid without opposition that same evening.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q209721, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 battle in Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-06-12"
+  },
+  "place": "cabezon-de-pisuerga",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "1707-08-iceland-smallpox-epidemic",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q16427723",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1707–08 Iceland smallpox epidemic"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16427723"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1707–08 Iceland smallpox epidemic\", revision 1354765694"
+    }
+  ],
+  "title": "1707–08 Iceland smallpox epidemic",
+  "summary": "The English Wikipedia article \"1707–08 Iceland smallpox epidemic\", at revision 1354765694, opens: \"Iceland experienced one of its deadliest outbreaks of smallpox beginning in 1707. The epidemic, known in Iceland as Stórabóla, ultimately killed between 12,000 and 18,000 Icelanders, close to one-quarter of the island's population at the time.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16427723, imported by tools/import/wikidata.mjs. The item's own description reads \"disease outbreak in Iceland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1707,
+    "end": 1709
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
