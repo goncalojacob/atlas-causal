@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1860-boden-professor-of-sanskrit-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4936484",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "1860 Boden Professor of Sanskrit election"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4936484"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1860 Boden Professor of Sanskrit election\", revision 1357733353"
+    }
+  ],
+  "title": "1860 Boden Professor of Sanskrit election",
+  "summary": "The English Wikipedia article \"1860 Boden Professor of Sanskrit election\", at revision 1357733353, opens: \"The election in 1860 for the position of Boden Professor of Sanskrit at the University of Oxford was a competition between two candidates offering different approaches to Sanskrit scholarship. One was Monier Williams, an Oxford-educated Englishman who had spent 14 years teaching Sanskrit to those preparing to work in British India for the East India Company. The other, Max Müller, was a German-born lecturer at Oxford specialising in comparative philology, the science of language. He had spent many years working on an edition of the Rig Veda and had gained an international reputation for his scholarship. Williams, in contrast, worked on later material and had little time for the \"continental\" school of Sanskrit scholarship that Müller exemplified. Williams regarded the study of Sanskrit as a means to an end, namely the conversion of India to Christianity. In Müller's opinion, his own work, while it would assist missionaries, was also valuable as an end in itself.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4936484, imported by tools/import/wikidata.mjs. The item's own description reads \"professorial election at the University of Oxford\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1860,
+    "end": 1860
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "election",
+  "actors": []
+}

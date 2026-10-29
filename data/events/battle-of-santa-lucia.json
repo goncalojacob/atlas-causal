@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-santa-lucia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2219615",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Santa Lucia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2219615"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Santa Lucia\", revision 1382551498"
+    }
+  ],
+  "title": "Battle of Santa Lucia",
+  "summary": "The English Wikipedia article \"Battle of Santa Lucia\", at revision 1382551498, opens: \"The Battle of Santa Lucia, part of the First Italian War of Independence, was an engagement between Sardinian and Austrian forces in Verona, Italy. It was fought on 6 May 1848, when the King of Sardinia, Carlo Alberto, sent the I Corps of the Sardinian army to assault the fortified positions held before the walls of Verona by the Austrian army under field marshal Josef Radetzky. The Austrian army, though outnumbered, managed to withstand the attack and hold their positions. The battle is named after the Santa Lucia district of Verona. Franz Joseph assisted in the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2219615, imported by tools/import/wikidata.mjs. The item's own description reads \"1848 battle in the First Italian War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-05-06"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "first-italian-war-of-independence"
+}

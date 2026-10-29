@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-villalar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890338",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Villalar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890338"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Villalar\", revision 1370592522"
+    }
+  ],
+  "title": "Battle of Villalar",
+  "summary": "The English Wikipedia article \"Battle of Villalar\", at revision 1370592522, opens: \"The Battle of Villalar was a battle in the Revolt of the Comuneros fought on 23 April 1521 near the town of Villalar in Valladolid province, Spain. The royalist supporters of King Charles I won a crushing victory over the comuneros rebels. Three of the most important rebel leaders were captured, Juan de Padilla, Juan Bravo, and Francisco Maldonado. They were executed the next day, effectively ending armed resistance to Charles I.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890338, imported by tools/import/wikidata.mjs. The item's own description reads \"1521 battle during the Revolt of the Comuneros\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1521,
+    "end": 1521,
+    "date": "1521-04-23"
+  },
+  "place": "villalar-de-los-comuneros",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "revolt-of-the-comuneros"
+}
