@@ -4474,3 +4474,11 @@ Writer B imported it from the planner's queue as item `2026-10-28-asia-260`, ran
 ## Writer B, 2026-10-29: `bashkir-rebellion-of-1704-1711`, bare
 
 Writer B imported it from the planner's queue as item `2026-10-28-asia-270`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-29: `pomeranian-war`, filed under `seven-years-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-28-europe-564`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-29: `second-english-civil-war`, filed under `english-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-28-europe-563`, rank `list`. Its span and its subject put it inside the umbrella.

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "second-english-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3025332",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Second English Civil War",
+    "pt": "Segunda Guerra Civil Inglesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3025332"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second English Civil War\", revision 1381563477"
+    }
+  ],
+  "title": "Second English Civil War",
+  "summary": "The English Wikipedia article \"Second English Civil War\", at revision 1381563477, opens: \"The Second English Civil War took place between February and August 1648 in England and Wales. It forms part of the series of conflicts known collectively as the 1639–1653 Wars of the Three Kingdoms, which include the 1641–1653 Irish Confederate Wars, the 1639–1640 Bishops' Wars, and the 1649–1653 Cromwellian conquest of Ireland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3025332, imported by tools/import/wikidata.mjs. The item's own description reads \"Part of English Civil War (1648)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1648,
+    "end": 1648,
+    "date": "1648-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "english-civil-war"
+}

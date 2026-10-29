@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "second-carlist-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3025312",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Second Carlist War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3025312"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Carlist War\", revision 1370736885"
+    }
+  ],
+  "title": "Second Carlist War",
+  "summary": "The English Wikipedia article \"Second Carlist War\", at revision 1370736885, opens: \"The Second Carlist War, or the War of the Matiners, was a civil war in Spain. Some historians consider it a direct Catalan revolt against Madrid, fought primarily in Catalonia by the Carlists under General Ramón Cabrera against the forces of the government of Isabella II. The uprising began in September 1846 and continued until May 1849, spreading to Galicia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3025312, imported by tools/import/wikidata.mjs. The item's own description reads \"small revolt in Spain from 1846 to 1849\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1846,
+    "end": 1849
+  },
+  "place": "spain-q29",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "carlist-wars"
+}

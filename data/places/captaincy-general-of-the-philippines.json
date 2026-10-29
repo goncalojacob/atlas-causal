@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "captaincy-general-of-the-philippines",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2721139",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Captaincy General of the Philippines",
+    "pt": "Capitania-Geral das Filipinas"
+  },
+  "sources": [],
+  "names": [
+    "Captaincy General of the Philippines",
+    "Capitania-geral das Filipinas"
+  ],
+  "where": {
+    "lon": 121,
+    "lat": 14.583333,
+    "precision": "region",
+    "label": "Captaincy General of the Philippines"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
