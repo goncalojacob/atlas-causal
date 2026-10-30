@@ -83,6 +83,15 @@
         }
       ]
     },
+    "1678-kediri-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "1679-armenia-earthquake": {
       "from": "git",
       "versions": [
@@ -2313,6 +2322,15 @@
         }
       ]
     },
+    "battle-of-samothrace-1698": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-sarhu": {
       "from": "git",
       "versions": [
@@ -3157,6 +3175,15 @@
         }
       ]
     },
+    "battle-of-zernest": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-zhovti-vody": {
       "from": "git",
       "versions": [
@@ -3984,6 +4011,24 @@
         }
       ]
     },
+    "henry-morgan-s-panama-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "holmes-s-bonfire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "huguenot-rebellions": {
       "from": "git",
       "versions": [
@@ -4682,6 +4727,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "penal-laws-ireland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -5605,6 +5659,15 @@
         }
       ]
     },
+    "siege-of-derry": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "siege-of-dimdim": {
       "from": "git",
       "versions": [
@@ -5678,6 +5741,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "siege-of-ersekujvar-1685": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6008,6 +6080,15 @@
         }
       ]
     },
+    "siege-of-novi-zrin-1664": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "siege-of-nuremberg": {
       "from": "git",
       "versions": [
@@ -6159,6 +6240,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-santa-maura-1684": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

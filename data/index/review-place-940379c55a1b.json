@@ -2420,6 +2420,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "appin",
+      "kind": "place",
+      "names": [
+        "Appin"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "aquidneck-island",
@@ -4559,7 +4586,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 4,
+      "degree": 5,
       "id": "baltic-sea",
       "kind": "place",
       "names": [
@@ -7923,6 +7950,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "borushkivtsi",
+      "kind": "place",
+      "names": [
+        "Borushkivtsi"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "boshof",
@@ -10515,7 +10569,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "caribbean-sea",
       "kind": "place",
       "names": [
@@ -12511,6 +12565,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "cherbourg-octeville",
+      "kind": "place",
+      "names": [
+        "Cherbourg-Octeville"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "cherry-valley-new-york",
@@ -12905,7 +12986,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 3,
       "id": "cholet",
       "kind": "place",
       "names": [
@@ -13741,7 +13822,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 15,
+      "degree": 16,
       "id": "constantinople",
       "kind": "place",
       "names": [
@@ -15757,6 +15838,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "derry",
+      "kind": "place",
+      "names": [
+        "Derry"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "dervenakia",
@@ -17163,6 +17271,34 @@
       "names": [
         "East Africa",
         "África Oriental"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "east-java",
+      "kind": "place",
+      "names": [
+        "East Java",
+        "Java Oriental"
       ],
       "origin": {
         "tool": "wikidata"
@@ -18642,6 +18778,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "falkirk",
+      "kind": "place",
+      "names": [
+        "Falkirk"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 9,
       "id": "falkland-islands",
@@ -18810,7 +18973,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "fehmarn-belt",
       "kind": "place",
       "names": [
@@ -21858,7 +22021,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 3,
+      "degree": 4,
       "id": "gibraltar",
       "kind": "place",
       "names": [
@@ -23506,6 +23669,33 @@
       "names": [
         "Gulf of Oman",
         "Golfo de Omã"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "gulf-of-patras",
+      "kind": "place",
+      "names": [
+        "Gulf of Patras"
       ],
       "origin": {
         "tool": "wikidata"
@@ -25841,6 +26031,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "iceland-island",
+      "kind": "place",
+      "names": [
+        "Iceland",
+        "Islândia",
+        "Iceland (island)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "ichijodani-asakura-family-historic-ruins",
@@ -26974,7 +27193,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 7,
+      "degree": 8,
       "id": "istanbul",
       "kind": "place",
       "names": [
@@ -28504,7 +28723,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "k-ge-bay",
       "kind": "place",
       "names": [
@@ -29314,6 +29533,33 @@
       "names": [
         "Kassala",
         "Cassala"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "kassel",
+      "kind": "place",
+      "names": [
+        "Kassel"
       ],
       "origin": {
         "tool": "wikidata"
@@ -32387,6 +32633,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "lake-pontchartrain",
+      "kind": "place",
+      "names": [
+        "Lake Pontchartrain",
+        "Lago Pontchartrain"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 1,
       "id": "lake-tana",
@@ -33093,6 +33367,35 @@
       "kind": "place",
       "names": [
         "Lédignan"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "lefkada",
+      "kind": "place",
+      "names": [
+        "Lefkada",
+        "Levkas",
+        "Lêucade (ilha)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -42880,7 +43183,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 3,
+      "degree": 4,
       "id": "north-caucasus",
       "kind": "place",
       "names": [
@@ -45829,7 +46132,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 2,
+      "degree": 3,
       "id": "pennsylvania",
       "kind": "place",
       "names": [
@@ -46783,6 +47086,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "pizzighettone",
+      "kind": "place",
+      "names": [
+        "Pizzighettone"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "place-de-la-concorde",
@@ -47446,6 +47776,33 @@
       "kind": "place",
       "names": [
         "Ponza"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "porrentruy",
+      "kind": "place",
+      "names": [
+        "Porrentruy"
       ],
       "origin": {
         "tool": "wikidata"
@@ -49253,6 +49610,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "quievrain",
+      "kind": "place",
+      "names": [
+        "Quiévrain"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -49979,6 +50363,33 @@
       "names": [
         "Øresund",
         "Öresund"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "rheinberg",
+      "kind": "place",
+      "names": [
+        "Rheinberg"
       ],
       "origin": {
         "tool": "wikidata"
@@ -50948,6 +51359,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "rottofreno",
+      "kind": "place",
+      "names": [
+        "Rottofreno"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 2,
       "id": "rouen",
@@ -51833,7 +52271,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 3,
+      "degree": 4,
       "id": "saint-domingue-q861551",
       "kind": "place",
       "names": [
@@ -52532,6 +52970,34 @@
       "kind": "place",
       "names": [
         "Samos"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "samothrace",
+      "kind": "place",
+      "names": [
+        "Samothrace",
+        "Samotrácia"
       ],
       "origin": {
         "tool": "wikidata"
@@ -58336,6 +58802,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "syracuse-sicily",
+      "kind": "place",
+      "names": [
+        "Syracuse",
+        "Siracusa",
+        "Syracuse, Sicily"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -59447,6 +59942,33 @@
       "names": [
         "Terre Haute",
         "Terre Haute, Indiana"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "terschelling",
+      "kind": "place",
+      "names": [
+        "Terschelling"
       ],
       "origin": {
         "tool": "wikidata"
@@ -60956,7 +61478,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 3,
+      "degree": 4,
       "id": "torun",
       "kind": "place",
       "names": [
@@ -61177,6 +61699,33 @@
       "kind": "place",
       "names": [
         "Towton"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "traben-trarbach",
+      "kind": "place",
+      "names": [
+        "Traben-Trarbach"
       ],
       "origin": {
         "tool": "wikidata"
@@ -62397,7 +62946,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 63,
+      "degree": 65,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -64462,7 +65011,7 @@
         }
       ],
       "created": "2026-10-30",
-      "degree": 1,
+      "degree": 2,
       "id": "vyborg",
       "kind": "place",
       "names": [
@@ -66285,6 +66834,33 @@
       "kind": "place",
       "names": [
         "Xanten"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "xativa",
+      "kind": "place",
+      "names": [
+        "Xàtiva"
       ],
       "origin": {
         "tool": "wikidata"

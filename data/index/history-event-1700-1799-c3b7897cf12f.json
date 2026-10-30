@@ -137,6 +137,15 @@
         }
       ]
     },
+    "1766-istanbul-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "1770-1772-russian-plague": {
       "from": "git",
       "versions": [
@@ -688,6 +697,15 @@
         }
       ]
     },
+    "appin-murder": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "armada-of-1779": {
       "from": "git",
       "versions": [
@@ -712,6 +730,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "asylum-confinement-of-christopher-smart": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -1057,6 +1084,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-boruszkowce": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -1599,6 +1635,15 @@
         }
       ]
     },
+    "battle-of-falkirk-muir": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-fallen-timbers": {
       "from": "git",
       "versions": [
@@ -1614,6 +1659,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-fehmarn-1715": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -2259,6 +2313,15 @@
         }
       ]
     },
+    "battle-of-k-ge-bay-1710": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-kagul": {
       "from": "git",
       "versions": [
@@ -2457,6 +2520,15 @@
         }
       ]
     },
+    "battle-of-la-gudina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-la-tremblaye": {
       "from": "git",
       "versions": [
@@ -2472,6 +2544,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-lake-pontchartrain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -3071,6 +3152,15 @@
         }
       ]
     },
+    "battle-of-patras-1772": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-pell-s-point": {
       "from": "git",
       "versions": [
@@ -3285,6 +3375,15 @@
         }
       ]
     },
+    "battle-of-quievrain-1792": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-rac-awice": {
       "from": "git",
       "versions": [
@@ -3322,6 +3421,15 @@
       ]
     },
     "battle-of-reval": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "battle-of-rheinberg": {
       "from": "git",
       "versions": [
         {
@@ -3418,6 +3526,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-rottofreddo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -3809,6 +3926,15 @@
         }
       ]
     },
+    "battle-of-sto-owicze": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-stockach-1799": {
       "from": "git",
       "versions": [
@@ -3833,6 +3959,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-syracuse-1710": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -4196,6 +4331,15 @@
         }
       ]
     },
+    "battle-of-vyborg-bay-1790": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-wandiwash": {
       "from": "git",
       "versions": [
@@ -4433,6 +4577,15 @@
         }
       ]
     },
+    "bois-caiman": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "boston-campaign": {
       "from": "git",
       "versions": [
@@ -4667,6 +4820,15 @@
         }
       ]
     },
+    "capture-of-porrentruy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "capture-of-rio-hondo": {
       "from": "git",
       "versions": [
@@ -4811,6 +4973,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "cherbourg-raid": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -5025,6 +5196,15 @@
         }
       ]
     },
+    "death-of-james-cook": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "death-of-wolfgang-amadeus-mozart": {
       "from": "git",
       "versions": [
@@ -5200,6 +5380,15 @@
         }
       ]
     },
+    "federalist-era": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "fedon-s-rebellion": {
       "from": "git",
       "versions": [
@@ -5242,6 +5431,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "first-battle-of-cholet": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -5831,6 +6029,15 @@
         }
       ]
     },
+    "herat-campaign-of-1729": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "inconfidencia-mineira": {
       "from": "git",
       "versions": [
@@ -6287,6 +6494,15 @@
         }
       ]
     },
+    "mo-uhar-indin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "moscow-plague-riot-of-1771": {
       "from": "git",
       "versions": [
@@ -6311,6 +6527,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "nader-shah-s-dagestan-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6383,6 +6608,24 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "newburgh-conspiracy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "nootka-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6518,6 +6761,15 @@
         }
       ]
     },
+    "patrona-halil-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "peace-of-basel": {
       "from": "git",
       "versions": [
@@ -6569,6 +6821,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "pennsylvania-mutiny-of-1783": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6770,6 +7031,15 @@
         }
       ]
     },
+    "raid-on-nassau-1720": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "raid-on-rochefort": {
       "from": "git",
       "versions": [
@@ -6925,6 +7195,15 @@
       ]
     },
     "russian-occupations-of-beirut": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "russian-pillage-of-1719-1721": {
       "from": "git",
       "versions": [
         {
@@ -7373,6 +7652,15 @@
             "regionNote"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-cassel-1761": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -7889,6 +8177,15 @@
         }
       ]
     },
+    "siege-of-pizzighettone": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "siege-of-pondicherry-1748": {
       "from": "git",
       "versions": [
@@ -8081,12 +8378,30 @@
         }
       ]
     },
+    "siege-of-trarbach": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "siege-of-turin": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "siege-of-vepryk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -8109,6 +8424,15 @@
       ]
     },
     "siege-of-warsaw-1794": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "siege-of-xativa-1707": {
       "from": "git",
       "versions": [
         {
@@ -8195,6 +8519,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "spanish-invasion-of-portugal-1762": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -9012,6 +9345,15 @@
         }
       ]
     },
+    "treaty-of-nymphenburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "treaty-of-nystad": {
       "from": "git",
       "versions": [
@@ -9309,12 +9651,30 @@
         }
       ]
     },
+    "tumult-of-thorn-torun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "tuscarora-war": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "twelfth-siege-of-gibraltar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

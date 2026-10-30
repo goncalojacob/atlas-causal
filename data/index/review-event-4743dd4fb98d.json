@@ -805,6 +805,38 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "1678-kediri-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "trunajaya-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1678 Kediri campaign"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "disaster",
       "cites": [
         "wikidata",
@@ -1327,6 +1359,36 @@
       "revised": null,
       "status": "active",
       "title": "1760 raid on Berlin"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "1766-istanbul-earthquake",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1766 Istanbul earthquake"
     },
     {
       "authors": [
@@ -12573,6 +12635,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "death",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "appin-murder",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Appin Murder"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -13742,6 +13834,34 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Assault on Greifenhagen"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "asylum-confinement-of-christopher-smart",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Asylum confinement of Christopher Smart"
     },
     {
       "authors": [
@@ -22157,6 +22277,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Borodino"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-boruszkowce",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "polish-russian-war-of-1792",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Boruszkowce"
     },
     {
       "authors": [
@@ -31492,6 +31644,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-falkirk-muir",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "jacobite-risings",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Falkirk Muir"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "battle-of-fallen-timbers",
       "kind": "event",
@@ -31638,6 +31822,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Fehmarn (1644)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-fehmarn-1715",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "great-northern-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Fehmarn (1715)"
     },
     {
       "authors": [
@@ -40699,6 +40914,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-k-ge-bay-1710",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "great-northern-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Køge Bay (1710)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-k-z-l-tepe",
       "kind": "event",
@@ -43719,6 +43965,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-la-gudina",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-spanish-succession",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of La Gudiña"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-la-higueruela",
       "kind": "event",
@@ -44311,6 +44588,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Lake Maracaibo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-lake-pontchartrain",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Lake Pontchartrain"
     },
     {
       "authors": [
@@ -55183,6 +55490,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-patras-1772",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-turkish-war-1768-1774",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Patras (1772)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 2,
       "id": "battle-of-pavia",
@@ -58311,6 +58650,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-quievrain-1792",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-revolutionary-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Quiévrain (1792)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "battle-of-quilacura",
@@ -59128,6 +59499,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-rheinberg",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "seven-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Rheinberg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "battle-of-rheinfelden",
@@ -59722,6 +60125,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Rossbach"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-rottofreddo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Rottofreddo"
     },
     {
       "authors": [
@@ -60827,6 +61260,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Samos"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-samothrace-1698",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "morean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Samothrace (1698)"
     },
     {
       "authors": [
@@ -65488,6 +65953,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-sto-owicze",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Stołowicze"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-stockach-1799",
       "kind": "event",
@@ -66052,6 +66546,38 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Battle of Swally"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-syracuse-1710",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-spanish-succession",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Syracuse (1710)"
     },
     {
       "authors": [
@@ -74206,6 +74732,35 @@
         "wikipedia-en"
       ],
       "created": "2026-10-30",
+      "id": "battle-of-vyborg-bay-1790",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Vyborg Bay (1790)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
       "id": "battle-of-vysehrad",
       "kind": "event",
       "origin": {
@@ -76835,6 +77390,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-zernest",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "great-turkish-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Zernest"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-zhangjiawan",
       "kind": "event",
@@ -79087,6 +79673,36 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Bohemian Revolt"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "bois-caiman",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bois Caïman"
     },
     {
       "authors": [
@@ -83341,6 +83957,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "capture-of-porrentruy",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-first-coalition",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Porrentruy"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-02",
       "id": "capture-of-rio-hondo",
       "kind": "event",
@@ -84950,6 +85598,38 @@
       "revised": null,
       "status": "active",
       "title": "Chechen–Russian conflict"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "cherbourg-raid",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "seven-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Cherbourg raid"
     },
     {
       "authors": [
@@ -90663,6 +91343,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "death-of-james-cook",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Death of James Cook"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "death",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "death-of-wolfgang-amadeus-mozart",
       "kind": "event",
@@ -95470,6 +96179,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "federalist-era",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Federalist Era"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -96550,6 +97288,37 @@
       "revised": null,
       "status": "active",
       "title": "First Battle of Cape Finisterre (1747)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "first-battle-of-cholet",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-in-the-vendee",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Battle of Cholet"
     },
     {
       "authors": [
@@ -104962,6 +105731,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "henry-morgan-s-panama-expedition",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Henry Morgan's Panama expedition"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -104982,6 +105780,37 @@
       "revised": null,
       "status": "active",
       "title": "Hep-Hep riots"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "herat-campaign-of-1729",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "campaigns-of-nader-shah",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Herat campaign of 1729"
     },
     {
       "authors": [
@@ -105358,6 +106187,38 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Hitachi Maru Incident"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "holmes-s-bonfire",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-anglo-dutch-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Holmes's Bonfire"
     },
     {
       "authors": [
@@ -116732,6 +117593,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "disaster",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-10-30",
+      "id": "mo-uhar-indin",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Móðuharðindin"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -118196,6 +119086,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "nader-shah-s-dagestan-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "campaigns-of-nader-shah",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Nader Shah's Dagestan campaign"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-14",
       "id": "nader-shah-s-invasion-of-india",
       "kind": "event",
@@ -119447,6 +120368,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "newburgh-conspiracy",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Newburgh Conspiracy"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "founding",
       "cites": [
         "wikidata",
@@ -119744,6 +120695,35 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Noite Sangrenta"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "nootka-convention",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Nootka Convention"
     },
     {
       "authors": [
@@ -124013,6 +124993,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "revolution",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-10-30",
+      "id": "patrona-halil-revolt",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "tulip-period",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Patrona Halil revolt"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -124885,6 +125895,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "law",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "penal-laws-ireland",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Penal laws (Ireland)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -124940,6 +125979,35 @@
       "revised": null,
       "status": "active",
       "title": "Peninsular War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "pennsylvania-mutiny-of-1783",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Pennsylvania Mutiny of 1783"
     },
     {
       "authors": [
@@ -129459,6 +130527,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "raid-on-nassau-1720",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-quadruple-alliance",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Raid on Nassau (1720)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "raid-on-oyster-river",
       "kind": "event",
@@ -132507,6 +133606,37 @@
       "revised": null,
       "status": "active",
       "title": "Russian occupations of Beirut"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "russian-pillage-of-1719-1721",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "great-northern-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Russian Pillage of 1719–1721"
     },
     {
       "authors": [
@@ -140685,6 +141815,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "siege-of-cassel-1761",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "seven-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Cassel (1761)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "siege-of-castelnuovo",
       "kind": "event",
@@ -141535,6 +142697,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "siege-of-derry",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "williamite-war-in-ireland",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Derry"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "siege-of-detroit",
       "kind": "event",
@@ -142087,6 +143281,37 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Erivan (1636)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "siege-of-ersekujvar-1685",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "great-turkish-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Érsekújvár (1685)"
     },
     {
       "authors": [
@@ -147058,6 +148283,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "siege-of-novi-zrin-1664",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Novi Zrin (1664)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "siege-of-nuremberg",
@@ -147835,6 +149089,38 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Pirna"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "siege-of-pizzighettone",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-polish-succession",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Pizzighettone"
     },
     {
       "authors": [
@@ -148869,6 +150155,38 @@
       "revised": null,
       "status": "active",
       "title": "Siege of San Sebastián"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "siege-of-santa-maura-1684",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "morean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Santa Maura (1684)"
     },
     {
       "authors": [
@@ -150359,6 +151677,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "siege-of-trarbach",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Trarbach"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "siege-of-trebizond-1461",
       "kind": "event",
@@ -150835,6 +152183,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "siege-of-vepryk",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "great-northern-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Vepryk"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "siege-of-veracruz",
       "kind": "event",
@@ -151072,6 +152451,36 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Siege of Wolgast (1630)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "siege-of-xativa-1707",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Xàtiva (1707)"
     },
     {
       "authors": [
@@ -153898,6 +155307,37 @@
       "revised": null,
       "status": "active",
       "title": "Spanish Fury at Mechelen"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "spanish-invasion-of-portugal-1762",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "fantastic-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Spanish invasion of Portugal (1762)"
     },
     {
       "authors": [
@@ -165653,6 +167093,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "treaty-of-nymphenburg",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Nymphenburg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "treaty-of-nystad",
       "kind": "event",
@@ -170241,6 +171710,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "tumult-of-thorn-torun",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Tumult of Thorn (Toruń)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -170472,6 +171969,37 @@
       "revised": null,
       "status": "active",
       "title": "Tuscarora War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "twelfth-siege-of-gibraltar",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-spanish-succession",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Twelfth siege of Gibraltar"
     },
     {
       "authors": [
@@ -175752,6 +177280,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1678-kediri-campaign",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1679-armenia-earthquake",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -175855,6 +177389,12 @@
     },
     {
       "id": "1760-raid-on-berlin",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1766-istanbul-earthquake",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -177192,6 +178732,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "appin-murder",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "appomattox-campaign",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -177343,6 +178889,12 @@
     },
     {
       "id": "assault-on-greifenhagen",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "asylum-confinement-of-christopher-smart",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -178729,6 +180281,12 @@
     },
     {
       "id": "battle-of-borodino",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-boruszkowce",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -180360,6 +181918,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-falkirk-muir",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-fallen-timbers",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -180379,6 +181943,12 @@
     },
     {
       "id": "battle-of-fehmarn-1644",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-fehmarn-1715",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -181938,6 +183508,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-k-ge-bay-1710",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-k-z-l-tepe",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -182442,6 +184018,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-la-gudina",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-la-higueruela",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -182527,6 +184109,12 @@
     },
     {
       "id": "battle-of-lake-maracaibo",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-lake-pontchartrain",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -184362,6 +185950,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-patras-1772",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-pavon",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -184836,6 +186430,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-quievrain-1792",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-raab-1809",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -184956,6 +186556,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-rheinberg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-rhode-island",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -185035,6 +186641,12 @@
     },
     {
       "id": "battle-of-rossbach",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-rottofreddo",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -185221,6 +186833,12 @@
     },
     {
       "id": "battle-of-samos",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-samothrace-1698",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -186030,6 +187648,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-sto-owicze",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-stockach-1799",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -186127,6 +187751,12 @@
     },
     {
       "id": "battle-of-swally",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-syracuse-1710",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -187392,6 +189022,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-vyborg-bay-1790",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-vysehrad",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -187842,6 +189478,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-zernest",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-zhangjiawan",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -188185,6 +189827,12 @@
     },
     {
       "id": "bohemian-hungarian-war-1468-1478",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "bois-caiman",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -188808,6 +190456,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "capture-of-porrentruy",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "capture-of-rio-hondo",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -189055,6 +190709,12 @@
     },
     {
       "id": "chechen-russian-conflict",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "cherbourg-raid",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -189882,6 +191542,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "death-of-james-cook",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "death-of-wolfgang-amadeus-mozart",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -190530,6 +192196,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "federalist-era",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "federalist-revolution",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -190699,6 +192371,12 @@
     },
     {
       "id": "first-battle-of-cape-finisterre-1747",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "first-battle-of-cholet",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -191958,7 +193636,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "henry-morgan-s-panama-expedition",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "hep-hep-riots",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "herat-campaign-of-1729",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -192001,6 +193691,12 @@
     },
     {
       "id": "history-of-modern-greece",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "holmes-s-bonfire",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -193590,6 +195286,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "mo-uhar-indin",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "mo-uhar-indin",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "modern-greek-enlightenment",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -193771,6 +195479,12 @@
     },
     {
       "id": "mysorean-invasion-of-malabar",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "nader-shah-s-dagestan-campaign",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -193986,6 +195700,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "newburgh-conspiracy",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "newlands-resolution",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -194029,6 +195749,12 @@
     },
     {
       "id": "nishi-rosen-agreement",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "nootka-convention",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -194580,6 +196306,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "patrona-halil-revolt",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "patrona-halil-revolt",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "patuleia",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -194736,7 +196474,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "penal-laws-ireland",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "peninsula-campaign",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "pennsylvania-mutiny-of-1783",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -195468,6 +197218,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "raid-on-nassau-1720",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "raid-on-oyster-river",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -195925,6 +197681,12 @@
     },
     {
       "id": "russian-occupations-of-beirut",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "russian-pillage-of-1719-1721",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -197184,6 +198946,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-cassel-1761",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-castelnuovo",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -197322,6 +199090,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-derry",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-detroit",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -197422,6 +199196,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "siege-of-ersekujvar-1685",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "siege-of-eshowe",
@@ -198300,6 +200080,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-novi-zrin-1664",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-ochakov-1788",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -198409,6 +200195,12 @@
     },
     {
       "id": "siege-of-pirna",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-pizzighettone",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -198565,6 +200357,12 @@
     },
     {
       "id": "siege-of-san-sebastian",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-santa-maura-1684",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -198828,6 +200626,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-trarbach",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-trebizond-1461",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -198912,6 +200716,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-vepryk",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-veracruz",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -198955,6 +200765,12 @@
     },
     {
       "id": "siege-of-wolgast-1630",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-xativa-1707",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -199267,6 +201083,12 @@
     },
     {
       "id": "spanish-fury-at-mechelen",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "spanish-invasion-of-portugal-1762",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -201204,6 +203026,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-nymphenburg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-nystad",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -201972,6 +203800,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "tumult-of-thorn-torun",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "turco-egyptian-conquest-of-sudan-1820-1824",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -201991,6 +203825,12 @@
     },
     {
       "id": "tuscarora-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "twelfth-siege-of-gibraltar",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
