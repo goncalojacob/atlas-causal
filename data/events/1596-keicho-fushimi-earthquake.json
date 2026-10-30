@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1596-keicho-fushimi-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q11495186",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1596 Keichō–Fushimi earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11495186"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1596 Keichō–Fushimi earthquake\", revision 1366267720"
+    }
+  ],
+  "title": "1596 Keichō–Fushimi earthquake",
+  "summary": "The English Wikipedia article \"1596 Keichō–Fushimi earthquake\", at revision 1366267720, opens: \"The Keichō–Fushimi earthquake  struck Japan on September 5, 1596. The earthquake measuring 7.5 ± 0.25 MJMA produced intense shaking across the Kansai region. Devastation was recorded in Kyoto and over 1,200 people perished.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11495186, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake in Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1596,
+    "end": 1596,
+    "date": "1596-09-05"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

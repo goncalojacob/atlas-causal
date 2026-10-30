@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-block-island",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q731564",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Block Island"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q731564"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Block Island\", revision 1375214412"
+    }
+  ],
+  "title": "Battle of Block Island",
+  "summary": "The English Wikipedia article \"Battle of Block Island\", at revision 1375214412, opens: \"The Battle of Block Island was a naval skirmish which took place in the waters off Rhode Island during the American Revolutionary War. A Continental Navy squadron under the command of Commodore Esek Hopkins was returning from a successful raid on Nassau when it encountered HMS Glasgow, post ship of the Royal Navy under Captain Tyringham Howe.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q731564, imported by tools/import/wikidata.mjs. The item's own description reads \"1776 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1776,
+    "end": 1776,
+    "date": "1776-04-06"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

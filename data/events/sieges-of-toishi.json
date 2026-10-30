@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sieges-of-toishi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2218872",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Sieges of Toishi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2218872"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sieges of Toishi\", revision 1380843892"
+    }
+  ],
+  "title": "Sieges of Toishi",
+  "summary": "The English Wikipedia article \"Sieges of Toishi\", at revision 1380843892, opens: \"The sieges of Toishi castle  took place during Takeda Shingen's campaign to take over Shinano Province. His army, led by Sanada Yukitaka, began besieging the castle in 1550. The defending lord, Murakami Yoshikiyo, held out until the following year, but his garrison suffered over 1,000 casualties, and was ultimately forced to surrender.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2218872, imported by tools/import/wikidata.mjs. The item's own description reads \"1550 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1550,
+    "end": 1551,
+    "date": "1550-10-18",
+    "endDate": "1551-06-29"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

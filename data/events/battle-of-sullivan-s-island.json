@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-sullivan-s-island",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4071933",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Sullivan's Island"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4071933"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sullivan's Island\", revision 1381639816"
+    }
+  ],
+  "title": "Battle of Sullivan's Island",
+  "summary": "The English Wikipedia article \"Battle of Sullivan's Island\", at revision 1381639816, opens: \"The Battle of Sullivan's Island was fought on June 28, 1776, at Sullivan's Island, South Carolina during the Southern theater of the American Revolutionary War. Taking place near Charles Town, it was fought as part of the first British attempt to capture the city from American forces during the war. The battle is also sometimes referred to as the first siege of Charleston due to a more successful second British siege of the city in 1780.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4071933, imported by tools/import/wikidata.mjs. The item's own description reads \"1776 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1776,
+    "end": 1776,
+    "date": "1776-06-28"
+  },
+  "place": "sullivan-s-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}
