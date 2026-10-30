@@ -1972,6 +1972,15 @@
         }
       ]
     },
+    "battle-of-gloucester-1775": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-gonaives": {
       "from": "git",
       "versions": [
@@ -4400,6 +4409,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-valkininkai-1700": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -7612,6 +7630,15 @@
         }
       ]
     },
+    "second-siege-of-ochakov": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "second-silesian-war": {
       "from": "git",
       "versions": [
@@ -7817,6 +7844,15 @@
         }
       ]
     },
+    "siege-of-butrint-1798": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "siege-of-cassel-1761": {
       "from": "git",
       "versions": [
@@ -7922,6 +7958,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "siege-of-fort-pitt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -8282,6 +8327,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "siege-of-ochakov-1737": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

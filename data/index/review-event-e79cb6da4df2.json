@@ -16872,6 +16872,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-4-may",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "brazilian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of 4 May"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "battle-of-aba",
       "kind": "event",
@@ -24330,6 +24362,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-butte-aux-cailles",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "semaine-sanglante",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Butte-aux-Cailles"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "battle-of-buxar",
       "kind": "event",
@@ -24630,6 +24693,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Cacabelos"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-cachoeira",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "brazilian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cachoeira"
     },
     {
       "authors": [
@@ -36694,6 +36789,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-gloucester-1775",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "boston-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Gloucester (1775)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-01",
       "id": "battle-of-goa-1638",
       "kind": "event",
@@ -41126,6 +41253,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Italeni"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-itaparica",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "brazilian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Itaparica"
     },
     {
       "authors": [
@@ -57522,6 +57681,37 @@
         "wikipedia-en"
       ],
       "created": "2026-10-30",
+      "id": "battle-of-patras-1466",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-venetian-war-1463-1479",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Patras (1466)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
       "id": "battle-of-patras-1772",
       "kind": "event",
       "origin": {
@@ -58468,6 +58658,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-piraja",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "brazilian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Pirajá"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-pirano",
       "kind": "event",
@@ -58925,6 +59147,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Poltava"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-ponche-verde",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ragamuffin-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ponche Verde"
     },
     {
       "authors": [
@@ -68780,6 +69033,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-sultanabad",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-persian-war-1804-1813",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Sultanabad"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-suvodol",
       "kind": "event",
@@ -75897,6 +76182,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Valenciennes (1656)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-valkininkai-1700",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "lithuanian-civil-war-1697-1702",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Valkininkai (1700)"
     },
     {
       "authors": [
@@ -90416,6 +90733,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "conquest-of-kalmar",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "swedish-war-of-liberation",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Conquest of Kalmar"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-01",
       "id": "conquest-of-koneswaram-temple",
       "kind": "event",
@@ -90688,6 +91036,37 @@
       "revised": null,
       "status": "active",
       "title": "Conquest of Tunis (1574)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "conquest-of-uppsala",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "swedish-war-of-liberation",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Conquest of Uppsala"
     },
     {
       "authors": [
@@ -103051,6 +103430,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-10-30",
+      "id": "fourth-battle-of-kawanakajima",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "battles-of-kawanakajima",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Fourth Battle of Kawanakajima"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -114474,6 +114884,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "karyagin-s-raid",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-persian-war-1804-1813",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Karyagin's Raid"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -124729,6 +125170,36 @@
       "revised": null,
       "status": "active",
       "title": "Nullification crisis"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "nydala-abbey-bloodbath",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "swedish-war-of-liberation",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Nydala Abbey Bloodbath"
     },
     {
       "authors": [
@@ -142398,6 +142869,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "second-siege-of-ochakov",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-turkish-war-1735-1739",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second siege of Ochakov"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "second-silesian-war",
       "kind": "event",
@@ -145330,6 +145832,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "siege-of-brescia-1438-1440",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "wars-in-lombardy",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "span-from-title",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Brescia (1438–1440)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "siege-of-brieg",
@@ -145540,6 +146074,69 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Busanjin"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "siege-of-butrint-1798",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mediterranean-campaign-of-1798",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Butrint (1798)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "siege-of-cacapava",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ragamuffin-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Caçapava"
     },
     {
       "authors": [
@@ -147661,6 +148258,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "siege-of-fort-pitt",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "pontiac-s-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Fort Pitt"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "siege-of-fort-st-jean",
       "kind": "event",
@@ -148057,6 +148685,37 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Ganja (1734–1735)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "siege-of-ganja-1804",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-persian-war-1804-1813",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Ganja (1804)"
     },
     {
       "authors": [
@@ -150533,6 +151192,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "siege-of-luxembourg-1684",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-reunions",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Luxembourg (1684)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "siege-of-luxembourg-1794-1795",
       "kind": "event",
@@ -151826,6 +152516,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "siege-of-montevideo-1823",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "brazilian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Montevideo (1823)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "siege-of-mosul-1743",
       "kind": "event",
@@ -152377,6 +153098,37 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Nuremberg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "siege-of-ochakov-1737",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-turkish-war-1735-1739",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Ochakov (1737)"
     },
     {
       "authors": [
@@ -154152,6 +154904,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "siege-of-salvador-1822-1823",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "brazilian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Salvador (1822–1823)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "siege-of-samarkand-1497",
       "kind": "event",
@@ -155784,6 +156568,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "siege-of-tre-kronor",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dano-swedish-war-1501-1512",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Tre Kronor"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "siege-of-trebizond-1461",
       "kind": "event",
@@ -156196,6 +157011,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "siege-of-varna-1828",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-turkish-war-1828-1829",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Varna (1828)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "siege-of-varnakova",
       "kind": "event",
@@ -156374,6 +157221,37 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Vicksburg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "siege-of-vienna-1485",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "austrian-hungarian-war-1477-1488",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Vienna (1485)"
     },
     {
       "authors": [
@@ -160538,6 +161416,37 @@
       "revised": null,
       "status": "active",
       "title": "Sultanate of Women"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-10-30",
+      "id": "summer-siege-of-osaka",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "siege-of-osaka",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Summer Siege of Osaka"
     },
     {
       "authors": [
@@ -183695,6 +184604,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-4-may",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-aba",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -184925,6 +185840,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-butte-aux-cailles",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-buxar",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -184980,6 +185901,12 @@
     },
     {
       "id": "battle-of-cacabelos",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-cachoeira",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -187097,6 +188024,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-gloucester-1775",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-goa-1638",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -187836,6 +188769,12 @@
     },
     {
       "id": "battle-of-italeni",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-itaparica",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -190607,6 +191546,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-patras-1466",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-patras-1772",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -190757,6 +191702,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-piraja",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-pirano",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -190836,6 +191787,12 @@
     },
     {
       "id": "battle-of-poltava",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-ponche-verde",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -192449,6 +193406,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-sultanabad",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-suvodol",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -193536,6 +194499,12 @@
     },
     {
       "id": "battle-of-valenciennes-1656",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-valkininkai-1700",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -195851,6 +196820,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "conquest-of-kalmar",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "conquest-of-koneswaram-temple",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -195870,6 +196845,12 @@
     },
     {
       "id": "conquest-of-the-khanate-of-sibir",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "conquest-of-uppsala",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -197621,6 +198602,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "fourth-battle-of-kawanakajima",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "fourth-battle-of-kawanakajima",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "fourth-treaty-of-prairie-du-chien",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -199253,6 +200246,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "karyagin-s-raid",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "kasos-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -200784,6 +201783,12 @@
     },
     {
       "id": "nullification-crisis",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "nydala-abbey-bloodbath",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -203411,6 +204416,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "second-siege-of-ochakov",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "second-silesian-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -203921,6 +204932,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-brescia-1438-1440",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-brno",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -203946,6 +204963,18 @@
     },
     {
       "id": "siege-of-busanjin",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-butrint-1798",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-cacapava",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -204305,6 +205334,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-fort-pitt",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-fort-st-jean",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -204372,6 +205407,12 @@
     },
     {
       "id": "siege-of-ganja-1734-1735",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-ganja-1804",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -204845,6 +205886,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-luxembourg-1684",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-luxembourg-1794-1795",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -205067,6 +206114,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-montevideo-1823",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-mosul-1743",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -205140,6 +206193,12 @@
     },
     {
       "id": "siege-of-novi-zrin-1664",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-ochakov-1737",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -205404,6 +206463,12 @@
     },
     {
       "id": "siege-of-salses",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-salvador-1822-1823",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -205697,6 +206762,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-tre-kronor",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-trebizond-1461",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -205769,6 +206840,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-varna-1828",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-varnakova",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -205800,6 +206877,12 @@
     },
     {
       "id": "siege-of-vicksburg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-vienna-1485",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -206343,6 +207426,18 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "summer-siege-of-osaka",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "summer-siege-of-osaka",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "surprise-of-meaux",

@@ -668,6 +668,15 @@
         }
       ]
     },
+    "battle-of-patras-1466": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-polog": {
       "from": "git",
       "versions": [
@@ -1688,6 +1697,15 @@
         }
       ]
     },
+    "siege-of-brescia-1438-1440": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "siege-of-ceuta-1419": {
       "from": "git",
       "versions": [
@@ -1874,6 +1892,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "siege-of-vienna-1485": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

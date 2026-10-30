@@ -4994,6 +4994,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-4-may",
+      "kind": "event",
+      "locator": "Q2890728"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-aba",
       "kind": "event",
       "locator": "Q18161416"
@@ -6410,6 +6416,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-butte-aux-cailles",
+      "kind": "event",
+      "locator": "Q2890502"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-buxar",
       "kind": "event",
       "locator": "Q2355467"
@@ -6467,6 +6479,12 @@
       "id": "battle-of-cacabelos",
       "kind": "event",
       "locator": "Q15303740"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cachoeira",
+      "kind": "event",
+      "locator": "Q111918023"
     },
     {
       "dissent": false,
@@ -8768,6 +8786,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gloucester-1775",
+      "kind": "event",
+      "locator": "Q32198"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-goa-1638",
       "kind": "event",
       "locator": "Q4871118"
@@ -9605,6 +9629,12 @@
       "id": "battle-of-italeni",
       "kind": "event",
       "locator": "Q4871292"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-itaparica",
+      "kind": "event",
+      "locator": "Q4871291"
     },
     {
       "dissent": false,
@@ -12716,6 +12746,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-patras-1466",
+      "kind": "event",
+      "locator": "Q119167274"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-patras-1772",
       "kind": "event",
       "locator": "Q2040773"
@@ -12896,6 +12932,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-piraja",
+      "kind": "event",
+      "locator": "Q29607"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-pirano",
       "kind": "event",
       "locator": "Q4872056"
@@ -12983,6 +13025,12 @@
       "id": "battle-of-poltava",
       "kind": "event",
       "locator": "Q152486"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ponche-verde",
+      "kind": "event",
+      "locator": "Q106542714"
     },
     {
       "dissent": false,
@@ -14858,6 +14906,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sultanabad",
+      "kind": "event",
+      "locator": "Q4087466"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-suvodol",
       "kind": "event",
       "locator": "Q24913277"
@@ -16193,6 +16247,12 @@
       "id": "battle-of-valenciennes-1656",
       "kind": "event",
       "locator": "Q716922"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-valkininkai-1700",
+      "kind": "event",
+      "locator": "Q4871943"
     },
     {
       "dissent": false,
@@ -18962,6 +19022,12 @@
     },
     {
       "dissent": false,
+      "id": "conquest-of-kalmar",
+      "kind": "event",
+      "locator": "Q5162440"
+    },
+    {
+      "dissent": false,
       "id": "conquest-of-koneswaram-temple",
       "kind": "event",
       "locator": "Q125166578"
@@ -19013,6 +19079,12 @@
       "id": "conquest-of-tunis-1574",
       "kind": "event",
       "locator": "Q2664371"
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-uppsala",
+      "kind": "event",
+      "locator": "Q5162452"
     },
     {
       "dissent": false,
@@ -21308,6 +21380,12 @@
     },
     {
       "dissent": false,
+      "id": "fourth-battle-of-kawanakajima",
+      "kind": "event",
+      "locator": "Q99526592"
+    },
+    {
+      "dissent": false,
       "id": "fourth-geneva-convention",
       "kind": "event",
       "locator": "Q973748"
@@ -23516,6 +23594,12 @@
     },
     {
       "dissent": false,
+      "id": "karyagin-s-raid",
+      "kind": "event",
+      "locator": "Q18408391"
+    },
+    {
+      "dissent": false,
       "id": "kashmir-conflict",
       "kind": "event",
       "locator": "Q1413732"
@@ -25475,6 +25559,12 @@
       "id": "nullification-crisis",
       "kind": "event",
       "locator": "Q472699"
+    },
+    {
+      "dissent": false,
+      "id": "nydala-abbey-bloodbath",
+      "kind": "event",
+      "locator": "Q10431431"
     },
     {
       "dissent": false,
@@ -28862,6 +28952,12 @@
     },
     {
       "dissent": false,
+      "id": "second-siege-of-ochakov",
+      "kind": "event",
+      "locator": "Q141284666"
+    },
+    {
+      "dissent": false,
       "id": "second-silesian-war",
       "kind": "event",
       "locator": "Q233702"
@@ -29438,6 +29534,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-brescia-1438-1440",
+      "kind": "event",
+      "locator": "Q131208973"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-brieg",
       "kind": "event",
       "locator": "Q139565414"
@@ -29477,6 +29579,18 @@
       "id": "siege-of-busanjin",
       "kind": "event",
       "locator": "Q497046"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-butrint-1798",
+      "kind": "event",
+      "locator": "Q131008303"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-cacapava",
+      "kind": "event",
+      "locator": "Q140365627"
     },
     {
       "dissent": false,
@@ -29882,6 +29996,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-fort-pitt",
+      "kind": "event",
+      "locator": "Q977428"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-fort-st-jean",
       "kind": "event",
       "locator": "Q1779428"
@@ -29957,6 +30077,12 @@
       "id": "siege-of-ganja-1734-1735",
       "kind": "event",
       "locator": "Q18162521"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-ganja-1804",
+      "kind": "event",
+      "locator": "Q3687987"
     },
     {
       "dissent": false,
@@ -30434,6 +30560,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-luxembourg-1684",
+      "kind": "event",
+      "locator": "Q815171"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-luxembourg-1794-1795",
       "kind": "event",
       "locator": "Q904495"
@@ -30680,6 +30812,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-montevideo-1823",
+      "kind": "event",
+      "locator": "Q4337408"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-mosul-1743",
       "kind": "event",
       "locator": "Q22947760"
@@ -30785,6 +30923,12 @@
       "id": "siege-of-nuremberg",
       "kind": "event",
       "locator": "Q7510280"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-ochakov-1737",
+      "kind": "event",
+      "locator": "Q4337426"
     },
     {
       "dissent": false,
@@ -31124,6 +31268,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-salvador-1822-1823",
+      "kind": "event",
+      "locator": "Q24728"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-samarkand-1497",
       "kind": "event",
       "locator": "Q7510367"
@@ -31436,6 +31586,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-tre-kronor",
+      "kind": "event",
+      "locator": "Q126454193"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-trebizond-1461",
       "kind": "event",
       "locator": "Q9366875"
@@ -31514,6 +31670,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-varna-1828",
+      "kind": "event",
+      "locator": "Q2073130"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-varnakova",
       "kind": "event",
       "locator": "Q16329359"
@@ -31547,6 +31709,12 @@
       "id": "siege-of-vicksburg",
       "kind": "event",
       "locator": "Q1066253"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-vienna-1485",
+      "kind": "event",
+      "locator": "Q7510505"
     },
     {
       "dissent": false,
@@ -32333,6 +32501,12 @@
       "id": "sultanate-of-women",
       "kind": "event",
       "locator": "Q1543663"
+    },
+    {
+      "dissent": false,
+      "id": "summer-siege-of-osaka",
+      "kind": "event",
+      "locator": "Q70713505"
     },
     {
       "dissent": false,

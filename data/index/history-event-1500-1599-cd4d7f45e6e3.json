@@ -3224,6 +3224,15 @@
         }
       ]
     },
+    "conquest-of-kalmar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "conquest-of-the-khanate-of-sibir": {
       "from": "git",
       "versions": [
@@ -3266,6 +3275,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "conquest-of-uppsala": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -3581,6 +3599,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "fourth-battle-of-kawanakajima": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -4342,6 +4369,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "nydala-abbey-bloodbath": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6024,6 +6060,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-tre-kronor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

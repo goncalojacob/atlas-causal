@@ -8636,7 +8636,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 9,
+      "degree": 10,
       "id": "brazil-q155",
       "kind": "place",
       "names": [
@@ -8773,7 +8773,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 3,
       "id": "brescia",
       "kind": "place",
       "names": [
@@ -9500,7 +9500,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 14,
+      "degree": 15,
       "id": "bulgaria-q219",
       "kind": "place",
       "names": [
@@ -9645,6 +9645,33 @@
       "names": [
         "Butre",
         "Butre, Ghana"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "butrint",
+      "kind": "place",
+      "names": [
+        "Butrint"
       ],
       "origin": {
         "tool": "wikidata"
@@ -22031,7 +22058,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 3,
       "id": "ganja-azerbaijan",
       "kind": "place",
       "names": [
@@ -28161,6 +28188,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "itaparica-island",
+      "kind": "place",
+      "names": [
+        "Itaparica Island",
+        "Ilha de Itaparica"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "itsukushima",
@@ -28718,7 +28773,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 90,
+      "degree": 91,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -38253,7 +38308,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "massachusetts",
       "kind": "place",
       "names": [
@@ -40998,7 +41053,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 3,
       "id": "montevideo",
       "kind": "place",
       "names": [
@@ -45327,6 +45382,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "old-battlefield-of-kawanakajima",
+      "kind": "place",
+      "names": [
+        "Old Battlefield of Kawanakajima"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "old-fort-erie",
@@ -46802,7 +46884,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 33,
+      "degree": 34,
       "id": "paris",
       "kind": "place",
       "names": [
@@ -47097,7 +47179,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "patras",
       "kind": "place",
       "names": [
@@ -48244,7 +48326,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "pittsburgh",
       "kind": "place",
       "names": [
@@ -54128,7 +54210,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 8,
+      "degree": 11,
       "id": "salvador",
       "kind": "place",
       "names": [
@@ -57584,6 +57666,33 @@
       "kind": "place",
       "names": [
         "Solferino"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "soltanabad-saatly",
+      "kind": "place",
+      "names": [
+        "Soltanabad, Saatly"
       ],
       "origin": {
         "tool": "wikidata"
@@ -64494,7 +64603,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "uppsala",
       "kind": "place",
       "names": [
@@ -65078,6 +65187,33 @@
       "kind": "place",
       "names": [
         "Valenciennes"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "valkininkai",
+      "kind": "place",
+      "names": [
+        "Valkininkai"
       ],
       "origin": {
         "tool": "wikidata"
@@ -65821,7 +65957,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 10,
+      "degree": 11,
       "id": "vienna",
       "kind": "place",
       "names": [

@@ -5981,6 +5981,15 @@
         }
       ]
     },
+    "siege-of-luxembourg-1684": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "siege-of-lyakhavichy": {
       "from": "git",
       "versions": [
@@ -6471,6 +6480,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "summer-siege-of-osaka": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

@@ -13286,6 +13286,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-4-may",
+      "kind": "event",
+      "locator": "\"Battle of 4 May\", revision 1375628137"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-aba",
       "kind": "event",
       "locator": "\"Battle of Aba\", revision 1370105802"
@@ -14702,6 +14708,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-butte-aux-cailles",
+      "kind": "event",
+      "locator": "\"Battle of Butte-aux-Cailles\", revision 1370108314"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-buxar",
       "kind": "event",
       "locator": "\"Battle of Buxar\", revision 1381670071"
@@ -14759,6 +14771,12 @@
       "id": "battle-of-cacabelos",
       "kind": "event",
       "locator": "\"Battle of Cacabelos\", revision 1370435746"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cachoeira",
+      "kind": "event",
+      "locator": "\"Battle of Cachoeira\", revision 1379975975"
     },
     {
       "dissent": false,
@@ -17048,6 +17066,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gloucester-1775",
+      "kind": "event",
+      "locator": "\"Battle of Gloucester (1775)\", revision 1380819915"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-goa-1638",
       "kind": "event",
       "locator": "\"Battle of Goa (1638)\", revision 1370441745"
@@ -17879,6 +17903,12 @@
       "id": "battle-of-italeni",
       "kind": "event",
       "locator": "\"Battle of Italeni\", revision 1370266163"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-itaparica",
+      "kind": "event",
+      "locator": "\"Battle of Itaparica\", revision 1370443913"
     },
     {
       "dissent": false,
@@ -20960,6 +20990,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-patras-1466",
+      "kind": "event",
+      "locator": "\"Battle of Patras (1466)\", revision 1370452930"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-patras-1772",
       "kind": "event",
       "locator": "\"Battle of Patras (1772)\", revision 1370452934"
@@ -21140,6 +21176,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-piraja",
+      "kind": "event",
+      "locator": "\"Battle of Pirajá\", revision 1375628078"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-pirano",
       "kind": "event",
       "locator": "\"Battle of Pirano\", revision 1370586162"
@@ -21227,6 +21269,12 @@
       "id": "battle-of-poltava",
       "kind": "event",
       "locator": "\"Battle of Poltava\", revision 1377945403"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ponche-verde",
+      "kind": "event",
+      "locator": "\"Battle of Ponche Verde\", revision 1370586379"
     },
     {
       "dissent": false,
@@ -23114,6 +23162,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sultanabad",
+      "kind": "event",
+      "locator": "\"Battle of Sultanabad\", revision 1370590103"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-suvodol",
       "kind": "event",
       "locator": "\"Battle of Suvodol\", revision 1370590195"
@@ -24461,6 +24515,12 @@
       "id": "battle-of-valenciennes-1656",
       "kind": "event",
       "locator": "\"Battle of Valenciennes (1656)\", revision 1372289367"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-valkininkai-1700",
+      "kind": "event",
+      "locator": "\"Battle of Valkininkai (1700)\", revision 1370276178"
     },
     {
       "dissent": false,
@@ -27212,6 +27272,12 @@
     },
     {
       "dissent": false,
+      "id": "conquest-of-kalmar",
+      "kind": "event",
+      "locator": "\"Conquest of Kalmar\", revision 1373365933"
+    },
+    {
+      "dissent": false,
       "id": "conquest-of-koneswaram-temple",
       "kind": "event",
       "locator": "\"Conquest of Koneswaram Temple\", revision 1373846628"
@@ -27263,6 +27329,12 @@
       "id": "conquest-of-tunis-1574",
       "kind": "event",
       "locator": "\"Conquest of Tunis (1574)\", revision 1370612776"
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-uppsala",
+      "kind": "event",
+      "locator": "\"Conquest of Uppsala\", revision 1370612778"
     },
     {
       "dissent": false,
@@ -31700,6 +31772,12 @@
     },
     {
       "dissent": false,
+      "id": "karyagin-s-raid",
+      "kind": "event",
+      "locator": "\"Karyagin's Raid\", revision 1380299674"
+    },
+    {
+      "dissent": false,
       "id": "kashmir-conflict",
       "kind": "event",
       "locator": "\"Kashmir conflict\", revision 1374133428"
@@ -33587,6 +33665,12 @@
       "id": "nullification-crisis",
       "kind": "event",
       "locator": "\"Nullification crisis\", revision 1373910296"
+    },
+    {
+      "dissent": false,
+      "id": "nydala-abbey-bloodbath",
+      "kind": "event",
+      "locator": "\"Nydala Abbey Bloodbath\", revision 1366197892"
     },
     {
       "dissent": false,
@@ -36938,6 +37022,12 @@
     },
     {
       "dissent": false,
+      "id": "second-siege-of-ochakov",
+      "kind": "event",
+      "locator": "\"Second siege of Ochakov\", revision 1375838855"
+    },
+    {
+      "dissent": false,
       "id": "second-silesian-war",
       "kind": "event",
       "locator": "\"Second Silesian War\", revision 1370737357"
@@ -37472,6 +37562,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-brescia-1438-1440",
+      "kind": "event",
+      "locator": "\"Siege of Brescia (1438–1440)\", revision 1366191374"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-brieg",
       "kind": "event",
       "locator": "\"Siege of Brieg\", revision 1372060259"
@@ -37511,6 +37607,18 @@
       "id": "siege-of-busanjin",
       "kind": "event",
       "locator": "\"Siege of Busanjin\", revision 1376909397"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-butrint-1798",
+      "kind": "event",
+      "locator": "\"Siege of Butrint (1798)\", revision 1378568296"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-cacapava",
+      "kind": "event",
+      "locator": "\"Siege of Caçapava\", revision 1375838979"
     },
     {
       "dissent": false,
@@ -37910,6 +38018,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-fort-pitt",
+      "kind": "event",
+      "locator": "\"Siege of Fort Pitt\", revision 1370741232"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-fort-st-jean",
       "kind": "event",
       "locator": "\"Siege of Fort St. Jean\", revision 1379967771"
@@ -37985,6 +38099,12 @@
       "id": "siege-of-ganja-1734-1735",
       "kind": "event",
       "locator": "\"Siege of Ganja (1734–1735)\", revision 1381577998"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-ganja-1804",
+      "kind": "event",
+      "locator": "\"Siege of Ganja (1804)\", revision 1370741420"
     },
     {
       "dissent": false,
@@ -38450,6 +38570,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-luxembourg-1684",
+      "kind": "event",
+      "locator": "\"Siege of Luxembourg (1684)\", revision 1370743057"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-luxembourg-1794-1795",
       "kind": "event",
       "locator": "\"Siege of Luxembourg (1794–1795)\", revision 1370743061"
@@ -38696,6 +38822,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-montevideo-1823",
+      "kind": "event",
+      "locator": "\"Siege of Montevideo (1823)\", revision 1375627950"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-mosul-1743",
       "kind": "event",
       "locator": "\"Siege of Mosul (1743)\", revision 1381020942"
@@ -38801,6 +38933,12 @@
       "id": "siege-of-nuremberg",
       "kind": "event",
       "locator": "\"Siege of Nuremberg\", revision 1370744103"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-ochakov-1737",
+      "kind": "event",
+      "locator": "\"Siege of Ochakov (1737)\", revision 1371323666"
     },
     {
       "dissent": false,
@@ -39140,6 +39278,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-salvador-1822-1823",
+      "kind": "event",
+      "locator": "\"Siege of Salvador (1822–1823)\", revision 1370744952"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-samarkand-1497",
       "kind": "event",
       "locator": "\"Siege of Samarkand (1497)\", revision 1370744965"
@@ -39452,6 +39596,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-tre-kronor",
+      "kind": "event",
+      "locator": "\"Siege of Tre Kronor\", revision 1372805134"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-trebizond-1461",
       "kind": "event",
       "locator": "\"Siege of Trebizond (1461)\", revision 1382364391"
@@ -39530,6 +39680,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-varna-1828",
+      "kind": "event",
+      "locator": "\"Siege of Varna (1828)\", revision 1371322416"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-varnakova",
       "kind": "event",
       "locator": "\"Siege of Varnakova\", revision 1370746265"
@@ -39563,6 +39719,12 @@
       "id": "siege-of-vicksburg",
       "kind": "event",
       "locator": "\"Siege of Vicksburg\", revision 1378179794"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-vienna-1485",
+      "kind": "event",
+      "locator": "\"Siege of Vienna (1485)\", revision 1377667457"
     },
     {
       "dissent": false,
