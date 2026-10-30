@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-tashkent",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4527027",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Tashkent"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4527027"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Tashkent\", revision 1382826497"
+    }
+  ],
+  "title": "Siege of Tashkent",
+  "summary": "The English Wikipedia article \"Siege of Tashkent\", at revision 1382826497, opens: \"The siege of Tashkent was the last major battle between the Khanate of Kokand and the Russian Empire during the Russo-Kokand War. During the battle, Alimqul, the de-facto leader of Kokand was killed. In the aftermath of the battle, the khanate was greatly weakened. The Russian Empire would annex the city, strengthening its position in Central Asia and facilitating its later conquest of Bukhara.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4527027, imported by tools/import/wikidata.mjs. The item's own description reads \"siege during the Russian conquest of Central Asia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1865,
+    "end": 1865,
+    "date": "1865-05-09",
+    "endDate": "1865-06-17"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

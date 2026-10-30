@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "conquest-of-stockholm",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2371616",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Conquest of Stockholm"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2371616"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conquest of Stockholm\", revision 1370612336"
+    }
+  ],
+  "title": "Conquest of Stockholm",
+  "summary": "The English Wikipedia article \"Conquest of Stockholm\", at revision 1370612336, opens: \"The Conquest of Stockholm was a battle in the Swedish War of Liberation that took place in Stockholm, Sweden on 17 June 1523. The Swedish forces had for a long time laid siege to Stockholm, which was the last Danish stronghold in Sweden. The city waited for reinforcement from Denmark, but none came.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2371616, imported by tools/import/wikidata.mjs. The item's own description reads \"1523 battle of the Swedish War of Liberation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1523,
+    "end": 1523,
+    "date": "1523-06-17"
+  },
+  "place": "stockholm",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "swedish-war-of-liberation"
+}

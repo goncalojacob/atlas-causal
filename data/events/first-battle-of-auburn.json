@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-auburn",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q304655",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "First Battle of Auburn"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q304655"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Auburn\", revision 1370618441"
+    }
+  ],
+  "title": "First Battle of Auburn",
+  "summary": "The English Wikipedia article \"First Battle of Auburn\", at revision 1370618441, opens: \"The First Battle of Auburn was fought on October 13, 1863, between Union infantry and Confederate cavalry forces at the start of the Bristoe Campaign during the American Civil War. A Union infantry column stumbled upon a Confederate cavalry reconnaissance party and a short, inconclusive fight ensued. The Confederate cavalry withdrew in the face of the superior Union force, but a much larger body of Confederate cavalry under Maj. Gen. J.E.B. Stuart, attempting to raid a Union wagon train became entrapped by the column, forcing them to abandon the raid and hide in a ravine overnight awaiting Confederate infantry to come to their aid.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q304655, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-10-13"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

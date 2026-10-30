@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "perpignan",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6730",
+  "sitelinks": {
+    "count": 102,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Perpignan",
+    "pt": "Perpinhão"
+  },
+  "sources": [],
+  "names": [
+    "Perpignan",
+    "Perpinhã",
+    "Perpinhão"
+  ],
+  "where": {
+    "lon": 2.8947222222222,
+    "lat": 42.6975,
+    "precision": "city",
+    "label": "Perpignan"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

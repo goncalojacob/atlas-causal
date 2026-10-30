@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1881-chios-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4555806",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1881 Chios earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4555806"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1881 Chios earthquake\", revision 1374073745"
+    }
+  ],
+  "title": "1881 Chios earthquake",
+  "summary": "The English Wikipedia article \"1881 Chios earthquake\", at revision 1374073745, opens: \"The 1881 Chios earthquake occurred at 13:40 local time on 3 April. It caused severe damage on the island of Chios and also affected Çeşme and Alaçatı on the coast of Ottoman Ionia, now in Turkey. The earthquake had an estimated magnitude of 7.3 and there were an estimated 7,866 casualties. The devastation from the earthquake was the last of the three 'catastrophes' that affected the island of Chios in the 19th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4555806, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake on the island of Chios in 1881\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1881,
+    "end": 1881,
+    "date": "1881-04-03"
+  },
+  "place": "chios",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}
