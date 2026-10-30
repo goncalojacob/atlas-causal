@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-ghaghra",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4871091",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Ghaghra"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871091"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ghaghra\", revision 1374538857"
+    }
+  ],
+  "title": "Battle of Ghaghra",
+  "summary": "The English Wikipedia article \"Battle of Ghaghra\", at revision 1374538857, opens: \"The Battle of Ghaghra, fought in 1529, was a major battle for the conquest of India by the Mughal Empire. It followed the first Battle of Panipat in 1526 and the Battle of Khanwa in 1527. The forces of Mughal Emperor Babur of the emerging Mughal Empire were joined by Indian allies in battle against the Eastern Afghan Confederates under Sultan Mahmud Lodi and the Sultanate of Bengal under Sultan Nusrat Shah.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871091, imported by tools/import/wikidata.mjs. The item's own description reads \"1529 battle of the Mughal conquest of India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1529,
+    "end": 1529,
+    "date": "1529-05-06"
+  },
+  "place": "ghaghara",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

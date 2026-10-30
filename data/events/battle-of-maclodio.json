@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-maclodio",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q671340",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Maclodio"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q671340"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Maclodio\", revision 1370448469"
+    }
+  ],
+  "title": "Battle of Maclodio",
+  "summary": "The English Wikipedia article \"Battle of Maclodio\", at revision 1370448469, opens: \"The Battle of Maclodio was fought on 11 October 1427, resulting in a victory for the Venetians under Carmagnola over the Milanese under Carlo I Malatesta. The battle was fought at Maclodio, a small town near the River Oglio, fifteen kilometres south-west of Brescia. This battle, fought during the second campaign, was the only decisive victory for Venice in the Wars in Lombardy. This battle forced the Milanese into a treaty, conceding Brescia in 1428, though fighting of the wars in Lombardy was to resume later, continuing until the Treaty of Lodi in 1454.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q671340, imported by tools/import/wikidata.mjs. The item's own description reads \"1427 middle ages battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1427,
+    "end": 1427,
+    "date": "1427-10-11"
+  },
+  "place": "maclodio",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "wars-in-lombardy"
+}

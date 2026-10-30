@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-saint-pierre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4392087",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Saint-Pierre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4392087"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Saint-Pierre\", revision 1380908161"
+    }
+  ],
+  "title": "Battle of Saint-Pierre",
+  "summary": "The English Wikipedia article \"Battle of Saint-Pierre\", at revision 1380908161, opens: \"The Battle of Saint-Pierre was a military confrontation on March 25, 1776, near the Quebec village of Saint-Pierre, east of Lévis. This confrontation, which occurred during the Continental Army's siege of Quebec following its defeat at the Battle of Quebec, was between forces that were both largely composed of Canadian militia, including individuals on both sides of the conflict that had been recruited in the same communities. The Patriot forces routed the Loyalist forces, killing at least 3 and capturing more than 30.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4392087, imported by tools/import/wikidata.mjs. The item's own description reads \"1776 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1776,
+    "end": 1776,
+    "date": "1776-03-25"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "1557-influenza-pandemic",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q96359661",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1557 influenza pandemic"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q96359661"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1557 influenza pandemic\", revision 1370389322"
+    }
+  ],
+  "title": "1557 influenza pandemic",
+  "summary": "The English Wikipedia article \"1557 influenza pandemic\", at revision 1370389322, opens: \"In 1557, a pandemic strain of influenza emerged in Asia, then spread to Africa, Europe, and eventually the Americas. This flu was highly infectious and presented with intense, occasionally lethal symptoms. Medical historians like Thomas Short, Lazare Rivière and Charles Creighton gathered descriptions of catarrhal fevers recognized as influenza by modern physicians attacking populations with the greatest intensity between 1557 and 1559. The 1557 flu saw governments, for possibly the first time, inviting physicians to instill bureaucratic organization into epidemic responses. It is also the first pandemic where influenza is pathologically linked to miscarriages, given its first English names, and is reliably recorded as having spread globally. Influenza caused higher burial rates, near-universal infection, and economic turmoil as it returned in repeated waves.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q96359661, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1557,
+    "end": 1559
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

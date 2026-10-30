@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "quintuple-alliance",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q987667",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Quintuple Alliance"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q987667"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Quintuple Alliance\", revision 1337367905"
+    }
+  ],
+  "title": "Quintuple Alliance",
+  "summary": "The English Wikipedia article \"Quintuple Alliance\", at revision 1337367905, opens: \"The Quintuple Alliance came into being at the Congress of Aix-la-Chapelle in 1818, when France joined the Quadruple Alliance created by Austria, Prussia, the Russian Empire, and the United Kingdom of Great Britain and Ireland. The European peace settlement concluded at the Congress of Vienna in 1815.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q987667, imported by tools/import/wikidata.mjs. The item's own description reads \"1818 alliance of European nations\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1818,
+    "end": 1818
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}
