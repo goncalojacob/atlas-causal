@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "guo-huaiyi-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6165289",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Guo Huaiyi rebellion",
+    "pt": "Rebelião de Guo Huaiyi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6165289"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Guo Huaiyi rebellion\", revision 1373781680"
+    }
+  ],
+  "title": "Guo Huaiyi rebellion",
+  "summary": "The English Wikipedia article \"Guo Huaiyi rebellion\", at revision 1373781680, opens: \"The Guo Huaiyi rebellion was a peasant revolt by Chinese farmers against Dutch rule in Taiwan in 1652. Sparked by dissatisfaction with heavy Dutch taxation on them but not the aborigines and extortion by low-ranking Dutch officials and servicemen, the rebellion initially gained ground before being crushed by a coalition of Dutch soldiers and their aboriginal allies. It is considered the most important uprising against the Dutch during the 37-year period of their colonisation of Taiwan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6165289, imported by tools/import/wikidata.mjs. The item's own description reads \"17th-century revolt on Taiwan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1652,
+    "end": 1652
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
