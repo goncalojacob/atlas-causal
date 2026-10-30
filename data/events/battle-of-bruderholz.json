@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-bruderholz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q319637",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Bruderholz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q319637"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bruderholz\", revision 1382319815"
+    }
+  ],
+  "title": "Battle of Bruderholz",
+  "summary": "The English Wikipedia article \"Battle of Bruderholz\", at revision 1382319815, opens: \"The Battle of Bruderholz took place on 22 March 1499 in the Swabian War between Swabian troops and forces of the Old Swiss Confederacy. The Swabians had raided several Swiss villages and were on their way back when they met troops from Lucerne, Solothurn, and Bern, who also came back from a raid in the Alsace. Anticipating the likely route of the Swabian troops, the Swiss soldiers concealed themselves in the woods at Bruderholz hill, near Basel. When the three times more numerous Swabians passed the woods, the Swiss attacked. The Swabian infantry quickly broke and fled the battlefield. The cavalry fought a delaying action allowing the infantry to escape before retreating also. Some of the fleeing soldiers ran approximately 2 miles (3.2 km) to the Rhine river before swimming across to continue their retreat. Others fled to Basel but were refused entry. The Confederation lost only a single soldier while the Swabians lost about 80 men. The leader of the Confederacy's troops was from the House of Bubenberg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q319637, imported by tools/import/wikidata.mjs. The item's own description reads \"1499 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1499,
+    "end": 1499,
+    "date": "1499-03-22"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "swabian-war"
+}

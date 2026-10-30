@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "dano-hanseatic-war-1426-1435",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q18916050",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Dano-Hanseatic War (1426–1435)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18916050"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dano-Hanseatic War (1426–1435)\", revision 1376500645"
+    }
+  ],
+  "title": "Dano-Hanseatic War (1426–1435)",
+  "summary": "The English Wikipedia article \"Dano-Hanseatic War (1426–1435)\", at revision 1376500645, opens: \"The Dano–Hanseatic War, also known as the Kalmar War with the Hanseatic League, or the Danish–Hanseatic War of 1426-1435, was an armed trade conflict between the Danish-dominated Kalmar Union and the Hanseatic League led by the Free City of Lübeck.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18916050, imported by tools/import/wikidata.mjs. The item's own description reads \"European armed trade conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1426,
+    "end": 1435
+  },
+  "place": "scandinavia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

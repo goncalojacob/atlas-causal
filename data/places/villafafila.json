@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "villafafila",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q965140",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Villafáfila",
+    "pt": "Villafáfila"
+  },
+  "sources": [],
+  "names": [
+    "Villafáfila"
+  ],
+  "where": {
+    "lon": -5.615,
+    "lat": 41.848611111111,
+    "precision": "city",
+    "label": "Villafáfila"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

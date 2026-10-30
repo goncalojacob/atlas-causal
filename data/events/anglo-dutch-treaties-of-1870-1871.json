@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "anglo-dutch-treaties-of-1870-1871",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q616811",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Anglo-Dutch Treaties of 1870–1871"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q616811"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Dutch Treaties of 1870–1871\", revision 1297961421"
+    }
+  ],
+  "title": "Anglo-Dutch Treaties of 1870–1871",
+  "summary": "The English Wikipedia article \"Anglo-Dutch Treaties of 1870–1871\", at revision 1297961421, opens: \"The Anglo-Dutch Treaties of 1870–1871 were three related treaties between Great Britain and the Netherlands, dealing with colonial disputes and other colonial affairs between the two countries.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q616811, imported by tools/import/wikidata.mjs. The item's own description reads \"bilateral treaties\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1871
+  },
+  "place": "the-hague",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
