@@ -5295,6 +5295,15 @@
         }
       ]
     },
+    "cornwallis-s-retreat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "coup-of-18-brumaire": {
       "from": "git",
       "versions": [
@@ -5723,6 +5732,15 @@
       ]
     },
     "first-massacre-of-machecoul": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "first-rohilla-war": {
       "from": "git",
       "versions": [
         {
@@ -6239,6 +6257,15 @@
         }
       ]
     },
+    "gulf-coast-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "haitian-revolution-1791-1804": {
       "from": "git",
       "versions": [
@@ -6578,6 +6605,15 @@
         }
       ]
     },
+    "konbaung-hanthawaddy-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "kosciuszko-uprising": {
       "from": "git",
       "versions": [
@@ -6891,6 +6927,15 @@
       ]
     },
     "newburgh-conspiracy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "noble-train-of-artillery": {
       "from": "git",
       "versions": [
         {
@@ -7329,6 +7374,15 @@
       ]
     },
     "raid-on-rochefort": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "rakoczi-s-war-of-independence": {
       "from": "git",
       "versions": [
         {
@@ -10277,6 +10331,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "whiskey-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
