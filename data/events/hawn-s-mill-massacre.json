@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "hawn-s-mill-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1034431",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Hawn's Mill massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1034431"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hawn's Mill massacre\", revision 1364205446"
+    }
+  ],
+  "title": "Hawn's Mill massacre",
+  "summary": "The English Wikipedia article \"Hawn's Mill massacre\", at revision 1364205446, opens: \"The Hawn’s Mill Massacre occurred on October 30, 1838, when a mob and militia unit from Livingston County, Missouri, attacked a Mormon settlement in eastern Caldwell County, Missouri, after the Battle of Crooked River. By far the bloodiest event in the 1838 Mormon War in Missouri, it has long been remembered by the members of the Latter Day Saint movement. While the spelling \"Haun\" is common when referring to the massacre or the mill where it occurred, the mill's owner used the spelling \"Hawn\" in legal documents.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1034431, imported by tools/import/wikidata.mjs. The item's own description reads \"event in Latter Day Saint history\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1838,
+    "end": 1838,
+    "date": "1838-10-30"
+  },
+  "place": "missouri-q1581",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

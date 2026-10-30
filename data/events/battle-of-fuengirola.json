@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-fuengirola",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871068",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Fuengirola"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871068"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fuengirola\", revision 1370441130"
+    }
+  ],
+  "title": "Battle of Fuengirola",
+  "summary": "The English Wikipedia article \"Battle of Fuengirola\", at revision 1370441130, opens: \"The Battle of Fuengirola was a field military engagement of the Peninsular War fought on 15 October 1810 near Fuengirola between the 457-strong Franco-Polish garrisons of the Sohail Castle and the town of Alhaurín el Grande, under Franciszek Młokosiewicz and Ignacy Bronisz's command respectively, and a much larger Anglo-Spanish field force of approx. 2,500 men led by Andrew Blayney, 11th Baron Blayney. In this battle, which was a sortie from the castle and the town, the Anglo-allies were routed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871068, imported by tools/import/wikidata.mjs. The item's own description reads \"1810 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1810,
+    "date": "1810-10-15"
+  },
+  "place": "fuengirola",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

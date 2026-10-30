@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "french-occupation-of-moscow",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4332537",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "French occupation of Moscow"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4332537"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French occupation of Moscow\", revision 1376158376"
+    }
+  ],
+  "title": "French occupation of Moscow",
+  "summary": "The English Wikipedia article \"French occupation of Moscow\", at revision 1376158376, opens: \"French emperor Napoleon Bonaparte's Grande Armée occupied Moscow from 14 September to 19 October 1812 during the Napoleonic Wars. It marked the summit of the French invasion of Russia. During the occupation, which lasted 36 days, the city was devastated by fire and looted by both Russian peasants and the French.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4332537, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 occupation during the French invasion of Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-09-14",
+    "endDate": "1812-10-19"
+  },
+  "place": "moscow",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-russia"
+}

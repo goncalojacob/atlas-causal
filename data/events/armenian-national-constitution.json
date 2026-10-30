@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "armenian-national-constitution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4793203",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Armenian National Constitution"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4793203"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Armenian National Constitution\", revision 1372009265"
+    }
+  ],
+  "title": "Armenian National Constitution",
+  "summary": "The English Wikipedia article \"Armenian National Constitution\", at revision 1372009265, opens: \"The Armenian National Constitution or Regulation of the Armenian Nation was a constitution in the Ottoman Empire for members of the Gregorian Armenian millet. Promulgated in 1863, it defined the powers of the Armenian Patriarch, a newly formed Armenian National Assembly, and lay members. This code is still active among Armenian Church in diaspora. The Ottoman Turkish version was published in the Düstur. Other constitutions were promulgated for the Catholic Armenian and the Protestant Armenian millets.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4793203, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1923,
+    "date": "1863-03-17"
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "category": "law",
+  "actors": []
+}

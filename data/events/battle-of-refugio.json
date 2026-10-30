@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-refugio",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1361512",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Refugio",
+    "pt": "Batalha de Refugio"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1361512"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Refugio\", revision 1380622945"
+    }
+  ],
+  "title": "Battle of Refugio",
+  "summary": "The English Wikipedia article \"Battle of Refugio\", at revision 1380622945, opens: \"The Battle of Refugio was fought from March 12–15, 1836, near Refugio, Texas. Mexican General José Urrea and 1,500 Centralista soldiers fought against Amon B. King and his 28 American volunteers and Lieutenant Colonel William Ward and his approximately 120 Americans. The battle, a part of the Goliad Campaign of the Texas Revolution, resulted in a Mexican victory and splintered Texan resistance.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1361512, imported by tools/import/wikidata.mjs. The item's own description reads \"1836 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1836,
+    "end": 1836,
+    "date": "1836-03-12",
+    "endDate": "1836-03-15"
+  },
+  "place": "refugio-texas",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "texas-revolution"
+}

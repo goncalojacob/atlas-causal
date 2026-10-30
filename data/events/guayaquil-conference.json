@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "guayaquil-conference",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1441451",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Guayaquil Conference",
+    "pt": "Conferência de Guayaquil"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1441451"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Guayaquil Conference\", revision 1369403605"
+    }
+  ],
+  "title": "Guayaquil Conference",
+  "summary": "The English Wikipedia article \"Guayaquil Conference\", at revision 1369403605, opens: \"The Guayaquil Conference was a meeting that took place on July 26–27, 1822 in the port city of Guayaquil between libertadors José de San Martín and Simón Bolívar to discuss the future of Peru, and South America in general. The conference is considered a turning point in the South American independence process.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1441451, imported by tools/import/wikidata.mjs. The item's own description reads \"meeting between Simón Bolívar and José de San Martín\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1822,
+    "end": 1822,
+    "date": "1822-07-26",
+    "endDate": "1822-07-27"
+  },
+  "place": "guayaquil",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

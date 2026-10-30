@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "allahdad-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q16002556",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Allahdad Massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16002556"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Allahdad Massacre\", revision 1373816866"
+    }
+  ],
+  "title": "Allahdad Massacre",
+  "summary": "The English Wikipedia article \"Allahdad Massacre\", at revision 1373816866, opens: \"The Allahdad was an 1839 pogrom perpetrated by Muslims against the Iranian Jewish community in the city of Mashhad, Qajar Iran. It was characterized by the mass-killing and forced conversion of the Jews in the area to Islam. Following this event, the Jews who stayed in Mashad began to actively practice crypto-Judaism while superficially adhering to Islamic beliefs.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16002556, imported by tools/import/wikidata.mjs. The item's own description reads \"1839 series of riots and forced conversions of Jews to Islam in Iran\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1839
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "solemn-act-of-the-declaration-of-independence-of-northern-america",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2268588",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Solemn Act of the Declaration of Independence of Northern America",
+    "pt": "Ata solene da declaração de independência da América Setentrional"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2268588"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Solemn Act of the Declaration of Independence of Northern America\", revision 1365336943"
+    }
+  ],
+  "title": "Solemn Act of the Declaration of Independence of Northern America",
+  "summary": "The English Wikipedia article \"Solemn Act of the Declaration of Independence of Northern America\", at revision 1365336943, opens: \"The Solemn Act of Northern America's Declaration of Independence is the first Mexican legal historical document which established the separation of Mexico from Spanish rule. It was signed on November 6, 1813, by the deputies of the Congress of Anáhuac, organized by General José María Morelos in the city of Oaxaca in June of that same year, and later installed in the city of Chilpancingo on September 13.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2268588, imported by tools/import/wikidata.mjs. The item's own description reads \"the first Mexican legal historical document which established the separation of Mexico from Spanish rule\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-11-06"
+  },
+  "place": "chilpancingo",
+  "region": null,
+  "regionNote": null,
+  "category": "founding",
+  "actors": []
+}
