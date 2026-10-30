@@ -1341,3 +1341,1986 @@ The planner reads this list first (rules card 13). Some rows are held under anot
 | Q15220605 | Murder of Elisabeth of Austria | 1898 | 8 |
 | Q5598783 | Great Blizzard of 1899 | 1899 | 8 |
 | Q4087414 | Battle of Beicang | 1900 | 8 |
+
+## Five to seven sitelinks, added 30 October
+
+The same query as above for items with five to seven sitelinks, taken on 30 October once most rows above were written. Here the earliest of the item's start, point in time and inception must fall from 1415 to 1900.
+
+| Wikidata | Title | Year | Sitelinks |
+|---|---|---|---|
+| Q2237014 | Battle of Malešov | 1424 | 7 |
+| Q328768 | Battle of Detern | 1426 | 7 |
+| Q671340 | Battle of Maclodio | 1427 | 7 |
+| Q769031 | 1428 Catalonia earthquake | 1428 | 7 |
+| Q20706642 | Siege of Malta | 1429 | 7 |
+| Q690244 | Battle of Bulgnéville | 1431 | 7 |
+| Q3636565 | Battle on the Po | 1431 | 7 |
+| Q2889924 | Battle of San Romano | 1432 | 7 |
+| Q3485979 | Siege of Paris | 1435 | 7 |
+| Q7457743 | Seventh Siege of Gibraltar | 1436 | 7 |
+| Q3702778 | Luchuan–Pingmian campaigns | 1436 | 7 |
+| Q13202707 | Battle of Belyov | 1437 | 7 |
+| Q1777327 | Battle of Gavere | 1453 | 7 |
+| Q795109 | Morea revolt of 1453–1454 | 1453 | 7 |
+| Q28221972 | Treaty of Constantinople | 1454 | 7 |
+| Q607645 | Bavarian War | 1459 | 7 |
+| Q716479 | Battle of Świecino | 1462 | 7 |
+| Q4122600 | War of the Priests | 1467 | 7 |
+| Q2295317 | Second Battle of Olmedo | 1467 | 7 |
+| Q2348233 | Siege of Krujë | 1467 | 7 |
+| Q3550076 | Union of Brittany and France | 1480 | 7 |
+| Q667223 | Stanser Verkommnis | 1481 | 7 |
+| Q2435832 | Battle of Cătlăbuga | 1485 | 7 |
+| Q319467 | Battle of Schwaderloh | 1499 | 7 |
+| Q5643516 | Chanka–Inca War | 1500 | 7 |
+| Q4120035 | Safavid conquest of Shirvan | 1500 | 7 |
+| Q1989936 | Battle of Mstislavl | 1501 | 7 |
+| Q12849799 | Battle of Sharur | 1501 | 7 |
+| Q7510370 | Siege of Samarkand | 1501 | 7 |
+| Q2072513 | Battle of Ruvo | 1503 | 7 |
+| Q4872350 | Battle of Seminara | 1503 | 7 |
+| Q4870768 | Battle of Cochin | 1504 | 7 |
+| Q25394544 | Dehname | 1506 | 7 |
+| Q3625432 | Siege of Mirandola | 1510 | 7 |
+| Q71630263 | Algiers Expedition | 1516 | 7 |
+| Q19610920 | Siege of Jeddah | 1517 | 7 |
+| Q7510315 | Siege of Polotsk | 1518 | 7 |
+| Q4087402 | Battle of Sokal | 1519 | 7 |
+| Q18713116 | Siege of Knin | 1522 | 7 |
+| Q2371616 | Conquest of Stockholm | 1523 | 7 |
+| Q2838113 | Franco-Polish alliance | 1524 | 7 |
+| Q4871091 | Battle of Ghaghra | 1529 | 7 |
+| Q25466274 | Siege of Buda | 1529 | 7 |
+| Q2877472 | 1531 Lisbon earthquake | 1531 | 7 |
+| Q368207 | Battle of Leobersdorf | 1532 | 7 |
+| Q2634908 | Muscovite-Lithuanian War of 1534-1537 | 1534 | 7 |
+| Q850771 | Siege of Pest | 1542 | 7 |
+| Q5366700 | Siege of Gassan Toda | 1542 | 7 |
+| Q7510304 | Siege of Perpignan | 1542 | 7 |
+| Q3822861 | Battle of Serravalle | 1544 | 7 |
+| Q4871383 | Battle of Kanōguchi | 1544 | 7 |
+| Q2887854 | Battle of Ancrum Moor | 1545 | 7 |
+| Q2163387 | Siege of Takatō | 1545 | 7 |
+| Q2218872 | Sieges of Toishi | 1550 | 7 |
+| Q10856357 | Tainei-ji incident | 1551 | 7 |
+| Q11149463 | Battle of Ukino | 1558 | 7 |
+| Q7836985 | Treaty of Berwick | 1560 | 7 |
+| Q4871913 | Battle of Norada | 1560 | 7 |
+| Q19885891 | Siege of Orléans | 1563 | 7 |
+| Q2762407 | Battle of Azukizaka | 1564 | 7 |
+| Q599599 | Action of 30 May 1564 | 1564 | 7 |
+| Q2888412 | Battle of Digomi | 1567 | 7 |
+| Q20991943 | Burmese–Siamese War of 1568–70 | 1568 | 7 |
+| Q930521 | Battle of Jodoigne | 1568 | 7 |
+| Q4087439 | Battle of Langside | 1568 | 7 |
+| Q122641793 | Twenty-Five Years' War | 1570 | 7 |
+| Q2931482 | Massacre of Naarden | 1572 | 7 |
+| Q1814248 | Battle of Haarlemmermeer | 1573 | 7 |
+| Q679831 | Battle of Flushing | 1573 | 7 |
+| Q2139412 | Siege of Zierikzee | 1575 | 7 |
+| Q617281 | Danzig rebellion | 1576 | 7 |
+| Q2936853 | Battle of Rijmenam | 1578 | 7 |
+| Q2231397 | Siege of Deventer in 1578 | 1578 | 7 |
+| Q7510180 | Siege of Kōzuki Castle | 1578 | 7 |
+| Q7510546 | Siege of Otate | 1578 | 7 |
+| Q2758693 | Siege of Maastricht | 1579 | 7 |
+| Q1431771 | Battle of Glenmalure | 1580 | 7 |
+| Q2444941 | Battle of Noordhorn | 1581 | 7 |
+| Q15701718 | Siege of Narva | 1581 | 7 |
+| Q204540 | Throckmorton Plot | 1583 | 7 |
+| Q11960488 | Siege of Kaganoi | 1584 | 7 |
+| Q5366156 | Battle of Hetsugigawa | 1587 | 7 |
+| Q2893211 | Siege of Deventer | 1591 | 7 |
+| Q2594176 | Siege of Geertruidenberg | 1593 | 7 |
+| Q2544586 | Siege of Groningen | 1594 | 7 |
+| Q720801 | Battle of Cecora | 1595 | 7 |
+| Q1760231 | Battle of Clontibret | 1595 | 7 |
+| Q2888508 | Battle of Fontaine-Française | 1595 | 7 |
+| Q2787168 | First Dutch Expedition to Nusantara | 1595 | 7 |
+| Q11495186 | 1596 Fushimi earthquake | 1596 | 7 |
+| Q20977854 | Second Spanish Armada | 1596 | 7 |
+| Q666407 | Siege of Groenlo | 1597 | 7 |
+| Q5919490 | Third Spanish Armada | 1597 | 7 |
+| Q484475 | Battle of Sacheon | 1598 | 7 |
+| Q623621 | Siege of Suncheon | 1598 | 7 |
+| Q4115361 | Åbo Bloodbath | 1599 | 7 |
+| Q4871100 | Battle of Gifu Castle | 1600 | 7 |
+| Q7510439 | Siege of Tanabe | 1600 | 7 |
+| Q5785188 | Counter-Maniera | 1600 | 7 |
+| Q1413158 | Battle of Wenden | 1601 | 7 |
+| Q7510519 | Siege of Wolmar | 1601 | 7 |
+| Q2330878 | Siege of Weissenstein | 1602 | 7 |
+| Q3526182 | Siege of Dunboy | 1602 | 7 |
+| Q4337460 | Siege of Fellin | 1602 | 7 |
+| Q4087364 | Battle of Rakvere | 1603 | 7 |
+| Q16003596 | Battle of Sufiyan | 1605 | 7 |
+| Q3388870 | 1611 Keicho Sanriku earthquake | 1611 | 7 |
+| Q11688235 | Battle of Cornul lui Sas | 1612 | 7 |
+| Q4870641 | Battle of Cape Corvo | 1613 | 7 |
+| Q16640422 | War of the Montferrat Succession | 1613 | 7 |
+| Q1083495 | Battle of Kizugawa | 1614 | 7 |
+| Q1409271 | Fettmilch Rising | 1614 | 7 |
+| Q687349 | Battle of Kashii | 1615 | 7 |
+| Q10892144 | Battle of Yao | 1615 | 7 |
+| Q5036983 | Capture of Bacharach | 1620 | 7 |
+| Q7210108 | Polish–Swedish War of 1621–25 | 1621 | 7 |
+| Q2167774 | Cádiz Expedition | 1625 | 7 |
+| Q4871687 | Battle of Martqopi | 1625 | 7 |
+| Q7509865 | Siege of Batavia | 1628 | 7 |
+| Q1778616 | Treaty of Saint-Germain-en-Laye | 1632 | 7 |
+| Q7510387 | Siege of Schenkenschans | 1635 | 7 |
+| Q27145365 | Battles of Schooneveld | 1635 | 7 |
+| Q1795012 | Battle of Getaria | 1638 | 7 |
+| Q11457497 | Kan'ei famine | 1640 | 7 |
+| Q7837203 | Treaty of Péronne | 1641 | 7 |
+| Q830246 | Battle of La Marfée | 1641 | 7 |
+| Q3080946 | Siege of Perpignan | 1641 | 7 |
+| Q261345 | Battle of Lleida | 1642 | 7 |
+| Q4870548 | Battle of Brentford | 1642 | 7 |
+| Q742260 | Battle of Winceby | 1643 | 7 |
+| Q1406897 | Battle of Roundway Down | 1643 | 7 |
+| Q2031282 | Second Battle of Newbury | 1644 | 7 |
+| Q2013484 | Siege of Hulst | 1645 | 7 |
+| Q501922 | Battle of Starokostiantyniv | 1648 | 7 |
+| Q501828 | Battle of Mazyr | 1649 | 7 |
+| Q2799104 | First Stadtholderless Period | 1650 | 7 |
+| Q982754 | Battle of Loyew | 1651 | 7 |
+| Q506912 | St. Peter's Flood | 1651 | 7 |
+| Q4087375 | Battle of Zhvanets | 1653 | 7 |
+| Q20432592 | Rebellion of the Seimens and Home Guard | 1655 | 7 |
+| Q2615519 | Battle of Żarnów | 1655 | 7 |
+| Q2615524 | Battle of Nowy Dwór Mazowiecki | 1655 | 7 |
+| Q2564895 | Western Design | 1655 | 7 |
+| Q721676 | Battle of Warka | 1656 | 7 |
+| Q1267097 | First War of Villmergen | 1656 | 7 |
+| Q3536855 | Treaty of Paris | 1657 | 7 |
+| Q2567011 | Assault on Copenhagen | 1659 | 7 |
+| Q4087400 | Battle of Slobodyshche | 1660 | 7 |
+| Q2887851 | Battle of Ameixial | 1663 | 7 |
+| Q1160506 | Siege of Léva | 1664 | 7 |
+| Q2065069 | Siege of Hlukhiv | 1664 | 7 |
+| Q4087361 | Battle of Vitebsk (1664) | 1664 | 7 |
+| Q19882272 | Battle of Purandar | 1665 | 7 |
+| Q897302 | Battle of Podhajce | 1667 | 7 |
+| Q4872317 | Battle of Saraighat | 1671 | 7 |
+| Q1717438 | Swedish invasion of Brandenburg | 1674 | 7 |
+| Q2237215 | Battle of Rathenow | 1675 | 7 |
+| Q716425 | Battle of Lwów | 1675 | 7 |
+| Q18002290 | Siege of Maastricht | 1676 | 7 |
+| Q2888498 | Battle of Møn | 1677 | 7 |
+| Q109857770 | Siege of the Acropolis | 1687 | 7 |
+| Q815188 | Siege of Philippsburg | 1688 | 7 |
+| Q2572804 | Battle of Dunkeld | 1689 | 7 |
+| Q2713014 | Siege of Limerick | 1690 | 7 |
+| Q2690126 | Battle of Ustechko | 1694 | 7 |
+| Q2724014 | Battle of Texel | 1694 | 7 |
+| Q9172660 | Battle of Vilnius | 1702 | 7 |
+| Q815153 | Siege of Kaiserswerth | 1702 | 7 |
+| Q18216901 | Siege of Landau | 1702 | 7 |
+| Q5977822 | Newfoundland Expedition | 1702 | 7 |
+| Q2984988 | Battle of Cap de la Roque | 1703 | 7 |
+| Q2066732 | Javanese Wars of Succession | 1703 | 7 |
+| Q2866993 | Raid on Grand Pré | 1704 | 7 |
+| Q3634917 | Battle of Chamkaur | 1704 | 7 |
+| Q15963786 | Battle of Lemberg | 1704 | 7 |
+| Q4779013 | Apalachee massacre | 1704 | 7 |
+| Q404561 | Battle of Koniecpol | 1708 | 7 |
+| Q3403846 | Battle of St. John's | 1709 | 7 |
+| Q447901 | Siege of Riga | 1709 | 7 |
+| Q5049265 | Cassard expedition | 1712 | 7 |
+| Q2237757 | Battle of Stresow | 1715 | 7 |
+| Q4871269 | Battle of Imbros | 1717 | 7 |
+| Q5037051 | Capture of Pensacola | 1719 | 7 |
+| Q4552629 | 1730 Valparaíso earthquake | 1730 | 7 |
+| Q18206401 | Herat Campaign of 1731 | 1730 | 7 |
+| Q18350408 | Afsharid conquests in the Persian Gulf and Oman | 1730 | 7 |
+| Q60750449 | Khejarli massacre | 1730 | 7 |
+| Q7573364 | Spanish expedition to Oran | 1732 | 7 |
+| Q18378963 | Nader's Central Asian Campaign | 1737 | 7 |
+| Q1849379 | Travancore–Dutch War | 1739 | 7 |
+| Q4438379 | Battle of Stavuchany | 1739 | 7 |
+| Q5036987 | Capture of Belgrade | 1739 | 7 |
+| Q113495610 | Battle of Fetang (1740) | 1740 | 7 |
+| Q65168385 | Capture of Samarkand by Nader Shah Afshar | 1740 | 7 |
+| Q2663849 | Battle of Colachel | 1741 | 7 |
+| Q2889615 | Battle of Casteldelfino | 1744 | 7 |
+| Q6644998 | list of wars involving Saudi Arabia | 1747 | 7 |
+| Q233601 | Second Carnatic War | 1749 | 7 |
+| Q2887875 | Siege of Arcot | 1751 | 7 |
+| Q3350705 | Siege of Calcutta | 1756 | 7 |
+| Q322882 | 1757 Berlin raid | 1757 | 7 |
+| Q3817778 | Anglo-Cherokee War | 1758 | 7 |
+| Q4438409 | Battle of Fehrbellin | 1758 | 7 |
+| Q6984367 | Near East earthquakes of 1759 | 1759 | 7 |
+| Q48817665 | Portraits of Periodical Offering of the Imperial Qing | 1759 | 7 |
+| Q4412315 | Russo-Prussian alliance | 1760 | 7 |
+| Q610150 | Siege of Dresden | 1760 | 7 |
+| Q2890697 | Battle of the Thousand Islands | 1760 | 7 |
+| Q4870790 | Battle of Corbach | 1760 | 7 |
+| Q429230 | Conquest of 1759-1760 | 1760 | 7 |
+| Q315310 | Battle of Restigouche | 1760 | 7 |
+| Q3403807 | Capture of Belle Île | 1761 | 7 |
+| Q74009 | Invasion of Dominica | 1761 | 7 |
+| Q19871866 | Battle of Cape Finisterre | 1761 | 7 |
+| Q624082 | Arabian expedition | 1761 | 7 |
+| Q63431 | Invasion of Martinique | 1762 | 7 |
+| Q74257 | Siege of Cassel | 1762 | 7 |
+| Q74391 | Battle of Nauheim | 1762 | 7 |
+| Q2890281 | Battle of Valencia de Alcántara | 1762 | 7 |
+| Q3073526 | Siege of Almeida | 1762 | 7 |
+| Q2943339 | Battle of Neukalen | 1762 | 7 |
+| Q831953 | Siculicidium | 1764 | 7 |
+| Q1574083 | Repnin Sejm | 1767 | 7 |
+| Q2587304 | Massacre of Uman | 1768 | 7 |
+| Q4090296 | Battle of Kazan | 1774 | 7 |
+| Q4303326 | Action of 20 June 1774 | 1774 | 7 |
+| Q1758978 | Burmese–Siamese War of 1775–76 | 1775 | 7 |
+| Q32198 | Battle of Gloucester | 1775 | 7 |
+| Q16153856 | 1775–82 North American smallpox epidemic | 1775 | 7 |
+| Q731564 | Battle of Block Island | 1776 | 7 |
+| Q4071933 | Battle of Sullivan's Island | 1776 | 7 |
+| Q4392087 | Battle of Saint-Pierre | 1776 | 7 |
+| Q14567736 | Dominguez-Escalante Expedition | 1776 | 7 |
+| Q2237194 | Battle of Forts Clinton and Montgomery | 1777 | 7 |
+| Q4584107 | Forage War | 1777 | 7 |
+| Q4872426 | Battle of Springfield | 1780 | 7 |
+| Q2574010 | Action of 9 August 1780 | 1780 | 7 |
+| Q4940494 | Bombardment of Algiers | 1784 | 7 |
+| Q2300843 | Treaty of Fontainebleau | 1785 | 7 |
+| Q20312101 | 1787 Mexico earthquake | 1787 | 7 |
+| Q1413080 | Alien Tort Statute | 1789 | 7 |
+| Q162463 | Nancy affair | 1790 | 7 |
+| Q4438427 | Battle of Tendra | 1790 | 7 |
+| Q12881604 | Battle of Andros | 1790 | 7 |
+| Q2104534 | Love and Freindship | 1790 | 7 |
+| Q1628966 | Panic of 1792 | 1792 | 7 |
+| Q4871742 | Battle of Mir | 1792 | 7 |
+| Q2887849 | Battle of Anderlecht | 1792 | 7 |
+| Q3485968 | Siege of Namur | 1792 | 7 |
+| Q7837229 | Treaty of Seringapatam | 1792 | 7 |
+| Q16855053 | revolt of Lyons | 1793 | 7 |
+| Q533459 | First Battle of Châtillon | 1793 | 7 |
+| Q2890178 | Battle of Thouars | 1793 | 7 |
+| Q2890318 | Battle of Vihiers | 1793 | 7 |
+| Q3025054 | Battle of Montaigu | 1793 | 7 |
+| Q4872018 | Battle of Perpignan | 1793 | 7 |
+| Q2888302 | Battle of Chemillé | 1793 | 7 |
+| Q2984734 | Battle of Arlon | 1793 | 7 |
+| Q4872152 | Battle of Raismes | 1793 | 7 |
+| Q16898546 | Battle of Pirmasens | 1793 | 7 |
+| Q1391310 | Death of Marie Antoinette of Austria | 1793 | 7 |
+| Q3485935 | Siege of Maastricht | 1793 | 7 |
+| Q4492478 | French constitutional referendum, 1793 | 1793 | 7 |
+| Q266689 | First Battle of Dego | 1794 | 7 |
+| Q4555138 | Atlantic campaign of May 1794 | 1794 | 7 |
+| Q387215 | Battle of Loano | 1795 | 7 |
+| Q793828 | Battle of Kharda | 1795 | 7 |
+| Q4492479 | French constitutional referendum, 1795 | 1795 | 7 |
+| Q5502314 | French occupation of Santo Domingo | 1795 | 7 |
+| Q1217073 | Battle of Neresheim | 1796 | 7 |
+| Q3636359 | Battle of Caldiero | 1796 | 7 |
+| Q2888175 | Battle of Borghetto | 1796 | 7 |
+| Q819999 | Siege of Kehl | 1796 | 7 |
+| Q4872512 | Battle of Tarvis | 1797 | 7 |
+| Q2888269 | Battle of Castlebar | 1798 | 7 |
+| Q2890055 | Battle of St. George's Caye | 1798 | 7 |
+| Q4677263 | Action of 15 July 1798 | 1798 | 7 |
+| Q1933601 | Battle of Alkmaar | 1799 | 7 |
+| Q2936697 | Battle of Callantsoog | 1799 | 7 |
+| Q3485946 | Siege of Mantua | 1799 | 7 |
+| Q2984928 | USS Constellation vs L'Insurgente | 1799 | 7 |
+| Q23039096 | Russian conquest of the Caucasus | 1800 | 7 |
+| Q4492480 | French constitutional referendum, 1800 | 1800 | 7 |
+| Q15282200 | Algeciras Campaign | 1801 | 7 |
+| Q4870862 | Battle of Delhi | 1803 | 7 |
+| Q4870267 | Siege of Aligarh | 1803 | 7 |
+| Q2237017 | Battle of Mehrnbach | 1805 | 7 |
+| Q2890355 | Battle of Verona | 1805 | 7 |
+| Q3206342 | Battle of Günzburg | 1805 | 7 |
+| Q2984790 | Battle of Halle | 1806 | 7 |
+| Q5035988 | Capitulation of Erfurt | 1806 | 7 |
+| Q3485939 | Siege of Magdeburg | 1806 | 7 |
+| Q18199199 | Siege of Ragusa | 1806 | 7 |
+| Q65079568 | Fall of Berlin | 1806 | 7 |
+| Q3430256 | Battle of Køge | 1807 | 7 |
+| Q2890927 | Battle of Alcolea Bridge | 1808 | 7 |
+| Q2484108 | Battle of Jutas | 1808 | 7 |
+| Q4927224 | Blockade of Africa | 1808 | 7 |
+| Q3202164 | Latin American wars of independence | 1808 | 7 |
+| Q21012181 | 1808/1809 mystery eruption | 1808 | 7 |
+| Q6464343 | La Paz Revolution | 1809 | 7 |
+| Q550114 | Battle of Valls | 1809 | 7 |
+| Q2889664 | Battle of Ponte Sampaio | 1809 | 7 |
+| Q4870252 | Battle of Alcañiz | 1809 | 7 |
+| Q4871138 | Battle of Grijó | 1809 | 7 |
+| Q4870755 | Battle of Ciudad-Real | 1809 | 7 |
+| Q4872513 | Battle of Tarvis | 1809 | 7 |
+| Q4872782 | Battle of Yevenes | 1809 | 7 |
+| Q4870611 | Battle of Caldiero | 1809 | 7 |
+| Q17035527 | Treaty of Amritsar in 1809 | 1809 | 7 |
+| Q3286965 | Portuguese conquest of French Guiana | 1809 | 7 |
+| Q4079386 | Battle of Batin | 1810 | 7 |
+| Q2890534 | Battle of the Côa | 1810 | 7 |
+| Q4871511 | Battle of La Bisbal | 1810 | 7 |
+| Q3485823 | Siege of Astorga | 1810 | 7 |
+| Q921531 | Battle of Arroyo dos Molinos | 1811 | 7 |
+| Q4871783 | Battle of Montserrat | 1811 | 7 |
+| Q3485881 | Siege of Figueras | 1811 | 7 |
+| Q3093686 | Great Podil fire | 1811 | 7 |
+| Q1497957 | Battle of Venta del Pozo | 1812 | 7 |
+| Q1432380 | Battle of Garcia Hernandez | 1812 | 7 |
+| Q4871641 | Battle of Majadahonda | 1812 | 7 |
+| Q4896386 | Bessarabian question | 1812 | 7 |
+| Q1099951 | Battle of Wartenburg | 1813 | 7 |
+| Q2890033 | Battle of Sorauren | 1813 | 7 |
+| Q4871946 | Battle of Ordal | 1813 | 7 |
+| Q2890553 | Battle of Nivelle | 1813 | 7 |
+| Q752253 | Battle of Mormans | 1814 | 7 |
+| Q1404251 | Battle of Occhiobello | 1815 | 7 |
+| Q1404199 | Battle of the Panaro | 1815 | 7 |
+| Q1779409 | Battle of Rocheserviere | 1815 | 7 |
+| Q2888250 | Battle of Carpi | 1815 | 7 |
+| Q10432014 | Bodø affair | 1818 | 7 |
+| Q1061960 | Purismo | 1820 | 7 |
+| Q2890399 | Battle of Yaguachi | 1821 | 7 |
+| Q13012465 | Siamese invasion of Kedah | 1821 | 7 |
+| Q3486072 | Battle of Akhalzic | 1828 | 7 |
+| Q2073130 | Siege of Varna (1828) | 1828 | 7 |
+| Q1778428 | Battle of the Square | 1829 | 7 |
+| Q4392484 | Massacre at the Russian embassy in Tehran | 1829 | 7 |
+| Q466665 | American Renaissance | 1830 | 7 |
+| Q2445578 | Battle of Dębe Wielkie | 1831 | 7 |
+| Q5166259 | Convention of 1832 | 1832 | 7 |
+| Q4215186 | First Sumatran expedition | 1832 | 7 |
+| Q61881584 | Katip Sumat uprising | 1833 | 7 |
+| Q3056641 | 1834 Quadruple Alliance | 1834 | 7 |
+| Q1550913 | Pinjarra massacre | 1834 | 7 |
+| Q9030262 | Goliad massacre | 1836 | 7 |
+| Q2896754 | Bentley's Miscellany | 1836 | 7 |
+| Q3536929 | Treaty of Tafna | 1837 | 7 |
+| Q3751485 | Battle of Oriamendi | 1837 | 7 |
+| Q3572515 | Cincomarzada | 1838 | 7 |
+| Q1785309 | Myall Creek massacre | 1838 | 7 |
+| Q7443573 | Second Sumatran expedition | 1838 | 7 |
+| Q4632497 | 26th United States Congress | 1839 | 7 |
+| Q8035357 | World Anti-Slavery Convention | 1840 | 7 |
+| Q1782533 | Battle of Ingavi | 1841 | 7 |
+| Q2360284 | Sanyuanli Incident | 1841 | 7 |
+| Q4243385 | Who is to Blame? | 1841 | 7 |
+| Q6784498 | 1843 and 1846 massacres in Hakkari | 1843 | 7 |
+| Q4632843 | 28th United States Congress | 1843 | 7 |
+| Q628804 | Década moderada | 1844 | 7 |
+| Q4632990 | 29th United States Congress | 1845 | 7 |
+| Q1772061 | Battle of Monterey | 1846 | 7 |
+| Q2546566 | Battle of Mexico-city | 1847 | 7 |
+| Q2890241 | Bombardment of Tourane | 1847 | 7 |
+| Q1734629 | Revolution of Potatoes | 1847 | 7 |
+| Q4634661 | 30th United States Congress | 1847 | 7 |
+| Q929108 | 1848 Marlborough earthquake | 1848 | 7 |
+| Q919739 | Battle of Schwechat | 1848 | 7 |
+| Q769356 | Battle of Kápolna | 1849 | 7 |
+| Q597618 | Battle of Szőreg | 1849 | 7 |
+| Q629187 | Battle of Piski | 1849 | 7 |
+| Q4635114 | 32nd United States Congress | 1851 | 7 |
+| Q4513933 | Montenegrin–Ottoman War of 1852–53 | 1852 | 7 |
+| Q4072912 | Battle of Akhaltsikhe | 1853 | 7 |
+| Q4635308 | 33rd United States Congress | 1853 | 7 |
+| Q676907 | Wakarusa War | 1855 | 7 |
+| Q4872467 | Battle of Suomenlinna | 1855 | 7 |
+| Q28038710 | 1856 Heraklion earthquake | 1856 | 7 |
+| Q5032419 | caning of Charles Sumner | 1856 | 7 |
+| Q477444 | 1857 Fort Tejon earthquake | 1857 | 7 |
+| Q9360744 | Copenhagen Convention of 1857 | 1857 | 7 |
+| Q4871430 | Battle of Khushab | 1857 | 7 |
+| Q4635622 | 35th United States Congress | 1857 | 7 |
+| Q2518853 | Treaty of Lisbon | 1859 | 7 |
+| Q4635787 | 36th United States Congress | 1859 | 7 |
+| Q4087332 | Battle of Taku Forts | 1860 | 7 |
+| Q2851541 | annexation of Savoy to France | 1860 | 7 |
+| Q451711 | Battle of Carnifex Ferry | 1861 | 7 |
+| Q1422914 | Battle of Camp Allegheny | 1861 | 7 |
+| Q1425892 | Battle of Greenbrier River | 1861 | 7 |
+| Q2128905 | Action at Springfield | 1861 | 7 |
+| Q2889687 | Battle of Port Royal | 1861 | 7 |
+| Q5159748 | Confederate States presidential election | 1861 | 7 |
+| Q3586252 | Greek head of state referendum, 1862 | 1862 | 7 |
+| Q523364 | Battle of Island Number Ten | 1862 | 7 |
+| Q1118637 | Battle of Aspromonte | 1862 | 7 |
+| Q967287 | Manassas Station Operations | 1862 | 7 |
+| Q740404 | Battle of Cane Hill | 1862 | 7 |
+| Q1739881 | New Mexico Campaign | 1862 | 7 |
+| Q1639975 | Battle of Eltham's Landing | 1862 | 7 |
+| Q377681 | Battle of Oak Grove | 1862 | 7 |
+| Q2205730 | Battle of Thoroughfare Gap | 1862 | 7 |
+| Q2443807 | First Battle of Chattanooga | 1862 | 7 |
+| Q2102607 | First Battle of Rappahannock Station | 1862 | 7 |
+| Q2888543 | Siege of Fort Macon | 1862 | 7 |
+| Q2889807 | Battle of Roanoke Island | 1862 | 7 |
+| Q2904764 | Battle of Munfordville | 1862 | 7 |
+| Q3118971 | Ecuadorian–Colombian War | 1863 | 7 |
+| Q7699558 | Tenchūgumi Incident | 1863 | 7 |
+| Q526697 | Second Battle of Rappahannock Station | 1863 | 7 |
+| Q841297 | Battle of Williamsport | 1863 | 7 |
+| Q304655 | First Battle of Auburn | 1863 | 7 |
+| Q770565 | Battle of Hanover | 1863 | 7 |
+| Q2344929 | Battle of Raymond | 1863 | 7 |
+| Q2363999 | Battle of Fort Blair | 1863 | 7 |
+| Q2392704 | Battle of Corydon | 1863 | 7 |
+| Q2482906 | Battle of Grand Gulf | 1863 | 7 |
+| Q2649895 | Battle of Milliken's Bend | 1863 | 7 |
+| Q2672202 | Battle of Fort Sanders | 1863 | 7 |
+| Q2683571 | Battle of Lookout Mountain | 1863 | 7 |
+| Q2699406 | First Battle of Charleston Harbor | 1863 | 7 |
+| Q3458307 | Revolt of the Fourteen | 1863 | 7 |
+| Q2310964 | Morgan's Raid | 1863 | 7 |
+| Q2579523 | Battle of Fort Davidson | 1864 | 7 |
+| Q572095 | Battle of Pleasant Hill | 1864 | 7 |
+| Q2615801 | Battle of Adairsville | 1864 | 7 |
+| Q2615826 | Battle of Resaca | 1864 | 7 |
+| Q2470074 | Battle of Saint Mary's Church | 1864 | 7 |
+| Q4871102 | Battle of Glasgow | 1864 | 7 |
+| Q4871157 | Battle of Guard Hill | 1864 | 7 |
+| Q4871326 | Battle of Jerusalem Plank Road | 1864 | 7 |
+| Q4872606 | Battle of Tupelo | 1864 | 7 |
+| Q4128034 | Second Battle of Kernstown | 1864 | 7 |
+| Q3854317 | Battle of Marais des Cygnes | 1864 | 7 |
+| Q3808756 | Second Battle of Independence | 1864 | 7 |
+| Q4870552 | Battle of Brice's Cross Roads | 1864 | 7 |
+| Q4871474 | Battle of Kolb's Farm | 1864 | 7 |
+| Q4993803 | Third Battle of Murfreesboro | 1864 | 7 |
+| Q7443109 | Second Battle of Ream's Station | 1864 | 7 |
+| Q3820712 | Siege of Paysandú | 1864 | 7 |
+| Q2489794 | Price’s Missouri Expedition | 1864 | 7 |
+| Q2364944 | Battle of Cherbourg | 1864 | 7 |
+| Q660025 | Battle of Papudo | 1865 | 7 |
+| Q4527027 | Battle of Tashkent | 1865 | 7 |
+| Q4636192 | 39th United States Congress | 1865 | 7 |
+| Q3091173 | Wild Bill Hickok – Davis Tutt shootout | 1865 | 7 |
+| Q1497914 | Battle of Königinhof | 1866 | 7 |
+| Q609128 | Battle of Laufach | 1866 | 7 |
+| Q2984891 | Battle of Burkersdorf | 1866 | 7 |
+| Q2889791 | Battle of Ridgeway | 1866 | 7 |
+| Q15811475 | Battle of Hundheim | 1866 | 7 |
+| Q17111026 | New Orleans massacre of 1866 | 1866 | 7 |
+| Q3486010 | Siege of Querétaro | 1867 | 7 |
+| Q4637505 | 40th United States Congress | 1867 | 7 |
+| Q4555228 | 1868 Hawaii earthquake | 1868 | 7 |
+| Q612176 | Battle of Alcolea | 1868 | 7 |
+| Q3647744 | Battle of Avay | 1868 | 7 |
+| Q7510095 | Passage of Humaitá | 1868 | 7 |
+| Q254797 | Battle of Le Bourget | 1870 | 7 |
+| Q188123 | Battle of Villiers | 1870 | 7 |
+| Q323372 | Battle of Beaugency | 1870 | 7 |
+| Q2889935 | Battle of Saarbrücken | 1870 | 7 |
+| Q5100835 | Los Angeles Chinese massacre of 1871 | 1871 | 7 |
+| Q5598800 | Great Boston Fire of 1872 | 1872 | 7 |
+| Q2825907 | Virginius Affair | 1873 | 7 |
+| Q2269195 | First Aceh Expedition | 1873 | 7 |
+| Q2916939 | Osaka Conference of 1875 | 1875 | 7 |
+| Q786821 | Battle of Slim Buttes | 1876 | 7 |
+| Q286420 | Battle of Fundina | 1876 | 7 |
+| Q2888457 | Dull Knife Fight | 1876 | 7 |
+| Q4979789 | Brussels Geographic Conference | 1876 | 7 |
+| Q1161889 | 1877 Iquique earthquake | 1877 | 7 |
+| Q3656337 | Battle of Elena | 1877 | 7 |
+| Q4870987 | Battle of Erzurum | 1877 | 7 |
+| Q4872751 | Battle of Wolf Mountain | 1877 | 7 |
+| Q9347968 | Battle of Tabaruzaka | 1877 | 7 |
+| Q19893194 | Battle of Little Muddy Creek | 1877 | 7 |
+| Q4555645 | Fireburn | 1878 | 7 |
+| Q4871810 | Battle of Mouzaki | 1878 | 7 |
+| Q3320910 | Battle of Topeter | 1879 | 7 |
+| Q3357987 | Battle of Tarapacá | 1879 | 7 |
+| Q493814 | 1879 Irish Famine | 1879 | 7 |
+| Q4555806 | 1881 Chios earthquake | 1881 | 7 |
+| Q4638577 | 47th United States Congress | 1881 | 7 |
+| Q3393226 | Warsaw pogrom | 1881 | 7 |
+| Q19869495 | Kyiv Pogrom | 1881 | 7 |
+| Q2888820 | Battle of Huamachuco | 1883 | 7 |
+| Q4871096 | Battle of Gia Cuc | 1883 | 7 |
+| Q262584 | Nile Expedition | 1884 | 7 |
+| Q5166251 | Convention for the Protection of Submarine Telegraph Cables | 1884 | 7 |
+| Q2935396 | Pescadores Campaign | 1885 | 7 |
+| Q5371343 | Port Hamilton incident | 1885 | 7 |
+| Q4062545 | Allan Quatermain | 1887 | 7 |
+| Q4556361 | 1889 Kumamoto earthquake | 1889 | 7 |
+| Q1426599 | The Key to Theosophy | 1889 | 7 |
+| Q5615295 | Gugunian Expedition | 1890 | 7 |
+| Q1538672 | Manitoba Schools Question | 1890 | 7 |
+| Q10360225 | Revolt of January 31, 1891 | 1891 | 7 |
+| Q653164 | Fusillade de Fourmies | 1891 | 7 |
+| Q4640286 | 52nd United States Congress | 1891 | 7 |
+| Q18161653 | Nicaragua Crisis of 1894-1895 | 1894 | 7 |
+| Q1822896 | Liberal Revolution of Ecuador | 1895 | 7 |
+| Q2889200 | Battle of Mal Tiempo | 1895 | 7 |
+| Q2888446 | Battle of Dos Ríos | 1895 | 7 |
+| Q2889955 | Battle of Senafé | 1895 | 7 |
+| Q17621744 | assassination of Cánovas del Castillo | 1897 | 7 |
+| Q2889110 | Battle of Las Guásimas | 1898 | 7 |
+| Q7510374 | Siege of Santiago | 1898 | 7 |
+| Q6744479 | Malolos Congress | 1898 | 7 |
+| Q4327278 | Sverdrup's Fram expedition (1898-1902) | 1898 | 7 |
+| Q1312945 | Valdivia expedition | 1898 | 7 |
+| Q4126297 | The Romance of Leonardo da Vinci | 1899 | 7 |
+| Q18356964 | Battle of Langfang | 1900 | 7 |
+| Q1869133 | First Pan-African Conference | 1900 | 7 |
+| Q6006544 | Imperial Decree of declaration of war against foreign powers | 1900 | 7 |
+| Q552243 | Anti-Jewish Odessa pogroms | 1900 | 7 |
+| Q7443517 | Second Scutari War | 1419 | 6 |
+| Q2866970 | assassination of John the Fearless | 1419 | 6 |
+| Q809750 | Bavarian War | 1420 | 6 |
+| Q65045870 | 1420 Caldera earthquake | 1420 | 6 |
+| Q264911 | Battle of Brüx | 1421 | 6 |
+| Q44062 | Battle of Nebovidy | 1422 | 6 |
+| Q39071913 | Siege of Montargis | 1427 | 6 |
+| Q2890722 | Battle of the Echinades | 1427 | 6 |
+| Q1094899 | Loire Campaign | 1428 | 6 |
+| Q4872411 | Battle of Soncino | 1431 | 6 |
+| Q2250674 | Battle of Delebio | 1432 | 6 |
+| Q3920896 | Battle of Ašmena | 1432 | 6 |
+| Q2387677 | Siege of Calais | 1436 | 6 |
+| Q3020472 | De pictura | 1436 | 6 |
+| Q3757546 | Galeas per montes | 1438 | 6 |
+| Q48790246 | Siege of Rhodes | 1444 | 6 |
+| Q123419661 | Inca-Colla War | 1445 | 6 |
+| Q468120 | Saxon Fratricidal War | 1446 | 6 |
+| Q133977 | Battle of Caravaggio | 1448 | 6 |
+| Q3301210 | Battle of Oranik | 1448 | 6 |
+| Q156703 | Battle of Castione | 1449 | 6 |
+| Q321888 | Treaty of Gaeta | 1451 | 6 |
+| Q3304086 | Mehmed II's Albanian campaign | 1452 | 6 |
+| Q3395325 | Battle of Kruševac | 1454 | 6 |
+| Q3401311 | Battle of Leskovac | 1454 | 6 |
+| Q6453098 | Kyōtoku Incident | 1454 | 6 |
+| Q742137 | Battle of Bornholm | 1456 | 6 |
+| Q872741 | Battle of Seckenheim | 1462 | 6 |
+| Q5349120 | Eighth siege of Gibraltar | 1462 | 6 |
+| Q121283166 | Battle of Kljuc | 1463 | 6 |
+| Q2330558 | Liège Wars | 1465 | 6 |
+| Q2589772 | Battle of Montenaken | 1465 | 6 |
+| Q4872638 | Battle of Vaikal | 1465 | 6 |
+| Q10747221 | Vietnamese–Laotian War of 1467–1480 | 1467 | 6 |
+| Q532899 | Battle of Molinella | 1467 | 6 |
+| Q4870710 | Battle of Chapakchur | 1467 | 6 |
+| Q3536883 | Treaty of Saint-Omer | 1469 | 6 |
+| Q55707116 | Battle of Qarabagh | 1469 | 6 |
+| Q2339983 | Battle of the Maule | 1471 | 6 |
+| Q3625463 | Siege of Neamţ Citadel | 1476 | 6 |
+| Q3984715 | 1481 Rhodes earthquake | 1481 | 6 |
+| Q16824862 | Buckingham's rebellion | 1483 | 6 |
+| Q20768628 | Battle of Lucena | 1483 | 6 |
+| Q3118990 | French–Breton War | 1487 | 6 |
+| Q129578 | Battle of Aga-Cayiri | 1488 | 6 |
+| Q76995101 | Siege of Samarkand | 1494 | 6 |
+| Q3778712 | Polish-Moldavian War | 1497 | 6 |
+| Q2371630 | Battle of Rotebro | 1497 | 6 |
+| Q319198 | Saxon feud | 1498 | 6 |
+| Q1398703 | Battle of Hard | 1499 | 6 |
+| Q4907152 | Bijak | 1500 | 6 |
+| Q17081667 | Siege of Tabriz | 1501 | 6 |
+| Q16262987 | Siege of Smolensk | 1502 | 6 |
+| Q7510123 | Siege of Kabul | 1504 | 6 |
+| Q626301 | Jungjong coup | 1506 | 6 |
+| Q9078107 | Tenth Siege of Gibraltar | 1506 | 6 |
+| Q23467020 | naming of the Americas | 1507 | 6 |
+| Q7851298 | Tudor London | 1509 | 6 |
+| Q28496874 | Capture of Béjaïa | 1510 | 6 |
+| Q97348258 | Acehnese–Portuguese conflicts | 1519 | 6 |
+| Q20771384 | Spanish assault on Djerba (1520) | 1520 | 6 |
+| Q470943 | Reformation in the Kingdom of Hungary | 1520 | 6 |
+| Q1293343 | Siege of Šabac | 1521 | 6 |
+| Q2114067 | Siege of Kamakura | 1526 | 6 |
+| Q20312954 | Battle of Chanderi | 1528 | 6 |
+| Q109256825 | Campaign of Cherchell | 1531 | 6 |
+| Q2890433 | Battle of Un no Kuchi | 1536 | 6 |
+| Q1909447 | Matthew Bible | 1537 | 6 |
+| Q3778653 | Salt War | 1540 | 6 |
+| Q16369829 | Tahmasp I's campaigns in Kartili and Kakheti | 1541 | 6 |
+| Q7109980 | Ottoman wintering in Toulon | 1543 | 6 |
+| Q2744068 | Battle of Muros Bay | 1543 | 6 |
+| Q1016104 | Burgundian treaty of 1548 | 1548 | 6 |
+| Q65118723 | Bahr al-Hayat | 1550 | 6 |
+| Q1483039 | Princes' Revolt | 1552 | 6 |
+| Q11620514 | Battle of Kiyosu | 1552 | 6 |
+| Q895686 | Battle of Sievershausen | 1553 | 6 |
+| Q1980637 | Siege of Katsurao | 1553 | 6 |
+| Q13581279 | Luso-Chinese agreement | 1554 | 6 |
+| Q4871956 | Battle of Oshikibata | 1554 | 6 |
+| Q20995527 | Ottoman expeditions to Morocco | 1554 | 6 |
+| Q17077919 | Mughal–Persian Wars | 1557 | 6 |
+| Q4337412 | Siege of Narva | 1558 | 6 |
+| Q20477092 | Treaty of Constantinople (1562) | 1562 | 6 |
+| Q4337432 | Siege of Polotsk (1563) | 1563 | 6 |
+| Q3435342 | Action of 7 July 1565 | 1565 | 6 |
+| Q2775731 | Siege of Valenciennes | 1566 | 6 |
+| Q1615804 | Hessian War | 1567 | 6 |
+| Q7886604 | Union of Grodno | 1567 | 6 |
+| Q2188124 | Siege of Kakegawa | 1569 | 6 |
+| Q7509937 | Siege of Chōkō-ji | 1570 | 6 |
+| Q4870416 | Battle of Bangkusay | 1571 | 6 |
+| Q4871457 | Battle of Kizaki | 1572 | 6 |
+| Q2585314 | Siege of Middelburg | 1572 | 6 |
+| Q28454990 | Battle of Delft | 1573 | 6 |
+| Q11679996 | Siege of Hikida Castle | 1573 | 6 |
+| Q15197330 | Battle of Manila | 1574 | 6 |
+| Q2890949 | Battle of Lillo | 1574 | 6 |
+| Q2888432 | Battle of Dormans | 1575 | 6 |
+| Q5055597 | Siege of Yoshida Castle | 1575 | 6 |
+| Q19895686 | Battle of Raj Mahal | 1576 | 6 |
+| Q7510262 | Siege of Nanao | 1576 | 6 |
+| Q16537286 | Battle of Mollahasanli | 1578 | 6 |
+| Q14855684 | Battle of Borgerhout | 1579 | 6 |
+| Q2275430 | Second Siege of Takatenjin | 1580 | 6 |
+| Q2780616 | English Fury at Mechelen | 1580 | 6 |
+| Q7837041 | Treaty of Drohiczyn | 1581 | 6 |
+| Q10939819 | Battle of Tenshō-Jingo | 1582 | 6 |
+| Q2457514 | French Fury | 1583 | 6 |
+| Q5162454 | Conquest of the Azores | 1583 | 6 |
+| Q1240241 | Calendar riots in Riga | 1584 | 6 |
+| Q7510150 | Siege of Kanie | 1584 | 6 |
+| Q6059697 | Invasion of Shikoku | 1585 | 6 |
+| Q860517 | Battle of Hitotoribashi | 1586 | 6 |
+| Q2890331 | Battle of Vimory | 1587 | 6 |
+| Q860789 | Battle of Suriagehara | 1589 | 6 |
+| Q7510067 | Siege of Hachigata | 1590 | 6 |
+| Q2500644 | Siege of Shimoda | 1590 | 6 |
+| Q5174694 | Cossack Uprisings | 1591 | 6 |
+| Q7510166 | Siege of Kunohe | 1591 | 6 |
+| Q13437124 | Siege of Zutphen | 1591 | 6 |
+| Q3572847 | Alterations of Aragon | 1591 | 6 |
+| Q17515442 | Battle of Brest | 1592 | 6 |
+| Q5027837 | Campaign of Danture | 1594 | 6 |
+| Q7509977 | Siege of Doullens | 1595 | 6 |
+| Q2143007 | Siege of Hulst | 1596 | 6 |
+| Q2701400 | Siege of Calais | 1596 | 6 |
+| Q546505 | Battle of Stegeborg | 1598 | 6 |
+| Q4871499 | Battle of Kuisegawa | 1600 | 6 |
+| Q11556971 | Battle of Asainawate | 1600 | 6 |
+| Q7510547 | Siege of Ōtsu | 1600 | 6 |
+| Q7626770 | Stuart London | 1603 | 6 |
+| Q20473264 | Siege of Ganja | 1606 | 6 |
+| Q60791184 | Abbas I's Shirvan campaign | 1606 | 6 |
+| Q67212705 | Battle of Cape St. Vincent | 1606 | 6 |
+| Q4463439 | Siege of Troitse-Sergiyeva Lavra | 1608 | 6 |
+| Q4110458 | Siege of Pärnu | 1609 | 6 |
+| Q4872517 | Battle of Tashiskari | 1609 | 6 |
+| Q108733451 | Native American genocide in the United States | 1610 | 6 |
+| Q10428014 | Siege of Pskov | 1615 | 6 |
+| Q1933282 | Battle of Playa Honda | 1617 | 6 |
+| Q16683527 | Siege of Moscow | 1618 | 6 |
+| Q5037044 | Capture of Oppenheim | 1620 | 6 |
+| Q7509837 | Siege of Bad Kreuznach | 1620 | 6 |
+| Q15122331 | Siege of Saint-Jean-d'Angély | 1621 | 6 |
+| Q10428015 | Siege of Riga | 1621 | 6 |
+| Q42377865 | Siege of Frankenthal | 1621 | 6 |
+| Q3485964 | Siege of Montpellier | 1622 | 6 |
+| Q5733019 | Truce of Mitawa | 1622 | 6 |
+| Q12613430 | Injo coup | 1623 | 6 |
+| Q4870223 | Battle of Aghaiani | 1625 | 6 |
+| Q3536853 | Treaty of Paris | 1626 | 6 |
+| Q3486002 | Siege of Privas | 1629 | 6 |
+| Q15727825 | Battle of Fürth | 1632 | 6 |
+| Q2056637 | Capture of Maastricht | 1632 | 6 |
+| Q127604703 | Mughal–Safavid War | 1637 | 6 |
+| Q4058439 | Siege of Azov (1637–1642) | 1637 | 6 |
+| Q2589203 | Battle off Lizard Point | 1637 | 6 |
+| Q3984673 | 1638 Calabrian earthquakes | 1638 | 6 |
+| Q986738 | Portuguese Restoration of Independence | 1640 | 6 |
+| Q2886888 | Battle of Cambrils | 1640 | 6 |
+| Q2890861 | Battle of Cape St. Vincent | 1641 | 6 |
+| Q586189 | Battle of Powick Bridge | 1642 | 6 |
+| Q18352881 | Dutch expedition to Valdivia | 1643 | 6 |
+| Q4871933 | Battle of Ochmatów | 1644 | 6 |
+| Q7510444 | Sieges of Taunton | 1644 | 6 |
+| Q689433 | Battle of Langport | 1645 | 6 |
+| Q2265603 | Battles of La Naval de Manila | 1646 | 6 |
+| Q494896 | Battle of Dungan's Hill | 1647 | 6 |
+| Q1478896 | Battle of Knocknanuss | 1647 | 6 |
+| Q3399475 | Battle of St Fagans | 1648 | 6 |
+| Q1461766 | Battle of Rathmines | 1649 | 6 |
+| Q815226 | Sack of Wexford | 1649 | 6 |
+| Q16848254 | Interregnum | 1649 | 6 |
+| Q654441 | Battle of Vezekény | 1652 | 6 |
+| Q201587 | Act of Seclusion | 1654 | 6 |
+| Q4337448 | Siege of Smolensk | 1654 | 6 |
+| Q4087390 | Battle of Ozerna | 1655 | 6 |
+| Q7837280 | Treaty of Vienna | 1656 | 6 |
+| Q720886 | Battle of Gołąb | 1656 | 6 |
+| Q4871016 | Battle of Filipów | 1656 | 6 |
+| Q4870824 | Battle of Cádiz | 1656 | 6 |
+| Q12113288 | Treaty of Korsun | 1657 | 6 |
+| Q7837281 | Treaty of Vienna | 1657 | 6 |
+| Q11794882 | Siege of Kraków | 1657 | 6 |
+| Q2887948 | Battle of the Lines of Elvas | 1659 | 6 |
+| Q4087389 | Battle of Myadel | 1659 | 6 |
+| Q4872000 | Battle of Pavan Khind | 1660 | 6 |
+| Q4925340 | Cavalier Parliament | 1661 | 6 |
+| Q5598975 | Great Clearance | 1661 | 6 |
+| Q4551650 | 1663 Charlevoix earthquake | 1663 | 6 |
+| Q269479 | Battle of Köbölkút | 1663 | 6 |
+| Q4872383 | Battle of Sinhagad | 1670 | 6 |
+| Q4087382 | Battle of Ładyżyn | 1672 | 6 |
+| Q106859969 | 1674 Ambon earthquake and megatsunami | 1674 | 6 |
+| Q2889422 | Battle of Mulhouse | 1674 | 6 |
+| Q3485843 | Siege of Besançon | 1674 | 6 |
+| Q4337457 | Battle of Trembowla | 1675 | 6 |
+| Q4809918 | Battle of Żurawno | 1676 | 6 |
+| Q2888037 | Battle of Uddevalla | 1677 | 6 |
+| Q1678252 | Great Sleigh Drive | 1678 | 6 |
+| Q1453186 | Action of 30 September 1681 | 1681 | 6 |
+| Q171374 | Shackamaxon | 1682 | 6 |
+| Q4871290 | Battle of Itakhuli | 1682 | 6 |
+| Q2236909 | Battle of Gran | 1685 | 6 |
+| Q4871398 | Battle of Kassa | 1685 | 6 |
+| Q7483226 | Siege of Pécs | 1686 | 6 |
+| Q4551867 | 1687 Peru earthquake | 1687 | 6 |
+| Q1772463 | Battle of Reading | 1688 | 6 |
+| Q4438396 | Battle of Batočina | 1689 | 6 |
+| Q15787496 | Siege of Bonn | 1689 | 6 |
+| Q4677392 | Battle of Mytilene | 1690 | 6 |
+| Q4871844 | Battle of Nadaun | 1691 | 6 |
+| Q494840 | Siege of Limerick | 1691 | 6 |
+| Q4551940 | 1694 Irpinia-Basilicata earthquake | 1694 | 6 |
+| Q4872983 | Battle of the Oinousses Islands | 1695 | 6 |
+| Q1072607 | Treaty of Turin | 1696 | 6 |
+| Q4870686 | Battle of Cenei | 1696 | 6 |
+| Q9172327 | Battle of Andros (1696) | 1696 | 6 |
+| Q4871943 | Battle of Olkieniki | 1700 | 6 |
+| Q481518 | Battle of Rauge | 1701 | 6 |
+| Q4871024 | Battle of Flint River | 1702 | 6 |
+| Q12717504 | Siege of St. Augustine | 1702 | 6 |
+| Q317718 | Treaty of Ilbersheim | 1704 | 6 |
+| Q562324 | Battle of Poznań | 1704 | 6 |
+| Q943598 | Battle of Saint Gotthard | 1705 | 6 |
+| Q2270810 | Sendling's Night of Murder | 1705 | 6 |
+| Q5928017 | Siege of St. John's | 1705 | 6 |
+| Q5082999 | Lefebvre's Charles Town expedition | 1706 | 6 |
+| Q3079017 | Siege of Port Royal | 1707 | 6 |
+| Q46003 | Battle of Rajovka | 1708 | 6 |
+| Q2382755 | Raid on Haverhill | 1708 | 6 |
+| Q16253643 | Battle of Grodno | 1708 | 6 |
+| Q18008024 | Siege of Tortosa | 1708 | 6 |
+| Q15830532 | Battle of Sokolki | 1709 | 6 |
+| Q109237454 | 1716 Algiers earthquake | 1716 | 6 |
+| Q31180913 | Siege of Temeşvar | 1716 | 6 |
+| Q3791537 | Attack on Marstrand | 1719 | 6 |
+| Q18205176 | Battle of Sangan | 1727 | 6 |
+| Q1864290 | Congress of Soissons | 1728 | 6 |
+| Q18162680 | Battle of Zarghan | 1729 | 6 |
+| Q18162684 | Battle of Kafer Qal'eh | 1729 | 6 |
+| Q18205170 | Battle of Khwar Pass | 1729 | 6 |
+| Q4230506 | Conditions | 1730 | 6 |
+| Q18209416 | Nader's Mesopotamian Campaign | 1732 | 6 |
+| Q20008160 | Battle of Colorno | 1734 | 6 |
+| Q3625460 | Siege of Capua | 1734 | 6 |
+| Q1470995 | Chickasaw Campaign of 1736 | 1736 | 6 |
+| Q4337347 | Siege of Azov | 1736 | 6 |
+| Q2890333 | Battle of Villmanstrand | 1741 | 6 |
+| Q25210903 | Withdrawal through Andalal | 1741 | 6 |
+| Q4104094 | Treaty of Warsaw | 1745 | 6 |
+| Q4552798 | 1746 Lima - Callao earthquake | 1746 | 6 |
+| Q4870138 | Battle at Port-la-Joye | 1746 | 6 |
+| Q2713453 | Voyage of the Glorioso | 1747 | 6 |
+| Q950914 | Battle of Penfui | 1749 | 6 |
+| Q16377676 | Battle of Kirkhbulakh | 1751 | 6 |
+| Q4552913 | 1755 Cape Ann Earthquake | 1755 | 6 |
+| Q132175133 | Siege of Nishapur | 1755 | 6 |
+| Q65077587 | Bengal War | 1756 | 6 |
+| Q17016230 | Batte of Delhi | 1757 | 6 |
+| Q13638353 | Invasion of Hanover | 1757 | 6 |
+| Q20988268 | 1757 Hajj caravan raid | 1757 | 6 |
+| Q128996486 | Sack of Delhi | 1757 | 6 |
+| Q3153837 | Invasion of Guadeloupe | 1759 | 6 |
+| Q3153838 | Invasion of Martinique | 1759 | 6 |
+| Q7283750 | Raid on Le Havre | 1759 | 6 |
+| Q94545 | Siege of Glatz | 1760 | 6 |
+| Q4870662 | Battle of Carrickfergus | 1760 | 6 |
+| Q74122 | Battle of Ölper | 1761 | 6 |
+| Q2888705 | Battle of Grünberg | 1761 | 6 |
+| Q10540836 | 1762 Arakan earthquake | 1762 | 6 |
+| Q335174 | Battle of Vila Velha | 1762 | 6 |
+| Q116763949 | 1764 Woldegk tornado | 1764 | 6 |
+| Q112136172 | Chuar Rebellion | 1766 | 6 |
+| Q4871446 | Battle of Kirtipur | 1767 | 6 |
+| Q16821560 | Battle of Tiruvannamalai | 1767 | 6 |
+| Q4871400 | Battle of Kathmandu | 1768 | 6 |
+| Q25112891 | Brescia Explosion | 1769 | 6 |
+| Q1750697 | 1770 Port-au-Prince earthquake | 1770 | 6 |
+| Q4677333 | Battle of Nauplia | 1770 | 6 |
+| Q2280725 | Siamese–Vietnamese War of 1771-1773 | 1771 | 6 |
+| Q1495317 | Gaspée affair | 1772 | 6 |
+| Q106916642 | 1773 Phipps expedition towards the North Pole | 1773 | 6 |
+| Q985470 | Gunpowder Incident | 1775 | 6 |
+| Q7837245 | Treaty of Surat | 1775 | 6 |
+| Q12119650 | Liquidation of the Zaporozhian Sich | 1775 | 6 |
+| Q7512984 | signing of the United States Declaration of Independence | 1776 | 6 |
+| Q4871284 | Battle of Iron Works Hill | 1776 | 6 |
+| Q7510027 | Siege of Fort Stanwix | 1777 | 6 |
+| Q1862538 | Battle of Cobleskill | 1778 | 6 |
+| Q6921294 | Mount Hope Bay raids | 1778 | 6 |
+| Q7509881 | Siege of Boonesborough | 1778 | 6 |
+| Q1949707 | Battle of Beaufort | 1779 | 6 |
+| Q2296381 | Battle of Minisink | 1779 | 6 |
+| Q4391287 | Battle of Brier Creek | 1779 | 6 |
+| Q4583774 | Battle of Kettle Creek | 1779 | 6 |
+| Q55600396 | 1780 Tabriz earthquake | 1780 | 6 |
+| Q568613 | Battle of Pollilur | 1780 | 6 |
+| Q3355796 | Battle of Mobile | 1781 | 6 |
+| Q4871143 | Battle of Groton Heights | 1781 | 6 |
+| Q2888688 | Battle of Green Spring | 1781 | 6 |
+| Q7510266 | Siege of Negapatam | 1781 | 6 |
+| Q5037686 | Caramurú | 1781 | 6 |
+| Q65042005 | Muharram Rebellion | 1782 | 6 |
+| Q3062432 | Hudson Bay expedition | 1782 | 6 |
+| Q12976096 | Siege of Cuddalore | 1783 | 6 |
+| Q4188862 | Capture of the Bahamas | 1783 | 6 |
+| Q28001553 | Venetian bombardments of the Beylik of Tunis | 1784 | 6 |
+| Q3381227 | Maratha–Mysore wars | 1785 | 6 |
+| Q4337461 | Siege of Khotin | 1788 | 6 |
+| Q9173377 | Naval actions at the siege of Ochakov | 1788 | 6 |
+| Q1648404 | Nootka Crisis | 1789 | 6 |
+| Q745839 | Second Fleet | 1790 | 6 |
+| Q4527017 | Siege of Anapa | 1791 | 6 |
+| Q3297481 | massacres of La Glacière | 1791 | 6 |
+| Q9172826 | Battle of Brest (1792) | 1792 | 6 |
+| Q9173384 | Battle of Opsa | 1792 | 6 |
+| Q2888424 | Battle of Dol | 1793 | 6 |
+| Q2889640 | Battle of Pont-Charrault | 1793 | 6 |
+| Q2375910 | Battle of Fougères | 1793 | 6 |
+| Q2889528 | Second Battle of Noirmoutier | 1793 | 6 |
+| Q2889866 | Battle of Saint-Fulgent | 1793 | 6 |
+| Q3485811 | Siege of Angers | 1793 | 6 |
+| Q27027120 | Siege of Breda | 1793 | 6 |
+| Q735960 | Battle of the Vosges | 1794 | 6 |
+| Q1323016 | Battle of Chełm | 1794 | 6 |
+| Q2890044 | Battle of Sprimont | 1794 | 6 |
+| Q9173542 | Battle of Saločiai (1794) | 1794 | 6 |
+| Q3625493 | Siege of Maastricht | 1794 | 6 |
+| Q675833 | Treaty of La Jaunaye | 1795 | 6 |
+| Q4086162 | Battle of Bziyuk | 1796 | 6 |
+| Q4870967 | Battle of Emmendingen | 1796 | 6 |
+| Q4870989 | Battle of Ettlingen | 1796 | 6 |
+| Q16932041 | Rhine Campaign of 1796 | 1796 | 6 |
+| Q15262148 | Newfoundland expedition | 1796 | 6 |
+| Q4553469 | 1797 Sumatra earthquake | 1797 | 6 |
+| Q3536721 | Treaty with Tunis | 1797 | 6 |
+| Q2888482 | Battle of Faenza | 1797 | 6 |
+| Q2889033 | Battle of La Favorite | 1797 | 6 |
+| Q2866987 | Assault on Cadiz | 1797 | 6 |
+| Q1497900 | Battle of Frauenfeld | 1799 | 6 |
+| Q2236891 | Battle of Feldkirch | 1799 | 6 |
+| Q2931306 | Battle of Krabbendam | 1799 | 6 |
+| Q4872661 | Battle of Verona | 1799 | 6 |
+| Q1297380 | Vlieter incident | 1799 | 6 |
+| Q112126478 | Chechen genocide | 1800 | 6 |
+| Q2994780 | Conspiration des poignards | 1800 | 6 |
+| Q17640143 | Treaty of Constantinople (1800) | 1800 | 6 |
+| Q2888142 | Battle of Biberach | 1800 | 6 |
+| Q12867548 | Battle of Niakhura | 1800 | 6 |
+| Q18206471 | Battle of Neuburg | 1800 | 6 |
+| Q2890888 | Battle of the Malta Convoy | 1800 | 6 |
+| Q176653 | Baudin expedition to Australia | 1800 | 6 |
+| Q4691898 | Age of Oil | 1800 | 6 |
+| Q1963011 | Treaty of Paris | 1801 | 6 |
+| Q1476039 | Petite Église | 1801 | 6 |
+| Q12866905 | 1804 Mtiuleti rebellion | 1804 | 6 |
+| Q2984823 | Battle of Memmingen | 1805 | 6 |
+| Q4870476 | Battle of Bharatpur | 1805 | 6 |
+| Q4844981 | Battle of Waren-Nossentin | 1806 | 6 |
+| Q5035993 | Capitulation of Stettin | 1806 | 6 |
+| Q16931955 | Invasion of Naples | 1806 | 6 |
+| Q25544 | Battle of the Dardanelles | 1807 | 6 |
+| Q1260627 | Milan Decree | 1807 | 6 |
+| Q847347 | Salmagundi | 1807 | 6 |
+| Q2599254 | Battle of Alavus | 1808 | 6 |
+| Q2600584 | Battle of Lapua | 1808 | 6 |
+| Q2600996 | Battle of Pulkkila | 1808 | 6 |
+| Q3439893 | Battle of Ruona | 1808 | 6 |
+| Q2888259 | Battle of Castellón | 1808 | 6 |
+| Q4927229 | Blockade of Barcelona | 1808 | 6 |
+| Q10671371 | Battle of Karstula | 1808 | 6 |
+| Q2600573 | Siege of Sveaborg | 1808 | 6 |
+| Q3432591 | Battle of Zealand Point | 1808 | 6 |
+| Q2887830 | Battle of Alvøen | 1808 | 6 |
+| Q1389655 | Capture of the Rosily Squadron | 1808 | 6 |
+| Q3043095 | Battle of the Bridge of Amarante | 1809 | 6 |
+| Q4871240 | Battle of Hollabrunn | 1809 | 6 |
+| Q4872450 | Battle of Stralsund | 1809 | 6 |
+| Q4872295 | Battle of Sankt Michael | 1809 | 6 |
+| Q22248888 | Battle of Miajadas | 1809 | 6 |
+| Q20669735 | Battle of Valle de Monterrey | 1809 | 6 |
+| Q2935358 | Dalmatian Campaign | 1809 | 6 |
+| Q4553928 | 1810 Crete earthquake | 1810 | 6 |
+| Q2889750 | Battle of Redinha | 1811 | 6 |
+| Q2889839 | Battle of Sabugal | 1811 | 6 |
+| Q4870522 | Battle of Bornos | 1811 | 6 |
+| Q4870667 | Battle of Casal Novo | 1811 | 6 |
+| Q4872077 | Battle of Pombal | 1811 | 6 |
+| Q4870949 | Battle of El Bodon | 1811 | 6 |
+| Q4872634 | Battle of Usagre | 1811 | 6 |
+| Q18244642 | Battle of Foz de Arouce | 1811 | 6 |
+| Q7443527 | Second siege of Badajoz | 1811 | 6 |
+| Q4927226 | Blockade of Almeida | 1811 | 6 |
+| Q4553950 | 1811 German Coast Uprising | 1811 | 6 |
+| Q4872691 | Battle of Vitebsk | 1812 | 6 |
+| Q4087482 | Battle of Ekau | 1812 | 6 |
+| Q4870523 | Battle of Bornos | 1812 | 6 |
+| Q4870669 | Battle of Castalla | 1812 | 6 |
+| Q4870695 | Battle of Cerrito | 1812 | 6 |
+| Q6501680 | Battle of Kaidanowo | 1812 | 6 |
+| Q106616328 | Battle of Wolkowisk | 1812 | 6 |
+| Q3118960 | Civil War between Centralists and Federalists | 1812 | 6 |
+| Q2837436 | Battle of Ayohuma | 1813 | 6 |
+| Q1497923 | Battle of Möckern | 1813 | 6 |
+| Q2236937 | Battle of Hagelberg | 1813 | 6 |
+| Q2237082 | Battle of Reichenbach | 1813 | 6 |
+| Q2890551 | Battle of the Nive | 1813 | 6 |
+| Q4870595 | Battle of Burnt Corn | 1813 | 6 |
+| Q13550492 | Siege of Pamplona | 1813 | 6 |
+| Q815212 | Siege of Torgau | 1813 | 6 |
+| Q1267717 | Battle of Langnes | 1814 | 6 |
+| Q3485838 | Battle of Bayonne | 1814 | 6 |
+| Q4871911 | Battle of North Point | 1814 | 6 |
+| Q4587925 | Battle of Matrand | 1814 | 6 |
+| Q16844702 | Battle of Hoogstraten | 1814 | 6 |
+| Q15277692 | Siege of Ragusa | 1814 | 6 |
+| Q14833923 | Takovo Meeting | 1815 | 6 |
+| Q1634602 | Battle of Scapezzano | 1815 | 6 |
+| Q1647177 | Battle of Casaglia | 1815 | 6 |
+| Q643054 | Battle of La Suffel | 1815 | 6 |
+| Q2889812 | Battle of Ronco | 1815 | 6 |
+| Q4871288 | Battle of Issy | 1815 | 6 |
+| Q2838431 | Battle off Cape Gata | 1815 | 6 |
+| Q2176745 | Russian Rurik Expedition | 1815 | 6 |
+| Q3536898 | Treaty of Turin | 1816 | 6 |
+| Q23129421 | Russian conquest of Chechnya and Dagestan | 1817 | 6 |
+| Q4871822 | Battle of Multan | 1818 | 6 |
+| Q3656346 | Siege of Diriyah | 1818 | 6 |
+| Q111032472 | 1819 Singapore Treaty | 1819 | 6 |
+| Q2890803 | Battle of Vargas Swamp | 1819 | 6 |
+| Q60746515 | Persian Gulf campaign of 1819 | 1819 | 6 |
+| Q3181490 | Battle of Camino Real | 1820 | 6 |
+| Q5656901 | Independence Act of Panama | 1821 | 6 |
+| Q3707362 | A Defence of Poetry | 1821 | 6 |
+| Q11952933 | Moresby Treaty | 1822 | 6 |
+| Q5601759 | Greek Constitution of 1823 | 1823 | 6 |
+| Q2890728 | Battle of 4 May | 1823 | 6 |
+| Q4871920 | Battle of Nowshera | 1823 | 6 |
+| Q4871321 | Battle of Jenipapo | 1823 | 6 |
+| Q720772 | Hungarian Reform Era | 1825 | 6 |
+| Q5784579 | Argentine Constitution of 1826 | 1826 | 6 |
+| Q14824597 | Siege of Kars | 1828 | 6 |
+| Q4763642 | Anglo-Khasi War | 1829 | 6 |
+| Q178346 | Treaty of Dancing Rabbit Creek | 1830 | 6 |
+| Q6052195 | Mir Muhammed Rebellion | 1830 | 6 |
+| Q2237196 | Battle of Hernani | 1830 | 6 |
+| Q3382792 | Massacre of the Albanian Beys | 1830 | 6 |
+| Q5808489 | dissolution of Gran Colombia | 1830 | 6 |
+| Q1157138 | First Battle of Wawer | 1831 | 6 |
+| Q2288966 | Battle of Stoczek | 1831 | 6 |
+| Q19741578 | Battle of Balakot | 1831 | 6 |
+| Q136647302 | Siege of Amedi | 1831 | 6 |
+| Q2984978 | Battle of the Tagus | 1831 | 6 |
+| Q865831 | Treaty of Payne's Landing | 1832 | 6 |
+| Q5098739 | Chilean Constitution of 1833 | 1833 | 6 |
+| Q2887902 | Battle of Asseiceira | 1834 | 6 |
+| Q4554399 | Battle of Hebron | 1834 | 6 |
+| Q2524244 | 1834 Safed Anti-Jewish pogrom | 1834 | 6 |
+| Q6679221 | Lord Eliot Convention | 1835 | 6 |
+| Q1139484 | Creek War of 1836 | 1836 | 6 |
+| Q1331281 | September Revolution in Portugal | 1836 | 6 |
+| Q9001194 | Tarija War | 1837 | 6 |
+| Q4122577 | Anti-Rent War | 1839 | 6 |
+| Q4438368 | Battle of the Valerik River | 1840 | 6 |
+| Q3927755 | Sulphur Crisis of 1840 | 1840 | 6 |
+| Q10369453 | Second Reign | 1840 | 6 |
+| Q2060982 | Battle of Famaillá | 1841 | 6 |
+| Q5036999 | Capture of Chusan | 1841 | 6 |
+| Q7382025 | Russian conquest of Bukhara | 1842 | 6 |
+| Q4205485 | Battle of Ichkeria | 1842 | 6 |
+| Q10746587 | March Revolution (Ecuador) | 1843 | 6 |
+| Q4872308 | Battle of Santiago (1844) | 1844 | 6 |
+| Q1445777 | Treaty of Florence (1844) | 1844 | 6 |
+| Q4873005 | Battle of the Sacramento River | 1847 | 6 |
+| Q3636530 | Battle of Monte Berico | 1848 | 6 |
+| Q12001379 | Battle of Kolding | 1849 | 6 |
+| Q1006312 | Hungarian Declaration of Independence | 1849 | 6 |
+| Q3380481 | Battle of Lottorf | 1850 | 6 |
+| Q5723335 | Battle of the Tonelero Pass | 1851 | 6 |
+| Q19631987 | Battle of Başgedikler | 1853 | 6 |
+| Q3118955 | Colombian Civil War of 1854 | 1854 | 6 |
+| Q995505 | Battle of Jiangnan | 1856 | 6 |
+| Q18210813 | Pecija's First Revolt | 1858 | 6 |
+| Q7104138 | Orsini affair | 1858 | 6 |
+| Q3536700 | Cañas–Jerez Treaty | 1858 | 6 |
+| Q481230 | Prussian expedition to East Asia (1859-1862) | 1859 | 6 |
+| Q7837136 | Treaty of Managua | 1860 | 6 |
+| Q2591315 | Battle of Naucalpan | 1860 | 6 |
+| Q4555068 | 1861 Mendoza earthquake | 1861 | 6 |
+| Q9108134 | Xinyou Coup | 1861 | 6 |
+| Q3536791 | Treaty of Fort Wise | 1861 | 6 |
+| Q840254 | Battle of Sewell's Point | 1861 | 6 |
+| Q1387925 | Battle of Round Mountain | 1861 | 6 |
+| Q2185405 | Battle of Hatteras Inlet Batteries | 1861 | 6 |
+| Q4296979 | Battle of Vienna | 1861 | 6 |
+| Q4090339 | Battle of the Head of Passes | 1861 | 6 |
+| Q4635921 | 37th United States Congress | 1861 | 6 |
+| Q7835391 | Transvaal Civil War | 1862 | 6 |
+| Q2010256 | Battle of South Mills | 1862 | 6 |
+| Q2018804 | Battle of Mill Springs | 1862 | 6 |
+| Q3506821 | Battle of Baton Rouge | 1862 | 6 |
+| Q2284279 | Battle of Fort Pulaski | 1862 | 6 |
+| Q2889509 | Battle of New Bern | 1862 | 6 |
+| Q2454284 | Battle of Hartsville | 1862 | 6 |
+| Q2407735 | First Battle of Independence | 1862 | 6 |
+| Q2887896 | Battle of Atlixco | 1862 | 6 |
+| Q2897821 | First Battle of Murfreesboro | 1862 | 6 |
+| Q3052708 | Battle of Savage's Station | 1862 | 6 |
+| Q2965192 | Battle of James Island | 1862 | 6 |
+| Q4870421 | Battle of Barranca Seca | 1862 | 6 |
+| Q15062174 | Battles of New Ulm | 1862 | 6 |
+| Q4872754 | Battle of Wood Lake | 1862 | 6 |
+| Q103829968 | War of 1863 | 1863 | 6 |
+| Q243640 | Second Battle of Sabine Pass | 1863 | 6 |
+| Q767157 | Battle of Middleburg | 1863 | 6 |
+| Q841268 | Battle of Gettysburg, First Day | 1863 | 6 |
+| Q905574 | Battle of Gettysburg, Second Day | 1863 | 6 |
+| Q767520 | Battle of Upperville | 1863 | 6 |
+| Q1954336 | First Battle of Fort Wagner | 1863 | 6 |
+| Q2501125 | Battle of Wauhatchie | 1863 | 6 |
+| Q2185896 | Battle of Fort McAllister | 1863 | 6 |
+| Q2347044 | Fight at Monterey Pass | 1863 | 6 |
+| Q2668382 | Siege of Suffolk | 1863 | 6 |
+| Q3910850 | Second Battle of Charleston Harbor | 1863 | 6 |
+| Q2941587 | Second Battle of Springfield | 1863 | 6 |
+| Q2772670 | Battle of Salem Church | 1863 | 6 |
+| Q3414284 | Christie Question | 1863 | 6 |
+| Q3327395 | Mud March | 1863 | 6 |
+| Q4636059 | 38th United States Congress | 1863 | 6 |
+| Q136540429 | Règlement Organique | 1864 | 6 |
+| Q135468 | Battle of Haw's Shop | 1864 | 6 |
+| Q2195153 | Battle of Paducah | 1864 | 6 |
+| Q2888382 | Battle of Dallas | 1864 | 6 |
+| Q1972073 | Battle of Chester Station | 1864 | 6 |
+| Q2566024 | Battle of Proctor's Creek | 1864 | 6 |
+| Q4871740 | Battle of Mine Creek | 1864 | 6 |
+| Q2804685 | Battle of Marks' Mills | 1864 | 6 |
+| Q3775715 | Battle of Decatur | 1864 | 6 |
+| Q2889502 | Battle of New Hope Church | 1864 | 6 |
+| Q4870777 | Battle of Columbia | 1864 | 6 |
+| Q2402094 | Battle of Swift Creek | 1864 | 6 |
+| Q2887827 | Battle of Allatoona | 1864 | 6 |
+| Q3007076 | Battle of Poison Spring | 1864 | 6 |
+| Q5452508 | First Battle of Deep Bottom | 1864 | 6 |
+| Q4871678 | Battle of Marion | 1864 | 6 |
+| Q3853836 | Second Battle of Newtonia | 1864 | 6 |
+| Q3808722 | Second Battle of Lexington | 1864 | 6 |
+| Q4438421 | Battle of Chaffin's Farm | 1864 | 6 |
+| Q4871114 | Battle of Globe Tavern | 1864 | 6 |
+| Q4872040 | Battle of Pickett's Mill | 1864 | 6 |
+| Q5452529 | First Battle of Petersburg | 1864 | 6 |
+| Q7443097 | Second Battle of Memphis | 1864 | 6 |
+| Q5452517 | First Battle of Fort Fisher | 1864 | 6 |
+| Q1129674 | Battle of Lewis's Farm | 1865 | 6 |
+| Q1935037 | Battle of High Bridge | 1865 | 6 |
+| Q688807 | Battle of Dinwiddie Court House | 1865 | 6 |
+| Q994665 | Battle of Monroe's Crossroads | 1865 | 6 |
+| Q2313310 | Battle of Selma | 1865 | 6 |
+| Q2438253 | Battle of Appomattox Station | 1865 | 6 |
+| Q1438584 | Battle of Fort Blakeley | 1865 | 6 |
+| Q9050465 | Saint Daniel's Night | 1865 | 6 |
+| Q626355 | Battle of Helmstadt | 1866 | 6 |
+| Q16489568 | Battle of Boquerón | 1866 | 6 |
+| Q655418 | London Conference of 1866 | 1866 | 6 |
+| Q325425 | Bombardment of Valparaiso | 1866 | 6 |
+| Q7837288 | Treaty of Vöslau | 1867 | 6 |
+| Q5887751 | Battle of Kansala | 1867 | 6 |
+| Q24204921 | Six Years' War | 1868 | 6 |
+| Q883093 | Mannheimer Akte | 1868 | 6 |
+| Q2890628 | Battle of Bonari Pass | 1868 | 6 |
+| Q2174715 | Cry of Yara | 1868 | 6 |
+| Q4637689 | 41st United States Congress | 1869 | 6 |
+| Q15221555 | Second German North Polar Expedition (1869-1870) | 1869 | 6 |
+| Q832924 | Battle of Villepion | 1870 | 6 |
+| Q1429757 | Battle of Châtillon | 1870 | 6 |
+| Q2744931 | Battle of Dijon | 1870 | 6 |
+| Q10751258 | Siege of Verdun | 1870 | 6 |
+| Q107057637 | Massacre de la rue Haxo | 1871 | 6 |
+| Q11625961 | blood tax riots | 1873 | 6 |
+| Q3279511 | Svenska Akademiens ordlista | 1874 | 6 |
+| Q3510584 | 1875 Cúcuta earthquake | 1875 | 6 |
+| Q4638100 | 44th United States Congress | 1875 | 6 |
+| Q1927105 | Whiskey Ring | 1875 | 6 |
+| Q4087409 | Battle of Šumatovac | 1876 | 6 |
+| Q16898752 | Battle of Powder River | 1876 | 6 |
+| Q2890384 | Battle of White Bird Canyon | 1877 | 6 |
+| Q4438386 | Battle of the Big Hole | 1877 | 6 |
+| Q4638269 | 45th United States Congress | 1877 | 6 |
+| Q3149888 | Takebashi Incident | 1878 | 6 |
+| Q1001069 | Battle of Novšiće | 1879 | 6 |
+| Q23020500 | Battles for Plav and Gusinje | 1879 | 6 |
+| Q55658233 | Peace of Constantinople (1879) | 1879 | 6 |
+| Q28227623 | Meeker Massacre | 1879 | 6 |
+| Q3395274 | Brsjak Revolt | 1880 | 6 |
+| Q4555815 | 1881 Haiphong Typhoon | 1881 | 6 |
+| Q2088471 | Phoenix Park murders | 1882 | 6 |
+| Q7382322 | Russia–Korea Treaty of 1884 | 1884 | 6 |
+| Q3118957 | Colombian Civil War of 1884-1885 | 1884 | 6 |
+| Q2894412 | A Calendar of Wisdom | 1886 | 6 |
+| Q2743386 | Great Vancouver Fire | 1886 | 6 |
+| Q650357 | 1887 Diano Marina earthquake | 1887 | 6 |
+| Q5189126 | Crow War | 1887 | 6 |
+| Q2888306 | Battle of Chelenqo | 1887 | 6 |
+| Q634483 | 1888 Río de la Plata earthquake | 1888 | 6 |
+| Q274489 | Yngsjö murder | 1889 | 6 |
+| Q5599946 | Great Seattle Fire | 1889 | 6 |
+| Q4640131 | 51st United States Congress | 1889 | 6 |
+| Q652669 | Cyclone Mahina | 1889 | 6 |
+| Q6202099 | Jindandao Incident | 1891 | 6 |
+| Q2984893 | Battle of Serobeti | 1892 | 6 |
+| Q21214529 | Mercy Brown vampire incident | 1892 | 6 |
+| Q11909584 | Liceu bombing | 1893 | 6 |
+| Q4640415 | 53rd United States Congress | 1893 | 6 |
+| Q11485805 | 1894 Shōnai earthquake | 1894 | 6 |
+| Q4640529 | 54th United States Congress | 1895 | 6 |
+| Q821540 | Great Industrial Exposition of Berlin | 1896 | 6 |
+| Q4640668 | 55th United States Congress | 1897 | 6 |
+| Q16821553 | Anglo-French Convention of 1898 | 1898 | 6 |
+| Q2310285 | Battle of Cárdenas | 1898 | 6 |
+| Q16867411 | Six-Day War | 1899 | 6 |
+| Q3727804 | Restorative Liberal Revolution | 1899 | 6 |
+| Q4927333 | Bloemfontein Conference | 1899 | 6 |
+| Q4640768 | 56th United States Congress | 1899 | 6 |
+| Q4201627 | Siboga Expedition | 1899 | 6 |
+| Q65066872 | Kuwaiti–Rashidi War | 1900 | 6 |
+| Q5873773 | 1900 San Narciso earthquake | 1900 | 6 |
+| Q4087483 | Battle of Yangcun | 1900 | 6 |
+| Q4222418 | 1900 Amur anti-Chinese pogroms | 1900 | 6 |
+| Q11156922 | Battle of Živohošť | 1419 | 5 |
+| Q4871519 | Battle of La Rochelle | 1420 | 5 |
+| Q38977 | Battle of Deutschbrod | 1422 | 5 |
+| Q22689021 | Mamluk campaigns against Cyprus | 1424 | 5 |
+| Q1347075 | Battle of Brouwershaven | 1426 | 5 |
+| Q18812295 | Bombardment of Copenhagen | 1428 | 5 |
+| Q42683292 | Reconquest of Arakan | 1429 | 5 |
+| Q879327 | Battle of Hiltersried | 1433 | 5 |
+| Q20100434 | Aragonese conquest of Naples | 1435 | 5 |
+| Q2237100 | Battle of Sellnitz | 1438 | 5 |
+| Q55658749 | Siege of Moscow | 1439 | 5 |
+| Q12756961 | Siege of Novo Brdo | 1440 | 5 |
+| Q568982 | Treaty of Copenhagen | 1441 | 5 |
+| Q5365139 | Kakitsu Incident | 1441 | 5 |
+| Q7900327 | Urdu Bazar Revolt | 1447 | 5 |
+| Q4872511 | Battle of Tarnab | 1448 | 5 |
+| Q7510079 | Siege of Herat | 1448 | 5 |
+| Q1916584 | Revolt of Ghent | 1449 | 5 |
+| Q10883153 | Defense of Beijing | 1449 | 5 |
+| Q24933298 | Battle of Ghedi | 1453 | 5 |
+| Q29995898 | Kanhadade Prabandha | 1455 | 5 |
+| Q118897977 | Siege of Smederevo | 1459 | 5 |
+| Q4871766 | Battle of Mokra | 1462 | 5 |
+| Q7533905 | Skanderbeg's Macedonian campaign | 1462 | 5 |
+| Q48965481 | Siege of Jajce | 1464 | 5 |
+| Q1673871 | War of the Succession of Stettin | 1464 | 5 |
+| Q4871725 | Battle of Meçad | 1465 | 5 |
+| Q7039234 | Ninth Siege of Gibraltar | 1466 | 5 |
+| Q4871895 | Battle of Nibley Green | 1469 | 5 |
+| Q21006622 | Battle of Pasca | 1470 | 5 |
+| Q3391315 | Cham-Vietnamese War | 1471 | 5 |
+| Q387238 | Battle of Tlatelolco | 1473 | 5 |
+| Q5902092 | Late Horizon | 1476 | 5 |
+| Q1372327 | Carinthian peasant revolt | 1478 | 5 |
+| Q16412812 | Russo-Livonian War | 1480 | 5 |
+| Q2268620 | Second Utrecht Civil War | 1481 | 5 |
+| Q2206155 | Flemish revolts against Maximilian of Austria | 1482 | 5 |
+| Q1949389 | Siege of Utrecht | 1483 | 5 |
+| Q3849435 | Sentencia de Guadalupe | 1486 | 5 |
+| Q7596669 | Stafford and Lovell Rebellion | 1486 | 5 |
+| Q4400941 | Russo-Kazan War of 1487 | 1487 | 5 |
+| Q9173112 | Battle of Kopystrzyń | 1487 | 5 |
+| Q5722345 | Battle of Chocontá | 1490 | 5 |
+| Q16000547 | 1490 Ch'ing-yang event | 1490 | 5 |
+| Q9173738 | Battle of Zasław | 1491 | 5 |
+| Q5365227 | Meiō incident | 1493 | 5 |
+| Q920169 | Second Battle of Acentejo | 1495 | 5 |
+| Q648181 | Second Cornish Uprising of 1497 | 1497 | 5 |
+| Q135927635 | Colonisation of Hokkaido | 1500 | 5 |
+| Q4870615 | Battle of Calicut | 1502 | 5 |
+| Q130279251 | Battle of Hamadan | 1503 | 5 |
+| Q4400943 | Russo-Kazan War of 1505-1507 | 1505 | 5 |
+| Q24929357 | 1505 Lo Mustang earthquake | 1505 | 5 |
+| Q106313831 | Conquest of the Peñón de Vélez de la Gomera (1508) | 1508 | 5 |
+| Q20009066 | Battle of Cadore | 1508 | 5 |
+| Q493211 | Disturbance of the Three Ports | 1510 | 5 |
+| Q3754740 | Treaty of Blois of 1512 | 1512 | 5 |
+| Q2518881 | Treaty of Paris | 1515 | 5 |
+| Q85973820 | Battle of Ovacık | 1515 | 5 |
+| Q85972229 | Battle of Koçhisar | 1516 | 5 |
+| Q1885368 | Siege of Arai | 1516 | 5 |
+| Q3536795 | Treaty of Fribourg (1516) | 1516 | 5 |
+| Q60789146 | Battle of Jajce | 1518 | 5 |
+| Q486388 | Gimyosahwa | 1519 | 5 |
+| Q51077218 | 1522 Almería earthquake | 1522 | 5 |
+| Q7443119 | Second Battle of Tamao | 1522 | 5 |
+| Q1557439 | Battle of Pfeddersheim | 1525 | 5 |
+| Q2467825 | Battle of Nashinokidaira | 1526 | 5 |
+| Q6100710 | Kalender Çelebi rebellion | 1527 | 5 |
+| Q2335993 | Battle of Ozawahara | 1530 | 5 |
+| Q850770 | Siege of Buda | 1530 | 5 |
+| Q1615489 | Battle of Quipaipan | 1532 | 5 |
+| Q7510226 | Siege of Marburg | 1532 | 5 |
+| Q16372846 | Battle of Murjakheti | 1535 | 5 |
+| Q1941291 | Siege of Musashi-Matsuyama | 1537 | 5 |
+| Q3330721 | First Battle of Kōnodai | 1538 | 5 |
+| Q5723054 | Battle of Tocarema | 1538 | 5 |
+| Q60771401 | Yemeni–Ottoman conflicts | 1538 | 5 |
+| Q5985770 | Icelandic Reformation | 1538 | 5 |
+| Q121287327 | Le langaige du Bresil | 1540 | 5 |
+| Q2183299 | Siege of Uehara | 1541 | 5 |
+| Q2341266 | Siege of Fukuyo | 1542 | 5 |
+| Q21532975 | Siege of Landrecies | 1543 | 5 |
+| Q2662987 | Siege of Nagakubo | 1543 | 5 |
+| Q113484900 | Siege of Székesfehérvár | 1543 | 5 |
+| Q1811771 | Siege of Kojinyama | 1544 | 5 |
+| Q2309775 | Treaty of Speyer | 1544 | 5 |
+| Q5365347 | Siege of Ryūgasaki | 1545 | 5 |
+| Q2738866 | Siege of Shika Castle | 1546 | 5 |
+| Q2440865 | Siege of Uchiyama | 1546 | 5 |
+| Q12056361 | Estates Revolt in Bohemia in 1547 | 1547 | 5 |
+| Q590658 | Battle of Huarina | 1547 | 5 |
+| Q593638 | Siege of Fukashi | 1549 | 5 |
+| Q131238621 | Russo-Caucasian conflict | 1550 | 5 |
+| Q11947736 | Sack of Cullera | 1550 | 5 |
+| Q11523264 | Siege of Muraki | 1554 | 5 |
+| Q3212009 | Siege of Kannomine | 1554 | 5 |
+| Q1869311 | Siege of Matsuo | 1554 | 5 |
+| Q2147181 | Siege of Kiso Fukushima | 1554 | 5 |
+| Q133826711 | Russian conquest of the Astrakhan Khanate | 1554 | 5 |
+| Q60234732 | 1555 Üsküb earthquake | 1555 | 5 |
+| Q3235528 | The New Found World, or Antarctike | 1557 | 5 |
+| Q15710003 | Siege of Fellini | 1560 | 5 |
+| Q4550574 | 1562 Riots of Toulouse | 1562 | 5 |
+| Q4871508 | Battle of Kyōkōji | 1562 | 5 |
+| Q7510141 | Siege of Kaminojo | 1562 | 5 |
+| Q2156907 | Siege of Musashi-Matsuyama | 1563 | 5 |
+| Q12908420 | Mariovo and Prilep Rebellion | 1564 | 5 |
+| Q2052135 | Second Battle of Kōnodai | 1564 | 5 |
+| Q21655930 | Ottoman-Habsburg War of 1565–1568 | 1565 | 5 |
+| Q474399 | Battle of Affane | 1565 | 5 |
+| Q2040837 | Siege of Kuragano | 1565 | 5 |
+| Q2616449 | Siege of Minowa | 1566 | 5 |
+| Q4870653 | Battle of Carberry Hill | 1567 | 5 |
+| Q10671402 | Battle of Runafer | 1567 | 5 |
+| Q7509924 | Siege of Chartres | 1568 | 5 |
+| Q4022481 | Siege of Hachigata | 1568 | 5 |
+| Q2889077 | Battle of La Roche-l'Abeille | 1569 | 5 |
+| Q2888022 | Battle of Orthez | 1569 | 5 |
+| Q4872519 | Battle of Tatarahama | 1569 | 5 |
+| Q16677037 | Siege of Poitiers | 1569 | 5 |
+| Q2659520 | Siege of Kanbara | 1569 | 5 |
+| Q3373971 | 1570 Ferrara earthquake | 1570 | 5 |
+| Q633791 | Siege of Hanazawa | 1570 | 5 |
+| Q2556641 | Siege of Fukazawa | 1571 | 5 |
+| Q2259302 | Battle of Borsele | 1573 | 5 |
+| Q7510107 | Siege of Itami | 1574 | 5 |
+| Q2558706 | Francis Drake's circumnavigation | 1577 | 5 |
+| Q14940740 | Uzbeks invasion to Khorasan | 1578 | 5 |
+| Q4337433 | Siege of Polotsk | 1579 | 5 |
+| Q610329 | Battle of Omosu | 1580 | 5 |
+| Q2483221 | Siege of Steenwijk | 1580 | 5 |
+| Q7510085 | Siege of Hijiyama | 1581 | 5 |
+| Q4871850 | Battle of Nakatomigawa | 1582 | 5 |
+| Q4872622 | Battle of Uchidehama | 1582 | 5 |
+| Q2621821 | Siege of Lochem | 1582 | 5 |
+| Q21187145 | Siege of Lier | 1582 | 5 |
+| Q3075969 | Battle of Steenbergen | 1583 | 5 |
+| Q14632124 | Capture of Aalst | 1584 | 5 |
+| Q7510422 | Siege of Suemori | 1584 | 5 |
+| Q7510432 | Siege of Takehana | 1584 | 5 |
+| Q7510544 | Siege of Ōta Castle | 1585 | 5 |
+| Q15145340 | Battle of Santo Domingo | 1586 | 5 |
+| Q7510111 | Siege of Iwaya Castle | 1586 | 5 |
+| Q13568719 | Siege of Grave | 1586 | 5 |
+| Q15145506 | Raid on St. Augustine | 1586 | 5 |
+| Q2856421 | Ten Years (Eighty Years' War) | 1588 | 5 |
+| Q7836645 | Treason Case of 1589 | 1589 | 5 |
+| Q9360741 | Treaty of Bytom and Będzin | 1589 | 5 |
+| Q23018820 | Azores Voyage of 1589 | 1589 | 5 |
+| Q11078577 | Bozhou rebellion | 1590 | 5 |
+| Q2888359 | Battle of Craon | 1592 | 5 |
+| Q10955550 | Ordos Campaign | 1592 | 5 |
+| Q15197201 | Battle of Flores | 1592 | 5 |
+| Q2888157 | Battle of Blaye | 1593 | 5 |
+| Q2280714 | Burmese–Siamese War of 1594–1605 | 1594 | 5 |
+| Q4872281 | Battle of San Juan | 1595 | 5 |
+| Q14632126 | Siege of Huy | 1595 | 5 |
+| Q489057 | Battle of Carrickfergus | 1597 | 5 |
+| Q4825573 | Siege of Lingen | 1597 | 5 |
+| Q2499253 | Siege of Bredevoort | 1597 | 5 |
+| Q16848812 | Islands Voyage | 1597 | 5 |
+| Q4872278 | Battle of San Juan | 1598 | 5 |
+| Q2374971 | Siege of Zaltbommel | 1599 | 5 |
+| Q15977779 | Battle of Bucov | 1600 | 5 |
+| Q7510081 | Siege of Hasedō | 1600 | 5 |
+| Q7510398 | Siege of Shiroishi | 1600 | 5 |
+| Q111730901 | Sekigahara Campaign | 1600 | 5 |
+| Q116203795 | Empresa de China | 1600 | 5 |
+| Q7731362 | Earl of Essex Rebellion | 1601 | 5 |
+| Q27583276 | Siege of Buda | 1602 | 5 |
+| Q3565434 | Battle of Braşov | 1603 | 5 |
+| Q27673363 | Siege of Buda | 1603 | 5 |
+| Q7418039 | Sangley Rebellion | 1603 | 5 |
+| Q6142905 | 1604 Arica earthquake | 1604 | 5 |
+| Q3342826 | Siege of Sluis | 1604 | 5 |
+| Q4087421 | Battle of Dobrynichi | 1605 | 5 |
+| Q7510198 | Siege of Lingen | 1605 | 5 |
+| Q3408503 | 1605 Keichō earthquake | 1605 | 5 |
+| Q5037007 | Capture of Daugavgrīva | 1608 | 5 |
+| Q748173 | Battle of Salis | 1609 | 5 |
+| Q1008542 | Battle of Daugavgriva | 1609 | 5 |
+| Q60832021 | Assassination of Henry IV | 1610 | 5 |
+| Q10428012 | Capture of Novgorod | 1611 | 5 |
+| Q49460174 | Siege of Kalmar | 1611 | 5 |
+| Q3399699 | Aix-en-Provence possessions | 1611 | 5 |
+| Q670984 | Rappenkrieg | 1612 | 5 |
+| Q41864284 | Cossack raid on Istanbul (1615) | 1615 | 5 |
+| Q8011095 | Purple Robe Incident | 1620 | 5 |
+| Q2906841 | Blockade of La Rochelle | 1621 | 5 |
+| Q7510356 | Siege of Royan | 1622 | 5 |
+| Q7510077 | Siege of Heidelberg | 1622 | 5 |
+| Q7837177 | Treaty of Paris | 1623 | 5 |
+| Q4870306 | Battle of Anjar | 1623 | 5 |
+| Q2340087 | Battle of Martynów | 1624 | 5 |
+| Q3910851 | Recovery of Ré island | 1625 | 5 |
+| Q5959281 | Siege of Baghdad | 1625 | 5 |
+| Q4872279 | Battle of San Juan | 1625 | 5 |
+| Q4871120 | Battle of Gniew | 1626 | 5 |
+| Q9172788 | Battle of Bila Tserkva (1626) | 1626 | 5 |
+| Q2182866 | Siege of Oldenzaal | 1626 | 5 |
+| Q7157538 | peace of Pressburg | 1626 | 5 |
+| Q8445685 | Naval Battle near Hel | 1627 | 5 |
+| Q4871170 | Battle of Górzno | 1629 | 5 |
+| Q2302736 | Personal rule of Charles I | 1629 | 5 |
+| Q5023851 | Treaty of Madrid (1630) | 1630 | 5 |
+| Q2571088 | Battle of Bamberg | 1632 | 5 |
+| Q7510414 | Siege of Smolensk | 1632 | 5 |
+| Q5037054 | Capture of Saint Martin | 1633 | 5 |
+| Q4329624 | Siege of Belaya | 1634 | 5 |
+| Q2889138 | Siege of Leucate | 1637 | 5 |
+| Q2377749 | Siege of Venlo | 1637 | 5 |
+| Q6948987 | Mystic massacre | 1637 | 5 |
+| Q15277679 | Siege of Galle | 1640 | 5 |
+| Q4551438 | 1641 Caracas earthquake | 1641 | 5 |
+| Q112672818 | 1641 Tabriz earthquake | 1641 | 5 |
+| Q497787 | Battle of Liscarroll | 1642 | 5 |
+| Q4871788 | Battle of Montmeló | 1642 | 5 |
+| Q1164151 | Battle of Hopton Heath | 1643 | 5 |
+| Q1406921 | Battle of Lansdowne | 1643 | 5 |
+| Q2237651 | Battle of New Ross | 1643 | 5 |
+| Q4872448 | Battle of Stow-on-the-Wold | 1646 | 5 |
+| Q4924393 | Siege of Colchester | 1648 | 5 |
+| Q16131935 | Khmelnytsky pogroms | 1648 | 5 |
+| Q730986 | Siege of Waterford | 1649 | 5 |
+| Q815132 | Siege of Clonmel | 1650 | 5 |
+| Q675324 | Battle of Wigan Lane | 1651 | 5 |
+| Q4087362 | Battle of Bila Tserkva | 1651 | 5 |
+| Q622539 | Siege of Galway | 1651 | 5 |
+| Q2889584 | Action of 10 July 1651 | 1651 | 5 |
+| Q2046522 | Battle of Iași (1653) | 1653 | 5 |
+| Q12134924 | Siege of Suczawa | 1653 | 5 |
+| Q65164848 | Siege of Mstislav | 1654 | 5 |
+| Q4337405 | Siege of Mogilev | 1655 | 5 |
+| Q4872752 | Battle of Wojnicz | 1655 | 5 |
+| Q4872903 | Battle of the Dardanelles | 1655 | 5 |
+| Q964544 | Siege of Warsaw | 1656 | 5 |
+| Q1195414 | Battle of Jarosław | 1656 | 5 |
+| Q1033722 | Battle of Łowicz | 1656 | 5 |
+| Q4337389 | Storm of Kokenhusen | 1656 | 5 |
+| Q4871509 | Battle of Kłecko | 1656 | 5 |
+| Q4870737 | Battle of Chojnice | 1656 | 5 |
+| Q4337377 | Siege of Dyneburg | 1656 | 5 |
+| Q3742513 | Battle of Walk | 1657 | 5 |
+| Q3118988 | Carib Expulsion | 1658 | 5 |
+| Q4337386 | Siege of Kyiv | 1658 | 5 |
+| Q4872670 | Battle of Vilanova | 1658 | 5 |
+| Q85745847 | Battle of Hutong | 1658 | 5 |
+| Q10488994 | Siege of Kronborg | 1658 | 5 |
+| Q4871475 | Battle of Kolhapur | 1659 | 5 |
+| Q2089592 | Pereyaslav Articles | 1659 | 5 |
+| Q20991942 | Burmese–Siamese War of 1662–1664 | 1662 | 5 |
+| Q1470965 | Siege of Érsekújvár | 1663 | 5 |
+| Q2888264 | Battle of Castelo Rodrigo | 1664 | 5 |
+| Q4872468 | Battle of Surat | 1664 | 5 |
+| Q21029691 | Battle of Tangier | 1664 | 5 |
+| Q2340910 | Battle of Ścianą | 1666 | 5 |
+| Q4872215 | Battle of Rullion Green | 1666 | 5 |
+| Q11688208 | Battle of Matwy | 1666 | 5 |
+| Q3486044 | Siege of Tournai | 1667 | 5 |
+| Q25414493 | Henry Morgan's raid on Porto Bello | 1668 | 5 |
+| Q11688191 | Battle of Komarno | 1672 | 5 |
+| Q1868556 | Siege of Coevorden | 1672 | 5 |
+| Q3242079 | Siege of Groenlo | 1672 | 5 |
+| Q18216969 | Invasion of Martinique | 1674 | 5 |
+| Q907323 | Bremen-Verden Campaign | 1675 | 5 |
+| Q1497920 | Battle of Nauen | 1675 | 5 |
+| Q815187 | Siege of Philippsburg | 1676 | 5 |
+| Q4871686 | Battle of Marstrand | 1677 | 5 |
+| Q2888187 | Battle of Bothwell Bridge | 1679 | 5 |
+| Q3521478 | The Killing Time | 1680 | 5 |
+| Q4871401 | Battle of Katole | 1681 | 5 |
+| Q2909585 | Bombardment of Algiers | 1682 | 5 |
+| Q4087395 | Battle of Reni | 1683 | 5 |
+| Q16010253 | Bombardment of Algiers | 1683 | 5 |
+| Q4300304 | Moldavian campaign (1684–1691) | 1684 | 5 |
+| Q126902909 | Siege of Coron (1685) | 1685 | 5 |
+| Q3062426 | Hudson Bay expedition | 1686 | 5 |
+| Q16931432 | Siege of Golconda | 1687 | 5 |
+| Q16931442 | Siege of Negroponte | 1688 | 5 |
+| Q282262 | Battle of Cromdale | 1690 | 5 |
+| Q4087393 | Battle of Pererîta | 1691 | 5 |
+| Q20712931 | Battle of Sant Esteve d'en Bas | 1695 | 5 |
+| Q5599175 | Great Famine of 1695–1697 | 1695 | 5 |
+| Q107354813 | 1699 Java earthquake | 1699 | 5 |
+| Q5452501 | Battle of Anandpur | 1700 | 5 |
+| Q5423108 | Battle of Humlebæk | 1700 | 5 |
+| Q1573186 | Treaty of Hamburg | 1701 | 5 |
+| Q12957614 | The Extermination of the Turks | 1702 | 5 |
+| Q2164986 | Second Stadtholderless Period | 1702 | 5 |
+| Q1631963 | 1703 Apennine earthquakes | 1703 | 5 |
+| Q820263 | Battle of Systerbäck | 1703 | 5 |
+| Q16677023 | Siege of Bonn | 1703 | 5 |
+| Q2237139 | Battle of Wesenberg | 1704 | 5 |
+| Q16858564 | Battle of Koroncó | 1704 | 5 |
+| Q3360285 | Pact of Genoa | 1705 | 5 |
+| Q4872814 | Battle of Zsibó | 1705 | 5 |
+| Q445710 | Battle of Kletsk | 1706 | 5 |
+| Q16622016 | March to Madrid | 1706 | 5 |
+| Q42182551 | Eruption of Trevejo | 1706 | 5 |
+| Q12717505 | Siege of Pensacola | 1707 | 5 |
+| Q4971349 | 1708 British general election | 1708 | 5 |
+| Q167971 | Pursuit of Krasnokutsk | 1709 | 5 |
+| Q4971350 | 1710 British general election | 1710 | 5 |
+| Q21244901 | Battle of Chappar Chiri | 1710 | 5 |
+| Q4870505 | Battle of Bloody Creek | 1711 | 5 |
+| Q4971353 | 1713 British general election | 1713 | 5 |
+| Q30717015 | Rhine campaign of 1713 | 1713 | 5 |
+| Q3606777 | Action of 22 July 1713 | 1713 | 5 |
+| Q4971351 | 1715 British general election | 1715 | 5 |
+| Q3636587 | Battle of Preston | 1715 | 5 |
+| Q819975 | Battle of Rügen | 1715 | 5 |
+| Q4677406 | Action of 8 July 1716 | 1716 | 5 |
+| Q10540838 | 1717 Guatemala earthquake | 1717 | 5 |
+| Q2377625 | Battle of Strömstad | 1717 | 5 |
+| Q15646676 | Battle of Göteborg | 1717 | 5 |
+| Q10854279 | 1722 British general election | 1722 | 5 |
+| Q21187309 | Capture of Rasht | 1722 | 5 |
+| Q4552591 | 1727 Tabriz earthquake | 1727 | 5 |
+| Q4971357 | 1727 British general election | 1727 | 5 |
+| Q18209946 | Sabzevar expedition | 1727 | 5 |
+| Q47069660 | 1732 Irpinia earthquake | 1732 | 5 |
+| Q2264833 | Battle of Damietta | 1732 | 5 |
+| Q18209338 | Mohammad Khan Baluch's Rebellion | 1733 | 5 |
+| Q4971358 | 1734 British general election | 1734 | 5 |
+| Q3687145 | Bourbon conquest of the Two Sicilies | 1734 | 5 |
+| Q259060 | Walking Purchase | 1737 | 5 |
+| Q60558315 | Raid on Quistello | 1739 | 5 |
+| Q4971359 | 1741 British general election | 1741 | 5 |
+| Q4677256 | Action of 14 June 1742 | 1742 | 5 |
+| Q7510465 | Siege of Trichinopoly | 1743 | 5 |
+| Q3485928 | Raid on Lorient | 1746 | 5 |
+| Q7513674 | Chhota Ghallughara | 1746 | 5 |
+| Q4971360 | 1747 British general election | 1747 | 5 |
+| Q21244904 | Battle of Manupur | 1748 | 5 |
+| Q23039086 | Indian campaign of Ahmad Shah Durrani | 1748 | 5 |
+| Q4971362 | 1754 British general election | 1754 | 5 |
+| Q7533291 | Sixty Years' War | 1754 | 5 |
+| Q4552908 | 1754 Hōreki River incident | 1754 | 5 |
+| Q635020 | Third Carnatic War | 1756 | 5 |
+| Q4927236 | Blockade of Stralsund | 1757 | 5 |
+| Q55647639 | Battle of Amritsar | 1757 | 5 |
+| Q4763659 | Anglo-Prussian Convention | 1758 | 5 |
+| Q3417630 | Raid on St Malo | 1758 | 5 |
+| Q2888252 | Battle of Cartagena | 1758 | 5 |
+| Q7201334 | Planned French Invasion of Britain | 1759 | 5 |
+| Q16246530 | Battle of Pasewalk | 1760 | 5 |
+| Q9385673 | Battle of Barari Ghat | 1760 | 5 |
+| Q2865739 | Articles of Capitulation of Montreal | 1760 | 5 |
+| Q4971364 | 1761 British general election | 1761 | 5 |
+| Q4871879 | Battle of Neuensund | 1761 | 5 |
+| Q977428 | Siege of Fort Pitt | 1763 | 5 |
+| Q4870599 | Battle of Bushy Run | 1763 | 5 |
+| Q4230427 | Convocation Sejm of 1764 | 1764 | 5 |
+| Q2888176 | Battle of Borgo | 1768 | 5 |
+| Q4870475 | Battle of Bhaktapur | 1769 | 5 |
+| Q211664 | Treaty of Madras | 1769 | 5 |
+| Q4872696 | Battle of Vromopigada | 1770 | 5 |
+| Q48940579 | Siege of Bender | 1770 | 5 |
+| Q2351517 | Battle of Lanckorona | 1771 | 5 |
+| Q18529918 | Somerset v Stewart | 1772 | 5 |
+| Q4971367 | 1774 British general election | 1774 | 5 |
+| Q3028862 | Experiments and Observations on Different Kinds of Air | 1774 | 5 |
+| Q4871413 | Battle of Kemp's Landing | 1775 | 5 |
+| Q7837200 | Treaty of Purandar (1776) | 1776 | 5 |
+| Q2113284 | Battle of the Rice Boats | 1776 | 5 |
+| Q2889754 | Battle of Red Bank | 1777 | 5 |
+| Q4870787 | Battle of Cooch's Bridge | 1777 | 5 |
+| Q4872181 | Battle of Ridgefield | 1777 | 5 |
+| Q7510017 | Siege of Fort Mifflin | 1777 | 5 |
+| Q2888104 | Battle of Barren Hill | 1778 | 5 |
+| Q7712756 | Affair at Little Egg Harbor | 1778 | 5 |
+| Q19600366 | Battle of Ghartiskari | 1778 | 5 |
+| Q4871999 | Battle of Paulus Hook | 1779 | 5 |
+| Q4202297 | Affair of Fielding and Bylandt | 1779 | 5 |
+| Q4971368 | 1780 British general election | 1780 | 5 |
+| Q4870497 | Battle of Blandford | 1781 | 5 |
+| Q4872089 | Battle of Porto Novo | 1781 | 5 |
+| Q4872075 | Battle of Pollilur | 1781 | 5 |
+| Q6665169 | Lochry's Defeat | 1781 | 5 |
+| Q1444121 | Action of 21 July 1781 | 1781 | 5 |
+| Q4188861 | Capture of the Bahamas | 1782 | 5 |
+| Q4871182 | Battle of Halani | 1783 | 5 |
+| Q47198426 | George Washington's resignation as commander-in-chief | 1783 | 5 |
+| Q4940496 | Bombardment of Algiers | 1783 | 5 |
+| Q4971370 | 1784 British general election | 1784 | 5 |
+| Q122639374 | American-Algerian War | 1785 | 5 |
+| Q499468 | Lin Shuangwen rebellion | 1786 | 5 |
+| Q102449690 | 1789 Virginia's 5th congressional district election | 1789 | 5 |
+| Q2036383 | Battle of Öland | 1789 | 5 |
+| Q3799258 | Four Days of Ghent | 1789 | 5 |
+| Q2564536 | First Battle of Svensksund | 1789 | 5 |
+| Q96415836 | Yoruba Revolutionary Wars | 1789 | 5 |
+| Q4971369 | 1790 British general election | 1790 | 5 |
+| Q4238502 | Battle of Kronstadt | 1790 | 5 |
+| Q4871066 | Battle of Fredrikshamn | 1790 | 5 |
+| Q4872645 | Battle of Valkeala | 1790 | 5 |
+| Q16950606 | Battle of Falmagne | 1790 | 5 |
+| Q28088235 | Siege of Ceuta | 1790 | 5 |
+| Q109236571 | 1791 slave rebellion | 1791 | 5 |
+| Q18380015 | Battle of Limburg | 1792 | 5 |
+| Q428280 | Battle of Pont-Barré | 1793 | 5 |
+| Q3025041 | Battle of Coron | 1793 | 5 |
+| Q3025043 | Second Battle of Châtillon | 1793 | 5 |
+| Q2888299 | Battle of Chantonnay | 1793 | 5 |
+| Q2890489 | Battle of Bouin | 1793 | 5 |
+| Q12224010 | Battle of Menin | 1793 | 5 |
+| Q17984623 | Siege of Landau | 1793 | 5 |
+| Q17984632 | Siege of Le Quesnoy | 1793 | 5 |
+| Q2236833 | Battle of Bydgoszcz | 1794 | 5 |
+| Q2888014 | Battle of Orbaizeta | 1794 | 5 |
+| Q2889532 | Battle of Noirmoutier | 1794 | 5 |
+| Q2984742 | Battle of the Baztan Valley | 1794 | 5 |
+| Q9173181 | Battle of Lipniszki | 1794 | 5 |
+| Q4785855 | Battle of Boxtel | 1794 | 5 |
+| Q9651049 | Battle at Courtrai | 1794 | 5 |
+| Q106611027 | Second Battle of Saorgio | 1794 | 5 |
+| Q1268596 | Siege of Kerman | 1794 | 5 |
+| Q3486014 | Siege of Roses | 1794 | 5 |
+| Q3153836 | Invasion of Guadeloupe | 1794 | 5 |
+| Q1728621 | Battle of Saldanha Bay | 1796 | 5 |
+| Q2237301 | Battle of Altenkirchen | 1796 | 5 |
+| Q3512730 | Battle of Krusi | 1796 | 5 |
+| Q7443072 | Second Battle of Bassano | 1796 | 5 |
+| Q5392943 | Montenotte Campaign | 1796 | 5 |
+| Q4027026 | American Cookery | 1796 | 5 |
+| Q2984910 | Battle of Valvasone | 1797 | 5 |
+| Q4677314 | Action of 25 January 1797 | 1797 | 5 |
+| Q4868684 | Batavian Republic constitutional referendum, 1797 | 1797 | 5 |
+| Q3636589 | Battle of Prosperous | 1798 | 5 |
+| Q4871883 | Battle of New Ross | 1798 | 5 |
+| Q5037035 | Capture of Minorca | 1798 | 5 |
+| Q2121288 | Convention of Alkmaar | 1799 | 5 |
+| Q5114097 | Battle of Bassignana | 1799 | 5 |
+| Q17984539 | Battle of Genola | 1799 | 5 |
+| Q55605034 | Battle of Linth River | 1799 | 5 |
+| Q122890272 | Italian and Swiss expedition | 1799 | 5 |
+| Q982604 | Battle of Engen | 1800 | 5 |
+| Q4870981 | Battle of Erbach | 1800 | 5 |
+| Q4872322 | Battle of Sassello | 1800 | 5 |
+| Q96464653 | Combat of Turbigo | 1800 | 5 |
+| Q60524550 | Siege of Fort Bard | 1800 | 5 |
+| Q4677352 | Action of 31 March 1800 | 1800 | 5 |
+| Q3393951 | Ferrol Expedition | 1800 | 5 |
+| Q4120667 | Taj al-'Arus min Jawahir al-Qamus | 1800 | 5 |
+| Q541250 | Anglo-Persian Treaty of 1801 | 1801 | 5 |
+| Q5710724 | Helvetic Republic constitutional referendum, 1802 | 1802 | 5 |
+| Q889182 | Bockenkrieg | 1804 | 5 |
+| Q3379716 | Battle of Tsuntua | 1804 | 5 |
+| Q4870857 | Battle of Deeg | 1804 | 5 |
+| Q48803831 | Battle of Echmiadzin | 1804 | 5 |
+| Q16931419 | Siege of Delhi | 1804 | 5 |
+| Q1346666 | Battle of Lambach | 1805 | 5 |
+| Q952479 | Battle of Mariazell | 1805 | 5 |
+| Q1625621 | Battle of Steyr | 1805 | 5 |
+| Q2890386 | Battle at Wischau | 1805 | 5 |
+| Q4870676 | Battle of Castelfranco Veneto | 1805 | 5 |
+| Q18408391 | Karyagin's Raid | 1805 | 5 |
+| Q5418949 | Trafalgar Campaign | 1805 | 5 |
+| Q722047 | Ashanti–Fante War | 1806 | 5 |
+| Q5035991 | Capitulation of Pasewalk | 1806 | 5 |
+| Q7510073 | Siege of Hameln | 1806 | 5 |
+| Q11499894 | Invasion of Iturup | 1806 | 5 |
+| Q18639233 | French and British interregnum in the Dutch East Indies | 1806 | 5 |
+| Q4069868 | Battle of Arpachai | 1807 | 5 |
+| Q3096663 | Adriatic campaign of 1807–1814 | 1807 | 5 |
+| Q39194 | Spanish reconquest of Santo Domingo | 1808 | 5 |
+| Q2600543 | Battle of Pyhäjoki | 1808 | 5 |
+| Q2562633 | Battle of Lemo | 1808 | 5 |
+| Q326115 | Second Siege of Gerona | 1808 | 5 |
+| Q3362340 | Battle of Vaasa | 1808 | 5 |
+| Q4871664 | Battle of Mansilla | 1808 | 5 |
+| Q10671375 | Battle of Kokonsaari | 1808 | 5 |
+| Q48804713 | Siege of Erivan | 1808 | 5 |
+| Q3378627 | Battle of Sandöström | 1808 | 5 |
+| Q324697 | Battle of Gefrees | 1809 | 5 |
+| Q1346549 | Battle of Ölper | 1809 | 5 |
+| Q2984780 | Battle of Graz | 1809 | 5 |
+| Q4870251 | Battle of Alcántara | 1809 | 5 |
+| Q3427997 | Battle of Ratan | 1809 | 5 |
+| Q4870659 | Battle of Carpio | 1809 | 5 |
+| Q4872496 | Battle of Tamames | 1809 | 5 |
+| Q16950658 | Battle of Puerto de Baños | 1809 | 5 |
+| Q16257832 | First Siege of Chaves | 1809 | 5 |
+| Q31389 | España Boba | 1809 | 5 |
+| Q2889357 | Battle of Mollet | 1810 | 5 |
+| Q2890316 | Battle of Vic | 1810 | 5 |
+| Q6059656 | Invasion of Guadeloupe | 1810 | 5 |
+| Q76495389 | Invasion of the Spice Islands | 1810 | 5 |
+| Q3365821 | Invasion of Île Bonaparte | 1810 | 5 |
+| Q10356223 | Platine Wars | 1810 | 5 |
+| Q4368596 | Richmond Theatre fire | 1811 | 5 |
+| Q4870697 | Battle of Cervera | 1811 | 5 |
+| Q4870337 | Battle of Arlabán | 1811 | 5 |
+| Q4870772 | Battle of Cogorderos | 1811 | 5 |
+| Q4870628 | Battle of Campo Maior | 1811 | 5 |
+| Q4872054 | Battle of Pla | 1811 | 5 |
+| Q4872286 | Battle of San Nicolás | 1811 | 5 |
+| Q6130113 | Siege of Montevideo | 1811 | 5 |
+| Q3078429 | Action of 29 November 1811 | 1811 | 5 |
+| Q4870271 | Battle of Almaraz | 1812 | 5 |
+| Q4870277 | Battle of Altafulla | 1812 | 5 |
+| Q4438394 | Battle of Mesoten | 1812 | 5 |
+| Q4090308 | Battle of Lyakhovo | 1812 | 5 |
+| Q4870338 | Battle of Arlabán | 1812 | 5 |
+| Q6130115 | Siege of Montevideo | 1812 | 5 |
+| Q7509828 | Siege of Astorga | 1812 | 5 |
+| Q7510345 | Siege of Riga | 1812 | 5 |
+| Q4872573 | Battle of Tordesillas | 1812 | 5 |
+| Q6305382 | Jujuy exodus | 1812 | 5 |
+| Q1497916 | Battle of Lüneburg | 1813 | 5 |
+| Q2889307 | Battle of Medina | 1813 | 5 |
+| Q4871700 | Battle of Maya | 1813 | 5 |
+| Q4871243 | Battle of Holy Ground | 1813 | 5 |
+| Q17026630 | Battle of Tolosa | 1813 | 5 |
+| Q25185008 | Battle of Arnhem | 1813 | 5 |
+| Q16115925 | Siege of Zara | 1813 | 5 |
+| Q16259251 | Siege of Cattaro | 1813 | 5 |
+| Q17310485 | Siege of Mainz | 1813 | 5 |
+| Q7510442 | Siege of Tarragona | 1813 | 5 |
+| Q2888598 | Battle of Garris | 1814 | 5 |
+| Q3043081 | Siege of Bergen op Zoom | 1814 | 5 |
+| Q3485959 | Siege of Metz | 1814 | 5 |
+| Q7837330 | Treaty with Algiers (1815) | 1815 | 5 |
+| Q666434 | Battle of San Germano | 1815 | 5 |
+| Q2888256 | Battle of Castel di Sangro | 1815 | 5 |
+| Q2888284 | Battle of Cesenatico | 1815 | 5 |
+| Q2889600 | Battle of Pesaro | 1815 | 5 |
+| Q12747919 | Battle of Ljubić | 1815 | 5 |
+| Q3485899 | Siege of Gaeta | 1815 | 5 |
+| Q31472 | French constitutional referendum, 1815 | 1815 | 5 |
+| Q2518869 | Treaty of Munich (1816) | 1816 | 5 |
+| Q1956085 | First expedition to Palembang | 1819 | 5 |
+| Q1519697 | Treaty of Pilar | 1820 | 5 |
+| Q3181491 | First Battle of Huachi Grande | 1820 | 5 |
+| Q780753 | Maurice | 1820 | 5 |
+| Q3020018 | Second Battle of Huachi | 1821 | 5 |
+| Q2889786 | Battle of Rieti | 1821 | 5 |
+| Q2852606 | Second expedition to Palembang | 1821 | 5 |
+| Q4406932 | Massacre of Samothrace (1821) | 1821 | 5 |
+| Q5887690 | Royalist War | 1822 | 5 |
+| Q11704116 | July 1822 Spanish coup attempt | 1822 | 5 |
+| Q29607 | Battle of Pirajá | 1822 | 5 |
+| Q3558365 | Vilafrancada | 1823 | 5 |
+| Q4871291 | Battle of Itaparica | 1823 | 5 |
+| Q277864 | Hume and Hovell expedition | 1824 | 5 |
+| Q4438380 | Battle of Andros | 1825 | 5 |
+| Q65082588 | Mackenzie River expedition | 1825 | 5 |
+| Q2518951 | Treaty of Washington | 1826 | 5 |
+| Q656061 | Battle of Los Pozos | 1826 | 5 |
+| Q5601757 | Greek Constitution of 1827 | 1827 | 5 |
+| Q11355824 | 1828 Sanjō earthquake | 1828 | 5 |
+| Q2994779 | September Conspiracy | 1828 | 5 |
+| Q20500317 | Siege of Silistra (1828) | 1828 | 5 |
+| Q12444297 | Bhumij Revolt | 1830 | 5 |
+| Q4948453 | Botanical Miscellany | 1830 | 5 |
+| Q2887984 | Battle of Iganie | 1831 | 5 |
+| Q3636286 | Battle of La Ciudadela | 1831 | 5 |
+| Q1638640 | Battle of Velasco | 1832 | 5 |
+| Q3037792 | Siege of Porto | 1832 | 5 |
+| Q2825906 | Massacre of El Ouffia | 1832 | 5 |
+| Q777916 | Convincing Ground massacre | 1833 | 5 |
+| Q4870279 | Battle of Alsasua | 1834 | 5 |
+| Q3755364 | Battle of Mendaza | 1834 | 5 |
+| Q3755373 | Battle of Venta de Echavarri | 1834 | 5 |
+| Q3755384 | Battle of Alegría de Álava | 1834 | 5 |
+| Q3755395 | First Battle of Arquijas | 1834 | 5 |
+| Q7510117 | Siege of Jerusalem | 1834 | 5 |
+| Q39079186 | Syrian Peasant Revolt | 1834 | 5 |
+| Q3755370 | Battle of Artaza | 1835 | 5 |
+| Q5208045 | Dade Massacre | 1835 | 5 |
+| Q1029862 | anti-clerical riots of 1835 | 1835 | 5 |
+| Q3529812 | Battle of Carpintería | 1836 | 5 |
+| Q2894154 | Battle of Arlabán | 1836 | 5 |
+| Q865930 | Goliad Campaign | 1836 | 5 |
+| Q4871253 | Battle of Huesca | 1837 | 5 |
+| Q8847057 | Royal Expedition | 1837 | 5 |
+| Q373781 | Potawatomi Trail of Death | 1838 | 5 |
+| Q2890798 | Battle of the Windmill | 1838 | 5 |
+| Q5502007 | French blockade of the Río de la Plata | 1838 | 5 |
+| Q14928070 | 1838 Druze attack on Safed | 1838 | 5 |
+| Q2747635 | Night of the Big Wind | 1839 | 5 |
+| Q963322 | Battle of Casma | 1839 | 5 |
+| Q4872065 | Battle of Plum Creek | 1840 | 5 |
+| Q5599827 | Great Raid of 1840 | 1840 | 5 |
+| Q9068547 | Liberal rebellions of 1842 | 1842 | 5 |
+| Q4870349 | Battle of Arroyo Grande | 1842 | 5 |
+| Q49202540 | Tratado de Puno | 1842 | 5 |
+| Q11680256 | Bombardment of Barcelona | 1842 | 5 |
+| Q3538416 | Terremoto de Guadalupe de 1843 | 1843 | 5 |
+| Q25652686 | Battle of Hyderabad | 1843 | 5 |
+| Q7182755 | Philadelphia nativist riots | 1844 | 5 |
+| Q949495 | Battle of Ohaeawai | 1845 | 5 |
+| Q4870731 | Battle of Chino | 1846 | 5 |
+| Q5037059 | Capture of Santa Fe | 1846 | 5 |
+| Q4872288 | Battle of San Pasqual | 1846 | 5 |
+| Q3066269 | Highland Potato Famine | 1846 | 5 |
+| Q7861365 | typhus epidemic of 1847 | 1847 | 5 |
+| Q3335302 | Siege of Puebla | 1847 | 5 |
+| Q1280652 | Hecker Uprising | 1848 | 5 |
+| Q508298 | Battle of Mór | 1848 | 5 |
+| Q15130692 | Storming of Freiburg | 1848 | 5 |
+| Q11965447 | Battle of Dybbøl | 1848 | 5 |
+| Q990367 | 1848–1849 massacres in Transylvania | 1848 | 5 |
+| Q3224025 | The Book of Snobs | 1848 | 5 |
+| Q1325240 | Elberfeld uprising | 1849 | 5 |
+| Q1461361 | First Battle of Vác | 1849 | 5 |
+| Q15811477 | Battle of Kirchheimbolanden | 1849 | 5 |
+| Q28114623 | Battle of Pered | 1849 | 5 |
+| Q60524403 | Battle of Győr | 1849 | 5 |
+| Q27958332 | First Battle of Komárom | 1849 | 5 |
+| Q56101066 | Battle of Szolnok | 1849 | 5 |
+| Q1317922 | Siege of Temesvár | 1849 | 5 |
+| Q23073905 | Waterloo Bay massacre | 1849 | 5 |
+| Q2890498 | Battle of La Arada | 1851 | 5 |
+| Q692869 | Colombian Civil War of 1851 | 1851 | 5 |
+| Q9068534 | Revolution of 11 September 1852 | 1852 | 5 |
+| Q22909475 | Treaty Between Great Britain and Lagos, 1 January 1852 | 1852 | 5 |
+| Q97006770 | Siege of Ak-Mechet | 1853 | 5 |
+| Q11380634 | 1854 Iga-Ueno earthquake | 1854 | 5 |
+| Q891809 | Bombardment of Grey Town | 1854 | 5 |
+| Q4093048 | Bombardment of Odesa | 1854 | 5 |
+| Q1382989 | Rogue River Wars | 1855 | 5 |
+| Q16840019 | Battle of the Great Redan | 1855 | 5 |
+| Q109285838 | Second Herat War | 1856 | 5 |
+| Q635882 | Battle of Black Jack | 1856 | 5 |
+| Q775685 | Battle of Osawatomie | 1856 | 5 |
+| Q7443116 | Second Battle of Rivas | 1856 | 5 |
+| Q4438410 | Battle of Chinhat | 1857 | 5 |
+| Q2113582 | 1858 Hietsu earthquake | 1858 | 5 |
+| Q727212 | Battle of San Martino | 1859 | 5 |
+| Q699312 | Battle of Treponti | 1859 | 5 |
+| Q5453870 | First Taranaki War | 1860 | 5 |
+| Q3152955 | Siege of Palermo | 1860 | 5 |
+| Q7898614 | Upper Doab famine of 1860–1861 | 1860 | 5 |
+| Q12232059 | 1861 Constitution of Tunisia | 1861 | 5 |
+| Q859988 | First Battle of Mesilla | 1861 | 5 |
+| Q2355732 | Battle of Santa Rosa Island | 1861 | 5 |
+| Q1958052 | Battle of Corrick's Ford | 1861 | 5 |
+| Q3493762 | Battle of Shanghai | 1861 | 5 |
+| Q2640011 | Battle of Barbourville | 1861 | 5 |
+| Q2781626 | Battle of Dranesville | 1861 | 5 |
+| Q848741 | Battle of Cockpit Point | 1862 | 5 |
+| Q855966 | Battle of Goldsboro Bridge | 1862 | 5 |
+| Q2003883 | Battle of Hancock | 1862 | 5 |
+| Q2013252 | Battle of White Hall | 1862 | 5 |
+| Q1497877 | Battle of Hatchie Bridge | 1862 | 5 |
+| Q1856667 | Battle of Garnett's & Golding's Farm | 1862 | 5 |
+| Q2373632 | First Battle of Sabine Pass | 1862 | 5 |
+| Q2888567 | Battle of Fortín | 1862 | 5 |
+| Q684191 | Battle of Elizabeth City | 1862 | 5 |
+| Q2889158 | Battle of Lone Jack | 1862 | 5 |
+| Q3438920 | Battle of Lower Sioux Agency | 1862 | 5 |
+| Q2874695 | Battle of Crampton's Gap | 1862 | 5 |
+| Q2391841 | First Battle of Donaldsonville | 1862 | 5 |
+| Q2695780 | Battle of Kinston | 1862 | 5 |
+| Q2334874 | Battle of Tranter's Creek | 1862 | 5 |
+| Q4871052 | Battle of Fort Ridgely | 1862 | 5 |
+| Q162926 | 1st Confederate States Congress | 1862 | 5 |
+| Q305331 | Battle of Carlisle | 1863 | 5 |
+| Q841150 | Battle of Boonsboro | 1863 | 5 |
+| Q770745 | Battle of Fairfield | 1863 | 5 |
+| Q2023648 | Battle of Żyrzyn | 1863 | 5 |
+| Q2024053 | Battle of Węgrów | 1863 | 5 |
+| Q2591328 | Battle of Siemiatycze | 1863 | 5 |
+| Q2595291 | Battle of Kelly's Ford | 1863 | 5 |
+| Q2170921 | Battle of Bristoe Station | 1863 | 5 |
+| Q2232600 | Stoneman's 1863 Raid | 1863 | 5 |
+| Q2384888 | Battle of Chalk Bluff | 1863 | 5 |
+| Q2514427 | Battle of the Cumberland Gap | 1863 | 5 |
+| Q2795589 | Battle of Cape Girardeau | 1863 | 5 |
+| Q2365622 | Battle of Irish Bend | 1863 | 5 |
+| Q2740066 | Second Battle of Chattanooga | 1863 | 5 |
+| Q2752838 | Second Battle of Auburn | 1863 | 5 |
+| Q4090311 | Battle of Miechów | 1863 | 5 |
+| Q4871494 | Battle of Krzykawka | 1863 | 5 |
+| Q4872441 | Battle of Stirling's Plantation | 1863 | 5 |
+| Q9173530 | Battle of Salicha | 1863 | 5 |
+| Q9173265 | Battle of Miropol | 1863 | 5 |
+| Q5919478 | Invasion of the Waikato | 1863 | 5 |
+| Q6117098 | Jackson Expedition | 1863 | 5 |
+| Q2995220 | Greek Constitution of 1864 | 1864 | 5 |
+| Q855628 | Battle of Port Walthall Junction | 1864 | 5 |
+| Q2600151 | Battle of Morton's Ford | 1864 | 5 |
+| Q2888696 | Battle of Griswoldville | 1864 | 5 |
+| Q2236699 | Battle of Honey Hill | 1864 | 5 |
+| Q3477165 | Second Battle of Fort McAllister | 1864 | 5 |
+| Q3477162 | Second Battle of Dalton | 1864 | 5 |
+| Q2890896 | Battle of Albemarle Sound | 1864 | 5 |
+| Q630099 | St. Albans Raid | 1864 | 5 |
+| Q2284930 | Battle of Monett's Ferry | 1864 | 5 |
+| Q3291913 | Battle of Jenkins' Ferry | 1864 | 5 |
+| Q3542881 | Battle of Ware Bottom Church | 1864 | 5 |
+| Q3327478 | Battle of Athens | 1864 | 5 |
+| Q4871346 | Battle of Johnsonville | 1864 | 5 |
+| Q2766079 | Battle of Fort De Russy | 1864 | 5 |
+| Q4871787 | Battle of Moorefield | 1864 | 5 |
+| Q4871676 | Battle of Marietta | 1864 | 5 |
+| Q4870473 | Battle of Berryville | 1864 | 5 |
+| Q4871618 | Battle of Lundby | 1864 | 5 |
+| Q4871619 | Battle of Lynchburg | 1864 | 5 |
+| Q7443081 | Second Battle of Deep Bottom | 1864 | 5 |
+| Q3401918 | First Battle of Saltville | 1864 | 5 |
+| Q4872566 | Battle of Tom's Brook | 1864 | 5 |
+| Q4872220 | Battle of Rutherford's Farm | 1864 | 5 |
+| Q4872460 | Battle of Summit Point | 1864 | 5 |
+| Q4870600 | Battle of Byram's Ford | 1864 | 5 |
+| Q12336018 | Battle of Utoy Creek | 1864 | 5 |
+| Q12823517 | Battle of Ican | 1864 | 5 |
+| Q1966024 | Camden Expedition | 1864 | 5 |
+| Q835430 | Chilcotin War | 1864 | 5 |
+| Q586945 | Battle of Wyse Fork | 1865 | 5 |
+| Q2611018 | Battle of Natural Bridge | 1865 | 5 |
+| Q4871195 | Battle of Hatcher's Run | 1865 | 5 |
+| Q2423638 | Battle of Tacámbaro | 1865 | 5 |
+| Q4438390 | Battle of Cumberland Church | 1865 | 5 |
+| Q4872738 | Battle of Wilmington | 1865 | 5 |
+| Q4872061 | Battle of Platte Bridge | 1865 | 5 |
+| Q7443093 | Second Battle of Fort Fisher | 1865 | 5 |
+| Q5778687 | Battle of Paso de Cuevas | 1865 | 5 |
+| Q106306768 | Western Union Telegraph Expedition | 1865 | 5 |
+| Q4383320 | Wilson's Raid | 1865 | 5 |
+| Q6065909 | Battle of Paso de Mercedes | 1865 | 5 |
+| Q4871728 | Battle of Miahuatlán | 1866 | 5 |
+| Q2890514 | Battle of La Carbonera | 1866 | 5 |
+| Q5723323 | Battle of Guayabo | 1866 | 5 |
+| Q15811474 | Battle of Gerchsheim | 1866 | 5 |
+| Q15811479 | Battle of Werbach | 1866 | 5 |
+| Q17574854 | Battle of Roßbrunn | 1866 | 5 |
+| Q4763611 | Anglo-Dutch Gold Coast Treaty | 1867 | 5 |
+| Q5723098 | Second Battle of Tuyutí | 1867 | 5 |
+| Q5686711 | Hayfield Fight | 1867 | 5 |
+| Q891870 | Clerkenwell explosion | 1867 | 5 |
+| Q6065903 | Siege of Curupaiti | 1867 | 5 |
+| Q3062394 | Formosa Expedition | 1867 | 5 |
+| Q5778559 | Battle of Acayuazá | 1868 | 5 |
+| Q11390454 | Battle of Hatchōoki | 1868 | 5 |
+| Q60791909 | Siege of Samarkand | 1868 | 5 |
+| Q15048733 | Assault on the battleships Cabral and Lima Barros | 1868 | 5 |
+| Q65170649 | 1868 San Fernando massacre | 1868 | 5 |
+| Q4087340 | Battle of Summit Springs | 1869 | 5 |
+| Q2037501 | Republic of Ploiești | 1870 | 5 |
+| Q2825914 | Hautefaye case | 1870 | 5 |
+| Q763004 | Battle of Artenay | 1870 | 5 |
+| Q873038 | Battle of Châteaudun | 1870 | 5 |
+| Q835300 | Battle of Chevilly | 1870 | 5 |
+| Q2888218 | Battle of Buzenval | 1870 | 5 |
+| Q4120018 | Marias Massacre | 1870 | 5 |
+| Q21619306 | Siege of Montmédy | 1870 | 5 |
+| Q3491712 | Uprising of March 18, 1871 | 1871 | 5 |
+| Q3019344 | Camp Grant massacre | 1871 | 5 |
+| Q4637828 | 42nd United States Congress | 1871 | 5 |
+| Q2867086 | National Assembly | 1871 | 5 |
+| Q11557942 | 1872 Hamada earthquake | 1872 | 5 |
+| Q110235937 | Amik earthquake of 1872 | 1872 | 5 |
+| Q6491901 | Larut War | 1873 | 5 |
+| Q5778822 | Battle of Portmán | 1873 | 5 |
+| Q5200341 | Cypress Hills massacre | 1873 | 5 |
+| Q4637968 | 43rd United States Congress | 1873 | 5 |
+| Q21888117 | Tratado de 1874 entre Bolivia y Chile | 1874 | 5 |
+| Q4968587 | Quebra–Quilos revolt | 1874 | 5 |
+| Q5178812 | Coushatta massacre | 1874 | 5 |
+| Q7302489 | Reciprocity Treaty of 1875 | 1875 | 5 |
+| Q4870684 | Battle of Cedar Creek | 1876 | 5 |
+| Q4872709 | Battle of Warbonnet Creek | 1876 | 5 |
+| Q4870636 | Battle of Canyon Creek | 1877 | 5 |
+| Q4870436 | Battle of Bear Paw | 1877 | 5 |
+| Q4870795 | Battle of Cottonwood | 1877 | 5 |
+| Q4872889 | Battle of the Clearwater | 1877 | 5 |
+| Q12273292 | Battle of Ablanovo | 1877 | 5 |
+| Q115762235 | Anglo-Egyptian Slave Trade Convention | 1877 | 5 |
+| Q3636501 | Battle of Lincoln | 1878 | 5 |
+| Q5659055 | Harmanli massacre | 1878 | 5 |
+| Q2383159 | Menelik II's conquests | 1878 | 5 |
+| Q370472 | 1878 Wallingford tornado | 1878 | 5 |
+| Q2606067 | Battle of Chipana | 1879 | 5 |
+| Q3378101 | Battle of Punta Gruesa | 1879 | 5 |
+| Q1033839 | First School War | 1879 | 5 |
+| Q4638409 | 46th United States Congress | 1879 | 5 |
+| Q27860380 | Battle of Ulcinj | 1880 | 5 |
+| Q106778549 | Massacre of Saïda | 1881 | 5 |
+| Q16639131 | 1882 Panama earthquake | 1882 | 5 |
+| Q5395044 | great Oulu fire of 1882 | 1882 | 5 |
+| Q1559790 | Battles of Woyowoyanko | 1882 | 5 |
+| Q136466328 | Demonstration of 9 March 1883 | 1883 | 5 |
+| Q800046 | Germany–Korea Treaty of 1883 | 1883 | 5 |
+| Q4872034 | Battle of Phủ Hoài | 1883 | 5 |
+| Q4638711 | 48th United States Congress | 1883 | 5 |
+| Q85847942 | Vanadis expedition | 1883 | 5 |
+| Q2882539 | Granada earthquake of 25 December 1884 | 1884 | 5 |
+| Q4638849 | 49th United States Congress | 1885 | 5 |
+| Q5479682 | France–Korea Treaty of 1886 | 1886 | 5 |
+| Q3302488 | The Son of a Servant | 1886 | 5 |
+| Q17163519 | Nadir of American race relations | 1887 | 5 |
+| Q4639974 | 50th United States Congress | 1887 | 5 |
+| Q1486364 | 1888 North Canterbury earthquake | 1888 | 5 |
+| Q48869142 | attempted assassination of Pedro II of Brazil | 1889 | 5 |
+| Q11498834 | scramble for China | 1890 | 5 |
+| Q19356854 | Totoposte Wars | 1890 | 5 |
+| Q14395403 | Anglo-Portuguese Treaty of 1891 | 1891 | 5 |
+| Q2889617 | Battle of Placilla | 1891 | 5 |
+| Q580021 | Battle of Caldera Bay | 1891 | 5 |
+| Q2888327 | Battle of Concón | 1891 | 5 |
+| Q4424396 | The Death of the Gods | 1891 | 5 |
+| Q132541461 | Ère des attentats | 1892 | 5 |
+| Q50351176 | Camera Work: Winter - Fifth Avenue | 1892 | 5 |
+| Q22949206 | 1892 Mauritius cyclone | 1892 | 5 |
+| Q16821218 | İstanbul earthquake of 1894 | 1894 | 5 |
+| Q12661325 | Kražiai massacre | 1894 | 5 |
+| Q5778586 | Battle of Calimete | 1895 | 5 |
+| Q55495734 | Batalla de Coliseo | 1895 | 5 |
+| Q2017299 | Occult Chemistry | 1895 | 5 |
+| Q4395914 | Rodney Stone | 1895 | 5 |
+| Q2237506 | Battle of Ferkeh | 1896 | 5 |
+| Q5722624 | Battle of Las Taironas | 1896 | 5 |
+| Q55460370 | Batalla de Loma del Gato | 1896 | 5 |
+| Q16336122 | 1896 Barcelona Corpus Christi procession bombing | 1896 | 5 |
+| Q110496916 | attempted assassination of Prudente de Morais | 1897 | 5 |
+| Q1688349 | Jesup North Pacific Expedition | 1897 | 5 |
+| Q4871158 | Battle of Guantánamo Bay | 1898 | 5 |
+| Q2984768 | Battle of Cienfuegos | 1898 | 5 |
+| Q2909610 | Bombardment of San Juan | 1898 | 5 |
+| Q123691912 | Paris Arbitral Award | 1899 | 5 |
+| Q4476730 | Mendeleev's Ural expedition | 1899 | 5 |
+| Q5192006 | 1900 Cuban Constitutional Assembly election | 1900 | 5 |
+| Q16163640 | October 1900 Carlist uprising | 1900 | 5 |
+| Q4871978 | Battle of Palonegro | 1900 | 5 |
+| Q63522033 | Assassination of Umberto I of Italy | 1900 | 5 |
