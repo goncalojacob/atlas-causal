@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-cedars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1779439",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of the Cedars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1779439"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Cedars\", revision 1374397180"
+    }
+  ],
+  "title": "Battle of the Cedars",
+  "summary": "The English Wikipedia article \"Battle of the Cedars\", at revision 1374397180, opens: \"The Battle of the Cedars was a series of military confrontations in the early stages of the American Revolutionary War that occurred during the Continental Army's invasion of Quebec, which began in September 1775. These skirmishes, which involved limited combat, occurred in May 1776 at and around the Cedars, 45 km (28 mi) west of Montreal, Quebec. American troops were opposed by a small British Army detachment leading a larger force of Haudenosaunee warriors and Canadian Militia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1779439, imported by tools/import/wikidata.mjs. The item's own description reads \"1776 skirmishes of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1776,
+    "end": 1776,
+    "date": "1776-05-18",
+    "endDate": "1776-05-27"
+  },
+  "place": "battle-of-the-cedars-national-historic-site",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

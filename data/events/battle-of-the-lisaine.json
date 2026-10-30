@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-lisaine",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q551780",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of the Lisaine"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q551780"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Lisaine\", revision 1370600752"
+    }
+  ],
+  "title": "Battle of the Lisaine",
+  "summary": "The English Wikipedia article \"Battle of the Lisaine\", at revision 1370600752, opens: \"The Battle of the Lisaine, also known as the Battle of Héricourt, was fought from 15 January to 17 January 1871 between German and French forces. The French were led by Charles Denis Bourbaki, and were attempting to relieve the Siege of Belfort. The Germans prepared XIV Corps (Baden) and several other divisions, some 40,000–45,000 men, to halt the French advance of about 110,000 men. The Germans had their outer posts overran quite swiftly but the Prussians forced back and counterattacked the French forces, breaking the morale of French troops and leaving them to either die or retreat. In the end their efforts failed, and they were forced to flee into Switzerland where they were all interned soon after.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q551780, imported by tools/import/wikidata.mjs. The item's own description reads \"1871 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1871,
+    "end": 1871,
+    "date": "1871-01-15",
+    "endDate": "1871-01-17"
+  },
+  "place": "belfort",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-prussian-war"
+}

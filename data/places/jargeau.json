@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "jargeau",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q630345",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Jargeau",
+    "pt": "Jargeau"
+  },
+  "sources": [],
+  "names": [
+    "Jargeau"
+  ],
+  "where": {
+    "lon": 2.125,
+    "lat": 47.864722222222,
+    "precision": "city",
+    "label": "Jargeau"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

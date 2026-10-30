@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-montereau",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q976655",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Montereau"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q976655"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Montereau\", revision 1370269786"
+    }
+  ],
+  "title": "Battle of Montereau",
+  "summary": "The English Wikipedia article \"Battle of Montereau\", at revision 1370269786, opens: \"The Battle of Montereau was fought during the War of the Sixth Coalition between an Imperial French army led by Emperor Napoleon and a corps of Austrians and Württembergers commanded by Crown Prince Frederick William of Württemberg. While Napoleon's army mauled an Allied army under Gebhard Leberecht von Blücher, the main Allied army commanded by Karl Philipp, Prince of Schwarzenberg, advanced to a position dangerously close to Paris. Gathering up his outnumbered forces, Napoleon rushed his soldiers south to deal with Schwarzenberg. Hearing of the approach of the French emperor, the Allied commander ordered a withdrawal, but on 17 February saw his rear guards overrun or brushed aside.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q976655, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 battle during the War of the Sixth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-02-18"
+  },
+  "place": "montereau-fault-yonne",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "campaign-in-north-east-france-1814"
+}

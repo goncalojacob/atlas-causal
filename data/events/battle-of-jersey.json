@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-jersey",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2501743",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Jersey"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2501743"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Jersey\", revision 1374567759"
+    }
+  ],
+  "title": "Battle of Jersey",
+  "summary": "The English Wikipedia article \"Battle of Jersey\", at revision 1374567759, opens: \"The Battle of Jersey took place on 6 January 1781 during the American War of Independence when French forces unsuccessfully invaded the British-ruled island of Jersey to remove the threat it posed to French and American shipping. Jersey provided a base for British privateers. The French expedition was defeated, losing nearly half its force, including its commander, Baron Philippe de Rullecourt, who died of wounds sustained in the fighting. The battle is often remembered for the death of the British commander, Major Francis Peirson, and a painting based on his final moments by John Singleton Copley.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2501743, imported by tools/import/wikidata.mjs. The item's own description reads \"battle fought on 6 January 1781 in St. Helier, Jersey\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-01-06"
+  },
+  "place": "st-helier",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-french-war-1778-1783"
+}

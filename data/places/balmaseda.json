@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "balmaseda",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4480",
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Balmaseda",
+    "pt": "Valmaseda"
+  },
+  "sources": [],
+  "names": [
+    "Balmaseda",
+    "Valmaseda"
+  ],
+  "where": {
+    "lon": -3.193611111111111,
+    "lat": 43.19138888888889,
+    "precision": "city",
+    "label": "Balmaseda"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

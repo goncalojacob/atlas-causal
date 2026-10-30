@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "fire-of-moscow-1571",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q686961",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Fire of Moscow (1571)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q686961"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fire of Moscow (1571)\", revision 1381317347"
+    }
+  ],
+  "title": "Fire of Moscow (1571)",
+  "summary": "The English Wikipedia article \"Fire of Moscow (1571)\", at revision 1381317347, opens: \"The Fire of Moscow occurred on 24 May 1571, when a Crimean army led by the khan of Crimea Devlet I Giray together with its allied tribal contingents bypassed the Serpukhov defensive fortifications on the Oka River, crossed the Ugra River into the Moscow suburbs, and rounded the flank of the 36,000–40,000 men of the Russian army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q686961, imported by tools/import/wikidata.mjs. The item's own description reads \"1571 fire in Moscow, Russia by the khan Devlet I Giray\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1571,
+    "end": 1571
+  },
+  "place": "moscow",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "flour-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1635316",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Flour War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1635316"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Flour War\", revision 1374601266"
+    }
+  ],
+  "title": "Flour War",
+  "summary": "The English Wikipedia article \"Flour War\", at revision 1374601266, opens: \"The Flour War refers to a wave of riots from April to May 1775, in the northern, eastern, and western parts of the Kingdom of France. It followed an increase in grain prices, and subsequently bread prices; bread was an important source of food among the populace. Contributing factors to the riots include poor weather and harvests, and the withholding by police of public grain supplies from the royal stores in 1773–1774. This large-scale revolt subsided following wheat price controls imposed by Turgot, Louis XVI's Controller-General of Finances, and the deploying of military troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1635316, imported by tools/import/wikidata.mjs. The item's own description reads \"wave of riots, prelude of French Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1775
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

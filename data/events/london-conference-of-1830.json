@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "london-conference-of-1830",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1869128",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "London Conference of 1830",
+    "pt": "Conferência de Londres de 1830"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1869128"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"London Conference of 1830\", revision 1339916199"
+    }
+  ],
+  "title": "London Conference of 1830",
+  "summary": "The English Wikipedia article \"London Conference of 1830\", at revision 1339916199, opens: \"The London Conference of 1830 brought together representatives of the five major European powers Austria, Britain, France, Prussia and Russia. At the conference, which began on 20 December, they recognised the success of the Belgian secession from the United Kingdom of the Netherlands and permanently guaranteed Belgian independence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1869128, imported by tools/import/wikidata.mjs. The item's own description reads \"diplomatic conference of the five major European powers Austria, Britain, France, Prussia and Russia to discuss the Belgian Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1830,
+    "end": 1830
+  },
+  "place": "london",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

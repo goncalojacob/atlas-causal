@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "london-convention-1884",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3378038",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "London Convention (1884)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3378038"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"London Convention (1884)\", revision 1382266683"
+    }
+  ],
+  "title": "London Convention (1884)",
+  "summary": "The English Wikipedia article \"London Convention (1884)\", at revision 1382266683, opens: \"The London Convention was a treaty negotiated in 1884 between Great Britain, as the paramount power in South Africa, and the South African Republic. The London Convention superseded the 1881 Pretoria Convention.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3378038, imported by tools/import/wikidata.mjs. The item's own description reads \"1884 treaty between the United Kingdom and the South African Republic after the First Boer War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1884,
+    "end": 1884,
+    "date": "1884-02-27"
+  },
+  "place": "london",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

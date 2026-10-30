@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "saint-aubin-du-cormier",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q196444",
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Saint-Aubin-du-Cormier",
+    "pt": "Saint-Aubin-du-Cormier"
+  },
+  "sources": [],
+  "names": [
+    "Saint-Aubin-du-Cormier"
+  ],
+  "where": {
+    "lon": -1.3986111111111,
+    "lat": 48.259444444444,
+    "precision": "city",
+    "label": "Saint-Aubin-du-Cormier"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

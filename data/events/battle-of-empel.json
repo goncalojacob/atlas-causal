@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-empel",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870969",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Empel"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870969"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Empel\", revision 1370110103"
+    }
+  ],
+  "title": "Battle of Empel",
+  "summary": "The English Wikipedia article \"Battle of Empel\", at revision 1370110103, opens: \"The Miracle of Empel was a Spanish victory on December 8, 1585, near Empel, in the Netherlands during the Eighty Years' War. A Dutch force under Philip of Hohenlohe-Neuenstein had trapped several thousand Spanish soldiers of the Army of Flanders under Francisco Arias de Bobadilla on an island between the Meuse and Waal rivers by breaching dikes and using naval patrols. The waters around the island unexpectedly froze one night after a Spanish soldier digging a trench found a painting of Mary, mother of Jesus, allowing the Spanish to drive the Dutch ships away before defeating the Dutch army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870969, imported by tools/import/wikidata.mjs. The item's own description reads \"1585 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1585,
+    "end": 1585,
+    "date": "1585-12-07",
+    "endDate": "1585-12-08"
+  },
+  "place": "empel",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-gaeta-1734",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q628086",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Gaeta (1734)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q628086"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Gaeta (1734)\", revision 1370741351"
+    }
+  ],
+  "title": "Siege of Gaeta (1734)",
+  "summary": "The English Wikipedia article \"Siege of Gaeta (1734)\", at revision 1370741351, opens: \"The siege of Gaeta was a siege during the War of Polish Succession fought at Gaeta, Italy. The Habsburgs at Gaeta withstood four months of siege from the Bourbon armies under the Duke of Parma.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q628086, imported by tools/import/wikidata.mjs. The item's own description reads \"1734 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1734,
+    "end": 1734,
+    "date": "1734-04-08",
+    "endDate": "1734-08-06"
+  },
+  "place": "gaeta",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

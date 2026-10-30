@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "all-saints-flood-1570",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q493565",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "All Saints' Flood (1570)",
+    "pt": "Dilúvio de Todos os Santos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q493565"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"All Saints' Flood (1570)\", revision 1361434364"
+    }
+  ],
+  "title": "All Saints' Flood (1570)",
+  "summary": "The English Wikipedia article \"All Saints' Flood (1570)\", at revision 1361434364, opens: \"The All Saints' Flood of 1570 occurred on November 1–2, 1570 in the Spanish Netherlands, and is considered the worst North Sea flood disaster before the 20th century. It flooded the entire coast of the Netherlands and East Frisia. The effects were felt from Calais in Flanders to Jutland and even Norway. Even though the alleged casualty figures were mostly based on rough estimates and should be viewed with skepticism, up to 25,000 deaths can be assumed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q493565, imported by tools/import/wikidata.mjs. The item's own description reads \"1570 AD in the Netherlands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1570,
+    "end": null,
+    "date": "1570-11-01"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

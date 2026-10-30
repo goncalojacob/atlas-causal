@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "amatrice",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q223427",
+  "sitelinks": {
+    "count": 61,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Amatrice",
+    "pt": "Amatrice"
+  },
+  "sources": [],
+  "names": [
+    "Amatrice"
+  ],
+  "where": {
+    "lon": 13.288372222222,
+    "lat": 42.629380555556,
+    "precision": "city",
+    "label": "Amatrice"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-zbarazh",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q831792",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Zbarazh"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q831792"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Zbarazh\", revision 1370787660"
+    }
+  ],
+  "title": "Siege of Zbarazh",
+  "summary": "The English Wikipedia article \"Siege of Zbarazh\", at revision 1370787660, opens: \"The siege of Zbarazh was a part of the Khmelnytsky Uprising, and occurred in and around the site of the present-day city of Zbarazh in Ukraine. The Cossack Hetmanate and Crimean Khanate combined forces against the Polish–Lithuanian Commonwealth in a siege that lasted seven weeks.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q831792, imported by tools/import/wikidata.mjs. The item's own description reads \"1649 battle during the Khmelnytsky Uprising\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1649,
+    "end": 1649,
+    "date": "1649-07-10",
+    "endDate": "1649-08-22"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "khmelnytsky-uprising"
+}

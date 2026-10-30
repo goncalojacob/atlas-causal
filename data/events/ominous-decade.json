@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ominous-decade",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2378204",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Ominous Decade"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2378204"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ominous Decade\", revision 1381912244"
+    }
+  ],
+  "title": "Ominous Decade",
+  "summary": "The English Wikipedia article \"Ominous Decade\", at revision 1381912244, opens: \"The Ominous Decade was the period of the history of Spain encompassing the last ten years of Ferdinand VII's reign, dating from the abolition of the Spanish Constitution of 1812 on 1 October 1823 to his death on 29 September 1833. The decade began with the restoration of Ferdinand to the throne with the assistance of the French and saw the suppression of numerous revolts around Spain coming from both the Liberal and ultra-Reactionary sides.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2378204, imported by tools/import/wikidata.mjs. The item's own description reads \"period in the history of Spain, corresponding to the second restoration of absolutism at the end of the reign of Fernando VII from August 31, 1823 to September 29, 1833\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1823,
+    "end": 1833,
+    "date": "1823-08-31",
+    "endDate": "1833-09-29"
+  },
+  "place": "spain-q29",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

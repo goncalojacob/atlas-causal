@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "domazlice",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q986068",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Domažlice",
+    "pt": "Domažlice"
+  },
+  "sources": [],
+  "names": [
+    "Domažlice"
+  ],
+  "where": {
+    "lon": 12.929798039263,
+    "lat": 49.440605680467,
+    "precision": "city",
+    "label": "Domažlice"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

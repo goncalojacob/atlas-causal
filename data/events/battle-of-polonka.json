@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-polonka",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2011225",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Polonka"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2011225"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Polonka\", revision 1370586362"
+    }
+  ],
+  "title": "Battle of Polonka",
+  "summary": "The English Wikipedia article \"Battle of Polonka\", at revision 1370586362, opens: \"The Battle of Polonka  took place near Polonka during the Polish-Russian War (1658-1667) on 29 June 1660 between Polish-Lithuanian and Russian forces. Polish-Lithuanian army under Stefan Czarniecki and Paweł Jan Sapieha forced a Russian retreat through a carefully planned Polish hussar ambush and several tactically effective flanking maneuvers. The Russian defeat also meant they had to abandon the Siege of Lyakhavichy (Lachowicze).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2011225, imported by tools/import/wikidata.mjs. The item's own description reads \"1660 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1660,
+    "end": 1660,
+    "date": "1660-06-29"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "polish-russian-war-1654-1667"
+}

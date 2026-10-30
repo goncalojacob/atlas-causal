@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-warksow",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q323735",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Warksow"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q323735"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Warksow\", revision 1376097514"
+    }
+  ],
+  "title": "Battle of Warksow",
+  "summary": "The English Wikipedia article \"Battle of Warksow\", at revision 1376097514, opens: \"The Battle of Warksow took place on the Baltic Sea island of Rügen on 8 January (O.S.)/18 January（N.S.）1678 during the Swedish-Brandenburg War. In the battle Swedish forces defeated an allied army composed mainly of Danes supported by a smaller contingent of Brandenburg and Hesse-Cassel troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q323735, imported by tools/import/wikidata.mjs. The item's own description reads \"1678 battle during the Swedish-Brandenburg War where Swedish forces defeated an allied army composed mainly of Danes\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1678,
+    "end": 1678,
+    "date": "1678-01-18"
+  },
+  "place": "rugen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "scanian-war"
+}

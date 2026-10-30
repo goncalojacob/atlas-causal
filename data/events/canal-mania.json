@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "canal-mania",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2936125",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Canal Mania"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2936125"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Canal Mania\", revision 1365860384"
+    }
+  ],
+  "title": "Canal Mania",
+  "summary": "The English Wikipedia article \"Canal Mania\", at revision 1365860384, opens: \"Canal Mania was the period of intense canal building in England and Wales between the 1790s and 1810s, and the speculative frenzy that ensued in the early 1790s.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2936125, imported by tools/import/wikidata.mjs. The item's own description reads \"period in the United Kingdom\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1790,
+      "max": 1799
+    },
+    "end": {
+      "min": 1810,
+      "max": 1819
+    }
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

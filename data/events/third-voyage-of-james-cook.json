@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "third-voyage-of-james-cook",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2750283",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Third voyage of James Cook"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2750283"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third voyage of James Cook\", revision 1381489628"
+    }
+  ],
+  "title": "Third voyage of James Cook",
+  "summary": "The English Wikipedia article \"Third voyage of James Cook\", at revision 1381489628, opens: \"James Cook's third and final voyage was a British attempt to discover the Northwest Passage between the Atlantic ocean and the Pacific coast of North America. The attempt failed and Cook was killed at Hawaii in a violent dispute with the local inhabitants. The ostensible purpose of the voyage was to return Omai, a young man from Raiatea, to his homeland, but the British Admiralty used this as a cover for their plan to send Cook on a voyage to find the Northwest Passage, should it exist. HMS Resolution, to be commanded by Cook, and HMS Discovery, commanded by Charles Clerke, were prepared for the voyage which started from Plymouth in 1776.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2750283, imported by tools/import/wikidata.mjs. The item's own description reads \"Royal Navy exploration voyage to the North Pacific from 1776 to 1780\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1776,
+    "end": 1780,
+    "date": "1776-07-12",
+    "endDate": "1780-10-04"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

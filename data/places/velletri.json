@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "velletri",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q189236",
+  "sitelinks": {
+    "count": 75,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Velletri",
+    "pt": "Velletri"
+  },
+  "sources": [],
+  "names": [
+    "Velletri"
+  ],
+  "where": {
+    "lon": 12.783333333333,
+    "lat": 41.666666666667,
+    "precision": "city",
+    "label": "Velletri"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

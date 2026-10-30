@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "kruje",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q194164",
+  "sitelinks": {
+    "count": 58,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Krujë",
+    "pt": "Cruja"
+  },
+  "sources": [],
+  "names": [
+    "Krujë",
+    "Cruja"
+  ],
+  "where": {
+    "lon": 19.7925,
+    "lat": 41.51083333333333,
+    "precision": "city",
+    "label": "Krujë"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

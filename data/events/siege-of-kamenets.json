@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-kamenets",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q949294",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Kamenets"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q949294"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Kamenets\", revision 1370742241"
+    }
+  ],
+  "title": "Siege of Kamenets",
+  "summary": "The English Wikipedia article \"Siege of Kamenets\", at revision 1370742241, opens: \"The siege of Kamieniec Podolski was laid by the Ottoman Empire on August 18, 1672, in the Polish fortress of Kamieniec Podolski. It lasted until August 27, when Polish forces defending the city capitulated. During the siege, legendary Polish hero, stolnik przemyski pułkownik Jerzy Wołodyjowski led many successful sallies with light cavalry.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q949294, imported by tools/import/wikidata.mjs. The item's own description reads \"1672 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1672,
+    "end": 1672,
+    "date": "1672-08-18",
+    "endDate": "1672-08-27"
+  },
+  "place": "kamianets-podilskyi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "polish-ottoman-war-1672-1676"
+}

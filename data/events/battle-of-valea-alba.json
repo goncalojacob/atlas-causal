@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-valea-alba",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2533670",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Valea Albă"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2533670"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Valea Albă\", revision 1375847219"
+    }
+  ],
+  "title": "Battle of Valea Albă",
+  "summary": "The English Wikipedia article \"Battle of Valea Albă\", at revision 1375847219, opens: \"The Battle of Valea Albă, also known as the Battle of Războieni or the Battle of Akdere, was an important event in the medieval history of Moldavia. It took place at Războieni, also known as Valea Albă, on 26 July 1476, between the Moldavian army of Stephen the Great and an invading Ottoman army which was commanded personally by Sultan Mehmed the Conqueror.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2533670, imported by tools/import/wikidata.mjs. The item's own description reads \"1476 battle in present day Romania\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1476,
+    "end": 1476,
+    "date": "1476-07-26"
+  },
+  "place": "razboieni",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

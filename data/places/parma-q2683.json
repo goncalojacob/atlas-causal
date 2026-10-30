@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "parma-q2683",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2683",
+  "sitelinks": {
+    "count": 108,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Parma",
+    "pt": "Parma"
+  },
+  "sources": [],
+  "names": [
+    "Parma"
+  ],
+  "where": {
+    "lon": 10.328,
+    "lat": 44.801472222222,
+    "precision": "city",
+    "label": "Parma"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-reims-1814",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1051804",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Reims (1814)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1051804"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Reims (1814)\", revision 1370272852"
+    }
+  ],
+  "title": "Battle of Reims (1814)",
+  "summary": "The English Wikipedia article \"Battle of Reims (1814)\", at revision 1370272852, opens: \"The Battle of Reims was fought at Reims, France between an Imperial French army commanded by Emperor Napoleon and a combined Russian-Prussian corps led by General Emmanuel de Saint-Priest. On the first day, Saint-Priest's Russians and General Friedrich Wilhelm von Jagow's Prussians easily captured Reims from its French National Guard garrison, capturing or killing more than half of its defenders; this event is also mentioned as the storming of Reims. On the second day, an overconfident Saint-Priest carelessly deployed his forces west of the city, not grasping that Napoleon was approaching with 20,000 troops. Too late, Saint-Priest realized who he was fighting and tried to organize a retreat. In the battle that followed, the French army struck with crushing force and the Allies were routed with serious losses. During the fighting, Saint-Priest was struck by a howitzer shell and died two weeks later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1051804, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 battle during the War of the Sixth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-03-13"
+  },
+  "place": "reims",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "german-campaign-of-1813"
+}

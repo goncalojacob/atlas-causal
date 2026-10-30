@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "stuart-period",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2366054",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Stuart period"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2366054"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Stuart period\", revision 1381508725"
+    }
+  ],
+  "title": "Stuart period",
+  "summary": "The English Wikipedia article \"Stuart period\", at revision 1381508725, opens: \"The Stuart period of British history lasted from 1603 to 1714 during the dynasty of the House of Stuart. The period was plagued by internal and religious strife, and a large-scale civil war which resulted in the execution of King Charles I in 1649. The Interregnum, largely under the control of Oliver Cromwell, is included here for continuity, even though the Stuarts were in exile. The Cromwell regime collapsed and Charles II had very wide support for his taking of the throne in 1660. His brother James II was overthrown in 1689 in the Glorious Revolution. He was replaced by his Protestant daughter Mary II and her Dutch husband William III. Mary's sister Anne was the last of the line. For the next half century James II and his son James Francis Edward Stuart and grandson Charles Edward Stuart claimed that they were the true Stuart kings, but they were in exile and their attempts to return with French aid were defeated. The period ended with the death of Queen Anne and the accession of King George I from the German House of Hanover.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2366054, imported by tools/import/wikidata.mjs. The item's own description reads \"period in British history coinciding with the reign of the House of Stuart\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1603,
+    "end": 1714
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

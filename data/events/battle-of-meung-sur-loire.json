@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-meung-sur-loire",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1618756",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Meung-sur-Loire",
+    "pt": "Batalha de Meung-sur-Loire"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1618756"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Meung-sur-Loire\", revision 1370449680"
+    }
+  ],
+  "title": "Battle of Meung-sur-Loire",
+  "summary": "The English Wikipedia article \"Battle of Meung-sur-Loire\", at revision 1370449680, opens: \"The Battle of Meung-sur-Loire took place on 15 June 1429. It was one of Joan of Arc's battles following relief of the siege at Orléans. This campaign was the second sustained French offensive in a generation in the Hundred Years' War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1618756, imported by tools/import/wikidata.mjs. The item's own description reads \"1429 battle during the Hundred Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1429,
+    "end": 1429,
+    "date": "1429-06-15"
+  },
+  "place": "meung-sur-loire",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

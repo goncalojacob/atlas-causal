@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-anghiari",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1779008",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Anghiari"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1779008"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Anghiari\", revision 1370106812"
+    }
+  ],
+  "title": "Battle of Anghiari",
+  "summary": "The English Wikipedia article \"Battle of Anghiari\", at revision 1370106812, opens: \"The Battle of Anghiari was fought on 29 June 1440, between the forces of Milan and the League of some Italian states led by the Republic of Florence in the course of the Wars in Lombardy. The battle was a victory for the Florentines, who secured their domination of central Italy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1779008, imported by tools/import/wikidata.mjs. The item's own description reads \"battle on 29 June 1440, between the forces of Milan and those of the Italian League led by the Republic of Florence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1440,
+    "end": 1440,
+    "date": "1440-06-29"
+  },
+  "place": "anghiari",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "wars-in-lombardy"
+}

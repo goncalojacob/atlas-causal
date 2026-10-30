@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-guastalla",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1760280",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Guastalla"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1760280"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Guastalla\", revision 1380970867"
+    }
+  ],
+  "title": "Battle of Guastalla",
+  "summary": "The English Wikipedia article \"Battle of Guastalla\", at revision 1380970867, opens: \"The Battle of Guastalla or Battle of Luzzara saw an Allied army commanded by King Charles Emmanuel III of Sardinia repulse an attack by a Habsburg Austrian army led by Dominik von Königsegg-Rothenfels. In this battle of War of the Polish Succession, Charles Emmanuel's Allied army was composed of troops from the French Royal Army and soldiers from the Kingdom of Sardinia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1760280, imported by tools/import/wikidata.mjs. The item's own description reads \"1734 battle as part of the War of the Polish Succession\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1734,
+    "end": 1734,
+    "date": "1734-09-19"
+  },
+  "place": "guastalla",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-polish-succession"
+}

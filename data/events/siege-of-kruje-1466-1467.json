@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-kruje-1466-1467",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q960449",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Krujë (1466–1467)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q960449"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Krujë (1466–1467)\", revision 1382552456"
+    }
+  ],
+  "title": "Siege of Krujë (1466–1467)",
+  "summary": "The English Wikipedia article \"Siege of Krujë (1466–1467)\", at revision 1382552456, opens: \"The second siege of Krujë took place from June 1466 to 23 April 1467. Sultan Mehmed II of the Ottoman Empire led an army into Albania to defeat Skanderbeg, the leader of the League of Lezhë, which was created in 1444 after he began his war against the Ottomans. During the almost year-long siege, Skanderbeg's main fortress, Krujë, withstood the siege while Skanderbeg roamed Albania to gather forces and facilitate the flight of refugees from the civilian areas that were attacked by the Ottomans. Krujë managed to withstand the siege laid on it by Ballaban Badera, sanjakbey of the Sanjak of Ohrid, an Albanian brought up in the Ottoman army through the devşirme. By 23 April 1467, the Ottoman army had been defeated and Skanderbeg entered Krujë.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q960449, imported by tools/import/wikidata.mjs. The item's own description reads \"1467 Ottoman siege of the Albanian resistance in Krujë\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1466,
+    "end": 1467,
+    "date": "1466-06",
+    "endDate": "1467-04-23"
+  },
+  "place": "kruje",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

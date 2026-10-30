@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "penobscot-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2575844",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Penobscot Expedition",
+    "pt": "Expedição Penobscot"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2575844"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Penobscot Expedition\", revision 1375065012"
+    }
+  ],
+  "title": "Penobscot Expedition",
+  "summary": "The English Wikipedia article \"Penobscot Expedition\", at revision 1375065012, opens: \"The Penobscot Expedition was an unsuccessful expedition launched by the Massachusetts Provincial Congress during the American Revolutionary War. On June 17, 1779, 700 British Army troops under Brigadier-general Francis McLean landed on the coast of the District of Maine and established a series of fortifications around Fort George on the Majabigwaduce Peninsula in the upper Penobscot Bay with the goals of establishing a military presence on that part of the coast and establishing the colony of New Ireland. In response, the Massachusetts Provincial Congress, supported by the Second Continental Congress, raised an expedition to drive McLean's troops out.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2575844, imported by tools/import/wikidata.mjs. The item's own description reads \"armada during the American Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1779,
+    "end": 1779,
+    "date": "1779-08-14"
+  },
+  "place": "penobscot-bay",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

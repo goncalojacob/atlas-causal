@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "skopje",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q384",
+  "sitelinks": {
+    "count": 174,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Skopje",
+    "pt": "Escópia"
+  },
+  "sources": [],
+  "names": [
+    "Skopje",
+    "Escópia"
+  ],
+  "where": {
+    "lon": 21.431666666666665,
+    "lat": 41.99611111111111,
+    "precision": "city",
+    "label": "Skopje"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

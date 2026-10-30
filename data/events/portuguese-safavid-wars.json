@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "portuguese-safavid-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1107697",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Portuguese–Safavid wars",
+    "pt": "Guerra Luso-Persa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1107697"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese–Safavid wars\", revision 1380937870"
+    }
+  ],
+  "title": "Portuguese–Safavid wars",
+  "summary": "The English Wikipedia article \"Portuguese–Safavid wars\", at revision 1380937870, opens: \"The Portuguese–Safavid wars or Persian-Portuguese wars were a series of conflicts between the Portuguese Empire and Safavid Iran from 1507 to 1728. The Portuguese were supported by the Kingdom of Hormuz, their vassal, while the Safavids had the help of the Kingdom of England.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1107697, imported by tools/import/wikidata.mjs. The item's own description reads \"1507–1728 series of wars between the Portuguese and Safavid empires\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1507,
+    "end": 1728,
+    "date": "1507-09"
+  },
+  "place": "persian-gulf",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

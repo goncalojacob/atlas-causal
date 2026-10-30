@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sack-of-mahon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7396810",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Sack of Mahón"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7396810"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sack of Mahón\", revision 1370729619"
+    }
+  ],
+  "title": "Sack of Mahón",
+  "summary": "The English Wikipedia article \"Sack of Mahón\", at revision 1370729619, opens: \"The sack of Mahón occurred in 1535, when Hayreddin Barbarossa attacked the harbour of Mahón in the Balearic Islands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7396810, imported by tools/import/wikidata.mjs. The item's own description reads \"1535 Hayreddin Barbarossa's attack and looting of the harbor of Mahón\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1535,
+    "end": 1535,
+    "date": "1535-09-01"
+  },
+  "place": "mahon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

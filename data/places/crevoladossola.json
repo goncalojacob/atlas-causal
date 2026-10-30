@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "crevoladossola",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q23316",
+  "sitelinks": {
+    "count": 53,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Crevoladossola",
+    "pt": "Crevoladossola"
+  },
+  "sources": [],
+  "names": [
+    "Crevoladossola"
+  ],
+  "where": {
+    "lon": 8.296111111111111,
+    "lat": 46.1475,
+    "precision": "city",
+    "label": "Crevoladossola"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

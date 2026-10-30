@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-saint-cast",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889853",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Saint-Cast",
+    "pt": "Batalha de Saint Cast"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889853"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Saint-Cast\", revision 1372536684"
+    }
+  ],
+  "title": "Battle of Saint-Cast",
+  "summary": "The English Wikipedia article \"Battle of Saint-Cast\", at revision 1372536684, opens: \"The Battle of Saint-Cast was a military engagement during the Seven Years' War on the French coast between British naval and land expeditionary forces and French coastal defence forces. Fought on 11 September 1758, it was won by the French, as they attacked a numerically superior British field force and drove it back to the ships, having suffered relatively minor casualties.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889853, imported by tools/import/wikidata.mjs. The item's own description reads \"1758 military operation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1758,
+    "end": 1758,
+    "date": "1758-09-11"
+  },
+  "place": "saint-cast-le-guildo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

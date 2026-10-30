@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bassignana",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q17266",
+  "sitelinks": {
+    "count": 54,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Bassignana",
+    "pt": "Bassignana"
+  },
+  "sources": [],
+  "names": [
+    "Bassignana"
+  ],
+  "where": {
+    "lon": 8.7319444444444,
+    "lat": 45.002222222222,
+    "precision": "city",
+    "label": "Bassignana"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

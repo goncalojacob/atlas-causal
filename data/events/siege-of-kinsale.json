@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-kinsale",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q491255",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Kinsale",
+    "pt": "Batalha de Kinsale"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q491255"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Kinsale\", revision 1372994076"
+    }
+  ],
+  "title": "Siege of Kinsale",
+  "summary": "The English Wikipedia article \"Siege of Kinsale\", at revision 1372994076, opens: \"The siege of Kinsale, also known as the battle of Kinsale, was the ultimate battle in England's conquest of Gaelic Ireland, commencing in October 1601, near the end of the reign of Queen Elizabeth I, and at the climax of the Nine Years' War—a campaign by Hugh O'Neill, Hugh Roe O'Donnell and other Irish lords against English rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q491255, imported by tools/import/wikidata.mjs. The item's own description reads \"1602 battle in England's conquest of Gaelic Ireland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1601,
+    "end": 1602,
+    "date": "1601-10-02",
+    "endDate": "1602-01-03"
+  },
+  "place": "kinsale",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war-ireland"
+}

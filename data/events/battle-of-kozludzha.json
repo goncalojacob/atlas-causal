@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-kozludzha",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1985387",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Kozludzha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1985387"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kozludzha\", revision 1382459698"
+    }
+  ],
+  "title": "Battle of Kozludzha",
+  "summary": "The English Wikipedia article \"Battle of Kozludzha\", at revision 1382459698, opens: \"The Battle of Kozludzha, fought on 20 June 1774 near the village of Kozludzha, was one of the final and decisive battles of the Russo-Turkish War (1768–1774). The Russians managed to rout the Ottoman army, scoring a major victory. This battle, alongside several others in this campaign, established the reputation of the Russian Lieutenant-General Alexander Suvorov as a brilliant commander of his time. As a result of the council, however, the Russians did not undertake a further offensive beyond the Balkan Mountains deep into Ottoman territory due to the bad local roads and the lack of provisions, which were available only until 12 July. The commander-in-chief General-Feldmarshal Pyotr Rumyantsev-Zadunaisky was furious at the operational outcome and placed the responsibility for not moving the TO beyond the Balkan Mountains on Lieutenant-General Count Mikhail Kamensky, Suvorov's assistant at the battle of Kozludzha and the senior among the 6 generals who were at the council. Nevertheless, a peace treaty favorable to Russia would soon be signed—owing to the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1985387, imported by tools/import/wikidata.mjs. The item's own description reads \"1774 battle of the Russo-Turkish War (1768–1774)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1774,
+    "end": 1774,
+    "date": "1774-06-09"
+  },
+  "place": "bulgaria-q219",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1768-1774"
+}

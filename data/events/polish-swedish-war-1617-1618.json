@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "polish-swedish-war-1617-1618",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2373506",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Polish–Swedish War (1617–1618)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2373506"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Polish–Swedish War (1617–1618)\", revision 1378194572"
+    }
+  ],
+  "title": "Polish–Swedish War (1617–1618)",
+  "summary": "The English Wikipedia article \"Polish–Swedish War (1617–1618)\", at revision 1378194572, opens: \"The Polish–Swedish War (1617–1618) was a phase of the longer Polish–Swedish War of 1600–1629. It continued the war of 1600–1611 and was an attempt by Sweden to take Polish pressure off Russia. The Polish–Lithuanian Commonwealth was then also fighting Tartars and the Ottoman Empire. Russia and Sweden were at that stage allied, prior to the Ingrian War, part of Russia's Time of Troubles. The 1617–1618 war's cause was a dispute over Livonia and Estonia, and a dispute between Sigismund III Vasa and Gustavus Adolphus over the Swedish throne.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2373506, imported by tools/import/wikidata.mjs. The item's own description reads \"phase of the Polish-Swedish war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1617,
+    "end": 1618
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "polish-swedish-war-1600-1629"
+}

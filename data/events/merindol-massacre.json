@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "merindol-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3297454",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Mérindol massacre",
+    "pt": "Massacre de Mérindol"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3297454"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mérindol massacre\", revision 1379305225"
+    }
+  ],
+  "title": "Mérindol massacre",
+  "summary": "The English Wikipedia article \"Mérindol massacre\", at revision 1379305225, opens: \"The Mérindol massacre took place in 1545, when Francis I of France ordered that the Vaudois (Waldensians) of the village of Mérindol be punished for heresy. Provençal and papal soldiers killed hundreds or even thousands of Waldensian villagers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3297454, imported by tools/import/wikidata.mjs. The item's own description reads \"1545 massacre of Protestants ordered by Francis I of France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1545,
+    "end": 1545,
+    "date": "1545-03"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

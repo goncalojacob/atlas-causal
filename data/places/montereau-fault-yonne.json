@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "montereau-fault-yonne",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q242191",
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Montereau-Fault-Yonne",
+    "pt": "Montereau-Fault-Yonne"
+  },
+  "sources": [],
+  "names": [
+    "Montereau-Fault-Yonne"
+  ],
+  "where": {
+    "lon": 2.9480555555556,
+    "lat": 48.383055555556,
+    "precision": "city",
+    "label": "Montereau-Fault-Yonne"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

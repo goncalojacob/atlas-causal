@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "palace-of-versailles",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2946",
+  "sitelinks": {
+    "count": 105,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Palace of Versailles",
+    "pt": "Palácio de Versalhes"
+  },
+  "sources": [],
+  "names": [
+    "Palace of Versailles",
+    "Palácio de Versalhes"
+  ],
+  "where": {
+    "lon": 2.120277777777778,
+    "lat": 48.804722222222225,
+    "precision": "point",
+    "label": "Palace of Versailles"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

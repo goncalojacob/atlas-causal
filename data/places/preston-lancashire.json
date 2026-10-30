@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "preston-lancashire",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q184090",
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Preston, Lancashire",
+    "pt": "Preston"
+  },
+  "sources": [],
+  "names": [
+    "Preston",
+    "Preston, Lancashire"
+  ],
+  "where": {
+    "lon": -2.6980555555556,
+    "lat": 53.759444444444,
+    "precision": "city",
+    "label": "Preston, Lancashire"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

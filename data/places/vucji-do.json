@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "vucji-do",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3045719",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Vučji Do"
+  },
+  "sources": [],
+  "names": [
+    "Vučji Do"
+  ],
+  "where": {
+    "lon": 18.5242,
+    "lat": 42.8867,
+    "precision": "city",
+    "label": "Vučji Do"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

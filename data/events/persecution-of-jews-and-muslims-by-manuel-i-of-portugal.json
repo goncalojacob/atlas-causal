@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "persecution-of-jews-and-muslims-by-manuel-i-of-portugal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q15138579",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Persecution of Jews and Muslims by Manuel I of Portugal",
+    "pt": "Perseguição de Judeus e Muçulmanos por Manuel I de Portugal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15138579"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Persecution of Jews and Muslims by Manuel I of Portugal\", revision 1368360113"
+    }
+  ],
+  "title": "Persecution of Jews and Muslims by Manuel I of Portugal",
+  "summary": "The English Wikipedia article \"Persecution of Jews and Muslims by Manuel I of Portugal\", at revision 1368360113, opens: \"On 5 December 1496, King Manuel I of Portugal signed the decree of expulsion of Jews and Muslims to take effect by the end of October of the next year.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15138579, imported by tools/import/wikidata.mjs. The item's own description reads \"expulsion of Muslims and Jews from Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1496,
+    "end": null,
+    "date": "1496-12-05"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
