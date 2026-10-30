@@ -23,7 +23,9 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { withBrowser, open, seenIntro, waitFor, watchErrors, errorsOn, skip } from './browser.mjs';
+import {
+  withBrowser, open, seenIntro, waitFor, watchErrors, errorsOn, named, skip,
+} from './browser.mjs';
 import { shoot } from './png.mjs';
 import { ROOT } from './helpers.mjs';
 import { fromHex, distance, tokensOf } from '../tools/lib/colour.mjs';
@@ -67,6 +69,17 @@ const REACH = 4;
 
 const VIEW = '?view=graph&from=1900&to=1999';
 const DRAWN = 'return document.querySelector("svg.graph text.node-label") !== null;';
+// **The page is open when the marks carry their names, not when a name is
+// drawn** (M101). The picture a reader opens on is framed a little in, and at
+// 5,513 events that frame holds 1,134 marks and writes no name at all: a name
+// is written whole or not at all, never across a mark that is to be named
+// (labels.js), and with every mark offered a name no box in that frame is
+// clear of one. The world view, one double-click later, is wider and does name
+// 29. Both tests go to the world view before they read anything, so they wait
+// here for the marks and their titles (a title arrives with its century, so
+// the world view is asked for only once the names are in) and `waitFor` asks
+// for the drawn names there, where they are.
+const MARKS = named('svg.graph circle.node[data-id]');
 const LCD_OFF = ['--disable-lcd-text'];
 
 // The zoom in force, off the viewport's own transform, as M61 reads it.
@@ -135,7 +148,7 @@ test('the halo behind a label is the same width on screen at every zoom', { skip
   await withBrowser(async (page, url) => {
     await watchErrors(page);
     await seenIntro(page);
-    await open(page, url(VIEW), DRAWN);
+    await open(page, url(VIEW), MARKS);
 
     // **Two zooms and not three** (M88 §12, the third review, finding B12).
     // The property is that the band holds its width on screen wherever the
@@ -185,7 +198,7 @@ test('a label over a line and a label over a mark both keep paper between the le
   await withBrowser(async (page, url) => {
     await watchErrors(page);
     await seenIntro(page);
-    await open(page, url(VIEW), DRAWN);
+    await open(page, url(VIEW), MARKS);
     await page.eval(WORLD);
     await waitFor(page, DRAWN, 'the world view');
 
@@ -261,18 +274,25 @@ test('a label over a line and a label over a mark both keep paper between the le
       for (let step = 0; step < 8; step += 1) {
         // eslint-disable-next-line no-await-in-loop
         const all = await page.eval(BEHIND);
-        const found = all.filter((b) => b[kind]);
-        if (found.length > 0) return found;
+        // A candidate is a geometry, and it is a case only when the picture
+        // has cobalt ink and letters in its box (`measure`, below), so the
+        // step is over when one is, and not when the first rectangle is.
+        for (const box of all.filter((b) => b[kind])) {
+          // eslint-disable-next-line no-await-in-loop
+          const measured = await measure(box);
+          if (measured.lines > 0 && measured.letters > 0) return { box, ...measured };
+        }
         // eslint-disable-next-line no-await-in-loop
         await page.eval(`
           document.querySelector('svg.graph').dispatchEvent(new WheelEvent('wheel', {
             bubbles: true, cancelable: true, deltaY: -120, clientX: 640, clientY: 400,
           }));
           return true;`);
-        // eslint-disable-next-line no-await-in-loop
-        await waitFor(page, DRAWN, 'something named after a step in');
+        // A wheel step draws the new picture before it returns, so there is
+        // nothing to wait for; and a step may name nothing at all (M101), which
+        // is an answer to read and not a reason to stop.
       }
-      return [];
+      return null;
     };
 
 
@@ -310,17 +330,10 @@ test('a label over a line and a label over a mark both keep paper between the le
     };
 
     for (const [what, kind] of [['a line', 'edge'], ['a mark', 'mark']]) {
-      const candidates = await behindAt(kind);
-      assert.ok(candidates.length > 0, `a label is drawn over ${what}`);
-      let found = null;
-      for (const box of candidates) {
-        // eslint-disable-next-line no-await-in-loop
-        const measured = await measure(box);
-        if (measured.lines > 0 && measured.letters > 0) { found = { box, ...measured }; break; }
-      }
+      const found = await behindAt(kind);
       // The case is a real one — there is something cobalt inside the label's
       // own rectangle — and the letters are drawn in it.
-      assert.ok(found, `some label over ${what} has both ink and letters in its box`);
+      assert.ok(found, `a label is drawn over ${what}, and some label over it has both ink and letters in its box`);
       // And the halo is doing its job: not one pixel of a letter has the line
       // against it. Take the halo away and this is where the two meet.
       assert.deepEqual(found.touching.slice(0, 8), [],
