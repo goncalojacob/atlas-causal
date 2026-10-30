@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "congress-of-aix-la-chapelle-1818",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q300738",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Congress of Aix-la-Chapelle (1818)",
+    "pt": "Congresso de Aquisgrão (1818)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q300738"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Congress of Aix-la-Chapelle (1818)\", revision 1381280121"
+    }
+  ],
+  "title": "Congress of Aix-la-Chapelle (1818)",
+  "summary": "The English Wikipedia article \"Congress of Aix-la-Chapelle (1818)\", at revision 1381280121, opens: \"The Congress of Aix-la-Chapelle, held in the autumn of 1818, was a high-level diplomatic meeting of France and the four allied powers Britain, Austria, Prussia and Russia, which had defeated it in 1814. The purpose was to decide the withdrawal of the army of occupation from France and renegotiate the reparations it owed. It produced an amicable settlement, whereby France refinanced its reparations debt; the Allies in a few weeks withdrew all of their troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q300738, imported by tools/import/wikidata.mjs. The item's own description reads \"Diplomatic meeting the Allied Powers after the Napoleonic Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1818,
+    "end": 1818,
+    "date": "1818-09-29",
+    "endDate": "1818-11-21"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

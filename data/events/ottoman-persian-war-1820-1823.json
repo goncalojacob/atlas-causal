@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ottoman-persian-war-1820-1823",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2975313",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Ottoman–Persian War (1820–1823)",
+    "pt": "Guerra Otomano-Persa de 1821–1823"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2975313"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman–Persian War (1820–1823)\", revision 1377035368"
+    }
+  ],
+  "title": "Ottoman–Persian War (1820–1823)",
+  "summary": "The English Wikipedia article \"Ottoman–Persian War (1820–1823)\", at revision 1377035368, opens: \"The Ottoman–Persian War of 1820–1823 was fought between the Ottoman Empire and Qajar Iran from 1820 to 1823.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2975313, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1820,
+    "end": 1823,
+    "date": "1821-09-10",
+    "endDate": "1823-07-23"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-persian-wars"
+}

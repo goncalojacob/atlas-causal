@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "second-tarnovo-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2980846",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Second Tarnovo Uprising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2980846"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Tarnovo Uprising\", revision 1370737417"
+    }
+  ],
+  "title": "Second Tarnovo Uprising",
+  "summary": "The English Wikipedia article \"Second Tarnovo Uprising\", at revision 1370737417, opens: \"The Second Tarnovo uprising, according to a unique Russian source published in 1847, is thought to be a Bulgarian uprising against Ottoman rule based in the former Bulgarian capital, Tarnovo, that broke out in 1686 and was severely crushed by the Ottoman authorities.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2980846, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1686,
+    "end": 1686
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
