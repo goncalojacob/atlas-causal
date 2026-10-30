@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-fort-davidson",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2579523",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Fort Davidson"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2579523"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Davidson\", revision 1370110406"
+    }
+  ],
+  "title": "Battle of Fort Davidson",
+  "summary": "The English Wikipedia article \"Battle of Fort Davidson\", at revision 1370110406, opens: \"The Battle of Fort Davidson, also known as the Battle of Pilot Knob, was a battle of Price's Missouri Expedition fought on September 27, 1864, near Pilot Knob, Missouri. Confederate troops under the command of Major-General Sterling Price had entered Missouri in September 1864 with hopes of challenging Union control of the state. On September 24, Price learned that Union troops held Pilot Knob. Two days later, he sent part of his command north to disrupt and then moved towards Pilot Knob with the rest of his army. The Confederate divisions of Major-General James Fagan and Brigadier-General John Marmaduke drove Union troops under Brigadier-General Thomas Ewing and Major James Wilson from the lower Arcadia Valley into Fort Davidson on September 26 and on the morning of September 27.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2579523, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-09-27"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "independence-missouri",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q24603",
+  "sitelinks": {
+    "count": 65,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Independence, Missouri",
+    "pt": "Independence (Missouri)"
+  },
+  "sources": [],
+  "names": [
+    "Independence",
+    "Independence, Missouri",
+    "Independence (Missouri)"
+  ],
+  "where": {
+    "lon": -94.41388888888889,
+    "lat": 39.0925,
+    "precision": "city",
+    "label": "Independence, Missouri"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

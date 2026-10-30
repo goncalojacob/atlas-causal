@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "battle-of-un-no-kuchi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2890433",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Un no Kuchi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890433"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Un no Kuchi\", revision 1370276039"
+    }
+  ],
+  "title": "Battle of Un no Kuchi",
+  "summary": "The English Wikipedia article \"Battle of Un no Kuchi\", at revision 1370276039, opens: \"The Battle of Un no Kuchi in 1536 was the first major victory for Takeda Harunobu, aged fifteen at the time. He would later take on the name Takeda Shingen, and grow to become one of Japan's most famous warlords.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890433, imported by tools/import/wikidata.mjs. The item's own description reads \"Japanese battle in 1536\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1536,
+    "end": 1536
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

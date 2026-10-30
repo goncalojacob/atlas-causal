@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "third-battle-of-murfreesboro",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4993803",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Third Battle of Murfreesboro"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4993803"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third Battle of Murfreesboro\", revision 1377257871"
+    }
+  ],
+  "title": "Third Battle of Murfreesboro",
+  "summary": "The English Wikipedia article \"Third Battle of Murfreesboro\", at revision 1377257871, opens: \"The Third Battle of Murfreesboro, also known as the Battle of Wilkinson Pike or the Battle of the Cedars, was fought December 5–7, 1864, in Rutherford County, Tennessee, as part of the Franklin-Nashville Campaign of the American Civil War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4993803, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-12-05",
+    "endDate": "1864-12-07"
+  },
+  "place": "murfreesboro-tennessee",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

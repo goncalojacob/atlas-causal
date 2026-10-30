@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-kiyosu-castle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q11620514",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Kiyosu Castle"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11620514"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kiyosu Castle\", revision 1370267194"
+    }
+  ],
+  "title": "Battle of Kiyosu Castle",
+  "summary": "The English Wikipedia article \"Battle of Kiyosu Castle\", at revision 1370267194, opens: \"Battle of Kiyosu Castle or Battle of Kaizu was the first victory of the young Oda Nobunaga in his struggle to unite the province of Owari against his cousin, Oda Nobutomo, deputy governor of southern Owari.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11620514, imported by tools/import/wikidata.mjs. The item's own description reads \"1552 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1552,
+    "end": 1552,
+    "date": "1552-09-04"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

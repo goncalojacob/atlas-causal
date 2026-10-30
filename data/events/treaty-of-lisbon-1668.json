@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-lisbon-1668",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1456443",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Treaty of Lisbon (1668)",
+    "pt": "Tratado de Lisboa (1668)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1456443"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Lisbon (1668)\", revision 1367387099"
+    }
+  ],
+  "title": "Treaty of Lisbon (1668)",
+  "summary": "The English Wikipedia article \"Treaty of Lisbon (1668)\", at revision 1367387099, opens: \"The Treaty of Lisbon of 1668 was a peace treaty between Portugal and Spain that was concluded at Lisbon on 13 February 1668 with the mediation of England in which Spain recognised the sovereignty of Portugal's new ruling dynasty, the House of Braganza.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1456443, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty (1668)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1668,
+    "end": 1668,
+    "date": "1668-02-13"
+  },
+  "place": "lisbon",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

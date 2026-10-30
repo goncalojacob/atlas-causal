@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-oshikibata",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4871956",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Oshikibata"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871956"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Oshikibata\", revision 1370271295"
+    }
+  ],
+  "title": "Battle of Oshikibata",
+  "summary": "The English Wikipedia article \"Battle of Oshikibata\", at revision 1370271295, opens: \"The Battle of Oshikibata  was a preliminary round of the battle of Miyajima which was to follow. Mōri Motonari sought to avenge Sue Harukata's coup against their lord, Ōuchi Yoshitaka, and succeeded.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871956, imported by tools/import/wikidata.mjs. The item's own description reads \"1554 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1554,
+    "end": 1554,
+    "date": "1554-07-04"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
