@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-grahovac",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3545065",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Grahovac"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3545065"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Grahovac\", revision 1378467426"
+    }
+  ],
+  "title": "Battle of Grahovac",
+  "summary": "The English Wikipedia article \"Battle of Grahovac\", at revision 1378467426, opens: \"The Battle of Grahovac took place in the eponymous village of Grahovac from 11 to 13 May 1858, when the Montenegrin Grand Duke Mirko Petrović-Njegoš led the army of Principality of Montenegro against the Ottomans, ending in a decisive Montenegrin victory. After the victory, the demarcation of the border between Montenegro and the Ottoman Bosnia Eyalet was finalised. A considerable arsenal of war trophies was captured following the retreat of the Ottoman army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3545065, imported by tools/import/wikidata.mjs. The item's own description reads \"1858 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1858,
+    "date": "1858-04-28",
+    "endDate": "1858-05-01"
+  },
+  "place": "grahovac-montenegro",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

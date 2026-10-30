@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-fredericia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4587924",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Fredericia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4587924"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fredericia\", revision 1370441074"
+    }
+  ],
+  "title": "Battle of Fredericia",
+  "summary": "The English Wikipedia article \"Battle of Fredericia\", at revision 1370441074, opens: \"The Battle of Fredericia was fought between soldiers of Schleswig-Holstein and Denmark on 6 July 1849 at Fredericia in Denmark. The battle was part of the First Schleswig War, which was a conflict between Schleswig-Holstein, supported by several German states, and Denmark. The Danes won the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4587924, imported by tools/import/wikidata.mjs. The item's own description reads \"event in 1849\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1849,
+    "end": 1849,
+    "date": "1849-07-06"
+  },
+  "place": "fredericia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-schleswig-war"
+}

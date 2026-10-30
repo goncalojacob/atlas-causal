@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "francavilla-di-sicilia",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q496141",
+  "sitelinks": {
+    "count": 48,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Francavilla di Sicilia",
+    "pt": "Francavilla di Sicilia"
+  },
+  "sources": [],
+  "names": [
+    "Francavilla di Sicilia"
+  ],
+  "where": {
+    "lon": 15.135919444444,
+    "lat": 37.901469444444,
+    "precision": "city",
+    "label": "Francavilla di Sicilia"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

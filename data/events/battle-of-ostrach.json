@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-ostrach",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2237048",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Ostrach",
+    "pt": "Batalha de Ostrach"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2237048"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ostrach\", revision 1370271312"
+    }
+  ],
+  "title": "Battle of Ostrach",
+  "summary": "The English Wikipedia article \"Battle of Ostrach\", at revision 1370271312, opens: \"The Battle of Ostrach, also called the Battle by Ostrach, occurred on 20–21 March 1799. It was the first non-Italy-based battle of the War of the Second Coalition. The battle resulted in the victory of the Austrian forces, under the command of Archduke Charles, over the French forces, commanded by Jean-Baptiste Jourdan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2237048, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 battle of the War of the Second Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-03-21"
+  },
+  "place": "ostrach",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

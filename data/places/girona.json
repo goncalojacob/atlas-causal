@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "girona",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q24001084",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-29"
+  },
+  "sources": [],
+  "names": [
+    "Girona"
+  ],
+  "where": {
+    "lon": 2.82493,
+    "lat": 41.98311,
+    "precision": "city",
+    "label": "Girona"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

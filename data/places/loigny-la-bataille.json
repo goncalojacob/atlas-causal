@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "loigny-la-bataille",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1075525",
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Loigny-la-Bataille",
+    "pt": "Loigny-la-Bataille"
+  },
+  "sources": [],
+  "names": [
+    "Loigny-la-Bataille"
+  ],
+  "where": {
+    "lon": 1.7330555555556,
+    "lat": 48.123055555556,
+    "precision": "city",
+    "label": "Loigny-la-Bataille"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-messkirch",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q475544",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Messkirch"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q475544"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Messkirch\", revision 1370269396"
+    }
+  ],
+  "title": "Battle of Messkirch",
+  "summary": "The English Wikipedia article \"Battle of Messkirch\", at revision 1370269396, opens: \"The Battle of Messkirch saw a Republican French army led by Jean Victor Marie Moreau attack a Habsburg Austrian army commanded by Paul Kray. At the start of the 1800 campaign in Germany, Moreau's 108,000-strong field army faced Kray's 120,000-man army on opposite sides of the Rhine River. By a series of maneuvers, Moreau crossed the Rhine and concentrated superior forces to defeat Kray at the Battles of Stockach and Engen on 3 May. After Kray retreated a short distance to the north, the two adversaries met again at Meßkirch. After a well-contested fight, Kray withdrew again, conceding victory to the French.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q475544, imported by tools/import/wikidata.mjs. The item's own description reads \"1800 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1800,
+    "end": 1800,
+    "date": "1800-05-05"
+  },
+  "place": "me-kirch",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

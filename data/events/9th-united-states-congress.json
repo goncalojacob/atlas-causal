@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "9th-united-states-congress",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4646693",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "9th United States Congress"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4646693"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"9th United States Congress\", revision 1380237353"
+    }
+  ],
+  "title": "9th United States Congress",
+  "summary": "The English Wikipedia article \"9th United States Congress\", at revision 1380237353, opens: \"The 9th United States Congress was a meeting of the legislative branch of the United States federal government, consisting of the United States Senate and the United States House of Representatives. It met in Washington, D.C., from March 4, 1805, to March 4, 1807, during the fifth and sixth years of Thomas Jefferson's presidency. The apportionment of seats in the House of Representatives was based on the 1800 United States census. Both chambers had a Democratic-Republican majority.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4646693, imported by tools/import/wikidata.mjs. The item's own description reads \"1805-1807 meeting of U.S. legislature\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1805,
+    "end": 1807,
+    "date": "1805-03-04",
+    "endDate": "1807-03-04"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

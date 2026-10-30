@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-agua-dulce",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1186616",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Agua Dulce",
+    "pt": "Batalha de Agua Dulce"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1186616"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Agua Dulce\", revision 1378726080"
+    }
+  ],
+  "title": "Battle of Agua Dulce",
+  "summary": "The English Wikipedia article \"Battle of Agua Dulce\", at revision 1378726080, opens: \"The battle of Agua Dulce Creek was a skirmish during the Texas Revolution between Mexican troops and the colonists of the Mexican province of Texas, known as Texians. As part of the Goliad Campaign to retake the Texas Gulf Coast, Mexican troops ambushed a group of Texians on March 2, 1836. The skirmish began approximately 26 miles (42 km) south of San Patricio, in territory belonging to the Mexican state of Tamaulipas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1186616, imported by tools/import/wikidata.mjs. The item's own description reads \"1836 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1836,
+    "end": 1836,
+    "date": "1836-03-02"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "texas-revolution"
+}

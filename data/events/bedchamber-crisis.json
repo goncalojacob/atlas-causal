@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "bedchamber-crisis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q863707",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Bedchamber crisis"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q863707"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bedchamber crisis\", revision 1339382521"
+    }
+  ],
+  "title": "Bedchamber crisis",
+  "summary": "The English Wikipedia article \"Bedchamber crisis\", at revision 1339382521, opens: \"The Bedchamber crisis was a constitutional crisis that occurred in the United Kingdom between 1839 and 1841. It began after the 2nd Viscount Melbourne, a leading Whig politician, declared his intention to resign as Prime Minister of the United Kingdom after a government bill passed by a very narrow margin of only five votes in the House of Commons. The crisis occurred very early in the reign of Queen Victoria and involved her first change of government. She was fond of Lord Melbourne, and resisted the requests of his rival, Robert Peel, to replace some of her ladies-in-waiting, who were primarily from Whig-aligned families, with Conservative substitutes as a condition for forming a government. Following a few false moves toward an alternative Conservative prime minister and government, Melbourne was reinstated until the 1841 election, after which Peel was appointed Prime Minister and Victoria conceded to the replacement of six of her ladies-in-waiting.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q863707, imported by tools/import/wikidata.mjs. The item's own description reads \"political crisis in the United Kingdom\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1839,
+    "date": "1839-05-07"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

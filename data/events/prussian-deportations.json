@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "prussian-deportations",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7253168",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Prussian deportations",
+    "pt": "Deportações prussianas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7253168"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Prussian deportations\", revision 1378644473"
+    }
+  ],
+  "title": "Prussian deportations",
+  "summary": "The English Wikipedia article \"Prussian deportations\", at revision 1378644473, opens: \"The Prussian deportations, also known as the Prussian expulsions of Poles, were the mass expulsions of Poles from Prussia between 1885 and 1890. More than 30,000 Poles who had immigrated to Prussia from the Polish regions of the Russian Empire and Austria and did not obtain a German citizenship, were deported back to their country of origin.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7253168, imported by tools/import/wikidata.mjs. The item's own description reads \"mass expulsions from Prussia (1885–1890)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1890
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

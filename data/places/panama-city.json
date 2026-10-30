@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "panama-city",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3306",
+  "sitelinks": {
+    "count": 139,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Panama City",
+    "pt": "Cidade do Panamá"
+  },
+  "sources": [],
+  "names": [
+    "Panama City",
+    "Cidade do Panamá"
+  ],
+  "where": {
+    "lon": -79.53472222222223,
+    "lat": 8.971111111111112,
+    "precision": "city",
+    "label": "Panama City"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "zagreb",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1435",
+  "sitelinks": {
+    "count": 190,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Zagreb",
+    "pt": "Zagreb"
+  },
+  "sources": [],
+  "names": [
+    "Zagreb"
+  ],
+  "where": {
+    "lon": 15.977222222222222,
+    "lat": 45.81305555555556,
+    "precision": "city",
+    "label": "Zagreb"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

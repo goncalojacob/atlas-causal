@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "southern-italy",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q207989",
+  "sitelinks": {
+    "count": 53,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Southern Italy",
+    "pt": "Mezzogiorno"
+  },
+  "sources": [],
+  "names": [
+    "Southern Italy",
+    "Mezzogiorno"
+  ],
+  "where": {
+    "lon": 15.242417,
+    "lat": 41.194189,
+    "precision": "region",
+    "label": "Southern Italy"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

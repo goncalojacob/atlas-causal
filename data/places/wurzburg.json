@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "wurzburg",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2999",
+  "sitelinks": {
+    "count": 102,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Würzburg",
+    "pt": "Wurtzburgo"
+  },
+  "sources": [],
+  "names": [
+    "Würzburg",
+    "Wurtzburgo"
+  ],
+  "where": {
+    "lon": 9.9294444444444,
+    "lat": 49.794444444444,
+    "precision": "city",
+    "label": "Würzburg"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-magnano",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889186",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Magnano"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889186"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Magnano\", revision 1373308505"
+    }
+  ],
+  "title": "Battle of Magnano",
+  "summary": "The English Wikipedia article \"Battle of Magnano\", at revision 1373308505, opens: \"In the Battle of Magnano on 5 April 1799, an Austrian army commanded by Pál Kray defeated a French army led by Barthélemy Schérer. In subsequent battles, which are united under the heading of Suvorov's Italian campaign, the Austrians and their Russian allies drove the French out of nearly all of Italy. This action was fought during the War of the Second Coalition, part of the French Revolutionary Wars. In terms of troop numbers and casualty ratios, the battle became nearly identical to the Battle of Verona on 26 March the same year during the same Italian campaign; however, this time all the figures favored the Austrians.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889186, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 battle during the War of the Second Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-04-05"
+  },
+  "place": "magnano",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

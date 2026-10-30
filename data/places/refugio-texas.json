@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "refugio-texas",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q975650",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Refugio, Texas",
+    "pt": "Refugio (Texas)"
+  },
+  "sources": [],
+  "names": [
+    "Refugio",
+    "Refugio, Texas",
+    "Refugio (Texas)"
+  ],
+  "where": {
+    "lon": -97.274722222222,
+    "lat": 28.305833333333,
+    "precision": "city",
+    "label": "Refugio, Texas"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

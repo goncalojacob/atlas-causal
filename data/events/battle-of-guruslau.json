@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-guruslau",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3565441",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Guruslău",
+    "pt": "Batalha de Goroszló"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3565441"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Guruslău\", revision 1382485834"
+    }
+  ],
+  "title": "Battle of Guruslău",
+  "summary": "The English Wikipedia article \"Battle of Guruslău\", at revision 1382485834, opens: \"The Battle of Guruslău or Battle of Goroszló was fought on 3 August 1601, between the troops of the Habsburg monarchy led by Giorgio Basta, the Zaporozhian Cossacks and Wallachia led by Michael the Brave on one side, and the Transylvanian troops led by Sigismund Báthory on the other side. It was part of a series of military encounters between the Ottoman Empire and opposing European states during 1591–1606.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3565441, imported by tools/import/wikidata.mjs. The item's own description reads \"1601 battle during Long Turkish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1601,
+    "end": 1601,
+    "date": "1601-08-03"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "long-turkish-war"
+}

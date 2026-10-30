@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "prussian-homage",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7253161",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Prussian Homage"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7253161"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Prussian Homage\", revision 1373141962"
+    }
+  ],
+  "title": "Prussian Homage",
+  "summary": "The English Wikipedia article \"Prussian Homage\", at revision 1373141962, opens: \"The Prussian Homage or Prussian Tribute was the formal investiture of Albert, Duke of Prussia (1490-1568), with his Duchy of Prussia as a fief of the Kingdom of Poland that took place on 10 April 1525 in the then capital of Kraków, Kingdom of Poland. This ended the rule of the Teutonic Order in Prussia, which became a secular Protestant state.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7253161, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1525,
+    "end": 1525,
+    "date": "1525-04-10"
+  },
+  "place": "krakow",
+  "region": null,
+  "regionNote": null,
+  "category": "culture",
+  "actors": []
+}

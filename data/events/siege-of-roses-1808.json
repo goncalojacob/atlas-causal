@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-roses-1808",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510349",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Roses (1808)",
+    "pt": "Cerco de Roses (1808)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510349"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Roses (1808)\", revision 1370744845"
+    }
+  ],
+  "title": "Siege of Roses (1808)",
+  "summary": "The English Wikipedia article \"Siege of Roses (1808)\", at revision 1370744845, opens: \"The Siege of Roses or Siege of Rosas from 7 November to 5 December 1808 saw an Imperial French corps led by Laurent Gouvion Saint-Cyr invest a Catalan and Spanish garrison commanded by Peter O'Daly. After a siege lasting a month in which the haven and town of Roses was captured and the nearby Trinity Castle invested by over 13,000 French and Italian infantry, artillery and cavalry with heavy siege trains on the hills above, the citadel was surrendered to the Napoleonic forces. Roses (Rosas) is located 43 kilometres (27 mi) northeast of Girona, Catalonia, Spain. The action occurred during the Peninsular War, part of the Napoleonic Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510349, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 siege during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-11-07",
+    "endDate": "1808-12-05"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

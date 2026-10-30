@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bornhoved",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q520795",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Bornhöved",
+    "pt": "Bornhöved"
+  },
+  "sources": [],
+  "names": [
+    "Bornhöved"
+  ],
+  "where": {
+    "lon": 10.233305555555555,
+    "lat": 54.066694444444444,
+    "precision": "city",
+    "label": "Bornhöved"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "algiers-expedition-1519",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q108542187",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Algiers expedition (1519)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q108542187"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Algiers expedition (1519)\", revision 1370427887"
+    }
+  ],
+  "title": "Algiers expedition (1519)",
+  "summary": "The English Wikipedia article \"Algiers expedition (1519)\", at revision 1370427887, opens: \"In 1519, a joint Spanish-Italian attack on Algiers was ordered by Charles V and commanded by Hugo of Moncada. The attack was repelled by the Algerians led by Hayreddin Barbarossa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q108542187, imported by tools/import/wikidata.mjs. The item's own description reads \"1518 joint Spanish-Italian attack on Algiers\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1519,
+    "end": 1519,
+    "date": "1519-08"
+  },
+  "place": "algiers-q3561",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

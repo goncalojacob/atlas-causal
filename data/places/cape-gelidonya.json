@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "cape-gelidonya",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2107863",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Cape Gelidonya",
+    "pt": "Cabo Quelidônia"
+  },
+  "sources": [],
+  "names": [
+    "Cape Gelidonya",
+    "Cabo Quelidônia"
+  ],
+  "where": {
+    "lon": 30.557222222222,
+    "lat": 36.636111111111,
+    "precision": "point",
+    "label": "Cape Gelidonya"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

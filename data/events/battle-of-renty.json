@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-renty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889763",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Renty"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889763"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Renty\", revision 1370587398"
+    }
+  ],
+  "title": "Battle of Renty",
+  "summary": "The English Wikipedia article \"Battle of Renty\", at revision 1370587398, opens: \"The Battle of Renty was fought on 13 August 1554, between France and the Holy Roman Empire at Renty, in the northern theatre of the Italian Wars. French commander Francis, Duke of Guise, had already forced the emperor to abandon the Siege of Metz in 1552. King Henry II of France had occupied the city according to the terms of the Treaty of Chambord he had signed with several Protestant Imperial princes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889763, imported by tools/import/wikidata.mjs. The item's own description reads \"1554 Habsburg-Valois battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1554,
+    "end": 1554,
+    "date": "1554-08-12"
+  },
+  "place": "renty",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "italian-wars"
+}

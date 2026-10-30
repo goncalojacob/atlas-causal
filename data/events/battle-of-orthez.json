@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-orthez",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2079873",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Orthez",
+    "pt": "Batalha de Orthez"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2079873"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Orthez\", revision 1370271280"
+    }
+  ],
+  "title": "Battle of Orthez",
+  "summary": "The English Wikipedia article \"Battle of Orthez\", at revision 1370271280, opens: \"The Battle of Orthez was fought on 27 February 1814 in the southwest of France near the end of the Peninsular War. An army of British, Spanish and Portuguese troops under Field Marshal Lord Wellington attacked a French army led by Marshal Jean-de-Dieu Soult in southern France. The outnumbered French repelled several Allied assaults on their right flank, but their center and left flank were overcome and Soult was compelled to retreat. At first the withdrawal was conducted in good order, but it eventually ended in a scramble for safety and many French soldiers were taken prisoner.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2079873, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-02-27"
+  },
+  "place": "orthez",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

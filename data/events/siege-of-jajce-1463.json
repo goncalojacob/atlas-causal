@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-jajce-1463",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7510113",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Jajce (1463)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510113"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Jajce (1463)\", revision 1370742070"
+    }
+  ],
+  "title": "Siege of Jajce (1463)",
+  "summary": "The English Wikipedia article \"Siege of Jajce (1463)\", at revision 1370742070, opens: \"The siege of Jajce was a siege of the town of Jajce and its citadel in 1463, in a push by Ottomans to conquer as much of the Bosnian Kingdom, and continuation of the Ottoman–Hungarian Wars. After the fall of Travnik and royal fortress of Bobovac, in the initial days of invasion, Ottomans, led by the Sultan, captured the town. One of the parties pursued Bosnian King Stjepan Tomašević, and caught up with him at Ključ fortress, after which he was brought to Jajce and executed. Soon the Ottomans forces withdrew, leaving the town under the protection of a small garrison. The Hungarian took the opportunity to capture the citadel; this meant that Ottoman advancement in Bosnia was halted for the time being. The northern part of Bosnia was brought under Hungarian control, and divided into three administrative regions, Banate of Jajce, Banate of Srebrenik, established around Srebrenik fortress, and a puppet statelet named \"Bosnian Kingdom\". This situation and Jajce under Hungarian garrison will last until 1527 when the Ottomans finally took the town, and breaking the lines advanced northward to Hungary and westward to Bihać, which was part of the Kingdom of Croatia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510113, imported by tools/import/wikidata.mjs. The item's own description reads \"siege of Jajce in 1463 and was part of the Ottoman–Hungarian Wars with the Hungarian victory\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1463,
+    "end": 1463,
+    "date": "1463-09-23",
+    "endDate": "1463-12-25"
+  },
+  "place": "jajce",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

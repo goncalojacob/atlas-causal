@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-gerberoy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1885831",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Gerberoy"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1885831"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gerberoy\", revision 1370110824"
+    }
+  ],
+  "title": "Battle of Gerberoy",
+  "summary": "The English Wikipedia article \"Battle of Gerberoy\", at revision 1370110824, opens: \"The Battle of Gerberoy was fought in 1435 between French and English forces. The French were led by La Hire and Jean Poton de Xaintrailles, who were victorious. The English losses were heavy, which later included their commander, John FitzAlan, 14th Earl of Arundel.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1885831, imported by tools/import/wikidata.mjs. The item's own description reads \"1435 battle of the Hundred Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1435,
+    "end": 1435,
+    "date": "1435-05-09"
+  },
+  "place": "gerberoy",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

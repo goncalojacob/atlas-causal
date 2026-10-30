@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "edict-of-1577",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1383188",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Edict of 1577"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1383188"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Edict of 1577\", revision 1318743118"
+    }
+  ],
+  "title": "Edict of 1577",
+  "summary": "The English Wikipedia article \"Edict of 1577\", at revision 1318743118, opens: \"The Edict of 1577 was signed on 12 February 1577 in Marche-en-Famenne by the new Spanish governor-general of the Habsburg Netherlands, Don John of Austria. This accord provided for the removal of Spanish forces from the Netherlands. In addition, the edict agreed to uphold the tenets of the Pacification of Ghent in exchange for an understanding that the States General would uphold the monarchy and Catholicism. The edict was initially well received. However, in July 1577, Don John began plans for a new campaign against the Dutch rebels. Elizabeth I approved of both the Pacification of Ghent and the Edict of 1577, therefore offering loans and military aid to the Dutch. When it became clear that John would go back on his agreement, Elizabeth planned to defend the provinces with aid of £100,000 and troops against John if he attacked.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1383188, imported by tools/import/wikidata.mjs. The item's own description reads \"1577 edict of the Habsburg Netherlands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1577,
+    "end": 1577,
+    "date": "1577-02-12"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "law",
+  "actors": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-cabrita-point",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889254",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Cabrita Point",
+    "pt": "Batalha de Marbelha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889254"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cabrita Point\", revision 1370435741"
+    }
+  ],
+  "title": "Battle of Cabrita Point",
+  "summary": "The English Wikipedia article \"Battle of Cabrita Point\", at revision 1370435741, opens: \"The Battle of Cabrita Point, also known Battle of Marbella, was a naval battle that took place while a combined Spanish-French force besieged Gibraltar on 10 March 1705 during the War of Spanish Succession. The battle ended in an allied victory which effectively ended the Franco-Spanish siege of Gibraltar.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889254, imported by tools/import/wikidata.mjs. The item's own description reads \"1705 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1705,
+    "end": 1705,
+    "date": "1705-03-21"
+  },
+  "place": "marbella",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

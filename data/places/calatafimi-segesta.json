@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "calatafimi-segesta",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q481594",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Calatafimi-Segesta",
+    "pt": "Calatafimi-Segesta"
+  },
+  "sources": [],
+  "names": [
+    "Calatafimi-Segesta"
+  ],
+  "where": {
+    "lon": 12.85,
+    "lat": 37.9,
+    "precision": "city",
+    "label": "Calatafimi-Segesta"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

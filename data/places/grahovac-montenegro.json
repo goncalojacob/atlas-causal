@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "grahovac-montenegro",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3113283",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Grahovac, Montenegro"
+  },
+  "sources": [],
+  "names": [
+    "Grahovac",
+    "Grahovac, Montenegro"
+  ],
+  "where": {
+    "lon": 18.61138889,
+    "lat": 42.68777778,
+    "precision": "city",
+    "label": "Grahovac, Montenegro"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

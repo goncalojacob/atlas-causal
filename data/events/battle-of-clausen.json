@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-clausen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3636401",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Clausen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3636401"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Clausen\", revision 1370437386"
+    }
+  ],
+  "title": "Battle of Clausen",
+  "summary": "The English Wikipedia article \"Battle of Clausen\", at revision 1370437386, opens: \"The Battle of Clausen was fought on 20 October 1735 near the town of Klausen, which was then in the Electorate of Trier and part of the Holy Roman Empire, and is now in the German state of Rhineland-Palatinate. French forces under the command of Marshal François de Franquetot de Coigny were defeated in an attempt to dislodge imperial troops under the command of Friedrich Heinrich von Seckendorff. The battle was one of the last significant engagements between the combatants in the War of the Polish Succession.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3636401, imported by tools/import/wikidata.mjs. The item's own description reads \"battle fought on 20 October 1735 near the town of Klausen\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1735,
+    "end": 1735,
+    "date": "1735-10-20"
+  },
+  "place": "klausen-germany",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-polish-succession"
+}

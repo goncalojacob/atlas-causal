@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-kobrin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q743671",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Kobrin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q743671"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kobrin\", revision 1370445695"
+    }
+  ],
+  "title": "Battle of Kobrin",
+  "summary": "The English Wikipedia article \"Battle of Kobrin\", at revision 1370445695, opens: \"The Battle of Kobrin, or the Battle of Kobryn, took place on 27 July 1812 between the Russian and Saxon forces – under the command of Alexander Tormasov and Jean Reynier respectively – in the city of Kobrin (Kobryn) at the initial stage of the French invasion of Russia. The battle was a clear victory of the Russian forces. The incompetence on the part of Reynier was that he underestimated Tormasov's strength and overstretched his troops, leaving his entire brigade vulnerable to encirclement, which the Russian commander took advantage of.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q743671, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle during the French invasion of Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-07-27"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-russia"
+}

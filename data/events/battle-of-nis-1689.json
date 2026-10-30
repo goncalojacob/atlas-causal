@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-nis-1689",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4438417",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Niš (1689)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4438417"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Niš (1689)\", revision 1370451805"
+    }
+  ],
+  "title": "Battle of Niš (1689)",
+  "summary": "The English Wikipedia article \"Battle of Niš (1689)\", at revision 1370451805, opens: \"The Battle of Niš was fought on 24 September 1689, near the city of Niš in southern Serbia, between the Ottoman Empire and the Holy Roman Empire as part of the Great Turkish War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4438417, imported by tools/import/wikidata.mjs. The item's own description reads \"1689 battle between Austria and the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1689,
+    "end": 1689,
+    "date": "1689-09-24"
+  },
+  "place": "nis",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-turkish-war"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-reval",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2495510",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Reval"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2495510"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Reval\", revision 1375161808"
+    }
+  ],
+  "title": "Battle of Reval",
+  "summary": "The English Wikipedia article \"Battle of Reval\", at revision 1375161808, opens: \"The Battle of Reval took place on 13 May [O.S. 2 May] 1790 during the Russo-Swedish War of 1788–1790, off the port of Reval in the roadstead. This battle ended in an imposing Imperial Russian Navy victory; it has been compared to the practice of running the gauntlet.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2495510, imported by tools/import/wikidata.mjs. The item's own description reads \"1790 battle of the Russo-Swedish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1790,
+    "end": 1790,
+    "date": "1790-05-13"
+  },
+  "place": "tallinn",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

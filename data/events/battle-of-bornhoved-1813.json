@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-bornhoved-1813",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870524",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Bornhöved (1813)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870524"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bornhöved (1813)\", revision 1380708146"
+    }
+  ],
+  "title": "Battle of Bornhöved (1813)",
+  "summary": "The English Wikipedia article \"Battle of Bornhöved (1813)\", at revision 1380708146, opens: \"The Battle of Bornhöved or Bornhöft took place on 7 December 1813 between a Swedish cavalry regiment, Mörner's Hussar Regiment under Bror Cederström, and Prince Frederik of Hesse's Danish troops reinforced by smaller numbers of Polish cavalry and German infantry. The clash occurred at the small village of Bornhöft in what is now Schleswig-Holstein in northern Germany. The engagement occurred during the War of the Sixth Coalition, part of the Napoleonic Wars, and was one of the last times Swedish and Danish forces met on the battlefield.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870524, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle during the War of the Sixth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-12-07"
+  },
+  "place": "bornhoved",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-sixth-coalition"
+}
