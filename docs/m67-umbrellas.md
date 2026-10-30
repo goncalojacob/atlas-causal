@@ -6450,3 +6450,7 @@ Writer B imported it from the planner's queue as item `2026-10-30-americas-059`,
 ## Writer B, 2026-10-30: `great-blizzard-of-1899`, bare
 
 Writer B imported it from the planner's queue as item `2026-10-30-americas-062`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-30: `battle-of-diamond-rock`, filed under `napoleonic-wars` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-30-americas-089`, rank `list`. Its span and its subject put it inside the umbrella.
