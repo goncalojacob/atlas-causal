@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "brabant-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q896479",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Brabant Revolution",
+    "pt": "Revolução brabantina"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q896479"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brabant Revolution\", revision 1379946324"
+    }
+  ],
+  "title": "Brabant Revolution",
+  "summary": "The English Wikipedia article \"Brabant Revolution\", at revision 1379946324, opens: \"The Brabant Revolution or Brabantine Revolution, sometimes referred to as the Belgian Revolution of 1789–1790 in older writing, was an armed insurrection that occurred in the Austrian Netherlands between October 1789 and December 1790. The revolution, which occurred at the same time as revolutions in France and Liège, led to the brief overthrow of Habsburg rule and the proclamation of a short-lived polity, the United Belgian States.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q896479, imported by tools/import/wikidata.mjs. The item's own description reads \"armed insurrection that occurred in the Austrian Netherlands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1789,
+    "end": 1790,
+    "date": "1789-10-24",
+    "endDate": "1790-12-03"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

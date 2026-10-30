@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "miracle-of-the-house-of-brandenburg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q695296",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Miracle of the House of Brandenburg",
+    "pt": "Milagre da Casa de Brandemburgo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q695296"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Miracle of the House of Brandenburg\", revision 1368931654"
+    }
+  ],
+  "title": "Miracle of the House of Brandenburg",
+  "summary": "The English Wikipedia article \"Miracle of the House of Brandenburg\", at revision 1368931654, opens: \"The Miracle of the House of Brandenburg is the name given by Frederick II of Prussia to the failure of Russia and Austria to follow up their victory over him at the Battle of Kunersdorf on 12 August 1759 during the Seven Years' War. The name is sometimes also applied to Russia's switching sides in the war in 1762, saving Prussia from likely defeat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q695296, imported by tools/import/wikidata.mjs. The item's own description reads \"event during the Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1762,
+    "end": 1762
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

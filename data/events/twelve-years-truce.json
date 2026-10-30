@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "twelve-years-truce",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q934238",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Twelve Years' Truce",
+    "pt": "Trégua dos doze anos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q934238"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Twelve Years' Truce\", revision 1378933772"
+    }
+  ],
+  "title": "Twelve Years' Truce",
+  "summary": "The English Wikipedia article \"Twelve Years' Truce\", at revision 1378933772, opens: \"The Twelve Years' Truce was a ceasefire during the Eighty Years' War between Spain and the Dutch Republic, agreed in Antwerp on 9 April 1609 and ended on 9 April 1621. While European powers like France began treating the Republic as a sovereign state, the Spanish viewed it as a temporary measure forced on them by financial exhaustion and domestic issues and did not formally recognise Dutch independence until the Treaty of Westphalia in 1648. The Truce allowed Philip III of Spain to focus his resources elsewhere, while Archdukes Albert and Isabella used it to consolidate Habsburg rule and implement the Counter-Reformation in the Southern Netherlands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q934238, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1609,
+    "end": 1621,
+    "date": "1609-04-09"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

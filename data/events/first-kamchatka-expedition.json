@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "first-kamchatka-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q919430",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "First Kamchatka Expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q919430"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Kamchatka Expedition\", revision 1312376241"
+    }
+  ],
+  "title": "First Kamchatka Expedition",
+  "summary": "The English Wikipedia article \"First Kamchatka Expedition\", at revision 1312376241, opens: \"The First Kamchatka Expedition was the first Russian expedition to explore the Asian Pacific coast. It was commissioned by Peter the Great in 1724 and was led by Vitus Bering. Afield from 1725 to 1731, it was Russia's first naval scientific expedition. It confirmed the presence of a strait between Asia and America and was followed in 1732 by the Second Kamchatka Expedition.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q919430, imported by tools/import/wikidata.mjs. The item's own description reads \"research expedition (1725-1730)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1725,
+    "end": 1730,
+    "date": "1725-01-24",
+    "endDate": "1730-02-28"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

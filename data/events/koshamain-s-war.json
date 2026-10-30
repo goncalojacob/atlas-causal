@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "koshamain-s-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q844311",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Koshamain's War",
+    "pt": "Revolta de Koshamain"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q844311"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Koshamain's War\", revision 1370626132"
+    }
+  ],
+  "title": "Koshamain's War",
+  "summary": "The English Wikipedia article \"Koshamain's War\", at revision 1370626132, opens: \"Koshamain's War  was an armed struggle between the Ainu and Wajin that took place on the Oshima Peninsula of southern Hokkaidō, Japan, between 1457 and 1458. Escalating out of a dispute over the purchase of a knife, Koshamain and his followers sacked twelve forts in southern Ezo , before being overcome by superior forces under Takeda Nobuhiro. The principal record of the conflict is the Shinra no Kiroku, written in 1646. However, as it was written approximately 200 years after the events, historians note that its contents require critical verification. The conflict was a pivotal event in the history of the region, leading to the consolidation of Japanese power and the eventual formation of the Matsumae Domain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q844311, imported by tools/import/wikidata.mjs. The item's own description reads \"1457 war between the Ainu and Wajin in Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1457,
+    "end": 1458
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

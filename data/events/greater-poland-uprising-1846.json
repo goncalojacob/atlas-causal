@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "greater-poland-uprising-1846",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q658197",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Greater Poland Uprising (1846)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q658197"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Greater Poland Uprising (1846)\", revision 1366251826"
+    }
+  ],
+  "title": "Greater Poland Uprising (1846)",
+  "summary": "The English Wikipedia article \"Greater Poland Uprising (1846)\", at revision 1366251826, opens: \"The Greater Poland Uprising was a planned military insurrection by Poles in the land of Greater Poland against the Prussian forces, designed to be part of a general Polish uprising in all three partitions of Poland, against the Russians, Austrians and Prussians.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q658197, imported by tools/import/wikidata.mjs. The item's own description reads \"Polish uprising against the Kingdom of Prussia in 1846\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1846,
+    "end": 1846
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

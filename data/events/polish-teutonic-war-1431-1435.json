@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "polish-teutonic-war-1431-1435",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q720936",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Polish–Teutonic War (1431–1435)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q720936"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Polish–Teutonic War (1431–1435)\", revision 1372165610"
+    }
+  ],
+  "title": "Polish–Teutonic War (1431–1435)",
+  "summary": "The English Wikipedia article \"Polish–Teutonic War (1431–1435)\", at revision 1372165610, opens: \"The Polish–Teutonic War (1431–1435) was an armed conflict between the Kingdom of Poland and the Teutonic Knights. It ended with the Peace of Brześć Kujawski and is considered a victory for Poland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q720936, imported by tools/import/wikidata.mjs. The item's own description reads \"15th-century war in Northern Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1431,
+    "end": 1435
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

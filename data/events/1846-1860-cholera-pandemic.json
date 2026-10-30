@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1846-1860-cholera-pandemic",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q668811",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1846–1860 cholera pandemic",
+    "pt": "Pandemia de cólera de 1846–1860"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q668811"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1846–1860 cholera pandemic\", revision 1376350189"
+    }
+  ],
+  "title": "1846–1860 cholera pandemic",
+  "summary": "The English Wikipedia article \"1846–1860 cholera pandemic\", at revision 1376350189, opens: \"The third cholera pandemic (1846–1860) was the third major outbreak of cholera originating in India in the 19th century that reached far beyond its borders, which researchers at University of California, Los Angeles (UCLA) believe may have started as early as 1837 and lasted until 1863. In the Russian Empire, more than one million people died of cholera. In 1853–1854, the epidemic in London claimed over 10,000 lives, and there were 23,000 deaths for all of Great Britain. This pandemic was considered to have the highest fatalities of the 19th-century epidemics.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q668811, imported by tools/import/wikidata.mjs. The item's own description reads \"1846–1860 worldwide pandemic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1846,
+    "end": 1860
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pernambucan-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q692752",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Pernambucan revolution",
+    "pt": "Revolução Pernambucana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q692752"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pernambucan revolution\", revision 1382665108"
+    }
+  ],
+  "title": "Pernambucan revolution",
+  "summary": "The English Wikipedia article \"Pernambucan revolution\", at revision 1382665108, opens: \"The Pernambucan revolution, also known as the Priest's Revolution or Seventeen, occurred in the Captaincy of Pernambuco in the Northeastern region of Brazil, and was sparked mainly by the decline of sugar production rates and the influence of the Freemasonry in the region. Other important reasons for the revolt include: the ongoing struggle for the independence of Spanish colonies all over in South America; the independence of the United States; the generally liberal ideas that came through all of Brazil the century before, including many French Philosophers, such as Montesquieu and Rousseau; the actions of secret societies, which insisted on the liberation of the colony; the development of a distinct culture in Pernambuco.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q692752, imported by tools/import/wikidata.mjs. The item's own description reads \"movimento separatista ocorrido na capitania de Pernambuco em 1817\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1817,
+    "end": 1817,
+    "date": "1817-03-06",
+    "endDate": "1817-05-20"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

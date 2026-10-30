@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "japonisme",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q751880",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Japonisme",
+    "pt": "Japonismo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q751880"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Japonisme\", revision 1382167750"
+    }
+  ],
+  "title": "Japonisme",
+  "summary": "The English Wikipedia article \"Japonisme\", at revision 1382167750, opens: \"Japonisme is a French term that refers to the popularity and influence of Japanese art and design among a number of Western European artists in the nineteenth century following the forced reopening of foreign trade with Japan in 1858. Japonisme was first described by French art critic and collector Philippe Burty in 1872.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q751880, imported by tools/import/wikidata.mjs. The item's own description reads \"European imitation of Japanese art during the 19th and 20th centuries\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": null
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
