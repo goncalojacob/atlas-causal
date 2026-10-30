@@ -6026,3 +6026,55 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-30: `relief-of-goes`, filed under `eighty-years-war` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-948`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-30: `battle-of-the-yellow-ford`, filed under `nine-years-war-ireland` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-europe-959`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-30: `de-la-gardie-campaign`, filed under `polish-russian-war-1609-1618` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-europe-961`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-30: `siege-of-lyakhavichy`, filed under `polish-russian-war-1654-1667` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-europe-972`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-30: `battle-of-hodow`, filed under `polish-ottoman-war-1683-1699` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-europe-980`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-30: `action-of-2-may-1707`, filed under `war-of-the-spanish-succession` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-europe-984`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-30: `battle-of-malatitze`, filed under `great-northern-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-europe-986`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-30: `jacobite-rising-of-1719`, filed under `jacobite-risings` and `war-of-the-quadruple-alliance` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-29-europe-992`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-30: `edict-of-1577`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-29-europe-952`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-30: `battle-of-guruslau`, filed under `long-turkish-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-960`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-30: `siege-of-groenlo-1627`, filed under `eighty-years-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-963`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-30: `battle-of-zboriv-1649`, filed under `khmelnytsky-uprising` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-967`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-30: `battle-of-chudniv`, filed under `polish-russian-war-1654-1667` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-971`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-30: `battle-of-palkane`, filed under `great-northern-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-29-europe-989`, rank `list`. Its span and its subject put it inside the umbrella.

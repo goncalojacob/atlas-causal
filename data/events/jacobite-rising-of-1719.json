@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "jacobite-rising-of-1719",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q47004504",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Jacobite rising of 1719",
+    "pt": "Revolta jacobita de 1719"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q47004504"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Jacobite rising of 1719\", revision 1375832655"
+    }
+  ],
+  "title": "Jacobite rising of 1719",
+  "summary": "The English Wikipedia article \"Jacobite rising of 1719\", at revision 1375832655, opens: \"The Jacobite Rising of 1719 was a failed attempt to put the exiled James Francis Edward Stuart on the throne of Great Britain. Part of a series of Jacobite risings between 1689 and 1745, it was supported by Spain, then at war with Britain during the War of the Quadruple Alliance.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q47004504, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1719,
+    "end": 1719
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": [
+    "jacobite-risings",
+    "war-of-the-quadruple-alliance"
+  ]
+}

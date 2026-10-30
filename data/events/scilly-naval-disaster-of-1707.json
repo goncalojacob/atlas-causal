@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "scilly-naval-disaster-of-1707",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2892384",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Scilly naval disaster of 1707",
+    "pt": "Desastre naval de Scilly de 1707"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2892384"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Scilly naval disaster of 1707\", revision 1376947610"
+    }
+  ],
+  "title": "Scilly naval disaster of 1707",
+  "summary": "The English Wikipedia article \"Scilly naval disaster of 1707\", at revision 1376947610, opens: \"The Scilly naval disaster of 1707 was the loss of four warships of a Royal Navy fleet off the Isles of Scilly near the British mainland when they struck rocks on 22 October 1707. Between 1,400 and 2,000 sailors lost their lives aboard the wrecked vessels, making the incident one of the worst maritime disasters in British naval history. The disaster has been attributed to a combination of factors, including navigators' inability to accurately calculate their positions, errors in the available charts and pilot books, and inadequate compasses.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2892384, imported by tools/import/wikidata.mjs. The item's own description reads \"loss of four Royal Navy vessels off the Isles of Scilly\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1707,
+    "end": 1707,
+    "date": "1707-10-22"
+  },
+  "place": "isles-of-scilly",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

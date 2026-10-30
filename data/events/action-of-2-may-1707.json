@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "action-of-2-may-1707",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890852",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Action of 2 May 1707"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890852"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 2 May 1707\", revision 1370103934"
+    }
+  ],
+  "title": "Action of 2 May 1707",
+  "summary": "The English Wikipedia article \"Action of 2 May 1707\", at revision 1370103934, opens: \"The action of 2 May 1707, also known as Beachy Head, was a naval battle of the War of the Spanish Succession in which a French squadron under Claude de Forbin intercepted a large British convoy escorted by three ships of the line, under Commodore Baron Wylde. The action began when three French ships, the Grifon, Blackoal and Dauphine, grappled HMS Hampton Court, killing her captain, George Clements, and taking her. Claude Forbin's 60-gun Mars next attacked HMS Grafton and, when joined by the French ships Blackoal and Fidèle, killed the Captain Edward Acton, and took her too. The convoy was scattered and the last British escort, HMS Royal Oak, badly hit and with 12 feet of water in her wells, managed to escape by running ashore near Dungeness, from where she was carried the next day into the Downs.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890852, imported by tools/import/wikidata.mjs. The item's own description reads \"1707 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1707,
+    "end": 1707,
+    "date": "1707-05-02",
+    "endDate": "1707-05-03"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

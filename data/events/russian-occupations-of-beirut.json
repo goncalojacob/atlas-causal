@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "russian-occupations-of-beirut",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q53791833",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Russian occupations of Beirut",
+    "pt": "Ocupações russas de Beirute"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q53791833"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian occupations of Beirut\", revision 1370729188"
+    }
+  ],
+  "title": "Russian occupations of Beirut",
+  "summary": "The English Wikipedia article \"Russian occupations of Beirut\", at revision 1370729188, opens: \"Beirut was occupied twice during the Russo-Turkish War of 1768–1774 by squadrons of the Imperial Russian Navy's Mediterranean Fleet, first in June 1772 and second from October 1773 to early 1774, as part of its Levant campaign. Russia's main objective in this campaign was to assist local forces led by Egypt's autonomous ruler, Ali Bey al-Kabir, who was in open rebellion against the Ottoman Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q53791833, imported by tools/import/wikidata.mjs. The item's own description reads \"1772 invasion, part of the Russo-Turkish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1772,
+    "end": 1774,
+    "date": "1772-07",
+    "endDate": "1774-07-21"
+  },
+  "place": "beirut",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1768-1774"
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "kyoho-famine",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q10883099",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Kyōhō famine"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10883099"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kyōhō famine\", revision 1375671049"
+    }
+  ],
+  "title": "Kyōhō famine",
+  "summary": "The English Wikipedia article \"Kyōhō famine\", at revision 1375671049, opens: \"The Kyōhō famine, was a famine on the Japanese island of Kyushu during the reign of Emperor Nakamikado in the Edo period. It is estimated that 12,172-169,000 people died from starvation. The famine, named after the Kyōhō era (1716–1736), is considered to have begun in 1732 and lasted until 1733. The ruling shōgun during the famine was Tokugawa Yoshimune.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10883099, imported by tools/import/wikidata.mjs. The item's own description reads \"famine which affected Japan during the Edo period\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1732,
+    "end": 1733
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}
