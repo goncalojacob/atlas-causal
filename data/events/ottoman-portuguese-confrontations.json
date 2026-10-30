@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "ottoman-portuguese-confrontations",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1187249",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Ottoman–Portuguese confrontations",
+    "pt": "Conflitos luso-turcos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1187249"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman–Portuguese confrontations\", revision 1369127316"
+    }
+  ],
+  "title": "Ottoman–Portuguese confrontations",
+  "summary": "The English Wikipedia article \"Ottoman–Portuguese confrontations\", at revision 1369127316, opens: \"The Ottoman–Portuguese or the Turco-Portuguese confrontations refers to a series of different military encounters between the Portuguese Empire and the Ottoman Empire, or between other European powers and the Ottoman Empire in which relevant Portuguese military forces participated. Some of these conflicts were brief, while others lasted for many years. Most of these conflicts took place in the Indian Ocean, in the process of the expansion of the Portuguese Empire, but also in the Red Sea. These conflicts also involved regional powers, after 1538 the Adal Sultanate, with the aid of the Ottoman Empire, fought against the Ethiopian Empire, which was supported by the Portuguese, under the command of Cristóvão da Gama, the son of the famous explorer Vasco da Gama. This war is known as the Ethiopian–Adal war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1187249, imported by tools/import/wikidata.mjs. The item's own description reads \"war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1538,
+    "end": 1718
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

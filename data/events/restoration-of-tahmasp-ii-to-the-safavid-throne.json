@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "restoration-of-tahmasp-ii-to-the-safavid-throne",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q18210889",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Restoration of Tahmasp II to the Safavid throne"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18210889"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Restoration of Tahmasp II to the Safavid throne\", revision 1378917236"
+    }
+  ],
+  "title": "Restoration of Tahmasp II to the Safavid throne",
+  "summary": "The English Wikipedia article \"Restoration of Tahmasp II to the Safavid throne\", at revision 1378917236, opens: \"The restoration of Tahmasp II to the Safavid throne took place in the latter part of 1729 by a series of battles fought between Nader, Tahmasp's commander-in-chief and Ashraf Hotaki. Despite nominally bringing Tahmasp to the seat of power, true authority still rested with Nader who had ever since the debacle in northern Khorasan managed to seize Tahmasp II as his vassal. Hotak was defeated. As for Afghan rule, the Ghilzai Afghans were ejected from the Iranian Plateau permanently and in the following years were re-annexed by Nader whence they were once again absorbed into the Persian empire. The Safavids under Tahmasp II were restored.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18210889, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1729,
+    "end": 1729,
+    "date": "1729-09-12",
+    "endDate": "1729-12-09"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "campaigns-of-nader-shah"
+}

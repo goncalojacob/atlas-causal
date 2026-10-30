@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "lam-son-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1848807",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Lam Sơn uprising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1848807"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lam Sơn uprising\", revision 1370626477"
+    }
+  ],
+  "title": "Lam Sơn uprising",
+  "summary": "The English Wikipedia article \"Lam Sơn uprising\", at revision 1370626477, opens: \"The Lam Sơn uprising was a rebellion against Ming China led by Vietnamese leader Lê Lợi. The uprising began in early 1418 and ended in late 1427 with the victory of the Lam Sơn rebels, the retreat of the Ming army after the Đông Quan oath, and the establishment of the Later Lê dynasty.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1848807, imported by tools/import/wikidata.mjs. The item's own description reads \"rebellion against Ming rule in northern Vietnam (1418-28)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1418,
+    "end": 1427
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

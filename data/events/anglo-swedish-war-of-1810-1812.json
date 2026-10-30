@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "anglo-swedish-war-of-1810-1812",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1116646",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Anglo-Swedish war of 1810–1812",
+    "pt": "Guerra Anglo-Sueca"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1116646"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Swedish war of 1810–1812\", revision 1380960324"
+    }
+  ],
+  "title": "Anglo-Swedish war of 1810–1812",
+  "summary": "The English Wikipedia article \"Anglo-Swedish war of 1810–1812\", at revision 1380960324, opens: \"During the Napoleonic Wars until 1810, Sweden and the United Kingdom of Great Britain and Ireland were allies in the war against Napoleon. As a result of Sweden's defeat in the Finnish War and the Pomeranian War, and the following Treaty of Fredrikshamn and Treaty of Paris, Sweden declared war on the UK. The bloodless war, however, existed only on paper, and the UK was still not hindered in stationing ships at the Swedish island of Hanö and trade with the Baltic states.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1116646, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1812,
+    "date": "1810-11-17",
+    "endDate": "1812-07-18"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "napoleonic-wars"
+}
