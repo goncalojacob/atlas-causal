@@ -3,612 +3,12 @@
   "kind": "import-queue",
   "items": [
     {
-      "id": "2026-10-30-europe-529",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q3368187",
-      "title": "Battle of Bornholm (1563)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-530",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q338618",
-      "title": "Stecklikrieg",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-531",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q339303",
-      "title": "Mediterranean Agreements (1887)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-532",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q3396146",
-      "title": "Croatian\u2013Ottoman wars",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-533",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q3502774",
-      "title": "Hundred Years' Croatian\u2013Ottoman War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-asia-534",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q3530500",
-      "title": "Deccan famine of 1630\u20131632",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-africa-535",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q3560710",
-      "title": "Treaty of Simulambuco",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-536",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q37068",
-      "title": "Romanticism",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-537",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q3738874",
-      "title": "Great Famine of Estonia",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-americas-538",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q377542",
-      "title": "Whiskey Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-539",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q3778623",
-      "title": "War of the Three Henrys",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-americas-540",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q382286",
-      "title": "Chesapeake\u2013Leopard affair",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-541",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q3893296",
-      "title": "Panic of 1825",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-542",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q3902588",
-      "title": "Habsburg\u2013Ottoman wars in Hungary (1526\u20131568)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-americas-543",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q39392",
-      "title": "Compromise of 1850",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-asia-544",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4087464",
-      "title": "Battle of Samugarh",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-asia-545",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4116387",
-      "title": "Burmese\u2013Siamese wars",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-asia-546",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4208075",
-      "title": "Kazakh\u2013Dzungar Wars",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-americas-547",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4340192",
-      "title": "Cornwallis's Retreat",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-americas-548",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4368507",
-      "title": "Raising of Chicago",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-asia-549",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4373383",
-      "title": "Mamluk\u2013Portuguese conflicts",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-americas-550",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4373399",
-      "title": "Portuguese invasion of the Banda Oriental (1811\u20131812)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-asia-551",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4379152",
-      "title": "Amur Annexation",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-552",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q438252",
-      "title": "Old Zurich War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-asia-553",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4438366",
-      "title": "Battle of Hutong (1654)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-554",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q448675",
-      "title": "Alvensleben Convention",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-555",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q465868",
-      "title": "Neuch\u00e2tel Crisis",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-556",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q466887",
-      "title": "Belle \u00c9poque",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-557",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q469776",
-      "title": "Treaty of Delft",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-558",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q48785102",
-      "title": "Jacobite rising of 1689",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-asia-559",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q5100231",
-      "title": "China\u2013Korea Treaty of 1882",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-africa-560",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q5403659",
-      "title": "Egyptian\u2013Ethiopian War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-asia-561",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q5453768",
-      "title": "First Rohilla War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-americas-562",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5617470",
-      "title": "Gulf Coast campaign",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-563",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q567712",
-      "title": "League of the Three Emperors",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-564",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q568727",
-      "title": "War of the J\u00fclich Succession",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-565",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q575366",
-      "title": "Armistice of Malm\u00f6",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-566",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q581254",
-      "title": "Zebrzydowski rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-567",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q582613",
-      "title": "Livonian campaign of Stephen B\u00e1thory",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-568",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q595545",
-      "title": "R\u00e1k\u00f3czi's War of Independence",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-569",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q61116375",
-      "title": "Skanderbeg's rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-asia-570",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q6165289",
-      "title": "Guo Huaiyi rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-571",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q617263",
-      "title": "Anglo-Dutch Treaty of 1814",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-asia-572",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q617772",
-      "title": "Anglo-Persian War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-573",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q629965",
-      "title": "Russo-Swedish War (1656\u20131658)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-574",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q631795",
-      "title": "Kalmar War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-americas-575",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q6389258",
-      "title": "Noble train of artillery",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-asia-576",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q6428897",
-      "title": "Konbaung\u2013Hanthawaddy War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-577",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q645920",
-      "title": "Protestation at Speyer",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-europe-578",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q653575",
-      "title": "Treaty of Plussa",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
       "id": "2026-10-30-europe-579",
       "planned": "2026-10-30T04:52Z",
       "lane": "europe",
       "writer": "A",
       "qid": "Q6542740",
-      "title": "Austro-Turkish War (1788\u20131791)",
+      "title": "Austro-Turkish War (1788–1791)",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -644,7 +44,7 @@
       "lane": "europe",
       "writer": "B",
       "qid": "Q664603",
-      "title": "German\u2013Spanish Treaty (1899)",
+      "title": "German–Spanish Treaty (1899)",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -668,7 +68,7 @@
       "lane": "asia",
       "writer": "B",
       "qid": "Q668811",
-      "title": "1846\u20131860 cholera pandemic",
+      "title": "1846–1860 cholera pandemic",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -776,7 +176,7 @@
       "lane": "asia",
       "writer": "A",
       "qid": "Q697104",
-      "title": "Joseon\u2013United States Treaty of 1882",
+      "title": "Joseon–United States Treaty of 1882",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -836,7 +236,7 @@
       "lane": "asia",
       "writer": "B",
       "qid": "Q708068",
-      "title": "Japan\u2013Korea Treaty of 1882",
+      "title": "Japan–Korea Treaty of 1882",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -848,7 +248,7 @@
       "lane": "europe",
       "writer": "A",
       "qid": "Q720936",
-      "title": "Polish\u2013Teutonic War (1431\u20131435)",
+      "title": "Polish–Teutonic War (1431–1435)",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -860,7 +260,7 @@
       "lane": "americas",
       "writer": "B",
       "qid": "Q725571",
-      "title": "Rush\u2013Bagot Treaty",
+      "title": "Rush–Bagot Treaty",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -956,7 +356,7 @@
       "lane": "europe",
       "writer": "B",
       "qid": "Q7837137",
-      "title": "Treaty of Malm\u00f6",
+      "title": "Treaty of Malmö",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -1011,6 +411,18 @@
       "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
     },
     {
+      "id": "2026-10-30-africa-612",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q109237454",
+      "title": "1716 Algiers earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-613",
       "planned": "2026-10-30T04:52Z",
       "lane": "asia",
@@ -1021,6 +433,30 @@
       "edges": [],
       "rank": "list",
       "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+    },
+    {
+      "id": "2026-10-30-africa-613",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q7573364",
+      "title": "Spanish expedition to Oran",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-africa-614",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q4927224",
+      "title": "Blockade of Africa",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
       "id": "2026-10-30-europe-614",
@@ -1047,6 +483,18 @@
       "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
     },
     {
+      "id": "2026-10-30-africa-615",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q109256825",
+      "title": "Campaign of Cherchell",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
       "id": "2026-10-30-europe-616",
       "planned": "2026-10-30T04:52Z",
       "lane": "europe",
@@ -1057,6 +505,18 @@
       "edges": [],
       "rank": "list",
       "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+    },
+    {
+      "id": "2026-10-30-africa-616",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q1325495",
+      "title": "Battle of Santa Cruz de Tenerife",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 8 sitelinks."
     },
     {
       "id": "2026-10-30-asia-617",
@@ -1071,12 +531,36 @@
       "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
     },
     {
+      "id": "2026-10-30-africa-617",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q6059597",
+      "title": "Invasion of Algiers",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 8 sitelinks."
+    },
+    {
+      "id": "2026-10-30-africa-618",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q1252684",
+      "title": "Battle of Toski",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 8 sitelinks."
+    },
+    {
       "id": "2026-10-30-europe-618",
       "planned": "2026-10-30T04:52Z",
       "lane": "europe",
       "writer": "B",
       "qid": "Q870196",
-      "title": "Russo-Swedish War (1788\u20131790)",
+      "title": "Russo-Swedish War (1788–1790)",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -1095,6 +579,18 @@
       "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
     },
     {
+      "id": "2026-10-30-africa-619",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q4516015",
+      "title": "Chimurenga",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 8 sitelinks."
+    },
+    {
       "id": "2026-10-30-europe-620",
       "planned": "2026-10-30T04:52Z",
       "lane": "europe",
@@ -1105,6 +601,18 @@
       "edges": [],
       "rank": "list",
       "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+    },
+    {
+      "id": "2026-10-30-africa-620",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q1276340",
+      "title": "Battle of Atbara",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 8 sitelinks."
     },
     {
       "id": "2026-10-30-americas-621",
@@ -1119,6 +627,18 @@
       "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
     },
     {
+      "id": "2026-10-30-africa-621",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q71630263",
+      "title": "Algiers Expedition",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-europe-622",
       "planned": "2026-10-30T04:52Z",
       "lane": "europe",
@@ -1131,6 +651,18 @@
       "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
     },
     {
+      "id": "2026-10-30-africa-622",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q4940494",
+      "title": "Bombardment of Algiers",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-europe-623",
       "planned": "2026-10-30T04:52Z",
       "lane": "europe",
@@ -1141,6 +673,18 @@
       "edges": [],
       "rank": "list",
       "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+    },
+    {
+      "id": "2026-10-30-africa-623",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q3536929",
+      "title": "Treaty of Tafna",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-624",
@@ -1184,7 +728,7 @@
       "lane": "europe",
       "writer": "A",
       "qid": "Q9377279",
-      "title": "Civil war in Poland (1704\u20131706)",
+      "title": "Civil war in Poland (1704–1706)",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -1239,6 +783,20 @@
       "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
     },
     {
+      "id": "2026-10-30-americas-631",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q5977822",
+      "title": "Newfoundland Expedition",
+      "parents": [
+        "queen-anne-s-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-632",
       "planned": "2026-10-30T04:52Z",
       "lane": "asia",
@@ -1249,6 +807,20 @@
       "edges": [],
       "rank": "list",
       "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+    },
+    {
+      "id": "2026-10-30-americas-632",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2866993",
+      "title": "Raid on Grand Pré",
+      "parents": [
+        "queen-anne-s-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
       "id": "2026-10-30-europe-633",
@@ -1263,66 +835,6 @@
       "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
     },
     {
-      "id": "2026-10-30-europe-634",
-      "planned": "2026-10-30T04:52Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q987667",
-      "title": "Quintuple Alliance",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-30-africa-612",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q109237454",
-      "title": "1716 Algiers earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 6 sitelinks."
-    },
-    {
-      "id": "2026-10-30-africa-613",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q7573364",
-      "title": "Spanish expedition to Oran",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-africa-614",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q4927224",
-      "title": "Blockade of Africa",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-africa-615",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q109256825",
-      "title": "Campaign of Cherchell",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 6 sitelinks."
-    },
-    {
       "id": "2026-10-30-asia-633",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1335,12 +847,50 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-633",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q3403846",
+      "title": "Battle of St. John's",
+      "parents": [
+        "queen-anne-s-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-634",
+      "planned": "2026-10-30T04:52Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q987667",
+      "title": "Quintuple Alliance",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+    },
+    {
       "id": "2026-10-30-asia-634",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
       "writer": "B",
       "qid": "Q5366700",
       "title": "Siege of Gassan Toda",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-634",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q5037051",
+      "title": "Capture of Pensacola",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -1359,6 +909,30 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-635",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4552629",
+      "title": "1730 Valparaíso earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-635",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2237014",
+      "title": "Battle of Malešov",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-636",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1369,6 +943,30 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-636",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2890697",
+      "title": "Battle of the Thousand Islands",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-636",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q328768",
+      "title": "Battle of Detern",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-637",
@@ -1383,6 +981,30 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-637",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q315310",
+      "title": "Battle of Restigouche",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-637",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q671340",
+      "title": "Battle of Maclodio",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-638",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1393,6 +1015,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-638",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q731564",
+      "title": "Battle of Block Island",
+      "parents": [
+        "american-revolutionary-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-638",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q769031",
+      "title": "1428 Catalonia earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-639",
@@ -1407,16 +1055,68 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-639",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4071933",
+      "title": "Battle of Sullivan's Island",
+      "parents": [
+        "american-revolutionary-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-639",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q690244",
+      "title": "Battle of Bulgnéville",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-640",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
       "writer": "B",
       "qid": "Q7510180",
-      "title": "Siege of K\u014dzuki Castle",
+      "title": "Siege of Kōzuki Castle",
       "parents": [],
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-640",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4392087",
+      "title": "Battle of Saint-Pierre",
+      "parents": [
+        "american-revolutionary-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-640",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3636565",
+      "title": "Battle on the Po",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-641",
@@ -1431,6 +1131,32 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-641",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2237194",
+      "title": "Battle of Forts Clinton and Montgomery",
+      "parents": [
+        "american-revolutionary-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-641",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2889924",
+      "title": "Battle of San Romano",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-642",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1441,6 +1167,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-642",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4872426",
+      "title": "Battle of Springfield",
+      "parents": [
+        "american-revolutionary-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-642",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q7457743",
+      "title": "Seventh Siege of Gibraltar",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-643",
@@ -1455,6 +1207,30 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-643",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q20312101",
+      "title": "1787 Mexico earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-643",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q13202707",
+      "title": "Battle of Belyov",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-644",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1465,6 +1241,30 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-644",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2890055",
+      "title": "Battle of St. George's Caye",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-644",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1777327",
+      "title": "Battle of Gavere",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-645",
@@ -1479,6 +1279,30 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-645",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2890399",
+      "title": "Battle of Yaguachi",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-645",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q795109",
+      "title": "Morea revolt of 1453–1454",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-646",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1489,6 +1313,30 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-646",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q9030262",
+      "title": "Goliad massacre",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-646",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q607645",
+      "title": "Bavarian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-647",
@@ -1503,6 +1351,32 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-647",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1782533",
+      "title": "Battle of Ingavi",
+      "parents": [
+        "peruvian-bolivian-war-of-1841-42"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-647",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q716479",
+      "title": "Battle of Świecino",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-648",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1513,6 +1387,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-648",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1772061",
+      "title": "Battle of Monterey",
+      "parents": [
+        "mexican-american-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-648",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4122600",
+      "title": "War of the Priests",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-649",
@@ -1529,6 +1429,30 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-649",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q477444",
+      "title": "1857 Fort Tejon earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-649",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2295317",
+      "title": "Second Battle of Olmedo",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-650",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1543,6 +1467,32 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-650",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q451711",
+      "title": "Battle of Carnifex Ferry",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-650",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3550076",
+      "title": "Union of Brittany and France",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-651",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1553,6 +1503,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-651",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1422914",
+      "title": "Battle of Camp Allegheny",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-651",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q667223",
+      "title": "Stanser Verkommnis",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-652",
@@ -1567,6 +1543,32 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-652",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1425892",
+      "title": "Battle of Greenbrier River",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-652",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2435832",
+      "title": "Battle of Cătlăbuga",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-653",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1577,6 +1579,30 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-653",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2128905",
+      "title": "Action at Springfield",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-653",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q319467",
+      "title": "Battle of Schwaderloh",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-654",
@@ -1591,6 +1617,32 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-654",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q523364",
+      "title": "Battle of Island Number Ten",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-654",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1989936",
+      "title": "Battle of Mstislavl",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-655",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1601,6 +1653,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-655",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q967287",
+      "title": "Manassas Station Operations",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-655",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2072513",
+      "title": "Battle of Ruvo",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-656",
@@ -1615,6 +1693,30 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-656",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q740404",
+      "title": "Battle of Cane Hill",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-656",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3625432",
+      "title": "Siege of Mirandola",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-657",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1625,6 +1727,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-657",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1639975",
+      "title": "Battle of Eltham's Landing",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-657",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q7510315",
+      "title": "Siege of Polotsk",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-658",
@@ -1639,6 +1767,32 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-658",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q377681",
+      "title": "Battle of Oak Grove",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-658",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4087402",
+      "title": "Battle of Sokal",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-659",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1649,6 +1803,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-659",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2205730",
+      "title": "Battle of Thoroughfare Gap",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-659",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q18713116",
+      "title": "Siege of Knin",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-660",
@@ -1663,6 +1843,32 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-660",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2443807",
+      "title": "First Battle of Chattanooga",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-660",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2371616",
+      "title": "Conquest of Stockholm",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-661",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1673,6 +1879,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-661",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2102607",
+      "title": "First Battle of Rappahannock Station",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-661",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2838113",
+      "title": "Franco-Polish alliance",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-662",
@@ -1687,6 +1919,32 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-662",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2888543",
+      "title": "Siege of Fort Macon",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-662",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2877472",
+      "title": "1531 Lisbon earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-663",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1697,6 +1955,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-663",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2889807",
+      "title": "Battle of Roanoke Island",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-663",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q368207",
+      "title": "Battle of Leobersdorf",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-664",
@@ -1711,6 +1995,32 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-664",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2904764",
+      "title": "Battle of Munfordville",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-664",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2634908",
+      "title": "Muscovite-Lithuanian War of 1534-1537",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-665",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1721,6 +2031,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-665",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q526697",
+      "title": "Second Battle of Rappahannock Station",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-665",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q850771",
+      "title": "Siege of Pest",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-666",
@@ -1737,6 +2073,32 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-666",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q841297",
+      "title": "Battle of Williamsport",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-666",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q7510304",
+      "title": "Siege of Perpignan",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-667",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1747,6 +2109,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-667",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q304655",
+      "title": "First Battle of Auburn",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-667",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3822861",
+      "title": "Battle of Serravalle",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-668",
@@ -1761,6 +2149,32 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-668",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q770565",
+      "title": "Battle of Hanover",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-668",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2887854",
+      "title": "Battle of Ancrum Moor",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-669",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1771,6 +2185,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-669",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2344929",
+      "title": "Battle of Raymond",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-669",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q599599",
+      "title": "Action of 30 May 1564",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-670",
@@ -1785,6 +2225,32 @@
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-670",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2363999",
+      "title": "Battle of Fort Blair",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-670",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q930521",
+      "title": "Battle of Jodoigne",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-671",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1795,6 +2261,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-671",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2392704",
+      "title": "Battle of Corydon",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-671",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4087439",
+      "title": "Battle of Langside",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-672",
@@ -1809,6 +2301,32 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-672",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2482906",
+      "title": "Battle of Grand Gulf",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-672",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q122641793",
+      "title": "Twenty-Five Years' War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-673",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1819,6 +2337,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-673",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2649895",
+      "title": "Battle of Milliken's Bend",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-673",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q133132",
+      "title": "Paris Commune",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 88 sitelinks."
     },
     {
       "id": "2026-10-30-asia-674",
@@ -1833,6 +2377,20 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-674",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2672202",
+      "title": "Battle of Fort Sanders",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-675",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1843,6 +2401,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-675",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2683571",
+      "title": "Battle of Lookout Mountain",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-675",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q430726",
+      "title": "Anglo-Spanish War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 36 sitelinks."
     },
     {
       "id": "2026-10-30-asia-676",
@@ -1857,6 +2441,32 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-676",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2699406",
+      "title": "First Battle of Charleston Harbor",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-676",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1197271",
+      "title": "Treaty of Saint Petersburg",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 23 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-677",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1867,6 +2477,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-677",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2579523",
+      "title": "Battle of Fort Davidson",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-677",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q261538",
+      "title": "S. A. Andrée's Arctic Balloon Expedition of 1897",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 23 sitelinks."
     },
     {
       "id": "2026-10-30-asia-678",
@@ -1881,6 +2517,32 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-678",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q572095",
+      "title": "Battle of Pleasant Hill",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-678",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q688802",
+      "title": "Battle of Torgau",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 20 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-679",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1891,6 +2553,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-679",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2615801",
+      "title": "Battle of Adairsville",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-679",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q375717",
+      "title": "Treaty of Versailles",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 19 sitelinks."
     },
     {
       "id": "2026-10-30-asia-680",
@@ -1905,6 +2593,32 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-680",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2615826",
+      "title": "Battle of Resaca",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-680",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q604587",
+      "title": "Siege of Buda",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 17 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-681",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1917,16 +2631,66 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-681",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2470074",
+      "title": "Battle of Saint Mary's Church",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-681",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2198292",
+      "title": "Triple Alliance",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 17 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-682",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
       "writer": "B",
       "qid": "Q7509937",
-      "title": "Siege of Ch\u014dk\u014d-ji",
+      "title": "Siege of Chōkō-ji",
       "parents": [],
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-682",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4871102",
+      "title": "Battle of Glasgow",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-682",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q540121",
+      "title": "Siege of Maastricht",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 17 sitelinks."
     },
     {
       "id": "2026-10-30-asia-683",
@@ -1941,6 +2705,32 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-683",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4871157",
+      "title": "Battle of Guard Hill",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-683",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q610328",
+      "title": "Battle of Castiglione",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 17 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-684",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1951,6 +2741,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-684",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4871326",
+      "title": "Battle of Jerusalem Plank Road",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-684",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1325388",
+      "title": "Bloody Sunday",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 17 sitelinks."
     },
     {
       "id": "2026-10-30-asia-685",
@@ -1965,6 +2781,32 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-685",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4872606",
+      "title": "Battle of Tupelo",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-685",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q464226",
+      "title": "Battle of Lagos",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 16 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-686",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1975,6 +2817,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-686",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4128034",
+      "title": "Second Battle of Kernstown",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-686",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q572883",
+      "title": "Battle of Verdun",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 16 sitelinks."
     },
     {
       "id": "2026-10-30-asia-687",
@@ -1989,6 +2857,32 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-687",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q3854317",
+      "title": "Battle of Marais des Cygnes",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-687",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2473448",
+      "title": "Battle of Lissa",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 16 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-688",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -1999,6 +2893,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-688",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q3808756",
+      "title": "Second Battle of Independence",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-688",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q474843",
+      "title": "Treaty of Vienna",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 16 sitelinks."
     },
     {
       "id": "2026-10-30-asia-689",
@@ -2013,6 +2933,32 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-689",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4870552",
+      "title": "Battle of Brice's Cross Roads",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-689",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1456443",
+      "title": "Treaty of Lisbon",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 15 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-690",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -2023,6 +2969,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-690",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4871474",
+      "title": "Battle of Kolb's Farm",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-690",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q638462",
+      "title": "Siege of Barcelona",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 15 sitelinks."
     },
     {
       "id": "2026-10-30-asia-691",
@@ -2037,6 +3009,32 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-691",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4993803",
+      "title": "Third Battle of Murfreesboro",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-691",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1860316",
+      "title": "Battle of Dogger Bank",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 15 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-692",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -2047,6 +3045,32 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-692",
+      "planned": "2026-10-30T05:22Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q7443109",
+      "title": "Second Battle of Ream's Station",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
+    },
+    {
+      "id": "2026-10-30-europe-692",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1192867",
+      "title": "Battle of Pułtusk",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 15 sitelinks."
     },
     {
       "id": "2026-10-30-asia-693",
@@ -2061,6 +3085,18 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-693",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q5643516",
+      "title": "Chanka–Inca War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-694",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -2071,6 +3107,18 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-694",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2564895",
+      "title": "Western Design",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-695",
@@ -2085,6 +3133,18 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-695",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4779013",
+      "title": "Apalachee massacre",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-696",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -2097,6 +3157,18 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-696",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q5049265",
+      "title": "Cassard expedition",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-697",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -2107,6 +3179,18 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-697",
+      "planned": "2026-10-30T06:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q429230",
+      "title": "Conquest of 1759-1760",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
       "id": "2026-10-30-asia-698",
@@ -2126,7 +3210,7 @@
       "lane": "asia",
       "writer": "A",
       "qid": "Q7510547",
-      "title": "Siege of \u014ctsu",
+      "title": "Siege of Ōtsu",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -2143,6 +3227,18 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-700",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q827212",
+      "title": "Gadsden Purchase",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 38 sitelinks."
     },
     {
       "id": "2026-10-30-asia-701",
@@ -2181,6 +3277,18 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
+      "id": "2026-10-30-americas-703",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q119129",
+      "title": "United States Exploring Expedition",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 16 sitelinks."
+    },
+    {
       "id": "2026-10-30-asia-704",
       "planned": "2026-10-30T05:22Z",
       "lane": "asia",
@@ -2191,6 +3299,18 @@
       "edges": [],
       "rank": "list",
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
+    },
+    {
+      "id": "2026-10-30-americas-704",
+      "planned": "2026-10-30T15:07Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1481957",
+      "title": "Treaty of Fort Laramie",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, docs/candidates-1415-1900.md, 16 sitelinks."
     },
     {
       "id": "2026-10-30-asia-705",
@@ -2258,7 +3378,7 @@
       "lane": "asia",
       "writer": "B",
       "qid": "Q3702778",
-      "title": "Luchuan\u2013Pingmian campaigns",
+      "title": "Luchuan–Pingmian campaigns",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -2330,7 +3450,7 @@
       "lane": "asia",
       "writer": "B",
       "qid": "Q4871383",
-      "title": "Battle of Kan\u014dguchi",
+      "title": "Battle of Kanōguchi",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -2444,7 +3564,7 @@
       "lane": "asia",
       "writer": "A",
       "qid": "Q1849379",
-      "title": "Travancore\u2013Dutch War",
+      "title": "Travancore–Dutch War",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -2492,7 +3612,7 @@
       "lane": "asia",
       "writer": "A",
       "qid": "Q7699558",
-      "title": "Tench\u016bgumi Incident",
+      "title": "Tenchūgumi Incident",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -2602,7 +3722,7 @@
       "lane": "asia",
       "writer": "B",
       "qid": "Q6453098",
-      "title": "Ky\u014dtoku Incident",
+      "title": "Kyōtoku Incident",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -2664,7 +3784,7 @@
       "lane": "asia",
       "writer": "A",
       "qid": "Q97348258",
-      "title": "Acehnese\u2013Portuguese conflicts",
+      "title": "Acehnese–Portuguese conflicts",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -2688,7 +3808,7 @@
       "lane": "asia",
       "writer": "A",
       "qid": "Q17077919",
-      "title": "Mughal\u2013Persian Wars",
+      "title": "Mughal–Persian Wars",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -2712,7 +3832,7 @@
       "lane": "asia",
       "writer": "A",
       "qid": "Q10939819",
-      "title": "Battle of Tensh\u014d-Jingo",
+      "title": "Battle of Tenshō-Jingo",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -2883,1312 +4003,12 @@
       "why": "docs/candidates-1415-1900.md; 6 sitelinks."
     },
     {
-      "id": "2026-10-30-americas-631",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q5977822",
-      "title": "Newfoundland Expedition",
-      "parents": [
-        "queen-anne-s-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-632",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2866993",
-      "title": "Raid on Grand Pr\u00e9",
-      "parents": [
-        "queen-anne-s-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-633",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3403846",
-      "title": "Battle of St. John's",
-      "parents": [
-        "queen-anne-s-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-634",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5037051",
-      "title": "Capture of Pensacola",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-635",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4552629",
-      "title": "1730 Valpara\u00edso earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-636",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2890697",
-      "title": "Battle of the Thousand Islands",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-637",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q315310",
-      "title": "Battle of Restigouche",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-638",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q731564",
-      "title": "Battle of Block Island",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-639",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4071933",
-      "title": "Battle of Sullivan's Island",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-640",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4392087",
-      "title": "Battle of Saint-Pierre",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-641",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2237194",
-      "title": "Battle of Forts Clinton and Montgomery",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-642",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4872426",
-      "title": "Battle of Springfield",
-      "parents": [
-        "american-revolutionary-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-643",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q20312101",
-      "title": "1787 Mexico earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-644",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2890055",
-      "title": "Battle of St. George's Caye",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-645",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2890399",
-      "title": "Battle of Yaguachi",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-646",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q9030262",
-      "title": "Goliad massacre",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-647",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1782533",
-      "title": "Battle of Ingavi",
-      "parents": [
-        "peruvian-bolivian-war-of-1841-42"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-648",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1772061",
-      "title": "Battle of Monterey",
-      "parents": [
-        "mexican-american-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-649",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q477444",
-      "title": "1857 Fort Tejon earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-650",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q451711",
-      "title": "Battle of Carnifex Ferry",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-651",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1422914",
-      "title": "Battle of Camp Allegheny",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-652",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1425892",
-      "title": "Battle of Greenbrier River",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-653",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2128905",
-      "title": "Action at Springfield",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-654",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q523364",
-      "title": "Battle of Island Number Ten",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-655",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q967287",
-      "title": "Manassas Station Operations",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-656",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q740404",
-      "title": "Battle of Cane Hill",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-657",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1639975",
-      "title": "Battle of Eltham's Landing",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-658",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q377681",
-      "title": "Battle of Oak Grove",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-659",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2205730",
-      "title": "Battle of Thoroughfare Gap",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-660",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2443807",
-      "title": "First Battle of Chattanooga",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-661",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2102607",
-      "title": "First Battle of Rappahannock Station",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-662",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2888543",
-      "title": "Siege of Fort Macon",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-663",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2889807",
-      "title": "Battle of Roanoke Island",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-664",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2904764",
-      "title": "Battle of Munfordville",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-665",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q526697",
-      "title": "Second Battle of Rappahannock Station",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-666",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q841297",
-      "title": "Battle of Williamsport",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-667",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q304655",
-      "title": "First Battle of Auburn",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-668",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q770565",
-      "title": "Battle of Hanover",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-669",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2344929",
-      "title": "Battle of Raymond",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-670",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2363999",
-      "title": "Battle of Fort Blair",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-671",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2392704",
-      "title": "Battle of Corydon",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-672",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2482906",
-      "title": "Battle of Grand Gulf",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-673",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2649895",
-      "title": "Battle of Milliken's Bend",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-674",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2672202",
-      "title": "Battle of Fort Sanders",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-675",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2683571",
-      "title": "Battle of Lookout Mountain",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-676",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2699406",
-      "title": "First Battle of Charleston Harbor",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-677",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2579523",
-      "title": "Battle of Fort Davidson",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-678",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q572095",
-      "title": "Battle of Pleasant Hill",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-679",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2615801",
-      "title": "Battle of Adairsville",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-680",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2615826",
-      "title": "Battle of Resaca",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-681",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2470074",
-      "title": "Battle of Saint Mary's Church",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-682",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4871102",
-      "title": "Battle of Glasgow",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-683",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4871157",
-      "title": "Battle of Guard Hill",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-684",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4871326",
-      "title": "Battle of Jerusalem Plank Road",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-685",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4872606",
-      "title": "Battle of Tupelo",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-686",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4128034",
-      "title": "Second Battle of Kernstown",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-687",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3854317",
-      "title": "Battle of Marais des Cygnes",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-688",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3808756",
-      "title": "Second Battle of Independence",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-689",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4870552",
-      "title": "Battle of Brice's Cross Roads",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-690",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4871474",
-      "title": "Battle of Kolb's Farm",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-691",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4993803",
-      "title": "Third Battle of Murfreesboro",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-692",
-      "planned": "2026-10-30T05:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7443109",
-      "title": "Second Battle of Ream's Station",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "list",
-      "why": "docs/candidates-1415-1900.md; 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-635",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q2237014",
-      "title": "Battle of Male\u0161ov",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-636",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q328768",
-      "title": "Battle of Detern",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-637",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q671340",
-      "title": "Battle of Maclodio",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-638",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q769031",
-      "title": "1428 Catalonia earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-639",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q690244",
-      "title": "Battle of Bulgn\u00e9ville",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-640",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q3636565",
-      "title": "Battle on the Po",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-641",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q2889924",
-      "title": "Battle of San Romano",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-642",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q7457743",
-      "title": "Seventh Siege of Gibraltar",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-643",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q13202707",
-      "title": "Battle of Belyov",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-644",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q1777327",
-      "title": "Battle of Gavere",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-645",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q795109",
-      "title": "Morea revolt of 1453\u20131454",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-646",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q607645",
-      "title": "Bavarian War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-647",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q716479",
-      "title": "Battle of \u015awiecino",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-648",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q4122600",
-      "title": "War of the Priests",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-649",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q2295317",
-      "title": "Second Battle of Olmedo",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-650",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q3550076",
-      "title": "Union of Brittany and France",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-651",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q667223",
-      "title": "Stanser Verkommnis",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-652",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q2435832",
-      "title": "Battle of C\u0103tl\u0103buga",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-653",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q319467",
-      "title": "Battle of Schwaderloh",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-654",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q1989936",
-      "title": "Battle of Mstislavl",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-655",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q2072513",
-      "title": "Battle of Ruvo",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-656",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q3625432",
-      "title": "Siege of Mirandola",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-657",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q7510315",
-      "title": "Siege of Polotsk",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-658",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q4087402",
-      "title": "Battle of Sokal",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-659",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q18713116",
-      "title": "Siege of Knin",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-660",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q2371616",
-      "title": "Conquest of Stockholm",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-661",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q2838113",
-      "title": "Franco-Polish alliance",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-662",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q2877472",
-      "title": "1531 Lisbon earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-663",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q368207",
-      "title": "Battle of Leobersdorf",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-664",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q2634908",
-      "title": "Muscovite-Lithuanian War of 1534-1537",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-665",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q850771",
-      "title": "Siege of Pest",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-666",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q7510304",
-      "title": "Siege of Perpignan",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-667",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q3822861",
-      "title": "Battle of Serravalle",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-668",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q2887854",
-      "title": "Battle of Ancrum Moor",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-669",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q599599",
-      "title": "Action of 30 May 1564",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-670",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q930521",
-      "title": "Battle of Jodoigne",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-671",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q4087439",
-      "title": "Battle of Langside",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-672",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q122641793",
-      "title": "Twenty-Five Years' War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
       "id": "2026-10-30-asia-761",
       "planned": "2026-10-30T06:36Z",
       "lane": "asia",
       "writer": "A",
       "qid": "Q20991943",
-      "title": "Burmese\u2013Siamese War of 1568\u201370",
+      "title": "Burmese–Siamese War of 1568–70",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -4255,162 +4075,6 @@
       "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
     },
     {
-      "id": "2026-10-30-americas-693",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q5643516",
-      "title": "Chanka\u2013Inca War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-694",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2564895",
-      "title": "Western Design",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-695",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4779013",
-      "title": "Apalachee massacre",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-696",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5049265",
-      "title": "Cassard expedition",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-697",
-      "planned": "2026-10-30T06:36Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q429230",
-      "title": "Conquest of 1759-1760",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-africa-616",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q1325495",
-      "title": "Battle of Santa Cruz de Tenerife",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 8 sitelinks."
-    },
-    {
-      "id": "2026-10-30-africa-617",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q6059597",
-      "title": "Invasion of Algiers",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 8 sitelinks."
-    },
-    {
-      "id": "2026-10-30-africa-618",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q1252684",
-      "title": "Battle of Toski",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 8 sitelinks."
-    },
-    {
-      "id": "2026-10-30-africa-619",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q4516015",
-      "title": "Chimurenga",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 8 sitelinks."
-    },
-    {
-      "id": "2026-10-30-africa-620",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q1276340",
-      "title": "Battle of Atbara",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 8 sitelinks."
-    },
-    {
-      "id": "2026-10-30-africa-621",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q71630263",
-      "title": "Algiers Expedition",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-africa-622",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q4940494",
-      "title": "Bombardment of Algiers",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-30-africa-623",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q3536929",
-      "title": "Treaty of Tafna",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
       "id": "2026-10-30-asia-767",
       "planned": "2026-10-30T15:07Z",
       "lane": "asia",
@@ -4440,7 +4104,7 @@
       "lane": "asia",
       "writer": "B",
       "qid": "Q6932168",
-      "title": "Mughal\u2013Safavid War",
+      "title": "Mughal–Safavid War",
       "parents": [],
       "edges": [],
       "rank": "list",
@@ -4591,328 +4255,664 @@
       "why": "List rank, docs/candidates-1415-1900.md, 8 sitelinks."
     },
     {
-      "id": "2026-10-30-americas-698",
-      "planned": "2026-10-30T15:07Z",
+      "id": "2026-10-30-africa-782",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q262584",
+      "title": "Nile Expedition",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 7 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-africa-783",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q20995527",
+      "title": "Ottoman expeditions to Morocco",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-africa-784",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q28001553",
+      "title": "Venetian bombardments of the Beylik of Tunis",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-africa-785",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q3536721",
+      "title": "Treaty with Tunis",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-africa-786",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2909585",
+      "title": "Bombardment of Algiers (1682)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 5 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-africa-787",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q16010253",
+      "title": "Bombardment of Algiers (1683)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 5 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-africa-788",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q4940496",
+      "title": "Bombardment of Algiers (1783)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 5 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-africa-789",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q122639374",
+      "title": "American-Algerian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 5 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-africa-790",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q28088235",
+      "title": "Siege of Ceuta (1790)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 5 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-africa-791",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q722047",
+      "title": "Ashanti-Fante War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 5 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-africa-792",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q7837330",
+      "title": "Treaty with Algiers (1815)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 5 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-africa-793",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q12232059",
+      "title": "1861 Constitution of Tunisia",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 5 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-africa-794",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q4763611",
+      "title": "Anglo-Dutch Gold Coast Treaty",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 5 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-africa-795",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q115762235",
+      "title": "Anglo-Egyptian Slave Trade Convention",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 5 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-africa-796",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1559790",
+      "title": "Battles of Woyowoyanko",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 5 sitelinks. Africa holds 634 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-797",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q1758978",
+      "title": "Burmese–Siamese War of 1775–76",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 7 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-798",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q13012465",
+      "title": "Siamese invasion of Kedah",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 7 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-799",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q10747221",
+      "title": "Vietnamese–Laotian War of 1467–1480",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-800",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q127604703",
+      "title": "Mughal–Safavid War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-801",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q65077587",
+      "title": "Bengal War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-802",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q16821560",
+      "title": "Battle of Tiruvannamalai",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-803",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2280725",
+      "title": "Siamese–Vietnamese War of 1771-1773",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-804",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4553469",
+      "title": "1797 Sumatra earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-805",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q60746515",
+      "title": "Persian Gulf campaign of 1819",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-806",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q7382025",
+      "title": "Russian conquest of Bukhara",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-807",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q7382322",
+      "title": "Russia–Korea Treaty of 1884",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-808",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4222418",
+      "title": "1900 Amur anti-Chinese pogroms",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-809",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q3391315",
+      "title": "Cham-Vietnamese War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 5 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-810",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q60771401",
+      "title": "Yemeni–Ottoman conflicts",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 5 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-asia-811",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q5959281",
+      "title": "Siege of Baghdad (1625)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 5 sitelinks. Asia holds 1293 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-americas-812",
+      "planned": "2026-10-30T16:05Z",
       "lane": "americas",
       "writer": "A",
-      "qid": "Q12583",
-      "title": "Spanish\u2013American War",
+      "qid": "Q2546566",
+      "title": "Battle of Mexico-city",
       "parents": [],
       "edges": [],
       "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 89 sitelinks."
+      "why": "List rank from docs/candidates-1415-1900.md, 7 sitelinks. The Americas hold 1409 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
     },
     {
-      "id": "2026-10-30-europe-673",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q133132",
-      "title": "Paris Commune",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 88 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-674",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q180897",
-      "title": "Treaty of Tordesillas",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 67 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-699",
-      "planned": "2026-10-30T15:07Z",
+      "id": "2026-10-30-americas-813",
+      "planned": "2026-10-30T16:05Z",
       "lane": "americas",
       "writer": "B",
-      "qid": "Q689128",
-      "title": "Haitian Revolution",
+      "qid": "Q3118971",
+      "title": "Ecuadorian–Colombian War",
       "parents": [],
       "edges": [],
       "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 61 sitelinks."
+      "why": "List rank from docs/candidates-1415-1900.md, 7 sitelinks. The Americas hold 1409 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
     },
     {
-      "id": "2026-10-30-americas-700",
-      "planned": "2026-10-30T15:07Z",
+      "id": "2026-10-30-americas-814",
+      "planned": "2026-10-30T16:05Z",
       "lane": "americas",
       "writer": "A",
-      "qid": "Q827212",
-      "title": "Gadsden Purchase",
+      "qid": "Q1739881",
+      "title": "New Mexico Campaign",
       "parents": [],
       "edges": [],
       "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 38 sitelinks."
+      "why": "List rank from docs/candidates-1415-1900.md, 7 sitelinks. The Americas hold 1409 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
     },
     {
-      "id": "2026-10-30-americas-701",
-      "planned": "2026-10-30T15:07Z",
+      "id": "2026-10-30-americas-815",
+      "planned": "2026-10-30T16:05Z",
       "lane": "americas",
       "writer": "B",
-      "qid": "Q1514908",
-      "title": "Cuban War of Independence",
+      "qid": "Q3817778",
+      "title": "Anglo-Cherokee War",
       "parents": [],
       "edges": [],
       "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 38 sitelinks."
+      "why": "List rank from docs/candidates-1415-1900.md, 7 sitelinks. The Americas hold 1409 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
     },
     {
-      "id": "2026-10-30-europe-675",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q430726",
-      "title": "Anglo-Spanish War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 36 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-702",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1548600",
-      "title": "Independence of Brazil",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 27 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-676",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q1197271",
-      "title": "Treaty of Saint Petersburg",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 23 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-677",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q261538",
-      "title": "S. A. Andr\u00e9e's Arctic Balloon Expedition of 1897",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 23 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-678",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q688802",
-      "title": "Battle of Torgau",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 20 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-679",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q375717",
-      "title": "Treaty of Versailles",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 19 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-680",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q604587",
-      "title": "Siege of Buda",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 17 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-681",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q2198292",
-      "title": "Triple Alliance",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 17 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-682",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q540121",
-      "title": "Siege of Maastricht",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 17 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-683",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q610328",
-      "title": "Battle of Castiglione",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 17 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-684",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q1325388",
-      "title": "Bloody Sunday",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 17 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-685",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q464226",
-      "title": "Battle of Lagos",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 16 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-686",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q572883",
-      "title": "Battle of Verdun",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 16 sitelinks."
-    },
-    {
-      "id": "2026-10-30-europe-687",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q2473448",
-      "title": "Battle of Lissa",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 16 sitelinks."
-    },
-    {
-      "id": "2026-10-30-americas-703",
-      "planned": "2026-10-30T15:07Z",
+      "id": "2026-10-30-americas-816",
+      "planned": "2026-10-30T16:05Z",
       "lane": "americas",
       "writer": "A",
-      "qid": "Q119129",
-      "title": "United States Exploring Expedition",
+      "qid": "Q18161653",
+      "title": "Nicaragua Crisis of 1894-1895",
       "parents": [],
       "edges": [],
       "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 16 sitelinks."
+      "why": "List rank from docs/candidates-1415-1900.md, 7 sitelinks. The Americas hold 1409 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
     },
     {
-      "id": "2026-10-30-europe-688",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
+      "id": "2026-10-30-americas-817",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "americas",
       "writer": "B",
-      "qid": "Q474843",
-      "title": "Treaty of Vienna",
+      "qid": "Q1822896",
+      "title": "Liberal Revolution of Ecuador",
       "parents": [],
       "edges": [],
       "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 16 sitelinks."
+      "why": "List rank from docs/candidates-1415-1900.md, 7 sitelinks. The Americas hold 1409 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
     },
     {
-      "id": "2026-10-30-americas-704",
-      "planned": "2026-10-30T15:07Z",
+      "id": "2026-10-30-americas-818",
+      "planned": "2026-10-30T16:05Z",
       "lane": "americas",
       "writer": "A",
-      "qid": "Q1481957",
-      "title": "Treaty of Fort Laramie",
+      "qid": "Q5502314",
+      "title": "French occupation of Santo Domingo",
       "parents": [],
       "edges": [],
       "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 16 sitelinks."
+      "why": "List rank from docs/candidates-1415-1900.md, 7 sitelinks. The Americas hold 1409 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
     },
     {
-      "id": "2026-10-30-europe-689",
-      "planned": "2026-10-30T15:07Z",
-      "lane": "europe",
+      "id": "2026-10-30-americas-819",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "americas",
       "writer": "B",
-      "qid": "Q1456443",
-      "title": "Treaty of Lisbon",
+      "qid": "Q123419661",
+      "title": "Inca-Colla War",
       "parents": [],
       "edges": [],
       "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 15 sitelinks."
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. The Americas hold 1409 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
     },
     {
-      "id": "2026-10-30-europe-690",
-      "planned": "2026-10-30T15:07Z",
+      "id": "2026-10-30-americas-820",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4551867",
+      "title": "1687 Peru earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. The Americas hold 1409 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-americas-821",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4552798",
+      "title": "1746 Lima - Callao earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 6 sitelinks. The Americas hold 1409 active events against Europe's 2647, so it is queued ahead of a bigger Europe item."
+    },
+    {
+      "id": "2026-10-30-europe-822",
+      "planned": "2026-10-30T16:05Z",
       "lane": "europe",
       "writer": "A",
-      "qid": "Q638462",
-      "title": "Siege of Barcelona",
+      "qid": "Q177464",
+      "title": "Treaty of Paris (1810)",
       "parents": [],
       "edges": [],
       "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 15 sitelinks."
+      "why": "List rank from docs/candidates-1415-1900.md, 15 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
     },
     {
-      "id": "2026-10-30-europe-691",
-      "planned": "2026-10-30T15:07Z",
+      "id": "2026-10-30-europe-823",
+      "planned": "2026-10-30T16:05Z",
       "lane": "europe",
       "writer": "B",
-      "qid": "Q1860316",
-      "title": "Battle of Dogger Bank",
+      "qid": "Q1642290",
+      "title": "Battle of Fleurus (1622)",
       "parents": [],
       "edges": [],
       "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 15 sitelinks."
+      "why": "List rank from docs/candidates-1415-1900.md, 14 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
     },
     {
-      "id": "2026-10-30-europe-692",
-      "planned": "2026-10-30T15:07Z",
+      "id": "2026-10-30-europe-824",
+      "planned": "2026-10-30T16:05Z",
       "lane": "europe",
       "writer": "A",
-      "qid": "Q1192867",
-      "title": "Battle of Pu\u0142tusk",
+      "qid": "Q417744",
+      "title": "Dano-Swedish War (1660)",
       "parents": [],
       "edges": [],
       "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 15 sitelinks."
+      "why": "List rank from docs/candidates-1415-1900.md, 14 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
+    },
+    {
+      "id": "2026-10-30-europe-825",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2141140",
+      "title": "Treaty of Madrid (1670)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 14 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
+    },
+    {
+      "id": "2026-10-30-europe-826",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q577441",
+      "title": "Siege of Genoa (1800)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 14 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
+    },
+    {
+      "id": "2026-10-30-europe-827",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q661409",
+      "title": "Battle of St. Quentin (1871)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 14 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
+    },
+    {
+      "id": "2026-10-30-europe-828",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q815203",
+      "title": "Siege of Rouen (1418)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 13 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
+    },
+    {
+      "id": "2026-10-30-europe-829",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3485982",
+      "title": "Siege of Paris (1429)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 13 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
+    },
+    {
+      "id": "2026-10-30-europe-830",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q22948744",
+      "title": "Rebellion of the Alpujarras (1499)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 13 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
+    },
+    {
+      "id": "2026-10-30-europe-831",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2600616",
+      "title": "Treaty of London (1518)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 13 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
+    },
+    {
+      "id": "2026-10-30-europe-832",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q698176",
+      "title": "Treaty of Vienna (1725)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 13 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
+    },
+    {
+      "id": "2026-10-30-europe-833",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3536859",
+      "title": "Treaty of Paris (1801)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 13 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
+    },
+    {
+      "id": "2026-10-30-europe-834",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q950481",
+      "title": "Treaty of Paris (1857)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 13 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
+    },
+    {
+      "id": "2026-10-30-europe-835",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q976865",
+      "title": "Treaty of London (1864)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 13 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
+    },
+    {
+      "id": "2026-10-30-europe-836",
+      "planned": "2026-10-30T16:05Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4871919",
+      "title": "Battle of Novara (1500)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank from docs/candidates-1415-1900.md, 12 sitelinks, the size that sets the line after which Africa, Asia and the Americas take priority this fire."
     }
   ]
 }
