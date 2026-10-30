@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "treaty-of-whampoa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1194381",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Treaty of Whampoa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1194381"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Whampoa\", revision 1354409975"
+    }
+  ],
+  "title": "Treaty of Whampoa",
+  "summary": "The English Wikipedia article \"Treaty of Whampoa\", at revision 1354409975, opens: \"The Treaty of Whampoa was an unequal treaty between the Kingdom of France and the Qing dynasty of China, which was signed by Qiying and Théodore de Lagrené on October 24, 1844, aboard the warship L’Archimède.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1194381, imported by tools/import/wikidata.mjs. The item's own description reads \"unequal treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1844,
+    "end": 1844,
+    "date": "1844-10-24"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

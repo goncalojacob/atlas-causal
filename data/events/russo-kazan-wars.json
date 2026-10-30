@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "russo-kazan-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1949299",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Russo-Kazan Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1949299"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Kazan Wars\", revision 1374081599"
+    }
+  ],
+  "title": "Russo-Kazan Wars",
+  "summary": "The English Wikipedia article \"Russo-Kazan Wars\", at revision 1374081599, opens: \"The Russo-Kazan Wars were a series of short, intermittent wars fought between the Grand Principality of Moscow and the Khanate of Kazan between 1437 and 1556. Most of these were wars of succession in Kazan, in which Muscovy intervened on behalf of the dynastic interests of its main ally, the Crimean Khanate. For most of the period, neither side sought to conquer the other, until Ivan the Terrible decided to annex Kazan upon the successful 1552 siege, which was followed by a rebellion lasting until 1556.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1949299, imported by tools/import/wikidata.mjs. The item's own description reads \"1439–1552 wars between Kazan and Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1438,
+    "end": 1552
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

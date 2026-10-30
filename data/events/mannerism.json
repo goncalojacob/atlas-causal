@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mannerism",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q131808",
+  "sitelinks": {
+    "count": 69,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Mannerism",
+    "pt": "Maneirismo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q131808"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mannerism\", revision 1381688025"
+    }
+  ],
+  "title": "Mannerism",
+  "summary": "The English Wikipedia article \"Mannerism\", at revision 1381688025, opens: \"Mannerism is a style in European art that emerged in the later years of the Italian High Renaissance around 1520, spreading by about 1530 and lasting until about the end of the 16th century in Italy, when the Baroque style largely replaced it. Northern Mannerism continued into the early 17th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q131808, imported by tools/import/wikidata.mjs. The item's own description reads \"style of European art\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1520,
+    "end": 1600
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

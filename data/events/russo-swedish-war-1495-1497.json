@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "russo-swedish-war-1495-1497",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1509437",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Russo-Swedish War (1495–1497)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1509437"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Swedish War (1495–1497)\", revision 1378919640"
+    }
+  ],
+  "title": "Russo-Swedish War (1495–1497)",
+  "summary": "The English Wikipedia article \"Russo-Swedish War (1495–1497)\", at revision 1378919640, opens: \"The Russo-Swedish War of 1495–1497, known in Sweden as the Stures' Russian War and in Russia as the First Swedish War, was a border war between the Grand Principality of Moscow and the Kingdom of Sweden. Although the war was relatively short, and did not lead to any territorial changes, it has significance as the first war between Sweden and Moscow. Sweden earlier fought wars against the Novgorod Republic, before Novgorod was formally annexed to Moscow in 1478 – an event that led to the emergence of a unified Russian state.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1509437, imported by tools/import/wikidata.mjs. The item's own description reads \"war between the Grand Duchy of Moscow and the Kingdom of Sweden in 1495–1497\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1495,
+    "end": 1497
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

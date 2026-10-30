@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "burmese-siamese-war-1547-1549",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1164169",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Burmese–Siamese War (1547–1549)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1164169"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Burmese–Siamese War (1547–1549)\", revision 1380669216"
+    }
+  ],
+  "title": "Burmese–Siamese War (1547–1549)",
+  "summary": "The English Wikipedia article \"Burmese–Siamese War (1547–1549)\", at revision 1380669216, opens: \"The Burmese–Siamese War (1547–1549), also known as the Tabinshwehti war was the first war fought between the Toungoo dynasty of Burma and the Ayutthaya Kingdom of Siam, and the first of the Burmese–Siamese wars that would continue until the middle of the 19th century. The war is notable for the introduction of early modern warfare to the region. It is also notable in Thai history for the death in battle of Siamese Queen Suriyothai on her war elephant; the conflict is often referred to in Thailand as the War that Led to the Loss of Queen Suriyothai (สงครามคราวเสียสมเด็จพระสุริโยไท).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1164169, imported by tools/import/wikidata.mjs. The item's own description reads \"1547–49 war fought between the Toungoo Dynasty of Burma and the Ayutthaya Kingdom of Siam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1547,
+    "end": 1549,
+    "date": "1547-10",
+    "endDate": "1549-02"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

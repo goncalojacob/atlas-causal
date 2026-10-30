@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "malaspina-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1227138",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Malaspina Expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1227138"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Malaspina Expedition\", revision 1373697997"
+    }
+  ],
+  "title": "Malaspina Expedition",
+  "summary": "The English Wikipedia article \"Malaspina Expedition\", at revision 1373697997, opens: \"The Malaspina Expedition (1789–1794) was a five-year maritime scientific exploration commanded by Alejandro Malaspina and José de Bustamante y Guerra. Although the expedition receives its name from Malaspina, he always insisted on giving Bustamante an equal share of command. Bustamante had, however, acknowledged Malaspina as the \"head of the expedition\" since the beginning.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1227138, imported by tools/import/wikidata.mjs. The item's own description reads \"research expedition (1789-1794)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1789,
+    "end": 1794,
+    "date": "1789-07-30"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
