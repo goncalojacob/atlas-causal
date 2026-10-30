@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "federalist-era",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5440578",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Federalist Era"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5440578"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Federalist Era\", revision 1379611524"
+    }
+  ],
+  "title": "Federalist Era",
+  "summary": "The English Wikipedia article \"Federalist Era\", at revision 1379611524, opens: \"The Federalist Era in American history ran from 1788 to 1800, a time when the Federalist Party and its predecessors were dominant in American politics. During this period, Federalists generally controlled Congress and enjoyed the support of President George Washington and President John Adams. The era saw the creation of a new, stronger federal government under the United States Constitution, a deepening of support for nationalism, and diminished fears of tyranny by a central government. The era began with the ratification of the United States Constitution and ended with the Democratic-Republican Party's victory in the 1800 elections.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5440578, imported by tools/import/wikidata.mjs. The item's own description reads \"historical period\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1788,
+    "end": 1800
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

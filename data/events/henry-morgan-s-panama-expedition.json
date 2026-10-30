@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "henry-morgan-s-panama-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q11688154",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Henry Morgan's Panama expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11688154"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Henry Morgan's Panama expedition\", revision 1370622643"
+    }
+  ],
+  "title": "Henry Morgan's Panama expedition",
+  "summary": "The English Wikipedia article \"Henry Morgan's Panama expedition\", at revision 1370622643, opens: \"Henry Morgan's Panama expedition, also known as The Sack of Panama, was a military expedition in which English privateers commanded by Welsh Buccaneer Henry Morgan launched an attack with an army of 1,400 men with the purpose of capturing the rich Spanish city of Panama off the Pacific coast between 16 December 1670 and 5 March 1671 during the later stage of the Anglo-Spanish War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11688154, imported by tools/import/wikidata.mjs. The item's own description reads \"1670–1671 attack on Panama\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1670,
+    "end": 1671,
+    "date": "1670-12-16",
+    "endDate": "1671-03-05"
+  },
+  "place": "caribbean-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

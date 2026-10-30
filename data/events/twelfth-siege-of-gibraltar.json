@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "twelfth-siege-of-gibraltar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q11703925",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Twelfth siege of Gibraltar",
+    "pt": "Décimo segundo cerco de Gibraltar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11703925"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Twelfth siege of Gibraltar\", revision 1370751889"
+    }
+  ],
+  "title": "Twelfth siege of Gibraltar",
+  "summary": "The English Wikipedia article \"Twelfth siege of Gibraltar\", at revision 1370751889, opens: \"The twelfth siege of Gibraltar was fought between September 1704 and May 1705 during the War of the Spanish Succession. It followed the capture in August 1704 of the fortified town of Gibraltar, at the southern tip of Spain, by an Anglo–Dutch naval force led by Sir George Rooke and Prince George of Hesse-Darmstadt. The members of the Grand Alliance, the Holy Roman Empire, England, the Netherlands, Pro-Habsburg Spain, Portugal and Savoy, had allied to prevent the unification of the French and Spanish thrones by supporting the claim of the Habsburg pretender Archduke Charles VI of Austria as Charles III of Spain. They were opposed by the rival claimant, the Bourbon Philip, Duke of Anjou, ruling as Philip V of Spain, and his patron and ally, Louis XIV of France. The war began in northern Europe and was largely contained there until 1703, when Portugal joined the confederate powers. From then, English naval attentions were focused on mounting a campaign in the Mediterranean to distract the French navy and disrupt French and Bourbon Spanish shipping or capture a port for use as a naval base. The capture of Gibraltar was the outcome of that initial stage of the Mediterranean campaign.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11703925, imported by tools/import/wikidata.mjs. The item's own description reads \"1704 siege of War of the Spanish Succession\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1704,
+    "end": 1705,
+    "date": "1704-09",
+    "endDate": "1705-05"
+  },
+  "place": "gibraltar",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

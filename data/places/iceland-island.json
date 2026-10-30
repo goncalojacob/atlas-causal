@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "iceland-island",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3740828",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Iceland (island)"
+  },
+  "sources": [],
+  "names": [
+    "Iceland",
+    "Islândia",
+    "Iceland (island)"
+  ],
+  "where": {
+    "lon": -18,
+    "lat": 65,
+    "precision": "region",
+    "label": "Iceland (island)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

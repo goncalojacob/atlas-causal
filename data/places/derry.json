@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "derry",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q163584",
+  "sitelinks": {
+    "count": 83,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Derry",
+    "pt": "Derry"
+  },
+  "sources": [],
+  "names": [
+    "Derry"
+  ],
+  "where": {
+    "lon": -7.3416666666667,
+    "lat": 54.991666666667,
+    "precision": "city",
+    "label": "Derry"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

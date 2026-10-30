@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "rottofreno",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q102965",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Rottofreno",
+    "pt": "Rottofreno"
+  },
+  "sources": [],
+  "names": [
+    "Rottofreno"
+  ],
+  "where": {
+    "lon": 9.54895,
+    "lat": 45.057930555556,
+    "precision": "city",
+    "label": "Rottofreno"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

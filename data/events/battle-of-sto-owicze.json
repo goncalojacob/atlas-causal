@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-sto-owicze",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2618930",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Stołowicze"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2618930"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Stołowicze\", revision 1382460455"
+    }
+  ],
+  "title": "Battle of Stołowicze",
+  "summary": "The English Wikipedia article \"Battle of Stołowicze\", at revision 1382460455, opens: \"The battle of Stołowicze was a clash of the War of the Bar Confederation. It took place on the 24 September 1771 and ended with the defeat of Bar Confederates by Russian general Alexander Suvorov. Michał Kazimierz Ogiński, the Bar commander, was forced into a brief exile.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2618930, imported by tools/import/wikidata.mjs. The item's own description reads \"1771 war of the Bar Confederation battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1771,
+    "end": 1771,
+    "date": "1771-09-23"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
