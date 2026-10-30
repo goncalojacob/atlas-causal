@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-ancrum-moor",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2887854",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Ancrum Moor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2887854"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ancrum Moor\", revision 1378183005"
+    }
+  ],
+  "title": "Battle of Ancrum Moor",
+  "summary": "The English Wikipedia article \"Battle of Ancrum Moor\", at revision 1378183005, opens: \"The Battle of Ancrum Moor was fought during the War of the Rough Wooing in 1545. The Scottish victory put a temporary end to English incursions in the Scottish border and lowlands. The battlefield has been included in the Inventory of Historic Battlefields in Scotland and protected by Historic Scotland under the Historic Environment (Amendment) Act 2011.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2887854, imported by tools/import/wikidata.mjs. The item's own description reads \"1545 battle in the War of the Rough Wooing\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1545,
+    "end": 1545,
+    "date": "1545-02-27"
+  },
+  "place": "jedburgh",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

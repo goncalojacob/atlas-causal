@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "1843-and-1846-massacres-in-hakkari",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6784498",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1843 and 1846 massacres in Hakkari"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6784498"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1843 and 1846 massacres in Hakkari\", revision 1363560433"
+    }
+  ],
+  "title": "1843 and 1846 massacres in Hakkari",
+  "summary": "The English Wikipedia article \"1843 and 1846 massacres in Hakkari\", at revision 1363560433, opens: \"A series of massacres in Hakkari in the years 1843 and 1846 of Assyrian Christians were carried out by the Kurdish emirs of Bohtan and Hakkari, Bedir Khan Beg and Nurullah Beg\nalong with allied Assyrian tribes who were against the rule of Shimun XVII Abraham. According to Dr. Smith, the population lost as a result of these events was between 10,000 and 15,000, of which around 10,000 were killed during the first campaign. Another American missionary, Justin Perkins, estimated that approximately 7,000 Assyrians were killed in Tehoma alone in 1846.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6784498, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1843,
+    "end": 1846
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

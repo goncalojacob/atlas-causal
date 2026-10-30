@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-corydon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2392704",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Corydon",
+    "pt": "Batalha de Corydon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2392704"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Corydon\", revision 1370109291"
+    }
+  ],
+  "title": "Battle of Corydon",
+  "summary": "The English Wikipedia article \"Battle of Corydon\", at revision 1370109291, opens: \"The Battle of Corydon was a minor engagement that took place July 9, 1863, just south of Corydon, which had been the original capital of Indiana until 1825, and was the county seat of Harrison County. The attack occurred during Morgan's Raid in the American Civil War as a force of 2,500 cavalry invaded the North in support of the Tullahoma Campaign. It was the only pitched battle of the Civil War that occurred in Indiana, and no battle has occurred within Indiana since.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2392704, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-07-09"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

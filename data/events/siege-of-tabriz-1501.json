@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "siege-of-tabriz-1501",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q17081667",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Tabriz (1501)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17081667"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Tabriz (1501)\", revision 1370745604"
+    }
+  ],
+  "title": "Siege of Tabriz (1501)",
+  "summary": "The English Wikipedia article \"Siege of Tabriz (1501)\", at revision 1370745604, opens: \"The siege of Tabriz took place in 1501 just after the Safavids had defeated the Aq Qoyunlu in the Battle of Sharur. In the preceding battle the Safavids were able to defeat the Aq Qoyunlus that had an army which was 4 times bigger than the Safavid army. After the siege Ismail I chose Tabriz as his capital and proclaimed himself Shahanshah of Iran.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17081667, imported by tools/import/wikidata.mjs. The item's own description reads \"1501 initiation of capital of Safavid Iran\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1501,
+    "end": 1501
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
