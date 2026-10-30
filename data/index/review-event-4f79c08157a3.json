@@ -109397,36 +109397,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
-      "created": "2026-10-30",
-      "id": "history-of-modern-greece",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts",
-          "end-unstated",
-          "summary-from-lead",
-          "a9-place"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "History of modern Greece"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -198555,12 +198525,6 @@
     },
     {
       "id": "history-of-egypt-under-the-british",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "history-of-modern-greece",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
