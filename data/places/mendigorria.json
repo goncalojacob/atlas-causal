@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mendigorria",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1648110",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Mendigorría",
+    "pt": "Mendigorría"
+  },
+  "sources": [],
+  "names": [
+    "Mendigorria"
+  ],
+  "where": {
+    "lon": -1.8345,
+    "lat": 42.62822,
+    "precision": "city",
+    "label": "Mendigorría"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

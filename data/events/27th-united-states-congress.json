@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "27th-united-states-congress",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4632667",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "27th United States Congress"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4632667"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"27th United States Congress\", revision 1380239087"
+    }
+  ],
+  "title": "27th United States Congress",
+  "summary": "The English Wikipedia article \"27th United States Congress\", at revision 1380239087, opens: \"The 27th United States Congress was a meeting of the legislative branch of the United States federal government, consisting of the United States Senate and the United States House of Representatives. It met in Washington, D.C., between March 4, 1841, and March 4, 1843, during the one-month presidency of William Henry Harrison and the first two years of the presidency of his successor, John Tyler. The apportionment of seats in the House of Representatives was based on the 1830 United States census. Both chambers had a Whig majority, making the 27th Congress the only Whig-controlled Congress of the Second Party System.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4632667, imported by tools/import/wikidata.mjs. The item's own description reads \"1841-1843 U.S. Congress\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1841,
+    "end": 1843,
+    "date": "1841-03-04",
+    "endDate": "1843-03-04"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "20th-united-states-congress",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4630820",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "20th United States Congress"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4630820"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"20th United States Congress\", revision 1380238767"
+    }
+  ],
+  "title": "20th United States Congress",
+  "summary": "The English Wikipedia article \"20th United States Congress\", at revision 1380238767, opens: \"The 20th United States Congress was a meeting of the legislative branch of the United States federal government, consisting of the United States Senate and the United States House of Representatives. It met in Washington, D.C. from March 4, 1827, to March 4, 1829, during the third and fourth years of John Quincy Adams's presidency. The apportionment of seats in the House of Representatives was based on the 1820 United States census. Both chambers had a Jacksonian majority.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4630820, imported by tools/import/wikidata.mjs. The item's own description reads \"the national legislature of the United States of America from March 4, 1827, to March 3, 1829\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1827,
+    "end": 1829,
+    "date": "1827-03-04",
+    "endDate": "1829-03-04"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

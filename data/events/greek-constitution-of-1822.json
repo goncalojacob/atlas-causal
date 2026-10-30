@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "greek-constitution-of-1822",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5601760",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Greek Constitution of 1822"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5601760"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Greek Constitution of 1822\", revision 1381338405"
+    }
+  ],
+  "title": "Greek Constitution of 1822",
+  "summary": "The English Wikipedia article \"Greek Constitution of 1822\", at revision 1381338405, opens: \"The Greek Constitution of 1822 was a document adopted by the First National Assembly of Epidaurus on 1 January 1822. Formally it was the Provisional Regime of Greece, sometimes translated as Temporary Constitution of Greece. Considered to be the first constitution of Modern Greece, it was an attempt to achieve temporary governmental and military organisation until the future establishment of a national parliament.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5601760, imported by tools/import/wikidata.mjs. The item's own description reads \"first constitution of modern Greece\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1822,
+    "end": 1822
+  },
+  "place": "greece-q41",
+  "region": null,
+  "regionNote": null,
+  "category": "law",
+  "actors": []
+}

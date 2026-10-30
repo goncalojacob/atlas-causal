@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "kot-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q11138461",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Kot massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11138461"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kot massacre\", revision 1381314274"
+    }
+  ],
+  "title": "Kot massacre",
+  "summary": "The English Wikipedia article \"Kot massacre\", at revision 1381314274, opens: \"The Kot massacre took place on 14 September 1846 when then Kaji Jung Bahadur Kunwar and his brothers killed about 30-40 civil officials, military officers and palace guards of the Nepalese palace court including the Prime Minister of Nepal and a relative of the King, Chautariya Fateh Jung Shah along with other senior-most ministers and army generals at the palace armory (Kot) of Hanuman Dhoka in Kathmandu.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11138461, imported by tools/import/wikidata.mjs. The item's own description reads \"1846 mass killing of Nepalese government officials and royals\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1846,
+    "end": 1846,
+    "date": "1846-09-14"
+  },
+  "place": "kathmandu-durbar-square",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

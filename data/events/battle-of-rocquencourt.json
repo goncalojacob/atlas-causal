@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-rocquencourt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1583955",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Rocquencourt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1583955"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Rocquencourt\", revision 1370272998"
+    }
+  ],
+  "title": "Battle of Rocquencourt",
+  "summary": "The English Wikipedia article \"Battle of Rocquencourt\", at revision 1370272998, opens: \"The Battle of Rocquencourt was a cavalry skirmish fought on 1 July 1815 in and around the villages of Rocquencourt and Le Chesnay. French dragoons supported by infantry and commanded by General Exelmans destroyed a Prussian brigade of hussars under the command of Lieutenant Colonel Eston von Sohr.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1583955, imported by tools/import/wikidata.mjs. The item's own description reads \"1815 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-07-01"
+  },
+  "place": "rocquencourt-yvelines",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "hundred-days"
+}

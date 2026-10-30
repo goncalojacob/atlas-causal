@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "conservative-order",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q19960681",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Conservative Order",
+    "pt": "Restauração (Europa)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q19960681"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conservative Order\", revision 1321399252"
+    }
+  ],
+  "title": "Conservative Order",
+  "summary": "The English Wikipedia article \"Conservative Order\", at revision 1321399252, opens: \"The Conservative Order was the period in political history of Europe after the defeat of Napoleon in 1815. From 1815 to 1830, a conscious program by conservative statesmen, including Metternich and Castlereagh, was put into place to contain revolution and revolutionary forces by restoring the old orders, particularly the previously-ruling aristocracies. On the other hand, in South America, in light of the Monroe Doctrine, the Spanish and Portuguese colonies gained independence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q19960681, imported by tools/import/wikidata.mjs. The item's own description reads \"historical period of renewal in Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1848
+  },
+  "place": "europe",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

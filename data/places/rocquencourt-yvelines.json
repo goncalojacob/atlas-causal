@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "rocquencourt-yvelines",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1418760",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Rocquencourt, Yvelines",
+    "pt": "Rocquencourt (Yvelines)"
+  },
+  "sources": [],
+  "names": [
+    "Rocquencourt",
+    "Rocquencourt, Yvelines",
+    "Rocquencourt (Yvelines)"
+  ],
+  "where": {
+    "lon": 2.1108333333333,
+    "lat": 48.836666666667,
+    "precision": "city",
+    "label": "Rocquencourt, Yvelines"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

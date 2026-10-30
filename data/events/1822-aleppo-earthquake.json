@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1822-aleppo-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q109801958",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1822 Aleppo earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q109801958"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1822 Aleppo earthquake\", revision 1366163891"
+    }
+  ],
+  "title": "1822 Aleppo earthquake",
+  "summary": "The English Wikipedia article \"1822 Aleppo earthquake\", at revision 1366163891, opens: \"The northern part of the Ottoman Empire was struck by a major earthquake on 13 August 1822. It had an estimated magnitude of 7.0 Ms and a maximum felt intensity of IX (Destructive) on the European macroseismic scale (EMS). It may have triggered a tsunami, affecting nearby coasts. Damaging aftershocks continued for more than two years, with the most destructive being on 5 September 1822. The earthquake was felt over a large area including Rhodes, Cyprus and Gaza. The total death toll reported for this whole earthquake sequence ranges between 30,000 and 60,000, although 20,000 is regarded as a more likely number.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q109801958, imported by tools/import/wikidata.mjs. The item's own description reads \"Earthquake affecting the Middle East\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1822,
+    "end": 1822,
+    "date": "1822-08-13"
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

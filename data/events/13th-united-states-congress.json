@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "13th-united-states-congress",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4549554",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "13th United States Congress"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4549554"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"13th United States Congress\", revision 1380237686"
+    }
+  ],
+  "title": "13th United States Congress",
+  "summary": "The English Wikipedia article \"13th United States Congress\", at revision 1380237686, opens: \"The 13th United States Congress was a meeting of the legislative branch of the United States federal government, consisting of the United States Senate and the United States House of Representatives. It met in Washington, D.C. from March 4, 1813, to March 4, 1815, during the fifth and sixth years of James Madison's presidency. The apportionment of seats in the House of Representatives was based on the 1810 United States census. Both chambers had a Democratic-Republican majority. The first two sessions were held at the Capitol building while the third, convened after the Burning of Washington, took place in the First Patent Building.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4549554, imported by tools/import/wikidata.mjs. The item's own description reads \"meeting of the legislative branch of the U.S. federal government\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1815,
+    "date": "1813-03-04",
+    "endDate": "1815-03-04"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}
