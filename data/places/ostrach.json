@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ostrach",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q632770",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Ostrach",
+    "pt": "Ostrach"
+  },
+  "sources": [],
+  "names": [
+    "Ostrach"
+  ],
+  "where": {
+    "lon": 9.3813888888889,
+    "lat": 47.9525,
+    "precision": "city",
+    "label": "Ostrach"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

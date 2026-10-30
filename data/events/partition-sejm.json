@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "partition-sejm",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4354098",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Partition Sejm"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4354098"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Partition Sejm\", revision 1328227178"
+    }
+  ],
+  "title": "Partition Sejm",
+  "summary": "The English Wikipedia article \"Partition Sejm\", at revision 1328227178, opens: \"The Partition Sejm was a Sejm lasting from 1773 to 1775 in the Polish–Lithuanian Commonwealth, convened by its three neighbours in order to legalize their First Partition of Poland. During its first days in session, that Sejm was the site of Tadeusz Rejtan's famous gesture of protest against Partition. The Sejm also passed other legislation, notably establishing the Permanent Council and the Commission of National Education. Cardinal Laws were confirmed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4354098, imported by tools/import/wikidata.mjs. The item's own description reads \"Puppet Polish legislature created to legally enable the country's partition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1773,
+    "end": 1775,
+    "date": "1773-04-19",
+    "endDate": "1775-04-11"
+  },
+  "place": "warsaw",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

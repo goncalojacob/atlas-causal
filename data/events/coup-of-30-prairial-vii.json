@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "coup-of-30-prairial-vii",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2998928",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Coup of 30 Prairial VII",
+    "pt": "Golpe de 30 de Prairial"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2998928"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Coup of 30 Prairial VII\", revision 1369393599"
+    }
+  ],
+  "title": "Coup of 30 Prairial VII",
+  "summary": "The English Wikipedia article \"Coup of 30 Prairial VII\", at revision 1369393599, opens: \"The Coup of 30 Prairial Year VII, also known as the Revenge of the Councils, was a bloodless coup in France that occurred on 16 June 1799. It left Emmanuel-Joseph Sieyès as the dominant figure of the French government, and prefigured the coup of 18 Brumaire that brought Napoleon Bonaparte to power.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2998928, imported by tools/import/wikidata.mjs. The item's own description reads \"June 1799 French government and military replacements\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-06-17",
+    "endDate": "1799-06-18"
+  },
+  "place": "french-first-republic",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "french-revolution"
+}

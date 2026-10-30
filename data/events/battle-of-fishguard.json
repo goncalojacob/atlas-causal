@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-fishguard",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888504",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Fishguard",
+    "pt": "Batalha de Fishguard"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888504"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fishguard\", revision 1370110273"
+    }
+  ],
+  "title": "Battle of Fishguard",
+  "summary": "The English Wikipedia article \"Battle of Fishguard\", at revision 1370110273, opens: \"The Battle of Fishguard was a military invasion of Great Britain by Revolutionary France during the War of the First Coalition. The brief campaign, on 22–24 February 1797, is the most recent landing on British soil by a hostile foreign force and thus is often referred to as the \"last invasion of mainland Britain\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888504, imported by tools/import/wikidata.mjs. The item's own description reads \"1797 invasion of Great Britain by the French First Republic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1797,
+    "end": 1797,
+    "date": "1797-02-22",
+    "endDate": "1797-02-24"
+  },
+  "place": "fishguard",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}

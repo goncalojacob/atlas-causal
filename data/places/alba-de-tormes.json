@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "alba-de-tormes",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q946344",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Alba de Tormes",
+    "pt": "Alba de Tormes"
+  },
+  "sources": [],
+  "names": [
+    "Alba de Tormes"
+  ],
+  "where": {
+    "lon": -5.5161111111111,
+    "lat": 40.824722222222,
+    "precision": "city",
+    "label": "Alba de Tormes"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

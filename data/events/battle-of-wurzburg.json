@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-wurzburg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1415566",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Würzburg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1415566"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Würzburg\", revision 1370277055"
+    }
+  ],
+  "title": "Battle of Würzburg",
+  "summary": "The English Wikipedia article \"Battle of Würzburg\", at revision 1370277055, opens: \"The Battle of Würzburg was fought on 3 September 1796 between an army of the Habsburg monarchy led by Archduke Charles, Duke of Teschen and an army of the First French Republic led by Jean-Baptiste Jourdan. The French attacked the archduke's forces, but they were resisted until the arrival of reinforcements decided the engagement in favor of the Austrians. The French retreated west toward the Rhine River. The action occurred during the War of the First Coalition, part of the French Revolutionary Wars. Würzburg is 95 kilometres (59 mi) southeast of Frankfurt.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1415566, imported by tools/import/wikidata.mjs. The item's own description reads \"1796 battle during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1796,
+    "end": 1796,
+    "date": "1796-09-03"
+  },
+  "place": "wurzburg",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}

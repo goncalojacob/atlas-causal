@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "st-philip-s-castle",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2970599",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "St. Philip's Castle"
+  },
+  "sources": [],
+  "names": [
+    "St. Philip's Castle"
+  ],
+  "where": {
+    "lon": 4.30569,
+    "lat": 39.8653,
+    "precision": "point",
+    "label": "St. Philip's Castle"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

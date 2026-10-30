@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "schliengen",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q62037",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Schliengen",
+    "pt": "Schliengen"
+  },
+  "sources": [],
+  "names": [
+    "Schliengen"
+  ],
+  "where": {
+    "lon": 7.5772222222222,
+    "lat": 47.755555555556,
+    "precision": "city",
+    "label": "Schliengen"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-warsaw-1794",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q982413",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Warsaw (1794)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q982413"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Warsaw (1794)\", revision 1382460975"
+    }
+  ],
+  "title": "Siege of Warsaw (1794)",
+  "summary": "The English Wikipedia article \"Siege of Warsaw (1794)\", at revision 1382460975, opens: \"The Siege of Warsaw of 1794 was a joint Russian and Prussian siege of the capital of the Polish–Lithuanian Commonwealth, during the Kościuszko Uprising in the summer of 1794. It ended with the Polish victory when, after a two-month siege, the Prussian and Russian army ended the siege and withdrew from Warsaw.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q982413, imported by tools/import/wikidata.mjs. The item's own description reads \"1794 battle of the Kościuszko Uprising\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1794,
+    "end": 1794,
+    "date": "1794-07-13",
+    "endDate": "1794-09-06"
+  },
+  "place": "warsaw",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "kosciuszko-uprising"
+}

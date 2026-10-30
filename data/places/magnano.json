@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "magnano",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q18078",
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Magnano",
+    "pt": "Magnano"
+  },
+  "sources": [],
+  "names": [
+    "Magnano"
+  ],
+  "where": {
+    "lon": 8.00302,
+    "lat": 45.46336,
+    "precision": "city",
+    "label": "Magnano"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "gulf-of-genoa",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1065271",
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Gulf of Genoa",
+    "pt": "Golfo de Gênova"
+  },
+  "sources": [],
+  "names": [
+    "Gulf of Genoa",
+    "Golfo de Gênova"
+  ],
+  "where": {
+    "lon": 8.9166666666667,
+    "lat": 44.166666666667,
+    "precision": "region",
+    "label": "Gulf of Genoa"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
