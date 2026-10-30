@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "metre-convention",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q217429",
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Metre Convention",
+    "pt": "Convenção do Metro"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q217429"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Metre Convention\", revision 1382160352"
+    }
+  ],
+  "title": "Metre Convention",
+  "summary": "The English Wikipedia article \"Metre Convention\", at revision 1382160352, opens: \"The Metre Convention, also known as the Treaty of the Metre, is an international treaty that was signed in Paris on 20 May 1875 by representatives of 17 sovereign states: Argentina, Austria-Hungary, Belgium, Brazil, Denmark, France, Germany, Italy, Peru, Portugal, Russia, Spain, Sweden-Norway, Switzerland, the Ottoman Empire, the United States, and Venezuela.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q217429, imported by tools/import/wikidata.mjs. The item's own description reads \"1875 international treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1875,
+    "end": 1875,
+    "date": "1875-05-20"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

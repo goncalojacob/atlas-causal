@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "wars-of-kappel",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q240243",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Wars of Kappel"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q240243"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Wars of Kappel\", revision 1250379051"
+    }
+  ],
+  "title": "Wars of Kappel",
+  "summary": "The English Wikipedia article \"Wars of Kappel\", at revision 1250379051, opens: \"The wars of Kappel (Kappelerkriege) is a collective term for two armed conflicts fought near Kappel am Albis between the Catholic and the Protestant cantons of the Old Swiss Confederacy during the Reformation in Switzerland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q240243, imported by tools/import/wikidata.mjs. The item's own description reads \"series of armed conflicts\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1529,
+    "end": 1531
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

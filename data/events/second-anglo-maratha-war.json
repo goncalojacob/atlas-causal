@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "second-anglo-maratha-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q233642",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Second Anglo-Maratha War",
+    "pt": "Segunda Guerra Anglo-Marata"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q233642"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Anglo-Maratha War\", revision 1380659819"
+    }
+  ],
+  "title": "Second Anglo-Maratha War",
+  "summary": "The English Wikipedia article \"Second Anglo-Maratha War\", at revision 1380659819, opens: \"Second Anglo-Maratha War was a large conflict within the Maratha Empire involving the East India Company. It resulted in a major loss of territory for the Marathas, including regions around Delhi and in present-day Gujarat falling into direct Company rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q233642, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between the British East India Company and the Maratha Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1803,
+    "end": 1805
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
