@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-diamond-rock",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870872",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Diamond Rock",
+    "pt": "Batalha de Diamond Rock"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870872"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Diamond Rock\", revision 1378412199"
+    }
+  ],
+  "title": "Battle of Diamond Rock",
+  "summary": "The English Wikipedia article \"Battle of Diamond Rock\", at revision 1378412199, opens: \"The Battle of Diamond Rock took place between 31 May and 2 June 1805 during the War of the Third Coalition, when a Franco-Spanish force dispatched under Captain Julien Cosmao was able to retake Diamond Rock, on the approach to Fort-de-France, from the British forces that had occupied it over a year before.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870872, imported by tools/import/wikidata.mjs. The item's own description reads \"1805 battle during the War of the Third Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1805,
+    "end": 1805,
+    "date": "1805-05-31",
+    "endDate": "1805-06-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (from Q142, the country the item names): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "napoleonic-wars"
+}

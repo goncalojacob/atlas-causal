@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "old-battlefield-of-kawanakajima",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q11477635",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-30"
+  },
+  "sources": [],
+  "names": [
+    "Old Battlefield of Kawanakajima"
+  ],
+  "where": {
+    "lon": 138.18736111111,
+    "lat": 36.590138888889,
+    "precision": "point",
+    "label": "Old Battlefield of Kawanakajima"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

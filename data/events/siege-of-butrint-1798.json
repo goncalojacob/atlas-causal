@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-butrint-1798",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q131008303",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Butrint (1798)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q131008303"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Butrint (1798)\", revision 1378568296"
+    }
+  ],
+  "title": "Siege of Butrint (1798)",
+  "summary": "The English Wikipedia article \"Siege of Butrint (1798)\", at revision 1378568296, opens: \"The siege of Butrint took place on 18–25 October [O.S. 7–14 October] 1798 between Revolutionary France and Ali Pasha of Janina, the ruler of the semi-autonomous Ottoman Pashalik of Yanina.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q131008303, imported by tools/import/wikidata.mjs. The item's own description reads \"Ottoman victory over France in Albania\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1798,
+    "date": "1798-10-18",
+    "endDate": "1798-10-25"
+  },
+  "place": "butrint",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mediterranean-campaign-of-1798"
+}

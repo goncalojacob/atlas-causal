@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-gloucester-1775",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q32198",
+  "wikipedia": {
+    "en": "Battle of Gloucester (1775)"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q32198"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gloucester (1775)\", revision 1380819915"
+    }
+  ],
+  "title": "Battle of Gloucester (1775)",
+  "summary": "The English Wikipedia article \"Battle of Gloucester (1775)\", at revision 1380819915, opens: \"The Battle of Gloucester was a skirmish fought early in the American Revolutionary War at Gloucester, Massachusetts on August 8 or 9, 1775. Royal Navy Captain John Linzee, commanding the sloop-of-war HMS Falcon, spotted two schooners that were returning from the West Indies. After capturing one schooner, Linzee chased the second one into Gloucester Harbor, where it was grounded. The townspeople called out their militia, captured British seamen sent to seize the grounded schooner, and recovered the captured ship as well.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q32198, imported by tools/import/wikidata.mjs. The item's own description reads \"1775 skirmish fought early in the American Revolutionary War at Gloucester, Massachusetts\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1775
+  },
+  "place": "massachusetts",
+  "region": null,
+  "regionNote": null,
+  "parent": "boston-campaign",
+  "category": "war",
+  "actors": []
+}

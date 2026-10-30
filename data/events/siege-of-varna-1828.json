@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-varna-1828",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2073130",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Varna (1828)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2073130"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Varna (1828)\", revision 1371322416"
+    }
+  ],
+  "title": "Siege of Varna (1828)",
+  "summary": "The English Wikipedia article \"Siege of Varna (1828)\", at revision 1371322416, opens: \"The siege of Varna took place during the Russo-Turkish War, 1828–1829. The Russian troops forced the Turkish garrison of Varna to capitulate after more than two-month siege.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2073130, imported by tools/import/wikidata.mjs. The item's own description reads \"1828 siege during the Russo-Turkish War, (1828–29)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1828,
+    "end": 1828,
+    "date": "1828-07-13",
+    "endDate": "1828-10-11"
+  },
+  "place": "bulgaria-q219",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1828-1829"
+}

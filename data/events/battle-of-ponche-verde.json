@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-ponche-verde",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q106542714",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Ponche Verde",
+    "pt": "Batalha do Ponche Verde"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q106542714"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ponche Verde\", revision 1370586379"
+    }
+  ],
+  "title": "Battle of Ponche Verde",
+  "summary": "The English Wikipedia article \"Battle of Ponche Verde\", at revision 1370586379, opens: \"The Battle of Ponche Verde took place on 26 May 1843 between troops of the breakaway Riograndense Republic and forces loyal to the Empire of Brazil during the Ragamuffin War's late stages; it ended with an organized withdrawal by the republican forces. It is considered to have been the last major battle in the conflict.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q106542714, imported by tools/import/wikidata.mjs. The item's own description reads \"pivotal battle of the Ragamuffin War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1843,
+    "end": 1843,
+    "date": "1843-05-26"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "ragamuffin-war"
+}
