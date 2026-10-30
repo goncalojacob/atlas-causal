@@ -400,6 +400,15 @@
         }
       ]
     },
+    "action-of-2-may-1707": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "action-of-26-may-1789": {
       "from": "git",
       "versions": [
@@ -925,6 +934,15 @@
         }
       ]
     },
+    "battle-of-banja-luka": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-bassano": {
       "from": "git",
       "versions": [
@@ -1099,6 +1117,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-cabrita-point": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -1744,6 +1771,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-francavilla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -2545,6 +2581,15 @@
         }
       ]
     },
+    "battle-of-malatitze": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-mallavelly": {
       "from": "git",
       "versions": [
@@ -2909,12 +2954,30 @@
         }
       ]
     },
+    "battle-of-osel-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-oudenarde": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-palkane": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -3377,6 +3440,15 @@
         }
       ]
     },
+    "battle-of-salociai-1703": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-samarra-1733": {
       "from": "git",
       "versions": [
@@ -3608,6 +3680,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-staket": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -4532,6 +4613,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "capture-of-vigo-and-pontevedra": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -5768,6 +5858,15 @@
         }
       ]
     },
+    "jacobite-rising-of-1719": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "jacobite-rising-of-1745": {
       "from": "git",
       "versions": [
@@ -5837,6 +5936,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "kyoho-famine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6284,6 +6392,15 @@
         }
       ]
     },
+    "persian-embassy-to-louis-xiv": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "persian-expedition-of-1796": {
       "from": "git",
       "versions": [
@@ -6609,6 +6726,15 @@
         }
       ]
     },
+    "russian-occupations-of-beirut": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "russo-circassian-war": {
       "from": "git",
       "versions": [
@@ -6736,6 +6862,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "scilly-naval-disaster-of-1707": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -7157,6 +7292,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-fredriksten": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -7651,12 +7795,30 @@
         }
       ]
     },
+    "siege-of-stralsund-1711-1715": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "siege-of-thionville-1792": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-thorn-1703": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -7709,6 +7871,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "siege-of-viborg-1710": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -8045,6 +8216,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "thirteenth-siege-of-gibraltar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
