@@ -3692,6 +3692,15 @@
         }
       ]
     },
+    "first-war-of-kappel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "fourth-battle-of-kawanakajima": {
       "from": "git",
       "versions": [
@@ -4459,6 +4468,15 @@
         }
       ]
     },
+    "moldavian-magnate-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "mughal-conquest-of-bengal": {
       "from": "git",
       "versions": [
@@ -4703,6 +4721,15 @@
       ]
     },
     "ottoman-wars-in-africa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "pacification-of-ghent": {
       "from": "git",
       "versions": [
         {
@@ -5155,6 +5182,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "russo-turkish-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6875,6 +6911,15 @@
         }
       ]
     },
+    "time-of-troubles": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "toungoo-ava-war": {
       "from": "git",
       "versions": [
@@ -7109,6 +7154,15 @@
         }
       ]
     },
+    "treaty-of-malmo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "treaty-of-mozhaysk": {
       "from": "git",
       "versions": [
@@ -7214,6 +7268,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "truce-of-adrianople": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -7392,6 +7455,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "war-of-the-succession-of-landshut": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

@@ -3960,6 +3960,15 @@
         }
       ]
     },
+    "french-and-indian-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "glorious-revolution": {
       "from": "git",
       "versions": [
@@ -4820,6 +4829,15 @@
         }
       ]
     },
+    "peace-of-zsitvatorok": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "peach-war": {
       "from": "git",
       "versions": [
@@ -5289,6 +5307,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "russo-persian-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6618,6 +6645,24 @@
         }
       ]
     },
+    "swedish-intervention-in-the-thirty-years-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "swiss-peasant-war-of-1653": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "ten-years-war-franche-comte": {
       "from": "git",
       "versions": [
@@ -7494,6 +7539,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "twelve-years-truce": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
