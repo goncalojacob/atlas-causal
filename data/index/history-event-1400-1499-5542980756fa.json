@@ -1064,6 +1064,15 @@
         }
       ]
     },
+    "crimean-campaign-1475": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "dano-hanseatic-war-1426-1435": {
       "from": "git",
       "versions": [
@@ -1074,6 +1083,15 @@
       ]
     },
     "dutch-hanseatic-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "engelbrekt-rebellion": {
       "from": "git",
       "versions": [
         {
@@ -1397,6 +1415,15 @@
         }
       ]
     },
+    "lam-son-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "lithuanian-civil-war-1432-1438": {
       "from": "git",
       "versions": [
@@ -1421,6 +1448,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "mainz-diocesan-feud": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -1451,6 +1487,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "muscovite-lithuanian-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -1571,6 +1616,15 @@
         }
       ]
     },
+    "peace-of-szeged": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "persecution-of-jews-and-muslims-by-manuel-i-of-portugal": {
       "from": "git",
       "versions": [
@@ -1649,6 +1703,24 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "russo-kazan-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "russo-swedish-war-1495-1497": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

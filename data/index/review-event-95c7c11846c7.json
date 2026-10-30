@@ -12710,6 +12710,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "anglo-swedish-war-of-1810-1812",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "napoleonic-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Anglo-Swedish war of 1810–1812"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "anglo-turkish-war-1807-1809",
       "kind": "event",
@@ -13100,6 +13131,35 @@
       "revised": null,
       "status": "active",
       "title": "Ansei Purge"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "ansei-treaties",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Ansei Treaties"
     },
     {
       "authors": [
@@ -15140,6 +15200,34 @@
       "revised": null,
       "status": "active",
       "title": "Attacks on Fuerteventura in 1740"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "augsburg-confession",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Augsburg Confession"
     },
     {
       "authors": [
@@ -84446,6 +84534,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "burmese-siamese-war-1547-1549",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Burmese–Siamese War (1547–1549)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-15",
       "id": "burmese-siamese-war-1759-1760",
       "kind": "event",
@@ -87835,6 +87952,34 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "caroline-affair",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Caroline affair"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "carolines-question",
       "kind": "event",
@@ -88665,6 +88810,34 @@
       "revised": null,
       "status": "active",
       "title": "Chechen–Russian conflict"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "chemical-revolution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Chemical revolution"
     },
     {
       "authors": [
@@ -91478,6 +91651,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "constitution-of-the-year-viii",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Constitution of the Year VIII"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "law",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "constitution-of-the-year-x",
       "kind": "event",
@@ -91773,6 +91975,35 @@
       "revised": null,
       "status": "active",
       "title": "Convention of Kanagawa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "convention-of-kutahya",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Convention of Kütahya"
     },
     {
       "authors": [
@@ -93186,6 +93417,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "crawford-expedition",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Crawford expedition"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "creek-war",
       "kind": "event",
@@ -93353,6 +93615,36 @@
       "revised": null,
       "status": "active",
       "title": "Cretan War (1645–1669)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "crimean-campaign-1475",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "span-from-title",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Crimean Campaign (1475)"
     },
     {
       "authors": [
@@ -93546,6 +93838,35 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Croat–Bosniak War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "croatian-slovene-peasant-revolt",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Croatian–Slovene Peasant Revolt"
     },
     {
       "authors": [
@@ -94083,6 +94404,34 @@
       "revised": null,
       "status": "active",
       "title": "Cyprus Convention"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "dacke-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Dacke War"
     },
     {
       "authors": [
@@ -94766,6 +95115,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "death-of-napoleon",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Death of Napoleon"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "death",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "death-of-wolfgang-amadeus-mozart",
       "kind": "event",
@@ -94991,6 +95369,35 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Decolonisation of Asia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "decolonization-of-the-americas",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Decolonization of the Americas"
     },
     {
       "authors": [
@@ -95352,6 +95759,34 @@
       "revised": null,
       "status": "active",
       "title": "Desmichels Treaty"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "desmond-rebellions",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Desmond Rebellions"
     },
     {
       "authors": [
@@ -96344,6 +96779,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-10-30",
+      "id": "dutch-revolt",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Dutch Revolt"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -96832,6 +97295,35 @@
       "revised": null,
       "status": "active",
       "title": "Edict of 1577"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "edict-of-amboise",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Edict of Amboise"
     },
     {
       "authors": [
@@ -97485,6 +97977,34 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "The Empire of Brazil"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "engelbrekt-rebellion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Engelbrekt rebellion"
     },
     {
       "authors": [
@@ -107128,6 +107648,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "great-hurricane-of-1780",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Great Hurricane of 1780"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "revolution",
       "cites": [
         "wikidata"
@@ -114276,6 +114825,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "jihad-of-usman-dan-fodio",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Jihad of Usman dan Fodio"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -115777,6 +116354,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "koliivshchyna",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Koliivshchyna"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -116588,6 +117193,34 @@
       "revised": null,
       "status": "active",
       "title": "Lala Mustafa Pasha's Caucasian campaign"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "lam-son-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Lam Sơn uprising"
     },
     {
       "authors": [
@@ -119270,6 +119903,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "mainz-diocesan-feud",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mainz Diocesan Feud"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "malaboch-war",
       "kind": "event",
@@ -119287,6 +119949,34 @@
       "revised": null,
       "status": "active",
       "title": "Malaboch War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "malaspina-expedition",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Malaspina Expedition"
     },
     {
       "authors": [
@@ -119531,6 +120221,34 @@
       "revised": null,
       "status": "active",
       "title": "Manhattan Project"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "mannerism",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mannerism"
     },
     {
       "authors": [
@@ -120579,6 +121297,35 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "mauritius-campaign-of-1809-1811",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mauritius campaign of 1809–1811"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -121122,6 +121869,34 @@
       "revised": null,
       "status": "active",
       "title": "Merthyr Rising"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "meshari",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Meshari"
     },
     {
       "authors": [
@@ -122831,6 +123606,35 @@
       "revised": null,
       "status": "active",
       "title": "Murder of Julia Martha Thomas"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "muscovite-lithuanian-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Muscovite–Lithuanian Wars"
     },
     {
       "authors": [
@@ -127708,6 +128512,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "ottoman-portuguese-confrontations",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Ottoman–Portuguese confrontations"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "ottoman-raid-on-the-balearic-islands-1501",
       "kind": "event",
@@ -128121,6 +128954,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "pact-of-zanjon",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Pact of Zanjón"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -128451,6 +129313,35 @@
       "revised": null,
       "status": "active",
       "title": "Palliser expedition"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "pangkor-treaty-of-1874",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Pangkor Treaty of 1874"
     },
     {
       "authors": [
@@ -129597,6 +130488,64 @@
       "revised": null,
       "status": "active",
       "title": "Peace of Ryswick"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "peace-of-saint-germain-en-laye",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Peace of Saint-Germain-en-Laye"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "peace-of-szeged",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Peace of Szeged"
     },
     {
       "authors": [
@@ -133925,6 +134874,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "quadruple-alliance-1815",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Quadruple Alliance (1815)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -136023,6 +137001,37 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "restoration-of-tahmasp-ii-to-the-safavid-throne",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "campaigns-of-nader-shah",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Restoration of Tahmasp II to the Safavid throne"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -138027,6 +139036,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "russo-kazan-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Russo-Kazan Wars"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "russo-persian-war-1651-1653",
       "kind": "event",
@@ -138132,6 +139170,35 @@
       "revised": null,
       "status": "active",
       "title": "Russo-Persian War (1826–1828)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "russo-swedish-war-1495-1497",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Russo-Swedish War (1495–1497)"
     },
     {
       "authors": [
@@ -139217,6 +140284,35 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Saint-Domingue expedition"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "saint-petersburg-declaration-of-1868",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Saint Petersburg Declaration of 1868"
     },
     {
       "authors": [
@@ -143348,6 +144444,66 @@
       "revised": null,
       "status": "active",
       "title": "September Massacres"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "serb-uprising-of-1596-1597",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "long-turkish-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Serb uprising of 1596–1597"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "serb-uprising-of-1848-1849",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "span-from-title",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Serb uprising of 1848–1849"
     },
     {
       "authors": [
@@ -158524,6 +159680,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "six-days-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "campaign-in-north-east-france-1814",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Six Days' Campaign"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "skirmish-at-bender",
       "kind": "event",
@@ -161813,6 +163000,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "swedish-norwegian-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-revolutionary-and-napoleonic-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Swedish–Norwegian War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "swedish-war-of-liberation",
       "kind": "event",
@@ -162475,6 +163693,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "ten-great-campaigns",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Ten Great Campaigns"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "ten-years-war",
       "kind": "event",
@@ -162736,6 +163983,35 @@
       "revised": null,
       "status": "active",
       "title": "Texas annexation"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "founding",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "texas-declaration-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Texas Declaration of Independence"
     },
     {
       "authors": [
@@ -170127,6 +171403,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "treaty-of-hunkar-iskelesi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Hünkâr İskelesi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "treaty-of-indian-springs-1821",
       "kind": "event",
@@ -175586,6 +176891,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "treaty-of-whampoa",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Whampoa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "treaty",
       "cites": [
         "wikidata",
@@ -176463,6 +177796,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "truce-of-ratisbon",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Truce of Ratisbon"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "truce-of-ulm-1647",
       "kind": "event",
@@ -176508,6 +177870,35 @@
       "revised": null,
       "status": "active",
       "title": "Truce of Vilna"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "truce-of-yam-zapolsky",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Truce of Yam-Zapolsky"
     },
     {
       "authors": [
@@ -178489,6 +179880,34 @@
       "revised": null,
       "status": "active",
       "title": "Vienna Monetary Treaty"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "vienna-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Vienna Uprising"
     },
     {
       "authors": [
@@ -180717,6 +182136,35 @@
       "revised": null,
       "status": "active",
       "title": "Watermelon Riot"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "webster-ashburton-treaty",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Webster–Ashburton Treaty"
     },
     {
       "authors": [
@@ -183956,6 +185404,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "anglo-swedish-war-of-1810-1812",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "anglo-turkish-war-1807-1809",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -183993,6 +185447,12 @@
     },
     {
       "id": "ansei-purge",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "ansei-treaties",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -184305,6 +185765,12 @@
     },
     {
       "id": "attacks-on-fuerteventura-in-1740",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "augsburg-confession",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -195848,6 +197314,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "burmese-siamese-war-1547-1549",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "burmese-siamese-war-1759-1760",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -196364,6 +197836,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "caroline-affair",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "carolines-question",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -196473,6 +197951,12 @@
     },
     {
       "id": "chechen-russian-conflict",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "chemical-revolution",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -196916,6 +198400,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "constitution-of-the-year-viii",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "constitution-of-the-year-x",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -196947,6 +198437,12 @@
     },
     {
       "id": "convention-of-kanagawa",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "convention-of-kutahya",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -197138,6 +198634,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "crawford-expedition",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "creek-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -197168,6 +198670,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "crimean-campaign-1475",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "crimean-campaigns-1687-1689",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -197193,6 +198701,12 @@
     },
     {
       "id": "crimean-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "croatian-slovene-peasant-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -197259,6 +198773,12 @@
     },
     {
       "id": "cyprus-convention",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "dacke-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -197378,6 +198898,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "death-of-napoleon",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "death-of-wolfgang-amadeus-mozart",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -197409,6 +198935,12 @@
     },
     {
       "id": "decolonisation-of-asia",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "decolonization-of-the-americas",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -197469,6 +199001,12 @@
     },
     {
       "id": "desmichels-treaty",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "desmond-rebellions",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -197624,6 +199162,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "dutch-revolt",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "dutch-revolt",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "dzungar-conquest-of-altishahr",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -197673,6 +199223,12 @@
     },
     {
       "id": "edict-of-1577",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "edict-of-amboise",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -197763,6 +199319,12 @@
     },
     {
       "id": "emin-pasha-relief-expedition",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "engelbrekt-rebellion",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -199178,6 +200740,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "great-hurricane-of-1780",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "great-irmandino-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -200150,6 +201718,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "jihad-of-usman-dan-fodio",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "jintian-uprising",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -200366,6 +201940,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "koliivshchyna",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "komenda-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -200469,6 +202049,12 @@
     },
     {
       "id": "lala-mustafa-pasha-s-caucasian-campaign",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "lam-son-uprising",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -200864,7 +202450,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "mainz-diocesan-feud",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "malaboch-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "malaspina-expedition",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -200901,6 +202499,12 @@
     },
     {
       "id": "manhattan-project",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "mannerism",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -201068,6 +202672,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "mauritius-campaign-of-1809-1811",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "may-revolution",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -201153,6 +202763,12 @@
     },
     {
       "id": "merthyr-rising",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "meshari",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -201405,6 +203021,12 @@
     },
     {
       "id": "murder-of-julia-martha-thomas",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "muscovite-lithuanian-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -202058,6 +203680,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "ottoman-portuguese-confrontations",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "ottoman-raid-on-the-balearic-islands-1501",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -202142,6 +203770,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "pact-of-zanjon",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "padri-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -202197,6 +203831,12 @@
     },
     {
       "id": "palliser-expedition",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "pangkor-treaty-of-1874",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -202377,6 +204017,18 @@
     },
     {
       "id": "peace-of-ryswick",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "peace-of-saint-germain-en-laye",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "peace-of-szeged",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -203084,6 +204736,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "quadruple-alliance-1815",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "quebec-conference-1864",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -203420,6 +205078,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "restoration-of-tahmasp-ii-to-the-safavid-throne",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "retour-des-cendres",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -203708,6 +205372,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "russo-kazan-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "russo-persian-war-1651-1653",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -203727,6 +205397,12 @@
     },
     {
       "id": "russo-persian-war-1826-1828",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "russo-swedish-war-1495-1497",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -203901,6 +205577,12 @@
     },
     {
       "id": "sahkulu-rebellion",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "saint-petersburg-declaration-of-1868",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -204495,6 +206177,18 @@
     },
     {
       "id": "september-massacres",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "serb-uprising-of-1596-1597",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "serb-uprising-of-1848-1849",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -207074,6 +208768,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "six-days-campaign",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "skirmish-at-bender",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -207482,6 +209182,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "swedish-norwegian-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "swedish-war-of-liberation",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -207572,6 +209278,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "ten-great-campaigns",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "ten-years-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -207615,6 +209327,12 @@
     },
     {
       "id": "texas-annexation",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "texas-declaration-of-independence",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -208838,6 +210556,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-hunkar-iskelesi",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-indian-springs-1821",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -209798,6 +211522,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-whampoa",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-wiener-neustadt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -209918,6 +211648,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "truce-of-ratisbon",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "truce-of-ulm-1647",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -209925,6 +211661,12 @@
     },
     {
       "id": "truce-of-vilna",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "truce-of-yam-zapolsky",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -210236,6 +211978,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "vienna-uprising",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "viree-de-galerne",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -210519,6 +212267,12 @@
     },
     {
       "id": "watermelon-riot",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "webster-ashburton-treaty",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
