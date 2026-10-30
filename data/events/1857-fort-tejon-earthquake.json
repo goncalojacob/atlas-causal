@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1857-fort-tejon-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q477444",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1857 Fort Tejon earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q477444"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1857 Fort Tejon earthquake\", revision 1367240004"
+    }
+  ],
+  "title": "1857 Fort Tejon earthquake",
+  "summary": "The English Wikipedia article \"1857 Fort Tejon earthquake\", at revision 1367240004, opens: \"The 1857 Fort Tejon earthquake occurred at about 8:20 a.m. on January 9 in central and Southern California. One of the largest recorded earthquakes in the United States, with an estimated moment magnitude of 7.9, it ruptured the southern part of the San Andreas Fault for a length of about 225 miles, between Parkfield and Wrightwood.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q477444, imported by tools/import/wikidata.mjs. The item's own description reads \"1857 earthquake in California, United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1857,
+    "end": 1857,
+    "date": "1857-01-09"
+  },
+  "place": "california",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

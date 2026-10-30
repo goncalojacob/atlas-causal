@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ruvo-di-puglia",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q51848",
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Ruvo di Puglia",
+    "pt": "Ruvo di Puglia"
+  },
+  "sources": [],
+  "names": [
+    "Ruvo di Puglia"
+  ],
+  "where": {
+    "lon": 16.483725,
+    "lat": 41.117288888889,
+    "precision": "city",
+    "label": "Ruvo di Puglia"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

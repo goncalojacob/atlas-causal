@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "goliad-texas",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q982494",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Goliad, Texas",
+    "pt": "Goliad"
+  },
+  "sources": [],
+  "names": [
+    "Goliad",
+    "Goliad, Texas"
+  ],
+  "where": {
+    "lon": -97.391944444444,
+    "lat": 28.668888888889,
+    "precision": "city",
+    "label": "Goliad, Texas"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

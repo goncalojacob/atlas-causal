@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "stanser-verkommnis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q667223",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Stanser Verkommnis"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q667223"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Stanser Verkommnis\", revision 1354143704"
+    }
+  ],
+  "title": "Stanser Verkommnis",
+  "summary": "The English Wikipedia article \"Stanser Verkommnis\", at revision 1354143704, opens: \"In the Stanser Verkommnis of 1481 the Tagsatzung solved the latent conflict between the rural and urban cantons of the Old Swiss Confederacy, averting the breaking of the Confederacy, and triggering its further expansion from 8 to 13 members until 1513.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q667223, imported by tools/import/wikidata.mjs. The item's own description reads \"1481 agreement between member states of the Old Swiss Confederation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1481,
+    "end": 1481,
+    "date": "1481-12-22"
+  },
+  "place": "stans",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
