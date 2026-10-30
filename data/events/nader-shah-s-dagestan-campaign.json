@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nader-shah-s-dagestan-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q20561601",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Nader Shah's Dagestan campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20561601"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nader Shah's Dagestan campaign\", revision 1381716240"
+    }
+  ],
+  "title": "Nader Shah's Dagestan campaign",
+  "summary": "The English Wikipedia article \"Nader Shah's Dagestan campaign\", at revision 1381716240, opens: \"Nader's Dagestan campaign, were the campaigns conducted by the Persian Empire under its Afsharid ruler Nader Shah between the years 1741 and 1743 in order to fully subjugate the Dagestan region in the North Caucasus Area. The conflict between the Persian Empire & the Lezgins and a myriad of other Caucasian tribes in the north was intermittently fought through the mid-1730s during Nader's first short expedition in the Caucasus until the last years of his reign and assassination in 1747 with minor skirmishes and raids. The incredibly difficult terrain of the northern Caucasus region made the task of subduing the Lezgins an extremely challenging one. Despite this Nader Shah gained numerous strongholds and fortresses from the Dagestanis and pushed them to the very verge of defeat. The Lezgins however held on in the northernmost reaches of Dagestan and continued to defy Persian domination.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20561601, imported by tools/import/wikidata.mjs. The item's own description reads \"persian Empire campaigns (1741–1743)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1741,
+    "end": 1741
+  },
+  "place": "north-caucasus",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "campaigns-of-nader-shah"
+}

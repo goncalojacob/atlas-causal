@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "russian-pillage-of-1719-1721",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3428126",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Russian Pillage of 1719–1721"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3428126"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian Pillage of 1719–1721\", revision 1310983884"
+    }
+  ],
+  "title": "Russian Pillage of 1719–1721",
+  "summary": "The English Wikipedia article \"Russian Pillage of 1719–1721\", at revision 1310983884, opens: \"The Russian Pillage, is the name for the action of the Imperial Russian Fleet toward the Swedish civilian population along the Swedish east coast, as well as expeditions and the raids of single unit in the inland, during the finishing years of the Great Northern War in 1719–1721.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3428126, imported by tools/import/wikidata.mjs. The item's own description reads \"1719–1721 Russian raids on the Swedish east coast\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1719,
+    "end": 1721,
+    "endDate": "1721-09-10"
+  },
+  "place": "baltic-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

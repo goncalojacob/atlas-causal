@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kassel",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2865",
+  "sitelinks": {
+    "count": 109,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Kassel",
+    "pt": "Kassel"
+  },
+  "sources": [],
+  "names": [
+    "Kassel"
+  ],
+  "where": {
+    "lon": 9.4979166666667,
+    "lat": 51.315777777778,
+    "precision": "city",
+    "label": "Kassel"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

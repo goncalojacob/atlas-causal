@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-boruszkowce",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5289222",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Boruszkowce"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5289222"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Boruszkowce\", revision 1370434940"
+    }
+  ],
+  "title": "Battle of Boruszkowce",
+  "summary": "The English Wikipedia article \"Battle of Boruszkowce\", at revision 1370434940, opens: \"The Battle of Boruszkowce was a battle in the Polish–Russian War of 1792. The battle took place on 14 June 1792, between a detachment of a Polish army of Michał Wielhorski and a Russian army group under the command of Mikhail Kakhovsky.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5289222, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in the Polish–Russian War of 1792\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1792,
+    "end": 1792,
+    "date": "1792-06-14"
+  },
+  "place": "borushkivtsi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "polish-russian-war-of-1792"
+}

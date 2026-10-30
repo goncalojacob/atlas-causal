@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "appin-murder",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q523680",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Appin Murder"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q523680"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Appin Murder\", revision 1381283248"
+    }
+  ],
+  "title": "Appin Murder",
+  "summary": "The English Wikipedia article \"Appin Murder\", at revision 1381283248, opens: \"The Appin Murder was the assassination, by a concealed marksman, of Colin Roy Campbell, the Clan Campbell tacksman of Glenure and factor for the Forfeited Estates Commission, on 14 May 1752. The murder, which took place on the confiscated estate of Clan Stewart of Appin in Lochaber in the west of Scotland, was an act of violent resistance against the large scale clearances taking place on the estate during the aftermath of the Jacobite Rising of 1745. The assassination led to the trial and execution of James Stewart of the Glens, often characterized as a notorious miscarriage of justice. The murder also inspired events in Robert Louis Stevenson's 1886 novel Kidnapped and its sequel Catriona.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q523680, imported by tools/import/wikidata.mjs. The item's own description reads \"Murder in 1752 near Appin, Scotland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1752,
+    "end": 1752,
+    "date": "1752-05-14"
+  },
+  "place": "appin",
+  "region": null,
+  "regionNote": null,
+  "category": "death",
+  "actors": []
+}

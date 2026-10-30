@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1766-istanbul-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6051642",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1766 Istanbul earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6051642"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1766 Istanbul earthquake\", revision 1374739691"
+    }
+  ],
+  "title": "1766 Istanbul earthquake",
+  "summary": "The English Wikipedia article \"1766 Istanbul earthquake\", at revision 1374739691, opens: \"The 1766 Istanbul earthquake was a strong earthquake with epicenter in the eastern part of the Sea of Marmara, in the Çınarcık Basin which occurred in the early hours of Thursday morning, 22 May 1766. The earthquake had an estimated magnitude of 7.1 on the surface-wave magnitude scale, and caused effects in a vast area extending from Izmit to Rodosto. In this area, the earthquake was followed by a tsunami which caused significant damage. The earthquake of 1766 was the last major earthquake to rock Istanbul because of a rupture of the North Anatolian Fault in the Marmara region.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6051642, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake in Turkey\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1766,
+    "end": 1766,
+    "date": "1766-05-22"
+  },
+  "place": "istanbul",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}
