@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "compromise-of-1850",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q39392",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Compromise of 1850",
+    "pt": "Compromisso de 1850"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q39392"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Compromise of 1850\", revision 1382071553"
+    }
+  ],
+  "title": "Compromise of 1850",
+  "summary": "The English Wikipedia article \"Compromise of 1850\", at revision 1382071553, opens: \"The Compromise of 1850 was a package of five separate bills passed by the United States Congress in September 1850 that temporarily defused tensions between slave and free states during the years leading up to the American Civil War. Designed by Whig senator Henry Clay and Democratic senator Stephen A. Douglas, with the support of President Millard Fillmore, the compromise centered on how to handle slavery in recently acquired territories from the Mexican–American War (1846–1848).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q39392, imported by tools/import/wikidata.mjs. The item's own description reads \"compromise on slavery in U.S. territories annexed from Mexico in the Mexican-American war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1850,
+    "end": 1850
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "law",
+  "actors": []
+}

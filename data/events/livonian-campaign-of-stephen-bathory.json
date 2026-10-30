@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "livonian-campaign-of-stephen-bathory",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q582613",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Livonian campaign of Stephen Báthory"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q582613"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Livonian campaign of Stephen Báthory\", revision 1371449071"
+    }
+  ],
+  "title": "Livonian campaign of Stephen Báthory",
+  "summary": "The English Wikipedia article \"Livonian campaign of Stephen Báthory\", at revision 1371449071, opens: \"The Livonian campaign of Stephen Báthory, also referred to as the Russo-Polish War of 1577–1582, took place in the final stage of the Livonian War, between 1577 and 1582. Polish–Lithuanian forces led by Stephen Báthory successfully fought against the army of Russian tsar Ivan IV over the Duchy of Livonia and Polotsk. Russian forces were expelled from Livonia before the campaign was concluded by the Truce of Jam Zapolski.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q582613, imported by tools/import/wikidata.mjs. The item's own description reads \"final stage of the Livonian War, between 1577 and 1582\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1577,
+    "end": 1582
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "livonian-war"
+}

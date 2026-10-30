@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "croatian-ottoman-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3396146",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Croatian–Ottoman wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3396146"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Croatian–Ottoman wars\", revision 1365560348"
+    }
+  ],
+  "title": "Croatian–Ottoman wars",
+  "summary": "The English Wikipedia article \"Croatian–Ottoman wars\", at revision 1365560348, opens: \"Croatian–Ottoman Wars can refer to one of the several conflicts between the Kingdom of Croatia and the Ottoman Empire:Long Campaign (1443–1444) of the King Vladislaus II of Hungary\nHundred Years' Croatian–Ottoman War, War for Croatia - a period of near constant mostly low-intensity warfare approximately 1493–1593 \nLong War (1593–1606)\nAustro-Turkish War (1663–1664)\nGreat Turkish War (1683–1699)\nAustro-Turkish War (1716–1718)\nAustro-Turkish War (1787–1791)\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3396146, imported by tools/import/wikidata.mjs. The item's own description reads \"conflicts between the Kingdom of Croatia and the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1443,
+    "end": 1791
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "noble-train-of-artillery",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6389258",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Noble train of artillery"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6389258"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Noble train of artillery\", revision 1360627645"
+    }
+  ],
+  "title": "Noble train of artillery",
+  "summary": "The English Wikipedia article \"Noble train of artillery\", at revision 1360627645, opens: \"The noble train of artillery, also known as the Knox Expedition, was an expedition led by Continental Army Colonel Henry Knox to transport heavy weaponry that had been captured at Fort Ticonderoga to the Continental Army camps outside Boston during the winter of 1775–76. Knox went to Ticonderoga in November 1775 and moved 60 tons of cannon and other armaments over the course of three winter months by boat, horse, ox-drawn sledges, and manpower along poor-quality roads, across two semi-frozen rivers, and through the forests and swamps of the lightly inhabited Berkshires to the Boston area, covering approximately 300 miles (500 km). Historian Victor Brooks has called Knox's exploit \"one of the most stupendous feats of logistics\" of the American Revolutionary War. The route he took is now known as the Henry Knox Trail.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6389258, imported by tools/import/wikidata.mjs. The item's own description reads \"1775 expedition led by Henry Knox that dragged artillery through the snow in order to beseige Boston\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1775,
+    "date": "1775-11-17"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

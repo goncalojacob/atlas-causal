@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-samugarh",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4087464",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Samugarh"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4087464"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Samugarh\", revision 1370588265"
+    }
+  ],
+  "title": "Battle of Samugarh",
+  "summary": "The English Wikipedia article \"Battle of Samugarh\", at revision 1370588265, opens: \"Battle of Samugarh, also known as Jang-e-Samugarh, was a decisive battle in the struggle for the throne during the Mughal war of succession (1657–1659) between the sons of Mughal Emperor Shah Jahan after the emperor's serious illness in September 1657. The battle of Samugarh was the second battle fought between Dara Shikoh and two of his younger brothers, Aurangzeb and Murad Baksh to decide who would be the heir of the throne after their father.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4087464, imported by tools/import/wikidata.mjs. The item's own description reads \"1658 battle between sons of the Mughal Emperor Shah Jahan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1658,
+    "end": 1658,
+    "date": "1658-05-29"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
