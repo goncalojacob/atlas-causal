@@ -6215,6 +6215,15 @@
         }
       ]
     },
+    "siege-of-maastricht-1673": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "siege-of-malacca-1606": {
       "from": "git",
       "versions": [
@@ -7224,6 +7233,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-lisbon-1668": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

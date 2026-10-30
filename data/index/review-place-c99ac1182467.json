@@ -536,7 +536,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 4,
+      "degree": 5,
       "id": "adriatic-sea",
       "kind": "place",
       "names": [
@@ -5216,7 +5216,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 9,
+      "degree": 10,
       "id": "barcelona",
       "kind": "place",
       "names": [
@@ -9496,7 +9496,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "buda",
       "kind": "place",
       "names": [
@@ -12677,7 +12677,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "charles-city-virginia",
       "kind": "place",
       "names": [
@@ -16365,6 +16365,36 @@
           "a9-place"
         ],
         "note": "Written by A9's place pass on 2026-09-24: P276 of an event's item names Q35, whose P625 is this point. Precision `country`: the class table calls the item an actor, because it answers what kind of RECORD an item becomes and a sovereign state becomes one; A9 asks where an event happened, and A12 (2) names `country` for that.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "department-of-cusco",
+      "kind": "place",
+      "names": [
+        "Cusco Department",
+        "Departamento de Cusco",
+        "Department of Cusco",
+        "Cusco (região)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -23201,6 +23231,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "glasgow-missouri",
+      "kind": "place",
+      "names": [
+        "Glasgow",
+        "Glasgow, Missouri",
+        "Glasgow (Missouri)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "glen-shiel",
@@ -27711,6 +27770,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "independence-missouri",
+      "kind": "place",
+      "names": [
+        "Independence",
+        "Independence, Missouri",
+        "Independence (Missouri)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 2,
       "id": "indian-springs-texas",
@@ -29186,7 +29274,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 105,
+      "degree": 120,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -35596,7 +35684,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 70,
+      "degree": 71,
       "id": "lisbon",
       "kind": "place",
       "names": [
@@ -37036,7 +37124,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "maastricht",
       "kind": "place",
       "names": [
@@ -40881,6 +40969,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 2,
+      "id": "mississippi",
+      "kind": "place",
+      "names": [
+        "Mississippi"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 2,
       "id": "mississippi-river",
@@ -42841,6 +42956,35 @@
       "kind": "place",
       "names": [
         "Murcheh Khvort"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "murfreesboro-tennessee",
+      "kind": "place",
+      "names": [
+        "Murfreesboro",
+        "Murfreesboro, Tennessee",
+        "Murfreesboro (Tennessee)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -49047,6 +49191,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "pirh-s-nli",
+      "kind": "place",
+      "names": [
+        "Pirhəsənli"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "pirin-mountains",
@@ -51042,7 +51213,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "pu-tusk",
       "kind": "place",
       "names": [
@@ -57741,7 +57912,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "shimoda-shizuoka",
       "kind": "place",
       "names": [
@@ -58634,7 +58805,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "solferino",
       "kind": "place",
       "names": [
@@ -64375,6 +64546,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "trafalgar-square",
+      "kind": "place",
+      "names": [
+        "Trafalgar Square"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-14",
       "degree": 1,
       "id": "transvaal-colony",
@@ -65600,7 +65798,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 84,
+      "degree": 86,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -66819,7 +67017,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "verdun",
       "kind": "place",
       "names": [
@@ -67067,7 +67265,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 11,
+      "degree": 12,
       "id": "vienna",
       "kind": "place",
       "names": [
