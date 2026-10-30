@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "truce-of-ratisbon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1041111",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Truce of Ratisbon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1041111"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Truce of Ratisbon\", revision 1364884889"
+    }
+  ],
+  "title": "Truce of Ratisbon",
+  "summary": "The English Wikipedia article \"Truce of Ratisbon\", at revision 1364884889, opens: \"The Truce of Ratisbon, or Truce of Regensburg, concluded the War of the Reunions, fought by France against Spain and the Holy Roman Empire. The Truce was signed on 15 August 1684 at the Dominican convent in Ratisbon between the French King Louis XIV, the Holy Roman Emperor Leopold I, and the Spanish King Charles II. The Spanish crown was involved because of its sovereignty over the Spanish Netherlands, once part of the Holy Roman Empire. The final agreements allowed Louis to retain Strasbourg, Luxembourg, and most other Reunion gains, but he had to hand back Courtrai and Dixmude. Luxembourg, Courtrai, and Dixmude were in the Spanish Netherlands, whereas Strasbourg had been a free imperial city. The truce was supposed to last twenty years, but Louis terminated it after four years by declaring war on the Dutch Republic on 16 November and by invading Philippsburg on 27 September 1688, thereby starting the Nine Years' War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1041111, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1684,
+    "end": 1684,
+    "date": "1684-08-15"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

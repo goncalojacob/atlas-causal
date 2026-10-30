@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "edict-of-amboise",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1284627",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Edict of Amboise",
+    "pt": "Edito de Amboise"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1284627"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Edict of Amboise\", revision 1360748321"
+    }
+  ],
+  "title": "Edict of Amboise",
+  "summary": "The English Wikipedia article \"Edict of Amboise\", at revision 1360748321, opens: \"The Edict of Amboise, also known as the Edict of Pacification, was signed at the Château of Amboise on 19 March 1563 by Catherine de' Medici, acting as regent for her son King Charles IX of France. The Edict ended the first war of the French Wars of Religion, inaugurating a period of official peace in France by guaranteeing the Huguenots religious privileges and freedoms. However, it was gradually undermined by continuing religious violence at a regional level and hostilities renewed in 1567.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1284627, imported by tools/import/wikidata.mjs. The item's own description reads \"1563 armistice which ended the first French War of Religion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1563,
+    "end": 1563,
+    "date": "1563-03-19"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

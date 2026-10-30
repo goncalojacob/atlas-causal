@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "crawford-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1139109",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Crawford expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1139109"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Crawford expedition\", revision 1371180330"
+    }
+  ],
+  "title": "Crawford expedition",
+  "summary": "The English Wikipedia article \"Crawford expedition\", at revision 1371180330, opens: \"The Crawford expedition, also known as the Battle of Sandusky, the Sandusky expedition, and Crawford's Defeat, was a 1782 campaign on the western front of the American Revolutionary War, and one of the final operations of the conflict. The campaign was led by Colonel William Crawford, an experienced officer who had served in the Continental Army and a childhood friend of George Washington. Crawford's goal was to destroy enemy Native American towns along the Sandusky River in the Ohio Country, with the hope of ending Native attacks on American settlers. The expedition was one in a series of raids against enemy settlements that both sides had conducted throughout the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1139109, imported by tools/import/wikidata.mjs. The item's own description reads \"1782 campaign in the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1782,
+    "end": 1782,
+    "date": "1782-05-25",
+    "endDate": "1782-06-12"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

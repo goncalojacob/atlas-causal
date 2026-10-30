@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "dacke-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1156907",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Dacke War",
+    "pt": "Guerra de Dacke"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1156907"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dacke War\", revision 1381777841"
+    }
+  ],
+  "title": "Dacke War",
+  "summary": "The English Wikipedia article \"Dacke War\", at revision 1381777841, opens: \"The Dacke War was a peasant uprising led by Nils Dacke in Småland, Sweden, in 1542 against the rule of Gustav Vasa. Dacke and his followers were dissatisfied with the heavy tax burden, the introduction of Lutheranism, and the confiscation of Church property. In 1543 the uprising was defeated, and Nils Dacke was killed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1156907, imported by tools/import/wikidata.mjs. The item's own description reads \"Large-scale Peasant revolt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1542,
+    "end": 1542
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "koliivshchyna",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1659789",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Koliivshchyna",
+    "pt": "Koliyivschyna"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1659789"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Koliivshchyna\", revision 1379571127"
+    }
+  ],
+  "title": "Koliivshchyna",
+  "summary": "The English Wikipedia article \"Koliivshchyna\", at revision 1379571127, opens: \"The Koliivshchyna was a major haidamaky rebellion that broke out in Right-bank Ukraine in June 1768, caused by the dissatisfaction of peasants with the treatment of Orthodox Christians by the Bar Confederation and serfdom, as well as by hostility of Cossacks and peasants to the local Polonized Ruthenian nobility and ethnic Poles. The uprising was accompanied by pogroms against both real and imagined supporters of the Bar Confederation, particularly ethnic Poles, Jews, Roman Catholics, and especially Byzantine Catholic priests and laity. This culminated in the massacre of Uman. The number of victims is estimated from 100,000 to 200,000. Many communities of national minorities completely disappeared in the areas devastated by the uprising.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1659789, imported by tools/import/wikidata.mjs. The item's own description reads \"uprising in Ukraine in June 1768\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1769,
+    "end": 1769,
+    "date": "1769-06"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

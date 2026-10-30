@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "texas-declaration-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1186774",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Texas Declaration of Independence"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1186774"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Texas Declaration of Independence\", revision 1382691102"
+    }
+  ],
+  "title": "Texas Declaration of Independence",
+  "summary": "The English Wikipedia article \"Texas Declaration of Independence\", at revision 1382691102, opens: \"The Texas Declaration of Independence, adopted on March 2, 1836, at the Convention of 1836 in Washington-on-the-Brazos, formally declared Texas's independence from Mexico during the Texas Revolution. At the convention George Childress, James Gaines, Edward Conrad, Collin McKinney, and Bailey Hardeman were appointed to committee and tasked with drawing up a declaration of independence. Childress likely wrote the document, or most of it, by himself. It was signed by delegates the following day after corrections were made to the text.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1186774, imported by tools/import/wikidata.mjs. The item's own description reads \"Document of Texan Indpendence from Mexico\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1836,
+    "end": 1836
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "founding",
+  "actors": []
+}

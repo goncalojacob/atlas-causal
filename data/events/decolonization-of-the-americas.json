@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "decolonization-of-the-americas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1183679",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Decolonization of the Americas",
+    "pt": "História da descolonização da América"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1183679"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Decolonization of the Americas\", revision 1382341877"
+    }
+  ],
+  "title": "Decolonization of the Americas",
+  "summary": "The English Wikipedia article \"Decolonization of the Americas\", at revision 1382341877, opens: \"The decolonization of the Americas occurred over several centuries as most of the countries in the Americas gained their independence from European rule. The American Revolution was the first in the Americas, and the British defeat in the American Revolutionary War (1775–83) was a victory against a great power, aided by France and Spain, Britain's enemies. The French Revolution in Europe followed, and collectively these events had profound effects on the Spanish, Portuguese, and French colonies in the Americas. A revolutionary wave followed, resulting in the creation of several independent countries in Latin America. The Haitian Revolution (1791–1804), perhaps one of the most successful slave uprisings in history, resulted in the independence of the French slave colony of Saint-Domingue. The Peninsular War with France, which resulted from the Napoleonic occupation of Spain led to a power vacuum on the throne of Spain. The Spanish liberal revolution resulting from a power vacuum on the throne directly led to democratization in Spanish America, and caused Spanish Creoles to question their allegiance to Spain, stoking independence movements that culminated in various Spanish American wars of independence (1808–33), which were primarily fought between opposing groups of colonists and only secondarily against Spanish forces. At the same time, the Portuguese monarchy fled to Brazil during the French invasion of Portugal. After the royal court returned to Lisbon, the prince regent, Pedro, remained in Brazil and in 1822 successfully declared himself emperor of a newly independent Empire of Brazil.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1183679, imported by tools/import/wikidata.mjs. The item's own description reads \"process by which the countries in the Americas gained their independence from European rule\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1783,
+    "end": null
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

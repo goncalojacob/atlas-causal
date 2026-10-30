@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "serb-uprising-of-1596-1597",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q18639721",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Serb uprising of 1596–1597"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18639721"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Serb uprising of 1596–1597\", revision 1370737834"
+    }
+  ],
+  "title": "Serb uprising of 1596–1597",
+  "summary": "The English Wikipedia article \"Serb uprising of 1596–1597\", at revision 1370737834, opens: \"The Serb uprising of 1596–1597, also known as the Herzegovina uprising of 1596–1597, was a rebellion organized by Serbian Patriarch Jovan Kantul and led by Grdan, the vojvoda (\"duke\") of Nikšić against the Ottomans in the Sanjak of Herzegovina and Montenegro Vilayet, during the Long Turkish War (1593–1606). The uprising broke out in the aftermath of the failed Banat Uprising in 1594 and the burning of Saint Sava's relics on 27 April 1595; it included the tribes of Bjelopavlići, Drobnjaci, Nikšić, and Piva. The rebels, defeated at the field of Gacko in 1597, were forced to capitulate due to a lack of foreign support.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18639721, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1596,
+    "end": 1597
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": [],
+  "parent": "long-turkish-war"
+}

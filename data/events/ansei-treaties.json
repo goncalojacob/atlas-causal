@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "ansei-treaties",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1152499",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Ansei Treaties",
+    "pt": "Tratados Ansei"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1152499"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ansei Treaties\", revision 1291899637"
+    }
+  ],
+  "title": "Ansei Treaties",
+  "summary": "The English Wikipedia article \"Ansei Treaties\", at revision 1291899637, opens: \"The Ansei Treaties or the Ansei Five-Power Treaties are a series of treaties signed in 1858, during the Japanese Ansei era, between Japan on the one side, and the United States, Great Britain, Russia, Netherlands and France on the other. The first treaty, also called the Harris Treaty, was signed by the United States in July 1858, with France, Russia, Britain and the Netherlands quickly followed within the year: Japan applied to the other nations the conditions granted to the United States under the \"most favoured nation\" provision.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1152499, imported by tools/import/wikidata.mjs. The item's own description reads \"1858 series of Japanese treaties\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1858
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}
