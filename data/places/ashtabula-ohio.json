@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ashtabula-ohio",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q726287",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Ashtabula, Ohio",
+    "pt": "Ashtabula"
+  },
+  "sources": [],
+  "names": [
+    "Ashtabula",
+    "Ashtabula, Ohio"
+  ],
+  "where": {
+    "lon": -80.796944444444,
+    "lat": 41.877222222222,
+    "precision": "city",
+    "label": "Ashtabula, Ohio"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

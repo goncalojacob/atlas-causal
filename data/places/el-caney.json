@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "el-caney",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3720866",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "El Caney"
+  },
+  "sources": [],
+  "names": [
+    "El Caney"
+  ],
+  "where": {
+    "lon": -75.766666666667,
+    "lat": 20.055833333333,
+    "precision": "city",
+    "label": "El Caney"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

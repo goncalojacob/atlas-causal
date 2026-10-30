@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "katowice-conference",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q12407161",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Katowice Conference",
+    "pt": "Conferência de Katowice"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12407161"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Katowice Conference\", revision 1334082951"
+    }
+  ],
+  "title": "Katowice Conference",
+  "summary": "The English Wikipedia article \"Katowice Conference\", at revision 1334082951, opens: \"The Katowice Conference was a convention of Hovevei Zion groups from various countries held in Kattowitz, Germany in November, 1884. It was assembled to address the need of a Jewish state and to develop a plan for the creation of a Jewish state. The original date for the conference was chosen to coincide with the 100th anniversary of the birth of Moses Montefiore.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12407161, imported by tools/import/wikidata.mjs. The item's own description reads \"the first congress of the Jewish movement Hovevei Zion groups in the city of Katowice\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1884,
+    "end": 1884
+  },
+  "place": "katowice",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

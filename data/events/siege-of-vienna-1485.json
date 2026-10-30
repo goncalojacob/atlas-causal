@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-vienna-1485",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510505",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Vienna (1485)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510505"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Vienna (1485)\", revision 1377667457"
+    }
+  ],
+  "title": "Siege of Vienna (1485)",
+  "summary": "The English Wikipedia article \"Siege of Vienna (1485)\", at revision 1377667457, opens: \"The siege of Vienna was a decisive siege in 1485 of the Austrian–Hungarian War. It was a consequence of the ongoing conflict between Frederick III and Matthias Corvinus. After the fall of Vienna it was merged with Hungary from 1485 to 1490. Matthias Corvinus also moved his royal court to the newly occupied city. However Vienna did not become the capital of Hungary.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510505, imported by tools/import/wikidata.mjs. The item's own description reads \"1485 siege of the Austrian–Hungarian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1485,
+    "end": 1485,
+    "date": "1485-01-29",
+    "endDate": "1485-06-01"
+  },
+  "place": "vienna",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "austrian-hungarian-war-1477-1488"
+}

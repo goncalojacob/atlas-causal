@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-tashkessen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3394726",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Tashkessen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3394726"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tashkessen\", revision 1370590663"
+    }
+  ],
+  "title": "Battle of Tashkessen",
+  "summary": "The English Wikipedia article \"Battle of Tashkessen\", at revision 1370590663, opens: \"The Battle of Tashkessen or Battle of Tashkesan took place during the Russo-Turkish War of 1877–1878. It was fought between the Ottoman Empire and the Russian Empire on December 31, 1877, in what is now Bulgaria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3394726, imported by tools/import/wikidata.mjs. The item's own description reads \"1877 battle of the Russo-Turkish War (1877–1878)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1877,
+    "end": 1877,
+    "date": "1877-12-31"
+  },
+  "place": "bulgaria-q219",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

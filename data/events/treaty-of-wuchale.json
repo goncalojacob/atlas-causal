@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-wuchale",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2707120",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Treaty of Wuchale",
+    "pt": "Tratado de Wuchale"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2707120"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Wuchale\", revision 1313615650"
+    }
+  ],
+  "title": "Treaty of Wuchale",
+  "summary": "The English Wikipedia article \"Treaty of Wuchale\", at revision 1313615650, opens: \"The Treaty of Wuchale was a treaty signed between the Ethiopian Empire and the Kingdom of Italy. The signing parties were King Menelik II of Shewa, acting as Emperor of Ethiopia, and Count Pietro Antonelli representing Italy, on 2 May 1889, established the treaty after the Italian occupation of Eritrea. It was signed in the small Ethiopian town of Wuchale, from which the treaty got its name. The purpose of the treaty was to promote friendship and trade among the two countries. It was a treaty to maintain a positive long-lasting relationship between the two empires. The treaty has twenty articles written in two languages, Amharic and Italian; however, there were marked differences in the Italian and the Amharic versions of the treaty, which created miscommunications between the two countries. Specifically, Article 17 of the treaty was translated and interpreted differently by Ethiopia and Italy. Italy claimed the article imposed a protectorate over Ethiopia, while Ethiopia claimed the article allowed international diplomacy to be conducted through Italy by choice. When Menelik II denounced the treaty in 1893, Italy attempted to forcefully impose the protectorate over Ethiopia in the First Italo-Ethiopian War, which ended with Italy's defeat at the Battle of Adwa and the resulting Treaty of Addis Ababa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2707120, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty of Wuchale 1889\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1889,
+    "end": 1889,
+    "date": "1889-05-02"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

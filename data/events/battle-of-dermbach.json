@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-dermbach",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q589201",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Dermbach"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q589201"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dermbach\", revision 1370109637"
+    }
+  ],
+  "title": "Battle of Dermbach",
+  "summary": "The English Wikipedia article \"Battle of Dermbach\", at revision 1370109637, opens: \"The Battle of Dermbach was the first clash between Prussian and Bavarian troops in the Austro-Prussian War near Dermbach, Saxe-Weimar-Eisenach in modern-day Thuringia on 4 July 1866.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q589201, imported by tools/import/wikidata.mjs. The item's own description reads \"clash between Bavarian and Prussian troops on 4 July 1866\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866,
+    "date": "1866-07-04"
+  },
+  "place": "dermbach",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "austro-prussian-war"
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "augsburg-confession",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q154483",
+  "sitelinks": {
+    "count": 48,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Augsburg Confession",
+    "pt": "Confissão de Augsburgo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q154483"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Augsburg Confession\", revision 1379740724"
+    }
+  ],
+  "title": "Augsburg Confession",
+  "summary": "The English Wikipedia article \"Augsburg Confession\", at revision 1379740724, opens: \"The Augsburg Confession, also known as the Augustan Confession or the Augustana from its Latin title, Confessio Augustana, is the primary confession of faith of the Lutheran Church and one of the most important documents of the Protestant Reformation. A summary of the Christian faith drawn for the Diet of Augsburg, it was composed in both German and Latin and presented to the Holy Roman Emperor, Charles V, by a number of German rulers and free cities on 25 June 1530. The confession was written by Luther, Melanchthon, and two others.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q154483, imported by tools/import/wikidata.mjs. The item's own description reads \"1530 primary confession of faith of the Lutheran Church\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1530,
+    "end": 1530
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

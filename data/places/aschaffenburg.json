@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "aschaffenburg",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3942",
+  "sitelinks": {
+    "count": 77,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Aschaffenburg",
+    "pt": "Aschafemburgo"
+  },
+  "sources": [],
+  "names": [
+    "Aschaffenburg",
+    "Aschafemburgo"
+  ],
+  "where": {
+    "lon": 9.1493636,
+    "lat": 49.9740542,
+    "precision": "city",
+    "label": "Aschaffenburg"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

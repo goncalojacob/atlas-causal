@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ashtabula-river-railroad-disaster",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1312088",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Ashtabula River railroad disaster"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1312088"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ashtabula River railroad disaster\", revision 1378571065"
+    }
+  ],
+  "title": "Ashtabula River railroad disaster",
+  "summary": "The English Wikipedia article \"Ashtabula River railroad disaster\", at revision 1378571065, opens: \"The Ashtabula River railroad disaster was caused by the collapse of a bridge over the Ashtabula River near the town of Ashtabula, Ohio, in the United States on Friday, December 29, 1876. The Pacific Express, a train of the Lake Shore and Michigan Southern Railway, was passing over the bridge as it collapsed, falling into the icy river. All but the lead locomotive plunged into the river. The train's oil lanterns and coal-fired heating stoves set the wooden cars alight. Firefighters declined to extinguish the flames, leaving individuals to try to pull survivors from the wreck. Many who survived the crash burned to death in the wreckage. The accident killed approximately 92 of the 160 people aboard. It was the worst rail accident in the U.S. in the 19th century and the worst rail accident in U.S. history until the Great Train Wreck of 1918. It remains the third-deadliest rail accident in U.S. history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1312088, imported by tools/import/wikidata.mjs. The item's own description reads \"1876 train wreck in Ashtabula, Ohio\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1876,
+    "date": "1876-12-29"
+  },
+  "place": "ashtabula-ohio",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

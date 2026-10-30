@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-brescia-1438-1440",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q131208973",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Brescia (1438–1440)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q131208973"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Brescia (1438–1440)\", revision 1366191374"
+    }
+  ],
+  "title": "Siege of Brescia (1438–1440)",
+  "summary": "The English Wikipedia article \"Siege of Brescia (1438–1440)\", at revision 1366191374, opens: \"The siege of Brescia in 1438–1440 was an attempt by the Duchy of Milan to capture the city of Brescia, annexed in 1428 by the Republic of Venice, during the Wars in Lombardy. The long siege of Brescia was lifted after the Venetians successfully transported galleys overland into Lake Garda, overcoming the Milanese ships there. The successful defence of Brescia helped Venice preserve its recently acquired mainland dominions in the face of Milanese expansion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q131208973, imported by tools/import/wikidata.mjs. The item's own description reads \"1438–1440 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1438,
+    "end": 1440,
+    "date": "1438-09",
+    "endDate": "1438-12-13"
+  },
+  "place": "brescia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "wars-in-lombardy"
+}

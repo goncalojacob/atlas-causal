@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "caroline-affair",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1044444",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Caroline affair"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1044444"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Caroline affair\", revision 1369740349"
+    }
+  ],
+  "title": "Caroline affair",
+  "summary": "The English Wikipedia article \"Caroline affair\", at revision 1369740349, opens: \"The Caroline affair, also known as the Caroline case, was a diplomatic and military incident between the United States and the United Kingdom that began in December 1837 and unfolded over several years, eventually influencing the development of international law. The incident originated during the aftermath of the failed Upper Canada Rebellion, a movement aimed at reforming the British colonial government in Canada. After suffering defeat in battle, Canadian leader William Lyon Mackenzie and his followers fled to Navy Island in the Niagara River, where they declared a short-lived \"Republic of Canada\" and received support from American sympathizers across the border. Supplies and volunteers were transported to the island by the American steamboat Caroline.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1044444, imported by tools/import/wikidata.mjs. The item's own description reads \"19th century diplomatic crisis\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1837,
+    "end": 1842,
+    "date": "1837-12-29",
+    "endDate": "1842-08-09"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

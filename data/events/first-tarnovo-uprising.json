@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "first-tarnovo-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2980852",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "First Tarnovo Uprising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2980852"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Tarnovo Uprising\", revision 1370619651"
+    }
+  ],
+  "title": "First Tarnovo Uprising",
+  "summary": "The English Wikipedia article \"First Tarnovo Uprising\", at revision 1370619651, opens: \"The First Tarnovo uprising was a Bulgarian uprising against Ottoman rule based in the former Bulgarian capital, Tarnovo, that broke out in 1598 and was severely crushed by the Ottoman authorities.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2980852, imported by tools/import/wikidata.mjs. The item's own description reads \"Bulgarian uprising against Ottoman rule in 1598\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1598,
+    "end": 1598
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "long-turkish-war"
+}

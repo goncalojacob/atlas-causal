@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-ochakov-1737",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4337426",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Ochakov (1737)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4337426"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Ochakov (1737)\", revision 1371323666"
+    }
+  ],
+  "title": "Siege of Ochakov (1737)",
+  "summary": "The English Wikipedia article \"Siege of Ochakov (1737)\", at revision 1371323666, opens: \"The siege of Ochakov (1737) took place during the Austro-Russian–Turkish War (1735–39) in which the Russian army, led by Burkhard Christoph von Münnich, captured the Ottoman fortress of Ochakov. It took place in 1737.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4337426, imported by tools/import/wikidata.mjs. The item's own description reads \"1737 siege during the Austro-Russian- Turkish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1737,
+    "end": 1737,
+    "date": "1737-07-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1735-1739"
+}

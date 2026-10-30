@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "conquest-of-uppsala",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5162452",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Conquest of Uppsala"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5162452"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conquest of Uppsala\", revision 1370612778"
+    }
+  ],
+  "title": "Conquest of Uppsala",
+  "summary": "The English Wikipedia article \"Conquest of Uppsala\", at revision 1370612778, opens: \"The Conquest of Uppsala was a part of the Swedish War of Liberation that took place on 19 May 1521. After defeating a Danish counter-attack outside Västerås, Vasa sent two of his military commanders, Jöns Olofsson and Lars Eriksson, to take control of the eastern province of Uppland. After passing through the hundreds of Simtuna and Torstuna, Jöns Olofsson was met by local Danish commander Bengt Bjugg and his forces, who defeated the rebels and killed Olofsson.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5162452, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in 1521, part of Swedish war of liberation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1521,
+    "end": 1521,
+    "date": "1521-05-19"
+  },
+  "place": "uppsala",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "swedish-war-of-liberation"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "salon-de-la-rose-croix",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2111003",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Salon de la Rose + Croix"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2111003"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Salon de la Rose + Croix\", revision 1354007793"
+    }
+  ],
+  "title": "Salon de la Rose + Croix",
+  "summary": "The English Wikipedia article \"Salon de la Rose + Croix\", at revision 1354007793, opens: \"The Salon de la Rose + Croix was a series of six art and music salons hosted by Joséphin Péladan in 1890s Paris. The Salon de la Rose + Croix grew out of Péladan's Mystic Order of the Rose + Croix, a cultic religious art movement that he established in Paris. The avant-garde Salon artists included many of the prominent Symbolist painters, writers, and music composers of the period.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2111003, imported by tools/import/wikidata.mjs. The item's own description reads \"1890s Parisian art and music salons\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1890,
+      "max": 1899
+    },
+    "end": {
+      "min": 1890,
+      "max": 1899
+    }
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

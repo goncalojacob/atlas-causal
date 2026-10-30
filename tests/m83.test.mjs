@@ -267,15 +267,35 @@ test('and two stacks joined by several links are joined by one line', () => {
 // as its ten decades instead. Nothing splits on the corpus of 22 September, so
 // what is asserted here is the rule, over a topology built to reach it.
 
+// **"Nothing splits" was true on 22 September and is not the corpus any more.**
+// At about 6,200 events the 1800s passed the cap and the build filed them as
+// ten decades, as this rule says it should, and a test that wanted every shard
+// to be a century failed on a build that was right. So what is asserted is the
+// rule itself on whatever the corpus is: a shard is a century inside the cap,
+// or a decade of a century that was cut, and a century that was cut was cut
+// into all ten of its decades.
 test('A13: a century under the cap is one shard, as it always was', async () => {
   const topology = await topologyOf(path.join(ROOT, 'data'));
   const shards = buildAttributeShards(topology);
   const years = shards.filter((shard) => shard.from !== null);
   assert.ok(years.length > 3, 'the corpus spans several periods');
+  const decadesOf = new Map();
   for (const shard of years) {
-    assert.equal(shard.to - shard.from + 1, 100, `${shard.key} is a century`);
+    const width = shard.to - shard.from + 1;
+    if (width === 10) {
+      const century = Math.floor(shard.from / 100) * 100;
+      assert.equal(shard.from % 10, 0, `${shard.key} starts on a decade`);
+      decadesOf.set(century, (decadesOf.get(century) ?? 0) + 1);
+      continue;
+    }
+    assert.equal(width, 100, `${shard.key} is a century`);
     assert.ok(JSON.stringify(shard.file).length <= SHARD_CAP,
       `${shard.key} is inside the cap (${JSON.stringify(shard.file).length} of ${SHARD_CAP})`);
+  }
+  for (const [century, count] of decadesOf) {
+    assert.equal(count, 10, `the ${century}s were cut into all ten decades`);
+    assert.ok(!years.some((shard) => shard.from === century && shard.to === century + 99),
+      `and the ${century}s are not also a century`);
   }
 });
 

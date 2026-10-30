@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "east-timorese-rebellion-of-1911-1912",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2135001",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "East Timorese rebellion of 1911–1912",
+    "pt": "Revolta do Manufahi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2135001"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"East Timorese rebellion of 1911–1912\", revision 1370616375"
+    }
+  ],
+  "title": "East Timorese rebellion of 1911–1912",
+  "summary": "The English Wikipedia article \"East Timorese rebellion of 1911–1912\", at revision 1370616375, opens: \"The East Timorese rebellion of 1911–1912, sometimes called the Great Rebellion or Rebellion of Manufahi, was a response to the efforts of Portuguese colonial authorities to collect a head tax and enforce the corvée, part of their larger effort to encourage cash crop agriculture and construct modern infrastructure. The countrywide conflict of 1911–12 was the culmination of a series of revolts led by Dom Boaventura, the liurai (chief) of the native kingdom of Manufahi. The first lasted from 1894 to 1901, the second from 1907 to 1908. In 1911 Boaventura led an alliance of local kingdoms in the last and most serious revolt against the Portuguese.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2135001, imported by tools/import/wikidata.mjs. The item's own description reads \"series of rebellions in East Timor\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1911,
+    "end": 1912
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

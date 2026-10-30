@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "butrint",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q22002796",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-30"
+  },
+  "sources": [],
+  "names": [
+    "Butrint"
+  ],
+  "where": {
+    "lon": 20.02121,
+    "lat": 39.74613,
+    "precision": "city",
+    "label": "Butrint"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

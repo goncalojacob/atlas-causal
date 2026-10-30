@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-tre-kronor",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q126454193",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Tre Kronor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q126454193"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Tre Kronor\", revision 1372805134"
+    }
+  ],
+  "title": "Siege of Tre Kronor",
+  "summary": "The English Wikipedia article \"Siege of Tre Kronor\", at revision 1372805134, opens: \"The siege of Tre Kronor, or the siege of the Royal Castle in Stockholm, was a siege of the Tre Kronor Castle in Stockholm lasting from 17 October 1501 to 9 May 1502 between the Kalmar Union and Sten Sture the Elder's Swedish rebellion. The besieged unionists would suffer from food shortages, and Queen Christina of Saxony would issue a surrender on 5 May 1502 and would leave the castle on 9 May.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q126454193, imported by tools/import/wikidata.mjs. The item's own description reads \"siege between the Kalmar Union and Swedish rebels\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1501,
+    "end": 1502,
+    "date": "1501-10-17",
+    "endDate": "1502-05-09"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "dano-swedish-war-1501-1512"
+}

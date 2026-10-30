@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "french-geodesic-mission-to-the-equator",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3062459",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "French Geodesic Mission to the Equator"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3062459"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French Geodesic Mission to the Equator\", revision 1359401851"
+    }
+  ],
+  "title": "French Geodesic Mission to the Equator",
+  "summary": "The English Wikipedia article \"French Geodesic Mission to the Equator\", at revision 1359401851, opens: \"The Spanish-French Geodesic Mission, also called the French Geodesic Mission to Peru, was an 18th-century expedition to what is now Ecuador carried out for the purpose of performing an arc measurement, measuring the length of a degree of latitude near the Equator, by which the Earth's radius can be inferred. The mission was one of the first geodesic missions carried out under modern scientific principles, and the first major international scientific expedition.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3062459, imported by tools/import/wikidata.mjs. The item's own description reads \"18th-century expedition to present-day Ecuador\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1735,
+    "end": null,
+    "date": "1735-05"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

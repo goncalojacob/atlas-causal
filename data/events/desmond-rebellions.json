@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "desmond-rebellions",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1200808",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Desmond Rebellions"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1200808"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Desmond Rebellions\", revision 1381385318"
+    }
+  ],
+  "title": "Desmond Rebellions",
+  "summary": "The English Wikipedia article \"Desmond Rebellions\", at revision 1381385318, opens: \"The Desmond Rebellions occurred in 1569–1573 and 1579–1583 in the Irish province of Munster. They were rebellions by the Earl of Desmond, the head of the FitzGerald dynasty in Munster, and his followers, the Geraldines and their allies, against the threat of the extension of the English government over the province. The rebellions were motivated primarily by the desire to maintain the independence of feudal lords from the English monarch but also had an element of religious antagonism between Catholic Geraldines and the Protestant English state. They culminated in the destruction of the Desmond dynasty and the plantation or colonisation of Munster with English Protestant settlers. 'Desmond' is the Anglicisation of the Irish Deasmumhain, meaning 'South Munster'.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1200808, imported by tools/import/wikidata.mjs. The item's own description reads \"Two rebellions by the FitzGerald dynasty in Ireland, late 16th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1569,
+    "end": 1583
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

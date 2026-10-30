@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "coup-d-etat-of-pavia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5882508",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Coup d'état of Pavía"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5882508"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Coup d'état of Pavía\", revision 1360615561"
+    }
+  ],
+  "title": "Coup d'état of Pavía",
+  "summary": "The English Wikipedia article \"Coup d'état of Pavía\", at revision 1360615561, opens: \"The coup d'état of Pavía, or more simply Pavía's coup, was a military coup d'état initiated by General Manuel Pavía y Rodríguez de Alburquerque on 3 January 1874, during the First Spanish Republic. As a result, Spain transitioned from a democratic government to an authoritarian one.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5882508, imported by tools/import/wikidata.mjs. The item's own description reads \"military coup in Spain in 1874\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1874,
+    "end": 1874,
+    "date": "1874-01-03"
+  },
+  "place": "palacio-de-las-cortes-madrid",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1867-manhattan-kansas-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4555199",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1867 Manhattan, Kansas, earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4555199"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1867 Manhattan, Kansas, earthquake\", revision 1366168222"
+    }
+  ],
+  "title": "1867 Manhattan, Kansas, earthquake",
+  "summary": "The English Wikipedia article \"1867 Manhattan, Kansas, earthquake\", at revision 1366168222, opens: \"An earthquake struck Riley County, Kansas, in the United States on April 24, 1867, at 20:22 UTC, or about 14:30 local time. The strongest earthquake to originate in the state, it measured 5.1 on a seismic scale that is based on an isoseismal map or the event's felt area. The earthquake's epicenter was near the town of Manhattan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4555199, imported by tools/import/wikidata.mjs. The item's own description reads \"1867 earthquake in Riley County, Kansas\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1867,
+    "end": 1867,
+    "date": "1867-04-24"
+  },
+  "place": "kansas",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

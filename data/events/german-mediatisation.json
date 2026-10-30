@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "german-mediatisation",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q314739",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "German mediatisation",
+    "pt": "Mediatização alemã"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q314739"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"German mediatisation\", revision 1381479937"
+    }
+  ],
+  "title": "German mediatisation",
+  "summary": "The English Wikipedia article \"German mediatisation\", at revision 1381479937, opens: \"The German mediatisation was the major redistribution and reshaping of territorial holdings that took place between 1802 and 1814 in Germany by means of the subsumption and secularisation of a large number of Imperial Estates. Nearly all the ecclesiastical principalities and free imperial cities, as well as most minor secular principalities and other self-ruling entities of the Holy Roman Empire lost their independent status and were absorbed by the remaining states. By the end of the mediatisation process with the Congress of Vienna, the number of German states had been reduced from almost 300 to 39.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q314739, imported by tools/import/wikidata.mjs. The item's own description reads \"19th-century event\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1795,
+    "end": 1814
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

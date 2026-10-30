@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "valkininkai",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2121733",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Valkininkai"
+  },
+  "sources": [],
+  "names": [
+    "Valkininkai"
+  ],
+  "where": {
+    "lon": 24.841666666666665,
+    "lat": 54.358333333333334,
+    "precision": "city",
+    "label": "Valkininkai"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

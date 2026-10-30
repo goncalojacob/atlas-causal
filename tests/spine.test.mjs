@@ -25,7 +25,7 @@ import {
   ATTRIBUTE_COLUMNS, CORE_COLUMNS, SPINE_COLUMNS, SPINE_KINDS, SPLIT_COLUMNS,
   applyAttributes, boundsOf, decodeSpineFile, fillFallbacks,
 } from '../src/spine.js';
-import { attributePeriod, attributeShardKey, attributeSpan, periodOf, periodsTouched } from '../src/explanations.js';
+import { attributePeriod, attributeShardKey, attributeSpan, periodsTouched } from '../src/explanations.js';
 import { extent as intervalExtent } from '../src/util/dates.js';
 import { KINDS } from '../src/kinds.js';
 import { buildIndex } from '../tools/build-index.mjs';
@@ -674,8 +674,12 @@ for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', D
     // year at all is in the `null` shard, which is fetched with the first
     // century whatever the window is.
     for (const event of topology.events) {
-      const period = periodOf(intervalStart(event));
-      assert.ok(seen.get(`event:${event.id}`).includes(`${period.from}-${period.to}`), event.id);
+      // The century, or the decade of it that the build cut it into (A13): the
+      // shard whose years hold the event's first.
+      const start = intervalStart(event);
+      const home = centuries.find((c) => c.from <= start && start <= c.to);
+      assert.ok(home, `${event.id} begins in some shard`);
+      assert.ok(seen.get(`event:${event.id}`).includes(`${home.from}-${home.to}`), event.id);
     }
     for (const place of topology.places) assert.deepEqual(seen.get(`place:${place.id}`), ['place'], place.id);
     for (const office of topology.offices.filter((o) => o.when === null)) {

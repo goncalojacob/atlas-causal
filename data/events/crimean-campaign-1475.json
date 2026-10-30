@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "crimean-campaign-1475",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q18409651",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Crimean Campaign (1475)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18409651"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Crimean Campaign (1475)\", revision 1370613916"
+    }
+  ],
+  "title": "Crimean Campaign (1475)",
+  "summary": "The English Wikipedia article \"Crimean Campaign (1475)\", at revision 1370613916, opens: \"The Crimean Expedition in 1475, orchestrated under the command of Gedik Ahmed Pasha, stands as a pivotal naval campaign conducted by the Ottoman navy in 1475. Its primary objective was the seizure of the Genoese colonies nestled within Crimea, thereby asserting Ottoman authority over the region and placing the Crimean Khanate under Ottoman protection.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18409651, imported by tools/import/wikidata.mjs. The item's own description reads \"1441-1478 process by which the Crimean peninsula was Turkified\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1475,
+    "end": 1475
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
