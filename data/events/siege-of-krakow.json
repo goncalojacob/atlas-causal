@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-krakow",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q608163",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Kraków"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q608163"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Kraków\", revision 1370742604"
+    }
+  ],
+  "title": "Siege of Kraków",
+  "summary": "The English Wikipedia article \"Siege of Kraków\", at revision 1370742604, opens: \"The siege of Kraków was one of the battles during the Swedish invasion of Polish–Lithuanian Commonwealth. Lasting for two and a half weeks, it started on September 25 and ended on October 13, 1655. The capitulation treaty was signed on October 17, and Polish troops marched out of the city two days later. The city's defense was led by Kiev's castellan Stefan Czarniecki, while Swedish forces were commanded by King Charles Gustav and Arvid Wittenberg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q608163, imported by tools/import/wikidata.mjs. The item's own description reads \"1655 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1655,
+    "end": 1655,
+    "date": "1655-09-25",
+    "endDate": "1655-10-13"
+  },
+  "place": "krakow",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "northern-war-of-1655-1660"
+}

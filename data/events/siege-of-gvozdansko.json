@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-gvozdansko",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7510063",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Gvozdansko"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510063"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Gvozdansko\", revision 1371059348"
+    }
+  ],
+  "title": "Siege of Gvozdansko",
+  "summary": "The English Wikipedia article \"Siege of Gvozdansko\", at revision 1371059348, opens: \"The siege of Gvozdansko was an Ottoman siege of the fort of Gvozdansko in the Kingdom of Croatia in 1577–1578. In the 1570s, the Ottomans intensified their efforts to capture the valley of the Una River. A string of forts along the Una, centred around Gvozdansko and in possession of the Zrinski noble family, formed the main line of defense of Croatia since 1527. The fort held off Ottoman attacks in 1540 and 1561.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510063, imported by tools/import/wikidata.mjs. The item's own description reads \"1578 siege of the Hundred Years' Croatian-Ottoman War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1577,
+    "end": 1578,
+    "date": "1577-10-03",
+    "endDate": "1578-01-13"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

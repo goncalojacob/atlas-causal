@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-groenlo-1606",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q679843",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Groenlo (1606)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q679843"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Groenlo (1606)\", revision 1370741615"
+    }
+  ],
+  "title": "Siege of Groenlo (1606)",
+  "summary": "The English Wikipedia article \"Siege of Groenlo (1606)\", at revision 1370741615, opens: \"The siege of Groenlo was a siege of Groenlo or Grol in 1606 during the Dutch Revolt. It lasted from 3 to 14 August 1606 and ended in the city being captured from the Dutch Republic by a Spanish Empire force under Ambrosio Spinola. A few months later Prince Maurice attempted to retake the city but failed due to poor planning and an intervention by Spinola. Groenlo would remain in Spanish hands until another siege in 1627.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q679843, imported by tools/import/wikidata.mjs. The item's own description reads \"1606 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1606,
+    "end": 1606,
+    "date": "1606-08-03",
+    "endDate": "1606-11-09"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

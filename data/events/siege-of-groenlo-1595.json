@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-groenlo-1595",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q699917",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Groenlo (1595)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q699917"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Groenlo (1595)\", revision 1370741611"
+    }
+  ],
+  "title": "Siege of Groenlo (1595)",
+  "summary": "The English Wikipedia article \"Siege of Groenlo (1595)\", at revision 1370741611, opens: \"The siege of Grol or Groenlo in 1595 was a siege of Groenlo by States forces under Maurice of Nassau during the Eighty Years' War in an attempt to capture it from the Spanish Empire. It lasted from 14 to 24 July 1595, ending with the arrival of a Spanish relief force under Cristóbal de Mondragón and Maurice's retreat. Two years later, in 1597, Maurice returned to carry out another siege of Groenlo. Both these sieges formed part of what would later be called the Ten Glorious Years.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q699917, imported by tools/import/wikidata.mjs. The item's own description reads \"1595 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1595,
+    "end": 1595,
+    "date": "1595-07-14",
+    "endDate": "1595-07-24"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

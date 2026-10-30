@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-kurukove",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2563398",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Treaty of Kurukove",
+    "pt": "Tratado de Kurukové"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2563398"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Kurukove\", revision 1377004928"
+    }
+  ],
+  "title": "Treaty of Kurukove",
+  "summary": "The English Wikipedia article \"Treaty of Kurukove\", at revision 1377004928, opens: \"The Treaty of Kurukove was an agreement between Hetman Stanisław Koniecpolski of the Polish–Lithuanian Commonwealth and Mykhailo Doroshenko of the Ukrainian Cossacks. After four days of negotiations, it was signed on 5 November 1625 near Lake Kurukove, in what is now Kremenchuk. The treaty was a response to Marek Zhmaylo's uprising and a Crimean-Zaporozhian alliance under Mehmed III Giray. The treaty's provisions amounted to a compromise; Cossack liberties were extended, but not all the Cossack demands were met, which led to further tensions.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2563398, imported by tools/import/wikidata.mjs. The item's own description reads \"1625 treaty between Poland-Lithuania and Ukrainian Cossacks\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1625,
+    "end": 1625,
+    "date": "1625-11-05"
+  },
+  "place": "lake-kurukove",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

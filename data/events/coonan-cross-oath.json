@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "coonan-cross-oath",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2257955",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Coonan Cross Oath",
+    "pt": "Juramento da Cruz de Coonan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2257955"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Coonan Cross Oath\", revision 1371931714"
+    }
+  ],
+  "title": "Coonan Cross Oath",
+  "summary": "The English Wikipedia article \"Coonan Cross Oath\", at revision 1371931714, opens: \"The Coonan Cross Oath, also known as the Great Oath of Bent Cross or Leaning Cross Oath, was taken on 3 January 1653 in Mattancherry by a significant portion of the Saint Thomas Christian community in the Malabar region of India. This public declaration marked their refusal to submit to the authority of the Jesuits and the Latin Catholic hierarchy, as well as their rejection of Portuguese dominance in both ecclesiastical and secular matters.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2257955, imported by tools/import/wikidata.mjs. The item's own description reads \"1653 oath by members of the Saint Thomas Christians\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1653,
+    "end": 1653,
+    "date": "1653-01-03"
+  },
+  "place": "kerala",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

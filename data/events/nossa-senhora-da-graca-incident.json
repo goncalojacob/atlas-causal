@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "nossa-senhora-da-graca-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q11325648",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Nossa Senhora da Graça incident",
+    "pt": "Incidente da Nossa Senhora da Graça"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11325648"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nossa Senhora da Graça incident\", revision 1381868515"
+    }
+  ],
+  "title": "Nossa Senhora da Graça incident",
+  "summary": "The English Wikipedia article \"Nossa Senhora da Graça incident\", at revision 1381868515, opens: \"The Nossa Senhora da Graça incident (ノサ・セニョーラ・ダ・グラサ号事件), alternatively called the Madre de Deus incident (マードレ・デ・デウス号事件), was a four-day naval battle between a Portuguese carrack and Japanese samurai junks belonging to the Arima clan near the waters of Nagasaki in 1610. The richly laden \"great ship of commerce\", famed as the \"black ship\" by the Japanese, sank after its captain, André Pessoa, set the gunpowder storage on fire as samurai overran the vessel.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11325648, imported by tools/import/wikidata.mjs. The item's own description reads \"1610 naval clash near Nagasaki, Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1610,
+    "end": 1610,
+    "date": "1610-01-03",
+    "endDate": "1610-01-06"
+  },
+  "place": "nagasaki-bay",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

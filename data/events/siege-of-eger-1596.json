@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-eger-1596",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1582631",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Eger (1596)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1582631"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Eger (1596)\", revision 1370740984"
+    }
+  ],
+  "title": "Siege of Eger (1596)",
+  "summary": "The English Wikipedia article \"Siege of Eger (1596)\", at revision 1370740984, opens: \"The Ottomans laid siege to the city of Eger, that lasted from September 20 to October 12, 1596, as part of the Long War, successfully conquering it after the 7,000 defenders of the fortress, mostly foreign mercenaries, were killed by the Ottoman forces commanded by the Sultan Mehmed III himself, who had arrived with the main Ottoman Army from Constantinople.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1582631, imported by tools/import/wikidata.mjs. The item's own description reads \"siege of the castle of Eger, Hungary\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1596,
+    "end": 1596,
+    "date": "1596-09-20",
+    "endDate": "1596-10-12"
+  },
+  "place": "eger",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "long-turkish-war"
+}

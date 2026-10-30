@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-lyubar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2065565",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Lyubar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2065565"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lyubar\", revision 1375709032"
+    }
+  ],
+  "title": "Battle of Lyubar",
+  "summary": "The English Wikipedia article \"Battle of Lyubar\", at revision 1375709032, opens: \"The Battle of Lyubar or battle of Lubar took place on 14–27 September 1660 near Lyubar, during the Russo-Polish War (1654–1667), between the forces of the Polish–Lithuanian Commonwealth and Tsardom of Russia. It was the first battle of the 1660 campaign in the south. It ended with a Polish victory. The Russian army retreated and was subsequently destroyed during the battle of Chudniv.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2065565, imported by tools/import/wikidata.mjs. The item's own description reads \"1660 battle during the Russo-Polish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1660,
+    "end": 1660,
+    "date": "1660-09-14",
+    "endDate": "1660-09-27"
+  },
+  "place": "liubar",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "polish-russian-war-1654-1667"
+}

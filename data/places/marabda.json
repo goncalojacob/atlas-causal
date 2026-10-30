@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "marabda",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6754537",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Marabda"
+  },
+  "sources": [],
+  "names": [
+    "Marabda"
+  ],
+  "where": {
+    "lon": 44.759166666667,
+    "lat": 41.535277777778,
+    "precision": "city",
+    "label": "Marabda"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

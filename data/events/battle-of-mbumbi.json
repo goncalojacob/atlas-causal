@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-mbumbi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4871703",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Mbumbi",
+    "pt": "Batalha de Bumbi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871703"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mbumbi\", revision 1370269267"
+    }
+  ],
+  "title": "Battle of Mbumbi",
+  "summary": "The English Wikipedia article \"Battle of Mbumbi\", at revision 1370269267, opens: \"The Battle of Mbumbi was a military engagement between forces of Portuguese Angola and the Kingdom of Kongo in 1622. Although the Portuguese were victorious, the battle served as the impetus for the Kingdom of Kongo to expel the Portuguese from their territory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871703, imported by tools/import/wikidata.mjs. The item's own description reads \"1622 battle between Portuguese Angola and the Kingdom of Kongo\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1622,
+    "end": 1622,
+    "date": "1622-12-18"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

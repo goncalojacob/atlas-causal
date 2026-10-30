@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-horodok-1655",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2453661",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Horodok (1655)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2453661"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Horodok (1655)\", revision 1370443214"
+    }
+  ],
+  "title": "Battle of Horodok (1655)",
+  "summary": "The English Wikipedia article \"Battle of Horodok (1655)\", at revision 1370443214, opens: \"The battle of Gródek Jagielloński or battle of Horodok took place during the Russo-Polish War (1654–67) on 29 September 1655. Russian and Ukrainian Cossack forces under Vasily Borisovich Sheremetev and Bohdan Khmelnytsky engaged a Polish–Lithuanian army under Stanisław \"Rewera\" Potocki near Gródek Jagielloński, which at that time was part of Polish–Lithuanian Commonwealth's Ruthenian Voivodeship. Polish forces were defeated and forced to retreat, losing their supplies to the Russians. The Russians advanced, besieging Lwow, and Potocki with the remains of his army was soon forced to surrender to the invading Swedes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2453661, imported by tools/import/wikidata.mjs. The item's own description reads \"1655 battle of the Russo-Polish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1655,
+    "end": 1655,
+    "date": "1655-09-29"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "polish-russian-war-1654-1667"
+}

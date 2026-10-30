@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "byczyna",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q990828",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Byczyna",
+    "pt": "Byczyna"
+  },
+  "sources": [],
+  "names": [
+    "Byczyna"
+  ],
+  "where": {
+    "lon": 18.211111111111112,
+    "lat": 51.113055555555555,
+    "precision": "city",
+    "label": "Byczyna"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
