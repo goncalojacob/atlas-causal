@@ -43,7 +43,7 @@
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-ff0596f705fe.json",
+      "file": "index/attributes-1800-1899-6b6153fb5bea.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
@@ -956,7 +956,7 @@
       "id": "treaty"
     },
     {
-      "count": 3862,
+      "count": 3863,
       "id": "war"
     }
   ],
@@ -1025,7 +1025,7 @@
   "counts": {
     "actors": 2699,
     "edges": 1283,
-    "events": 6042,
+    "events": 6043,
     "narratives": 2,
     "offices": 11,
     "places": 2514,
@@ -1073,13 +1073,13 @@
     }
   ],
   "files": {
-    "citers": "index/citers-f2ec0ad9fcd2",
-    "core": "index/core-dcccafa77847.json",
+    "citers": "index/citers-ddc386f0be25",
+    "core": "index/core-346493d73c85.json",
     "grounds": "index/grounds-ff1f2bb749aa.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-b4d2dc439b0f.json",
-    "search": "index/search-b8180931c802.json",
-    "sources": "index/sources-716bf9d359f4.json",
+    "review": "index/review-cc85df42c736.json",
+    "search": "index/search-1e321a821a67.json",
+    "sources": "index/sources-64a742a9ebf3.json",
     "territories": "index/territories-ce4d2a631056.json"
   },
   "historyShards": [
@@ -1112,7 +1112,7 @@
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-ce469b89f5a6.json",
+      "file": "index/history-event-1800-1899-f4fc00e8efaa.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",

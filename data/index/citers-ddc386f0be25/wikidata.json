@@ -7640,6 +7640,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-diamond-rock",
+      "kind": "event",
+      "locator": "Q4870872"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dien-bien-phu",
       "kind": "event",
       "locator": "Q604897"

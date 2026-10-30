@@ -4198,6 +4198,15 @@
         }
       ]
     },
+    "battle-of-diamond-rock": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-dogali": {
       "from": "git",
       "versions": [

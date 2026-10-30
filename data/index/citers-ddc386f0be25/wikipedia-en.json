@@ -15920,6 +15920,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-diamond-rock",
+      "kind": "event",
+      "locator": "\"Battle of Diamond Rock\", revision 1378412199"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dien-bien-phu",
       "kind": "event",
       "locator": "\"Battle of Dien Bien Phu\", revision 1372169112"
