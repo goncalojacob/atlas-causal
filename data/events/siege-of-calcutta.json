@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-calcutta",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3350705",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Calcutta"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3350705"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Calcutta\", revision 1370739989"
+    }
+  ],
+  "title": "Siege of Calcutta",
+  "summary": "The English Wikipedia article \"Siege of Calcutta\", at revision 1370739989, opens: \"The siege of Calcutta was a battle between the Bengal Subah and the British East India Company on 20 June 1756. The Nawab of Bengal, Siraj ud-Daulah, aimed to seize Calcutta to punish the company for the unauthorised construction of fortifications at Fort William. Siraj ud-Daulah caught the Company unprepared and won a decisive victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3350705, imported by tools/import/wikidata.mjs. The item's own description reads \"1756 battle between the armies Britain and the Nawab of Bengal in the 18th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1756,
+    "end": 1756,
+    "date": "1756-06-20"
+  },
+  "place": "kolkata",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

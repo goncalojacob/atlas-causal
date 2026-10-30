@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "khejarli-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q60750449",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Khejarli massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q60750449"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Khejarli massacre\", revision 1364290396"
+    }
+  ],
+  "title": "Khejarli massacre",
+  "summary": "The English Wikipedia article \"Khejarli massacre\", at revision 1364290396, opens: \"The Khejarli massacre occurred in September 1730 in Northern India, when 363 Bishnois were killed while trying to peacefully protect a grove of Khejri trees from being chopped down on the orders of the Maharaja of Marwar, Abhai Singh. Abhai Singh had sent his soldiers to cut the trees in the village of Khejarli to provide wood for a new palace. The killings were carried out on the orders of his minister, Giridhar Bhandari. The effort had a long-term impact on environmental advocacy, and the massacre later became known as a precursor to the 20th-century Chipko movement. Due to the sacrifice of the protesters, the ruler took back his earlier order of felling trees.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q60750449, imported by tools/import/wikidata.mjs. The item's own description reads \"Massacre of environmentalist protesters\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1730,
+    "end": 1730,
+    "date": "1730-09-11"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

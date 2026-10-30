@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1611-sanriku-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3388870",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1611 Sanriku earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3388870"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1611 Sanriku earthquake\", revision 1366163337"
+    }
+  ],
+  "title": "1611 Sanriku earthquake",
+  "summary": "The English Wikipedia article \"1611 Sanriku earthquake\", at revision 1366163337, opens: \"The 1611 Sanriku earthquake  occurred on December 2, 1611, with an epicenter off the Sanriku coast in Iwate Prefecture, Japan. The magnitude of the earthquake was 8.1Ms. It triggered a devastating tsunami. A description of this event in an official diary from 1612 is probably the first recorded use of the term 'tsunami'.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3388870, imported by tools/import/wikidata.mjs. The item's own description reads \"Earthquake and tsunami affecting Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1611,
+    "end": 1611,
+    "date": "1611-12-02"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

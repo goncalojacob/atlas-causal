@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-oak-grove",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q377681",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Oak Grove"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q377681"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Oak Grove\", revision 1382101734"
+    }
+  ],
+  "title": "Battle of Oak Grove",
+  "summary": "The English Wikipedia article \"Battle of Oak Grove\", at revision 1382101734, opens: \"The Battle of Oak Grove, also known as the Battle of French's Field or King's School House, took place on June 25, 1862, in Henrico County, Virginia, the first of the Seven Days Battles of the American Civil War. Maj. Gen. George B. McClellan advanced his lines with the objective of bringing Richmond within range of his siege guns. Two Union divisions of the III Corps attacked across the headwaters of White Oak Swamp, but were repulsed by Maj. Gen. Benjamin Huger's Confederate division. McClellan, who was 3 miles (4.8 km) in the rear, initially telegraphed to call off the attack, but ordered another attack over the same ground when he arrived at the front. Darkness halted the fighting. Union troops gained only 600 yards (550 m), at a cost of over a thousand casualties on both sides.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q377681, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-06-25"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

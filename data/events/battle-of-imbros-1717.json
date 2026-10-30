@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-imbros-1717",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871269",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Imbros (1717)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871269"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Imbros (1717)\", revision 1377596496"
+    }
+  ],
+  "title": "Battle of Imbros (1717)",
+  "summary": "The English Wikipedia article \"Battle of Imbros (1717)\", at revision 1377596496, opens: \"The Battle of Imbros was a naval clash that took place on 12, 13 and 16 June 1717 near Imbros in the Aegean Sea, between the sailing fleets of Venice and the Ottoman Empire. The outnumbered Venetian Armada Grossa, under the Capitano Straordinario delle Navi Lodovico Flangini, proved herself able to match a superior Turkish force under the Kapudan Pasha Hodja Ibrahim Pasha in a manoeuvred fight that lasted nearly ten days. The outcome of this tough battle was unclear, since both fleet retired to their bases badly damaged, after Flangini died of wounds on the 22nd.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871269, imported by tools/import/wikidata.mjs. The item's own description reads \"battle during the Ottoman–Venetian War of 1714–1718\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1717,
+    "end": 1717,
+    "date": "1717-06-12",
+    "endDate": "1717-06-16"
+  },
+  "place": "imbros",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-venetian-war-1714-1718"
+}

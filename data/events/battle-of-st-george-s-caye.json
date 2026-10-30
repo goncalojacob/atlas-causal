@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-st-george-s-caye",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890055",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of St. George's Caye",
+    "pt": "Batalha de St. George's Caye"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890055"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of St. George's Caye\", revision 1378544081"
+    }
+  ],
+  "title": "Battle of St. George's Caye",
+  "summary": "The English Wikipedia article \"Battle of St. George's Caye\", at revision 1378544081, opens: \"The Battle of St. George's Caye was a military engagement that lasted from 3 to 10 September 1798, off the coast of British Honduras. However, the name is typically reserved for the final battle that occurred on 10 September in which the Spanish were defeated. The events of 10 September 1798 marked the final Spanish attempt to take over the area. In Belize, the Battle of St. George's Caye is a national public and bank holiday.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890055, imported by tools/import/wikidata.mjs. The item's own description reads \"1798 battle during Anglo-Spanish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1798,
+    "date": "1798-09-10"
+  },
+  "place": "st-george-s-caye",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "goliad-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q9030262",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Goliad massacre",
+    "pt": "Massacre de Goliad"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q9030262"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Goliad massacre\", revision 1372416173"
+    }
+  ],
+  "title": "Goliad massacre",
+  "summary": "The English Wikipedia article \"Goliad massacre\", at revision 1372416173, opens: \"The Goliad massacre was an event of the Texas Revolution that occurred on March 27, 1836, following the Battle of Refugio and the Battle of Coleto; 425–445 prisoners of war from the Texian Army of the Republic of Texas were executed by the Mexican Army in the town of Goliad, Texas. The men surrendered under the belief they would be set free within a few weeks; however, this was not to be. Despite appeals for clemency by General José de Urrea, the massacre was carried out by Lt. Colonel José Nicolás de la Portilla, under orders from General and President of Mexico Antonio Lopez de Santa Anna.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q9030262, imported by tools/import/wikidata.mjs. The item's own description reads \"event of the Texas Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1836,
+    "end": 1836,
+    "date": "1836-03-27"
+  },
+  "place": "goliad-texas",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

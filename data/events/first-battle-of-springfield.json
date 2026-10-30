@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-springfield",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2128905",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "First Battle of Springfield"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2128905"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Springfield\", revision 1370618970"
+    }
+  ],
+  "title": "First Battle of Springfield",
+  "summary": "The English Wikipedia article \"First Battle of Springfield\", at revision 1370618970, opens: \"The First Battle of Springfield was a battle of the American Civil War that took place on October 25, 1861, near Springfield, Missouri. Following the Battle of Wilson's Creek, the Missouri State Guard, a pro-Confederate militia organization, drove north and defeated Union forces in the Siege of Lexington. Following the fighting at Lexington, Union Major General John C. Frémont began a campaign that drove into southern Missouri. The main body of the Missouri State Guard fell back to Neosho, but a body of roughly 1,000 or 1,500 new recruits commanded by Colonel Julian Frazier was at Springfield. On October 24, Frémont sent a force raised as his bodyguard commanded by Major Charles Zagonyi on a scouting mission towards Springfield. After joining a cavalry force known as the Prairie Scouts at Bolivar, Zagonyi moved on towards Springfield on October 25.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2128905, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 battle of the Trans-Mississippi Theater of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-10-25"
+  },
+  "place": "springfield-missouri",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
