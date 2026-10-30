@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "time-of-troubles",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q94080",
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Time of Troubles",
+    "pt": "Tempo de Dificuldades"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q94080"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Time of Troubles\", revision 1377769151"
+    }
+  ],
+  "title": "Time of Troubles",
+  "summary": "The English Wikipedia article \"Time of Troubles\", at revision 1377769151, opens: \"The Time of Troubles, also known as Smuta, was a period of political crisis in Russia which began in 1598 with the death of Feodor I, the last of the House of Rurik, and ended in 1613 with the accession of Michael I of the House of Romanov at the 1613 Zemsky Sobor.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q94080, imported by tools/import/wikidata.mjs. The item's own description reads \"period of Russian history from 1598 to 1613\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1598,
+    "end": 1613
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

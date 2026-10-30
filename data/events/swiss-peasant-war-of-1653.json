@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "swiss-peasant-war-of-1653",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q670936",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Swiss peasant war of 1653"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q670936"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Swiss peasant war of 1653\", revision 1380143750"
+    }
+  ],
+  "title": "Swiss peasant war of 1653",
+  "summary": "The English Wikipedia article \"Swiss peasant war of 1653\", at revision 1380143750, opens: \"The Swiss peasant war of 1653 was a popular revolt in the Old Swiss Confederacy at the time of the Ancien Régime. A devaluation of Bernese money caused a tax revolt that spread from the Entlebuch valley in the Canton of Lucerne to the Emmental valley in the Canton of Bern and then to the cantons of Solothurn and Basel and also to the Aargau.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q670936, imported by tools/import/wikidata.mjs. The item's own description reads \"peasant revolt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1653,
+    "end": 1653,
+    "date": "1653-01",
+    "endDate": "1653-06-04"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

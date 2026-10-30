@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "treaty-of-kyehae",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q703454",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Treaty of Kyehae"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q703454"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Kyehae\", revision 1363576440"
+    }
+  ],
+  "title": "Treaty of Kyehae",
+  "summary": "The English Wikipedia article \"Treaty of Kyehae\", at revision 1363576440, opens: \"The Kyehae Treaty was signed in 1443 between the Korean Joseon dynasty and the Japanese Sō clan which provided for the supression of wokou pirates, who used Sō owned Tsushima as a base of operations, and legitimized trade between Tsushima and three Korean ports. In Japan, it is called the Kakitsu Treaty ; 1443 was the third year of the Japanese Kakitsu era.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q703454, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty signed in 1443 between the Joseon dynasty and Sō Sadamori as a means of controlling Japanese piracy and legitimizing trade between Tsushima island and three Korean ports\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1443,
+    "end": 1510
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

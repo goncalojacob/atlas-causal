@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "skanderbeg-s-italian-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q81475",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Skanderbeg's Italian expedition",
+    "pt": "Expedição Italiana de Skanderbeg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q81475"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Skanderbeg's Italian expedition\", revision 1371138871"
+    }
+  ],
+  "title": "Skanderbeg's Italian expedition",
+  "summary": "The English Wikipedia article \"Skanderbeg's Italian expedition\", at revision 1371138871, opens: \"Skanderbeg's Italian expedition (1460–1462) was undertaken to aid his ally Ferdinand I of Naples, whose rulership was threatened by the Angevin Dynasty. Gjergj Kastrioti Skanderbeg was the ruler of Albania who had been leading a rebellion against the Ottoman Empire since 1443 and allied himself with several European monarchs in order to consolidate his domains. In 1458, Alfonso V of Aragon, ruler of Sicily and Naples and Skanderbeg's most important ally, died, leaving his illegitimate son, Ferdinand, on the Neapolitan throne; René d'Anjou, the French Duke of Anjou, laid claim to the throne. The conflict between René's and Ferdinand's supporters soon erupted into a civil war. Pope Calixtus III, of Spanish background himself, could do little to secure Ferdinand, so he turned to Skanderbeg for aid.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q81475, imported by tools/import/wikidata.mjs. The item's own description reads \"1460 conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1460,
+    "end": 1462
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

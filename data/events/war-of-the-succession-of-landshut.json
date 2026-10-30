@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "war-of-the-succession-of-landshut",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q677693",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "War of the Succession of Landshut",
+    "pt": "Guerra da Sucessão de Landshut"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q677693"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Succession of Landshut\", revision 1375189437"
+    }
+  ],
+  "title": "War of the Succession of Landshut",
+  "summary": "The English Wikipedia article \"War of the Succession of Landshut\", at revision 1375189437, opens: \"The War of the Succession of Landshut resulted from a dispute between the Duchies of Bavaria-Munich and Bavaria-Landshut (Bayern-Landshut).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q677693, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1503,
+    "end": 1505
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
