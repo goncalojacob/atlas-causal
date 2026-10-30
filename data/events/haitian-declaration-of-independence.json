@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "haitian-declaration-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q17502440",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Haitian Declaration of Independence",
+    "pt": "Declaração de Independência do Haiti"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17502440"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Haitian Declaration of Independence\", revision 1382136265"
+    }
+  ],
+  "title": "Haitian Declaration of Independence",
+  "summary": "The English Wikipedia article \"Haitian Declaration of Independence\", at revision 1382136265, opens: \"The Haitian Declaration of Independence was proclaimed on 1 January 1804 in the port city of Gonaïves by Jean-Jacques Dessalines, marking the end of the 13-year long Haitian Revolution. The declaration marked Haiti becoming the first independent nation of Latin America and the Caribbean, only the second in the Americas after the United States.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17502440, imported by tools/import/wikidata.mjs. The item's own description reads \"document declaring Haiti as an independent nation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1804,
+    "end": 1804,
+    "date": "1804-01-01"
+  },
+  "place": "gonaives",
+  "region": null,
+  "regionNote": null,
+  "category": "founding",
+  "actors": []
+}

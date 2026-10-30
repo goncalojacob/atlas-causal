@@ -62429,6 +62429,78 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-412",
+      "writer": "A",
+      "fired": "2026-10-30T00:32Z",
+      "status": "written",
+      "written": {
+        "event": "8th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-414",
+      "writer": "A",
+      "fired": "2026-10-30T00:32Z",
+      "status": "written",
+      "written": {
+        "event": "9th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-998",
+      "writer": "B",
+      "fired": "2026-10-30T00:36Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-clausen",
+        "edges": [],
+        "place": "klausen-germany"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-410",
+      "writer": "B",
+      "fired": "2026-10-30T00:36Z",
+      "status": "written",
+      "written": {
+        "event": "first-cevallos-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-411",
+      "writer": "B",
+      "fired": "2026-10-30T00:36Z",
+      "status": "written",
+      "written": {
+        "event": "7th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-413",
+      "writer": "B",
+      "fired": "2026-10-30T00:36Z",
+      "status": "written",
+      "written": {
+        "event": "haitian-declaration-of-independence",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
