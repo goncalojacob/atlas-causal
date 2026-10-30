@@ -53,6 +53,15 @@
         }
       ]
     },
+    "1557-influenza-pandemic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "1560-portuguese-invasion-of-jaffna": {
       "from": "git",
       "versions": [
@@ -122,6 +131,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "1596-keicho-fushimi-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -898,6 +916,15 @@
         }
       ]
     },
+    "battle-of-digomi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-diu": {
       "from": "git",
       "versions": [
@@ -1088,6 +1115,15 @@
         }
       ]
     },
+    "battle-of-ghaghra": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-ghazdewan": {
       "from": "git",
       "versions": [
@@ -1217,6 +1253,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-hetsugigawa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -1834,6 +1879,15 @@
             "review"
           ],
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-norada": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -2722,6 +2776,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-ukino": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -5026,6 +5089,15 @@
         }
       ]
     },
+    "raid-on-cherchell-1531": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "raid-on-mount-s-bay": {
       "from": "git",
       "versions": [
@@ -5833,6 +5905,15 @@
         }
       ]
     },
+    "siege-of-kaganoi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "siege-of-kanegasaki-1570": {
       "from": "git",
       "versions": [
@@ -5884,6 +5965,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "siege-of-kozuki-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6141,6 +6231,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-otate": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6429,6 +6528,15 @@
         }
       ]
     },
+    "sieges-of-gassantoda-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "sieges-of-nagashima": {
       "from": "git",
       "versions": [
@@ -6444,6 +6552,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "sieges-of-toishi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6839,6 +6956,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "tainei-ji-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

@@ -47,6 +47,15 @@
         }
       ]
     },
+    "1716-algiers-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "1717-omani-invasion-of-bahrain": {
       "from": "git",
       "versions": [
@@ -80,6 +89,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "1730-valparaiso-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -1069,6 +1087,15 @@
         }
       ]
     },
+    "battle-of-block-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-bloody-creek-1757": {
       "from": "git",
       "versions": [
@@ -1888,6 +1915,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-forts-clinton-and-montgomery": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -3537,6 +3573,15 @@
         }
       ]
     },
+    "battle-of-restigouche": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-reval": {
       "from": "git",
       "versions": [
@@ -3743,6 +3788,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-saint-pierre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -4001,6 +4055,24 @@
         }
       ]
     },
+    "battle-of-springfield": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "battle-of-st-john-s": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-st-louis": {
       "from": "git",
       "versions": [
@@ -4076,6 +4148,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-sullivan-s-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -4256,6 +4337,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-the-thousand-islands": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -4748,6 +4838,15 @@
         }
       ]
     },
+    "bombardment-of-algiers-1784": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "boston-campaign": {
       "from": "git",
       "versions": [
@@ -4997,6 +5096,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "capture-of-pensacola-1719": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6416,6 +6524,15 @@
         }
       ]
     },
+    "invasion-of-algiers-1775": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "invasion-of-cuba-1741": {
       "from": "git",
       "versions": [
@@ -6488,6 +6605,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "invasion-of-quebec-1775": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6980,6 +7106,15 @@
         }
       ]
     },
+    "newfoundland-expedition-1702": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "noble-train-of-artillery": {
       "from": "git",
       "versions": [
@@ -7406,6 +7541,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "raid-on-grand-pre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -8978,6 +9122,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "spanish-conquest-of-oran-1732": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

@@ -222,6 +222,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "1428-catalonia-earthquake",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1428 Catalonia earthquake"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -458,6 +487,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "1557-influenza-pandemic",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1557 influenza pandemic"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -685,6 +742,36 @@
       "revised": null,
       "status": "active",
       "title": "1592–1593 Malta plague epidemic"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "1596-keicho-fushimi-earthquake",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1596 Keichō–Fushimi earthquake"
     },
     {
       "authors": [
@@ -1250,6 +1337,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "1716-algiers-earthquake",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1716 Algiers earthquake"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -1359,6 +1475,35 @@
       "revised": null,
       "status": "active",
       "title": "1721 Tabriz earthquake"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "1730-valparaiso-earthquake",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1730 Valparaíso earthquake"
     },
     {
       "authors": [
@@ -23241,6 +23386,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-block-island",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Block Island"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "battle-of-blood-river",
       "kind": "event",
@@ -24727,6 +24903,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Buena Vista"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-bulgneville",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Bulgnéville"
     },
     {
       "authors": [
@@ -31277,6 +31483,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-detern",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Detern"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "battle-of-dettingen",
       "kind": "event",
@@ -31426,6 +31661,35 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Dien Bien Phu"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-digomi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Digomi"
     },
     {
       "authors": [
@@ -35414,6 +35678,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-forts-clinton-and-montgomery",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Forts Clinton and Montgomery"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-forts-jackson-and-st-philip",
       "kind": "event",
@@ -36875,6 +37171,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Gettysburg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-ghaghra",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ghaghra"
     },
     {
       "authors": [
@@ -39947,6 +40273,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Héricourt"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-hetsugigawa",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Hetsugigawa"
     },
     {
       "authors": [
@@ -49447,6 +49803,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-maclodio",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "wars-in-lombardy",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Maclodio"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "battle-of-macta",
       "kind": "event",
@@ -50098,6 +50486,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Malatitze"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-malesov",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "hussite-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Malešov"
     },
     {
       "authors": [
@@ -55813,6 +56233,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Nooitgedacht"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-norada",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Norada"
     },
     {
       "authors": [
@@ -62319,6 +62769,38 @@
         "wikipedia-en"
       ],
       "created": "2026-10-30",
+      "id": "battle-of-restigouche",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "seven-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Restigouche"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
       "id": "battle-of-reval",
       "kind": "event",
       "origin": {
@@ -63934,6 +64416,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-saint-pierre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Saint-Pierre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "id": "battle-of-saint-raphael",
       "kind": "event",
@@ -64995,6 +65508,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-san-romano",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "wars-in-lombardy",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of San Romano"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-sanandaj",
       "kind": "event",
@@ -65336,6 +65881,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Santa Cruz (1899)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-santa-cruz-de-tenerife-1657",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "anglo-spanish-war-1654-1660",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Santa Cruz de Tenerife (1657)"
     },
     {
       "authors": [
@@ -68645,6 +69221,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-springfield",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Springfield"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-st-jakob-an-der-birs",
       "kind": "event",
@@ -68690,6 +69297,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of St. Jakob an der Sihl"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-st-john-s",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "queen-anne-s-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of St. John's"
     },
     {
       "authors": [
@@ -69644,6 +70282,38 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Battle of Suipacha"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-sullivan-s-island",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Sullivan's Island"
     },
     {
       "authors": [
@@ -72063,6 +72733,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "battle-of-the-cosmin-forest",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "polish-ottoman-war-1485-1503",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Cosmin Forest"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "battle-of-the-crater",
       "kind": "event",
@@ -73684,6 +74385,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of the Thames"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-the-thousand-islands",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "seven-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Thousand Islands"
     },
     {
       "authors": [
@@ -76231,6 +76963,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Ujście"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-ukino",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ukino"
     },
     {
       "authors": [
@@ -81587,6 +82349,38 @@
         "wikipedia-en"
       ],
       "created": "2026-10-30",
+      "id": "battle-on-the-po-1431",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "wars-in-lombardy",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle on the Po (1431)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
       "id": "battle-on-the-zuiderzee",
       "kind": "event",
       "origin": {
@@ -82990,6 +83784,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "other",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "blockade-of-africa",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Blockade of Africa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -83512,6 +84335,35 @@
       "revised": null,
       "status": "active",
       "title": "Bombardment of Alexandria"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "bombardment-of-algiers-1784",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bombardment of Algiers (1784)"
     },
     {
       "authors": [
@@ -87745,6 +88597,37 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Capture of Peñón of Algiers (1529)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "capture-of-pensacola-1719",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-quadruple-alliance",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Pensacola (1719)"
     },
     {
       "authors": [
@@ -114080,6 +114963,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "invasion-of-algiers-1775",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Invasion of Algiers (1775)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "invasion-of-algiers-1830",
       "kind": "event",
@@ -114418,6 +115330,37 @@
       "revised": null,
       "status": "active",
       "title": "Invasion of Portugal (1807)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "invasion-of-quebec-1775",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Invasion of Quebec (1775)"
     },
     {
       "authors": [
@@ -127668,6 +128611,38 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "newfoundland-expedition-1702",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "queen-anne-s-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Newfoundland expedition (1702)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "founding",
       "cites": [
         "wikidata",
@@ -127752,6 +128727,34 @@
       "revised": null,
       "status": "active",
       "title": "Nez Perce War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "nian-rebellion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Nian Rebellion"
     },
     {
       "authors": [
@@ -137978,6 +138981,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "quintuple-alliance",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Quintuple Alliance"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -138259,6 +139291,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "raid-on-cherchell-1531",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Raid on Cherchell (1531)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "raid-on-chignecto-1696",
@@ -138413,6 +139475,37 @@
       "revised": null,
       "status": "active",
       "title": "Raid on Dover"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "raid-on-grand-pre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "queen-anne-s-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Raid on Grand Pré"
     },
     {
       "authors": [
@@ -148148,6 +149241,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "seventh-siege-of-gibraltar",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Seventh siege of Gibraltar"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "seymour-expedition",
       "kind": "event",
@@ -154429,6 +155551,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "siege-of-kaganoi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Kaganoi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "siege-of-kamenets",
       "kind": "event",
@@ -154979,6 +156131,36 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Kőszeg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "siege-of-kozuki-castle",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Kōzuki Castle"
     },
     {
       "authors": [
@@ -158014,6 +159196,36 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Ostend"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "siege-of-otate",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Otate"
     },
     {
       "authors": [
@@ -162312,6 +163524,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "sieges-of-gassantoda-castle",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Sieges of Gassantoda Castle"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "sieges-of-nagashima",
       "kind": "event",
@@ -162360,6 +163602,36 @@
       "revised": null,
       "status": "active",
       "title": "Sieges of Oran and Mers El Kébir"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "sieges-of-toishi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Sieges of Toishi"
     },
     {
       "authors": [
@@ -164633,6 +165905,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "spanish-conquest-of-oran-1732",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Spanish conquest of Oran (1732)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "spanish-conquest-of-peten",
@@ -165784,6 +167085,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "strasbourg-agreement-1675",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Strasbourg Agreement (1675)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -166746,6 +168076,36 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Taif Agreement"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "tainei-ji-incident",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Tainei-ji incident"
     },
     {
       "authors": [
@@ -188155,6 +189515,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1428-catalonia-earthquake",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1465-fez-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -188203,6 +189569,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1557-influenza-pandemic",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1560-portuguese-invasion-of-jaffna",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -188246,6 +189618,12 @@
     },
     {
       "id": "1592-1593-malta-plague-epidemic",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1596-keicho-fushimi-earthquake",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -188365,6 +189743,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1716-algiers-earthquake",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1717-omani-invasion-of-bahrain",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -188384,6 +189768,12 @@
     },
     {
       "id": "1721-tabriz-earthquake",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1730-valparaiso-earthquake",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -191509,6 +192899,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-block-island",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-blood-river",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -191750,6 +193146,12 @@
     },
     {
       "id": "battle-of-buena-vista",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-bulgneville",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -192883,6 +194285,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-detern",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-dettingen",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -192896,6 +194304,12 @@
     },
     {
       "id": "battle-of-diamond-rock",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-digomi",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -193603,6 +195017,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-forts-clinton-and-montgomery",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-forts-jackson-and-st-philip",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -193874,6 +195294,12 @@
     },
     {
       "id": "battle-of-gettysburg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-ghaghra",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -194420,6 +195846,12 @@
     },
     {
       "id": "battle-of-hericourt",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-hetsugigawa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -196009,6 +197441,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-maclodio",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-macta",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -196112,6 +197550,12 @@
     },
     {
       "id": "battle-of-malatitze",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-malesov",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -197078,6 +198522,12 @@
     },
     {
       "id": "battle-of-nooitgedacht",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-norada",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -198115,6 +199565,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-restigouche",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-reval",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -198373,6 +199829,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-saint-pierre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-saint-raphael",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -198553,6 +200015,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-san-romano",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-sanandaj",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -198596,6 +200064,12 @@
     },
     {
       "id": "battle-of-santa-cruz-1899",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-santa-cruz-de-tenerife-1657",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -199183,6 +200657,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-springfield",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-st-jakob-an-der-birs",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -199190,6 +200670,12 @@
     },
     {
       "id": "battle-of-st-jakob-an-der-sihl",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-st-john-s",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -199358,6 +200844,12 @@
     },
     {
       "id": "battle-of-suipacha",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-sullivan-s-island",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -199747,6 +201239,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-the-cosmin-forest",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-the-crater",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -199976,6 +201474,12 @@
     },
     {
       "id": "battle-of-the-thames",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-the-thousand-islands",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -200360,6 +201864,12 @@
     },
     {
       "id": "battle-of-ujscie",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-ukino",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -201283,6 +202793,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-on-the-po-1431",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-on-the-zuiderzee",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -201499,6 +203015,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "blockade-of-africa",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "blockade-of-callao",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -201572,6 +203094,12 @@
     },
     {
       "id": "bombardment-of-alexandria",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "bombardment-of-algiers-1784",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -202196,6 +203724,12 @@
     },
     {
       "id": "capture-of-oujda-1647",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "capture-of-pensacola-1719",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -206149,6 +207683,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "invasion-of-algiers-1775",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "invasion-of-algiers-1830",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -206186,6 +207726,12 @@
     },
     {
       "id": "invasion-of-portugal-1807",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "invasion-of-quebec-1775",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -208177,6 +209723,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "newfoundland-expedition-1702",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "newlands-resolution",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -208190,6 +209742,12 @@
     },
     {
       "id": "nez-perce-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "nian-rebellion",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -209755,6 +211313,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "quintuple-alliance",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "quito-revolution-1809-1812",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -209809,6 +211373,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "raid-on-cherchell-1531",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "raid-on-dartmouth-1751",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -209822,6 +211392,12 @@
     },
     {
       "id": "raid-on-dover",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "raid-on-grand-pre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -211321,6 +212897,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "seventh-siege-of-gibraltar",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "seymour-expedition",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -212413,6 +213995,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-kaganoi",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-kamenets",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -212516,6 +214104,12 @@
     },
     {
       "id": "siege-of-koszeg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-kozuki-castle",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -213038,6 +214632,12 @@
     },
     {
       "id": "siege-of-ostend",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-otate",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -213751,6 +215351,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "sieges-of-gassantoda-castle",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "sieges-of-nagashima",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -213758,6 +215364,12 @@
     },
     {
       "id": "sieges-of-oran-and-mers-el-kebir",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "sieges-of-toishi",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -214003,6 +215615,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "spanish-conquest-of-oran-1732",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "spanish-conquest-of-sardinia",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -214171,6 +215789,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "strasbourg-agreement-1675",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "strasbourg-bishops-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -214316,6 +215940,12 @@
     },
     {
       "id": "tahmasp-ii-s-campaign-of-1731",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "tainei-ji-incident",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

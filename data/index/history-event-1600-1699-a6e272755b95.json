@@ -2358,6 +2358,15 @@
         }
       ]
     },
+    "battle-of-santa-cruz-de-tenerife-1657": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-sarhu": {
       "from": "git",
       "versions": [
@@ -6597,6 +6606,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "strasbourg-agreement-1675": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

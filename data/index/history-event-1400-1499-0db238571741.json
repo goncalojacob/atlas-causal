@@ -2,6 +2,15 @@
   "from": 1400,
   "kind": "event",
   "records": {
+    "1428-catalonia-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "1465-fez-revolt": {
       "from": "git",
       "versions": [
@@ -236,6 +245,15 @@
         }
       ]
     },
+    "battle-of-bulgneville": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-calven": {
       "from": "git",
       "versions": [
@@ -287,6 +305,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-detern": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -542,6 +569,24 @@
         }
       ]
     },
+    "battle-of-maclodio": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "battle-of-malesov": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-meung-sur-loire": {
       "from": "git",
       "versions": [
@@ -695,6 +740,15 @@
         }
       ]
     },
+    "battle-of-san-romano": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-sandwich-1460": {
       "from": "git",
       "versions": [
@@ -800,6 +854,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-the-cosmin-forest": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -971,6 +1034,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-on-the-po-1431": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -1802,6 +1874,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "seventh-siege-of-gibraltar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

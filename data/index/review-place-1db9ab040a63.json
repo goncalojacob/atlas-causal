@@ -733,7 +733,7 @@
         }
       ],
       "created": "2026-10-30",
-      "degree": 2,
+      "degree": 3,
       "id": "africa-q15",
       "kind": "place",
       "names": [
@@ -1509,7 +1509,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 9,
+      "degree": 12,
       "id": "algiers-q3561",
       "kind": "place",
       "names": [
@@ -9528,6 +9528,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "bulgneville",
+      "kind": "place",
+      "names": [
+        "Bulgnéville"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "bulls-of-guisando",
@@ -12986,6 +13013,33 @@
       "kind": "place",
       "names": [
         "Cherbourg-Octeville"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "cherchell",
+      "kind": "place",
+      "names": [
+        "Cherchell"
       ],
       "origin": {
         "tool": "wikidata"
@@ -22625,6 +22679,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "ghaghara",
+      "kind": "place",
+      "names": [
+        "Ghaghara River",
+        "Rio Gagara",
+        "Ghaghara"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "ghazni",
@@ -22682,7 +22765,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 4,
+      "degree": 5,
       "id": "gibraltar",
       "kind": "place",
       "names": [
@@ -23287,7 +23370,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "grand-pre-nova-scotia",
       "kind": "place",
       "names": [
@@ -25839,6 +25922,34 @@
       "kind": "place",
       "names": [
         "Hetin"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "highlands-new-york",
+      "kind": "place",
+      "names": [
+        "Highlands",
+        "Highlands, New York"
       ],
       "origin": {
         "tool": "wikidata"
@@ -28773,7 +28884,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 91,
+      "degree": 99,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -31474,6 +31585,33 @@
       "names": [
         "Kirkuk",
         "Quircuque"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "kiso-river",
+      "kind": "place",
+      "names": [
+        "Kiso River"
       ],
       "origin": {
         "tool": "wikidata"
@@ -36731,6 +36869,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "maclodio",
+      "kind": "place",
+      "names": [
+        "Maclodio"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "macta",
@@ -37380,6 +37545,33 @@
       "names": [
         "Malbork Castle",
         "Castelo de Malbork"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "malesov",
+      "kind": "place",
+      "names": [
+        "Malešov"
       ],
       "origin": {
         "tool": "wikidata"
@@ -41194,6 +41386,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "montopoli-in-val-d-arno",
+      "kind": "place",
+      "names": [
+        "Montopoli in Val d'Arno"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "montpellier",
@@ -43836,6 +44055,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "newfoundland-island",
+      "kind": "place",
+      "names": [
+        "Newfoundland",
+        "Terra Nova",
+        "Newfoundland (island)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "newport-wales",
@@ -45686,6 +45934,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "ono-river",
+      "kind": "place",
+      "names": [
+        "Ōno River"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "oradea",
@@ -45714,7 +45989,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 6,
+      "degree": 7,
       "id": "oran",
       "kind": "place",
       "names": [
@@ -47454,7 +47729,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 2,
+      "degree": 3,
       "id": "pensacola-florida",
       "kind": "place",
       "names": [
@@ -48588,6 +48863,35 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "po-river",
+      "kind": "place",
+      "names": [
+        "Po",
+        "Rio Pó",
+        "Po (river)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -51604,6 +51908,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "restigouche-river",
+      "kind": "place",
+      "names": [
+        "Restigouche River",
+        "Rio Restigouche"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -55051,7 +55383,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 2,
+      "degree": 3,
       "id": "santa-cruz-de-tenerife",
       "kind": "place",
       "names": [
@@ -58994,7 +59326,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "st-john-s-newfoundland-and-labrador",
       "kind": "place",
       "names": [
@@ -59023,7 +59355,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 2,
+      "degree": 3,
       "id": "st-lawrence-river",
       "kind": "place",
       "names": [
@@ -59950,6 +60282,33 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q2890073, Battle of Suipacha, read on 2026-09-24; Suipacha itself has no item this pass could reach. The record carries no `wikidata` key for that reason: a place claiming to be the battle would be a worse record than one claiming nothing.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "sullivan-s-island",
+      "kind": "place",
+      "names": [
+        "Sullivan's Island"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
