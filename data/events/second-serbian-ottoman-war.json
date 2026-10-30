@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "second-serbian-ottoman-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q12294927",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Second Serbian–Ottoman War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12294927"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Serbian–Ottoman War\", revision 1370737338"
+    }
+  ],
+  "title": "Second Serbian–Ottoman War",
+  "summary": "The English Wikipedia article \"Second Serbian–Ottoman War\", at revision 1370737338, opens: \"The Second Serbian-Ottoman War was a conflict fought between the Principality of Serbia and the Ottoman Empire. It lasted from 13 December 1877 to 5 February 1878, and followed the First Serbian–Ottoman War. Serbia waged a successful campaign during which the Serbian army reached Kosovo, Čukarica and Kyustendil within a few weeks. Thanks to these military successes, Serbia gained their long-awaited de jure independence, as well as the districts of Vranje, Toplica, Niš, and Pirot.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12294927, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between Serbia and the Ottoman Empire (1877–1878)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1877,
+    "end": 1878,
+    "date": "1877-12-13",
+    "endDate": "1878-02-05"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "serbian-ottoman-wars-1876-1878"
+}

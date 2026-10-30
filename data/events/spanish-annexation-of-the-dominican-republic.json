@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "spanish-annexation-of-the-dominican-republic",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q16933273",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Spanish annexation of the Dominican Republic",
+    "pt": "Ocupação espanhola da República Dominicana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16933273"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish annexation of the Dominican Republic\", revision 1378087251"
+    }
+  ],
+  "title": "Spanish annexation of the Dominican Republic",
+  "summary": "The English Wikipedia article \"Spanish annexation of the Dominican Republic\", at revision 1378087251, opens: \"The Annexation of the Dominican Republic to Spain or Reintegration of Santo Domingo was a four-year period between 1861 and 1865 during which the former Spanish possession of Santo Domingo in the eastern part of the island of Hispaniola, then the independent Dominican Republic, was occupied and annexed by the Spanish Empire, following the request of Dominican dictator Pedro Santana. The period coincided with the American Civil War, during which the United States was unable to enforce the Monroe Doctrine. After fighting an insurgency of two years in the Dominican Restoration War, Spain left the country in 1865. Several Dominicans who sided with Spain left for the Spanish possessions of Cuba and Puerto Rico and played a role in their later struggle for independence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16933273, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 Santo Domingo Rejoins Spain as an overseas province\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1865,
+    "date": "1861-03-18",
+    "endDate": "1865-07-15"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

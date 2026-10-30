@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-turbigo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q698440",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Turbigo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q698440"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Turbigo\", revision 1370591785"
+    }
+  ],
+  "title": "Battle of Turbigo",
+  "summary": "The English Wikipedia article \"Battle of Turbigo\", at revision 1370591785, opens: \"The Battle of Turbigo took place on 3 June 1859 saw the French army secure two crossing points over the Ticino River, allowing them to get a foothold in Austrian Lombardy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q698440, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the Second Italian War of Independence, fought on June 3, 1859\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1859,
+    "end": 1859,
+    "date": "1859-06-03"
+  },
+  "place": "turbigo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-italian-war-of-independence"
+}

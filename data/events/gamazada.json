@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "gamazada",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3322785",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Gamazada",
+    "pt": "Gamazada"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3322785"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gamazada\", revision 1338931183"
+    }
+  ],
+  "title": "Gamazada",
+  "summary": "The English Wikipedia article \"Gamazada\", at revision 1338931183, opens: \"The Gamazada is the popular reaction in Navarre in 1893 and 1894 to when the Spanish finance minister of the Liberal Party under Prime Minister Sagasta, Germán Gamazo, tried to suppress the fueros that had been established in the Compromise Act of 1841. It caused a huge uproar among the people and institutions of Navarre, with demonstrations and petitions.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3322785, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1893,
+    "end": 1894,
+    "date": "1893-05-28",
+    "endDate": "1894-07"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

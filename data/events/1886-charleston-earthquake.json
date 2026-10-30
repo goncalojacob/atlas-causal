@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1886-charleston-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q477519",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1886 Charleston earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q477519"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1886 Charleston earthquake\", revision 1378468561"
+    }
+  ],
+  "title": "1886 Charleston earthquake",
+  "summary": "The English Wikipedia article \"1886 Charleston earthquake\", at revision 1378468561, opens: \"An earthquake struck Charleston, South Carolina, and surrounding areas about 9:50 p.m. local time on August 31, 1886. It caused 60 deaths and $5–6 million in damage to 2,000 buildings in the Southeastern United States. It is one of the most powerful and damaging earthquakes to hit the East Coast of the United States.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q477519, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake in South Carolina, United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1886,
+    "end": 1886
+  },
+  "place": "south-carolina-q1456",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

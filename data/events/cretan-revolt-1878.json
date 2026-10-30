@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cretan-revolt-1878",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3458267",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Cretan revolt (1878)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3458267"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cretan revolt (1878)\", revision 1374875279"
+    }
+  ],
+  "title": "Cretan revolt (1878)",
+  "summary": "The English Wikipedia article \"Cretan revolt (1878)\", at revision 1374875279, opens: \"The Cretan revolt of 1878 was an insurrection of the Cretan people against the Ottoman occupation of the island. This insurrection is part of a larger movement for independence from the Ottoman Empire, which Crete was part of since the middle of the 17th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3458267, imported by tools/import/wikidata.mjs. The item's own description reads \"1878 insurrection of the Cretan people against the Ottoman occupation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1878,
+    "end": 1878,
+    "date": "1878-01",
+    "endDate": "1878-10"
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

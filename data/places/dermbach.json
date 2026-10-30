@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "dermbach",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q659018",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Dermbach",
+    "pt": "Dermbach"
+  },
+  "sources": [],
+  "names": [
+    "Dermbach"
+  ],
+  "where": {
+    "lon": 10.119722222222,
+    "lat": 50.716388888889,
+    "precision": "city",
+    "label": "Dermbach"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

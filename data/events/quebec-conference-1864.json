@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "quebec-conference-1864",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q824689",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Quebec Conference, 1864"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q824689"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Quebec Conference, 1864\", revision 1362390448"
+    }
+  ],
+  "title": "Quebec Conference, 1864",
+  "summary": "The English Wikipedia article \"Quebec Conference, 1864\", at revision 1362390448, opens: \"The Quebec Conference was held from October 10 to 27, 1864, to discuss a proposed Canadian Confederation. It was in response to the shift in political ground when the United Kingdom and the United States had come very close to engaging in war with each other. Therefore, the overall goal of the conference was to elaborate on policies surrounding federalism and creating a single state, both of which had been discussed at the Charlottetown Conference around a month earlier. Canada West leader John A. Macdonald requested Governor-General Charles Monck to invite all representatives from the three Maritime provinces and Newfoundland to meet with the candidates who formed the United Canada to Quebec in October 1864. Although Newfoundland sent two observers, it did not participate directly in the proceedings.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q824689, imported by tools/import/wikidata.mjs. The item's own description reads \"conference on Canadian confederation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-10-10",
+    "endDate": "1864-10-24"
+  },
+  "place": "quebec-city",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

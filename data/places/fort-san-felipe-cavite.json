@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "fort-san-felipe-cavite",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q15218149",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Fort San Felipe (Cavite)"
+  },
+  "sources": [],
+  "names": [
+    "Fort San Felipe",
+    "Fort San Felipe (Cavite)"
+  ],
+  "where": {
+    "lon": 120.911601,
+    "lat": 14.482553,
+    "precision": "point",
+    "label": "Fort San Felipe (Cavite)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
