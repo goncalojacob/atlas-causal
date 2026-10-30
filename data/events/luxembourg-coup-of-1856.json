@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "luxembourg-coup-of-1856",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6706220",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Luxembourg coup of 1856",
+    "pt": "Golpe luxemburguês de 1856"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6706220"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Luxembourg coup of 1856\", revision 1366254130"
+    }
+  ],
+  "title": "Luxembourg coup of 1856",
+  "summary": "The English Wikipedia article \"Luxembourg coup of 1856\", at revision 1366254130, opens: \"The Luxembourg coup of 1856, also called the putsch of 1856, was a reactionary revision of Luxembourg's constitution on 27 November 1856. Whilst not a true coup d'état or revolution, its detractors dubbed it a \"royal coup\", as the reigning Grand Duke of Luxembourg, William III, greatly expanded his powers, and the name has stuck. Aimed at reversing the liberal successes embodied in the 1848 constitution, the major changes enacted by William were undone with the promulgation of a new constitution in 1868, after the Luxembourg Crisis. However, some changes have lasted, such as the creation of the Council of State.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6706220, imported by tools/import/wikidata.mjs. The item's own description reads \"1856 reactionary revision of Luxembourg's constitution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1856,
+    "end": 1856,
+    "date": "1856-11"
+  },
+  "place": "luxembourg-q1842",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

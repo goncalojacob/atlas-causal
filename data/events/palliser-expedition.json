@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "palliser-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1276333",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Palliser expedition",
+    "pt": "Expedição Palliser"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1276333"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Palliser expedition\", revision 1338793607"
+    }
+  ],
+  "title": "Palliser expedition",
+  "summary": "The English Wikipedia article \"Palliser expedition\", at revision 1338793607, opens: \"The Palliser expedition, officially the British North American Exploring Expedition, explored and surveyed the open prairies and rugged wilderness of western Canada from 1857 to 1860. The expedition was led by Irish-born explorer John Palliser, and accompanied by a party of four other men: James Hector, Eugène Bourgeau, Thomas Blakiston and John W. Sullivan. With the support of the British government and the Royal Geographical Society it became an official expedition with the stated purpose of gathering scientific information about the landscapes of British-claimed north-western North America, in particular the territory of Rupert's Land, including information on the geography, climate, soil, flora and fauna, in order to discover its capabilities for settlement and transportation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1276333, imported by tools/import/wikidata.mjs. The item's own description reads \"research expedition to northern Canada (1857 - 1860)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1857,
+    "end": 1860
+  },
+  "place": "british-north-america",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "argentine-constitution-of-1853",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q951582",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Argentine Constitution of 1853",
+    "pt": "Constituição argentina de 1853"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q951582"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Argentine Constitution of 1853\", revision 1376930996"
+    }
+  ],
+  "title": "Argentine Constitution of 1853",
+  "summary": "The English Wikipedia article \"Argentine Constitution of 1853\", at revision 1376930996, opens: \"The current Constitution of the Argentine Republic dates back to 1853. The Argentine Constitution of 1853 was approved in 1853 by almost all of the provincial governments with the exception of Buenos Aires Province, which remained separate from the Argentine Confederation until 1859. After several modifications to the original constitution and the return of power to Buenos Aires' Unitarian Party, it was sanctioned on May 1, 1853, by the Constitutional Convention that had gathered in Santa Fe. The document was promulgated by the provisional director of the national executive government, Justo José de Urquiza, who was a member of the Federalist Party. Following the short-lived constitutions of 1819 and 1826, it was the third constitution in the history of the country.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q951582, imported by tools/import/wikidata.mjs. The item's own description reads \"first constitution of Argentina approved with the support of the governments of the provinces, sanctioned in May 1853\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1853,
+    "end": 1853,
+    "date": "1853-05-01"
+  },
+  "place": "argentina-q414",
+  "region": null,
+  "regionNote": null,
+  "category": "law",
+  "actors": []
+}

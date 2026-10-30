@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "peruvian-bolivian-war-of-1841-42",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q495202",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Peruvian–Bolivian War of 1841–42",
+    "pt": "Guerra Peru–Bolívia de 1841–1842"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q495202"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peruvian–Bolivian War of 1841–42\", revision 1372941594"
+    }
+  ],
+  "title": "Peruvian–Bolivian War of 1841–42",
+  "summary": "The English Wikipedia article \"Peruvian–Bolivian War of 1841–42\", at revision 1372941594, opens: \"The Peruvian–Bolivian War was a warlike confrontation between Peru and Bolivia in the years 1841 and 1842.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q495202, imported by tools/import/wikidata.mjs. The item's own description reads \"guerra\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1841,
+    "end": 1842,
+    "date": "1841-10-01",
+    "endDate": "1842-06-07"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

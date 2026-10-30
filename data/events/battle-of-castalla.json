@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-castalla",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870673",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Castalla",
+    "pt": "Batalha de Castalla"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870673"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Castalla\", revision 1370436514"
+    }
+  ],
+  "title": "Battle of Castalla",
+  "summary": "The English Wikipedia article \"Battle of Castalla\", at revision 1370436514, opens: \"In the Battle of Castalla on 13 April 1813, an Anglo-Spanish-Sicilian force commanded by Lieutenant General Sir John Murray fought Marshal Louis Gabriel Suchet's French Army of Valencia and Aragon. Murray's troops successfully repelled a series of French attacks on their hilltop position, causing Suchet's III corps to retreat. The action took place during the Peninsular War, part of the Napoleonic Wars. Castalla is located 35 kilometers north-northwest of Alicante, Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870673, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-04-13"
+  },
+  "place": "castalla",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-schleswig",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1799073",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Schleswig"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1799073"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Schleswig\", revision 1370588825"
+    }
+  ],
+  "title": "Battle of Schleswig",
+  "summary": "The English Wikipedia article \"Battle of Schleswig\", at revision 1370588825, opens: \"The Battle of Schleswig occurred near the Danevirke on Easter morning, 23 April 1848 as the second battle of the First Schleswig War of 1848–1850.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1799073, imported by tools/import/wikidata.mjs. The item's own description reads \"1848 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-04-23"
+  },
+  "place": "schleswig-schleswig-holstein",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-schleswig-war"
+}

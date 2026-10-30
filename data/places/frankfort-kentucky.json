@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "frankfort-kentucky",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q28603",
+  "sitelinks": {
+    "count": 123,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Frankfort, Kentucky",
+    "pt": "Frankfort (Kentucky)"
+  },
+  "sources": [],
+  "names": [
+    "Frankfort",
+    "Frankfort, Kentucky",
+    "Frankfort (Kentucky)"
+  ],
+  "where": {
+    "lon": -84.863,
+    "lat": 38.197,
+    "precision": "city",
+    "label": "Frankfort, Kentucky"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
