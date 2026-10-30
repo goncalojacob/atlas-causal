@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-tauberbischofsheim",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q618935",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Tauberbischofsheim"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q618935"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tauberbischofsheim\", revision 1380933697"
+    }
+  ],
+  "title": "Battle of Tauberbischofsheim",
+  "summary": "The English Wikipedia article \"Battle of Tauberbischofsheim\", at revision 1380933697, opens: \"The Battle of Tauberbischofsheim was an engagement of the Austro-Prussian War of 1866, on the 24 July at Tauberbischofsheim in the Grand Duchy of Baden between troops of the German Confederation and the Kingdom of Prussia. It was part of the campaign of the Main and ended with a Prussian victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q618935, imported by tools/import/wikidata.mjs. The item's own description reads \"1866 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866,
+    "date": "1866-07-24"
+  },
+  "place": "tauberbischofsheim",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "austro-prussian-war"
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "charlottetown-conference",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1067465",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Charlottetown Conference"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1067465"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Charlottetown Conference\", revision 1358234456"
+    }
+  ],
+  "title": "Charlottetown Conference",
+  "summary": "The English Wikipedia article \"Charlottetown Conference\", at revision 1358234456, opens: \"The Charlottetown Conference was a political conference for representatives from colonies of British North America to discuss Canadian Confederation. The conference took place during September 1–9, 1864 in Charlottetown, Prince Edward Island. The conference had been planned as a meeting of representatives from the Maritime colonies; Nova Scotia, New Brunswick and Prince Edward Island. Britain encouraged a Maritime Union between these colonies, hoping that they would then become less economically and politically dependent on the Crown, and provide for greater economic and military power for the region in light of the American Civil War. However, another colony, the Province of Canada, comprising present-day Ontario and Quebec, heard news of the planned conference and asked that the agenda be expanded to discuss a union that would also include them.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1067465, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 conference to discuss Canadian confederation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864
+  },
+  "place": "charlottetown",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

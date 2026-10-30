@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "storming-and-capture-of-acre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q27627693",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Storming and Capture of Acre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q27627693"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Storming and Capture of Acre\", revision 1380613949"
+    }
+  ],
+  "title": "Storming and Capture of Acre",
+  "summary": "The English Wikipedia article \"Storming and Capture of Acre\", at revision 1380613949, opens: \"The Bombardment of Acre or Storming and Capture of Acre occurred on 3 November 1840. The Oriental Crisis of 1840 was an episode in the Egyptian–Ottoman War in the eastern Mediterranean, triggered by the rebellious Wali of Egypt and Sudan Muhammad Ali Pasha's aims to establish a personal empire in the Egypt Eyalet.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q27627693, imported by tools/import/wikidata.mjs. The item's own description reads \"1840 battle between Egypt and the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1840,
+    "end": 1840,
+    "date": "1840-11-03"
+  },
+  "place": "acre-israel",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "oriental-crisis-of-1840"
+}

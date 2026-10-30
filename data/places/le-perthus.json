@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "le-perthus",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6684",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Le Perthus",
+    "pt": "Le Perthus"
+  },
+  "sources": [],
+  "names": [
+    "Le Perthus"
+  ],
+  "where": {
+    "lon": 2.8627777777778,
+    "lat": 42.464166666667,
+    "precision": "city",
+    "label": "Le Perthus"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "rakovica-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3513759",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Rakovica revolt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3513759"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rakovica revolt\", revision 1366261517"
+    }
+  ],
+  "title": "Rakovica revolt",
+  "summary": "The English Wikipedia article \"Rakovica revolt\", at revision 1366261517, opens: \"The Rakovica revolt was an armed uprising in 1871, led by Croatian politician Eugen Kvaternik against the authorities of Austria-Hungary, with the aim of establishing an independent Croatian state. The uprising, named after the village of Rakovica in south-central Croatia where it started, lasted only four days and ended in defeat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3513759, imported by tools/import/wikidata.mjs. The item's own description reads \"armed uprising in 1871 led by Croatian politician Eugen Kvaternik\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1871,
+    "end": 1871,
+    "date": "1871-10-07",
+    "endDate": "1871-10-11"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

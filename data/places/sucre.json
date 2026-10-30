@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sucre",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2907",
+  "sitelinks": {
+    "count": 137,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Sucre",
+    "pt": "Sucre"
+  },
+  "sources": [],
+  "names": [
+    "Sucre"
+  ],
+  "where": {
+    "lon": -65.26,
+    "lat": -19.0475,
+    "precision": "city",
+    "label": "Sucre"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

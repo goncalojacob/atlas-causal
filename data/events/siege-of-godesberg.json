@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-godesberg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510052",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Godesberg",
+    "pt": "Cerco de Godesberg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510052"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Godesberg\", revision 1376087783"
+    }
+  ],
+  "title": "Siege of Godesberg",
+  "summary": "The English Wikipedia article \"Siege of Godesberg\", at revision 1376087783, opens: \"The siege of Godesberg, 18 November – 17 December 1583, was the first major siege of the Cologne War (1583–1589). Seeking to wrest control of an important fortification, Bavarian and mercenary soldiers surrounded the Godesberg, and the village then of the same name, now Bad Godesberg, located at its foot. On top of the mountain sat a formidable fortress, similarly named Godesburg, built in the early 13th century during a contest over the election of two competing archbishops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510052, imported by tools/import/wikidata.mjs. The item's own description reads \"1583 siege during the Cologne War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1583,
+    "end": 1583,
+    "date": "1583-11-18",
+    "endDate": "1583-12-17"
+  },
+  "place": "bad-godesberg",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "cologne-war"
+}

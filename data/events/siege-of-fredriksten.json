@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-fredriksten",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2815407",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Fredriksten"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2815407"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fredriksten\", revision 1382484725"
+    }
+  ],
+  "title": "Siege of Fredriksten",
+  "summary": "The English Wikipedia article \"Siege of Fredriksten\", at revision 1382484725, opens: \"The siege of Fredriksten was an attack on the Norwegian fortress of Fredriksten in the city of Fredrikshald by King Charles XII of Sweden. While inspecting his troops' lines, Charles XII was killed by a projectile. The Swedes broke off the siege, and the Norwegians held the fortress. Along with the Treaty of Nystad three years later, the death of Charles XII marked the end of the imperial era in Sweden, and the beginning of the Age of Liberty in that country.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2815407, imported by tools/import/wikidata.mjs. The item's own description reads \"1718 battle of the Great Northern War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1718,
+    "end": 1718,
+    "date": "1718-11-20",
+    "endDate": "1718-12-14"
+  },
+  "place": "fredriksten",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "el-puente-del-arzobispo",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1628788",
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "El Puente del Arzobispo",
+    "pt": "El Puente del Arzobispo"
+  },
+  "sources": [],
+  "names": [
+    "El Puente del Arzobispo"
+  ],
+  "where": {
+    "lon": -5.1719444444444,
+    "lat": 39.8025,
+    "precision": "city",
+    "label": "El Puente del Arzobispo"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

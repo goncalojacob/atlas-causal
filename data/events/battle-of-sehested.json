@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-sehested",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q514504",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Sehested"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q514504"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sehested\", revision 1375995964"
+    }
+  ],
+  "title": "Battle of Sehested",
+  "summary": "The English Wikipedia article \"Battle of Sehested\", at revision 1375995964, opens: \"The Battle of Sehested was fought on 10 December 1813 during the Dano-Swedish War of 1813–1814 between a Danish army under Prince Frederik of Hesse and a Coalition force led by Ludwig von Wallmoden-Gimborn. Near Sehested, Holstein, Frederik's troops defeated the Coalition army, inflicting over 1,100 casualties on von Wallmoden-Gimborn's force while suffering only 500. However, this victory did not prevent the Coalition from emerging victorious in the conflict in 1814.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q514504, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle during the War of the Sixth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-12-13"
+  },
+  "place": "sehestedt",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-sixth-coalition"
+}

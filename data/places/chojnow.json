@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "chojnow",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q478869",
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Chojnów",
+    "pt": "Chojnów"
+  },
+  "sources": [],
+  "names": [
+    "Chojnów"
+  ],
+  "where": {
+    "lon": 15.933333333333,
+    "lat": 51.266666666667,
+    "precision": "city",
+    "label": "Chojnów"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

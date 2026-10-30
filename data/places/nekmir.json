@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "nekmir",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2230118",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Nekmíř",
+    "pt": "Nekmíř"
+  },
+  "sources": [],
+  "names": [
+    "Nekmíř"
+  ],
+  "where": {
+    "lon": 13.263195738431,
+    "lat": 49.85818801276,
+    "precision": "city",
+    "label": "Nekmíř"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

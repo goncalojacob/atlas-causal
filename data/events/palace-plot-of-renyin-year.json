@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "palace-plot-of-renyin-year",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q10931534",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Palace plot of Renyin year"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10931534"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Palace plot of Renyin year\", revision 1373039553"
+    }
+  ],
+  "title": "Palace plot of Renyin year",
+  "summary": "The English Wikipedia article \"Palace plot of Renyin year\", at revision 1373039553, opens: \"The Palace plot of Renyin year, also known as the Palace Women's Uprising (宮女起義), was a Ming dynasty plot against the Jiajing Emperor, where sixteen palace women attempted to murder him. It occurred in 1542, the 21st year of the reign of the Jiajing Emperor and the renyin year of the sexagenary cycle, hence its name.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10931534, imported by tools/import/wikidata.mjs. The item's own description reads \"16th-century China royal assassination plot\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1542,
+    "end": 1542,
+    "date": "1542-11-27"
+  },
+  "place": "forbidden-city",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

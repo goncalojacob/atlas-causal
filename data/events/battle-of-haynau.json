@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-haynau",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1497904",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Haynau"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1497904"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Haynau\", revision 1370265484"
+    }
+  ],
+  "title": "Battle of Haynau",
+  "summary": "The English Wikipedia article \"Battle of Haynau\", at revision 1370265484, opens: \"The Battle of Haynau was fought on 26 May 1813, between Prussian cavalry under the command of General Gebhard Leberecht von Blücher and a French infantry division under the command of General Nicolas Joseph Maison. The battle resulted in a Prussian victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1497904, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle during the War of the Sixth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-05-26"
+  },
+  "place": "chojnow",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "german-campaign-of-1813"
+}

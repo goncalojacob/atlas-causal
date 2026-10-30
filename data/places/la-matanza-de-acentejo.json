@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "la-matanza-de-acentejo",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q983577",
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "La Matanza de Acentejo",
+    "pt": "La Matanza de Acentejo"
+  },
+  "sources": [],
+  "names": [
+    "La Matanza de Acentejo"
+  ],
+  "where": {
+    "lon": -16.438888888889,
+    "lat": 28.440277777778,
+    "precision": "city",
+    "label": "La Matanza de Acentejo"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

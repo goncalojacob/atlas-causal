@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "lyng-r",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3269531",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Lyngør"
+  },
+  "sources": [],
+  "names": [
+    "Lyngør"
+  ],
+  "where": {
+    "lon": 9.1333333333333,
+    "lat": 58.633333333333,
+    "precision": "city",
+    "label": "Lyngør"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

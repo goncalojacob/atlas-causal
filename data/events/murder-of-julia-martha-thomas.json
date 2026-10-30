@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "murder-of-julia-martha-thomas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2613392",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Murder of Julia Martha Thomas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2613392"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Murder of Julia Martha Thomas\", revision 1381102056"
+    }
+  ],
+  "title": "Murder of Julia Martha Thomas",
+  "summary": "The English Wikipedia article \"Murder of Julia Martha Thomas\", at revision 1381102056, opens: \"The murder of Julia Martha Thomas, dubbed the \"Barnes Mystery\" or the \"Richmond Murder\" by the contemporary press, was one of the most notorious crimes in the Victorian period of the United Kingdom. Thomas, a widow in her 50s who lived in Richmond, London, was murdered on 2 March 1879 by her maid Kate Webster, a 30-year-old Irishwoman with a history of theft. Webster disposed of the body by dismembering it, boiling the flesh off the bones, and throwing most of the remains into the River Thames.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2613392, imported by tools/import/wikidata.mjs. The item's own description reads \"notorious murder from March 1879\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879,
+    "date": "1879-03-02"
+  },
+  "place": "richmond-london",
+  "region": null,
+  "regionNote": null,
+  "category": "death",
+  "actors": []
+}

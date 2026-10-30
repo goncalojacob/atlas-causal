@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-porrentruy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3403838",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Capture of Porrentruy"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3403838"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Porrentruy\", revision 1379857943"
+    }
+  ],
+  "title": "Capture of Porrentruy",
+  "summary": "The English Wikipedia article \"Capture of Porrentruy\", at revision 1379857943, opens: \"The capture of Porrentruy was a siege of the Swiss town of Porrentruy. The town was held by Austria and attacked by the French. The event occurred on 28 April 1792 and resulted in victory for the French forces. This engagement marked the commencement of the War of the First Coalition.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3403838, imported by tools/import/wikidata.mjs. The item's own description reads \"1792 battle of the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1792,
+    "end": 1792,
+    "date": "1792-04-28"
+  },
+  "place": "porrentruy",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}

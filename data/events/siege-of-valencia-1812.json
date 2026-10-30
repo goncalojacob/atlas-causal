@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-valencia-1812",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3486050",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Valencia (1812)",
+    "pt": "Cerco de Valência (1812)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3486050"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Valencia (1812)\", revision 1370746227"
+    }
+  ],
+  "title": "Siege of Valencia (1812)",
+  "summary": "The English Wikipedia article \"Siege of Valencia (1812)\", at revision 1370746227, opens: \"The siege of Valencia from 3 November 1811 to 9 January 1812, saw Marshal Louis Gabriel Suchet's French Army of Aragon besiege Captain General Joaquín Blake y Joyes's forces in the city of Valencia, Spain, during the Peninsular War. The 20,000 to 30,000 French troops compelled 16,000 Spanish soldiers to surrender at the conclusion of the siege, although another 7,000 Spaniards escaped from the trap. Suchet quickly converted Valencia into an important base of operations after this Napoleonic Wars action. Valencia, modern-day capital of the Valencian Community, is located on the east coast of Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3486050, imported by tools/import/wikidata.mjs. The item's own description reads \"1811–1812 siege during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "endDate": "1812-01-09"
+  },
+  "place": "valencia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

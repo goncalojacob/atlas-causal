@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "shkoder",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q131638",
+  "sitelinks": {
+    "count": 84,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Shkodër",
+    "pt": "Escodra"
+  },
+  "sources": [],
+  "names": [
+    "Shkodër",
+    "Escodra"
+  ],
+  "where": {
+    "lon": 19.512138,
+    "lat": 42.068132,
+    "precision": "city",
+    "label": "Shkodër"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

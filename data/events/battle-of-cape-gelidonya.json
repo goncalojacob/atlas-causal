@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-cape-gelidonya",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2890849",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Cape Gelidonya"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890849"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cape Gelidonya\", revision 1379394626"
+    }
+  ],
+  "title": "Battle of Cape Gelidonya",
+  "summary": "The English Wikipedia article \"Battle of Cape Gelidonya\", at revision 1379394626, opens: \"The Battle of Cape Gelidonya or Celidonia took place on 14 July 1616 during the Ottoman–Habsburg struggle for the control of the Mediterranean. During its course, a small privateer fleet owned by Spanish Viceroy of Sicily Pedro Téllez-Girón, Duke of Osuna, under the command of Francisco de Ribera, was attacked by an Ottoman fleet that vastly outnumbered it while cruising off Cyprus. Despite this, the Spanish ships, mostly galleons, managed to repel the Ottomans, whose fleet consisted mainly of galleys, inflicting heavy losses.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890849, imported by tools/import/wikidata.mjs. The item's own description reads \"1616 naval battle between the Ottoman Empire and the Habsburgs\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1616,
+    "end": 1616,
+    "date": "1616-07-14",
+    "endDate": "1616-07-16"
+  },
+  "place": "cape-gelidonya",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "tumult-of-thorn-torun",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q457509",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Tumult of Thorn (Toruń)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q457509"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tumult of Thorn (Toruń)\", revision 1327411455"
+    }
+  ],
+  "title": "Tumult of Thorn (Toruń)",
+  "summary": "The English Wikipedia article \"Tumult of Thorn (Toruń)\", at revision 1327411455, opens: \"The Tumult of Thorn (Toruń), or Blood-Bath of Thorn refers to executions ordered in 1724 by the Polish supreme court under Augustus II the Strong of Poland. During a religious conflict between Protestant townsfolk represented by mayor Johann Gottfried Rösner, and the Roman Catholic students of the Jesuit college in the city of Thorn (Toruń) in Royal Prussia, the college had been vandalised by a crowd of German Protestants. The mayor and nine other Lutheran officials were blamed for neglect of duty, sentenced to death, and executed on 7 December 1724.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q457509, imported by tools/import/wikidata.mjs. The item's own description reads \"religious conflict in Royal Prussia in 1724\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1724,
+    "end": 1724,
+    "date": "1724-07-16",
+    "endDate": "1724-12-07"
+  },
+  "place": "torun",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -60584,6 +60584,6171 @@
         "place": "savenay"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-385",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q319531: its classes disagree: Q11514315 → event, Q3024240 → actor"
+    },
+    {
+      "id": "2026-10-29-asia-386",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3076765: its classes disagree: Q1620908 → place, Q11514315 → event"
+    },
+    {
+      "id": "2026-10-29-americas-400",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3136592 is held by the other branch"
+    },
+    {
+      "id": "2026-10-29-europe-872",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-entrames",
+        "edges": [],
+        "place": "chateau-gontier"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-874",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mas-deu",
+        "edges": [],
+        "place": "trouillas"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-876",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "greater-poland-uprising-1794",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-878",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "armistice-of-cherasco",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-880",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bassano",
+        "edges": [],
+        "place": "bassano-del-grappa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-882",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3061033 is held by the other branch"
+    },
+    {
+      "id": "2026-10-29-americas-401",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "1798-revolt-of-the-alfaiates",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-885",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "marengo-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-887",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "first-siege-of-girona-peninsular-war",
+        "edges": [],
+        "place": "girona"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-889",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sahagun",
+        "edges": [],
+        "place": "sahagun"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-891",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "third-siege-of-girona-peninsular-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-893",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-san-marcial",
+        "edges": [],
+        "place": "irun"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-402",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "congress-of-panama",
+        "edges": [],
+        "place": "panama-city"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-896",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-antwerp-1832",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-898",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "greek-constitution-of-1844",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-900",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bov",
+        "edges": [],
+        "place": "flensburg"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-902",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "1852-french-second-empire-referendum",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-904",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "great-gold-robbery",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-906",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-san-fermo",
+        "edges": [],
+        "place": "san-fermo-della-battaglia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-403",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "charlottetown-conference",
+        "edges": [],
+        "place": "charlottetown"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-909",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-podol",
+        "edges": [],
+        "place": "svijany"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-911",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-huhnerwasser",
+        "edges": [],
+        "place": "kurivody"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-405",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "wagon-box-fight",
+        "edges": [],
+        "place": "wyoming"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-913",
+      "writer": "A",
+      "fired": "2026-10-29T23:40Z",
+      "status": "written",
+      "written": {
+        "event": "1870-french-constitutional-referendum",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-399",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q827212: its classes disagree: Q131569 → event, Q82794 → place"
+    },
+    {
+      "id": "2026-10-29-europe-870",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q238809: its classes disagree: Q11514315 → event, Q3024240 → actor"
+    },
+    {
+      "id": "2026-10-29-europe-871",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q688802: its classes disagree: Q178561 → event, Q4895508 → place"
+    },
+    {
+      "id": "2026-10-29-europe-873",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-aldenhoven-1793",
+        "edges": [],
+        "place": "aldenhoven"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-875",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-lyon",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-877",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "invasion-of-france-1795",
+        "edges": [],
+        "place": "quiberon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-879",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-amberg",
+        "edges": [],
+        "place": "amberg"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-881",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "second-congress-of-rastatt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-883",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tory-island",
+        "edges": [],
+        "place": "tory-island"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-884",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hochstadt-1800",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-886",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-czarnowo",
+        "edges": [],
+        "place": "czarnowo-gmina-pomiechowek"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-888",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gamonal",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-890",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-almonacid",
+        "edges": [],
+        "place": "almonacid-de-toledo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-892",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-basque-roads",
+        "edges": [],
+        "place": "ile-d-aix"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-894",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "constitution-of-the-german-confederation",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-895",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-olszynka-grochowska",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-897",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "bedchamber-crisis",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-899",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-pakozd",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-901",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-isted",
+        "edges": [],
+        "place": "idstedt"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-903",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "thin-red-line-battle-of-balaclava",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-905",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-grahovac",
+        "edges": [],
+        "place": "grahovac-montenegro"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-907",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "post-unification-italian-brigandage",
+        "edges": [],
+        "place": "southern-italy"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-908",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "evacuation-of-danevirke",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-910",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-munchengratz",
+        "edges": [],
+        "place": "mnichovo-hradiste"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-404",
+      "writer": "B",
+      "fired": "2026-10-29T23:48Z",
+      "status": "written",
+      "written": {
+        "event": "fetterman-fight",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-915",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-villersexel",
+        "edges": [],
+        "place": "villersexel"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-917",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "carolines-question",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-918",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "brussels-anti-slavery-conference-1889-90",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-406",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "lattimer-massacre",
+        "edges": [],
+        "place": "lattimer-pennsylvania"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-921",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nekmir",
+        "edges": [],
+        "place": "nekmir"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-923",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-horice",
+        "edges": [],
+        "place": "horice"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-925",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gerberoy",
+        "edges": [],
+        "place": "gerberoy"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-927",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-grotniki",
+        "edges": [],
+        "place": "grotniki-duze"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-929",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-polog",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-931",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "bohemian-hungarian-war-1468-1478",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-933",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-giornico",
+        "edges": [],
+        "place": "giornico"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-387",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "korean-literati-purges",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-936",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kletsk",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-388",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2909425: its classes disagree: Q11514315 → event, Q1620908 → place"
+    },
+    {
+      "id": "2026-10-29-africa-054",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "algiers-expedition-1519",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-389",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "luso-sundanese-padrao",
+        "edges": [],
+        "place": "sunda-kelapa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-940",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-obertyn",
+        "edges": [],
+        "place": "obertyn"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-942",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-klis",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-390",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "palace-plot-of-renyin-year",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-944",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "estonia-under-swedish-rule",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-946",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-oosterweel",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-408",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "1570-concepcion-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-949",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-alkmaar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-951",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-scheldt-1574",
+        "edges": [],
+        "place": "eastern-scheldt"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-953",
+      "writer": "A",
+      "fired": "2026-10-29T23:56Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-alcantara-1580",
+        "edges": [],
+        "place": "alcantara-lisbon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-912",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-belfort",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-914",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "european-civil-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-916",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "rakovica-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-053",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "emin-pasha-relief-expedition",
+        "edges": [],
+        "place": "africa-q15"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-919",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "prussian-deportations",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-920",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "bava-beccaris-massacre",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-922",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kutna-hora",
+        "edges": [],
+        "place": "kutna-hora"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-924",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tachov",
+        "edges": [],
+        "place": "tachov"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-926",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "all-saints-day-flood-of-1436",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-928",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-st-jakob-an-der-sihl",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-930",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-jajce-1463",
+        "edges": [],
+        "place": "jajce"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-932",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-burgundian-succession",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-934",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-shkodra",
+        "edges": [],
+        "place": "shkoder"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-935",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-siritsa-river",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-937",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-wisniowiec",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-407",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "cholula-massacre",
+        "edges": [],
+        "place": "cholula-mesoamerican-site"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-938",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bogesund",
+        "edges": [],
+        "place": "asunden-vastergotland"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-939",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "prussian-homage",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-941",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-coron-1533-1534",
+        "edges": [],
+        "place": "koroni"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-africa-055",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-alboran",
+        "edges": [],
+        "place": "alboran-island"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-943",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-renty",
+        "edges": [],
+        "place": "renty"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-945",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-ula",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-947",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-dahlen",
+        "edges": [],
+        "place": "rheindahlen"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-948",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "relief-of-goes",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-950",
+      "writer": "B",
+      "fired": "2026-10-30T00:03Z",
+      "status": "written",
+      "written": {
+        "event": "battle-on-the-zuiderzee",
+        "edges": [],
+        "place": "zuiderzee"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-955",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "singeing-the-king-of-spain-s-beard",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-957",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-giurgiu-1595",
+        "edges": [],
+        "place": "giurgiu"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-959",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-yellow-ford",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-961",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "de-la-gardie-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-409",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q247921 is held by the other branch"
+    },
+    {
+      "id": "2026-10-29-europe-962",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-compiegne-1624",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-964",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "corpus-de-sang",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-966",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-benburb",
+        "edges": [],
+        "place": "benburb"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-968",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-inverkeithing",
+        "edges": [],
+        "place": "inverkeithing"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-970",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sobota",
+        "edges": [],
+        "place": "sobota-odz-voivodeship"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-972",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-lyakhavichy",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-974",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-konzer-brucke",
+        "edges": [],
+        "place": "trier"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-976",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-malmo",
+        "edges": [],
+        "place": "malmo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-978",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "bombardment-of-genoa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-980",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hodow",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-982",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-thorn-1703",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-984",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "action-of-2-may-1707",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-986",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-malatitze",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-988",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-stralsund-1711-1715",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-990",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "persian-embassy-to-louis-xiv",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-992",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "jacobite-rising-of-1719",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-994",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-staket",
+        "edges": [],
+        "place": "baggensstaket"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-996",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-osel-island",
+        "edges": [],
+        "place": "saaremaa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-393",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "kyoho-famine",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-999",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-banja-luka",
+        "edges": [],
+        "place": "banja-luka"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-394",
+      "writer": "A",
+      "fired": "2026-10-30T00:18Z",
+      "status": "written",
+      "written": {
+        "event": "russian-occupations-of-beirut",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-952",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "edict-of-1577",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-954",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-godesberg",
+        "edges": [],
+        "place": "bad-godesberg"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-956",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gravelines-1588",
+        "edges": [],
+        "place": "gravelines"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-958",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-amiens-1597",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-960",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-guruslau",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-391",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cape-gelidonya",
+        "edges": [],
+        "place": "cape-gelidonya"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-asia-392",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "abaza-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-963",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-groenlo-1627",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-965",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-adwalton-moor",
+        "edges": [],
+        "place": "adwalton"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-967",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zboriv-1649",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-969",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ujscie",
+        "edges": [],
+        "place": "ujscie"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-971",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chudniv",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-973",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-basya-river",
+        "edges": [],
+        "place": "basia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-975",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-halmstad",
+        "edges": [],
+        "place": "halmstad"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-977",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-cambrai-1677",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-979",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nis-1689",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-981",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-salociai-1703",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-983",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cabrita-point",
+        "edges": [],
+        "place": "marbella"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-985",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "scilly-naval-disaster-of-1707",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-987",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-viborg-1710",
+        "edges": [],
+        "place": "vyborg"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-989",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-palkane",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-991",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-fredriksten",
+        "edges": [],
+        "place": "fredriksten"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-993",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-vigo-and-pontevedra",
+        "edges": [],
+        "place": "pontevedra"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-995",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-francavilla",
+        "edges": [],
+        "place": "francavilla-di-sicilia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-997",
+      "writer": "B",
+      "fired": "2026-10-30T00:23Z",
+      "status": "written",
+      "written": {
+        "event": "thirteenth-siege-of-gibraltar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-412",
+      "writer": "A",
+      "fired": "2026-10-30T00:32Z",
+      "status": "written",
+      "written": {
+        "event": "8th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-414",
+      "writer": "A",
+      "fired": "2026-10-30T00:32Z",
+      "status": "written",
+      "written": {
+        "event": "9th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-europe-998",
+      "writer": "B",
+      "fired": "2026-10-30T00:36Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-clausen",
+        "edges": [],
+        "place": "klausen-germany"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-410",
+      "writer": "B",
+      "fired": "2026-10-30T00:36Z",
+      "status": "written",
+      "written": {
+        "event": "first-cevallos-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-411",
+      "writer": "B",
+      "fired": "2026-10-30T00:36Z",
+      "status": "written",
+      "written": {
+        "event": "7th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-29-americas-413",
+      "writer": "B",
+      "fired": "2026-10-30T00:36Z",
+      "status": "written",
+      "written": {
+        "event": "haitian-declaration-of-independence",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-001",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q133132: its classes disagree: Q1323212 → event, Q43229 → actor"
+    },
+    {
+      "id": "2026-10-30-europe-002",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q871792: its classes disagree: Q6428674 → event, Q11514315 → event, Q3024240 → actor"
+    },
+    {
+      "id": "2026-10-30-asia-003",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3076765: its classes disagree: Q1620908 → place, Q11514315 → event"
+    },
+    {
+      "id": "2026-10-30-europe-004",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q688802: its classes disagree: Q178561 → event, Q4895508 → place"
+    },
+    {
+      "id": "2026-10-30-europe-006",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3061033 is held by the other branch"
+    },
+    {
+      "id": "2026-10-30-europe-007",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-villafranca-1744",
+        "edges": [],
+        "place": "villefranche-sur-mer"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-009",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-fort-st-philip-1756",
+        "edges": [],
+        "place": "st-philip-s-castle"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-011",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-frisches-haff",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-013",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "partition-sejm",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-015",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hogland",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-017",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-macin",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-019",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-bellegarde-1793",
+        "edges": [],
+        "place": "le-perthus"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-021",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "viree-de-galerne",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-023",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-warsaw-1794",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-025",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-genoa-1795",
+        "edges": [],
+        "place": "gulf-of-genoa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-027",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-schliengen",
+        "edges": [],
+        "place": "schliengen"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-029",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "coup-of-30-prairial-vii",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-031",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-magnano",
+        "edges": [],
+        "place": "magnano"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-033",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "action-of-5-october-1804",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-035",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-prenzlau",
+        "edges": [],
+        "place": "prenzlau"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-037",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mohrungen",
+        "edges": [],
+        "place": "morag"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-039",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-evora-1808",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-041",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cardedeu",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-043",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-alba-de-tormes",
+        "edges": [],
+        "place": "alba-de-tormes"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-045",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ucles-1809",
+        "edges": [],
+        "place": "ucles"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-047",
+      "writer": "A",
+      "fired": "2026-10-30T00:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-saguntum",
+        "edges": [],
+        "place": "sagunto"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-001",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q8733: the import wrote no event for it"
+    },
+    {
+      "id": "2026-10-30-asia-002",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q319531: its classes disagree: Q11514315 → event, Q3024240 → actor"
+    },
+    {
+      "id": "2026-10-30-americas-001",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q827212: its classes disagree: Q131569 → event, Q82794 → place"
+    },
+    {
+      "id": "2026-10-30-europe-003",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q238809: its classes disagree: Q11514315 → event, Q3024240 → actor"
+    },
+    {
+      "id": "2026-10-30-europe-005",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "history-of-modern-greece",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-004",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2909425: its classes disagree: Q11514315 → event, Q1620908 → place"
+    },
+    {
+      "id": "2026-10-30-europe-008",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "lapp-codicil-of-1751",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-010",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "raid-on-rochefort",
+        "edges": [],
+        "place": "rochefort-charente-maritime"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-012",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "1760-raid-on-berlin",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-014",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "great-fire-of-tartu",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-016",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-reval",
+        "edges": [],
+        "place": "tallinn"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-018",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-truillas",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-020",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "first-massacre-of-machecoul",
+        "edges": [],
+        "place": "machecoul"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-022",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tournay-1794",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-024",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "copenhagen-fire-of-1795",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-026",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-wurzburg",
+        "edges": [],
+        "place": "wurzburg"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-028",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fishguard",
+        "edges": [],
+        "place": "fishguard"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-030",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ostrach",
+        "edges": [],
+        "place": "ostrach"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-032",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-messkirch",
+        "edges": [],
+        "place": "me-kirch"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-034",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "1804-french-constitutional-referendum",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-036",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-guttstadt-deppen",
+        "edges": [],
+        "place": "dobre-miasto"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-038",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-valencia-1808",
+        "edges": [],
+        "place": "valencia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-040",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-benavente",
+        "edges": [],
+        "place": "benavente-zamora"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-042",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-roses-1808",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-044",
+      "writer": "B",
+      "fired": "2026-10-30T01:04Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-porto",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-049",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-tarragona-1811",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-051",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-valutino",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-052",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "french-occupation-of-moscow",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-054",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sehested",
+        "edges": [],
+        "place": "sehestedt"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-056",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-bidassoa",
+        "edges": [],
+        "place": "hendaye"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-003",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "solemn-act-of-the-declaration-of-independence-of-northern-america",
+        "edges": [],
+        "place": "chilpancingo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-059",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bar-sur-aube",
+        "edges": [],
+        "place": "bar-sur-aube"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-004",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "16th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-005",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "guayaquil-conference",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-007",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "22nd-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-008",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-refugio",
+        "edges": [],
+        "place": "refugio-texas"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-005",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "1837-galilee-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-006",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "allahdad-massacre",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-063",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "july-victims",
+        "edges": [],
+        "place": "zagreb"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-009",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fort-tabarsi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-065",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-segesvar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-067",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "1851-french-constitutional-referendum",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-069",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-calatafimi",
+        "edges": [],
+        "place": "calatafimi-segesta"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-010",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "tsushima-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-011",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "armenian-national-constitution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-071",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sankelmark",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-073",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kissingen",
+        "edges": [],
+        "place": "bad-kissingen"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-075",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-loigny-poupry",
+        "edges": [],
+        "place": "loigny-la-bataille"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-077",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-toul",
+        "edges": [],
+        "place": "toul"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-079",
+      "writer": "A",
+      "fired": "2026-10-30T01:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-buzenval-1871",
+        "edges": [],
+        "place": "rueil-malmaison"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-046",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fuengirola",
+        "edges": [],
+        "place": "fuengirola"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-048",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-valencia-1812",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-050",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kobrin",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-002",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "antebellum-south",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-053",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "malet-coup-of-1812",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-055",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-gohrde",
+        "edges": [],
+        "place": "gohrde"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-057",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bornhoved-1813",
+        "edges": [],
+        "place": "bornhoved"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-058",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fere-champenoise",
+        "edges": [],
+        "place": "fere-champenoise"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-060",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-orthez",
+        "edges": [],
+        "place": "orthez"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-061",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "navarino-massacre",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-006",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "21st-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-062",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "frankfurter-wachensturm",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-009",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-agua-dulce",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-010",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "hawn-s-mill-massacre",
+        "edges": [],
+        "place": "missouri-q1581"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-007",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "storming-and-capture-of-acre",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-008",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-canton",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-064",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-eckernforde",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-066",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fredericia",
+        "edges": [],
+        "place": "fredericia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-068",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "1857-basilicata-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-africa-001",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-wad-ras",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-070",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "government-reforms-of-alexander-ii-of-russia",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-011",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "iglesia-de-la-compania-fire",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-072",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "turin-massacre-1864",
+        "edges": [],
+        "place": "piazza-san-carlo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-074",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tauberbischofsheim",
+        "edges": [],
+        "place": "tauberbischofsheim"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-076",
+      "writer": "B",
+      "fired": "2026-10-30T01:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hallue",
+        "edges": [],
+        "place": "hallue"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-078",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-dutch-treaties-of-1870-1871",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-012",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "maria-luz-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-081",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "murder-of-julia-martha-thomas",
+        "edges": [],
+        "place": "richmond-london"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-083",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "ringtheater-fire",
+        "edges": [],
+        "place": "ringtheater"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-085",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "madrid-protocol-of-1885",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-086",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-japanese-treaty-of-commerce-and-navigation",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-088",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-la-brossiniere",
+        "edges": [],
+        "place": "bourgon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-090",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-golubac",
+        "edges": [],
+        "place": "golubac"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-092",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-trnava-1430",
+        "edges": [],
+        "place": "trnava"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-094",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "dutch-hanseatic-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-096",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-olmedo",
+        "edges": [],
+        "place": "olmedo-valladolid"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-098",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-otonete",
+        "edges": [],
+        "place": "debar"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-100",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-oranik-1456",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-101",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-vistula-lagoon",
+        "edges": [],
+        "place": "vistula-lagoon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-103",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lipnic",
+        "edges": [],
+        "place": "lipnic"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-105",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sauchieburn",
+        "edges": [],
+        "place": "stirling"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-africa-003",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-acentejo",
+        "edges": [],
+        "place": "la-matanza-de-acentejo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-107",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bruderholz",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-109",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "glinski-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-africa-004",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-wars-in-africa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-112",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-olshanitsa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-114",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-girolata",
+        "edges": [],
+        "place": "gulf-of-girolata"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-116",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "habsburg-ottoman-war-of-1551-1562",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-015",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-garisi",
+        "edges": [],
+        "place": "tetritsqaro"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-119",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-axtorna",
+        "edges": [],
+        "place": "axtorna"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-013",
+      "writer": "A",
+      "fired": "2026-10-30T01:30Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q247921 is held by the other branch"
+    },
+    {
+      "id": "2026-10-30-europe-080",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lovcha",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-082",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "second-international-congress-on-education-of-the-deaf",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-084",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "1882-herzegovina-uprising",
+        "edges": [],
+        "place": "balkan-mountains"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-013",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "dutch-intervention-in-lombok-and-karangasem",
+        "edges": [],
+        "place": "lombok"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-087",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-vysehrad",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-089",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "dano-hanseatic-war-1426-1435",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-091",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "valais-witch-trials",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-093",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "trial-of-joan-of-arc",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-095",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kunovica",
+        "edges": [],
+        "place": "kunovica"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-097",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mokra-1445",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-099",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "albanian-ottoman-wars-1432-1479",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-014",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chikhori",
+        "edges": [],
+        "place": "chikhori"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-102",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-brustem",
+        "edges": [],
+        "place": "brustem"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-104",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-malaga-1487",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-africa-002",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-aguere",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-106",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-frastanz",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-108",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-villafafila",
+        "edges": [],
+        "place": "villafafila"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-110",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "pleitos-colombinos",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-111",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "palatine-peasants-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-113",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "the-year-round-heat-and-drought-of-1540-in-europe",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-115",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-drakenburg",
+        "edges": [],
+        "place": "drakenburg"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-117",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-palast",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-118",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gravelines-1558",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-016",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fukuda-bay",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-121",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "written",
+      "written": {
+        "event": "spanish-fury-at-mechelen",
+        "edges": [],
+        "place": "mechelen"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-012",
+      "writer": "B",
+      "fired": "2026-10-30T01:39Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3136592 is held by the other branch"
+    },
+    {
+      "id": "2026-10-30-europe-120",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "sture-murders",
+        "edges": [],
+        "place": "uppsala-castle"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-122",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lode",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-123",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-wesenberg-1574",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-125",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-velikiye-luki",
+        "edges": [],
+        "place": "velikiye-luki"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-126",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-boksum",
+        "edges": [],
+        "place": "boksum"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-128",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-byczyna",
+        "edges": [],
+        "place": "byczyna"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-130",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-bihac-1592",
+        "edges": [],
+        "place": "bihac"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-132",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "raid-on-mount-s-bay",
+        "edges": [],
+        "place": "mount-s-bay"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-africa-005",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-jenne",
+        "edges": [],
+        "place": "djenne"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-135",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-miraslau",
+        "edges": [],
+        "place": "miraslau"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-137",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "italian-baroque",
+        "edges": [],
+        "place": "italy-geographical-region"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-139",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-reval-1602",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-019",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "nossa-senhora-da-graca-incident",
+        "edges": [],
+        "place": "nagasaki-bay"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-africa-006",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mbumbi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-020",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-marabda",
+        "edges": [],
+        "place": "marabda"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-144",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-dirschau",
+        "edges": [],
+        "place": "tczew"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-146",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-slaak",
+        "edges": [],
+        "place": "volkerak"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-021",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-liaoluo-bay",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-149",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-turnham-green",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-151",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-pyliavtsi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-153",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-elba",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-154",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-okhmativ-1655",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-156",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-horodok-1655",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-158",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-verkiai",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-160",
+      "writer": "A",
+      "fired": "2026-10-30T01:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kushliki",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-017",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "wanli-era",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-124",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-gvozdansko",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-018",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "1582-cagayan-battles",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-127",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-coutras",
+        "edges": [],
+        "place": "coutras"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-129",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-bergen-op-zoom-1588",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-131",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-groenlo-1595",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-133",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-eger-1596",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-134",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-curlew-pass",
+        "edges": [],
+        "place": "boyle-county-roscommon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-136",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-karksi-1600",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-138",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-kanizsa-1601",
+        "edges": [],
+        "place": "nagykanizsa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-140",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-groenlo-1606",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-141",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "raid-on-zejtun",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-142",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-kurukove",
+        "edges": [],
+        "place": "lake-kurukove"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-143",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-wallhof",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-145",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-pereiaslav-1630",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-147",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "1631-eruption-of-mount-vesuvius",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-148",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-newburn",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-150",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-barcelona",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-152",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-loyew-1649",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-022",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "coonan-cross-oath",
+        "edges": [],
+        "place": "kerala"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-155",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-krakow",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-157",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-prostki",
+        "edges": [],
+        "place": "e-k"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-159",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lyubar",
+        "edges": [],
+        "place": "liubar"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-161",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-stavyshche",
+        "edges": [],
+        "place": "stavyshche"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-163",
+      "writer": "B",
+      "fired": "2026-10-30T01:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-montes-claros",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-162",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-novi-zrin-1664",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-164",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "holmes-s-bonfire",
+        "edges": [],
+        "place": "terschelling"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-023",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "1678-kediri-campaign",
+        "edges": [],
+        "place": "east-java"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-166",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-ersekujvar-1685",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-168",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zernest",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-024",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-samothrace-1698",
+        "edges": [],
+        "place": "samothrace"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-171",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-xativa-1707",
+        "edges": [],
+        "place": "xativa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-173",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-la-gudina",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-175",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-syracuse-1710",
+        "edges": [],
+        "place": "syracuse-sicily"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-177",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "russian-pillage-of-1719-1721",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-179",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "tumult-of-thorn-torun",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-026",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "patrona-halil-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-181",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-trarbach",
+        "edges": [],
+        "place": "traben-trarbach"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-183",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "nader-shah-s-dagestan-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-185",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-rottofreddo",
+        "edges": [],
+        "place": "rottofreno"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-187",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "asylum-confinement-of-christopher-smart",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-189",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-rheinberg",
+        "edges": [],
+        "place": "rheinberg"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-191",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "spanish-invasion-of-portugal-1762",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-192",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sto-owicze",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-015",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "death-of-james-cook",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-017",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "newburgh-conspiracy",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-194",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "mo-uhar-indin",
+        "edges": [],
+        "place": "iceland-island"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-020",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "nootka-convention",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-021",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "bois-caiman",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-197",
+      "writer": "A",
+      "fired": "2026-10-30T02:05Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-boruszkowce",
+        "edges": [],
+        "place": "borushkivtsi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-014",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "henry-morgan-s-panama-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-165",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-santa-maura-1684",
+        "edges": [],
+        "place": "lefkada"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-167",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-derry",
+        "edges": [],
+        "place": "derry"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-169",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "penal-laws-ireland",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-170",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "twelfth-siege-of-gibraltar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-172",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-vepryk",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-174",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-k-ge-bay-1710",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-176",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fehmarn-1715",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-178",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "raid-on-nassau-1720",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-025",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "herat-campaign-of-1729",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-180",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-pizzighettone",
+        "edges": [],
+        "place": "pizzighettone"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-182",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-nymphenburg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-184",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-falkirk-muir",
+        "edges": [],
+        "place": "falkirk"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-186",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "appin-murder",
+        "edges": [],
+        "place": "appin"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-188",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "cherbourg-raid",
+        "edges": [],
+        "place": "cherbourg-octeville"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-190",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-cassel-1761",
+        "edges": [],
+        "place": "kassel"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-027",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "1766-istanbul-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-193",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-patras-1772",
+        "edges": [],
+        "place": "gulf-of-patras"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-016",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lake-pontchartrain",
+        "edges": [],
+        "place": "lake-pontchartrain"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-018",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "pennsylvania-mutiny-of-1783",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-019",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "federalist-era",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-195",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-vyborg-bay-1790",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-196",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-quievrain-1792",
+        "edges": [],
+        "place": "quievrain"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-198",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-porrentruy",
+        "edges": [],
+        "place": "porrentruy"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-200",
+      "writer": "B",
+      "fired": "2026-10-30T02:13Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-cholet",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-199",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lucon",
+        "edges": [],
+        "place": "lucon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-201",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-wissembourg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-203",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-peyrestortes",
+        "edges": [],
+        "place": "peyrestortes"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-205",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nantes",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-207",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-granville",
+        "edges": [],
+        "place": "granville-manche"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-209",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-szczekociny",
+        "edges": [],
+        "place": "szczekociny"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-211",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-hyeres-islands",
+        "edges": [],
+        "place": "iles-d-hyeres"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-213",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lonato",
+        "edges": [],
+        "place": "lonato-del-garda"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-215",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-neuwied-1797",
+        "edges": [],
+        "place": "neuwied"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-217",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "french-invasion-of-malta",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-218",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-algeciras",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-africa-007",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "first-russian-circumnavigation",
+        "edges": [],
+        "place": "kamchatka-peninsula"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-028",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "dardanelles-operation-1807",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-221",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-valdepenas",
+        "edges": [],
+        "place": "valdepenas"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-223",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-revolax",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-225",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-siikajoki",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-024",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "chuquisaca-revolution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-228",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-neumarkt-sankt-veit",
+        "edges": [],
+        "place": "neumarkt-sankt-veit"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-230",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cacabelos",
+        "edges": [],
+        "place": "cacabelos"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-231",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-tortosa-1810-1811",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-233",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-almeida-1810",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-026",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "cry-of-asencio",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-235",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chashniki",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-237",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-klyastitsy",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-239",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lyng-r",
+        "edges": [],
+        "place": "lyng-r"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-202",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-wissembourg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-204",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-saumur-1793",
+        "edges": [],
+        "place": "saumur"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-206",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tiffauges",
+        "edges": [],
+        "place": "boussay-loire-atlantique"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-208",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-boulou",
+        "edges": [],
+        "place": "le-boulou"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-210",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mainz",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-212",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-biberach-1796",
+        "edges": [],
+        "place": "biberach-an-der-ri"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-214",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fombio",
+        "edges": [],
+        "place": "fombio"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-216",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nicopolis-1798",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-022",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "uss-constellation-vs-la-vengeance",
+        "edges": [],
+        "place": "saint-kitts"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-219",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "1802-french-constitutional-referendum",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-220",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-allenstein",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-023",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "10th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-222",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zornoza",
+        "edges": [],
+        "place": "amorebieta-etxano"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-224",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-koljonvirta",
+        "edges": [],
+        "place": "iisalmi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-226",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-oravais",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-227",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-braga-1809",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-229",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-arzobispo",
+        "edges": [],
+        "place": "el-puente-del-arzobispo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-025",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "11th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-232",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-lerida",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-234",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-mequinenza",
+        "edges": [],
+        "place": "mequinenza"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-027",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "12th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-236",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-smoliani",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-238",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-burgos",
+        "edges": [],
+        "place": "castle-of-burgos"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-240",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-luckau",
+        "edges": [],
+        "place": "luckau"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-242",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-roncesvalles-1813",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-241",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-haynau",
+        "edges": [],
+        "place": "chojnow"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-243",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-castalla",
+        "edges": [],
+        "place": "castalla"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-028",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "13th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-246",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "federal-treaty",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-248",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "waterloo-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-030",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "15th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-032",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "17th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-249",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "greek-constitution-of-1822",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-034",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "beauchamp-sharp-tragedy",
+        "edges": [],
+        "place": "frankfort-kentucky"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-036",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "19th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-251",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-aggrieved",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-252",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-leuven-1831",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-030",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "1833-sumatra-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-039",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "1835-concepcion-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-040",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "24th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-041",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "25th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-042",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "peruvian-bolivian-war-of-1841-42",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-031",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "kot-massacre",
+        "edges": [],
+        "place": "kathmandu-durbar-square"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-258",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nyb-l",
+        "edges": [],
+        "place": "nyb-l"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-259",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "constituent-assembly-of-luxembourg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-260",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mortara",
+        "edges": [],
+        "place": "mortara-lombardy"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-046",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "31st-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-047",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "argentine-constitution-of-1853",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-048",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "34th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-049",
+      "writer": "A",
+      "fired": "2026-10-30T02:35Z",
+      "status": "written",
+      "written": {
+        "event": "watermelon-riot",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-244",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-hamburg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-245",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "conservative-order",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-247",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-rocquencourt",
+        "edges": [],
+        "place": "rocquencourt-yvelines"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-029",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "14th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-031",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "austrian-expedition-to-brazil",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-029",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "1822-aleppo-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-033",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "18th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-035",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "bolivian-declaration-of-independence",
+        "edges": [],
+        "place": "sucre"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-250",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "death-of-ludwig-van-beethoven",
+        "edges": [],
+        "place": "schwarzspanierhaus"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-037",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "20th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-253",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hasselt",
+        "edges": [],
+        "place": "hasselt"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-038",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "23rd-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-254",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mendigorria",
+        "edges": [],
+        "place": "mendigorria"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-255",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-luchana",
+        "edges": [],
+        "place": "bilbao"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-256",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "retour-des-cendres",
+        "edges": [],
+        "place": "courbevoie"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-043",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "27th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-257",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-schleswig",
+        "edges": [],
+        "place": "schleswig-schleswig-holstein"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-044",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "rochester-women-s-rights-convention-of-1848",
+        "edges": [],
+        "place": "rochester-new-york"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-045",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "astor-place-riot",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-261",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-isaszeg-1849",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-032",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "massacre-of-aleppo-1850",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-262",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cetate",
+        "edges": [],
+        "place": "cetate"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-263",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "luxembourg-coup-of-1856",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-050",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-santa-rosa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-051",
+      "writer": "B",
+      "fired": "2026-10-30T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "palliser-expedition",
+        "edges": [],
+        "place": "british-north-america"
+      },
+      "refusals": []
     }
   ]
 }

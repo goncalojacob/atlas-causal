@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "glinski-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3917333",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Glinski rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3917333"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Glinski rebellion\", revision 1370621384"
+    }
+  ],
+  "title": "Glinski rebellion",
+  "summary": "The English Wikipedia article \"Glinski rebellion\", at revision 1370621384, opens: \"The Glinski rebellion was a revolt in 1508 in the Grand Duchy of Lithuania by a group of aristocrats led by Prince Mikhail Glinski in 1508. It grew out of a rivalry between two factions of the nobility during the final years of Grand Duke Alexander Jagiellon. The revolt began when Sigismund I, the new Grand Duke, decided to strip Glinski of his posts based on rumors spread by Jan Zabrzeziński, Glinski's enemy. After failing to settle the dispute at the royal court, Glinski and his supporters rose up in arms. The rebels swore allegiance to Vasili III of Russia, who was waging war against Lithuania.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3917333, imported by tools/import/wikidata.mjs. The item's own description reads \"failed rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1508,
+    "end": 1508,
+    "date": "1508-02",
+    "endDate": "1508-09"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

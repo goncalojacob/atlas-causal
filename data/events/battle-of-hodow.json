@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-hodow",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3276834",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Hodów"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3276834"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hodów\", revision 1382064411"
+    }
+  ],
+  "title": "Battle of Hodów",
+  "summary": "The English Wikipedia article \"Battle of Hodów\", at revision 1382064411, opens: \"The Battle of Hodów took place between the Kingdom of Poland and Budjak Horde forces, fought in June 1694 in the Ruthenian Voivodeship of the Crown of the Kingdom of Poland, near the village of Hodów.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3276834, imported by tools/import/wikidata.mjs. The item's own description reads \"1694 battle of the Polish–Ottoman War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1694,
+    "end": 1694,
+    "date": "1694-06-11"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "polish-ottoman-war-1683-1699"
+}

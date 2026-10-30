@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "habsburg-ottoman-war-of-1551-1562",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q118929717",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Habsburg–Ottoman war of 1551–1562"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q118929717"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Habsburg–Ottoman war of 1551–1562\", revision 1370622312"
+    }
+  ],
+  "title": "Habsburg–Ottoman war of 1551–1562",
+  "summary": "The English Wikipedia article \"Habsburg–Ottoman war of 1551–1562\", at revision 1370622312, opens: \"The Habsburg–Ottoman war of 1551–1562 was a conflict between the Ottoman Empire and the Habsburg Monarchy supported by Royal Hungary. During the war, the Turks captured many castles in Hungarian and Transylvanian territory. The war ended in victory for the Ottoman Empire after the signing of the Treaty of Constantinople in 1562.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q118929717, imported by tools/import/wikidata.mjs. The item's own description reads \"1551–1562 battle between Ottoman Empire and the Habsburg Monarchy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1551,
+    "end": 1562,
+    "endDate": "1562-06-01"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

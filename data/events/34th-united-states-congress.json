@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "34th-united-states-congress",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4635460",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "34th United States Congress"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4635460"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"34th United States Congress\", revision 1380246989"
+    }
+  ],
+  "title": "34th United States Congress",
+  "summary": "The English Wikipedia article \"34th United States Congress\", at revision 1380246989, opens: \"The 34th United States Congress was a meeting of the legislative branch of the United States federal government, consisting of the United States Senate and the United States House of Representatives. It met in Washington, D.C., from March 4, 1855, to March 4, 1857, during the last two years of Franklin Pierce's presidency. The apportionment of seats in the House of Representatives was based on the 1850 United States census. The Whig Party, one of the two major parties of the era, had largely collapsed, although many former Whigs ran as Republicans or as members of the \"Opposition Party.\" The Senate had a Democratic majority, and the House was controlled by a coalition of Representatives led by Nathaniel P. Banks, a member of the American Party.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4635460, imported by tools/import/wikidata.mjs. The item's own description reads \"1855-1857 U.S. Congress\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1855,
+    "end": 1857,
+    "date": "1855-03-04",
+    "endDate": "1857-03-04"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

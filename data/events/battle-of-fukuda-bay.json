@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-fukuda-bay",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q21741364",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Fukuda Bay",
+    "pt": "Batalha da Baía de Fukuda"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q21741364"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fukuda Bay\", revision 1370110592"
+    }
+  ],
+  "title": "Battle of Fukuda Bay",
+  "summary": "The English Wikipedia article \"Battle of Fukuda Bay\", at revision 1370110592, opens: \"The Battle of Fukuda Bay  in 1565 was the first recorded naval battle between Europeans and the Japanese. A flotilla of samurai under the daimyo Matsura Takanobu attacked two Portuguese trade vessels that had shunned Matsura's port in Hirado and had gone instead to trade at Fukuda, a port belonging to the rival Ōmura Sumitada. The engagement was part of a process of trial and error by the Portuguese traders to find a safe harbour for their carracks in Japan that eventually brought them to Nagasaki.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q21741364, imported by tools/import/wikidata.mjs. The item's own description reads \"1565 naval battle between the Portuguese and Japanese\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1565,
+    "end": 1565,
+    "date": "1565-10-18"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

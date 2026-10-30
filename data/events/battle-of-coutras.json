@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-coutras",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1892080",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Coutras"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1892080"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Coutras\", revision 1370437731"
+    }
+  ],
+  "title": "Battle of Coutras",
+  "summary": "The English Wikipedia article \"Battle of Coutras\", at revision 1370437731, opens: \"The Battle of Coutras, fought on 20 October 1587, was a major engagement in the French Religious Wars between a Huguenot (Protestant) army under Henry of Navarre and a royalist army led by Anne, Duke of Joyeuse. Henry of Navarre was victorious, and Joyeuse was killed while attempting to surrender.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1892080, imported by tools/import/wikidata.mjs. The item's own description reads \"1587 battle in the French Wars of Religion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1587,
+    "end": 1587,
+    "date": "1587-10-20"
+  },
+  "place": "coutras",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-wars-of-religion"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-valencia-1808",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2428049",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Valencia (1808)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2428049"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Valencia (1808)\", revision 1370592097"
+    }
+  ],
+  "title": "Battle of Valencia (1808)",
+  "summary": "The English Wikipedia article \"Battle of Valencia (1808)\", at revision 1370592097, opens: \"The First Battle of Valencia or the Storming of Valencia was an attack on the Spanish city of Valencia on 26 June 1808, early in the Peninsular War. Marshal Moncey's French Imperial troops failed to take the city by storm and retreated upon Madrid, leaving much of eastern Spain unconquered and beyond the reach of Napoleon.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2428049, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-06-26",
+    "endDate": "1808-06-28"
+  },
+  "place": "valencia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

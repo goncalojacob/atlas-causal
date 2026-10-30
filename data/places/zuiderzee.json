@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "zuiderzee",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q228655",
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Zuiderzee",
+    "pt": "Golfo de Zuiderzê"
+  },
+  "sources": [],
+  "names": [
+    "Zuiderzee",
+    "Golfo Zuiderzee",
+    "Golfo de Zuiderzê"
+  ],
+  "where": {
+    "lon": 5.4,
+    "lat": 52.7,
+    "precision": "region",
+    "label": "Zuiderzee"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

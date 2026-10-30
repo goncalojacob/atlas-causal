@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "asylum-confinement-of-christopher-smart",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5113246",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Asylum confinement of Christopher Smart",
+    "pt": "Confinamento psiquiátrico de Christopher Smart"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5113246"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Asylum confinement of Christopher Smart\", revision 1363214994"
+    }
+  ],
+  "title": "Asylum confinement of Christopher Smart",
+  "summary": "The English Wikipedia article \"Asylum confinement of Christopher Smart\", at revision 1363214994, opens: \"The English poet Christopher Smart (1722–1771) was confined to mental asylums from May 1757 until January 1763. Smart was admitted to St Luke's Hospital for Lunatics, Upper Moorfields, London, on 6 May 1757. He was taken there by his father-in-law, John Newbery, although he may have been confined in a private madhouse before then. While in St Luke's he wrote Jubilate Agno and A Song to David, the poems considered to be his greatest works. Although many of his contemporaries agreed that Smart was \"mad\", accounts of his condition and its ramifications varied, and some felt that he had been committed unfairly.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5113246, imported by tools/import/wikidata.mjs. The item's own description reads \"The poet's institutional confinement, 1757–1763\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1763,
+    "date": "1757-05",
+    "endDate": "1763-01"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

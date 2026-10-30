@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-bihac-1592",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q20526199",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Bihać (1592)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20526199"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Bihać (1592)\", revision 1375125448"
+    }
+  ],
+  "title": "Siege of Bihać (1592)",
+  "summary": "The English Wikipedia article \"Siege of Bihać (1592)\", at revision 1375125448, opens: \"The city of Bihać in the Kingdom of Croatia within the Habsburg monarchy was besieged and captured by the Ottoman Empire in June 1592. With the arrival of Hasan-paša Predojević as the Beylerbey of the Bosnia Eyalet in 1591, a period of peace established between Emperor Rudolf II and Sultan Murad III ended and the provincial Ottoman armies launched an offensive on Croatia. Bihać, a nearly isolated city on the Una River that repelled an Ottoman attack in 1585, was one of the first targets. Thomas Erdődy, the Ban of Croatia, used available resources and soldiers to protect the border towns, but the Ottomans managed to take several smaller forts in 1591. As the offensive gained pace, the Croatian Parliament passed a law to permit a general uprising in the country on 5 January 1592 for fighting the Ottomans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20526199, imported by tools/import/wikidata.mjs. The item's own description reads \"1592 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1592,
+    "end": 1592,
+    "date": "1592-06-10",
+    "endDate": "1592-06-19"
+  },
+  "place": "bihac",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

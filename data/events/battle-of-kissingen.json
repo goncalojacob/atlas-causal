@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-kissingen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q323365",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Kissingen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q323365"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kissingen\", revision 1370445557"
+    }
+  ],
+  "title": "Battle of Kissingen",
+  "summary": "The English Wikipedia article \"Battle of Kissingen\", at revision 1370445557, opens: \"The Battle of Kissingen was a battle between Bavarian and Prussian troops on 10 July 1866 during the Austrian-Prussian War in and around the town of Kissingen in Bavaria. It was part of the campaign of the Main and ended with a victory of the Prussians.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q323365, imported by tools/import/wikidata.mjs. The item's own description reads \"1866 battle between Bavarian and Prussian troops in the Austrian-Prussian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866,
+    "date": "1866-07-10"
+  },
+  "place": "bad-kissingen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "austro-prussian-war"
+}

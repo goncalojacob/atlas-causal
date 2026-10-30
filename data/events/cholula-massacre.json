@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "cholula-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3297424",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Cholula massacre",
+    "pt": "Massacre de Cholula"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3297424"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cholula massacre\", revision 1370611326"
+    }
+  ],
+  "title": "Cholula massacre",
+  "summary": "The English Wikipedia article \"Cholula massacre\", at revision 1370611326, opens: \"The massacre of Cholula was an attack carried out by the military forces of the Spanish conquistador Hernán Cortés on his way to the city of Mexico-Tenochtitlan in 1519. Francisco López de Gómara indicates that the massacre of Cholula began after Cortés captured and killed Cholulteca leaders, unleashing with this act the slaughter of 6,000 people in less than two hours. According to his letters of relationship, Cortés affirms that he made this decision as a preventive action before a possible ambush by 20,000 Mexica soldiers. However, the accounts collected by Bernardino de Sahagún contradict this version since it is narrated that only unarmed Cholultec civilians were killed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3297424, imported by tools/import/wikidata.mjs. The item's own description reads \"1519 Spanish attack by Cortés in Mexico\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1519,
+    "end": 1519,
+    "date": "1519-10-24",
+    "endDate": "1519-10-23"
+  },
+  "place": "cholula-mesoamerican-site",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

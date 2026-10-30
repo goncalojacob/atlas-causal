@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-san-fermo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q475957",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of San Fermo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q475957"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of San Fermo\", revision 1382469102"
+    }
+  ],
+  "title": "Battle of San Fermo",
+  "summary": "The English Wikipedia article \"Battle of San Fermo\", at revision 1382469102, opens: \"The Battle of San Fermo, which took place the 27 May 1859 at a pass near Como in the northern part of Lombardy, was an engagement of the Second Italian War of Independence in which the Italian volunteers of Giuseppe Garibaldi's Hunters of the Alps defeated an Austrian force, forcing the Austrians to abandon Como.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q475957, imported by tools/import/wikidata.mjs. The item's own description reads \"1859 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1859,
+    "end": 1859,
+    "date": "1859-05-27"
+  },
+  "place": "san-fermo-della-battaglia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-italian-war-of-independence"
+}

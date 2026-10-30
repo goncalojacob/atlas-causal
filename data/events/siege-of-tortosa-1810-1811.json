@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-tortosa-1810-1811",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3486036",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Tortosa (1810–1811)",
+    "pt": "Cerco de Tortosa (1810–1811)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3486036"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Tortosa (1810–1811)\", revision 1370745892"
+    }
+  ],
+  "title": "Siege of Tortosa (1810–1811)",
+  "summary": "The English Wikipedia article \"Siege of Tortosa (1810–1811)\", at revision 1370745892, opens: \"The siege of Tortosa pitted an Imperial French army under General Louis Gabriel Suchet against the Spanish defenders of Tortosa led by General Miguel de Lili Idiáquez, Conde de Alacha. The siege progressed swiftly and Alacha surrendered on 2 January 1811. The action took place during the Peninsular War, part of the Napoleonic Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3486036, imported by tools/import/wikidata.mjs. The item's own description reads \"military confrontation between France and Spain in 1810-1811\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1811,
+    "date": "1810-12-16",
+    "endDate": "1811-01-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

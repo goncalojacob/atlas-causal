@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sahagun",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q821860",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Sahagún",
+    "pt": "Sahagún"
+  },
+  "sources": [],
+  "names": [
+    "Sahagún"
+  ],
+  "where": {
+    "lon": -5.0330555555556,
+    "lat": 42.371111111111,
+    "precision": "city",
+    "label": "Sahagún"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

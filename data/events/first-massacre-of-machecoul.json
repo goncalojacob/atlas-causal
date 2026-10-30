@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "first-massacre-of-machecoul",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3246608",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "First Massacre of Machecoul"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3246608"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Massacre of Machecoul\", revision 1370619462"
+    }
+  ],
+  "title": "First Massacre of Machecoul",
+  "summary": "The English Wikipedia article \"First Massacre of Machecoul\", at revision 1370619462, opens: \"The Machecoul massacre is one of the first events of the War in the Vendée, a revolt against mass conscription and the civil constitution of the clergy. The first massacre took place on 11 March 1793, in the provincial city of Machecoul, in the district of the lower Loire. The city was a thriving center of grain trade; most of the victims were administrators, merchants and citizens of the city.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3246608, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the War in the Vendée\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-03-11"
+  },
+  "place": "machecoul",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

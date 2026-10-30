@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-san-marcial",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889928",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of San Marcial",
+    "pt": "Batalha de San Marcial"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889928"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of San Marcial\", revision 1370588390"
+    }
+  ],
+  "title": "Battle of San Marcial",
+  "summary": "The English Wikipedia article \"Battle of San Marcial\", at revision 1370588390, opens: \"The Battle of San Marcial took place on 31 August 1813 near Irún, close to the Franco-Spanish border, as part of the Peninsular War. The Spanish Army of Galicia under Manuel Freire de Andrade repulsed a French attack led by Jean-de-Dieu Soult. The battle was named after the heights of San Marcial which were held by the Spanish.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889928, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-08-31"
+  },
+  "place": "irun",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

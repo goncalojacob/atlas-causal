@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-peyrestortes",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889607",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Peyrestortes",
+    "pt": "Batalha de Peyrestortes"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889607"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Peyrestortes\", revision 1370271842"
+    }
+  ],
+  "title": "Battle of Peyrestortes",
+  "summary": "The English Wikipedia article \"Battle of Peyrestortes\", at revision 1370271842, opens: \"At the Battle of Peyrestortes in the War of the Pyrenees, soldiers of the First French Republic defeated a Spanish army that had invaded Roussillon and was attempting to capture Perpignan. The Spanish army of Antonio Ricardos had occupied part of Roussillon and made an abortive attempt to seize the fortress of Perpignan in July 1793. At the end of August, the Spanish commander sent two divisions on a sweep around the western side of Perpignan in an attempt to isolate the fortress and choke it off from resupply. After an initial Spanish success, the French army commander Hilarion Paul Puget de Barbantane, lost his nerve and fled from the area.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889607, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 battle during the War of the Pyrenees\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-09-17"
+  },
+  "place": "peyrestortes",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

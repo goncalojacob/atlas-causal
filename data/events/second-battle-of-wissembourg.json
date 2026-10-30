@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-wissembourg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q15489392",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Second Battle of Wissembourg",
+    "pt": "Segunda Batalha de Wissembourg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15489392"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Wissembourg\", revision 1370736728"
+    }
+  ],
+  "title": "Second Battle of Wissembourg",
+  "summary": "The English Wikipedia article \"Second Battle of Wissembourg\", at revision 1370736728, opens: \"The Second Battle of Wissembourg from 26 December 1793 to 29 December 1793 saw an army of the First French Republic under General Lazare Hoche fight a series of clashes against an army of Austrians, Prussians, Bavarians, and Hessians led by two generals, namely, the Austrian Dagobert Sigmund von Wurmser and the Prussian Charles William Ferdinand, Duke of Brunswick-Wolfenbüttel. There were significant actions at Wœrth on 22 December and Geisberg on 26 and 27 December. In the end, the French forced their opponents to withdraw to the east bank of the Rhine River. The action occurred during the War of the First Coalition phase of the French Revolutionary Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15489392, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 battle during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-12-26",
+    "endDate": "1793-12-29"
+  },
+  "place": "wissembourg",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}

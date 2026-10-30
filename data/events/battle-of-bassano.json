@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-bassano",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q791234",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Bassano",
+    "pt": "Batalha de Bassano"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q791234"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bassano\", revision 1378729882"
+    }
+  ],
+  "title": "Battle of Bassano",
+  "summary": "The English Wikipedia article \"Battle of Bassano\", at revision 1378729882, opens: \"The Battle of Bassano was fought on 8 September 1796, during the French Revolutionary Wars, in the territory of the Republic of Venice, between a French army under Napoleon Bonaparte and Austrian forces led by Count Dagobert von Wurmser.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q791234, imported by tools/import/wikidata.mjs. The item's own description reads \"1796 battle during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1796,
+    "end": 1796,
+    "date": "1796-09-08"
+  },
+  "place": "bassano-del-grappa",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}

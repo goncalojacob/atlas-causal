@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-la-brossiniere",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q911131",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of La Brossinière",
+    "pt": "Batalha de La Brossinière"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q911131"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of La Brossinière\", revision 1370446724"
+    }
+  ],
+  "title": "Battle of La Brossinière",
+  "summary": "The English Wikipedia article \"Battle of La Brossinière\", at revision 1370446724, opens: \"The Battle of La Brossinière or Battle of la Gravelle was a battle of the Hundred Years' War on 26 September 1423. It occurred at La Brossinière, between the forces of England and France, shortly after hostilities had resumed, following the battle of Agincourt (1415).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q911131, imported by tools/import/wikidata.mjs. The item's own description reads \"1423 battle during the Hundred Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1423,
+    "end": 1423,
+    "date": "1423-09-26"
+  },
+  "place": "bourgon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

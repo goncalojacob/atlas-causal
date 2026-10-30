@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-cambrai-1677",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485855",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Cambrai (1677)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485855"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Cambrai (1677)\", revision 1370740009"
+    }
+  ],
+  "title": "Siege of Cambrai (1677)",
+  "summary": "The English Wikipedia article \"Siege of Cambrai (1677)\", at revision 1370740009, opens: \"The siege of Cambrai took place from 20 March to 19 April 1677 during the 1672–1678 Franco-Dutch War; then part of the Spanish Netherlands, it was invested by a French army under the duc de Luxembourg. Siege operations were supervised by the military engineer Vauban; Louis XIV was nominally in command but played little part in operations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485855, imported by tools/import/wikidata.mjs. The item's own description reads \"1677 battle of the Franco-Dutch War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1677,
+    "end": 1677,
+    "date": "1677-03-20",
+    "endDate": "1677-04-19"
+  },
+  "place": "cambrai",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-dutch-war"
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "saint-kitts",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q204989",
+  "sitelinks": {
+    "count": 54,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Saint Kitts",
+    "pt": "São Cristóvão (São Cristóvão e Neves)"
+  },
+  "sources": [],
+  "names": [
+    "Saint Kitts",
+    "Ilha de São Cristóvão",
+    "São Cristóvão (São Cristóvão e Neves)"
+  ],
+  "where": {
+    "lon": -62.747222,
+    "lat": 17.319722,
+    "precision": "region",
+    "label": "Saint Kitts"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

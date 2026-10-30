@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-drakenburg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q477592",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Drakenburg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q477592"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Drakenburg\", revision 1370439278"
+    }
+  ],
+  "title": "Battle of Drakenburg",
+  "summary": "The English Wikipedia article \"Battle of Drakenburg\", at revision 1370439278, opens: \"The Battle of Drakenburg took place on 23 May 1547 to the north of Nienburg, between the Protestant army of the Schmalkaldic League and the imperial troops of Eric II, Duke of Brunswick-Lüneburg, Prince of Calenberg. It resulted in an imperial defeat. Eric was forced to swim over the Weser River to save his own life. As a consequence, the imperialists left northern Germany, contributing to freedom of religion for Lutherans and Catholics in northern Germany.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q477592, imported by tools/import/wikidata.mjs. The item's own description reads \"battle on 23 May 1547 to the north of Nienburg, Germany\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1547,
+    "end": 1547,
+    "date": "1547-05-23"
+  },
+  "place": "drakenburg",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "schmalkaldic-war"
+}

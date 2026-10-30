@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "copenhagen-fire-of-1795",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3352530",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Copenhagen Fire of 1795",
+    "pt": "Incêndio de Copenhague de 1795"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3352530"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Copenhagen Fire of 1795\", revision 1355547204"
+    }
+  ],
+  "title": "Copenhagen Fire of 1795",
+  "summary": "The English Wikipedia article \"Copenhagen Fire of 1795\", at revision 1355547204, opens: \"The Copenhagen Fire of 1795 started on Friday, 5 June 1795, at or around 3 pm by the Navy's old base south east of Kongens Nytorv on Gammelholm, in the Navy's magazine for coal and timber, the so-called Dellehave. As the workers had already gone home, a considerable length of time passed before efforts to combat the fire started, and out of fear of theft, the fire hydrants had been removed. The people of Holmen also blocked the civilian fire brigade, possibly in the belief that since it was a military area, the military should take care of it.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3352530, imported by tools/import/wikidata.mjs. The item's own description reads \"conflagration in Denmark\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1795,
+    "end": 1795
+  },
+  "place": "denmark-q35",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

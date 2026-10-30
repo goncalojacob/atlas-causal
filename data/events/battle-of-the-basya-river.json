@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-basya-river",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4087352",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of the Basya River"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4087352"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Basya River\", revision 1370598163"
+    }
+  ],
+  "title": "Battle of the Basya River",
+  "summary": "The English Wikipedia article \"Battle of the Basya River\", at revision 1370598163, opens: \"The Battle of the Basya River or Battle of Gubarevo took place 28 September 1660 near Basya river 40 kilometers from the city of Mogilev during Thirteen Years' War. Russian army fought against Crown and Lithuanians Armies. Neither side was able to gain a decisive victory and retreated to their camp, suffering significant losses. The combined forces were commanded by Stefan Czarniecki, who fought against Yuri Dolgorukov, who led his army to Belarus to replace Ivan Khovansky, who had been defeated earlier in the Battle of Polonka. The battle became one of the major battles of the war and the largest battle on the territory of Belarus in the century. Despite the fact that both armies retreated, the strategic consequences were on the side of the Russians, as the Poles and Lithuanians lifted the siege of Mogilev, started in the summer and abandoned plans to attack Smolensk.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4087352, imported by tools/import/wikidata.mjs. The item's own description reads \"1660 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1660,
+    "end": 1660,
+    "date": "1660-09-24",
+    "endDate": "1660-10-10"
+  },
+  "place": "basia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "polish-russian-war-1654-1667"
+}

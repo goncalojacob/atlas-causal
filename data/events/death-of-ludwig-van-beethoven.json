@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "death-of-ludwig-van-beethoven",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5247488",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Death of Ludwig van Beethoven"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5247488"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Death of Ludwig van Beethoven\", revision 1381745154"
+    }
+  ],
+  "title": "Death of Ludwig van Beethoven",
+  "summary": "The English Wikipedia article \"Death of Ludwig van Beethoven\", at revision 1381745154, opens: \"The German composer Ludwig van Beethoven died in his apartment in the Schwarzspanierhaus, Vienna, on 26 March 1827 at the age of 56, following a prolonged illness. His death was witnessed by his sister-in-law, possibly by his secretary Karl Holz, and by his close friend Anselm Hüttenbrenner, who provided a vivid description of the event. Beethoven's funeral was held three days later, and the procession was witnessed by a large crowd. He was originally buried in the cemetery at Währing, although his remains were moved in 1888 to the Vienna Central Cemetery.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5247488, imported by tools/import/wikidata.mjs. The item's own description reads \"Death of Ludwig van Beethoven\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1827,
+    "end": 1827,
+    "date": "1827-03-26"
+  },
+  "place": "schwarzspanierhaus",
+  "region": null,
+  "regionNote": null,
+  "category": "death",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-bidassoa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2890503",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of the Bidassoa",
+    "pt": "Batalha do Bidasoa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890503"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Bidassoa\", revision 1370277611"
+    }
+  ],
+  "title": "Battle of the Bidassoa",
+  "summary": "The English Wikipedia article \"Battle of the Bidassoa\", at revision 1370277611, opens: \"The Battle of the Bidasoa was fought on 7 October 1813. The Allied army of Arthur Wellesley, Marquess of Wellington wrested a foothold on French soil from General Jean-de-Dieu Soult's army. The Allied troops overran the French lines behind the Bidassoa River on the coast and along the Pyrenees crest between the Bidasoa and La Rhune (Larrun). The nearest towns to the fighting are Irun on the lower Bidassoa and Bera on the middle Bidasoa. The battle occurred during the Peninsular War, part of the wider Napoleonic Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890503, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-10-07"
+  },
+  "place": "hendaye",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

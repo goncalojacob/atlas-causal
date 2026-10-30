@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-prenzlau",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872105",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Prenzlau",
+    "pt": "Batalha de Prenzlau"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872105"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Prenzlau\", revision 1370586622"
+    }
+  ],
+  "title": "Battle of Prenzlau",
+  "summary": "The English Wikipedia article \"Battle of Prenzlau\", at revision 1370586622, opens: \"In the Battle of Prenzlau or Capitulation of Prenzlau on 28 October 1806 two divisions of French cavalry and some infantry led by Marshal Joachim Murat intercepted a retreating Prussian corps led by Frederick Louis, Prince of Hohenlohe-Ingelfingen. In this action from the War of the Fourth Coalition, Hohenlohe surrendered his entire force to Murat after some fighting and a parley. Prenzlau is located about 90 kilometers north of Berlin in Brandenburg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872105, imported by tools/import/wikidata.mjs. The item's own description reads \"1806 battle during the War of the Fourth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1806,
+    "end": 1806,
+    "date": "1806-10-28"
+  },
+  "place": "prenzlau",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-fourth-coalition"
+}

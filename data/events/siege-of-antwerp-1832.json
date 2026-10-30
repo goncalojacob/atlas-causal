@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-antwerp-1832",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q29730",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Antwerp (1832)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q29730"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Antwerp (1832)\", revision 1370738913"
+    }
+  ],
+  "title": "Siege of Antwerp (1832)",
+  "summary": "The English Wikipedia article \"Siege of Antwerp (1832)\", at revision 1370738913, opens: \"The siege of Antwerp took place after fighting in the Belgian Revolution ended. On 15 November 1832, the French Armée du Nord under Marshal Gérard began to lay siege to the Dutch troops there under David Chassé. The siege ended on 23 December 1832. The French had agreed with the Belgian rebels that the latter would not participate in the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q29730, imported by tools/import/wikidata.mjs. The item's own description reads \"French siege of Antwerp in 1832\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1832,
+    "end": 1832,
+    "date": "1832-11-15",
+    "endDate": "1832-12-23"
+  },
+  "place": "antwerp",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

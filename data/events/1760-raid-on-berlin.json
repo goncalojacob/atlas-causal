@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "1760-raid-on-berlin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q167143",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1760 raid on Berlin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q167143"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1760 raid on Berlin\", revision 1370278104"
+    }
+  ],
+  "title": "1760 raid on Berlin",
+  "summary": "The English Wikipedia article \"1760 raid on Berlin\", at revision 1370278104, opens: \"The Raid on Berlin took place in October 1760 during the Third Silesian War when Austrian and Russian forces occupied the Prussian capital of Berlin for three full days,—from October 9th until 12th. After raising money from the city, and with the approach of further Prussian reinforcements, the occupiers withdrew. There were later allegations that the Russian commander Count Tottleben had received a personal bribe from the Prussians to spare the city, and he was subsequently tried and found guilty of being a spy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q167143, imported by tools/import/wikidata.mjs. The item's own description reads \"1760 battle during the Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1760,
+    "end": 1760,
+    "date": "1760-10-09",
+    "endDate": "1760-10-12"
+  },
+  "place": "berlin",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

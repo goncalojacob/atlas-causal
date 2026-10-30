@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "baggensstaket",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4372986",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Baggensstäket"
+  },
+  "sources": [],
+  "names": [
+    "Baggensstäket"
+  ],
+  "where": {
+    "lon": 18.281944444444,
+    "lat": 59.302222222222,
+    "precision": "region",
+    "label": "Baggensstäket"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

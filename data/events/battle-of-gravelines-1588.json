@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "battle-of-gravelines-1588",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "article-is-redirect",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2400227",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Gravelines (1588)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2400227"
+    }
+  ],
+  "title": "Battle of Gravelines (1588)",
+  "summary": "Wikidata item Q2400227, imported by tools/import/wikidata.mjs. The item's own description reads \"1588 naval battle between the English Fleet and Spanish Armada\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1588,
+    "end": 1588,
+    "date": "1588-08-08"
+  },
+  "place": "gravelines",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

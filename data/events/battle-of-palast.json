@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-palast",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1228713",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Palást"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1228713"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Palást\", revision 1378973722"
+    }
+  ],
+  "title": "Battle of Palást",
+  "summary": "The English Wikipedia article \"Battle of Palást\", at revision 1378973722, opens: \"The battle of Palást was a military engagement between the Ottomans and the Habsburg army in Plášťovce. The Habsburg army attempted to stop the Ottoman advance but was defeated by the Pasha of Buda.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1228713, imported by tools/import/wikidata.mjs. The item's own description reads \"1552 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1552,
+    "end": 1552,
+    "date": "1552-08-10"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

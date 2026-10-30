@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "capture-of-vigo-and-pontevedra",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5037074",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Capture of Vigo and Pontevedra",
+    "pt": "Captura de Vigo e Pontevedra"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5037074"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Vigo and Pontevedra\", revision 1370609862"
+    }
+  ],
+  "title": "Capture of Vigo and Pontevedra",
+  "summary": "The English Wikipedia article \"Capture of Vigo and Pontevedra\", at revision 1370609862, opens: \"The capture of Vigo and Pontevedra occurred in October 1719 during the War of the Quadruple Alliance when a British expedition made a descent on the Spanish coast. They then captured the settlements of Vigo, Redondela and Pontevedra after some resistance, which they occupied for ten days destroying or capturing a vast haul of military stores before withdrawing.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5037074, imported by tools/import/wikidata.mjs. The item's own description reads \"British operation as part of the War of the Quadruple Alliance\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1719,
+    "end": 1719,
+    "date": "1719-10-10"
+  },
+  "place": "pontevedra",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-quadruple-alliance"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1837-galilee-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2910218",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1837 Galilee earthquake",
+    "pt": "Sismo da Galileia de 1837"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2910218"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1837 Galilee earthquake\", revision 1379328037"
+    }
+  ],
+  "title": "1837 Galilee earthquake",
+  "summary": "The English Wikipedia article \"1837 Galilee earthquake\", at revision 1379328037, opens: \"The Galilee earthquake of 1837, often called the Safed earthquake, shook the Galilee on January 1 and is one of a number of moderate to large events that have occurred along the Dead Sea Transform fault system that marks the boundary of two tectonic plates; the African plate on the west and the Arabian plate on the east. Intensity assessments for the event were VIII (Damaging) on the Medvedev–Sponheuer–Karnik scale and VIII on the European Macroseismic Scale.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2910218, imported by tools/import/wikidata.mjs. The item's own description reads \"1837 earthquake in present-day Israel\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1837,
+    "end": 1837,
+    "date": "1837-01-01"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

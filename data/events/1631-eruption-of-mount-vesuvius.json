@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1631-eruption-of-mount-vesuvius",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q954201",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1631 eruption of Mount Vesuvius"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q954201"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1631 eruption of Mount Vesuvius\", revision 1377482708"
+    }
+  ],
+  "title": "1631 eruption of Mount Vesuvius",
+  "summary": "The English Wikipedia article \"1631 eruption of Mount Vesuvius\", at revision 1377482708, opens: \"In December 1631, Mount Vesuvius, a major stratovolcano in Southern Italy, erupted. The eruption resulted in at least 4,000 fatalities, making it the deadliest eruption of Vesuvius since 79 AD.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q954201, imported by tools/import/wikidata.mjs. The item's own description reads \"volcanic eruption\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1631,
+    "end": 1632,
+    "date": "1631-12-16",
+    "endDate": "1632-01-03"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

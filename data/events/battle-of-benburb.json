@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-benburb",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q522168",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Benburb"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q522168"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Benburb\", revision 1382433196"
+    }
+  ],
+  "title": "Battle of Benburb",
+  "summary": "The English Wikipedia article \"Battle of Benburb\", at revision 1382433196, opens: \"The Battle of Benburb took place on 5 June 1646 during the Irish Confederate Wars, the Irish theatre of the Wars of the Three Kingdoms. It was fought between the Irish Confederates under Owen Roe O'Neill, and an army of Scottish Covenanters and Scottish/English settlers under Robert Monro. The battle ended in a decisive victory for the Irish Confederates and ended Scottish hopes of conquering Ireland and imposing their own religious settlement there.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q522168, imported by tools/import/wikidata.mjs. The item's own description reads \"1646 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1646,
+    "end": 1646,
+    "date": "1646-06-05"
+  },
+  "place": "benburb",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "irish-confederate-wars"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sehestedt",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q635332",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Sehestedt",
+    "pt": "Sehestedt"
+  },
+  "sources": [],
+  "names": [
+    "Sehestedt"
+  ],
+  "where": {
+    "lon": 9.816666666666666,
+    "lat": 54.36666666666667,
+    "precision": "city",
+    "label": "Sehestedt"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

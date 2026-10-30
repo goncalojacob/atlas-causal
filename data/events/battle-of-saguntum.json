@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-saguntum",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889842",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Saguntum",
+    "pt": "Batalha de Sagunto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889842"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Saguntum\", revision 1370587966"
+    }
+  ],
+  "title": "Battle of Saguntum",
+  "summary": "The English Wikipedia article \"Battle of Saguntum\", at revision 1370587966, opens: \"The Battle of Saguntum saw the Imperial French Army of Aragon under Marshal Louis Gabriel Suchet fighting a Spanish army led by Captain General Joaquín Blake. The Spanish attempt to raise the siege of the Sagunto Castle failed when the French, Italians, and Poles drove their troops off the battlefield in rout. The action took place during the Peninsular War, part of the Napoleonic Wars. Sagunto lies a short distance from the east coast of Spain, about 30 kilometres (19 mi) north of Valencia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889842, imported by tools/import/wikidata.mjs. The item's own description reads \"1811 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1811,
+    "end": 1811,
+    "date": "1811-10-25"
+  },
+  "place": "sagunto",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

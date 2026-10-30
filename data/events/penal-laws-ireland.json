@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "penal-laws-ireland",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2738523",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Penal laws (Ireland)",
+    "pt": "Leis penais da Irlanda"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2738523"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Penal laws (Ireland)\", revision 1382200372"
+    }
+  ],
+  "title": "Penal laws (Ireland)",
+  "summary": "The English Wikipedia article \"Penal laws (Ireland)\", at revision 1382200372, opens: \"In Ireland, the penal laws were a series of legal disabilities imposed in the seventeenth and early eighteenth centuries on the kingdom's Roman Catholic majority and, to a lesser degree, on Protestant \"Dissenters\". Enacted by the Irish Parliament, they secured the Protestant Ascendancy by further concentrating property and public office in the hands of those who, as communicants of the established Church of Ireland, subscribed to the Oath of Supremacy. The Oath acknowledged the British monarch as the \"supreme governor\" of matters both spiritual and temporal, and abjured \"all foreign jurisdictions [and] powers\"—by implication both the Pope in Rome and the Stuart \"Pretender\" in the court of the King of France.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2738523, imported by tools/import/wikidata.mjs. The item's own description reads \"anti-Catholic laws in Ireland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1695,
+    "end": 1829
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "law",
+  "actors": []
+}

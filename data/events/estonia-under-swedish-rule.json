@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "estonia-under-swedish-rule",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2918454",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Estonia under Swedish rule"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2918454"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Estonia under Swedish rule\", revision 1373852259"
+    }
+  ],
+  "title": "Estonia under Swedish rule",
+  "summary": "The English Wikipedia article \"Estonia under Swedish rule\", at revision 1373852259, opens: \"Estonia under Swedish rule signifies the period of time between 1561 and 1710, when present-day Estonia was under the rule of the Swedish Empire. In the wake of the breakup of the State of the Teutonic Order, the Baltic German local nobility in the areas of Harrien (Harjumaa) and Wierland (Virumaa), as well as the city of Reval (Tallinn) in June 1561 and somewhat later Jerwen (Järvamaa), asked for and were granted protection by the Swedish king Eric XIV, leading to Swedish involvement in the Livonian War. At the conclusion of hostilities in 1583, Sweden was in control of the northern parts of modern Estonia and Dagö ; the Duchy of Estonia was created from this territory. Following renewed wars between Poland and Sweden, the southern parts of present-day Estonia were incorporated into Sweden by the Treaty of Altmark in 1629. Sweden also conquered the island of Ösel (Saaremaa) from Denmark, and were thus in control of all of present-day Estonia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2918454, imported by tools/import/wikidata.mjs. The item's own description reads \"period in history of the territory of present-day Estonia (historically divided between Swedish Estonia and Swedish Livonia)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1561,
+    "end": 1710
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "astor-place-riot",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q750138",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Astor Place Riot",
+    "pt": "Astor Place Riot"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q750138"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Astor Place Riot\", revision 1370429301"
+    }
+  ],
+  "title": "Astor Place Riot",
+  "summary": "The English Wikipedia article \"Astor Place Riot\", at revision 1370429301, opens: \"The Astor Place Riot occurred on May 10, 1849, at the now-demolished Astor Opera House in Manhattan and left between 22 and 31 rioters dead, and more than 120 people injured. It was the deadliest to that date of a number of civic disturbances in Manhattan, which generally pitted immigrants and nativists against each other, or together against the wealthy who controlled the city's police and the state militia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q750138, imported by tools/import/wikidata.mjs. The item's own description reads \"19th century theatre-related riot in Manhattan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1849,
+    "end": 1849,
+    "date": "1849-05-10"
+  },
+  "place": "new-york-state",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

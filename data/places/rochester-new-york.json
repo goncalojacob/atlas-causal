@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "rochester-new-york",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q49218",
+  "sitelinks": {
+    "count": 92,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Rochester, New York",
+    "pt": "Rochester (Nova Iorque)"
+  },
+  "sources": [],
+  "names": [
+    "Rochester",
+    "Rochester, New York",
+    "Rochester (Nova Iorque)"
+  ],
+  "where": {
+    "lon": -77.611388888889,
+    "lat": 43.165555555556,
+    "precision": "city",
+    "label": "Rochester, New York"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

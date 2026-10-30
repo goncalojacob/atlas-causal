@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bad-kissingen",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q488346",
+  "sitelinks": {
+    "count": 65,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Bad Kissingen",
+    "pt": "Bad Kissingen"
+  },
+  "sources": [],
+  "names": [
+    "Bad Kissingen"
+  ],
+  "where": {
+    "lon": 10.066666666666666,
+    "lat": 50.2,
+    "precision": "city",
+    "label": "Bad Kissingen"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

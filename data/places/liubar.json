@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "liubar",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2652151",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Liubar"
+  },
+  "sources": [],
+  "names": [
+    "Liubar"
+  ],
+  "where": {
+    "lon": 27.758333333333,
+    "lat": 49.921388888889,
+    "precision": "city",
+    "label": "Liubar"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

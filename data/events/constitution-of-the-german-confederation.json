@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "constitution-of-the-german-confederation",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q896505",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Constitution of the German Confederation"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q896505"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Constitution of the German Confederation\", revision 1343014921"
+    }
+  ],
+  "title": "Constitution of the German Confederation",
+  "summary": "The English Wikipedia article \"Constitution of the German Confederation\", at revision 1343014921, opens: \"The Constitution of the German Confederation, or German Federal Act, was the constitution for the German Confederation as set forth in the Final Act of the Congress of Vienna. Out of the 360 states of the former Holy Roman Empire, it established a confederation of 39 states under the presidency of the Emperor of Austria. In its initial form, the Constitution came into effect on 8 June 1815.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q896505, imported by tools/import/wikidata.mjs. The item's own description reads \"first fundamental law of the German Confederation, part of the Vienna Treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-06-08"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

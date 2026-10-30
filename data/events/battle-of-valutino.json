@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-valutino",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q771425",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Valutino"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q771425"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Valutino\", revision 1370592157"
+    }
+  ],
+  "title": "Battle of Valutino",
+  "summary": "The English Wikipedia article \"Battle of Valutino\", at revision 1370592157, opens: \"The Battle of Valutino took place on 19 August 1812 near Valutino[ru] and Lubino[ru], between a corps of French and allied troops led by Marshal Ney, about 35,000 strong, and a strong rear-guard of General Barclay de Tolly's Russian army of about 25,000, commanded by the general himself. The Russians were strongly posted in marshy ground, protected by a small stream, about 20 kilometres (12 mi) east of Smolensk. The French, attacking resolutely, captured the Russian position in the face of considerable physical obstacles; the Russian army, however, did not intend to determinately defend this position, because at the time of the battle it was in a general retreat deep into the territory as part of a scorched earth strategy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q771425, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle during the French invasion of Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-08-18"
+  },
+  "place": "smolensk",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-russia"
+}

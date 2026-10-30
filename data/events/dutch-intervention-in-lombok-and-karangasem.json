@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dutch-intervention-in-lombok-and-karangasem",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2201391",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Dutch intervention in Lombok and Karangasem"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2201391"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch intervention in Lombok and Karangasem\", revision 1380075123"
+    }
+  ],
+  "title": "Dutch intervention in Lombok and Karangasem",
+  "summary": "The English Wikipedia article \"Dutch intervention in Lombok and Karangasem\", at revision 1380075123, opens: \"The Dutch intervention in Lombok and Karangasem took place in 1894, and is part of the string of Dutch interventions in and around Bali that led to complete colonization of both Bali and Lombok by the early 20th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2201391, imported by tools/import/wikidata.mjs. The item's own description reads \"1894 intervention and colonization by Dutch East Indies\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1894,
+    "end": 1894,
+    "date": "1894-11"
+  },
+  "place": "lombok",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

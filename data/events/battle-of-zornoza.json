@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-zornoza",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q431767",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Zornoza"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q431767"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Zornoza\", revision 1370277409"
+    }
+  ],
+  "title": "Battle of Zornoza",
+  "summary": "The English Wikipedia article \"Battle of Zornoza\", at revision 1370277409, opens: \"The Battle of Zornoza, fought on 31 October 1808, was one of the opening engagements in Napoleon's invasion of Spain. The battle was intended to encircle and crush the left wing of the Spanish front. The Spanish infantry was swiftly thrown back but escaped in good order.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q431767, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-10-31"
+  },
+  "place": "amorebieta-etxano",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

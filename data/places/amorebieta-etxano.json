@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "amorebieta-etxano",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q474080",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Amorebieta-Etxano",
+    "pt": "Amorebieta-Echano"
+  },
+  "sources": [],
+  "names": [
+    "Amorebieta-Etxano",
+    "Amorebieta-Echano"
+  ],
+  "where": {
+    "lon": -2.7341666666667,
+    "lat": 43.219166666667,
+    "precision": "city",
+    "label": "Amorebieta-Etxano"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

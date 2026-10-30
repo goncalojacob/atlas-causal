@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "15th-united-states-congress",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4551057",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "15th United States Congress"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4551057"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"15th United States Congress\", revision 1380237790"
+    }
+  ],
+  "title": "15th United States Congress",
+  "summary": "The English Wikipedia article \"15th United States Congress\", at revision 1380237790, opens: \"The 15th United States Congress was a meeting of the legislative branch of the United States federal government, consisting of the United States Senate and the United States House of Representatives. It met in the Old Brick Capitol in Washington, D.C. from March 4, 1817, to March 4, 1819, during the first two years of James Monroe's presidency. The apportionment of seats in the House of Representatives was based on the 1810 United States census. Both chambers had a Democratic-Republican majority.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4551057, imported by tools/import/wikidata.mjs. The item's own description reads \"1817-1819 U.S. Congress\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1817,
+    "end": 1819,
+    "date": "1817-03-04",
+    "endDate": "1819-03-04"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

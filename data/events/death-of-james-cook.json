@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "death-of-james-cook",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q19874865",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Death of James Cook"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q19874865"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Death of James Cook\", revision 1381492699"
+    }
+  ],
+  "title": "Death of James Cook",
+  "summary": "The English Wikipedia article \"Death of James Cook\", at revision 1381492699, opens: \"On 14 February 1779 British explorer Captain James Cook was killed as he attempted to kidnap Kalaniʻōpuʻu, the ruling chief of the island of Hawaii, and hold him hostage for the return of a cutter which Hawaiians had stolen. As Cook and his men attempted to take the chief to his ship, they were confronted by a crowd of Hawaiians at Kealakekua Bay seeking to prevent Kalaniʻōpuʻu leaving. In the ensuing confrontation, Cook, four British marines and 17 Hawaiians were killed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q19874865, imported by tools/import/wikidata.mjs. The item's own description reads \"1779 killing of Captain James Cook in Hawaii\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1779,
+    "end": 1779,
+    "date": "1779-02-14"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "death",
+  "actors": []
+}

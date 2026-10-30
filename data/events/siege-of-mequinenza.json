@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-mequinenza",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q15277687",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Mequinenza",
+    "pt": "Cerco de Mequinenza"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15277687"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Mequinenza\", revision 1370743460"
+    }
+  ],
+  "title": "Siege of Mequinenza",
+  "summary": "The English Wikipedia article \"Siege of Mequinenza\", at revision 1370743460, opens: \"The siege of Mequinenza saw a 16,000-man Imperial French corps commanded by Louis Gabriel Suchet invest a 1,000-strong Spanish garrison under Colonel Carbon. Mequinenza and its castle were captured by the French after an operation lasting about three weeks. The action occurred during the Peninsular War, which formed part of the Napoleonic Wars. Mequinenza is located at the confluence of the Ebro and Segre Rivers about 211 kilometres (131 mi) west of Barcelona.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15277687, imported by tools/import/wikidata.mjs. The item's own description reads \"1810 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1810,
+    "date": "1810-05-15",
+    "endDate": "1810-06-08"
+  },
+  "place": "mequinenza",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}
