@@ -1371,7 +1371,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 3,
       "id": "aleppo",
       "kind": "place",
       "names": [
@@ -2780,7 +2780,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 12,
+      "degree": 13,
       "id": "argentina-q414",
       "kind": "place",
       "names": [
@@ -7200,6 +7200,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "bilbao",
+      "kind": "place",
+      "names": [
+        "Bilbao",
+        "Bilbau"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "bilhorod-dnistrovskyi",
@@ -8469,7 +8497,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 8,
+      "degree": 9,
       "id": "brazil-q155",
       "kind": "place",
       "names": [
@@ -8859,6 +8887,34 @@
       "names": [
         "British Isles",
         "Ilhas Britânicas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "british-north-america",
+      "kind": "place",
+      "names": [
+        "British North America",
+        "América do Norte Britânica"
       ],
       "origin": {
         "tool": "wikidata"
@@ -10989,6 +11045,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "castalla",
+      "kind": "place",
+      "names": [
+        "Castalla"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "castelfidardo",
@@ -11747,6 +11830,33 @@
       "kind": "place",
       "names": [
         "Česká Skalice"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "cetate",
+      "kind": "place",
+      "names": [
+        "Cetate"
       ],
       "origin": {
         "tool": "wikidata"
@@ -13124,6 +13234,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "chojnow",
+      "kind": "place",
+      "names": [
+        "Chojnów"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 3,
       "id": "cholet",
@@ -13844,7 +13981,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "concepcion-chile",
       "kind": "place",
       "names": [
@@ -14190,6 +14327,33 @@
       "kind": "place",
       "names": [
         "Coulmiers"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "courbevoie",
+      "kind": "place",
+      "names": [
+        "Courbevoie"
       ],
       "origin": {
         "tool": "wikidata"
@@ -18829,7 +18993,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 17,
+      "degree": 18,
       "id": "europe",
       "kind": "place",
       "names": [
@@ -20630,6 +20794,35 @@
       "kind": "place",
       "names": [
         "Franconia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "frankfort-kentucky",
+      "kind": "place",
+      "names": [
+        "Frankfort",
+        "Frankfort, Kentucky",
+        "Frankfort (Kentucky)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -23097,7 +23290,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 12,
+      "degree": 13,
       "id": "greece-q41",
       "kind": "place",
       "names": [
@@ -24435,7 +24628,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 3,
+      "degree": 4,
       "id": "hamburg-q1055",
       "kind": "place",
       "names": [
@@ -24798,6 +24991,33 @@
       "kind": "place",
       "names": [
         "Hasan Abdal"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "hasselt",
+      "kind": "place",
+      "names": [
+        "Hasselt"
       ],
       "origin": {
         "tool": "wikidata"
@@ -29911,6 +30131,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "kathmandu-durbar-square",
+      "kind": "place",
+      "names": [
+        "Basantapur Durbar Square",
+        "Praça Darbar (Catmandu)",
+        "Kathmandu Durbar Square"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -33968,7 +34217,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "leuven",
       "kind": "place",
       "names": [
@@ -35742,7 +35991,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 5,
       "id": "luxembourg-q1842",
       "kind": "place",
       "names": [
@@ -38701,6 +38950,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "mendigorria",
+      "kind": "place",
+      "names": [
+        "Mendigorria"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "mendota-illinois",
@@ -40846,6 +41122,34 @@
       "names": [
         "Morris Island",
         "Ilha Morris"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "mortara-lombardy",
+      "kind": "place",
+      "names": [
+        "Mortara",
+        "Mortara, Lombardy"
       ],
       "origin": {
         "tool": "wikidata"
@@ -43144,7 +43448,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 5,
+      "degree": 6,
       "id": "new-york-state",
       "kind": "place",
       "names": [
@@ -44306,6 +44610,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "nyb-l",
+      "kind": "place",
+      "names": [
+        "Nybøl"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -45524,7 +45855,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 31,
+      "degree": 32,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -45966,7 +46297,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "panama-city",
       "kind": "place",
       "names": [
@@ -51654,6 +51985,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "rochester-new-york",
+      "kind": "place",
+      "names": [
+        "Rochester",
+        "Rochester, New York",
+        "Rochester (Nova Iorque)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "rock-springs-wyoming",
@@ -51701,6 +52061,35 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "rocquencourt-yvelines",
+      "kind": "place",
+      "names": [
+        "Rocquencourt",
+        "Rocquencourt, Yvelines",
+        "Rocquencourt (Yvelines)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -55075,10 +55464,66 @@
       ],
       "created": "2026-10-30",
       "degree": 1,
+      "id": "schleswig-schleswig-holstein",
+      "kind": "place",
+      "names": [
+        "Schleswig",
+        "Schleswig, Schleswig-Holstein",
+        "Eslésvico (cidade)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
       "id": "schliengen",
       "kind": "place",
       "names": [
         "Schliengen"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "schwarzspanierhaus",
+      "kind": "place",
+      "names": [
+        "Schwarzspanierhaus"
       ],
       "origin": {
         "tool": "wikidata"
@@ -57690,7 +58135,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 15,
+      "degree": 16,
       "id": "spain-q29",
       "kind": "place",
       "names": [
@@ -58919,6 +59364,33 @@
       "names": [
         "Suakin",
         "Suaquém"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "sucre",
+      "kind": "place",
+      "names": [
+        "Sucre"
       ],
       "origin": {
         "tool": "wikidata"
@@ -63578,7 +64050,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 68,
+      "degree": 81,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
