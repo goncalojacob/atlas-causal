@@ -366,6 +366,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "aceh-q1823",
+      "kind": "place",
+      "names": [
+        "Aceh",
+        "Achém"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 3,
       "id": "acre-israel",
@@ -819,6 +847,33 @@
       "kind": "place",
       "names": [
         "Agra"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "aigues-mortes",
+      "kind": "place",
+      "names": [
+        "Aigues-Mortes"
       ],
       "origin": {
         "tool": "wikidata"
@@ -1569,6 +1624,34 @@
       "names": [
         "Alps",
         "Alpes"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "als-island",
+      "kind": "place",
+      "names": [
+        "Als",
+        "Als (island)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -3251,12 +3334,68 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "aschaffenburg",
+      "kind": "place",
+      "names": [
+        "Aschaffenburg",
+        "Aschafemburgo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "ash-hollow-state-historical-park",
       "kind": "place",
       "names": [
         "Ash Hollow State Historical Park"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "ashtabula-ohio",
+      "kind": "place",
+      "names": [
+        "Ashtabula",
+        "Ashtabula, Ohio"
       ],
       "origin": {
         "tool": "wikidata"
@@ -9361,7 +9500,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 13,
+      "degree": 14,
       "id": "bulgaria-q219",
       "kind": "place",
       "names": [
@@ -15438,7 +15577,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "danube-vilayet",
       "kind": "place",
       "names": [
@@ -16092,6 +16231,33 @@
       "names": [
         "Derbent",
         "Derbente"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "dermbach",
+      "kind": "place",
+      "names": [
+        "Dermbach"
       ],
       "origin": {
         "tool": "wikidata"
@@ -17678,6 +17844,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "eastbourne",
+      "kind": "place",
+      "names": [
+        "Eastbourne"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "eastern-canada",
@@ -18020,6 +18213,33 @@
       "kind": "place",
       "names": [
         "Ekeren"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "el-caney",
+      "kind": "place",
+      "names": [
+        "El Caney"
       ],
       "origin": {
         "tool": "wikidata"
@@ -20536,6 +20756,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "fort-san-felipe-cavite",
+      "kind": "place",
+      "names": [
+        "Fort San Felipe",
+        "Fort San Felipe (Cavite)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 2,
       "id": "fort-stanwix",
@@ -22036,7 +22284,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 7,
       "id": "geneva-q71",
       "kind": "place",
       "names": [
@@ -29662,7 +29910,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 4,
+      "degree": 5,
       "id": "kansas",
       "kind": "place",
       "names": [
@@ -30188,6 +30436,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "katowice",
+      "kind": "place",
+      "names": [
+        "Katowice"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -30387,7 +30662,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "kentucky",
       "kind": "place",
       "names": [
@@ -39255,7 +39530,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 3,
+      "degree": 4,
       "id": "metz",
       "kind": "place",
       "names": [
@@ -45855,7 +46130,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 32,
+      "degree": 33,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -46086,6 +46361,35 @@
       "names": [
         "Palace of Versailles",
         "Palácio de Versalhes"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "palacio-de-las-cortes-madrid",
+      "kind": "place",
+      "names": [
+        "Palacio de las Cortes",
+        "Palacio de las Cortes, Madrid",
+        "Palácio das Cortes (Madrid)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -46498,7 +46802,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 32,
+      "degree": 33,
       "id": "paris",
       "kind": "place",
       "names": [
@@ -47689,7 +47993,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 37,
+      "degree": 38,
       "id": "philippines-q928",
       "kind": "place",
       "names": [
@@ -50240,7 +50544,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 10,
+      "degree": 11,
       "id": "qing-dynasty",
       "kind": "place",
       "names": [
@@ -50355,7 +50659,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 4,
+      "degree": 5,
       "id": "quebec-city",
       "kind": "place",
       "names": [
@@ -52463,7 +52767,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "rugen",
       "kind": "place",
       "names": [
@@ -55825,7 +56129,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 4,
+      "degree": 5,
       "id": "seoul",
       "kind": "place",
       "names": [
@@ -57478,7 +57782,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 2,
+      "degree": 3,
       "id": "south-carolina-q1456",
       "kind": "place",
       "names": [
@@ -59833,6 +60137,33 @@
       "kind": "place",
       "names": [
         "Svijany"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "svinistany",
+      "kind": "place",
+      "names": [
+        "Svinišťany"
       ],
       "origin": {
         "tool": "wikidata"
@@ -63517,6 +63848,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "turbigo",
+      "kind": "place",
+      "names": [
+        "Turbigo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "turckheim",
@@ -64050,7 +64408,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 81,
+      "degree": 83,
       "id": "united-states-q30",
       "kind": "place",
       "names": [

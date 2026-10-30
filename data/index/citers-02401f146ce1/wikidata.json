@@ -2342,6 +2342,12 @@
     },
     {
       "dissent": false,
+      "id": "1860-great-meteor",
+      "kind": "event",
+      "locator": "Q11777686"
+    },
+    {
+      "dissent": false,
       "id": "1861-baltimore-riot",
       "kind": "event",
       "locator": "Q3588241"
@@ -2357,6 +2363,12 @@
       "id": "1867-macedonian-rebellion",
       "kind": "event",
       "locator": "Q58895491"
+    },
+    {
+      "dissent": false,
+      "id": "1867-manhattan-kansas-earthquake",
+      "kind": "event",
+      "locator": "Q4555199"
     },
     {
       "dissent": false,
@@ -2381,6 +2393,12 @@
       "id": "1871-guatemalan-revolution",
       "kind": "event",
       "locator": "Q6107157"
+    },
+    {
+      "dissent": false,
+      "id": "1872-cavite-mutiny",
+      "kind": "event",
+      "locator": "Q2496205"
     },
     {
       "dissent": false,
@@ -2435,6 +2453,12 @@
       "id": "1886-bulgarian-coup-d-etat",
       "kind": "event",
       "locator": "Q2119318"
+    },
+    {
+      "dissent": false,
+      "id": "1886-charleston-earthquake",
+      "kind": "event",
+      "locator": "Q477519"
     },
     {
       "dissent": false,
@@ -4460,6 +4484,12 @@
     },
     {
       "dissent": false,
+      "id": "ashtabula-river-railroad-disaster",
+      "kind": "event",
+      "locator": "Q1312088"
+    },
+    {
+      "dissent": false,
       "id": "assassination-of-abraham-lincoln",
       "kind": "event",
       "locator": "Q1025404"
@@ -4481,6 +4511,12 @@
       "id": "assassination-of-archduke-franz-ferdinand",
       "kind": "event",
       "locator": "Q192050, P31 Q3882219 / Q1139665 / Q5510053 / Q132821"
+    },
+    {
+      "dissent": false,
+      "id": "assassination-of-elisabeth-empress-of-austria",
+      "kind": "event",
+      "locator": "Q15220605"
     },
     {
       "dissent": false,
@@ -5276,6 +5312,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-als",
+      "kind": "event",
+      "locator": "Q1434879"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-alto-de-los-godos",
       "kind": "event",
       "locator": "Q4870282"
@@ -5525,6 +5567,12 @@
       "id": "battle-of-arzobispo",
       "kind": "event",
       "locator": "Q15197080"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-aschaffenburg-1866",
+      "kind": "event",
+      "locator": "Q589189"
     },
     {
       "dissent": false,
@@ -5909,6 +5957,12 @@
       "id": "battle-of-belen-pass",
       "kind": "event",
       "locator": "Q127433549"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bellevue",
+      "kind": "event",
+      "locator": "Q550982"
     },
     {
       "dissent": false,
@@ -7544,6 +7598,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-dermbach",
+      "kind": "event",
+      "locator": "Q589201"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-derna-1805",
       "kind": "event",
       "locator": "Q2888407"
@@ -7805,6 +7865,12 @@
       "id": "battle-of-ekeren",
       "kind": "event",
       "locator": "Q1195263"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-el-caney",
+      "kind": "event",
+      "locator": "Q2887938"
     },
     {
       "dissent": false,
@@ -9635,6 +9701,12 @@
       "id": "battle-of-jarte",
       "kind": "event",
       "locator": "Q834881"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jasmund-1864",
+      "kind": "event",
+      "locator": "Q699247"
     },
     {
       "dissent": false,
@@ -14108,6 +14180,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-schweinschadel",
+      "kind": "event",
+      "locator": "Q1497929"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sculeni",
       "kind": "event",
       "locator": "Q2093780"
@@ -14792,6 +14870,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-svistov",
+      "kind": "event",
+      "locator": "Q2667371"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-swally",
       "kind": "event",
       "locator": "Q2092338"
@@ -14951,6 +15035,12 @@
       "id": "battle-of-tashihchiao",
       "kind": "event",
       "locator": "Q2409264"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tashkessen",
+      "kind": "event",
+      "locator": "Q3394726"
     },
     {
       "dissent": false,
@@ -15899,6 +15989,12 @@
       "id": "battle-of-tunmen",
       "kind": "event",
       "locator": "Q5452540"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-turbigo",
+      "kind": "event",
+      "locator": "Q698440"
     },
     {
       "dissent": false,
@@ -17786,6 +17882,12 @@
     },
     {
       "dissent": false,
+      "id": "campaign-of-the-main",
+      "kind": "event",
+      "locator": "Q1442668"
+    },
+    {
+      "dissent": false,
       "id": "campaign-of-tlemcen-1551",
       "kind": "event",
       "locator": "Q28495579"
@@ -18302,6 +18404,12 @@
     },
     {
       "dissent": false,
+      "id": "case-of-yang-naiwu-and-little-cabbage",
+      "kind": "event",
+      "locator": "Q5967926"
+    },
+    {
+      "dissent": false,
       "id": "caste-war-of-yucatan",
       "kind": "event",
       "locator": "Q772814"
@@ -18758,6 +18866,12 @@
     },
     {
       "dissent": false,
+      "id": "confederate-heartland-offensive",
+      "kind": "event",
+      "locator": "Q962723"
+    },
+    {
+      "dissent": false,
       "id": "confederation-period",
       "kind": "event",
       "locator": "Q4742531"
@@ -19106,6 +19220,12 @@
     },
     {
       "dissent": false,
+      "id": "coup-d-etat-of-pavia",
+      "kind": "event",
+      "locator": "Q5882508"
+    },
+    {
+      "dissent": false,
       "id": "coup-of-18-brumaire",
       "kind": "event",
       "locator": "Q620965"
@@ -19247,6 +19367,12 @@
       "id": "cretan-revolt-1866-1869",
       "kind": "event",
       "locator": "Q2668235"
+    },
+    {
+      "dissent": false,
+      "id": "cretan-revolt-1878",
+      "kind": "event",
+      "locator": "Q3458267"
     },
     {
       "dissent": false,
@@ -19856,6 +19982,12 @@
     },
     {
       "dissent": false,
+      "id": "eastbourne-manslaughter",
+      "kind": "event",
+      "locator": "Q2174777"
+    },
+    {
+      "dissent": false,
       "id": "easter-offensive",
       "kind": "event",
       "locator": "Q2395085"
@@ -20081,6 +20213,12 @@
       "id": "eritrean-war-of-independence",
       "kind": "event",
       "locator": "Q607257, P31 Q1006311"
+    },
+    {
+      "dissent": false,
+      "id": "esing-bakery-incident",
+      "kind": "event",
+      "locator": "Q7211121"
     },
     {
       "dissent": false,
@@ -20687,6 +20825,12 @@
       "id": "first-battle-of-newbury",
       "kind": "event",
       "locator": "Q2058454"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-newtonia",
+      "kind": "event",
+      "locator": "Q3853944"
     },
     {
       "dissent": false,
@@ -21314,6 +21458,12 @@
     },
     {
       "dissent": false,
+      "id": "french-conquest-of-vietnam",
+      "kind": "event",
+      "locator": "Q10747195"
+    },
+    {
+      "dissent": false,
       "id": "french-constitution-of-1791",
       "kind": "event",
       "locator": "Q971176"
@@ -21473,6 +21623,12 @@
       "id": "gallipoli-campaign",
       "kind": "event",
       "locator": "Q164983"
+    },
+    {
+      "dissent": false,
+      "id": "gamazada",
+      "kind": "event",
+      "locator": "Q3322785"
     },
     {
       "dissent": false,
@@ -21755,6 +21911,12 @@
       "id": "great-blizzard-of-1888",
       "kind": "event",
       "locator": "Q170652"
+    },
+    {
+      "dissent": false,
+      "id": "great-blizzard-of-1899",
+      "kind": "event",
+      "locator": "Q5598783"
     },
     {
       "dissent": false,
@@ -23360,6 +23522,12 @@
     },
     {
       "dissent": false,
+      "id": "katowice-conference",
+      "kind": "event",
+      "locator": "Q12407161"
+    },
+    {
+      "dissent": false,
       "id": "katyn-massacre",
       "kind": "event",
       "locator": "Q134301"
@@ -23531,6 +23699,12 @@
       "id": "koprulu-era",
       "kind": "event",
       "locator": "Q2745668"
+    },
+    {
+      "dissent": false,
+      "id": "korea-united-kingdom-treaty-of-1883",
+      "kind": "event",
+      "locator": "Q7888196"
     },
     {
       "dissent": false,
@@ -24356,6 +24530,12 @@
     },
     {
       "dissent": false,
+      "id": "massacre-of-italians-at-aigues-mortes",
+      "kind": "event",
+      "locator": "Q3297491"
+    },
+    {
+      "dissent": false,
       "id": "massacre-of-novgorod",
       "kind": "event",
       "locator": "Q2663703"
@@ -24659,6 +24839,12 @@
       "id": "monmouth-rebellion",
       "kind": "event",
       "locator": "Q1940446"
+    },
+    {
+      "dissent": false,
+      "id": "montenegrin-ottoman-war-1861-1862",
+      "kind": "event",
+      "locator": "Q16724471"
     },
     {
       "dissent": false,
@@ -26924,6 +27110,12 @@
     },
     {
       "dissent": false,
+      "id": "putumayo-genocide",
+      "kind": "event",
+      "locator": "Q33930847"
+    },
+    {
+      "dissent": false,
       "id": "qatari-bahraini-war",
       "kind": "event",
       "locator": "Q7267163"
@@ -26939,6 +27131,12 @@
       "id": "qing-reconquest-of-xinjiang",
       "kind": "event",
       "locator": "Q6140819"
+    },
+    {
+      "dissent": false,
+      "id": "quebec-conference-1864",
+      "kind": "event",
+      "locator": "Q824689"
     },
     {
       "dissent": false,
@@ -27986,6 +28184,12 @@
     },
     {
       "dissent": false,
+      "id": "salon-de-la-rose-croix",
+      "kind": "event",
+      "locator": "Q2111003"
+    },
+    {
+      "dissent": false,
       "id": "salt-tax-revolt",
       "kind": "event",
       "locator": "Q3756219"
@@ -28127,6 +28331,12 @@
       "id": "scramble-for-africa",
       "kind": "event",
       "locator": "Q179848"
+    },
+    {
+      "dissent": false,
+      "id": "second-aceh-expedition",
+      "kind": "event",
+      "locator": "Q2259923"
     },
     {
       "dissent": false,
@@ -28610,6 +28820,12 @@
     },
     {
       "dissent": false,
+      "id": "second-serbian-ottoman-war",
+      "kind": "event",
+      "locator": "Q12294927"
+    },
+    {
+      "dissent": false,
       "id": "second-serbian-uprising",
       "kind": "event",
       "locator": "Q243585"
@@ -28769,6 +28985,12 @@
       "id": "sevastopol-uprising",
       "kind": "event",
       "locator": "Q4411939"
+    },
+    {
+      "dissent": false,
+      "id": "seven-and-a-half-days-revolt",
+      "kind": "event",
+      "locator": "Q3938029"
     },
     {
       "dissent": false,
@@ -31754,6 +31976,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-annexation-of-the-dominican-republic",
+      "kind": "event",
+      "locator": "Q16933273"
+    },
+    {
+      "dissent": false,
       "id": "spanish-assault-on-djerba-1510",
       "kind": "event",
       "locator": "Q5936375"
@@ -32279,6 +32507,12 @@
       "id": "tehran-conference",
       "kind": "event",
       "locator": "Q150974"
+    },
+    {
+      "dissent": false,
+      "id": "tejeros-convention",
+      "kind": "event",
+      "locator": "Q13565027"
     },
     {
       "dissent": false,

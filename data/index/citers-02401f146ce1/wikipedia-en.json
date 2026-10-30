@@ -10754,6 +10754,12 @@
     },
     {
       "dissent": false,
+      "id": "1860-great-meteor",
+      "kind": "event",
+      "locator": "\"1860 Great Meteor\", revision 1374844585"
+    },
+    {
+      "dissent": false,
       "id": "1861-baltimore-riot",
       "kind": "event",
       "locator": "\"1861 Baltimore riot\", revision 1380956273"
@@ -10769,6 +10775,12 @@
       "id": "1867-macedonian-rebellion",
       "kind": "event",
       "locator": "\"1867 Macedonian rebellion\", revision 1370278911"
+    },
+    {
+      "dissent": false,
+      "id": "1867-manhattan-kansas-earthquake",
+      "kind": "event",
+      "locator": "\"1867 Manhattan, Kansas, earthquake\", revision 1366168222"
     },
     {
       "dissent": false,
@@ -10793,6 +10805,12 @@
       "id": "1871-guatemalan-revolution",
       "kind": "event",
       "locator": "\"1871 Guatemalan Revolution\", revision 1380768164"
+    },
+    {
+      "dissent": false,
+      "id": "1872-cavite-mutiny",
+      "kind": "event",
+      "locator": "\"1872 Cavite mutiny\", revision 1375754882"
     },
     {
       "dissent": false,
@@ -10847,6 +10865,12 @@
       "id": "1886-bulgarian-coup-d-etat",
       "kind": "event",
       "locator": "\"1886 Bulgarian coup d'état\", revision 1359290818"
+    },
+    {
+      "dissent": false,
+      "id": "1886-charleston-earthquake",
+      "kind": "event",
+      "locator": "\"1886 Charleston earthquake\", revision 1378468561"
     },
     {
       "dissent": false,
@@ -12800,6 +12824,12 @@
     },
     {
       "dissent": false,
+      "id": "ashtabula-river-railroad-disaster",
+      "kind": "event",
+      "locator": "\"Ashtabula River railroad disaster\", revision 1378571065"
+    },
+    {
+      "dissent": false,
       "id": "assassination-of-abraham-lincoln",
       "kind": "event",
       "locator": "\"Assassination of Abraham Lincoln\", revision 1380649442"
@@ -13574,6 +13604,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-als",
+      "kind": "event",
+      "locator": "\"Battle of Als\", revision 1370106466"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-alto-de-los-godos",
       "kind": "event",
       "locator": "\"Battle of Alto de los Godos\", revision 1370431800"
@@ -13823,6 +13859,12 @@
       "id": "battle-of-arzobispo",
       "kind": "event",
       "locator": "\"Battle of Arzobispo\", revision 1370432604"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-aschaffenburg-1866",
+      "kind": "event",
+      "locator": "\"Battle of Aschaffenburg (1866)\", revision 1370107076"
     },
     {
       "dissent": false,
@@ -14201,6 +14243,12 @@
       "id": "battle-of-belen-pass",
       "kind": "event",
       "locator": "\"Battle of Belen Pass\", revision 1374227507"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bellevue",
+      "kind": "event",
+      "locator": "\"Battle of Bellevue\", revision 1370433942"
     },
     {
       "dissent": false,
@@ -15830,6 +15878,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-dermbach",
+      "kind": "event",
+      "locator": "\"Battle of Dermbach\", revision 1370109637"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-derna-1805",
       "kind": "event",
       "locator": "\"Battle of Derna (1805)\", revision 1379954325"
@@ -16085,6 +16139,12 @@
       "id": "battle-of-ekeren",
       "kind": "event",
       "locator": "\"Battle of Ekeren\", revision 1370536322"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-el-caney",
+      "kind": "event",
+      "locator": "\"Battle of El Caney\", revision 1376307338"
     },
     {
       "dissent": false,
@@ -17915,6 +17975,12 @@
       "id": "battle-of-jarte",
       "kind": "event",
       "locator": "\"Battle of Jarte\", revision 1374242866"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jasmund-1864",
+      "kind": "event",
+      "locator": "\"Battle of Jasmund (1864)\", revision 1370444123"
     },
     {
       "dissent": false,
@@ -22370,6 +22436,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-schweinschadel",
+      "kind": "event",
+      "locator": "\"Battle of Schweinschädel\", revision 1370273981"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sculeni",
       "kind": "event",
       "locator": "\"Battle of Sculeni\", revision 1370588869"
@@ -23054,6 +23126,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-svistov",
+      "kind": "event",
+      "locator": "\"Battle of Svistov\", revision 1370590209"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-swally",
       "kind": "event",
       "locator": "\"Battle of Swally\", revision 1371286628"
@@ -23213,6 +23291,12 @@
       "id": "battle-of-tashihchiao",
       "kind": "event",
       "locator": "\"Battle of Tashihchiao\", revision 1370590643"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tashkessen",
+      "kind": "event",
+      "locator": "\"Battle of Tashkessen\", revision 1370590663"
     },
     {
       "dissent": false,
@@ -24173,6 +24257,12 @@
       "id": "battle-of-tunmen",
       "kind": "event",
       "locator": "\"Battle of Tunmen\", revision 1373468615"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-turbigo",
+      "kind": "event",
+      "locator": "\"Battle of Turbigo\", revision 1370591785"
     },
     {
       "dissent": false,
@@ -26054,6 +26144,12 @@
     },
     {
       "dissent": false,
+      "id": "campaign-of-the-main",
+      "kind": "event",
+      "locator": "\"Campaign of the Main\", revision 1370786296"
+    },
+    {
+      "dissent": false,
       "id": "campaign-of-tlemcen-1551",
       "kind": "event",
       "locator": "\"Campaign of Tlemcen (1551)\", revision 1376495158"
@@ -26564,6 +26660,12 @@
     },
     {
       "dissent": false,
+      "id": "case-of-yang-naiwu-and-little-cabbage",
+      "kind": "event",
+      "locator": "\"Case of Yang Naiwu and Little Cabbage\", revision 1382378501"
+    },
+    {
+      "dissent": false,
       "id": "caste-war-of-yucatan",
       "kind": "event",
       "locator": "\"Caste War of Yucatán\", revision 1370610317"
@@ -27014,6 +27116,12 @@
     },
     {
       "dissent": false,
+      "id": "confederate-heartland-offensive",
+      "kind": "event",
+      "locator": "\"Confederate Heartland Offensive\", revision 1368283866"
+    },
+    {
+      "dissent": false,
       "id": "confederation-period",
       "kind": "event",
       "locator": "\"Confederation period\", revision 1380707080"
@@ -27362,6 +27470,12 @@
     },
     {
       "dissent": false,
+      "id": "coup-d-etat-of-pavia",
+      "kind": "event",
+      "locator": "\"Coup d'état of Pavía\", revision 1360615561"
+    },
+    {
+      "dissent": false,
       "id": "coup-of-18-brumaire",
       "kind": "event",
       "locator": "\"Coup of 18 Brumaire\", revision 1368421302"
@@ -27503,6 +27617,12 @@
       "id": "cretan-revolt-1866-1869",
       "kind": "event",
       "locator": "\"Cretan revolt (1866–1869)\", revision 1378470555"
+    },
+    {
+      "dissent": false,
+      "id": "cretan-revolt-1878",
+      "kind": "event",
+      "locator": "\"Cretan revolt (1878)\", revision 1374875279"
     },
     {
       "dissent": false,
@@ -28118,6 +28238,12 @@
     },
     {
       "dissent": false,
+      "id": "eastbourne-manslaughter",
+      "kind": "event",
+      "locator": "\"Eastbourne manslaughter\", revision 1358308743"
+    },
+    {
+      "dissent": false,
       "id": "easter-offensive",
       "kind": "event",
       "locator": "\"Easter Offensive\", revision 1374321570"
@@ -28337,6 +28463,12 @@
       "id": "eritrean-war-of-independence",
       "kind": "event",
       "locator": "\"Eritrean War of Independence\", revision 1374058781"
+    },
+    {
+      "dissent": false,
+      "id": "esing-bakery-incident",
+      "kind": "event",
+      "locator": "\"Esing Bakery incident\", revision 1379536921"
     },
     {
       "dissent": false,
@@ -28925,6 +29057,12 @@
       "id": "first-battle-of-newbury",
       "kind": "event",
       "locator": "\"First Battle of Newbury\", revision 1370618832"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-newtonia",
+      "kind": "event",
+      "locator": "\"First Battle of Newtonia\", revision 1370618836"
     },
     {
       "dissent": false,
@@ -29552,6 +29690,12 @@
     },
     {
       "dissent": false,
+      "id": "french-conquest-of-vietnam",
+      "kind": "event",
+      "locator": "\"French conquest of Vietnam\", revision 1370620387"
+    },
+    {
+      "dissent": false,
       "id": "french-constitution-of-1791",
       "kind": "event",
       "locator": "\"French Constitution of 1791\", revision 1371021794"
@@ -29705,6 +29849,12 @@
       "id": "gallipoli-campaign",
       "kind": "event",
       "locator": "\"Gallipoli campaign\", revision 1379733603"
+    },
+    {
+      "dissent": false,
+      "id": "gamazada",
+      "kind": "event",
+      "locator": "\"Gamazada\", revision 1338931183"
     },
     {
       "dissent": false,
@@ -29981,6 +30131,12 @@
       "id": "great-blizzard-of-1888",
       "kind": "event",
       "locator": "\"Great Blizzard of 1888\", revision 1378632971"
+    },
+    {
+      "dissent": false,
+      "id": "great-blizzard-of-1899",
+      "kind": "event",
+      "locator": "\"Great Blizzard of 1899\", revision 1380682869"
     },
     {
       "dissent": false,
@@ -31556,6 +31712,12 @@
     },
     {
       "dissent": false,
+      "id": "katowice-conference",
+      "kind": "event",
+      "locator": "\"Katowice Conference\", revision 1334082951"
+    },
+    {
+      "dissent": false,
       "id": "katyn-massacre",
       "kind": "event",
       "locator": "\"Katyn massacre\", revision 1368830884"
@@ -31715,6 +31877,12 @@
       "id": "koprulu-era",
       "kind": "event",
       "locator": "\"Köprülü era\", revision 1318794179"
+    },
+    {
+      "dissent": false,
+      "id": "korea-united-kingdom-treaty-of-1883",
+      "kind": "event",
+      "locator": "\"Korea–United Kingdom Treaty of 1883\", revision 1375086419"
     },
     {
       "dissent": false,
@@ -32510,6 +32678,12 @@
     },
     {
       "dissent": false,
+      "id": "massacre-of-italians-at-aigues-mortes",
+      "kind": "event",
+      "locator": "\"Massacre of Italians at Aigues-Mortes\", revision 1370307848"
+    },
+    {
+      "dissent": false,
       "id": "massacre-of-novgorod",
       "kind": "event",
       "locator": "\"Massacre of Novgorod\", revision 1382441094"
@@ -32801,6 +32975,12 @@
       "id": "monmouth-rebellion",
       "kind": "event",
       "locator": "\"Monmouth Rebellion\", revision 1380559361"
+    },
+    {
+      "dissent": false,
+      "id": "montenegrin-ottoman-war-1861-1862",
+      "kind": "event",
+      "locator": "\"Montenegrin–Ottoman War (1861–1862)\", revision 1370628630"
     },
     {
       "dissent": false,
@@ -35054,6 +35234,12 @@
     },
     {
       "dissent": false,
+      "id": "putumayo-genocide",
+      "kind": "event",
+      "locator": "\"Putumayo genocide\", revision 1382216087"
+    },
+    {
+      "dissent": false,
       "id": "qatari-bahraini-war",
       "kind": "event",
       "locator": "\"Qatari–Bahraini War\", revision 1375059713"
@@ -35069,6 +35255,12 @@
       "id": "qing-reconquest-of-xinjiang",
       "kind": "event",
       "locator": "\"Qing reconquest of Xinjiang\", revision 1370705363"
+    },
+    {
+      "dissent": false,
+      "id": "quebec-conference-1864",
+      "kind": "event",
+      "locator": "\"Quebec Conference, 1864\", revision 1362390448"
     },
     {
       "dissent": false,
@@ -36104,6 +36296,12 @@
     },
     {
       "dissent": false,
+      "id": "salon-de-la-rose-croix",
+      "kind": "event",
+      "locator": "\"Salon de la Rose + Croix\", revision 1354007793"
+    },
+    {
+      "dissent": false,
       "id": "salt-tax-revolt",
       "kind": "event",
       "locator": "\"Salt Tax Revolt\", revision 1365592361"
@@ -36239,6 +36437,12 @@
       "id": "scramble-for-africa",
       "kind": "event",
       "locator": "\"Scramble for Africa\", revision 1373841219"
+    },
+    {
+      "dissent": false,
+      "id": "second-aceh-expedition",
+      "kind": "event",
+      "locator": "\"Second Aceh Expedition\", revision 1365848931"
     },
     {
       "dissent": false,
@@ -36692,6 +36896,12 @@
     },
     {
       "dissent": false,
+      "id": "second-serbian-ottoman-war",
+      "kind": "event",
+      "locator": "\"Second Serbian–Ottoman War\", revision 1370737338"
+    },
+    {
+      "dissent": false,
       "id": "second-serbian-uprising",
       "kind": "event",
       "locator": "\"Second Serbian Uprising\", revision 1377651201"
@@ -36827,6 +37037,12 @@
       "id": "setif-and-guelma-massacre",
       "kind": "event",
       "locator": "\"Sétif and Guelma massacre\", revision 1373304371"
+    },
+    {
+      "dissent": false,
+      "id": "seven-and-a-half-days-revolt",
+      "kind": "event",
+      "locator": "\"Seven and a Half Days Revolt\", revision 1366259668"
     },
     {
       "dissent": false,
@@ -39794,6 +40010,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-annexation-of-the-dominican-republic",
+      "kind": "event",
+      "locator": "\"Spanish annexation of the Dominican Republic\", revision 1378087251"
+    },
+    {
+      "dissent": false,
       "id": "spanish-assault-on-djerba-1510",
       "kind": "event",
       "locator": "\"Spanish assault on Djerba (1510)\", revision 1370748273"
@@ -40325,6 +40547,12 @@
       "id": "tehran-conference",
       "kind": "event",
       "locator": "\"Tehran Conference\", revision 1374026870"
+    },
+    {
+      "dissent": false,
+      "id": "tejeros-convention",
+      "kind": "event",
+      "locator": "\"Tejeros Convention\", revision 1345112222"
     },
     {
       "dissent": false,
