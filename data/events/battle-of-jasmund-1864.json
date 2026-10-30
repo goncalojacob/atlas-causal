@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-jasmund-1864",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q699247",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Jasmund (1864)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q699247"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Jasmund (1864)\", revision 1370444123"
+    }
+  ],
+  "title": "Battle of Jasmund (1864)",
+  "summary": "The English Wikipedia article \"Battle of Jasmund (1864)\", at revision 1370444123, opens: \"The naval Battle of Jasmund took place between elements of the Danish and Prussian navies on 17 March 1864 during the Second Schleswig War. The action took place east of the Jasmund peninsula on the Prussian island of Rügen, during a Prussian attempt to weaken the Danish blockade in the Baltic Sea. The Prussian squadron, commanded by Eduard von Jachmann, sortied with a screw frigate, a screw corvette, a paddle steamer, and six gunboats to attack the Danish squadron blockading the eastern Prussian coast. The Danish force was commanded by Edvard van Dockum, and it consisted of one screw frigate, one ship of the line, and two steam corvettes. In an action lasting two hours, the superior Danish squadron forced the Prussians to withdraw, with both sides suffering damage and light casualties. The Danish victory was compounded by the arrival of further warships after the battle, which cemented the blockade. The outcome of the battle, and the naval war in the Baltic as a whole, was irrelevant to the outcome of the war, however, as the Prussian and Austrian armies decisively defeated the Danes on land, forcing them to surrender.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q699247, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-03-17"
+  },
+  "place": "rugen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-schleswig-war"
+}

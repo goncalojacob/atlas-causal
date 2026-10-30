@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "aceh-q1823",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1823",
+  "sitelinks": {
+    "count": 105,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Aceh",
+    "pt": "Achém"
+  },
+  "sources": [],
+  "names": [
+    "Aceh",
+    "Achém"
+  ],
+  "where": {
+    "lon": 95.34077777777777,
+    "lat": 5.570277777777778,
+    "precision": "region",
+    "label": "Aceh"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "confederate-heartland-offensive",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q962723",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Confederate Heartland Offensive"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q962723"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Confederate Heartland Offensive\", revision 1368283866"
+    }
+  ],
+  "title": "Confederate Heartland Offensive",
+  "summary": "The English Wikipedia article \"Confederate Heartland Offensive\", at revision 1368283866, opens: \"The Confederate Heartland Offensive, also known as the Kentucky Campaign, was an American Civil War campaign conducted by the Confederate States Army in Tennessee and Kentucky where Generals Braxton Bragg and Edmund Kirby Smith tried to draw neutral Kentucky into the Confederacy by outflanking Union troops under Major General Don Carlos Buell. Though they scored some successes, notably a tactical win at Perryville, they soon retreated, leaving Kentucky primarily under Union control for the rest of the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q962723, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 military campaign during the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-08-14",
+    "endDate": "1862-10-10"
+  },
+  "place": "kentucky",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

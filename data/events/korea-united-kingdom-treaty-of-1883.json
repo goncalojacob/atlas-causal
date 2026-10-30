@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "korea-united-kingdom-treaty-of-1883",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7888196",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Korea–United Kingdom Treaty of 1883"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7888196"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Korea–United Kingdom Treaty of 1883\", revision 1375086419"
+    }
+  ],
+  "title": "Korea–United Kingdom Treaty of 1883",
+  "summary": "The English Wikipedia article \"Korea–United Kingdom Treaty of 1883\", at revision 1375086419, opens: \"The United Kingdom–Korea Treaty of 1883 was negotiated between representatives of the United Kingdom and Korea.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7888196, imported by tools/import/wikidata.mjs. The item's own description reads \"1883 treaty between the United Kingdom and Korea\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1883,
+    "end": 1883,
+    "date": "1883-11-26"
+  },
+  "place": "seoul",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
