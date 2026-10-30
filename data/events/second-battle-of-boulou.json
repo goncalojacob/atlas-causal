@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-boulou",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890743",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Second Battle of Boulou",
+    "pt": "Batalha de Le Boulou"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890743"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Boulou\", revision 1370735963"
+    }
+  ],
+  "title": "Second Battle of Boulou",
+  "summary": "The English Wikipedia article \"Second Battle of Boulou\", at revision 1370735963, opens: \"The Second Battle of Boulou took place during the War of the Pyrenees, part of the French Revolutionary Wars. This battle saw the French Army of the Eastern Pyrenees led by General of Division (GD) Jacques François Dugommier attack the joint Spanish-Portuguese Army of Catalonia under Lieutenant General (LG) Luis Fermín de Carvajal, Conde de la Unión. Dugommier's decisive victory resulted in the French regaining nearly all the land they lost to the Kingdom of Spain in 1793.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890743, imported by tools/import/wikidata.mjs. The item's own description reads \"1794 battle in the War of the Pyrenees\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1794,
+    "end": 1794,
+    "date": "1794-04-30",
+    "endDate": "1794-05-01"
+  },
+  "place": "le-boulou",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-pyrenees"
+}

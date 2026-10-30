@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-nicopolis-1798",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3559235",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Nicopolis (1798)",
+    "pt": "Batalha de Nicópolis (1798)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3559235"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nicopolis (1798)\", revision 1375845616"
+    }
+  ],
+  "title": "Battle of Nicopolis (1798)",
+  "summary": "The English Wikipedia article \"Battle of Nicopolis (1798)\", at revision 1375845616, opens: \"The Battle of Nicopolis was fought on 23 October [O.S. 12 October] 1798 between a French-led army and the autonomous Pashalik of Yanina ruled by Ali Pasha of Yanina. France had occupied the Venetian Ionian Islands off the western coast of Greece in 1797 after the fall of the Republic of Venice in the same year. The islands also included a few mainland exclaves like Butrint and Preveza, which were coveted by Ali. French efforts to draw Ali into their camp against Sultan Selim III failed, and when the Ottoman Empire declared war on France Ali attacked the French positions. The battle, which took place amidst the ruins of the ancient city of Nicopolis, resulted in a French defeat, and was followed by a devastating sack of Preveza.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3559235, imported by tools/import/wikidata.mjs. The item's own description reads \"Defeat of the French at Nicopolis and destruction of Preveza by Ali Pasha of Ioannina, which took place in October 1798\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1798,
+    "date": "1798-10-23"
+  },
+  "place": "preveza",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

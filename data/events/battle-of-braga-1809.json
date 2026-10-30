@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-braga-1809",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1532629",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Braga (1809)",
+    "pt": "Batalha do Carvalho d'Este"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1532629"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Braga (1809)\", revision 1376911109"
+    }
+  ],
+  "title": "Battle of Braga (1809)",
+  "summary": "The English Wikipedia article \"Battle of Braga (1809)\", at revision 1376911109, opens: \"The Battle of Braga or Battle of Póvoa de Lanhoso or Battle of Carvalho d'Este saw an Imperial French corps led by Marshal Jean-de-Dieu Soult attack a Portuguese army commanded by Baron Eben. When Soult's professional soldiers attacked, the Portuguese at first fought back but soon ran away. The French slaughtered large numbers of their opponents, who were mostly badly disciplined and poorly armed militia. The action was part of the second invasion of Portugal, during the Peninsular War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1532629, imported by tools/import/wikidata.mjs. The item's own description reads \"1809 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1809,
+    "end": 1809,
+    "date": "1809-03-20"
+  },
+  "place": "braga",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

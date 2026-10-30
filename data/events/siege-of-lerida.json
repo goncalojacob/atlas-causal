@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-lerida",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3403828",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Lérida",
+    "pt": "Cerco de Lérida"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3403828"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Lérida\", revision 1370743088"
+    }
+  ],
+  "title": "Siege of Lérida",
+  "summary": "The English Wikipedia article \"Siege of Lérida\", at revision 1370743088, opens: \"In the siege of Lérida from 29 April to 13 May 1810, an Imperial French army under General Suchet besieged a Spanish garrison led by Major General García Conde. On 13 May, García Conde surrendered with his 7,000 surviving soldiers. Lleida (Lérida) is a city in the western part of Catalonia. Margalef is located about 10 kilometres (6 mi) southeast of Lérida. The siege occurred during the Peninsular War, part of the Napoleonic Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3403828, imported by tools/import/wikidata.mjs. The item's own description reads \"1810 siege during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1810,
+    "date": "1810-04-23",
+    "endDate": "1810-05-14"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

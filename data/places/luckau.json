@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "luckau",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q539288",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Luckau"
+  },
+  "sources": [],
+  "names": [
+    "Luckau"
+  ],
+  "where": {
+    "lon": 13.716666666667,
+    "lat": 51.85,
+    "precision": "city",
+    "label": "Luckau"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

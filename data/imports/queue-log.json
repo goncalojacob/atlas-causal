@@ -65549,6 +65549,606 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-199",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lucon",
+        "edges": [],
+        "place": "lucon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-201",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-wissembourg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-203",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-peyrestortes",
+        "edges": [],
+        "place": "peyrestortes"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-205",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nantes",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-207",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-granville",
+        "edges": [],
+        "place": "granville-manche"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-209",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-szczekociny",
+        "edges": [],
+        "place": "szczekociny"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-211",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-hyeres-islands",
+        "edges": [],
+        "place": "iles-d-hyeres"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-213",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lonato",
+        "edges": [],
+        "place": "lonato-del-garda"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-215",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-neuwied-1797",
+        "edges": [],
+        "place": "neuwied"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-217",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "french-invasion-of-malta",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-218",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-algeciras",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-africa-007",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "first-russian-circumnavigation",
+        "edges": [],
+        "place": "kamchatka-peninsula"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-028",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "dardanelles-operation-1807",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-221",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-valdepenas",
+        "edges": [],
+        "place": "valdepenas"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-223",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-revolax",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-225",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-siikajoki",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-024",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "chuquisaca-revolution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-228",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-neumarkt-sankt-veit",
+        "edges": [],
+        "place": "neumarkt-sankt-veit"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-230",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cacabelos",
+        "edges": [],
+        "place": "cacabelos"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-231",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-tortosa-1810-1811",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-233",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-almeida-1810",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-026",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "cry-of-asencio",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-235",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chashniki",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-237",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-klyastitsy",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-239",
+      "writer": "A",
+      "fired": "2026-10-30T02:20Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lyng-r",
+        "edges": [],
+        "place": "lyng-r"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-202",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-wissembourg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-204",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-saumur-1793",
+        "edges": [],
+        "place": "saumur"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-206",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tiffauges",
+        "edges": [],
+        "place": "boussay-loire-atlantique"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-208",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-boulou",
+        "edges": [],
+        "place": "le-boulou"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-210",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mainz",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-212",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-biberach-1796",
+        "edges": [],
+        "place": "biberach-an-der-ri"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-214",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fombio",
+        "edges": [],
+        "place": "fombio"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-216",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nicopolis-1798",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-022",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "uss-constellation-vs-la-vengeance",
+        "edges": [],
+        "place": "saint-kitts"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-219",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "1802-french-constitutional-referendum",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-220",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-allenstein",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-023",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "10th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-222",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zornoza",
+        "edges": [],
+        "place": "amorebieta-etxano"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-224",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-koljonvirta",
+        "edges": [],
+        "place": "iisalmi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-226",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-oravais",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-227",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-braga-1809",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-229",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-arzobispo",
+        "edges": [],
+        "place": "el-puente-del-arzobispo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-025",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "11th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-232",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-lerida",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-234",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-mequinenza",
+        "edges": [],
+        "place": "mequinenza"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-027",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "12th-united-states-congress",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-236",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-smoliani",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-238",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-burgos",
+        "edges": [],
+        "place": "castle-of-burgos"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-240",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-luckau",
+        "edges": [],
+        "place": "luckau"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-europe-242",
+      "writer": "B",
+      "fired": "2026-10-30T02:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-roncesvalles-1813",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

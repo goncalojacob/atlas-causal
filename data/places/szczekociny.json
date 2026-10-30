@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "szczekociny",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q305154",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Szczekociny",
+    "pt": "Szczekociny"
+  },
+  "sources": [],
+  "names": [
+    "Szczekociny"
+  ],
+  "where": {
+    "lon": 19.81888888888889,
+    "lat": 50.62611111111111,
+    "precision": "city",
+    "label": "Szczekociny"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
