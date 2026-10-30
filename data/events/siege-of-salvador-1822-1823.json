@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-salvador-1822-1823",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q24728",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Salvador (1822–1823)",
+    "pt": "Cerco de Salvador"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q24728"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Salvador (1822–1823)\", revision 1370744952"
+    }
+  ],
+  "title": "Siege of Salvador (1822–1823)",
+  "summary": "The English Wikipedia article \"Siege of Salvador (1822–1823)\", at revision 1370744952, opens: \"The siege of Salvador occurred during the Brazilian War of Independence, during which the newly formed Brazilian army, under the command of French general Pierre Labatut, attempted to capture the city of Salvador in Bahia from its Portuguese defenders. The siege lasted from 2 March 1822 until 2 July 1823, finally ending when the Portuguese commander, Madeira de Melo, surrendered his forces to the Brazilians.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q24728, imported by tools/import/wikidata.mjs. The item's own description reads \"1823 siege during the Brazilian War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1822,
+    "end": 1823,
+    "date": "1822-03-02",
+    "endDate": "1823-07-02"
+  },
+  "place": "salvador",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "brazilian-war-of-independence"
+}

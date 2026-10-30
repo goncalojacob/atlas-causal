@@ -6454,3 +6454,39 @@ Writer B imported it from the planner's queue as item `2026-10-30-americas-062`,
 ## Writer A, 2026-10-30: `battle-of-diamond-rock`, filed under `napoleonic-wars` with neither an actor nor a place
 
 Writer A filed it there because the planner's queue asked for it in item `2026-10-30-americas-089`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-30: `siege-of-luxembourg-1684`, filed under `war-of-the-reunions` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-30-europe-410`, rank `child-of:war-of-the-reunions`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-30: `siege-of-ochakov-1737`, filed under `russo-turkish-war-1735-1739` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-30-europe-416`, rank `child-of:russo-turkish-war-1735-1739`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-30: `battle-of-ponche-verde`, filed under `ragamuffin-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-30-americas-109`, rank `child-of:ragamuffin-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-30: `siege-of-cacapava`, filed under `ragamuffin-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-30-americas-110`, rank `child-of:ragamuffin-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-30: `karyagin-s-raid`, filed under `russo-persian-war-1804-1813` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-30-asia-096`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-30: `conquest-of-kalmar`, filed under `swedish-war-of-liberation` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-30-europe-419`, rank `child-of:swedish-war-of-liberation`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-30: `nydala-abbey-bloodbath`, filed under `swedish-war-of-liberation` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-30-europe-421`, rank `child-of:swedish-war-of-liberation`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-30: `second-siege-of-ochakov`, filed under `russo-turkish-war-1735-1739` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-30-europe-426`, rank `child-of:russo-turkish-war-1735-1739`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-30: `siege-of-tre-kronor`, filed under `dano-swedish-war-1501-1512` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-30-europe-428`, rank `child-of:dano-swedish-war-1501-1512`. Its span and its subject put it inside the umbrella.

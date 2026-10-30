@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-sultanabad",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4087466",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Sultanabad"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4087466"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sultanabad\", revision 1370590103"
+    }
+  ],
+  "title": "Battle of Sultanabad",
+  "summary": "The English Wikipedia article \"Battle of Sultanabad\", at revision 1370590103, opens: \"The Battle of Sultanabad occurred on 13 February 1812, between the Russian Empire and the Persian Empire. In the resulting battle, the Russians were surrounded and routed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4087466, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-02-13"
+  },
+  "place": "soltanabad-saatly",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-persian-war-1804-1813"
+}

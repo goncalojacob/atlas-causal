@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-cacapava",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q140365627",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Caçapava"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q140365627"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Caçapava\", revision 1375838979"
+    }
+  ],
+  "title": "Siege of Caçapava",
+  "summary": "The English Wikipedia article \"Siege of Caçapava\", at revision 1375838979, opens: \"The Siege of Caçapava was a military victory by the rebel forces during the Ragamuffin War in April 1837. Upon Bento Manuel's defection from the Imperial side, he gave the rebels intelligence that made them march upon Caçapava do Sul, one of the loyalist strongholds in the region. They managed to secure the town's surrender after besieging it for a week, capturing all the garrison's infantry. Caçapava would later become the Riograndense Republic's capital, something which lasted until 1840 when it was recaptured by the Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q140365627, imported by tools/import/wikidata.mjs. The item's own description reads \"1837 battle of the Ragamuffin War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1837,
+    "end": 1837,
+    "date": "1837-04-01",
+    "endDate": "1837-04-08"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "ragamuffin-war"
+}
