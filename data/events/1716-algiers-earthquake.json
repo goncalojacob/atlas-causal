@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1716-algiers-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q109237454",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1716 Algiers earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q109237454"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1716 Algiers earthquake\", revision 1377223403"
+    }
+  ],
+  "title": "1716 Algiers earthquake",
+  "summary": "The English Wikipedia article \"1716 Algiers earthquake\", at revision 1377223403, opens: \"The 1716 Algiers earthquake was part of a seismic sequence which began in February and ended in May 1716. The largest and most destructive shock occurred on February 3 with an estimated moment magnitude of 7.0. The earthquakes with an epicenter thought to be in the Algiers region had a maximum European macroseismic scale (EMS-98) intensity of IX (Destructive), killing approximately 20,000 people. The earthquake was felt in Catania and Syracuse on the Italian island Sicily.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q109237454, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake in Algeria\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1716,
+    "end": 1716,
+    "date": "1716-02-03",
+    "endDate": "1716-05"
+  },
+  "place": "algiers-q3561",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

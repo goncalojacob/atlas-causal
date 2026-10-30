@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-perpignan-1542",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510304",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Perpignan (1542)",
+    "pt": "Cerco de Perpignan (1542)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510304"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Perpignan (1542)\", revision 1370744391"
+    }
+  ],
+  "title": "Siege of Perpignan (1542)",
+  "summary": "The English Wikipedia article \"Siege of Perpignan (1542)\", at revision 1370744391, opens: \"The siege of Perpignan took place in 1542, at Perpignan, between a larger French army commanded by Henry, Dauphin of France and the Spanish garrison at Perpignan. The Spaniards resisted until the arrival of the Spanish army under Don Fernando Álvarez de Toledo, Duke of Alba, causing the withdrawal of the French army. The siege was one of the costliest defeats of Francis I of France in the French offensive of 1542.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510304, imported by tools/import/wikidata.mjs. The item's own description reads \"1542 battle in which Spain defeated France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1542,
+    "end": 1542,
+    "date": "1542-08-28"
+  },
+  "place": "perpignan",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "italian-war-of-1542-1546"
+}

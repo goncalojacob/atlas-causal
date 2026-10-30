@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "arcot-tamil-nadu",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q589185",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Arcot, Tamil Nadu"
+  },
+  "sources": [],
+  "names": [
+    "Arcot",
+    "Arcot, Tamil Nadu"
+  ],
+  "where": {
+    "lon": 79.33333333,
+    "lat": 12.9,
+    "precision": "city",
+    "label": "Arcot, Tamil Nadu"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

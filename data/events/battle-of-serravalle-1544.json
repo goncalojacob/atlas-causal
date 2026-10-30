@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-serravalle-1544",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3822861",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Serravalle (1544)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3822861"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Serravalle (1544)\", revision 1370248212"
+    }
+  ],
+  "title": "Battle of Serravalle (1544)",
+  "summary": "The English Wikipedia article \"Battle of Serravalle (1544)\", at revision 1370248212, opens: \"The Battle of Serravalle took place on 2–4 June 1544 in Serravalle Scrivia, in the Apennine Mountains, between the Imperial-Spanish army commanded by Don Alfonso d'Avalos, Marquis del Vasto, and a force of freshly raised Italian mercenaries in French service, led by Pietro Strozzi, member of the rich and famous Florentine family of the Strozzi, and Giovan Francesco Orsini, Count of Pitigliano, during the Italian War of 1542–1546.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3822861, imported by tools/import/wikidata.mjs. The item's own description reads \"1544 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1544,
+    "end": 1544,
+    "date": "1544-06-04"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "italian-war-of-1542-1546"
+}

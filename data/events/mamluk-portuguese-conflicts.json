@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mamluk-portuguese-conflicts",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4373383",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Mamluk–Portuguese conflicts",
+    "pt": "Conflitos Luso-Mamelucos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4373383"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mamluk–Portuguese conflicts\", revision 1375726687"
+    }
+  ],
+  "title": "Mamluk–Portuguese conflicts",
+  "summary": "The English Wikipedia article \"Mamluk–Portuguese conflicts\", at revision 1375726687, opens: \"A number of armed engagements between the Egyptian Mamluk Sultanate and the Portuguese Empire in the Indian Ocean took place during the early part of the 16th century. The conflicts came following the expansion of the Portuguese after sailing around the Cape of Good Hope in 1498, from 1504 to the fall of the Mamluk Sultanate in 1517.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4373383, imported by tools/import/wikidata.mjs. The item's own description reads \"1505–1517 conflict between Egypt and Portugal in the Indian Ocean\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1505,
+    "end": 1517,
+    "date": "1505-03-16",
+    "endDate": "1517-01-26"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

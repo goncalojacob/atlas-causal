@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "revolutions-of-1830",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q849378",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Revolutions of 1830",
+    "pt": "Revoluções de 1830"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q849378"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolutions of 1830\", revision 1379617077"
+    }
+  ],
+  "title": "Revolutions of 1830",
+  "summary": "The English Wikipedia article \"Revolutions of 1830\", at revision 1379617077, opens: \"The Revolutions of 1830 were a revolutionary wave in Europe which took place in 1830. It included two \"romantic nationalist\" revolutions, the Belgian Revolution in the United Kingdom of the Netherlands and the July Revolution in France along with rebellions in Congress Poland, Italian states, Portugal and Switzerland. It was followed 18 years later, by another and much stronger wave of revolutions known as the Revolutions of 1848.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q849378, imported by tools/import/wikidata.mjs. The item's own description reads \"1830 revolutions throughout Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1830,
+    "end": null
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

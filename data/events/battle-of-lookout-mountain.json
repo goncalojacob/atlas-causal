@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-lookout-mountain",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2683571",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Lookout Mountain"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2683571"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lookout Mountain\", revision 1380714187"
+    }
+  ],
+  "title": "Battle of Lookout Mountain",
+  "summary": "The English Wikipedia article \"Battle of Lookout Mountain\", at revision 1380714187, opens: \"The Battle of Lookout Mountain, also known as the Battle Above the Clouds, was fought November 24, 1863, as part of the Chattanooga campaign of the American Civil War. Union forces under Maj. Gen. Joseph Hooker assaulted Lookout Mountain, Chattanooga, Tennessee, and defeated Confederate forces commanded by Maj. Gen. Carter L. Stevenson. Lookout Mountain was one engagement in the Chattanooga battles between Maj. Gen. Ulysses S. Grant's Military Division of the Mississippi and the Confederate Army of Tennessee, commanded by Gen. Braxton Bragg. It drove in the Confederate left flank and allowed Hooker's men to assist in the Battle of Missionary Ridge the following day, which routed Bragg's army, lifting the siege of Union forces in Chattanooga, and opening the gateway into the Deep South.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2683571, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-11-24"
+  },
+  "place": "chattanooga-tennessee",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

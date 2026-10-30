@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-swiecino",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q716479",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Świecino",
+    "pt": "Batalha de Świecino"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q716479"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Świecino\", revision 1370603118"
+    }
+  ],
+  "title": "Battle of Świecino",
+  "summary": "The English Wikipedia article \"Battle of Świecino\", at revision 1370603118, opens: \"The Battle of Świecino also called the Battle of Żarnowiec or in German Die Schlacht bei Schwetz, took place on September 17, 1462, during the Thirteen Years' War. The Polish forces, commanded by Piotr Dunin and consisting of some 2,000 mercenaries and Poles, decisively defeated the 2,700-man army of the Teutonic Knights, commanded by Fritz Raweneck and Commander of the Order Kaspar Nostitz (Nostyc). Auxiliary forces sent by Duke Eric II of Pomerania, temporary ally of the Teutonic Knights, did not enter the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q716479, imported by tools/import/wikidata.mjs. The item's own description reads \"1462 battle during the Thirteen Years' War. Decisive Polish victory over Teutonic Knights\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1462,
+    "end": 1462,
+    "date": "1462-09-17"
+  },
+  "place": "puck-poland",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirteen-years-war-1454-1466"
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "amur-annexation",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4379152",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Amur Annexation",
+    "pt": "Anexação de Amur"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4379152"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Amur Annexation\", revision 1381503728"
+    }
+  ],
+  "title": "Amur Annexation",
+  "summary": "The English Wikipedia article \"Amur Annexation\", at revision 1381503728, opens: \"Between 1858 and 1860, the Russian Empire annexed territories adjoining the Amur River belonging to the Chinese Qing dynasty through the imposition of unequal treaties. The 1858 Treaty of Aigun, signed by the general Nikolay Muravyov representing the Russian Empire and the official Yishan representing Qing China, ceded Priamurye—a territory stretching from the Amur River north to the Stanovoy Mountains, but the Qing government initially refused to recognize the treaty's validity. Two years later, the Second Opium War concluded with the Convention of Peking, which affirmed the previous treaty as well as an additional cession including the entire Pacific coast to the Korean border, as well as the island of Sakhalin to Russia. These two territories roughly correspond to modern-day Amur Oblast and Primorsky Krai, respectively. Collectively, they are often referred to as Outer Manchuria, part of the greater region of Manchuria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4379152, imported by tools/import/wikidata.mjs. The item's own description reads \"annexation of the Left Bank of the Amur River in 1858 and Right Bank of the Ussuri River in 1860 by Russian Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1860
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "founding",
+  "actors": []
+}

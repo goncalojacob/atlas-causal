@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-belyov",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q13202707",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Belyov"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q13202707"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Belyov\", revision 1370433969"
+    }
+  ],
+  "title": "Battle of Belyov",
+  "summary": "The English Wikipedia article \"Battle of Belyov\", at revision 1370433969, opens: \"The Battle of Belyov was fought in 1437 near Belyov (Belev) between the troops of the Grand Duchy of Moscow under the command of Dmitry Shemyaka and Tatars led by Ulugh Muhammad. The consensus is that the battle was a Tatar victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q13202707, imported by tools/import/wikidata.mjs. The item's own description reads \"fought in 1437 near Belyov between the troops of the Grand Duchy of Moscow and Tatars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1437,
+    "end": 1437,
+    "date": "1437-12-05"
+  },
+  "place": "belyov",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

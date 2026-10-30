@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-otate",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7510546",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Otate"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510546"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Otate\", revision 1370744235"
+    }
+  ],
+  "title": "Siege of Otate",
+  "summary": "The English Wikipedia article \"Siege of Otate\", at revision 1370744235, opens: \"The 1578 siege of Otate  took place following the sudden death of Uesugi Kenshin. Kenshin had requested that the inheritance be split between his nephew, Uesugi Kagekatsu, and his adopted son Uesugi Kagetora. This conflict happened because of neither heirs being born with the Uesugi name. Kagekatsu was the biological son of Nagao Masakage and Kagetora was biological son of Hojo Ujiyasu.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510546, imported by tools/import/wikidata.mjs. The item's own description reads \"1578 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1578,
+    "end": 1578,
+    "date": "1578-03-17",
+    "endDate": "1578-04-23"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

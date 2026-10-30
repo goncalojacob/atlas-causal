@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "flower-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q886263",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Flower war"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q886263"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Flower war\", revision 1382514447"
+    }
+  ],
+  "title": "Flower war",
+  "summary": "The English Wikipedia article \"Flower war\", at revision 1382514447, opens: \"A flower war or flowery war was a ritual war fought intermittently between the Aztec Triple Alliance and its enemies on and off for many years in the vicinity and the regions around the ancient and vital city of Tenochtitlan, probably ending with the arrival of the Spaniards in 1519. Enemies included the city-states of Tlaxcala, Huejotzingo, and Cholula in the Tlaxcala-Pueblan Valley in central Mexico. In these wars, participants would fight according to a set of conventions.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q886263, imported by tools/import/wikidata.mjs. The item's own description reads \"ritual war fought intermittently between the Aztec Triple Alliance and its enemies from 1450s to the arrival of the Spaniards in 1519\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1454,
+    "end": 1519
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

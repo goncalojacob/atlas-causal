@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-tanabe",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7510439",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Tanabe"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510439"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Tanabe\", revision 1370745653"
+    }
+  ],
+  "title": "Siege of Tanabe",
+  "summary": "The English Wikipedia article \"Siege of Tanabe\", at revision 1370745653, opens: \"The siege of Tanabe in 1600 was one of a number of battles which took place in parallel to the more influential Sekigahara Campaign, which led to the unification of Japan under Tokugawa Ieyasu.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510439, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in Japan in 1600, part of the Sengoku period\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1600,
+    "end": 1600,
+    "date": "1600-08-27",
+    "endDate": "1600-10-19"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

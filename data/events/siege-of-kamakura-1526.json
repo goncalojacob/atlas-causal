@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-kamakura-1526",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2114067",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Kamakura (1526)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2114067"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Kamakura (1526)\", revision 1370742235"
+    }
+  ],
+  "title": "Siege of Kamakura (1526)",
+  "summary": "The English Wikipedia article \"Siege of Kamakura (1526)\", at revision 1370742235, opens: \"In the 1526 siege of Kamakura, Satomi Sanetaka led forces of the Uesugi clan against the Hōjō, who had taken Edo from the Uesugi two years earlier. The city was defended by a number of retainers of Hōjō Ujitsuna, including members of the Itō and Ogasawara families.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2114067, imported by tools/import/wikidata.mjs. The item's own description reads \"1526 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1526,
+    "end": 1526,
+    "date": "1526-12-15"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

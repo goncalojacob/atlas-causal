@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1428-catalonia-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q769031",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1428 Catalonia earthquake",
+    "pt": "Sismo da Catalunha de 1428"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q769031"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1428 Catalonia earthquake\", revision 1366160337"
+    }
+  ],
+  "title": "1428 Catalonia earthquake",
+  "summary": "The English Wikipedia article \"1428 Catalonia earthquake\", at revision 1366160337, opens: \"The Catalan earthquake of 2 February 1428, known in Catalan as the terratrèmol de la candelera because it took place during Candlemas, struck the Principality of Catalonia, especially Roussillon, with an epicentre near Camprodon. The earthquake was one of a series of related seismic events that shook Catalonia in a single year. Beginning on 23 February 1427, tremors were felt in March, April, 15 May at Olot, June, and December. They caused relatively minor visible damage to property, notably to the monastery of Amer; but they probably caused severe weakening of building infrastructure. This would account for the massive and widespread destruction that accompanied the subsequent 1428 quake.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q769031, imported by tools/import/wikidata.mjs. The item's own description reads \"XV century earthquake\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1428,
+    "end": 1428,
+    "date": "1428-02-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

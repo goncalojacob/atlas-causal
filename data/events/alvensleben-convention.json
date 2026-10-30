@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "alvensleben-convention",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q448675",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Alvensleben Convention"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q448675"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Alvensleben Convention\", revision 1344249293"
+    }
+  ],
+  "title": "Alvensleben Convention",
+  "summary": "The English Wikipedia article \"Alvensleben Convention\", at revision 1344249293, opens: \"The Alvensleben Convention was a treaty between the Russian Empire and the Kingdom of Prussia, named after general Gustav von Alvensleben. It was signed in St. Petersburg on 8 February 1863 by General Alvensleben and Alexander Gorchakov, the Russian Foreign Minister.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q448675, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 treaty between Russia and Prussia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-02-08"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

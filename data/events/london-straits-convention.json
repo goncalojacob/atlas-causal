@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "london-straits-convention",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q700363",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "London Straits Convention",
+    "pt": "Convenção de Londres sobre os Estreitos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q700363"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"London Straits Convention\", revision 1259813820"
+    }
+  ],
+  "title": "London Straits Convention",
+  "summary": "The English Wikipedia article \"London Straits Convention\", at revision 1259813820, opens: \"In the London Straits Convention concluded on 13 July 1841 between the Great Powers of Europe at the time—Russia, the United Kingdom, France, Austria and Prussia—the \"ancient rule\" of the Ottoman Empire was re-established by closing the Turkish Straits, which link the Black Sea to the Mediterranean, from all warships whatsoever, barring those of the Sultan's allies during wartime. It thus benefited British naval power at the expense of Russia as the latter lacked direct access for its navy to the Mediterranean.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q700363, imported by tools/import/wikidata.mjs. The item's own description reads \"International treaty 1841\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1841,
+    "end": 1841,
+    "date": "1841-07-13"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-grand-gulf",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2482906",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Grand Gulf"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2482906"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Grand Gulf\", revision 1378837008"
+    }
+  ],
+  "title": "Battle of Grand Gulf",
+  "summary": "The English Wikipedia article \"Battle of Grand Gulf\", at revision 1378837008, opens: \"The Battle of Grand Gulf was fought on April 29, 1863, during the American Civil War. Union Army forces commanded by Major General Ulysses S. Grant had failed several times to bypass or capture the Confederate-held city of Vicksburg, Mississippi, during the Vicksburg campaign. Grant decided to move his army south of Vicksburg, cross the Mississippi River, and then advance on the city. A Confederate Army division under Brigadier General John S. Bowen prepared defenses—Forts Wade and Cobun—at Grand Gulf, Mississippi, south of Vicksburg. To clear the way for a Union crossing, seven Union Navy ironclad warships from the Mississippi Squadron commanded by Admiral David Dixon Porter bombarded the Confederate defenses at Grand Gulf on April 29. Union fire silenced Fort Wade and killed its commander, but the overall Confederate position held. Grant decided to cross the river elsewhere.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2482906, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-04-29"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

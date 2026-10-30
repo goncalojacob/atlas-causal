@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-st-john-s",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3403846",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of St. John's"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3403846"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of St. John's\", revision 1370589833"
+    }
+  ],
+  "title": "Battle of St. John's",
+  "summary": "The English Wikipedia article \"Battle of St. John's\", at revision 1370589833, opens: \"The Battle of St. John's was the French capture of St. John's, the capital of the British colony of Newfoundland, on 1 January 1709 [O.S. 21 December 1708], during Queen Anne's War. A mixed and motley force of 164 men led by Joseph de Monbeton de Brouillan de Saint-Ovide, king's lieutenant to Philippe Pastour de Costebelle, the French governor of Plaisance, quickly overwhelmed the British garrison at St. John's, and took about 500 prisoners.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3403846, imported by tools/import/wikidata.mjs. The item's own description reads \"part of a French expedition against English settlements in 1709\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1709,
+    "end": 1709,
+    "date": "1709-01-01"
+  },
+  "place": "st-john-s-newfoundland-and-labrador",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "queen-anne-s-war"
+}

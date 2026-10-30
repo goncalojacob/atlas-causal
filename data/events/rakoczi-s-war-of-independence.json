@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rakoczi-s-war-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q595545",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Rákóczi's War of Independence",
+    "pt": "Guerra da Independência de Rákóczi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q595545"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rákóczi's War of Independence\", revision 1373412293"
+    }
+  ],
+  "title": "Rákóczi's War of Independence",
+  "summary": "The English Wikipedia article \"Rákóczi's War of Independence\", at revision 1373412293, opens: \"Rákóczi's War of Independence (1703–1711) was one of the most significant attempts to topple the rule of the Habsburgs over Hungary. The war was conducted by a group of noblemen and wealthy and high-ranking progressives and was led by Francis II Rákóczi; resigned soldiers and peasants also fought alongside the noblemen. The insurrection was unsuccessful, ending with the Treaty of Szatmár, by which the Hungarian nobility managed to satisfy some important Hungarian interests. Despite the defeat, the treaty granted political and religious amnesty to the kurucs. The war of independence achieved some major political success: it prevented Hungary's full integration into the Habsburg Empire, Hungary's constitution was preserved and the power of the parliament - as the supreme legislative institution of Hungary - remained intact.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q595545, imported by tools/import/wikidata.mjs. The item's own description reads \"insurrection in Hungary against Habsburg rule\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1703,
+    "end": 1711,
+    "endDate": "1711-05-01"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

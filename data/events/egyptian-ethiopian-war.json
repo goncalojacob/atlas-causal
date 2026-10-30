@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "egyptian-ethiopian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5403659",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Egyptian–Ethiopian War",
+    "pt": "Guerra etíope-egípcia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5403659"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Egyptian–Ethiopian War\", revision 1379697506"
+    }
+  ],
+  "title": "Egyptian–Ethiopian War",
+  "summary": "The English Wikipedia article \"Egyptian–Ethiopian War\", at revision 1379697506, opens: \"The Egyptian–Ethiopian War was a war between the Ethiopian Empire and the Khedivate of Egypt, an autonomous tributary state of the Ottoman Empire, from 1874 to 1876. The conflict resulted in victory for Ethiopia and a treaty that guaranteed the country's continued independence in the years immediately preceding the Scramble for Africa. Conversely, for Egypt, the war was a costly failure blunting the regional aspirations of Egypt as an African empire, and laying the foundations for the beginning of the British Empire's 'veiled protectorate' over Egypt less than a decade later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5403659, imported by tools/import/wikidata.mjs. The item's own description reads \"1874-1876 interstate war between the Ethiopian Empire and the Egyptian Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1874,
+    "end": 1876,
+    "date": "1874-12",
+    "endDate": "1876-03-09"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

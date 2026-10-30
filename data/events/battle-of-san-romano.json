@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-san-romano",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889924",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of San Romano"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889924"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of San Romano\", revision 1370588445"
+    }
+  ],
+  "title": "Battle of San Romano",
+  "summary": "The English Wikipedia article \"Battle of San Romano\", at revision 1370588445, opens: \"The Battle of San Romano was fought on 1 June 1432, in San Romano, some 30 miles outside Florence, between the troops of Florence, commanded by Niccolò da Tolentino, and Siena, under Francesco Piccinino. The outcome is generally considered favourable to the Florentines, but in the Sienese chronicles it was considered a victory. As the 1430s began Florence had found itself in conflict with the rival city state of Lucca, and her allies, Siena and Milan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889924, imported by tools/import/wikidata.mjs. The item's own description reads \"1432 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1432,
+    "end": 1432,
+    "date": "1432-06-01"
+  },
+  "place": "montopoli-in-val-d-arno",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "wars-in-lombardy"
+}

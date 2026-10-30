@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-gifu-castle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4871100",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Gifu Castle",
+    "pt": "Batalha do Castelo de Gifu"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871100"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gifu Castle\", revision 1373669600"
+    }
+  ],
+  "title": "Battle of Gifu Castle",
+  "summary": "The English Wikipedia article \"Battle of Gifu Castle\", at revision 1373669600, opens: \"The Battle of Gifu Castle  took place in September 1600 that led to the destruction of Gifu Castle in Gifu, Mino Province, Japan. The battle served as a prelude to the Battle of Sekigahara the following month. It pitted Oda Hidenobu of the Ishida Mitsunari western forces against Ikeda Terumasa, Ikeda Sen, and Fukushima Masanori of the eastern forces and loyal to Tokugawa Ieyasu. The castle was destroyed as a result of the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871100, imported by tools/import/wikidata.mjs. The item's own description reads \"1600 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1600,
+    "end": 1600,
+    "date": "1600-09-30"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

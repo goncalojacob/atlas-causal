@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "sanyuanli-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2360284",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Sanyuanli incident"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2360284"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sanyuanli incident\", revision 1370730183"
+    }
+  ],
+  "title": "Sanyuanli incident",
+  "summary": "The English Wikipedia article \"Sanyuanli incident\", at revision 1370730183, opens: \"The Sanyuanli incident was a military conflict between British troops and an irregular force made up of Chinese militia and local citizens that took place around Sanyuanli village on the outskirts of Canton on the 29 May 1841 after the Second Battle of Canton at the time of the First Opium War (1839–1842). Though it was a minor skirmish, in the centuries that followed the incident took on legendary proportions among the Chinese public. The Chinese government has erected several monuments to commemorate the legacy of the incident.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2360284, imported by tools/import/wikidata.mjs. The item's own description reads \"1841 Chinese military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1841,
+    "end": 1841,
+    "date": "1841-05-29",
+    "endDate": "1841-05-30"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "battle-of-canton-may-1841"
+}

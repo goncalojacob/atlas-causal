@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-akhaltsikhe-1853",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4072912",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Akhaltsikhe (1853)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4072912"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Akhaltsikhe (1853)\", revision 1370431198"
+    }
+  ],
+  "title": "Battle of Akhaltsikhe (1853)",
+  "summary": "The English Wikipedia article \"Battle of Akhaltsikhe (1853)\", at revision 1370431198, opens: \"The Battle of Akhaltsikhe occurred on 13 November 1853 during the Crimean War when a Georgian-Russian force of 7,000 defeated a Turkish army of 18,000 men near the Akhaltsikhe fortress in the Caucasus.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4072912, imported by tools/import/wikidata.mjs. The item's own description reads \"1853 battle of the Crimean War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1853,
+    "end": 1853,
+    "date": "1853-11-13"
+  },
+  "place": "akhaltsikhe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

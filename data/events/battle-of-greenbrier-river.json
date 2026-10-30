@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-greenbrier-river",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1425892",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Greenbrier River"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1425892"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Greenbrier River\", revision 1370111027"
+    }
+  ],
+  "title": "Battle of Greenbrier River",
+  "summary": "The English Wikipedia article \"Battle of Greenbrier River\", at revision 1370111027, opens: \"The Battle of Greenbrier River, also known as the Battle of Camp Bartow, took place on October 3, 1861 in Pocahontas County, Virginia as part of the Western Virginia Campaign of the American Civil War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1425892, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-10-03"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

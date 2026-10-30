@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-norada",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4871913",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Norada"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871913"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Norada\", revision 1370451845"
+    }
+  ],
+  "title": "Battle of Norada",
+  "summary": "The English Wikipedia article \"Battle of Norada\", at revision 1370451845, opens: \"The Battle of Norada (野良田の戦い) took place during Japan's Sengoku period between forces under Azai Nagamasa and Rokkaku Yoshikata in the year 1560.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871913, imported by tools/import/wikidata.mjs. The item's own description reads \"1560 historical battle in Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1560,
+    "end": 1560
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

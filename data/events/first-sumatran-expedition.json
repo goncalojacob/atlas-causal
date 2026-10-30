@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "first-sumatran-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4215186",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "First Sumatran expedition",
+    "pt": "Primeira Expedição a Sumatra"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4215186"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Sumatran expedition\", revision 1370619638"
+    }
+  ],
+  "title": "First Sumatran expedition",
+  "summary": "The English Wikipedia article \"First Sumatran expedition\", at revision 1370619638, opens: \"The First Sumatran expedition, which featured the Battle of Quallah Battoo in 1832, was a punitive expedition by the United States Navy against the village of Kuala Batee, presently a subdistrict in Southwest Aceh Regency. The reprisal was in response to the massacre of the crew of the merchantman Friendship a year earlier. The frigate Potomac and its crew defeated the local uleëbalang (ruler)'s forces and bombed the settlement. The expedition was successful in stopping Sumatran attacks on U.S. shipping for six years until another vessel was plundered under different circumstances, resulting in a Second Sumatran expedition in 1838.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4215186, imported by tools/import/wikidata.mjs. The item's own description reads \"US punitive expedition against the village Kuala Batee in Sumatra, in response to the killing of the crew of the ship Friendship\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1832,
+    "end": 1832,
+    "date": "1832-02-06",
+    "endDate": "1832-02-09"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

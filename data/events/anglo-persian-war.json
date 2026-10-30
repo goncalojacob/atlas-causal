@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anglo-persian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q617772",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Anglo-Persian War",
+    "pt": "Guerra Anglo-Persa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q617772"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Persian War\", revision 1376918836"
+    }
+  ],
+  "title": "Anglo-Persian War",
+  "summary": "The English Wikipedia article \"Anglo-Persian War\", at revision 1376918836, opens: \"The Anglo-Persian War, also known as the Anglo-Iranian War, was a war fought between the United Kingdom and Iran, which was ruled by the Qajar dynasty. In the war, the British opposed an attempt by Iran to press its claim on the city of Herat. Though Herat had been conquered by Iran in 1856, it had declared itself independent under its own rebellious emir and placed itself under the protection of the British in India and in alliance with the Emirate of Afghanistan. The British campaign was successfully conducted under the leadership of Major General Sir James Outram in two theatres: on the southern coast of Iran near Bushehr and in southern Mesopotamia. The war resulted in the Iranians withdrawing from Herat in 1857 and signing the treaty of Paris to surrender their claims on the city in return for the British withdrawing from southern Iran.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q617772, imported by tools/import/wikidata.mjs. The item's own description reads \"war between Great Britain and Iran\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1856,
+    "end": 1857,
+    "date": "1856-11-01",
+    "endDate": "1857-04-04"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

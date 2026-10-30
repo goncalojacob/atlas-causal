@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "maclodio",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q105095",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Maclodio",
+    "pt": "Maclodio"
+  },
+  "sources": [],
+  "names": [
+    "Maclodio"
+  ],
+  "where": {
+    "lon": 10.04010785,
+    "lat": 45.48042715,
+    "precision": "city",
+    "label": "Maclodio"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-kurakchay",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7837110",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Treaty of Kurakchay"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837110"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Kurakchay\", revision 1372096879"
+    }
+  ],
+  "title": "Treaty of Kurakchay",
+  "summary": "The English Wikipedia article \"Treaty of Kurakchay\", at revision 1372096879, opens: \"Kurakchay treaty is a contract confirming the integration of the Karabakh Khanate into the Russian Empire. The signing ceremony took place on May 14, 1805, in a Russian military camp on the banks of the Kurekchay river, not far from Ganja. The agreement was signed by Ibrahim Khalil Khan and Commander-in-Chief of Georgia, Infantry General Pavel Tsitsianov.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837110, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty between the Khan of Karabakh and Russian Empire on transfer of power over the khanate to Russia of May 14th 1805\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1805,
+    "end": 1805,
+    "date": "1805-05-14"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

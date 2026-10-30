@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "roanoke-island",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1636839",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Roanoke Island",
+    "pt": "Ilha de Roanoke"
+  },
+  "sources": [],
+  "names": [
+    "Roanoke Island",
+    "Ilha de Roanoke"
+  ],
+  "where": {
+    "lon": -75.6554512,
+    "lat": 35.8826713,
+    "precision": "region",
+    "label": "Roanoke Island"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-camp-allegheny",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1422914",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Camp Allegheny"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1422914"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Camp Allegheny\", revision 1370598284"
+    }
+  ],
+  "title": "Battle of Camp Allegheny",
+  "summary": "The English Wikipedia article \"Battle of Camp Allegheny\", at revision 1370598284, opens: \"The Battle of Camp Allegheny, also known as the Battle of Allegheny Mountain, took place on December 13, 1861, in Pocahontas County, Virginia, about 3 miles from the mountainous border of Highland County, Virginia, as part of the Operations in Western Virginia Campaign during the American Civil War. The battle was a small brigade-level conflict, and while the Confederates technically won with a Union withdrawal, it was considered militarily indecisive. However, it had critical implications for the future border of Virginia and West Virginia, ensuring Highland County remained in Confederate hands and would not be involved in the formation of the future state of West Virginia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1422914, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 United States historic place\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-12-13"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

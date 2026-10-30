@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "second-sumatran-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7443573",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Second Sumatran expedition",
+    "pt": "Segunda Expedição a Sumatra"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7443573"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Sumatran expedition\", revision 1373007198"
+    }
+  ],
+  "title": "Second Sumatran expedition",
+  "summary": "The English Wikipedia article \"Second Sumatran expedition\", at revision 1373007198, opens: \"The Second Sumatran expedition was a punitive expedition by the United States Navy against inhabitants of the island of Sumatra. After Malay warriors or pirates had massacred the crew of the American merchant ship Eclipse, an expedition of two American warships landed a force that defeated the Acehnese in two short engagements.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7443573, imported by tools/import/wikidata.mjs. The item's own description reads \"US punitive expedition against Sumatra, after Malay warriors or pirates killed the crew of the US merchant ship Eclipse\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1838,
+    "end": 1839,
+    "date": "1838-12",
+    "endDate": "1839-01"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

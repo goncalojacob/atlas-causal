@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1531-lisbon-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2877472",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1531 Lisbon earthquake",
+    "pt": "Sismo de Lisboa de 1531"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2877472"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1531 Lisbon earthquake\", revision 1366280084"
+    }
+  ],
+  "title": "1531 Lisbon earthquake",
+  "summary": "The English Wikipedia article \"1531 Lisbon earthquake\", at revision 1366280084, opens: \"The 1531 Lisbon earthquake occurred in the Kingdom of Portugal on the morning of 26 January 1531, between 4 and 5 o'clock.\nThe earthquake and subsequent tsunami resulted in approximately 30,000 deaths. Despite its severity, the disaster was not widely documented until the rediscovery of contemporary records in the early 20th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2877472, imported by tools/import/wikidata.mjs. The item's own description reads \"Earthquake which occurred in Portugal on 26 January 1531\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1531,
+    "end": 1531,
+    "date": "1531-01-26"
+  },
+  "place": "lisbon",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

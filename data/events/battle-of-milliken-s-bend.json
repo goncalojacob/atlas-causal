@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-milliken-s-bend",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2649895",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Milliken's Bend"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2649895"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Milliken's Bend\", revision 1370449796"
+    }
+  ],
+  "title": "Battle of Milliken's Bend",
+  "summary": "The English Wikipedia article \"Battle of Milliken's Bend\", at revision 1370449796, opens: \"The Battle of Milliken's Bend was fought on June 7, 1863, as part of the Vicksburg Campaign during the American Civil War. Major General Ulysses S. Grant of the Union Army placed the strategic Mississippi River city of Vicksburg, Mississippi under siege in mid-1863. Confederate leadership erroneously believed that Grant's supply line still ran through Milliken's Bend, Louisiana, and Major General Richard Taylor was tasked with disrupting it to aid the defense of Vicksburg. Taylor sent Brigadier General Henry E. McCulloch with a brigade of Texans to attack Milliken's Bend, which was held by a brigade of newly-recruited African American soldiers. McCulloch's attack struck early on the morning of June 7, and was initially successful in close-quarters fighting. Fire from the Union gunboat USS Choctaw halted the Confederate attack, and McCulloch later withdrew after the arrival of a second gunboat. The attempt to relieve Vicksburg was unsuccessful. One of the first actions in which African American soldiers fought, Milliken's Bend demonstrated the value of African American soldiers as part of the Union Army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2649895, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-06-07"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

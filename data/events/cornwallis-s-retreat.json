@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "cornwallis-s-retreat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4340192",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Cornwallis's Retreat",
+    "pt": "Retirada de Cornwallis"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4340192"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cornwallis's Retreat\", revision 1370613597"
+    }
+  ],
+  "title": "Cornwallis's Retreat",
+  "summary": "The English Wikipedia article \"Cornwallis's Retreat\", at revision 1370613597, opens: \"Cornwallis's Retreat was a naval engagement during the French Revolutionary Wars in which a British Royal Navy squadron of five ships of the line and two frigates was attacked by a much larger French Navy fleet of 12 ships of the line and 11 frigates. The action took place in the waters off the west coast of Brittany on 16–17 June 1795.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4340192, imported by tools/import/wikidata.mjs. The item's own description reads \"1795 naval engagement during the French Revolutionary Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1795,
+    "end": 1795,
+    "date": "1795-06-16",
+    "endDate": "1795-06-17"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

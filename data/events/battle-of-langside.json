@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-langside",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4087439",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Langside",
+    "pt": "Batalha de Langside"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4087439"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Langside\", revision 1370447146"
+    }
+  ],
+  "title": "Battle of Langside",
+  "summary": "The English Wikipedia article \"Battle of Langside\", at revision 1370447146, opens: \"The Battle of Langside was fought on 13 May 1568 between forces loyal to Mary, Queen of Scots, and forces acting in the name of her infant son James VI. Mary’s short period of personal rule ended in 1567 in recrimination, intrigue, and disaster when, after her capture at Carberry Hill, she was forced to abdicate in favour of James VI. Mary was imprisoned in Lochleven Castle, while her Protestant half-brother, James Stewart, Earl of Moray, was appointed Regent on behalf of his nephew. In early May 1568 Mary escaped, heading west to the country of the Hamiltons, high among her remaining supporters, and the safety of Dumbarton Castle with the determination to restore her rights as queen. Mary was defeated and went into exile and captivity in England. The battle is generally considered the start of the Marian civil war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4087439, imported by tools/import/wikidata.mjs. The item's own description reads \"1568 opening battle of the Marian civil war in Scotland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1568,
+    "end": 1568,
+    "date": "1568-05-13"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "marian-civil-war"
+}

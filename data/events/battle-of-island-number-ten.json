@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-island-number-ten",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q523364",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Island Number Ten"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q523364"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Island Number Ten\", revision 1380654607"
+    }
+  ],
+  "title": "Battle of Island Number Ten",
+  "summary": "The English Wikipedia article \"Battle of Island Number Ten\", at revision 1380654607, opens: \"The Battle of Island Number Ten was an engagement at the New Madrid or Kentucky Bend on the Mississippi River – forming the border between Missouri and Tennessee – during the American Civil War, lasting from February 28 to April 8, 1862. Island Number Ten, a small island at the (Tennessee) base of a tight double turn in the river, was held by the Confederates from the early days of the war. It was an excellent site to impede Union efforts to invade the South by the river, as ships had to approach the island bows on and then slow to make the turns. For the defenders, however, it had an innate weakness in that it depended on a single road for supplies and reinforcements. If an enemy force managed to cut that road, the garrison would be isolated and eventually be forced to surrender.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q523364, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-02-28",
+    "endDate": "1862-04-08"
+  },
+  "place": "new-madrid-missouri",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-mirandola-1511",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3625432",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Mirandola (1511)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3625432"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Mirandola (1511)\", revision 1380871955"
+    }
+  ],
+  "title": "Siege of Mirandola (1511)",
+  "summary": "The English Wikipedia article \"Siege of Mirandola (1511)\", at revision 1380871955, opens: \"The siege of Mirandola took place from 2 January to 19 January 1511 as a part of Pope Julius II's campaign to keep France from dominating northern Italy during the War of the League of Cambrai. At that time Mirandola was the capital of the Duchy of Mirandola in the Italian region of Emilia. The fortress was defended by 400 French infantrymen commanded by Alessandro Trivulzio, 100 soldiers from Ferrara, and 70 Mirandola soldiers. The siege was conducted by Julius after he had broken away from the League of Cambrai and entered into a treaty with Venice.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3625432, imported by tools/import/wikidata.mjs. The item's own description reads \"1511 siege of the War of the League of Cambrai\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1511,
+    "end": 1511,
+    "endDate": "1511-01-20"
+  },
+  "place": "mirandola",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-league-of-cambrai"
+}
