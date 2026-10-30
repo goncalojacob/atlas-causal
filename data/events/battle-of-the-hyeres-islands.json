@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-hyeres-islands",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q742187",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of the Hyères Islands"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q742187"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Hyères Islands\", revision 1370600291"
+    }
+  ],
+  "title": "Battle of the Hyères Islands",
+  "summary": "The English Wikipedia article \"Battle of the Hyères Islands\", at revision 1370600291, opens: \"The Battle of the Hyères Islands was a fleet action fought between a combined British and Neapolitan fleet and the French Mediterranean Fleet on 13 July 1795 during the French Revolutionary Wars. Since the start of the war in 1793 the French fleet had suffered a series of damaging defeats and was restricted to limited operations off the French Mediterranean Coast in the face of a determined allied blockade. The French fleet, commanded by Pierre Martin, had sought to test the blockade during 1795, and in March had been caught by the British, under William Hotham, in the Gulf of Genoa. At the ensuing Battle of Genoa two French ships were captured before Martin was able to retreat to a safe anchorage.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q742187, imported by tools/import/wikidata.mjs. The item's own description reads \"1795 naval battle of the French Revolutionary Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1795,
+    "end": 1795,
+    "date": "1795-07-13"
+  },
+  "place": "iles-d-hyeres",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

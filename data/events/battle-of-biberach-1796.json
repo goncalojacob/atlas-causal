@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-biberach-1796",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870481",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Biberach (1796)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870481"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Biberach (1796)\", revision 1370107807"
+    }
+  ],
+  "title": "Battle of Biberach (1796)",
+  "summary": "The English Wikipedia article \"Battle of Biberach (1796)\", at revision 1370107807, opens: \"The Battle of Biberach was fought on 2 October 1796 between a French Republican army led by Jean Victor Marie Moreau and a Habsburg Austrian army led by Maximilian Anton Karl, Count Baillet de Latour. The French army paused in its retreat toward the Rhine River to maul the pursuing Austrians. The action occurred during the War of the First Coalition, part of the French Revolutionary Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870481, imported by tools/import/wikidata.mjs. The item's own description reads \"1796 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1796,
+    "end": 1796,
+    "date": "1796-10-02"
+  },
+  "place": "biberach-an-der-ri",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-and-napoleonic-wars"
+}

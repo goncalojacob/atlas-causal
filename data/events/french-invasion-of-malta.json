@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "french-invasion-of-malta",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16630286",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "French invasion of Malta"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16630286"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French invasion of Malta\", revision 1371106535"
+    }
+  ],
+  "title": "French invasion of Malta",
+  "summary": "The English Wikipedia article \"French invasion of Malta\", at revision 1371106535, opens: \"The French First Republic, led by Napoleon Bonaparte, successfully invaded the islands of Malta and Gozo, then ruled by the Knights Hospitaller, in June 1798 as part of the Mediterranean campaign of the French Revolutionary Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16630286, imported by tools/import/wikidata.mjs. The item's own description reads \"1798 invasion, part of the Mediterranean campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1798,
+    "date": "1798-06-10",
+    "endDate": "1798-06-12"
+  },
+  "place": "malta-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mediterranean-campaign-of-1798"
+}

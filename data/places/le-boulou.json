@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "le-boulou",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q8672",
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Le Boulou",
+    "pt": "Le Boulou"
+  },
+  "sources": [],
+  "names": [
+    "Le Boulou"
+  ],
+  "where": {
+    "lon": 2.83,
+    "lat": 42.523888888889,
+    "precision": "city",
+    "label": "Le Boulou"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

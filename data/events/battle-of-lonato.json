@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-lonato",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889153",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Lonato",
+    "pt": "Batalha de Lonato"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889153"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lonato\", revision 1377306939"
+    }
+  ],
+  "title": "Battle of Lonato",
+  "summary": "The English Wikipedia article \"Battle of Lonato\", at revision 1377306939, opens: \"The Battle of Lonato was fought on 3 and 4 August 1796 between the French Army of Italy under General Napoleon Bonaparte and a corps-sized Austrian column led by Lieutenant General Peter Quasdanovich. A week of hard-fought actions that began on 29 July and ended on 4 August resulted in the retreat of Quasdanovich's badly mauled force. The elimination of Quasdanovich's threat allowed Bonaparte to concentrate against and defeat the main Austrian army at the Battle of Castiglione on 5 August. Lonato del Garda is located near the SP 668 highway and the Brescia-Padua section of Autostrada A4 to the southwest of Lake Garda.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889153, imported by tools/import/wikidata.mjs. The item's own description reads \"1796 battle during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1796,
+    "end": 1796,
+    "date": "1796-08-03",
+    "endDate": "1796-08-04"
+  },
+  "place": "lonato-del-garda",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-burgos",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485847",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Burgos",
+    "pt": "Cerco de Burgos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485847"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Burgos\", revision 1378579642"
+    }
+  ],
+  "title": "Siege of Burgos",
+  "summary": "The English Wikipedia article \"Siege of Burgos\", at revision 1378579642, opens: \"At the siege of Burgos, from 19 September to 21 October 1812, the Anglo-Portuguese Army led by General Arthur Wellesley, Marquess of Wellington tried to capture the castle of Burgos from its French garrison under the command of General of Brigade Jean-Louis Dubreton. The French repulsed every attempt to seize the fortress, resulting in Wellington's withdrawal. The siege took place during the Peninsular War, part of the Napoleonic Wars. Burgos is located about 210 kilometres (130 mi) north of Madrid.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485847, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 siege during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-09-19",
+    "endDate": "1812-10-21"
+  },
+  "place": "castle-of-burgos",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "biberach-an-der-ri",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q16069",
+  "sitelinks": {
+    "count": 58,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Biberach an der Riß",
+    "pt": "Biberach an der Riß"
+  },
+  "sources": [],
+  "names": [
+    "Biberach an der Riß"
+  ],
+  "where": {
+    "lon": 9.7886111111111,
+    "lat": 48.098055555556,
+    "precision": "city",
+    "label": "Biberach an der Riß"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

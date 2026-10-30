@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "chuquisaca-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5116509",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Chuquisaca Revolution",
+    "pt": "Revolução de Chuquisaca"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5116509"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chuquisaca Revolution\", revision 1366241043"
+    }
+  ],
+  "title": "Chuquisaca Revolution",
+  "summary": "The English Wikipedia article \"Chuquisaca Revolution\", at revision 1366241043, opens: \"The Chuquisaca Revolution was a popular uprising on 25 May 1809 against Ramón García de León y Pizarro, Governor-intendant of the Intendancy of Chuquisaca. The Real Audiencia of Charcas, with support from the faculty of University of Saint Francis Xavier, deposed the governor and formed a junta. The revolution is known in Bolivia as the \"First Cry of Freedom\", meaning the first phase in the Spanish American Wars of Independence. The level of hostility against the Spanish Crown and news from both the American Revolution and the French Revolution has made historians dispute whether such a description is accurate. However, accounts depict it as the first step towards liberty in Latin America against the Spanish Crown.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5116509, imported by tools/import/wikidata.mjs. The item's own description reads \"popular uprising in Chuquisaca in favor of self-government, King Ferdinand VII and the Empire of Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1809,
+    "end": 1809,
+    "date": "1809-05-25"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

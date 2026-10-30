@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-wissembourg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5452548",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "First Battle of Wissembourg",
+    "pt": "Primeira Batalha de Wissembourg (1793)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5452548"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Wissembourg\", revision 1370619035"
+    }
+  ],
+  "title": "First Battle of Wissembourg",
+  "summary": "The English Wikipedia article \"First Battle of Wissembourg\", at revision 1370619035, opens: \"In the First Battle of Wissembourg an Allied army commanded by Dagobert Sigmund von Wurmser attacked the French Army of the Rhine under Jean Pascal Carlenc. After an ineffectual resistance, the French army abandoned its fortified line behind the Lauter River and retreated toward Strasbourg in confusion. This engagement of the War of the First Coalition occurred on the eastern border of France about 60 kilometres (37 mi) north of Strasbourg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5452548, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 battle during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-10-13"
+  },
+  "place": "wissembourg",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}

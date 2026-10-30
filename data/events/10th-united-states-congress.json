@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "10th-united-states-congress",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4547180",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "10th United States Congress"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4547180"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"10th United States Congress\", revision 1380237511"
+    }
+  ],
+  "title": "10th United States Congress",
+  "summary": "The English Wikipedia article \"10th United States Congress\", at revision 1380237511, opens: \"The 10th United States Congress was a meeting of the legislative branch of the United States federal government, consisting of the Senate and the House of Representatives. It met in Washington, D.C., from March 4, 1807, to March 4, 1809, during the seventh and eighth years of Thomas Jefferson's presidency. The apportionment of seats in the House of Representatives was based on the 1800 census; both chambers had an overwhelming Democratic-Republican majority.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4547180, imported by tools/import/wikidata.mjs. The item's own description reads \"meeting of the United States federal government's legislative branch (1807-09)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1807,
+    "end": 1809,
+    "date": "1807-03-04",
+    "endDate": "1809-03-04"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

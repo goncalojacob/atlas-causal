@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "uss-constellation-vs-la-vengeance",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2984929",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "USS Constellation vs La Vengeance"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2984929"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"USS Constellation vs La Vengeance\", revision 1370752042"
+    }
+  ],
+  "title": "USS Constellation vs La Vengeance",
+  "summary": "The English Wikipedia article \"USS Constellation vs La Vengeance\", at revision 1370752042, opens: \"USS Constellation vs La Vengeance, or the action of 1 February 1800, was a single-ship action fought between frigates of the French Navy and the United States Navy during the Quasi-War. In the battle the American frigate USS Constellation tried to take the French frigate La Vengeance as a prize. Both ships were heavily damaged. Although the French frigate struck her colors (surrendered) twice, she managed to flee only after the main mast of her opponent had fallen.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2984929, imported by tools/import/wikidata.mjs. The item's own description reads \"1800 action between US and French frigates\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1800,
+    "end": 1800,
+    "date": "1800-02-01",
+    "endDate": "1800-02-02"
+  },
+  "place": "saint-kitts",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
