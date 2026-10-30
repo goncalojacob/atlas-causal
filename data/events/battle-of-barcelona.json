@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-barcelona",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888111",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Barcelona"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888111"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Barcelona\", revision 1373858475"
+    }
+  ],
+  "title": "Battle of Barcelona",
+  "summary": "The English Wikipedia article \"Battle of Barcelona\", at revision 1373858475, opens: \"The naval battle of Barcelona was a naval engagement of the Franco-Habsburg War fought off Barcelona from 29 June to 3 July 1642 between a Spanish fleet commanded by Juan Alonso Idiáquez, Duke of Ciudad Real, and a French fleet under Jean Armand de Maillé-Brézé, Duc de Fronsac. \nIn a three-day battle, Brézé defeated the Spanish fleet, which was attempting to relieve some Spanish garrisons isolated along the Catalan coast, and forced the Duke of Ciudad Real to retreat to Majorca for repairs. As usual in most of the battles involving Maillé-Brézé, the French fleet made an extensive use of her fireships. This time, however, a large French vice-flagship, the Galion de Guise, fell victim to one of his own fireships and went down enveloped in flames. The victory, in any case, was for the French fleet, and its main long-term effect was the fall of Perpignan into the hands of the Franco-Catalan army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888111, imported by tools/import/wikidata.mjs. The item's own description reads \"naval battle during the Franco-Spanish War (1635–1659) in 1642\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1642,
+    "end": 1642,
+    "date": "1642-06-29",
+    "endDate": "1642-07-03"
+  },
+  "place": "barcelona",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-spanish-war-1635-1659"
+}

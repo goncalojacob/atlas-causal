@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-byczyna",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1236849",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Byczyna"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1236849"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Byczyna\", revision 1370435680"
+    }
+  ],
+  "title": "Battle of Byczyna",
+  "summary": "The English Wikipedia article \"Battle of Byczyna\", at revision 1370435680, opens: \"The Battle of Byczyna, also known as the Battle of Pitschen, was the deciding battle of the 1587–1588 War of the Polish Succession, which erupted after two rival candidates were elected to the Polish throne. The two opposing sides had forces nearly evenly matched, with armies about 6,000 strong, roughly half infantry and half cavalry. The battle was an overwhelming victory for the Polish-Swedish faction, led by the Swedish-born king-elect Sigismund III Vasa, over the army of his rival to the throne, Maximilian III, Archduke of Austria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1236849, imported by tools/import/wikidata.mjs. The item's own description reads \"Deciding battle of the 1587–1588 War of the Polish Succession, which erupted after two rival candidates were elected to the Polish throne\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1588,
+    "end": 1588,
+    "date": "1588-01-24"
+  },
+  "place": "byczyna",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

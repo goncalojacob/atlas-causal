@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-stavyshche",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q9173569",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Stavyshche"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q9173569"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Stavyshche\", revision 1377720128"
+    }
+  ],
+  "title": "Battle of Stavyshche",
+  "summary": "The English Wikipedia article \"Battle of Stavyshche\", at revision 1377720128, opens: \"The Battle of Stavyshche, also called the Siege of Stawiszcze, took place between July 7 - October 7, 1664, during the Russo-Polish War (1654–67). Polish Crown forces under Stefan Czarniecki besieged the town of Stavyshche (Stawiszcze), which at that time belonged to Polish–Lithuanian Commonwealth's Kiev Voivodeship. The residents of Stavyshche rebelled against Polish rule, and as a result, the town was destroyed in January 1665.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q9173569, imported by tools/import/wikidata.mjs. The item's own description reads \"1664 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1664,
+    "end": 1664,
+    "date": "1664-01-16"
+  },
+  "place": "stavyshche",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "polish-russian-war-1654-1667"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sture-murders",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4574780",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Sture murders",
+    "pt": "Assassinato dos Sture"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4574780"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sture murders\", revision 1375768546"
+    }
+  ],
+  "title": "Sture murders",
+  "summary": "The English Wikipedia article \"Sture murders\", at revision 1375768546, opens: \"The Sture murders in Uppsala, Sweden, of 24 May 1567, were the murders of five incarcerated Swedish nobles by Erik XIV of Sweden, who at that time was in a state of serious mental disorder, and his guards.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4574780, imported by tools/import/wikidata.mjs. The item's own description reads \"24 May 1567 were the murders of five incarcerated Swedish nobles by Erik XIV of Sweden, who at that time was in a state of serious mental disorder, and his guards.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1567,
+    "end": 1567,
+    "date": "1567-05-24"
+  },
+  "place": "uppsala-castle",
+  "region": null,
+  "regionNote": null,
+  "category": "death",
+  "actors": []
+}

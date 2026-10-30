@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-wesenberg-1574",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510514",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Wesenberg (1574)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510514"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Wesenberg (1574)\", revision 1370746439"
+    }
+  ],
+  "title": "Siege of Wesenberg (1574)",
+  "summary": "The English Wikipedia article \"Siege of Wesenberg (1574)\", at revision 1370746439, opens: \"The siege of Wesenberg, Rakvere, or Rakovor, was an abortive Swedish siege of the Russian-held town of Wesenberg in Estonia from January through March 1574, during the Livonian War. The siege is infamous for a brawl and subsequent combat between German and Scottish mercenaries within the besieging army, which claimed the lives of about 1,500 Scots. Wesenberg was seized in a renewed Swedish assault in 1581.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510514, imported by tools/import/wikidata.mjs. The item's own description reads \"1574 military conflict in Estonia during Livonian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1574,
+    "end": 1574,
+    "date": "1574-01",
+    "endDate": "1574-03"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "livonian-war"
+}

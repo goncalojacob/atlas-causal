@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "velikiye-luki",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q101825",
+  "sitelinks": {
+    "count": 62,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Velikiye Luki",
+    "pt": "Velikie Luki"
+  },
+  "sources": [],
+  "names": [
+    "Velikiye Luki",
+    "Velikie Luki"
+  ],
+  "where": {
+    "lon": 30.516666666667,
+    "lat": 56.35,
+    "precision": "city",
+    "label": "Velikiye Luki"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

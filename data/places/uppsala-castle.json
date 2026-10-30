@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "uppsala-castle",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1475894",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Uppsala Castle",
+    "pt": "Castelo de Uppsala"
+  },
+  "sources": [],
+  "names": [
+    "Uppsala Castle",
+    "Castelo de Uppsala"
+  ],
+  "where": {
+    "lon": 17.63543,
+    "lat": 59.85359,
+    "precision": "point",
+    "label": "Uppsala Castle"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

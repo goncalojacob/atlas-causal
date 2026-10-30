@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-slaak",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q672218",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of the Slaak"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q672218"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Slaak\", revision 1370602337"
+    }
+  ],
+  "title": "Battle of the Slaak",
+  "summary": "The English Wikipedia article \"Battle of the Slaak\", at revision 1370602337, opens: \"The naval Battle of the Slaak was a Dutch victory during the Eighty Years' War. The Dutch prevented the Spanish army from dividing the Dutch United Provinces in two.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q672218, imported by tools/import/wikidata.mjs. The item's own description reads \"1631 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1631,
+    "end": 1631,
+    "date": "1631-09-13"
+  },
+  "place": "volkerak",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

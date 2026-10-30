@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "raid-on-mount-s-bay",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2890664",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Raid on Mount's Bay"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890664"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Raid on Mount's Bay\", revision 1370705937"
+    }
+  ],
+  "title": "Raid on Mount's Bay",
+  "summary": "The English Wikipedia article \"Raid on Mount's Bay\", at revision 1370705937, opens: \"The Raid on Mounts Bay also known as the Spanish attack on Mounts Bay was a Spanish raid on Cornwall, England, that took place between 2 and 4 August 1595 in the context of the Brittany Campaign during the Anglo-Spanish war of 1585-1604. It was conducted by a Spanish naval squadron led by Carlos de Amésquita on patrol from Brittany, France. The Spanish made landfall in Mount's Bay, then sacked and burned Newlyn, Mousehole, Penzance, and Paul, beating a militia force under Francis Godolphin in the process.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890664, imported by tools/import/wikidata.mjs. The item's own description reads \"Spanish raid on Cornwall in 1595 during the Anglo-Spanish war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1595,
+    "end": 1595,
+    "date": "1595-08-02",
+    "endDate": "1595-08-04"
+  },
+  "place": "mount-s-bay",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

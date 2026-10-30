@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "boyle-county-roscommon",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1124843",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Boyle, County Roscommon"
+  },
+  "sources": [],
+  "names": [
+    "Boyle",
+    "Boyle, County Roscommon"
+  ],
+  "where": {
+    "lon": -8.3,
+    "lat": 53.972,
+    "precision": "city",
+    "label": "Boyle, County Roscommon"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
