@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "neuchatel-crisis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q465868",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Neuchâtel Crisis"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q465868"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Neuchâtel Crisis\", revision 1355624178"
+    }
+  ],
+  "title": "Neuchâtel Crisis",
+  "summary": "The English Wikipedia article \"Neuchâtel Crisis\", at revision 1355624178, opens: \"The Neuchâtel Crisis or Neuchâtel Affair of 1856–1857 was a diplomatic crisis between Prussia and Switzerland regarding the rights of the king of Prussia to the Swiss canton of Neuchâtel.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q465868, imported by tools/import/wikidata.mjs. The item's own description reads \"1856-57 diplomatic crisis between Prussia and Switzerland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1856,
+    "end": 1857,
+    "date": "1856-08"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

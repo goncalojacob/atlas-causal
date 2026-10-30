@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "deccan-famine-of-1630-1632",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3530500",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Deccan famine of 1630–1632",
+    "pt": "Fome de 1630-1632 em Decão"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3530500"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Deccan famine of 1630–1632\", revision 1363205382"
+    }
+  ],
+  "title": "Deccan famine of 1630–1632",
+  "summary": "The English Wikipedia article \"Deccan famine of 1630–1632\", at revision 1363205382, opens: \"The Deccan famine of 1630–1632 was a famine associated with a back-to-back crop failure. The famine happened during the reign of Mughal Emperor Shah Jahan. The famine was the result of three consecutive staple crop failures, causing plague and leading to intense hunger, disease, and displacement in the region. The famine was further intensified by the Mughal campaign led by Shah Jahan in Malwa and the Deccan after Malwa's Mughal commander turned rogue and joined hands with the Deccan forces of Nizam Shah and Adil Shah. According to a contemporary estimate, as many as 7.4 million people died in the region until 1631 alone.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3530500, imported by tools/import/wikidata.mjs. The item's own description reads \"famine in the Deccan Plateau and Gujarat during the Mughal Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1630,
+    "end": 1632
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

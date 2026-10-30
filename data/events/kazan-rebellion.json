@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "kazan-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2748243",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Kazan rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2748243"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kazan rebellion\", revision 1373357092"
+    }
+  ],
+  "title": "Kazan rebellion",
+  "summary": "The English Wikipedia article \"Kazan rebellion\", at revision 1373357092, opens: \"The Kazan rebellion or Tatar Rebellion (1552–1556) was an uprising against Tsardom of Russia. It aimed to restore the Kazan Khanate, which the Russians had conquered in October 1552.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2748243, imported by tools/import/wikidata.mjs. The item's own description reads \"war between the Tsardom of Russia and Kazans\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1552,
+    "end": 1556
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "protestation-at-speyer",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q645920",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Protestation at Speyer",
+    "pt": "Protesto de Espira"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q645920"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Protestation at Speyer\", revision 1358780460"
+    }
+  ],
+  "title": "Protestation at Speyer",
+  "summary": "The English Wikipedia article \"Protestation at Speyer\", at revision 1358780460, opens: \"On 19 April 1529, six princes and representatives of 14 Imperial Free Cities petitioned the Imperial Diet at Speyer against an imperial ban of Martin Luther, as well as the proscription of his works and teachings, and called for the unhindered spread of the evangelical faith.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q645920, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1529,
+    "end": 1529,
+    "date": "1529-04-19"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "reformation"
+}

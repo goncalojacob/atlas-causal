@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "chesapeake-leopard-affair",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q382286",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Chesapeake–Leopard affair"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q382286"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chesapeake–Leopard affair\", revision 1370611006"
+    }
+  ],
+  "title": "Chesapeake–Leopard affair",
+  "summary": "The English Wikipedia article \"Chesapeake–Leopard affair\", at revision 1370611006, opens: \"The Chesapeake–Leopard affair was a naval engagement off the coast of Norfolk, Virginia, on June 22, 1807, between the British fourth-rate HMS Leopard and the American frigate USS Chesapeake. The crew of Leopard pursued, attacked, and boarded the American frigate, looking for deserters from the Royal Navy. Chesapeake was caught unprepared and after a short battle involving broadsides received from Leopard, the commander of Chesapeake, James Barron, surrendered his vessel to the British. Chesapeake had fired only one shot.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q382286, imported by tools/import/wikidata.mjs. The item's own description reads \"British–US June 1807 incident\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1807,
+    "end": 1807,
+    "date": "1807-06-22"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "war-of-the-julich-succession",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q568727",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "War of the Jülich Succession"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q568727"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Jülich Succession\", revision 1371645533"
+    }
+  ],
+  "title": "War of the Jülich Succession",
+  "summary": "The English Wikipedia article \"War of the Jülich Succession\", at revision 1371645533, opens: \"The War of the Jülich Succession, also known as the Jülich War or the Jülich-Cleves Succession Crises, was a war of succession in the United Duchies of Jülich-Cleves-Berg. The first phase of the war lasted between 10 June 1609 and 24 October 1610, with the second phase starting in May 1614 and finally ending on 13 October 1614. At first, the war pitted Catholic Archduke Leopold V against the combined forces of the Protestant claimants, Johann Sigismund, Elector of Brandenburg and Wolfgang Wilhelm of Palatinate-Neuburg, ending in the former's military defeat. The representatives of Brandenburg and Neuburg later entered conflict amongst themselves, partly due to religious conversions, which led to the resumption of hostilities.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q568727, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1609,
+    "end": 1614
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

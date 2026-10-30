@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "kazakh-dzungar-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4208075",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Kazakh–Dzungar Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4208075"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kazakh–Dzungar Wars\", revision 1380421468"
+    }
+  ],
+  "title": "Kazakh–Dzungar Wars",
+  "summary": "The English Wikipedia article \"Kazakh–Dzungar Wars\", at revision 1380421468, opens: \"The Kazakh–Dzungar Wars were a series of military conflicts between the Kazakh jüzes and the Dzungar Khanate lasting from the 17th to the mid-18th century. The conflict between the Kazakhs and the Oirats started from the first half of the 16th-century, all the way down to the later half of the 18th-century. Both nations later fought against the Qing dynasty, particularly in the First Sino–Kazakh War of the Ten Great Campaigns.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4208075, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflicts in Central Asia, 1635–1741\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1634,
+    "end": 1741
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

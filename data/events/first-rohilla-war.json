@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "first-rohilla-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5453768",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "First Rohilla War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5453768"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Rohilla War\", revision 1370619595"
+    }
+  ],
+  "title": "First Rohilla War",
+  "summary": "The English Wikipedia article \"First Rohilla War\", at revision 1370619595, opens: \"The First Rohilla War of 1773–1774 was a punitive campaign by Shuja-ud-Daula, Nawab of Awadh on the behalf of Mughal Emperor, against the Rohillas, Indian descendants of Afghan highlanders settled in Rohilkhand, northern India. The Nawab was supported by troops of the British East India Company, in a successful campaign brought about by the Rohillas reneging on a debt to the Nawab.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5453768, imported by tools/import/wikidata.mjs. The item's own description reads \"Military campaign in 1773–1774\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1773,
+    "end": 1774
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
