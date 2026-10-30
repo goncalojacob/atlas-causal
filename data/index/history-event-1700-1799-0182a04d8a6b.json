@@ -128,6 +128,15 @@
         }
       ]
     },
+    "1760-raid-on-berlin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "1770-1772-russian-plague": {
       "from": "git",
       "versions": [
@@ -1617,6 +1626,15 @@
         }
       ]
     },
+    "battle-of-fishguard": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-flamborough-head": {
       "from": "git",
       "versions": [
@@ -1819,6 +1837,15 @@
         }
       ]
     },
+    "battle-of-frisches-haff": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-gadebusch": {
       "from": "git",
       "versions": [
@@ -1843,6 +1870,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-genoa-1795": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -2103,6 +2139,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-hogland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -2563,6 +2608,15 @@
         }
       ]
     },
+    "battle-of-macin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-madonna-dell-olmo": {
       "from": "git",
       "versions": [
@@ -2578,6 +2632,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-magnano": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -2972,6 +3035,15 @@
         }
       ]
     },
+    "battle-of-ostrach": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-oudenarde": {
       "from": "git",
       "versions": [
@@ -3246,6 +3318,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-reval": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -3594,6 +3675,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-schliengen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -3962,6 +4052,15 @@
         }
       ]
     },
+    "battle-of-tournay-1794": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-trebbia-1799": {
       "from": "git",
       "versions": [
@@ -4004,6 +4103,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-truillas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -4175,6 +4283,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-wurzburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -4818,6 +4935,15 @@
         }
       ]
     },
+    "copenhagen-fire-of-1795": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "coup-of-18-brumaire": {
       "from": "git",
       "versions": [
@@ -4833,6 +4959,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "coup-of-30-prairial-vii": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -5182,6 +5317,15 @@
         }
       ]
     },
+    "first-massacre-of-machecoul": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "first-silesian-war": {
       "from": "git",
       "versions": [
@@ -5500,6 +5644,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "great-fire-of-tartu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -5993,6 +6146,15 @@
         }
       ]
     },
+    "lapp-codicil-of-1751": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "larache-expedition": {
       "from": "git",
       "versions": [
@@ -6338,6 +6500,15 @@
         }
       ]
     },
+    "partition-sejm": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "partitions-of-poland": {
       "from": "git",
       "versions": [
@@ -6596,6 +6767,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "raid-on-rochefort": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -7106,6 +7286,15 @@
         }
       ]
     },
+    "siege-of-bellegarde-1793": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "siege-of-bergen-op-zoom-1747": {
       "from": "git",
       "versions": [
@@ -7292,6 +7481,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-fort-st-philip-1756": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -7893,6 +8091,24 @@
       ]
     },
     "siege-of-viborg-1710": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "siege-of-villafranca-1744": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "siege-of-warsaw-1794": {
       "from": "git",
       "versions": [
         {
@@ -9135,6 +9351,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "viree-de-galerne": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
