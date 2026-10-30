@@ -38,6 +38,15 @@
         }
       ]
     },
+    "all-saints-day-flood-of-1436": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "anfa-expedition-1468": {
       "from": "git",
       "versions": [
@@ -299,12 +308,39 @@
         }
       ]
     },
+    "battle-of-gerberoy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-giornico": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-grandson": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-grotniki": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -353,6 +389,15 @@
         }
       ]
     },
+    "battle-of-horice": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-jargeau": {
       "from": "git",
       "versions": [
@@ -377,6 +422,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-kutna-hora": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -452,6 +506,15 @@
         }
       ]
     },
+    "battle-of-nekmir": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "battle-of-nish-1443": {
       "from": "git",
       "versions": [
@@ -494,6 +557,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-polog": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -542,6 +614,15 @@
         }
       ]
     },
+    "battle-of-st-jakob-an-der-sihl": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-stoke-field": {
       "from": "git",
       "versions": [
@@ -566,6 +647,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-tachov": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -723,6 +813,15 @@
       ]
     },
     "battle-on-the-planta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "bohemian-hungarian-war-1468-1478": {
       "from": "git",
       "versions": [
         {
@@ -1100,6 +1199,15 @@
         }
       ]
     },
+    "korean-literati-purges": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "lithuanian-civil-war-1432-1438": {
       "from": "git",
       "versions": [
@@ -1445,6 +1553,15 @@
         }
       ]
     },
+    "siege-of-jajce-1463": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "siege-of-kruje-1450": {
       "from": "git",
       "versions": [
@@ -1514,6 +1631,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-shkodra": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -1951,6 +2077,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "war-of-the-burgundian-succession": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

@@ -224,6 +224,15 @@
         }
       ]
     },
+    "africa-q15": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "agadir": {
       "from": "git",
       "versions": [
@@ -387,12 +396,30 @@
         }
       ]
     },
+    "alboran-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "alcacovas": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "alcantara-lisbon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -1166,6 +1193,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "asunden-vastergotland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -4612,6 +4648,15 @@
         }
       ]
     },
+    "cholula-mesoamerican-site": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "chongchon-river": {
       "from": "git",
       "versions": [
@@ -6252,6 +6297,15 @@
         }
       ]
     },
+    "eastern-scheldt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "eastern-united-states": {
       "from": "git",
       "versions": [
@@ -7886,6 +7940,15 @@
         }
       ]
     },
+    "gerberoy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "german-east-africa-q153963": {
       "from": "git",
       "versions": [
@@ -7997,6 +8060,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "giornico": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -8341,6 +8413,15 @@
       ]
     },
     "groningen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
+    "grotniki-duze": {
       "from": "git",
       "versions": [
         {
@@ -9197,6 +9278,15 @@
         }
       ]
     },
+    "horice": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "hormuz-island": {
       "from": "git",
       "versions": [
@@ -9921,6 +10011,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "jajce": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -11180,6 +11279,15 @@
         }
       ]
     },
+    "koroni": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "korsakov": {
       "from": "git",
       "versions": [
@@ -11390,6 +11498,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "kutna-hora": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -11869,6 +11986,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "lattimer-pennsylvania": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -15190,6 +15316,15 @@
         }
       ]
     },
+    "nekmir": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "nemours": {
       "from": "git",
       "versions": [
@@ -15819,6 +15954,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "obertyn": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
         }
       ]
     },
@@ -18217,6 +18361,15 @@
         }
       ]
     },
+    "renty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "republic-of-bosnia-and-herzegovina": {
       "from": "git",
       "versions": [
@@ -18247,6 +18400,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "rheindahlen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -20065,6 +20227,15 @@
         }
       ]
     },
+    "shkoder": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "shlisselburg": {
       "from": "git",
       "versions": [
@@ -21270,6 +21441,15 @@
         }
       ]
     },
+    "sunda-kelapa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "sunda-strait": {
       "from": "git",
       "versions": [
@@ -21414,6 +21594,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "tachov": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -23375,6 +23564,15 @@
         }
       ]
     },
+    "villersexel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-29"
+        }
+      ]
+    },
     "vilnius": {
       "from": "git",
       "versions": [
@@ -24682,6 +24880,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "zuiderzee": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
