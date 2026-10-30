@@ -458,6 +458,15 @@
         }
       ]
     },
+    "battle-of-axtorna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-azemmour": {
       "from": "git",
       "versions": [
@@ -844,6 +853,15 @@
         }
       ]
     },
+    "battle-of-drakenburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-dreux": {
       "from": "git",
       "versions": [
@@ -934,12 +952,30 @@
         }
       ]
     },
+    "battle-of-fukuda-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-garigliano-1503": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-garisi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -998,6 +1034,15 @@
         }
       ]
     },
+    "battle-of-girolata": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-giurgiu-1595": {
       "from": "git",
       "versions": [
@@ -1022,6 +1067,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-gravelines-1558": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -1786,6 +1840,15 @@
         }
       ]
     },
+    "battle-of-olshanitsa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-oosterweel": {
       "from": "git",
       "versions": [
@@ -1819,6 +1882,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-palast": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -3509,6 +3581,15 @@
         }
       ]
     },
+    "glinski-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "gothicism": {
       "from": "git",
       "versions": [
@@ -3572,6 +3653,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "habsburg-ottoman-war-of-1551-1562": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -4324,12 +4414,30 @@
         }
       ]
     },
+    "ottoman-wars-in-africa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "palace-plot-of-renyin-year": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "palatine-peasants-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -4384,6 +4492,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "pleitos-colombinos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6167,6 +6284,15 @@
         }
       ]
     },
+    "spanish-fury-at-mechelen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "spanish-moro-conflict": {
       "from": "git",
       "versions": [
@@ -6314,6 +6440,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "the-year-round-heat-and-drought-of-1540-in-europe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6620,6 +6755,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-villafafila": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

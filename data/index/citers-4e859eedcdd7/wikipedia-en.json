@@ -10736,6 +10736,12 @@
     },
     {
       "dissent": false,
+      "id": "1882-herzegovina-uprising",
+      "kind": "event",
+      "locator": "\"1882 Herzegovina uprising\", revision 1370278928"
+    },
+    {
+      "dissent": false,
       "id": "1883-chilean-spanish-treaty",
       "kind": "event",
       "locator": "\"1883 Chilean–Spanish Treaty\", revision 1254249725"
@@ -12026,6 +12032,12 @@
     },
     {
       "dissent": false,
+      "id": "albanian-ottoman-wars-1432-1479",
+      "kind": "event",
+      "locator": "\"Albanian–Ottoman Wars (1432–1479)\", revision 1374669399"
+    },
+    {
+      "dissent": false,
       "id": "albanian-revolt-of-1432-1436",
       "kind": "event",
       "locator": "\"Albanian revolt of 1432–1436\", revision 1378815976"
@@ -12182,6 +12194,12 @@
     },
     {
       "dissent": false,
+      "id": "anglo-dutch-treaties-of-1870-1871",
+      "kind": "event",
+      "locator": "\"Anglo-Dutch Treaties of 1870–1871\", revision 1297961421"
+    },
+    {
+      "dissent": false,
       "id": "anglo-dutch-treaty-of-1824",
       "kind": "event",
       "locator": "\"Anglo-Dutch Treaty of 1824\", revision 1319480078"
@@ -12251,6 +12269,12 @@
       "id": "anglo-japanese-treaty-of-amity-and-commerce",
       "kind": "event",
       "locator": "\"Anglo-Japanese Treaty of Amity and Commerce\", revision 1283260919"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-japanese-treaty-of-commerce-and-navigation",
+      "kind": "event",
+      "locator": "\"Anglo-Japanese Treaty of Commerce and Navigation\", revision 1367661886"
     },
     {
       "dissent": false,
@@ -13172,6 +13196,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-aguere",
+      "kind": "event",
+      "locator": "\"Battle of Aguere\", revision 1370431126"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-agusan-hill",
       "kind": "event",
       "locator": "\"Battle of Agusan Hill\", revision 1373821680"
@@ -13703,6 +13733,12 @@
       "id": "battle-of-awa",
       "kind": "event",
       "locator": "\"Battle of Awa\", revision 1370432774"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-axtorna",
+      "kind": "event",
+      "locator": "\"Battle of Axtorna\", revision 1382183745"
     },
     {
       "dissent": false,
@@ -14336,9 +14372,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bruderholz",
+      "kind": "event",
+      "locator": "\"Battle of Bruderholz\", revision 1382319815"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-brunkeberg",
       "kind": "event",
       "locator": "\"Battle of Brunkeberg\", revision 1370435344"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-brustem",
+      "kind": "event",
+      "locator": "\"Battle of Brustem\", revision 1370435349"
     },
     {
       "dissent": false,
@@ -15050,6 +15098,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chikhori",
+      "kind": "event",
+      "locator": "\"Battle of Chikhori\", revision 1376799025"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chilcheollyang",
       "kind": "event",
       "locator": "\"Battle of Chilcheollyang\", revision 1370437042"
@@ -15641,6 +15695,12 @@
       "id": "battle-of-dragasani",
       "kind": "event",
       "locator": "\"Battle of Drăgășani\", revision 1370439397"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-drakenburg",
+      "kind": "event",
+      "locator": "\"Battle of Drakenburg\", revision 1370439278"
     },
     {
       "dissent": false,
@@ -16298,6 +16358,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-frastanz",
+      "kind": "event",
+      "locator": "\"Battle of Frastanz\", revision 1370110543"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-fraustadt",
       "kind": "event",
       "locator": "\"Battle of Fraustadt\", revision 1370441065"
@@ -16379,6 +16445,12 @@
       "id": "battle-of-fuentes-de-onoro",
       "kind": "event",
       "locator": "\"Battle of Fuentes de Oñoro\", revision 1381647637"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fukuda-bay",
+      "kind": "event",
+      "locator": "\"Battle of Fukuda Bay\", revision 1370110592"
     },
     {
       "dissent": false,
@@ -16469,6 +16541,12 @@
       "id": "battle-of-garigliano-1503",
       "kind": "event",
       "locator": "\"Battle of Garigliano (1503)\", revision 1382312809"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-garisi",
+      "kind": "event",
+      "locator": "\"Battle of Garisi\", revision 1370785618"
     },
     {
       "dissent": false,
@@ -16577,6 +16655,12 @@
       "id": "battle-of-giornico",
       "kind": "event",
       "locator": "\"Battle of Giornico\", revision 1370441642"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-girolata",
+      "kind": "event",
+      "locator": "\"Battle of Girolata\", revision 1374066677"
     },
     {
       "dissent": false,
@@ -16709,6 +16793,12 @@
       "id": "battle-of-grauholz",
       "kind": "event",
       "locator": "\"Battle of Grauholz\", revision 1375236926"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gravelines-1558",
+      "kind": "event",
+      "locator": "\"Battle of Gravelines (1558)\", revision 1370441982"
     },
     {
       "dissent": false,
@@ -18122,6 +18212,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kunovica",
+      "kind": "event",
+      "locator": "\"Battle of Kunovica\", revision 1382566090"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kurekdere",
       "kind": "event",
       "locator": "\"Battle of Kurekdere\", revision 1371137487"
@@ -18155,6 +18251,12 @@
       "id": "battle-of-la-bombarde",
       "kind": "event",
       "locator": "\"Battle of La Bombarde\", revision 1370446722"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-la-brossiniere",
+      "kind": "event",
+      "locator": "\"Battle of La Brossinière\", revision 1370446724"
     },
     {
       "dissent": false,
@@ -18488,6 +18590,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-lipnic",
+      "kind": "event",
+      "locator": "\"Battle of Lipnic\", revision 1370447706"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-lissa-1866",
       "kind": "event",
       "locator": "\"Battle of Lissa (1866)\", revision 1370268304"
@@ -18563,6 +18671,12 @@
       "id": "battle-of-losecoat-field",
       "kind": "event",
       "locator": "\"Battle of Losecoat Field\", revision 1370448088"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lovcha",
+      "kind": "event",
+      "locator": "\"Battle of Lovcha\", revision 1382332814"
     },
     {
       "dissent": false,
@@ -19286,6 +19400,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mokra-1445",
+      "kind": "event",
+      "locator": "\"Battle of Mokra (1445)\", revision 1382552481"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-molino-del-rey",
       "kind": "event",
       "locator": "\"Battle of Molino del Rey\", revision 1370628895"
@@ -19964,6 +20084,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-olshanitsa",
+      "kind": "event",
+      "locator": "\"Battle of Olshanitsa\", revision 1370452154"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-olszynka-grochowska",
       "kind": "event",
       "locator": "\"Battle of Olszynka Grochowska\", revision 1382481603"
@@ -20003,6 +20129,12 @@
       "id": "battle-of-oosterweel",
       "kind": "event",
       "locator": "\"Battle of Oosterweel\", revision 1370452222"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-oranik-1456",
+      "kind": "event",
+      "locator": "\"Battle of Oranik (1456)\", revision 1382552398"
     },
     {
       "dissent": false,
@@ -20084,6 +20216,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-otonete",
+      "kind": "event",
+      "locator": "\"Battle of Otonetë\", revision 1382552408"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-otumba",
       "kind": "event",
       "locator": "\"Battle of Otumba\", revision 1370271351"
@@ -20135,6 +20273,12 @@
       "id": "battle-of-palan",
       "kind": "event",
       "locator": "\"Battle of Palan\", revision 1370452653"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-palast",
+      "kind": "event",
+      "locator": "\"Battle of Palást\", revision 1378973722"
     },
     {
       "dissent": false,
@@ -21563,6 +21707,12 @@
       "id": "battle-of-sarhu",
       "kind": "event",
       "locator": "\"Battle of Sarhū\", revision 1370273817"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sauchieburn",
+      "kind": "event",
+      "locator": "\"Battle of Sauchieburn\", revision 1370588761"
     },
     {
       "dissent": false,
@@ -23288,6 +23438,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-trnava-1430",
+      "kind": "event",
+      "locator": "\"Battle of Trnava (1430)\", revision 1370591600"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-trocadero",
       "kind": "event",
       "locator": "\"Battle of Trocadero\", revision 1379065642"
@@ -23756,6 +23912,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-vistula-lagoon",
+      "kind": "event",
+      "locator": "\"Battle of Vistula Lagoon\", revision 1370592645"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-vitkov-hill",
       "kind": "event",
       "locator": "\"Battle of Vítkov Hill\", revision 1382477320"
@@ -23789,6 +23951,12 @@
       "id": "battle-of-vyazma",
       "kind": "event",
       "locator": "\"Battle of Vyazma\", revision 1370592767"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vysehrad",
+      "kind": "event",
+      "locator": "\"Battle of Vyšehrad\", revision 1370592782"
     },
     {
       "dissent": false,
@@ -26768,6 +26936,12 @@
     },
     {
       "dissent": false,
+      "id": "dano-hanseatic-war-1426-1435",
+      "kind": "event",
+      "locator": "\"Dano-Hanseatic War (1426–1435)\", revision 1376500645"
+    },
+    {
+      "dissent": false,
       "id": "dano-mughal-war",
       "kind": "event",
       "locator": "\"Dano-Mughal War\", revision 1370614775"
@@ -27092,9 +27266,21 @@
     },
     {
       "dissent": false,
+      "id": "dutch-hanseatic-war",
+      "kind": "event",
+      "locator": "\"Dutch–Hanseatic War\", revision 1370616073"
+    },
+    {
+      "dissent": false,
       "id": "dutch-intervention-in-bali-1849",
       "kind": "event",
       "locator": "\"Dutch intervention in Bali (1849)\", revision 1379538789"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-intervention-in-lombok-and-karangasem",
+      "kind": "event",
+      "locator": "\"Dutch intervention in Lombok and Karangasem\", revision 1380075123"
     },
     {
       "dissent": false,
@@ -27848,6 +28034,12 @@
     },
     {
       "dissent": false,
+      "id": "first-battle-of-acentejo",
+      "kind": "event",
+      "locator": "\"First Battle of Acentejo\", revision 1370618374"
+    },
+    {
+      "dissent": false,
       "id": "first-battle-of-agordat",
       "kind": "event",
       "locator": "\"First Battle of Agordat\", revision 1376368437"
@@ -27935,6 +28127,12 @@
       "id": "first-battle-of-newbury",
       "kind": "event",
       "locator": "\"First Battle of Newbury\", revision 1370618832"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-olmedo",
+      "kind": "event",
+      "locator": "\"First Battle of Olmedo\", revision 1366191810"
     },
     {
       "dissent": false,
@@ -28856,6 +29054,12 @@
     },
     {
       "dissent": false,
+      "id": "glinski-rebellion",
+      "kind": "event",
+      "locator": "\"Glinski rebellion\", revision 1370621384"
+    },
+    {
+      "dissent": false,
       "id": "glorious-first-of-june",
       "kind": "event",
       "locator": "\"Glorious First of June\", revision 1381031616"
@@ -29357,6 +29561,12 @@
       "id": "habsburg-ottoman-war-of-1540-1547",
       "kind": "event",
       "locator": "\"Habsburg–Ottoman war of 1540–1547\", revision 1376074863"
+    },
+    {
+      "dissent": false,
+      "id": "habsburg-ottoman-war-of-1551-1562",
+      "kind": "event",
+      "locator": "\"Habsburg–Ottoman war of 1551–1562\", revision 1370622312"
     },
     {
       "dissent": false,
@@ -31214,6 +31424,12 @@
     },
     {
       "dissent": false,
+      "id": "madrid-protocol-of-1885",
+      "kind": "event",
+      "locator": "\"Madrid Protocol of 1885\", revision 1350843757"
+    },
+    {
+      "dissent": false,
       "id": "magellan-expedition",
       "kind": "event",
       "locator": "\"Magellan expedition\", revision 1379240498"
@@ -31355,6 +31571,12 @@
       "id": "marengo-campaign",
       "kind": "event",
       "locator": "\"Marengo campaign\", revision 1373936687"
+    },
+    {
+      "dissent": false,
+      "id": "maria-luz-incident",
+      "kind": "event",
+      "locator": "\"María Luz incident\", revision 1380555344"
     },
     {
       "dissent": false,
@@ -31871,6 +32093,12 @@
       "id": "munster-rebellion",
       "kind": "event",
       "locator": "\"Münster rebellion\", revision 1373502202"
+    },
+    {
+      "dissent": false,
+      "id": "murder-of-julia-martha-thomas",
+      "kind": "event",
+      "locator": "\"Murder of Julia Martha Thomas\", revision 1381102056"
     },
     {
       "dissent": false,
@@ -32828,6 +33056,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-wars-in-africa",
+      "kind": "event",
+      "locator": "\"Ottoman wars in Africa\", revision 1382304616"
+    },
+    {
+      "dissent": false,
       "id": "overland-campaign",
       "kind": "event",
       "locator": "\"Overland Campaign\", revision 1380716554"
@@ -32879,6 +33113,12 @@
       "id": "palatinate-campaign",
       "kind": "event",
       "locator": "\"Palatinate campaign\", revision 1370701879"
+    },
+    {
+      "dissent": false,
+      "id": "palatine-peasants-war",
+      "kind": "event",
+      "locator": "\"Palatine Peasants' War\", revision 1253847521"
     },
     {
       "dissent": false,
@@ -33419,6 +33659,12 @@
       "id": "pleasant-valley-war",
       "kind": "event",
       "locator": "\"Pleasant Valley War\", revision 1380609392"
+    },
+    {
+      "dissent": false,
+      "id": "pleitos-colombinos",
+      "kind": "event",
+      "locator": "\"Pleitos colombinos\", revision 1376766733"
     },
     {
       "dissent": false,
@@ -34502,6 +34748,12 @@
     },
     {
       "dissent": false,
+      "id": "ringtheater-fire",
+      "kind": "event",
+      "locator": "\"Ringtheater fire\", revision 1360635157"
+    },
+    {
+      "dissent": false,
       "id": "rising-of-the-north",
       "kind": "event",
       "locator": "\"Rising of the North\", revision 1380720724"
@@ -35375,6 +35627,12 @@
       "id": "second-industrial-revolution",
       "kind": "event",
       "locator": "\"Second Industrial Revolution\", revision 1379318168"
+    },
+    {
+      "dissent": false,
+      "id": "second-international-congress-on-education-of-the-deaf",
+      "kind": "event",
+      "locator": "\"Second International Congress on Education of the Deaf\", revision 1368737932"
     },
     {
       "dissent": false,
@@ -36506,6 +36764,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-golubac",
+      "kind": "event",
+      "locator": "\"Siege of Golubac\", revision 1371517713"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-goorumconda",
       "kind": "event",
       "locator": "\"Siege of Goorumconda\", revision 1370741555"
@@ -36971,6 +37235,12 @@
       "id": "siege-of-malacca-1640-1641",
       "kind": "event",
       "locator": "\"Siege of Malacca (1640–1641)\", revision 1370743206"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-malaga-1487",
+      "kind": "event",
+      "locator": "\"Siege of Málaga (1487)\", revision 1374654381"
     },
     {
       "dissent": false,
@@ -38534,6 +38804,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-fury-at-mechelen",
+      "kind": "event",
+      "locator": "\"Spanish Fury at Mechelen\", revision 1370748253"
+    },
+    {
+      "dissent": false,
       "id": "spanish-moro-conflict",
       "kind": "event",
       "locator": "\"Spanish–Moro conflict\", revision 1380466030"
@@ -39233,6 +39509,12 @@
       "id": "the-troubles",
       "kind": "event",
       "locator": "\"The Troubles\", revision 1376046499: \"about 30 years from the late 1960s to 1998 ... usually deemed to have ended with the Good Friday Agreement of 1998\""
+    },
+    {
+      "dissent": false,
+      "id": "the-year-round-heat-and-drought-of-1540-in-europe",
+      "kind": "event",
+      "locator": "\"The year-round heat and drought of 1540 in Europe\", revision 1369896855"
     },
     {
       "dissent": false,
@@ -41498,6 +41780,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-villafafila",
+      "kind": "event",
+      "locator": "\"Treaty of Villafáfila\", revision 1333827972"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-vilnius-1561",
       "kind": "event",
       "locator": "\"Treaty of Vilnius (1561)\", revision 1375997337"
@@ -41633,6 +41921,12 @@
       "id": "treaty-on-the-prohibition-of-nuclear-weapons",
       "kind": "event",
       "locator": "\"Treaty on the Prohibition of Nuclear Weapons\", revision 1363091604"
+    },
+    {
+      "dissent": false,
+      "id": "trial-of-joan-of-arc",
+      "kind": "event",
+      "locator": "\"Trial of Joan of Arc\", revision 1381958114"
     },
     {
       "dissent": false,
@@ -41987,6 +42281,12 @@
       "id": "ute-wars",
       "kind": "event",
       "locator": "\"Ute Wars\", revision 1379488063"
+    },
+    {
+      "dissent": false,
+      "id": "valais-witch-trials",
+      "kind": "event",
+      "locator": "\"Valais witch trials\", revision 1356245610"
     },
     {
       "dissent": false,
