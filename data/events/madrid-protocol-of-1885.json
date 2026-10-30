@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "madrid-protocol-of-1885",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3263832",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Madrid Protocol of 1885",
+    "pt": "Protocolo de Madrid de 1885"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3263832"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Madrid Protocol of 1885\", revision 1350843757"
+    }
+  ],
+  "title": "Madrid Protocol of 1885",
+  "summary": "The English Wikipedia article \"Madrid Protocol of 1885\", at revision 1350843757, opens: \"The Madrid Protocol of 1885 was an agreement between the United Kingdom, Germany, and Spain to recognize the sovereignty of Spain over the Sulu Archipelago as well as the limit of Spanish influence in the region. Under the agreement, Spain relinquished all claim to Borneo.The Spanish Government renounces, as far as regards the British Government, all claims of sovereignty over the\nterritories of the continent of Borneo, which belong, or which have belonged in the past to the Sultan of Sulu (Jolo), and\nwhich comprise the neighbouring islands of Balambangan, Banguey, and Malawali, as well as all those comprised within\na zone of three maritime leagues from the coast, and which form part of the territories administered by the Company styled the \"British North Borneo Company\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3263832, imported by tools/import/wikidata.mjs. The item's own description reads \"1885 treaty between Great Britain, Germany and Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-03-07"
+  },
+  "place": "madrid",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

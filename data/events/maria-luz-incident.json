@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "maria-luz-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2913709",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "María Luz incident"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2913709"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"María Luz incident\", revision 1380555344"
+    }
+  ],
+  "title": "María Luz incident",
+  "summary": "The English Wikipedia article \"María Luz incident\", at revision 1380555344, opens: \"The María Luz incident  was a diplomatic incident between the early Meiji government of the Empire of Japan and the Republic of Peru over a merchant ship holding Chinese indentured labourers in slavery-like conditions in Yokohama in 1872. It was an early test of the independence of the Japanese judiciary system and a challenge to the extraterritoriality provisions of the unequal treaties then in force between Japan and the western powers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2913709, imported by tools/import/wikidata.mjs. The item's own description reads \"1872 Japan-Peru diplomatic incident\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1872,
+    "end": 1872
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

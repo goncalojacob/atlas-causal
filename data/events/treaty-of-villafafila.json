@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-villafafila",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3322982",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Treaty of Villafáfila"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3322982"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Villafáfila\", revision 1333827972"
+    }
+  ],
+  "title": "Treaty of Villafáfila",
+  "summary": "The English Wikipedia article \"Treaty of Villafáfila\", at revision 1333827972, opens: \"The Treaty of Villafáfila is a treaty signed by Ferdinand the Catholic in Villafáfila on 27 June 1506 and by Philip the Handsome in Benavente, Zamora, on 28 June.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3322982, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty signed in 1506\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1506,
+    "end": 1506,
+    "date": "1506-06-27"
+  },
+  "place": "villafafila",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

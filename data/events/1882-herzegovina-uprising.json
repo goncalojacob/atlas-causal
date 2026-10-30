@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1882-herzegovina-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q12019518",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1882 Herzegovina uprising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12019518"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1882 Herzegovina uprising\", revision 1370278928"
+    }
+  ],
+  "title": "1882 Herzegovina uprising",
+  "summary": "The English Wikipedia article \"1882 Herzegovina uprising\", at revision 1370278928, opens: \"The 1882 Herzegovina uprising was an uprising by Serbian and Bosniak populations in Bosnia and Herzegovina against Austro-Hungarian rule. It was preceded by the Herzegovina uprising of 1875–1877.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12019518, imported by tools/import/wikidata.mjs. The item's own description reads \"uprising in Bosnia and Herzegovina against Austro-Hungarian rule\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1882,
+    "end": 1882,
+    "date": "1882-01",
+    "endDate": "1882-04"
+  },
+  "place": "balkan-mountains",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

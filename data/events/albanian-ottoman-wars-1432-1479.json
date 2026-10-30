@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "albanian-ottoman-wars-1432-1479",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q85740526",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Albanian–Ottoman Wars (1432–1479)",
+    "pt": "Guerras Albanesas-Otomanas (1432–1479)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q85740526"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Albanian–Ottoman Wars (1432–1479)\", revision 1374669399"
+    }
+  ],
+  "title": "Albanian–Ottoman Wars (1432–1479)",
+  "summary": "The English Wikipedia article \"Albanian–Ottoman Wars (1432–1479)\", at revision 1374669399, opens: \"The Albanian–Ottoman Wars (1432–1479) were a series of wars and revolts against the rising Ottoman Empire by Albanian feudal lords. The wars and revolts took place in present-day Albania, Montenegro, Kosovo, North Macedonia and South Serbia. In this period, Albanians under the leadership of Gjergj Arianiti and especially later under Skanderbeg resisted the Ottomans under two Sultans. Skanderbeg continued this resistance until his death in 1468, and the Albanians persevered for another 11 years before being defeated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q85740526, imported by tools/import/wikidata.mjs. The item's own description reads \"1432–1479 revolts against the Ottoman Empire by Albanian feudal lords\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1432,
+    "end": 1479,
+    "date": "1449-05-14",
+    "endDate": "1479-04-25"
+  },
+  "place": "macedonia-region",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

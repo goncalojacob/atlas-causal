@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-brustem",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2238843",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Brustem",
+    "pt": "Batalha de Brustem"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2238843"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Brustem\", revision 1370435349"
+    }
+  ],
+  "title": "Battle of Brustem",
+  "summary": "The English Wikipedia article \"Battle of Brustem\", at revision 1370435349, opens: \"The Battle of Brustem was fought on 28 October 1467 in Brustem, near Sint-Truiden between the Burgundian State and the Prince-Bishopric of Liège, as part of the Second Liège War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2238843, imported by tools/import/wikidata.mjs. The item's own description reads \"1467 battle of the Second Liège War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1467,
+    "end": 1467,
+    "date": "1467-10-28"
+  },
+  "place": "brustem",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

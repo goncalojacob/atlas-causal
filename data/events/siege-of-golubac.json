@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-golubac",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1007513",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Golubac"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1007513"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Golubac\", revision 1371517713"
+    }
+  ],
+  "title": "Siege of Golubac",
+  "summary": "The English Wikipedia article \"Siege of Golubac\", at revision 1371517713, opens: \"The siege of Golubac was a military conflict between the Hungarian–Wallachian–Lithuanian alliance and the Ottoman Empire in May 1428. This siege was the first battle in Hungarian military history in which the Hungarian army used significant artillery. However, they could not capture Golubac and were defeated by the Ottoman main army, led by Sultan Murad II. After the battle, most of Serbia and Bosnia was conquered by the Ottoman Army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1007513, imported by tools/import/wikidata.mjs. The item's own description reads \"1428 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1428,
+    "end": 1428,
+    "date": "1428-05"
+  },
+  "place": "golubac",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

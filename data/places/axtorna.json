@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "axtorna",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q10423781",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-30"
+  },
+  "sources": [],
+  "names": [
+    "Axtorna"
+  ],
+  "where": {
+    "lon": 12.63833333,
+    "lat": 57.04111111,
+    "precision": "city",
+    "label": "Axtorna"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

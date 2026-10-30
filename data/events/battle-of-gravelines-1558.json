@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-gravelines-1558",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2236963",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Gravelines (1558)",
+    "pt": "Batalha de Gravelines (1558)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2236963"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gravelines (1558)\", revision 1370441982"
+    }
+  ],
+  "title": "Battle of Gravelines (1558)",
+  "summary": "The English Wikipedia article \"Battle of Gravelines (1558)\", at revision 1370441982, opens: \"The Battle of Gravelines was fought on 13 July 1558 at Gravelines, near Calais, France. It occurred during the twelve-year war between France and Spain (1547–1559).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2236963, imported by tools/import/wikidata.mjs. The item's own description reads \"1558 battle of the Italian War of 1551-59\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1558,
+    "end": 1558,
+    "date": "1558-07-13"
+  },
+  "place": "gravelines",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "italian-war-of-1551-1559"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "gulf-of-girolata",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1527084",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "pt": "Golfo Girolata"
+  },
+  "sources": [],
+  "names": [
+    "Gulf of Girolata",
+    "Golfo Girolata"
+  ],
+  "where": {
+    "lon": 8.6,
+    "lat": 42.333333333333,
+    "precision": "region",
+    "label": "Gulf of Girolata"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "the-year-round-heat-and-drought-of-1540-in-europe",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q56296380",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "The year-round heat and drought of 1540 in Europe"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q56296380"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"The year-round heat and drought of 1540 in Europe\", revision 1369896855"
+    }
+  ],
+  "title": "The year-round heat and drought of 1540 in Europe",
+  "summary": "The English Wikipedia article \"The year-round heat and drought of 1540 in Europe\", at revision 1369896855, opens: \"The year round heat and drought in 1540 was the worst climatic event of this kind since the 1473 heat and drought in Europe. It had catastrophic consequences in large parts of the continent, and has been described as an unprecedented eleven-month-long megadrought. From February until the end of the year it was exceptionally warm with sparse rainfall. Following a hot, dry spring, the event was triggered by a high-pressure system in the summer, which blocked the Atlantic air currents for several months while cool, showery weather prevailed in western Russia. Estimated annual temperatures in 1540 were by far the highest between 1500 and 2000, while estimated precipitation was by far the lowest registered until 2025. The effects of this endless heat and drought, the most severe since 1473, on natural areas and human communities are described in detail in over 220 chronicles.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q56296380, imported by tools/import/wikidata.mjs. The item's own description reads \"natural disaster leading to famine and record-breaking temperatures in Europe during 1540\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1540,
+    "end": 1540,
+    "endDate": "1540-12"
+  },
+  "place": "central-europe",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

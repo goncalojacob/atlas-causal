@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-girolata",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q19873108",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Girolata"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q19873108"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Girolata\", revision 1374066677"
+    }
+  ],
+  "title": "Battle of Girolata",
+  "summary": "The English Wikipedia article \"Battle of Girolata\", at revision 1374066677, opens: \"The Battle of Girolata was a naval action fought on 15 June 1540 in the Gulf of Girolata, on the west coast of the island of Corsica, amidst a war between Charles V and the Ottoman sultan Suleiman the Magnificent. An Ottoman squadron of 11 galleys, anchored at Girolata, under the command of the Ottoman admiral Dragut, was surprised and defeated by 21 galleys led by the Genoese Gianettino Doria and the Spaniard Berenguer de Requesens.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q19873108, imported by tools/import/wikidata.mjs. The item's own description reads \"1540 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1540,
+    "end": 1540,
+    "date": "1540-06-15"
+  },
+  "place": "gulf-of-girolata",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
