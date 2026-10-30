@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-polog",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3304647",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Polog"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3304647"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Polog\", revision 1382552570"
+    }
+  ],
+  "title": "Battle of Polog",
+  "summary": "The English Wikipedia article \"Battle of Polog\", at revision 1382552570, opens: \"The Battle of Polog was the result of an Albanian incursion into Ottoman territory. Aided by Alfonso the Magnanimous, the Albanian leader Skanderbeg made plans to recapture Svetigrad, which had been lost in 1448. His strategy involved launching an invasion of Macedonia to devastate the country surrounding Svetigrad and to lure the garrison into a trap. While implementing this, he was stopped in the fields of Polog near Tetovo by a force which was planning to invade Albania led by his old friend Ibrahim Pasha. The force was quickly destroyed and Skanderbeg's army proceeded its looting before returning to Debar.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3304647, imported by tools/import/wikidata.mjs. The item's own description reads \"1453 battle in the Balkans\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1453,
+    "end": 1453,
+    "date": "1453-04-22"
+  },
+  "place": "polog",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

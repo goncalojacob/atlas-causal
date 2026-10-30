@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "koroni",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q954866",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Koroni"
+  },
+  "sources": [],
+  "names": [
+    "Koroni"
+  ],
+  "where": {
+    "lon": 21.956944444444446,
+    "lat": 36.79694444444444,
+    "precision": "city",
+    "label": "Koroni"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

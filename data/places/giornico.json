@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "giornico",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q67763",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Giornico",
+    "pt": "Giornico"
+  },
+  "sources": [],
+  "names": [
+    "Giornico"
+  ],
+  "where": {
+    "lon": 8.8666666666667,
+    "lat": 46.4,
+    "precision": "city",
+    "label": "Giornico"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

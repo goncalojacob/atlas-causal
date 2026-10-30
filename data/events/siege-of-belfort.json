@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-belfort",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q472982",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Belfort"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q472982"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Belfort\", revision 1370739387"
+    }
+  ],
+  "title": "Siege of Belfort",
+  "summary": "The English Wikipedia article \"Siege of Belfort\", at revision 1370739387, opens: \"The siege of Belfort was a 103-day military assault and blockade of the city of Belfort, France by Prussian forces during the Franco-Prussian War. The French garrison held out until the January 1871 armistice between France and the German Empire obligated French forces to abandon the stronghold in February 1871.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q472982, imported by tools/import/wikidata.mjs. The item's own description reads \"103-day military assault and blockade of the city of Belfort, France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1871,
+    "date": "1870-11-03",
+    "endDate": "1871-02-18"
+  },
+  "place": "belfort",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-prussian-war"
+}

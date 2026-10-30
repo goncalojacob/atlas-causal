@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "bava-beccaris-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q687490",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Bava Beccaris massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q687490"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bava Beccaris massacre\", revision 1357546242"
+    }
+  ],
+  "title": "Bava Beccaris massacre",
+  "summary": "The English Wikipedia article \"Bava Beccaris massacre\", at revision 1357546242, opens: \"The Bava Beccaris massacre, named after the Italian general Fiorenzo Bava Beccaris, was the repression of widespread food riots in Milan, Italy, on 6–10 May 1898. In Italy the suppression of these demonstrations is also known as Fatti di Maggio or I Moti di Milano del 1898. Between 80 and 400 demonstrators were killed, as well as two soldiers, and between 450 and 2,000 were wounded.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q687490, imported by tools/import/wikidata.mjs. The item's own description reads \"repression of riots in Milan, Italy (1898)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-05-06",
+    "endDate": "1898-05-09"
+  },
+  "place": "milan-q490",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

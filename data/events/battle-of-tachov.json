@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-tachov",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1462345",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Tachov"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1462345"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tachov\", revision 1382465629"
+    }
+  ],
+  "title": "Battle of Tachov",
+  "summary": "The English Wikipedia article \"Battle of Tachov\", at revision 1382465629, opens: \"The Battle of Tachov or Battle of Mies was fought on 4 August 1427 near the Bohemian towns of Tachov (Tachau) and Stříbro (Mies).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1462345, imported by tools/import/wikidata.mjs. The item's own description reads \"1427 battle of the Hussite Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1427,
+    "end": 1427,
+    "date": "1427-08-03",
+    "endDate": "1427-08-04"
+  },
+  "place": "tachov",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "hussite-wars"
+}

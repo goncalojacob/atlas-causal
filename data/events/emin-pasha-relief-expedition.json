@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "emin-pasha-relief-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3062431",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Emin Pasha Relief Expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3062431"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Emin Pasha Relief Expedition\", revision 1333603255"
+    }
+  ],
+  "title": "Emin Pasha Relief Expedition",
+  "summary": "The English Wikipedia article \"Emin Pasha Relief Expedition\", at revision 1333603255, opens: \"The Emin Pasha Relief Expedition of 1887 to 1889 was one of the last major European expeditions into the interior of Africa in the nineteenth century. Led by Henry Morton Stanley, its goal was ostensibly the relief of Emin Pasha, the besieged Egyptian governor of Equatoria, who was threatened by Mahdist forces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3062431, imported by tools/import/wikidata.mjs. The item's own description reads \"European expedition to the African interior\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1886,
+    "end": 1889
+  },
+  "place": "africa-q15",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

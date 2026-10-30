@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "sunda-kelapa",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1286686",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Sunda Kelapa"
+  },
+  "sources": [],
+  "names": [
+    "Sunda Kelapa"
+  ],
+  "where": {
+    "lon": 106.80861,
+    "lat": -6.123871,
+    "precision": "city",
+    "label": "Sunda Kelapa"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-klis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q735043",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Klis",
+    "pt": "Cerco de Klis"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q735043"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Klis\", revision 1373280592"
+    }
+  ],
+  "title": "Siege of Klis",
+  "summary": "The English Wikipedia article \"Siege of Klis\", at revision 1373280592, opens: \"The siege of Klis or Battle of Klis was a siege of Klis Fortress in the Kingdom of Croatia within Habsburg monarchy. The siege of the fortress, which lasted for more than two decades, and the final battle near Klis in 1537, were fought as a part of the Ottoman–Habsburg wars between the defending Croatian–Habsburg forces under the leadership of Croatian feudal lord Petar Kružić, and the attacking Ottoman army under the leadership of the Ottoman general Murat-beg Tardić.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q735043, imported by tools/import/wikidata.mjs. The item's own description reads \"1536 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1536,
+    "end": 1537,
+    "date": "1536-08-31",
+    "endDate": "1537-03-12"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-dahlen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q679858",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Dahlen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q679858"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dahlen\", revision 1370109504"
+    }
+  ],
+  "title": "Battle of Dahlen",
+  "summary": "The English Wikipedia article \"Battle of Dahlen\", at revision 1370109504, opens: \"The Battle of Dahlen was fought on April 23, 1568, between a Dutch rebel army led by Jean de Montigny, Lord of Villers, and a Spanish army commanded by Sancho Dávila y Daza. As a part of William of Orange's planned invasion, the Dutch rebels were trying to conquer the town of Roermond when the arrival of the Spanish force compelled them to withdraw. Dávila pursued the retreating force and inflicted a defeat upon Villers near the small town of Dahlen. The survivors of this encounter sought refuge under the walls of Dahlen, where the Spanish infantry finally defeated them. This battle is sometimes considered the official start of the Eighty Years' War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q679858, imported by tools/import/wikidata.mjs. The item's own description reads \"1568 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1568,
+    "end": 1568,
+    "date": "1568-04-25"
+  },
+  "place": "rheindahlen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

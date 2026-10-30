@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-oosterweel",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q641757",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Oosterweel"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q641757"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Oosterweel\", revision 1370452222"
+    }
+  ],
+  "title": "Battle of Oosterweel",
+  "summary": "The English Wikipedia article \"Battle of Oosterweel\", at revision 1370452222, opens: \"The Battle of Oosterweel took place on 13 March 1567 near the village of Oosterweel, near Antwerp, in present-day Belgium, and is traditionally seen as the beginning of the Eighty Years' War. A Spanish mercenary army surprised a band of rebels and killed or captured almost all of them.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q641757, imported by tools/import/wikidata.mjs. The item's own description reads \"1567 battle of the Eighty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1567,
+    "end": 1567,
+    "date": "1567-03-13"
+  },
+  "place": "antwerp",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

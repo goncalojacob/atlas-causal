@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-st-jakob-an-der-sihl",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q451404",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of St. Jakob an der Sihl"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q451404"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of St. Jakob an der Sihl\", revision 1374781659"
+    }
+  ],
+  "title": "Battle of St. Jakob an der Sihl",
+  "summary": "The English Wikipedia article \"Battle of St. Jakob an der Sihl\", at revision 1374781659, opens: \"The Battle of St. Jakob an der Sihl was a battle of the Old Zürich War that occurred on 22 July 1443, resulting in a defeat for Zürich.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q451404, imported by tools/import/wikidata.mjs. The item's own description reads \"1443 battle of the Old Zürich War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1443,
+    "end": 1443,
+    "date": "1443-07-22"
+  },
+  "place": "zurich",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

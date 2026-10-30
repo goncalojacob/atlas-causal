@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "alcantara-lisbon",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1017927",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-29"
+  },
+  "wikipedia": {
+    "en": "Alcântara, Lisbon",
+    "pt": "Alcântara (Lisboa)"
+  },
+  "sources": [],
+  "names": [
+    "Alcântara",
+    "Alcântara, Lisbon",
+    "Alcântara (Lisboa)"
+  ],
+  "where": {
+    "lon": -9.1741666666667,
+    "lat": 38.706388888889,
+    "precision": "city",
+    "label": "Alcântara, Lisbon"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
