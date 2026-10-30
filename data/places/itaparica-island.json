@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "itaparica-island",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2095391",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Itaparica Island",
+    "pt": "Ilha de Itaparica"
+  },
+  "sources": [],
+  "names": [
+    "Itaparica Island",
+    "Ilha de Itaparica"
+  ],
+  "where": {
+    "lon": -38.667777777778,
+    "lat": -12.997222222222,
+    "precision": "region",
+    "label": "Itaparica Island"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

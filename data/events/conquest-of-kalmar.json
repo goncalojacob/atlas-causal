@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "conquest-of-kalmar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5162440",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Conquest of Kalmar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5162440"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conquest of Kalmar\", revision 1373365933"
+    }
+  ],
+  "title": "Conquest of Kalmar",
+  "summary": "The English Wikipedia article \"Conquest of Kalmar\", at revision 1373365933, opens: \"The Conquest of Kalmar took place on 27 May 1523, during the Swedish War of Liberation (1521-1523). In the beginning of 1523, Kalmar and Stockholm remained as the only real Danish strongholds in Sweden. The situation in Kalmar was tense, with many German Landsknechte mercenaries in Danish hire stationed in the city. They were under orders that, if the city were to be attacked, they should kill all burghers of Swedish origin, burn the city and castle, retreat, and regroup in Visby, Gotland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5162440, imported by tools/import/wikidata.mjs. The item's own description reads \"1523 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1523,
+    "end": 1523,
+    "date": "1523-05-27"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "swedish-war-of-liberation"
+}

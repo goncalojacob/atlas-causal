@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "second-siege-of-ochakov",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q141284666",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Second siege of Ochakov"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q141284666"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second siege of Ochakov\", revision 1375838855"
+    }
+  ],
+  "title": "Second siege of Ochakov",
+  "summary": "The English Wikipedia article \"Second siege of Ochakov\", at revision 1375838855, opens: \"The Second siege of Ochakov was a siege carried out by the Ottoman army to retake the Ochakov Castle, which had been lost in July 1737. Huge losses, torrential rains, and desertions on all sides forced the Ottomans to \nabandon the siege by 10 November.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q141284666, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1737,
+    "end": 1737,
+    "date": "1737-10-18",
+    "endDate": "1737-11-10"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1735-1739"
+}

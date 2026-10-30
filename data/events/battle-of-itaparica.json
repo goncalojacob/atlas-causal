@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-itaparica",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871291",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Itaparica",
+    "pt": "Batalha de Itaparica"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871291"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Itaparica\", revision 1370443913"
+    }
+  ],
+  "title": "Battle of Itaparica",
+  "summary": "The English Wikipedia article \"Battle of Itaparica\", at revision 1370443913, opens: \"The Battle of Itaparica was fought in the then province of Bahia from January 7 to 9, 1823, between the Brazilian Army and Armada and the Portuguese Army and Navy during the Brazilian War of Independence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871291, imported by tools/import/wikidata.mjs. The item's own description reads \"1823 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1823,
+    "end": 1823,
+    "date": "1823-01-07",
+    "endDate": "1823-01-09"
+  },
+  "place": "itaparica-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "brazilian-war-of-independence"
+}

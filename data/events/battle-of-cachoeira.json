@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cachoeira",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q111918023",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Cachoeira",
+    "pt": "Batalha de Cachoeira"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q111918023"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cachoeira\", revision 1379975975"
+    }
+  ],
+  "title": "Battle of Cachoeira",
+  "summary": "The English Wikipedia article \"Battle of Cachoeira\", at revision 1379975975, opens: \"The Battle of Cachoeira took place between June 25 to 28, 1822, during the Brazilian struggle for independence in the Province of Bahia. In response, Governor Inácio Luís Madeira de Melo sent a gunboat to the city in an attempt to intimidate the local population and prevent the spread of rebellion. The gunboat was repelled, which encouraged other municipal councils to join the pro-independence movement and contribute to the formation of a provisional governing junta. The episode is generally regarded as one of the events that contributed to the defeat of Portuguese forces in Bahia and to the consolidation of Brazilian independence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q111918023, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Brazilian War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1822,
+    "end": 1822
+  },
+  "place": "brazil-q155",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "brazilian-war-of-independence"
+}

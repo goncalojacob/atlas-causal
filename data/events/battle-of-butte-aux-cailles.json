@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-butte-aux-cailles",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890502",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Butte-aux-Cailles"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890502"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Butte-aux-Cailles\", revision 1370108314"
+    }
+  ],
+  "title": "Battle of Butte-aux-Cailles",
+  "summary": "The English Wikipedia article \"Battle of Butte-aux-Cailles\", at revision 1370108314, opens: \"The Battle of Butte-aux-Cailles took place on 24–25 May 1871 between the Paris Commune and Versaillais government forces in the Parisian district of Butte-aux-Cailles.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890502, imported by tools/import/wikidata.mjs. The item's own description reads \"1871 battle during the Paris Commune\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1871,
+    "end": 1871,
+    "date": "1871-05-24",
+    "endDate": "1871-05-25"
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "semaine-sanglante"
+}
