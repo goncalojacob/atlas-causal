@@ -10208,6 +10208,12 @@
     },
     {
       "dissent": false,
+      "id": "1481-rhodes-earthquake",
+      "kind": "event",
+      "locator": "\"1481 Rhodes earthquake\", revision 1366162999"
+    },
+    {
+      "dissent": false,
       "id": "1498-meio-earthquake",
       "kind": "event",
       "locator": "\"1498 Meiō earthquake\", revision 1375850683"
@@ -10241,6 +10247,12 @@
       "id": "1517-safed-attacks",
       "kind": "event",
       "locator": "\"1517 Safed attacks\", revision 1382254444"
+    },
+    {
+      "dissent": false,
+      "id": "1531-lisbon-earthquake",
+      "kind": "event",
+      "locator": "\"1531 Lisbon earthquake\", revision 1366280084"
     },
     {
       "dissent": false,
@@ -10724,6 +10736,12 @@
     },
     {
       "dissent": false,
+      "id": "1843-and-1846-massacres-in-hakkari",
+      "kind": "event",
+      "locator": "\"1843 and 1846 massacres in Hakkari\", revision 1363560433"
+    },
+    {
+      "dissent": false,
       "id": "1846-1860-cholera-pandemic",
       "kind": "event",
       "locator": "\"1846–1860 cholera pandemic\", revision 1376350189"
@@ -10916,6 +10934,12 @@
     },
     {
       "dissent": false,
+      "id": "1881-chios-earthquake",
+      "kind": "event",
+      "locator": "\"1881 Chios earthquake\", revision 1374073745"
+    },
+    {
+      "dissent": false,
       "id": "1882-herzegovina-uprising",
       "kind": "event",
       "locator": "\"1882 Herzegovina uprising\", revision 1370278928"
@@ -10955,6 +10979,12 @@
       "id": "1889-1890-pandemic",
       "kind": "event",
       "locator": "\"1889–1890 pandemic\", revision 1362689201"
+    },
+    {
+      "dissent": false,
+      "id": "1889-kumamoto-earthquake",
+      "kind": "event",
+      "locator": "\"1889 Kumamoto earthquake\", revision 1367327398"
     },
     {
       "dissent": false,
@@ -13586,6 +13616,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-akhaltsikhe",
+      "kind": "event",
+      "locator": "\"Battle of Akhaltsikhe\", revision 1371322186"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-akhaltsikhe-1853",
+      "kind": "event",
+      "locator": "\"Battle of Akhaltsikhe (1853)\", revision 1370431198"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-al-kawiya",
       "kind": "event",
       "locator": "\"Battle of al-Kawiya\", revision 1370597364"
@@ -13817,6 +13859,12 @@
       "id": "battle-of-amstetten",
       "kind": "event",
       "locator": "\"Battle of Amstetten\", revision 1370431928"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ancrum-moor",
+      "kind": "event",
+      "locator": "\"Battle of Ancrum Moor\", revision 1378183005"
     },
     {
       "dissent": false,
@@ -14309,6 +14357,12 @@
       "id": "battle-of-bautzen-1813",
       "kind": "event",
       "locator": "\"Battle of Bautzen (1813)\", revision 1379028785"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-baxter-springs",
+      "kind": "event",
+      "locator": "\"Battle of Baxter Springs\", revision 1370433641"
     },
     {
       "dissent": false,
@@ -15488,6 +15542,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chanderi",
+      "kind": "event",
+      "locator": "\"Battle of Chanderi\", revision 1374584591"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-changsha-1852",
       "kind": "event",
       "locator": "\"Battle of Changsha (1852)\", revision 1370108887"
@@ -15845,6 +15905,12 @@
       "id": "battle-of-corunna",
       "kind": "event",
       "locator": "\"Battle of Corunna\", revision 1370437705"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-corydon",
+      "kind": "event",
+      "locator": "\"Battle of Corydon\", revision 1370109291"
     },
     {
       "dissent": false,
@@ -16880,6 +16946,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fort-sanders",
+      "kind": "event",
+      "locator": "\"Battle of Fort Sanders\", revision 1370440948"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-fort-stedman",
       "kind": "event",
       "locator": "\"Battle of Fort Stedman\", revision 1370440964"
@@ -17402,6 +17474,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-grand-gulf",
+      "kind": "event",
+      "locator": "\"Battle of Grand Gulf\", revision 1378837008"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-grand-port",
       "kind": "event",
       "locator": "\"Battle of Grand Port\", revision 1379557094"
@@ -17669,6 +17747,12 @@
       "id": "battle-of-hanau",
       "kind": "event",
       "locator": "\"Battle of Hanau\", revision 1381695877"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-hanover",
+      "kind": "event",
+      "locator": "\"Battle of Hanover\", revision 1370442577"
     },
     {
       "dissent": false,
@@ -18401,6 +18485,12 @@
       "id": "battle-of-jiuliancheng",
       "kind": "event",
       "locator": "\"Battle of Jiuliancheng\", revision 1370662585"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jodoigne",
+      "kind": "event",
+      "locator": "\"Battle of Jodoigne\", revision 1370444333"
     },
     {
       "dissent": false,
@@ -19214,6 +19304,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-langside",
+      "kind": "event",
+      "locator": "\"Battle of Langside\", revision 1370447146"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-laon",
       "kind": "event",
       "locator": "\"Battle of Laon\", revision 1370267889"
@@ -19301,6 +19397,12 @@
       "id": "battle-of-lens",
       "kind": "event",
       "locator": "\"Battle of Lens\", revision 1374682897"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-leobersdorf",
+      "kind": "event",
+      "locator": "\"Battle of Leobersdorf\", revision 1371699942"
     },
     {
       "dissent": false,
@@ -19463,6 +19565,12 @@
       "id": "battle-of-longue-pointe",
       "kind": "event",
       "locator": "\"Battle of Longue-Pointe\", revision 1370448005"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lookout-mountain",
+      "kind": "event",
+      "locator": "\"Battle of Lookout Mountain\", revision 1380714187"
     },
     {
       "dissent": false,
@@ -20150,6 +20258,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-milliken-s-bend",
+      "kind": "event",
+      "locator": "\"Battle of Milliken's Bend\", revision 1370449796"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mimasetoge",
       "kind": "event",
       "locator": "\"Battle of Mimasetoge\", revision 1370449835"
@@ -20579,6 +20693,12 @@
       "id": "battle-of-munchengratz",
       "kind": "event",
       "locator": "\"Battle of Münchengrätz\", revision 1370451061"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-munfordville",
+      "kind": "event",
+      "locator": "\"Battle of Munfordville\", revision 1372500343"
     },
     {
       "dissent": false,
@@ -22088,6 +22208,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-raymond",
+      "kind": "event",
+      "locator": "\"Battle of Raymond\", revision 1370272811"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-refugio",
       "kind": "event",
       "locator": "\"Battle of Refugio\", revision 1380622945"
@@ -22229,6 +22355,12 @@
       "id": "battle-of-rivoli",
       "kind": "event",
       "locator": "\"Battle of Rivoli\", revision 1375546771"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-roanoke-island",
+      "kind": "event",
+      "locator": "\"Battle of Roanoke Island\", revision 1380654777"
     },
     {
       "dissent": false,
@@ -22967,6 +23099,12 @@
       "id": "battle-of-seonghwan",
       "kind": "event",
       "locator": "\"Battle of Seonghwan\", revision 1370274095"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-serravalle-1544",
+      "kind": "event",
+      "locator": "\"Battle of Serravalle (1544)\", revision 1370248212"
     },
     {
       "dissent": false,
@@ -25478,6 +25616,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-williamsport",
+      "kind": "event",
+      "locator": "\"Battle of Williamsport\", revision 1370276911"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-willow-grange",
       "kind": "event",
       "locator": "\"Battle of Willow Grange\", revision 1370594043"
@@ -27878,6 +28022,12 @@
     },
     {
       "dissent": false,
+      "id": "conquest-of-stockholm",
+      "kind": "event",
+      "locator": "\"Conquest of Stockholm\", revision 1370612336"
+    },
+    {
+      "dissent": false,
       "id": "conquest-of-the-desert",
       "kind": "event",
       "locator": "\"Conquest of the Desert\", revision 1377078179"
@@ -29774,6 +29924,12 @@
     },
     {
       "dissent": false,
+      "id": "first-battle-of-auburn",
+      "kind": "event",
+      "locator": "\"First Battle of Auburn\", revision 1370618441"
+    },
+    {
+      "dissent": false,
       "id": "first-battle-of-benghazi",
       "kind": "event",
       "locator": "\"First Battle of Benghazi\", revision 1370618456"
@@ -29807,6 +29963,12 @@
       "id": "first-battle-of-cape-finisterre-1747",
       "kind": "event",
       "locator": "\"First Battle of Cape Finisterre (1747)\", revision 1370618508"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-charleston-harbor",
+      "kind": "event",
+      "locator": "\"First Battle of Charleston Harbor\", revision 1370618531"
     },
     {
       "dissent": false,
@@ -29870,6 +30032,12 @@
     },
     {
       "dissent": false,
+      "id": "first-battle-of-oland",
+      "kind": "event",
+      "locator": "\"First Battle of Öland\", revision 1379574846"
+    },
+    {
+      "dissent": false,
       "id": "first-battle-of-olmedo",
       "kind": "event",
       "locator": "\"First Battle of Olmedo\", revision 1366191810"
@@ -29897,6 +30065,12 @@
       "id": "first-battle-of-quang-tri",
       "kind": "event",
       "locator": "\"First Battle of Quảng Trị\", revision 1375790239"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-rappahannock-station",
+      "kind": "event",
+      "locator": "\"First Battle of Rappahannock Station\", revision 1370618923"
     },
     {
       "dissent": false,
@@ -30251,6 +30425,12 @@
       "id": "first-sudanese-civil-war",
       "kind": "event",
       "locator": "\"First Sudanese Civil War\", revision 1375454294"
+    },
+    {
+      "dissent": false,
+      "id": "first-sumatran-expedition",
+      "kind": "event",
+      "locator": "\"First Sumatran expedition\", revision 1370619638"
     },
     {
       "dissent": false,
@@ -33755,6 +33935,12 @@
       "id": "massacre-at-matanzas-inlet",
       "kind": "event",
       "locator": "\"Massacre at Matanzas Inlet\", revision 1374314462"
+    },
+    {
+      "dissent": false,
+      "id": "massacre-at-the-russian-embassy-in-tehran",
+      "kind": "event",
+      "locator": "\"Massacre at the Russian Embassy in Tehran\", revision 1366643223"
     },
     {
       "dissent": false,
@@ -37796,6 +37982,12 @@
     },
     {
       "dissent": false,
+      "id": "sanyuanli-incident",
+      "kind": "event",
+      "locator": "\"Sanyuanli incident\", revision 1370730183"
+    },
+    {
+      "dissent": false,
       "id": "saratoga-campaign",
       "kind": "event",
       "locator": "\"Saratoga campaign\", revision 1379634251"
@@ -38099,6 +38291,12 @@
       "id": "second-battle-of-quang-tri",
       "kind": "event",
       "locator": "\"Second Battle of Quảng Trị\", revision 1376178980"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-rappahannock-station",
+      "kind": "event",
+      "locator": "\"Second Battle of Rappahannock Station\", revision 1370736544"
     },
     {
       "dissent": false,
@@ -38408,6 +38606,12 @@
     },
     {
       "dissent": false,
+      "id": "second-sumatran-expedition",
+      "kind": "event",
+      "locator": "\"Second Sumatran expedition\", revision 1373007198"
+    },
+    {
+      "dissent": false,
       "id": "second-tarnovo-uprising",
       "kind": "event",
       "locator": "\"Second Tarnovo Uprising\", revision 1370737417"
@@ -38699,6 +38903,12 @@
       "id": "siege-of-alexandria-1801",
       "kind": "event",
       "locator": "\"Siege of Alexandria (1801)\", revision 1371106346"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-aligarh",
+      "kind": "event",
+      "locator": "\"Siege of Aligarh\", revision 1370738737"
     },
     {
       "dissent": false,
@@ -39398,6 +39608,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-fort-macon",
+      "kind": "event",
+      "locator": "\"Siege of Fort Macon\", revision 1370741203"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-fort-massachusetts",
       "kind": "event",
       "locator": "\"Siege of Fort Massachusetts\", revision 1374812152"
@@ -39728,9 +39944,21 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-kabul-1504",
+      "kind": "event",
+      "locator": "\"Siege of Kabul (1504)\", revision 1370742178"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-kaganoi",
       "kind": "event",
       "locator": "\"Siege of Kaganoi\", revision 1370742180"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kamakura-1526",
+      "kind": "event",
+      "locator": "\"Siege of Kamakura (1526)\", revision 1370742235"
     },
     {
       "dissent": false,
@@ -39809,6 +40037,12 @@
       "id": "siege-of-klis",
       "kind": "event",
       "locator": "\"Siege of Klis\", revision 1373280592"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-knin",
+      "kind": "event",
+      "locator": "\"Siege of Knin\", revision 1382238201"
     },
     {
       "dissent": false,
@@ -40484,6 +40718,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-perpignan-1542",
+      "kind": "event",
+      "locator": "\"Siege of Perpignan (1542)\", revision 1370744391"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pest",
+      "kind": "event",
+      "locator": "\"Siege of Pest\", revision 1370744402"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-petersburg",
       "kind": "event",
       "locator": "\"Siege of Petersburg\", revision 1381061234"
@@ -40862,6 +41108,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-tabriz-1501",
+      "kind": "event",
+      "locator": "\"Siege of Tabriz (1501)\", revision 1370745604"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-taganrog",
       "kind": "event",
       "locator": "\"Siege of Taganrog\", revision 1370745617"
@@ -40901,6 +41153,12 @@
       "id": "siege-of-tarragona-1811",
       "kind": "event",
       "locator": "\"Siege of Tarragona (1811)\", revision 1370745689"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-tashkent",
+      "kind": "event",
+      "locator": "\"Siege of Tashkent\", revision 1382826497"
     },
     {
       "dissent": false,

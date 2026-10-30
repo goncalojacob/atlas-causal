@@ -339,6 +339,15 @@
         }
       ]
     },
+    "akhaltsikhe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "aksai-chin": {
       "from": "git",
       "versions": [
@@ -526,6 +535,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "aligarh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -4675,6 +4693,15 @@
         }
       ]
     },
+    "chanderi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "changsha": {
       "from": "git",
       "versions": [
@@ -7864,6 +7891,15 @@
         }
       ]
     },
+    "fort-macon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "fort-meigs": {
       "from": "git",
       "versions": [
@@ -11020,6 +11056,15 @@
         }
       ]
     },
+    "jedburgh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "jeddah": {
       "from": "git",
       "versions": [
@@ -11125,6 +11170,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "jodoigne": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -18260,6 +18314,15 @@
         }
       ]
     },
+    "perpignan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "persian-gulf": {
       "from": "git",
       "versions": [
@@ -18302,6 +18365,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "pest-hungary": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -20108,6 +20180,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "roanoke-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

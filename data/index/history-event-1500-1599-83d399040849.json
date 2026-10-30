@@ -38,6 +38,15 @@
         }
       ]
     },
+    "1531-lisbon-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "1556-shaanxi-earthquake": {
       "from": "git",
       "versions": [
@@ -419,6 +428,15 @@
         }
       ]
     },
+    "battle-of-ancrum-moor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-andalien": {
       "from": "git",
       "versions": [
@@ -751,6 +769,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "battle-of-chanderi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -1379,6 +1406,15 @@
         }
       ]
     },
+    "battle-of-jodoigne": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-johor-1586": {
       "from": "git",
       "versions": [
@@ -1490,12 +1526,30 @@
         }
       ]
     },
+    "battle-of-langside": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-las-salinas": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-leobersdorf": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -2383,6 +2437,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-serravalle-1544": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -3359,6 +3422,15 @@
         }
       ]
     },
+    "conquest-of-stockholm": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "conquest-of-the-khanate-of-sibir": {
       "from": "git",
       "versions": [
@@ -3752,6 +3824,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "first-battle-of-oland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -5932,7 +6013,25 @@
         }
       ]
     },
+    "siege-of-kabul-1504": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "siege-of-kaganoi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "siege-of-kamakura-1526": {
       "from": "git",
       "versions": [
         {
@@ -5983,6 +6082,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-knin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },
@@ -6297,6 +6405,24 @@
         }
       ]
     },
+    "siege-of-perpignan-1542": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "siege-of-pest": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "siege-of-polotsk": {
       "from": "git",
       "versions": [
@@ -6411,6 +6537,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-tabriz-1501": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

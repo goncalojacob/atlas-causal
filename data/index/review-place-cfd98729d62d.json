@@ -1003,6 +1003,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 2,
+      "id": "akhaltsikhe",
+      "kind": "place",
+      "names": [
+        "Akhaltsikhe"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -1517,6 +1544,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "aligarh",
+      "kind": "place",
+      "names": [
+        "Aligarh"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -12512,6 +12566,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "chanderi",
+      "kind": "place",
+      "names": [
+        "Chanderi"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "changsha",
@@ -12624,7 +12705,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 2,
+      "degree": 3,
       "id": "charleston-south-carolina",
       "kind": "place",
       "names": [
@@ -12790,7 +12871,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 3,
+      "degree": 4,
       "id": "chattanooga-tennessee",
       "kind": "place",
       "names": [
@@ -13398,7 +13479,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 3,
+      "degree": 4,
       "id": "chios",
       "kind": "place",
       "names": [
@@ -20733,6 +20814,33 @@
       "kind": "place",
       "names": [
         "Fort Ligonier"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "fort-macon",
+      "kind": "place",
+      "names": [
+        "Fort Macon"
       ],
       "origin": {
         "tool": "wikidata"
@@ -29078,7 +29186,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 104,
+      "degree": 105,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -29234,6 +29342,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "jedburgh",
+      "kind": "place",
+      "names": [
+        "Jedburgh",
+        "Jedburgo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -29571,6 +29707,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "jodoigne",
+      "kind": "place",
+      "names": [
+        "Jodoigne"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-01",
       "degree": 1,
       "id": "johor",
@@ -29853,7 +30016,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "kabul",
       "kind": "place",
       "names": [
@@ -32859,7 +33022,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "kumamoto",
       "kind": "place",
       "names": [
@@ -35433,7 +35596,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 69,
+      "degree": 70,
       "id": "lisbon",
       "kind": "place",
       "names": [
@@ -48293,6 +48456,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "perpignan",
+      "kind": "place",
+      "names": [
+        "Perpignan",
+        "Perpinhã",
+        "Perpinhão"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 4,
       "id": "persian-gulf",
@@ -48414,6 +48606,36 @@
       "names": [
         "Peshawar",
         "Pexauar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "pest-hungary",
+      "kind": "place",
+      "names": [
+        "Pest",
+        "Peste",
+        "Pest, Hungary",
+        "Peste (Hungria)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -52961,6 +53183,34 @@
       "kind": "place",
       "names": [
         "Rivoli Veronese"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "roanoke-island",
+      "kind": "place",
+      "names": [
+        "Roanoke Island",
+        "Ilha de Roanoke"
       ],
       "origin": {
         "tool": "wikidata"
@@ -60218,7 +60468,7 @@
         }
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 5,
       "id": "stockholm",
       "kind": "place",
       "names": [
@@ -62120,7 +62370,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "tehran",
       "kind": "place",
       "names": [
@@ -65350,7 +65600,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 83,
+      "degree": 84,
       "id": "united-states-q30",
       "kind": "place",
       "names": [

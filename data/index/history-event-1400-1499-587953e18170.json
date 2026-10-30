@@ -20,6 +20,15 @@
         }
       ]
     },
+    "1481-rhodes-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "1498-meio-earthquake": {
       "from": "git",
       "versions": [
