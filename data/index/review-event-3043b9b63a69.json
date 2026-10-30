@@ -7636,6 +7636,96 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "other",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "7th-united-states-congress",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "7th United States Congress"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "other",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "8th-united-states-congress",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "8th United States Congress"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "other",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "9th-united-states-congress",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "9th United States Congress"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -26082,6 +26172,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Clarines"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "battle-of-clausen",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-polish-succession",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Clausen"
     },
     {
       "authors": [
@@ -93449,6 +93571,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-30",
+      "id": "first-cevallos-expedition",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "fantastic-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Cevallos expedition"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "first-choshu-expedition",
       "kind": "event",
@@ -100172,6 +100325,35 @@
       "revised": null,
       "status": "active",
       "title": "Hague Peace Conference"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "founding",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-30",
+      "id": "haitian-declaration-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Haitian Declaration of Independence"
     },
     {
       "authors": [
@@ -170393,6 +170575,24 @@
       "rule": "degree-zero"
     },
     {
+      "id": "7th-united-states-congress",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "8th-united-states-congress",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "9th-united-states-congress",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "abaco-slave-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -173364,6 +173564,12 @@
     },
     {
       "id": "battle-of-clarines",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-clausen",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -184073,6 +184279,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "first-cevallos-expedition",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "first-choshu-expedition",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -185043,6 +185255,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "haitian-declaration-of-independence",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "haitian-embassy-in-cuba-massacre",

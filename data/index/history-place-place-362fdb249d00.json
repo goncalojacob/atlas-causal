@@ -11210,6 +11210,15 @@
         }
       ]
     },
+    "klausen-germany": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "ko-obrzeg": {
       "from": "git",
       "versions": [

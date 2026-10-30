@@ -11564,6 +11564,24 @@
     },
     {
       "dissent": false,
+      "id": "7th-united-states-congress",
+      "kind": "event",
+      "locator": "\"7th United States Congress\", revision 1380455008"
+    },
+    {
+      "dissent": false,
+      "id": "8th-united-states-congress",
+      "kind": "event",
+      "locator": "\"8th United States Congress\", revision 1380237316"
+    },
+    {
+      "dissent": false,
+      "id": "9th-united-states-congress",
+      "kind": "event",
+      "locator": "\"9th United States Congress\", revision 1380237353"
+    },
+    {
+      "dissent": false,
       "id": "aarhus-convention",
       "kind": "event",
       "locator": "\"Aarhus Convention\", revision 1367239958"
@@ -15011,6 +15029,12 @@
       "id": "battle-of-clarines",
       "kind": "event",
       "locator": "\"Battle of Clarines\", revision 1370109127"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-clausen",
+      "kind": "event",
+      "locator": "\"Battle of Clausen\", revision 1370437386"
     },
     {
       "dissent": false,
@@ -27662,6 +27686,12 @@
     },
     {
       "dissent": false,
+      "id": "first-cevallos-expedition",
+      "kind": "event",
+      "locator": "\"First Cevallos expedition\", revision 1370619263"
+    },
+    {
+      "dissent": false,
       "id": "first-choshu-expedition",
       "kind": "event",
       "locator": "\"First Chōshū expedition\", revision 1370619279"
@@ -28949,6 +28979,12 @@
       "id": "hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict",
       "kind": "event",
       "locator": "\"Hague Convention for the Protection of Cultural Property in the Event of Armed Conflict\", revision 1374191348"
+    },
+    {
+      "dissent": false,
+      "id": "haitian-declaration-of-independence",
+      "kind": "event",
+      "locator": "\"Haitian Declaration of Independence\", revision 1382136265"
     },
     {
       "dissent": false,

@@ -3152,6 +3152,24 @@
     },
     {
       "dissent": false,
+      "id": "7th-united-states-congress",
+      "kind": "event",
+      "locator": "Q1906490"
+    },
+    {
+      "dissent": false,
+      "id": "8th-united-states-congress",
+      "kind": "event",
+      "locator": "Q4645488"
+    },
+    {
+      "dissent": false,
+      "id": "9th-united-states-congress",
+      "kind": "event",
+      "locator": "Q4646693"
+    },
+    {
+      "dissent": false,
       "id": "aarhus-convention",
       "kind": "event",
       "locator": "Q301336"
@@ -6725,6 +6743,12 @@
       "id": "battle-of-clarines",
       "kind": "event",
       "locator": "Q5722350"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-clausen",
+      "kind": "event",
+      "locator": "Q3636401"
     },
     {
       "dissent": false,
@@ -19424,6 +19448,12 @@
     },
     {
       "dissent": false,
+      "id": "first-cevallos-expedition",
+      "kind": "event",
+      "locator": "Q2358507"
+    },
+    {
+      "dissent": false,
       "id": "first-choshu-expedition",
       "kind": "event",
       "locator": "Q2093787"
@@ -20741,6 +20771,12 @@
       "id": "hague-peace-conference",
       "kind": "event",
       "locator": "Q388037"
+    },
+    {
+      "dissent": false,
+      "id": "haitian-declaration-of-independence",
+      "kind": "event",
+      "locator": "Q17502440"
     },
     {
       "dissent": false,

@@ -773,6 +773,33 @@
         }
       ]
     },
+    "7th-united-states-congress": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "8th-united-states-congress": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
+    "9th-united-states-congress": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "aberdeen-act-1845": {
       "from": "git",
       "versions": [
@@ -12534,6 +12561,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "haitian-declaration-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

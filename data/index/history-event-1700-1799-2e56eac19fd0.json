@@ -1394,6 +1394,15 @@
         }
       ]
     },
+    "battle-of-clausen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
+        }
+      ]
+    },
     "battle-of-combapata": {
       "from": "git",
       "versions": [
@@ -5134,6 +5143,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "first-cevallos-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-30"
         }
       ]
     },

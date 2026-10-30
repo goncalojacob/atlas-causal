@@ -13025,7 +13025,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 2,
+      "degree": 3,
       "id": "colonia-del-sacramento",
       "kind": "place",
       "names": [
@@ -21479,7 +21479,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 2,
       "id": "gonaives",
       "kind": "place",
       "names": [
@@ -29442,6 +29442,35 @@
       "kind": "place",
       "names": [
         "Kizu River"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-30",
+      "degree": 1,
+      "id": "klausen-germany",
+      "kind": "place",
+      "names": [
+        "Klausen",
+        "Klausen, Germany",
+        "Klausen (Alemanha)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -60295,7 +60324,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 57,
+      "degree": 60,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
