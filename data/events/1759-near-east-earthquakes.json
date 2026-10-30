@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1759-near-east-earthquakes",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6984367",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "1759 Near East earthquakes"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6984367"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1759 Near East earthquakes\", revision 1366167944"
+    }
+  ],
+  "title": "1759 Near East earthquakes",
+  "summary": "The English Wikipedia article \"1759 Near East earthquakes\", at revision 1366167944, opens: \"The 1759 Near East earthquakes shook a large portion of the Levant in October and November of that year. This geographical crossroads in the Eastern Mediterranean were at the time under the rule of the Ottoman Empire. The ruins of Baalbek, a settlement in the Beqaa Valley of Lebanon east of the Litani River, were badly damaged. These 1759 events, along with the earlier 1202 Syria earthquake, are likely the strongest historical earthquakes in the region.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6984367, imported by tools/import/wikidata.mjs. The item's own description reads \"series of earthquakes in Levant\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1759,
+    "end": 1759
+  },
+  "place": "near-east",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

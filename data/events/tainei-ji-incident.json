@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "tainei-ji-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q10856357",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Tainei-ji incident",
+    "pt": "Incidente de Tainei-ji"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10856357"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tainei-ji incident\", revision 1381298840"
+    }
+  ],
+  "title": "Tainei-ji incident",
+  "summary": "The English Wikipedia article \"Tainei-ji incident\", at revision 1381298840, opens: \"The Tainei-ji incident  was a coup d'état in September 1551 led by Sue Takafusa against Ōuchi Yoshitaka, hegemon and shugo daimyō of western Japan, which ended in the latter's forced suicide in Tainei-ji, a temple in Nagato Province. The coup put an abrupt end to the prosperity of the Ōuchi clan, though they ruled western Japan in name for another six years under the figurehead Ōuchi Yoshinaga, who was not related to the Ōuchi by blood.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10856357, imported by tools/import/wikidata.mjs. The item's own description reads \"coup attempt in 1551 in Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1551,
+    "end": 1551,
+    "date": "1551-09-28",
+    "endDate": "1551-09-30"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

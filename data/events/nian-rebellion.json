@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "nian-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q965649",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Nian Rebellion",
+    "pt": "Rebelião Nien"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q965649"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nian Rebellion\", revision 1379009563"
+    }
+  ],
+  "title": "Nian Rebellion",
+  "summary": "The English Wikipedia article \"Nian Rebellion\", at revision 1379009563, opens: \"The Nian Rebellion was an insurrection against the Qing dynasty in northern China from 1851 to 1868, contemporaneously with the Taiping Rebellion (1850–1864) in southern China. The rebellion was suppressed, but the population and economic losses contributed to the collapse of the empire in the early 20th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q965649, imported by tools/import/wikidata.mjs. The item's own description reads \"armed rebellion in Northern China from 1851 to 1868\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1851,
+    "end": 1868
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

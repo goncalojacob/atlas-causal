@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "kiso-river",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q779607",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Kiso River"
+  },
+  "sources": [],
+  "names": [
+    "Kiso River"
+  ],
+  "where": {
+    "lon": 136.74533333333,
+    "lat": 35.034563888889,
+    "precision": "region",
+    "label": "Kiso River"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

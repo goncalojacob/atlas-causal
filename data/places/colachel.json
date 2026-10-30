@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "colachel",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q727731",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Colachel",
+    "pt": "Kolachal"
+  },
+  "sources": [],
+  "names": [
+    "Colachel",
+    "Kolachal"
+  ],
+  "where": {
+    "lon": 77.25818,
+    "lat": 8.17938,
+    "precision": "city",
+    "label": "Colachel"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

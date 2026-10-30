@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "spanish-conquest-of-oran-1732",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7573364",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Spanish conquest of Oran (1732)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7573364"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish conquest of Oran (1732)\", revision 1370748335"
+    }
+  ],
+  "title": "Spanish conquest of Oran (1732)",
+  "summary": "The English Wikipedia article \"Spanish conquest of Oran (1732)\", at revision 1370748335, opens: \"The Spanish conquest of Oran and Mers el-Kebir took place from 15 June to 2 July 1732, between the Kingdom of Spain and the Deylik of Algiers. The great Spanish expedition led by José Carrillo de Albornoz, Duke of Montemar and Francisco Javier Cornejo defeated the Algerian troops under the command of the Bey of the Beylik of Oran, Mustapha Bouchelaghem, and the Wali of Oran, Hassan. It successfully conquered the fortress-cities of Oran and Mers el-Kebir, ruled and administered by Algiers from 1708, during the War of the Spanish Succession, when both cities were conquered by the aforementioned Bouchelaghem, who was the governor of the western regions of Algiers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7573364, imported by tools/import/wikidata.mjs. The item's own description reads \"1732 military expedition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1732,
+    "end": 1732,
+    "date": "1732-06-15",
+    "endDate": "1732-07-02"
+  },
+  "place": "oran",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

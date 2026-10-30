@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "malesov",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1887287",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Malešov",
+    "pt": "Malešov"
+  },
+  "sources": [],
+  "names": [
+    "Malešov"
+  ],
+  "where": {
+    "lon": 15.224396689347,
+    "lat": 49.911073893165,
+    "precision": "city",
+    "label": "Malešov"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

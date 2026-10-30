@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-santa-cruz-de-tenerife-1657",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1325495",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Santa Cruz de Tenerife (1657)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1325495"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Santa Cruz de Tenerife (1657)\", revision 1370273747"
+    }
+  ],
+  "title": "Battle of Santa Cruz de Tenerife (1657)",
+  "summary": "The English Wikipedia article \"Battle of Santa Cruz de Tenerife (1657)\", at revision 1370273747, opens: \"The Battle of Santa Cruz de Tenerife was a military operation in the Anglo-Spanish War (1654–60) which took place on 20 April 1657. An English Protectorate fleet under Admiral Robert Blake penetrated the heavily defended harbour at Santa Cruz de Tenerife in the Spanish Canary Islands and attacked their treasure fleet. The treasure had already been landed and was safe but the English engaged the harbour forts and the Spanish ships, many of which were scuttled and the remainder burnt. Having achieved his aim, Blake withdrew without losing any ships.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1325495, imported by tools/import/wikidata.mjs. The item's own description reads \"1657 naval battle between Spain and England\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1657,
+    "end": 1657,
+    "date": "1657-04-20"
+  },
+  "place": "santa-cruz-de-tenerife",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-spanish-war-1654-1660"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-springfield",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872426",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Springfield"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872426"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Springfield\", revision 1370589805"
+    }
+  ],
+  "title": "Battle of Springfield",
+  "summary": "The English Wikipedia article \"Battle of Springfield\", at revision 1370589805, opens: \"The Battle of Springfield was fought during the American Revolutionary War on June 23, 1780, in Union County, New Jersey. After the Battle of Connecticut Farms, on June 7, 1780, had foiled Lieutenant General Wilhelm, Baron von Knyphausen's expedition to attack General George Washington's army at Morristown, New Jersey, Knyphausen and Lieutenant General Sir Henry Clinton, British commander-in-chief in North America, decided upon a second attempt. Although the British were initially able to advance, they were ultimately forced to withdraw in the face of newly arriving rebel forces, resulting in a Continental victory. The battle effectively ended British ambitions in New Jersey.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872426, imported by tools/import/wikidata.mjs. The item's own description reads \"1780 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1780,
+    "end": 1780,
+    "date": "1780-06-23"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

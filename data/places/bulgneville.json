@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bulgneville",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q839772",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Bulgnéville",
+    "pt": "Bulgnéville"
+  },
+  "sources": [],
+  "names": [
+    "Bulgnéville"
+  ],
+  "where": {
+    "lon": 5.8347222222222,
+    "lat": 48.207222222222,
+    "precision": "city",
+    "label": "Bulgnéville"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

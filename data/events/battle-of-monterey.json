@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-monterey",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1772061",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Monterey",
+    "pt": "Batalha de Monterey"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1772061"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Monterey\", revision 1375569566"
+    }
+  ],
+  "title": "Battle of Monterey",
+  "summary": "The English Wikipedia article \"Battle of Monterey\", at revision 1375569566, opens: \"The Battle of Monterey refers to the United States' unopposed capture of present-day Monterey, California from Mexico on 7 July 1846, during the Mexican–American War (1846–1848). Until then, the town was part of Mexico's subdivision named the Department of the Californias.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1772061, imported by tools/import/wikidata.mjs. The item's own description reads \"1846 battle in California\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1846,
+    "end": 1846,
+    "date": "1846-07-07"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "mexican-american-war"
+}

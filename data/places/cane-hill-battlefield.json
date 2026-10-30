@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "cane-hill-battlefield",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q19720569",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Cane Hill Battlefield"
+  },
+  "sources": [],
+  "names": [
+    "Cane Hill Battlefield"
+  ],
+  "where": {
+    "lon": -94.37361111111112,
+    "lat": 35.85444444444445,
+    "precision": "point",
+    "label": "Cane Hill Battlefield"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

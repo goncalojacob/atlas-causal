@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-kozuki-castle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7510180",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Kōzuki Castle"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510180"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Kōzuki Castle\", revision 1370742699"
+    }
+  ],
+  "title": "Siege of Kōzuki Castle",
+  "summary": "The English Wikipedia article \"Siege of Kōzuki Castle\", at revision 1370742699, opens: \"The siege of Kōzuki Castle  occurred in 1578, when the army of Mōri Terumoto attacked and captured the castle of Kōzuki in Harima Province. Kōzuki had been taken by Toyotomi Hideyoshi the previous year and entrusted to Amago Katsuhisa. When it fell to the Mōri, Amago committed hara-kiri. Amago's loyal and heroic general Yamanaka Yukimori was captured and executed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510180, imported by tools/import/wikidata.mjs. The item's own description reads \"1578 siege of Kozuki Castle in Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1578,
+    "end": 1578,
+    "date": "1578-05-24",
+    "endDate": "1578-08-06"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

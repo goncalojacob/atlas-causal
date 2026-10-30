@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "seventh-siege-of-gibraltar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7457743",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Seventh siege of Gibraltar",
+    "pt": "Sétimo Cerco de Gibraltar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7457743"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Seventh siege of Gibraltar\", revision 1370737961"
+    }
+  ],
+  "title": "Seventh siege of Gibraltar",
+  "summary": "The English Wikipedia article \"Seventh siege of Gibraltar\", at revision 1370737961, opens: \"The seventh siege of Gibraltar (1436) was an unsuccessful attempt by the Castillian nobleman Enrique Pérez de Guzmán, 2nd Count de Niebla to capture the stronghold of Gibraltar from the Moors. He drowned during the attempt.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7457743, imported by tools/import/wikidata.mjs. The item's own description reads \"1436 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1436,
+    "end": 1436
+  },
+  "place": "gibraltar",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

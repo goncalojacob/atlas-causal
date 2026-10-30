@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-cosmin-forest",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q946056",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of the Cosmin Forest"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q946056"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Cosmin Forest\", revision 1373859117"
+    }
+  ],
+  "title": "Battle of the Cosmin Forest",
+  "summary": "The English Wikipedia article \"Battle of the Cosmin Forest\", at revision 1373859117, opens: \"The Battle of the Cosmin Forest was a military engagement between the Kingdom of Poland and a coalition army led by Stephen the Great consisting of mainly Moldavian forces alongside Transylvanian, Wallachian, Ottoman, and Crimean deployments. The battle resulted in a major victory for the coalition army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q946056, imported by tools/import/wikidata.mjs. The item's own description reads \"1497 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1497,
+    "end": 1497,
+    "date": "1497-10-26"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "polish-ottoman-war-1485-1503"
+}

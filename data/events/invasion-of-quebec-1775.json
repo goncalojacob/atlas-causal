@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "invasion-of-quebec-1775",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q952774",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Invasion of Quebec (1775)",
+    "pt": "Invasão do Canadá"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q952774"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Quebec (1775)\", revision 1370624093"
+    }
+  ],
+  "title": "Invasion of Quebec (1775)",
+  "summary": "The English Wikipedia article \"Invasion of Quebec (1775)\", at revision 1370624093, opens: \"The Invasion of Quebec was the first major military initiative by the newly formed Continental Army during the American Revolutionary War. The objective of the campaign was to seize the Province of Quebec from Great Britain, and persuade French-speaking Canadiens to join the revolution on the side of the Thirteen Colonies. One expedition left Fort Ticonderoga under Richard Montgomery, besieged and captured Fort Saint-Jean, and very nearly captured British General Guy Carleton when taking Montreal. The other expedition, under Benedict Arnold, left Cambridge, Massachusetts, and traveled with great difficulty through the wilderness of Maine to Quebec City. The two forces joined there, but were defeated at the Battle of Quebec in December 1775.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q952774, imported by tools/import/wikidata.mjs. The item's own description reads \"1775 offensive by the newly formed Continental Army during the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1776,
+    "date": "1775-06",
+    "endDate": "1776-10"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}
