@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "geomundo",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q490697",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Geomundo"
+  },
+  "sources": [],
+  "names": [
+    "Geomundo"
+  ],
+  "where": {
+    "lon": 127.3125,
+    "lat": 34.026388888889,
+    "precision": "region",
+    "label": "Geomundo"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

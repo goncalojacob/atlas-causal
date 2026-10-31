@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "tashiskari",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q12869611",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "sources": [],
+  "names": [
+    "Tashiskari"
+  ],
+  "where": {
+    "lon": 43.505833333333335,
+    "lat": 41.95111111111111,
+    "precision": "city",
+    "label": "Tashiskari"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

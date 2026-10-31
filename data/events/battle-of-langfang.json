@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-langfang",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q18356964",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Langfang"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18356964"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Langfang\", revision 1381524212"
+    }
+  ],
+  "title": "Battle of Langfang",
+  "summary": "The English Wikipedia article \"Battle of Langfang\", at revision 1381524212, opens: \"The Battle of Langfang took place during the Seymour Expedition during the Boxer Rebellion, in June 1900, involving Chinese imperial troops, the Chinese Muslim Kansu Braves and Boxers ambushing and defeating the Eight-Nation Alliance expeditionary army on its way to Beijing, pushing the Alliance forces to retreat back to Tientsin (Tianjin).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18356964, imported by tools/import/wikidata.mjs. The item's own description reads \"Seymour Expedition 1900\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-06-18"
+  },
+  "place": "langfang",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seymour-expedition"
+}

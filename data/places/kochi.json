@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "kochi",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1800",
+  "sitelinks": {
+    "count": 100,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Kochi",
+    "pt": "Cochim"
+  },
+  "sources": [],
+  "names": [
+    "Kochi",
+    "Cochim"
+  ],
+  "where": {
+    "lon": 76.283333333333,
+    "lat": 9.9666666666667,
+    "precision": "city",
+    "label": "Kochi"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "afsharid-conquests-in-the-persian-gulf-and-oman",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q18350408",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Afsharid conquests in the Persian Gulf and Oman"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18350408"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Afsharid conquests in the Persian Gulf and Oman\", revision 1381396020"
+    }
+  ],
+  "title": "Afsharid conquests in the Persian Gulf and Oman",
+  "summary": "The English Wikipedia article \"Afsharid conquests in the Persian Gulf and Oman\", at revision 1381396020, opens: \"The Afsharid conquests in the Persian Gulf and Oman refers to a series of military campaigns undertaken by the Afsharid Iranian Empire against the Omani Empire. It led to the Afsharid of territories on both sides of the Persian Gulf.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18350408, imported by tools/import/wikidata.mjs. The item's own description reads \"1730 conquest\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1730,
+      "max": 1739
+    },
+    "end": 1747
+  },
+  "place": "persian-gulf",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "campaigns-of-nader-shah"
+}

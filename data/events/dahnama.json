@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "dahnama",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q25394544",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Dahnama"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q25394544"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dahnama\", revision 1361358865"
+    }
+  ],
+  "title": "Dahnama",
+  "summary": "The English Wikipedia article \"Dahnama\", at revision 1361358865, opens: \"Dahnama is a poem written in the mathnawi genre by Shah Ismail I in 1506 in Ajami Turkic, the precursor of the Azerbaijani language. It is a written monument of and one of the first poems in Azerbaijani literature.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q25394544, imported by tools/import/wikidata.mjs. The item's own description reads \"Azerbaijani poem\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1506,
+    "end": null
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

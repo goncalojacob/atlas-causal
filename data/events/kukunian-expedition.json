@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kukunian-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5615295",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Kukunian Expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5615295"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kukunian Expedition\", revision 1370626244"
+    }
+  ],
+  "title": "Kukunian Expedition",
+  "summary": "The English Wikipedia article \"Kukunian Expedition\", at revision 1370626244, opens: \"The Kukunyan Expedition was an attempt by a small group of Armenian nationalists from the Russian Empire to launch an armed expedition across the border into the Ottoman Empire in 1890 in support of local Armenians.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5615295, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1890,
+    "end": null,
+    "date": "1890-09-27"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

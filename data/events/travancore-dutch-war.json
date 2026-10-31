@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "travancore-dutch-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1849379",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Travancore–Dutch War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1849379"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Travancore–Dutch War\", revision 1370751403"
+    }
+  ],
+  "title": "Travancore–Dutch War",
+  "summary": "The English Wikipedia article \"Travancore–Dutch War\", at revision 1370751403, opens: \"The Travancore–Dutch War was a war between the Dutch East India Company (VOC) and the Indian kingdom of Travancore, culminating in the Battle of Colachel in 1741.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1849379, imported by tools/import/wikidata.mjs. The item's own description reads \"1739–1753 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1739,
+    "end": 1753,
+    "date": "1739-11-12",
+    "endDate": "1753-08-15"
+  },
+  "place": "kerala",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

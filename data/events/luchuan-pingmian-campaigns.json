@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "luchuan-pingmian-campaigns",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3702778",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Luchuan–Pingmian campaigns"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3702778"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Luchuan–Pingmian campaigns\", revision 1370627163"
+    }
+  ],
+  "title": "Luchuan–Pingmian campaigns",
+  "summary": "The English Wikipedia article \"Luchuan–Pingmian campaigns\", at revision 1370627163, opens: \"The Luchuan–Pingmian campaigns (1436–49) were punitive expeditions carried out by the Ming dynasty under the rule of the Emperor Yingzong against the Shan-led State of Möng Mao near the frontier with the Kingdom of Ava.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3702778, imported by tools/import/wikidata.mjs. The item's own description reads \"Military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1436,
+    "end": 1449
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

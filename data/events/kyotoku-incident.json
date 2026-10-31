@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "kyotoku-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6453098",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Kyōtoku incident"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6453098"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kyōtoku incident\", revision 1370626360"
+    }
+  ],
+  "title": "Kyōtoku incident",
+  "summary": "The English Wikipedia article \"Kyōtoku incident\", at revision 1370626360, opens: \"The Kyōtoku incident was a long series of skirmishes and conflicts fought for control of the Kantō region of Japan in the 15th century. The conflict began in 1454 with the assassination of Uesugi Noritada by Kantō kubō Ashikaga Shigeuji. The Ashikaga, Uesugi, and other clans then leapt to battle, either defending or assaulting Shigeuji. The chaos ended in 1482, when a peace was negotiated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6453098, imported by tools/import/wikidata.mjs. The item's own description reads \"Series of conflicts in 15th century Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1454,
+    "end": 1482
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

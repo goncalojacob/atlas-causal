@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "danture",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5221246",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Danture"
+  },
+  "sources": [],
+  "names": [
+    "Danture"
+  ],
+  "where": {
+    "lon": 80.53333333,
+    "lat": 7.28333333,
+    "precision": "city",
+    "label": "Danture"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

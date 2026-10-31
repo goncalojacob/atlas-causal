@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "campaign-of-danture",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5027837",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Campaign of Danture",
+    "pt": "Campanha de Danture"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5027837"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Campaign of Danture\", revision 1378367369"
+    }
+  ],
+  "title": "Campaign of Danture",
+  "summary": "The English Wikipedia article \"Campaign of Danture\", at revision 1378367369, opens: \"The Campaign of Danture comprised a series of encounters between the Portuguese and the Kingdom of Kandy in 1594, part of the Sinhalese–Portuguese War. It is considered a turning point in the indigenous resistance to Portuguese expansion. For the first time in Sri Lanka, a Portuguese army was essentially annihilated, when they were on the verge of the total conquest of the island. A 20,000-strong Portuguese army, led by Governor Pedro Lopes de Sousa, invaded Kandy on 5 July 1594. After three months, severely depleted by guerilla warfare and mass desertions, what remained of the Portuguese army was annihilated at Danture by the Kandyans under King Vimaladharmasuriya. With this victory, the Kingdom of Kandy emerged as a major military power; it was to retain its independence, against Portuguese, Dutch, and British armies, until 1815.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5027837, imported by tools/import/wikidata.mjs. The item's own description reads \"1594 Portuguese military campaign against the Kingdom of Kandy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1594,
+    "end": 1594,
+    "date": "1594-07-05",
+    "endDate": "1594-10-09"
+  },
+  "place": "danture",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
