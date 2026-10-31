@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fall-of-plered",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q29285156",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Fall of Plered"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q29285156"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fall of Plered\", revision 1370617924"
+    }
+  ],
+  "title": "Fall of Plered",
+  "summary": "The English Wikipedia article \"Fall of Plered\", at revision 1370617924, opens: \"The Fall of Plered was the capture of the capital of the Mataram Sultanate by the rebel forces loyal to Trunajaya in late June 1677. The attack on Plered followed a series of rebel victories, notably in the Battle of Gegodog and the fall of most of Mataram's northern coast. The aged and sick King Amangkurat I and his sons offered an ineffective defense, and the rebels overran the capital on or around 28 June. The capital was plundered and its wealth taken to the rebel capital in Kediri. The loss of the capital led to the collapse of the Mataram government and the flight of the royal family. The king fled with his son the crown prince and a small retinue to Tegal and died there, passing the kingship to the crown prince, now titled Amangkurat II, without any army or treasury.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q29285156, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1677,
+    "end": 1677,
+    "date": "1677-06"
+  },
+  "place": "plered",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "trunajaya-rebellion"
+}
