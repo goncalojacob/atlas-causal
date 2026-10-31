@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "siege-of-amadiya",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q136647302",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Amadiya"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q136647302"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Amadiya\", revision 1381827607"
+    }
+  ],
+  "title": "Siege of Amadiya",
+  "summary": "The English Wikipedia article \"Siege of Amadiya\", at revision 1381827607, opens: \"The Siege of Amadiya occurred in 1831 led by Mir Muhammad of Soran against Bahdinan. Mir Muhammad captured the city and deposed the ruler Mohammad Said Pasha.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q136647302, imported by tools/import/wikidata.mjs. The item's own description reads \"1831 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1831,
+    "end": 1831
+  },
+  "place": "amedi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
