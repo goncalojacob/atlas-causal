@@ -794,6 +794,15 @@
         }
       ]
     },
+    "battle-of-ponza-1435": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-qarabagh-1469": {
       "from": "git",
       "versions": [

@@ -1223,6 +1223,15 @@
         }
       ]
     },
+    "battle-of-glenmalure": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-gorjani": {
       "from": "git",
       "versions": [
@@ -3515,6 +3524,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "capture-of-breda-1590": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -6173,6 +6191,15 @@
         }
       ]
     },
+    "siege-of-corfu-1537": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-coron-1533-1534": {
       "from": "git",
       "versions": [
@@ -6953,6 +6980,15 @@
         }
       ]
     },
+    "siege-of-mons-1572": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-mount-hiei": {
       "from": "git",
       "versions": [
@@ -7248,6 +7284,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-rouen-1562": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
