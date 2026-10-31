@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-madrid-1670",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2141140",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Treaty of Madrid (1670)",
+    "pt": "Tratado de Madrid (1670)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2141140"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Madrid (1670)\", revision 1367308889"
+    }
+  ],
+  "title": "Treaty of Madrid (1670)",
+  "summary": "The English Wikipedia article \"Treaty of Madrid (1670)\", at revision 1367308889, opens: \"The Treaty of Madrid, also known as the Godolphin Treaty, was a treaty between England and Spain that was agreed to in July 1670 \"for the settlement of all disputes in America\". The treaty officially ended the war begun in 1654 in the Caribbean in which England had conquered Jamaica.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2141140, imported by tools/import/wikidata.mjs. The item's own description reads \"document signed on 1670 between England and Spain.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1670,
+    "end": 1670
+  },
+  "place": "madrid",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

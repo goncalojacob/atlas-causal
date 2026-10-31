@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mughal-safavid-war-1637-1638",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q127604703",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Mughal–Safavid War (1637–1638)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q127604703"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mughal–Safavid War (1637–1638)\", revision 1378916998"
+    }
+  ],
+  "title": "Mughal–Safavid War (1637–1638)",
+  "summary": "The English Wikipedia article \"Mughal–Safavid War (1637–1638)\", at revision 1378916998, opens: \"The Mughal–Persian war (1637–1638) is a conflict which took place in 1638, between Safavid Empire of Persia and Mughal Empire of Hindustan. The main events were the Mughal victories of the Fall of Kandahar (1638) and the Siege of Bost (1638), which the additional capture of several smaller Afghanistan fortresses previously under the control of the Safavids.\nThe war resulted in a decisive victory for the Mughals, especially marked by the surrender of Kandahar by Ali Mardan Khan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q127604703, imported by tools/import/wikidata.mjs. The item's own description reads \"1637–1638 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1637,
+    "end": 1638
+  },
+  "place": "kandahar",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mughal-persian-wars"
+}

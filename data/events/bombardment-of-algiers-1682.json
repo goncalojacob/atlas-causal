@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "bombardment-of-algiers-1682",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2909585",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Bombardment of Algiers (1682)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2909585"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bombardment of Algiers (1682)\", revision 1370604960"
+    }
+  ],
+  "title": "Bombardment of Algiers (1682)",
+  "summary": "The English Wikipedia article \"Bombardment of Algiers (1682)\", at revision 1370604960, opens: \"The bombardment of Algiers in 1682 was a naval operation by France against the Regency of Algiers during the Franco–Algerian war (1681–1688). Louis XIV sent Duquesne to bombard Algiers after the Dey declared war on France in 1681. Duquesne sailed from Toulon with a fleet of around forty vessels and reached Algiers in July 1682 after many delays caused by poor weather. Bombarded several times in August, the city suffered extensive damage. The danger of the corsair captains who managed to manoeuvre their ships so as to threaten the French position and bad weather forced Duquesne to retreat to French waters.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2909585, imported by tools/import/wikidata.mjs. The item's own description reads \"1682 bombardment\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1682,
+    "end": 1682,
+    "date": "1682-07-23",
+    "endDate": "1682-09-12"
+  },
+  "place": "algiers-q3561",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

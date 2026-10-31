@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-for-mexico-city",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2546566",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle for Mexico City",
+    "pt": "Batalha da Cidade do México"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2546566"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle for Mexico City\", revision 1380141264"
+    }
+  ],
+  "title": "Battle for Mexico City",
+  "summary": "The English Wikipedia article \"Battle for Mexico City\", at revision 1380141264, opens: \"The Battle for Mexico City refers to the series of engagements from September 8 to September 15, 1847, in the general vicinity of Mexico City during the Mexican–American War. Included are major actions at the battles of Molino del Rey and Chapultepec, culminating with the fall of Mexico City. The U.S. Army under Winfield Scott won a major victory that ended the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2546566, imported by tools/import/wikidata.mjs. The item's own description reads \"1847 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1847,
+    "end": 1847,
+    "date": "1847-09-08",
+    "endDate": "1847-09-15"
+  },
+  "place": "mexico-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mexican-american-war"
+}
