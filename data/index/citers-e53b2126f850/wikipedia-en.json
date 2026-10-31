@@ -10316,6 +10316,12 @@
     },
     {
       "dissent": false,
+      "id": "1589-rebellion-of-chong-yorip",
+      "kind": "event",
+      "locator": "\"1589 rebellion of Chŏng Yŏrip\", revision 1382539719"
+    },
+    {
+      "dissent": false,
       "id": "1592-1593-malta-plague-epidemic",
       "kind": "event",
       "locator": "\"1592–1593 Malta plague epidemic\", revision 1377061441"
@@ -10337,6 +10343,12 @@
       "id": "1603-london-plague",
       "kind": "event",
       "locator": "\"1603 London plague\", revision 1380977638"
+    },
+    {
+      "dissent": false,
+      "id": "1605-keicho-earthquake",
+      "kind": "event",
+      "locator": "\"1605 Keichō earthquake\", revision 1366163316"
     },
     {
       "dissent": false,
@@ -10367,6 +10379,12 @@
       "id": "1641-caracas-earthquake",
       "kind": "event",
       "locator": "\"1641 Caracas earthquake\", revision 1366163436"
+    },
+    {
+      "dissent": false,
+      "id": "1641-tabriz-earthquake",
+      "kind": "event",
+      "locator": "\"1641 Tabriz earthquake\", revision 1368759375"
     },
     {
       "dissent": false,
@@ -10508,6 +10526,12 @@
     },
     {
       "dissent": false,
+      "id": "1727-tabriz-earthquake",
+      "kind": "event",
+      "locator": "\"1727 Tabriz earthquake\", revision 1366163627"
+    },
+    {
+      "dissent": false,
       "id": "1730-valparaiso-earthquake",
       "kind": "event",
       "locator": "\"1730 Valparaíso earthquake\", revision 1378175146"
@@ -10535,6 +10559,12 @@
       "id": "1749-muslim-slave-revolt-plot-in-malta",
       "kind": "event",
       "locator": "\"1749 Muslim slave revolt plot in Malta\", revision 1377063081"
+    },
+    {
+      "dissent": false,
+      "id": "1754-horeki-river-incident",
+      "kind": "event",
+      "locator": "\"1754 Hōreki River incident\", revision 1331974635"
     },
     {
       "dissent": false,
@@ -14090,6 +14120,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-anandpur-1700",
+      "kind": "event",
+      "locator": "\"Battle of Anandpur (1700)\", revision 1370431977"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ancrum-moor",
       "kind": "event",
       "locator": "\"Battle of Ancrum Moor\", revision 1378183005"
@@ -14135,6 +14171,12 @@
       "id": "battle-of-anguilla",
       "kind": "event",
       "locator": "\"Battle of Anguilla\", revision 1370432072"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-anjar",
+      "kind": "event",
+      "locator": "\"Battle of Anjar\", revision 1370432085"
     },
     {
       "dissent": false,
@@ -14783,6 +14825,12 @@
       "id": "battle-of-bezzecca",
       "kind": "event",
       "locator": "\"Battle of Bezzecca\", revision 1382469280"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bhaktapur",
+      "kind": "event",
+      "locator": "\"Battle of Bhaktapur\", revision 1370434177"
     },
     {
       "dissent": false,
@@ -15842,6 +15890,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chappar-chiri",
+      "kind": "event",
+      "locator": "\"Battle of Chappar Chiri\", revision 1370108903"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chapu",
       "kind": "event",
       "locator": "\"Battle of Chapu\", revision 1370436890"
@@ -16448,6 +16502,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-deeg",
+      "kind": "event",
+      "locator": "\"Battle of Deeg\", revision 1370109598"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-delanggu",
       "kind": "event",
       "locator": "\"Battle of Delanggu\", revision 1370438489"
@@ -16739,6 +16799,12 @@
       "id": "battle-of-ebelsberg",
       "kind": "event",
       "locator": "\"Battle of Ebelsberg\", revision 1370109969"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-echmiadzin-1804",
+      "kind": "event",
+      "locator": "\"Battle of Echmiadzin (1804)\", revision 1370439705"
     },
     {
       "dissent": false,
@@ -17642,6 +17708,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ghartiskari",
+      "kind": "event",
+      "locator": "\"Battle of Ghartiskari\", revision 1381681907"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ghazdewan",
       "kind": "event",
       "locator": "\"Battle of Ghazdewan\", revision 1381263384"
@@ -18053,6 +18125,12 @@
       "id": "battle-of-halai",
       "kind": "event",
       "locator": "\"Battle of Halai\", revision 1370442477"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-halani",
+      "kind": "event",
+      "locator": "\"Battle of Halani\", revision 1370265181"
     },
     {
       "dissent": false,
@@ -20498,6 +20576,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-manupur",
+      "kind": "event",
+      "locator": "\"Battle of Manupur\", revision 1370448904"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-marabda",
       "kind": "event",
       "locator": "\"Battle of Marabda\", revision 1370448935"
@@ -21314,6 +21398,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-nakatomigawa",
+      "kind": "event",
+      "locator": "\"Battle of Nakatomigawa\", revision 1370270469"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-nalapani",
       "kind": "event",
       "locator": "\"Battle of Nalapani\", revision 1379666095"
@@ -21779,6 +21869,12 @@
       "id": "battle-of-omdurman",
       "kind": "event",
       "locator": "\"Battle of Omdurman\", revision 1379393370"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-omosu",
+      "kind": "event",
+      "locator": "\"Battle of Omosu\", revision 1370271209"
     },
     {
       "dissent": false,
@@ -22358,6 +22454,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-pollilur-1781",
+      "kind": "event",
+      "locator": "\"Battle of Pollilur (1781)\", revision 1370272067"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-polog",
       "kind": "event",
       "locator": "\"Battle of Polog\", revision 1382552570"
@@ -22463,6 +22565,12 @@
       "id": "battle-of-porto-bello-1739",
       "kind": "event",
       "locator": "\"Battle of Porto Bello (1739)\", revision 1375522505"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-porto-novo",
+      "kind": "event",
+      "locator": "\"Battle of Porto Novo\", revision 1370272162"
     },
     {
       "dissent": false,
@@ -24680,6 +24788,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tatarahama-1569",
+      "kind": "event",
+      "locator": "\"Battle of Tatarahama (1569)\", revision 1370275288"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tatayiba",
       "kind": "event",
       "locator": "\"Battle of Tatayibá\", revision 1370590671"
@@ -25727,6 +25841,12 @@
       "id": "battle-of-tzeki",
       "kind": "event",
       "locator": "\"Battle of Tzeki\", revision 1370591894"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-uchidehama",
+      "kind": "event",
+      "locator": "\"Battle of Uchidehama\", revision 1370275952"
     },
     {
       "dissent": false,
@@ -27410,6 +27530,12 @@
     },
     {
       "dissent": false,
+      "id": "bozhou-rebellion",
+      "kind": "event",
+      "locator": "\"Bozhou rebellion\", revision 1370606170"
+    },
+    {
+      "dissent": false,
       "id": "brabant-revolution",
       "kind": "event",
       "locator": "\"Brabant Revolution\", revision 1379946324"
@@ -28502,6 +28628,12 @@
     },
     {
       "dissent": false,
+      "id": "chhota-ghallughara",
+      "kind": "event",
+      "locator": "\"Chhota Ghallughara\", revision 1379193411"
+    },
+    {
+      "dissent": false,
       "id": "chichibu-incident",
       "kind": "event",
       "locator": "\"Chichibu incident\", revision 1366263460"
@@ -29249,6 +29381,12 @@
       "id": "corynthia-expedition",
       "kind": "event",
       "locator": "\"Corynthia expedition\", revision 1375958195"
+    },
+    {
+      "dissent": false,
+      "id": "cossack-raid-on-istanbul-1615",
+      "kind": "event",
+      "locator": "\"Cossack raid on Istanbul (1615)\", revision 1370613649"
     },
     {
       "dissent": false,
@@ -31217,6 +31355,12 @@
       "id": "first-english-civil-war",
       "kind": "event",
       "locator": "\"First English Civil War\", revision 1382692443"
+    },
+    {
+      "dissent": false,
+      "id": "first-expedition-to-palembang",
+      "kind": "event",
+      "locator": "\"First expedition to Palembang\", revision 1370619771"
     },
     {
       "dissent": false,
@@ -34586,6 +34730,12 @@
     },
     {
       "dissent": false,
+      "id": "lin-shuangwen-rebellion",
+      "kind": "event",
+      "locator": "\"Lin Shuangwen rebellion\", revision 1379064818"
+    },
+    {
+      "dissent": false,
       "id": "lincoln-county-war",
       "kind": "event",
       "locator": "\"Lincoln County War\", revision 1381854329"
@@ -36560,6 +36710,12 @@
     },
     {
       "dissent": false,
+      "id": "ordos-campaign-1592",
+      "kind": "event",
+      "locator": "\"Ordos campaign (1592)\", revision 1374159324"
+    },
+    {
+      "dissent": false,
       "id": "oregon-treaty",
       "kind": "event",
       "locator": "\"Oregon Treaty\", revision 1375247732"
@@ -37394,6 +37550,12 @@
     },
     {
       "dissent": false,
+      "id": "peter-the-great-s-capture-of-rasht",
+      "kind": "event",
+      "locator": "\"Peter the Great's capture of Rasht\", revision 1382468332"
+    },
+    {
+      "dissent": false,
       "id": "peterloo-massacre",
       "kind": "event",
       "locator": "\"Peterloo Massacre\", revision 1380495787"
@@ -38021,6 +38183,12 @@
       "id": "punti-hakka-clan-wars",
       "kind": "event",
       "locator": "\"Punti–Hakka Clan Wars\", revision 1363553705"
+    },
+    {
+      "dissent": false,
+      "id": "purple-robe-incident",
+      "kind": "event",
+      "locator": "\"Purple Robe Incident\", revision 1382096965"
     },
     {
       "dissent": false,
@@ -39128,6 +39296,12 @@
     },
     {
       "dissent": false,
+      "id": "sabzevar-expedition",
+      "kind": "event",
+      "locator": "\"Sabzevar expedition\", revision 1378917303"
+    },
+    {
+      "dissent": false,
       "id": "sack-of-baltimore",
       "kind": "event",
       "locator": "\"Sack of Baltimore\", revision 1379360084"
@@ -39179,6 +39353,12 @@
       "id": "sack-of-rome-1527",
       "kind": "event",
       "locator": "\"Sack of Rome (1527)\", revision 1372345219"
+    },
+    {
+      "dissent": false,
+      "id": "sack-of-surat",
+      "kind": "event",
+      "locator": "\"Sack of Surat\", revision 1375305542"
     },
     {
       "dissent": false,
@@ -39293,6 +39473,12 @@
       "id": "sand-creek-massacre",
       "kind": "event",
       "locator": "\"Sand Creek massacre\", revision 1381340588"
+    },
+    {
+      "dissent": false,
+      "id": "sangley-rebellion-1603",
+      "kind": "event",
+      "locator": "\"Sangley Rebellion (1603)\", revision 1377403172"
     },
     {
       "dissent": false,
@@ -40013,6 +40199,12 @@
       "id": "secret-treaty-of-dover",
       "kind": "event",
       "locator": "\"Secret Treaty of Dover\", revision 1376157471"
+    },
+    {
+      "dissent": false,
+      "id": "sekigahara-campaign",
+      "kind": "event",
+      "locator": "\"Sekigahara Campaign\", revision 1374881560"
     },
     {
       "dissent": false,
@@ -41180,6 +41372,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-fukazawa",
+      "kind": "event",
+      "locator": "\"Siege of Fukazawa\", revision 1370741331"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-fukuyo",
       "kind": "event",
       "locator": "\"Siege of Fukuyo\", revision 1370741339"
@@ -41201,6 +41399,12 @@
       "id": "siege-of-gaeta-1734",
       "kind": "event",
       "locator": "\"Siege of Gaeta (1734)\", revision 1370741351"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-galle-1640",
+      "kind": "event",
+      "locator": "\"Siege of Galle (1640)\", revision 1370741390"
     },
     {
       "dissent": false,
@@ -41231,6 +41435,12 @@
       "id": "siege-of-godesberg",
       "kind": "event",
       "locator": "\"Siege of Godesberg\", revision 1376087783"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-golconda",
+      "kind": "event",
+      "locator": "\"Siege of Golconda\", revision 1373044350"
     },
     {
       "dissent": false,
@@ -41318,9 +41528,21 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-hanazawa",
+      "kind": "event",
+      "locator": "\"Siege of Hanazawa\", revision 1373669473"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-harfleur",
       "kind": "event",
       "locator": "\"Siege of Harfleur\", revision 1371591778"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-hasedo",
+      "kind": "event",
+      "locator": "\"Siege of Hasedō\", revision 1381491860"
     },
     {
       "dissent": false,
@@ -41333,6 +41555,12 @@
       "id": "siege-of-herat-1448",
       "kind": "event",
       "locator": "\"Siege of Herat (1448)\", revision 1370741857"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-hijiyama",
+      "kind": "event",
+      "locator": "\"Siege of Hijiyama\", revision 1373669620"
     },
     {
       "dissent": false,
@@ -41375,6 +41603,12 @@
       "id": "siege-of-iwamura-castle",
       "kind": "event",
       "locator": "\"Siege of Iwamura Castle\", revision 1370742030"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-iwaya-castle",
+      "kind": "event",
+      "locator": "\"Siege of Iwaya Castle\", revision 1370742036"
     },
     {
       "dissent": false,
@@ -41504,6 +41738,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-kanbara",
+      "kind": "event",
+      "locator": "\"Siege of Kanbara\", revision 1370742261"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-kandahar",
       "kind": "event",
       "locator": "\"Siege of Kandahar\", revision 1379222200"
@@ -41573,6 +41813,12 @@
       "id": "siege-of-kehl-1703",
       "kind": "event",
       "locator": "\"Siege of Kehl (1703)\", revision 1370742404"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kerman",
+      "kind": "event",
+      "locator": "\"Siege of Kerman\", revision 1379773937"
     },
     {
       "dissent": false,
@@ -41675,6 +41921,12 @@
       "id": "siege-of-kumamoto-castle",
       "kind": "event",
       "locator": "\"Siege of Kumamoto Castle\", revision 1370742652"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kuragano",
+      "kind": "event",
+      "locator": "\"Siege of Kuragano\", revision 1370742663"
     },
     {
       "dissent": false,
@@ -42032,6 +42284,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-minowa",
+      "kind": "event",
+      "locator": "\"Siege of Minowa\", revision 1370743548"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-mirandola-1511",
       "kind": "event",
       "locator": "\"Siege of Mirandola (1511)\", revision 1380871955"
@@ -42125,6 +42383,12 @@
       "id": "siege-of-musashi-matsuyama-1537",
       "kind": "event",
       "locator": "\"Siege of Musashi-Matsuyama (1537)\", revision 1370743762"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-musashi-matsuyama-1563",
+      "kind": "event",
+      "locator": "\"Siege of Musashi-Matsuyama (1563)\", revision 1370743765"
     },
     {
       "dissent": false,
@@ -42323,6 +42587,12 @@
       "id": "siege-of-ostend",
       "kind": "event",
       "locator": "\"Siege of Ostend\", revision 1374175777"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-ota-castle",
+      "kind": "event",
+      "locator": "\"Siege of Ōta Castle\", revision 1375618859"
     },
     {
       "dissent": false,
@@ -42758,6 +43028,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-shiroishi",
+      "kind": "event",
+      "locator": "\"Siege of Shiroishi\", revision 1370745231"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-shkodra",
       "kind": "event",
       "locator": "\"Siege of Shkodra\", revision 1376891272"
@@ -42848,6 +43124,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-suemori",
+      "kind": "event",
+      "locator": "\"Siege of Suemori\", revision 1370745519"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-suncheon",
       "kind": "event",
       "locator": "\"Siege of Suncheon\", revision 1377924693"
@@ -42911,6 +43193,12 @@
       "id": "siege-of-takato-1582",
       "kind": "event",
       "locator": "\"Siege of Takatō (1582)\", revision 1374268411"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-takehana",
+      "kind": "event",
+      "locator": "\"Siege of Takehana\", revision 1370745648"
     },
     {
       "dissent": false,
@@ -43085,6 +43373,12 @@
       "id": "siege-of-trebizond-1461",
       "kind": "event",
       "locator": "\"Siege of Trebizond (1461)\", revision 1382364391"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-trichinopoly-1743",
+      "kind": "event",
+      "locator": "\"Siege of Trichinopoly (1743)\", revision 1370746035"
     },
     {
       "dissent": false,

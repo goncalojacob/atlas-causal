@@ -11,6 +11,15 @@
         }
       ]
     },
+    "1605-keicho-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "1611-sanriku-earthquake": {
       "from": "git",
       "versions": [
@@ -48,6 +57,15 @@
       ]
     },
     "1641-caracas-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "1641-tabriz-earthquake": {
       "from": "git",
       "versions": [
         {
@@ -557,6 +575,15 @@
       ]
     },
     "battle-of-aghaiani": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "battle-of-anjar": {
       "from": "git",
       "versions": [
         {
@@ -1508,6 +1535,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-kolhapur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -3822,6 +3858,15 @@
         }
       ]
     },
+    "cossack-raid-on-istanbul-1615": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "cretan-war-1645-1669": {
       "from": "git",
       "versions": [
@@ -5382,6 +5427,15 @@
         }
       ]
     },
+    "purple-robe-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "qing-invasion-of-joseon": {
       "from": "git",
       "versions": [
@@ -5745,6 +5799,15 @@
         }
       ]
     },
+    "sack-of-surat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "safavid-capture-of-tabriz-1603": {
       "from": "git",
       "versions": [
@@ -5805,6 +5868,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "sangley-rebellion-1603": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -5953,6 +6025,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "sekigahara-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -6311,6 +6392,24 @@
         }
       ]
     },
+    "siege-of-galle-1640": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "siege-of-golconda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-groenlo-1606": {
       "from": "git",
       "versions": [
@@ -6353,6 +6452,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-hasedo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -6870,6 +6978,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-shiroishi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },

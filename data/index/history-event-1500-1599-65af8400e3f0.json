@@ -143,6 +143,15 @@
         }
       ]
     },
+    "1589-rebellion-of-chong-yorip": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "1592-1593-malta-plague-epidemic": {
       "from": "git",
       "versions": [
@@ -2049,6 +2058,15 @@
         }
       ]
     },
+    "battle-of-nakatomigawa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-noain": {
       "from": "git",
       "versions": [
@@ -2206,6 +2224,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "battle-of-omosu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -2869,6 +2896,15 @@
         }
       ]
     },
+    "battle-of-tatarahama-1569": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-taza-1553": {
       "from": "git",
       "versions": [
@@ -3091,6 +3127,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-uchidehama": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -3353,6 +3398,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "bozhou-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -5110,6 +5164,15 @@
         }
       ]
     },
+    "ordos-campaign-1592": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "ottoman-campaign-against-hormuz": {
       "from": "git",
       "versions": [
@@ -6276,6 +6339,15 @@
         }
       ]
     },
+    "siege-of-fukazawa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-fukuyo": {
       "from": "git",
       "versions": [
@@ -6370,6 +6442,24 @@
         }
       ]
     },
+    "siege-of-hanazawa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "siege-of-hijiyama": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-hikida-castle": {
       "from": "git",
       "versions": [
@@ -6421,6 +6511,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-iwaya-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -6509,6 +6608,15 @@
       ]
     },
     "siege-of-kaminogo-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "siege-of-kanbara": {
       "from": "git",
       "versions": [
         {
@@ -6631,6 +6739,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "siege-of-kuragano": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -6773,6 +6890,15 @@
         }
       ]
     },
+    "siege-of-minowa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-mirandola-1511": {
       "from": "git",
       "versions": [
@@ -6810,6 +6936,15 @@
       ]
     },
     "siege-of-musashi-matsuyama-1537": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "siege-of-musashi-matsuyama-1563": {
       "from": "git",
       "versions": [
         {
@@ -6960,6 +7095,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-ota-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -7161,6 +7305,15 @@
         }
       ]
     },
+    "siege-of-suemori": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-suncheon": {
       "from": "git",
       "versions": [
@@ -7221,6 +7374,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-takehana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },

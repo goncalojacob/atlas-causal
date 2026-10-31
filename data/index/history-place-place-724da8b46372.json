@@ -749,6 +749,15 @@
         }
       ]
     },
+    "anandpur-sahib": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "anatolia": {
       "from": "git",
       "versions": [
@@ -827,6 +836,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "anjar-lebanon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -2681,6 +2699,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "bhaktapur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -6052,6 +6079,15 @@
         }
       ]
     },
+    "deeg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "deerfield-massachusetts": {
       "from": "git",
       "versions": [
@@ -8519,6 +8555,15 @@
         }
       ]
     },
+    "galle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "gallipoli": {
       "from": "git",
       "versions": [
@@ -8960,6 +9005,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "golconda-q4141623": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -11960,6 +12014,15 @@
         }
       ]
     },
+    "kerman": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "kermanshah": {
       "from": "git",
       "versions": [
@@ -12326,6 +12389,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "kolhapur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -18362,6 +18434,15 @@
         }
       ]
     },
+    "parangipettai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "paris": {
       "from": "git",
       "versions": [
@@ -23715,6 +23796,24 @@
         }
       ]
     },
+    "surat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "suruga-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "susa-valley": {
       "from": "git",
       "versions": [
@@ -24630,6 +24729,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "tiruchirappalli": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },

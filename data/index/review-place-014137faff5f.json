@@ -2159,6 +2159,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "anandpur-sahib",
+      "kind": "place",
+      "names": [
+        "Anandpur Sahib"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -2340,6 +2367,34 @@
       "kind": "place",
       "names": [
         "Anjangaon"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "anjar-lebanon",
+      "kind": "place",
+      "names": [
+        "Anjar",
+        "Anjar, Lebanon"
       ],
       "origin": {
         "tool": "wikidata"
@@ -7389,6 +7444,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "bhaktapur",
+      "kind": "place",
+      "names": [
+        "Bhaktapur"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -11065,7 +11147,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 3,
+      "degree": 4,
       "id": "captaincy-general-of-the-philippines",
       "kind": "place",
       "names": [
@@ -14702,7 +14784,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 17,
+      "degree": 18,
       "id": "constantinople",
       "kind": "place",
       "names": [
@@ -16240,6 +16322,33 @@
       "kind": "place",
       "names": [
         "Debar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "deeg",
+      "kind": "place",
+      "names": [
+        "Deeg"
       ],
       "origin": {
         "tool": "wikidata"
@@ -22579,6 +22688,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "galle",
+      "kind": "place",
+      "names": [
+        "Galle"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-14",
       "degree": 2,
       "id": "gallipoli",
@@ -23732,6 +23868,33 @@
       "kind": "place",
       "names": [
         "Göhrde"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "golconda-q4141623",
+      "kind": "place",
+      "names": [
+        "Golconda"
       ],
       "origin": {
         "tool": "wikidata"
@@ -29715,7 +29878,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 152,
+      "degree": 171,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -30378,7 +30541,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 22,
+      "degree": 23,
       "id": "joseon",
       "kind": "place",
       "names": [
@@ -31880,6 +32043,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "kerman",
+      "kind": "place",
+      "names": [
+        "Kerman",
+        "Carmânia (cidade)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "kermanshah",
@@ -32842,6 +33033,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "kolhapur",
+      "kind": "place",
+      "names": [
+        "Kolhapur",
+        "Colhapur"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -48791,6 +49010,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "parangipettai",
+      "kind": "place",
+      "names": [
+        "Parangipettai"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -49652,7 +49898,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 3,
+      "degree": 4,
       "id": "persis",
       "kind": "place",
       "names": [
@@ -53322,7 +53568,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "rasht",
       "kind": "place",
       "names": [
@@ -59683,7 +59929,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "sirhind",
       "kind": "place",
       "names": [
@@ -62569,6 +62815,62 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "surat",
+      "kind": "place",
+      "names": [
+        "Surat",
+        "Surate",
+        "Surrate"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "suruga-bay",
+      "kind": "place",
+      "names": [
+        "Suruga Bay"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "susa-valley",
@@ -63236,7 +63538,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "taiwan-island",
       "kind": "place",
       "names": [
@@ -65064,6 +65366,33 @@
       "names": [
         "Thiruchendur",
         "Tiruchendur"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "tiruchirappalli",
+      "kind": "place",
+      "names": [
+        "Tiruchirappalli"
       ],
       "origin": {
         "tool": "wikidata"
