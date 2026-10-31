@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-hella",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q141447278",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Hella"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q141447278"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hella\", revision 1378383830"
+    }
+  ],
+  "title": "Battle of Hella",
+  "summary": "The English Wikipedia article \"Battle of Hella\", at revision 1378383830, opens: \"The Battle of Hella or Hillah was a minor engagement fought in 1775 between a Zand and Khaza'il contingent and the Mamluks of Iraq during which the Ottomans attempted to relieve the simultaneous Siege of Basra.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q141447278, imported by tools/import/wikidata.mjs. The item's own description reads \"1775 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1775
+  },
+  "place": "hillah",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

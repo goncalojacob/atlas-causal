@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1811-german-coast-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4553950",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1811 German Coast uprising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4553950"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1811 German Coast uprising\", revision 1376835259"
+    }
+  ],
+  "title": "1811 German Coast uprising",
+  "summary": "The English Wikipedia article \"1811 German Coast uprising\", at revision 1376835259, opens: \"The 1811 German Coast uprising was a slave rebellion which occurred in the Territory of Orleans on January 8–10, 1811. It occurred on the east bank of the Mississippi River in the modern-day Louisiana parishes of St. John the Baptist, St. Charles and Jefferson. The rebellion was the largest of its kind in the history of the United States. The rebels killed two white slave owner family members, but the confrontations with the U.S. military and local militiamen who were sent to suppress the rebellion, combined with post-trial executions, resulted in the deaths of 95 rebels.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4553950, imported by tools/import/wikidata.mjs. The item's own description reads \"slave rebellion in parts of the Territory of Orleans, USA\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1811,
+    "end": 1811,
+    "date": "1811-01-08",
+    "endDate": "1811-01-10"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

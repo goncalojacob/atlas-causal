@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-shahrezur",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q141539256",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Shahrezur"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q141539256"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Shahrezur\", revision 1381460567"
+    }
+  ],
+  "title": "Battle of Shahrezur",
+  "summary": "The English Wikipedia article \"Battle of Shahrezur\", at revision 1381460567, opens: \"The Battle of Shahrezur was a pivotal engagement fought in 1777 between the Ottoman mamluks of Iraq and the Zand dynasty of Iran. It ended in a Zand victory and narrowly reversed them from total defeat in the Kurdistan theatre of the broader Ottoman–Persian War of 1776–1779.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q141539256, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777
+  },
+  "place": "shahrizor",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-persian-war-1776-1779"
+}

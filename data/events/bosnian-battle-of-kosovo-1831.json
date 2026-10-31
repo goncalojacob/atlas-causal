@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "bosnian-battle-of-kosovo-1831",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q123452111",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Bosnian Battle of Kosovo (1831)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q123452111"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bosnian Battle of Kosovo (1831)\", revision 1370605960"
+    }
+  ],
+  "title": "Bosnian Battle of Kosovo (1831)",
+  "summary": "The English Wikipedia article \"Bosnian Battle of Kosovo (1831)\", at revision 1370605960, opens: \"The Battle of Kosovo in 1831 took place between the Vizier of Bosnia Husein-kapetan Gradaščević and his loyalists together with local Albanians against the Ottoman Empire, whose troops were commanded by the Grand Vizier Reşid Mehmed Pasha.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q123452111, imported by tools/import/wikidata.mjs. The item's own description reads \"1831 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1831,
+    "end": 1831,
+    "date": "1831-07-18"
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "bosnian-uprising-1831-1833"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-geertruidenberg-1593",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2594176",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Geertruidenberg (1593)",
+    "pt": "Cerco de Geertruidenberg (1593)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2594176"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Geertruidenberg (1593)\", revision 1370741454"
+    }
+  ],
+  "title": "Siege of Geertruidenberg (1593)",
+  "summary": "The English Wikipedia article \"Siege of Geertruidenberg (1593)\", at revision 1370741454, opens: \"The siege of Geertruidenberg was a siege of the city of Geertruidenberg that took place between 27 March and 24 June 1593 during the Eighty Years' War and the Anglo–Spanish War. Anglo-Dutch troops under the commands of Maurice of Nassau and Francis Vere laid siege to the Spanish garrisoned city. The siege was unique in that the besiegers used a hundred ships, forming a semicircle in a chain on the Mass river to form a blockade. A Spanish force under the command of the Count of Mansfeld attempted to relieve the city in May, but they were defeated and later forced to withdraw. Three Governors of the city were killed – after the last fatality and as a result of the failed relief, the Spanish surrendered the city on 24 June 1593. The victory earned Maurice much fame and had thus become a steadfast strategist in the art of war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2594176, imported by tools/import/wikidata.mjs. The item's own description reads \"1593 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1593,
+    "end": 1593,
+    "date": "1593-03-27",
+    "endDate": "1593-06-24"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

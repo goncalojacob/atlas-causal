@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bandar-abbas",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q154814",
+  "sitelinks": {
+    "count": 77,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Bandar Abbas",
+    "pt": "Bandar Abbas"
+  },
+  "sources": [],
+  "names": [
+    "Bandar Abbas"
+  ],
+  "where": {
+    "lon": 56.280833333333334,
+    "lat": 27.18638888888889,
+    "precision": "city",
+    "label": "Bandar Abbas"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

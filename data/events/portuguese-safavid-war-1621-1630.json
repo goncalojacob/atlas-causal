@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "portuguese-safavid-war-1621-1630",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q137921461",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Portuguese–Safavid War (1621–1630)",
+    "pt": "Guerra Luso-Persa (1621–1630)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q137921461"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese–Safavid War (1621–1630)\", revision 1378917145"
+    }
+  ],
+  "title": "Portuguese–Safavid War (1621–1630)",
+  "summary": "The English Wikipedia article \"Portuguese–Safavid War (1621–1630)\", at revision 1378917145, opens: \"The Portuguese–Safavid War (1621–1630) was a series of military conflicts between the Portuguese State of India and the Safavid Empire over control of ports and islands in the Persian Gulf. The war began after the Portuguese constructed a fort on Qeshm, provoking Shah Abbas I to expel the Portuguese from Hormuz and Qeshm. Despite losing Hormuz in 1622, the Portuguese raided the Persian Gulf and repelled Safavid invasions of Basra. Hostilities ended with a peace agreement around 1630.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q137921461, imported by tools/import/wikidata.mjs. The item's own description reads \"1621–1630 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1621,
+    "end": 1630
+  },
+  "place": "persian-gulf",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "portuguese-safavid-wars"
+}

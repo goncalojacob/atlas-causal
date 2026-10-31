@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "castlebar",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q749196",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Castlebar",
+    "pt": "Castlebar"
+  },
+  "sources": [],
+  "names": [
+    "Castlebar"
+  ],
+  "where": {
+    "lon": -9.2988,
+    "lat": 53.8608,
+    "precision": "city",
+    "label": "Castlebar"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

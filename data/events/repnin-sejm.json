@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "repnin-sejm",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1574083",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Repnin Sejm"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1574083"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Repnin Sejm\", revision 1336818805"
+    }
+  ],
+  "title": "Repnin Sejm",
+  "summary": "The English Wikipedia article \"Repnin Sejm\", at revision 1336818805, opens: \"The Repnin Sejm was a sejm (parliament) of the Polish–Lithuanian Commonwealth that was held between 1767 and 1768 in Warsaw. This sejm followed the Sejms of 1764 to 1766, where the newly elected King of Poland, Stanisław August Poniatowski, attempted with some successes to push through reforms to strengthen the government of the Commonwealth. These reforms were viewed as dangerous by Poland's neighbors, who preferred a weak Commonwealth and did not want to see it threaten their own political and military aspirations. The Russian Empire sent ambassador Nikolai Repnin, who became the driving force behind the Sejm proceedings. The Repnin Sejm marked one of the important milestones in increasing Polish dependence on the Russian Empire, and turning it into a Russian protectorate. This dependent position was bluntly spelled out in Nikita Panin's letter to King Poniatowski, in which he made it clear that Poland was now in the Russian sphere of influence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1574083, imported by tools/import/wikidata.mjs. The item's own description reads \"Polish parliament, 1767–1768\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1767,
+    "end": 1768,
+    "date": "1767-10-05",
+    "endDate": "1768-03-05"
+  },
+  "place": "warsaw",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

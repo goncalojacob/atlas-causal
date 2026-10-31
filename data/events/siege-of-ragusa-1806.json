@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-ragusa-1806",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q18199199",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Ragusa (1806)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18199199"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Ragusa (1806)\", revision 1377523735"
+    }
+  ],
+  "title": "Siege of Ragusa (1806)",
+  "summary": "The English Wikipedia article \"Siege of Ragusa (1806)\", at revision 1377523735, opens: \"The siege of Ragusa took place in 1806 during the Napoleonic Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18199199, imported by tools/import/wikidata.mjs. The item's own description reads \"1806 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1806,
+    "end": 1806,
+    "date": "1806-05-26",
+    "endDate": "1806-06"
+  },
+  "place": "dubrovnik",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

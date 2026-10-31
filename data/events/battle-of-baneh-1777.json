@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-baneh-1777",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q118929918",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Baneh (1777)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q118929918"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Baneh (1777)\", revision 1378998379"
+    }
+  ],
+  "title": "Battle of Baneh (1777)",
+  "summary": "The English Wikipedia article \"Battle of Baneh (1777)\", at revision 1378998379, opens: \"The Battle of Baneh was a battle in the Ottoman–Persian War (1776–1779). On April 22, 1777, an Ottoman force under the command of Mehmed Pasha, the governor of Baban inflicted a defeat on the Persian army under Saleh Khan, the governor of Ardalan under the Zand Dynasty, at Baneh.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q118929918, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-04-21"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-persian-war-1776-1779"
+}

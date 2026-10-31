@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-rocheserviere",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1779409",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Rocheserviere"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1779409"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Rocheserviere\", revision 1380286127"
+    }
+  ],
+  "title": "Battle of Rocheserviere",
+  "summary": "The English Wikipedia article \"Battle of Rocheserviere\", at revision 1380286127, opens: \"The Battle of Rocheserviere was fought at Rocheservière on the 20 June 1815, between Vendéan Royalists, who had remained loyal to King Louis XVIII during the Hundred Days, and Napoleon's Army of the West, commanded by General Jean Maximilien Lamarque. The battle ended with the defeat of the Royalist forces. Five days later the Treaty of Cholet was signed, ending the hostilities.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1779409, imported by tools/import/wikidata.mjs. The item's own description reads \"battle between Vendéan Royalists, who had remained loyal to King Louis XVIII during the Hundred Days, and Napoleon's Army of the West\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-06-19",
+    "endDate": "1815-06-20"
+  },
+  "place": "rocheserviere",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "hundred-days"
+}

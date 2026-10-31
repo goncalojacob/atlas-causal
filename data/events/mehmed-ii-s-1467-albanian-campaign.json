@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mehmed-ii-s-1467-albanian-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2348233",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Mehmed II's 1467 Albanian campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2348233"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mehmed II's 1467 Albanian campaign\", revision 1382807112"
+    }
+  ],
+  "title": "Mehmed II's 1467 Albanian campaign",
+  "summary": "The English Wikipedia article \"Mehmed II's 1467 Albanian campaign\", at revision 1382807112, opens: \"The 1467 Albanian campaign by Mehmed II and the Ottoman Empire took place in the summer of 1467 in Albania. As a result of the campaign, the fortresses and regions of Albania were divided between Venice and the Ottomans. The Albanian resistance forces were destroyed and the rebellion collapsed. The rebel Albanian leaders continued their lives under Venetian rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2348233, imported by tools/import/wikidata.mjs. The item's own description reads \"1467 third siege of Krujë by the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1467,
+    "end": 1467
+  },
+  "place": "kruje",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "dunkeld",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1265921",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Dunkeld"
+  },
+  "sources": [],
+  "names": [
+    "Dunkeld"
+  ],
+  "where": {
+    "lon": -3.5861111111111112,
+    "lat": 56.565555555555555,
+    "precision": "city",
+    "label": "Dunkeld"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-m-n",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888498",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Møn"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888498"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Møn\", revision 1377013272"
+    }
+  ],
+  "title": "Battle of Møn",
+  "summary": "The English Wikipedia article \"Battle of Møn\", at revision 1377013272, opens: \"The Battle of Møn, also known as the Battle of Fehmarn, took place 31 May–1 June 1677, as part of the Scanian War. A smaller Swedish squadron under Admiral Erik Sjöblad attempted to sail from Gothenburg to join the main Swedish fleet in the Baltic Sea. It was intercepted by a superior Danish-Norwegian force under Niels Juel and decimated over the course of two days. The Swedes lost 8 ships and over 1,500 men dead, injured or captured, including Admiral Sjöblad himself, while the Danish losses were insignificant.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888498, imported by tools/import/wikidata.mjs. The item's own description reads \"1677 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1677,
+    "end": 1677,
+    "date": "1677-05-31",
+    "endDate": "1677-06-01"
+  },
+  "place": "m-n",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "scanian-war"
+}

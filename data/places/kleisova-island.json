@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "kleisova-island",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q12879114",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-31"
+  },
+  "sources": [],
+  "names": [
+    "Kleisova island"
+  ],
+  "where": {
+    "lon": 21.435833333333,
+    "lat": 38.349166666667,
+    "precision": "region",
+    "label": "Kleisova island"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

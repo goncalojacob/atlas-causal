@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-groningen-1594",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2544586",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Groningen (1594)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2544586"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Groningen (1594)\", revision 1370741643"
+    }
+  ],
+  "title": "Siege of Groningen (1594)",
+  "summary": "The English Wikipedia article \"Siege of Groningen (1594)\", at revision 1370741643, opens: \"The siege of Groningen was a two-month siege which commenced on 19 May 1594, and which took place during the Eighty Years' War and the Anglo-Spanish War. The Spanish-held city of Groningen was besieged by a Dutch and English army led by Prince Maurice of Orange. The Spanish surrendered the city on 22 July, after a failed relief attempt by the Count of Fuentes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2544586, imported by tools/import/wikidata.mjs. The item's own description reads \"1594 siege during the Eighty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1594,
+    "end": 1594,
+    "date": "1594-05-19",
+    "endDate": "1594-07-22"
+  },
+  "place": "groningen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

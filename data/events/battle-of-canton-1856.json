@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-canton-1856",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16207110",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Canton (1856)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16207110"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Canton (1856)\", revision 1370436099"
+    }
+  ],
+  "title": "Battle of Canton (1856)",
+  "summary": "The English Wikipedia article \"Battle of Canton (1856)\", at revision 1370436099, opens: \"The Battle of Canton was fought between British and Chinese forces at the city of Canton (Guangzhou), Guangdong province, China on 23 October to 5 November 1856 during the Second Opium War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16207110, imported by tools/import/wikidata.mjs. The item's own description reads \"1856 fought in the Second Opium War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1856,
+    "end": 1856,
+    "date": "1856-10-23",
+    "endDate": "1856-11-05"
+  },
+  "place": "guangzhou",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-opium-war"
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-fontainebleau-1785",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2300843",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Treaty of Fontainebleau (1785)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2300843"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Fontainebleau (1785)\", revision 1316337550"
+    }
+  ],
+  "title": "Treaty of Fontainebleau (1785)",
+  "summary": "The English Wikipedia article \"Treaty of Fontainebleau (1785)\", at revision 1316337550, opens: \"The Treaty of Fontainebleau was signed on November 8, 1785 in Fontainebleau between Holy Roman Emperor Joseph II, ruler of the Habsburg monarchy, and the States-General of the United Provinces. Based on the terms of the accord, the United Provinces could maintain sovereignty over the Scheldt Estuary but had to provide several concessions to the Habsburgs, including the payment of ten million Dutch florins and the dismemberment of certain military fortifications. Overall, the treaty confirmed and reinforced the tenets of the Treaty of Münster.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2300843, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty between the Dutch Republic and the Holy Roman Empire regarding the Scheldt Estuary\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1785,
+    "end": 1785,
+    "date": "1785-11-08"
+  },
+  "place": "fontainebleau",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

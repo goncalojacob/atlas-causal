@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-surabaya-1677",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q29043962",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Surabaya (1677)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q29043962"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Surabaya (1677)\", revision 1370274906"
+    }
+  ],
+  "title": "Battle of Surabaya (1677)",
+  "summary": "The English Wikipedia article \"Battle of Surabaya (1677)\", at revision 1370274906, opens: \"The Battle of Surabaya was fought in May 1677 during the Trunajaya rebellion, in which the Dutch East India Company defeated the forces of Trunajaya and took Surabaya on behalf of its ally, the Mataram Sultanate.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q29043962, imported by tools/import/wikidata.mjs. The item's own description reads \"battle during the Trunajaya rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1677,
+    "end": 1677,
+    "date": "1677-05-04",
+    "endDate": "1677-05-13"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "trunajaya-rebellion"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-basra-1775-1776",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q141376638",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Basra (1775–1776)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q141376638"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Basra (1775–1776)\", revision 1380681779"
+    }
+  ],
+  "title": "Siege of Basra (1775–1776)",
+  "summary": "The English Wikipedia article \"Siege of Basra (1775–1776)\", at revision 1380681779, opens: \"The Siege of Basra was a siege engagement fought between the armies of the brother of Karim Khan Zand, Sadeq Khan Zand, and the local Ottoman governor of Basra who was subordinate to the Mamluk rulers of Iraq.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q141376638, imported by tools/import/wikidata.mjs. The item's own description reads \"1775–1776 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1776,
+    "date": "1775-04-06",
+    "endDate": "1776-04-20"
+  },
+  "place": "basra",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

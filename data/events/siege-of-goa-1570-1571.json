@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-goa-1570-1571",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q126888582",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Goa (1570–1571)",
+    "pt": "Cerco de Goa (1570–1571)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q126888582"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Goa (1570–1571)\", revision 1370741528"
+    }
+  ],
+  "title": "Siege of Goa (1570–1571)",
+  "summary": "The English Wikipedia article \"Siege of Goa (1570–1571)\", at revision 1370741528, opens: \"The siege of Goa in 1570–1571 was a major military conflict between the Portuguese Empire and the Sultanate of Bijapur, as part of an alliance of Asian powers led by Ali Adil Shah I. This alliance aimed to expel the Portuguese from their strategic foothold in Goa, which was a crucial center for their colonial ambitions in Asia. The capital of Portuguese State of India was besieged by a large army commanded personally by Sultan Ali Adil Shah of Bijapur, in one of the greatest ordeals faced by the Portuguese in Asia, during which several of their strongholds were attacked simultaneously.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q126888582, imported by tools/import/wikidata.mjs. The item's own description reads \"1570–1571 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1570,
+    "end": 1571,
+    "date": "1570-12",
+    "endDate": "1571-12-13"
+  },
+  "place": "goa-q1171",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-league-of-the-indies"
+}

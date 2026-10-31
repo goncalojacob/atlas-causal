@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1660-destruction-of-safed",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q14920516",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1660 destruction of Safed"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q14920516"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1660 destruction of Safed\", revision 1361429123"
+    }
+  ],
+  "title": "1660 destruction of Safed",
+  "summary": "The English Wikipedia article \"1660 destruction of Safed\", at revision 1361429123, opens: \"The 1660 destruction of Safed occurred during the Druze power struggle in Mount Lebanon, at the time of the rule of Ottoman sultan Mehmed IV. The towns of Safed and nearby Tiberias, with substantial Jewish communities, were destroyed in the turmoil, a small Jewish community surviving in Safed, but Tiberias, a Jewish town at the time, losing almost its entire population. Only a few of the former residents of Safed returned to the town after the destruction. Gershom Scholem considers the 1662 reports about the destruction of Safed as \"exaggerated\". The community, however, recovered within several years, whereas Tiberias lay in waste for decades.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q14920516, imported by tools/import/wikidata.mjs. The item's own description reads \"reported destruction of a Jewish town\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1660,
+    "end": 1660
+  },
+  "place": "safed",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "druze-power-struggle-1658-1667"
+}

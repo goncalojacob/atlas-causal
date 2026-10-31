@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-itea",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q18175416",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Itea"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18175416"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Itea\", revision 1378566649"
+    }
+  ],
+  "title": "Battle of Itea",
+  "summary": "The English Wikipedia article \"Battle of Itea\", at revision 1378566649, opens: \"The Battle of Itea or Battle of Agali was a naval battle fought on 30 September 1827, in the Gulf of Corinth, during the Greek War of Independence. Under the command of British Philhellene, Frank Abney Hastings, a small Greek squadron launched a raid on an Ottoman fleet anchored near Itea.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18175416, imported by tools/import/wikidata.mjs. The item's own description reads \"1827 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1827,
+    "end": 1827,
+    "date": "1827-09-17"
+  },
+  "place": "itea-phocis",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

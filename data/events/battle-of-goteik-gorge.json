@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-goteik-gorge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871131",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Goteik Gorge"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871131"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Goteik Gorge\", revision 1370110983"
+    }
+  ],
+  "title": "Battle of Goteik Gorge",
+  "summary": "The English Wikipedia article \"Battle of Goteik Gorge\", at revision 1370110983, opens: \"The Battle of Goteik Gorge took place during the Sino–Burmese War (1765–1769) fought between the Konbaung Dynasty of Burma (Myanmar) and the Qing Dynasty of China in late December 1767 or early January 1768. It was the first major battle in the third invasion by the Chinese who had previously unsuccessfully invaded Burma in 1765 and 1766. The Chinese victory cleared the way for the main Chinese army to Ava, the Burmese capital.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871131, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in the Sino-Burmese War, 1765-1769\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1767,
+    "end": 1767,
+    "date": "1767-12"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "sino-burmese-war"
+}
