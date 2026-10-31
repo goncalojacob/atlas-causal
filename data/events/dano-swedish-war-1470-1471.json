@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "dano-swedish-war-1470-1471",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1277593",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Dano-Swedish War (1470–1471)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1277593"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dano-Swedish War (1470–1471)\", revision 1376499758"
+    }
+  ],
+  "title": "Dano-Swedish War (1470–1471)",
+  "summary": "The English Wikipedia article \"Dano-Swedish War (1470–1471)\", at revision 1376499758, opens: \"The Dano-Swedish War was the first conflict between Denmark and Sweden. The Danes invaded Sweden by sea, but were defeated early at the Battle of Brunkeberg, in which King Christian I of Denmark was wounded by a cannonball. The Danish invasion was repelled, and the Swedes were independent from the Kalmar Union.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1277593, imported by tools/import/wikidata.mjs. The item's own description reads \"first war between Denmark and Sweden\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1470,
+    "end": 1471
+  },
+  "place": "baltic-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

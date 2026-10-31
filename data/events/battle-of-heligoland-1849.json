@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-heligoland-1849",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q320982",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Heligoland (1849)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q320982"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Heligoland (1849)\", revision 1374191781"
+    }
+  ],
+  "title": "Battle of Heligoland (1849)",
+  "summary": "The English Wikipedia article \"Battle of Heligoland (1849)\", at revision 1374191781, opens: \"The first Battle of Heligoland took place on 4 June 1849 during the First Schleswig War and pitted the fledgling Reichsflotte against the Royal Danish Navy, which had blocked German naval trade in North Sea and Baltic Sea since early 1848. The outcome was inconclusive, with no casualties, and the blockade went on. It remained the only battle of the German fleet.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q320982, imported by tools/import/wikidata.mjs. The item's own description reads \"1849 battle of the First Schleswig War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1849,
+    "end": 1849,
+    "date": "1849-06-04"
+  },
+  "place": "heligoland",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-schleswig-war"
+}

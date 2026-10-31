@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "new-orleans-massacre-of-1866",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q17111026",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "New Orleans Massacre of 1866",
+    "pt": "Massacre de Nova Orleans de 1866"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17111026"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"New Orleans Massacre of 1866\", revision 1372308477"
+    }
+  ],
+  "title": "New Orleans Massacre of 1866",
+  "summary": "The English Wikipedia article \"New Orleans Massacre of 1866\", at revision 1372308477, opens: \"The New Orleans massacre of 1866 occurred on July 30, when a peaceful demonstration of mostly Black freedmen was set upon by a mob of white rioters, many of whom had been soldiers of the recently defeated Confederate States of America, leading to a full-scale massacre. The violence erupted outside the Mechanics Institute, site of a reconvened Louisiana Constitutional Convention. According to the official report, 38 were killed and 146 wounded, of whom 34 dead and 119 wounded were Black freedmen. Unofficial estimates were higher. Gilles Vandal estimated 40 to 50 Black Americans were killed and more than 150 Black Americans wounded. Others have claimed nearly 200 were killed. In addition, three white convention attendees were killed, as was one white protester.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17111026, imported by tools/import/wikidata.mjs. The item's own description reads \"racially motivated massacre of July 1866\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866,
+    "date": "1866-07-30"
+  },
+  "place": "new-orleans",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "treaty-of-shackamaxon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q171374",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Treaty of Shackamaxon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q171374"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Shackamaxon\", revision 1347633586"
+    }
+  ],
+  "title": "Treaty of Shackamaxon",
+  "summary": "The English Wikipedia article \"Treaty of Shackamaxon\", at revision 1347633586, opens: \"The Treaty of Shackamaxon, also called the Great Treaty and Penn's Treaty, was a treaty between William Penn and Tamanend of the Lenape signed in 1682. The treaty created peace between the Quakers and Lenape, with Tamanend saying the two would \"live in peace as long as the waters [ran] in the rivers and creeks and as long as the stars and moon [endured].\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q171374, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty between William Penn and the Delaware Indians\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1682,
+    "end": 1682
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

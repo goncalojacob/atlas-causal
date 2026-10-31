@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mount-hope-bay-raids",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q6921294",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Mount Hope Bay raids"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6921294"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mount Hope Bay raids\", revision 1370628763"
+    }
+  ],
+  "title": "Mount Hope Bay raids",
+  "summary": "The English Wikipedia article \"Mount Hope Bay raids\", at revision 1370628763, opens: \"The Mount Hope Bay raids were a series of military raids conducted by British troops during the American Revolutionary War against communities on the shores of Mount Hope Bay on May 25 and 31, 1778. The towns of Bristol and Warren, Rhode Island were significantly damaged, and Freetown, Massachusetts was also attacked, although its militia resisted British attacks more successfully. The British destroyed military defenses in the area, including supplies that had been cached by the Continental Army in anticipation of an assault on British-occupied Newport, Rhode Island. Homes as well as municipal and religious buildings were also destroyed in the raids.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6921294, imported by tools/import/wikidata.mjs. The item's own description reads \"1778 series of military raids by British troops during the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1778,
+    "end": 1778,
+    "date": "1778-05-25",
+    "endDate": "1778-05-30"
+  },
+  "place": "mount-hope-bay",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

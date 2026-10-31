@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nootka-crisis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1648404",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Nootka Crisis"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1648404"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nootka Crisis\", revision 1374978441"
+    }
+  ],
+  "title": "Nootka Crisis",
+  "summary": "The English Wikipedia article \"Nootka Crisis\", at revision 1374978441, opens: \"The Nootka Crisis, also known as the Spanish Armament, was an international incident and political dispute between Spain and Great Britain triggered by a series of events revolving around sovereignty claims and rights of navigation and trade. It took place during the summer of 1789 at the Spanish outpost of Santa Cruz de Nuca on Vancouver Island. The commander of the outpost, Esteban José Martínez Fernández y Martínez de la Sierra, seized several British merchantmen intending on engaging in the maritime fur trade and building a permanent outpost at Nootka Sound.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1648404, imported by tools/import/wikidata.mjs. The item's own description reads \"1789 international incident and political dispute between the kingdoms of Great Britain and Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1789,
+    "end": 1790,
+    "date": "1789-05-05",
+    "endDate": "1790-10-28"
+  },
+  "place": "vancouver-island",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

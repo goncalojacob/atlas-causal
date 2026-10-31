@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-at-port-la-joye",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870138",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle at Port-la-Joye"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870138"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle at Port-la-Joye\", revision 1374731718"
+    }
+  ],
+  "title": "Battle at Port-la-Joye",
+  "summary": "The English Wikipedia article \"Battle at Port-la-Joye\", at revision 1374731718, opens: \"The  Battle at Port-la-Joye  was a battle in King George's War that took place between the British Army and a combined force of French troops and Mi'kmaq militia on the banks of present-day Hillsborough River, Prince Edward Island in the summer of 1746. French officer Jean-Baptiste Nicolas Roch de Ramezay sent French and Mi'kmaq forces to Port-la-Joye where they surprised and defeated a force of 200 soldiers of the 29th Regiment of Foot that were gathering provisions for recently captured fortress of Louisbourg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870138, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in King George's War that took place with British against Canadian troops and Mi'kmaq militia on the banks of present-day Hillsborough River, Prince Edward Island in the summer of 1746\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1746,
+    "end": 1746,
+    "date": "1746-07-11"
+  },
+  "place": "skmaqn-port-la-joye-fort-amherst",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "king-george-s-war"
+}

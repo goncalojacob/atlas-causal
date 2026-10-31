@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "panic-of-1792",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1628966",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Panic of 1792"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1628966"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Panic of 1792\", revision 1371595423"
+    }
+  ],
+  "title": "Panic of 1792",
+  "summary": "The English Wikipedia article \"Panic of 1792\", at revision 1371595423, opens: \"The Panic of 1792 was a financial credit crisis that occurred during the months of March and April 1792, precipitated by the expansion of credit by the newly formed Bank of the United States as well as by rampant speculation on the part of William Duer, Alexander Macomb, and other prominent bankers. Duer, Macomb, and their colleagues attempted to drive up prices of United States (U.S) debt securities and bank stocks, but when they defaulted on loans, prices fell, causing a bank run. Simultaneous tightening of credit by the Bank of the United States served to heighten the initial panic. Secretary of the Treasury Alexander Hamilton was able to deftly manage the crisis by providing banks across the Northeast United States with hundreds of thousands of dollars to make open-market purchases of securities, which allowed the market to stabilize by May 1792.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1628966, imported by tools/import/wikidata.mjs. The item's own description reads \"financial credit crisis in the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1792,
+    "end": 1792
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-cap-francais",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888245",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Cap-Français"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888245"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cap-Français\", revision 1370436140"
+    }
+  ],
+  "title": "Battle of Cap-Français",
+  "summary": "The English Wikipedia article \"Battle of Cap-Français\", at revision 1370436140, opens: \"The Battle of Cap-Français was a naval engagement during the Seven Years' War fought between squadrons of the French and British navies outside the harbour of Cap-Français, Saint-Domingue on 21 October 1757.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888245, imported by tools/import/wikidata.mjs. The item's own description reads \"1757 naval battle of the Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1757,
+    "date": "1757-10-21"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

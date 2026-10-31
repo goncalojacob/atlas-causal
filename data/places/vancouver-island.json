@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "vancouver-island",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q170479",
+  "sitelinks": {
+    "count": 78,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Vancouver Island",
+    "pt": "Ilha Vancouver"
+  },
+  "sources": [],
+  "names": [
+    "Vancouver Island",
+    "Ilha Vancouver"
+  ],
+  "where": {
+    "lon": -125.7,
+    "lat": 49.633333,
+    "precision": "region",
+    "label": "Vancouver Island"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

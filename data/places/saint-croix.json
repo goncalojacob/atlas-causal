@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "saint-croix",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q642481",
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Saint Croix",
+    "pt": "Saint Croix (Ilhas Virgens Americanas)"
+  },
+  "sources": [],
+  "names": [
+    "Saint Croix",
+    "Saint Croix (Ilhas Virgens Americanas)"
+  ],
+  "where": {
+    "lon": -64.748,
+    "lat": 17.732,
+    "precision": "region",
+    "label": "Saint Croix"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

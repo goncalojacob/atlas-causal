@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mughal-safavid-war-1622-1623",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q6932168",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Mughal–Safavid war (1622–1623)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6932168"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mughal–Safavid war (1622–1623)\", revision 1382312928"
+    }
+  ],
+  "title": "Mughal–Safavid war (1622–1623)",
+  "summary": "The English Wikipedia article \"Mughal–Safavid war (1622–1623)\", at revision 1382312928, opens: \"The Mughal–Safavid war of 1622–1623 was fought over the important fortress city of Kandahar, now located in Afghanistan, between the Safavid Empire and the Mughal Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6932168, imported by tools/import/wikidata.mjs. The item's own description reads \"1622–1623 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1622,
+    "end": 1623
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "mughal-persian-wars"
+}

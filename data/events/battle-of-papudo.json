@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-papudo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q660025",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Papudo",
+    "pt": "Batalha de Papudo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q660025"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Papudo\", revision 1381415842"
+    }
+  ],
+  "title": "Battle of Papudo",
+  "summary": "The English Wikipedia article \"Battle of Papudo\", at revision 1381415842, opens: \"The Naval Battle of Papudo was a naval engagement fought between Spanish and Chilean forces on November 26, 1865, during the Chincha Islands War. It was fought 55 miles north of Valparaíso, Chile, near the coastal town of Papudo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q660025, imported by tools/import/wikidata.mjs. The item's own description reads \"1865 naval battle of the Chincha Islands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1865,
+    "end": 1865,
+    "date": "1865-11-26"
+  },
+  "place": "chile-q298",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "chincha-islands-war"
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-madrid-1801",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3034211",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Treaty of Madrid (1801)",
+    "pt": "Tratado de Madrid (1801)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3034211"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Madrid (1801)\", revision 1355338436"
+    }
+  ],
+  "title": "Treaty of Madrid (1801)",
+  "summary": "The English Wikipedia article \"Treaty of Madrid (1801)\", at revision 1355338436, opens: \"The 1801 Treaty of Madrid was signed on 29 September 1801 by Portugal and France. Portugal made territorial concessions to France in Northern Brazil, closed its ports to British shipping and paid an indemnity of 20 million francs.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3034211, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty signed in 1801 between John VI of Portugal and representatives from the French Republic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1801,
+    "end": 1801
+  },
+  "place": "madrid",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

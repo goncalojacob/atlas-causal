@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cobleskill",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1862538",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Cobleskill"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1862538"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cobleskill\", revision 1373519932"
+    }
+  ],
+  "title": "Battle of Cobleskill",
+  "summary": "The English Wikipedia article \"Battle of Cobleskill\", at revision 1373519932, opens: \"The Battle of Cobleskill was an American Revolutionary War raid on the frontier settlement of Cobleskill, New York on May 30, 1778. The battle took place in what is now the hamlet of Warnerville, New York, near the modern Cobleskill-Richmondville High School. The raid marked the beginning of a phase in which Loyalists and Haudenosaunee, encouraged and supplied by British authorities in the Province of Quebec, attacked and destroyed numerous villages on what was then the western frontier of New York and Pennsylvania.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1862538, imported by tools/import/wikidata.mjs. The item's own description reads \"1778 American Revolutionary War raid\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1778,
+    "end": 1778,
+    "date": "1778-05-30"
+  },
+  "place": "new-york-state",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

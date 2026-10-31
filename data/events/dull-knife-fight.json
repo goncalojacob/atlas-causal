@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "dull-knife-fight",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888457",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Dull Knife Fight"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888457"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dull Knife Fight\", revision 1379516101"
+    }
+  ],
+  "title": "Dull Knife Fight",
+  "summary": "The English Wikipedia article \"Dull Knife Fight\", at revision 1379516101, opens: \"The Dull Knife Fight, or the Battle on the Red Fork, part of the Great Sioux War of 1876, was fought on November 25, 1876, in present-day Johnson County, Wyoming between soldiers and scouts of the United States Army and warriors of the Northern Cheyenne. The battle essentially ended the Northern Cheyennes' ability to continue the fight for their freedom on the Great Plains.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888457, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Great Sioux War of 1876\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1876,
+    "date": "1876-11-25"
+  },
+  "place": "dull-knife-battlefield",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-sioux-war-of-1876"
+}
