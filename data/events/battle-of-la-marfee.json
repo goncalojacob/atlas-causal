@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-la-marfee",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q830246",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of La Marfée"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q830246"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of La Marfée\", revision 1370446775"
+    }
+  ],
+  "title": "Battle of La Marfée",
+  "summary": "The English Wikipedia article \"Battle of La Marfée\", at revision 1370446775, opens: \"The Battle of La Marfée took place on 6 July 1641, during the 1635 to 1659 Franco-Spanish War. Fought near Sedan, France, a French army led by the Duke of Châtillon, was defeated by an Imperial-Spanish force under Lamboy, supported by French rebels led by the Comte de Soissons and Bouillon.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q830246, imported by tools/import/wikidata.mjs. The item's own description reads \"1641 battle of the Franco-Spanish War of 1635–1659\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1641,
+    "end": 1641,
+    "date": "1641-07-06"
+  },
+  "place": "sedan-ardennes",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-spanish-war-1635-1659"
+}

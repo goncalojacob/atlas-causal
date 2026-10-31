@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "callantsoog",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q991661",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Callantsoog"
+  },
+  "sources": [],
+  "names": [
+    "Callantsoog"
+  ],
+  "where": {
+    "lon": 4.6967,
+    "lat": 52.8372,
+    "precision": "city",
+    "label": "Callantsoog"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

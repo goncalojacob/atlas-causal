@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-brentford-1642",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870548",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Brentford (1642)",
+    "pt": "Batalha de Brentford (1642)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870548"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Brentford (1642)\", revision 1382693716"
+    }
+  ],
+  "title": "Battle of Brentford (1642)",
+  "summary": "The English Wikipedia article \"Battle of Brentford (1642)\", at revision 1382693716, opens: \"The Battle of Brentford was a small pitched battle which took place on 12 November 1642 in Brentford, Middlesex, between a detachment of the Royalist army under the command of Prince Rupert, and two infantry regiments of Parliamentarians with some horse in support. The result was a victory for the Royalists.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870548, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of 1642\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1642,
+    "end": 1642,
+    "date": "1642-11-12"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "first-english-civil-war"
+}

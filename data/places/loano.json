@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "loano",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q270782",
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Loano",
+    "pt": "Loano"
+  },
+  "sources": [],
+  "names": [
+    "Loano"
+  ],
+  "where": {
+    "lon": 8.2598222222222,
+    "lat": 44.129002777778,
+    "precision": "city",
+    "label": "Loano"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

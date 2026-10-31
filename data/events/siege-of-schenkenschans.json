@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-schenkenschans",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510387",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Schenkenschans",
+    "pt": "Cerco de Schenkenschans"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510387"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Schenkenschans\", revision 1370745115"
+    }
+  ],
+  "title": "Siege of Schenkenschans",
+  "summary": "The English Wikipedia article \"Siege of Schenkenschans\", at revision 1370745115, opens: \"The siege of Schenkenschans was a major siege of the Eighty Years' War. In a successful campaign the Army of Flanders, commanded by Spanish general Cardinal-Infante Ferdinand of Austria, captured Schenkenschans along with a number of important towns, reversing recent Dutch gains and opening the Dutch Republic to a possible invasion. The Dutch Stadtholder, Fredrick Henry, pushed the republic's military efforts to their limit to recapture the fortress of Schenkenschans to counter the threat to the exposed Dutch heartland. He succeeded in doing so after a costly nine-month siege.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510387, imported by tools/import/wikidata.mjs. The item's own description reads \"1635–1636 siege of the Eighty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1635,
+    "end": 1636,
+    "date": "1635-07-30",
+    "endDate": "1636-04-30"
+  },
+  "place": "kleve",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

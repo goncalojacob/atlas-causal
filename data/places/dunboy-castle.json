@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "dunboy-castle",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5314190",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Dunboy Castle"
+  },
+  "sources": [],
+  "names": [
+    "Dunboy Castle"
+  ],
+  "where": {
+    "lon": -9.924,
+    "lat": 51.633,
+    "precision": "point",
+    "label": "Dunboy Castle"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

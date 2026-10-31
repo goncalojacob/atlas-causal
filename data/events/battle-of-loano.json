@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-loano",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q387215",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Loano"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q387215"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Loano\", revision 1370268344"
+    }
+  ],
+  "title": "Battle of Loano",
+  "summary": "The English Wikipedia article \"Battle of Loano\", at revision 1370268344, opens: \"The Battle of Loano saw the French Army of Italy led by General of Division (GD) Barthélemy Louis Joseph Schérer attack the Allied armies of Habsburg Austria and the Kingdom of Sardinia-Piedmont led by Feldzeugmeister (FZM) Olivier, Count of Wallis during the War of the First Coalition. The assault took the Austrians by surprise since it occurred so late in the year. Additionally, the previous Austrian commander resigned the day before the attack. While the French left flank troops pinned down the Sardinian forces opposing them, the French center broke through the Allied center, forcing the Austrians to retreat. Meanwhile, the French right flank forces steadily pressed back the Austrians on the coast. The French gained a more favorable position, but Schérer did not exploit his victory. André Masséna distinguished himself during this battle and is credited with the French victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q387215, imported by tools/import/wikidata.mjs. The item's own description reads \"occurred on 23-24 November 1795 during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1795,
+    "end": 1795,
+    "date": "1795-11-22"
+  },
+  "place": "loano",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}

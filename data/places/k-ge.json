@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "k-ge",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q21184",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Køge",
+    "pt": "Køge"
+  },
+  "sources": [],
+  "names": [
+    "Køge"
+  ],
+  "where": {
+    "lon": 12.183333333333,
+    "lat": 55.45,
+    "precision": "city",
+    "label": "Køge"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

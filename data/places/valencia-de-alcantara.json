@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "valencia-de-alcantara",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1613421",
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Valencia de Alcántara",
+    "pt": "Valência de Alcântara"
+  },
+  "sources": [],
+  "names": [
+    "Valencia de Alcántara"
+  ],
+  "where": {
+    "lon": -7.2435909,
+    "lat": 39.4132551,
+    "precision": "city",
+    "label": "Valencia de Alcántara"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

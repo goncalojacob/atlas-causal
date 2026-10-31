@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "montaigu-vendee",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q831401",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Montaigu, Vendée",
+    "pt": "Montaigu (Vendeia)"
+  },
+  "sources": [],
+  "names": [
+    "Montaigu",
+    "Montaigu, Vendée",
+    "Montaigu (Vendeia)"
+  ],
+  "where": {
+    "lon": -1.31,
+    "lat": 46.972777777778,
+    "precision": "city",
+    "label": "Montaigu, Vendée"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

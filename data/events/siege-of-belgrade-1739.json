@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-belgrade-1739",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5036987",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Belgrade (1739)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5036987"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Belgrade (1739)\", revision 1375791029"
+    }
+  ],
+  "title": "Siege of Belgrade (1739)",
+  "summary": "The English Wikipedia article \"Siege of Belgrade (1739)\", at revision 1375791029, opens: \"The Siege of Belgrade saw the recapture of Belgrade by the Ottoman Empire in 1739.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5036987, imported by tools/import/wikidata.mjs. The item's own description reads \"1739 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1739,
+    "end": 1739,
+    "date": "1739-07",
+    "endDate": "1739-09-18"
+  },
+  "place": "belgrade",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
