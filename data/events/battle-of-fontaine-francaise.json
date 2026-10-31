@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-fontaine-francaise",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888508",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Fontaine-Française",
+    "pt": "Batalha de Fontaine-Française"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888508"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fontaine-Française\", revision 1370440819"
+    }
+  ],
+  "title": "Battle of Fontaine-Française",
+  "summary": "The English Wikipedia article \"Battle of Fontaine-Française\", at revision 1370440819, opens: \"The Battle of Fontaine-Française occurred on 5 June 1595 between the French royal forces of King Henry IV of France and troops of Spain and the Catholic League commanded by Juan Fernández de Velasco and Charles of Lorraine, Duke of Mayenne, during the eighth and final war (1585–1598) of the French Wars of Religion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888508, imported by tools/import/wikidata.mjs. The item's own description reads \"1595 battle in France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1595,
+    "end": 1595,
+    "date": "1595-06-05"
+  },
+  "place": "fontaine-francaise",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-wars-of-religion"
+}

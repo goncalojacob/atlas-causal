@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "french-breton-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3118990",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "French–Breton War",
+    "pt": "Guerra da Bretanha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3118990"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French–Breton War\", revision 1376718953"
+    }
+  ],
+  "title": "French–Breton War",
+  "summary": "The English Wikipedia article \"French–Breton War\", at revision 1376718953, opens: \"The French–Breton War lasted from 1487 to 1491. The cause of this war was the approaching death of the Breton Duke Francis II of Brittany, who had no clear successor. If not resolved, this meant a resumption of issues from a previous War of the Breton Succession (1341–1364), which had rival claimants allying with England or France, resulting in an ambiguous peace treaty that failed to prevent future succession disputes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3118990, imported by tools/import/wikidata.mjs. The item's own description reads \"series of military and diplomatic incidents between 1465 and 1491, ending the independence of Brittany from the Kingdom of France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1487,
+    "end": 1491
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

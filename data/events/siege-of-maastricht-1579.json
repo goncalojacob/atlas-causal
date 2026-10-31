@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-maastricht-1579",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2758693",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Maastricht (1579)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2758693"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Maastricht (1579)\", revision 1382267592"
+    }
+  ],
+  "title": "Siege of Maastricht (1579)",
+  "summary": "The English Wikipedia article \"Siege of Maastricht (1579)\", at revision 1382267592, opens: \"The siege of Maastricht was a battle of the Eighty Years' War which lasted from March 12 to July 1, 1579. The Spanish were victorious.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2758693, imported by tools/import/wikidata.mjs. The item's own description reads \"siege and capture of Maastricht by Alexander Farnese during the Eighty Years' War (1568-1648)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1579,
+    "end": 1579,
+    "date": "1579-03-12",
+    "endDate": "1579-07-01"
+  },
+  "place": "maastricht",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}
