@@ -127310,36 +127310,6 @@
         "wikidata",
         "wikipedia-en"
       ],
-      "created": "2026-10-31",
-      "id": "list-of-wars-involving-saudi-arabia",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts",
-          "end-unstated",
-          "summary-from-lead"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "List of wars involving Saudi Arabia"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
       "created": "2026-10-29",
       "id": "lithuanian-civil-war-1432-1438",
       "kind": "event",
@@ -218434,12 +218404,6 @@
     },
     {
       "id": "list-of-indigenous-rebellions-in-mexico-and-central-america",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "list-of-wars-involving-saudi-arabia",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
