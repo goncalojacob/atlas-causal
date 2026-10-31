@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-callantsoog",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2936697",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Callantsoog"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2936697"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Callantsoog\", revision 1370108434"
+    }
+  ],
+  "title": "Battle of Callantsoog",
+  "summary": "The English Wikipedia article \"Battle of Callantsoog\", at revision 1370108434, opens: \"The Battle of Callantsoog was an amphibious landing by a British invasion force under Lieutenant-General Sir Ralph Abercromby and Admiral Lord Adam Duncan near Callantsoog during the Anglo-Russian invasion of Holland in 1799. Despite strong opposition by troops of the Batavian Republic under Lieutenant-General Herman Willem Daendels, the British established a bridgehead and the Batavians were forced to retreat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2936697, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 battle during the Anglo-Russian invasion of Holland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-08-27"
+  },
+  "place": "callantsoog",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-russian-invasion-of-holland"
+}

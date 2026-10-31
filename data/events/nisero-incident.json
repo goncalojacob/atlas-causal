@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "nisero-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q122899128",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Nisero Incident"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q122899128"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nisero Incident\", revision 1363770191"
+    }
+  ],
+  "title": "Nisero Incident",
+  "summary": "The English Wikipedia article \"Nisero Incident\", at revision 1363770191, opens: \"The Nisero Incident arose when a British cargo ship, the Nisero, bound for Europe from Surabaya, Java, carrying a cargo of sugar, ran aground off the west coast of Aceh, Sumatra, on 8 November 1883. Seeing that the ship could not be saved, the 28 crew members rowed ashore and were met by a local chief, the Raja of Tenom, and a group of armed followers who took them into captivity. They spent much of their time over a period of ten months in huts, inside an enclosure guarded by the Raja's men, in miserable conditions, receiving usually two bowls of rice a day. Seven men died of cholera or malnutrition.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q122899128, imported by tools/import/wikidata.mjs. The item's own description reads \"shipwreck and subsequent events in Aceh in 1883\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1883,
+    "end": 1884,
+    "date": "1883-11-08",
+    "endDate": "1884-09-10"
+  },
+  "place": "aceh-q1823",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": [],
+  "parent": "aceh-war"
+}

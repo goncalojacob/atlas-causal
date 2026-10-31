@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "siege-of-malacca-1573",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q129165070",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Malacca (1573)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q129165070"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Malacca (1573)\", revision 1370743190"
+    }
+  ],
+  "title": "Siege of Malacca (1573)",
+  "summary": "The English Wikipedia article \"Siege of Malacca (1573)\", at revision 1370743190, opens: \"The siege of Malacca occurred in 1573, when the Sultan of Aceh attacked the Portuguese city of Malacca with the support of the Sultanate of Golconda and Kalinyamat. The Portuguese resisted the attack and the Muslim forces were routed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q129165070, imported by tools/import/wikidata.mjs. The item's own description reads \"1573 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1573,
+    "end": 1573,
+    "date": "1573-10",
+    "endDate": "1573-11"
+  },
+  "place": "malacca-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": [
+    "acehnese-portuguese-conflicts",
+    "war-of-the-league-of-the-indies"
+  ]
+}

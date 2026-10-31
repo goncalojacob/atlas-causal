@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-harnaulgarh",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q28174194",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Harnaulgarh"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q28174194"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Harnaulgarh\", revision 1370265394"
+    }
+  ],
+  "title": "Battle of Harnaulgarh",
+  "summary": "The English Wikipedia article \"Battle of Harnaulgarh\", at revision 1370265394, opens: \"The Battle of Harnaulgarh was fought between the Durrani Empire and the Sikh Misls of Dal Khalsa in 1762.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28174194, imported by tools/import/wikidata.mjs. The item's own description reads \"1762 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1762,
+    "end": 1762
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "indian-campaign-of-ahmad-shah-durrani"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-zhvanets",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4087375",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Zhvanets"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4087375"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Zhvanets\", revision 1382550496"
+    }
+  ],
+  "title": "Siege of Zhvanets",
+  "summary": "The English Wikipedia article \"Siege of Zhvanets\", at revision 1382550496, opens: \"The siege of Zhvanets was fought between the Cossack Hetmanate, Crimean Khanate and the Polish–Lithuanian Commonwealth as a part of the Khmelnytskyi Uprising. Near the site of the present-day village of Zhvanets on the Dniester River in Ukraine, forces of Zaporozhian Cossacks and Crimean Tatars under the command of Bohdan Khmelnytskyi, Ivan Bohun and İslâm III Giray besieged a Polish–Lithuanian force under the command of John II Casimir.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4087375, imported by tools/import/wikidata.mjs. The item's own description reads \"1653 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1653,
+    "end": 1653,
+    "date": "1653-09",
+    "endDate": "1653-12-15"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "khmelnytsky-uprising"
+}

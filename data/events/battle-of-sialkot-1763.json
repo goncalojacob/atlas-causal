@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-sialkot-1763",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q21244907",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Sialkot (1763)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q21244907"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sialkot (1763)\", revision 1370274310"
+    }
+  ],
+  "title": "Battle of Sialkot (1763)",
+  "summary": "The English Wikipedia article \"Battle of Sialkot (1763)\", at revision 1370274310, opens: \"The Battle of Sialkot took place on 12 November 1763, between the Durrani Empire, led by Jahan Khan, and the Sukerchakia Misl, led by Charat Singh, as part of the Afghan–Sikh wars which concluded with Sikh victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q21244907, imported by tools/import/wikidata.mjs. The item's own description reads \"1763 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1763,
+    "end": 1763
+  },
+  "place": "sialkot",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "indian-campaign-of-ahmad-shah-durrani"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "capitulation-of-erfurt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5035988",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Capitulation of Erfurt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5035988"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capitulation of Erfurt\", revision 1370608132"
+    }
+  ],
+  "title": "Capitulation of Erfurt",
+  "summary": "The English Wikipedia article \"Capitulation of Erfurt\", at revision 1370608132, opens: \"In the Capitulation of Erfurt on 16 October 1806, a large body of troops from the Kingdom of Prussia under Lieutenant General the Prince of Orange surrendered to Marshal Joachim Murat of France, at the city of Erfurt. The Prussian soldiers were demoralized by their shattering defeat at the Battle of Jena–Auerstedt on 14 October and unwilling to put up much resistance. The event occurred during the War of the Fourth Coalition, part of the Napoleonic Wars. Erfurt is located on the Gera River about 40 kilometers west of Jena.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5035988, imported by tools/import/wikidata.mjs. The item's own description reads \"1806 capitulation during the War of the Fourth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1806,
+    "end": 1806,
+    "date": "1806-10-16"
+  },
+  "place": "erfurt",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-fourth-coalition"
+}

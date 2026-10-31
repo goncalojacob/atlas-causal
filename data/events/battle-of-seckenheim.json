@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-seckenheim",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q872741",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Seckenheim"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q872741"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Seckenheim\", revision 1370588906"
+    }
+  ],
+  "title": "Battle of Seckenheim",
+  "summary": "The English Wikipedia article \"Battle of Seckenheim\", at revision 1370588906, opens: \"The Battle of Seckenheim saw the army of the Electoral Palatinate led by Frederick I, Elector Palatine and his ally Dieter von Isenburg face an invading army led by Charles I, Margrave of Baden-Baden, Ulrich V, Count of Württemberg, Louis I, Count Palatine of Zweibrücken, and George of Baden, the Bishop of Metz. Without warning, Frederick suddenly struck at the invaders, trapping them in the fork of two major rivers. Though about 300 knights cut their way out, causing many non-combatant casualties, the Palatine forces were victorious. Frederick captured three of the enemy leaders and wrung ransoms and territorial concessions from them. Seckenheim is now part of the city of Mannheim in the state of Baden-Württemberg, Germany. The combat occurred during the Mainz Feud, part of the larger Bavarian War (1459–63).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q872741, imported by tools/import/wikidata.mjs. The item's own description reads \"battle during the Mainz Feud, part of the larger Bavarian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1462,
+    "end": 1462,
+    "date": "1462-06-30"
+  },
+  "place": "mannheim",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

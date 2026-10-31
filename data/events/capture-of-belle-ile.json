@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "capture-of-belle-ile",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3403807",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Capture of Belle Île"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3403807"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Belle Île\", revision 1371933368"
+    }
+  ],
+  "title": "Capture of Belle Île",
+  "summary": "The English Wikipedia article \"Capture of Belle Île\", at revision 1371933368, opens: \"The capture of Belle Île was a British amphibious expedition to capture the French island of Belle Île off the Brittany coast in 1761, during the Seven Years' War. After an initial British attack was repulsed, a second attempt under General Studholme Hodgson forced a beachhead. A second landing was made, and after a six-week siege the island's main citadel at Le Palais was stormed, consolidating British control of the island. A French relief effort from the nearby mainland was unable to succeed because of British control of the sea. The British occupied the island for two years before returning it in 1763 following the Treaty of Paris.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3403807, imported by tools/import/wikidata.mjs. The item's own description reads \"1761 military operation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1761,
+    "end": 1761,
+    "date": "1761-04-07",
+    "endDate": "1761-06-08"
+  },
+  "place": "belle-ile",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

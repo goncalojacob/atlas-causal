@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "action-off-pipli-river",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q140628708",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Action off Pipli River"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q140628708"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action off Pipli River\", revision 1381865317"
+    }
+  ],
+  "title": "Action off Pipli River",
+  "summary": "The English Wikipedia article \"Action off Pipli River\", at revision 1381865317, opens: \"The action off Pipli River took place on 21 January 1644 at the mouth of the Pipli River in Bengal between a Danish yacht and a Bengali ship.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q140628708, imported by tools/import/wikidata.mjs. The item's own description reads \"1644 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1644,
+    "end": 1644,
+    "date": "1644-01-21"
+  },
+  "place": "subarnarekha-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dano-mughal-war"
+}

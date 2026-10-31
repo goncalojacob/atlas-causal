@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-echinades-1427",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2890722",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of the Echinades (1427)",
+    "pt": "Batalha das Equinadas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890722"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Echinades (1427)\", revision 1370599349"
+    }
+  ],
+  "title": "Battle of the Echinades (1427)",
+  "summary": "The English Wikipedia article \"Battle of the Echinades (1427)\", at revision 1370599349, opens: \"The Battle of the Echinades was fought in 1427 among the Echinades islands off western Greece between the fleets of Carlo I Tocco and the Byzantine Empire. The battle was a decisive Byzantine victory, the last in the Empire's naval history, and led to the consolidation of the Peloponnese under the Byzantine Despotate of the Morea.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890722, imported by tools/import/wikidata.mjs. The item's own description reads \"1427 fought between the Byzantines and the fleet of Carlo I Tocco\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1427,
+    "end": 1427
+  },
+  "place": "echinades",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

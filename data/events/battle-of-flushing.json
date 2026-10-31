@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-flushing",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q679831",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Flushing"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q679831"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Flushing\", revision 1366203640"
+    }
+  ],
+  "title": "Battle of Flushing",
+  "summary": "The English Wikipedia article \"Battle of Flushing\", at revision 1366203640, opens: \"The Battle of Flushing was a naval battle of the Eighty Years' War, fought on April 17, 1573 near the city of Flushing, Netherlands. The Spanish fleet was led by Sancho d'Avila, the Dutch fleet by Lieven Keersmaker.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q679831, imported by tools/import/wikidata.mjs. The item's own description reads \"1573 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1573,
+    "end": 1573,
+    "date": "1573-04-17"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

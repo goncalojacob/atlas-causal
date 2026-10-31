@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-vihiers",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890318",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Vihiers"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890318"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vihiers\", revision 1370592475"
+    }
+  ],
+  "title": "Battle of Vihiers",
+  "summary": "The English Wikipedia article \"Battle of Vihiers\", at revision 1370592475, opens: \"The Battle of Vihiers was a battle between Royalist and Republican French forces at Vihiers during the War in the Vendée. After the Republican division under Jacques-Marie Pilote La Barolière advanced into the heart of the revolt area, it was attacked by the Vendeans under Dominique Piron de La Vienne and routed. The advance guard under Jacques-François Menou held its ground for a long time, but many Republican units from the main body quickly took to their heels. The Republican cavalry under Louis-Nicolas Davout covered the disorderly retreat. The Royalists suffered about 1,000 killed and wounded but inflicted 2,000 killed and wounded on their enemies as well as capturing 3,000 soldiers and 25 artillery pieces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890318, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-07-18"
+  },
+  "place": "vihiers",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

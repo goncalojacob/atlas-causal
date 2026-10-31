@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-deventer-1591",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2893211",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Deventer (1591)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2893211"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Deventer (1591)\", revision 1370740728"
+    }
+  ],
+  "title": "Siege of Deventer (1591)",
+  "summary": "The English Wikipedia article \"Siege of Deventer (1591)\", at revision 1370740728, opens: \"The siege of Deventer was a siege of the city of Deventer from 1 to 10 June 1591 during the Eighty Years' War by Dutch and English troops under Maurice of Nassau in an attempt to retake it from its Spanish garrison, commanded by Herman van den Bergh on behalf of the Spanish.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2893211, imported by tools/import/wikidata.mjs. The item's own description reads \"siege in 1591\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1591,
+    "end": 1591,
+    "date": "1591-06-01",
+    "endDate": "1591-06-10"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

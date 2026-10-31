@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-tarvis-1797",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872512",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Tarvis (1797)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872512"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tarvis (1797)\", revision 1370590623"
+    }
+  ],
+  "title": "Battle of Tarvis (1797)",
+  "summary": "The English Wikipedia article \"Battle of Tarvis (1797)\", at revision 1370590623, opens: \"The Battle of Tarvis was fought during 21–23 March 1797 near present-day Tarvisio in far northeast Italy, about 12 kilometres (7 mi) west-by-southwest of the three-border conjunction with Austria and Slovenia, and was the final battle before the end of the War of the First Coalition. In the battle, three divisions of a First French Republic army commanded by Napoleon Bonaparte attacked several columns of the retreating Habsburg Austrian army led by Archduke Charles, Duke of Teschen. In three days of confused fighting, French divisions directed by André Masséna, Jean Joseph Guieu, and Jean-Mathieu-Philibert Sérurier succeeded in blocking the Tarvis Pass and capturing 3,500 Austrians led by Adam Bajalics von Bajahaza. The engagement occurred during the War of the First Coalition, part of the French Revolutionary Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872512, imported by tools/import/wikidata.mjs. The item's own description reads \"1797 battle of the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1797,
+    "end": 1797,
+    "date": "1797-03-21",
+    "endDate": "1797-03-23"
+  },
+  "place": "tarvisio",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

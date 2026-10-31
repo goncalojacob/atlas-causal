@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-perpignan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872018",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Perpignan",
+    "pt": "Batalha de Perpinhão"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872018"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Perpignan\", revision 1370585886"
+    }
+  ],
+  "title": "Battle of Perpignan",
+  "summary": "The English Wikipedia article \"Battle of Perpignan\", at revision 1370585886, opens: \"The Battle of Perpignan or Battle of Niel (fr:Bataille de Perpignan) on 17 July 1793 saw the French Army of the Eastern Pyrenees led by Louis-Charles de Flers defending against an offensive by the Spanish Army of Catalonia commanded by Antonio Ricardos. The French turned back the Spanish attacks and forced their opponents to pull back. Perpignan is now the capital of Pyrénées Orientales department, but in 1793 was the chief city of Roussillon province. The action was fought during the War of the Pyrenees, part of the War of the First Coalition.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872018, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 battle of the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-07-17"
+  },
+  "place": "perpignan",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

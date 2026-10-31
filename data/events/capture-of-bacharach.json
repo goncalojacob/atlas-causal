@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-bacharach",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5036983",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Capture of Bacharach"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5036983"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Bacharach\", revision 1370608274"
+    }
+  ],
+  "title": "Capture of Bacharach",
+  "summary": "The English Wikipedia article \"Capture of Bacharach\", at revision 1370608274, opens: \"The Capture of Bacharach took place on 1 October 1620 at Bacharach, Electorate of the Palatinate. The conflict was between the Spanish forces commanded by Don Gonzalo Fernández de Córdoba and the Protestant forces of Frederick V, Elector Palatine, during the Palatinate campaign in the context of the Thirty Years' War. After a quick start of the invasion of states of Frederick V, proclaimed King of Bohemia, the operations slowed in mid-September, after the Capture of Oppenheim. Don Ambrosio Spinola, the Spanish general in command, assessed at a council of war the choice between undertaking the siege of Heidelberg or, secondarily, the town of Bacharach. The Spanish officers decided to take Bacharach due to the small number of Frederick's scattered forces. On 1 October Córdoba captured Bacharach with a force of 2,500 soldiers, forcing the Anglo-German defenders to surrender.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5036983, imported by tools/import/wikidata.mjs. The item's own description reads \"1620 conflict in the thirty years war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1620,
+    "end": 1620,
+    "date": "1620-10-01"
+  },
+  "place": "bacharach",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "palatinate-campaign"
+}

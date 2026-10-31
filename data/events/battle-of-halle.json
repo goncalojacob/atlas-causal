@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-halle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2984790",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Halle"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2984790"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Halle\", revision 1370753828"
+    }
+  ],
+  "title": "Battle of Halle",
+  "summary": "The English Wikipedia article \"Battle of Halle\", at revision 1370753828, opens: \"In the Battle of Halle on 17 October 1806, a French corps led by Jean-Baptiste Bernadotte fought the Prussian Reserve under Eugene Frederick Henry, Duke of Württemberg. The French defeated their opponents, forcing the Prussians to retreat northeast toward Dessau after suffering heavy losses. The clash occurred in the War of the Fourth Coalition, part of the Napoleonic Wars. The city of Halle is located about 30 kilometres (19 mi) northwest of Leipzig on the Saale River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2984790, imported by tools/import/wikidata.mjs. The item's own description reads \"1806 battle during the War of the Fourth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1806,
+    "end": 1806,
+    "date": "1806-10-17"
+  },
+  "place": "halle-saale",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-fourth-coalition"
+}

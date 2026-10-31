@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "odjak-of-algiers-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q122929851",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Odjak of Algiers Revolution"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q122929851"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Odjak of Algiers Revolution\", revision 1367523857"
+    }
+  ],
+  "title": "Odjak of Algiers Revolution",
+  "summary": "The English Wikipedia article \"Odjak of Algiers Revolution\", at revision 1367523857, opens: \"The Revolution of the Odjak, also known as the Aghas Revolution or the Revolution of 1659 was an important military revolution that changed the essential bases of the government of the Ottoman Regency of Algiers, as well as its relations with the imperial centre in Istanbul. Taking place during a period of transformation of the Ottoman Empire, and lasting from June to September 1659, it was largely viewed as a result of the loss of the importance that the Regency previously had for Constantinople back in the 16th century; decades of marginalization demonstrated through the appointment of incompetent governors and diverging interests regarding relations with European powers, made both the Barbary corsairs and the janissaries of Algiers less inclined to commit themselves to the Ottoman cause. This culminated in the rise of the janissary Odjak corps as the most prominent faction of the Ottoman Algerian political elite.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q122929851, imported by tools/import/wikidata.mjs. The item's own description reads \"1659 revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1659,
+    "end": 1659,
+    "date": "1659-06",
+    "endDate": "1659-09"
+  },
+  "place": "algiers-q3561",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "transformation-of-the-ottoman-empire"
+}
