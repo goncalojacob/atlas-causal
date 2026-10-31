@@ -8445,6 +8445,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "boonesborough-kentucky",
+      "kind": "place",
+      "names": [
+        "Boonesborough",
+        "Boonesborough, Kentucky"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "boonville-missouri",
@@ -14504,7 +14532,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 16,
+      "degree": 18,
       "id": "colombia-q739",
       "kind": "place",
       "names": [
@@ -19785,7 +19813,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "erzurum",
       "kind": "place",
       "names": [
@@ -21251,6 +21279,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "fort-howard-maryland",
+      "kind": "place",
+      "names": [
+        "Fort Howard",
+        "Fort Howard (Maryland)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "fort-julien",
@@ -21638,7 +21694,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 2,
+      "degree": 3,
       "id": "fort-stanwix",
       "kind": "place",
       "names": [
@@ -25085,6 +25141,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "guaranda",
+      "kind": "place",
+      "names": [
+        "Guaranda"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "guastalla",
@@ -26934,6 +27017,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "highland-sullivan-county-new-york",
+      "kind": "place",
+      "names": [
+        "Highland",
+        "Highland, Sullivan County, New York"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-30",
       "degree": 1,
       "id": "highlands-new-york",
@@ -27658,7 +27769,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 2,
+      "degree": 3,
       "id": "hudson-bay",
       "kind": "place",
       "names": [
@@ -30244,6 +30355,35 @@
       "kind": "place",
       "names": [
         "Jena"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "jenipapo-river",
+      "kind": "place",
+      "names": [
+        "Jenipapo River",
+        "Rio Jenipapo",
+        "Rio Jenipapo (Piauí)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -42899,7 +43039,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 3,
+      "degree": 4,
       "id": "montevideo",
       "kind": "place",
       "names": [
@@ -43578,6 +43718,61 @@
         "Moulouya River",
         "Rio Moulouya",
         "Rio Mulucha"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "mount-holly-new-jersey",
+      "kind": "place",
+      "names": [
+        "Mount Holly",
+        "Mount Holly, New Jersey"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "mount-hope-bay",
+      "kind": "place",
+      "names": [
+        "Mount Hope Bay"
       ],
       "origin": {
         "tool": "wikidata"
@@ -45157,7 +45352,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "nassau-bahamas",
       "kind": "place",
       "names": [
@@ -45682,6 +45877,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "new-london-connecticut",
+      "kind": "place",
+      "names": [
+        "New London",
+        "New London, Connecticut",
+        "New London (Connecticut)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-30",
       "degree": 1,
       "id": "new-madrid-missouri",
@@ -45821,7 +46045,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 6,
+      "degree": 7,
       "id": "new-york-state",
       "kind": "place",
       "names": [
@@ -51713,6 +51937,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "port-royal-island",
+      "kind": "place",
+      "names": [
+        "Port Royal Island"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -52103,6 +52354,35 @@
           "a9-place"
         ],
         "note": "A9's second step: Q2002270, the Mozambican War of Independence, carries no coordinate of its own and its `P276` is this colony. The point is the item's own, which is Lourenço Marques, the capital the colonial administration sat in — the colony has no centre of its own to give, and `precision: country` is what says so.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "potosi-department",
+      "kind": "place",
+      "names": [
+        "Potosí Department",
+        "Departamento de Potosí",
+        "Potosí (departamento)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -61561,6 +61841,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "spanish-fort-alabama",
+      "kind": "place",
+      "names": [
+        "Spanish Fort",
+        "Spanish Fort, Alabama",
+        "Spanish Fort (Alabama)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -67754,7 +68063,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 94,
+      "degree": 95,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -68618,6 +68927,34 @@
         "Van",
         "Vã",
         "Van, Turkey"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "vancouver-island",
+      "kind": "place",
+      "names": [
+        "Vancouver Island",
+        "Ilha Vancouver"
       ],
       "origin": {
         "tool": "wikidata"
@@ -71106,7 +71443,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "williamsburg-virginia",
       "kind": "place",
       "names": [
@@ -72216,7 +72553,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 5,
+      "degree": 6,
       "id": "yerevan",
       "kind": "place",
       "names": [
@@ -72410,7 +72747,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 1,
+      "degree": 2,
       "id": "yorktown-virginia",
       "kind": "place",
       "names": [

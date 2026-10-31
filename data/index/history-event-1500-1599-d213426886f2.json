@@ -3419,6 +3419,15 @@
         }
       ]
     },
+    "burmese-siamese-war-1568-1569": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "burmese-siamese-wars": {
       "from": "git",
       "versions": [
@@ -4211,6 +4220,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "first-dutch-expedition-to-the-east-indies": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -5197,6 +5215,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "ottoman-expeditions-to-morocco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
