@@ -1982,6 +1982,12 @@
     },
     {
       "dissent": false,
+      "id": "1660-destruction-of-safed",
+      "kind": "event",
+      "locator": "Q14920516"
+    },
+    {
+      "dissent": false,
       "id": "1663-charlevoix-earthquake",
       "kind": "event",
       "locator": "Q4551650"
@@ -4088,6 +4094,12 @@
     },
     {
       "dissent": false,
+      "id": "adana-campaign",
+      "kind": "event",
+      "locator": "Q9172702"
+    },
+    {
+      "dissent": false,
       "id": "aden-revolt",
       "kind": "event",
       "locator": "Q3049873"
@@ -4157,6 +4169,12 @@
       "id": "afghan-sikh-wars",
       "kind": "event",
       "locator": "Q4689049"
+    },
+    {
+      "dissent": false,
+      "id": "african-slave-trade-patrol",
+      "kind": "event",
+      "locator": "Q4689914"
     },
     {
       "dissent": false,
@@ -6038,6 +6056,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-andros-1825",
+      "kind": "event",
+      "locator": "Q4438380"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-anegawa",
       "kind": "event",
       "locator": "Q964983"
@@ -6455,6 +6479,12 @@
       "id": "battle-of-baltimore",
       "kind": "event",
       "locator": "Q1850527"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-baneh-1777",
+      "kind": "event",
+      "locator": "Q118929918"
     },
     {
       "dissent": false,
@@ -7427,6 +7457,12 @@
       "id": "battle-of-cannanore-1506",
       "kind": "event",
       "locator": "Q4087429"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-canton-1856",
+      "kind": "event",
+      "locator": "Q16207110"
     },
     {
       "dissent": false,
@@ -9926,6 +9962,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-golden-rock",
+      "kind": "event",
+      "locator": "Q4871124"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-goliad",
       "kind": "event",
       "locator": "Q2574486"
@@ -9971,6 +10013,12 @@
       "id": "battle-of-gorodechno",
       "kind": "event",
       "locator": "Q743734"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-goteik-gorge",
+      "kind": "event",
+      "locator": "Q4871131"
     },
     {
       "dissent": false,
@@ -10925,6 +10973,12 @@
       "id": "battle-of-itaparica",
       "kind": "event",
       "locator": "Q4871291"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-itea",
+      "kind": "event",
+      "locator": "Q18175416"
     },
     {
       "dissent": false,
@@ -12005,6 +12059,12 @@
       "id": "battle-of-lagunillas",
       "kind": "event",
       "locator": "Q3636492"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lahore-1752",
+      "kind": "event",
+      "locator": "Q25302666"
     },
     {
       "dissent": false,
@@ -16334,6 +16394,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-shanghai-1861-1862",
+      "kind": "event",
+      "locator": "Q3493762"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-shangi",
       "kind": "event",
       "locator": "Q134389533"
@@ -16460,6 +16526,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sholinghur",
+      "kind": "event",
+      "locator": "Q4872372"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-shopian",
       "kind": "event",
       "locator": "Q4872373"
@@ -16478,9 +16550,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sialkot-1761",
+      "kind": "event",
+      "locator": "Q21244905"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sidi-brahim",
       "kind": "event",
       "locator": "Q2889977"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sidon-1840",
+      "kind": "event",
+      "locator": "Q112648578"
     },
     {
       "dissent": false,
@@ -16970,6 +17054,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-surabaya-1677",
+      "kind": "event",
+      "locator": "Q29043962"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-suriagehara",
       "kind": "event",
       "locator": "Q860789"
@@ -17135,6 +17225,12 @@
       "id": "battle-of-tamai",
       "kind": "event",
       "locator": "Q604356"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tamatave",
+      "kind": "event",
+      "locator": "Q4872498"
     },
     {
       "dissent": false,
@@ -19532,6 +19628,12 @@
     },
     {
       "dissent": false,
+      "id": "battles-of-uruzgan-1892-1893",
+      "kind": "event",
+      "locator": "Q4872633"
+    },
+    {
+      "dissent": false,
       "id": "battles-of-wenden-1577-1578",
       "kind": "event",
       "locator": "Q2364604"
@@ -20564,6 +20666,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-cambarao",
+      "kind": "event",
+      "locator": "Q121408251"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-cayo-cocina",
       "kind": "event",
       "locator": "Q5036996"
@@ -20726,6 +20834,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-muscat-1581",
+      "kind": "event",
+      "locator": "Q118946422"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-my-tho",
       "kind": "event",
       "locator": "Q5037043"
@@ -20825,6 +20939,12 @@
       "id": "capture-of-tabriz-1514",
       "kind": "event",
       "locator": "Q118928943"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-tabriz-1585",
+      "kind": "event",
+      "locator": "Q119167853"
     },
     {
       "dissent": false,
@@ -27020,6 +27140,12 @@
     },
     {
       "dissent": false,
+      "id": "khorasan-campaign-of-nader-shah",
+      "kind": "event",
+      "locator": "Q18206937"
+    },
+    {
+      "dissent": false,
       "id": "kidal-offensive",
       "kind": "event",
       "locator": "Q125550564"
@@ -29807,6 +29933,12 @@
       "id": "ottoman-safavid-war-1603-1612",
       "kind": "event",
       "locator": "Q2578094"
+    },
+    {
+      "dissent": false,
+      "id": "ottoman-safavid-war-1616-1618",
+      "kind": "event",
+      "locator": "Q12846172"
     },
     {
       "dissent": false,
@@ -33662,6 +33794,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-baghdad-1630",
+      "kind": "event",
+      "locator": "Q97648660"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-baghdad-1638",
       "kind": "event",
       "locator": "Q5036981"
@@ -34187,6 +34325,12 @@
       "id": "siege-of-cuautla",
       "kind": "event",
       "locator": "Q3485870"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-cuddalore",
+      "kind": "event",
+      "locator": "Q12976096"
     },
     {
       "dissent": false,
@@ -34760,6 +34904,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-harput-1516",
+      "kind": "event",
+      "locator": "Q85971266"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-hasedo",
       "kind": "event",
       "locator": "Q7510081"
@@ -35021,6 +35171,12 @@
       "id": "siege-of-kars",
       "kind": "event",
       "locator": "Q815157"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kars-1744",
+      "kind": "event",
+      "locator": "Q119167840"
     },
     {
       "dissent": false,
@@ -35645,6 +35801,12 @@
       "id": "siege-of-montevideo-1823",
       "kind": "event",
       "locator": "Q4337408"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mosul-1517",
+      "kind": "event",
+      "locator": "Q112075364"
     },
     {
       "dissent": false,
@@ -42197,6 +42359,12 @@
       "id": "winter-war",
       "kind": "event",
       "locator": "Q134949"
+    },
+    {
+      "dissent": false,
+      "id": "withdrawal-through-andalal-1741",
+      "kind": "event",
+      "locator": "Q25210903"
     },
     {
       "dissent": false,

@@ -423,6 +423,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "adana",
+      "kind": "place",
+      "names": [
+        "Adana"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-01",
       "degree": 1,
       "id": "addis-ababa",
@@ -733,7 +760,7 @@
         }
       ],
       "created": "2026-10-30",
-      "degree": 3,
+      "degree": 4,
       "id": "africa-q15",
       "kind": "place",
       "names": [
@@ -4709,7 +4736,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 6,
+      "degree": 7,
       "id": "baghdad",
       "kind": "place",
       "names": [
@@ -5254,6 +5281,33 @@
       "names": [
         "Banda Sea",
         "Mar de Banda"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "bandar-abbas",
+      "kind": "place",
+      "names": [
+        "Bandar Abbas"
       ],
       "origin": {
         "tool": "wikidata"
@@ -15812,7 +15866,7 @@
         }
       ],
       "created": "2026-10-01",
-      "degree": 1,
+      "degree": 2,
       "id": "cuddalore",
       "kind": "place",
       "names": [
@@ -25076,7 +25130,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 13,
+      "degree": 14,
       "id": "greece-q41",
       "kind": "place",
       "names": [
@@ -25492,7 +25546,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 7,
       "id": "guangzhou",
       "kind": "place",
       "names": [
@@ -26803,6 +26857,34 @@
         "Harpers Ferry",
         "Harpers Ferry, West Virginia",
         "Harpers Ferry (Virgínia Ocidental)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "harpoot",
+      "kind": "place",
+      "names": [
+        "Kharpoot",
+        "Harpoot"
       ],
       "origin": {
         "tool": "wikidata"
@@ -30007,6 +30089,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "itea-phocis",
+      "kind": "place",
+      "names": [
+        "Itea",
+        "Itea, Phocis"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "itsukushima",
@@ -32142,7 +32252,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 4,
+      "degree": 5,
       "id": "kars",
       "kind": "place",
       "names": [
@@ -33010,7 +33120,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 3,
+      "degree": 4,
       "id": "khorasan",
       "kind": "place",
       "names": [
@@ -35565,6 +35675,34 @@
       "kind": "place",
       "names": [
         "Laghouat"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "lahore-q11739",
+      "kind": "place",
+      "names": [
+        "Lahore",
+        "Laore"
       ],
       "origin": {
         "tool": "wikidata"
@@ -44285,7 +44423,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "mosul",
       "kind": "place",
       "names": [
@@ -44995,6 +45133,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "muscat-q3826",
+      "kind": "place",
+      "names": [
+        "Muscat",
+        "Mascate"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -57276,7 +57442,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 3,
+      "degree": 4,
       "id": "safed",
       "kind": "place",
       "names": [
@@ -60522,7 +60688,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 2,
+      "degree": 3,
       "id": "shanghai",
       "kind": "place",
       "names": [
@@ -60911,6 +61077,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "sholinghur",
+      "kind": "place",
+      "names": [
+        "Sholinghur"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "shopian",
@@ -60945,6 +61138,34 @@
       "kind": "place",
       "names": [
         "Shubra Khit"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "sialkot",
+      "kind": "place",
+      "names": [
+        "Sialkot",
+        "Sialcote"
       ],
       "origin": {
         "tool": "wikidata"
@@ -61054,6 +61275,33 @@
       "names": [
         "gambetta",
         "Sidi Brahim"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "sidon",
+      "kind": "place",
+      "names": [
+        "Sidon"
       ],
       "origin": {
         "tool": "wikidata"
@@ -62035,7 +62283,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "south-caucasus",
       "kind": "place",
       "names": [
@@ -66928,7 +67176,7 @@
         }
       ],
       "created": "2026-10-31",
-      "degree": 1,
+      "degree": 2,
       "id": "tiruchirappalli",
       "kind": "place",
       "names": [
@@ -66984,6 +67232,33 @@
       "names": [
         "Tlemcen",
         "Tremecém"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "toamasina",
+      "kind": "place",
+      "names": [
+        "Toamasina"
       ],
       "origin": {
         "tool": "wikidata"

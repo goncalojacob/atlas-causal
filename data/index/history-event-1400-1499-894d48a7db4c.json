@@ -47,6 +47,15 @@
         }
       ]
     },
+    "adana-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "albanian-ottoman-wars-1432-1479": {
       "from": "git",
       "versions": [

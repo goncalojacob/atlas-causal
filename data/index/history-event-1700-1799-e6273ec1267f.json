@@ -1258,6 +1258,15 @@
         }
       ]
     },
+    "battle-of-baneh-1777": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-banja-luka": {
       "from": "git",
       "versions": [
@@ -2485,12 +2494,30 @@
         }
       ]
     },
+    "battle-of-golden-rock": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-gonaives": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-goteik-gorge": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -3210,6 +3237,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "battle-of-lahore-1752": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -4686,6 +4722,15 @@
         }
       ]
     },
+    "battle-of-sholinghur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-short-hills": {
       "from": "git",
       "versions": [
@@ -4701,6 +4746,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-sialkot-1761": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -7703,6 +7757,15 @@
         }
       ]
     },
+    "khorasan-campaign-of-nader-shah": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "king-george-s-war": {
       "from": "git",
       "versions": [
@@ -9509,6 +9572,15 @@
         }
       ]
     },
+    "siege-of-cuddalore": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-cuddalore-1748": {
       "from": "git",
       "versions": [
@@ -9749,6 +9821,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-kars-1744": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -12068,6 +12149,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "withdrawal-through-andalal-1741": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
