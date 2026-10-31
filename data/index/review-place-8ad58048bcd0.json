@@ -3415,6 +3415,33 @@
       ],
       "created": "2026-10-31",
       "degree": 1,
+      "id": "arlon",
+      "kind": "place",
+      "names": [
+        "Arlon"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
       "id": "armagh",
       "kind": "place",
       "names": [
@@ -4483,6 +4510,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "bacharach",
+      "kind": "place",
+      "names": [
+        "Bacharach"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -7188,12 +7242,40 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 8,
+      "degree": 9,
       "id": "belgrade",
       "kind": "place",
       "names": [
         "Belgrade",
         "Belgrado"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "belle-ile",
+      "kind": "place",
+      "names": [
+        "Belle Île",
+        "Belle-Isle"
       ],
       "origin": {
         "tool": "wikidata"
@@ -7749,7 +7831,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 14,
+      "degree": 15,
       "id": "berlin",
       "kind": "place",
       "names": [
@@ -11065,6 +11147,33 @@
       "kind": "place",
       "names": [
         "California"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "callantsoog",
+      "kind": "place",
+      "names": [
+        "Callantsoog"
       ],
       "origin": {
         "tool": "wikidata"
@@ -18550,7 +18659,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 3,
+      "degree": 4,
       "id": "dresden",
       "kind": "place",
       "names": [
@@ -18853,6 +18962,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "dunboy-castle",
+      "kind": "place",
+      "names": [
+        "Dunboy Castle"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "dundee-kwazulu-natal",
@@ -18974,6 +19110,33 @@
       "kind": "place",
       "names": [
         "Durban"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "dusseldorf",
+      "kind": "place",
+      "names": [
+        "Düsseldorf"
       ],
       "origin": {
         "tool": "wikidata"
@@ -20270,7 +20433,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "erfurt",
       "kind": "place",
       "names": [
@@ -26328,6 +26491,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "gunzburg",
+      "kind": "place",
+      "names": [
+        "Günzburg",
+        "Gunzburgo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "gura-eritrea",
@@ -26657,7 +26848,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "halle-saale",
       "kind": "place",
       "names": [
@@ -31834,6 +32025,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "k-ge",
+      "kind": "place",
+      "names": [
+        "Køge"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 2,
       "id": "k-ge-bay",
@@ -33003,7 +33221,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "kazan",
       "kind": "place",
       "names": [
@@ -34112,6 +34330,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "kleve",
+      "kind": "place",
+      "names": [
+        "Kleve",
+        "Cleves",
+        "Cleves (Cleves)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "ko-obrzeg",
@@ -34415,6 +34662,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "koniecpol",
+      "kind": "place",
+      "names": [
+        "Koniecpol"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "konigsberg",
@@ -34504,6 +34778,33 @@
       "kind": "place",
       "names": [
         "Koppal"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "korbach",
+      "kind": "place",
+      "names": [
+        "Korbach"
       ],
       "origin": {
         "tool": "wikidata"
@@ -38262,6 +38563,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "loano",
+      "kind": "place",
+      "names": [
+        "Loano"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -39842,7 +40170,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "magdeburg",
       "kind": "place",
       "names": [
@@ -41698,6 +42026,35 @@
       "kind": "place",
       "names": [
         "Maubeuge"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "mauleon-deux-sevres",
+      "kind": "place",
+      "names": [
+        "Mauléon",
+        "Mauléon, Deux-Sèvres",
+        "Mauléon (Deux-Sèvres)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -44120,6 +44477,35 @@
       "names": [
         "Mons",
         "Mons, Belgium"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "montaigu-vendee",
+      "kind": "place",
+      "names": [
+        "Montaigu",
+        "Montaigu, Vendée",
+        "Montaigu (Vendeia)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -46703,6 +47089,33 @@
         "Nassau",
         "Nassau, Bahamas",
         "Nassau (Bahamas)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "nauheim",
+      "kind": "place",
+      "names": [
+        "Nauheim"
       ],
       "origin": {
         "tool": "wikidata"
@@ -51709,7 +52122,7 @@
         }
       ],
       "created": "2026-10-30",
-      "degree": 1,
+      "degree": 2,
       "id": "perpignan",
       "kind": "place",
       "names": [
@@ -53724,7 +54137,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 62,
+      "degree": 63,
       "id": "portugal-q45",
       "kind": "place",
       "names": [
@@ -60822,6 +61235,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "sedan-ardennes",
+      "kind": "place",
+      "names": [
+        "Sedan",
+        "Sedan, Ardennes"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "segeneiti",
@@ -66340,6 +66781,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "tarvisio",
+      "kind": "place",
+      "names": [
+        "Tarvisio"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -66616,7 +67084,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "tendra-spit",
       "kind": "place",
       "names": [
@@ -67416,6 +67884,33 @@
       "kind": "place",
       "names": [
         "Thorold"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "thouars",
+      "kind": "place",
+      "names": [
+        "Thouars"
       ],
       "origin": {
         "tool": "wikidata"
@@ -69535,7 +70030,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 2,
+      "degree": 3,
       "id": "turku",
       "kind": "place",
       "names": [
@@ -70702,6 +71197,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "valencia-de-alcantara",
+      "kind": "place",
+      "names": [
+        "Valencia de Alcántara"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 3,
       "id": "valenciennes",
@@ -71312,7 +71834,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 2,
+      "degree": 3,
       "id": "verona",
       "kind": "place",
       "names": [
@@ -71542,6 +72064,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "vihiers",
+      "kind": "place",
+      "names": [
+        "Vihiers"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -72571,6 +73120,33 @@
       "kind": "place",
       "names": [
         "Warburg"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "warka",
+      "kind": "place",
+      "names": [
+        "Warka"
       ],
       "origin": {
         "tool": "wikidata"
@@ -73629,6 +74205,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "winceby",
+      "kind": "place",
+      "names": [
+        "Winceby"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

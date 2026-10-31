@@ -10622,6 +10622,12 @@
     },
     {
       "dissent": false,
+      "id": "1757-raid-on-berlin",
+      "kind": "event",
+      "locator": "\"1757 raid on Berlin\", revision 1376165731"
+    },
+    {
+      "dissent": false,
       "id": "1759-near-east-earthquakes",
       "kind": "event",
       "locator": "\"1759 Near East earthquakes\", revision 1366167944"
@@ -12257,6 +12263,12 @@
       "id": "aberdeen-act-1845",
       "kind": "event",
       "locator": "\"Eusébio de Queirós Law\", revision 1368931242"
+    },
+    {
+      "dissent": false,
+      "id": "abo-bloodbath",
+      "kind": "event",
+      "locator": "\"Åbo Bloodbath\", revision 1366207459"
     },
     {
       "dissent": false,
@@ -14204,6 +14216,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-alcolea-bridge",
+      "kind": "event",
+      "locator": "\"Battle of Alcolea Bridge\", revision 1370431534"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-aldenhoven-1793",
       "kind": "event",
       "locator": "\"Battle of Aldenhoven (1793)\", revision 1376373620"
@@ -14573,6 +14591,12 @@
       "id": "battle-of-arkansas-post",
       "kind": "event",
       "locator": "\"Battle of Arkansas Post\", revision 1370106972"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-arlon-1793",
+      "kind": "event",
+      "locator": "\"Battle of Arlon (1793)\", revision 1370432505"
     },
     {
       "dissent": false,
@@ -15476,6 +15500,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-brentford-1642",
+      "kind": "event",
+      "locator": "\"Battle of Brentford (1642)\", revision 1382693716"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-breslau-1757",
       "kind": "event",
       "locator": "\"Battle of Breslau (1757)\", revision 1370717421"
@@ -15728,6 +15758,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-callantsoog",
+      "kind": "event",
+      "locator": "\"Battle of Callantsoog\", revision 1370108434"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-callao",
       "kind": "event",
       "locator": "\"Battle of Callao\", revision 1381423327"
@@ -15863,6 +15899,12 @@
       "id": "battle-of-canton-may-1841",
       "kind": "event",
       "locator": "\"Battle of Canton (May 1841)\", revision 1370436115"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cap-de-la-roque",
+      "kind": "event",
+      "locator": "\"Battle of Cap de la Roque\", revision 1370436134"
     },
     {
       "dissent": false,
@@ -16685,6 +16727,12 @@
       "id": "battle-of-copenhagen-1807",
       "kind": "event",
       "locator": "\"Battle of Copenhagen (1807)\", revision 1371917949"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-corbach",
+      "kind": "event",
+      "locator": "\"Battle of Corbach\", revision 1370109241"
     },
     {
       "dissent": false,
@@ -17657,6 +17705,12 @@
       "id": "battle-of-flores-1591",
       "kind": "event",
       "locator": "\"Battle of Flores (1591)\", revision 1371696375"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-flushing",
+      "kind": "event",
+      "locator": "\"Battle of Flushing\", revision 1366203640"
     },
     {
       "dissent": false,
@@ -18662,6 +18716,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gunzburg",
+      "kind": "event",
+      "locator": "\"Battle of Günzburg\", revision 1375646040"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gur-amba",
       "kind": "event",
       "locator": "\"Battle of Gur Amba\", revision 1370442328"
@@ -18725,6 +18785,12 @@
       "id": "battle-of-halidzor",
       "kind": "event",
       "locator": "\"Battle of Halidzor\", revision 1373076404"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-halle",
+      "kind": "event",
+      "locator": "\"Battle of Halle\", revision 1370753828"
     },
     {
       "dissent": false,
@@ -19658,6 +19724,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-k-ge",
+      "kind": "event",
+      "locator": "\"Battle of Køge\", revision 1370267618"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-k-ge-bay-1677",
       "kind": "event",
       "locator": "\"Battle of Køge Bay (1677)\", revision 1370446654"
@@ -19853,6 +19925,12 @@
       "id": "battle-of-kay",
       "kind": "event",
       "locator": "\"Battle of Kay\", revision 1370444978"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kazan-1774",
+      "kind": "event",
+      "locator": "\"Battle of Kazan (1774)\", revision 1370444992"
     },
     {
       "dissent": false,
@@ -20144,6 +20222,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-koniecpol",
+      "kind": "event",
+      "locator": "\"Battle of Koniecpol\", revision 1377018480"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-koniggratz",
       "kind": "event",
       "locator": "\"Battle of Königgrätz\", revision 1381256183"
@@ -20405,6 +20489,12 @@
       "id": "battle-of-la-higueruela",
       "kind": "event",
       "locator": "\"Battle of La Higueruela\", revision 1370446765"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-la-marfee",
+      "kind": "event",
+      "locator": "\"Battle of La Marfée\", revision 1370446775"
     },
     {
       "dissent": false,
@@ -20813,6 +20903,12 @@
       "id": "battle-of-lleida-1642",
       "kind": "event",
       "locator": "\"Battle of Lleida (1642)\", revision 1370268337"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-loano",
+      "kind": "event",
+      "locator": "\"Battle of Loano\", revision 1370268344"
     },
     {
       "dissent": false,
@@ -21872,6 +21968,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-montaigu",
+      "kind": "event",
+      "locator": "\"Battle of Montaigu\", revision 1370450289"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-monte-cristi",
       "kind": "event",
       "locator": "\"Battle of Monte Cristi\", revision 1370450306"
@@ -22259,6 +22361,12 @@
       "id": "battle-of-nashville",
       "kind": "event",
       "locator": "\"Battle of Nashville\", revision 1373339379"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-nauheim",
+      "kind": "event",
+      "locator": "\"Battle of Nauheim\", revision 1370451481"
     },
     {
       "dissent": false,
@@ -23090,6 +23198,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-perpignan",
+      "kind": "event",
+      "locator": "\"Battle of Perpignan\", revision 1370585886"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-perryville",
       "kind": "event",
       "locator": "\"Battle of Perryville\", revision 1380654731"
@@ -23741,6 +23855,12 @@
       "id": "battle-of-rajmahal",
       "kind": "event",
       "locator": "\"Battle of Rajmahal\", revision 1370587109"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-rakvere-1603",
+      "kind": "event",
+      "locator": "\"Battle of Rakvere (1603)\", revision 1373818806"
     },
     {
       "dissent": false,
@@ -25772,6 +25892,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tarvis-1797",
+      "kind": "event",
+      "locator": "\"Battle of Tarvis (1797)\", revision 1370590623"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tashihchiao",
       "kind": "event",
       "locator": "\"Battle of Tashihchiao\", revision 1370590643"
@@ -25865,6 +25991,12 @@
       "id": "battle-of-tenango-del-valle",
       "kind": "event",
       "locator": "\"Battle of Tenango del Valle\", revision 1370590832"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tendra",
+      "kind": "event",
+      "locator": "\"Battle of Tendra\", revision 1382487546"
     },
     {
       "dissent": false,
@@ -26474,6 +26606,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-thouars",
+      "kind": "event",
+      "locator": "\"Battle of Thouars\", revision 1381138441"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ticonderoga-1759",
       "kind": "event",
       "locator": "\"Battle of Ticonderoga (1759)\", revision 1370717242"
@@ -27050,6 +27188,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-valencia-de-alcantara",
+      "kind": "event",
+      "locator": "\"Battle of Valencia de Alcántara\", revision 1380908647"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-valenciennes-1656",
       "kind": "event",
       "locator": "\"Battle of Valenciennes (1656)\", revision 1372289367"
@@ -27212,6 +27356,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-verona-1805",
+      "kind": "event",
+      "locator": "\"Battle of Verona (1805)\", revision 1370592392"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-vertieres",
       "kind": "event",
       "locator": "\"Battle of Vertières\", revision 1371955419"
@@ -27227,6 +27377,12 @@
       "id": "battle-of-vigo-bay",
       "kind": "event",
       "locator": "\"Battle of Vigo Bay\", revision 1374900024"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vihiers",
+      "kind": "event",
+      "locator": "\"Battle of Vihiers\", revision 1370592475"
     },
     {
       "dissent": false,
@@ -27419,6 +27575,12 @@
       "id": "battle-of-warburg",
       "kind": "event",
       "locator": "\"Battle of Warburg\", revision 1370593227"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-warka",
+      "kind": "event",
+      "locator": "\"Battle of Warka\", revision 1370593266"
     },
     {
       "dissent": false,
@@ -27635,6 +27797,12 @@
       "id": "battle-of-wimpfen",
       "kind": "event",
       "locator": "\"Battle of Wimpfen\", revision 1370276930"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-winceby",
+      "kind": "event",
+      "locator": "\"Battle of Winceby\", revision 1370594107"
     },
     {
       "dissent": false,
@@ -29084,6 +29252,12 @@
     },
     {
       "dissent": false,
+      "id": "capitulation-of-erfurt",
+      "kind": "event",
+      "locator": "\"Capitulation of Erfurt\", revision 1370608132"
+    },
+    {
+      "dissent": false,
       "id": "capitulation-of-estonia-and-livonia",
       "kind": "event",
       "locator": "\"Capitulation of Estonia and Livonia\", revision 1368931390"
@@ -29132,6 +29306,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-bacharach",
+      "kind": "event",
+      "locator": "\"Capture of Bacharach\", revision 1370608274"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-baghdad-1534",
       "kind": "event",
       "locator": "\"Capture of Baghdad (1534)\", revision 1370608286"
@@ -29153,6 +29333,12 @@
       "id": "capture-of-bejaia-1555",
       "kind": "event",
       "locator": "\"Capture of Béjaïa (1555)\", revision 1370608406"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-belle-ile",
+      "kind": "event",
+      "locator": "\"Capture of Belle Île\", revision 1371933368"
     },
     {
       "dissent": false,
@@ -32363,6 +32549,12 @@
       "id": "first-battle-of-charleston-harbor",
       "kind": "event",
       "locator": "\"First Battle of Charleston Harbor\", revision 1370618531"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-chatillon",
+      "kind": "event",
+      "locator": "\"First Battle of Châtillon\", revision 1370618540"
     },
     {
       "dissent": false,
@@ -36695,6 +36887,12 @@
       "id": "massacre-of-italians-at-aigues-mortes",
       "kind": "event",
       "locator": "\"Massacre of Italians at Aigues-Mortes\", revision 1370307848"
+    },
+    {
+      "dissent": false,
+      "id": "massacre-of-naarden",
+      "kind": "event",
+      "locator": "\"Massacre of Naarden\", revision 1374953042"
     },
     {
       "dissent": false,
@@ -42320,6 +42518,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-belgrade-1739",
+      "kind": "event",
+      "locator": "\"Siege of Belgrade (1739)\", revision 1375791029"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-belgrade-1789",
       "kind": "event",
       "locator": "\"Siege of Belgrade (1789)\", revision 1382471820"
@@ -42806,6 +43010,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-deventer-1591",
+      "kind": "event",
+      "locator": "\"Siege of Deventer (1591)\", revision 1370740728"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-dijon",
       "kind": "event",
       "locator": "\"Siege of Dijon\", revision 1370740741"
@@ -42854,9 +43064,21 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-dresden",
+      "kind": "event",
+      "locator": "\"Siege of Dresden\", revision 1370740818"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-drogheda",
       "kind": "event",
       "locator": "\"Siege of Drogheda\", revision 1379481256"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-dunboy",
+      "kind": "event",
+      "locator": "\"Siege of Dunboy\", revision 1370740866"
     },
     {
       "dissent": false,
@@ -42941,6 +43163,12 @@
       "id": "siege-of-famagusta",
       "kind": "event",
       "locator": "\"Siege of Famagusta\", revision 1381065742"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-fellin",
+      "kind": "event",
+      "locator": "\"Siege of Fellin\", revision 1370741125"
     },
     {
       "dissent": false,
@@ -43484,6 +43712,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-kaiserswerth",
+      "kind": "event",
+      "locator": "\"Siege of Kaiserswerth\", revision 1370742197"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-kakegawa",
       "kind": "event",
       "locator": "\"Siege of Kakegawa\", revision 1378568093"
@@ -43955,6 +44189,12 @@
       "id": "siege-of-mafeking",
       "kind": "event",
       "locator": "\"Siege of Mafeking\", revision 1370743154"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-magdeburg-1806",
+      "kind": "event",
+      "locator": "\"Siege of Magdeburg (1806)\", revision 1370743157"
     },
     {
       "dissent": false,
@@ -44924,6 +45164,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-schenkenschans",
+      "kind": "event",
+      "locator": "\"Siege of Schenkenschans\", revision 1370745115"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-seringapatam-1799",
       "kind": "event",
       "locator": "\"Siege of Seringapatam (1799)\", revision 1376680546"
@@ -45518,6 +45764,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-wolmar",
+      "kind": "event",
+      "locator": "\"Siege of Wolmar\", revision 1374359474"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-xativa-1707",
       "kind": "event",
       "locator": "\"Siege of Xàtiva (1707)\", revision 1374999321"
@@ -45575,6 +45827,12 @@
       "id": "siege-of-zbarazh",
       "kind": "event",
       "locator": "\"Siege of Zbarazh\", revision 1370787660"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-zhvanets",
+      "kind": "event",
+      "locator": "\"Siege of Zhvanets\", revision 1382550496"
     },
     {
       "dissent": false,
