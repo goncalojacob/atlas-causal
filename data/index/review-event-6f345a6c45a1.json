@@ -18227,36 +18227,6 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
-      "category": "revolution",
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
-      "created": "2026-10-31",
-      "id": "baptist-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts",
-          "summary-from-lead",
-          "a9-place"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Baptist War"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -91156,7 +91126,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "spanish-american-war",
+      "parent": "spanish-american-war-1898",
       "review": {
         "flags": [
           "imported-facts",
@@ -103313,36 +103283,6 @@
       "revised": "2026-09-16",
       "status": "active",
       "title": "Cuban Revolution"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
-      "created": "2026-10-31",
-      "id": "cuban-war-of-independence",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts",
-          "summary-from-lead",
-          "a9-place"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Cuban War of Independence"
     },
     {
       "authors": [
@@ -120143,37 +120083,6 @@
       "authors": [
         {
           "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "revolution",
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
-      "created": "2026-10-31",
-      "id": "haitian-revolution",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "parent": "atlantic-revolutions",
-      "review": {
-        "flags": [
-          "imported-facts",
-          "summary-from-lead",
-          "filed-from-p361"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Haitian Revolution"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -122094,35 +122003,6 @@
       "revised": null,
       "status": "active",
       "title": "Independence of Argentina"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
-      "created": "2026-10-31",
-      "id": "independence-of-brazil",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts",
-          "summary-from-lead",
-          "a9-place"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Independence of Brazil"
     },
     {
       "authors": [
@@ -178696,35 +178576,6 @@
       "authors": [
         {
           "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
-      "created": "2026-10-31",
-      "id": "spanish-american-war",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts",
-          "summary-from-lead"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Spanish–American War"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -206246,12 +206097,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "baptist-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "barbary-portuguese-conflicts",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -220478,12 +220323,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "cuban-war-of-independence",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "cudgel-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -223088,12 +222927,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "haitian-revolution",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "hamgyong-campaign",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -223356,12 +223189,6 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
-    },
-    {
-      "id": "independence-of-brazil",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
     },
     {
       "id": "independence-of-central-america",
@@ -232407,12 +232234,6 @@
     },
     {
       "id": "southern-cross-expedition",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "spanish-american-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
