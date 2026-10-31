@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "heligoland",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3038",
+  "sitelinks": {
+    "count": 81,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Heligoland",
+    "pt": "Heligolândia"
+  },
+  "sources": [],
+  "names": [
+    "Heligoland",
+    "Helgoland",
+    "Heligolândia"
+  ],
+  "where": {
+    "lon": 7.8852777777778,
+    "lat": 54.1825,
+    "precision": "point",
+    "label": "Heligoland"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

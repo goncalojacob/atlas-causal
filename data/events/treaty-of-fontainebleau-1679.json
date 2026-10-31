@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-fontainebleau-1679",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3487327",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Treaty of Fontainebleau (1679)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3487327"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Fontainebleau (1679)\", revision 1332449720"
+    }
+  ],
+  "title": "Treaty of Fontainebleau (1679)",
+  "summary": "The English Wikipedia article \"Treaty of Fontainebleau (1679)\", at revision 1332449720, opens: \"The Treaty of Fontainebleau, signed on 23 August (O.S.) / 2 September 1679, ended hostilities between Denmark-Norway and the Swedish Empire in the Scanian War. Denmark, pressured by France, restored all conquests made during the war to Sweden in turn for a \"paltry indemnity\". The treaty was confirmed, detailed and amended in the subsequent Peace of Lund.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3487327, imported by tools/import/wikidata.mjs. The item's own description reads \"1679 peace treaty between Denmark-Norway and the Swedish Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1679,
+    "end": 1679,
+    "date": "1679-09-02"
+  },
+  "place": "fontainebleau",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

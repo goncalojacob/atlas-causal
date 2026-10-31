@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-kruje-1477-1478",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2348220",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Krujë (1477–1478)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2348220"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Krujë (1477–1478)\", revision 1381558849"
+    }
+  ],
+  "title": "Siege of Krujë (1477–1478)",
+  "summary": "The English Wikipedia article \"Siege of Krujë (1477–1478)\", at revision 1381558849, opens: \"The fourth siege of Krujë was an Ottoman siege of the Venetian-held fortress of Krujë in Albania from spring 1477 until 16 June 1478. Beginning in the spring of 1477, Ottoman forces under Evrenosoğlu Ahmed Bey blockaded the fortress and attempted to prevent supplies and reinforcements from reaching its garrison.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2348220, imported by tools/import/wikidata.mjs. The item's own description reads \"1477–1478 capture of the Albanian-ruled city of Krujë by the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1477,
+    "end": 1478,
+    "date": "1478-03"
+  },
+  "place": "kruje",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

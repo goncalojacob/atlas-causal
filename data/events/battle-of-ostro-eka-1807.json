@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-ostro-eka-1807",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888026",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Ostrołęka (1807)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888026"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ostrołęka (1807)\", revision 1370452423"
+    }
+  ],
+  "title": "Battle of Ostrołęka (1807)",
+  "summary": "The English Wikipedia article \"Battle of Ostrołęka (1807)\", at revision 1370452423, opens: \"The Battle of Ostrołęka was a meeting engagement fought on 16 February 1807 between a French force under General of Division Anne Jean Marie René Savary and a Russian force under Lieutenant General Ivan Essen.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888026, imported by tools/import/wikidata.mjs. The item's own description reads \"1807 battle during the War of the Fourth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1807,
+    "end": 1807,
+    "date": "1807-02-15",
+    "endDate": "1807-02-16"
+  },
+  "place": "ostro-eka",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-fourth-coalition"
+}

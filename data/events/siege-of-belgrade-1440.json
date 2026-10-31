@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-belgrade-1440",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q12756567",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Belgrade (1440)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12756567"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Belgrade (1440)\", revision 1370739399"
+    }
+  ],
+  "title": "Siege of Belgrade (1440)",
+  "summary": "The English Wikipedia article \"Siege of Belgrade (1440)\", at revision 1370739399, opens: \"The siege of Belgrade was a long siege by the forces of the Ottoman Empire, lasted about six or seven months in 1440. Belgrade was an important fortified town of the Serbian Despotate and the key fortress of the Hungarian defense line after the Ottoman subjugation of Serbia in 1439. The siege ended with a dramatic final assault, the Ottomans were repelled, and after the failed assault the Turks gave up the siege and returned home.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12756567, imported by tools/import/wikidata.mjs. The item's own description reads \"1440 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1440,
+    "end": 1440,
+    "date": "1440-04",
+    "endDate": "1440-10"
+  },
+  "place": "belgrade",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
