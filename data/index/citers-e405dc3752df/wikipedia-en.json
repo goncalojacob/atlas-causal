@@ -12092,6 +12092,12 @@
     },
     {
       "dissent": false,
+      "id": "31-january-1891-revolt",
+      "kind": "event",
+      "locator": "\"31 January 1891 revolt\", revision 1370103754"
+    },
+    {
+      "dissent": false,
       "id": "31-march-incident",
       "kind": "event",
       "locator": "\"31 March incident\", revision 1370103767"
@@ -14516,6 +14522,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-avay",
+      "kind": "event",
+      "locator": "\"Battle of Avay\", revision 1370432755"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-awa",
       "kind": "event",
       "locator": "\"Battle of Awa\", revision 1370432774"
@@ -14915,6 +14927,12 @@
       "id": "battle-of-bergen-1759",
       "kind": "event",
       "locator": "\"Battle of Bergen (1759)\", revision 1370434090"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bergen-1799",
+      "kind": "event",
+      "locator": "\"Battle of Bergen (1799)\", revision 1370434097"
     },
     {
       "dissent": false,
@@ -15614,6 +15632,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cap-francais",
+      "kind": "event",
+      "locator": "\"Battle of Cap-Français\", revision 1370436140"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cap-francais-1793",
       "kind": "event",
       "locator": "\"Battle of Cap-Français (1793)\", revision 1370108549"
@@ -15905,6 +15929,12 @@
       "id": "battle-of-cepeda-1820",
       "kind": "event",
       "locator": "\"Battle of Cepeda (1820)\", revision 1370436645"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cepeda-1859",
+      "kind": "event",
+      "locator": "\"Battle of Cepeda (1859)\", revision 1370436648"
     },
     {
       "dissent": false,
@@ -18422,6 +18452,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-havana-1870",
+      "kind": "event",
+      "locator": "\"Battle of Havana (1870)\", revision 1376475539"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-haynau",
       "kind": "event",
       "locator": "\"Battle of Haynau\", revision 1370265484"
@@ -18461,6 +18497,12 @@
       "id": "battle-of-helena",
       "kind": "event",
       "locator": "\"Battle of Helena\", revision 1370265514"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-heligoland-1849",
+      "kind": "event",
+      "locator": "\"Battle of Heligoland (1849)\", revision 1374191781"
     },
     {
       "dissent": false,
@@ -19508,6 +19550,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kinburn-1787",
+      "kind": "event",
+      "locator": "\"Battle of Kinburn (1787)\", revision 1382459761"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kinburn-1855",
       "kind": "event",
       "locator": "\"Battle of Kinburn (1855)\", revision 1370445410"
@@ -20108,6 +20156,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-las-guasimas",
+      "kind": "event",
+      "locator": "\"Battle of Las Guásimas\", revision 1378451527"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-las-guasimas-1874",
       "kind": "event",
       "locator": "\"Battle of Las Guásimas (1874)\", revision 1370447249"
@@ -20471,6 +20525,12 @@
       "id": "battle-of-lutterberg-1758",
       "kind": "event",
       "locator": "\"Battle of Lutterberg (1758)\", revision 1370448309"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lutterberg-1762",
+      "kind": "event",
+      "locator": "\"Battle of Lutterberg (1762)\", revision 1370448311"
     },
     {
       "dissent": false,
@@ -21323,6 +21383,12 @@
       "id": "battle-of-monte-santiago",
       "kind": "event",
       "locator": "\"Battle of Monte Santiago\", revision 1378797804"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-montebello-1800",
+      "kind": "event",
+      "locator": "\"Battle of Montebello (1800)\", revision 1370450356"
     },
     {
       "dissent": false,
@@ -22196,6 +22262,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ostro-eka-1807",
+      "kind": "event",
+      "locator": "\"Battle of Ostrołęka (1807)\", revision 1370452423"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ostro-eka-1831",
       "kind": "event",
       "locator": "\"Battle of Ostrołęka (1831)\", revision 1377469299"
@@ -22775,6 +22847,12 @@
       "id": "battle-of-port-republic",
       "kind": "event",
       "locator": "\"Battle of Port Republic\", revision 1373343016"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-port-royal",
+      "kind": "event",
+      "locator": "\"Battle of Port Royal\", revision 1380654762"
     },
     {
       "dissent": false,
@@ -24935,6 +25013,12 @@
       "id": "battle-of-taku-forts-1859",
       "kind": "event",
       "locator": "\"Battle of Taku Forts (1859)\", revision 1370590412"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-taku-forts-1860",
+      "kind": "event",
+      "locator": "\"Battle of Taku Forts (1860)\", revision 1370590416"
     },
     {
       "dissent": false,
@@ -27308,6 +27392,12 @@
     },
     {
       "dissent": false,
+      "id": "battles-of-stockach-and-engen",
+      "kind": "event",
+      "locator": "\"Battles of Stockach and Engen\", revision 1370603804"
+    },
+    {
+      "dissent": false,
       "id": "battles-of-tobago",
       "kind": "event",
       "locator": "\"Battles of Tobago\", revision 1377056277"
@@ -29570,6 +29660,12 @@
     },
     {
       "dissent": false,
+      "id": "convention-of-london-1786",
+      "kind": "event",
+      "locator": "\"Convention of London (1786)\", revision 1365728461"
+    },
+    {
+      "dissent": false,
       "id": "convention-of-london-1840",
       "kind": "event",
       "locator": "\"Convention of London (1840)\", revision 1360263331"
@@ -30095,6 +30191,12 @@
       "id": "dano-mughal-war",
       "kind": "event",
       "locator": "\"Dano-Mughal War\", revision 1370614775"
+    },
+    {
+      "dissent": false,
+      "id": "dano-swedish-war-1470-1471",
+      "kind": "event",
+      "locator": "\"Dano-Swedish War (1470–1471)\", revision 1376499758"
     },
     {
       "dissent": false,
@@ -41120,6 +41222,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-belgrade-1440",
+      "kind": "event",
+      "locator": "\"Siege of Belgrade (1440)\", revision 1370739399"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-belgrade-1456",
       "kind": "event",
       "locator": "\"Siege of Belgrade (1456)\", revision 1382438141"
@@ -41471,6 +41579,12 @@
       "id": "siege-of-corfu-1716",
       "kind": "event",
       "locator": "\"Siege of Corfu (1716)\", revision 1381326904"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-corfu-1798-1799",
+      "kind": "event",
+      "locator": "\"Siege of Corfu (1798–1799)\", revision 1382487565"
     },
     {
       "dissent": false,
@@ -41867,6 +41981,12 @@
       "id": "siege-of-gaeta-1734",
       "kind": "event",
       "locator": "\"Siege of Gaeta (1734)\", revision 1370741351"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-gaeta-1860-1861",
+      "kind": "event",
+      "locator": "\"Siege of Gaeta (1860–1861)\", revision 1370741360"
     },
     {
       "dissent": false,
@@ -42386,6 +42506,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-kruje-1477-1478",
+      "kind": "event",
+      "locator": "\"Siege of Krujë (1477–1478)\", revision 1381558849"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-kumamoto-castle",
       "kind": "event",
       "locator": "\"Siege of Kumamoto Castle\", revision 1370742652"
@@ -42575,6 +42701,12 @@
       "id": "siege-of-mafeking",
       "kind": "event",
       "locator": "\"Siege of Mafeking\", revision 1370743154"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mainz-1792",
+      "kind": "event",
+      "locator": "\"Siege of Mainz (1792)\", revision 1370743168"
     },
     {
       "dissent": false,
@@ -43259,6 +43391,12 @@
       "id": "siege-of-port-royal-1710",
       "kind": "event",
       "locator": "\"Siege of Port Royal (1710)\", revision 1379977684"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-prague",
+      "kind": "event",
+      "locator": "\"Siege of Prague\", revision 1370744567"
     },
     {
       "dissent": false,
@@ -45974,6 +46112,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-altranstadt-1707",
+      "kind": "event",
+      "locator": "\"Treaty of Altranstädt (1707)\", revision 1312269383"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-amiens",
       "kind": "event",
       "locator": "\"Treaty of Amiens\", revision 1369821972"
@@ -46166,6 +46310,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-berlin-1889",
+      "kind": "event",
+      "locator": "\"Treaty of Berlin (1889)\", revision 1356882450"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-bern",
       "kind": "event",
       "locator": "\"Treaty of Bern\", revision 1356266729"
@@ -46196,6 +46346,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-blois-1504",
+      "kind": "event",
+      "locator": "\"Treaty of Blois (1504)\", revision 1299126048"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-blois-1572",
       "kind": "event",
       "locator": "\"Treaty of Blois (1572)\", revision 1301214839"
@@ -46205,6 +46361,12 @@
       "id": "treaty-of-bongaya",
       "kind": "event",
       "locator": "\"Treaty of Bongaya\", revision 1302103147"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-breda-1650",
+      "kind": "event",
+      "locator": "\"Treaty of Breda (1650)\", revision 1352370515"
     },
     {
       "dissent": false,
@@ -46499,6 +46661,18 @@
       "id": "treaty-of-florence",
       "kind": "event",
       "locator": "\"Treaty of Florence\", revision 1294091052"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fontainebleau-1631",
+      "kind": "event",
+      "locator": "\"Treaty of Fontainebleau (1631)\", revision 1254372460"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fontainebleau-1679",
+      "kind": "event",
+      "locator": "\"Treaty of Fontainebleau (1679)\", revision 1332449720"
     },
     {
       "dissent": false,
@@ -47072,6 +47246,18 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-madrid-1801",
+      "kind": "event",
+      "locator": "\"Treaty of Madrid (1801)\", revision 1355338436"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-madrid-1880",
+      "kind": "event",
+      "locator": "\"Treaty of Madrid (1880)\", revision 1368558768"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-malmo",
       "kind": "event",
       "locator": "\"Treaty of Malmö\", revision 1362725296"
@@ -47291,6 +47477,12 @@
       "id": "treaty-of-paris-1783",
       "kind": "event",
       "locator": "\"Treaty of Paris (1783)\", revision 1376240014"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-paris-1796",
+      "kind": "event",
+      "locator": "\"Treaty of Paris (1796)\", revision 1379704466"
     },
     {
       "dissent": false,
@@ -47666,6 +47858,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-stettin-1630",
+      "kind": "event",
+      "locator": "\"Treaty of Stettin (1630)\", revision 1348376490"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-stolbovo",
       "kind": "event",
       "locator": "\"Treaty of Stolbovo\", revision 1375161851"
@@ -47957,6 +48155,12 @@
       "id": "treaty-of-vienna-1725",
       "kind": "event",
       "locator": "\"Treaty of Vienna (1725)\", revision 1309515424"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-vienna-1731",
+      "kind": "event",
+      "locator": "\"Treaty of Vienna (1731)\", revision 1332284972"
     },
     {
       "dissent": false,

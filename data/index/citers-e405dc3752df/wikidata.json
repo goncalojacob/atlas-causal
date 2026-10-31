@@ -3680,6 +3680,12 @@
     },
     {
       "dissent": false,
+      "id": "31-january-1891-revolt",
+      "kind": "event",
+      "locator": "Q10360225"
+    },
+    {
+      "dissent": false,
       "id": "31-march-incident",
       "kind": "event",
       "locator": "Q2073490"
@@ -6224,6 +6230,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-avay",
+      "kind": "event",
+      "locator": "Q3647744"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-awa",
       "kind": "event",
       "locator": "Q1343239"
@@ -6629,6 +6641,12 @@
       "id": "battle-of-bergen-1759",
       "kind": "event",
       "locator": "Q571694"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bergen-1799",
+      "kind": "event",
+      "locator": "Q793448"
     },
     {
       "dissent": false,
@@ -7322,6 +7340,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cap-francais",
+      "kind": "event",
+      "locator": "Q2888245"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cap-francais-1793",
       "kind": "event",
       "locator": "Q2890742"
@@ -7613,6 +7637,12 @@
       "id": "battle-of-cepeda-1820",
       "kind": "event",
       "locator": "Q1851266"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cepeda-1859",
+      "kind": "event",
+      "locator": "Q76914"
     },
     {
       "dissent": false,
@@ -10154,6 +10184,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-havana-1870",
+      "kind": "event",
+      "locator": "Q1529375"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-haynau",
       "kind": "event",
       "locator": "Q1497904"
@@ -10193,6 +10229,12 @@
       "id": "battle-of-helena",
       "kind": "event",
       "locator": "Q2282207"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-heligoland-1849",
+      "kind": "event",
+      "locator": "Q320982"
     },
     {
       "dissent": false,
@@ -11240,6 +11282,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kinburn-1787",
+      "kind": "event",
+      "locator": "Q2914954"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kinburn-1855",
       "kind": "event",
       "locator": "Q2986186"
@@ -11846,6 +11894,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-las-guasimas",
+      "kind": "event",
+      "locator": "Q2889110"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-las-guasimas-1874",
       "kind": "event",
       "locator": "Q5723219"
@@ -12209,6 +12263,12 @@
       "id": "battle-of-lutterberg-1758",
       "kind": "event",
       "locator": "Q541362"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lutterberg-1762",
+      "kind": "event",
+      "locator": "Q2444672"
     },
     {
       "dissent": false,
@@ -13067,6 +13127,12 @@
       "id": "battle-of-monte-santiago",
       "kind": "event",
       "locator": "Q4871774"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-montebello-1800",
+      "kind": "event",
+      "locator": "Q901518"
     },
     {
       "dissent": false,
@@ -13958,6 +14024,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ostro-eka-1807",
+      "kind": "event",
+      "locator": "Q2888026"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ostro-eka-1831",
       "kind": "event",
       "locator": "Q2237094"
@@ -14531,6 +14603,12 @@
       "id": "battle-of-port-republic",
       "kind": "event",
       "locator": "Q2602211"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-port-royal",
+      "kind": "event",
+      "locator": "Q2889687"
     },
     {
       "dissent": false,
@@ -16685,6 +16763,12 @@
       "id": "battle-of-taku-forts-1859",
       "kind": "event",
       "locator": "Q1061404"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-taku-forts-1860",
+      "kind": "event",
+      "locator": "Q4087332"
     },
     {
       "dissent": false,
@@ -19046,6 +19130,12 @@
     },
     {
       "dissent": false,
+      "id": "battles-of-stockach-and-engen",
+      "kind": "event",
+      "locator": "Q840006"
+    },
+    {
+      "dissent": false,
       "id": "battles-of-tobago",
       "kind": "event",
       "locator": "Q1635922"
@@ -21326,6 +21416,12 @@
     },
     {
       "dissent": false,
+      "id": "convention-of-london-1786",
+      "kind": "event",
+      "locator": "Q2996266"
+    },
+    {
+      "dissent": false,
       "id": "convention-of-london-1840",
       "kind": "event",
       "locator": "Q700848"
@@ -21851,6 +21947,12 @@
       "id": "dano-mughal-war",
       "kind": "event",
       "locator": "Q124550898"
+    },
+    {
+      "dissent": false,
+      "id": "dano-swedish-war-1470-1471",
+      "kind": "event",
+      "locator": "Q1277593"
     },
     {
       "dissent": false,
@@ -33116,6 +33218,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-belgrade-1440",
+      "kind": "event",
+      "locator": "Q12756567"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-belgrade-1456",
       "kind": "event",
       "locator": "Q244980"
@@ -33467,6 +33575,12 @@
       "id": "siege-of-corfu-1716",
       "kind": "event",
       "locator": "Q11794876"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-corfu-1798-1799",
+      "kind": "event",
+      "locator": "Q4120811"
     },
     {
       "dissent": false,
@@ -33869,6 +33983,12 @@
       "id": "siege-of-gaeta-1734",
       "kind": "event",
       "locator": "Q628086"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-gaeta-1860-1861",
+      "kind": "event",
+      "locator": "Q1091654"
     },
     {
       "dissent": false,
@@ -34400,6 +34520,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-kruje-1477-1478",
+      "kind": "event",
+      "locator": "Q2348220"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-kumamoto-castle",
       "kind": "event",
       "locator": "Q7510168"
@@ -34589,6 +34715,12 @@
       "id": "siege-of-mafeking",
       "kind": "event",
       "locator": "Q2090584"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mainz-1792",
+      "kind": "event",
+      "locator": "Q18219624"
     },
     {
       "dissent": false,
@@ -35273,6 +35405,12 @@
       "id": "siege-of-port-royal-1710",
       "kind": "event",
       "locator": "Q3078994"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-prague",
+      "kind": "event",
+      "locator": "Q7510328"
     },
     {
       "dissent": false,
@@ -37778,6 +37916,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-altranstadt-1707",
+      "kind": "event",
+      "locator": "Q1812583"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-amiens",
       "kind": "event",
       "locator": "Q112183"
@@ -37970,6 +38114,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-berlin-1889",
+      "kind": "event",
+      "locator": "Q444823"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-bern",
       "kind": "event",
       "locator": "Q2629126"
@@ -38000,6 +38150,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-blois-1504",
+      "kind": "event",
+      "locator": "Q2305320"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-blois-1572",
       "kind": "event",
       "locator": "Q3780839"
@@ -38009,6 +38165,12 @@
       "id": "treaty-of-bongaya",
       "kind": "event",
       "locator": "Q1351039"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-breda-1650",
+      "kind": "event",
+      "locator": "Q2374127"
     },
     {
       "dissent": false,
@@ -38315,6 +38477,18 @@
       "id": "treaty-of-florence",
       "kind": "event",
       "locator": "Q2538456"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fontainebleau-1631",
+      "kind": "event",
+      "locator": "Q551489"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fontainebleau-1679",
+      "kind": "event",
+      "locator": "Q3487327"
     },
     {
       "dissent": false,
@@ -38906,6 +39080,18 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-madrid-1801",
+      "kind": "event",
+      "locator": "Q3034211"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-madrid-1880",
+      "kind": "event",
+      "locator": "Q1883475"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-malmo",
       "kind": "event",
       "locator": "Q7837137"
@@ -39137,6 +39323,12 @@
       "id": "treaty-of-paris-1783",
       "kind": "event",
       "locator": "Q217450"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-paris-1796",
+      "kind": "event",
+      "locator": "Q249691"
     },
     {
       "dissent": false,
@@ -39548,6 +39740,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-stettin-1630",
+      "kind": "event",
+      "locator": "Q3997919"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-stolbovo",
       "kind": "event",
       "locator": "Q928848"
@@ -39854,6 +40052,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-vienna-1731",
+      "kind": "event",
+      "locator": "Q677695"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-vienna-1738",
       "kind": "event",
       "locator": "Q699271"
@@ -39929,6 +40133,12 @@
       "id": "treaty-of-westminster-1674",
       "kind": "event",
       "locator": "Q953063"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-westminster-1756",
+      "kind": "event",
+      "locator": "Q544653"
     },
     {
       "dissent": false,

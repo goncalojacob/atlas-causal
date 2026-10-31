@@ -7551,6 +7551,15 @@
         }
       ]
     },
+    "treaty-of-breda-1650": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "treaty-of-breda-1667": {
       "from": "git",
       "versions": [
@@ -7656,6 +7665,24 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-fontainebleau-1631": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "treaty-of-fontainebleau-1679": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -8002,6 +8029,15 @@
       ]
     },
     "treaty-of-shackamaxon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "treaty-of-stettin-1630": {
       "from": "git",
       "versions": [
         {

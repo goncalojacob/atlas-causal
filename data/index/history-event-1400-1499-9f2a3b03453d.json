@@ -1280,6 +1280,15 @@
         }
       ]
     },
+    "dano-swedish-war-1470-1471": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "defense-of-beijing": {
       "from": "git",
       "versions": [
@@ -2102,6 +2111,15 @@
         }
       ]
     },
+    "siege-of-belgrade-1440": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-belgrade-1456": {
       "from": "git",
       "versions": [
@@ -2216,6 +2234,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-kruje-1477-1478": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },

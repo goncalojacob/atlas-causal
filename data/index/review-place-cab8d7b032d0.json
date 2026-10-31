@@ -3082,7 +3082,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 14,
+      "degree": 15,
       "id": "argentina-q414",
       "kind": "place",
       "names": [
@@ -4999,7 +4999,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 5,
+      "degree": 6,
       "id": "baltic-sea",
       "kind": "place",
       "names": [
@@ -6860,7 +6860,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 7,
+      "degree": 8,
       "id": "belgrade",
       "kind": "place",
       "names": [
@@ -7394,7 +7394,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 12,
+      "degree": 13,
       "id": "berlin",
       "kind": "place",
       "names": [
@@ -8029,7 +8029,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "blois",
       "kind": "place",
       "names": [
@@ -9049,7 +9049,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 3,
+      "degree": 4,
       "id": "breda",
       "kind": "place",
       "names": [
@@ -14255,7 +14255,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "city-of-westminster",
       "kind": "place",
       "names": [
@@ -14979,7 +14979,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "corfu",
       "kind": "place",
       "names": [
@@ -20870,7 +20870,7 @@
         }
       ],
       "created": "2026-10-12",
-      "degree": 3,
+      "degree": 5,
       "id": "fontainebleau",
       "kind": "place",
       "names": [
@@ -22773,7 +22773,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 3,
       "id": "gaeta",
       "kind": "place",
       "names": [
@@ -26472,7 +26472,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 8,
+      "degree": 9,
       "id": "havana",
       "kind": "place",
       "names": [
@@ -26668,6 +26668,35 @@
       "kind": "place",
       "names": [
         "Heiligerlee"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "heligoland",
+      "kind": "place",
+      "names": [
+        "Heligoland",
+        "Helgoland",
+        "Heligolândia"
       ],
       "origin": {
         "tool": "wikidata"
@@ -34074,7 +34103,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 3,
       "id": "kruje",
       "kind": "place",
       "names": [
@@ -37284,7 +37313,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 31,
+      "degree": 32,
       "id": "london",
       "kind": "place",
       "names": [
@@ -37511,7 +37540,7 @@
         }
       ],
       "created": "2026-10-13",
-      "degree": 5,
+      "degree": 6,
       "id": "low-countries",
       "kind": "place",
       "names": [
@@ -38582,7 +38611,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 9,
+      "degree": 10,
       "id": "madrid",
       "kind": "place",
       "names": [
@@ -39030,7 +39059,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 3,
       "id": "mainz",
       "kind": "place",
       "names": [
@@ -42881,7 +42910,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "montebello-della-battaglia",
       "kind": "place",
       "names": [
@@ -48537,7 +48566,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "ostro-eka",
       "kind": "place",
       "names": [
@@ -49457,7 +49486,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 38,
+      "degree": 39,
       "id": "paris",
       "kind": "place",
       "names": [
@@ -52082,7 +52111,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 5,
+      "degree": 6,
       "id": "porto",
       "kind": "place",
       "names": [
@@ -52480,7 +52509,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 8,
+      "degree": 9,
       "id": "prague",
       "kind": "place",
       "names": [
@@ -58380,7 +58409,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 6,
+      "degree": 7,
       "id": "santiago-de-cuba",
       "kind": "place",
       "names": [
@@ -61790,7 +61819,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 16,
+      "degree": 17,
       "id": "spain-q29",
       "kind": "place",
       "names": [
@@ -62600,7 +62629,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "staufenberg-lower-saxony",
       "kind": "place",
       "names": [
@@ -62739,7 +62768,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "stockach",
       "kind": "place",
       "names": [
@@ -63792,7 +63821,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "szczecin",
       "kind": "place",
       "names": [
@@ -69586,7 +69615,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 14,
+      "degree": 15,
       "id": "vienna",
       "kind": "place",
       "names": [
@@ -70565,7 +70594,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 11,
+      "degree": 12,
       "id": "warsaw",
       "kind": "place",
       "names": [
