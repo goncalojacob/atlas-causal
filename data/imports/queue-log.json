@@ -79816,6 +79816,606 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-922",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-musashi-matsuyama-1563",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-924",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-kuragano",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-926",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tatarahama-1569",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-928",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-hanazawa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-930",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-omosu",
+        "edges": [],
+        "place": "suruga-bay"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-932",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nakatomigawa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-934",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-suemori",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-936",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-ota-castle",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-938",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "1589-rebellion-of-chong-yorip",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-940",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "ordos-campaign-1592",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-942",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-shiroishi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-944",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "sangley-rebellion-1603",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-946",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "cossack-raid-on-istanbul-1615",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-948",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-anjar",
+        "edges": [],
+        "place": "anjar-lebanon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-950",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "1641-tabriz-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-952",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "sack-of-surat",
+        "edges": [],
+        "place": "surat"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-954",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-anandpur-1700",
+        "edges": [],
+        "place": "anandpur-sahib"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-956",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "peter-the-great-s-capture-of-rasht",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-958",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "sabzevar-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-960",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "chhota-ghallughara",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-962",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "1754-horeki-river-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-964",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ghartiskari",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-966",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-pollilur-1781",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-968",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "lin-shuangwen-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-970",
+      "writer": "A",
+      "fired": "2026-10-31T13:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-deeg",
+        "edges": [],
+        "place": "deeg"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-925",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-minowa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-927",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-kanbara",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-929",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-fukazawa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-931",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-hijiyama",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-933",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-uchidehama",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-935",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-takehana",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-937",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-iwaya-castle",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-939",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "bozhou-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-941",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-hasedo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-943",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "sekigahara-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-945",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "1605-keicho-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-947",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "purple-robe-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-949",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-galle-1640",
+        "edges": [],
+        "place": "galle"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-951",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kolhapur",
+        "edges": [],
+        "place": "kolhapur"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-953",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-golconda",
+        "edges": [],
+        "place": "golconda-q4141623"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-955",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chappar-chiri",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-957",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "1727-tabriz-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-959",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-trichinopoly-1743",
+        "edges": [],
+        "place": "tiruchirappalli"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-961",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-manupur",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-963",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bhaktapur",
+        "edges": [],
+        "place": "bhaktapur"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-965",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-porto-novo",
+        "edges": [],
+        "place": "parangipettai"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-967",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-halani",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-969",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-kerman",
+        "edges": [],
+        "place": "kerman"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-971",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-echmiadzin-1804",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-973",
+      "writer": "B",
+      "fired": "2026-10-31T13:30Z",
+      "status": "written",
+      "written": {
+        "event": "first-expedition-to-palembang",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

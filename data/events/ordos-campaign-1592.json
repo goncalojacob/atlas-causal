@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ordos-campaign-1592",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q10955550",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Ordos campaign (1592)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10955550"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ordos campaign (1592)\", revision 1374159324"
+    }
+  ],
+  "title": "Ordos campaign (1592)",
+  "summary": "The English Wikipedia article \"Ordos campaign (1592)\", at revision 1374159324, opens: \"The Ordos campaign of 1592 was a rebellion of the garrison in Ningxia against their regional commanders. It took place in March 1592 in Ningxia, which was one of the nine military regions on the border of Ming China with Mongolia. The Chinese officer Liu Dongyang and Mongol general Pubei successfully overthrew the Ming generals in Ningxia and took control of the city and its surrounding fortifications. The Ming army, led by Wei Xueceng, quickly regained control of the region and laid siege to Ningxia in mid-May. The rebels had a sizable force of 20,000–30,000 soldiers, while Ningxia's population was 300,000. The Ming government gathered 40,000 soldiers, armed with hundreds of cannons, to suppress the rebellion. The siege lasted for several months, with neither side gaining the upper hand. The rebels attempted to gain support from the Mongol khans, but were unsuccessful. The stalemate was broken when the Ming army built a dam around the city, which, when filled with water, flooded the city and destroyed its castles. The defenders' morale was further weakened by a lack of food. On 20 October 1592, the city was finally captured and the rebel leaders were either killed or captured and executed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10955550, imported by tools/import/wikidata.mjs. The item's own description reads \"also known as Ningxia Campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1592,
+    "end": 1592,
+    "date": "1592-03",
+    "endDate": "1592-10-12"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

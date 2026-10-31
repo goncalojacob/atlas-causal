@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "purple-robe-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q8011095",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Purple Robe Incident"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8011095"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Purple Robe Incident\", revision 1382096965"
+    }
+  ],
+  "title": "Purple Robe Incident",
+  "summary": "The English Wikipedia article \"Purple Robe Incident\", at revision 1382096965, opens: \"The Purple Robe Incident  was a political conflict that took place in 1627, Japan. A confrontation between the Tokugawa shogunate and the Imperial Court began when the Emperor granted permission for monks from two temples to wear purple robes. Purple robes were traditionally reserved for only the most virtuous priests, and the Shogunate declared the Emperor's decree invalid, as he had not consulted with them beforehand. The confrontation is believed to have contributed to Emperor Go-Mizunoo's abdication in 1629, and is a noted example of the control of the Shogunate over the Imperial Court in the early Edo period.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q8011095, imported by tools/import/wikidata.mjs. The item's own description reads \"political incident in the early Edo period Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1620,
+      "max": 1629
+    },
+    "end": {
+      "min": 1620,
+      "max": 1629
+    }
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

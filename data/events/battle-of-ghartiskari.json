@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "battle-of-ghartiskari",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q19600366",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Ghartiskari"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q19600366"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ghartiskari\", revision 1381681907"
+    }
+  ],
+  "title": "Battle of Ghartiskari",
+  "summary": "The English Wikipedia article \"Battle of Ghartiskari\", at revision 1381681907, opens: \"The Battle of Ghartiskari was a minor engagement fought in October 1778 in eastern Georgia during the reign of King Heraclius II. It occurred when Lezgins attacked the escort of Ketevan Andronikashvili, a Georgian noblewoman and daughter-in-law of the king. Despite the inexperience of her escort, Andronikashvili took command and repelled the attackers, and the event was followed by a ceremonial reception in Tbilisi.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q19600366, imported by tools/import/wikidata.mjs. The item's own description reads \"1778 or 1779 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1778,
+    "end": 1778
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

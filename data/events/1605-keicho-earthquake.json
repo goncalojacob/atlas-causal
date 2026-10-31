@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1605-keicho-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3408503",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1605 Keichō earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3408503"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1605 Keichō earthquake\", revision 1366163316"
+    }
+  ],
+  "title": "1605 Keichō earthquake",
+  "summary": "The English Wikipedia article \"1605 Keichō earthquake\", at revision 1366163316, opens: \"The 1605 Keichō earthquake occurred at about 20:00 local time on 3 February. It had an estimated magnitude of 7.9 on the surface-wave magnitude scale and triggered a devastating tsunami that resulted in thousands of deaths in the Nankai and Tōkai regions of Japan. It is uncertain whether there were two separate earthquakes separated by a short time interval or a single event. It is referred to as a tsunami earthquake, in that the size of the tsunami greatly exceeds that expected from the magnitude of the earthquake.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3408503, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake in Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1605,
+    "end": 1605,
+    "date": "1605-02-03"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

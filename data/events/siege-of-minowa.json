@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "siege-of-minowa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2616449",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Minowa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2616449"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Minowa\", revision 1370743548"
+    }
+  ],
+  "title": "Siege of Minowa",
+  "summary": "The English Wikipedia article \"Siege of Minowa\", at revision 1370743548, opens: \"The 1566 siege of Minowa was one of several battles fought by the Takeda clan in their campaigns to seize the lands of the Uesugi clan, during Japan's Sengoku period. It is part of a larger power struggle between Takeda Shingen and Uesugi Kenshin.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2616449, imported by tools/import/wikidata.mjs. The item's own description reads \"Japanese battle in 1566\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1566,
+    "end": 1566
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

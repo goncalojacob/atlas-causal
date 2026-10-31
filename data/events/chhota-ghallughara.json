@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "chhota-ghallughara",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7513674",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Chhota Ghallughara"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7513674"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chhota Ghallughara\", revision 1379193411"
+    }
+  ],
+  "title": "Chhota Ghallughara",
+  "summary": "The English Wikipedia article \"Chhota Ghallughara\", at revision 1379193411, opens: \"Chhota Ghallughara, also known as the Nikka Ghallughara, was a significant massacre of the Sikh population by the Mughal Empire and Hill States in 1746. The Mughal Army, headed by Yahya Khan, the Subahdar of Lahore, and Diwan Lakhpat Rai, killed an estimated 7,000 Sikhs in the mass killings while an additional 3,000 Sikhs were taken captive and later executed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7513674, imported by tools/import/wikidata.mjs. The item's own description reads \"1746 massacre of Sikhs\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1746,
+    "end": 1746
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
