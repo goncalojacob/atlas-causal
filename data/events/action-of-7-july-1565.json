@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "action-of-7-july-1565",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3435342",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Action of 7 July 1565"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3435342"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 7 July 1565\", revision 1370426742"
+    }
+  ],
+  "title": "Action of 7 July 1565",
+  "summary": "The English Wikipedia article \"Action of 7 July 1565\", at revision 1370426742, opens: \"This battle in the Northern Seven Years' War took place on 7 July 1565 and was a decisive victory for a Swedish fleet of 49 ships, under Klas Horn, over a combined Danish and Lübecker fleet of 36 ships, under Otte Rud.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3435342, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1565,
+    "end": 1565,
+    "date": "1565-07-07"
+  },
+  "place": "baltic-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "northern-seven-years-war"
+}

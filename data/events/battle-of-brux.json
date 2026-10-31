@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-brux",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q264911",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Brüx"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q264911"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Brüx\", revision 1370435407"
+    }
+  ],
+  "title": "Battle of Brüx",
+  "summary": "The English Wikipedia article \"Battle of Brüx\", at revision 1370435407, opens: \"The Battle of Brüx was fought on 5 August 1421 in North Bohemia during the Hussite Wars. The Hussite troops, led by Jan Želivský, were defeated by the Catholic Imperial forces of Frederick I of Saxony.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q264911, imported by tools/import/wikidata.mjs. The item's own description reads \"Hussite Wars battle in 1421\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1421,
+    "end": 1421,
+    "date": "1421-08-05"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "hussite-wars"
+}

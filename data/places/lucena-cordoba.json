@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "lucena-cordoba",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q504598",
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Lucena, Córdoba",
+    "pt": "Lucena (Espanha)"
+  },
+  "sources": [],
+  "names": [
+    "Lucena",
+    "Lucena, Córdoba",
+    "Lucena (Espanha)"
+  ],
+  "where": {
+    "lon": -4.485277777777778,
+    "lat": 37.40888888888889,
+    "precision": "city",
+    "label": "Lucena, Córdoba"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

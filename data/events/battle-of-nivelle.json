@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-nivelle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890553",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Nivelle",
+    "pt": "Batalha de Nivelle"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890553"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nivelle\", revision 1370270850"
+    }
+  ],
+  "title": "Battle of Nivelle",
+  "summary": "The English Wikipedia article \"Battle of Nivelle\", at revision 1370270850, opens: \"The Battle of Nivelle took place on 10 November 1813 in front of the river Nivelle near the end of the Peninsular War (1808–1814). After the Allied siege of San Sebastian, Wellington's 80,000 British, Portuguese and Spanish troops were in hot pursuit of Jean-de-Dieu Soult who had 60,000 men to place in a 20-mile perimeter, which presented strong defensive positions. The French troops were overextended and could not have reserves behind them. After the Light Division, the main British army was ordered to attack and the 3rd Division split Soult's army in two. By two o'clock, Soult was in retreat and the British in a strong offensive position. Soult had lost another battle on French soil and had lost 4,500 men to Wellington's 5,500.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890553, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-11-10"
+  },
+  "place": "nivelle-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

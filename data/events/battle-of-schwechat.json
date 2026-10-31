@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-schwechat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q919739",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Schwechat"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q919739"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Schwechat\", revision 1380926923"
+    }
+  ],
+  "title": "Battle of Schwechat",
+  "summary": "The English Wikipedia article \"Battle of Schwechat\", at revision 1380926923, opens: \"The Battle of Schwechat was a battle in the Hungarian war of Independence of 1848-1849, fought on 30 October 1848 between the revolutionary Hungarian Army led by Lieutenant General János Móga against the army of the Austrian Empire led by Alfred I, Prince of Windisch-Grätz and Lieutenant General Josip Jelačić, at Schwechat, near Vienna. This was the last battle of 1848 in the Transdanubian campaign. The Hungarian Army wanted to relieve the revolutionaries from Vienna, besieged by the Austrian imperial army, but they were defeated. Vienna fell on the next day.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q919739, imported by tools/import/wikidata.mjs. The item's own description reads \"1848 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-10-30"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "hungarian-revolution-of-1848"
+}

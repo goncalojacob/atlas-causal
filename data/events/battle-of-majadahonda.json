@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-majadahonda",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871641",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Majadahonda",
+    "pt": "Batalha de Majadahonda"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871641"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Majadahonda\", revision 1370268835"
+    }
+  ],
+  "title": "Battle of Majadahonda",
+  "summary": "The English Wikipedia article \"Battle of Majadahonda\", at revision 1370268835, opens: \"The Battle of Majadahonda  saw an Imperial French cavalry division led by Anne-François-Charles Trelliard attack two brigades of cavalry under Benjamin D'Urban and forming the advance guard of Arthur Wellesley, Earl of Wellington's army. Trelliard's leading brigade routed D'Urban's Portuguese horsemen and overran three British cannons. King's German Legion (KGL) cavalry led by Eberhardt Otto George von Bock intervened to halt the Imperial French horsemen, but were finally compelled to withdraw when Trelliard committed his second and third brigades to the contest. The Imperial French cavalry was unable to cope with a KGL infantry battalion defending a village and they withdrew at the approach of additional British cavalry and infantry. This Peninsular War action was fought near Majadahonda, which is located 16 kilometres (9.9 mi) northwest of Madrid.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871641, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle of the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-08-11"
+  },
+  "place": "majadahonda",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

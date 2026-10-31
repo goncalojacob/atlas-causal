@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-sievershausen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q895686",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Sievershausen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q895686"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sievershausen\", revision 1376214516"
+    }
+  ],
+  "title": "Battle of Sievershausen",
+  "summary": "The English Wikipedia article \"Battle of Sievershausen\", at revision 1376214516, opens: \"The Battle of Sievershausen occurred on 9 July 1553 near the village of Sievershausen, where the forces of the Hohenzollern margrave Albert Alcibiades of Brandenburg-Kulmbach fought against the united troops of Elector Maurice of Saxony and Duke Henry V of Brunswick-Wolfenbüttel. With 4,000 men killed, including the Saxon elector and two of Henry's sons, it was one of the bloodiest battles on Lower Saxon territory. Margrave Albert was defeated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q895686, imported by tools/import/wikidata.mjs. The item's own description reads \"1553 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1553,
+    "end": 1553,
+    "date": "1553-07-09"
+  },
+  "place": "lehrte",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-margrave-war"
+}

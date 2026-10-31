@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "french-fury",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2457514",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "French Fury"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2457514"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French Fury\", revision 1370620270"
+    }
+  ],
+  "title": "French Fury",
+  "summary": "The English Wikipedia article \"French Fury\", at revision 1370620270, opens: \"The \"French Fury\" was a failed attempt by Francis, Duke of Anjou, to conquer the city of Antwerp by surprise on 17 January 1583.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2457514, imported by tools/import/wikidata.mjs. The item's own description reads \"failed attempt by Francis, Duke of Anjou, to conquer the city of Antwerp by surprise\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1583,
+    "end": 1583,
+    "date": "1583-01-17"
+  },
+  "place": "antwerp",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

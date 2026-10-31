@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "odessa-pogroms",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q552243",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Odessa pogroms"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q552243"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Odessa pogroms\", revision 1375810144"
+    }
+  ],
+  "title": "Odessa pogroms",
+  "summary": "The English Wikipedia article \"Odessa pogroms\", at revision 1375810144, opens: \"The Odessa pogroms were a series of violent anti-Jewish riots and attacks in the multi-ethnic port city of Odessa in the 19th and early 20th centuries. Odessa had become a successful and cosmopolitan city known for liberal attitudes, and a hotbed of revolutionary activity in the Russian Empire, with a growing and vital Jewish community that had grown more prosperous along with the city, even though the majority still lived in abject poverty. The pogroms became an international cause célèbre for the Jewish diaspora. Notable pogroms occurred in 1821, 1849, 1859, 1871, 1881, 1886, 1900, 1905, and 1918–1919, resulting in hundreds of Jewish deaths, thousands of injuries, and destruction of property, devastating the community and driving emigration.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q552243, imported by tools/import/wikidata.mjs. The item's own description reads \"series of anti-Jewish pogroms in Odesa, Ukraine (1821–1905)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1900,
+      "max": 1909
+    },
+    "end": {
+      "min": 1900,
+      "max": 1909
+    }
+  },
+  "place": "odesa",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

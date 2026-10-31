@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "los-yebenes",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1631881",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Los Yébenes",
+    "pt": "Los Yébenes"
+  },
+  "sources": [],
+  "names": [
+    "Los Yébenes"
+  ],
+  "where": {
+    "lon": -3.8694444444444,
+    "lat": 39.578888888889,
+    "precision": "city",
+    "label": "Los Yébenes"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

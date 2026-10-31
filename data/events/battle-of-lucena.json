@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-lucena",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q20768628",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Lucena",
+    "pt": "Batalha de Lucena"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20768628"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lucena\", revision 1370448197"
+    }
+  ],
+  "title": "Battle of Lucena",
+  "summary": "The English Wikipedia article \"Battle of Lucena\", at revision 1370448197, opens: \"The Battle of Lucena, also called Battle of Martín González, was a war event in which Christian forces of the Crown of Castile were faced against the Muslim forces of the Nasrid Emirate of Granada. It took place in the month of April of the year 1483, in the course of the Granada War, and in the course of it the Christian forces took Muhammad XI of Granada prisoner.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20768628, imported by tools/import/wikidata.mjs. The item's own description reads \"1483 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1483,
+    "end": 1483,
+    "date": "1483-04-23"
+  },
+  "place": "lucena-cordoba",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
