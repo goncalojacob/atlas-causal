@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "fontaine-francaise",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q24948",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Fontaine-Française",
+    "pt": "Fontaine-Française"
+  },
+  "sources": [],
+  "names": [
+    "Fontaine-Française"
+  ],
+  "where": {
+    "lon": 5.3697222222222,
+    "lat": 47.525277777778,
+    "precision": "city",
+    "label": "Fontaine-Française"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

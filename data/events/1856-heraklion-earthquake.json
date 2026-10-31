@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1856-heraklion-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q28038710",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1856 Heraklion earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q28038710"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1856 Heraklion earthquake\", revision 1376181037"
+    }
+  ],
+  "title": "1856 Heraklion earthquake",
+  "summary": "The English Wikipedia article \"1856 Heraklion earthquake\", at revision 1376181037, opens: \"The 1856 Heraklion earthquake, also known as the Crete earthquake or Rhodes earthquake, occurred on the morning of October 12 at 02:45 am local time. This extremely catastrophic earthquake had an estimated magnitude of 7.7 to 8.3 at a depth of approximately 61 to 100 km. The earthquake was felt over a very wide area extending from Sicily, Italy to the Levant and North Africa. On the Greek island of Crete, the effects of the earthquake were cataclysmic, over 500 bodies were recovered in the city of Heraklion. Shockwaves from the earthquake were felt intensely, covering all of the Ottoman Empire; present-day Turkey, Cyprus and the Middle East where damage and human losses were reported. In Malta, the Għajn Ħadid Tower—a coastal watchtower built around the year 1638—was severely damaged in the earthquake, when its upper floor collapsed. In Cairo, Egypt, the earthquake destroyed buildings, created seiches in canals, and killed several people. Off the Egyptian and Italian coasts, sailors reported feeling a seaquake.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28038710, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake in the Aegean Sea which caused widespread destruction in the Middle East, North Africa and Southern Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1856,
+    "end": 1856,
+    "date": "1856-10-12"
+  },
+  "place": "greece-q41",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

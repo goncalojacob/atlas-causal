@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-borghetto",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888175",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Borghetto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888175"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Borghetto\", revision 1370434828"
+    }
+  ],
+  "title": "Battle of Borghetto",
+  "summary": "The English Wikipedia article \"Battle of Borghetto\", at revision 1370434828, opens: \"The Battle of Borghetto, near Valeggio sul Mincio in the Veneto of northern Italy, took place during the War of the First Coalition, part of the French Revolutionary Wars. On 30 May 1796, a French army led by General Napoleon Bonaparte forced a crossing of the Mincio River in the face of opposition from an Austrian army commanded by Feldzeugmeister Johann Peter Beaulieu. This action compelled the Austrian army to retreat north up the Adige valley to Trento, leaving the fortress of Mantua to be besieged by the French.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888175, imported by tools/import/wikidata.mjs. The item's own description reads \"battle during the War of the First Coalition, part of the French Revolutionary Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1796,
+    "end": 1796,
+    "date": "1796-05-30"
+  },
+  "place": "valeggio-sul-mincio",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

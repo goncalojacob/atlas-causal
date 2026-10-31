@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "saarbrucken",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1724",
+  "sitelinks": {
+    "count": 124,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Saarbrücken",
+    "pt": "Sarbruque"
+  },
+  "sources": [],
+  "names": [
+    "Saarbrücken",
+    "Sarbruque"
+  ],
+  "where": {
+    "lon": 7,
+    "lat": 49.233333333333,
+    "precision": "city",
+    "label": "Saarbrücken"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

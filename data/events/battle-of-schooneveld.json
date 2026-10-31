@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-schooneveld",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q27145365",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Schooneveld",
+    "pt": "Batalha de Schooneveld"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q27145365"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Schooneveld\", revision 1382431774"
+    }
+  ],
+  "title": "Battle of Schooneveld",
+  "summary": "The English Wikipedia article \"Battle of Schooneveld\", at revision 1382431774, opens: \"The Battles of Schooneveld were two naval battles of the Franco-Dutch War, fought off the coast of the Netherlands on 7 June and 14 June 1673 between an allied Anglo-French fleet commanded by Prince Rupert of the Rhine on his flagship the Royal Charles, and the fleet of the United Provinces, commanded by Michiel de Ruyter.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q27145365, imported by tools/import/wikidata.mjs. The item's own description reads \"two naval battles of the Franco-Dutch War, fought off the Netherlands coast on 7 June and 14 June 1673\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1635,
+    "end": 1635,
+    "date": "1635-06"
+  },
+  "place": "north-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-fundina",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q286420",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Fundina"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q286420"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fundina\", revision 1370441147"
+    }
+  ],
+  "title": "Battle of Fundina",
+  "summary": "The English Wikipedia article \"Battle of Fundina\", at revision 1370441147, opens: \"The Battle of Fundina took place on 2 August 1876 in Fundina, a village in Kuči, Principality of Montenegro. The day had a religious importance, as being the St. Elijah's Day.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q286420, imported by tools/import/wikidata.mjs. The item's own description reads \"1876 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1876,
+    "date": "1876-08-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "montenegrin-ottoman-war-1876-1878"
+}

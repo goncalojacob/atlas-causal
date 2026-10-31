@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-limerick-1690",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2713014",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Limerick (1690)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2713014"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Limerick (1690)\", revision 1370742943"
+    }
+  ],
+  "title": "Siege of Limerick (1690)",
+  "summary": "The English Wikipedia article \"Siege of Limerick (1690)\", at revision 1370742943, opens: \"Limerick, a city in western Ireland, was besieged twice in the Williamite War in Ireland in 1689–1691. On the first occasion, in August to September 1690, its Jacobite defenders retreated to the city after their defeat at the Battle of the Boyne. The Williamites, under William III, tried to take Limerick by storm but were driven off and had to retire into their winter quarters.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2713014, imported by tools/import/wikidata.mjs. The item's own description reads \"1690 Jacobites withstood Williamites\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1690,
+    "end": 1690,
+    "date": "1690-08",
+    "endDate": "1690-09"
+  },
+  "place": "limerick",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "williamite-war-in-ireland"
+}
