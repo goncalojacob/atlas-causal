@@ -3,2007 +3,6 @@
   "kind": "import-queue",
   "items": [
     {
-      "id": "2026-10-31-asia-074",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q141376638",
-      "title": "Siege of Basra (1775–1776)",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q141376638); 3 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-075",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q126888582",
-      "title": "Siege of Goa (1570–1571)",
-      "parents": [
-        "war-of-the-league-of-the-indies"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-the-league-of-the-indies",
-      "why": "P361 child of War of the League of the Indies (Q126888582); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-076",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q29285156",
-      "title": "Fall of Plered",
-      "parents": [
-        "trunajaya-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:trunajaya-rebellion",
-      "why": "P361 child of Trunajaya rebellion (Q29285156); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-077",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q29286145",
-      "title": "Battle of Gegodog",
-      "parents": [
-        "trunajaya-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:trunajaya-rebellion",
-      "why": "P361 child of Trunajaya rebellion (Q29286145); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-africa-234",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q111699632",
-      "title": "Black Week",
-      "parents": [
-        "second-boer-war"
-      ],
-      "edges": [],
-      "rank": "child-of:second-boer-war",
-      "why": "P361 child of Second Boer War (Q111699632); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-africa-235",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q105616758",
-      "title": "First Battle of Boudouaou",
-      "parents": [
-        "french-conquest-of-algeria"
-      ],
-      "edges": [],
-      "rank": "child-of:french-conquest-of-algeria",
-      "why": "P361 child of French conquest of Algeria (Q105616758); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-africa-236",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q136432043",
-      "title": "Alwassa–Gwandu campaign",
-      "parents": [
-        "jihad-of-usman-dan-fodio"
-      ],
-      "edges": [],
-      "rank": "child-of:jihad-of-usman-dan-fodio",
-      "why": "P361 child of Jihad of Usman dan Fodio (Q136432043); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-078",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q10935029",
-      "title": "Jinchuan campaigns",
-      "parents": [
-        "ten-great-campaigns"
-      ],
-      "edges": [],
-      "rank": "child-of:ten-great-campaigns",
-      "why": "P361 child of Ten Great Campaigns (Q10935029); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-079",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q129254766",
-      "title": "Safavid conquest of Bahrain",
-      "parents": [
-        "portuguese-safavid-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:portuguese-safavid-wars",
-      "why": "P361 child of Portuguese–Safavid wars (Q129254766); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-080",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q137921461",
-      "title": "Portuguese–Safavid War (1621–1630)",
-      "parents": [
-        "portuguese-safavid-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:portuguese-safavid-wars",
-      "why": "P361 child of Portuguese–Safavid wars (Q137921461); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-081",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q30672276",
-      "title": "Battle of Xicheng",
-      "parents": [
-        "transition-from-ming-to-qing"
-      ],
-      "edges": [],
-      "rank": "child-of:transition-from-ming-to-qing",
-      "why": "P361 child of Transition from Ming to Qing (Q30672276); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-082",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q20991944",
-      "title": "Burmese–Siamese War (1809–1812)",
-      "parents": [
-        "burmese-siamese-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:burmese-siamese-wars",
-      "why": "P361 child of Burmese–Siamese wars (Q20991944); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-083",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q7573362",
-      "title": "Spanish expedition to Balanguingui",
-      "parents": [
-        "spanish-moro-conflict"
-      ],
-      "edges": [],
-      "rank": "child-of:spanish-moro-conflict",
-      "why": "P361 child of Spanish–Moro conflict (Q7573362); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-084",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4872240",
-      "title": "Battle of Sakainehara",
-      "parents": [
-        "kyotoku-incident"
-      ],
-      "edges": [],
-      "rank": "child-of:kyotoku-incident",
-      "why": "P361 child of Kyōtoku incident (Q4872240); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-085",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q24908199",
-      "title": "Battle of Kup",
-      "parents": [
-        "indian-campaign-of-ahmad-shah-durrani"
-      ],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of Indian campaign of Ahmad Shah Durrani (Q24908199); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-086",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q25302613",
-      "title": "Battle of Gujranwala (1761)",
-      "parents": [
-        "indian-campaign-of-ahmad-shah-durrani"
-      ],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of Indian campaign of Ahmad Shah Durrani (Q25302613); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-087",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q48724669",
-      "title": "Siege of Lahore (1761)",
-      "parents": [
-        "indian-campaign-of-ahmad-shah-durrani"
-      ],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of Indian campaign of Ahmad Shah Durrani (Q48724669); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-088",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q109392668",
-      "title": "Ottoman Disaster",
-      "parents": [
-        "transformation-of-the-ottoman-empire"
-      ],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of Transformation of the Ottoman Empire (Q109392668); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-089",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4872189",
-      "title": "Battle of Duyon River",
-      "parents": [
-        "acehnese-portuguese-conflicts"
-      ],
-      "edges": [],
-      "rank": "child-of:acehnese-portuguese-conflicts",
-      "why": "P361 child of Acehnese–Portuguese conflicts (Q4872189); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-090",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q120142816",
-      "title": "Battle of Formoso River",
-      "parents": [
-        "acehnese-portuguese-conflicts"
-      ],
-      "edges": [],
-      "rank": "child-of:acehnese-portuguese-conflicts",
-      "why": "P361 child of Acehnese–Portuguese conflicts (Q120142816); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-europe-233",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q4090292",
-      "title": "Battle of Galați (1821)",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q4090292); 3 sitelinks."
-    },
-    {
-      "id": "2026-10-31-europe-234",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q16331889",
-      "title": "Battle of Kleisova",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q16331889); 3 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-091",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4872146",
-      "title": "Battle of Quingua",
-      "parents": [
-        "philippine-american-war"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-american-war",
-      "why": "P361 child of Philippine–American War (Q4872146); 3 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-092",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q7510446",
-      "title": "Siege of Tellicherry",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q7510446); 3 sitelinks."
-    },
-    {
-      "id": "2026-10-31-africa-237",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q2887834",
-      "title": "Battle of Amba Jebelli",
-      "parents": [
-        "zemene-mesafint"
-      ],
-      "edges": [],
-      "rank": "child-of:zemene-mesafint",
-      "why": "P361 child of Zemene Mesafint (Q2887834); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-africa-238",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q2888398",
-      "title": "Battle of Derasge",
-      "parents": [
-        "zemene-mesafint"
-      ],
-      "edges": [],
-      "rank": "child-of:zemene-mesafint",
-      "why": "P361 child of Zemene Mesafint (Q2888398); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-africa-239",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q2888649",
-      "title": "Battle of Takusa",
-      "parents": [
-        "zemene-mesafint"
-      ],
-      "edges": [],
-      "rank": "child-of:zemene-mesafint",
-      "why": "P361 child of Zemene Mesafint (Q2888649); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-africa-240",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q2888652",
-      "title": "Battle of Gur Amba",
-      "parents": [
-        "zemene-mesafint"
-      ],
-      "edges": [],
-      "rank": "child-of:zemene-mesafint",
-      "why": "P361 child of Zemene Mesafint (Q2888652); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-093",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4871325",
-      "title": "Battle of Jeonju",
-      "parents": [
-        "imjin-war"
-      ],
-      "edges": [],
-      "rank": "child-of:imjin-war",
-      "why": "P361 child of Imjin War (Q4871325); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-094",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133521430",
-      "title": "Battle of Kejiwan",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361 child of Java War (Q133521430); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-095",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q133696273",
-      "title": "Skirmish at Tegalreja",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361 child of Java War (Q133696273); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-096",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133802796",
-      "title": "Ambush at Mount Kelir",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361 child of Java War (Q133802796); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-europe-235",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q123452111",
-      "title": "Bosnian Battle of Kosovo (1831)",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q123452111); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-097",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q134286876",
-      "title": "Siege of Kayseri (1490)",
-      "parents": [
-        "ottoman-mamluk-war-1485-1491"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-mamluk-war-1485-1491",
-      "why": "P361 child of Ottoman–Mamluk War (1485–1491) (Q134286876); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-098",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q133504036",
-      "title": "Mir Muhammad's conquest of Mukryan",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q133504036); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-099",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q134238599",
-      "title": "Battle of Lezan (1834)",
-      "parents": [
-        "mir-muhammad-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:mir-muhammad-rebellion",
-      "why": "P361 child of Mir Muhammad Rebellion (Q134238599); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-100",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q139967260",
-      "title": "Mir Muhammad's Bahdinan campaign",
-      "parents": [
-        "mir-muhammad-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:mir-muhammad-rebellion",
-      "why": "P361 child of Mir Muhammad Rebellion (Q139967260); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-101",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q140321634",
-      "title": "Shammar–Obaidi war (1814–1817)",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q140321634); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-102",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q141447278",
-      "title": "Battle of Hella",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q141447278); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-103",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q141539240",
-      "title": "Battle of Khanaqin (1775)",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q141539240); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-104",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q141539256",
-      "title": "Battle of Shahrezur",
-      "parents": [
-        "ottoman-persian-war-1776-1779"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-persian-war-1776-1779",
-      "why": "P361 child of Ottoman–Persian War (1776–1779) (Q141539256); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-105",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q141663042",
-      "title": "Battle of Ashar Creek",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q141663042); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-106",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q22092207",
-      "title": "Battle of Balantang",
-      "parents": [
-        "battle-of-the-visayas-1899"
-      ],
-      "edges": [],
-      "rank": "child-of:battle-of-the-visayas-1899",
-      "why": "P361 child of Battle of the Visayas (1899) (Q22092207); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-107",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q134477926",
-      "title": "Siege of Chaul (1570–1571)",
-      "parents": [
-        "war-of-the-league-of-the-indies"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-the-league-of-the-indies",
-      "why": "P361 child of War of the League of the Indies (Q134477926); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-108",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4677281",
-      "title": "Action of 18 November 1809",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q4677281); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-africa-241",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q123243699",
-      "title": "Siege of Tripoli (1705)",
-      "parents": [
-        "revolutions-of-tunis"
-      ],
-      "edges": [],
-      "rank": "child-of:revolutions-of-tunis",
-      "why": "P361 child of Revolutions of Tunis (Q123243699); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-africa-242",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q137196783",
-      "title": "1591 uprising in Tunis",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q137196783); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-africa-243",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q5037077",
-      "title": "Capture of the Veloz Passagera",
-      "parents": [
-        "blockade-of-africa"
-      ],
-      "edges": [],
-      "rank": "child-of:blockade-of-africa",
-      "why": "P361 child of Blockade of Africa (Q5037077); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-africa-244",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q17042238",
-      "title": "Battle of Tabkin Kwatto",
-      "parents": [
-        "jihad-of-usman-dan-fodio"
-      ],
-      "edges": [],
-      "rank": "child-of:jihad-of-usman-dan-fodio",
-      "why": "P361 child of Jihad of Usman dan Fodio (Q17042238); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-africa-245",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q29026955",
-      "title": "Battle of Berea",
-      "parents": [
-        "eighth-xhosa-war"
-      ],
-      "edges": [],
-      "rank": "child-of:eighth-xhosa-war",
-      "why": "P361 child of Eighth Xhosa War (Q29026955); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-africa-246",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q135921217",
-      "title": "Massacre of Warsheikh",
-      "parents": [
-        "italian-pacification-campaigns-in-somalia"
-      ],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of Italian pacification campaigns in Somalia (Q135921217); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-109",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q28458443",
-      "title": "Battle of Wai",
-      "parents": [
-        "deccan-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:deccan-wars",
-      "why": "P361 child of Deccan wars (Q28458443); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-europe-236",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q93506189",
-      "title": "1853 Stockholm cholera outbreak",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q93506189); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-110",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4872780",
-      "title": "Battle of Yesil Kol Nor",
-      "parents": [
-        "ten-great-campaigns"
-      ],
-      "edges": [],
-      "rank": "child-of:ten-great-campaigns",
-      "why": "P361 child of Ten Great Campaigns (Q4872780); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-111",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q65065263",
-      "title": "Battle of Maymyo",
-      "parents": [
-        "sino-burmese-war",
-        "ten-great-campaigns"
-      ],
-      "edges": [],
-      "rank": "child-of:sino-burmese-war",
-      "why": "P361 child of Sino-Burmese War, Ten Great Campaigns (Q65065263); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-112",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q137377039",
-      "title": "Portuguese sack of Qeshm",
-      "parents": [
-        "portuguese-safavid-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:portuguese-safavid-wars",
-      "why": "P361 child of Portuguese–Safavid wars (Q137377039); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-113",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q49000631",
-      "title": "Siege of Katsurayama",
-      "parents": [
-        "battles-of-kawanakajima"
-      ],
-      "edges": [],
-      "rank": "child-of:battles-of-kawanakajima",
-      "why": "P361 child of Battles of Kawanakajima (Q49000631); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-114",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q16849463",
-      "title": "Tavoy campaign (1788)",
-      "parents": [
-        "burmese-siamese-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:burmese-siamese-wars",
-      "why": "P361 child of Burmese–Siamese wars (Q16849463); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-115",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q25182681",
-      "title": "Burmese–Siamese War (1849–1855)",
-      "parents": [
-        "burmese-siamese-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:burmese-siamese-wars",
-      "why": "P361 child of Burmese–Siamese wars (Q25182681); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-116",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q104901667",
-      "title": "Burmese–Siamese War (1792–1794)",
-      "parents": [
-        "burmese-siamese-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:burmese-siamese-wars",
-      "why": "P361 child of Burmese–Siamese wars (Q104901667); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-117",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q107404796",
-      "title": "Burmese–Siamese War (1797–1798)",
-      "parents": [
-        "burmese-siamese-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:burmese-siamese-wars",
-      "why": "P361 child of Burmese–Siamese wars (Q107404796); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-118",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q110876689",
-      "title": "Siamese conquest of Lanna (1774–1775)",
-      "parents": [
-        "burmese-siamese-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:burmese-siamese-wars",
-      "why": "P361 child of Burmese–Siamese wars (Q110876689); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-119",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q138545403",
-      "title": "Kazakh–Dzungar War (1723–1730)",
-      "parents": [
-        "kazakh-dzungar-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:kazakh-dzungar-wars",
-      "why": "P361 child of Kazakh–Dzungar Wars (Q138545403); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-120",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4551622",
-      "title": "1660 destruction of Tiberias",
-      "parents": [
-        "druze-power-struggle-1658-1667"
-      ],
-      "edges": [],
-      "rank": "child-of:druze-power-struggle-1658-1667",
-      "why": "P361 child of Druze power struggle (1658–1667) (Q4551622); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-121",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q18750560",
-      "title": "Spanish occupation of Jolo (1638)",
-      "parents": [
-        "spanish-moro-conflict"
-      ],
-      "edges": [],
-      "rank": "child-of:spanish-moro-conflict",
-      "why": "P361 child of Spanish–Moro conflict (Q18750560); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-122",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q132798136",
-      "title": "Siege of Kandahar (1648–1649)",
-      "parents": [
-        "mughal-persian-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:mughal-persian-wars",
-      "why": "P361 child of Mughal–Persian wars (Q132798136); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-123",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q28174194",
-      "title": "Battle of Harnaulgarh",
-      "parents": [
-        "indian-campaign-of-ahmad-shah-durrani"
-      ],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of Indian campaign of Ahmad Shah Durrani (Q28174194); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-124",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q127257738",
-      "title": "Afghan–Maratha War",
-      "parents": [
-        "indian-campaign-of-ahmad-shah-durrani"
-      ],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of Indian campaign of Ahmad Shah Durrani (Q127257738); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-africa-247",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q122929851",
-      "title": "Odjak of Algiers Revolution",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q122929851); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-125",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q120023845",
-      "title": "Battle of Aceh (1528)",
-      "parents": [
-        "acehnese-portuguese-conflicts"
-      ],
-      "edges": [],
-      "rank": "child-of:acehnese-portuguese-conflicts",
-      "why": "P361 child of Acehnese–Portuguese conflicts (Q120023845); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-126",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q129165070",
-      "title": "Siege of Malacca (1573)",
-      "parents": [
-        "acehnese-portuguese-conflicts",
-        "war-of-the-league-of-the-indies"
-      ],
-      "edges": [],
-      "rank": "child-of:acehnese-portuguese-conflicts",
-      "why": "P361 child of Acehnese–Portuguese conflicts, War of the League of the Indies (Q129165070); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-127",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q130199743",
-      "title": "Siege of Malacca (1575)",
-      "parents": [
-        "acehnese-portuguese-conflicts",
-        "war-of-the-league-of-the-indies"
-      ],
-      "edges": [],
-      "rank": "child-of:acehnese-portuguese-conflicts",
-      "why": "P361 child of Acehnese–Portuguese conflicts, War of the League of the Indies (Q130199743); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-europe-237",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q12880430",
-      "title": "Battle of the Trench (1821)",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q12880430); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-128",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q12880461",
-      "title": "Battle of Kremmydi",
-      "parents": [
-        "greek-war-of-independence"
-      ],
-      "edges": [],
-      "rank": "child-of:greek-war-of-independence",
-      "why": "P361 child of Greek War of Independence (Q12880461); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-europe-238",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q12880462",
-      "title": "Battle of Kakosalesi",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q12880462); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-europe-239",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q12880464",
-      "title": "Battle of Martino",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q12880464); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-europe-240",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q12883578",
-      "title": "Siege of Livadeia",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q12883578); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-europe-241",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q16329401",
-      "title": "Siege of Salona (1821)",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q16329401); 2 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-129",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q28602668",
-      "title": "Battle of Kastella",
-      "parents": [
-        "greek-war-of-independence"
-      ],
-      "edges": [],
-      "rank": "child-of:greek-war-of-independence",
-      "why": "P361 child of Greek War of Independence (Q28602668); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-130",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q106581319",
-      "title": "Battle of Vasilika (Thessaloniki)",
-      "parents": [
-        "greek-war-of-independence"
-      ],
-      "edges": [],
-      "rank": "child-of:greek-war-of-independence",
-      "why": "P361 child of Greek War of Independence (Q106581319); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-131",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4872001",
-      "title": "Battle of San Mateo (1899)",
-      "parents": [
-        "philippine-american-war"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-american-war",
-      "why": "P361 child of Philippine–American War (Q4872001); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-132",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4872274",
-      "title": "Battle of San Jacinto (1899)",
-      "parents": [
-        "philippine-american-war"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-american-war",
-      "why": "P361 child of Philippine–American War (Q4872274); 2 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-133",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q7510542",
-      "title": "Siege of Đông Quan",
-      "parents": [
-        "lam-son-uprising"
-      ],
-      "edges": [],
-      "rank": "child-of:lam-son-uprising",
-      "why": "P361 child of Lam Sơn uprising (Q7510542); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-134",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133850436",
-      "title": "Battle of Siluk",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361 child of Java War (Q133850436); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-135",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q132820720",
-      "title": "Battle of Tupraq Qaleh",
-      "parents": [
-        "ottoman-persian-war-1820-1823"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-persian-war-1820-1823",
-      "why": "P361 child of Ottoman–Persian War (1820–1823) (Q132820720); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-136",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q134277499",
-      "title": "Battle of Malatya (1485)",
-      "parents": [
-        "ottoman-mamluk-war-1485-1491"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-mamluk-war-1485-1491",
-      "why": "P361 child of Ottoman–Mamluk War (1485–1491) (Q134277499); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-europe-242",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q4870906",
-      "title": "Battle of Doro Passage",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q4870906); 1 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-137",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q130377497",
-      "title": "Bedir Khan Beg's campaign against the Assyrians",
-      "parents": [
-        "1843-and-1846-massacres-in-hakkari"
-      ],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of 1843 and 1846 massacres in Hakkari (Q130377497); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-138",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q127868069",
-      "title": "Siege of Honavar (1571)",
-      "parents": [
-        "war-of-the-league-of-the-indies"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-the-league-of-the-indies",
-      "why": "P361 child of War of the League of the Indies (Q127868069); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-139",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q130198666",
-      "title": "Siege of Malacca (1574)",
-      "parents": [
-        "war-of-the-league-of-the-indies"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-the-league-of-the-indies",
-      "why": "P361 child of War of the League of the Indies (Q130198666); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-africa-248",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q128812160",
-      "title": "Battle of Mombasa (1589)",
-      "parents": [
-        "ottoman-portuguese-conflicts-1586-1589"
-      ],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of Ottoman–Portuguese conflicts (1586–1589) (Q128812160); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-africa-249",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q141284594",
-      "title": "Siege of Hergigo",
-      "parents": [
-        "ottoman-ethiopian-war-1557-1589"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-ethiopian-war-1557-1589",
-      "why": "P361 child of Ottoman–Ethiopian War (1557–1589) (Q141284594); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-africa-250",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q132353962",
-      "title": "Ottoman capture of Zeila",
-      "parents": [
-        "ottoman-wars-in-africa"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-wars-in-africa",
-      "why": "P361 child of Ottoman wars in Africa (Q132353962); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-140",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q122899128",
-      "title": "Nisero Incident",
-      "parents": [
-        "aceh-war"
-      ],
-      "edges": [],
-      "rank": "child-of:aceh-war",
-      "why": "P361 child of Aceh War (Q122899128); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-141",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q7510277",
-      "title": "Siege of Nundydroog",
-      "parents": [
-        "anglo-mysore-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:anglo-mysore-wars",
-      "why": "P361 child of Anglo-Mysore wars (Q7510277); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-142",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q105063719",
-      "title": "Siege of Bednore",
-      "parents": [
-        "anglo-mysore-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:anglo-mysore-wars",
-      "why": "P361 child of Anglo-Mysore wars (Q105063719); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-143",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q139147006",
-      "title": "Kudat Raid",
-      "parents": [
-        "mat-salleh-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:mat-salleh-rebellion",
-      "why": "P361 child of Mat Salleh Rebellion (Q139147006); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-144",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q106514633",
-      "title": "Burmese–Siamese War (1609–1622)",
-      "parents": [
-        "burmese-siamese-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:burmese-siamese-wars",
-      "why": "P361 child of Burmese–Siamese wars (Q106514633); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-145",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q120682632",
-      "title": "Mindanao expedition",
-      "parents": [
-        "spanish-moro-conflict"
-      ],
-      "edges": [],
-      "rank": "child-of:spanish-moro-conflict",
-      "why": "P361 child of Spanish–Moro conflict (Q120682632); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-146",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q120703898",
-      "title": "Jolo expedition (1602)",
-      "parents": [
-        "spanish-moro-conflict"
-      ],
-      "edges": [],
-      "rank": "child-of:spanish-moro-conflict",
-      "why": "P361 child of Spanish–Moro conflict (Q120703898); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-147",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q120756270",
-      "title": "Jolo expedition (1630)",
-      "parents": [
-        "spanish-moro-conflict"
-      ],
-      "edges": [],
-      "rank": "child-of:spanish-moro-conflict",
-      "why": "P361 child of Spanish–Moro conflict (Q120756270); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-148",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q120972900",
-      "title": "Raid of Visayas",
-      "parents": [
-        "spanish-moro-conflict"
-      ],
-      "edges": [],
-      "rank": "child-of:spanish-moro-conflict",
-      "why": "P361 child of Spanish–Moro conflict (Q120972900); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-149",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q21244907",
-      "title": "Battle of Sialkot (1763)",
-      "parents": [
-        "indian-campaign-of-ahmad-shah-durrani"
-      ],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of Indian campaign of Ahmad Shah Durrani (Q21244907); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-150",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q21244908",
-      "title": "Battle of Sirhind (1764)",
-      "parents": [
-        "indian-campaign-of-ahmad-shah-durrani"
-      ],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of Indian campaign of Ahmad Shah Durrani (Q21244908); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-151",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q125804243",
-      "title": "Capture of the St. Michael",
-      "parents": [
-        "dano-mughal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:dano-mughal-war",
-      "why": "P361 child of Dano-Mughal War (Q125804243); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-152",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q125881454",
-      "title": "Attack in Hooghly",
-      "parents": [
-        "dano-mughal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:dano-mughal-war",
-      "why": "P361 child of Dano-Mughal War (Q125881454); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-153",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q125895227",
-      "title": "Battle of Balasore",
-      "parents": [
-        "dano-mughal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:dano-mughal-war",
-      "why": "P361 child of Dano-Mughal War (Q125895227); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-154",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q128988957",
-      "title": "Capture of Den Bengalske Prise",
-      "parents": [
-        "dano-mughal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:dano-mughal-war",
-      "why": "P361 child of Dano-Mughal War (Q128988957); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-155",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q130329524",
-      "title": "Valby Expedition of January 1644",
-      "parents": [
-        "dano-mughal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:dano-mughal-war",
-      "why": "P361 child of Dano-Mughal War (Q130329524); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-156",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q140570936",
-      "title": "Skirmish off Narsapur",
-      "parents": [
-        "dano-mughal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:dano-mughal-war",
-      "why": "P361 child of Dano-Mughal War (Q140570936); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-157",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q140628708",
-      "title": "Action off Pipli River",
-      "parents": [
-        "dano-mughal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:dano-mughal-war",
-      "why": "P361 child of Dano-Mughal War (Q140628708); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-158",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q140628907",
-      "title": "Capture of Den Lille Elefant",
-      "parents": [
-        "dano-mughal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:dano-mughal-war",
-      "why": "P361 child of Dano-Mughal War (Q140628907); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-159",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q135650203",
-      "title": "Battle of Balambangan Island",
-      "parents": [
-        "apostate-war"
-      ],
-      "edges": [],
-      "rank": "child-of:apostate-war",
-      "why": "P361 child of Apostate War (Q135650203); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-asia-160",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q135741959",
-      "title": "Battle of Sembulan",
-      "parents": [
-        "apostate-war"
-      ],
-      "edges": [],
-      "rank": "child-of:apostate-war",
-      "why": "P361 child of Apostate War (Q135741959); 1 sitelinks; lane from its own geography."
-    },
-    {
-      "id": "2026-10-31-europe-243",
-      "planned": "2026-10-31T13:37:12Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q138028281",
-      "title": "Battle of Skopelos",
-      "parents": [],
-      "edges": [],
-      "rank": "p361-child",
-      "why": "P361 child of an africa/asia umbrella this atlas holds, but no filed parent fit its span or lane (Q138028281); 1 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-161",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q6932168",
-      "title": "Mughal–Safavid war (1622–1623)",
-      "parents": [
-        "mughal-persian-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:mughal-persian-wars",
-      "why": "Child of mughal-persian-wars (P361/P527), Wikidata, 11 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-162",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q20991943",
-      "title": "Burmese–Siamese War (1568–1569)",
-      "parents": [
-        "burmese-siamese-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:burmese-siamese-wars",
-      "why": "Child of burmese-siamese-wars (P361/P527), Wikidata, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-163",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4872624",
-      "title": "Battle of Ugeumchi",
-      "parents": [
-        "donghak-peasant-revolution"
-      ],
-      "edges": [],
-      "rank": "child-of:donghak-peasant-revolution",
-      "why": "Child of donghak-peasant-revolution (P361/P527), Wikidata, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-164",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4872458",
-      "title": "Battle of Sultanpet Tope",
-      "parents": [
-        "fourth-anglo-mysore-war"
-      ],
-      "edges": [],
-      "rank": "child-of:fourth-anglo-mysore-war",
-      "why": "Child of fourth-anglo-mysore-war (P361/P527), Wikidata, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-31-asia-165",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4872341",
-      "title": "Battle of Seedaseer",
-      "parents": [
-        "fourth-anglo-mysore-war"
-      ],
-      "edges": [],
-      "rank": "child-of:fourth-anglo-mysore-war",
-      "why": "Child of fourth-anglo-mysore-war (P361/P527), Wikidata, 1 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-228",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3820712",
-      "title": "Siege of Paysandú",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-229",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q660025",
-      "title": "Battle of Papudo",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-230",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2889791",
-      "title": "Battle of Ridgeway",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-231",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3486010",
-      "title": "Siege of Querétaro",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-232",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4555228",
-      "title": "1868 Hawaii earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-233",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7510095",
-      "title": "Passage of Humaitá",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-234",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q786821",
-      "title": "Battle of Slim Buttes",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-235",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2888457",
-      "title": "Dull Knife Fight",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-236",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1161889",
-      "title": "1877 Iquique earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-237",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4872751",
-      "title": "Battle of Wolf Mountain",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-238",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q19893194",
-      "title": "Battle of Little Muddy Creek",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-239",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3320910",
-      "title": "Battle of Topeter",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 7 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-240",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q65045870",
-      "title": "1420 Caldera earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-241",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2339983",
-      "title": "Battle of the Maule",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-242",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4551650",
-      "title": "1663 Charlevoix earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-243",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q171374",
-      "title": "Shackamaxon",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-244",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4871024",
-      "title": "Battle of Flint River",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-245",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5928017",
-      "title": "Siege of St. John's",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-246",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q5082999",
-      "title": "Lefebvre's Charles Town expedition",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-247",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4870138",
-      "title": "Battle at Port-la-Joye",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-248",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4552913",
-      "title": "1755 Cape Ann Earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-249",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1750697",
-      "title": "1770 Port-au-Prince earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-250",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q985470",
-      "title": "Gunpowder Incident",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-251",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4871284",
-      "title": "Battle of Iron Works Hill",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-252",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7510027",
-      "title": "Siege of Fort Stanwix",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-253",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1862538",
-      "title": "Battle of Cobleskill",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-254",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q6921294",
-      "title": "Mount Hope Bay raids",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-255",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7509881",
-      "title": "Siege of Boonesborough",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-256",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1949707",
-      "title": "Battle of Beaufort",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-257",
-      "planned": "2026-10-31T15:30:54Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2296381",
-      "title": "Battle of Minisink",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
-    },
-    {
       "id": "2026-10-31-americas-258",
       "planned": "2026-10-31T15:30:54Z",
       "lane": "americas",
@@ -4056,22 +2055,10 @@
       "why": "List rank, docs/candidates-1415-1900.md, 5 sitelinks."
     },
     {
-      "id": "2026-10-31-asia-169",
-      "planned": "2026-10-31T18:29:40Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4870615",
-      "title": "Battle of Calicut",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 5 sitelinks."
-    },
-    {
       "id": "2026-10-31-asia-170",
       "planned": "2026-10-31T18:29:40Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q493211",
       "title": "Disturbance of the Three Ports",
       "parents": [],
@@ -4083,25 +2070,13 @@
       "id": "2026-10-31-asia-171",
       "planned": "2026-10-31T18:29:40Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q11499894",
       "title": "Invasion of Iturup",
       "parents": [],
       "edges": [],
       "rank": "list",
       "why": "List rank, docs/candidates-1415-1900.md, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-265",
-      "planned": "2026-10-31T18:29:40Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q247921",
-      "title": "Oñate treaty",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 9 sitelinks."
     },
     {
       "id": "2026-10-31-americas-266",
@@ -6382,6 +4357,1902 @@
       "edges": [],
       "rank": "list",
       "why": "List rank, docs/candidates-1415-1900.md, 5 sitelinks."
+    },
+    {
+      "id": "2026-10-31-europe-402",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q133132",
+      "title": "Paris Commune",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 88 sitelinks; lane from P625:point."
+    },
+    {
+      "id": "2026-10-31-europe-403",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3699",
+      "title": "Revolutions of 1848 in the German states",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 50 sitelinks; lane from P276:Q151624."
+    },
+    {
+      "id": "2026-10-31-asia-172",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q576338",
+      "title": "Japanese invasions of Korea",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 46 sitelinks; lane from P276:Q483134."
+    },
+    {
+      "id": "2026-10-31-europe-404",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q638587",
+      "title": "Fifth Russo-Turkish War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 43 sitelinks; lane from P276:Q160440."
+    },
+    {
+      "id": "2026-10-31-europe-405",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1072140",
+      "title": "Roman Republic",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 43 sitelinks; lane from P17:Q1072140."
+    },
+    {
+      "id": "2026-10-31-europe-406",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q654006",
+      "title": "Second Northern War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 42 sitelinks; lane from P276:Q62651."
+    },
+    {
+      "id": "2026-10-31-europe-407",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q631991",
+      "title": "Russo-Polish War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 40 sitelinks; lane from P276:Q46."
+    },
+    {
+      "id": "2026-10-31-europe-408",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q846708",
+      "title": "Pruth River Campaign",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 36 sitelinks; lane from P276:Q182445."
+    },
+    {
+      "id": "2026-10-31-europe-410",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1567698",
+      "title": "Muscovite-Lithuanian Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 30 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-411",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2453505",
+      "title": "Third Partition of Poland",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 28 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-412",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q690959",
+      "title": "Revolutions of 1848 in the Habsburg empire",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 28 sitelinks; lane from P17:Q131964."
+    },
+    {
+      "id": "2026-10-31-europe-413",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q16246888",
+      "title": "Great Eastern Crisis",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 27 sitelinks; lane from P276:Q23522."
+    },
+    {
+      "id": "2026-10-31-europe-414",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1780850",
+      "title": "Swedish-Norwegian War 1814",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 27 sitelinks; lane from P276:Q2597352."
+    },
+    {
+      "id": "2026-10-31-americas-456",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q695566",
+      "title": "Panic of 1873",
+      "parents": [],
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital-5 rank, Wikipedia:Vital articles/Level 5, History category; 27 sitelinks; lane from P276:Q30."
+    },
+    {
+      "id": "2026-10-31-asia-173",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q703942",
+      "title": "Japanese invasion of Taiwan",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 25 sitelinks; lane from P276:Q11072822."
+    },
+    {
+      "id": "2026-10-31-asia-174",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q3591483",
+      "title": "1815 eruption of Mount Tambora",
+      "parents": [],
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital-5 rank, Wikipedia:Vital articles/Level 5, History category; 24 sitelinks; lane from P625:point."
+    },
+    {
+      "id": "2026-10-31-europe-415",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q923852",
+      "title": "Crimean-Russian Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 23 sitelinks; lane from P625:point."
+    },
+    {
+      "id": "2026-10-31-americas-457",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1353951",
+      "title": "Antarctic France",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 21 sitelinks; lane from P625:point."
+    },
+    {
+      "id": "2026-10-31-asia-175",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q717373",
+      "title": "Japanese invasion of Taiwan",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 21 sitelinks; lane from P276:Q22502."
+    },
+    {
+      "id": "2026-10-31-asia-176",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2737628",
+      "title": "Russian–Circassian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 20 sitelinks; lane from P276:Q1408764."
+    },
+    {
+      "id": "2026-10-31-europe-416",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q751143",
+      "title": "Slovak Uprising 1848-1849",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 20 sitelinks; lane from P276:Q999030."
+    },
+    {
+      "id": "2026-10-31-europe-417",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q700859",
+      "title": "Crimean campaigns of 1687 and 1689",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 18 sitelinks; lane from P276:Q7835."
+    },
+    {
+      "id": "2026-10-31-europe-418",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1269777",
+      "title": "Dano-Swedish War of 1808-1809",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 18 sitelinks; lane from P276:Q21195."
+    },
+    {
+      "id": "2026-10-31-asia-177",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2725993",
+      "title": "Padri War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 17 sitelinks; lane from P276:Q3492."
+    },
+    {
+      "id": "2026-10-31-asia-178",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2564664",
+      "title": "Bhutan War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 17 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-179",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q134142",
+      "title": "French campaign against Korea",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 17 sitelinks; lane from P276:Q494786."
+    },
+    {
+      "id": "2026-10-31-americas-458",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1265114",
+      "title": "Father Rale's War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 16 sitelinks; lane from P276:Q18389."
+    },
+    {
+      "id": "2026-10-31-americas-459",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q977981",
+      "title": "Confederation of the Equator",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 16 sitelinks; lane from P625:point."
+    },
+    {
+      "id": "2026-10-31-europe-419",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3540197",
+      "title": "Third English Civil War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 15 sitelinks; lane from P276:Q38272."
+    },
+    {
+      "id": "2026-10-31-africa-254",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q16707899",
+      "title": "Sokoto Revolution",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 15 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-americas-460",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1560445",
+      "title": "Rebellions of 1837",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 15 sitelinks; lane from P276:Q16."
+    },
+    {
+      "id": "2026-10-31-americas-461",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q692752",
+      "title": "Pernambucan Revolt",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 15 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-americas-462",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1440788",
+      "title": "Equinoctial France",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 14 sitelinks; lane from P625:point."
+    },
+    {
+      "id": "2026-10-31-europe-420",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q694246",
+      "title": "Revolt of Horea, Cloșca and Crișan",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 14 sitelinks; lane from P17:Q39473."
+    },
+    {
+      "id": "2026-10-31-americas-463",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q881762",
+      "title": "Samoan Civil War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 14 sitelinks; lane from P276:Q162126."
+    },
+    {
+      "id": "2026-10-31-asia-180",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4122573",
+      "title": "Child's War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 13 sitelinks; lane from P276:Q60140."
+    },
+    {
+      "id": "2026-10-31-americas-464",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q6967898",
+      "title": "Nat Turner's slave rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 13 sitelinks; lane from P625:point."
+    },
+    {
+      "id": "2026-10-31-europe-421",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3100354",
+      "title": "Cantonal revolution",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 13 sitelinks; lane from P276:Q5783."
+    },
+    {
+      "id": "2026-10-31-africa-255",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q5403659",
+      "title": "Ethiopian–Egyptian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 12 sitelinks; lane from P276:Q3699102."
+    },
+    {
+      "id": "2026-10-31-africa-256",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2935437",
+      "title": "Congo–Arab War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 12 sitelinks; lane from P276:Q76048."
+    },
+    {
+      "id": "2026-10-31-americas-465",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4120277",
+      "title": "Second Samoan Civil War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 12 sitelinks; lane from P276:Q162126."
+    },
+    {
+      "id": "2026-10-31-americas-466",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2500742",
+      "title": "Revolta da Armada",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 12 sitelinks; lane from P276:Q8678."
+    },
+    {
+      "id": "2026-10-31-asia-181",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2001528",
+      "title": "Nepalese-Tibetan War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 11 sitelinks; lane from P276:Q17252."
+    },
+    {
+      "id": "2026-10-31-europe-422",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1116646",
+      "title": "Anglo-Swedish War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 11 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-182",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q5452540",
+      "title": "First Battle of Tamao",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 10 sitelinks; lane from P625:point."
+    },
+    {
+      "id": "2026-10-31-europe-423",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2748243",
+      "title": "Kazan Rebellion of 1552–1556",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 10 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-americas-467",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q3280731",
+      "title": "Mexican Indian Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 10 sitelinks; lane from P276:Q96."
+    },
+    {
+      "id": "2026-10-31-europe-424",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q28949606",
+      "title": "Danish–Algerian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 10 sitelinks; lane from P17:Q35."
+    },
+    {
+      "id": "2026-10-31-americas-468",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2386936",
+      "title": "Tacky's War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 10 sitelinks; lane from P625:point."
+    },
+    {
+      "id": "2026-10-31-americas-469",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q3444492",
+      "title": "Regulator Movement",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 10 sitelinks; lane from P276:Q2334526."
+    },
+    {
+      "id": "2026-10-31-europe-425",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q13538490",
+      "title": "Bocskai uprising",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 9 sitelinks; lane from P276:Q39473."
+    },
+    {
+      "id": "2026-10-31-europe-426",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4080178",
+      "title": "Bashkir rebellion of 1662—1664",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 9 sitelinks; lane from P17:Q186096."
+    },
+    {
+      "id": "2026-10-31-asia-183",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q6407091",
+      "title": "Laotian Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 9 sitelinks; lane from P17:Q869."
+    },
+    {
+      "id": "2026-10-31-asia-184",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4554402",
+      "title": "Peasants' revolt in Palestine",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 9 sitelinks; lane from P276:Q23792."
+    },
+    {
+      "id": "2026-10-31-asia-185",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q838098",
+      "title": "Mutual Protection of Southeast China",
+      "parents": [],
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital-5 rank, Wikipedia:Vital articles/Level 5, History category; 9 sitelinks; lane from P17:Q8733."
+    },
+    {
+      "id": "2026-10-31-europe-427",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3337680",
+      "title": "Berbice Slave Uprising",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 8 sitelinks; lane from P276:Q675322."
+    },
+    {
+      "id": "2026-10-31-americas-470",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q3071310",
+      "title": "War of the Supremes",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 8 sitelinks; lane from P276:Q739."
+    },
+    {
+      "id": "2026-10-31-europe-428",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q28104354",
+      "title": "Franco-Tahitian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 8 sitelinks; lane from P276:Q118920."
+    },
+    {
+      "id": "2026-10-31-asia-186",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q1164157",
+      "title": "Haw Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 8 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-187",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4209365",
+      "title": "Klang War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 8 sitelinks; lane from P276:Q189710."
+    },
+    {
+      "id": "2026-10-31-europe-429",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q12759550",
+      "title": "Serb Uprising of 1848–49",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 8 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-188",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q7524776",
+      "title": "Sino-Sikh War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 8 sitelinks; lane from P276:Q17252."
+    },
+    {
+      "id": "2026-10-31-europe-430",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q617281",
+      "title": "Danzig rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 7 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-189",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q16932099",
+      "title": "Malay-Portuguese War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 7 sitelinks; lane from P276:Q18758."
+    },
+    {
+      "id": "2026-10-31-europe-431",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q812312",
+      "title": "Bavarian People's Uprising",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 7 sitelinks; lane from P276:Q262879."
+    },
+    {
+      "id": "2026-10-31-americas-471",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q3817778",
+      "title": "Anglo-Cherokee War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 7 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-americas-472",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q593085",
+      "title": "Battle of Suriname",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 7 sitelinks; lane from P276:Q730."
+    },
+    {
+      "id": "2026-10-31-asia-190",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q13012465",
+      "title": "Siamese invasion of Kedah",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 7 sitelinks; lane from P17:Q1317579."
+    },
+    {
+      "id": "2026-10-31-europe-432",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q22935892",
+      "title": "1869 uprising in Krivošije",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 7 sitelinks; lane from P276:Q1427186."
+    },
+    {
+      "id": "2026-10-31-americas-473",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q3118971",
+      "title": "Ecuadorian–Colombian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 7 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-africa-257",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q950121",
+      "title": "Free State–Basotho War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 7 sitelinks; lane from P276:Q258."
+    },
+    {
+      "id": "2026-10-31-asia-191",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q65042005",
+      "title": "Muharram Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-192",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q4763642",
+      "title": "Anglo-Khasi War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-193",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q12866905",
+      "title": "1804 Mtiuleti rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-americas-474",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q5098735",
+      "title": "Chilean Civil War of 1829-1830",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from P17:Q298."
+    },
+    {
+      "id": "2026-10-31-asia-194",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4554590",
+      "title": "1841 rebellion in Guria",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from P276:Q19038."
+    },
+    {
+      "id": "2026-10-31-europe-433",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3395274",
+      "title": "Brsjak Revolt",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-434",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q18210813",
+      "title": "Pecija's First Revolt",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-195",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q7382025",
+      "title": "Russian conquest of Bukhara",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-americas-475",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q24204921",
+      "title": "Six Years' War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from P17:Q6123742."
+    },
+    {
+      "id": "2026-10-31-europe-435",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q12908420",
+      "title": "Mariovo and Prilep Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from P276:Q3041236."
+    },
+    {
+      "id": "2026-10-31-europe-436",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q670984",
+      "title": "Rappenkrieg",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-196",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q28123383",
+      "title": "1591 portuguese invasion of the Jaffna kingdom",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from P276:Q6960987."
+    },
+    {
+      "id": "2026-10-31-asia-197",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q60771401",
+      "title": "Yemeni–Ottoman conflicts",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-africa-258",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q722047",
+      "title": "Ashanti–Fante War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-198",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q5025169",
+      "title": "Cambodian Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from P276:Q424."
+    },
+    {
+      "id": "2026-10-31-asia-199",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q65012965",
+      "title": "1840 Cambodian anti-Vietnamese Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from P17:Q424."
+    },
+    {
+      "id": "2026-10-31-asia-200",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q6361719",
+      "title": "Kandyan Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from P276:Q1530762."
+    },
+    {
+      "id": "2026-10-31-asia-201",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q19708170",
+      "title": "Pahang Civil War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from P17:Q833."
+    },
+    {
+      "id": "2026-10-31-americas-476",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1382989",
+      "title": "Rogue River Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-437",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q13422413",
+      "title": "Franconian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-438",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q19895302",
+      "title": "Himara Revolt",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from P276:Q622764."
+    },
+    {
+      "id": "2026-10-31-africa-259",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q7109948",
+      "title": "Ottoman conquest of Habesh",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from P276:Q986."
+    },
+    {
+      "id": "2026-10-31-americas-477",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4552449",
+      "title": "1712 Huilliche rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-439",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4212420",
+      "title": "Battle of Kanzhal",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from P276:Q16014682."
+    },
+    {
+      "id": "2026-10-31-americas-478",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4867844",
+      "title": "Basque-Vicuña War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-202",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q6886390",
+      "title": "Moamoria rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-203",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q6948728",
+      "title": "Mysorean invasion of Kerala",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from P276:Q542146."
+    },
+    {
+      "id": "2026-10-31-africa-260",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q722041",
+      "title": "Ashanti–Akim–Akwapim War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-americas-479",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2935426",
+      "title": "Bolívar's campaign to liberate New Granada",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from P276:Q8965."
+    },
+    {
+      "id": "2026-10-31-asia-204",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q65012963",
+      "title": "1820 Cambodian anti-Vietnamese Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from P17:Q424."
+    },
+    {
+      "id": "2026-10-31-europe-440",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1455019",
+      "title": "Freiämtersturm",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-205",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q27963620",
+      "title": "Gurkha-Sikh War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from P276:Q6362859."
+    },
+    {
+      "id": "2026-10-31-asia-206",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4920015",
+      "title": "Hong Gyeong-Rae's Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from P276:Q642563."
+    },
+    {
+      "id": "2026-10-31-africa-261",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q98233405",
+      "title": "Katamanso War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-americas-480",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q686731",
+      "title": "Fraser Canyon War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-207",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q5339486",
+      "title": "Matale Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from P17:Q854."
+    },
+    {
+      "id": "2026-10-31-asia-208",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2119019",
+      "title": "Chinese uprising in Mandor, Borneo",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from P276:Q3233989."
+    },
+    {
+      "id": "2026-10-31-asia-209",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q29025861",
+      "title": "Bengali conquest of Chittagong",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from P276:Q158087."
+    },
+    {
+      "id": "2026-10-31-asia-210",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4028067",
+      "title": "First Civil War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from P276:Q1433867."
+    },
+    {
+      "id": "2026-10-31-asia-211",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q10747183",
+      "title": "Lê–Mạc War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from P17:Q881."
+    },
+    {
+      "id": "2026-10-31-asia-212",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q86750730",
+      "title": "Mughal conquest of Garha",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-441",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q651277",
+      "title": "Rappenkrieg",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-442",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q11030407",
+      "title": "Second Desmond Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from P276:Q202156."
+    },
+    {
+      "id": "2026-10-31-asia-213",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q7443382",
+      "title": "Second Invasion of the Kazakh Khanate",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-214",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4818516",
+      "title": "Attingal Outbreak",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from P276:Q2001966."
+    },
+    {
+      "id": "2026-10-31-asia-215",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q65083157",
+      "title": "Anglo-Siamese War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-443",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q11713274",
+      "title": "Denisko Uprising",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-444",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4553886",
+      "title": "1809 Gottscheer Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-216",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q12244168",
+      "title": "Battle of Khakeekera",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-americas-481",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q6102459",
+      "title": "Zacatecas rebellion of 1835",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from P17:Q96."
+    },
+    {
+      "id": "2026-10-31-americas-482",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2882649",
+      "title": "Venezuelan Civil War of 1848–1849",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from P276:Q717."
+    },
+    {
+      "id": "2026-10-31-asia-217",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2682126",
+      "title": "Ambela Campaign",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-americas-483",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q5140854",
+      "title": "Coeur d'Alene War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-218",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2582156",
+      "title": "Expedition against the Chinese in Montrado",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from P17:Q148."
+    },
+    {
+      "id": "2026-10-31-asia-219",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q65079965",
+      "title": "Khost rebellion of 1856–1857",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-africa-262",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q124022858",
+      "title": "Portugal–Angoche conflict",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from P276:Q889394."
+    },
+    {
+      "id": "2026-10-31-europe-445",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q17086661",
+      "title": "Revolution of 1859",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-africa-263",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q5350624",
+      "title": "Ekumeku Movement",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 3 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-220",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q29025828",
+      "title": "Mughal invasion of Bengal",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from P276:Q80338."
+    },
+    {
+      "id": "2026-10-31-europe-446",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1113196",
+      "title": "War of Comacchio",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from P276:Q1127320."
+    },
+    {
+      "id": "2026-10-31-europe-447",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q56876038",
+      "title": "Düsseldorf Cow War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from P276:Q151095."
+    },
+    {
+      "id": "2026-10-31-asia-221",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q23039094",
+      "title": "Mughal War of Succession",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from P17:Q33296."
+    },
+    {
+      "id": "2026-10-31-europe-448",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q12754363",
+      "title": "Kuridža's Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-449",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2215198",
+      "title": "Saltpeter Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from P276:Q897243."
+    },
+    {
+      "id": "2026-10-31-americas-484",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q111940467",
+      "title": "Montserrat slave rebellion of 1768",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from P625:point."
+    },
+    {
+      "id": "2026-10-31-europe-450",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q104879437",
+      "title": "Sagbadre War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from P276:Q770833."
+    },
+    {
+      "id": "2026-10-31-americas-485",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q6107227",
+      "title": "Casa Mata Plan Revolution",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from P276:Q738353."
+    },
+    {
+      "id": "2026-10-31-africa-264",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q5529300",
+      "title": "Ga–Fante War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-451",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q25303213",
+      "title": "Niš Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-452",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q61132459",
+      "title": "Pirot rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from P276:Q309343."
+    },
+    {
+      "id": "2026-10-31-americas-486",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q7318587",
+      "title": "Río Arriba Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-222",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q7835873",
+      "title": "Travancore War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-americas-487",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q6107284",
+      "title": "Revolt of Querétaro",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from P17:Q96."
+    },
+    {
+      "id": "2026-10-31-asia-223",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q4753558",
+      "title": "Andaman Islands Expedition",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from P276:Q186233."
+    },
+    {
+      "id": "2026-10-31-americas-488",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q6415375",
+      "title": "Kirk-Holden war",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from P276:Q1454."
+    },
+    {
+      "id": "2026-10-31-africa-265",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q96386035",
+      "title": "Kiriji War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from P276:Q3752938."
+    },
+    {
+      "id": "2026-10-31-asia-224",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q115821529",
+      "title": "Chin-Lushai Expedition of 1889-90",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 2 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-asia-225",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q111940778",
+      "title": "Temryuk War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 1 sitelinks; lane from P276:Q1408764."
+    },
+    {
+      "id": "2026-10-31-asia-226",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q130711778",
+      "title": "Mataram-Blambangan War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 1 sitelinks; lane from P276:Q12519891."
+    },
+    {
+      "id": "2026-10-31-asia-227",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q109592119",
+      "title": "Rajput War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 1 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-453",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q125217048",
+      "title": "Avignon–Comtat Venaissin War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 1 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-454",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q30607597",
+      "title": "Berkovitsa rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 1 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-455",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q30607602",
+      "title": "Belogradchik rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 1 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-europe-456",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q30684117",
+      "title": "Posavina rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 1 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-americas-489",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q16967004",
+      "title": "California Indian Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 1 sitelinks; lane from manual."
+    },
+    {
+      "id": "2026-10-31-africa-266",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q55633506",
+      "title": "Soninke-Marabout War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 1 sitelinks; lane from P17:Q786080."
+    },
+    {
+      "id": "2026-10-31-asia-228",
+      "planned": "2026-10-31T19:37:32Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4557264",
+      "title": "1898 Baloch uprising",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 1 sitelinks; lane from manual."
     }
   ]
 }
