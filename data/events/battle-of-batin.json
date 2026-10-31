@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-batin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4079386",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Batin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4079386"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Batin\", revision 1370433581"
+    }
+  ],
+  "title": "Battle of Batin",
+  "summary": "The English Wikipedia article \"Battle of Batin\", at revision 1370433581, opens: \"The Battle of Batin took place on 9 September 1810 near the small town of Batin, north Bulgaria during the Russo-Turkish War of 1806 to 1812. The conflict involved an attack by Russian forces on a defensive position held by a numerically stronger Ottoman force. The outcome was a Russian victory which enabled their ongoing Balkan campaign to proceed unhindered.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4079386, imported by tools/import/wikidata.mjs. The item's own description reads \"1810 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1810,
+    "date": "1810-08-26"
+  },
+  "place": "bulgaria-q219",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1806-1812"
+}

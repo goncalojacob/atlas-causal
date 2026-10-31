@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-piski",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q629187",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Piski"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q629187"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Piski\", revision 1370271952"
+    }
+  ],
+  "title": "Battle of Piski",
+  "summary": "The English Wikipedia article \"Battle of Piski\", at revision 1370271952, opens: \"The Battle of Piski was a battle in the Hungarian war of Independence of 1848-1849 fought on 9 February 1849 between the Hungarian army led by the Polish General Józef Bem and the Austrian army of the Habsburg Commander-in-Chief of Transylvania, Lieutenant General Anton Puchner. As a result of the defeats suffered by Bem against the much superior Austrian army, supported also by Romanian and Saxon militias, and a Russian army of several thousand soldiers, the Hungarian army was about to be pushed out of Transylvania. This is why this battle was a crucial one for Bem. And thanks to the reinforcements sent from Hungary, he could stop the Austrian attack at Piski, defeat Puchner, and restart the fight for the province.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q629187, imported by tools/import/wikidata.mjs. The item's own description reads \"1849 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1849,
+    "end": 1849,
+    "date": "1849-02-09"
+  },
+  "place": "romania-q218",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

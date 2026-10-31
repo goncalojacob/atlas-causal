@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-la-bisbal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871511",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of La Bisbal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871511"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of La Bisbal\", revision 1370446716"
+    }
+  ],
+  "title": "Battle of La Bisbal",
+  "summary": "The English Wikipedia article \"Battle of La Bisbal\", at revision 1370446716, opens: \"In the Battle of La Bisbal on 14 September 1810 a Spanish division led by Enrique O'Donnell and supported by an Anglo-Spanish naval squadron led by Francis William Fane and Charles William Doyle surprised an Imperial French brigade commanded by François Xavier de Schwarz. The Imperial troops were from the Confederation of the Rhine, a collection of small German states that were allied to Napoleon. Part of a division led by Marie François Rouyer, Schwarz's brigade was almost completely wiped out, most of its soldiers being taken prisoner along with its commander. One of the few Allied casualties was the capable O'Donnell, wounded in the foot. The battle occurred during the Peninsular War, part of the Napoleonic Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871511, imported by tools/import/wikidata.mjs. The item's own description reads \"1810 battle of the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1810,
+    "date": "1810-09-14"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

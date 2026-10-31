@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "eighth-siege-of-gibraltar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5349120",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Eighth siege of Gibraltar",
+    "pt": "Oitavo Cerco de Gibraltar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5349120"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eighth siege of Gibraltar\", revision 1370616739"
+    }
+  ],
+  "title": "Eighth siege of Gibraltar",
+  "summary": "The English Wikipedia article \"Eighth siege of Gibraltar\", at revision 1370616739, opens: \"The eighth siege of Gibraltar (1462) was a successful effort by soldiers of the Kingdom of Castile to take the fortified town of Gibraltar from the Moors of the Emirate of Granada. Capture of this position, which was weakly defended and was taken with little fighting, was strategically important in the final defeat of the Moors in Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5349120, imported by tools/import/wikidata.mjs. The item's own description reads \"1462 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1462,
+    "end": 1462,
+    "date": "1462-08",
+    "endDate": "1462-08-16"
+  },
+  "place": "gibraltar",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

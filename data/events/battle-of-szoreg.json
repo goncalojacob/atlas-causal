@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-szoreg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q597618",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Szőreg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q597618"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Szőreg\", revision 1370590270"
+    }
+  ],
+  "title": "Battle of Szőreg",
+  "summary": "The English Wikipedia article \"Battle of Szőreg\", at revision 1370590270, opens: \"The Battle of Szőreg was a battle in the Hungarian Revolution of 1848, fought on 5 August 1849 at Szőreg, Hungary, fought between the Hungarian Revolutionary Army led by Lieutenant General Henryk Dembiński and the main army of the Habsburg Empire led by Field Marshal Julius Jacob von Haynau. The Austrian army was pressing on Szeged, a well fortified city from Southern Hungary. Dembiński decided to leave the fortifications and retreat to Szőreg near the Tisza river, where he placed many artillery batteries in the place named Kamaratöltés, preventing the frontal attack of Haynau's troops. The Austrian commander's response was sending his cavalry to cross the Tisza and flank the Hungarian troops. The cavalry managed to cross the river between Törökkanizsa and Makó, then engaged with the Hungarian cavalry in a huge battle around and in Szőreg, in which Dembiński himself was wounded, and the Hungarians safely retreated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q597618, imported by tools/import/wikidata.mjs. The item's own description reads \"1848 battle during the Hungarian Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1849,
+    "end": 1849,
+    "date": "1849-08-05"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "hungarian-revolution-of-1848"
+}

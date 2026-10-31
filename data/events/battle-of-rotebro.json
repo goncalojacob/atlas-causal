@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-rotebro",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2371630",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Rotebro",
+    "pt": "Batalha de Rotebro"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2371630"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Rotebro\", revision 1381908307"
+    }
+  ],
+  "title": "Battle of Rotebro",
+  "summary": "The English Wikipedia article \"Battle of Rotebro\", at revision 1381908307, opens: \"The Battle of Rotebro  was fought on 28 September 1497 between the armies of John, King of Denmark and Sten Sture the Elder, the deposed regent of Sweden. Sten Sture had fallen out of favor with the nobility and was deposed on March 1497 of his post as Regent of Sweden. The Danes invaded Sweden in July of that year, and defeated Sten's peasant army on 28 September at the village of Rotebro north of Stockholm.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2371630, imported by tools/import/wikidata.mjs. The item's own description reads \"1497 late 15th Century conflict between Denmark and Sweden\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1497,
+    "end": 1497,
+    "date": "1497-09-28"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

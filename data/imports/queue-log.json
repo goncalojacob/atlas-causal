@@ -87186,6 +87186,606 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-287",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-valls",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-289",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-grijo",
+        "edges": [],
+        "place": "grijo-vila-nova-de-gaia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-291",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-los-yebenes",
+        "edges": [],
+        "place": "los-yebenes"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-293",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "combat-of-the-coa",
+        "edges": [],
+        "place": "coa-river"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-295",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-astorga",
+        "edges": [],
+        "place": "astorga-spain"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-297",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-figueras-1811",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-299",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-majadahonda",
+        "edges": [],
+        "place": "majadahonda"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-301",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ordal",
+        "edges": [],
+        "place": "ordal"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-303",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mormant",
+        "edges": [],
+        "place": "mormant"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-305",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-schwechat",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-307",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-szoreg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-309",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "bombardment-of-sveaborg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-311",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-elena",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-313",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "odessa-pogroms",
+        "edges": [],
+        "place": "odesa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-315",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-brux",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-317",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-montargis",
+        "edges": [],
+        "place": "montargis"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-319",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-delebio",
+        "edges": [],
+        "place": "delebio"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-321",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-seckenheim",
+        "edges": [],
+        "place": "mannheim"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-323",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-montenaken",
+        "edges": [],
+        "place": "montenaken"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-325",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-neamt-citadel",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-327",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-rotebro",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-329",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-sabac-1521",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-331",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sievershausen",
+        "edges": [],
+        "place": "lehrte"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-333",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-middelburg-1572-1574",
+        "edges": [],
+        "place": "middelburg-zeeland"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-335",
+      "writer": "A",
+      "fired": "2026-10-31T19:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-borgerhout",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-288",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-alcaniz",
+        "edges": [],
+        "place": "alcaniz"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-290",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ciudad-real",
+        "edges": [],
+        "place": "ciudad-real"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-292",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-batin",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-294",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-la-bisbal",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-296",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-montserrat",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-298",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "great-fire-of-podil",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-300",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sorauren",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-302",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nivelle",
+        "edges": [],
+        "place": "nivelle-river"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-304",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-oriamendi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-306",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kapolna",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-308",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-piski",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-310",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-alcolea-1868",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-312",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mouzaki",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-314",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "assassination-of-john-the-fearless",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-316",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nebovidy",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-318",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-echinades-1427",
+        "edges": [],
+        "place": "echinades"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-320",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ashmyany",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-322",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "eighth-siege-of-gibraltar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-324",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-vajkal",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-326",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lucena",
+        "edges": [],
+        "place": "lucena-cordoba"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-328",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "tenth-siege-of-gibraltar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-330",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-muros-bay",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-332",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "action-of-7-july-1565",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-334",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-delft-1573",
+        "edges": [],
+        "place": "delft"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-336",
+      "writer": "B",
+      "fired": "2026-10-31T19:31Z",
+      "status": "written",
+      "written": {
+        "event": "french-fury",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

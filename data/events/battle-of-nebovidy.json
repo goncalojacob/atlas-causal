@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-nebovidy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q44062",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Nebovidy"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q44062"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nebovidy\", revision 1382477682"
+    }
+  ],
+  "title": "Battle of Nebovidy",
+  "summary": "The English Wikipedia article \"Battle of Nebovidy\", at revision 1382477682, opens: \"The Battle of Nebovidy was fought on 6 January 1422 between the Holy Roman Empire and the Hussites, during the second crusade against the Hussites. The Hussites were led by Jan Žižka, while the Imperial forces were led by King Sigismund. The Hussite army surprised a several thousand strong Hungarian force, part of the Sigismund-led army, resting near the village of Nebovidy. The Hungarians had no time to mobilize and regroup and the Hussites were victorious. This was the final battle of a larger conflict – the battle of Kutna Hora.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q44062, imported by tools/import/wikidata.mjs. The item's own description reads \"1422 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1422,
+    "end": 1422,
+    "date": "1422-01-06"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "hussite-wars"
+}

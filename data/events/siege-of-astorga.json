@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-astorga",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485823",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Astorga"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485823"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Astorga\", revision 1370739035"
+    }
+  ],
+  "title": "Siege of Astorga",
+  "summary": "The English Wikipedia article \"Siege of Astorga\", at revision 1370739035, opens: \"The siege of Astorga was an attempt by French forces to capture Astorga, Spain in a campaign of the Peninsular War. Astorga was located on the flank of the French invasion of Spain and Portugal, and was meant to be used as a headquarters during the campaign. For several weeks no attack took place, as neither side had artillery enough to fight well. Shortly after the French guns arrived, however, a hole was made in the wall and the city fell shortly thereafter. The French overpowered the Spanish garrison inside and took the city on 22 April 1810.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485823, imported by tools/import/wikidata.mjs. The item's own description reads \"1810 siege during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1810,
+    "date": "1810-03-21",
+    "endDate": "1810-04-22"
+  },
+  "place": "astorga-spain",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mormant",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1459779",
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Mormant",
+    "pt": "Mormant"
+  },
+  "sources": [],
+  "names": [
+    "Mormant"
+  ],
+  "where": {
+    "lon": 2.89,
+    "lat": 48.606944444444,
+    "precision": "city",
+    "label": "Mormant"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
