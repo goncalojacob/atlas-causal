@@ -1084,6 +1084,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "akre",
+      "kind": "place",
+      "names": [
+        "Akre"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -4962,6 +4989,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "balanguingui-island",
+      "kind": "place",
+      "names": [
+        "Balanguingui Island"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "balearic-islands",
@@ -5682,7 +5736,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 2,
+      "degree": 4,
       "id": "basra",
       "kind": "place",
       "names": [
@@ -13447,7 +13501,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "chaul",
       "kind": "place",
       "names": [
@@ -23206,6 +23260,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "galati",
+      "kind": "place",
+      "names": [
+        "Galați"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "galicia-eastern-europe",
@@ -24465,7 +24546,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 2,
       "id": "goa-q1171",
       "kind": "place",
       "names": [
@@ -25813,6 +25894,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "gujranwala",
+      "kind": "place",
+      "names": [
+        "Gujranwala"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -27598,6 +27706,35 @@
       "names": [
         "Highlands",
         "Highlands, New York"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "hillah",
+      "kind": "place",
+      "names": [
+        "Hillah",
+        "Al-Hillah",
+        "Hila"
       ],
       "origin": {
         "tool": "wikidata"
@@ -30674,7 +30811,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 176,
+      "degree": 177,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -32646,7 +32783,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "kayseri",
       "kind": "place",
       "names": [
@@ -32985,6 +33122,33 @@
       "kind": "place",
       "names": [
         "Khan Yunis"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "khanaqin",
+      "kind": "place",
+      "names": [
+        "Khanaqin"
       ],
       "origin": {
         "tool": "wikidata"
@@ -33681,6 +33845,33 @@
         "Klausen",
         "Klausen, Germany",
         "Klausen (Alemanha)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "kleisova-island",
+      "kind": "place",
+      "names": [
+        "Kleisova island"
       ],
       "origin": {
         "tool": "wikidata"
@@ -35697,7 +35888,7 @@
         }
       ],
       "created": "2026-10-31",
-      "degree": 1,
+      "degree": 2,
       "id": "lahore-q11739",
       "kind": "place",
       "names": [
@@ -39879,7 +40070,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 6,
+      "degree": 7,
       "id": "malacca-city",
       "kind": "place",
       "names": [
@@ -39936,7 +40127,7 @@
         }
       ],
       "created": "2026-10-01",
-      "degree": 4,
+      "degree": 5,
       "id": "malay-peninsula",
       "kind": "place",
       "names": [
@@ -49551,7 +49742,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 33,
+      "degree": 34,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -51189,7 +51380,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 5,
+      "degree": 6,
       "id": "persian-gulf",
       "kind": "place",
       "names": [
@@ -51610,7 +51801,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 38,
+      "degree": 39,
       "id": "philippines-q928",
       "kind": "place",
       "names": [
@@ -52079,7 +52270,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "plered",
       "kind": "place",
       "names": [
@@ -60632,6 +60823,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "shahrizor",
+      "kind": "place",
+      "names": [
+        "Shahrazur",
+        "Shahrizor"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 3,
       "id": "shamakhi",
@@ -66336,7 +66555,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "thalassery",
       "kind": "place",
       "names": [
@@ -67579,6 +67798,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "topkap-palace",
+      "kind": "place",
+      "names": [
+        "Topkapı Palace",
+        "Palácio de Topkapı"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -68292,7 +68539,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 12,
+      "degree": 13,
       "id": "tripoli",
       "kind": "place",
       "names": [
@@ -68622,7 +68869,7 @@
         }
       ],
       "created": "2026-10-01",
-      "degree": 4,
+      "degree": 5,
       "id": "tunis-q3572",
       "kind": "place",
       "names": [

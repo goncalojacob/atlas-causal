@@ -1040,6 +1040,15 @@
         }
       ]
     },
+    "battle-of-duyon-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-edgehill": {
       "from": "git",
       "versions": [
@@ -1148,6 +1157,15 @@
         }
       ]
     },
+    "battle-of-formoso-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-fort-albany": {
       "from": "git",
       "versions": [
@@ -1214,6 +1232,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-gegodog": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -4401,6 +4428,15 @@
         }
       ]
     },
+    "fall-of-plered": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "fettmilch-uprising": {
       "from": "git",
       "versions": [
@@ -5310,6 +5346,15 @@
         }
       ]
     },
+    "ottoman-disaster": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "ottoman-safavid-war-1603-1612": {
       "from": "git",
       "versions": [
@@ -5618,6 +5663,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "portuguese-safavid-war-1621-1630": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -6048,6 +6102,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "safavid-conquest-of-bahrain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },

@@ -152,6 +152,15 @@
         }
       ]
     },
+    "1591-uprising-in-tunis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "1592-1593-malta-plague-epidemic": {
       "from": "git",
       "versions": [
@@ -6196,6 +6205,15 @@
         }
       ]
     },
+    "siege-of-chaul-1570-1571": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-chittorgarh-1567-1568": {
       "from": "git",
       "versions": [
@@ -6520,6 +6538,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "siege-of-goa-1570-1571": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },

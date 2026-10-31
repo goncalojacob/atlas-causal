@@ -1240,6 +1240,15 @@
         }
       ]
     },
+    "battle-of-ashar-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-aspindza": {
       "from": "git",
       "versions": [
@@ -2683,6 +2692,15 @@
         }
       ]
     },
+    "battle-of-gujranwala-1761": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-gully-hole-creek": {
       "from": "git",
       "versions": [
@@ -2743,6 +2761,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-hella": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -3034,6 +3061,15 @@
       ]
     },
     "battle-of-kettle-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "battle-of-khanaqin-1775": {
       "from": "git",
       "versions": [
         {
@@ -4710,6 +4746,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "battle-of-shahrezur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -7739,6 +7784,15 @@
         }
       ]
     },
+    "jinchuan-campaigns": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "kettle-war": {
       "from": "git",
       "versions": [
@@ -9383,6 +9437,15 @@
         }
       ]
     },
+    "siege-of-basra-1775-1776": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-belgrade-1717": {
       "from": "git",
       "versions": [
@@ -9878,6 +9941,15 @@
         }
       ]
     },
+    "siege-of-lahore-1761": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-landau-1702": {
       "from": "git",
       "versions": [
@@ -10351,6 +10423,15 @@
         }
       ]
     },
+    "siege-of-tellicherry": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-thionville-1792": {
       "from": "git",
       "versions": [
@@ -10422,6 +10503,15 @@
       ]
     },
     "siege-of-trichinopoly-1743": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "siege-of-tripoli-1705": {
       "from": "git",
       "versions": [
         {

@@ -830,6 +830,15 @@
         }
       ]
     },
+    "battle-of-sakainehara": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-san-romano": {
       "from": "git",
       "versions": [
@@ -2261,6 +2270,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "siege-of-kayseri-1490": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
