@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "siege-of-fukashi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q593638",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Fukashi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q593638"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fukashi\", revision 1370741329"
+    }
+  ],
+  "title": "Siege of Fukashi",
+  "summary": "The English Wikipedia article \"Siege of Fukashi\", at revision 1370741329, opens: \"The 1550 siege of Fukashi was one of a series of battles waged by Takeda Shingen in his long campaign to conquer Shinano province, which was ruled by a number of minor daimyō, notably the Suwa, Ogasawara, Murakami and Takato.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q593638, imported by tools/import/wikidata.mjs. The item's own description reads \"1550 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1549,
+    "end": 1549
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-arai",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1885368",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Arai",
+    "pt": "Cerco de Arai"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1885368"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Arai\", revision 1370738943"
+    }
+  ],
+  "title": "Siege of Arai",
+  "summary": "The English Wikipedia article \"Siege of Arai\", at revision 1370738943, opens: \"The siege of Arai (新井城の戦い) was among the first steps taken by Hōjō Sōun towards becoming one of the most powerful warlords of Japan's Sengoku period. After attacking Kamakura in 1512, Hōjō turned to Arai castle, on Miura Peninsula, to the south, which was controlled by Miura Yoshiatsu.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1885368, imported by tools/import/wikidata.mjs. The item's own description reads \"Japanese military operation in 1516\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1516,
+    "end": 1516,
+    "date": "1516-07-11"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

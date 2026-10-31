@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "siege-of-matsuo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1869311",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Matsuo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1869311"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Matsuo\", revision 1370743353"
+    }
+  ],
+  "title": "Siege of Matsuo",
+  "summary": "The English Wikipedia article \"Siege of Matsuo\", at revision 1370743353, opens: \"The 1554 siege of Matsuo was one of many sieges undertaken by the daimyō Takeda Shingen in his campaign to conquer Japan's Shinano Province. This took place during Japan's Sengoku period, in which feudal lords (daimyōs) vied for control of fiefdoms across the country.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1869311, imported by tools/import/wikidata.mjs. The item's own description reads \"1554 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1554,
+    "end": 1554
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

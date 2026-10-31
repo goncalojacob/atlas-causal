@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1881-haiphong-typhoon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4555815",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1881 Haiphong typhoon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4555815"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1881 Haiphong typhoon\", revision 1366888105"
+    }
+  ],
+  "title": "1881 Haiphong typhoon",
+  "summary": "The English Wikipedia article \"1881 Haiphong typhoon\", at revision 1366888105, opens: \"The 1881 Haiphong typhoon was a devastating typhoon that struck Haiphong, in northern Dai Nam, and the northern part of the Captaincy General of the Philippines on October 8, 1881. The typhoon was first detected east of Southern Luzon on September 27, 1881. The typhoon killed about 3,000 people in total.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4555815, imported by tools/import/wikidata.mjs. The item's own description reads \"Pacific typhoon in 1881\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1881,
+    "end": 1881,
+    "date": "1881-09-27",
+    "endDate": "1881-10-08"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

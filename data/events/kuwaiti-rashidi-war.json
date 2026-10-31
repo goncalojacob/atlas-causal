@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "kuwaiti-rashidi-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q65066872",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Kuwaiti–Rashidi war"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q65066872"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kuwaiti–Rashidi war\", revision 1381381455"
+    }
+  ],
+  "title": "Kuwaiti–Rashidi war",
+  "summary": "The English Wikipedia article \"Kuwaiti–Rashidi war\", at revision 1381381455, opens: \"The Kuwaiti–Rashidi war was a conflict between the Sheikhdom of Kuwait and the Emirate of Jabal Shammar which was fought from 1900 to 1901. It began in mid-December 1900, when the emir of Kuwait, Mubarak Al-Sabah launched a raid into central Arabia. It saw moderate initial success, with the Kuwaitis moving into Najd towards the end of February 1901, and having captured Unaizah, Buraidah and Al-Zulfi by 11 March. Most of Riyadh was also captured, from where the Kuwaitis attempted to march on Ha'il, and on 11 March the Kuwaitis began a pursuit of the emir of Jabal Shammar, who was thought to be in the vicinity of Ha'il. However, Kuwaiti success saw a reversal on 17 March 1901 when the Kuwaiti army was defeated in the Battle of Sarif. Upon hearing of this defeat, Ibn Saud, who was besieging the Masmak fort in Riyadh, hastily retreated to Kuwait, and the emir of Kuwait followed suit, arriving in Kuwait on 31 March. The emir of Jabal Shammar, Abd al-Aziz ibn Mutib, attempted to follow up this victory by besieging Al Jahra, but retreated out of Kuwait after failing to capture Al Jahra for 2-3 weeks.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q65066872, imported by tools/import/wikidata.mjs. The item's own description reads \"war between al Sabah and al Saud against al Rashid\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1901
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

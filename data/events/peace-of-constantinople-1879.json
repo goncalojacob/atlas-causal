@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "peace-of-constantinople-1879",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q55658233",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Peace of Constantinople (1879)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q55658233"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peace of Constantinople (1879)\", revision 1370244100"
+    }
+  ],
+  "title": "Peace of Constantinople (1879)",
+  "summary": "The English Wikipedia article \"Peace of Constantinople (1879)\", at revision 1370244100, opens: \"The 1879 Peace of Constantinople reached between the Russian and Ottoman empires was a treaty signed on February 8, 1879 in Constantinople. Aleksey Lobanov-Rostovsky, Russian ambassador to Sultan Abdul Hamid II, and the Ottoman Minister of Foreign Affairs, Alexander Karatheodori Pasha, and Ali Pasha, the Minister presiding over the Council of State of the Ottoman Empire, were those present to sign the agreement. It is a direct continuation of the Treaty of San Stefano.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q55658233, imported by tools/import/wikidata.mjs. The item's own description reads \"1879 treaty superseding the Treaty of San Stefano\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879,
+    "date": "1879-02-08"
+  },
+  "place": "constantinople",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

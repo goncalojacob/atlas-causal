@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-ozawahara",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2335993",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Ozawahara"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2335993"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ozawahara\", revision 1370271385"
+    }
+  ],
+  "title": "Battle of Ozawahara",
+  "summary": "The English Wikipedia article \"Battle of Ozawahara\", at revision 1370271385, opens: \"The Battle of Ozawahara was fought in 1530 in the present day Asao, Kawasaki, Kanagawa. \nThis was the first battle for Hōjō Ujiyasu, then sixteen years old.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2335993, imported by tools/import/wikidata.mjs. The item's own description reads \"1530 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1530,
+    "end": 1530
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

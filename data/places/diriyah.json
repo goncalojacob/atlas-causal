@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "diriyah",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q277505",
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Diriyah",
+    "pt": "Daria"
+  },
+  "sources": [],
+  "names": [
+    "Diriyah",
+    "Al-Diriyah",
+    "Daria"
+  ],
+  "where": {
+    "lon": 46.575555555556,
+    "lat": 24.733333333333,
+    "precision": "city",
+    "label": "Diriyah"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

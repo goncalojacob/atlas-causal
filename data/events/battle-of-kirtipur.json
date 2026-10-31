@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-kirtipur",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4871446",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Kirtipur"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871446"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kirtipur\", revision 1381315205"
+    }
+  ],
+  "title": "Battle of Kirtipur",
+  "summary": "The English Wikipedia article \"Battle of Kirtipur\", at revision 1381315205, opens: \"The Battle of Kirtipur occurred in 1767 during the Gorkha conquest of Nepal, and was fought at Kirtipur, one of the principal towns in the Kathmandu Valley. Kirtipur was then a walled town of 800 houses and part of the kingdom of Lalitpur. It is spread along the top of a ridge.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871446, imported by tools/import/wikidata.mjs. The item's own description reads \"1767 battle in Nepal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1767,
+    "end": 1767
+  },
+  "place": "kirtipur",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
