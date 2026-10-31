@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "dano-swedish-war-1658-1660",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q417744",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Dano-Swedish War (1658–1660)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q417744"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dano-Swedish War (1658–1660)\", revision 1370614799"
+    }
+  ],
+  "title": "Dano-Swedish War (1658–1660)",
+  "summary": "The English Wikipedia article \"Dano-Swedish War (1658–1660)\", at revision 1370614799, opens: \"The Dano-Swedish War of 1658–1660 was a war between Denmark–Norway and Sweden, with the former backed by the Dutch Republic and Poland. It is known in Denmark as the Second Karl Gustav War, in Norway as Bjelkes Feud in Sweden as Karl Gustav's Second Danish War, and in the Netherlands as the Swedish-Dutch War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q417744, imported by tools/import/wikidata.mjs. The item's own description reads \"war between Denmark–Norway and Sweden that took place between 1658-60\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1658,
+    "end": 1660,
+    "date": "1658-08-05",
+    "endDate": "1660-05-26"
+  },
+  "place": "denmark-q35",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "northern-war-of-1655-1660"
+}

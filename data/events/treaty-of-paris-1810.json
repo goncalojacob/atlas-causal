@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-paris-1810",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q177464",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Treaty of Paris (1810)",
+    "pt": "Tratado de Paris (1810)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q177464"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Paris (1810)\", revision 1335688078"
+    }
+  ],
+  "title": "Treaty of Paris (1810)",
+  "summary": "The English Wikipedia article \"Treaty of Paris (1810)\", at revision 1335688078, opens: \"The Treaty of Paris, signed on 6 January 1810, ended the Franco-Swedish War after Sweden's defeat by Russia, an ally of France, in the Finnish War of 1808–1809.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q177464, imported by tools/import/wikidata.mjs. The item's own description reads \"1810 treaty between Sweden and Napoleonic France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1810,
+    "date": "1810-01-06"
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

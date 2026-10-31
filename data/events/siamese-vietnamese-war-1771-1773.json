@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siamese-vietnamese-war-1771-1773",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2280725",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siamese–Vietnamese War (1771–1773)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2280725"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siamese–Vietnamese War (1771–1773)\", revision 1370738361"
+    }
+  ],
+  "title": "Siamese–Vietnamese War (1771–1773)",
+  "summary": "The English Wikipedia article \"Siamese–Vietnamese War (1771–1773)\", at revision 1370738361, opens: \"The Siamese–Vietnamese War (1771–1773) was a war between Siam of the Thonburi Period in the reign of King Taksin and the Nguyễn Lords of Cochinchina or Southern Vietnam. The war also involved Cambodia and the Hà Tiên polity, which were allies of the Nguyen Lord.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2280725, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Siamese-Vietnamese Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1771,
+    "end": 1773,
+    "date": "1771-10",
+    "endDate": "1773-03"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
