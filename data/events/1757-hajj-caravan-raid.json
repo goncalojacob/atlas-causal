@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "1757-hajj-caravan-raid",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q20988268",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1757 Hajj caravan raid",
+    "pt": "Incursão da caravana do Haje de 1757"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20988268"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1757 Hajj caravan raid\", revision 1370278098"
+    }
+  ],
+  "title": "1757 Hajj caravan raid",
+  "summary": "The English Wikipedia article \"1757 Hajj caravan raid\", at revision 1370278098, opens: \"The 1757 Hajj caravan raid was the plunder and massacre of the Hajj caravan of 1757 on its return to Damascus from Mecca by Bedouin tribesmen. The caravan was under the protection of an Ottoman force led by the Wali of Damascus, Husayn Pasha, and his deputy Musa Pasha, while the Bedouin were led by Qa'dan al-Fayez of the Bani Sakher tribe. An estimated 20,000 pilgrims were either killed or died of hunger or thirst as a result of the raid.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20988268, imported by tools/import/wikidata.mjs. The item's own description reads \"1757 raid and massacre\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1757,
+    "date": "1757-09",
+    "endDate": "1757-10"
+  },
+  "place": "qatraneh",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

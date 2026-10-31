@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "capture-of-baghdad-1624",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5036984",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Capture of Baghdad (1624)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5036984"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Baghdad (1624)\", revision 1381028924"
+    }
+  ],
+  "title": "Capture of Baghdad (1624)",
+  "summary": "The English Wikipedia article \"Capture of Baghdad (1624)\", at revision 1381028924, opens: \"The Capture of Baghdad was a military operation by the Safavid army under Abbas the Great. It occurred on 14 January 1624, and was part of the ongoing war between Sultan Murad IV of the Ottoman Empire and Shah Abbas I of Safavid Iran. In the aftermath, fighting extended to other key cities in Ottoman Iraq, including Mosul, Kirkuk, and Basra.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5036984, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Ottoman–Safavid War (1623–1639)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1624,
+    "end": 1624,
+    "date": "1624-01-14"
+  },
+  "place": "baghdad",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

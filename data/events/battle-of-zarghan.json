@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-zarghan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q18162680",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Zarghan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18162680"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Zarghan\", revision 1378916251"
+    }
+  ],
+  "title": "Battle of Zarghan",
+  "summary": "The English Wikipedia article \"Battle of Zarghan\", at revision 1378916251, opens: \"The Battle of Zarghan was the last battle of Ashraf Hotak's career as a statesman. Having been repeatedly bludgeoned by Nader's army through the Battles of Mehmandoost and Murche-Khort, Ashraf had withdrawn from Isfahan and escaped south to Shiraz to rebuild his army in an ultimately futile attempt to reverse his fortunes. Although he found some local support amongst a few tribes, he was decisively beaten, for the last time, after which he disappeared from Persia as well as the historical records, with no consensus being reached concerning the manner of his demise.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18162680, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict in 1730 during Nader's Campaigns\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1729,
+    "end": 1729,
+    "date": "1729-09-24"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "campaigns-of-nader-shah"
+}

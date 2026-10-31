@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-nishapur-1755",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q132175133",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Nishapur (1755)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q132175133"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Nishapur (1755)\", revision 1370744028"
+    }
+  ],
+  "title": "Siege of Nishapur (1755)",
+  "summary": "The English Wikipedia article \"Siege of Nishapur (1755)\", at revision 1370744028, opens: \"The siege of Nishapur began in 1755 when Ahmad Shah Durrani, ruler of the Durrani Empire, invaded Khorasan. Having earlier brought Mashhad to submission, Ahmad Shah laid siege to the capital of Qara Bayat Amirdom in the spring of 1755.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q132175133, imported by tools/import/wikidata.mjs. The item's own description reads \"1755 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1755,
+    "end": 1755,
+    "date": "1755-06-17",
+    "endDate": "1755-06-24"
+  },
+  "place": "nishapur",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

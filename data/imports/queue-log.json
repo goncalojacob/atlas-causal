@@ -76105,6 +76105,618 @@
         "place": "karabakh"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-735",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6744479: its classes disagree: Q11204 → actor, Q15238777 → event"
+    },
+    {
+      "id": "2026-10-30-asia-737",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "imperial-decree-of-declaration-of-war-against-foreign-powers",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-739",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chapakchur",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-741",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-aga-cayiri",
+        "edges": [],
+        "place": "cilicia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-743",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "acehnese-portuguese-conflicts",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-745",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "mughal-persian-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-747",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "tensho-jingo-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-749",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "battles-of-la-naval-de-manila",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-751",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sinhagad",
+        "edges": [],
+        "place": "sinhagad"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-753",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sangan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-755",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-khwar-pass",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-757",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kirkhbulakh",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-759",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-delhi-1757",
+        "edges": [],
+        "place": "red-fort"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-761",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q20991943: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-asia-763",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q16003596: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-asia-765",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3634917: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-asia-768",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-malacca-1568",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-770",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cuddalore-1758",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-772",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-odawara-1561",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-774",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-bassein-1802",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-776",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-negapatam-1758",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-778",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-odawara-1569",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-780",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-herat-1729",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-africa-782",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q262584: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-africa-784",
+      "writer": "A",
+      "fired": "2026-10-31T10:15Z",
+      "status": "written",
+      "written": {
+        "event": "venetian-bombardments-of-the-beylik-of-tunis",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-742",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "jungjong-restoration",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-744",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "tahmasp-i-s-kakhetian-and-kartlian-campaigns",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-746",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-rajmahal",
+        "edges": [],
+        "place": "rajmahal"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-748",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "injo-coup",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-750",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "great-clearance",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-752",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-itakhuli",
+        "edges": [],
+        "place": "guwahati"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-754",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zarghan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-756",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "nader-shah-s-mesopotamian-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-758",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-nishapur-1755",
+        "edges": [],
+        "place": "nishapur"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-760",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "1757-hajj-caravan-raid",
+        "edges": [],
+        "place": "qatraneh"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-762",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2787168: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-asia-764",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2066732: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-asia-766",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q624082: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-asia-767",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q700883: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-asia-769",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6932168: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-asia-771",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-diu-1531",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-773",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-baghdad-1624",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-775",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-baghdad-1733",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-777",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-geok-tepe-1879",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-779",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-kandahar-1605-1606",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-781",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kars-1745",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-africa-783",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q20995527: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-africa-785",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3536721: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-africa-787",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "bombardment-of-algiers-1683",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-africa-789",
+      "writer": "B",
+      "fired": "2026-10-31T10:24Z",
+      "status": "written",
+      "written": {
+        "event": "american-algerian-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

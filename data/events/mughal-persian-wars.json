@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mughal-persian-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q17077919",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Mughal–Persian wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17077919"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mughal–Persian wars\", revision 1370628896"
+    }
+  ],
+  "title": "Mughal–Persian wars",
+  "summary": "The English Wikipedia article \"Mughal–Persian wars\", at revision 1370628896, opens: \"The Mughal–Persian wars or Mughal–Iranian wars were a series of wars fought in the 16th, 17th and 18th centuries between the Safavid and Afsharid Empires of Persia, and the Mughal Empire of India, over what is now Afghanistan. The Mughals consolidated their control of what is today India and Pakistan in the 16th century, and gradually came into conflict with the powerful Safavids and Afsharids, led by Abbas the Great and Nader Shah respectively. Aside from Nader Shah's invasion of the Mughal Empire, most of the conflict between the two powers were limited to battles for control over Kandahar. From a Safavid point of view, the Mughal army counted as \"far less formidable\" than that of their arch rivals the Ottomans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17077919, imported by tools/import/wikidata.mjs. The item's own description reads \"series of wars fought in the 17th and 18th centuries\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1557,
+    "end": 1739,
+    "endDate": "1739-05-17"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

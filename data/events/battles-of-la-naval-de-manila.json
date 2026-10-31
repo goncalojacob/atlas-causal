@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battles-of-la-naval-de-manila",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2265603",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battles of La Naval de Manila"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2265603"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battles of La Naval de Manila\", revision 1381690528"
+    }
+  ],
+  "title": "Battles of La Naval de Manila",
+  "summary": "The English Wikipedia article \"Battles of La Naval de Manila\", at revision 1381690528, opens: \"The Battles of La Naval de Manila or Battle of Manila Bay were a series of five naval battles fought in the waters of the Spanish East Indies in the year 1646, in which the forces of the Spanish Empire repelled various attempts by forces of the Dutch Republic to invade Manila, during the Eighty Years' War. The Spanish forces, which included many native volunteers, consisted of two, and later, three Manila galleons, a galley and four brigantines. They neutralized a Dutch fleet of nineteen warships, divided into three separate squadrons. Heavy damage was inflicted upon the Dutch squadrons by the Spanish forces, forcing the Dutch to abandon their invasion of the Philippines.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2265603, imported by tools/import/wikidata.mjs. The item's own description reads \"1646 naval battle of the Eighty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1646,
+    "end": 1646,
+    "date": "1646-03-15",
+    "endDate": "1646-10-04"
+  },
+  "place": "manila-bay",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

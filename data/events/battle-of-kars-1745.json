@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "battle-of-kars-1745",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q18356954",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Kars (1745)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18356954"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kars (1745)\", revision 1380623949"
+    }
+  ],
+  "title": "Battle of Kars (1745)",
+  "summary": "The English Wikipedia article \"Battle of Kars (1745)\", at revision 1380623949, opens: \"The Battle of Kars was the last major engagement of the Ottoman–Persian War. The battle resulted in the complete and utter destruction of the Ottoman army. It was also the last of the great military triumphs of Nader Shah. The battle was fought over a period of ten days in which the first day saw the Ottomans routed from the field, followed by a series of subsequent blockades and pursuits until the final destruction of the Ottoman army. The severity of the defeat, in conjunction with another defeat near Mosul, ended any hopes of Ottoman victory and forced them to enter into negotiations with a significantly weaker position than they would otherwise have occupied.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18356954, imported by tools/import/wikidata.mjs. The item's own description reads \"1745 battle of the Ottoman–Persian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1745,
+    "end": 1745,
+    "date": "1745-08-09",
+    "endDate": "1745-08-19"
+  },
+  "place": "kars",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": [
+    "ottoman-persian-war-1743-1746",
+    "campaigns-of-nader-shah"
+  ]
+}

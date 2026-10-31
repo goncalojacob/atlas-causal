@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "siege-of-diu-1531",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7509975",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Diu (1531)",
+    "pt": "Cerco de Diu (1531)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7509975"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Diu (1531)\", revision 1370740748"
+    }
+  ],
+  "title": "Siege of Diu (1531)",
+  "summary": "The English Wikipedia article \"Siege of Diu (1531)\", at revision 1370740748, opens: \"The siege of Diu occurred when a combined Ottoman-Gujarati force defeated a Portuguese attempt to capture the city of Diu in 1531. The victory was partly the result of Ottoman firepower over the Portuguese besiegers deployed by Mustafa Bayram, an Ottoman expert.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7509975, imported by tools/import/wikidata.mjs. The item's own description reads \"1531 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1531,
+    "end": 1531
+  },
+  "place": "diu-india",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
