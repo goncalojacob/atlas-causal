@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "defense-of-beijing",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q10883153",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Defense of Beijing"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10883153"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Defense of Beijing\", revision 1370615202"
+    }
+  ],
+  "title": "Defense of Beijing",
+  "summary": "The English Wikipedia article \"Defense of Beijing\", at revision 1370615202, opens: \"The Defense of the Capital, also known as the Defense of Beijing, was a defensive battle fought between the Ming dynasty of China and the Oirat Mongols in 1449. The battle followed the Ming defeat in the Tumu Crisis, during which Emperor Yingzong was captured by the Oirat leader Esen Taishi. Seeking to exploit the Emperor's captivity, Esen advanced on the Ming capital, but the Ming court rejected his overtures, enthroned the Jingtai Emperor, and placed Minister of War Yu Qian in charge of the city's defense. Under Yu's leadership, Ming forces repelled the invading army led by Esen outside the walls of Beijing.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10883153, imported by tools/import/wikidata.mjs. The item's own description reads \"1449 conflict between the Oriats and the Ming dynasty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1449,
+    "end": 1449
+  },
+  "place": "beijing",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

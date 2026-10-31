@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "empresa-de-china",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q116203795",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Empresa de China"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q116203795"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Empresa de China\", revision 1376449611"
+    }
+  ],
+  "title": "Empresa de China",
+  "summary": "The English Wikipedia article \"Empresa de China\", at revision 1376449611, opens: \"The Empresa de China was a long-time projected conquest of China by the Spanish Empire. Proposed repeatedly through the 16th century as a natural culmination of the conquest of the Philippines, it involved the invasion and assimilation of the Ming dynasty by a coalition that would include Spaniards, Portuguese, Spanish subjects of Spanish Philippines, and Japanese allies from the Toyotomi regency, as well as potential masses of ethnic Chinese allies.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q116203795, imported by tools/import/wikidata.mjs. The item's own description reads \"planned invasion of China by the Iberian Union\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1600,
+      "max": 1699
+    },
+    "end": {
+      "min": 1600,
+      "max": 1699
+    }
+  },
+  "place": "mainland-china",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
