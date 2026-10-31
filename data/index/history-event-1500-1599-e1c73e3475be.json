@@ -1105,6 +1105,15 @@
         }
       ]
     },
+    "battle-of-fontaine-francaise": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-formentera": {
       "from": "git",
       "versions": [
@@ -6456,6 +6465,15 @@
         }
       ]
     },
+    "siege-of-geertruidenberg-1593": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-genoa-1522": {
       "from": "git",
       "versions": [
@@ -6883,6 +6901,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-maastricht-1579": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },

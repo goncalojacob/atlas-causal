@@ -1430,6 +1430,15 @@
         }
       ]
     },
+    "french-breton-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "golub-war": {
       "from": "git",
       "versions": [
@@ -1937,6 +1946,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "peace-of-pressburg-1491": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -2587,6 +2605,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-constantinople-1454": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
