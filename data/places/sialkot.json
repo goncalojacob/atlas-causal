@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "sialkot",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q643883",
+  "sitelinks": {
+    "count": 61,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Sialkot",
+    "pt": "Sialcote"
+  },
+  "sources": [],
+  "names": [
+    "Sialkot",
+    "Sialcote"
+  ],
+  "where": {
+    "lon": 74.533333333333,
+    "lat": 32.5,
+    "precision": "city",
+    "label": "Sialkot"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

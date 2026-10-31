@@ -8226,3 +8226,27 @@ Writer B imported it from the planner's queue as item `2026-10-31-americas-227`,
 ## Writer B, 2026-10-31: `polish-swedish-war-1621-1625`, filed under `polish-swedish-war-1600-1629` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-31-europe-229`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-31: `battle-of-surabaya-1677`, filed under `trunajaya-rebellion` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-31-asia-049`, rank `child-of:trunajaya-rebellion`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-31: `battle-of-goteik-gorge`, filed under `sino-burmese-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-31-asia-070`, rank `child-of:sino-burmese-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `withdrawal-through-andalal-1741`, filed under `campaigns-of-nader-shah` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-europe-230`, rank `p361-child`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `battles-of-uruzgan-1892-1893`, filed under `hazara-genocide` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-asia-048`, rank `child-of:hazara-genocide`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `capture-of-tabriz-1585`, filed under `ottoman-safavid-war-1578-1590` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-asia-054`, rank `child-of:ottoman-safavid-war-1578-1590`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `battle-of-baneh-1777`, filed under `ottoman-persian-war-1776-1779` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-asia-073`, rank `child-of:ottoman-persian-war-1776-1779`. Its span and its subject put it inside the umbrella.

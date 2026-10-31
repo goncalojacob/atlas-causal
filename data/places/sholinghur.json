@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "sholinghur",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2229686",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Sholinghur"
+  },
+  "sources": [],
+  "names": [
+    "Sholinghur"
+  ],
+  "where": {
+    "lon": 79.42,
+    "lat": 13.12,
+    "precision": "city",
+    "label": "Sholinghur"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
