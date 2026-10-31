@@ -2344,15 +2344,6 @@
         }
       ]
     },
-    "baptist-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-31"
-        }
-      ]
-    },
     "barbary-wars": {
       "from": "git",
       "versions": [
@@ -11620,6 +11611,12 @@
         {
           "first": true,
           "on": "2026-10-31"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-10-31"
         }
       ]
     },
@@ -13070,15 +13067,6 @@
         {
           "first": true,
           "on": "2026-10-29"
-        }
-      ]
-    },
-    "cuban-war-of-independence": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-31"
         }
       ]
     },
@@ -15620,15 +15608,6 @@
         {
           "first": true,
           "on": "2026-09-25"
-        }
-      ]
-    },
-    "independence-of-brazil": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-31"
         }
       ]
     },
@@ -21417,22 +21396,6 @@
         {
           "first": true,
           "on": "2026-10-28"
-        }
-      ]
-    },
-    "spanish-american-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        },
-        {
-          "fields": [
-            "created",
-            "sitelinks"
-          ],
-          "on": "2026-10-31"
         }
       ]
     },
