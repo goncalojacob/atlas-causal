@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "conquest-of-new-france",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q429230",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Conquest of New France",
+    "pt": "Conquista da Nova França"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q429230"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conquest of New France\", revision 1373174375"
+    }
+  ],
+  "title": "Conquest of New France",
+  "summary": "The English Wikipedia article \"Conquest of New France\", at revision 1373174375, opens: \"The Conquest of New France occurred during the Seven Years' War, fought in North America between the Kingdom of Great Britain and the Kingdom of France. It started with a British campaign in 1758 and ended with the region being put under a British military regime between 1760 and 1763. Britain's acquisition of the French colony of Canada, which France had established in 1535, became official with the 1763 Treaty of Paris that concluded the Seven Years' War. The term is usually used when discussing the impact of the British conquest on the 70,000 French colonist inhabitants, as well as on the First Nations peoples. At issue in popular and scholarly debate ever since is the British treatment of the French settler population along with the long-term historical impacts of the conquest.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q429230, imported by tools/import/wikidata.mjs. The item's own description reads \"1760 term used to designate the acquisition of Canada by Great Britain in the Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1760,
+    "end": 1760,
+    "date": "1760-09"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

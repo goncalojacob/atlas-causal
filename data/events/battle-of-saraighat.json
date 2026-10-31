@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-saraighat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4872317",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Saraighat"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872317"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Saraighat\", revision 1370588678"
+    }
+  ],
+  "title": "Battle of Saraighat",
+  "summary": "The English Wikipedia article \"Battle of Saraighat\", at revision 1370588678, opens: \"The Battle of Saraighat was a naval battle fought in 1671 between the Mughal Empire, and the Ahom Kingdom on the Brahmaputra river at Saraighat, now in Guwahati, Assam, India. This was the decisive battle that ended the years long Mughal siege of Guwahati, with the Ahoms pushing away the Mughals west beyond the Manas river.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872317, imported by tools/import/wikidata.mjs. The item's own description reads \"17th century battle in Assam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1671,
+    "end": 1671,
+    "date": "1671-03"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

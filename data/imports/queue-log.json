@@ -75500,6 +75500,611 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-695",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "kunohe-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-695",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "apalachee-massacre",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-697",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kuisegawa",
+        "edges": [],
+        "place": "kuise-river"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-697",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "conquest-of-new-france",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-699",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-otsu",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-700",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q827212: its classes disagree: Q131569 → event, Q82794 → place"
+    },
+    {
+      "id": "2026-10-30-asia-701",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-playa-honda",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-703",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-pavan-khind",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-703",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q119129: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-americas-704",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1481957: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-asia-705",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mytilene-1690",
+        "edges": [],
+        "place": "mytilene"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-707",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-oinousses-islands",
+        "edges": [],
+        "place": "oinousses"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-709",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "sack-of-delhi-1757",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-711",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "safavid-conquest-of-shirvan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-713",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cochin",
+        "edges": [],
+        "place": "kochi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-715",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-jeddah",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-717",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cape-corvo",
+        "edges": [],
+        "place": "karaburun-peninsula-turkey"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-719",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "kan-ei-great-famine",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-721",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-saraighat",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-723",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "afsharid-conquests-in-the-persian-gulf-and-oman",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-725",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "travancore-dutch-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-727",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "list-of-wars-involving-saudi-arabia",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-729",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "tenchugumi-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-731",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "osaka-conference-of-1875",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-733",
+      "writer": "A",
+      "fired": "2026-10-31T09:54Z",
+      "status": "written",
+      "written": {
+        "event": "port-hamilton-incident",
+        "edges": [],
+        "place": "geomundo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-694",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2564895: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-asia-696",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "campaign-of-danture",
+        "edges": [],
+        "place": "danture"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-americas-696",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5049265: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-30-asia-698",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-asai",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-700",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tashiskari",
+        "edges": [],
+        "place": "tashiskari"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-702",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-aghaiani",
+        "edges": [],
+        "place": "aghaiani"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-704",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "1674-ambon-earthquake-and-megatsunami",
+        "edges": [],
+        "place": "banda-sea"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-706",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nadaun",
+        "edges": [],
+        "place": "nadaun-himachal-pradesh"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-708",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-penfui",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-710",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "luchuan-pingmian-campaigns",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-712",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sharur",
+        "edges": [],
+        "place": "sharur"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-714",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "dahnama",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-716",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kanoguchi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-718",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kizugawa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-720",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-purandar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-722",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "herat-campaign-of-1730-1732",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-724",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "nader-shah-s-central-asian-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-726",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-samarkand-1740",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-728",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-khushab",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-730",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "first-aceh-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-732",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tabaruzaka",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-734",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "kukunian-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-736",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-langfang",
+        "edges": [],
+        "place": "langfang"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-738",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "kyotoku-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-30-asia-740",
+      "writer": "B",
+      "fired": "2026-10-31T10:04Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-qarabagh-1469",
+        "edges": [],
+        "place": "karabakh"
+      },
+      "refusals": []
     }
   ]
 }

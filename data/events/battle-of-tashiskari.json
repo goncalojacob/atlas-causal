@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-tashiskari",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4872517",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Tashiskari"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872517"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tashiskari\", revision 1370590650"
+    }
+  ],
+  "title": "Battle of Tashiskari",
+  "summary": "The English Wikipedia article \"Battle of Tashiskari\", at revision 1370590650, opens: \"The Battle of Tashiskari was fought between the Georgians and the Ottomans at the village of Tashiskari on June 16, 1609. The Georgians, led by Giorgi Saakadze won a victory over the Ottomans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872517, imported by tools/import/wikidata.mjs. The item's own description reads \"1609 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1609,
+    "end": 1609,
+    "date": "1609-06-16"
+  },
+  "place": "tashiskari",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

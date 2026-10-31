@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-cape-corvo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4870641",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Cape Corvo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870641"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cape Corvo\", revision 1370436160"
+    }
+  ],
+  "title": "Battle of Cape Corvo",
+  "summary": "The English Wikipedia article \"Battle of Cape Corvo\", at revision 1370436160, opens: \"The Battle of Cape Corvo was a naval engagement of the Ottoman–Habsburg wars fought as part of the struggle for the control of the Mediterranean. It took place in August 1613 near the island of Samos when a Spanish squadron from Sicily, under Admiral Ottavio d'Aragona, engaged an Ottoman fleet led by Sinari Pasha. The Spanish were victorious and captured seven galleys and about 600 prisoners, among them the Bey of Alexandria and another 60 important Ottoman nobles.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870641, imported by tools/import/wikidata.mjs. The item's own description reads \"1613 Spanish-Ottoman naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1613,
+    "end": 1613,
+    "date": "1613-08"
+  },
+  "place": "karaburun-peninsula-turkey",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

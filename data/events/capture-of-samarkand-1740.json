@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "capture-of-samarkand-1740",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q65168385",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Capture of Samarkand (1740)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q65168385"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Samarkand (1740)\", revision 1381775429"
+    }
+  ],
+  "title": "Capture of Samarkand (1740)",
+  "summary": "The English Wikipedia article \"Capture of Samarkand (1740)\", at revision 1381775429, opens: \"Nader Shah, the founder of Afsharid dynasty, captured Samarkand, one of the main political and economic centres of the region, during his Central Asian campaign in 1740. For Nader Shah, who was an admirer of Amir Timur, Samarkand had a symbolic meaning. Nader Shah entered Samarkand almost unopposed. According to legend, Nader Shah brought the double doors of the Bibi-Khanym Mosque made of gold, silver, precious stones, jewelry and other precious metals, located in Samarkand, as well as a number of architects, artists, and scientists, to the center of the Afsharid Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q65168385, imported by tools/import/wikidata.mjs. The item's own description reads \"18th century military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1740,
+    "end": 1740
+  },
+  "place": "samarkand",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "nader-shah-s-central-asian-campaign"
+}
