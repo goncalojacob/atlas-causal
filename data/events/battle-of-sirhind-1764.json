@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-sirhind-1764",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q21244908",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Sirhind (1764)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q21244908"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sirhind (1764)\", revision 1370274420"
+    }
+  ],
+  "title": "Battle of Sirhind (1764)",
+  "summary": "The English Wikipedia article \"Battle of Sirhind (1764)\", at revision 1370274420, opens: \"The Battle of Sirhind was fought between Durrani Empire and Sikh Misls on 14 January 1764.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q21244908, imported by tools/import/wikidata.mjs. The item's own description reads \"1764 conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1764,
+    "end": 1764
+  },
+  "place": "sirhind",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "indian-campaign-of-ahmad-shah-durrani"
+}

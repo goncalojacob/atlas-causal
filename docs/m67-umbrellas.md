@@ -8298,3 +8298,39 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-31: `battle-of-berea`, filed under `eighth-xhosa-war` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-31-africa-245`, rank `child-of:eighth-xhosa-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-31: `battle-of-maymyo`, filed under `sino-burmese-war` and `ten-great-campaigns` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-31-asia-111`, rank `child-of:sino-burmese-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-31: `spanish-occupation-of-jolo-1638`, filed under `spanish-moro-conflict` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-31-asia-121`, rank `child-of:spanish-moro-conflict`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-31: `battle-of-harnaulgarh`, filed under `indian-campaign-of-ahmad-shah-durrani` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-31-asia-123`, rank `p361-child`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-31: `battle-of-tupraq-qaleh`, filed under `ottoman-persian-war-1820-1823` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-31-asia-135`, rank `child-of:ottoman-persian-war-1820-1823`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `bedir-khan-beg-s-campaign-against-the-assyrians`, filed under `1843-and-1846-massacres-in-hakkari` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-asia-137`, rank `p361-child`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `siege-of-bednore`, filed under `anglo-mysore-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-asia-142`, rank `child-of:anglo-mysore-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `attack-in-hooghly`, filed under `dano-mughal-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-asia-152`, rank `child-of:dano-mughal-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `skirmish-off-narsapur`, filed under `dano-mughal-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-asia-156`, rank `child-of:dano-mughal-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `battle-of-sembulan`, filed under `apostate-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-asia-160`, rank `child-of:apostate-war`. Its span and its subject put it inside the umbrella.

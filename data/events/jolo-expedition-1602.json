@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "jolo-expedition-1602",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q120703898",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Jolo expedition (1602)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q120703898"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Jolo expedition (1602)\", revision 1370625089"
+    }
+  ],
+  "title": "Jolo expedition (1602)",
+  "summary": "The English Wikipedia article \"Jolo expedition (1602)\", at revision 1370625089, opens: \"The Sulu Expedition of 1602 was an unsuccessful military campaign by the Spanish Empire to capture the island of Jolo. Launched from the Spanish Philippines to suppress Sulu pirates, the expedition ended in failure.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q120703898, imported by tools/import/wikidata.mjs. The item's own description reads \"Spanish battle in Jolo, early 17th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1602,
+    "end": 1602,
+    "date": "1602-02",
+    "endDate": "1602-05"
+  },
+  "place": "jolo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-moro-conflict"
+}

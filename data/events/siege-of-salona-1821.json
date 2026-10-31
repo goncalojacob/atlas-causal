@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-salona-1821",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16329401",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Salona (1821)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16329401"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Salona (1821)\", revision 1370744939"
+    }
+  ],
+  "title": "Siege of Salona (1821)",
+  "summary": "The English Wikipedia article \"Siege of Salona (1821)\", at revision 1370744939, opens: \"The siege of Salona was a military engagement of the 1821 revolution aimed at liberating Salona. It lasted from the beginning of the Revolution until April 10 of the same year, 1821.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16329401, imported by tools/import/wikidata.mjs. The item's own description reads \"1821 siege during the Greek Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-03-28",
+    "endDate": "1821-04-10"
+  },
+  "place": "amfissa",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

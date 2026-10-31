@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-bednore",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q105063719",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Bednore"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q105063719"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Bednore\", revision 1381427205"
+    }
+  ],
+  "title": "Siege of Bednore",
+  "summary": "The English Wikipedia article \"Siege of Bednore\", at revision 1381427205, opens: \"The siege of Bednore was a battle of the Second Anglo-Mysore War. The British had captured Bednore and other strongholds in the Malabar coast from Mysore in early 1783, while the Mysore leader, Tipu Sultan, was leading his army on campaign in the Carnatic. The British commander, Brigadier-General Richard Matthews, formed a small garrison of 1,600 men at Bednore and split the remainder of the force into detachments to plunder the surrounding region. Tipu Sultan brought his army of more than 100,000 men west and managed to approach within 6 kilometres (4 mi) of Bednore undetected by 9 April. Matthews deployed his troops in the field outside of Bednore and was swiftly defeated. Matthews abandoned the town and retreated to the fort which was quickly besieged by the Mysore army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q105063719, imported by tools/import/wikidata.mjs. The item's own description reads \"military engagement during the Anglo-Mysore war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1783,
+    "end": 1783,
+    "date": "1783-04-09",
+    "endDate": "1783-04-28"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-mysore-wars"
+}

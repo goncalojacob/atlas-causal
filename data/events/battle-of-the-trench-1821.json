@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-trench-1821",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q12880430",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of the Trench (1821)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12880430"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Trench (1821)\", revision 1370602573"
+    }
+  ],
+  "title": "Battle of the Trench (1821)",
+  "summary": "The English Wikipedia article \"Battle of the Trench (1821)\", at revision 1370602573, opens: \"The Battle of the Trench was fought near Tripolitsa in Arcadia in August 1821 between the Greek revolutionary forces led by Theodoros Kolokotronis and the Ottoman garrison of Tripolitsa during the first year of the Greek War of Independence. The battle ended with the complete victory of the Greeks.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12880430, imported by tools/import/wikidata.mjs. The item's own description reads \"1821 battle during the Greek War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-08-10"
+  },
+  "place": "tripoli-greece",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

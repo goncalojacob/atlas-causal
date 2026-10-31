@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "siege-of-malacca-1575",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q130199743",
+  "wikipedia": {
+    "en": "Siege of Malacca (1575)"
+  },
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q130199743"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Malacca (1575)\", revision 1370743197"
+    }
+  ],
+  "title": "Siege of Malacca (1575)",
+  "summary": "The English Wikipedia article \"Siege of Malacca (1575)\", at revision 1370743197, opens: \"The siege of Malacca occurred in 1575, when the Sultan of Aceh attacked the Portuguese city of Malacca. The Catholic forces resisted the attack and the Muslims were routed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q130199743, imported by tools/import/wikidata.mjs. The item's own description reads \"1575 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1575,
+    "end": 1575,
+    "date": "1575-01-31",
+    "endDate": "1575-02-17"
+  },
+  "place": "malacca-city",
+  "region": null,
+  "regionNote": null,
+  "parent": [
+    "acehnese-portuguese-conflicts",
+    "war-of-the-league-of-the-indies"
+  ],
+  "category": "war",
+  "actors": []
+}

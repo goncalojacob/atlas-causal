@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-nundydroog",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510277",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Nundydroog"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510277"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Nundydroog\", revision 1370744100"
+    }
+  ],
+  "title": "Siege of Nundydroog",
+  "summary": "The English Wikipedia article \"Siege of Nundydroog\", at revision 1370744100, opens: \"The Siege of Nundydroog was conducted by British Indian forces under the command of General Charles Cornwallis in October 1791, during the Third Anglo-Mysore War. The fortress of Nundydroog, was held by the forces of Tipu Sultan, the ruler of Mysore. The British eventually stormed the fortress on 19 October.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510277, imported by tools/import/wikidata.mjs. The item's own description reads \"1791 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1791,
+    "end": 1791,
+    "date": "1791-10-01",
+    "endDate": "1791-10-19"
+  },
+  "place": "nandi-hills-india",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-mysore-wars"
+}
