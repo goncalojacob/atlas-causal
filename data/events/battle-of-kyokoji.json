@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-kyokoji",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4871508",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Kyōkōji"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871508"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kyōkōji\", revision 1370267605"
+    }
+  ],
+  "title": "Battle of Kyōkōji",
+  "summary": "The English Wikipedia article \"Battle of Kyōkōji\", at revision 1370267605, opens: \"The 1562 Battle of Kyōkōji  was one of many battles fought between the Miyoshi and Hatakeyama in Japan's Sengoku period. On 19–20 May of that year, the battle was won by Miyoshi Nagayoshi over Hatakeyama Takamasa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871508, imported by tools/import/wikidata.mjs. The item's own description reads \"1562 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1562,
+    "end": 1562,
+    "date": "1562-06-20",
+    "endDate": "1562-06-21"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

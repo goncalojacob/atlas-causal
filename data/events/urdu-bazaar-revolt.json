@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "urdu-bazaar-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7900327",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Urdu Bazaar Revolt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7900327"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Urdu Bazaar Revolt\", revision 1381747729"
+    }
+  ],
+  "title": "Urdu Bazaar Revolt",
+  "summary": "The English Wikipedia article \"Urdu Bazaar Revolt\", at revision 1381747729, opens: \"After the death of Shah Rukh, Gawhar Shad allowed Abdal-Latif Mirza to be the commander of his army despite reservations of the Tarkhans as well as the reservations of Baysunghur Mirza's sons, especially Abul-Qasim Babur Mirza who was present there at the camp. Gawhar Shad wanted to please Ulugh Beg but at the same time encouraged the Baysunghur brothers to rebel. She contacted Ala al-Dawla Mirza at Herat conveying her sentiments. Therefore, Abul-Qasim Babur Mirza along with Khalil Sultan, son of Muhammad Jahangir and a daughter of Shah Rukh along with their troops raided the Urdu Bazar or Camp Market and went on towards Ala al-Dawla Mirza at Herat. As soon as Abdal-Latif Mirza got his army in order after several executions he marched towards Damghan and on his way imprisoned Gawhar Shad his grandmother and the Tarkhans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7900327, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the Timurid Civil Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1447,
+    "end": 1447
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

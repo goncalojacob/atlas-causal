@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "siege-of-nagakubo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2662987",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Nagakubo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2662987"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Nagakubo\", revision 1370743815"
+    }
+  ],
+  "title": "Siege of Nagakubo",
+  "summary": "The English Wikipedia article \"Siege of Nagakubo\", at revision 1370743815, opens: \"The siege of Nagakubo (長窪城) was a battle of Japan's Sengoku period. It took place in 1543 as part of Takeda Shingen's bid to control Shinano Province, Japan. He took the castle of his former ally, Oi Sadataka, who had deserted him to ally with Murakami Yoshikiyo. Sadataka was sent to Shingen's home city of Kōfu as a prisoner, where he was then killed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2662987, imported by tools/import/wikidata.mjs. The item's own description reads \"1543 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1543,
+    "end": 1543
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

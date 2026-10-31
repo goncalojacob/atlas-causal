@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "moldavian-campaign-1497-1499",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3778712",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Moldavian campaign (1497–1499)",
+    "pt": "Campanha da Moldávia (1497–1499)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3778712"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Moldavian campaign (1497–1499)\", revision 1379935477"
+    }
+  ],
+  "title": "Moldavian campaign (1497–1499)",
+  "summary": "The English Wikipedia article \"Moldavian campaign (1497–1499)\", at revision 1379935477, opens: \"The Moldavian campaign of 1497–1499 was an unsuccessful war led by John Albert of Poland against the Moldavians, supported by their Ottoman suzerains. John Albert set out with an army of 80,000–100,000 men with the objectives of deposing Stephen the Great of Moldavia and replacing him with Sigismund Jagiellon, reconquering the fortresses on the northern Black Sea coast and taking control of Crimea and the Danube Delta.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3778712, imported by tools/import/wikidata.mjs. The item's own description reads \"1497 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1497,
+    "end": 1499
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "polish-ottoman-war-1485-1503"
+}

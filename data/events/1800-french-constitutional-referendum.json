@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1800-french-constitutional-referendum",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4492480",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1800 French constitutional referendum"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4492480"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1800 French constitutional referendum\", revision 1356153112"
+    }
+  ],
+  "title": "1800 French constitutional referendum",
+  "summary": "The English Wikipedia article \"1800 French constitutional referendum\", at revision 1356153112, opens: \"A referendum ratifying the constitution of the French consulate was held in February 1800. The official results, as announced by Lucien Bonaparte, Minister of the Interior and brother of First Consul Napoleon Bonaparte, were 99.9% in favor of the new constitution, with 53.74% of voters abstaining. However, evidence brought to light by the French historian Claude Langlois in 1972 demonstrated conclusively that Lucien massaged the votes in favor of the constitution, adding up to 20,000 'yes' votes in individual localities, and that there were therefore only some 1,550,000 actual votes for the change.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4492480, imported by tools/import/wikidata.mjs. The item's own description reads \"Referendum in France in 1800\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1800,
+    "end": 1800,
+    "date": "1800-01"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

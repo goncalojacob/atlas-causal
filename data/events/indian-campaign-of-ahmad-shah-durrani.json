@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "indian-campaign-of-ahmad-shah-durrani",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q23039086",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Indian campaign of Ahmad Shah Durrani"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q23039086"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Indian campaign of Ahmad Shah Durrani\", revision 1377371027"
+    }
+  ],
+  "title": "Indian campaign of Ahmad Shah Durrani",
+  "summary": "The English Wikipedia article \"Indian campaign of Ahmad Shah Durrani\", at revision 1377371027, opens: \"The Indian campaign of Ahmad Shah Durrani (1748–1769) was a series of invasions by the Afghan Emperor, Ahmad Shah Durrani against the declining Mughal Empire, the Maratha Empire, Sikh Confederacy, and numerous other Indian kingdoms. The primary basis of the invasions originated after the political independence of the Afghan Empire following the end of the Naderian Wars and persisted until Durrani's last invasion in 1769. The campaign is categorised into three wars: Afghan–Mughal War, Afghan–Maratha War, Afghan–Sikh War, and an array of local conflicts aimed at the subjugation of politically independent states such as Kalat and Kashmir.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q23039086, imported by tools/import/wikidata.mjs. The item's own description reads \"overview of Afghan military conquests in India under Ahmad Shah Durrani\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1748,
+    "end": 1767
+  },
+  "place": "north-india",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

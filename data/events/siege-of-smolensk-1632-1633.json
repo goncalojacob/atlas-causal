@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-smolensk-1632-1633",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510414",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Smolensk (1632–1633)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510414"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Smolensk (1632–1633)\", revision 1370745365"
+    }
+  ],
+  "title": "Siege of Smolensk (1632–1633)",
+  "summary": "The English Wikipedia article \"Siege of Smolensk (1632–1633)\", at revision 1370745365, opens: \"The siege of Smolensk lasted almost a year between 1632 and 1633, when the Muscovite army besieged the Polish–Lithuanian city of Smolensk during the war named after that siege. Russian forces of over 25,000 under Mikhail Borisovich Shein began the siege of Smolensk on 28 October. The Polish garrison under Samuel Drucki-Sokoliński numbered about 3,000. The fortress held out for nearly a year, and in 1633 the newly elected Polish king Władysław IV organised a relief force. In a series of fierce engagements, Commonwealth forces gradually overran the Russian field fortifications, and by 4 October the siege had broken. Shein had become besieged in his camp, and began surrender negotiations in January 1634, capitulating around 1 March.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510414, imported by tools/import/wikidata.mjs. The item's own description reads \"1632-1633 siege of the Smolensk War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1632,
+    "end": 1633,
+    "date": "1632-10-28",
+    "endDate": "1633-10-04"
+  },
+  "place": "smolensk",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "smolensk-war"
+}

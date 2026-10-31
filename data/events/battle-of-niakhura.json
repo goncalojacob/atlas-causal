@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-niakhura",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q12867548",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Niakhura"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12867548"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Niakhura\", revision 1382875414"
+    }
+  ],
+  "title": "Battle of Niakhura",
+  "summary": "The English Wikipedia article \"Battle of Niakhura\", at revision 1382875414, opens: \"The Battle of Niakhura, also known as the Battle of Iori River and Battle of Kakabeti, took place on 7 November 1800. During this battle, the invading army of Umma Khan V, which had entered the territory of the Kingdom of Kartli-Kakheti (Georgia) in alliance with the Georgian prince Alexander, suffered a crushing defeat.The victorious forces consisted of two Russian battalions under Major Generals Ivan Lazarev and Vasily Gulyakov, supported by the Georgian militia commanded by princes Ioane and Bagrat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12867548, imported by tools/import/wikidata.mjs. The item's own description reads \"1800 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1800,
+    "end": 1800,
+    "date": "1800-11-07"
+  },
+  "place": "iori-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

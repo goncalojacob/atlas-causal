@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "uzbek-invasion-of-khorasan-1578",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q14940740",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Uzbek invasion of Khorasan (1578)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q14940740"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Uzbek invasion of Khorasan (1578)\", revision 1378917529"
+    }
+  ],
+  "title": "Uzbek invasion of Khorasan (1578)",
+  "summary": "The English Wikipedia article \"Uzbek invasion of Khorasan (1578)\", at revision 1378917529, opens: \"The Uzbek invasion of Khorasan took place in 1578. Jalal khan Uzbek led the Uzbek troops. Tahmasp I guaranteed to pay 300 Tomans to the Uzbeks to convince them not to invade the bondmen and nomads of Khorasan. The tribute was not paid after Tahmasp I's death however, and Jalal khan Uzbek raided Khorasan. The battles of Jalal khan Uzbek and Mortaza Gholi Khan Parnak Turkaman were quite harsh. Jalal khan Uzbek's head was cut off and the Uzbeks pulled back to their territory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q14940740, imported by tools/import/wikidata.mjs. The item's own description reads \"Uzbeks invasion of Khorasan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1578,
+    "end": 1578
+  },
+  "place": "khorasan",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

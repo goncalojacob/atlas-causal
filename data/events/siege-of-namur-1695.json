@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-namur-1695",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q577353",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Namur (1695)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q577353"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Namur (1695)\", revision 1382056756"
+    }
+  ],
+  "title": "Siege of Namur (1695)",
+  "summary": "The English Wikipedia article \"Siege of Namur (1695)\", at revision 1382056756, opens: \"The siege of Namur took place during the Nine Years' War between 2 July and 4 September 1695. Its capture by the French in the 1692 siege and recapture by the Grand Alliance in 1695 are often viewed as the defining events of the war; the second siege is considered to be William III's most significant military success during the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q577353, imported by tools/import/wikidata.mjs. The item's own description reads \"siege in 1695\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1695,
+    "end": 1695,
+    "date": "1695-07-02",
+    "endDate": "1695-09-05"
+  },
+  "place": "namur",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war"
+}

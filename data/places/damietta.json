@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "damietta",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q189383",
+  "sitelinks": {
+    "count": 64,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Damietta",
+    "pt": "Damieta"
+  },
+  "sources": [],
+  "names": [
+    "Damietta",
+    "Damieta"
+  ],
+  "where": {
+    "lon": 31.82138888888889,
+    "lat": 31.416666666666668,
+    "precision": "city",
+    "label": "Damietta"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

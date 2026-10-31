@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dissolution-of-gran-colombia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5808489",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Dissolution of Gran Colombia",
+    "pt": "Dissolução da Grã-Colômbia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5808489"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dissolution of Gran Colombia\", revision 1371896788"
+    }
+  ],
+  "title": "Dissolution of Gran Colombia",
+  "summary": "The English Wikipedia article \"Dissolution of Gran Colombia\", at revision 1371896788, opens: \"The dissolution of Gran Colombia and the disintegration of its political structures and central government created three independent countries: the State of Venezuela, the Republic of Ecuador, and the Republic of New Granada.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5808489, imported by tools/import/wikidata.mjs. The item's own description reads \"process leading to the breakup of Gran Colombia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1830,
+    "end": 1830,
+    "date": "1830-11-21"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "other",
+  "actors": []
+}

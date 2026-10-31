@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "burmese-siamese-war-1662-1664",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q20991942",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Burmese–Siamese War (1662–1664)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20991942"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Burmese–Siamese War (1662–1664)\", revision 1380010797"
+    }
+  ],
+  "title": "Burmese–Siamese War (1662–1664)",
+  "summary": "The English Wikipedia article \"Burmese–Siamese War (1662–1664)\", at revision 1380010797, opens: \"The Burmese–Siamese War (1662–1664) was a relatively short war fought in the 17th century between the Toungoo Empire of Burma and the Ayutthaya Kingdom / Siam largely over the Lan Na Kingdom and cities of the Tenasserim coast.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20991942, imported by tools/import/wikidata.mjs. The item's own description reads \"war fought in the 17th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1662,
+    "end": 1664
+  },
+  "place": "northern-thailand",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "burmese-siamese-wars"
+}

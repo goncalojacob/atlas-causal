@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1641-tabriz-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q112672818",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1641 Tabriz earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q112672818"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1641 Tabriz earthquake\", revision 1368759375"
+    }
+  ],
+  "title": "1641 Tabriz earthquake",
+  "summary": "The English Wikipedia article \"1641 Tabriz earthquake\", at revision 1368759375, opens: \"The 1641 Tabriz earthquake occurred on the night of 5 February in present-day East Azerbaijan province, Iran. The earthquake had an estimated surface-wave magnitude of 6.8 and an epicenter between Lake Urmia and the city of Tabriz. It was one of the most destructive earthquakes in the region, killing as many as 30,000 people.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q112672818, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake in Osku County, Iran\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1641,
+    "end": 1641,
+    "date": "1641-02-05"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

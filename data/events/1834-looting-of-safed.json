@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "1834-looting-of-safed",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2524244",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1834 looting of Safed"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2524244"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1834 looting of Safed\", revision 1378419285"
+    }
+  ],
+  "title": "1834 looting of Safed",
+  "summary": "The English Wikipedia article \"1834 looting of Safed\", at revision 1378419285, opens: \"The 1834 looting of Safed Hebrew: ביזת צפת בשנת תקצ\"ד was a month-long attack on the Jewish community of Safed in the Sidon Eyalet of the Ottoman Empire during the Peasants' revolt in Palestine. It began on Sunday, June 15, the day after the Jewish holiday of Shavuot, and lasted for 33 days. It has been described as a spontaneous attack on a defenseless population during the armed uprising against the rule of Ibrahim Pasha of Egypt, the Ottoman governor. The event took place during a power vacuum while Ibrahim Pasha was fighting to quell the wider revolt in Jerusalem.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2524244, imported by tools/import/wikidata.mjs. The item's own description reads \"series of riots conducted by local Arab and Muslim villagers in the Jewish community of Safed during the 1834 Palahan uprising\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1834,
+    "end": 1834,
+    "date": "1834-06-15",
+    "endDate": "1834-07-17"
+  },
+  "place": "safed",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "peasant-s-revolt-in-palestine"
+}

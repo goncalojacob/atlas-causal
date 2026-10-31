@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "portuguese-conquest-of-french-guiana",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3286965",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Portuguese conquest of French Guiana",
+    "pt": "Conquista portuguesa da Guiana Francesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3286965"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese conquest of French Guiana\", revision 1379501105"
+    }
+  ],
+  "title": "Portuguese conquest of French Guiana",
+  "summary": "The English Wikipedia article \"Portuguese conquest of French Guiana\", at revision 1379501105, opens: \"The Portuguese conquest of French Guiana, also known as Conquest of Cayenne, was the capture of the French colony of Cayenne by Anglo-Portuguese forces in January 1809 during the Napoleonic Wars. It formed part of the Caribbean campaign of 1803–1810, a British-led campaign against the colonies of France and its allies during the conflict. As Britain was unable to send substantial forces to attack Cayenne due to military commitments elsewhere, the British requested the Portuguese government, which had fled from Portugal to Brazil in November 1807, to launch an attack on the colony.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3286965, imported by tools/import/wikidata.mjs. The item's own description reads \"Anglo-Portuguese invasion and occupation of French Guiana in 1809\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1809,
+    "end": 1817,
+    "date": "1809-01-14",
+    "endDate": "1817-11-08"
+  },
+  "place": "cayenne-q44401",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

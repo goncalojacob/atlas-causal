@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "eruption-of-trevejo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q42182551",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Eruption of Trevejo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q42182551"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eruption of Trevejo\", revision 1354454900"
+    }
+  ],
+  "title": "Eruption of Trevejo",
+  "summary": "The English Wikipedia article \"Eruption of Trevejo\", at revision 1354454900, opens: \"The eruption of the Trevejo volcano, also called the eruption of the Arenas Negras volcano, was a volcanic eruption that took place from 5 to 14 May 1706, about 8 km (5.0 mi) kilometers south of the Garachico in the north of the island of Tenerife (Spain). The eruption destroyed the old port of Garachico and ended the golden period of the town.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q42182551, imported by tools/import/wikidata.mjs. The item's own description reads \"Volcano eruption in Tenerife, Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1706,
+    "end": 1706,
+    "date": "1706-05-05",
+    "endDate": "1706-06-13"
+  },
+  "place": "garachico",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

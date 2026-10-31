@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-managua",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7837136",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Treaty of Managua",
+    "pt": "Tratado de Manágua"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837136"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Managua\", revision 1373600421"
+    }
+  ],
+  "title": "Treaty of Managua",
+  "summary": "The English Wikipedia article \"Treaty of Managua\", at revision 1373600421, opens: \"The Treaty of Managua, also known as the Zeledon–Wyke treaty, was an 1860 agreement between the United Kingdom and Nicaragua, in which Britain recognised Nicaraguan sovereignty over the Kingdom of Mosquitia, but reserved, on the basis of historical rights, a self-governing enclave known of the Mosquito Reservation for the people, citing earlier treaty arrangements and historical circumstances.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837136, imported by tools/import/wikidata.mjs. The item's own description reads \"1860 treaty between Great Britain and Nicaragua\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1860,
+    "end": 1860,
+    "date": "1860-01-28"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

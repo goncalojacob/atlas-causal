@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mir-muhammad-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6052195",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Mir Muhammad Rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6052195"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mir Muhammad Rebellion\", revision 1378822890"
+    }
+  ],
+  "title": "Mir Muhammad Rebellion",
+  "summary": "The English Wikipedia article \"Mir Muhammad Rebellion\", at revision 1378822890, opens: \"The Mir Muhammad Rebellion was a Kurdish uprising led by Mir Muhammad of Rawanduz between 1830 and 1838 against the Ottoman Empire. Mir Muhammad, seeking autonomy and inspired by Muhammad Ali of Egypt, launched a campaign to unify Kurdish tribes and expand his influence in Upper Mesopotamia. The rebellion coincided with the weakening of Ottoman central authority, allowing him to challenge imperial rule until the Ottomans suppressed the uprising in 1835–1838. Following his surrender, the Soran Emirate was dissolved, and Kurdish regions were reincorporated into the Ottoman administrative structure.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6052195, imported by tools/import/wikidata.mjs. The item's own description reads \"Kurdish uprising led by Muhammad Pasha of Rawanduz against the Ottoman Empire in 1830–1838, aiming to expand his autonomy and assert control over neighboring territories\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1830,
+    "end": 1838
+  },
+  "place": "upper-mesopotamia",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

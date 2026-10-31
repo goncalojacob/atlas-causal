@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-delhi-1804",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16931419",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Delhi (1804)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16931419"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Delhi (1804)\", revision 1370740686"
+    }
+  ],
+  "title": "Siege of Delhi (1804)",
+  "summary": "The English Wikipedia article \"Siege of Delhi (1804)\", at revision 1370740686, opens: \"The siege of Delhi was conducted by the Maratha leader Maharaja Yashwantrao Holkar against the forces of the British East India Company, who were assisting the Mughals in defending Delhi during the Second Anglo-Maratha War. Holkar's main political objective was to bring the Mughal emperor under his control and thus with force of 60,000 cavalry and 15,000 infantry, Holkar confronted the British commanders Lt. Col.s Ochterlony and Burn who were in charge at Delhi. Ochterlony and Burn defied Holkar's attack with great determination where \"The important gates - Ajmeri Gate, Kashmiri Gate, and Lahori Gate - saw stiff fighting.\" Holkar abandoned the siege after reinforcements led by Gerard Lake arrived on 18 October.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16931419, imported by tools/import/wikidata.mjs. The item's own description reads \"1804 siege of the Second Anglo-Maratha War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1804,
+    "end": 1804,
+    "date": "1804-10-08",
+    "endDate": "1804-10-19"
+  },
+  "place": "delhi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-anglo-maratha-war"
+}

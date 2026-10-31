@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-kolding-1658",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q541566",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Kolding (1658)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q541566"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Kolding (1658)\", revision 1370742577"
+    }
+  ],
+  "title": "Siege of Kolding (1658)",
+  "summary": "The English Wikipedia article \"Siege of Kolding (1658)\", at revision 1370742577, opens: \"The siege of Kolding was fought on December 25, 1658, between Sweden and the forces of the Polish–Lithuanian Commonwealth and Denmark–Norway. The Polish and Danish forces were led by Stefan Czarniecki. The Polish-Danish force won the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q541566, imported by tools/import/wikidata.mjs. The item's own description reads \"1658 battle between Sweden fighting the forces of Denmark–Norway and the Polish–Lithuanian Commonwealth\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1658,
+    "end": 1658,
+    "date": "1658-12-25"
+  },
+  "place": "kolding",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "northern-war-of-1655-1660"
+}
