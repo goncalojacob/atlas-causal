@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "murfreesboro-tennessee",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q501766",
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Murfreesboro, Tennessee",
+    "pt": "Murfreesboro (Tennessee)"
+  },
+  "sources": [],
+  "names": [
+    "Murfreesboro",
+    "Murfreesboro, Tennessee",
+    "Murfreesboro (Tennessee)"
+  ],
+  "where": {
+    "lon": -86.39194444444445,
+    "lat": 35.846111111111114,
+    "precision": "city",
+    "label": "Murfreesboro, Tennessee"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

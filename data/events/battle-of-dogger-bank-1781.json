@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-dogger-bank-1781",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1860316",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Dogger Bank (1781)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1860316"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dogger Bank (1781)\", revision 1370439081"
+    }
+  ],
+  "title": "Battle of Dogger Bank (1781)",
+  "summary": "The English Wikipedia article \"Battle of Dogger Bank (1781)\", at revision 1370439081, opens: \"The Battle of Dogger Bank was a fleet action fought in the North Sea on 5 August 1781 during the Fourth Anglo-Dutch War. It occurred between a British fleet under Vice-Admiral of the Blue Sir Hyde Parker and a Dutch squadron under Schout-bij-nacht Johan Zoutman, both of which were escorting convoys.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1860316, imported by tools/import/wikidata.mjs. The item's own description reads \"naval battle that took place on 5 August 1781\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-08-05"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "fourth-anglo-dutch-war"
+}

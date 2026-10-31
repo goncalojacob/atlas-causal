@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "bloody-sunday-1887",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1325388",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Bloody Sunday (1887)",
+    "pt": "Domingo Sangrento (1887)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1325388"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bloody Sunday (1887)\", revision 1378574496"
+    }
+  ],
+  "title": "Bloody Sunday (1887)",
+  "summary": "The English Wikipedia article \"Bloody Sunday (1887)\", at revision 1378574496, opens: \"Bloody Sunday was an event which took place in London, England on 13 November 1887, when a crowd of marchers protesting about unemployment and the Irish Coercion Acts, as well as demanding the release of MP William O'Brien, clashed with the Metropolitan Police. The demonstration was organised by the Social Democratic Federation and the Irish National League. Violent clashes took place between the police and demonstrators, many \"armed with iron bars, knives, pokers and gas pipes\". A contemporary report noted that 400 were arrested and 75 people were badly injured, including many police, two policemen being stabbed and one protester bayonetted.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1325388, imported by tools/import/wikidata.mjs. The item's own description reads \"1887 protest against the Conservative government under Lord Salisbury in London\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1887,
+    "end": 1887,
+    "date": "1887-11-13"
+  },
+  "place": "trafalgar-square",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

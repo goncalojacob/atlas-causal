@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-pu-tusk-1806",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1192867",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Pułtusk (1806)",
+    "pt": "Batalha de Pultusk"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1192867"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pułtusk (1806)\", revision 1370586819"
+    }
+  ],
+  "title": "Battle of Pułtusk (1806)",
+  "summary": "The English Wikipedia article \"Battle of Pułtusk (1806)\", at revision 1370586819, opens: \"The Battle of Pułtusk took place on 26 December 1806 during the War of the Fourth Coalition near Pultusk, Prussia. Despite their strong numerical superiority and artillery, the Russians under the lead of General of Cavalry Levin von Benningsen underwent heavy French attacks by Marshal Jean Lannes, before retiring the next day having suffered great losses like the French, disorganizing their army for the rest of the year.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1192867, imported by tools/import/wikidata.mjs. The item's own description reads \"1806 battle during the War of the Fourth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1806,
+    "end": 1806,
+    "date": "1806-12-26"
+  },
+  "place": "pu-tusk",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-fourth-coalition"
+}

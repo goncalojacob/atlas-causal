@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-lagos",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q464226",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Lagos",
+    "pt": "Batalha de Lagos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q464226"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lagos\", revision 1374597328"
+    }
+  ],
+  "title": "Battle of Lagos",
+  "summary": "The English Wikipedia article \"Battle of Lagos\", at revision 1374597328, opens: \"The Battle of Lagos took place between a British fleet commanded by Edward Boscawen and a French fleet under Jean-François de La Clue-Sabran over two days in 1759 during the Seven Years' War. They fought south west of the Gulf of Cádiz on 18 August and to the east of the small Portuguese port of Lagos, after which the battle is named, on 19 August.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q464226, imported by tools/import/wikidata.mjs. The item's own description reads \"1759 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1759,
+    "end": 1759,
+    "date": "1759-08-19"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}
