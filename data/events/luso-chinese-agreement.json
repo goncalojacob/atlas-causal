@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "luso-chinese-agreement",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q13581279",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Luso-Chinese agreement",
+    "pt": "Acordo Luso-Chinês de 1554"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q13581279"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Luso-Chinese agreement\", revision 1369125797"
+    }
+  ],
+  "title": "Luso-Chinese agreement",
+  "summary": "The English Wikipedia article \"Luso-Chinese agreement\", at revision 1369125797, opens: \"The Luso-Chinese agreement of 1554 was a trade agreement between the Portuguese headed by Leonel de Sousa, and the authorities of Guangzhou headed by the Provincial Admiral Wang Bo (汪柏), which allowed for the legalization of Portuguese trade in China by paying taxes. It opened a new era in Sino-Portuguese relations, as Portuguese were until then officially barred from trading in the region.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q13581279, imported by tools/import/wikidata.mjs. The item's own description reads \"1554 trade agreement between Portugal and China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1554,
+    "end": 1554
+  },
+  "place": "portugal-q45",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

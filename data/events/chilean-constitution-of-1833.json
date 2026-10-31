@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "chilean-constitution-of-1833",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5098739",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Chilean Constitution of 1833",
+    "pt": "Constituição Política da República do Chile de 1833"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5098739"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chilean Constitution of 1833\", revision 1360628385"
+    }
+  ],
+  "title": "Chilean Constitution of 1833",
+  "summary": "The English Wikipedia article \"Chilean Constitution of 1833\", at revision 1360628385, opens: \"The Constitution of 1833 was the constitution used in Chile from 1833 to 1925 when it was replaced by the Constitution of 1925. One of the most long-lived constitutions of Latin America, it was used to endorse both an authoritarian, presidential system and from 1891 onwards an oligarchic, parliamentary system.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5098739, imported by tools/import/wikidata.mjs. The item's own description reads \"fundamental law of Chile from 1833 to 1925\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1833,
+    "end": 1833,
+    "date": "1833-05-25"
+  },
+  "place": "chile-q298",
+  "region": null,
+  "regionNote": null,
+  "category": "law",
+  "actors": []
+}

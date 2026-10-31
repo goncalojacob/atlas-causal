@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "los-angeles-chinese-massacre-of-1871",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5100835",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Los Angeles Chinese massacre of 1871"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5100835"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Los Angeles Chinese massacre of 1871\", revision 1382967153"
+    }
+  ],
+  "title": "Los Angeles Chinese massacre of 1871",
+  "summary": "The English Wikipedia article \"Los Angeles Chinese massacre of 1871\", at revision 1382967153, opens: \"The Los Angeles Chinese massacre of 1871 was a racial massacre targeting Chinese immigrants in Los Angeles, California, United States that occurred on October 24, 1871. Approximately 500 white and Latino Americans attacked, harassed, robbed, and murdered the ethnic Chinese residents in what is today referred to as the old Chinatown neighborhood. The massacre took place on Calle de los Negros, also referred to as \"Negro Alley\". The mob gathered after hearing that a policeman and a rancher had been killed as a result of a conflict between rival tongs, the Nin Yung, and Hong Chow. As news of their death spread across the city, fueling rumors that the Chinese community \"were killing whites wholesale\", more men gathered around the boundaries of Negro Alley.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5100835, imported by tools/import/wikidata.mjs. The item's own description reads \"racial massacre on October 24, 1871, in Los Angeles, California\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1871,
+    "end": 1871,
+    "date": "1871-10-24"
+  },
+  "place": "los-angeles",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

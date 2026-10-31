@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-azukizaka-1564",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2762407",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Azukizaka (1564)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2762407"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Azukizaka (1564)\", revision 1370107284"
+    }
+  ],
+  "title": "Battle of Azukizaka (1564)",
+  "summary": "The English Wikipedia article \"Battle of Azukizaka (1564)\", at revision 1370107284, opens: \"The Battle of Azukizaka  or Battle of Batō-ga-hara  took place on 15 February 1564, when Matsudaira Motoyasu, sought to destroy the growing threat of the Ikkō-ikki, a league of monks, samurai, and peasants who were strongly against samurai rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2762407, imported by tools/import/wikidata.mjs. The item's own description reads \"battle that took place on January 15, 1564, when Matsudaira Motoyasu (later renamed Tokugawa Ieyasu), sought to destroy the growing threat of the Ikkō-ikki\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1564,
+    "end": 1564,
+    "date": "1564-01-15"
+  },
+  "place": "okazaki-aichi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
