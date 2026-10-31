@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-kernstown",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4128034",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Second Battle of Kernstown"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4128034"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Kernstown\", revision 1370736311"
+    }
+  ],
+  "title": "Second Battle of Kernstown",
+  "summary": "The English Wikipedia article \"Second Battle of Kernstown\", at revision 1370736311, opens: \"The Second Battle of Kernstown was fought on July 24, 1864, at Kernstown, Virginia, outside Winchester, Virginia, as part of the Valley Campaigns of 1864 in the American Civil War. The Confederate Army of the Valley under Lt. Gen. Jubal A. Early soundly defeated the Union Army of West Virginia under Brig. Gen. George Crook and drove it from the Shenandoah Valley back over the Potomac River into Maryland. As a result, Early was able to launch the Confederacy's last major raid into northern Union territory, attacking the Baltimore and Ohio Railroad in Maryland and West Virginia and burning Chambersburg, Pennsylvania, in retaliation for the burning of civilian houses and farms earlier in the campaign.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4128034, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-07-24"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

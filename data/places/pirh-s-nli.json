@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "pirh-s-nli",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4620851",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Pirhəsənli"
+  },
+  "sources": [],
+  "names": [
+    "Pirhəsənli"
+  ],
+  "where": {
+    "lon": 48.36028652710161,
+    "lat": 40.579593170388534,
+    "precision": "city",
+    "label": "Pirhəsənli"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

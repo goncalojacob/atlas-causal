@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-takatenjin-1581",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2275430",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Takatenjin (1581)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2275430"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Takatenjin (1581)\", revision 1380189243"
+    }
+  ],
+  "title": "Siege of Takatenjin (1581)",
+  "summary": "The English Wikipedia article \"Siege of Takatenjin (1581)\", at revision 1380189243, opens: \"The second siege of Takatenjin began only six years after Takeda Katsuyori had taken the fortress. Lasting from 1580 until 22 March 1581, the siege ended within four months and resulted in the deaths of 680 of Okabe Motonobu's garrison.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2275430, imported by tools/import/wikidata.mjs. The item's own description reads \"1581 The Takeda lost the fortress to Oda Nobunaga\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1581,
+    "end": 1581,
+    "endDate": "1581-03-22"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

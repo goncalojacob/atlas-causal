@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-choko-ji",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7509937",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Chōkō-ji",
+    "pt": "Cerco de Chōkō-ji"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7509937"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Chōkō-ji\", revision 1370740260"
+    }
+  ],
+  "title": "Siege of Chōkō-ji",
+  "summary": "The English Wikipedia article \"Siege of Chōkō-ji\", at revision 1370740260, opens: \"Chōkō-ji (長興寺) was a temple captured by Oda Nobunaga from the Rokkaku clan in 1568. The Rokkaku tried to take it back in 1570 by cutting off the water supply and placing it under siege.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7509937, imported by tools/import/wikidata.mjs. The item's own description reads \"1570 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1570,
+    "end": 1570
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
