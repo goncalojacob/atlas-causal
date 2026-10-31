@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-the-acropolis-1687",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q109857770",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of the Acropolis (1687)",
+    "pt": "Cerco da Acrópole"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q109857770"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of the Acropolis (1687)\", revision 1370746637"
+    }
+  ],
+  "title": "Siege of the Acropolis (1687)",
+  "summary": "The English Wikipedia article \"Siege of the Acropolis (1687)\", at revision 1370746637, opens: \"The siege of the Acropolis took place on 23–29 September 1687, as the Venetian forces under Francesco Morosini and Otto Wilhelm Königsmarck laid siege to the Acropolis of Athens, held by the Ottoman garrison of the city. The siege resulted in the destruction of a large part of the Parthenon, which the Ottomans used as a gunpowder store.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q109857770, imported by tools/import/wikidata.mjs. The item's own description reads \"1687 siege of the Morean War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1687,
+    "end": 1687,
+    "date": "1687-09-23",
+    "endDate": "1687-09-29"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "morean-war"
+}

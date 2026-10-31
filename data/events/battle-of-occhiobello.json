@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-occhiobello",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1404251",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Occhiobello"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1404251"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Occhiobello\", revision 1370271096"
+    }
+  ],
+  "title": "Battle of Occhiobello",
+  "summary": "The English Wikipedia article \"Battle of Occhiobello\", at revision 1370271096, opens: \"The Battle of Occhiobello was fought on 8–9 April 1815 and was the turning point of the Neapolitan War. Joachim Murat, King of Naples was repulsed by an Austrian force under the command of Johann Frimont whilst trying to cross the bridge over the Po River at Occhiobello. Following the battle, the Austrians would not lose an engagement for the remainder of the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1404251, imported by tools/import/wikidata.mjs. The item's own description reads \"1815 battle during the Neapolitan War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-04-08",
+    "endDate": "1815-04-09"
+  },
+  "place": "occhiobello",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "neapolitan-war"
+}

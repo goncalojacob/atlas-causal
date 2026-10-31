@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "fettmilch-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1409271",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Fettmilch uprising",
+    "pt": "Revolta de Fettmilch"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1409271"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fettmilch uprising\", revision 1382166371"
+    }
+  ],
+  "title": "Fettmilch uprising",
+  "summary": "The English Wikipedia article \"Fettmilch uprising\", at revision 1382166371, opens: \"The Fettmilch uprising of 1614 was an antisemitic revolt in the Free imperial city of Frankfurt am Main, led by baker Vincenz Fettmilch. It was initially a revolt by the guilds against the mismanagement of the patrician-dominated city council, that culminated in the pillaging of the Frankfurter Judengasse and the expulsion of Frankfurt's entire Jewish population, the worst outbreak of antisemitism in Germany between the fourteenth century and the 1930s. The uprising lasted from May until it was finally defeated in November through the intervention of the Holy Roman Emperor, the Landgrave of Hesse-Kassel, and the Archbishop of Mainz.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1409271, imported by tools/import/wikidata.mjs. The item's own description reads \"1614 antisemitic pogrom in Frankfurt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1614,
+    "end": 1614
+  },
+  "place": "frankfurt",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-turnhout-1789",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q898338",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Turnhout (1789)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q898338"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Turnhout (1789)\", revision 1370591812"
+    }
+  ],
+  "title": "Battle of Turnhout (1789)",
+  "summary": "The English Wikipedia article \"Battle of Turnhout (1789)\", at revision 1370591812, opens: \"The Battle of Turnhout was a decisive military engagement between Belgian revolutionary and Austrian forces at Turnhout in the Austrian Netherlands. It was the first engagement of the Brabant Revolution and took place shortly after the revolutionary (patriot) army of Jean-André van der Mersch crossed the border from the Dutch Republic where it had previously been in exile. Their unlikely victory in the engagement led to the rapid collapse of Austrian rule across the Southern Netherlands and the temporary withdrawal of Austrian forces in the region to Luxembourg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q898338, imported by tools/import/wikidata.mjs. The item's own description reads \"1789 battle between the Habsburg Monarchy and the Belgian émigré army\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1789,
+    "end": 1789,
+    "date": "1789-10-27"
+  },
+  "place": "turnhout",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "brabant-revolution"
+}

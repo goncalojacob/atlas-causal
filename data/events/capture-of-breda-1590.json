@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "capture-of-breda-1590",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2220712",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Capture of Breda (1590)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2220712"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Breda (1590)\", revision 1370608376"
+    }
+  ],
+  "title": "Capture of Breda (1590)",
+  "summary": "The English Wikipedia article \"Capture of Breda (1590)\", at revision 1370608376, opens: \"The capture of Breda was a short battle during the Eighty Years' War and Anglo-Spanish War (1585–1604) during which a Dutch and English army led by Maurice of Nassau captured the heavily protected city of Breda. Using a clever tactic reminiscent of the Trojan horse which became famous as the ruse with the Turfschip van Breda, a small assault force hid in a peat barge, entered the city of Breda, and proceeded to take it over resulting in a minimum number of casualties. It was the turning point of the war as the forces under Maurice were able to take the offensive.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2220712, imported by tools/import/wikidata.mjs. The item's own description reads \"1590 short battle during the Eighty Years' War and the Anglo–Spanish War during which a Dutch and English army led by Maurice of Nassau captured the heavily protected city of Breda\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1590,
+    "end": 1590,
+    "date": "1590-03-04"
+  },
+  "place": "breda",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

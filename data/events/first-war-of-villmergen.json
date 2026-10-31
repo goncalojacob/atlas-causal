@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "first-war-of-villmergen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1267097",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "First War of Villmergen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1267097"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First War of Villmergen\", revision 1379222587"
+    }
+  ],
+  "title": "First War of Villmergen",
+  "summary": "The English Wikipedia article \"First War of Villmergen\", at revision 1379222587, opens: \"The First War of Villmergen was a Swiss religious war which lasted from 5 January until 7 March 1656, at the time of the Old Swiss Confederacy. On one side were the Protestant cantons of Zürich and Bern, on the other the Catholic cantons of Central Switzerland. The Protestants tried to break the political hegemony of the Catholics, that had been in existence ever since the Second Kappel Landfrieden of 1531. The casus belli was the expulsion and execution of Protestants from the Schwyz commune of Arth. The Zürcher unsuccessfully besieged the Central Swiss-allied city of Rapperswil and thereby drove their forces together. The Bernese were defeated and repelled in the First Battle of Villmergen. The Third Landfrieden ended the conflict and restored the pre-war balance of power.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1267097, imported by tools/import/wikidata.mjs. The item's own description reads \"Swiss religious war in 1656\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1656,
+    "end": 1656,
+    "date": "1656-01-05",
+    "endDate": "1656-03-07"
+  },
+  "place": "villmergen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "european-wars-of-religion"
+}

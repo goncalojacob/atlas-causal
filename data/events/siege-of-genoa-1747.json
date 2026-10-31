@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-genoa-1747",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3625481",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Genoa (1747)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3625481"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Genoa (1747)\", revision 1370741471"
+    }
+  ],
+  "title": "Siege of Genoa (1747)",
+  "summary": "The English Wikipedia article \"Siege of Genoa (1747)\", at revision 1370741471, opens: \"The siege of Genoa took place in 1747 when an Austrian army under the command of Count Schulenburg-Oeynhausen launched a failed attempt to capture the capital of the Republic of Genoa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3625481, imported by tools/import/wikidata.mjs. The item's own description reads \"1747 Austrian siege on the Republic of Genoa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1747,
+    "end": 1747,
+    "date": "1747-04",
+    "endDate": "1747-06"
+  },
+  "place": "genoa-q1449",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-austrian-succession"
+}

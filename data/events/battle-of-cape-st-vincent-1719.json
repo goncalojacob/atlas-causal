@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-cape-st-vincent-1719",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870652",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Cape St. Vincent (1719)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870652"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cape St. Vincent (1719)\", revision 1370108614"
+    }
+  ],
+  "title": "Battle of Cape St. Vincent (1719)",
+  "summary": "The English Wikipedia article \"Battle of Cape St. Vincent (1719)\", at revision 1370108614, opens: \"The Battle of Cape St Vincent was fought on 20 December 1719 as part of the War of the Quadruple Alliance. Occurring off Cape St. Vincent in the Atlantic Ocean, it was fought between a Royal Navy squadron of two ships of the line and a frigate under Commodore Philip Cavendish and a Spanish Navy squadron of three ships of the line under Rodrigo de Torres y Morales. The Spanish squadron has been sent from Santander to Cádiz to avoid being captured by British and French warships patrolling the Bay of Biscay.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870652, imported by tools/import/wikidata.mjs. The item's own description reads \"1719 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1719,
+    "end": 1719,
+    "date": "1719-12-20"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-quadruple-alliance"
+}
