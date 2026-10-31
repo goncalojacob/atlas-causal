@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-sufiyan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q16003596",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Sufiyan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16003596"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sufiyan\", revision 1380934765"
+    }
+  ],
+  "title": "Battle of Sufiyan",
+  "summary": "The English Wikipedia article \"Battle of Sufiyan\", at revision 1380934765, opens: \"The Battle of Sufiyan took place on 6 November 1605, during the Ottoman–Safavid War of 1603–1618. The Safavids, under King (Shah) Abbas I, beat a numerically superior, fully-fledged Ottoman army. It was one of King Abbas I's greatest military victories. According to Colin Imber: \"For the Ottomans the battle of Sufiyan was a greater disaster than anything they had experienced in Hungary, where the war which had begun in 1593 had revealed Ottoman military deficiencies in the face of new European weapons and tactics.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16003596, imported by tools/import/wikidata.mjs. The item's own description reads \"1605 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1605,
+    "end": 1605,
+    "date": "1605-11-06"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

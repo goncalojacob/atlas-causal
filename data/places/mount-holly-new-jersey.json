@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mount-holly-new-jersey",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q936639",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Mount Holly, New Jersey"
+  },
+  "sources": [],
+  "names": [
+    "Mount Holly",
+    "Mount Holly, New Jersey"
+  ],
+  "where": {
+    "lon": -74.7865,
+    "lat": 39.9953,
+    "precision": "city",
+    "label": "Mount Holly, New Jersey"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

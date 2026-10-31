@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-burnt-corn",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870595",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Burnt Corn",
+    "pt": "Batalha de Burnt Corn"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870595"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Burnt Corn\", revision 1370108303"
+    }
+  ],
+  "title": "Battle of Burnt Corn",
+  "summary": "The English Wikipedia article \"Battle of Burnt Corn\", at revision 1370108303, opens: \"The Battle of Burnt Corn, also known as the Battle of Burnt Corn Creek, was fought on July 27, 1813, in what is now Escambia County, Alabama, United States. The battle was the first conflict of the Creek War to be fought between American forces and a faction of the Muscogee known as the Red Sticks. The Creek War began as an intratribal conflict between two factions of Muscogee, one that supported a centralized tribal government and cooperation with the United States government and the other that opposed the encroachment of American settlers and championed a return to the traditional Muscogee lifestyle. A group of Red Sticks traveled to Pensacola to obtain weapons and supplies from the Spanish to further their fight.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870595, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle of the Creek War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-07-27"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "creek-war"
+}

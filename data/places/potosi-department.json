@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "potosi-department",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q238079",
+  "sitelinks": {
+    "count": 61,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Potosí Department",
+    "pt": "Potosí (departamento)"
+  },
+  "sources": [],
+  "names": [
+    "Potosí Department",
+    "Departamento de Potosí",
+    "Potosí (departamento)"
+  ],
+  "where": {
+    "lon": -66.66666667,
+    "lat": -20.66666667,
+    "precision": "region",
+    "label": "Potosí Department"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

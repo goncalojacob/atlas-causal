@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "united-states-exploring-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q119129",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "United States Exploring Expedition",
+    "pt": "Expedição de Exploração dos Estados Unidos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q119129"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"United States Exploring Expedition\", revision 1378881859"
+    }
+  ],
+  "title": "United States Exploring Expedition",
+  "summary": "The English Wikipedia article \"United States Exploring Expedition\", at revision 1378881859, opens: \"The United States Exploring Expedition of 1838–1842 was an exploring and surveying expedition of the Pacific Ocean and surrounding lands conducted by the United States. The original appointed commanding officer was Commodore Thomas ap Catesby Jones. Funding for the original expedition was requested by President John Quincy Adams in 1828; however, Congress would not implement funding until eight years later. In May 1836, the oceanic exploration voyage was finally authorized by Congress and created by President Andrew Jackson.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q119129, imported by tools/import/wikidata.mjs. The item's own description reads \"exploring and surveying expedition, 1838 to 1842\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1838,
+    "end": 1842,
+    "date": "1838-08-18",
+    "endDate": "1842-06-10"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

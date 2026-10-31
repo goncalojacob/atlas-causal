@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tarija-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q9001194",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Tarija War",
+    "pt": "Guerra entre Argentina e Confederação Peruano-Boliviana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q9001194"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tarija War\", revision 1374606982"
+    }
+  ],
+  "title": "Tarija War",
+  "summary": "The English Wikipedia article \"Tarija War\", at revision 1374606982, opens: \"The Tarija War, also known as the War between Argentina and the Peru–Bolivian Confederation, was an armed conflict that occurred between 1837 and 1839. Because it happened while the Peru–Bolivian Confederation was engaged in a parallel war against the Republic of Chile during the so-called War of the Confederation, both conflicts are often confused. The Tarija War began on May 19, 1837, when Juan Manuel de Rosas, who was in charge of managing foreign relations for the Argentine Confederation and was governor of the Province of Buenos Aires, declared war directly on President Andres de Santa Cruz because of the Tarija Question and Confederation's support for the Unitarian Party.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q9001194, imported by tools/import/wikidata.mjs. The item's own description reads \"war between Argentina and Bolivia, then part of the Peru–Bolivian Confederation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1837,
+    "end": 1839,
+    "date": "1837-05-19",
+    "endDate": "1839-04-26"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

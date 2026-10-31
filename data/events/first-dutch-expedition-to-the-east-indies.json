@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "first-dutch-expedition-to-the-east-indies",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2787168",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "First Dutch Expedition to the East Indies",
+    "pt": "Primeira Expedição Holandesa às Índias Orientais"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2787168"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Dutch Expedition to the East Indies\", revision 1372320337"
+    }
+  ],
+  "title": "First Dutch Expedition to the East Indies",
+  "summary": "The English Wikipedia article \"First Dutch Expedition to the East Indies\", at revision 1372320337, opens: \"The First Dutch Expedition to the East Indies was an expedition that took place from 1595 to 1597 to the region that is now Indonesia. It was instrumental in opening up the East Indies spice trade to the merchants that eventually formed the Dutch East India Company, and marked the end of the Portuguese Empire's dominance in the region.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2787168, imported by tools/import/wikidata.mjs. The item's own description reads \"first voyage of Dutch ships to Nusantara in 1595–1597\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1595,
+    "end": 1597,
+    "date": "1595-04-02",
+    "endDate": "1597-08-14"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

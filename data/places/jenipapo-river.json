@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "jenipapo-river",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q22021395",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "pt": "Rio Jenipapo (Piauí)"
+  },
+  "sources": [],
+  "names": [
+    "Jenipapo River",
+    "Rio Jenipapo",
+    "Rio Jenipapo (Piauí)"
+  ],
+  "where": {
+    "lon": -42.183333333333,
+    "lat": -4.7833333333333,
+    "precision": "region",
+    "label": "Jenipapo River"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
