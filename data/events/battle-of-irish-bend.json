@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-irish-bend",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2365622",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Irish Bend"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2365622"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Irish Bend\", revision 1377261423"
+    }
+  ],
+  "title": "Battle of Irish Bend",
+  "summary": "The English Wikipedia article \"Battle of Irish Bend\", at revision 1377261423, opens: \"The Battle of Irish Bend, also known as Nerson's Woods or Franklin, took place during the American Civil War. It was fought between Union Major General Nathaniel Prentice Banks against Confederate Major General Richard Taylor during Banks's operations against the Bayou Teche region at Irish Bend near Franklin, the seat of St. Mary Parish in southern Louisiana.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2365622, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-04-14"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

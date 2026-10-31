@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-off-cape-gata",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2838431",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle off Cape Gata"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2838431"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle off Cape Gata\", revision 1370603205"
+    }
+  ],
+  "title": "Battle off Cape Gata",
+  "summary": "The English Wikipedia article \"Battle off Cape Gata\", at revision 1370603205, opens: \"The Battle off Cape Gata, which took place June 17, 1815, off the south-east coast of Spain, was the first battle of the Second Barbary War. A squadron of U.S. vessels, under the command of Stephen Decatur Jr., met and engaged the flagship of the Algerine Navy, the frigate Meshuda under Admiral Hamidou. After a sharp action, Decatur's squadron captured the Algerine frigate and won a decisive victory over the Algerines.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2838431, imported by tools/import/wikidata.mjs. The item's own description reads \"1815 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-06-17"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "second-barbary-war"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capitulation-of-saldanha-bay",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1728621",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Capitulation of Saldanha Bay"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1728621"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capitulation of Saldanha Bay\", revision 1372351586"
+    }
+  ],
+  "title": "Capitulation of Saldanha Bay",
+  "summary": "The English Wikipedia article \"Capitulation of Saldanha Bay\", at revision 1372351586, opens: \"The capitulation of Saldanha Bay was the surrender to the British of a Batavian expeditionary force sent to recapture the Dutch Cape Colony in 1796 as part of the East Indies theatre of the French Revolutionary Wars. During the Flanders campaign of the War of the First Coalition, French troops overran the Dutch Republic in December 1794, leading to the latter becoming a French client state known as the Batavian Republic. Britain, concerned by the threat that the Cape Colony now posed to British trade with the East Indies, sent an invasion force under Vice-Admiral of the Blue Sir George Elphinstone that landed at Simon's Town in June 1795 and forced the colony's surrender in a short campaign. Elphinstone subsequently reinforced the British occupational garrison and stationed a squadron at the colony.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1728621, imported by tools/import/wikidata.mjs. The item's own description reads \"1796 Dutch to British naval surrender\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1796,
+    "end": 1796,
+    "date": "1796-08-17"
+  },
+  "place": "saldanha-bay",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-and-napoleonic-wars"
+}

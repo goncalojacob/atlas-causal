@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "bloemfontein-conference",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4927333",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Bloemfontein Conference"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4927333"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bloemfontein Conference\", revision 1366267098"
+    }
+  ],
+  "title": "Bloemfontein Conference",
+  "summary": "The English Wikipedia article \"Bloemfontein Conference\", at revision 1366267098, opens: \"The Bloemfontein Conference was a meeting that took place at the railway station of Bloemfontein, capital of the Orange Free State from 31 May until 5 June 1899. The main issue dealt with the status of British migrant workers called \"Uitlanders\", who mined the gold fields in Transvaal.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4927333, imported by tools/import/wikidata.mjs. The item's own description reads \"31 May till 5 June 1899\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-05-31",
+    "endDate": "1899-06-05"
+  },
+  "place": "bloemfontein",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "bombardment-of-san-juan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2909610",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Bombardment of San Juan",
+    "pt": "Bombardeio de San Juan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2909610"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bombardment of San Juan\", revision 1376306124"
+    }
+  ],
+  "title": "Bombardment of San Juan",
+  "summary": "The English Wikipedia article \"Bombardment of San Juan\", at revision 1376306124, opens: \"The Bombardment of San Juan, or the First Battle of San Juan, on 12 May 1898 was an engagement between United States Navy warships and the Spanish fortifications of San Juan, Puerto Rico. It was the first major action of the Puerto Rican Campaign during the Spanish–American War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2909610, imported by tools/import/wikidata.mjs. The item's own description reads \"engagement between United States Navy warships and the Spanish fortifications of San Juan, Puerto Rico\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-05-12",
+    "endDate": "1898-05-18"
+  },
+  "place": "san-juan-puerto-rico",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-american-war"
+}
