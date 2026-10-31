@@ -6370,6 +6370,66 @@
       "edges": [],
       "rank": "list",
       "why": "List rank, docs/candidates-1415-1900.md, 6 sitelinks."
+    },
+    {
+      "id": "2026-10-31-europe-392",
+      "planned": "2026-10-31T17:09Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q113495610",
+      "title": "Battle of Pitnak",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+    },
+    {
+      "id": "2026-10-31-europe-393",
+      "planned": "2026-10-31T17:09Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q122641793",
+      "title": "Russian Twenty-five Years' War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+    },
+    {
+      "id": "2026-10-31-europe-394",
+      "planned": "2026-10-31T17:09Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q12907952",
+      "title": "Kumanovo uprising",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+    },
+    {
+      "id": "2026-10-31-europe-395",
+      "planned": "2026-10-31T17:09Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2444941",
+      "title": "Battle of Noordhorn",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+    },
+    {
+      "id": "2026-10-31-europe-396",
+      "planned": "2026-10-31T17:09Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3823086",
+      "title": "Treaty of Berlin (1715)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
     }
   ]
 }
