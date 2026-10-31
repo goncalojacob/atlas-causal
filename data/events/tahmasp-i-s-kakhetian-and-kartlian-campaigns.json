@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "tahmasp-i-s-kakhetian-and-kartlian-campaigns",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q16369829",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Tahmasp I's Kakhetian and Kartlian campaigns"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16369829"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tahmasp I's Kakhetian and Kartlian campaigns\", revision 1374153102"
+    }
+  ],
+  "title": "Tahmasp I's Kakhetian and Kartlian campaigns",
+  "summary": "The English Wikipedia article \"Tahmasp I's Kakhetian and Kartlian campaigns\", at revision 1374153102, opens: \"The Tahmasp I's Kakhetian and Kartlian campaigns was a series of campaigns of the Safavid Iran under the leadership of Shah Tahmasp I against the Georgian Kingdoms of Kartli and Kakheti.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16369829, imported by tools/import/wikidata.mjs. The item's own description reads \"1541–1566 military campaigns conducted by Tahmasp I\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1541,
+    "end": 1566
+  },
+  "place": "kartli",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

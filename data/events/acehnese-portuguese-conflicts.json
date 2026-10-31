@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "acehnese-portuguese-conflicts",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q97348258",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Acehnese–Portuguese conflicts",
+    "pt": "Conflitos luso-achéns"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q97348258"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Acehnese–Portuguese conflicts\", revision 1374199117"
+    }
+  ],
+  "title": "Acehnese–Portuguese conflicts",
+  "summary": "The English Wikipedia article \"Acehnese–Portuguese conflicts\", at revision 1374199117, opens: \"Acehnese–Portuguese conflicts were the military engagements between the forces of the Portuguese Empire, established at Malacca in the Malay Peninsula, and the Sultanate of Aceh, which was a protectorate of the Ottoman Empire, fought intermittently from 1519 to 1639 in Sumatra, the Malay Peninsula or the Strait of Malacca. The Portuguese supported, or were supported, by various Malay or Sumatran states who opposed Acehnese expansionism, while the Acehnese received support from the Ottoman Empire and the Dutch East India Company.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q97348258, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1519,
+    "end": 1639
+  },
+  "place": "sumatra",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

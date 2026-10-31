@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jungjong-restoration",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q626301",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Jungjong Restoration"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q626301"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Jungjong Restoration\", revision 1375381747"
+    }
+  ],
+  "title": "Jungjong Restoration",
+  "summary": "The English Wikipedia article \"Jungjong Restoration\", at revision 1375381747, opens: \"In 1506, the 12th year of Yeonsangun, a group of officials – notably Pak Wŏnjong, Sŏng Hŭian, Yu Sunjŏng and Hong Kyŏngju plotted against the despotic ruler. They launched a coup on September 2, 1506, deposing the king and replacing him with his half-brother, Grand Prince Jinseong. The king was demoted to prince, and exiled to Ganghwa Island, where he died a few weeks later. Consort Jang Nok-su, who was regarded as a femme fatale who had encouraged Yeonsangun's misrule, was beheaded. Yeonsangun's young sons were also killed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q626301, imported by tools/import/wikidata.mjs. The item's own description reads \"Joseon coup (1506)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1506,
+    "end": 1506,
+    "date": "1506-09-02"
+  },
+  "place": "joseon",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

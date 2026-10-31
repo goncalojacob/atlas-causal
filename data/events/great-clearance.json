@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "great-clearance",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5598975",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Great Clearance"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5598975"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Clearance\", revision 1363645501"
+    }
+  ],
+  "title": "Great Clearance",
+  "summary": "The English Wikipedia article \"Great Clearance\", at revision 1363645501, opens: \"The Great Clearance, also translated as the Great Evacuation or Great Frontier Shift, was caused by edicts issued in 1661, 1664, and 1679, which required the evacuation of the coastal areas of Guangdong, Fujian, Zhejiang, Jiangnan, and Shandong, in order to fight the Taiwan-based anti-Qing loyalist movement of the erstwhile Ming dynasty (1368–1644).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5598975, imported by tools/import/wikidata.mjs. The item's own description reads \"Qing evacuation of the coastal areas of Guangdong, Fujian, Zhejiang, Jiangnan, and Shandong in order to fight the Taiwan-based anti-Qing loyalist movement\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1661,
+    "end": 1683
+  },
+  "place": "china-q29520",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

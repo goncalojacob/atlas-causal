@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-bassein-1802",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2518823",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Treaty of Bassein (1802)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2518823"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Bassein (1802)\", revision 1365254079"
+    }
+  ],
+  "title": "Treaty of Bassein (1802)",
+  "summary": "The English Wikipedia article \"Treaty of Bassein (1802)\", at revision 1365254079, opens: \"The Treaty of Bassein was a pact between the British East India Company and Baji Rao II, the peshwa of the Maratha Confederacy. It was signed on 31 December 1802 after the Battle of Poona, in present-day Bassein (Vasai). The treaty was a decisive step in the dissolution of the Maratha Empire, which led to the East India Company's annexation of the empire's territories in western India in 1818.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2518823, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty between the British East India Company and Baji Rao II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1802,
+    "end": 1802,
+    "date": "1802-12-31"
+  },
+  "place": "pathein",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

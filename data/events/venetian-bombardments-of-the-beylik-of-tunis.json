@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "venetian-bombardments-of-the-beylik-of-tunis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q28001553",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Venetian bombardments of the Beylik of Tunis"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q28001553"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Venetian bombardments of the Beylik of Tunis\", revision 1370749145"
+    }
+  ],
+  "title": "Venetian bombardments of the Beylik of Tunis",
+  "summary": "The English Wikipedia article \"Venetian bombardments of the Beylik of Tunis\", at revision 1370749145, opens: \"The Venetian bombardments of the Beylik of Tunis were a series of naval bombardments of the capital and various port cities of the Beylik of Tunis by the Venetian navy in retaliation for the support Bey Hammuda ibn Ali gave to Barbary pirates who harassed Venetian-flagged shipping. The campaign lasted from 1784 to 1786, with the Venetian navy under Angelo Emo bombarding the harbour towns of Tunisia. The conflict dragged on until 1792, but no major naval actions were undertaken after the winter of 1786/87.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28001553, imported by tools/import/wikidata.mjs. The item's own description reads \"1784 battle in Tunisia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1784,
+    "end": 1788,
+    "date": "1784-10-05"
+  },
+  "place": "tunis-q3572",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

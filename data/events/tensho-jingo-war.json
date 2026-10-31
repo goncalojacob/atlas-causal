@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "tensho-jingo-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q10939819",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Tenshō-Jingo war"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10939819"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tenshō-Jingo war\", revision 1370749935"
+    }
+  ],
+  "title": "Tenshō-Jingo war",
+  "summary": "The English Wikipedia article \"Tenshō-Jingo war\", at revision 1370749935, opens: \"Tenshō-Jingo War  or more simply, the Battle of Jingo , was a three-way military conflict in 1582 AD between Hōjō clan, Tokugawa clan, and Uesugi clan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10939819, imported by tools/import/wikidata.mjs. The item's own description reads \"1582 battle in Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1582,
+    "end": 1582
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-negapatam-1758",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2606313",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Negapatam (1758)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2606313"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Negapatam (1758)\", revision 1370451545"
+    }
+  ],
+  "title": "Battle of Negapatam (1758)",
+  "summary": "The English Wikipedia article \"Battle of Negapatam (1758)\", at revision 1370451545, opens: \"The Battle of Nagapatam was an indecisive naval battle on 3 August 1758 during the Seven Years' War. A British squadron under Vice-Admiral George Pocock fought a French squadron under Comte d'Aché off the Carnatic coast of India near Negapatam in the second of three battles fought between the two admirals during the war. Both squadrons suffered heavy damage during the short but fierce engagement, with d'Ache's flagship Zodiaque catching fire and d'Ache himself severely wounded. He would spend the remainder of the year recovering in Mauritius.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2606313, imported by tools/import/wikidata.mjs. The item's own description reads \"1758 battle of the Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1758,
+    "end": 1758,
+    "date": "1758-08-03"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}
