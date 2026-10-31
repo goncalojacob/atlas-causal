@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "javanese-wars-of-succession",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2066732",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Javanese Wars of Succession"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2066732"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Javanese Wars of Succession\", revision 1339779927"
+    }
+  ],
+  "title": "Javanese Wars of Succession",
+  "summary": "The English Wikipedia article \"Javanese Wars of Succession\", at revision 1339779927, opens: \"The Javanese Wars of Succession were three military confrontations between the Dutch East India Company (VOC) and the Mataram Sultanate on central Java between 1703 and 1755. The hereditary succession in Mataram was at stake, prompting the VOC to field its own candidates in an attempt to gain more influence in central and eastern Java. At the end of the Javanese Wars of Succession, Mataram was carved into three weak Vorstenlanden, independent in name only, as a consequence of the divide and rule policy of the VOC.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2066732, imported by tools/import/wikidata.mjs. The item's own description reads \"18th-century Javanese wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1703,
+    "end": 1755
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

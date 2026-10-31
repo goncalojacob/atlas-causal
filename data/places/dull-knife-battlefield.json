@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "dull-knife-battlefield",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5313431",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Dull Knife Battlefield"
+  },
+  "sources": [],
+  "names": [
+    "Dull Knife Battlefield"
+  ],
+  "where": {
+    "lon": -106.948611,
+    "lat": 43.76,
+    "precision": "point",
+    "label": "Dull Knife Battlefield"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

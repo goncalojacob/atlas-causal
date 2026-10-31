@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-erivan-1804",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q48803703",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Erivan (1804)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q48803703"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Erivan (1804)\", revision 1370741052"
+    }
+  ],
+  "title": "Siege of Erivan (1804)",
+  "summary": "The English Wikipedia article \"Siege of Erivan (1804)\", at revision 1370741052, opens: \"The siege of Erivan took place from July to September 1804, during the Russo-Persian War (1804–1813). After a difficult advance, the Russians under Pavel Tsitsianov besieged Erivan. The Iranian forces inside Erivan's citadel prevented the Russians from making a direct attack, while those outside the citadel surrounded the Russians and cut the invaders' supply lines. Commanded by Crown-Prince Abbas Mirza and King Fath-Ali Shah Qajar himself, the Iranians successfully defended the city and defeated the Russian attack. Tsitsianov, in order to save his reputation, shifted the blame on a plethora of people and matters, and deliberately left out his own wrongdoings.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q48803703, imported by tools/import/wikidata.mjs. The item's own description reads \"siege during the Russo-Persian War in 1804\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1804,
+    "end": 1804,
+    "date": "1804-07",
+    "endDate": "1804-09"
+  },
+  "place": "yerevan",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-persian-war-1804-1813"
+}

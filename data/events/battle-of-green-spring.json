@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-green-spring",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888688",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Green Spring"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888688"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Green Spring\", revision 1370442014"
+    }
+  ],
+  "title": "Battle of Green Spring",
+  "summary": "The English Wikipedia article \"Battle of Green Spring\", at revision 1370442014, opens: \"The Battle of Green Spring took place near Green Spring Plantation in James City County, Virginia during the American Revolutionary War. On July 6, 1781 United States Brigadier General \"Mad\" Anthony Wayne, leading the advance forces of the Marquis de Lafayette, was ambushed near the plantation by the British army of Earl Charles Cornwallis in the last major land battle of the Virginia campaign prior to the Siege of Yorktown.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888688, imported by tools/import/wikidata.mjs. The item's own description reads \"1781 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-07-06"
+  },
+  "place": "yorktown-virginia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-ak-mechet",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q97006770",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Ak-Mechet"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q97006770"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Ak-Mechet\", revision 1373828613"
+    }
+  ],
+  "title": "Siege of Ak-Mechet",
+  "summary": "The English Wikipedia article \"Siege of Ak-Mechet\", at revision 1373828613, opens: \"The siege of Ak-Mechet was the first major engagement of the Russo-Kokand War, fought between the Russian Empire and the Khanate of Kokand. Placed on the defensible Syr Darya river, Ak-Mechet was an important northern outpost of the Kokand Khanate, used as a base to collect tax from Kazakhs in the region, and to control trade between Russia and southern Central Asia. Due to the influence it gave Kokand over the Kazakh Steppe, its capture or destruction became a priority for regional Russian governors.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q97006770, imported by tools/import/wikidata.mjs. The item's own description reads \"1853 engagement of the Russo-Kokand War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1853,
+    "end": 1853,
+    "date": "1853-07-02",
+    "endDate": "1853-07-28"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

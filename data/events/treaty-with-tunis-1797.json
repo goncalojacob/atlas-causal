@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-with-tunis-1797",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3536721",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Treaty with Tunis (1797)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3536721"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty with Tunis (1797)\", revision 1378236037"
+    }
+  ],
+  "title": "Treaty with Tunis (1797)",
+  "summary": "The English Wikipedia article \"Treaty with Tunis (1797)\", at revision 1378236037, opens: \"The Treaty with Tunis was signed on August 28, 1797, between the United States of America and the Barbary State of Tunis. As the treaty provided in Article One:There shall be a perpetual and constant peace between the United States of America and the magnificent Pasha, Bey of Tunis, and also a permanent friendship, which shall more and more increase.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3536721, imported by tools/import/wikidata.mjs. The item's own description reads \"1797 treaty between the United States and the Beylik of Tunis\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1797,
+    "end": 1797,
+    "date": "1797-08-28"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

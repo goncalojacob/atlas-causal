@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-payne-s-landing",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q865831",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Treaty of Payne's Landing"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q865831"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Payne's Landing\", revision 1376798320"
+    }
+  ],
+  "title": "Treaty of Payne's Landing",
+  "summary": "The English Wikipedia article \"Treaty of Payne's Landing\", at revision 1376798320, opens: \"The Treaty of Payne's Landing was an agreement signed on 9 May 1832 between the government of the United States and several chiefs of the Seminole Indians in the Territory of Florida, before it acquired statehood.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q865831, imported by tools/import/wikidata.mjs. The item's own description reads \"1832 treaty between the United States and several Seminole chiefs\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1832,
+    "end": 1832,
+    "date": "1832-05-09"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

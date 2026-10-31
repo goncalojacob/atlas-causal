@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1872-amik-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q110235937",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1872 Amik earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q110235937"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1872 Amik earthquake\", revision 1366164446"
+    }
+  ],
+  "title": "1872 Amik earthquake",
+  "summary": "The English Wikipedia article \"1872 Amik earthquake\", at revision 1366164446, opens: \"The 1872 Amik (Antakya) earthquake occurred on April 3 with an epicenter within the Amik Valley in the Ottoman Empire. Earthquake had an estimated magnitude of Mw 7.0–7.2 or Ms 7.2 and maximum MSK 64 rating of XI (Catastrophic). Turkey and Syria were devastated by this earthquake, and the region lost at least 1,800 residents.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q110235937, imported by tools/import/wikidata.mjs. The item's own description reads \"7.3-magnitude earthquake that struck Antakya in south-central Turkey on April 3, 1872\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1872,
+    "end": 1872,
+    "date": "1872-04-03"
+  },
+  "place": "antakya",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

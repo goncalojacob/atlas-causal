@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1894-istanbul-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q16821218",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1894 Istanbul earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16821218"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1894 Istanbul earthquake\", revision 1366164680"
+    }
+  ],
+  "title": "1894 Istanbul earthquake",
+  "summary": "The English Wikipedia article \"1894 Istanbul earthquake\", at revision 1366164680, opens: \"The 1894 Istanbul earthquake occurred in the Çınarcık Basin or Gulf of Izmit in the Sea of Marmara on 10 July at 12:24pm. The earthquake had an estimated Ms magnitude of 7.0. At least an estimated 1,349 people were killed in towns around the Gulf of Izmit such as Yalova, Sapanca and Adapazarı, and in Ottoman Constantinople. The main shock caused a tsunami 1.5 metres (4.9 ft) high.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16821218, imported by tools/import/wikidata.mjs. The item's own description reads \"6.7-magnitude earthquake that struck İstanbul in northwestern Turkey on July 10, 1894\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1894,
+    "end": 1894,
+    "date": "1894-07-10"
+  },
+  "place": "princes-islands",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

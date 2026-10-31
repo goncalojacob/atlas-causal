@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "second-expedition-to-palembang",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2852606",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Second expedition to Palembang"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2852606"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second expedition to Palembang\", revision 1370737541"
+    }
+  ],
+  "title": "Second expedition to Palembang",
+  "summary": "The English Wikipedia article \"Second expedition to Palembang\", at revision 1370737541, opens: \"The second expedition to Palembang  was a punitive expedition by the Dutch against the Palembang Sultanate in 1821. The commander of the expedition, Hendrik Merkus de Kock, succeeded in coming to an agreement with Sultan Mahmud Badaruddin II.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2852606, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-minisink",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2296381",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Minisink"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2296381"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Minisink\", revision 1378581412"
+    }
+  ],
+  "title": "Battle of Minisink",
+  "summary": "The English Wikipedia article \"Battle of Minisink\", at revision 1378581412, opens: \"The Battle of Minisink took place during the American Revolutionary War at Minisink Ford, New York, on July 22, 1779. It was the only major skirmish of the Revolutionary War fought in the upper Delaware River valley. The battle was a decisive Haudenosaunee and Loyalist victory, as the Patriot militia was hastily assembled, ill-equipped and inexperienced.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2296381, imported by tools/import/wikidata.mjs. The item's own description reads \"1779 battle of the American Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1779,
+    "end": 1779,
+    "date": "1779-07-19",
+    "endDate": "1779-07-22"
+  },
+  "place": "highland-sullivan-county-new-york",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}
