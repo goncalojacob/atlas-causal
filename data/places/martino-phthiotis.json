@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "martino-phthiotis",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6777172",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Martino, Phthiotis"
+  },
+  "sources": [],
+  "names": [
+    "Martino",
+    "Martino, Phthiotis"
+  ],
+  "where": {
+    "lon": 23.21458,
+    "lat": 38.56817,
+    "precision": "city",
+    "label": "Martino, Phthiotis"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

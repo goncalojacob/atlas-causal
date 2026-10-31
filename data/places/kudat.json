@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "kudat",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q23041",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Kudat"
+  },
+  "sources": [],
+  "names": [
+    "Kudat"
+  ],
+  "where": {
+    "lon": 116.83333333333,
+    "lat": 6.8833333333333,
+    "precision": "city",
+    "label": "Kudat"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

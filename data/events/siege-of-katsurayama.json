@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-katsurayama",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q49000631",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Katsurayama"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q49000631"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Katsurayama\", revision 1381488183"
+    }
+  ],
+  "title": "Siege of Katsurayama",
+  "summary": "The English Wikipedia article \"Siege of Katsurayama\", at revision 1381488183, opens: \"The siege of Katsurayama in March 1557 was fought between the forces of the Japanese daimyō Takeda Shingen and Uesugi Kenshin as part of the Kawanakajima campaigns. Katsurayama Castle was a strategically vital Uesugi stronghold in the contested Shinano Province and, when it was isolated from reinforcements due to late snow in early 1557, the Takeda clan used this opportunity to attack it. Although the castle garrison, consisting of the Ochiai clan and elements of the Murakami clan, defended Katsurayama furiously, the Takeda forces under Baba Nobuharu eventually stormed into the castle. Most of the garrison was killed in combat, while the families of the defenders committed mass suicide and the castle was burned to the ground.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q49000631, imported by tools/import/wikidata.mjs. The item's own description reads \"1557 Japanese military event\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1557,
+    "end": 1557,
+    "date": "1557-03"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "battles-of-kawanakajima"
+}
