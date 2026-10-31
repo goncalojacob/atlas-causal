@@ -2012,6 +2012,12 @@
     },
     {
       "dissent": false,
+      "id": "1699-java-earthquake",
+      "kind": "event",
+      "locator": "Q107354813"
+    },
+    {
+      "dissent": false,
       "id": "16th-united-states-congress",
       "kind": "event",
       "locator": "Q4552253"
@@ -4574,6 +4580,12 @@
     },
     {
       "dissent": false,
+      "id": "argentine-constitution-of-1826",
+      "kind": "event",
+      "locator": "Q5784579"
+    },
+    {
+      "dissent": false,
       "id": "argentine-constitution-of-1853",
       "kind": "event",
       "locator": "Q951582"
@@ -5111,6 +5123,12 @@
       "id": "bannock-war",
       "kind": "event",
       "locator": "Q2321496"
+    },
+    {
+      "dissent": false,
+      "id": "baptist-war",
+      "kind": "event",
+      "locator": "Q4077534"
     },
     {
       "dissent": false,
@@ -5987,6 +6005,12 @@
       "id": "battle-of-azukizaka-1542",
       "kind": "event",
       "locator": "Q859756"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-azukizaka-1564",
+      "kind": "event",
+      "locator": "Q2762407"
     },
     {
       "dissent": false,
@@ -11948,9 +11972,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-manila-1574",
+      "kind": "event",
+      "locator": "Q15197330"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-manila-1762",
       "kind": "event",
       "locator": "Q2617813"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-manila-1898",
+      "kind": "event",
+      "locator": "Q303176"
     },
     {
       "dissent": false,
@@ -14585,6 +14621,12 @@
       "id": "battle-of-sacheon-1592",
       "kind": "event",
       "locator": "Q482970"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sacheon-1598",
+      "kind": "event",
+      "locator": "Q484475"
     },
     {
       "dissent": false,
@@ -18962,6 +19004,12 @@
     },
     {
       "dissent": false,
+      "id": "burmese-siamese-war-1662-1664",
+      "kind": "event",
+      "locator": "Q20991942"
+    },
+    {
+      "dissent": false,
       "id": "burmese-siamese-war-1759-1760",
       "kind": "event",
       "locator": "Q1632880"
@@ -19898,6 +19946,12 @@
     },
     {
       "dissent": false,
+      "id": "chilean-constitution-of-1833",
+      "kind": "event",
+      "locator": "Q5098739"
+    },
+    {
+      "dissent": false,
       "id": "chilean-occupation-of-antofagasta",
       "kind": "event",
       "locator": "Q5804048"
@@ -20087,6 +20141,12 @@
       "id": "colombian-civil-war-1860-1862",
       "kind": "event",
       "locator": "Q3067868"
+    },
+    {
+      "dissent": false,
+      "id": "colombian-civil-war-of-1854",
+      "kind": "event",
+      "locator": "Q3118955"
     },
     {
       "dissent": false,
@@ -20894,6 +20954,12 @@
     },
     {
       "dissent": false,
+      "id": "cuban-war-of-independence",
+      "kind": "event",
+      "locator": "Q1514908"
+    },
+    {
+      "dissent": false,
       "id": "cudgel-war",
       "kind": "event",
       "locator": "Q974160"
@@ -21623,6 +21689,12 @@
       "id": "empire-of-brazil-1822-1889",
       "kind": "event",
       "locator": "Q217230"
+    },
+    {
+      "dissent": false,
+      "id": "empresa-de-china",
+      "kind": "event",
+      "locator": "Q116203795"
     },
     {
       "dissent": false,
@@ -23534,6 +23606,12 @@
     },
     {
       "dissent": false,
+      "id": "great-boston-fire-of-1872",
+      "kind": "event",
+      "locator": "Q5598800"
+    },
+    {
+      "dissent": false,
       "id": "great-chicago-fire",
       "kind": "event",
       "locator": "Q70520"
@@ -24062,6 +24140,12 @@
     },
     {
       "dissent": false,
+      "id": "haitian-revolution",
+      "kind": "event",
+      "locator": "Q689128"
+    },
+    {
+      "dissent": false,
       "id": "hamgyong-campaign",
       "kind": "event",
       "locator": "Q5644543"
@@ -24404,6 +24488,12 @@
     },
     {
       "dissent": false,
+      "id": "independence-of-brazil",
+      "kind": "event",
+      "locator": "Q1548600"
+    },
+    {
+      "dissent": false,
       "id": "independence-of-central-america",
       "kind": "event",
       "locator": "Q5654256"
@@ -24431,6 +24521,12 @@
       "id": "india-pakistan-war-of-1971",
       "kind": "event",
       "locator": "Q1922071"
+    },
+    {
+      "dissent": false,
+      "id": "indian-campaign-of-ahmad-shah-durrani",
+      "kind": "event",
+      "locator": "Q23039086"
     },
     {
       "dissent": false,
@@ -24629,6 +24725,18 @@
       "id": "invasion-of-jersey-1779",
       "kind": "event",
       "locator": "Q5484470"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-martinique-1759",
+      "kind": "event",
+      "locator": "Q3153838"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-martinique-1762",
+      "kind": "event",
+      "locator": "Q63431"
     },
     {
       "dissent": false,
@@ -26078,6 +26186,12 @@
     },
     {
       "dissent": false,
+      "id": "los-angeles-chinese-massacre-of-1871",
+      "kind": "event",
+      "locator": "Q5100835"
+    },
+    {
+      "dissent": false,
       "id": "louisiana-purchase",
       "kind": "event",
       "locator": "Q193155"
@@ -26123,6 +26237,12 @@
       "id": "lunenburg-campaign-1758",
       "kind": "event",
       "locator": "Q16212881"
+    },
+    {
+      "dissent": false,
+      "id": "luso-chinese-agreement",
+      "kind": "event",
+      "locator": "Q13581279"
     },
     {
       "dissent": false,
@@ -27341,6 +27461,12 @@
       "id": "newburgh-conspiracy",
       "kind": "event",
       "locator": "Q1574076"
+    },
+    {
+      "dissent": false,
+      "id": "newfoundland-expedition",
+      "kind": "event",
+      "locator": "Q15262148"
     },
     {
       "dissent": false,
@@ -31082,6 +31208,12 @@
     },
     {
       "dissent": false,
+      "id": "second-herat-war",
+      "kind": "event",
+      "locator": "Q109285838"
+    },
+    {
+      "dissent": false,
       "id": "second-hundred-years-war",
       "kind": "event",
       "locator": "Q233559"
@@ -32174,6 +32306,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-delhi-1804",
+      "kind": "event",
+      "locator": "Q16931419"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-delhi-1857",
       "kind": "event",
       "locator": "Q2343263"
@@ -32591,6 +32729,12 @@
       "id": "siege-of-havana",
       "kind": "event",
       "locator": "Q562277"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-herat-1448",
+      "kind": "event",
+      "locator": "Q7510079"
     },
     {
       "dissent": false,
@@ -33830,9 +33974,27 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-samarkand-1490s",
+      "kind": "event",
+      "locator": "Q76995101"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-samarkand-1497",
       "kind": "event",
       "locator": "Q7510367"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-samarkand-1501",
+      "kind": "event",
+      "locator": "Q7510370"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-samarkand-1868",
+      "kind": "event",
+      "locator": "Q60791909"
     },
     {
       "dissent": false,
@@ -33902,9 +34064,33 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-smolensk-1502",
+      "kind": "event",
+      "locator": "Q16262987"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-smolensk-1514",
+      "kind": "event",
+      "locator": "Q4337446"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-smolensk-1609-1611",
       "kind": "event",
       "locator": "Q937828"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-smolensk-1632-1633",
+      "kind": "event",
+      "locator": "Q7510414"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-smolensk-1654",
+      "kind": "event",
+      "locator": "Q4337448"
     },
     {
       "dissent": false,
@@ -34007,6 +34193,12 @@
       "id": "siege-of-takatenjin-1581",
       "kind": "event",
       "locator": "Q2275430"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-takato-1545",
+      "kind": "event",
+      "locator": "Q2163387"
     },
     {
       "dissent": false,
@@ -34778,6 +34970,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-american-war",
+      "kind": "event",
+      "locator": "Q12583"
+    },
+    {
+      "dissent": false,
       "id": "spanish-american-wars-of-independence",
       "kind": "event",
       "locator": "Q1123201"
@@ -35255,6 +35453,12 @@
       "id": "swiss-peasant-war-of-1653",
       "kind": "event",
       "locator": "Q670936"
+    },
+    {
+      "dissent": false,
+      "id": "syrian-peasant-revolt-1834-1835",
+      "kind": "event",
+      "locator": "Q39079186"
     },
     {
       "dissent": false,
@@ -35897,6 +36101,12 @@
       "id": "transition-from-ming-to-qing",
       "kind": "event",
       "locator": "Q3427966"
+    },
+    {
+      "dissent": false,
+      "id": "transvaal-civil-war",
+      "kind": "event",
+      "locator": "Q7835391"
     },
     {
       "dissent": false,

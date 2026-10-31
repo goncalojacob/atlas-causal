@@ -8478,7 +8478,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 4,
+      "degree": 5,
       "id": "boston",
       "kind": "place",
       "names": [
@@ -8829,7 +8829,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 10,
+      "degree": 11,
       "id": "brazil-q155",
       "kind": "place",
       "names": [
@@ -11149,7 +11149,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "caribbean-sea",
       "kind": "place",
       "names": [
@@ -13419,7 +13419,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 7,
+      "degree": 8,
       "id": "chile-q298",
       "kind": "place",
       "names": [
@@ -14285,7 +14285,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 13,
+      "degree": 14,
       "id": "colombia-q739",
       "kind": "place",
       "names": [
@@ -15262,7 +15262,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 3,
       "id": "cuba-q14905932",
       "kind": "place",
       "names": [
@@ -16209,7 +16209,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 3,
+      "degree": 4,
       "id": "delhi",
       "kind": "place",
       "names": [
@@ -26303,7 +26303,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 3,
+      "degree": 5,
       "id": "herat",
       "kind": "place",
       "names": [
@@ -29465,7 +29465,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 131,
+      "degree": 132,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -30128,7 +30128,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 20,
+      "degree": 21,
       "id": "joseon",
       "kind": "place",
       "names": [
@@ -36569,6 +36569,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "los-angeles",
+      "kind": "place",
+      "names": [
+        "Los Angeles"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "loudun",
@@ -38115,7 +38142,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "mainland-china",
       "kind": "place",
       "names": [
@@ -38700,7 +38727,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 4,
+      "degree": 6,
       "id": "manila",
       "kind": "place",
       "names": [
@@ -42047,6 +42074,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "montego-bay-q637555",
+      "kind": "place",
+      "names": [
+        "Montego Bay"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "montemurlo",
@@ -45083,7 +45137,7 @@
         }
       ],
       "created": "2026-10-30",
-      "degree": 1,
+      "degree": 2,
       "id": "newfoundland-island",
       "kind": "place",
       "names": [
@@ -45831,6 +45885,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "north-india",
+      "kind": "place",
+      "names": [
+        "North India",
+        "Índia do Norte"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -46106,6 +46188,35 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "northern-thailand",
+      "kind": "place",
+      "names": [
+        "Northern Thailand",
+        "Região Norte",
+        "Norte da Tailândia"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -46664,6 +46775,34 @@
       "kind": "place",
       "names": [
         "Oinousses"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "okazaki-aichi",
+      "kind": "place",
+      "names": [
+        "Okazaki",
+        "Okazaki, Aichi"
       ],
       "origin": {
         "tool": "wikidata"
@@ -50920,7 +51059,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 60,
+      "degree": 61,
       "id": "portugal-q45",
       "kind": "place",
       "names": [
@@ -55261,7 +55400,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 4,
+      "degree": 5,
       "id": "saint-domingue-q861551",
       "kind": "place",
       "names": [
@@ -55900,7 +56039,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 5,
       "id": "samarkand",
       "kind": "place",
       "names": [
@@ -59215,7 +59354,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 3,
+      "degree": 7,
       "id": "smolensk",
       "kind": "place",
       "names": [
@@ -59552,7 +59691,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "south-african-republic",
       "kind": "place",
       "names": [

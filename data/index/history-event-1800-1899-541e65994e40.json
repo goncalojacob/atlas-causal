@@ -1813,6 +1813,15 @@
         }
       ]
     },
+    "argentine-constitution-of-1826": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "argentine-constitution-of-1853": {
       "from": "git",
       "versions": [
@@ -2161,6 +2170,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "baptist-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -6900,6 +6918,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-manila-1898": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -11918,6 +11945,15 @@
         }
       ]
     },
+    "chilean-constitution-of-1833": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "chilean-occupation-of-antofagasta": {
       "from": "git",
       "versions": [
@@ -12029,6 +12065,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "colombian-civil-war-of-1854": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -12575,6 +12620,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "cuban-war-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -14461,6 +14515,15 @@
         }
       ]
     },
+    "great-boston-fire-of-1872": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "great-chicago-fire": {
       "from": "git",
       "versions": [
@@ -15026,6 +15089,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "independence-of-brazil": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -15981,6 +16053,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "los-angeles-chinese-massacre-of-1871": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -19012,6 +19093,15 @@
         }
       ]
     },
+    "second-herat-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "second-industrial-revolution": {
       "from": "git",
       "versions": [
@@ -19577,6 +19667,15 @@
         }
       ]
     },
+    "siege-of-delhi-1804": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-delhi-1857": {
       "from": "git",
       "versions": [
@@ -20057,6 +20156,15 @@
         }
       ]
     },
+    "siege-of-samarkand-1868": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-san-sebastian": {
       "from": "git",
       "versions": [
@@ -20520,6 +20628,22 @@
         }
       ]
     },
+    "spanish-american-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        },
+        {
+          "fields": [
+            "created",
+            "sitelinks"
+          ],
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "spanish-american-war-1898": {
       "from": "git",
       "versions": [
@@ -20740,6 +20864,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "syrian-peasant-revolt-1834-1835": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -21227,6 +21360,15 @@
             "parent"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "transvaal-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },

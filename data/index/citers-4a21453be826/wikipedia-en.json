@@ -10424,6 +10424,12 @@
     },
     {
       "dissent": false,
+      "id": "1699-java-earthquake",
+      "kind": "event",
+      "locator": "\"1699 Java earthquake\", revision 1376167465"
+    },
+    {
+      "dissent": false,
       "id": "16th-united-states-congress",
       "kind": "event",
       "locator": "\"16th United States Congress\", revision 1380237831"
@@ -12926,6 +12932,12 @@
     },
     {
       "dissent": false,
+      "id": "argentine-constitution-of-1826",
+      "kind": "event",
+      "locator": "\"Argentine Constitution of 1826\", revision 1271040803"
+    },
+    {
+      "dissent": false,
       "id": "argentine-constitution-of-1853",
       "kind": "event",
       "locator": "\"Argentine Constitution of 1853\", revision 1376930996"
@@ -13415,6 +13427,12 @@
       "id": "bannock-war",
       "kind": "event",
       "locator": "\"Bannock War\", revision 1380091170"
+    },
+    {
+      "dissent": false,
+      "id": "baptist-war",
+      "kind": "event",
+      "locator": "\"Baptist War\", revision 1378640409"
     },
     {
       "dissent": false,
@@ -14279,6 +14297,12 @@
       "id": "battle-of-azukizaka-1542",
       "kind": "event",
       "locator": "\"Battle of Azukizaka (1542)\", revision 1370107279"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-azukizaka-1564",
+      "kind": "event",
+      "locator": "\"Battle of Azukizaka (1564)\", revision 1370107284"
     },
     {
       "dissent": false,
@@ -20216,9 +20240,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-manila-1574",
+      "kind": "event",
+      "locator": "\"Battle of Manila (1574)\", revision 1381856600"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-manila-1762",
       "kind": "event",
       "locator": "\"Battle of Manila (1762)\", revision 1378886751"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-manila-1898",
+      "kind": "event",
+      "locator": "\"Battle of Manila (1898)\", revision 1378819835"
     },
     {
       "dissent": false,
@@ -22841,6 +22877,12 @@
       "id": "battle-of-sacheon-1592",
       "kind": "event",
       "locator": "\"Battle of Sacheon (1592)\", revision 1371749113"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sacheon-1598",
+      "kind": "event",
+      "locator": "\"Battle of Sacheon (1598)\", revision 1370587918"
     },
     {
       "dissent": false,
@@ -27224,6 +27266,12 @@
     },
     {
       "dissent": false,
+      "id": "burmese-siamese-war-1662-1664",
+      "kind": "event",
+      "locator": "\"Burmese–Siamese War (1662–1664)\", revision 1380010797"
+    },
+    {
+      "dissent": false,
       "id": "burmese-siamese-war-1759-1760",
       "kind": "event",
       "locator": "\"Burmese–Siamese War (1759–1760)\", revision 1370607013"
@@ -28154,6 +28202,12 @@
     },
     {
       "dissent": false,
+      "id": "chilean-constitution-of-1833",
+      "kind": "event",
+      "locator": "\"Chilean Constitution of 1833\", revision 1360628385"
+    },
+    {
+      "dissent": false,
       "id": "chilean-war-of-independence",
       "kind": "event",
       "locator": "\"Chilean War of Independence\", revision 1371212438"
@@ -28331,6 +28385,12 @@
       "id": "colombian-civil-war-1860-1862",
       "kind": "event",
       "locator": "\"Colombian Civil War (1860–1862)\", revision 1370611848"
+    },
+    {
+      "dissent": false,
+      "id": "colombian-civil-war-of-1854",
+      "kind": "event",
+      "locator": "\"Colombian Civil War of 1854\", revision 1370611857"
     },
     {
       "dissent": false,
@@ -29138,6 +29198,12 @@
     },
     {
       "dissent": false,
+      "id": "cuban-war-of-independence",
+      "kind": "event",
+      "locator": "\"Cuban War of Independence\", revision 1374697767"
+    },
+    {
+      "dissent": false,
       "id": "cuban-war-of-independence-1895-1898",
       "kind": "event",
       "locator": "\"Cuban War of Independence\", revision 1374697767"
@@ -29867,6 +29933,12 @@
       "id": "empire-of-brazil-1822-1889",
       "kind": "event",
       "locator": "\"Empire of Brazil\", revision 1374829984"
+    },
+    {
+      "dissent": false,
+      "id": "empresa-de-china",
+      "kind": "event",
+      "locator": "\"Empresa de China\", revision 1376449611"
     },
     {
       "dissent": false,
@@ -31742,6 +31814,12 @@
     },
     {
       "dissent": false,
+      "id": "great-boston-fire-of-1872",
+      "kind": "event",
+      "locator": "\"Great Boston Fire of 1872\", revision 1382076490"
+    },
+    {
+      "dissent": false,
       "id": "great-chicago-fire",
       "kind": "event",
       "locator": "\"Great Chicago Fire\", revision 1381953593"
@@ -32246,6 +32324,12 @@
     },
     {
       "dissent": false,
+      "id": "haitian-revolution",
+      "kind": "event",
+      "locator": "\"Haitian Revolution\", revision 1375172946"
+    },
+    {
+      "dissent": false,
       "id": "haitian-revolution-1791-1804",
       "kind": "event",
       "locator": "\"Haitian Revolution\", revision 1375172946"
@@ -32594,6 +32678,12 @@
     },
     {
       "dissent": false,
+      "id": "independence-of-brazil",
+      "kind": "event",
+      "locator": "\"Independence of Brazil\", revision 1373868391"
+    },
+    {
+      "dissent": false,
       "id": "independence-of-brazil-1822",
       "kind": "event",
       "locator": "\"Independence of Brazil\", revision 1373868391"
@@ -32615,6 +32705,12 @@
       "id": "india-pakistan-war-of-1971",
       "kind": "event",
       "locator": "\"India–Pakistan war of 1971\", revision 1371969450"
+    },
+    {
+      "dissent": false,
+      "id": "indian-campaign-of-ahmad-shah-durrani",
+      "kind": "event",
+      "locator": "\"Indian campaign of Ahmad Shah Durrani\", revision 1377371027"
     },
     {
       "dissent": false,
@@ -32831,6 +32927,18 @@
       "id": "invasion-of-jersey-1779",
       "kind": "event",
       "locator": "\"Invasion of Jersey (1779)\", revision 1370624028"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-martinique-1759",
+      "kind": "event",
+      "locator": "\"Invasion of Martinique (1759)\", revision 1370624049"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-martinique-1762",
+      "kind": "event",
+      "locator": "\"Invasion of Martinique (1762)\", revision 1370624050"
     },
     {
       "dissent": false,
@@ -34208,6 +34316,12 @@
     },
     {
       "dissent": false,
+      "id": "los-angeles-chinese-massacre-of-1871",
+      "kind": "event",
+      "locator": "\"Los Angeles Chinese massacre of 1871\", revision 1382967153"
+    },
+    {
+      "dissent": false,
       "id": "louisiana-purchase",
       "kind": "event",
       "locator": "\"Louisiana Purchase\", revision 1382192502"
@@ -34265,6 +34379,12 @@
       "id": "lunenburg-campaign-1758",
       "kind": "event",
       "locator": "\"Lunenburg campaign (1758)\", revision 1370627192"
+    },
+    {
+      "dissent": false,
+      "id": "luso-chinese-agreement",
+      "kind": "event",
+      "locator": "\"Luso-Chinese agreement\", revision 1369125797"
     },
     {
       "dissent": false,
@@ -35435,6 +35555,12 @@
       "id": "newburgh-conspiracy",
       "kind": "event",
       "locator": "\"Newburgh Conspiracy\", revision 1381660769"
+    },
+    {
+      "dissent": false,
+      "id": "newfoundland-expedition",
+      "kind": "event",
+      "locator": "\"Newfoundland expedition\", revision 1375768683"
     },
     {
       "dissent": false,
@@ -39152,6 +39278,12 @@
     },
     {
       "dissent": false,
+      "id": "second-herat-war",
+      "kind": "event",
+      "locator": "\"Second Herat War\", revision 1376434715"
+    },
+    {
+      "dissent": false,
       "id": "second-hundred-years-war",
       "kind": "event",
       "locator": "\"Second Hundred Years' War\", revision 1381753701"
@@ -40190,6 +40322,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-delhi-1804",
+      "kind": "event",
+      "locator": "\"Siege of Delhi (1804)\", revision 1370740686"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-delhi-1857",
       "kind": "event",
       "locator": "\"Siege of Delhi (1857)\", revision 1380233517"
@@ -40601,6 +40739,12 @@
       "id": "siege-of-havana",
       "kind": "event",
       "locator": "\"Siege of Havana\", revision 1381773426"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-herat-1448",
+      "kind": "event",
+      "locator": "\"Siege of Herat (1448)\", revision 1370741857"
     },
     {
       "dissent": false,
@@ -41828,9 +41972,27 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-samarkand-1490s",
+      "kind": "event",
+      "locator": "\"Siege of Samarkand (1490s)\", revision 1370744962"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-samarkand-1497",
       "kind": "event",
       "locator": "\"Siege of Samarkand (1497)\", revision 1370744965"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-samarkand-1501",
+      "kind": "event",
+      "locator": "\"Siege of Samarkand (1501)\", revision 1370744967"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-samarkand-1868",
+      "kind": "event",
+      "locator": "\"Siege of Samarkand (1868)\", revision 1382504665"
     },
     {
       "dissent": false,
@@ -41900,9 +42062,33 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-smolensk-1502",
+      "kind": "event",
+      "locator": "\"Siege of Smolensk (1502)\", revision 1370745355"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-smolensk-1514",
+      "kind": "event",
+      "locator": "\"Siege of Smolensk (1514)\", revision 1370745357"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-smolensk-1609-1611",
       "kind": "event",
       "locator": "\"Siege of Smolensk (1609–1611)\", revision 1370745361"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-smolensk-1632-1633",
+      "kind": "event",
+      "locator": "\"Siege of Smolensk (1632–1633)\", revision 1370745365"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-smolensk-1654",
+      "kind": "event",
+      "locator": "\"Siege of Smolensk (1654)\", revision 1370745370"
     },
     {
       "dissent": false,
@@ -42005,6 +42191,12 @@
       "id": "siege-of-takatenjin-1581",
       "kind": "event",
       "locator": "\"Siege of Takatenjin (1581)\", revision 1380189243"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-takato-1545",
+      "kind": "event",
+      "locator": "\"Siege of Takatō (1545)\", revision 1370745641"
     },
     {
       "dissent": false,
@@ -42788,6 +42980,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-american-war",
+      "kind": "event",
+      "locator": "\"Spanish–American War\", revision 1374740923"
+    },
+    {
+      "dissent": false,
       "id": "spanish-american-war-1898",
       "kind": "event",
       "locator": "\"Spanish–American War\", revision 1374740923"
@@ -43271,6 +43469,12 @@
       "id": "swiss-peasant-war-of-1653",
       "kind": "event",
       "locator": "\"Swiss peasant war of 1653\", revision 1380143750"
+    },
+    {
+      "dissent": false,
+      "id": "syrian-peasant-revolt-1834-1835",
+      "kind": "event",
+      "locator": "\"Syrian peasant revolt (1834–1835)\", revision 1370749359"
     },
     {
       "dissent": false,
@@ -44111,6 +44315,12 @@
       "id": "transition-from-ming-to-qing",
       "kind": "event",
       "locator": "\"Transition from Ming to Qing\", revision 1379283440"
+    },
+    {
+      "dissent": false,
+      "id": "transvaal-civil-war",
+      "kind": "event",
+      "locator": "\"Transvaal Civil War\", revision 1370751368"
     },
     {
       "dissent": false,

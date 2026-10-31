@@ -6680,6 +6680,23 @@
         }
       ]
     },
+    "haitian-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        },
+        {
+          "fields": [
+            "category",
+            "created",
+            "sitelinks"
+          ],
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "haitian-revolution-1791-1804": {
       "from": "git",
       "versions": [
@@ -6752,6 +6769,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "indian-campaign-of-ahmad-shah-durrani": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -6875,6 +6901,24 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "invasion-of-martinique-1759": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "invasion-of-martinique-1762": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -7418,6 +7462,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "newfoundland-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
