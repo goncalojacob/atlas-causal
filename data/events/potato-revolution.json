@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "potato-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1734629",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Potato revolution"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1734629"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Potato revolution\", revision 1317117777"
+    }
+  ],
+  "title": "Potato revolution",
+  "summary": "The English Wikipedia article \"Potato revolution\", at revision 1317117777, opens: \"The \"Potato revolution\" is the name given to the food riot that took place in the Prussian capital Berlin between April 21 and April 22/23, 1847.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1734629, imported by tools/import/wikidata.mjs. The item's own description reads \"revolt in Berlin\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1847,
+    "end": 1847
+  },
+  "place": "berlin",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-jutas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2484108",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Jutas",
+    "pt": "Batalha de Jutas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2484108"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Jutas\", revision 1370266481"
+    }
+  ],
+  "title": "Battle of Jutas",
+  "summary": "The English Wikipedia article \"Battle of Jutas\", at revision 1370266481, opens: \"The Battle of Jutas was fought on Tuesday, 13 September 1808 between Swedish and Russian troops south of Nykarleby in Ostrobothnia, Finland. Before the battle the Swedish army was in retreat after the campaign of the previous summer. The main Swedish force was retreating from Vaasa to Nykarleby. The Russians sent a force to cut off the Swedish retreat. In response the Swedes sent a force under Georg Carl von Döbeln to intercept them. The battle ended in a Swedish victory, but the main Swedish army was defeated in the Battle of Oravais the very next day.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2484108, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 battle of the Finnish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-09-13"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "finnish-war"
+}

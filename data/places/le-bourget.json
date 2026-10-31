@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "le-bourget",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q272906",
+  "sitelinks": {
+    "count": 53,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Le Bourget",
+    "pt": "Le Bourget"
+  },
+  "sources": [],
+  "names": [
+    "Le Bourget"
+  ],
+  "where": {
+    "lon": 2.4244444444444,
+    "lat": 48.934444444444,
+    "precision": "city",
+    "label": "Le Bourget"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

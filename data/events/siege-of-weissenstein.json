@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-weissenstein",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2330878",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Weissenstein"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2330878"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Weissenstein\", revision 1373818603"
+    }
+  ],
+  "title": "Siege of Weissenstein",
+  "summary": "The English Wikipedia article \"Siege of Weissenstein\", at revision 1373818603, opens: \"The siege of Weissenstein took place between 31 May and 30 September 1602, during the Polish–Swedish War of 1600–1611. Two weeks after the capture of Fellin, Grand Crown Hetman Jan Zamoyski led the Polish-Lithuanian army of 2,000 troops to besiege Weissenstein. Weissenstein, a major transportation hub in Estonia, was a site of strategic importance to both Poland and Sweden. Located among the marshes and built during the Teutonic period, the castle had strong artillery and was defended by 700 soldiers, local peasants, and townspeople. Weissenstein was a walled city with 30-meter towers at the corners and high bastions, and thus presented the attacking force with a significant barrier to success, even with siege works.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2330878, imported by tools/import/wikidata.mjs. The item's own description reads \"1602 military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1602,
+    "end": 1602,
+    "date": "1602-05-31",
+    "endDate": "1602-09-30"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "polish-swedish-war-1600-1611"
+}

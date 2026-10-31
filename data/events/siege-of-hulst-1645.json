@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-hulst-1645",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2013484",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Hulst (1645)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2013484"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Hulst (1645)\", revision 1378547188"
+    }
+  ],
+  "title": "Siege of Hulst (1645)",
+  "summary": "The English Wikipedia article \"Siege of Hulst (1645)\", at revision 1378547188, opens: \"The siege of Hulst (1645) was the last major siege of the Eighty Years' War. Dutch troops commanded by Frederick Henry conquered the heavily fortified town of Hulst after only 28 days.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2013484, imported by tools/import/wikidata.mjs. The item's own description reads \"1645 siege of the Eighty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1645,
+    "end": 1645,
+    "date": "1645-10-07",
+    "endDate": "1645-11-04"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

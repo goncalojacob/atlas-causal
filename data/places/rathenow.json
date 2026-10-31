@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "rathenow",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q525425",
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Rathenow",
+    "pt": "Rathenow"
+  },
+  "sources": [],
+  "names": [
+    "Rathenow"
+  ],
+  "where": {
+    "lon": 12.333333333333,
+    "lat": 52.6,
+    "precision": "city",
+    "label": "Rathenow"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

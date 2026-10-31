@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-pirmasens",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16898546",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Pirmasens"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16898546"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pirmasens\", revision 1370586168"
+    }
+  ],
+  "title": "Battle of Pirmasens",
+  "summary": "The English Wikipedia article \"Battle of Pirmasens\", at revision 1370586168, opens: \"The Battle of Pirmasens saw the French Republican corps led by Jean René Moreaux attack the Prussian force led by Charles William Ferdinand, Duke of Brunswick-Wolfenbüttel. From prepared positions, the Prussians caught the French in a deadly crossfire, forcing them to withdraw their troops. The clash happened during the War of the First Coalition, part of a larger conflict known as the French Revolutionary Wars. In 1793 Pirmasens was part of the Landgraviate of Hesse-Darmstadt but today the city is in the state of Rhineland-Palatinate in Germany, 34.4 kilometres (21 mi) south of Kaiserslautern.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16898546, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 battle of the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-09-14"
+  },
+  "place": "pirmasens",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}

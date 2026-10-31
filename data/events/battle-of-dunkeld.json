@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-dunkeld",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2572804",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Dunkeld"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2572804"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dunkeld\", revision 1380352391"
+    }
+  ],
+  "title": "Battle of Dunkeld",
+  "summary": "The English Wikipedia article \"Battle of Dunkeld\", at revision 1380352391, opens: \"The Battle of Dunkeld was fought between Jacobite clans supporting the deposed king James VII of Scotland and a regiment of covenanters supporting William of Orange, in the streets around Dunkeld Cathedral, Dunkeld, Scotland, on 21 August 1689 and formed part of the Jacobite rising of 1689, commonly called Dundee's rising in Scotland. The battlefield was added to the Inventory of Historic Battlefields in Scotland in 2012.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2572804, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the Jacobite rising of 1689\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1689,
+    "end": 1689,
+    "date": "1689-08-21"
+  },
+  "place": "dunkeld",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "jacobite-risings"
+}
