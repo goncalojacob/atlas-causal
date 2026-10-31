@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-hebron",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4554399",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Hebron"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4554399"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hebron\", revision 1370442752"
+    }
+  ],
+  "title": "Battle of Hebron",
+  "summary": "The English Wikipedia article \"Battle of Hebron\", at revision 1370442752, opens: \"The Battle of Hebron occurred in early August 1834, when the forces of Ibrahim Pasha of Egypt launched an assault against Hebron to crush the last pocket of significant resistance in Palestine during the Peasants' revolt in Palestine. After heavy street battles, the Egyptian army defeated the rebels of Hebron, and afterward subjected its inhabitants to violence following the fall of the city. About 500 civilians and rebels were killed, while the Egyptian Army experienced 260 casualties.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4554399, imported by tools/import/wikidata.mjs. The item's own description reads \"1834 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1834,
+    "end": 1834,
+    "date": "1834-07-24"
+  },
+  "place": "hebron",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peasant-s-revolt-in-palestine"
+}
