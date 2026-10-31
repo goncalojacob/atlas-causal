@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "jindandao-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6202099",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Jindandao incident"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6202099"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Jindandao incident\", revision 1381694432"
+    }
+  ],
+  "title": "Jindandao incident",
+  "summary": "The English Wikipedia article \"Jindandao incident\", at revision 1381694432, opens: \"The Jindandao incident was a rebellion by a Han Chinese secret society called Jindandao, who rose in revolt in Inner Mongolia in November 1891 and genocidally massacred 150,000–500,000 Mongols before being suppressed by government troops in late December. The revolt devastated Mongol communities in the southeastern borderland and forced many Mongols to take refuge in northern banners. This massacre was later dubbed an incident by Chinese officials.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6202099, imported by tools/import/wikidata.mjs. The item's own description reads \"1891 rebellion in China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1891,
+    "end": 1891
+  },
+  "place": "qing-dynasty",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

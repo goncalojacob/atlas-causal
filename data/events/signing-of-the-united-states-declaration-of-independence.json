@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "signing-of-the-united-states-declaration-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7512984",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Signing of the United States Declaration of Independence",
+    "pt": "Lista dos congressistas signatários da Declaração da Independência dos Estados Unidos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7512984"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Signing of the United States Declaration of Independence\", revision 1381636639"
+    }
+  ],
+  "title": "Signing of the United States Declaration of Independence",
+  "summary": "The English Wikipedia article \"Signing of the United States Declaration of Independence\", at revision 1381636639, opens: \"The signing of the United States Declaration of Independence occurred primarily on August 2, 1776, at the Pennsylvania State House, later renamed Independence Hall, in Philadelphia. The 56 delegates to the Second Continental Congress represented the Thirteen Colonies, of which 12 voted to approve the Declaration of Independence on July 4, 1776. The New York delegation abstained because they had not yet received authorization from Albany to vote on the issue of independence. The Declaration proclaimed the Thirteen Colonies were now \"free and independent States\", no longer colonies of the Kingdom of Great Britain and, thus, no longer a part of the British Empire. The signers’ names are grouped by state, with the exception of John Hancock, as President of the Continental Congress; the states are arranged geographically from south to north, with Button Gwinnett from Georgia first, and Matthew Thornton from New Hampshire last.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7512984, imported by tools/import/wikidata.mjs. The item's own description reads \"historical event\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1776,
+    "end": 1776,
+    "date": "1776-08-02"
+  },
+  "place": "independence-hall",
+  "region": null,
+  "regionNote": null,
+  "category": "founding",
+  "actors": []
+}

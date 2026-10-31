@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "eulenburg-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q481230",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Eulenburg expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q481230"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eulenburg expedition\", revision 1357315838"
+    }
+  ],
+  "title": "Eulenburg expedition",
+  "summary": "The English Wikipedia article \"Eulenburg expedition\", at revision 1357315838, opens: \"The Eulenburg expedition was a diplomatic mission conducted by Friedrich Albrecht zu Eulenburg on behalf of Prussia and the German Customs Union in 1859–1862. Its aim was to establish diplomatic and commercial relations with China, Japan and Siam.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q481230, imported by tools/import/wikidata.mjs. The item's own description reads \"diplomatic mission conducted by Friedrich Albrecht zu Eulenburg on behalf of Prussia and the German Customs Union in 1859–1862 in China, Japan and Siam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1859,
+    "end": 1862,
+    "date": "1859-10-25"
+  },
+  "place": "qing-dynasty",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lin-shuangwen-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q499468",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Lin Shuangwen rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q499468"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lin Shuangwen rebellion\", revision 1379064818"
+    }
+  ],
+  "title": "Lin Shuangwen rebellion",
+  "summary": "The English Wikipedia article \"Lin Shuangwen rebellion\", at revision 1379064818, opens: \"The Lin Shuangwen rebellion occurred in 1787–1788 in Taiwan under the rule of the Qing dynasty. The rebellion was started by the rebel Lin Shuangwen and was pacified by the Qianlong Emperor. Lin Shuangwen was then executed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q499468, imported by tools/import/wikidata.mjs. The item's own description reads \"1787 Taiwanese rebellion against Qing Dynasty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1787,
+    "end": 1788,
+    "date": "1787-01-16"
+  },
+  "place": "taiwan-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ten-great-campaigns"
+}

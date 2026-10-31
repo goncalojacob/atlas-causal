@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "russian-conquest-of-the-caucasus",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q23039096",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Russian conquest of the Caucasus"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q23039096"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian conquest of the Caucasus\", revision 1381913579"
+    }
+  ],
+  "title": "Russian conquest of the Caucasus",
+  "summary": "The English Wikipedia article \"Russian conquest of the Caucasus\", at revision 1381913579, opens: \"The Russian conquest of the Caucasus mainly occurred between 1800 and 1864. The Russian Empire sought to control the region between the Black Sea and Caspian Sea. South of the mountains was the territory that is modern Armenia, Azerbaijan, Georgia, and parts of Iran and Turkey. North of the mountains was the North Caucasus region of modern Russia. The difficult conquest of the intervening mountains is known as the Caucasian War. Multiple wars were fought against the local rulers of the regions, as well as the dominant powers, the Ottoman Empire and Qajar Iran, for control. By 1864, the last regions were brought under Russian control.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q23039096, imported by tools/import/wikidata.mjs. The item's own description reads \"19th-century conquest of the Caucasus by the Russian Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1800,
+    "end": 1864,
+    "date": "1800-12-18",
+    "endDate": "1864-06-02"
+  },
+  "place": "caucasus",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "siege-of-kerman",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1268596",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Kerman"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1268596"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Kerman\", revision 1379773937"
+    }
+  ],
+  "title": "Siege of Kerman",
+  "summary": "The English Wikipedia article \"Siege of Kerman\", at revision 1379773937, opens: \"The siege of Kerman (1794) was the capture of the city of Kerman by the Qajar forces led by Agha Mohammad Khan Qajar against Zand forces led by Lotf Ali Khan which resulted in a decisive Qajar victory. After the siege, tens of thousands of its inhabitants were killed, blinded or taken into slavery; it took the city decades to recover.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1268596, imported by tools/import/wikidata.mjs. The item's own description reads \"1794 Qajar siege the capital of the Zand dynasty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1794,
+    "end": 1794
+  },
+  "place": "kerman",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

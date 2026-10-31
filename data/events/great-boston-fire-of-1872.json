@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "great-boston-fire-of-1872",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5598800",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Great Boston Fire of 1872",
+    "pt": "Grande incêndio de Boston"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5598800"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Boston Fire of 1872\", revision 1382076490"
+    }
+  ],
+  "title": "Great Boston Fire of 1872",
+  "summary": "The English Wikipedia article \"Great Boston Fire of 1872\", at revision 1382076490, opens: \"The Great Boston Fire of 1872 stands as the largest fire in the history of Boston, Massachusetts, and ranks as one of the most costly fire-related property losses in American history. The conflagration began at 7:20 p.m. on November 9, 1872, in the basement of a commercial warehouse at 83–87 Summer Street. The fire was finally contained around midday on November 10, after it had consumed about 65 acres (26 ha) of Boston's downtown, 776 buildings, and much of the financial district. It caused $73.5 million in damage —buildings losses totaled $13.5 million and the personal property loss was valued at $60 million. The number of fatalities is believed to have been 26 to \"at least 30\", depending on source, including 11 or 12 firefighters.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5598800, imported by tools/import/wikidata.mjs. The item's own description reads \"largest fire in Boston\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1872,
+    "end": 1872,
+    "date": "1872-11-09",
+    "endDate": "1872-11-10"
+  },
+  "place": "boston",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

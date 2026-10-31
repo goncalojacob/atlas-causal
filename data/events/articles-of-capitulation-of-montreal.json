@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "articles-of-capitulation-of-montreal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2865739",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Articles of Capitulation of Montreal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2865739"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Articles of Capitulation of Montreal\", revision 1382421004"
+    }
+  ],
+  "title": "Articles of Capitulation of Montreal",
+  "summary": "The English Wikipedia article \"Articles of Capitulation of Montreal\", at revision 1382421004, opens: \"The Articles of Capitulation of Montreal were agreed upon between the Governor General of New France, Pierre François de Rigaud, Marquis de Vaudreuil-Cavagnal, and Major-General Jeffery Amherst on behalf of the French and British crowns. They were signed on 8 September 1760 in the British camp before the city of Montreal, during the French and Indian War after a two-month campaign which led to the fall of the city.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2865739, imported by tools/import/wikidata.mjs. The item's own description reads \"negotiated terms of surrender of the colony of New France to Great Britain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1760,
+    "end": 1760,
+    "date": "1760-09-08"
+  },
+  "place": "new-france-q170604",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "conquest-of-new-france"
+}

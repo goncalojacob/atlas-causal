@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "transvaal-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7835391",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Transvaal Civil War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7835391"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Transvaal Civil War\", revision 1370751368"
+    }
+  ],
+  "title": "Transvaal Civil War",
+  "summary": "The English Wikipedia article \"Transvaal Civil War\", at revision 1370751368, opens: \"The Transvaal Civil War was a series of skirmishes during the early 1860s in the South African Republic, or Transvaal, in the area now comprising the Gauteng, Limpopo, Mpumalanga, and North West provinces of South Africa. It began after the British government had recognised trekkers living in the Transvaal as independent in 1854. The Boers divided into numerous political factions. The war ended in 1864, when an armistice treaty was signed under a karee tree south of the site of the later town of Brits.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7835391, imported by tools/import/wikidata.mjs. The item's own description reads \"series of skirmishes in the South African Republic (Transvaal) in the early 1860s\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1864
+  },
+  "place": "south-african-republic",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

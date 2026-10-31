@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "philippsburg",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q541161",
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Philippsburg",
+    "pt": "Philippsburg"
+  },
+  "sources": [],
+  "names": [
+    "Philippsburg"
+  ],
+  "where": {
+    "lon": 8.4547222222222,
+    "lat": 49.236944444444,
+    "precision": "city",
+    "label": "Philippsburg"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

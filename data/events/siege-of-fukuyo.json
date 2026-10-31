@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "siege-of-fukuyo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2341266",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Fukuyo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2341266"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fukuyo\", revision 1370741339"
+    }
+  ],
+  "title": "Siege of Fukuyo",
+  "summary": "The English Wikipedia article \"Siege of Fukuyo\", at revision 1370741339, opens: \"The siege of Fukuyo was one of many steps taken by the Japanese feudal lord Takeda Shingen in his bid to seize control of Shinano Province. The fortress at Fukuyo lay in the Ina valley, south of Lake Suwa. Tozawa Yorichika, an ally of Takatō Yoritsugu, lord of Takatō Castle, surrendered quickly. The Battle of Ankokuji followed the siege.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2341266, imported by tools/import/wikidata.mjs. The item's own description reads \"1542 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1542,
+    "end": 1542
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

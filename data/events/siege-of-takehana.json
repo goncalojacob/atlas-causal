@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-takehana",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7510432",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Takehana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510432"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Takehana\", revision 1370745648"
+    }
+  ],
+  "title": "Siege of Takehana",
+  "summary": "The English Wikipedia article \"Siege of Takehana\", at revision 1370745648, opens: \"The 1584 siege of Takehana was something of a follow-up to the siege of Kaganoi; the great warlord Toyotomi Hideyoshi sought to consolidate his power, particularly in the lands of his late lord Oda Nobunaga.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510432, imported by tools/import/wikidata.mjs. The item's own description reads \"1584 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1584,
+    "end": 1584,
+    "date": "1584-08-22"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

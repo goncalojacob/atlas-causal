@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "siege-of-herat-1448",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7510079",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Herat (1448)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510079"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Herat (1448)\", revision 1370741857"
+    }
+  ],
+  "title": "Siege of Herat (1448)",
+  "summary": "The English Wikipedia article \"Siege of Herat (1448)\", at revision 1370741857, opens: \"Ulugh Beg and his son Abdal-Latif Mirza marched towards Herat in the spring of 1448 in order to take Khurasan from his nephew, Ala al-Dawla Mirza, who had escaped to Quchan after the defeat at the Battle of Tarnab. They easily took the city except the Qila Ikhtiyar-al-Din and fort Neretu, both of which offered stiff resistance. At this point only the advance troops had reached Herat, which was unable to take the citadel or the Fort Neretu. The Bakharz Tajik archers offered stiff resistance and beat back many assaults by the Timurids of Samarkand. Eventually Ulugh Beg arrived 17 days after the siege had begun; after which all resistance crumbled before him in no time. Abdal-Latif Mirza succeeded in capturing the citadel Qila Ikhtiyar-al-Din in which he was imprisoned after the debacle at Nishapur and now here he managed to take 4,000 Iranian toman in coins. They followed up their victory by taking Mashhad. Ulugh Beg was unable to pursue his nephews and instead decided to return to Herat leaving his son Abdal-Latif Mirza in charge at Mashad.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510079, imported by tools/import/wikidata.mjs. The item's own description reads \"1448 battle of the Timurid wars of succession\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1448,
+    "end": 1448
+  },
+  "place": "herat",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

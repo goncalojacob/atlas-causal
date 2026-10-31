@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "french-blockade-of-the-rio-de-la-plata",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5502007",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "French blockade of the Río de la Plata",
+    "pt": "Bloqueio francês do rio da Prata"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5502007"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French blockade of the Río de la Plata\", revision 1370620356"
+    }
+  ],
+  "title": "French blockade of the Río de la Plata",
+  "summary": "The English Wikipedia article \"French blockade of the Río de la Plata\", at revision 1370620356, opens: \"The French blockade of the Río de la Plata was a two-year-long naval blockade imposed by France on the Argentine Confederation ruled by Juan Manuel de Rosas. It closed Buenos Aires to naval commerce. It was imposed in 1838 to support the Peru–Bolivian Confederation in the War of the Confederation, but continued after the end of the war. France did not land ground forces, but instead took advantage of the Uruguayan Civil War and the Argentine Civil Wars, supporting Fructuoso Rivera and Juan Antonio Lavalleja against Manuel Oribe and Rosas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5502007, imported by tools/import/wikidata.mjs. The item's own description reads \"1838-40 naval blockade of the Argentine Confederation by France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1838,
+    "end": 1840,
+    "date": "1838-03-28",
+    "endDate": "1840-10-29"
+  },
+  "place": "rio-de-la-plata",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

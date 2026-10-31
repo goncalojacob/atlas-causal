@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1789-virginia-s-5th-congressional-district-election",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q102449690",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1789 Virginia's 5th congressional district election"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q102449690"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1789 Virginia's 5th congressional district election\", revision 1382650697"
+    }
+  ],
+  "title": "1789 Virginia's 5th congressional district election",
+  "summary": "The English Wikipedia article \"1789 Virginia's 5th congressional district election\", at revision 1382650697, opens: \"The first election for Virginia's 5th congressional district took place on February 2, 1789, for a two-year term to commence on March 4 of that year. In a race that turned on the candidates' positions on the need for amendments to the recently ratified U.S. Constitution, James Madison defeated James Monroe for a place in the House of Representatives of the First Congress. It is the only congressional election in U.S. history in which two future presidents opposed each other.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q102449690, imported by tools/import/wikidata.mjs. The item's own description reads \"historic American electoral contest\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1789,
+    "end": 1789,
+    "date": "1789-02-02"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "election",
+  "actors": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "north-india",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1058785",
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "North India",
+    "pt": "Índia do Norte"
+  },
+  "sources": [],
+  "names": [
+    "North India",
+    "Índia do Norte"
+  ],
+  "where": {
+    "lon": 76.591061,
+    "lat": 31.056227,
+    "precision": "region",
+    "label": "North India"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

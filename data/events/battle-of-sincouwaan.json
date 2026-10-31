@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-sincouwaan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7443119",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Sincouwaan",
+    "pt": "Batalha da Ilha da Veniaga"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7443119"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sincouwaan\", revision 1373003891"
+    }
+  ],
+  "title": "Battle of Sincouwaan",
+  "summary": "The English Wikipedia article \"Battle of Sincouwaan\", at revision 1373003891, opens: \"The Battle of Sincouwaan, also known as Battle of Veniaga Island, was a naval battle between the Ming dynasty coast guard and a Portuguese fleet led by Martim Afonso de Mello that occurred in 1522.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7443119, imported by tools/import/wikidata.mjs. The item's own description reads \"naval battle in Asia in 1522\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1522,
+    "end": 1522
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

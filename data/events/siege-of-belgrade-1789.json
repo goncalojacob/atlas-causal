@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-belgrade-1789",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7509870",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Belgrade (1789)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7509870"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Belgrade (1789)\", revision 1382471820"
+    }
+  ],
+  "title": "Siege of Belgrade (1789)",
+  "summary": "The English Wikipedia article \"Siege of Belgrade (1789)\", at revision 1382471820, opens: \"In the siege of Belgrade a Habsburg Austrian army led by feldmarschall Ernst Gideon von Laudon besieged an Ottoman force under Osman Pasha in the fortress of Belgrade. After a three-week leaguer, the Austrians forced the surrender of the fortress. During the campaign which was part of the Austro-Turkish War, the Austrian army was greatly hampered by illness. Austria held the city until 1791 when it handed Belgrade back to the Ottomans according to the terms of the peace treaty. Several Austrian soldiers who distinguished themselves during the siege later held important commands in the subsequent French Revolutionary Wars and Napoleonic Wars. Belgrade is the capital of modern Serbia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7509870, imported by tools/import/wikidata.mjs. The item's own description reads \"1789 military action of the Austro-Turkish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1789,
+    "end": 1789,
+    "date": "1789-09-15",
+    "endDate": "1789-10-08"
+  },
+  "place": "belgrade",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "austro-turkish-war-1788-1791"
+}

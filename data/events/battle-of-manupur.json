@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-manupur",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q21244904",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Manupur"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q21244904"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Manupur\", revision 1370448904"
+    }
+  ],
+  "title": "Battle of Manupur",
+  "summary": "The English Wikipedia article \"Battle of Manupur\", at revision 1370448904, opens: \"The Battle of Manupur took place on 11 March 1748 between the forces of the rising Durrani Empire led by Afghan Emperor Ahmad Shah Durrani and the armies of the Mughal Empire led by Mughal Vizier Qamar ud-Din. It was part of Ahmad Shah's first invasion of India. The Afghans had successfully stormed through Mughal territories in Afghanistan and Punjab, defeating the Mughals at Lahore. The Mughals immediately began raising a stronger force, led by Qamar ud-Din and Mughal prince Bahadur Shah, to oppose the Afghan invasion. The Afghans continued their offensive, seizing Sirhind before the two armies met at Manupur.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q21244904, imported by tools/import/wikidata.mjs. The item's own description reads \"1748 battle fought between the Mughal Empire and the Durrani Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1748,
+    "end": 1748
+  },
+  "place": "sirhind",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "indian-campaign-of-ahmad-shah-durrani"
+}

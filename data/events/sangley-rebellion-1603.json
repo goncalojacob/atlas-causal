@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sangley-rebellion-1603",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7418039",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Sangley Rebellion (1603)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7418039"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sangley Rebellion (1603)\", revision 1377403172"
+    }
+  ],
+  "title": "Sangley Rebellion (1603)",
+  "summary": "The English Wikipedia article \"Sangley Rebellion (1603)\", at revision 1377403172, opens: \"The First Sangley Rebellion was a series of armed confrontations between overseas Chinese, known as the Sangley, and the Spanish and their allied forces in Manila under the Captaincy General of the Philippines, in October 1603. The local ethnic Chinese residents dominated trade and outnumbered Spanish residents in Manila by a five-to-one ratio, although both were minorities to the indigenous Tagalog population. The ruling Spaniards feared and resented the rival Chinese minority. Policies of persecution were enacted against the local Chinese residents and they were expelled from the city to an undesirable swamp area in 1586, which the local Chinese turned into a thriving town. The local Chinese planned a strike due to worsening relations, but it resulted in the execution of their mayor, and became a rebellion. It ended in the massacre of more than 20,000 ethnic Chinese in Manila at the hands of the Spaniards, local Japanese, and indigenous Tagalog forces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7418039, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1603,
+    "end": 1603,
+    "date": "1603-10-03",
+    "endDate": "1603-10"
+  },
+  "place": "captaincy-general-of-the-philippines",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

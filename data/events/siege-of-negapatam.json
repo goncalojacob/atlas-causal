@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-negapatam",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510266",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Negapatam"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510266"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Negapatam\", revision 1370743945"
+    }
+  ],
+  "title": "Siege of Negapatam",
+  "summary": "The English Wikipedia article \"Siege of Negapatam\", at revision 1370743945, opens: \"The siege of Negapatam was the first major offensive military action on the Indian subcontinent following the arrival of news that war had been declared between Great Britain and the Dutch Republic, beginning the Fourth Anglo-Dutch War. A British force besieged the Dutch-controlled port of Negapatam, the capital of Dutch Coromandel, on the eastern coast of India, which capitulated after the fortification's walls were breached. The Dutch garrison consisted of 500 European troops, 5,500 local troops, and 2,000 troops of Hyder Ali, the ruler of Mysore.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510266, imported by tools/import/wikidata.mjs. The item's own description reads \"1781 siege during the Fourth Anglo-Dutch War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-10-21",
+    "endDate": "1781-11-11"
+  },
+  "place": "nagapattinam",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "fourth-anglo-dutch-war"
+}

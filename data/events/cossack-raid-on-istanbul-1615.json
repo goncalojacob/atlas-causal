@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cossack-raid-on-istanbul-1615",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q41864284",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Cossack raid on Istanbul (1615)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q41864284"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cossack raid on Istanbul (1615)\", revision 1370613649"
+    }
+  ],
+  "title": "Cossack raid on Istanbul (1615)",
+  "summary": "The English Wikipedia article \"Cossack raid on Istanbul (1615)\", at revision 1370613649, opens: \"The Cossack raid on Istanbul led by Petro Konashevych-Sahaidachnyi on the capital of the Ottoman Empire was a part of the Cossack Naval Campaigns. The Cossacks on their Chaykas attacked the harbor of the city and burned it, capturing the Admiral Hasan Pasha during the unsuccessful counterattack by the defenders. During the naval campaign, several Ottoman personnel were killed, wounded and captured during the defense and counterattack. After the raid the attackers successfully returned back with looted property.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q41864284, imported by tools/import/wikidata.mjs. The item's own description reads \"1615 raid\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1615,
+    "end": 1615
+  },
+  "place": "constantinople",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "moldavian-magnate-wars"
+}

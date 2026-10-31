@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-riga-1656",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q595785",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Riga (1656)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q595785"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Riga (1656)\", revision 1378544310"
+    }
+  ],
+  "title": "Siege of Riga (1656)",
+  "summary": "The English Wikipedia article \"Siege of Riga (1656)\", at revision 1378544310, opens: \"The siege of Riga by the Russian army under Tsar Alexei Mikhailovich was the main event of the Russo-Swedish War. The fortifications of Riga consisted of a wall with ditch and 5 bastions around the old town. In 1652 Swedes had started construction of a new wall with 12 bastions around suburbs, but by 1656 the work had not been completed. The Russian vanguard consisting of the Vladimir v. Vizin reiters, Daniel Krafert infantry and Iunkmann dragoons approached Riga on August 20 and threw back the Swedes under count of Pärnu, Heinrich von Thurn into the city. Von Thurn was either killed, or captured in the action. The Swedes evacuated the suburbs and withdrew to the old town. A few days later, the main army under Tsar Alexei Mikhailovich arrived on the ships on the Duna River, and laid siege to Riga. The Russian army occupied three camps, two on the east bank of the Duna in Riga's suburbs, and a Corps under Ordyn-Nashokin on the west bank of the Duna, opposite the Kobrun entrenchment.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q595785, imported by tools/import/wikidata.mjs. The item's own description reads \"1656 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1656,
+    "end": 1656,
+    "date": "1656-08-21",
+    "endDate": "1656-10-05"
+  },
+  "place": "riga",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "northern-war-of-1655-1660"
+}

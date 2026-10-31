@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sekigahara-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q111730901",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Sekigahara Campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q111730901"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sekigahara Campaign\", revision 1374881560"
+    }
+  ],
+  "title": "Sekigahara Campaign",
+  "summary": "The English Wikipedia article \"Sekigahara Campaign\", at revision 1374881560, opens: \"The Sekigahara Campaign was a series of battles in Japan fought between the Eastern Army aligned with Tokugawa Ieyasu and the Western Army loyal to Ishida Mitsunari, culminating in the decisive Battle of Sekigahara. The conflict was sparked by a punitive expedition led by Ieyasu against the Uesugi clan in the northeastern Tōhoku region, providing Mitsunari with an opportunity to denounce Ieyasu in the name of the infant ruling taikō Toyotomi Hideyori while the Tokugawa troops were in the field.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q111730901, imported by tools/import/wikidata.mjs. The item's own description reads \"series of battles in Japan fought between the Eastern Army aligned with Tokugawa Ieyasu and the Western Army loyal to Ishida Mitsunari, culminating in the decisive Battle of Sekigahara\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1600,
+    "end": 1600,
+    "date": "1600-08-22",
+    "endDate": "1600-11-05"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

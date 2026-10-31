@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "warsaw-uprising-1794",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2591793",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Warsaw Uprising (1794)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2591793"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Warsaw Uprising (1794)\", revision 1370788012"
+    }
+  ],
+  "title": "Warsaw Uprising (1794)",
+  "summary": "The English Wikipedia article \"Warsaw Uprising (1794)\", at revision 1370788012, opens: \"The Warsaw Uprising of 1794 or Warsaw Insurrection was an armed insurrection by the people of Warsaw early in the Kościuszko Uprising. Supported by the Polish Army, the uprising aimed to throw off control by the Russian Empire of the Polish capital city (Warsaw). It began on 17 April 1794, soon after Tadeusz Kościuszko's victory at the Battle of Racławice.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2591793, imported by tools/import/wikidata.mjs. The item's own description reads \"armed uprising by Polish forces against the Russian garrison of Warsaw in 1794\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1794,
+    "end": 1794,
+    "date": "1794-04-17",
+    "endDate": "1794-04-19"
+  },
+  "place": "warsaw",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "kosciuszko-uprising"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-jerusalem-1834",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510117",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Jerusalem (1834)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510117"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Jerusalem (1834)\", revision 1370742121"
+    }
+  ],
+  "title": "Siege of Jerusalem (1834)",
+  "summary": "The English Wikipedia article \"Siege of Jerusalem (1834)\", at revision 1370742121, opens: \"The siege of Jerusalem of 1834 took place during the Peasants' revolt in Palestine, which erupted following the entry of Egyptian general Ibrahim Pasha into Ottoman Syria and his subsequent military conscription demand upon the Arab villagers of the region. The siege was engaged by local Arab peasant rebels upon an Egyptian garrison of about 2,000 soldiers, beginning from May 21 until the arrival of Ibrahim Pasha's main force on June 7. The crushing defeat of rebel reinforcements took place on June 9, led by Ibrahim Pasha.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510117, imported by tools/import/wikidata.mjs. The item's own description reads \"1834 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1834,
+    "end": 1834,
+    "date": "1834-05-21",
+    "endDate": "1834-06-07"
+  },
+  "place": "jerusalem",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peasant-s-revolt-in-palestine"
+}
