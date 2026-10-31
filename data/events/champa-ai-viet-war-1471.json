@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "champa-ai-viet-war-1471",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3391315",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Champa–Đại Việt War (1471)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3391315"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Champa–Đại Việt War (1471)\", revision 1377536652"
+    }
+  ],
+  "title": "Champa–Đại Việt War (1471)",
+  "summary": "The English Wikipedia article \"Champa–Đại Việt War (1471)\", at revision 1377536652, opens: \"The Cham–Đại Việt War of 1471 or  Vietnamese invasion of Champa was a military expedition launched by Emperor Lê Thánh Tông of Đại Việt under the Lê dynasty and is widely regarded as the event that marked the downfall of Champa. In retaliation for Cham raids, Vietnamese forces attacked and sacked the kingdom's largest city-state, Vijaya, and defeated the Cham army, bringing the kingdom of Champa to an end. After this war, the border between Đại Việt and Champa was moved from Hải Vân Pass to Cù Mông Pass from 1471 till 1611 when Nguyễn lords launched another invasion into Phú Yên in the south and annexed it in 1611.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3391315, imported by tools/import/wikidata.mjs. The item's own description reads \"invasion of the Kingdom of Champa by the Đại Việt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1471,
+    "end": 1471
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

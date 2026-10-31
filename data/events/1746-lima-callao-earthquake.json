@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1746-lima-callao-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4552798",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1746 Lima–Callao earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4552798"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1746 Lima–Callao earthquake\", revision 1373706480"
+    }
+  ],
+  "title": "1746 Lima–Callao earthquake",
+  "summary": "The English Wikipedia article \"1746 Lima–Callao earthquake\", at revision 1373706480, opens: \"The 1746 Lima–Callao earthquake occurred at 22:30 local time on 28 October with a moment magnitude of 8.6–8.8 and a maximum Mercalli intensity of XI (Extreme). The epicenter was located about 90 km (56 mi) north-northwest of the capital Lima, which was almost completely destroyed, and the subsequent tsunami devastated the port city of Callao. It was the deadliest earthquake in Peru's history prior to the 1970 earthquake.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4552798, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake and tsunami in Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1746,
+    "end": 1746,
+    "date": "1746-10-28"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

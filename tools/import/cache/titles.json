@@ -37392,6 +37392,984 @@
    "qid": "Q7510304",
    "redirect": false,
    "missing": false
+  },
+  "Battle of Adairsville": {
+   "canonical": "Battle of Adairsville",
+   "qid": "Q2615801",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Brice's Cross Roads": {
+   "canonical": "Battle of Brice's Cross Roads",
+   "qid": "Q4870552",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Fort Davidson": {
+   "canonical": "Battle of Fort Davidson",
+   "qid": "Q2579523",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Guard Hill": {
+   "canonical": "Battle of Guard Hill",
+   "qid": "Q4871157",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Hitotoribashi": {
+   "canonical": "Battle of Hitotoribashi",
+   "qid": "Q860517",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Kizaki": {
+   "canonical": "Battle of Kizaki",
+   "qid": "Q4871457",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Marais des Cygnes": {
+   "canonical": "Battle of Marais des Cygnes",
+   "qid": "Q3854317",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Mollahasanli": {
+   "canonical": "Battle of Mollahasanli",
+   "qid": "Q16537286",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Pułtusk (1806)": {
+   "canonical": "Battle of Pułtusk (1806)",
+   "qid": "Q1192867",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Saint Mary's Church": {
+   "canonical": "Battle of Saint Mary's Church",
+   "qid": "Q2470074",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Tupelo": {
+   "canonical": "Battle of Tupelo",
+   "qid": "Q4872606",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Un no Kuchi": {
+   "canonical": "Battle of Un no Kuchi",
+   "qid": "Q2890433",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Verdun (1792)": {
+   "canonical": "Battle of Verdun (1792)",
+   "qid": "Q572883",
+   "redirect": false,
+   "missing": false
+  },
+  "Bloody Sunday (1887)": {
+   "canonical": "Bloody Sunday (1887)",
+   "qid": "Q1325388",
+   "redirect": false,
+   "missing": false
+  },
+  "Chanka–Inca War": {
+   "canonical": "Chanka–Inca War",
+   "qid": "Q5643516",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Barcelona (1705)": {
+   "canonical": "Siege of Barcelona (1705)",
+   "qid": "Q638462",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Buda (1541)": {
+   "canonical": "Siege of Buda (1541)",
+   "qid": "Q604587",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Hachigata (1590)": {
+   "canonical": "Siege of Hachigata (1590)",
+   "qid": "Q7510067",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Kakegawa": {
+   "canonical": "Siege of Kakegawa",
+   "qid": "Q2188124",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Kanie": {
+   "canonical": "Siege of Kanie",
+   "qid": "Q7510150",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Katsurao": {
+   "canonical": "Siege of Katsurao",
+   "qid": "Q1980637",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Maastricht (1673)": {
+   "canonical": "Siege of Maastricht (1673)",
+   "qid": "Q540121",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Yoshida Castle": {
+   "canonical": "Siege of Yoshida Castle",
+   "qid": "Q5055597",
+   "redirect": false,
+   "missing": false
+  },
+  "Third Battle of Murfreesboro": {
+   "canonical": "Third Battle of Murfreesboro",
+   "qid": "Q4993803",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Castiglione": {
+   "canonical": "Battle of Castiglione",
+   "qid": "Q610328",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Dogger Bank (1781)": {
+   "canonical": "Battle of Dogger Bank (1781)",
+   "qid": "Q1860316",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Glasgow, Missouri": {
+   "canonical": "Battle of Glasgow, Missouri",
+   "qid": "Q4871102",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Jerusalem Plank Road": {
+   "canonical": "Battle of Jerusalem Plank Road",
+   "qid": "Q4871326",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Kiyosu Castle": {
+   "canonical": "Battle of Kiyosu Castle",
+   "qid": "Q11620514",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Kolb's Farm": {
+   "canonical": "Battle of Kolb's Farm",
+   "qid": "Q4871474",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Lagos": {
+   "canonical": "Battle of Lagos",
+   "qid": "Q464226",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Lissa (1811)": {
+   "canonical": "Battle of Lissa (1811)",
+   "qid": "Q2473448",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Oshikibata": {
+   "canonical": "Battle of Oshikibata",
+   "qid": "Q4871956",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Pleasant Hill": {
+   "canonical": "Battle of Pleasant Hill",
+   "qid": "Q572095",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Resaca": {
+   "canonical": "Battle of Resaca",
+   "qid": "Q2615826",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Suriagehara": {
+   "canonical": "Battle of Suriagehara",
+   "qid": "Q860789",
+   "redirect": false,
+   "missing": false
+  },
+  "Invasion of Shikoku (1585)": {
+   "canonical": "Invasion of Shikoku (1585)",
+   "qid": "Q6059697",
+   "redirect": false,
+   "missing": false
+  },
+  "Second Battle of Independence": {
+   "canonical": "Second Battle of Independence",
+   "qid": "Q3808756",
+   "redirect": false,
+   "missing": false
+  },
+  "Second Battle of Kernstown": {
+   "canonical": "Second Battle of Kernstown",
+   "qid": "Q4128034",
+   "redirect": false,
+   "missing": false
+  },
+  "Second Battle of Ream's Station": {
+   "canonical": "Second Battle of Ream's Station",
+   "qid": "Q7443109",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Chōkō-ji": {
+   "canonical": "Siege of Chōkō-ji",
+   "qid": "Q7509937",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Hikida Castle": {
+   "canonical": "Siege of Hikida Castle",
+   "qid": "Q11679996",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Nanao": {
+   "canonical": "Siege of Nanao",
+   "qid": "Q7510262",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Shimoda": {
+   "canonical": "Siege of Shimoda",
+   "qid": "Q2500644",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Takatenjin (1581)": {
+   "canonical": "Siege of Takatenjin (1581)",
+   "qid": "Q2275430",
+   "redirect": false,
+   "missing": false
+  },
+  "Treaty of Lisbon (1668)": {
+   "canonical": "Treaty of Lisbon (1668)",
+   "qid": "Q1456443",
+   "redirect": false,
+   "missing": false
+  },
+  "Treaty of Vienna (1866)": {
+   "canonical": "Treaty of Vienna (1866)",
+   "qid": "Q474843",
+   "redirect": false,
+   "missing": false
+  },
+  "Afsharid conquests in the Persian Gulf and Oman": {
+   "canonical": "Afsharid conquests in the Persian Gulf and Oman",
+   "qid": "Q18350408",
+   "redirect": false,
+   "missing": false
+  },
+  "Apalachee massacre": {
+   "canonical": "Apalachee massacre",
+   "qid": "Q4779013",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Cape Corvo": {
+   "canonical": "Battle of Cape Corvo",
+   "qid": "Q4870641",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Cochin": {
+   "canonical": "Battle of Cochin",
+   "qid": "Q4870768",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Kuisegawa": {
+   "canonical": "Battle of Kuisegawa",
+   "qid": "Q4871499",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Mytilene (1690)": {
+   "canonical": "Battle of Mytilene (1690)",
+   "qid": "Q4677392",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Pavan Khind": {
+   "canonical": "Battle of Pavan Khind",
+   "qid": "Q4872000",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Playa Honda": {
+   "canonical": "Battle of Playa Honda",
+   "qid": "Q1933282",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Saraighat": {
+   "canonical": "Battle of Saraighat",
+   "qid": "Q4872317",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of the Oinousses Islands": {
+   "canonical": "Battle of the Oinousses Islands",
+   "qid": "Q4872983",
+   "redirect": false,
+   "missing": false
+  },
+  "Conquest of New France": {
+   "canonical": "Conquest of New France",
+   "qid": "Q429230",
+   "redirect": false,
+   "missing": false
+  },
+  "Kan'ei Great Famine": {
+   "canonical": "Kan'ei Great Famine",
+   "qid": "Q11457497",
+   "redirect": false,
+   "missing": false
+  },
+  "Kunohe rebellion": {
+   "canonical": "Kunohe rebellion",
+   "qid": "Q7510166",
+   "redirect": false,
+   "missing": false
+  },
+  "List of wars involving Saudi Arabia": {
+   "canonical": "List of wars involving Saudi Arabia",
+   "qid": "Q6644998",
+   "redirect": false,
+   "missing": false
+  },
+  "Osaka Conference of 1875": {
+   "canonical": "Osaka Conference of 1875",
+   "qid": "Q2916939",
+   "redirect": false,
+   "missing": false
+  },
+  "Port Hamilton incident": {
+   "canonical": "Port Hamilton incident",
+   "qid": "Q5371343",
+   "redirect": false,
+   "missing": false
+  },
+  "Sack of Delhi (1757)": {
+   "canonical": "Sack of Delhi (1757)",
+   "qid": "Q128996486",
+   "redirect": false,
+   "missing": false
+  },
+  "Safavid conquest of Shirvan": {
+   "canonical": "Safavid conquest of Shirvan",
+   "qid": "Q4120035",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Jeddah": {
+   "canonical": "Siege of Jeddah",
+   "qid": "Q19610920",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Ōtsu": {
+   "canonical": "Siege of Ōtsu",
+   "qid": "Q7510547",
+   "redirect": false,
+   "missing": false
+  },
+  "Tenchūgumi incident": {
+   "canonical": "Tenchūgumi incident",
+   "qid": "Q7699558",
+   "redirect": false,
+   "missing": false
+  },
+  "Travancore–Dutch War": {
+   "canonical": "Travancore–Dutch War",
+   "qid": "Q1849379",
+   "redirect": false,
+   "missing": false
+  },
+  "1674 Ambon earthquake and megatsunami": {
+   "canonical": "1674 Ambon earthquake and megatsunami",
+   "qid": "Q106859969",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Aghaiani": {
+   "canonical": "Battle of Aghaiani",
+   "qid": "Q4870223",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Asai": {
+   "canonical": "Battle of Asai",
+   "qid": "Q11556971",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Kanōguchi": {
+   "canonical": "Battle of Kanōguchi",
+   "qid": "Q4871383",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Khushab": {
+   "canonical": "Battle of Khushab",
+   "qid": "Q4871430",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Kizugawa": {
+   "canonical": "Battle of Kizugawa",
+   "qid": "Q1083495",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Langfang": {
+   "canonical": "Battle of Langfang",
+   "qid": "Q18356964",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Nadaun": {
+   "canonical": "Battle of Nadaun",
+   "qid": "Q4871844",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Penfui": {
+   "canonical": "Battle of Penfui",
+   "qid": "Q950914",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Purandar": {
+   "canonical": "Battle of Purandar",
+   "qid": "Q19882272",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Qarabagh (1469)": {
+   "canonical": "Battle of Qarabagh (1469)",
+   "qid": "Q55707116",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Sharur": {
+   "canonical": "Battle of Sharur",
+   "qid": "Q12849799",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Tabaruzaka": {
+   "canonical": "Battle of Tabaruzaka",
+   "qid": "Q9347968",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Tashiskari": {
+   "canonical": "Battle of Tashiskari",
+   "qid": "Q4872517",
+   "redirect": false,
+   "missing": false
+  },
+  "Campaign of Danture": {
+   "canonical": "Campaign of Danture",
+   "qid": "Q5027837",
+   "redirect": false,
+   "missing": false
+  },
+  "Capture of Samarkand (1740)": {
+   "canonical": "Capture of Samarkand (1740)",
+   "qid": "Q65168385",
+   "redirect": false,
+   "missing": false
+  },
+  "Dahnama": {
+   "canonical": "Dahnama",
+   "qid": "Q25394544",
+   "redirect": false,
+   "missing": false
+  },
+  "First Aceh Expedition": {
+   "canonical": "First Aceh Expedition",
+   "qid": "Q2269195",
+   "redirect": false,
+   "missing": false
+  },
+  "Herat campaign of 1730–1732": {
+   "canonical": "Herat campaign of 1730–1732",
+   "qid": "Q18206401",
+   "redirect": false,
+   "missing": false
+  },
+  "Kukunian Expedition": {
+   "canonical": "Kukunian Expedition",
+   "qid": "Q5615295",
+   "redirect": false,
+   "missing": false
+  },
+  "Kyōtoku incident": {
+   "canonical": "Kyōtoku incident",
+   "qid": "Q6453098",
+   "redirect": false,
+   "missing": false
+  },
+  "Luchuan–Pingmian campaigns": {
+   "canonical": "Luchuan–Pingmian campaigns",
+   "qid": "Q3702778",
+   "redirect": false,
+   "missing": false
+  },
+  "Nader Shah's Central Asian campaign": {
+   "canonical": "Nader Shah's Central Asian campaign",
+   "qid": "Q18378963",
+   "redirect": false,
+   "missing": false
+  },
+  "Acehnese–Portuguese conflicts": {
+   "canonical": "Acehnese–Portuguese conflicts",
+   "qid": "Q97348258",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Aga-Cayiri": {
+   "canonical": "Battle of Aga-Cayiri",
+   "qid": "Q129578",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Chapakchur": {
+   "canonical": "Battle of Chapakchur",
+   "qid": "Q4870710",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Cuddalore (1758)": {
+   "canonical": "Battle of Cuddalore (1758)",
+   "qid": "Q2606331",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Delhi (1757)": {
+   "canonical": "Battle of Delhi (1757)",
+   "qid": "Q17016230",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Herat (1729)": {
+   "canonical": "Battle of Herat (1729)",
+   "qid": "Q25212290",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Khwar Pass": {
+   "canonical": "Battle of Khwar Pass",
+   "qid": "Q18205170",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Kirkhbulakh": {
+   "canonical": "Battle of Kirkhbulakh",
+   "qid": "Q16377676",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Negapatam (1758)": {
+   "canonical": "Battle of Negapatam (1758)",
+   "qid": "Q2606313",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Sangan": {
+   "canonical": "Battle of Sangan",
+   "qid": "Q18205176",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Sinhagad": {
+   "canonical": "Battle of Sinhagad",
+   "qid": "Q4872383",
+   "redirect": false,
+   "missing": false
+  },
+  "Battles of La Naval de Manila": {
+   "canonical": "Battles of La Naval de Manila",
+   "qid": "Q2265603",
+   "redirect": false,
+   "missing": false
+  },
+  "Imperial decree of declaration of war against foreign powers": {
+   "canonical": "Imperial decree of declaration of war against foreign powers",
+   "qid": "Q6006544",
+   "redirect": false,
+   "missing": false
+  },
+  "Mughal–Persian wars": {
+   "canonical": "Mughal–Persian wars",
+   "qid": "Q17077919",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Malacca (1568)": {
+   "canonical": "Siege of Malacca (1568)",
+   "qid": "Q4273940",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Odawara (1561)": {
+   "canonical": "Siege of Odawara (1561)",
+   "qid": "Q2017254",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Odawara (1569)": {
+   "canonical": "Siege of Odawara (1569)",
+   "qid": "Q1846216",
+   "redirect": false,
+   "missing": false
+  },
+  "Tenshō-Jingo war": {
+   "canonical": "Tenshō-Jingo war",
+   "qid": "Q10939819",
+   "redirect": false,
+   "missing": false
+  },
+  "Treaty of Bassein (1802)": {
+   "canonical": "Treaty of Bassein (1802)",
+   "qid": "Q2518823",
+   "redirect": false,
+   "missing": false
+  },
+  "Venetian bombardments of the Beylik of Tunis": {
+   "canonical": "Venetian bombardments of the Beylik of Tunis",
+   "qid": "Q28001553",
+   "redirect": false,
+   "missing": false
+  },
+  "1757 Hajj caravan raid": {
+   "canonical": "1757 Hajj caravan raid",
+   "qid": "Q20988268",
+   "redirect": false,
+   "missing": false
+  },
+  "American-Algerian War": {
+   "canonical": "American-Algerian War",
+   "qid": "Q122639374",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Geok Tepe (1879)": {
+   "canonical": "Battle of Geok Tepe (1879)",
+   "qid": "Q4871089",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Itakhuli": {
+   "canonical": "Battle of Itakhuli",
+   "qid": "Q4871290",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Kars (1745)": {
+   "canonical": "Battle of Kars (1745)",
+   "qid": "Q18356954",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Rajmahal": {
+   "canonical": "Battle of Rajmahal",
+   "qid": "Q19895686",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Zarghan": {
+   "canonical": "Battle of Zarghan",
+   "qid": "Q18162680",
+   "redirect": false,
+   "missing": false
+  },
+  "Bombardment of Algiers (1683)": {
+   "canonical": "Bombardment of Algiers (1683)",
+   "qid": "Q16010253",
+   "redirect": false,
+   "missing": false
+  },
+  "Capture of Baghdad (1624)": {
+   "canonical": "Capture of Baghdad (1624)",
+   "qid": "Q5036984",
+   "redirect": false,
+   "missing": false
+  },
+  "Great Clearance": {
+   "canonical": "Great Clearance",
+   "qid": "Q5598975",
+   "redirect": false,
+   "missing": false
+  },
+  "Jungjong Restoration": {
+   "canonical": "Jungjong Restoration",
+   "qid": "Q626301",
+   "redirect": false,
+   "missing": false
+  },
+  "Nader Shah's Mesopotamian campaign": {
+   "canonical": "Nader Shah's Mesopotamian campaign",
+   "qid": "Q18209416",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Baghdad (1733)": {
+   "canonical": "Siege of Baghdad (1733)",
+   "qid": "Q18358461",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Diu (1531)": {
+   "canonical": "Siege of Diu (1531)",
+   "qid": "Q7509975",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Kandahar (1605–1606)": {
+   "canonical": "Siege of Kandahar (1605–1606)",
+   "qid": "Q7510146",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Nishapur (1755)": {
+   "canonical": "Siege of Nishapur (1755)",
+   "qid": "Q132175133",
+   "redirect": false,
+   "missing": false
+  },
+  "Tahmasp I's Kakhetian and Kartlian campaigns": {
+   "canonical": "Tahmasp I's Kakhetian and Kartlian campaigns",
+   "qid": "Q16369829",
+   "redirect": false,
+   "missing": false
+  },
+  "1687 Peru earthquake": {
+   "canonical": "1687 Peru earthquake",
+   "qid": "Q4551867",
+   "redirect": false,
+   "missing": false
+  },
+  "1797 Sumatra earthquake": {
+   "canonical": "1797 Sumatra earthquake",
+   "qid": "Q4553469",
+   "redirect": false,
+   "missing": false
+  },
+  "1900 Amur anti-Chinese pogroms": {
+   "canonical": "1900 Amur anti-Chinese pogroms",
+   "qid": "Q4222418",
+   "redirect": false,
+   "missing": false
+  },
+  "Anglo-Dutch Gold Coast Treaty (1867)": {
+   "canonical": "Anglo-Dutch Gold Coast Treaty (1867)",
+   "qid": "Q4763611",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle for Mexico City": {
+   "canonical": "Battle for Mexico City",
+   "qid": "Q2546566",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Novara (1500)": {
+   "canonical": "Battle of Novara (1500)",
+   "qid": "Q4871919",
+   "redirect": false,
+   "missing": false
+  },
+  "Bombardment of Algiers (1682)": {
+   "canonical": "Bombardment of Algiers (1682)",
+   "qid": "Q2909585",
+   "redirect": false,
+   "missing": false
+  },
+  "Dano-Swedish War (1658–1660)": {
+   "canonical": "Dano-Swedish War (1658–1660)",
+   "qid": "Q417744",
+   "redirect": false,
+   "missing": false
+  },
+  "Era de Francia": {
+   "canonical": "Era de Francia",
+   "qid": "Q5502314",
+   "redirect": false,
+   "missing": false
+  },
+  "Mughal–Safavid War (1637–1638)": {
+   "canonical": "Mughal–Safavid War (1637–1638)",
+   "qid": "Q127604703",
+   "redirect": false,
+   "missing": false
+  },
+  "New Mexico campaign": {
+   "canonical": "New Mexico campaign",
+   "qid": "Q1739881",
+   "redirect": false,
+   "missing": false
+  },
+  "Nicaragua Crisis of 1894–1895": {
+   "canonical": "Nicaragua Crisis of 1894–1895",
+   "qid": "Q18161653",
+   "redirect": false,
+   "missing": false
+  },
+  "Rebellion of the Alpujarras (1499–1501)": {
+   "canonical": "Rebellion of the Alpujarras (1499–1501)",
+   "qid": "Q22948744",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Ceuta (1790–1791)": {
+   "canonical": "Siege of Ceuta (1790–1791)",
+   "qid": "Q28088235",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Genoa (1800)": {
+   "canonical": "Siege of Genoa (1800)",
+   "qid": "Q577441",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Rouen (1418–1419)": {
+   "canonical": "Siege of Rouen (1418–1419)",
+   "qid": "Q815203",
+   "redirect": false,
+   "missing": false
+  },
+  "Treaty of Paris (1810)": {
+   "canonical": "Treaty of Paris (1810)",
+   "qid": "Q177464",
+   "redirect": false,
+   "missing": false
+  },
+  "Treaty of Paris (1857)": {
+   "canonical": "Treaty of Paris (1857)",
+   "qid": "Q950481",
+   "redirect": false,
+   "missing": false
+  },
+  "Treaty of Vienna (1725)": {
+   "canonical": "Treaty of Vienna (1725)",
+   "qid": "Q698176",
+   "redirect": false,
+   "missing": false
+  },
+  "Treaty with Algiers (1815)": {
+   "canonical": "Treaty with Algiers (1815)",
+   "qid": "Q7837330",
+   "redirect": false,
+   "missing": false
+  },
+  "1746 Lima–Callao earthquake": {
+   "canonical": "1746 Lima–Callao earthquake",
+   "qid": "Q4552798",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Fleurus (1622)": {
+   "canonical": "Battle of Fleurus (1622)",
+   "qid": "Q1642290",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of St. Quentin (1871)": {
+   "canonical": "Battle of St. Quentin (1871)",
+   "qid": "Q661409",
+   "redirect": false,
+   "missing": false
+  },
+  "Bombardment of Algiers (1783)": {
+   "canonical": "Bombardment of Algiers (1783)",
+   "qid": "Q4940496",
+   "redirect": false,
+   "missing": false
+  },
+  "Champa–Đại Việt War (1471)": {
+   "canonical": "Champa–Đại Việt War (1471)",
+   "qid": "Q3391315",
+   "redirect": false,
+   "missing": false
+  },
+  "Liberal Revolution of 1895": {
+   "canonical": "Liberal Revolution of 1895",
+   "qid": "Q1822896",
+   "redirect": false,
+   "missing": false
+  },
+  "Persian Gulf campaign of 1819": {
+   "canonical": "Persian Gulf campaign of 1819",
+   "qid": "Q60746515",
+   "redirect": false,
+   "missing": false
+  },
+  "Russia–Korea Treaty of 1884": {
+   "canonical": "Russia–Korea Treaty of 1884",
+   "qid": "Q7382322",
+   "redirect": false,
+   "missing": false
+  },
+  "Siamese–Vietnamese War (1771–1773)": {
+   "canonical": "Siamese–Vietnamese War (1771–1773)",
+   "qid": "Q2280725",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Baghdad (1625–1626)": {
+   "canonical": "Siege of Baghdad (1625–1626)",
+   "qid": "Q5959281",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Paris (1429)": {
+   "canonical": "Siege of Paris (1429)",
+   "qid": "Q3485982",
+   "redirect": false,
+   "missing": false
+  },
+  "Treaty of London (1518)": {
+   "canonical": "Treaty of London (1518)",
+   "qid": "Q2600616",
+   "redirect": false,
+   "missing": false
+  },
+  "Treaty of London (1864)": {
+   "canonical": "Treaty of London (1864)",
+   "qid": "Q976865",
+   "redirect": false,
+   "missing": false
+  },
+  "Treaty of Madrid (1670)": {
+   "canonical": "Treaty of Madrid (1670)",
+   "qid": "Q2141140",
+   "redirect": false,
+   "missing": false
   }
  }
 }

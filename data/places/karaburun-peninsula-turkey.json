@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "karaburun-peninsula-turkey",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3119127",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Karaburun Peninsula, Turkey"
+  },
+  "sources": [],
+  "names": [
+    "Karaburun Peninsula",
+    "Karaburun Peninsula, Turkey"
+  ],
+  "where": {
+    "lon": 26.47568,
+    "lat": 38.57018,
+    "precision": "region",
+    "label": "Karaburun Peninsula, Turkey"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "aghaiani",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4692358",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Aghaiani"
+  },
+  "sources": [],
+  "names": [
+    "Aghaiani"
+  ],
+  "where": {
+    "lon": 44.545833333333334,
+    "lat": 41.9125,
+    "precision": "city",
+    "label": "Aghaiani"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

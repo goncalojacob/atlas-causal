@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-lissa-1811",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2473448",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Lissa (1811)",
+    "pt": "Batalha de Lissa (1811)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2473448"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lissa (1811)\", revision 1380913966"
+    }
+  ],
+  "title": "Battle of Lissa (1811)",
+  "summary": "The English Wikipedia article \"Battle of Lissa (1811)\", at revision 1380913966, opens: \"The Battle of Lissa, also known as the Battle of Vis, was a naval action fought between a British frigate squadron and a much larger squadron of French and Italian frigates and smaller vessels on Wednesday, 13 March 1811 during the Adriatic campaign of the Napoleonic Wars. The engagement was fought in the Adriatic Sea for possession of the strategically important Croatian island of Vis, from which the British squadron had been disrupting French shipping in the Adriatic. The French needed to control the Adriatic to supply a growing army in the Illyrian Provinces and consequently dispatched an invasion force in March 1811 consisting of six frigates, numerous smaller craft and a battalion of Italian troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2473448, imported by tools/import/wikidata.mjs. The item's own description reads \"1811 naval action in the Adriatic Sea\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1811,
+    "end": 1811,
+    "date": "1811-03-13"
+  },
+  "place": "adriatic-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "napoleonic-wars"
+}

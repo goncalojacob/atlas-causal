@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "guwahati",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q199605",
+  "sitelinks": {
+    "count": 89,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Guwahati",
+    "pt": "Guwahati"
+  },
+  "sources": [],
+  "names": [
+    "Guwahati"
+  ],
+  "where": {
+    "lon": 91.750238,
+    "lat": 26.1805876,
+    "precision": "city",
+    "label": "Guwahati"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

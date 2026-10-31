@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1900-amur-anti-chinese-pogroms",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4222418",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1900 Amur anti-Chinese pogroms"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4222418"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1900 Amur anti-Chinese pogroms\", revision 1370278955"
+    }
+  ],
+  "title": "1900 Amur anti-Chinese pogroms",
+  "summary": "The English Wikipedia article \"1900 Amur anti-Chinese pogroms\", at revision 1370278955, opens: \"The 1900 Amur anti-Chinese pogroms were a series of ethnic killings (pogroms) and reprisals undertaken by the Russian Empire against subjects of the Qing dynasty of various ethnicities, including Manchu, Daur, and Han peoples. They took place in Blagoveshchensk and in the Sixty-Four Villages East of the River in the Amur region, during the same time as the Boxer Rebellion in China. The events ultimately resulted in thousands of deaths, the loss of residency for Chinese subjects living in the Sixty-Four Villages East of the River, and increased Russian control over the region. The Russian justification for the pogroms were attacks made on Russian infrastructure outside Blagoveshchensk by Chinese Boxers, which was then responded by Russian force. The pogroms themselves occurred in 17–21 July [O.S. 4–8 July] 1900.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4222418, imported by tools/import/wikidata.mjs. The item's own description reads \"1900 pogroms of ethnic Chinese in and near Blagoveshchensk, Russian Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-07-21"
+  },
+  "place": "blagoveshchensk",
+  "region": null,
+  "regionNote": null,
+  "category": "death",
+  "actors": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "glasgow-missouri",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q959618",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-30"
+  },
+  "wikipedia": {
+    "en": "Glasgow, Missouri",
+    "pt": "Glasgow (Missouri)"
+  },
+  "sources": [],
+  "names": [
+    "Glasgow",
+    "Glasgow, Missouri",
+    "Glasgow (Missouri)"
+  ],
+  "where": {
+    "lon": -92.84694444444445,
+    "lat": 39.22638888888889,
+    "precision": "city",
+    "label": "Glasgow, Missouri"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

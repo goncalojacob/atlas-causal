@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "qatraneh",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6731617",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Qatraneh"
+  },
+  "sources": [],
+  "names": [
+    "Qatraneh"
+  ],
+  "where": {
+    "lon": 36.04722222,
+    "lat": 31.25361111,
+    "precision": "city",
+    "label": "Qatraneh"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

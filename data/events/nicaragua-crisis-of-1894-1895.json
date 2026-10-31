@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nicaragua-crisis-of-1894-1895",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q18161653",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Nicaragua Crisis of 1894–1895",
+    "pt": "Crise da Nicarágua de 1895"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18161653"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nicaragua Crisis of 1894–1895\", revision 1373600380"
+    }
+  ],
+  "title": "Nicaragua Crisis of 1894–1895",
+  "summary": "The English Wikipedia article \"Nicaragua Crisis of 1894–1895\", at revision 1373600380, opens: \"The Nicaragua Crisis of 1894–1895 was triggered by the Nicaraguan annexation of the Mosquito Coast, leading to the temporary British occupation of Corinto.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18161653, imported by tools/import/wikidata.mjs. The item's own description reads \"British occupation of Corinto\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1894,
+    "end": 1895,
+    "date": "1894-02-12",
+    "endDate": "1894-11-20"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
