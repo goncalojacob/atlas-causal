@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "assassination-of-antonio-canovas-del-castillo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q17621744",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Assassination of Antonio Cánovas del Castillo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17621744"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Assassination of Antonio Cánovas del Castillo\", revision 1381474932"
+    }
+  ],
+  "title": "Assassination of Antonio Cánovas del Castillo",
+  "summary": "The English Wikipedia article \"Assassination of Antonio Cánovas del Castillo\", at revision 1381474932, opens: \"Italian anarchist Michele Angiolillo assassinated Spanish Prime Minister Antonio Cánovas del Castillo on 8 August 1897, in Gipuzkoa. The head of government had been vacationing in the Santa Águeda spa. The assassin was immediately arrested, tried, and executed. He justified the murder as revenge for torture during the Montjuïc trial.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17621744, imported by tools/import/wikidata.mjs. The item's own description reads \"1897 murder of the Spanish Primer Minister\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1897,
+    "end": 1897,
+    "date": "1897-08-08"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "death",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-narva-1581",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q15701718",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Narva (1581)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15701718"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Narva (1581)\", revision 1370743908"
+    }
+  ],
+  "title": "Siege of Narva (1581)",
+  "summary": "The English Wikipedia article \"Siege of Narva (1581)\", at revision 1370743908, opens: \"The siege of Narva was a siege and massacre initiated by Pontus De la Gardie against the Russian-controlled city of Narva in present-day Estonia. The siege resulted in a victory for the Swedes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15701718, imported by tools/import/wikidata.mjs. The item's own description reads \"1581 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1581,
+    "end": 1581,
+    "date": "1581-09-04",
+    "endDate": "1581-09-06"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "livonian-war"
+}

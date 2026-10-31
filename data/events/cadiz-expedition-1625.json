@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "cadiz-expedition-1625",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2167774",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Cádiz expedition (1625)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2167774"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cádiz expedition (1625)\", revision 1380887745"
+    }
+  ],
+  "title": "Cádiz expedition (1625)",
+  "summary": "The English Wikipedia article \"Cádiz expedition (1625)\", at revision 1380887745, opens: \"The Cádiz expedition of 1625 was a naval expedition against Spain by English and Dutch forces. The plan was put forward because after the Dissolution of the Parliament of 1625, George Villiers, 1st Duke of Buckingham, Lord High Admiral, wanted to undertake an expedition that would match the exploits of the raiders of the Elizabethan era and in doing so, would return respect to the country and its people after the political stress of the preceding years. It was a major fiasco resulting in a Spanish victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2167774, imported by tools/import/wikidata.mjs. The item's own description reads \"1625 failed English naval expedition to attack Spain.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1625,
+    "end": 1625,
+    "date": "1625-11-01",
+    "endDate": "1625-11-07"
+  },
+  "place": "cadiz",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-spanish-war-1625-1630"
+}

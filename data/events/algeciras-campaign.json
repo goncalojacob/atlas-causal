@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "algeciras-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q15282200",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Algeciras campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15282200"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Algeciras campaign\", revision 1372664705"
+    }
+  ],
+  "title": "Algeciras campaign",
+  "summary": "The English Wikipedia article \"Algeciras campaign\", at revision 1372664705, opens: \"The Algeciras campaign was an attempt by a French Navy squadron from Toulon under Counter-Admiral Charles-Alexandre Léon Durand Linois to join a Franco-Spanish fleet at Cádiz in June-July 1801 during the War of the Second Coalition prior to a planned expedition to either Egypt or Portugal. To reach Cádiz, Linois's squadron had to pass the British naval base at Gibraltar, which contained the squadron tasked with blockading Cádiz. The British squadron was commanded by Rear-admiral Sir James Saumarez. After a successful voyage between Toulon and Gibraltar in which a number of British vessels were captured, the squadron anchored at Algeciras, a fortified port city within sight of Gibraltar across Gibraltar Bay. On 6 July 1801, Saumarez attacked the anchored squadron, in the First Battle of Algeciras. Although severe damage was inflicted on all three French ships of the line, none could be successfully captured and the British were forced to withdraw without HMS Hannibal, which had grounded and was subsequently seized by the French.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15282200, imported by tools/import/wikidata.mjs. The item's own description reads \"1801 attempt by a French naval squadron from Toulon under Contre-Admiral Charles Linois to join a French and Spanish fleet\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1801,
+    "end": 1801,
+    "date": "1801-06-13",
+    "endDate": "1801-07-14"
+  },
+  "place": "strait-of-gibraltar",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

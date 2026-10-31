@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "storming-of-lemberg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q15963786",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Storming of Lemberg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15963786"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Storming of Lemberg\", revision 1382484411"
+    }
+  ],
+  "title": "Storming of Lemberg",
+  "summary": "The English Wikipedia article \"Storming of Lemberg\", at revision 1382484411, opens: \"The Storming of Lemberg or Lviv on 6 September 1704 (N.S.) was a successful Swedish assault on the city of Lemberg (Lviv), in the Polish–Lithuanian Commonwealth, during the Great Northern War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15963786, imported by tools/import/wikidata.mjs. The item's own description reads \"1704 battle of the Great Northern War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1704,
+    "end": 1704,
+    "date": "1704-09-06"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

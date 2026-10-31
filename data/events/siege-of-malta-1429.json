@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "siege-of-malta-1429",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q20706642",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Malta (1429)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20706642"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Malta (1429)\", revision 1370743227"
+    }
+  ],
+  "title": "Siege of Malta (1429)",
+  "summary": "The English Wikipedia article \"Siege of Malta (1429)\", at revision 1370743227, opens: \"The siege of Malta, also known as the siege of Mdina, was a Hafsid invasion of the island of Malta, then part of the Kingdom of Sicily, in September and October 1429. After capturing Mazara on nearby Sicily, a Hafsid force landed on Malta, besieged the island's main city of Mdina and skirmished with the defenders. The invaders did not manage to capture the city but they plundered the island – including Mdina's suburb of Rabat – and captured thousands of people as slaves.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20706642, imported by tools/import/wikidata.mjs. The item's own description reads \"1429 attempt by Hafsid Tunisia to take over the island of Malta\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1429,
+    "end": 1429,
+    "date": "1429-09"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

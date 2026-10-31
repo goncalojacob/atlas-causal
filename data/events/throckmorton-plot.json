@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "throckmorton-plot",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q204540",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Throckmorton Plot"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q204540"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Throckmorton Plot\", revision 1370913405"
+    }
+  ],
+  "title": "Throckmorton Plot",
+  "summary": "The English Wikipedia article \"Throckmorton Plot\", at revision 1370913405, opens: \"The 1583 Throckmorton Plot was one of a series of attempts by English Roman Catholics to depose Elizabeth I of England and replace her with Mary, Queen of Scots, then held under house arrest in England. The alleged objective was to facilitate an invasion of England, assassinate Elizabeth, and put Mary on the English throne.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q204540, imported by tools/import/wikidata.mjs. The item's own description reads \"attempt by English Catholics to depose Elizabeth I\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1583,
+    "end": 1583
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-getaria",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1795012",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Getaria"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1795012"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Getaria\", revision 1370110853"
+    }
+  ],
+  "title": "Battle of Getaria",
+  "summary": "The English Wikipedia article \"Battle of Getaria\", at revision 1370110853, opens: \"The Battle of Getaria was fought on 22 August 1638 during the Franco-Spanish War (1635–59), at Getaria, in northern Spain. A French naval force commanded by Henri de Sourdis attacked and destroyed a Spanish squadron under Lope de Hoces, who survived but was killed at the Battle of the Downs in 1639.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1795012, imported by tools/import/wikidata.mjs. The item's own description reads \"1638 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1638,
+    "end": 1638,
+    "date": "1638-08-22"
+  },
+  "place": "getaria-spain",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-spanish-war-1635-1659"
+}
