@@ -1563,7 +1563,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 12,
+      "degree": 13,
       "id": "algiers-q3561",
       "kind": "place",
       "names": [
@@ -4462,7 +4462,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 3,
+      "degree": 5,
       "id": "baghdad",
       "kind": "place",
       "names": [
@@ -13503,7 +13503,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "china-q29520",
       "kind": "place",
       "names": [
@@ -13931,6 +13931,33 @@
       "kind": "place",
       "names": [
         "Cieszyn"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "cilicia",
+      "kind": "place",
+      "names": [
+        "Cilicia"
       ],
       "origin": {
         "tool": "wikidata"
@@ -17071,7 +17098,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 2,
+      "degree": 3,
       "id": "diu-india",
       "kind": "place",
       "names": [
@@ -25099,6 +25126,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "guwahati",
+      "kind": "place",
+      "names": [
+        "Guwahati"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "gyeongbokgung",
@@ -26221,7 +26275,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 3,
       "id": "herat",
       "kind": "place",
       "names": [
@@ -29383,7 +29437,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 128,
+      "degree": 131,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -30046,7 +30100,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 18,
+      "degree": 20,
       "id": "joseon",
       "kind": "place",
       "names": [
@@ -30519,7 +30573,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "kandahar",
       "kind": "place",
       "names": [
@@ -30932,7 +30986,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 3,
+      "degree": 4,
       "id": "kars",
       "kind": "place",
       "names": [
@@ -30961,7 +31015,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "kartli",
       "kind": "place",
       "names": [
@@ -38174,7 +38228,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 5,
+      "degree": 6,
       "id": "malacca-city",
       "kind": "place",
       "names": [
@@ -38645,7 +38699,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "manila-bay",
       "kind": "place",
       "names": [
@@ -40442,7 +40496,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 4,
+      "degree": 5,
       "id": "mesopotamia",
       "kind": "place",
       "names": [
@@ -45339,6 +45393,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "nishapur",
+      "kind": "place",
+      "names": [
+        "Nishapur",
+        "Nixapur"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "nizip",
@@ -48399,7 +48481,7 @@
         }
       ],
       "created": "2026-10-15",
-      "degree": 1,
+      "degree": 2,
       "id": "pathein",
       "kind": "place",
       "names": [
@@ -50262,7 +50344,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 6,
+      "degree": 7,
       "id": "pondicherry",
       "kind": "place",
       "names": [
@@ -52013,11 +52095,38 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "qatraneh",
+      "kind": "place",
+      "names": [
+        "Qatraneh"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "created": "2026-09-22",
-      "degree": 11,
+      "degree": 12,
       "id": "qing-dynasty",
       "kind": "place",
       "names": [
@@ -52437,6 +52546,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "rajmahal",
+      "kind": "place",
+      "names": [
+        "Rajmahal"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "ramillies-belgium",
@@ -52751,6 +52887,34 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "red-fort",
+      "kind": "place",
+      "names": [
+        "Red Fort",
+        "Forte Vermelho"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -58683,6 +58847,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "sinhagad",
+      "kind": "place",
+      "names": [
+        "Sinhagad"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "sinop-turkey",
@@ -61547,7 +61738,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 3,
       "id": "sumatra",
       "kind": "place",
       "names": [
@@ -65565,7 +65756,7 @@
         }
       ],
       "created": "2026-10-01",
-      "degree": 3,
+      "degree": 4,
       "id": "tunis-q3572",
       "kind": "place",
       "names": [
@@ -70616,7 +70807,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 4,
+      "degree": 5,
       "id": "yerevan",
       "kind": "place",
       "names": [

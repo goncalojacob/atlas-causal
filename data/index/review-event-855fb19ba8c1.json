@@ -1778,6 +1778,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "1757-hajj-caravan-raid",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1757 Hajj caravan raid"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "disaster",
       "cites": [
         "wikidata",
@@ -9700,6 +9730,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "other",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "acehnese-portuguese-conflicts",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Acehnese–Portuguese conflicts"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -12086,6 +12145,35 @@
       "revised": null,
       "status": "active",
       "title": "Amboyna massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "american-algerian-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "American-Algerian War"
     },
     {
       "authors": [
@@ -18321,6 +18409,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Afabet"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "battle-of-aga-cayiri",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-mamluk-war-1485-1491",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Aga-Cayiri"
     },
     {
       "authors": [
@@ -29058,6 +29178,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "battle-of-chapakchur",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Chapakchur"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "battle-of-chapu",
       "kind": "event",
@@ -31471,6 +31620,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "battle-of-cuddalore-1758",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "seven-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cuddalore (1758)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "degree": 1,
       "id": "battle-of-cuddalore-1783",
@@ -32181,6 +32361,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Delanggu"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "battle-of-delhi-1757",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Delhi (1757)"
     },
     {
       "authors": [
@@ -38181,6 +38391,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "battle-of-geok-tepe-1879",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Geok Tepe (1879)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-gerberoy",
       "kind": "event",
@@ -41525,6 +41764,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "battle-of-herat-1729",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "campaigns-of-nader-shah",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Herat (1729)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "battle-of-herbsthausen",
@@ -43605,6 +43875,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Isted"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "battle-of-itakhuli",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Itakhuli"
     },
     {
       "authors": [
@@ -45741,6 +46041,40 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "battle-of-kars-1745",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "ottoman-persian-war-1743-1746",
+        "campaigns-of-nader-shah"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Kars (1745)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-kars-1877",
       "kind": "event",
@@ -46344,6 +46678,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "battle-of-khwar-pass",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "campaigns-of-nader-shah",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Khwar Pass"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-khyber-pass-1738",
       "kind": "event",
@@ -46555,6 +46920,35 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Kircholm"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "battle-of-kirkhbulakh",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Kirkhbulakh"
     },
     {
       "authors": [
@@ -57690,6 +58084,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "battle-of-negapatam-1758",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "seven-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Negapatam (1758)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "degree": 2,
       "id": "battle-of-negapatam-1782",
@@ -64729,6 +65154,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "battle-of-rajmahal",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Rajmahal"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "battle-of-ramillies",
       "kind": "event",
@@ -68293,6 +68748,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "battle-of-sangan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "campaigns-of-nader-shah",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Sangan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "battle-of-sangarara",
@@ -71008,6 +71494,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Silkaatsnek"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "battle-of-sinhagad",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Sinhagad"
     },
     {
       "authors": [
@@ -84802,6 +85318,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "battle-of-zarghan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "campaigns-of-nader-shah",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Zarghan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-30",
       "id": "battle-of-zboriv-1649",
       "kind": "event",
@@ -85860,6 +86407,37 @@
       "revised": null,
       "status": "active",
       "title": "Battles of Kizugawaguchi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "battles-of-la-naval-de-manila",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "eighty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battles of La Naval de Manila"
     },
     {
       "authors": [
@@ -87572,6 +88150,35 @@
       "revised": null,
       "status": "active",
       "title": "Bombardment of Alexandria"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "bombardment-of-algiers-1683",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bombardment of Algiers (1683)"
     },
     {
       "authors": [
@@ -90573,6 +91180,35 @@
       "revised": null,
       "status": "active",
       "title": "Capture of Baghdad (1534)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "capture-of-baghdad-1624",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Baghdad (1624)"
     },
     {
       "authors": [
@@ -113294,6 +113930,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "great-clearance",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Great Clearance"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -117664,6 +118328,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "law",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "imperial-decree-of-declaration-of-war-against-foreign-powers",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Imperial decree of declaration of war against foreign powers"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -118346,6 +119040,35 @@
       "revised": null,
       "status": "active",
       "title": "Ingrian War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-10-31",
+      "id": "injo-coup",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Injo coup"
     },
     {
       "authors": [
@@ -121674,6 +122397,36 @@
       "revised": null,
       "status": "active",
       "title": "June Rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "jungjong-restoration",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Jungjong Restoration"
     },
     {
       "authors": [
@@ -130938,6 +131691,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "mughal-persian-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mughal–Persian wars"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "mughal-safavid-war-1649-1653",
       "kind": "event",
@@ -131395,6 +132177,37 @@
       "revised": null,
       "status": "active",
       "title": "Nader Shah's invasion of India"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "nader-shah-s-mesopotamian-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "campaigns-of-nader-shah",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Nader Shah's Mesopotamian campaign"
     },
     {
       "authors": [
@@ -155038,6 +155851,40 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "siege-of-baghdad-1733",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "ottoman-persian-war-1730-1735",
+        "campaigns-of-nader-shah"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Baghdad (1733)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-10-28",
@@ -157649,6 +158496,35 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Dimdim"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "siege-of-diu-1531",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Diu (1531)"
     },
     {
       "authors": [
@@ -160470,6 +161346,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "siege-of-kandahar-1605-1606",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mughal-persian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Kandahar (1605–1606)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "siege-of-kanegasaki-1570",
       "kind": "event",
@@ -162189,6 +163096,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "siege-of-malacca-1568",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Malacca (1568)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "degree": 3,
       "id": "siege-of-malacca-1606",
@@ -163729,6 +164665,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "siege-of-nishapur-1755",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Nishapur (1755)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "siege-of-noda-castle",
       "kind": "event",
@@ -163931,6 +164897,66 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Odani Castle"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "siege-of-odawara-1561",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Odawara (1561)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "siege-of-odawara-1569",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Odawara (1569)"
     },
     {
       "authors": [
@@ -173399,6 +174425,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-31",
+      "id": "tahmasp-i-s-kakhetian-and-kartlian-campaigns",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Tahmasp I's Kakhetian and Kartlian campaigns"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "tahmasp-ii-s-campaign-of-1731",
       "kind": "event",
@@ -174190,6 +175245,36 @@
       "revised": null,
       "status": "active",
       "title": "Tenshō Iga War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "tensho-jingo-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Tenshō-Jingo war"
     },
     {
       "authors": [
@@ -178675,6 +179760,35 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Bassein (1534)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "treaty-of-bassein-1802",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Bassein (1802)"
     },
     {
       "authors": [
@@ -190648,6 +191762,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-31",
+      "id": "venetian-bombardments-of-the-beylik-of-tunis",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Venetian bombardments of the Beylik of Tunis"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "founding",
       "cites": [
         "wikidata",
@@ -195357,6 +196500,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1757-hajj-caravan-raid",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1759-near-east-earthquakes",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -196191,6 +197340,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "acehnese-portuguese-conflicts",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "acre-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -196582,6 +197737,12 @@
     },
     {
       "id": "amboyna-massacre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "american-algerian-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -197560,6 +198721,12 @@
     },
     {
       "id": "battle-of-adwalton-moor",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-aga-cayiri",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -199407,6 +200574,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-chapakchur",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-chapu",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -199827,6 +201000,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-cuddalore-1758",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-culloden",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -199948,6 +201127,12 @@
     },
     {
       "id": "battle-of-delanggu",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-delhi-1757",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -201021,6 +202206,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-geok-tepe-1879",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-gerberoy",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -201627,6 +202818,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-herat-1729",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-hericourt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -201952,6 +203149,12 @@
     },
     {
       "id": "battle-of-isted",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-itakhuli",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -202335,6 +203538,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-kars-1745",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-kars-1877",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -202437,6 +203646,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-khwar-pass",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-khyber-pass-1738",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -202468,6 +203683,12 @@
     },
     {
       "id": "battle-of-kircholm",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-kirkhbulakh",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -204339,6 +205560,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-negapatam-1758",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-nekmir",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -205497,6 +206724,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-rajmahal",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-ramillies",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -206079,6 +207312,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-sangan",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-sangju-1592",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -206554,6 +207793,12 @@
     },
     {
       "id": "battle-of-silkaatsnek",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-sinhagad",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -208815,6 +210060,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-zarghan",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-zboriv-1649",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -209002,6 +210253,12 @@
     },
     {
       "id": "battles-of-kizugawaguchi",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battles-of-la-naval-de-manila",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -209254,6 +210511,12 @@
     },
     {
       "id": "bombardment-of-alexandria",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "bombardment-of-algiers-1683",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -209704,6 +210967,12 @@
     },
     {
       "id": "capture-of-baghdad-1534",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "capture-of-baghdad-1624",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -213135,6 +214404,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "great-clearance",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "great-famine-ireland",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -213813,6 +215088,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "imperial-decree-of-declaration-of-war-against-foreign-powers",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "inca-civil-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -213913,6 +215194,18 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "injo-coup",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "injo-coup",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "insurrection-of-12-germinal-year-iii",
@@ -214348,6 +215641,12 @@
     },
     {
       "id": "june-rebellion",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "jungjong-restoration",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -215763,6 +217062,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "mughal-persian-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "mughal-safavid-war-1649-1653",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -215830,6 +217135,12 @@
     },
     {
       "id": "nader-shah-s-invasion-of-india",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "nader-shah-s-mesopotamian-campaign",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -219513,6 +220824,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-baghdad-1733",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-baghdad-1821",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -219964,6 +221281,12 @@
     },
     {
       "id": "siege-of-dimdim",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-diu-1531",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -220491,6 +221814,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-kandahar-1605-1606",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-kanegasaki-1570",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -220803,6 +222132,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-malacca-1568",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-malaga-1487",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -221061,6 +222396,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-nishapur-1755",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-noda-castle",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -221092,6 +222433,18 @@
     },
     {
       "id": "siege-of-odani-castle",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-odawara-1561",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-odawara-1569",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -222525,6 +223878,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "tahmasp-i-s-kakhetian-and-kartlian-campaigns",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "tahmasp-ii-s-campaign-of-1731",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -222646,6 +224005,12 @@
     },
     {
       "id": "tensho-iga-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "tensho-jingo-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -223312,6 +224677,12 @@
     },
     {
       "id": "treaty-of-bassein-1534",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-bassein-1802",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -225412,6 +226783,12 @@
     },
     {
       "id": "varvar-ali-pasha-s-revolt",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "venetian-bombardments-of-the-beylik-of-tunis",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

@@ -10514,6 +10514,12 @@
     },
     {
       "dissent": false,
+      "id": "1757-hajj-caravan-raid",
+      "kind": "event",
+      "locator": "\"1757 Hajj caravan raid\", revision 1370278098"
+    },
+    {
+      "dissent": false,
       "id": "1759-near-east-earthquakes",
       "kind": "event",
       "locator": "\"1759 Near East earthquakes\", revision 1366167944"
@@ -11984,6 +11990,12 @@
     },
     {
       "dissent": false,
+      "id": "acehnese-portuguese-conflicts",
+      "kind": "event",
+      "locator": "\"Acehnese–Portuguese conflicts\", revision 1374199117"
+    },
+    {
+      "dissent": false,
       "id": "acre-war",
       "kind": "event",
       "locator": "\"Acre War\", revision 1371530238"
@@ -12419,6 +12431,12 @@
       "id": "amboyna-massacre",
       "kind": "event",
       "locator": "\"Amboyna massacre\", revision 1382054348"
+    },
+    {
+      "dissent": false,
+      "id": "american-algerian-war",
+      "kind": "event",
+      "locator": "\"American-Algerian War\", revision 1382319805"
     },
     {
       "dissent": false,
@@ -13571,6 +13589,12 @@
       "id": "battle-of-afabet",
       "kind": "event",
       "locator": "\"Battle of Afabet\", revision 1376904281"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-aga-cayiri",
+      "kind": "event",
+      "locator": "\"Battle of Aga-Cayiri\", revision 1377728082"
     },
     {
       "dissent": false,
@@ -15614,6 +15638,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chapakchur",
+      "kind": "event",
+      "locator": "\"Battle of Chapakchur\", revision 1372568428"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chapu",
       "kind": "event",
       "locator": "\"Battle of Chapu\", revision 1370436890"
@@ -16070,6 +16100,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cuddalore-1758",
+      "kind": "event",
+      "locator": "\"Battle of Cuddalore (1758)\", revision 1370437937"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cuddalore-1783",
       "kind": "event",
       "locator": "\"Battle of Cuddalore (1783)\", revision 1370437947"
@@ -16205,6 +16241,12 @@
       "id": "battle-of-delanggu",
       "kind": "event",
       "locator": "\"Battle of Delanggu\", revision 1370438489"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-delhi-1757",
+      "kind": "event",
+      "locator": "\"Battle of Delhi (1757)\", revision 1373933360"
     },
     {
       "dissent": false,
@@ -17348,6 +17390,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-geok-tepe-1879",
+      "kind": "event",
+      "locator": "\"Battle of Geok Tepe (1879)\", revision 1370441460"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gerberoy",
       "kind": "event",
       "locator": "\"Battle of Gerberoy\", revision 1370110824"
@@ -17978,6 +18026,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-herat-1729",
+      "kind": "event",
+      "locator": "\"Battle of Herat (1729)\", revision 1378916165"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-herbsthausen",
       "kind": "event",
       "locator": "\"Battle of Herbsthausen\", revision 1370442917"
@@ -18371,6 +18425,12 @@
       "id": "battle-of-isted",
       "kind": "event",
       "locator": "\"Battle of Isted\", revision 1381946671"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-itakhuli",
+      "kind": "event",
+      "locator": "\"Battle of Itakhuli\", revision 1379558684"
     },
     {
       "dissent": false,
@@ -18770,6 +18830,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kars-1745",
+      "kind": "event",
+      "locator": "\"Battle of Kars (1745)\", revision 1380623949"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kars-1877",
       "kind": "event",
       "locator": "\"Battle of Kars (1877)\", revision 1379372668"
@@ -18884,6 +18950,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-khwar-pass",
+      "kind": "event",
+      "locator": "\"Battle of Khwar Pass\", revision 1378916206"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-khyber-pass-1738",
       "kind": "event",
       "locator": "\"Battle of Khyber Pass (1738)\", revision 1370445280"
@@ -18923,6 +18995,12 @@
       "id": "battle-of-kircholm",
       "kind": "event",
       "locator": "\"Battle of Kircholm\", revision 1376914248"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kirkhbulakh",
+      "kind": "event",
+      "locator": "\"Battle of Kirkhbulakh\", revision 1370445483"
     },
     {
       "dissent": false,
@@ -21020,6 +21098,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-negapatam-1758",
+      "kind": "event",
+      "locator": "\"Battle of Negapatam (1758)\", revision 1370451545"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-negapatam-1782",
       "kind": "event",
       "locator": "\"Battle of Negapatam (1782)\", revision 1370451553"
@@ -22364,6 +22448,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rajmahal",
+      "kind": "event",
+      "locator": "\"Battle of Rajmahal\", revision 1370587109"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ramillies",
       "kind": "event",
       "locator": "\"Battle of Ramillies\", revision 1377855945"
@@ -23048,6 +23138,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sangan",
+      "kind": "event",
+      "locator": "\"Battle of Sangan\", revision 1378916240"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sangarara",
       "kind": "event",
       "locator": "\"Battle of Sangarará\", revision 1375224690"
@@ -23567,6 +23663,12 @@
       "id": "battle-of-silkaatsnek",
       "kind": "event",
       "locator": "\"Battle of Silkaatsnek\", revision 1370589392"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sinhagad",
+      "kind": "event",
+      "locator": "\"Battle of Sinhagad\", revision 1379516290"
     },
     {
       "dissent": false,
@@ -26186,6 +26288,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-zarghan",
+      "kind": "event",
+      "locator": "\"Battle of Zarghan\", revision 1378916251"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-zboriv-1649",
       "kind": "event",
       "locator": "\"Battle of Zboriv (1649)\", revision 1382550474"
@@ -26387,6 +26495,12 @@
       "id": "battles-of-kizugawaguchi",
       "kind": "event",
       "locator": "\"Battles of Kizugawaguchi\", revision 1370603593"
+    },
+    {
+      "dissent": false,
+      "id": "battles-of-la-naval-de-manila",
+      "kind": "event",
+      "locator": "\"Battles of La Naval de Manila\", revision 1381690528"
     },
     {
       "dissent": false,
@@ -26717,6 +26831,12 @@
       "id": "bombardment-of-alexandria",
       "kind": "event",
       "locator": "\"Bombardment of Alexandria\", revision 1370604959"
+    },
+    {
+      "dissent": false,
+      "id": "bombardment-of-algiers-1683",
+      "kind": "event",
+      "locator": "\"Bombardment of Algiers (1683)\", revision 1370604967"
     },
     {
       "dissent": false,
@@ -27287,6 +27407,12 @@
       "id": "capture-of-baghdad-1534",
       "kind": "event",
       "locator": "\"Capture of Baghdad (1534)\", revision 1370608286"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-baghdad-1624",
+      "kind": "event",
+      "locator": "\"Capture of Baghdad (1624)\", revision 1381028924"
     },
     {
       "dissent": false,
@@ -31538,6 +31664,12 @@
     },
     {
       "dissent": false,
+      "id": "great-clearance",
+      "kind": "event",
+      "locator": "\"Great Clearance\", revision 1363645501"
+    },
+    {
+      "dissent": false,
       "id": "great-depression",
       "kind": "event",
       "locator": "\"Great Depression\", revision 1371653684"
@@ -32360,6 +32492,12 @@
     },
     {
       "dissent": false,
+      "id": "imperial-decree-of-declaration-of-war-against-foreign-powers",
+      "kind": "event",
+      "locator": "\"Imperial decree of declaration of war against foreign powers\", revision 1378849476"
+    },
+    {
+      "dissent": false,
       "id": "inca-civil-war",
       "kind": "event",
       "locator": "\"Inca Civil War\", revision 1376090005"
@@ -33125,6 +33263,12 @@
       "id": "june-rebellion",
       "kind": "event",
       "locator": "\"June Rebellion\", revision 1380934831"
+    },
+    {
+      "dissent": false,
+      "id": "jungjong-restoration",
+      "kind": "event",
+      "locator": "\"Jungjong Restoration\", revision 1375381747"
     },
     {
       "dissent": false,
@@ -34850,6 +34994,12 @@
     },
     {
       "dissent": false,
+      "id": "mughal-persian-wars",
+      "kind": "event",
+      "locator": "\"Mughal–Persian wars\", revision 1370628896"
+    },
+    {
+      "dissent": false,
       "id": "mughal-safavid-war-1649-1653",
       "kind": "event",
       "locator": "\"Mughal–Safavid war (1649–1653)\", revision 1378917021"
@@ -34937,6 +35087,12 @@
       "id": "nader-shah-s-invasion-of-india",
       "kind": "event",
       "locator": "\"Nader Shah's invasion of India\", revision 1379473633"
+    },
+    {
+      "dissent": false,
+      "id": "nader-shah-s-mesopotamian-campaign",
+      "kind": "event",
+      "locator": "\"Nader Shah's Mesopotamian campaign\", revision 1380732155"
     },
     {
       "dissent": false,
@@ -39428,6 +39584,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-baghdad-1733",
+      "kind": "event",
+      "locator": "\"Siege of Baghdad (1733)\", revision 1381424608"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-bahrain",
       "kind": "event",
       "locator": "\"Siege of Bahrain\", revision 1376466141"
@@ -39917,6 +40079,12 @@
       "id": "siege-of-dimdim",
       "kind": "event",
       "locator": "\"Siege of Dimdim\", revision 1370740744"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-diu-1531",
+      "kind": "event",
+      "locator": "\"Siege of Diu (1531)\", revision 1370740748"
     },
     {
       "dissent": false,
@@ -40448,6 +40616,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-kandahar-1605-1606",
+      "kind": "event",
+      "locator": "\"Siege of Kandahar (1605–1606)\", revision 1370742269"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-kanegasaki-1570",
       "kind": "event",
       "locator": "\"Siege of Kanegasaki (1570)\", revision 1379462943"
@@ -40772,6 +40946,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-malacca-1568",
+      "kind": "event",
+      "locator": "\"Siege of Malacca (1568)\", revision 1373248737"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-malacca-1606",
       "kind": "event",
       "locator": "\"Siege of Malacca (1606)\", revision 1370743201"
@@ -41066,6 +41246,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-nishapur-1755",
+      "kind": "event",
+      "locator": "\"Siege of Nishapur (1755)\", revision 1370744028"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-noda-castle",
       "kind": "event",
       "locator": "\"Siege of Noda Castle\", revision 1381491440"
@@ -41105,6 +41291,18 @@
       "id": "siege-of-odani-castle",
       "kind": "event",
       "locator": "\"Siege of Odani Castle\", revision 1376565454"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-odawara-1561",
+      "kind": "event",
+      "locator": "\"Siege of Odawara (1561)\", revision 1370744135"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-odawara-1569",
+      "kind": "event",
+      "locator": "\"Siege of Odawara (1569)\", revision 1370744137"
     },
     {
       "dissent": false,
@@ -42926,6 +43124,12 @@
     },
     {
       "dissent": false,
+      "id": "tahmasp-i-s-kakhetian-and-kartlian-campaigns",
+      "kind": "event",
+      "locator": "\"Tahmasp I's Kakhetian and Kartlian campaigns\", revision 1374153102"
+    },
+    {
+      "dissent": false,
       "id": "tahmasp-ii-s-campaign-of-1731",
       "kind": "event",
       "locator": "\"Tahmasp II's campaign of 1731\", revision 1371124669"
@@ -43085,6 +43289,12 @@
       "id": "tensho-iga-war",
       "kind": "event",
       "locator": "\"Tenshō Iga War\", revision 1380172061"
+    },
+    {
+      "dissent": false,
+      "id": "tensho-jingo-war",
+      "kind": "event",
+      "locator": "\"Tenshō-Jingo war\", revision 1370749935"
     },
     {
       "dissent": false,
@@ -44027,6 +44237,12 @@
       "id": "treaty-of-bassein-1534",
       "kind": "event",
       "locator": "\"Treaty of Bassein (1534)\", revision 1312441920"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-bassein-1802",
+      "kind": "event",
+      "locator": "\"Treaty of Bassein (1802)\", revision 1365254079"
     },
     {
       "dissent": false,
@@ -46373,6 +46589,12 @@
       "id": "varvar-ali-pasha-s-revolt",
       "kind": "event",
       "locator": "\"Varvar Ali Pasha's Revolt\", revision 1371076193"
+    },
+    {
+      "dissent": false,
+      "id": "venetian-bombardments-of-the-beylik-of-tunis",
+      "kind": "event",
+      "locator": "\"Venetian bombardments of the Beylik of Tunis\", revision 1370749145"
     },
     {
       "dissent": false,
