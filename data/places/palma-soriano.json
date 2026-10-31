@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "palma-soriano",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q742835",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Palma Soriano",
+    "pt": "Palma Soriano"
+  },
+  "sources": [],
+  "names": [
+    "Palma Soriano"
+  ],
+  "where": {
+    "lon": -75.991944444444,
+    "lat": 20.213888888889,
+    "precision": "city",
+    "label": "Palma Soriano"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

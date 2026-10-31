@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "paysandu",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q309442",
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Paysandú",
+    "pt": "Paysandú"
+  },
+  "sources": [],
+  "names": [
+    "Paysandú"
+  ],
+  "where": {
+    "lon": -58.08921388888889,
+    "lat": -32.321752777777775,
+    "precision": "city",
+    "label": "Paysandú"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
