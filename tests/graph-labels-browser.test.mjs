@@ -234,7 +234,15 @@ test('a label is the same size on screen however far the picture is zoomed', { s
       const k = await zoomOnto(page, longest, target);
       const labels = await page.eval(LABELS);
       assert.ok(labels.length > 0, `something is named at k = ${k}`);
-      const heights = [...new Set(labels.map((l) => l.height))];
+      // **Heights are read off the plain labels** (M103). A label's rectangle
+      // is the extent of its glyphs, so "Treaty of Åbo" is a pixel taller than
+      // every name beside it because of the ring over the A, at the same
+      // font size. Which names are on screen is the corpus's doing, and at
+      // 6,785 events one of them was that. The size drawn (`drawn`, below) is
+      // still read off every label.
+      const plain = labels.filter((l) => /^[\x20-\x7e]+$/.test(l.text));
+      assert.ok(plain.length > 0, `some name at k = ${k} is in plain letters`);
+      const heights = [...new Set(plain.map((l) => l.height))];
       assert.equal(heights.length, 1, `one size on screen at k = ${k}: ${heights.join(', ')}`);
       // And in the drawing it is that size divided by the zoom, which is what
       // makes the two the same thing: the text does not grow with the picture.
