@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "le-havre",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q42810",
+  "sitelinks": {
+    "count": 112,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Le Havre",
+    "pt": "Le Havre"
+  },
+  "sources": [],
+  "names": [
+    "Le Havre"
+  ],
+  "where": {
+    "lon": 0.10805555555556,
+    "lat": 49.494166666667,
+    "precision": "city",
+    "label": "Le Havre"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

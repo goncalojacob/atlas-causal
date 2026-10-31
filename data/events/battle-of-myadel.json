@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-myadel",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4087389",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Myadel"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4087389"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Myadel\", revision 1370450922"
+    }
+  ],
+  "title": "Battle of Myadel",
+  "summary": "The English Wikipedia article \"Battle of Myadel\", at revision 1370450922, opens: \"The Battle of Myadel took place on February 8, 1659, during the Russo-Polish War of 1654–1667, near the town of Myadzel, in present-day Belarus. The Russian army of Novgorod led by Ivan Khovansky defeated the Polish–Lithuanians led by Mikołaj Judycki and Władysław Wołłowicz. As a result, the Polish–Lithuanian army retreated to the safety of the walls of Lyakhovichi.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4087389, imported by tools/import/wikidata.mjs. The item's own description reads \"1659 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1659,
+    "end": 1659,
+    "date": "1659-02-08"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "polish-russian-war-1654-1667"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-filipow",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871016",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Filipów"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871016"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Filipów\", revision 1375117651"
+    }
+  ],
+  "title": "Battle of Filipów",
+  "summary": "The English Wikipedia article \"Battle of Filipów\", at revision 1375117651, opens: \"The Battle of Filipów was fought on October 22, 1656 between forces of the Polish–Lithuanian Commonwealth commanded by Field Lithuanian Hetman Wincenty Korwin Gosiewski on one side, and on the other allied Swedish and Brandenburg-Prussia forces commanded by Gustaf Otto Stenbock and Prince Georg Friedrich of Waldeck. The battle ended with victory for the Swedish-Brandenburg-Prussian troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871016, imported by tools/import/wikidata.mjs. The item's own description reads \"1656 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1656,
+    "end": 1656,
+    "date": "1656-10-22"
+  },
+  "place": "filipow-podlaskie-voivodeship",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "deluge-history"
+}

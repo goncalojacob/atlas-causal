@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-capua-1734",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3625460",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Capua (1734)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3625460"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Capua (1734)\", revision 1370740026"
+    }
+  ],
+  "title": "Siege of Capua (1734)",
+  "summary": "The English Wikipedia article \"Siege of Capua (1734)\", at revision 1370740026, opens: \"The siege of Capua was the last major military action of the War of the Polish Succession in the Kingdom of Naples. Austrian forces of the Habsburg monarchy, under the command of the Austrian Marshal Otto Ferdinand von Abensberg und Traun, withstood for seven months a blockade begun in April 1734 by Spanish and French forces under Count Marsillac. General Traun surrendered the fortress of Capua in November 1734 with full honors of war, primarily because of exhausted provisions and ammunition, but also because it was clear no relief was coming to the isolated garrison.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3625460, imported by tools/import/wikidata.mjs. The item's own description reads \"1734 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1734,
+    "end": 1734,
+    "date": "1734-04",
+    "endDate": "1734-11-30"
+  },
+  "place": "capua",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

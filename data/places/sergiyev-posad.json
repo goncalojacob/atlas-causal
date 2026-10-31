@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "sergiyev-posad",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q193722",
+  "sitelinks": {
+    "count": 65,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Sergiyev Posad",
+    "pt": "Sergiev Posad"
+  },
+  "sources": [],
+  "names": [
+    "Sergiyev Posad",
+    "Serguiev Possad",
+    "Sergiev Posad"
+  ],
+  "where": {
+    "lon": 38.133333333333,
+    "lat": 56.3,
+    "precision": "city",
+    "label": "Sergiyev Posad"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

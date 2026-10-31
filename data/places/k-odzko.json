@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "k-odzko",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q284604",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Kłodzko",
+    "pt": "Kłodzko"
+  },
+  "sources": [],
+  "names": [
+    "Kłodzko"
+  ],
+  "where": {
+    "lon": 16.655,
+    "lat": 50.43861111111111,
+    "precision": "city",
+    "label": "Kłodzko"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
