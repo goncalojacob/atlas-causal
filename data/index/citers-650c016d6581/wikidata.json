@@ -2702,6 +2702,12 @@
     },
     {
       "dissent": false,
+      "id": "1868-hawaii-earthquake",
+      "kind": "event",
+      "locator": "Q4555228"
+    },
+    {
+      "dissent": false,
       "id": "1870-barcelona-yellow-fever-epidemic",
       "kind": "event",
       "locator": "Q59466726"
@@ -4106,6 +4112,12 @@
     },
     {
       "dissent": false,
+      "id": "action-off-pipli-river",
+      "kind": "event",
+      "locator": "Q140628708"
+    },
+    {
+      "dissent": false,
       "id": "adamawa-wars",
       "kind": "event",
       "locator": "Q137339918"
@@ -5171,6 +5183,12 @@
       "id": "attack-at-the-lower-sioux-agency",
       "kind": "event",
       "locator": "Q3438920"
+    },
+    {
+      "dissent": false,
+      "id": "attack-in-hooghly",
+      "kind": "event",
+      "locator": "Q125881454"
     },
     {
       "dissent": false,
@@ -6518,9 +6536,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-balambangan-island",
+      "kind": "event",
+      "locator": "Q135650203"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-balantang",
       "kind": "event",
       "locator": "Q22092207"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-balasore",
+      "kind": "event",
+      "locator": "Q125895227"
     },
     {
       "dissent": false,
@@ -16514,6 +16544,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sembulan",
+      "kind": "event",
+      "locator": "Q135741959"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-seminara",
       "kind": "event",
       "locator": "Q2670926"
@@ -16742,6 +16778,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sialkot-1763",
+      "kind": "event",
+      "locator": "Q21244907"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sidi-brahim",
       "kind": "event",
       "locator": "Q2889977"
@@ -16820,6 +16862,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sirhind-1764",
+      "kind": "event",
+      "locator": "Q21244908"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sirte-2011",
       "kind": "event",
       "locator": "Q2361214"
@@ -16847,6 +16895,12 @@
       "id": "battle-of-skalitz",
       "kind": "event",
       "locator": "Q670005"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-skopelos",
+      "kind": "event",
+      "locator": "Q138028281"
     },
     {
       "dissent": false,
@@ -20927,6 +20981,12 @@
       "id": "capture-of-demerara-and-essequibo",
       "kind": "event",
       "locator": "Q5037004"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-den-bengalske-prise",
+      "kind": "event",
+      "locator": "Q128988957"
     },
     {
       "dissent": false,
@@ -27116,6 +27176,12 @@
     },
     {
       "dissent": false,
+      "id": "jolo-expedition-1630",
+      "kind": "event",
+      "locator": "Q120756270"
+    },
+    {
+      "dissent": false,
       "id": "joseon-united-states-treaty-of-1882",
       "kind": "event",
       "locator": "Q697104"
@@ -31703,6 +31769,12 @@
       "id": "raid-of-the-balearic-islands-1558",
       "kind": "event",
       "locator": "Q3720898"
+    },
+    {
+      "dissent": false,
+      "id": "raid-of-visayas",
+      "kind": "event",
+      "locator": "Q120972900"
     },
     {
       "dissent": false,
@@ -37805,6 +37877,12 @@
       "id": "skirmish-of-pastrengo-1848",
       "kind": "event",
       "locator": "Q580417"
+    },
+    {
+      "dissent": false,
+      "id": "skirmish-off-narsapur",
+      "kind": "event",
+      "locator": "Q140570936"
     },
     {
       "dissent": false,

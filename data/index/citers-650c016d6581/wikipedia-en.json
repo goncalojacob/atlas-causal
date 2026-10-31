@@ -11114,6 +11114,12 @@
     },
     {
       "dissent": false,
+      "id": "1868-hawaii-earthquake",
+      "kind": "event",
+      "locator": "\"1868 Hawaii earthquake\", revision 1378467892"
+    },
+    {
+      "dissent": false,
       "id": "1870-barcelona-yellow-fever-epidemic",
       "kind": "event",
       "locator": "\"1870 Barcelona yellow fever epidemic\", revision 1357861872"
@@ -12506,6 +12512,12 @@
     },
     {
       "dissent": false,
+      "id": "action-off-pipli-river",
+      "kind": "event",
+      "locator": "\"Action off Pipli River\", revision 1381865317"
+    },
+    {
+      "dissent": false,
       "id": "adamawa-wars",
       "kind": "event",
       "locator": "\"Adamawa Wars\", revision 1381724831"
@@ -13505,6 +13517,12 @@
       "id": "attack-at-the-lower-sioux-agency",
       "kind": "event",
       "locator": "\"Attack at the Lower Sioux Agency\", revision 1382667684"
+    },
+    {
+      "dissent": false,
+      "id": "attack-in-hooghly",
+      "kind": "event",
+      "locator": "\"Attack in Hooghly\", revision 1370429371"
     },
     {
       "dissent": false,
@@ -14804,9 +14822,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-balambangan-island",
+      "kind": "event",
+      "locator": "\"Battle of Balambangan Island\", revision 1370433105"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-balantang",
       "kind": "event",
       "locator": "\"Battle of Balantang\", revision 1380529572"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-balasore",
+      "kind": "event",
+      "locator": "\"Battle of Balasore\", revision 1370433139"
     },
     {
       "dissent": false,
@@ -24758,6 +24788,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sembulan",
+      "kind": "event",
+      "locator": "\"Battle of Sembulan\", revision 1370589005"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-seminara",
       "kind": "event",
       "locator": "\"Battle of Seminara\", revision 1372454113"
@@ -24986,6 +25022,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sialkot-1763",
+      "kind": "event",
+      "locator": "\"Battle of Sialkot (1763)\", revision 1370274310"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sidi-brahim",
       "kind": "event",
       "locator": "\"Battle of Sidi Brahim\", revision 1375600709"
@@ -25064,6 +25106,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sirhind-1764",
+      "kind": "event",
+      "locator": "\"Battle of Sirhind (1764)\", revision 1370274420"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sirte-2011",
       "kind": "event",
       "locator": "\"Battle of Sirte (2011)\", revision 1374518213"
@@ -25091,6 +25139,12 @@
       "id": "battle-of-skalitz",
       "kind": "event",
       "locator": "\"Battle of Skalitz\", revision 1370589485"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-skopelos",
+      "kind": "event",
+      "locator": "\"Battle of Skopelos\", revision 1370589509"
     },
     {
       "dissent": false,
@@ -29165,6 +29219,12 @@
       "id": "capture-of-demerara-and-essequibo",
       "kind": "event",
       "locator": "\"Capture of Demerara and Essequibo\", revision 1370608539"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-den-bengalske-prise",
+      "kind": "event",
+      "locator": "\"Capture of Den Bengalske Prise\", revision 1378413628"
     },
     {
       "dissent": false,
@@ -35258,6 +35318,12 @@
     },
     {
       "dissent": false,
+      "id": "jolo-expedition-1630",
+      "kind": "event",
+      "locator": "\"Jolo expedition (1630)\", revision 1370625092"
+    },
+    {
+      "dissent": false,
       "id": "joseon-united-states-treaty-of-1882",
       "kind": "event",
       "locator": "\"Joseon–United States Treaty of 1882\", revision 1378967523"
@@ -39761,6 +39827,12 @@
       "id": "raid-of-the-balearic-islands-1558",
       "kind": "event",
       "locator": "\"Raid of the Balearic Islands (1558)\", revision 1370705545"
+    },
+    {
+      "dissent": false,
+      "id": "raid-of-visayas",
+      "kind": "event",
+      "locator": "\"Raid of Visayas\", revision 1370705541"
     },
     {
       "dissent": false,
@@ -45737,6 +45809,12 @@
       "id": "skirmish-of-pastrengo-1848",
       "kind": "event",
       "locator": "\"Skirmish of Pastrengo (1848)\", revision 1381665075"
+    },
+    {
+      "dissent": false,
+      "id": "skirmish-off-narsapur",
+      "kind": "event",
+      "locator": "\"Skirmish off Narsapur\", revision 1381944017"
     },
     {
       "dissent": false,

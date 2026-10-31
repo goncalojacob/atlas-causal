@@ -1276,6 +1276,15 @@
         }
       ]
     },
+    "battle-of-balambangan-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-baneh-1777": {
       "from": "git",
       "versions": [
@@ -4776,6 +4785,15 @@
         }
       ]
     },
+    "battle-of-sembulan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-shahrezur": {
       "from": "git",
       "versions": [
@@ -4830,12 +4848,30 @@
         }
       ]
     },
+    "battle-of-sialkot-1763": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-signal-hill": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-sirhind-1764": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },

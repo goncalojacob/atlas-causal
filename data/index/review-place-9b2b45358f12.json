@@ -5046,10 +5046,65 @@
       ],
       "created": "2026-10-31",
       "degree": 1,
+      "id": "balambangan-island",
+      "kind": "place",
+      "names": [
+        "Balambangan Island",
+        "Ilha Balambangan"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
       "id": "balanguingui-island",
       "kind": "place",
       "names": [
         "Balanguingui Island"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "balasore",
+      "kind": "place",
+      "names": [
+        "Balasore"
       ],
       "origin": {
         "tool": "wikidata"
@@ -27203,6 +27258,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "hawaii-q782",
+      "kind": "place",
+      "names": [
+        "Hawaii",
+        "Havaí"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "hawaiian-islands",
@@ -31527,7 +31610,7 @@
         }
       ],
       "created": "2026-10-31",
-      "degree": 1,
+      "degree": 2,
       "id": "jolo",
       "kind": "place",
       "names": [
@@ -52243,6 +52326,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "pipili",
+      "kind": "place",
+      "names": [
+        "Pipili"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-30",
       "degree": 1,
       "id": "pirh-s-nli",
@@ -61683,7 +61793,7 @@
         }
       ],
       "created": "2026-10-31",
-      "degree": 1,
+      "degree": 2,
       "id": "sialkot",
       "kind": "place",
       "names": [
@@ -62156,7 +62266,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 3,
       "id": "sirhind",
       "kind": "place",
       "names": [
@@ -62273,6 +62383,34 @@
       "names": [
         "Port-la-Joye–Fort Amherst",
         "Skmaqn–Port-la-Joye–Fort Amherst"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "skopelos",
+      "kind": "place",
+      "names": [
+        "Skopelos",
+        "Escópelos"
       ],
       "origin": {
         "tool": "wikidata"
@@ -64776,6 +64914,33 @@
       "names": [
         "Suakin",
         "Suaquém"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "subarnarekha-river",
+      "kind": "place",
+      "names": [
+        "Subarnarekha River"
       ],
       "origin": {
         "tool": "wikidata"
@@ -71826,7 +71991,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "visayas",
       "kind": "place",
       "names": [
