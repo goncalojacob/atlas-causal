@@ -16238,6 +16238,15 @@
         }
       ]
     },
+    "kuwaiti-rashidi-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "kwilu-rebellion": {
       "from": "git",
       "versions": [

@@ -14702,7 +14702,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 16,
+      "degree": 17,
       "id": "constantinople",
       "kind": "place",
       "names": [
@@ -15650,7 +15650,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "cyprus-island",
       "kind": "place",
       "names": [
@@ -17223,6 +17223,35 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q125697830, the 2023 raid on Dioura, read on 2026-09-24; the town itself has no item this pass could reach. A9's first step as A12 (2) corrects it.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "diriyah",
+      "kind": "place",
+      "names": [
+        "Diriyah",
+        "Al-Diriyah",
+        "Daria"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -19014,6 +19043,33 @@
       "kind": "place",
       "names": [
         "Elandslaagte"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "elbistan",
+      "kind": "place",
+      "names": [
+        "Elbistan"
       ],
       "origin": {
         "tool": "wikidata"
@@ -25619,7 +25675,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "hamadan",
       "kind": "place",
       "names": [
@@ -26195,7 +26251,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "hebron",
       "kind": "place",
       "names": [
@@ -26440,7 +26496,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 5,
+      "degree": 6,
       "id": "herat",
       "kind": "place",
       "names": [
@@ -29659,7 +29715,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 132,
+      "degree": 152,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -30322,7 +30378,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 21,
+      "degree": 22,
       "id": "joseon",
       "kind": "place",
       "names": [
@@ -32520,6 +32576,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "kirtipur",
+      "kind": "place",
+      "names": [
+        "Kirtipur"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-30",
       "degree": 1,
       "id": "kiso-river",
@@ -33936,7 +34019,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "kyoto",
       "kind": "place",
       "names": [
@@ -43638,6 +43721,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "murjakheti",
+      "kind": "place",
+      "names": [
+        "Murjakheti"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "murten",
@@ -44030,7 +44140,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "nagapattinam",
       "kind": "place",
       "names": [
@@ -48104,6 +48214,34 @@
       "names": [
         "Oujda",
         "Ujda"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "ovac-k-tunceli",
+      "kind": "place",
+      "names": [
+        "Ovacık",
+        "Ovacık, Tunceli"
       ],
       "origin": {
         "tool": "wikidata"
@@ -52597,7 +52735,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 12,
+      "degree": 15,
       "id": "qing-dynasty",
       "kind": "place",
       "names": [
@@ -52634,6 +52772,34 @@
       "names": [
         "Qinghe District",
         "Qinghe District, Tieling"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "qingyang-gansu",
+      "kind": "place",
+      "names": [
+        "Qingyang",
+        "Qingyang, Gansu"
       ],
       "origin": {
         "tool": "wikidata"
@@ -55436,7 +55602,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "safed",
       "kind": "place",
       "names": [

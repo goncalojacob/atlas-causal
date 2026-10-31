@@ -6458,6 +6458,15 @@
         }
       ]
     },
+    "diriyah": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "diu-india": {
       "from": "git",
       "versions": [
@@ -7125,6 +7134,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "elbistan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -12209,6 +12227,15 @@
         }
       ]
     },
+    "kirtipur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "kiso-river": {
       "from": "git",
       "versions": [
@@ -16436,6 +16463,15 @@
         }
       ]
     },
+    "murjakheti": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "murten": {
       "from": "git",
       "versions": [
@@ -18109,6 +18145,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "ovac-k-tunceli": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -19893,6 +19938,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "qingyang-gansu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },

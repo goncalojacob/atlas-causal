@@ -1814,6 +1814,12 @@
     },
     {
       "dissent": false,
+      "id": "1505-lo-mustang-earthquake",
+      "kind": "event",
+      "locator": "Q24929357"
+    },
+    {
+      "dissent": false,
       "id": "1509-constantinople-earthquake",
       "kind": "event",
       "locator": "Q1188930"
@@ -2174,6 +2180,12 @@
     },
     {
       "dissent": false,
+      "id": "1780-tabriz-earthquake",
+      "kind": "event",
+      "locator": "Q55600396"
+    },
+    {
+      "dissent": false,
       "id": "1783-calabrian-earthquakes",
       "kind": "event",
       "locator": "Q1348869"
@@ -2363,6 +2375,12 @@
       "id": "1833-treaty-of-chicago",
       "kind": "event",
       "locator": "Q87256769"
+    },
+    {
+      "dissent": false,
+      "id": "1834-looting-of-safed",
+      "kind": "event",
+      "locator": "Q2524244"
     },
     {
       "dissent": false,
@@ -2618,6 +2636,12 @@
     },
     {
       "dissent": false,
+      "id": "1881-haiphong-typhoon",
+      "kind": "event",
+      "locator": "Q4555815"
+    },
+    {
+      "dissent": false,
       "id": "1882-herzegovina-uprising",
       "kind": "event",
       "locator": "Q12019518"
@@ -2699,6 +2723,12 @@
       "id": "1894-sasun-rebellion",
       "kind": "event",
       "locator": "Q2047022"
+    },
+    {
+      "dissent": false,
+      "id": "1894-shonai-earthquake",
+      "kind": "event",
+      "locator": "Q11485805"
     },
     {
       "dissent": false,
@@ -6158,6 +6188,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-balakot",
+      "kind": "event",
+      "locator": "Q19741578"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ball-s-bluff",
       "kind": "event",
       "locator": "Q1497909"
@@ -6239,6 +6275,12 @@
       "id": "battle-of-barrosa",
       "kind": "event",
       "locator": "Q586992"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-basgedikler",
+      "kind": "event",
+      "locator": "Q19631987"
     },
     {
       "dissent": false,
@@ -6611,6 +6653,12 @@
       "id": "battle-of-bomarsund",
       "kind": "event",
       "locator": "Q2091915"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bonari-pass",
+      "kind": "event",
+      "locator": "Q2890628"
     },
     {
       "dissent": false,
@@ -9764,6 +9812,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-hamadan-1503",
+      "kind": "event",
+      "locator": "Q130279251"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-hamburger-hill",
       "kind": "event",
       "locator": "Q247395"
@@ -9857,6 +9911,12 @@
       "id": "battle-of-heartbreak-ridge",
       "kind": "event",
       "locator": "Q489561"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-hebron",
+      "kind": "event",
+      "locator": "Q4554399"
     },
     {
       "dissent": false,
@@ -10934,6 +10994,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kirtipur",
+      "kind": "event",
+      "locator": "Q4871446"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kissingen",
       "kind": "event",
       "locator": "Q323365"
@@ -11000,6 +11066,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kochisar",
+      "kind": "event",
+      "locator": "Q85972229"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kokenhausen",
       "kind": "event",
       "locator": "Q717073"
@@ -11057,6 +11129,18 @@
       "id": "battle-of-konna",
       "kind": "event",
       "locator": "Q3018708"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-konodai-1538",
+      "kind": "event",
+      "locator": "Q3330721"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-konodai-1564",
+      "kind": "event",
+      "locator": "Q2052135"
     },
     {
       "dissent": false,
@@ -11237,6 +11321,12 @@
       "id": "battle-of-ky-hoa",
       "kind": "event",
       "locator": "Q3892142"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kyokoji",
+      "kind": "event",
+      "locator": "Q4871508"
     },
     {
       "dissent": false,
@@ -12896,9 +12986,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-muraki-castle",
+      "kind": "event",
+      "locator": "Q11523264"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-murche-khort",
       "kind": "event",
       "locator": "Q18205173"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-murjakheti",
+      "kind": "event",
+      "locator": "Q16372846"
     },
     {
       "dissent": false,
@@ -13571,6 +13673,18 @@
       "id": "battle-of-oued-zadidja",
       "kind": "event",
       "locator": "Q112659322"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ovac-k-1515",
+      "kind": "event",
+      "locator": "Q85973820"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ozawahara",
+      "kind": "event",
+      "locator": "Q2335993"
     },
     {
       "dissent": false,
@@ -15656,6 +15770,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sincouwaan",
+      "kind": "event",
+      "locator": "Q7443119"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sinhagad",
       "kind": "event",
       "locator": "Q4872383"
@@ -16265,6 +16385,12 @@
       "id": "battle-of-tarbes",
       "kind": "event",
       "locator": "Q136669216"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tarnab-1448",
+      "kind": "event",
+      "locator": "Q4872511"
     },
     {
       "dissent": false,
@@ -22100,6 +22226,12 @@
     },
     {
       "dissent": false,
+      "id": "eulenburg-expedition",
+      "kind": "event",
+      "locator": "Q481230"
+    },
+    {
+      "dissent": false,
       "id": "euphrates-tigris-expedition",
       "kind": "event",
       "locator": "Q85970616"
@@ -25526,6 +25658,12 @@
     },
     {
       "dissent": false,
+      "id": "jindandao-incident",
+      "kind": "event",
+      "locator": "Q6202099"
+    },
+    {
+      "dissent": false,
       "id": "jintian-uprising",
       "kind": "event",
       "locator": "Q1512810"
@@ -25607,6 +25745,18 @@
       "id": "kabul-expedition-1842",
       "kind": "event",
       "locator": "Q4871360"
+    },
+    {
+      "dissent": false,
+      "id": "kakitsu-incident",
+      "kind": "event",
+      "locator": "Q5365139"
+    },
+    {
+      "dissent": false,
+      "id": "kalender-celebi-rebellion",
+      "kind": "event",
+      "locator": "Q6100710"
     },
     {
       "dissent": false,
@@ -26021,6 +26171,12 @@
       "id": "kunohe-rebellion",
       "kind": "event",
       "locator": "Q7510166"
+    },
+    {
+      "dissent": false,
+      "id": "kuwaiti-rashidi-war",
+      "kind": "event",
+      "locator": "Q65066872"
     },
     {
       "dissent": false,
@@ -26705,6 +26861,12 @@
       "id": "mallarino-bidlack-treaty",
       "kind": "event",
       "locator": "Q2090617"
+    },
+    {
+      "dissent": false,
+      "id": "mamluk-campaigns-against-cyprus-1424-1426",
+      "kind": "event",
+      "locator": "Q22689021"
     },
     {
       "dissent": false,
@@ -28814,6 +28976,12 @@
     },
     {
       "dissent": false,
+      "id": "peace-of-constantinople-1879",
+      "kind": "event",
+      "locator": "Q55658233"
+    },
+    {
+      "dissent": false,
       "id": "peace-of-etaples",
       "kind": "event",
       "locator": "Q2508091"
@@ -29777,6 +29945,12 @@
       "id": "qing-reconquest-of-xinjiang",
       "kind": "event",
       "locator": "Q6140819"
+    },
+    {
+      "dissent": false,
+      "id": "qingyang-event",
+      "kind": "event",
+      "locator": "Q16000547"
     },
     {
       "dissent": false,
@@ -32030,6 +32204,12 @@
     },
     {
       "dissent": false,
+      "id": "siboga-expedition",
+      "kind": "event",
+      "locator": "Q4201627"
+    },
+    {
+      "dissent": false,
       "id": "sicilian-revolution-of-1848",
       "kind": "event",
       "locator": "Q2708273"
@@ -32147,6 +32327,12 @@
       "id": "siege-of-anzele",
       "kind": "event",
       "locator": "Q138606175"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-arai",
+      "kind": "event",
+      "locator": "Q1885368"
     },
     {
       "dissent": false,
@@ -32351,6 +32537,12 @@
       "id": "siege-of-bexar",
       "kind": "event",
       "locator": "Q2722368"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-bharatpur-1805",
+      "kind": "event",
+      "locator": "Q4870476"
     },
     {
       "dissent": false,
@@ -32732,6 +32924,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-diriyah",
+      "kind": "event",
+      "locator": "Q3656346"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-diu-1531",
       "kind": "event",
       "locator": "Q7509975"
@@ -32969,6 +33167,18 @@
       "id": "siege-of-fuenterrabia-1523-1524",
       "kind": "event",
       "locator": "Q1541712"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-fukashi",
+      "kind": "event",
+      "locator": "Q593638"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-fukuyo",
+      "kind": "event",
+      "locator": "Q2341266"
     },
     {
       "dissent": false,
@@ -33290,6 +33500,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-kaminogo-castle",
+      "kind": "event",
+      "locator": "Q7510141"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-kandahar",
       "kind": "event",
       "locator": "Q7510145"
@@ -33317,6 +33533,12 @@
       "id": "siege-of-kanizsa-1601",
       "kind": "event",
       "locator": "Q4822495"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kannomine",
+      "kind": "event",
+      "locator": "Q3212009"
     },
     {
       "dissent": false,
@@ -33380,6 +33602,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-kiso-fukushima",
+      "kind": "event",
+      "locator": "Q2147181"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-klis",
       "kind": "event",
       "locator": "Q735043"
@@ -33389,6 +33617,12 @@
       "id": "siege-of-knin",
       "kind": "event",
       "locator": "Q18713116"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kojinyama",
+      "kind": "event",
+      "locator": "Q1811771"
     },
     {
       "dissent": false,
@@ -33722,6 +33956,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-matsuo",
+      "kind": "event",
+      "locator": "Q1869311"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-mazagan-1562",
       "kind": "event",
       "locator": "Q96387538"
@@ -33890,6 +34130,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-musashi-matsuyama-1537",
+      "kind": "event",
+      "locator": "Q1941291"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-nagakubo",
+      "kind": "event",
+      "locator": "Q2662987"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-namur-1692",
       "kind": "event",
       "locator": "Q2617799"
@@ -33935,6 +34187,12 @@
       "id": "siege-of-navarino-1572",
       "kind": "event",
       "locator": "Q116006964"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-negapatam",
+      "kind": "event",
+      "locator": "Q7510266"
     },
     {
       "dissent": false,
@@ -34364,6 +34622,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-ryugasaki",
+      "kind": "event",
+      "locator": "Q5365347"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-s-hertogenbosch",
       "kind": "event",
       "locator": "Q387040"
@@ -34487,6 +34751,12 @@
       "id": "siege-of-shigisan",
       "kind": "event",
       "locator": "Q6132231"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-shika-castle",
+      "kind": "event",
+      "locator": "Q2738866"
     },
     {
       "dissent": false,
@@ -34856,9 +35126,21 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-uchiyama",
+      "kind": "event",
+      "locator": "Q2440865"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-ueda",
       "kind": "event",
       "locator": "Q848897"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-uehara",
+      "kind": "event",
+      "locator": "Q2183299"
     },
     {
       "dissent": false,
@@ -36305,6 +36587,12 @@
       "id": "third-javanese-war-of-succession",
       "kind": "event",
       "locator": "Q2371369"
+    },
+    {
+      "dissent": false,
+      "id": "third-literati-purge-of-1519",
+      "kind": "event",
+      "locator": "Q486388"
     },
     {
       "dissent": false,
@@ -39302,6 +39590,12 @@
     },
     {
       "dissent": false,
+      "id": "urdu-bazaar-revolt",
+      "kind": "event",
+      "locator": "Q7900327"
+    },
+    {
+      "dissent": false,
       "id": "urfa-resistance",
       "kind": "event",
       "locator": "Q4477441"
@@ -40103,6 +40397,12 @@
       "id": "xinhai-revolution",
       "kind": "event",
       "locator": "Q190517"
+    },
+    {
+      "dissent": false,
+      "id": "xinyou-coup",
+      "kind": "event",
+      "locator": "Q9108134"
     },
     {
       "dissent": false,
