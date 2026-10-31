@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-dresden",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q610150",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Dresden"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q610150"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Dresden\", revision 1370740818"
+    }
+  ],
+  "title": "Siege of Dresden",
+  "summary": "The English Wikipedia article \"Siege of Dresden\", at revision 1370740818, opens: \"The siege of Dresden took place in July 1760 during the Third Silesian War when a Prussian force led by Frederick the Great unsuccessfully besieged the city of Dresden in Saxony.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q610150, imported by tools/import/wikidata.mjs. The item's own description reads \"1760 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1760,
+    "end": 1760,
+    "date": "1760-07-13",
+    "endDate": "1760-07-22"
+  },
+  "place": "dresden",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

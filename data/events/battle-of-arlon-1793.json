@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-arlon-1793",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2984734",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Arlon (1793)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2984734"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Arlon (1793)\", revision 1370432505"
+    }
+  ],
+  "title": "Battle of Arlon (1793)",
+  "summary": "The English Wikipedia article \"Battle of Arlon (1793)\", at revision 1370432505, opens: \"The Battle of Arlon saw a French Republican force under the command of Amable Henri Delaage face the Austrian force on a strong position led by Gottfried von Schröder. The French were victorious though they suffered higher casualties than the Austrians. The action was fought during the War of the First Coalition, part of the larger French Revolutionary Wars. Arlon is located in Belgium, a distance of 30 kilometres (19 mi) west of Luxembourg city.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2984734, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 battle in future Belgium\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-06-09"
+  },
+  "place": "arlon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}

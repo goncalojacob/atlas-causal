@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "gunzburg",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q489685",
+  "sitelinks": {
+    "count": 57,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Günzburg",
+    "pt": "Gunzburgo"
+  },
+  "sources": [],
+  "names": [
+    "Günzburg",
+    "Gunzburgo"
+  ],
+  "where": {
+    "lon": 10.271111111111,
+    "lat": 48.4525,
+    "precision": "city",
+    "label": "Günzburg"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

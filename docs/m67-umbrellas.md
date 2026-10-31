@@ -8334,3 +8334,39 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-31: `battle-of-sembulan`, filed under `apostate-war` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-31-asia-160`, rank `child-of:apostate-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-31: `battle-of-flushing`, filed under `eighty-years-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-31-europe-245`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-31: `battle-of-rakvere-1603`, filed under `polish-swedish-war-1600-1611` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-31-europe-251`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-31: `battle-of-brentford-1642`, filed under `first-english-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-31-europe-255`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-31: `siege-of-zhvanets`, filed under `khmelnytsky-uprising` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-31-europe-257`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `massacre-of-naarden`, filed under `eighty-years-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-europe-244`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `siege-of-deventer-1591`, filed under `eighty-years-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-europe-246`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `siege-of-wolmar`, filed under `polish-swedish-war-1600-1611` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-europe-248`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `siege-of-fellin`, filed under `polish-swedish-war-1600-1611` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-europe-250`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `battle-of-alcolea-bridge`, filed under `peninsular-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-europe-286`, rank `list`. Its span and its subject put it inside the umbrella.

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-nauheim",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q74391",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Nauheim"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q74391"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nauheim\", revision 1370451481"
+    }
+  ],
+  "title": "Battle of Nauheim",
+  "summary": "The English Wikipedia article \"Battle of Nauheim\", at revision 1370451481, opens: \"The Battle of Nauheim took place during the Seven Years' War near Bad Nauheim in the Landgraviate of Hessen-Kassel on 30 August 1762. French troops under the command of Louis Joseph, Prince of Condé defeated Hanoverian and British troops under the command of Duke Ferdinand of Brunswick.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q74391, imported by tools/import/wikidata.mjs. The item's own description reads \"1762 battle of the Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1762,
+    "end": 1762,
+    "date": "1762-08-30"
+  },
+  "place": "nauheim",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}
