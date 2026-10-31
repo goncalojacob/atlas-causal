@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "massacre-of-warsheikh",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q135921217",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Massacre of Warsheikh"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q135921217"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Massacre of Warsheikh\", revision 1370627808"
+    }
+  ],
+  "title": "Massacre of Warsheikh",
+  "summary": "The English Wikipedia article \"Massacre of Warsheikh\", at revision 1370627808, opens: \"The Massacre of Warsheikh or Attack on Warsheikh was the attack on an Italian ship by native Somalis under the Chief of Warsheikh in April 1890 near the city of Warsheikh in Somalia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q135921217, imported by tools/import/wikidata.mjs. The item's own description reads \"1890 massacre\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1890,
+    "end": 1890,
+    "date": "1890-04-24"
+  },
+  "place": "warsheikh",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "italian-pacification-campaigns-in-somalia"
+}

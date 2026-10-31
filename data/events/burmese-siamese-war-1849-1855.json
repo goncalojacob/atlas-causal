@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "burmese-siamese-war-1849-1855",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q25182681",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Burmese–Siamese War (1849–1855)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q25182681"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Burmese–Siamese War (1849–1855)\", revision 1370607060"
+    }
+  ],
+  "title": "Burmese–Siamese War (1849–1855)",
+  "summary": "The English Wikipedia article \"Burmese–Siamese War (1849–1855)\", at revision 1370607060, opens: \"The Burmese–Siamese War of 1849–1855 or Siamese Invasions of Kengtung or Kengtung Wars were military expeditions of the Siamese Rattanakosin Kingdom against the Tai Khün State of Kengtung, which had been under Burmese suzerainty under the Konbaung dynasty. The dynastic struggles in Tai Lue State of Chiang Hung or Sipsongpanna prompted Siam, in cooperation with the Kingdom of Lanna, to invade Kengtung in order to gain access to Chiang Hung. In the First Invasion in 1850, the Siamese court had ordered the Lanna Lord of Chiang Mai to organize the offensives against Kengtung. Lanna troops failed to conquer Kengtung. Two other expeditions occurred in 1852 and 1853 as Bangkok commanded its troops to directly participate in the invasions. Both expeditions also failed because of internal issues and geographical unfamiliarity. The State of Kengtung under the leadership of Saopha Maha Khanan, with limited assistance from mainland Burma who had been embroiling in the Second Anglo-Burmese War, managed to resist Siamese-Lanna invasions three times.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q25182681, imported by tools/import/wikidata.mjs. The item's own description reads \"1849-1855 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1849,
+    "end": 1855,
+    "date": "1855-05"
+  },
+  "place": "kengtung",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "burmese-siamese-wars"
+}

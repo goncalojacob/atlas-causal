@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "khanaqin",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1004283",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Khanaqin",
+    "pt": "Khanaqin"
+  },
+  "sources": [],
+  "names": [
+    "Khanaqin"
+  ],
+  "where": {
+    "lon": 45.383333333333,
+    "lat": 34.333333333333,
+    "precision": "city",
+    "label": "Khanaqin"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

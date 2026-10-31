@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "bedir-khan-beg-s-campaign-against-the-assyrians",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "article-is-redirect",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q130377497",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Bedir Khan Beg's campaign against the Assyrians"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q130377497"
+    }
+  ],
+  "title": "Bedir Khan Beg's campaign against the Assyrians",
+  "summary": "Wikidata item Q130377497, imported by tools/import/wikidata.mjs. The item's own description reads \"1843 military campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1843,
+    "end": 1843,
+    "date": "1843-06",
+    "endDate": "1843-07"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "1843-and-1846-massacres-in-hakkari"
+}

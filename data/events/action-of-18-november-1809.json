@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "action-of-18-november-1809",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4677281",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Action of 18 November 1809",
+    "pt": "Ação de 18 de Novembro de 1809"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4677281"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 18 November 1809\", revision 1370426121"
+    }
+  ],
+  "title": "Action of 18 November 1809",
+  "summary": "The English Wikipedia article \"Action of 18 November 1809\", at revision 1370426121, opens: \"The action of 18 November 1809 was the major engagement of a six-month cruise in the Indian Ocean by a French navy squadron during the Napoleonic Wars. Under Commodore Jacques Félix Emmanuel Hamelin, the squadron engaged in commerce raiding across the Bay of Bengal. Hamelin's squadron achieved local superiority, capturing several British merchant ships and destroying a factory of the East India Company (EIC). On 18 November 1809, two frigates and a brig of Hamelin's squadron encountered a convoy of three EIC East Indiamen bound for British India.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4677281, imported by tools/import/wikidata.mjs. The item's own description reads \"1809 naval engagement of the Napoleonic wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1809,
+    "end": 1809,
+    "date": "1809-11-18"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "mauritius-campaign-of-1809-1811"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-balantang",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q22092207",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Balantang"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q22092207"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Balantang\", revision 1380529572"
+    }
+  ],
+  "title": "Battle of Balantang",
+  "summary": "The English Wikipedia article \"Battle of Balantang\", at revision 1380529572, opens: \"The Battle of Balantang, also known as the Second Battle of Jaro, was fought in the early stages of the Philippine–American War. It was an organized counterattack by Filipino forces on U.S. forces that was executed on March 10, 1899, which resulted in the retaking the town of Jaro on the island of Panay in the Philippines. Filipino revolutionaries led by General Pascual Magbanua together with his sister Teresa Magbanua launched an attack, despite the disadvantages in training and equipment. The battle resulted in Philippine forces retaking Jaro from U.S forces. The number of Filipino casualties was not recorded. Because of her valor, Teresa Magbanua was given a prominent place in the celebration, and led her troops into the city while riding upon a white horse.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q22092207, imported by tools/import/wikidata.mjs. The item's own description reads \"battle fought in Iloilo in 1899 during the Philippine–American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-03-10"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "battle-of-the-visayas-1899"
+}

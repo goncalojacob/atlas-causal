@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mindanao-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q120682632",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Mindanao expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q120682632"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mindanao expedition\", revision 1370628261"
+    }
+  ],
+  "title": "Mindanao expedition",
+  "summary": "The English Wikipedia article \"Mindanao expedition\", at revision 1370628261, opens: \"In 1596, the Spanish army launched an expedition to the island of Mindanao to conquer and pacify it; however, the expedition ended in failure and they were forced to withdraw.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q120682632, imported by tools/import/wikidata.mjs. The item's own description reads \"Spanish expedition to Mindanao, late 16th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1596,
+    "end": 1596,
+    "date": "1596-02"
+  },
+  "place": "mindanao",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-moro-conflict"
+}

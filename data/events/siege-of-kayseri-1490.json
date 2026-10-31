@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-kayseri-1490",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q134286876",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Kayseri (1490)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q134286876"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Kayseri (1490)\", revision 1370742388"
+    }
+  ],
+  "title": "Siege of Kayseri (1490)",
+  "summary": "The English Wikipedia article \"Siege of Kayseri (1490)\", at revision 1370742388, opens: \"The 1490 siege of Kayseri took place during the Ottoman–Mamluk War (1485–1491). Mamluk forces, led by Atabeg Uzbek Bey and Al-Ashraf Qansuh al-Ghuri, laid siege to the central Anatolian city of Kayseri, which was under Ottoman control. The siege resulted in a Mamluk victory after the Ottoman forces, led by Governor Mihailoğlu İskender Bey, were decisively defeated and the city fell.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q134286876, imported by tools/import/wikidata.mjs. The item's own description reads \"1490 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1490,
+    "end": 1490,
+    "date": "1490-01",
+    "endDate": "1490-02"
+  },
+  "place": "kayseri",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-mamluk-war-1485-1491"
+}

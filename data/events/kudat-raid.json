@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "kudat-raid",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q139147006",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Kudat Raid"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q139147006"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kudat Raid\", revision 1370626235"
+    }
+  ],
+  "title": "Kudat Raid",
+  "summary": "The English Wikipedia article \"Kudat Raid\", at revision 1370626235, opens: \"The Kudat Raid was a battle of the Mat Salleh Rebellion in 1900, after the death of Mat Salleh, between the forces of Mat Sator and the British North Borneo Constabulary, the military and police force of British North Borneo under the rule of the North Borneo Chartered Company.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q139147006, imported by tools/import/wikidata.mjs. The item's own description reads \"1900 raid\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-04",
+    "endDate": "1900-05"
+  },
+  "place": "kudat",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mat-salleh-rebellion"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-berea",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q29026955",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Berea"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q29026955"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Berea\", revision 1370107705"
+    }
+  ],
+  "title": "Battle of Berea",
+  "summary": "The English Wikipedia article \"Battle of Berea\", at revision 1370107705, opens: \"The Battle of Berea was a battle between British forces under Sir George Cathcart and Basuto-Taung forces under King Moshoeshoe I that took place on 20 December 1852. The battle began when British forces broke into three columns and crossed the Caledon River in southern Africa, with the goal of seizing Basuto cattle as a form of punishment for past Basuto cattle raiding.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q29026955, imported by tools/import/wikidata.mjs. The item's own description reads \"1852 battle between the Cape Colony and the Basuto people\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1852,
+    "end": 1852,
+    "date": "1852-12-20"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "eighth-xhosa-war"
+}

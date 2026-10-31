@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-malacca-1574",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q130198666",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Malacca (1574)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q130198666"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Malacca (1574)\", revision 1380056609"
+    }
+  ],
+  "title": "Siege of Malacca (1574)",
+  "summary": "The English Wikipedia article \"Siege of Malacca (1574)\", at revision 1380056609, opens: \"The Siege of Malacca (1574) was a military conflict between the Portuguese Empire and the Javanese under Queen Kalinyamat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q130198666, imported by tools/import/wikidata.mjs. The item's own description reads \"1574 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1574,
+    "end": 1574,
+    "date": "1574-10-05",
+    "endDate": "1574-12"
+  },
+  "place": "malacca-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-league-of-the-indies"
+}
