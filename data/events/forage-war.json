@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "forage-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4584107",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Forage War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4584107"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Forage War\", revision 1370619846"
+    }
+  ],
+  "title": "Forage War",
+  "summary": "The English Wikipedia article \"Forage War\", at revision 1370619846, opens: \"The Forage War was a partisan campaign consisting of numerous small skirmishes that took place in New Jersey during the American Revolutionary War between January and March 1777, following the battles of Trenton and Princeton. After both British and Continental Army troops entered their winter quarters in early January, Continental Army regulars and militia companies from New Jersey and Pennsylvania engaged in numerous scouting and harassing operations against the British and German troops quartered in New Jersey.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4584107, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 military campaign in New Jersey during the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-01-04",
+    "endDate": "1777-03-24"
+  },
+  "place": "new-jersey",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

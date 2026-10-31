@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-ciudad-rodrigo-1810",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q514897",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Ciudad Rodrigo (1810)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q514897"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Ciudad Rodrigo (1810)\", revision 1378603097"
+    }
+  ],
+  "title": "Siege of Ciudad Rodrigo (1810)",
+  "summary": "The English Wikipedia article \"Siege of Ciudad Rodrigo (1810)\", at revision 1378603097, opens: \"In the siege of Ciudad Rodrigo, in Salamanca, Spain, the French Marshal Michel Ney took the fortified city from Field Marshal Andrés Pérez de Herrasti on 10 July 1810 after a siege that began on 26 April. Ney's VI Corps made up part of a 65,000-strong army commanded by André Masséna, who was bent on a third French invasion of Portugal.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q514897, imported by tools/import/wikidata.mjs. The item's own description reads \"1810 siege during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1810,
+    "date": "1810-04-26",
+    "endDate": "1810-07-10"
+  },
+  "place": "ciudad-rodrigo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

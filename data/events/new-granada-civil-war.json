@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "new-granada-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3118960",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "New Granada Civil War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3118960"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"New Granada Civil War\", revision 1370629520"
+    }
+  ],
+  "title": "New Granada Civil War",
+  "summary": "The English Wikipedia article \"New Granada Civil War\", at revision 1370629520, opens: \"The New Granada Civil War was a civil war between 1812 and 1814 in New Granada between Federalists and Centralists. The war ended with a victory for the Federalists.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3118960, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1815,
+    "date": "1812-12-02"
+  },
+  "place": "colombia-q739",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "colombian-war-of-independence"
+}

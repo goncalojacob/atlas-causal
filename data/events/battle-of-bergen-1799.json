@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-bergen-1799",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q793448",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Bergen (1799)",
+    "pt": "Batalha de Bergen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q793448"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bergen (1799)\", revision 1370434097"
+    }
+  ],
+  "title": "Battle of Bergen (1799)",
+  "summary": "The English Wikipedia article \"Battle of Bergen (1799)\", at revision 1370434097, opens: \"The Battle of Bergen was fought on 19 September 1799 and resulted in a Franco-Batavian victory, as Generals Guillaume Brune and Herman Willem Daendels defeated the Anglo-Russian forces that had landed in North Holland under the Duke of York as supreme commander and Lieutenant General Ivan Hermann. York did not organise proper interaction between the British and Russian forces, which ultimately resulted in them being defeated in detail. The battlefield is marked by the Russisch Monument (1902).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q793448, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 battle during the War of the Second Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-09-19"
+  },
+  "place": "low-countries",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

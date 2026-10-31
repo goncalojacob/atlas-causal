@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hudson-bay-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3062432",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Hudson Bay expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3062432"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hudson Bay expedition\", revision 1370622976"
+    }
+  ],
+  "title": "Hudson Bay expedition",
+  "summary": "The English Wikipedia article \"Hudson Bay expedition\", at revision 1370622976, opens: \"The Hudson Bay expedition was a series of military raids on the fur trading outposts and fortifications of the British Hudson's Bay Company (HBC) on the shores of Hudson Bay by a French Navy squadron under the command of the Comte de Lapérouse. Setting sail from Cap-Français, Saint-Domingue in 1782, the expedition was part of a series of globe-spanning naval conflicts between France and Great Britain during the American Revolutionary War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3062432, imported by tools/import/wikidata.mjs. The item's own description reads \"1782 expedition, part of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1782,
+    "end": 1782,
+    "date": "1782-08-08"
+  },
+  "place": "hudson-bay",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

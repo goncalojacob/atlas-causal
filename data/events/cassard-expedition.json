@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "cassard-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5049265",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Cassard expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5049265"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cassard expedition\", revision 1367902109"
+    }
+  ],
+  "title": "Cassard expedition",
+  "summary": "The English Wikipedia article \"Cassard expedition\", at revision 1367902109, opens: \"The Cassard expedition was a sea voyage by French Navy captain Jacques Cassard in 1712, during the War of the Spanish Succession. Targeting English, Dutch, and Portuguese possessions, he raided and ransomed the colonies of Cape Verde, Sint Eustatius, and Curaçao—factories, depots, and seasoning camps used in the Atlantic slave trade. He also raided and ransomed Montserrat, Antigua, Surinam, Berbice, and Essequibo—wealthy sugar-producing colonies in the Caribbean whose economies were based on the exploitation of slave labor.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5049265, imported by tools/import/wikidata.mjs. The item's own description reads \"1712 naval pillaging expedition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1712,
+    "end": 1713,
+    "date": "1712-03",
+    "endDate": "1713-03"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

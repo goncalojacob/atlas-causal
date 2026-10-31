@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-wenden-1601",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1413158",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Wenden (1601)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1413158"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wenden (1601)\", revision 1373817999"
+    }
+  ],
+  "title": "Battle of Wenden (1601)",
+  "summary": "The English Wikipedia article \"Battle of Wenden (1601)\", at revision 1373817999, opens: \"The Battle of Wenden took place on 7 January 1601, during the Polish–Swedish War (1600–1611). Polish–Lithuanian forces were led by Jürgen von Farensbach and Maciej Dębiński. The Swedes were under Hans Bengtsson. The battle is significant as the first encounter between Swedish reiters and Polish hussars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1413158, imported by tools/import/wikidata.mjs. The item's own description reads \"1601 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1601,
+    "end": 1601,
+    "date": "1601-01-07"
+  },
+  "place": "cesis",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "polish-swedish-war-1600-1611"
+}

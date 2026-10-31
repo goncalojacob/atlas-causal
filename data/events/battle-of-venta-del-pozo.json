@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-venta-del-pozo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1497957",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Venta del Pozo",
+    "pt": "Batalha de Venta del Pozo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1497957"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Venta del Pozo\", revision 1370276317"
+    }
+  ],
+  "title": "Battle of Venta del Pozo",
+  "summary": "The English Wikipedia article \"Battle of Venta del Pozo\", at revision 1370276317, opens: \"The Battle of Venta del Pozo, also known as the Battle of Villodrigo by the French and Spanish, was a rear-guard action fought as part of the Peninsular War on 23 October 1812 between an Anglo-German force led by Major-General Stapleton Cotton and Marquess of Wellington against French troops under Major-Generals Pierre François Xavier Boyer and Jean-Baptiste Théodore Curto. A French victory was achieved by dislodging British forces from a series of defensive positions held successively by Cotton and Wellington. Despite repelling two French assaults on the last-held high ground, the British ultimately withdrew from the engagement to secure a safer position.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1497957, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-10-23"
+  },
+  "place": "villodrigo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

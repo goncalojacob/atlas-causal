@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1420-caldera-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q65045870",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1420 Caldera earthquake",
+    "pt": "Terremoto de 1420 de Caldeira"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q65045870"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1420 Caldera earthquake\", revision 1382116421"
+    }
+  ],
+  "title": "1420 Caldera earthquake",
+  "summary": "The English Wikipedia article \"1420 Caldera earthquake\", at revision 1382116421, opens: \"The 1420 Caldera earthquake was a pre-Columbian earthquake that shook the southern portion of Atacama Desert in the early morning of 31 August 1420 and caused tsunamis in Chile as well as Hawaii and Japan. The earthquake's magnitude is estimated to be between 8.8 and 9.4.Mw. Historical records of the tsunami exist for the Japanese harbours of Kawarago and Aiga where confused residents saw the water recede in the morning of 1 September, without any sign of an earthquake. In Chile, rockfalls occurred along the coast as well, producing blocks of up to 40 tons that are now found inland. This is also consistent with the identification of a possible tsunami deposit in Mejillones Bay that has been dated to the range 1409 to 1449. Deposits found by coring of recent sediments in a wetland near Tongoy Bay have also been linked to the 1420 tsunami.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q65045870, imported by tools/import/wikidata.mjs. The item's own description reads \"1420 earthquake and tsunami centered in northern Chile\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1420,
+    "end": 1420,
+    "date": "1420-08-31"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

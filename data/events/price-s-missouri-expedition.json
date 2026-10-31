@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "price-s-missouri-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2489794",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Price's Missouri Expedition",
+    "pt": "Expedição de Price ao Missouri"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2489794"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Price's Missouri Expedition\", revision 1380701048"
+    }
+  ],
+  "title": "Price's Missouri Expedition",
+  "summary": "The English Wikipedia article \"Price's Missouri Expedition\", at revision 1380701048, opens: \"Price's Missouri Expedition, also known as Price's raid or Price's Missouri raid, was an unsuccessful Confederate cavalry raid through Arkansas, Missouri, and Kansas in the Trans-Mississippi Theater of the American Civil War. Led by Confederate Major General Sterling Price, the campaign aimed to recapture Missouri and renew the Confederate initiative in the larger conflict.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2489794, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 military campaign of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-08-29",
+    "endDate": "1864-12-02"
+  },
+  "place": "arkansas",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

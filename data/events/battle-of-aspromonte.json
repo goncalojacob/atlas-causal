@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-aspromonte",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1118637",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Aspromonte"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1118637"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Aspromonte\", revision 1382468830"
+    }
+  ],
+  "title": "Battle of Aspromonte",
+  "summary": "The English Wikipedia article \"Battle of Aspromonte\", at revision 1382468830, opens: \"The Battle of Aspromonte, also known as the Day of Aspromonte, was a minor engagement that took place on 29 August 1862, and was an inconclusive episode of the Italian unification process. It is named after the nearby mountain of Aspromonte in southern Italy. Giuseppe Garibaldi's army of volunteers was attacked by the Royal Italian Army while marching from Sicily towards Rome, capital of the Papal States, which it intended to annex into the newly created Kingdom of Italy. In the fighting, which took place a few kilometers from Gambarie, Garibaldi was wounded and taken prisoner.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1118637, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle in Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-08-29"
+  },
+  "place": "aspromonte",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "unification-of-italy"
+}

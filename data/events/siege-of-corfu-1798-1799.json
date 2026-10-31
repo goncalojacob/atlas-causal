@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-corfu-1798-1799",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4120811",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Corfu (1798–1799)",
+    "pt": "Cerco de Corfu (1798-1799)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4120811"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Corfu (1798–1799)\", revision 1382487565"
+    }
+  ],
+  "title": "Siege of Corfu (1798–1799)",
+  "summary": "The English Wikipedia article \"Siege of Corfu (1798–1799)\", at revision 1382487565, opens: \"The Siege of Corfu was a military operation by a joint Russian and Turkish fleet against French troops occupying the fortified island of Corfu; ended in Coalition victory. Corfu fortifications had a strong reputation, but by the siege time they were in a parlous state.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4120811, imported by tools/import/wikidata.mjs. The item's own description reads \"1798–1799 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1799,
+    "date": "1798-11-04",
+    "endDate": "1799-03-03"
+  },
+  "place": "corfu",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

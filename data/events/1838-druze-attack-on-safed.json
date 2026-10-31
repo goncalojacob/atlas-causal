@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1838-druze-attack-on-safed",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q14928070",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1838 Druze attack on Safed"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q14928070"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1838 Druze attack on Safed\", revision 1373738642"
+    }
+  ],
+  "title": "1838 Druze attack on Safed",
+  "summary": "The English Wikipedia article \"1838 Druze attack on Safed\", at revision 1373738642, opens: \"The 1838 Druze attack on Safed began on July 5, 1838, during the Druze revolt against the rule of Ibrahim Pasha of Egypt. Tensions had mounted as the Druze captured an Egyptian garrison outside of Safed. The local Safed militia of several hundred was heavily outnumbered by the Druze rebels, and the city was gripped in despair as the militia eventually abandoned the city and the Druze rebels entered the city on July 5. The Druze rebels and a Muslim mob descended on the Jewish quarter of Safed and spent three days attacking Jews, plundering their homes and desecrating their synagogues, in scenes reminiscent of the looting and pillaging of the Jews in the city that took place four years earlier as part of the Peasants' revolt in Palestine. Some Jews ended up leaving the town, moving south to Jerusalem and Acre.The legacy of the riots and the earthquake led the center of Jewish life to shift from Safed to Jerusalem in the subsequent decade.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q14928070, imported by tools/import/wikidata.mjs. The item's own description reads \"Druze attack on Safed (1838)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1838,
+    "end": null,
+    "date": "1838-07-05"
+  },
+  "place": "safed",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

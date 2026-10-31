@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-mons-1572",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q971364",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Mons (1572)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q971364"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Mons (1572)\", revision 1370743604"
+    }
+  ],
+  "title": "Siege of Mons (1572)",
+  "summary": "The English Wikipedia article \"Siege of Mons (1572)\", at revision 1370743604, opens: \"The siege of Mons of 1572 took place at Mons, capital of the County of Hainaut, Spanish Netherlands, between 23 June and 19 September 1572, as part of the Eighty Years' War and the French Wars of Religion. In the spring of 1572, after the capture of Valenciennes by a Protestant force under Louis of Nassau, the Dutch commander continued with his offensive and took Mons by surprise on 24 May. After three months of siege, and the defeats of the armies of Jean de Hangest, seigneur d'Yvoy and Genlis, and William the Silent, Prince of Orange (Dutch: Willem van Oranje), by the Spanish army led by Don Fernando Álvarez de Toledo, 3rd Duke of Alba, Governor-General of the Spanish Netherlands, and his son, Don Fadrique Álvarez de Toledo, 4th Duke of Alba, Louis of Nassau's forces, isolated and without any hope of help, surrendered Mons to the Duke of Alba on 19 September. Without French assistance, William of Orange, leading a German mercenary army to aid his brother, was driven back into Germany; the garrison of Mons was thus cut off and – eventually – forced to accept the terms.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q971364, imported by tools/import/wikidata.mjs. The item's own description reads \"1572 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1572,
+    "end": 1572,
+    "date": "1572-06-23",
+    "endDate": "1572-09-19"
+  },
+  "place": "mons-belgium",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "upper-doab-famine-of-1860-1861",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7898614",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Upper Doab famine of 1860–1861"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7898614"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Upper Doab famine of 1860–1861\", revision 1378424379"
+    }
+  ],
+  "title": "Upper Doab famine of 1860–1861",
+  "summary": "The English Wikipedia article \"Upper Doab famine of 1860–1861\", at revision 1378424379, opens: \"The Doab famine of 1860–1861 was a famine in India that affected the Ganga-Yamuna Doab in the North-Western Provinces, large parts of Rohilkhand and Awadh, the Delhi and Hissar divisions of the Punjab, all in British India, then under Crown rule, and the eastern regions of the princely states of Rajputana. Up to 2 million people are thought to have perished in the famine.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7898614, imported by tools/import/wikidata.mjs. The item's own description reads \"famine in India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1860,
+    "end": 1861
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

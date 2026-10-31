@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pescadores-campaign-1885",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2935396",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Pescadores campaign (1885)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2935396"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pescadores campaign (1885)\", revision 1370704077"
+    }
+  ],
+  "title": "Pescadores campaign (1885)",
+  "summary": "The English Wikipedia article \"Pescadores campaign (1885)\", at revision 1370704077, opens: \"The Pescadores campaign which took place in late March, 1885, was one of the last campaigns of the Sino-French War. It was fought to capture the Pescadores, a strategically important archipelago off the western coast of Formosa (Taiwan). Admiral Amédée Courbet, with part of the French Far East Squadron, bombarded the Chinese coastal defences around the principal town of Makung on Penghu Island and landed a battalion of marine infantry which routed the Chinese defenders and occupied Makung.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2935396, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of Sino-French War (March 29-30,1885)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-03"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "sino-french-war"
+}

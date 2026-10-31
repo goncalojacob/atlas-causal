@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "invasion-of-the-spice-islands",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q76495389",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Invasion of the Spice Islands"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q76495389"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of the Spice Islands\", revision 1370624165"
+    }
+  ],
+  "title": "Invasion of the Spice Islands",
+  "summary": "The English Wikipedia article \"Invasion of the Spice Islands\", at revision 1370624165, opens: \"The invasion of the Spice Islands was a military invasion by British forces that took place between February and August 1810 on and around the Dutch owned Maluku Islands also known as the Spice Islands in the Dutch East Indies during the Napoleonic Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q76495389, imported by tools/import/wikidata.mjs. The item's own description reads \"1810 British military campaign in the Dutch East Indies\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1810,
+    "date": "1810-02-15",
+    "endDate": "1810-08-31"
+  },
+  "place": "maluku-islands",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "napoleonic-wars"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "manitoba-schools-question",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1538672",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Manitoba Schools Question"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1538672"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Manitoba Schools Question\", revision 1379623017"
+    }
+  ],
+  "title": "Manitoba Schools Question",
+  "summary": "The English Wikipedia article \"Manitoba Schools Question\", at revision 1379623017, opens: \"The Manitoba Schools Question was a political crisis in the Canadian province of Manitoba that occurred late in the 19th century, attacking publicly-funded separate schools for Roman Catholics and Protestants. The crisis was precipitated by a series of provincial laws passed between 1890 and 1896, and another passed in 1916.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1538672, imported by tools/import/wikidata.mjs. The item's own description reads \"Canadian political crisis\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1890,
+    "end": 1896
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

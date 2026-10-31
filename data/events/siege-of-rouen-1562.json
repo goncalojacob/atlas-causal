@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-rouen-1562",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7510354",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Rouen (1562)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510354"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Rouen (1562)\", revision 1382256730"
+    }
+  ],
+  "title": "Siege of Rouen (1562)",
+  "summary": "The English Wikipedia article \"Siege of Rouen (1562)\", at revision 1382256730, opens: \"The siege of Rouen was a key military engagement of the first French War of Religion. After having been seized by those opposing the crown on 16 April, the siege, beginning on 28 May and culminating on 26 October brought the important city of Rouen back into the crown's control. The fall of Rouen would set the stage for the main battle of the war at Dreux several months later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510354, imported by tools/import/wikidata.mjs. The item's own description reads \"siege in 1562\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1562,
+    "end": 1562,
+    "date": "1562-09-28",
+    "endDate": "1562-10-26"
+  },
+  "place": "rouen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

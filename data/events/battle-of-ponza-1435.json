@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-ponza-1435",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2274566",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Ponza (1435)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2274566"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ponza (1435)\", revision 1370586410"
+    }
+  ],
+  "title": "Battle of Ponza (1435)",
+  "summary": "The English Wikipedia article \"Battle of Ponza (1435)\", at revision 1370586410, opens: \"The naval battle of Ponza was fought in early August 1435, when the Duke of Milan dispatched the Genoese navy to relieve the besieged town of Gaeta, which was currently under threat from the King of Aragon.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2274566, imported by tools/import/wikidata.mjs. The item's own description reads \"The Naval battle of Ponza was fought in early August 1435, when the Duke of Milan dispatched a Genoese fleet, in order to relief the town of Gaeta, which was currently being besieged by the King of Aragon\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1435,
+    "end": 1435,
+    "date": "1435-08-05"
+  },
+  "place": "pontine-islands",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

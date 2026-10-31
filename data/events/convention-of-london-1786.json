@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "convention-of-london-1786",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2996266",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Convention of London (1786)",
+    "pt": "Convenção de Londres (1786)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2996266"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Convention of London (1786)\", revision 1365728461"
+    }
+  ],
+  "title": "Convention of London (1786)",
+  "summary": "The English Wikipedia article \"Convention of London (1786)\", at revision 1365728461, opens: \"The Convention of London, also known as the Anglo-Spanish Convention, was an agreement negotiated between the Kingdom of Great Britain and the Kingdom of Spain concerning the status of British settlements in Mosquitia and the Bay of Honduras. It was signed on 14 July 1786.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2996266, imported by tools/import/wikidata.mjs. The item's own description reads \"British-Spanish treaty about Belize\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1786,
+    "end": 1786,
+    "date": "1786-07-14"
+  },
+  "place": "london",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

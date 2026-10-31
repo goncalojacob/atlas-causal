@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "pontine-islands",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q844829",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Pontine Islands",
+    "pt": "Ilhas Pontinas"
+  },
+  "sources": [],
+  "names": [
+    "Pontine Islands",
+    "Ilhas Pontinas"
+  ],
+  "where": {
+    "lon": 13.154167,
+    "lat": 40.884722,
+    "precision": "region",
+    "label": "Pontine Islands"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-barcelona-1651",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q717431",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Barcelona (1651)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q717431"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Barcelona (1651)\", revision 1376000952"
+    }
+  ],
+  "title": "Siege of Barcelona (1651)",
+  "summary": "The English Wikipedia article \"Siege of Barcelona (1651)\", at revision 1376000952, opens: \"The siege of Barcelona took place between July 1651 and October 1652 during the Reapers' War when a large Spanish army descended on Barcelona and besieged the garrison made up of Catalans and French troops under Philippe de La Mothe-Houdancourt.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q717431, imported by tools/import/wikidata.mjs. The item's own description reads \"1651-1652 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1651,
+    "end": 1652
+  },
+  "place": "barcelona",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "reapers-war"
+}

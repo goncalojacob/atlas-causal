@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1755-cape-ann-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4552913",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1755 Cape Ann earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4552913"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1755 Cape Ann earthquake\", revision 1378467186"
+    }
+  ],
+  "title": "1755 Cape Ann earthquake",
+  "summary": "The English Wikipedia article \"1755 Cape Ann earthquake\", at revision 1378467186, opens: \"The 1755 Cape Ann earthquake took place off the coast of the British Province of Massachusetts Bay on November 18. At between 6.0 and 6.3 on the Richter scale, it remains the largest earthquake in the history of Massachusetts. No one was killed, but it damaged hundreds of buildings in Boston and was felt as far north as Nova Scotia and as far south as South Carolina. Sailors on a ship more than 200 miles (320 km) offshore felt the quake, and mistook it at first for their ship running aground. Many residents of Boston and the surrounding areas attributed the quake to God, and it occasioned a brief increase in religious fervor in the city. Modern studies estimate that if a similar quake shook Boston today, it would result in as much as $5 billion in damage and hundreds of deaths. Some discussion has revolved around the idea that this may have been a remotely triggered event from the 1755 Lisbon earthquake or its aftershocks.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4552913, imported by tools/import/wikidata.mjs. The item's own description reads \"Magnitude 6 earthquake (November 18, 1755) off the coast of the British Province of Massachusetts Bay (now Massachusetts)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1755,
+    "end": 1755
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

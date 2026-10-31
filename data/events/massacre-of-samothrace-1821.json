@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "massacre-of-samothrace-1821",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4406932",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Massacre of Samothrace (1821)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4406932"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Massacre of Samothrace (1821)\", revision 1377020562"
+    }
+  ],
+  "title": "Massacre of Samothrace (1821)",
+  "summary": "The English Wikipedia article \"Massacre of Samothrace (1821)\", at revision 1377020562, opens: \"The Massacre of Samothrace was the mass murder and enslavement of the Greek population of the island of Samothrace. Following the outbreak of the Greek War of Independence, the Samothracians rose in revolt against the local Ottoman authorities. On 1 September 1821, an Ottoman punitive expedition under the Castellan of Dardanelles Mehmet Pasha arrived at the island. After suppressing the uprising, the Ottoman troops killed or enslaved most of island's population.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4406932, imported by tools/import/wikidata.mjs. The item's own description reads \"1821 massacre of Greeks during the Greek War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-09-01"
+  },
+  "place": "samothrace",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}
