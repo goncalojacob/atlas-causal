@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sidon",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q163490",
+  "sitelinks": {
+    "count": 79,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Sidon",
+    "pt": "Sídon"
+  },
+  "sources": [],
+  "names": [
+    "Sidon"
+  ],
+  "where": {
+    "lon": 35.37583333333333,
+    "lat": 33.56055555555555,
+    "precision": "city",
+    "label": "Sidon"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

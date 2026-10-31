@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "capture-of-cambarao",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q121408251",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Capture of Cambarão"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q121408251"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Cambarão\", revision 1378916379"
+    }
+  ],
+  "title": "Capture of Cambarão",
+  "summary": "The English Wikipedia article \"Capture of Cambarão\", at revision 1378916379, opens: \"In 1614, the Persian army led by Imam Quli Khan conquered the Portuguese fort of Cambarão.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q121408251, imported by tools/import/wikidata.mjs. The item's own description reads \"1614 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1614,
+    "end": 1614,
+    "date": "1614-09-29",
+    "endDate": "1614-12-21"
+  },
+  "place": "bandar-abbas",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "portuguese-safavid-wars"
+}

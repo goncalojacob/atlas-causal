@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-shanghai-1861-1862",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3493762",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Shanghai (1861–1862)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3493762"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Shanghai (1861–1862)\", revision 1370589152"
+    }
+  ],
+  "title": "Battle of Shanghai (1861–1862)",
+  "summary": "The English Wikipedia article \"Battle of Shanghai (1861–1862)\", at revision 1370589152, opens: \"The Battle of Shanghai (太平軍二攻上海) was a major engagement of the Taiping Rebellion that occurred from June 1861 to July 1862. British and French troops used modern artillery on a large scale for the first time in China. Cannon fire inflicted heavy casualties on the Taiping forces, whose commander Li Xiucheng was wounded in the left leg by a shot fired from a cannon.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3493762, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 major engagement of the Taiping Rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1862,
+    "date": "1861-07",
+    "endDate": "1862-11"
+  },
+  "place": "shanghai",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "taiping-rebellion"
+}

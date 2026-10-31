@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-tamatave",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872498",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Tamatave"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872498"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tamatave\", revision 1370275193"
+    }
+  ],
+  "title": "Battle of Tamatave",
+  "summary": "The English Wikipedia article \"Battle of Tamatave\", at revision 1370275193, opens: \"The Battle of Tamatave was fought off Tamatave in the Indian Ocean between British and French frigate squadrons during the Napoleonic Wars. The action was the final engagement of the Mauritius campaign of 1809–1811, and it saw the destruction of the last French attempt to reinforce their garrison on Isle de France. Although the news had not reached Europe by February 1811 when the reinforcement squadron left Brest, a British invasion of Isle de France resulted in the colony falling by December 1810, the French defences hampered by the lack of the supplies and troops carried aboard the frigate squadron under the command of Commodore Dominique Roquebert in Renommée. Roquebert's heavily laden ships reached Isle de France on 6 May and discovered that the island was in British hands the following day, narrowly escaping a trap laid by a squadron of British frigates ordered to hunt and destroy them.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872498, imported by tools/import/wikidata.mjs. The item's own description reads \"1811 naval battle fought off Tamatave in Madagascar between British and French frigate squadrons during the Napoleonic Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1811,
+    "end": 1811,
+    "date": "1811-05-20"
+  },
+  "place": "toamasina",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mauritius-campaign-of-1809-1811"
+}

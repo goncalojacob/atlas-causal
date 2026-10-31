@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "adana",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q38545",
+  "sitelinks": {
+    "count": 115,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Adana",
+    "pt": "Adana"
+  },
+  "sources": [],
+  "names": [
+    "Adana"
+  ],
+  "where": {
+    "lon": 35.3252861,
+    "lat": 36.9863599,
+    "precision": "city",
+    "label": "Adana"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
