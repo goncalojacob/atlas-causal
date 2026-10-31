@@ -8054,3 +8054,31 @@ Writer A filed it there because the planner's queue asked for it in item `2026-1
 ## Writer A, 2026-10-31: `battle-of-kinburn-1787`, filed under `russo-turkish-war-1787-1792` with neither an actor nor a place
 
 Writer A filed it there because the planner's queue asked for it in item `2026-10-31-europe-050`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-31: `battle-of-cape-st-vincent-1719`, filed under `war-of-the-quadruple-alliance` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-31-europe-083`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-31: `siege-of-belgrade-1806`, filed under `first-serbian-uprising` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-31-europe-093`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-31: `bod-affair`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-31-europe-117`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-31: `battle-of-cornul-lui-sas`, filed under `moldavian-magnate-wars` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-31-europe-123`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-31: `battle-of-glenmalure`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-31-europe-133`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-31: `battle-of-cape-st-vincent-1833`, filed under `liberal-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-europe-092`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-31: `siege-of-the-acropolis-1687`, filed under `morean-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-31-europe-118`, rank `list`. Its span and its subject put it inside the umbrella.

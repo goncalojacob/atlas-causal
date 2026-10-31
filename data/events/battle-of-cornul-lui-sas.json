@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-cornul-lui-sas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q11688235",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Cornul lui Sas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11688235"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cornul lui Sas\", revision 1370109253"
+    }
+  ],
+  "title": "Battle of Cornul lui Sas",
+  "summary": "The English Wikipedia article \"Battle of Cornul lui Sas\", at revision 1370109253, opens: \"The Battle of Cornul lui Sas took place on 9 July 1612 between the forces of Ștefan IX Tomșa, the ruler of Moldavia, and the Budjak Horde led by Khan Temir ), and a private army assembled by Stefan Potocki, voivode of Bratslav in the (Polish–Lithuanian Commonwealth in order to reinstall his brother in law Constantin Movilă as Moldavian ruler. By tacking this stance, Potocki openly defied the king's order to avoid any conflict with Ottomans. The battle resulted in a clear defeat of the Potocki's army. Both Stefan Potocki and Constantin Movilă's mother, Elisabeta Movilă were captured by Ottomans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11688235, imported by tools/import/wikidata.mjs. The item's own description reads \"1612 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1612,
+    "end": 1612,
+    "date": "1612-07-09"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "moldavian-magnate-wars"
+}

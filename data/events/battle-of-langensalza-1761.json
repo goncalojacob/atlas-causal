@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-langensalza-1761",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q74119",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Langensalza (1761)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q74119"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Langensalza (1761)\", revision 1370447129"
+    }
+  ],
+  "title": "Battle of Langensalza (1761)",
+  "summary": "The English Wikipedia article \"Battle of Langensalza (1761)\", at revision 1370447129, opens: \"The Battle of Langensalza was an engagement between French forces and allied Prussian and Hanoverian forces during the Seven Years' War. It was fought near Langensalza in what is now eastern Germany.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q74119, imported by tools/import/wikidata.mjs. The item's own description reads \"1761 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1761,
+    "end": 1761,
+    "date": "1761-02-15"
+  },
+  "place": "bad-langensalza",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

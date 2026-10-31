@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-gaeta-1707",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485892",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Gaeta (1707)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485892"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Gaeta (1707)\", revision 1366222777"
+    }
+  ],
+  "title": "Siege of Gaeta (1707)",
+  "summary": "The English Wikipedia article \"Siege of Gaeta (1707)\", at revision 1366222777, opens: \"The  siege of Gaeta was a three-month siege of the Italian city of Gaeta in 1707 by the forces of the Austrian monarchy under Wirich Philipp von Daun, during the War of the Spanish Succession. It ended on 30 September with the total destruction of the city's historic fortifications.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485892, imported by tools/import/wikidata.mjs. The item's own description reads \"1707 Austrian attack during the War of the Spanish Succession\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1707,
+    "end": 1707,
+    "date": "1707-07",
+    "endDate": "1707-09-30"
+  },
+  "place": "gaeta",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

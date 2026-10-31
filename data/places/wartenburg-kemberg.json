@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "wartenburg-kemberg",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q686903",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Wartenburg (Kemberg)",
+    "pt": "Wartenburg (Kemberg)"
+  },
+  "sources": [],
+  "names": [
+    "Wartenburg",
+    "Wartenburg (Kemberg)"
+  ],
+  "where": {
+    "lon": 12.781388888889,
+    "lat": 51.811388888889,
+    "precision": "city",
+    "label": "Wartenburg (Kemberg)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

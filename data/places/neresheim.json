@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "neresheim",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q572431",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Neresheim",
+    "pt": "Neresheim"
+  },
+  "sources": [],
+  "names": [
+    "Neresheim"
+  ],
+  "where": {
+    "lon": 10.334444444444,
+    "lat": 48.754166666667,
+    "precision": "city",
+    "label": "Neresheim"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

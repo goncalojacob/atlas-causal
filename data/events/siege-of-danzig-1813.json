@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-danzig-1813",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1992111",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Danzig (1813)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1992111"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Danzig (1813)\", revision 1370740630"
+    }
+  ],
+  "title": "Siege of Danzig (1813)",
+  "summary": "The English Wikipedia article \"Siege of Danzig (1813)\", at revision 1370740630, opens: \"The siege of Danzig was a siege of the city of Danzig during the War of the Sixth Coalition by Russian and Prussian forces against Jean Rapp's permanent French garrison, which had been augmented by soldiers from the Grande Armée retreating from its Russian campaign. The garrison included two crack divisions under Étienne Heudelet de Bierre and Charles Louis Dieudonné Grandjean plus whole units and stragglers that had lost contact with their units, all with their health and morale both weakened and most of their equipment lost and carrying their wounded. The siege was begun by Cossacks under hetman Matvei Platov, then was continued mainly by infantry, mainly militiamen and irregulars. It ended in a French surrender to Coalition forces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1992111, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 siege of Danzig during the War of the Sixth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-01",
+    "endDate": "1813-12"
+  },
+  "place": "gdansk",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-sixth-coalition"
+}

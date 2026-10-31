@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-westminster-1654",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q486511",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Treaty of Westminster (1654)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q486511"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Westminster (1654)\", revision 1351416907"
+    }
+  ],
+  "title": "Treaty of Westminster (1654)",
+  "summary": "The English Wikipedia article \"Treaty of Westminster (1654)\", at revision 1351416907, opens: \"The Treaty of Westminster, concluded between the Lord Protector of the English Commonwealth, Oliver Cromwell, and the States General of the United Netherlands, was signed on 5/15 April 1654. The treaty ended the First Anglo-Dutch War (1652–1654). The treaty is otherwise notable because it is one of the first treaties implementing international arbitration as a method of conflict resolution in the early modern era. A secret clause, obliging the States of Holland to enact the Act of Seclusion, played an important part in Dutch internal politics during the First Stadtholderless Period.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q486511, imported by tools/import/wikidata.mjs. The item's own description reads \"1654 treaty between England and Dutch Republic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1654,
+    "end": 1654,
+    "date": "1654-04-15"
+  },
+  "place": "city-of-westminster",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
