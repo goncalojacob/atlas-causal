@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-philippsburg-1734",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q481325",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Philippsburg (1734)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q481325"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Philippsburg (1734)\", revision 1382486648"
+    }
+  ],
+  "title": "Siege of Philippsburg (1734)",
+  "summary": "The English Wikipedia article \"Siege of Philippsburg (1734)\", at revision 1382486648, opens: \"The siege of Philippsburg was conducted by French forces against troops of the Holy Roman Empire in the fortress of Philippsburg in the Rhine River valley during the War of the Polish Succession. The Duke of Berwick led 100,000 men up the Rhine Valley, of which 60,000 were detached to invest the fortress at Philippsburg, beginning on 26 May 1734. An Imperial relief army of 70,000 under the aging Prince Eugene of Savoy was unsuccessful in actually relieving the siege. On 12 June Berwick was killed by a cannonball while inspecting the trenches, and command of the besiegers fell to Marshals d'Asfeld and Noailles. The fortress surrendered one month later, and the garrison withdrew to the fortress of Mainz with the honours of war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q481325, imported by tools/import/wikidata.mjs. The item's own description reads \"1734 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1734,
+    "end": 1734,
+    "date": "1734-06-02",
+    "endDate": "1734-07-18"
+  },
+  "place": "philippsburg",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-polish-succession"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-lille-1667",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2613297",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Lille (1667)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2613297"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Lille (1667)\", revision 1370742910"
+    }
+  ],
+  "title": "Siege of Lille (1667)",
+  "summary": "The English Wikipedia article \"Siege of Lille (1667)\", at revision 1370742910, opens: \"The siege of Lille took place during the War of Devolution. Louis XIV's forces besieged Lille from 28 August to 26 September 1667. It was the only major engagement of the war. Lille was the first major victory for Vauban’s siege techniques. Louis XIV, arguing that the Spanish dowry of his wife Maria Theresa of Spain had not been paid, began to expand French borders to the north and east, invading the Spanish Netherlands. This began a conflict with Spain that became the War of Devolution. After taking Charleroi, Tournai, and Douai, French troops laid siege to Lille, at that time part of the county of Flanders under Spanish rule. Siege techniques applied by the French military engineer Vauban were instrumental in their capture.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2613297, imported by tools/import/wikidata.mjs. The item's own description reads \"1667 episode of the war of Devolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1667,
+    "end": 1667,
+    "date": "1667-08-10",
+    "endDate": "1667-08-26"
+  },
+  "place": "lille",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-devolution"
+}

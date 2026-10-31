@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-namur-1692",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2617799",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Namur (1692)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2617799"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Namur (1692)\", revision 1370743846"
+    }
+  ],
+  "title": "Siege of Namur (1692)",
+  "summary": "The English Wikipedia article \"Siege of Namur (1692)\", at revision 1370743846, opens: \"The siege of Namur, 25 May–30 June 1692, was a major engagement of the Nine Years' War, and was part of the French grand plan to defeat the forces of the Grand Alliance and bring a swift conclusion to the war. Namur, sitting on the confluence of the Meuse and Sambre rivers, was a considerable fortress, and was a significant political and military asset. French forces, guided by Vauban, forced the town's surrender on 5 June, but the citadel, staunchly defended by Menno van Coehoorn, managed to hold on until 30 June before capitulating, bringing an end to the 36-day siege. Concerned that King William III planned to recapture the stronghold, King Louis XIV subsequently ordered his commander-in-chief, the duc de Luxembourg, to join battle with the Allies in the field, resulting in the bloody Battle of Steenkerque on 3 August.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2617799, imported by tools/import/wikidata.mjs. The item's own description reads \"major engagement of the Nine Years' War between the French and the Grand Alliance (1692)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1692,
+    "end": 1692,
+    "date": "1692-05-25",
+    "endDate": "1692-06-30"
+  },
+  "place": "namur",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war"
+}

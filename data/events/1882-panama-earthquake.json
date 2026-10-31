@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1882-panama-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q16639131",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "1882 Panama earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16639131"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1882 Panama earthquake\", revision 1379682613"
+    }
+  ],
+  "title": "1882 Panama earthquake",
+  "summary": "The English Wikipedia article \"1882 Panama earthquake\", at revision 1379682613, opens: \"The 1882 Panama earthquake occurred on September 7 at around 03:50 (UTC-5). The earthquake measured a magnitude between 7.9 and 8.3 on the surface-wave magnitude scale, making it the largest earthquake recorded in Panamanian history. It struck the San Blas Islands and was strongly felt in the City of Colón as well as the capital of Panama City. The earthquake also produced a major tsunami that had a maximum run-up of 3 meters. In total, the earthquake killed 250 people, 75 of which were from the tsunami. The earthquake and tsunami also halted the construction of the Panama Canal by a few months.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16639131, imported by tools/import/wikidata.mjs. The item's own description reads \"largest earthquake recorded in Panamanian history\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1882,
+    "end": 1882,
+    "date": "1882-09-07"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

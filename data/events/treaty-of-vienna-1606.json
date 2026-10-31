@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "treaty-of-vienna-1606",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q685415",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Treaty of Vienna (1606)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q685415"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Vienna (1606)\", revision 1354185674"
+    }
+  ],
+  "title": "Treaty of Vienna (1606)",
+  "summary": "The English Wikipedia article \"Treaty of Vienna (1606)\", at revision 1354185674, opens: \"The Treaty of Vienna was signed on 23 June 1606 between Stephen Bocskai, Prince of Transylvania, and Rudolf II, Holy Roman Emperor. Based on the terms of the treaty, all constitutional and religious rights and privileges were granted to the Hungarians in both Transylvania and Royal Hungary. In Sopron, for instance, the agreement recognized the autocracy of Hungarian Lutherans; in Transylvania, the Calvinists gained religious tolerance. The accord also recognized Bocskai as the Prince of Transylvania and guaranteed the right of Transylvanians to elect their own independent princes in the future.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q685415, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty from 1606\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1606,
+    "end": 1606
+  },
+  "place": "vienna",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

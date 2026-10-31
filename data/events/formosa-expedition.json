@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "formosa-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3062394",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Formosa Expedition",
+    "pt": "Expedição a Formosa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3062394"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Formosa Expedition\", revision 1373598012"
+    }
+  ],
+  "title": "Formosa Expedition",
+  "summary": "The English Wikipedia article \"Formosa Expedition\", at revision 1373598012, opens: \"The Formosa Expedition, or the Taiwan Expedition of 1867, was a punitive expedition launched by the United States against the Paiwan, an indigenous Taiwanese tribe. The expedition was undertaken in retaliation for the Rover incident, in which the Rover, an American bark, was wrecked and its crew killed by Paiwan warriors in March 1867. A United States Navy and Marine company landed in southern Taiwan and attempted to advance into the Paiwan village. The Paiwan responded with guerrilla warfare, repeatedly ambushing, skirmishing, disengaging and retreating. Eventually, the Marines' commander was killed and they retreated to their ship due to fatigue and heat exhaustion, and the Paiwan dispersed and retreated into the jungle. The action is regarded as an American failure.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3062394, imported by tools/import/wikidata.mjs. The item's own description reads \"1867 expedition launched by the United States against the Paiwan, an indigenous Taiwanese tribe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1867,
+    "end": 1867,
+    "date": "1867-06"
+  },
+  "place": "hengchun-peninsula",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}
