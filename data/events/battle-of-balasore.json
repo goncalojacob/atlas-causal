@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-balasore",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q125895227",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Balasore"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q125895227"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Balasore\", revision 1370433139"
+    }
+  ],
+  "title": "Battle of Balasore",
+  "summary": "The English Wikipedia article \"Battle of Balasore\", at revision 1370433139, opens: \"The Battle of Balasore was an engagement between Bengali and English ships against Danish ships at Balasore. When the English failed to persuade the Danes, the Bengalis started attacking the English vessel, yet the English were rescued by the Dutch.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q125895227, imported by tools/import/wikidata.mjs. The item's own description reads \"battle between Mughals and Europeans in Balasore, 1647\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1647,
+    "end": 1647,
+    "date": "1647-12-26"
+  },
+  "place": "balasore",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dano-mughal-war"
+}
