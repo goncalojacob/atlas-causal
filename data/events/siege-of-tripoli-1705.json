@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-tripoli-1705",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q123243699",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Tripoli (1705)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q123243699"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Tripoli (1705)\", revision 1370746051"
+    }
+  ],
+  "title": "Siege of Tripoli (1705)",
+  "summary": "The English Wikipedia article \"Siege of Tripoli (1705)\", at revision 1370746051, opens: \"The Siege of Tripoli was initiated by the Tunisian bey, Ibrahim al-Sharif, who attempted to \"wreak his wrath\" on the population of Tripoli. The siege proved unsuccessful as Tunisian troops withdrew from Tripoli.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q123243699, imported by tools/import/wikidata.mjs. The item's own description reads \"1705 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1705,
+    "end": 1705,
+    "date": "1705-01-19"
+  },
+  "place": "tripoli",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "revolutions-of-tunis"
+}

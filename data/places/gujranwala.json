@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "gujranwala",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q243322",
+  "sitelinks": {
+    "count": 65,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Gujranwala",
+    "pt": "Gujranwala"
+  },
+  "sources": [],
+  "names": [
+    "Gujranwala"
+  ],
+  "where": {
+    "lon": 74.183333333333,
+    "lat": 32.15,
+    "precision": "city",
+    "label": "Gujranwala"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

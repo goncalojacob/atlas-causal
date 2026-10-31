@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jinchuan-campaigns",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q10935029",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Jinchuan campaigns"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10935029"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Jinchuan campaigns\", revision 1378030294"
+    }
+  ],
+  "title": "Jinchuan campaigns",
+  "summary": "The English Wikipedia article \"Jinchuan campaigns\", at revision 1378030294, opens: \"The Jinchuan campaigns, also known as the Suppression of the Jinchuan Hill Peoples, were two wars between Qing Empire and the rebel forces of Gyalrong chieftains (\"Tusi\") from the Jinchuan region. The first campaign against Chiefdom of Chuchen happened in 1747 when the Tusi of Greater Jinchuan Slob Dpon attacked the Chiefdom of Chakla (Mingzheng). The Qianlong Emperor decided to mobilize forces and suppress Slob Dpon, who surrendered to the central government in 1749. The second campaign against Chiefdom of Tsanlha took place in 1771, when the Jinchuan Tusi Sonom killed Geshitsa Tusi of Ngawa County in Sichuan Province. After Sonom killed Geshitsa Tusi, he helped Tusi of Lesser Jinchuan, Skal bzang, to occupy the lands belonging to the other Tusi in the region. The provincial government ordered Sonom to return lands and accept the trial at the Ministry of Justice immediately. Sonom refused to retreat his rebels. The Qianlong Emperor was furious and gathered 80,000 troops and entered Jinchuan. In 1776, Qing troops sieged the castle of Sonom to force his surrender.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10935029, imported by tools/import/wikidata.mjs. The item's own description reads \"two wars between Qing Empire and the rebel forces of Gyalrong chieftains (\"Tusi\") from the Jinchuan region\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1747,
+    "end": 1749
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "ten-great-campaigns"
+}

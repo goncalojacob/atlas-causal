@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "hillah",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q243846",
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Hillah",
+    "pt": "Hila"
+  },
+  "sources": [],
+  "names": [
+    "Hillah",
+    "Al-Hillah",
+    "Hila"
+  ],
+  "where": {
+    "lon": 44.433333333333,
+    "lat": 32.483333333333,
+    "precision": "city",
+    "label": "Hillah"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

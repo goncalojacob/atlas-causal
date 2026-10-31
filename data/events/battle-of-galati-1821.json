@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-galati-1821",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4090292",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Galați (1821)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4090292"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Galați (1821)\", revision 1370441219"
+    }
+  ],
+  "title": "Battle of Galați (1821)",
+  "summary": "The English Wikipedia article \"Battle of Galați (1821)\", at revision 1370441219, opens: \"The Battle of Galați was the first battle between the forces of the Filiki Eteria, led by Prince Alexander Ypsilantis, and the troops of the Ottoman Empire, as part of the wider Greek War of Independence. It took place on 1 May 1821 in Galați, in the Principality of Moldavia. The commander of the Greek forces, of Cretan origin, was Athanasios Karpenisiotis, while the Ottoman forces were led by Yusuf Pasha Perkovtsalis, Hacı Kara Ahmed Efendi, and Selim Mehmed Efendi.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4090292, imported by tools/import/wikidata.mjs. The item's own description reads \"1821 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-05-12",
+    "endDate": "1821-05-13"
+  },
+  "place": "galati",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}
