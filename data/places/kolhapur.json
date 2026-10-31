@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "kolhapur",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q209698",
+  "sitelinks": {
+    "count": 62,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Kolhapur",
+    "pt": "Colhapur"
+  },
+  "sources": [],
+  "names": [
+    "Kolhapur",
+    "Colhapur"
+  ],
+  "where": {
+    "lon": 74.233333333333,
+    "lat": 16.7,
+    "precision": "city",
+    "label": "Kolhapur"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

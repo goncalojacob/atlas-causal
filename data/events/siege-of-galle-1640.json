@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-galle-1640",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q15277679",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Galle (1640)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15277679"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Galle (1640)\", revision 1370741390"
+    }
+  ],
+  "title": "Siege of Galle (1640)",
+  "summary": "The English Wikipedia article \"Siege of Galle (1640)\", at revision 1370741390, opens: \"The Siege of the Portuguese fort Santa Cruz de Gale at Galle in 1640, took place during the Dutch–Portuguese and Sinhalese–Portuguese Wars. The Galle fort commanded 282 villages, which contained the most fertile cinnamon lands in southern Sri Lanka It was also an important strategic coastal defense of Portuguese Ceylon. The Dutch, who were in an alliance with the Kingdom of Kandy, landed an expeditionary force under Commodore Willem Jacobszoon Coster of Akersloot, at the Bay of Galle, on 8 March 1640. After bombarding the fort for four consecutive days, Dutch troops stormed the fort and secured a victory on 13 March 1640. The Portuguese garrison, led by Captain Lourenço Ferreira de Brito, mounted a stiff resistance and unexpectedly high casualty rates among Dutch troops gave rise to the proverb \"Gold in Malacca, lead in Galle\". With this victory the Dutch gained access to a large port which they later used as a convenient naval base to attack Goa and other South Indian Portuguese defenses. They also gained access to the Sri Lankan cinnamon trade and gained a permanent foothold on the island.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15277679, imported by tools/import/wikidata.mjs. The item's own description reads \"1640 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1640,
+    "end": 1640,
+    "date": "1640-03-08",
+    "endDate": "1640-03-13"
+  },
+  "place": "galle",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

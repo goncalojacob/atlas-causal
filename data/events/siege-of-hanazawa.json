@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "siege-of-hanazawa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q633791",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Hanazawa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q633791"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Hanazawa\", revision 1373669473"
+    }
+  ],
+  "title": "Siege of Hanazawa",
+  "summary": "The English Wikipedia article \"Siege of Hanazawa\", at revision 1373669473, opens: \"The 1570 siege of Hanazawa was one of several battles fought between the Takeda and Imagawa clans during the Takeda's campaign to seize Suruga province, during Japan's Sengoku period.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q633791, imported by tools/import/wikidata.mjs. The item's own description reads \"1570 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1570,
+    "end": 1570
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

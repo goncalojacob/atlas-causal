@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-porto-novo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872089",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Porto Novo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872089"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Porto Novo\", revision 1370272162"
+    }
+  ],
+  "title": "Battle of Porto Novo",
+  "summary": "The English Wikipedia article \"Battle of Porto Novo\", at revision 1370272162, opens: \"The Battle of Porto Novo was fought on 1 July 1781 between forces of the Kingdom of Mysore and British East India Company in the place called Porto Novo on the Indian subcontinent, during the Second Anglo-Mysore War. The British force, numbering more than 8,000 men under the command of Sir Eyre Coote defeated a force estimated at 40,000 under the command of Hyder Ali.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872089, imported by tools/import/wikidata.mjs. The item's own description reads \"1781 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-07-01"
+  },
+  "place": "parangipettai",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-anglo-mysore-war"
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-anandpur-1700",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5452501",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Anandpur (1700)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5452501"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Anandpur (1700)\", revision 1370431977"
+    }
+  ],
+  "title": "Battle of Anandpur (1700)",
+  "summary": "The English Wikipedia article \"Battle of Anandpur (1700)\", at revision 1370431977, opens: \"The Battle of Anandpur was fought at Anandpur, between the armies of the Sikh Guru Gobind Singh and the Mughal forces aided by the Nawab of Bahawalpur state, Rajas of the Sivalik Hills.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5452501, imported by tools/import/wikidata.mjs. The item's own description reads \"1700 battle of the Mughal-Sikh Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1700,
+    "end": 1700
+  },
+  "place": "anandpur-sahib",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
