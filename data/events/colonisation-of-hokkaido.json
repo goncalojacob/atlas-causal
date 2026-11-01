@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "colonisation-of-hokkaido",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q135927635",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Colonisation of Hokkaido"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q135927635"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colonisation of Hokkaido\", revision 1381294903"
+    }
+  ],
+  "title": "Colonisation of Hokkaido",
+  "summary": "The English Wikipedia article \"Colonisation of Hokkaido\", at revision 1381294903, opens: \"The colonisation of Hokkaido was the process from around the fifteenth century by which the Yamato Japanese took control of Hokkaido and subjugated and assimilated the indigenous Ainu people, whose culture had developed from around the thirteenth century. The process of colonisation began with the trading of fish, furs, and silk between Japan and the Ainu. Despite rebellions against increasing Japanese influence in 1669 and in 1789, their control of the island steadily increased: by 1806, the Tokugawa shogunate directly controlled southern Hokkaido.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q135927635, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1500,
+      "max": 1599
+    },
+    "end": null
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

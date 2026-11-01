@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "battle-of-pitnak",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q113495610",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Pitnak"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q113495610"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pitnak\", revision 1381712687"
+    }
+  ],
+  "title": "Battle of Pitnak",
+  "summary": "The English Wikipedia article \"Battle of Pitnak\", at revision 1381712687, opens: \"The Battle of Pitnak was fought in 1740 between Nader Shah and Ilbars Khan II, the ruler of the Khiva Khanate. Fought at Pitnak, now in Uzbekistan, the battle took place within the framework of Nader's Central Asian campaign.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q113495610, imported by tools/import/wikidata.mjs. The item's own description reads \"18th c. military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1740,
+    "end": 1740
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

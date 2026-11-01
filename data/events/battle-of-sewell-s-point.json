@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-sewell-s-point",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q840254",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Sewell's Point"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q840254"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sewell's Point\", revision 1370589108"
+    }
+  ],
+  "title": "Battle of Sewell's Point",
+  "summary": "The English Wikipedia article \"Battle of Sewell's Point\", at revision 1370589108, opens: \"The Battle of Sewell's Point was an inconclusive exchange of cannon fire between the Union gunboat USS Monticello, supported by the USS Thomas Freeborn, and Confederate batteries on Sewell's Point that took place on May 18, 19 and 21, 1861, in Norfolk County, Virginia in the early days of the American Civil War. Little damage was done to either side. By the end of April 1861, USS Cumberland and a small number of supporting ships were enforcing the Union blockade of the southeastern Virginia ports at the southern end of the Chesapeake Bay and had captured several ships which attempted to pass the blockade. USS Monticello's bombardment of the Sewell's Point battery was one of the earliest Union Navy actions against Confederate forces during the Civil War. While it has been suggested by some sources that the Monticello's action may have been the first gunfire by the Union Navy during the Civil War, a brief exchange of cannon fire between the U.S. gunboat USS Yankee and shore batteries manned by Virginia volunteer forces which had not yet been incorporated into the Confederate States Army at Gloucester Point, Virginia on the York River occurred on May 7, 1861.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q840254, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-05-18",
+    "endDate": "1861-05-19"
+  },
+  "place": "norfolk-virginia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

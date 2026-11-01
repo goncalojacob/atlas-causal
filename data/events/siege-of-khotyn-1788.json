@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-khotyn-1788",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4337461",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Siege of Khotyn (1788)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4337461"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Khotyn (1788)\", revision 1370742454"
+    }
+  ],
+  "title": "Siege of Khotyn (1788)",
+  "summary": "The English Wikipedia article \"Siege of Khotyn (1788)\", at revision 1370742454, opens: \"The siege of Khotyn took place in Khotyn, modern-day Ukraine, in 2 July–19 September 1788, and was part of the Austro-Turkish War and the Russo-Turkish War. The Habsburg Austrian army of 18,000 men led by Prince Josias of Saxe-Coburg-Saalfeld marched from Bukovina to lay siege to Khotyn. It was joined by an Imperial Russian army commanded by Ivan Saltykov. The combined Russian–Austrian forces besieged the Ottoman garrison in the fortress of Khotyn led by the Pasha of Khotyn, who held out for more than two months before capitulating. The Allies eventually forced the surrender of the fortress. Under the terms of surrender, any resident of Khotyn who wished to leave could join the Turks, who were allowed to march out with flags flying. The civilian refugees were to be provided with food and given 3,000 carts to move their possessions. This agreement, made by the Austrian generals, was ridiculed throughout Europe as too lenient. The fortress would be occupied by the Russians until the end of the Russo-Turkish war in 1792.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4337461, imported by tools/import/wikidata.mjs. The item's own description reads \"1788 battle in the Austro-Turkish War of 1788-1791\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1788,
+    "end": 1788,
+    "date": "1788-07-02",
+    "endDate": "1788-09-19"
+  },
+  "place": "khotyn-fortress",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "austro-turkish-war-1788-1791"
+}
