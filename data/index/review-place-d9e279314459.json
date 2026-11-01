@@ -4683,6 +4683,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "bad-kreuznach",
+      "kind": "place",
+      "names": [
+        "Bad Kreuznach"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 2,
       "id": "bad-langensalza",
@@ -7997,6 +8024,33 @@
       ],
       "created": "2026-10-31",
       "degree": 1,
+      "id": "besancon",
+      "kind": "place",
+      "names": [
+        "Besançon"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
       "id": "bhaktapur",
       "kind": "place",
       "names": [
@@ -11034,6 +11088,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "calabria",
+      "kind": "place",
+      "names": [
+        "Calabria"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "calais",
@@ -11806,6 +11887,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "capua",
+      "kind": "place",
+      "names": [
+        "Capua"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 2,
       "id": "caracas",
@@ -11979,6 +12087,33 @@
       "names": [
         "Carpi, Emilia-Romagna",
         "Carpi"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "carrickfergus",
+      "kind": "place",
+      "names": [
+        "Carrickfergus"
       ],
       "origin": {
         "tool": "wikidata"
@@ -15336,6 +15471,33 @@
       "kind": "place",
       "names": [
         "Colorado"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "colorno",
+      "kind": "place",
+      "names": [
+        "Colorno"
       ],
       "origin": {
         "tool": "wikidata"
@@ -18743,6 +18905,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "doullens",
+      "kind": "place",
+      "names": [
+        "Doullens"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 2,
       "id": "dover",
@@ -21467,6 +21656,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "filipow-podlaskie-voivodeship",
+      "kind": "place",
+      "names": [
+        "Filipów",
+        "Filipów, Podlaskie Voivodeship"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -22880,6 +23097,33 @@
       "kind": "place",
       "names": [
         "Franconia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "frankenthal",
+      "kind": "place",
+      "names": [
+        "Frankenthal"
       ],
       "origin": {
         "tool": "wikidata"
@@ -24965,6 +25209,34 @@
       "names": [
         "Glencoe",
         "Glencoe, Highland"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "go-ab-pu-awy-county",
+      "kind": "place",
+      "names": [
+        "Gołąb",
+        "Gołąb, Puławy County"
       ],
       "origin": {
         "tool": "wikidata"
@@ -32299,6 +32571,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "k-odzko",
+      "kind": "place",
+      "names": [
+        "Kłodzko"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -37151,6 +37450,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "langport",
+      "kind": "place",
+      "names": [
+        "Langport"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "laon",
@@ -37607,6 +37933,33 @@
       "names": [
         "Le Fleix",
         "Fleix"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "le-havre",
+      "kind": "place",
+      "names": [
+        "Le Havre"
       ],
       "origin": {
         "tool": "wikidata"
@@ -38434,7 +38787,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 3,
       "id": "limerick",
       "kind": "place",
       "names": [
@@ -40175,7 +40528,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 7,
       "id": "maastricht",
       "kind": "place",
       "names": [
@@ -45325,7 +45678,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "montpellier",
       "kind": "place",
       "names": [
@@ -45715,7 +46068,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 18,
+      "degree": 19,
       "id": "moscow",
       "kind": "place",
       "names": [
@@ -46226,6 +46579,33 @@
         "Mühlberg",
         "Mühlberg, Brandenburg",
         "Mühlberg (Brandemburgo)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "mulhouse",
+      "kind": "place",
+      "names": [
+        "Mulhouse"
       ],
       "origin": {
         "tool": "wikidata"
@@ -52304,6 +52684,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "pecs",
+      "kind": "place",
+      "names": [
+        "Pécs"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -54690,7 +55097,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 63,
+      "degree": 65,
       "id": "portugal-q45",
       "kind": "place",
       "names": [
@@ -54902,6 +55309,34 @@
       "kind": "place",
       "names": [
         "Powder River Country"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "poznan",
+      "kind": "place",
+      "names": [
+        "Poznań",
+        "Posnânia"
       ],
       "origin": {
         "tool": "wikidata"
@@ -55350,6 +55785,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "privas",
+      "kind": "place",
+      "names": [
+        "Privas"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -59419,6 +59881,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "saint-jean-d-angely",
+      "kind": "place",
+      "names": [
+        "Saint-Jean-d'Angély"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-30",
       "degree": 1,
       "id": "saint-kitts",
@@ -62029,6 +62518,35 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "sergiyev-posad",
+      "kind": "place",
+      "names": [
+        "Sergiyev Posad",
+        "Serguiev Possad",
+        "Sergiev Posad"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -65014,6 +65532,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "st-fagans",
+      "kind": "place",
+      "names": [
+        "St Fagans"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 2,
       "id": "st-george-s-caye",
@@ -65438,6 +65983,34 @@
       "kind": "place",
       "names": [
         "Steenkerque"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "stegeborg-castle",
+      "kind": "place",
+      "names": [
+        "Stegeborg Castle",
+        "Stegeborg"
       ],
       "origin": {
         "tool": "wikidata"
@@ -68774,7 +69347,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "timisoara",
       "kind": "place",
       "names": [
@@ -70698,6 +71271,33 @@
       "kind": "place",
       "names": [
         "Uclés"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "uddevalla",
+      "kind": "place",
+      "names": [
+        "Uddevalla"
       ],
       "origin": {
         "tool": "wikidata"
@@ -73038,6 +73638,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-31",
+      "degree": 1,
+      "id": "vimory",
+      "kind": "place",
+      "names": [
+        "Vimory"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "virginia-peninsula",
@@ -74465,7 +75092,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "wexford",
       "kind": "place",
       "names": [
@@ -75041,7 +75668,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "worcester-england",
       "kind": "place",
       "names": [
@@ -76544,7 +77171,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "zhuravno",
       "kind": "place",
       "names": [
@@ -76737,7 +77364,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "zutphen",
       "kind": "place",
       "names": [

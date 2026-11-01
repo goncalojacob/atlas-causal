@@ -47,6 +47,15 @@
         }
       ]
     },
+    "1638-calabrian-earthquakes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "1639-amatrice-earthquake": {
       "from": "git",
       "versions": [
@@ -200,6 +209,15 @@
         }
       ]
     },
+    "1694-irpinia-basilicata-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "1699-java-earthquake": {
       "from": "git",
       "versions": [
@@ -328,6 +346,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "action-of-30-september-1681": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -848,6 +875,15 @@
         }
       ]
     },
+    "battle-of-cambrils": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-cape-corvo": {
       "from": "git",
       "versions": [
@@ -1067,6 +1103,15 @@
         }
       ]
     },
+    "battle-of-dungan-s-hill": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-dungeness": {
       "from": "git",
       "versions": [
@@ -1163,6 +1208,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-filipow": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -1322,6 +1376,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "battle-of-go-ab": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -1655,6 +1718,24 @@
         }
       ]
     },
+    "battle-of-knocknanuss": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "battle-of-kobolkut": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-kokenhausen": {
       "from": "git",
       "versions": [
@@ -1799,6 +1880,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-langport": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -2181,6 +2271,24 @@
         }
       ]
     },
+    "battle-of-mulhouse-1674": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "battle-of-myadel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-mytilene-1690": {
       "from": "git",
       "versions": [
@@ -2457,6 +2565,15 @@
         }
       ]
     },
+    "battle-of-powick-bridge": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-prague-1648": {
       "from": "git",
       "versions": [
@@ -2643,6 +2760,24 @@
       ]
     },
     "battle-of-rathenow": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "battle-of-rathmines": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "battle-of-reading-1688": {
       "from": "git",
       "versions": [
         {
@@ -2961,6 +3096,15 @@
         }
       ]
     },
+    "battle-of-st-fagans": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-st-kitts-1629": {
       "from": "git",
       "versions": [
@@ -3232,6 +3376,15 @@
         }
       ]
     },
+    "battle-of-the-lines-of-elvas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-the-oinousses-islands": {
       "from": "git",
       "versions": [
@@ -3292,6 +3445,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-trembowla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -3365,6 +3527,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-uddevalla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -3760,6 +3931,15 @@
         }
       ]
     },
+    "battle-of-zurawno": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-zusmarshausen": {
       "from": "git",
       "versions": [
@@ -3775,6 +3955,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-off-lizard-point": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -4040,6 +4229,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "capture-of-maastricht": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -6222,6 +6420,15 @@
         }
       ]
     },
+    "sack-of-wexford": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "safavid-capture-of-tabriz-1603": {
       "from": "git",
       "versions": [
@@ -6622,6 +6829,15 @@
         }
       ]
     },
+    "siege-of-besancon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-bijapur": {
       "from": "git",
       "versions": [
@@ -6860,6 +7076,15 @@
         }
       ]
     },
+    "siege-of-frankenthal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-fuenterrabia-1638": {
       "from": "git",
       "versions": [
@@ -7076,6 +7301,15 @@
         }
       ]
     },
+    "siege-of-kreuznach": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-la-rochelle": {
       "from": "git",
       "versions": [
@@ -7161,6 +7395,15 @@
       ]
     },
     "siege-of-limerick-1690": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "siege-of-limerick-1691": {
       "from": "git",
       "versions": [
         {
@@ -7286,6 +7529,24 @@
         }
       ]
     },
+    "siege-of-montpellier": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "siege-of-moscow-1618": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-mozambique-1607": {
       "from": "git",
       "versions": [
@@ -7376,6 +7637,24 @@
         }
       ]
     },
+    "siege-of-parnu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "siege-of-pecs-1686": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-pemaquid-1689": {
       "from": "git",
       "versions": [
@@ -7427,6 +7706,15 @@
         }
       ]
     },
+    "siege-of-privas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-rheinfelden-1633": {
       "from": "git",
       "versions": [
@@ -7464,6 +7752,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-saint-jean-d-angely-1621": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -7620,6 +7917,15 @@
         }
       ]
     },
+    "siege-of-troitsky-monastery": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-turin-1640": {
       "from": "git",
       "versions": [
@@ -7713,6 +8019,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "sieges-of-taunton": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },

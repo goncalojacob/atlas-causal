@@ -1653,6 +1653,15 @@
         }
       ]
     },
+    "bad-kreuznach": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "bad-langensalza": {
       "from": "git",
       "versions": [
@@ -2882,6 +2891,15 @@
         }
       ]
     },
+    "besancon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "bhaktapur": {
       "from": "git",
       "versions": [
@@ -4067,6 +4085,15 @@
         }
       ]
     },
+    "calabria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "calais": {
       "from": "git",
       "versions": [
@@ -4337,6 +4364,15 @@
         }
       ]
     },
+    "capua": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "caracas": {
       "from": "git",
       "versions": [
@@ -4410,6 +4446,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "carrickfergus": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -5682,6 +5727,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "colorno": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -6990,6 +7044,15 @@
         }
       ]
     },
+    "doullens": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "dover": {
       "from": "git",
       "versions": [
@@ -8046,6 +8109,15 @@
         }
       ]
     },
+    "filipow-podlaskie-voivodeship": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "finland-q33": {
       "from": "git",
       "versions": [
@@ -8569,6 +8641,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "frankenthal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -9365,6 +9446,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "go-ab-pu-awy-county": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -12055,6 +12145,15 @@
         }
       ]
     },
+    "k-odzko": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "kabul": {
       "from": "git",
       "versions": [
@@ -13837,6 +13936,15 @@
         }
       ]
     },
+    "langport": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "laon": {
       "from": "git",
       "versions": [
@@ -14017,6 +14125,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "le-havre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -17285,6 +17402,15 @@
         }
       ]
     },
+    "mulhouse": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "mulleriyawa": {
       "from": "git",
       "versions": [
@@ -19540,6 +19666,15 @@
         }
       ]
     },
+    "pecs": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "pedrogao-grande": {
       "from": "git",
       "versions": [
@@ -20567,6 +20702,15 @@
         }
       ]
     },
+    "poznan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "praca-dos-tres-poderes": {
       "from": "git",
       "versions": [
@@ -20746,6 +20890,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "privas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -22290,6 +22443,15 @@
         }
       ]
     },
+    "saint-jean-d-angely": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "saint-kitts": {
       "from": "git",
       "versions": [
@@ -23286,6 +23448,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "sergiyev-posad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -24445,6 +24616,15 @@
         }
       ]
     },
+    "st-fagans": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "st-george-s-caye": {
       "from": "git",
       "versions": [
@@ -24631,6 +24811,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "stegeborg-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -26560,6 +26749,15 @@
         }
       ]
     },
+    "uddevalla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "ueda-nagano": {
       "from": "git",
       "versions": [
@@ -27431,6 +27629,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "vimory": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },

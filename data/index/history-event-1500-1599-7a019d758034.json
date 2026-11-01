@@ -2959,6 +2959,15 @@
         }
       ]
     },
+    "battle-of-stegeborg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "battle-of-suakin-1541": {
       "from": "git",
       "versions": [
@@ -3356,6 +3365,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-vimory": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -6508,6 +6526,15 @@
         }
       ]
     },
+    "siege-of-doullens": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
     "siege-of-edo": {
       "from": "git",
       "versions": [
@@ -6790,6 +6817,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "siege-of-hulst-1596": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
         }
       ]
     },
@@ -7978,6 +8014,15 @@
       ]
     },
     "siege-of-zierikzee": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-31"
+        }
+      ]
+    },
+    "siege-of-zutphen-1591": {
       "from": "git",
       "versions": [
         {
