@@ -5304,6 +5304,15 @@
         }
       ]
     },
+    "chester-virginia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
+        }
+      ]
+    },
     "chiari-lombardy": {
       "from": "git",
       "versions": [
@@ -6391,6 +6400,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "decatur-alabama": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
         }
       ]
     },
@@ -15845,6 +15863,15 @@
         }
       ]
     },
+    "marks-mills-battleground-state-park": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
+        }
+      ]
+    },
     "marquain": {
       "from": "git",
       "versions": [
@@ -16960,6 +16987,15 @@
         {
           "first": true,
           "on": "2026-10-31"
+        }
+      ]
+    },
+    "montana-q1212": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
         }
       ]
     },
@@ -20780,6 +20816,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "powder-river-wyoming-and-montana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
         }
       ]
     },
@@ -25140,6 +25185,15 @@
         }
       ]
     },
+    "suffolk-virginia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
+        }
+      ]
+    },
     "suipacha": {
       "from": "git",
       "versions": [
@@ -27321,6 +27375,15 @@
         }
       ]
     },
+    "vancouver": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
+        }
+      ]
+    },
     "vancouver-island": {
       "from": "git",
       "versions": [
@@ -28293,6 +28356,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "white-river-green-river-tributary": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
         }
       ]
     },

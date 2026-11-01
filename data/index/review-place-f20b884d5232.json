@@ -13746,7 +13746,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 6,
+      "degree": 7,
       "id": "charleston-south-carolina",
       "kind": "place",
       "names": [
@@ -14327,6 +14327,35 @@
       "names": [
         "Cherry Valley",
         "Cherry Valley, New York"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "chester-virginia",
+      "kind": "place",
+      "names": [
+        "Chester",
+        "Chester, Virginia",
+        "Chester (Virgínia)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -16387,7 +16416,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 3,
+      "degree": 4,
       "id": "cuba-q14905932",
       "kind": "place",
       "names": [
@@ -16416,7 +16445,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "cucuta",
       "kind": "place",
       "names": [
@@ -17283,6 +17312,35 @@
       "kind": "place",
       "names": [
         "Debar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "decatur-alabama",
+      "kind": "place",
+      "names": [
+        "Decatur",
+        "Decatur, Alabama",
+        "Decatur (Alabama)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -20649,7 +20707,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "empire-of-brazil-q217230",
       "kind": "place",
       "names": [
@@ -38678,7 +38736,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "lexington-missouri",
       "kind": "place",
       "names": [
@@ -42411,6 +42469,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "marks-mills-battleground-state-park",
+      "kind": "place",
+      "names": [
+        "Marks’ Mills Battleground State Park",
+        "Marks' Mills Battleground State Park"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "marquain",
@@ -43687,7 +43773,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "memphis-tennessee",
       "kind": "place",
       "names": [
@@ -45446,6 +45532,33 @@
         "Montaigu",
         "Montaigu, Vendée",
         "Montaigu (Vendeia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "montana-q1212",
+      "kind": "place",
+      "names": [
+        "Montana"
       ],
       "origin": {
         "tool": "wikidata"
@@ -55585,6 +55698,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "powder-river-wyoming-and-montana",
+      "kind": "place",
+      "names": [
+        "Powder River",
+        "Powder River (Wyoming and Montana)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-31",
       "degree": 1,
       "id": "poznan",
@@ -65563,7 +65704,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 4,
+      "degree": 5,
       "id": "spotsylvania-county-virginia",
       "kind": "place",
       "names": [
@@ -65620,7 +65761,7 @@
         }
       ],
       "created": "2026-10-30",
-      "degree": 2,
+      "degree": 3,
       "id": "springfield-missouri",
       "kind": "place",
       "names": [
@@ -66930,6 +67071,35 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "suffolk-virginia",
+      "kind": "place",
+      "names": [
+        "Suffolk",
+        "Suffolk, Virginia",
+        "Suffolk (Virgínia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -71914,7 +72084,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 97,
+      "degree": 101,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -72832,6 +73002,33 @@
         "Van",
         "Vã",
         "Van, Turkey"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "vancouver",
+      "kind": "place",
+      "names": [
+        "Vancouver"
       ],
       "origin": {
         "tool": "wikidata"
@@ -73976,7 +74173,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 12,
+      "degree": 17,
       "id": "virginia-q1370",
       "kind": "place",
       "names": [
@@ -75409,6 +75606,34 @@
         "White Plains",
         "White Plains, New York",
         "White Plains (Nova Iorque)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "white-river-green-river-tributary",
+      "kind": "place",
+      "names": [
+        "White River",
+        "White River (Green River tributary)"
       ],
       "origin": {
         "tool": "wikidata"
