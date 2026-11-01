@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-selma",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2313310",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Selma"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2313310"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Selma\", revision 1370274076"
+    }
+  ],
+  "title": "Battle of Selma",
+  "summary": "The English Wikipedia article \"Battle of Selma\", at revision 1370274076, opens: \"The Battle of Selma was fought on April 2, 1865, in Dallas County, Alabama during the American Civil War. It was part of the Union campaign through Alabama and Georgia, known as Wilson's Raid, in the final full month of the Civil War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2313310, imported by tools/import/wikidata.mjs. The item's own description reads \"1865 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1865,
+    "end": 1865,
+    "date": "1865-04-02"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

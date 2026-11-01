@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "german-north-polar-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q15221555",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "German North Polar Expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15221555"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"German North Polar Expedition\", revision 1339504773"
+    }
+  ],
+  "title": "German North Polar Expedition",
+  "summary": "The English Wikipedia article \"German North Polar Expedition\", at revision 1339504773, opens: \"The German North Polar Expeditions were a short series of mid-19th century German expeditions to the Arctic. The aim was to explore the North Pole region and to brand the newly united, Prussian-led German Empire as a great power. In 1866, German geographer August Petermann wrote a pamphlet strongly advocating German participation in the international quest for the North Pole, which stimulated a German expedition.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15221555, imported by tools/import/wikidata.mjs. The item's own description reads \"second arctic German expedition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1869,
+    "end": 1870,
+    "date": "1869-06-15"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

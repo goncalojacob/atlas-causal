@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-poison-spring",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3007076",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Poison Spring"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3007076"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Poison Spring\", revision 1372307521"
+    }
+  ],
+  "title": "Battle of Poison Spring",
+  "summary": "The English Wikipedia article \"Battle of Poison Spring\", at revision 1372307521, opens: \"The Battle of Poison Spring, also known as the Poison Spring massacre, was fought in Ouachita County, Arkansas, on April 18, 1864, as part of the Camden Expedition, during the American Civil War. A Union force commanded by Major General Frederick Steele had moved from Little Rock, Arkansas, in support of Major General Nathaniel Banks's movement along the Red River towards Shreveport, Louisiana. Steele's objective was also Shreveport, and his men occupied Camden, Arkansas. After Banks was defeated at the battles of Mansfield and Pleasant Hill, Steele was isolated in Arkansas. Short on supplies, Steele sent a detachment commanded by Colonel James M. Williams on April 17 to forage for 5,000 bushels of corn (maize) that were reported to be in the area.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3007076, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-04-18"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

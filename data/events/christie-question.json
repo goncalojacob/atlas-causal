@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "christie-question",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3414284",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Christie Question",
+    "pt": "Questão Christie"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3414284"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Christie Question\", revision 1383008746"
+    }
+  ],
+  "title": "Christie Question",
+  "summary": "The English Wikipedia article \"Christie Question\", at revision 1383008746, opens: \"The Christie Question was a diplomatic crisis between the British Empire and the Empire of Brazil that took place from 1862 to 1865. This quasi-conflict was named after William Dougal Christie, then the United Kingdom Ambassador to Brazil. The Aberdeen Act, which gave Britain the right to seize Brazilian slave ships and free the enslaved people aboard, was the main cause behind the crisis.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3414284, imported by tools/import/wikidata.mjs. The item's own description reads \"crise diplomática do segundo reinado brasileiro\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863
+  },
+  "place": "empire-of-brazil-q217230",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}
