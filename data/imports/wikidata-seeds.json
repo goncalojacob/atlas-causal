@@ -12147,6 +12147,16 @@
       "kind": "event",
       "label": "volcano tectonic earthquake",
       "note": "Added 29 October by the assistant, from the queue log of 27 to 29 October: items of this class were refused because the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “earthquake caused by the movement of magma”. Carried by 1792 eruption of Mount Unzen. One event row among an item’s classes is enough (deviation 1628), so the sibling classes are left without a row."
+    },
+    "Q290178": {
+      "kind": "event",
+      "label": "economic crisis",
+      "note": "Added 1 November by the assistant, from the queue log: an item of this class was refused because the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “sharp deterioration in economic situation and perspectives”."
+    },
+    "Q13538715": {
+      "kind": "event",
+      "label": "Anti-Habsburg uprisings",
+      "note": "Added 1 November by the assistant, from the queue log: an item of this class was refused because the table had no row for it. The label and the description are read off the class item."
     }
   },
   "lanes": {
