@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1875-cucuta-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3510584",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "1875 Cúcuta earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3510584"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1875 Cúcuta earthquake\", revision 1370167618"
+    }
+  ],
+  "title": "1875 Cúcuta earthquake",
+  "summary": "The English Wikipedia article \"1875 Cúcuta earthquake\", at revision 1370167618, opens: \"The 1875 Cúcuta earthquake occurred on 18 May at 11:15 AM. It completely demolished Cúcuta, Villa del Rosario (Colombia), San Antonio del Tachira and Capacho (Venezuela). The earthquake killed many Venezuelans in San Cristóbal, La Mulata, Rubio, Michelena, La Grita, Colón, amongst others, and was felt in both Bogotá and Caracas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3510584, imported by tools/import/wikidata.mjs. The item's own description reads \"Earthquake in Colombia and Venezuela\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1875,
+    "end": 1875,
+    "date": "1875-05-18"
+  },
+  "place": "cucuta",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

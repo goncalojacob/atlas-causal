@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-salem-church",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2772670",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Salem Church"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2772670"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Salem Church\", revision 1370588091"
+    }
+  ],
+  "title": "Battle of Salem Church",
+  "summary": "The English Wikipedia article \"Battle of Salem Church\", at revision 1370588091, opens: \"The Battle of Salem Church, took place on May 4 respectively, 1863, in Spotsylvania County, Virginia, as part of the Chancellorsville Campaign of the American Civil War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2772670, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-05-03",
+    "endDate": "1863-05-04"
+  },
+  "place": "spotsylvania-county-virginia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-charleston-harbor",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3910850",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Second Battle of Charleston Harbor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3910850"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Charleston Harbor\", revision 1380716930"
+    }
+  ],
+  "title": "Second Battle of Charleston Harbor",
+  "summary": "The English Wikipedia article \"Second Battle of Charleston Harbor\", at revision 1380716930, opens: \"The second battle of Charleston Harbor, also known as the siege of Charleston Harbor, the siege of Fort Wagner, or the battle of Morris Island, took place during the American Civil War in the late summer of 1863 between a combined U.S. Army/Navy force and the Confederate defenses of Charleston, South Carolina.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3910850, imported by tools/import/wikidata.mjs. The item's own description reads \"Siege during the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-07-18",
+    "endDate": "1863-09-07"
+  },
+  "place": "charleston-south-carolina",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}
