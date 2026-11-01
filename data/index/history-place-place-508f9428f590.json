@@ -2089,6 +2089,15 @@
         }
       ]
     },
+    "barbourville-kentucky": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
+        }
+      ]
+    },
     "barcelona": {
       "from": "git",
       "versions": [
@@ -3060,6 +3069,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "black-jack-battlefield": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
         }
       ]
     },
@@ -4446,6 +4464,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "carlisle-pennsylvania": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
         }
       ]
     },
@@ -7692,6 +7719,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "elizabeth-city-north-carolina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
         }
       ]
     },
@@ -16534,6 +16570,15 @@
         }
       ]
     },
+    "mesilla-new-mexico": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
+        }
+      ]
+    },
     "mesopotamia": {
       "from": "git",
       "versions": [
@@ -19351,6 +19396,15 @@
         }
       ]
     },
+    "osawatomie-kansas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
+        }
+      ]
+    },
     "ostend": {
       "from": "git",
       "versions": [
@@ -21276,6 +21330,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "puno": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
         }
       ]
     },
@@ -23320,6 +23383,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "santa-fe-new-mexico": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-01"
         }
       ]
     },

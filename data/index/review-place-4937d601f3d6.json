@@ -3303,7 +3303,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 17,
+      "degree": 18,
       "id": "argentina-q414",
       "kind": "place",
       "names": [
@@ -5929,6 +5929,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "barbourville-kentucky",
+      "kind": "place",
+      "names": [
+        "Barbourville",
+        "Barbourville, Kentucky"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 12,
       "id": "barcelona",
@@ -8494,6 +8522,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "black-jack-battlefield",
+      "kind": "place",
+      "names": [
+        "Black Jack Battlefield"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 1,
       "id": "black-rocks-at-pungo-andongo",
@@ -9652,7 +9707,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 12,
+      "degree": 13,
       "id": "brazil-q155",
       "kind": "place",
       "names": [
@@ -12109,6 +12164,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "carlisle-pennsylvania",
+      "kind": "place",
+      "names": [
+        "Carlisle",
+        "Carlisle, Pennsylvania",
+        "Carlisle (Pensilvânia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "carmen-de-patagones",
@@ -14021,7 +14105,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 4,
+      "degree": 5,
       "id": "chattanooga-tennessee",
       "kind": "place",
       "names": [
@@ -20740,6 +20824,34 @@
       "kind": "place",
       "names": [
         "Eliksem"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "elizabeth-city-north-carolina",
+      "kind": "place",
+      "names": [
+        "Elizabeth City",
+        "Elizabeth City, North Carolina"
       ],
       "origin": {
         "tool": "wikidata"
@@ -31802,7 +31914,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "jackson-mississippi",
       "kind": "place",
       "names": [
@@ -44351,6 +44463,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "mesilla-new-mexico",
+      "kind": "place",
+      "names": [
+        "Mesilla",
+        "Mesilla, New Mexico",
+        "Mesilla (Novo México)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 5,
       "id": "mesopotamia",
@@ -44517,7 +44658,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 17,
+      "degree": 18,
       "id": "mexico-q96",
       "kind": "place",
       "names": [
@@ -51951,6 +52092,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "osawatomie-kansas",
+      "kind": "place",
+      "names": [
+        "Osawatomie",
+        "Osawatomie, Kansas",
+        "Osawatomie (Kansas)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "ostend",
@@ -53578,7 +53748,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 4,
+      "degree": 5,
       "id": "pensacola-florida",
       "kind": "place",
       "names": [
@@ -54230,7 +54400,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "philadelphia",
       "kind": "place",
       "names": [
@@ -56897,6 +57067,33 @@
       "names": [
         "Punjab",
         "Panjabe"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "puno",
+      "kind": "place",
+      "names": [
+        "Puno"
       ],
       "origin": {
         "tool": "wikidata"
@@ -62261,6 +62458,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-01",
+      "degree": 1,
+      "id": "santa-fe-new-mexico",
+      "kind": "place",
+      "names": [
+        "Santa Fe",
+        "Santa Fe, New Mexico",
+        "Santa Fé (Novo México)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "santa-marta",
@@ -66147,7 +66373,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 5,
+      "degree": 6,
       "id": "spotsylvania-county-virginia",
       "kind": "place",
       "names": [
@@ -72556,7 +72782,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 102,
+      "degree": 106,
       "id": "united-states-q30",
       "kind": "place",
       "names": [

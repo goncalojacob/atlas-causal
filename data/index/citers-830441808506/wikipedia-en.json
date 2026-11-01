@@ -15056,6 +15056,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-barbourville",
+      "kind": "event",
+      "locator": "\"Battle of Barbourville\", revision 1380779722"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-barcelona",
       "kind": "event",
       "locator": "\"Battle of Barcelona\", revision 1373858475"
@@ -15404,6 +15410,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-black-jack",
+      "kind": "event",
+      "locator": "\"Battle of Black Jack\", revision 1376039752"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-blackburn-s-ford",
       "kind": "event",
       "locator": "\"Battle of Blackburn's Ford\", revision 1373519505"
@@ -15515,6 +15527,12 @@
       "id": "battle-of-boomplaats",
       "kind": "event",
       "locator": "\"Battle of Boomplaats\", revision 1370434792"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-boonsboro",
+      "kind": "event",
+      "locator": "\"Battle of Boonsboro\", revision 1370108030"
     },
     {
       "dissent": false,
@@ -15701,6 +15719,12 @@
       "id": "battle-of-brihuega",
       "kind": "event",
       "locator": "\"Battle of Brihuega\", revision 1370435222"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bristoe-station",
+      "kind": "event",
+      "locator": "\"Battle of Bristoe Station\", revision 1370435229"
     },
     {
       "dissent": false,
@@ -16124,6 +16148,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cape-girardeau",
+      "kind": "event",
+      "locator": "\"Battle of Cape Girardeau\", revision 1370436178"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cape-henry",
       "kind": "event",
       "locator": "\"Battle of Cape Henry\", revision 1370436183"
@@ -16217,6 +16247,12 @@
       "id": "battle-of-carillon",
       "kind": "event",
       "locator": "\"Battle of Carillon\", revision 1380652065"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-carlisle",
+      "kind": "event",
+      "locator": "\"Battle of Carlisle\", revision 1374748286"
     },
     {
       "dissent": false,
@@ -16496,6 +16532,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chalk-bluff",
+      "kind": "event",
+      "locator": "\"Battle of Chalk Bluff\", revision 1370108854"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chamchamal",
       "kind": "event",
       "locator": "\"Battle of Chamchamal\", revision 1380933723"
@@ -16724,6 +16766,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chino",
+      "kind": "event",
+      "locator": "\"Battle of Chino\", revision 1380300869"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chinsurah",
       "kind": "event",
       "locator": "\"Battle of Chinsurah\", revision 1370109011"
@@ -16847,6 +16895,12 @@
       "id": "battle-of-cochin",
       "kind": "event",
       "locator": "\"Battle of Cochin\", revision 1372437115"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cockpit-point",
+      "kind": "event",
+      "locator": "\"Battle of Cockpit Point\", revision 1370437433"
     },
     {
       "dissent": false,
@@ -16988,6 +17042,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-corrick-s-ford",
+      "kind": "event",
+      "locator": "\"Battle of Corrick's Ford\", revision 1370109272"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-corunna",
       "kind": "event",
       "locator": "\"Battle of Corunna\", revision 1370437705"
@@ -17021,6 +17081,12 @@
       "id": "battle-of-cowpens",
       "kind": "event",
       "locator": "\"Battle of Cowpens\", revision 1376280446"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-crampton-s-gap",
+      "kind": "event",
+      "locator": "\"Battle of Crampton's Gap\", revision 1370109337"
     },
     {
       "dissent": false,
@@ -17498,6 +17564,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-dranesville",
+      "kind": "event",
+      "locator": "\"Battle of Dranesville\", revision 1370109878"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dresden",
       "kind": "event",
       "locator": "\"Battle of Dresden\", revision 1376635332"
@@ -17702,6 +17774,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-elizabeth-city",
+      "kind": "event",
+      "locator": "\"Battle of Elizabeth City\", revision 1373673939"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-elmina-1625",
       "kind": "event",
       "locator": "\"Battle of Elmina (1625)\", revision 1375871907"
@@ -17837,6 +17915,12 @@
       "id": "battle-of-fairfax-court-house-1861",
       "kind": "event",
       "locator": "\"Battle of Fairfax Court House (1861)\", revision 1379580630"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fairfield",
+      "kind": "event",
+      "locator": "\"Battle of Fairfield\", revision 1370440463"
     },
     {
       "dissent": false,
@@ -18194,6 +18278,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fort-ridgely",
+      "kind": "event",
+      "locator": "\"Battle of Fort Ridgely\", revision 1379093905"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-fort-royal",
       "kind": "event",
       "locator": "\"Battle of Fort Royal\", revision 1370110467"
@@ -18251,6 +18341,12 @@
       "id": "battle-of-fort-zhenjiang",
       "kind": "event",
       "locator": "\"Battle of Fort Zhenjiang\", revision 1370110495"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fortin",
+      "kind": "event",
+      "locator": "\"Battle of Fortín\", revision 1370441004"
     },
     {
       "dissent": false,
@@ -18500,6 +18596,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-garnett-s-golding-s-farms",
+      "kind": "event",
+      "locator": "\"Battle of Garnett's & Golding's Farms\", revision 1375278945"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gavere",
       "kind": "event",
       "locator": "\"Battle of Gavere\", revision 1370110758"
@@ -18746,6 +18848,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-goldsborough-bridge",
+      "kind": "event",
+      "locator": "\"Battle of Goldsborough Bridge\", revision 1370441778"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-goliad",
       "kind": "event",
       "locator": "\"Battle of Goliad\", revision 1378642813"
@@ -18923,6 +19031,12 @@
       "id": "battle-of-grijo",
       "kind": "event",
       "locator": "\"Battle of Grijó\", revision 1370785637"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-griswoldville",
+      "kind": "event",
+      "locator": "\"Battle of Griswoldville\", revision 1370442055"
     },
     {
       "dissent": false,
@@ -19166,6 +19280,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-hancock",
+      "kind": "event",
+      "locator": "\"Battle of Hancock\", revision 1370442556"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-hanover",
       "kind": "event",
       "locator": "\"Battle of Hanover\", revision 1370442577"
@@ -19235,6 +19355,12 @@
       "id": "battle-of-hastenbeck",
       "kind": "event",
       "locator": "\"Battle of Hastenbeck\", revision 1370442670"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-hatchie-bridge",
+      "kind": "event",
+      "locator": "\"Battle of Hatchie Bridge\", revision 1375705852"
     },
     {
       "dissent": false,
@@ -19505,6 +19631,12 @@
       "id": "battle-of-hondschoote",
       "kind": "event",
       "locator": "\"Battle of Hondschoote\", revision 1370265746"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-honey-hill",
+      "kind": "event",
+      "locator": "\"Battle of Honey Hill\", revision 1370265754"
     },
     {
       "dissent": false,
@@ -20312,6 +20444,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kelly-s-ford",
+      "kind": "event",
+      "locator": "\"Battle of Kelly's Ford\", revision 1370445025"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kemp-s-landing",
       "kind": "event",
       "locator": "\"Battle of Kemp's Landing\", revision 1378229507"
@@ -20453,6 +20591,12 @@
       "id": "battle-of-kings-mountain",
       "kind": "event",
       "locator": "\"Battle of Kings Mountain\", revision 1380216071"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kinston",
+      "kind": "event",
+      "locator": "\"Battle of Kinston\", revision 1371430116"
     },
     {
       "dissent": false,
@@ -20837,6 +20981,12 @@
       "id": "battle-of-kyokoji",
       "kind": "event",
       "locator": "\"Battle of Kyōkōji\", revision 1370267605"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-la-arada",
+      "kind": "event",
+      "locator": "\"Battle of La Arada\", revision 1370267647"
     },
     {
       "dissent": false,
@@ -21377,6 +21527,12 @@
       "id": "battle-of-lonato",
       "kind": "event",
       "locator": "\"Battle of Lonato\", revision 1377306939"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lone-jack",
+      "kind": "event",
+      "locator": "\"Battle of Lone Jack\", revision 1370268438"
     },
     {
       "dissent": false,
@@ -22604,6 +22760,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-morton-s-ford",
+      "kind": "event",
+      "locator": "\"Battle of Morton's Ford\", revision 1370450518"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-moscow-1612",
       "kind": "event",
       "locator": "\"Battle of Moscow (1612)\", revision 1370450535"
@@ -23432,6 +23594,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-osawatomie",
+      "kind": "event",
+      "locator": "\"Battle of Osawatomie\", revision 1370452381"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-osel-island",
       "kind": "event",
       "locator": "\"Battle of Ösel Island\", revision 1377870012"
@@ -24119,6 +24287,12 @@
       "id": "battle-of-port-royal-1690",
       "kind": "event",
       "locator": "\"Battle of Port Royal (1690)\", revision 1375089342"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-port-walthall-junction",
+      "kind": "event",
+      "locator": "\"Battle of Port Walthall Junction\", revision 1370272143"
     },
     {
       "dissent": false,
@@ -25262,6 +25436,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-san-pasqual",
+      "kind": "event",
+      "locator": "\"Battle of San Pasqual\", revision 1370273623"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-san-patricio",
       "kind": "event",
       "locator": "\"Battle of San Patricio\", revision 1378642970"
@@ -25385,6 +25565,12 @@
       "id": "battle-of-santa-rosa",
       "kind": "event",
       "locator": "\"Battle of Santa Rosa\", revision 1374695446"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-santa-rosa-island",
+      "kind": "event",
+      "locator": "\"Battle of Santa Rosa Island\", revision 1370588591"
     },
     {
       "dissent": false,
@@ -26306,6 +26492,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-stirling-s-plantation",
+      "kind": "event",
+      "locator": "\"Battle of Stirling's Plantation\", revision 1370589964"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sto-owicze",
       "kind": "event",
       "locator": "\"Battle of Stołowicze\", revision 1382460455"
@@ -26978,6 +27170,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-cumberland-gap-1863",
+      "kind": "event",
+      "locator": "\"Battle of the Cumberland Gap (1863)\", revision 1380714259"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-dardanelles-1654",
       "kind": "event",
       "locator": "\"Battle of the Dardanelles (1654)\", revision 1370599097"
@@ -27635,6 +27833,12 @@
       "id": "battle-of-trafalgar",
       "kind": "event",
       "locator": "\"Battle of Trafalgar\", revision 1377500939"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tranter-s-creek",
+      "kind": "event",
+      "locator": "\"Battle of Tranter's Creek\", revision 1372299858"
     },
     {
       "dissent": false,
@@ -28589,6 +28793,12 @@
       "id": "battle-of-white-bird-canyon",
       "kind": "event",
       "locator": "\"Battle of White Bird Canyon\", revision 1380091446"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-white-hall",
+      "kind": "event",
+      "locator": "\"Battle of White Hall\", revision 1370593794"
     },
     {
       "dissent": false,
@@ -29606,6 +29816,12 @@
     },
     {
       "dissent": false,
+      "id": "bombardment-of-greytown",
+      "kind": "event",
+      "locator": "\"Bombardment of Greytown\", revision 1375716884"
+    },
+    {
+      "dissent": false,
       "id": "bombardment-of-kagoshima",
       "kind": "event",
       "locator": "\"Bombardment of Kagoshima\", revision 1370605151"
@@ -30575,6 +30791,12 @@
       "id": "capture-of-samarkand-1740",
       "kind": "event",
       "locator": "\"Capture of Samarkand (1740)\", revision 1381775429"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-santa-fe",
+      "kind": "event",
+      "locator": "\"Capture of Santa Fe\", revision 1370609522"
     },
     {
       "dissent": false,
@@ -33572,6 +33794,12 @@
     },
     {
       "dissent": false,
+      "id": "first-battle-of-donaldsonville",
+      "kind": "event",
+      "locator": "\"First Battle of Donaldsonville\", revision 1370618598"
+    },
+    {
+      "dissent": false,
       "id": "first-battle-of-el-djorf",
       "kind": "event",
       "locator": "\"First Battle of El Djorf\", revision 1371469454"
@@ -33638,6 +33866,12 @@
     },
     {
       "dissent": false,
+      "id": "first-battle-of-mesilla",
+      "kind": "event",
+      "locator": "\"First Battle of Mesilla\", revision 1379349966"
+    },
+    {
+      "dissent": false,
       "id": "first-battle-of-murfreesboro",
       "kind": "event",
       "locator": "\"First Battle of Murfreesboro\", revision 1370618811"
@@ -33701,6 +33935,12 @@
       "id": "first-battle-of-rappahannock-station",
       "kind": "event",
       "locator": "\"First Battle of Rappahannock Station\", revision 1370618923"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-sabine-pass",
+      "kind": "event",
+      "locator": "\"First Battle of Sabine Pass\", revision 1373621532"
     },
     {
       "dissent": false,
@@ -36356,6 +36596,12 @@
     },
     {
       "dissent": false,
+      "id": "jackson-expedition",
+      "kind": "event",
+      "locator": "\"Jackson expedition\", revision 1382156743"
+    },
+    {
+      "dissent": false,
       "id": "jackson-s-valley-campaign",
       "kind": "event",
       "locator": "\"Jackson's Valley campaign\", revision 1377329224"
@@ -37337,6 +37583,12 @@
       "id": "li-lobanov-treaty",
       "kind": "event",
       "locator": "\"Li–Lobanov Treaty\", revision 1316224784"
+    },
+    {
+      "dissent": false,
+      "id": "liberal-rebellions-of-1842",
+      "kind": "event",
+      "locator": "\"Liberal rebellions of 1842\", revision 1373482052"
     },
     {
       "dissent": false,
@@ -40436,6 +40688,12 @@
     },
     {
       "dissent": false,
+      "id": "philadelphia-nativist-riots",
+      "kind": "event",
+      "locator": "\"Philadelphia nativist riots\", revision 1377301076"
+    },
+    {
+      "dissent": false,
       "id": "philippeville-massacre",
       "kind": "event",
       "locator": "\"Philippeville massacre\", revision 1371790989"
@@ -41732,6 +41990,12 @@
     },
     {
       "dissent": false,
+      "id": "revolution-of-11-september-1852",
+      "kind": "event",
+      "locator": "\"Revolution of 11 September 1852\", revision 1370706995"
+    },
+    {
+      "dissent": false,
       "id": "revolution-of-1772",
       "kind": "event",
       "locator": "\"Revolution of 1772\", revision 1370707002"
@@ -42620,6 +42884,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-auburn",
+      "kind": "event",
+      "locator": "\"Second Battle of Auburn\", revision 1370735908"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-benghazi",
       "kind": "event",
       "locator": "\"Second Battle of Benghazi\", revision 1370735938"
@@ -42680,6 +42950,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-chattanooga",
+      "kind": "event",
+      "locator": "\"Second Battle of Chattanooga\", revision 1370736022"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-cholet",
       "kind": "event",
       "locator": "\"Second Battle of Cholet\", revision 1370820732"
@@ -42707,6 +42983,12 @@
       "id": "second-battle-of-dego",
       "kind": "event",
       "locator": "\"Second Battle of Dego\", revision 1370736098"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-fort-mcallister",
+      "kind": "event",
+      "locator": "\"Second Battle of Fort McAllister\", revision 1370736196"
     },
     {
       "dissent": false,
@@ -42839,6 +43121,12 @@
       "id": "second-battle-of-ream-s-station",
       "kind": "event",
       "locator": "\"Second Battle of Ream's Station\", revision 1376089700"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-rivas",
+      "kind": "event",
+      "locator": "\"Second Battle of Rivas\", revision 1380866211"
     },
     {
       "dissent": false,
@@ -47963,6 +48251,12 @@
       "id": "stockholm-bloodbath",
       "kind": "event",
       "locator": "\"Stockholm Bloodbath\", revision 1366197678"
+    },
+    {
+      "dissent": false,
+      "id": "stoneman-s-1863-raid",
+      "kind": "event",
+      "locator": "\"Stoneman's 1863 raid\", revision 1370748676"
     },
     {
       "dissent": false,

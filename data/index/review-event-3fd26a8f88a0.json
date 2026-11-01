@@ -25959,6 +25959,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-barbourville",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Barbourville"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-30",
       "id": "battle-of-barcelona",
       "kind": "event",
@@ -27780,6 +27812,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-black-jack",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "bleeding-kansas",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Black Jack"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-blackburn-s-ford",
       "kind": "event",
@@ -28375,6 +28439,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Boomplaats"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-boonsboro",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Boonsboro"
     },
     {
       "authors": [
@@ -29355,6 +29450,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Brihuega"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-bristoe-station",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Bristoe Station"
     },
     {
       "authors": [
@@ -31536,6 +31662,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-cape-girardeau",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cape Girardeau"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-cape-henry",
       "kind": "event",
@@ -32030,6 +32186,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Carillon"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-carlisle",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Carlisle"
     },
     {
       "authors": [
@@ -33511,6 +33699,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-chalk-bluff",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Chalk Bluff"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-chamchamal",
       "kind": "event",
@@ -34724,6 +34944,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-chino",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Chino"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "battle-of-chinsurah",
       "kind": "event",
@@ -35375,6 +35624,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Cochin"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-cockpit-point",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cockpit Point"
     },
     {
       "authors": [
@@ -36106,6 +36386,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-corrick-s-ford",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "battle-of-rich-mountain",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Corrick's Ford"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 2,
       "id": "battle-of-corunna",
@@ -36283,6 +36594,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Cowpens"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-crampton-s-gap",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Crampton's Gap"
     },
     {
       "authors": [
@@ -38804,6 +39146,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-dranesville",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Dranesville"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "battle-of-dresden",
       "kind": "event",
@@ -39876,6 +40249,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-elizabeth-city",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Elizabeth City"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "degree": 1,
       "id": "battle-of-elmina-1625",
@@ -40587,6 +40992,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Fairfax Court House (1861)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-fairfield",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Fairfield"
     },
     {
       "authors": [
@@ -42469,6 +42905,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-fort-ridgely",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dakota-war-of-1862",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Fort Ridgely"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "battle-of-fort-royal",
@@ -42767,6 +43235,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Fort Zhenjiang"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-fortin",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Fortín"
     },
     {
       "authors": [
@@ -44028,6 +44526,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Garisi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-garnett-s-golding-s-farms",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Garnett's & Golding's Farms"
     },
     {
       "authors": [
@@ -45306,6 +45835,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-goldsborough-bridge",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Goldsborough Bridge"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "battle-of-goliad",
       "kind": "event",
@@ -46263,6 +46823,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Grijó"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-griswoldville",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Griswoldville"
     },
     {
       "authors": [
@@ -47548,6 +48139,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-hancock",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Hancock"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-30",
       "id": "battle-of-hanover",
       "kind": "event",
@@ -47916,6 +48538,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Hastenbeck"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-hatchie-bridge",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Hatchie Bridge"
     },
     {
       "authors": [
@@ -49331,6 +49984,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Hondschoote"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-honey-hill",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Honey Hill"
     },
     {
       "authors": [
@@ -53628,6 +54312,37 @@
         "wikipedia-en"
       ],
       "created": "2026-11-01",
+      "id": "battle-of-kelly-s-ford",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Kelly's Ford"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
       "id": "battle-of-kemp-s-landing",
       "kind": "event",
       "origin": {
@@ -54367,6 +55082,35 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Kings Mountain"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-kinston",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Kinston"
     },
     {
       "authors": [
@@ -56407,6 +57151,35 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Kyōkōji"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-la-arada",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of La Arada"
     },
     {
       "authors": [
@@ -59273,6 +60046,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Lonato"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-lone-jack",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Lone Jack"
     },
     {
       "authors": [
@@ -65747,6 +66552,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-morton-s-ford",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Morton's Ford"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-moscow-1612",
       "kind": "event",
@@ -70177,6 +71013,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-osawatomie",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "bleeding-kansas",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Osawatomie"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-30",
       "id": "battle-of-osel-island",
       "kind": "event",
@@ -73744,6 +74612,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Port Royal (1690)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-port-walthall-junction",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Port Walthall Junction"
     },
     {
       "authors": [
@@ -79710,6 +80609,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-san-pasqual",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mexican-american-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of San Pasqual"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "battle-of-san-patricio",
       "kind": "event",
@@ -80361,6 +81291,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Santa Rosa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-santa-rosa-island",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Santa Rosa Island"
     },
     {
       "authors": [
@@ -85160,6 +86121,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-stirling-s-plantation",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Stirling's Plantation"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-30",
       "id": "battle-of-sto-owicze",
       "kind": "event",
@@ -88696,6 +89688,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "battle-of-the-cumberland-gap-1863",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Cumberland Gap (1863)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-the-dardanelles-1654",
       "kind": "event",
@@ -92179,6 +93202,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Trafalgar"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-tranter-s-creek",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Tranter's Creek"
     },
     {
       "authors": [
@@ -97187,6 +98241,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of White Bird Canyon"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "battle-of-white-hall",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of White Hall"
     },
     {
       "authors": [
@@ -102519,6 +103604,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "bombardment-of-greytown",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bombardment of Greytown"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "bombardment-of-kagoshima",
       "kind": "event",
@@ -107613,6 +108727,38 @@
       "revised": null,
       "status": "active",
       "title": "Capture of Samarkand (1740)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "capture-of-santa-fe",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mexican-american-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Santa Fe"
     },
     {
       "authors": [
@@ -123759,6 +124905,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "first-battle-of-donaldsonville",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Battle of Donaldsonville"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "id": "first-battle-of-el-djorf",
       "kind": "event",
@@ -124090,6 +125267,38 @@
       "revised": null,
       "status": "active",
       "title": "First Battle of Memphis"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "first-battle-of-mesilla",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Battle of Mesilla"
     },
     {
       "authors": [
@@ -124465,6 +125674,37 @@
       "revised": null,
       "status": "active",
       "title": "First Battle of Rappahannock Station"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "first-battle-of-sabine-pass",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Battle of Sabine Pass"
     },
     {
       "authors": [
@@ -138356,6 +139596,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "jackson-expedition",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Jackson expedition"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "jackson-s-valley-campaign",
       "kind": "event",
@@ -143664,6 +144935,36 @@
       "revised": null,
       "status": "active",
       "title": "Li–Lobanov Treaty"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "liberal-rebellions-of-1842",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Liberal rebellions of 1842"
     },
     {
       "authors": [
@@ -159880,6 +161181,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "philadelphia-nativist-riots",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Philadelphia nativist riots"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -166630,6 +167960,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "revolution-of-11-september-1852",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Revolution of 11 September 1852"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "revolution",
       "cites": [
         "wikidata",
@@ -171314,6 +172674,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "second-battle-of-auburn",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Battle of Auburn"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 4,
       "id": "second-battle-of-benghazi",
@@ -171629,6 +173020,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-01",
+      "id": "second-battle-of-chattanooga",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Battle of Chattanooga"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "second-battle-of-cholet",
       "kind": "event",
@@ -171779,6 +173201,37 @@
       "revised": null,
       "status": "active",
       "title": "Second Battle of Dego"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "second-battle-of-fort-mcallister",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Battle of Fort McAllister"
     },
     {
       "authors": [
@@ -172489,6 +173942,35 @@
       "revised": null,
       "status": "active",
       "title": "Second Battle of Ream's Station"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "second-battle-of-rivas",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Battle of Rivas"
     },
     {
       "authors": [
@@ -199468,6 +200950,37 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-01",
+      "id": "stoneman-s-1863-raid",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Stoneman's 1863 raid"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "revolution",
       "cites": [
         "wikidata",
@@ -213188,6 +214701,35 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Preobrazhenskoye"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-11-01",
+      "id": "treaty-of-puno",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Puno"
     },
     {
       "authors": [
@@ -228071,6 +229613,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-barbourville",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-barcelona",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -228395,6 +229943,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-black-jack",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-blackburn-s-ford",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -228480,6 +230034,12 @@
     },
     {
       "id": "battle-of-boomplaats",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-boonsboro",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -228654,6 +230214,12 @@
     },
     {
       "id": "battle-of-brihuega",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-bristoe-station",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -229043,6 +230609,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-cape-girardeau",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-cape-henry",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -229116,6 +230688,12 @@
     },
     {
       "id": "battle-of-carillon",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-carlisle",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -229385,6 +230963,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-chalk-bluff",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-chamchamal",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -229607,6 +231191,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-chino",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-chinsurah",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -229716,6 +231306,12 @@
     },
     {
       "id": "battle-of-cochin",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-cockpit-point",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -229853,6 +231449,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-corrick-s-ford",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-corydon",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -229872,6 +231474,12 @@
     },
     {
       "id": "battle-of-coutras",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-crampton-s-gap",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -230339,6 +231947,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-dranesville",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-dresden",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -230543,6 +232157,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-elizabeth-city",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-eltham-s-landing",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -230664,6 +232284,12 @@
     },
     {
       "id": "battle-of-fairfax-court-house-1861",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-fairfield",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -230987,6 +232613,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-fort-ridgely",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-fort-sanders",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -231030,6 +232662,12 @@
     },
     {
       "id": "battle-of-fort-zhenjiang",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-fortin",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -231264,6 +232902,12 @@
     },
     {
       "id": "battle-of-garisi",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-garnett-s-golding-s-farms",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -231515,6 +233159,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-goldsborough-bridge",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-goliad",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -231678,6 +233328,12 @@
     },
     {
       "id": "battle-of-grijo",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-griswoldville",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -231929,6 +233585,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-hancock",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-hanover",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -231990,6 +233652,12 @@
     },
     {
       "id": "battle-of-hastenbeck",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-hatchie-bridge",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -232242,6 +233910,12 @@
     },
     {
       "id": "battle-of-hondschoote",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-honey-hill",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -232967,6 +234641,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-kelly-s-ford",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-kemp-s-landing",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -233094,6 +234774,12 @@
     },
     {
       "id": "battle-of-kings-mountain",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-kinston",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -233454,6 +235140,12 @@
     },
     {
       "id": "battle-of-kyokoji",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-la-arada",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -233952,6 +235644,12 @@
     },
     {
       "id": "battle-of-lonato",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-lone-jack",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -235061,6 +236759,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-morton-s-ford",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-moscow-1612",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -235835,6 +237539,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-osawatomie",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-osel-island",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -236448,6 +238158,12 @@
     },
     {
       "id": "battle-of-port-royal",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-port-walthall-junction",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -237419,6 +239135,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-san-pasqual",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-san-patricio",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -237522,6 +239244,12 @@
     },
     {
       "id": "battle-of-santa-rosa",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-santa-rosa-island",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -238391,6 +240119,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-stirling-s-plantation",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-sto-owicze",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -238985,6 +240719,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-the-cumberland-gap-1863",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-the-dardanelles-1654",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -239526,6 +241266,12 @@
     },
     {
       "id": "battle-of-trafalgar",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-tranter-s-creek",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -240390,6 +242136,12 @@
     },
     {
       "id": "battle-of-white-bird-canyon",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-white-hall",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -241289,6 +243041,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "bombardment-of-greytown",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "bombardment-of-kagoshima",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -242076,6 +243834,12 @@
     },
     {
       "id": "capture-of-samarkand-1740",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "capture-of-santa-fe",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -244583,6 +246347,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "first-battle-of-donaldsonville",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "first-battle-of-el-djorf",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -244638,6 +246408,12 @@
     },
     {
       "id": "first-battle-of-memphis",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "first-battle-of-mesilla",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -244710,6 +246486,12 @@
     },
     {
       "id": "first-battle-of-rappahannock-station",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "first-battle-of-sabine-pass",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -246773,6 +248555,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "jackson-expedition",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "jackson-s-valley-campaign",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -247584,6 +249372,12 @@
     },
     {
       "id": "li-lobanov-treaty",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "liberal-rebellions-of-1842",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -250223,6 +252017,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "philadelphia-nativist-riots",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "pig-war-1859",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -251321,6 +253121,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "revolution-of-11-september-1852",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "revolution-of-1772",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -252077,6 +253883,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "second-battle-of-auburn",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "second-battle-of-boulou",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -252125,6 +253937,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "second-battle-of-chattanooga",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "second-battle-of-cholet",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -252144,6 +253962,12 @@
     },
     {
       "id": "second-battle-of-dego",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "second-battle-of-fort-mcallister",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -252240,6 +254064,12 @@
     },
     {
       "id": "second-battle-of-ream-s-station",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "second-battle-of-rivas",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -256871,6 +258701,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "stoneman-s-1863-raid",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "stono-rebellion",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -259197,6 +261033,18 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-puno",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-puno",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "treaty-of-purandar-1665",
