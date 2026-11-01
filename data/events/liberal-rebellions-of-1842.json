@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "liberal-rebellions-of-1842",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q9068547",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Liberal rebellions of 1842",
+    "pt": "Revoltas liberais de 1842"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q9068547"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Liberal rebellions of 1842\", revision 1373482052"
+    }
+  ],
+  "title": "Liberal rebellions of 1842",
+  "summary": "The English Wikipedia article \"Liberal rebellions of 1842\", at revision 1373482052, opens: \"The Liberal Rebellions of 1842 were a series of rebellions that took place in the Brazilian provinces of Minas Gerais and São Paulo in response to actions taken by emperor Dom Pedro II to unify power under the central government and limit the powers of the provinces. These rebellions were poorly coordinated and were put down by the central government to little effect. Along with the rebellions in Rio Grande do Sul, the Liberal Rebellions marked the end of a series of province-level rebellions that threatened the Empire of Brazil's stability.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q9068547, imported by tools/import/wikidata.mjs. The item's own description reads \"19th-century revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1842,
+    "end": null
+  },
+  "place": "brazil-q155",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-huachi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3020018",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Second Battle of Huachi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3020018"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Huachi\", revision 1370736272"
+    }
+  ],
+  "title": "Second Battle of Huachi",
+  "summary": "The English Wikipedia article \"Second Battle of Huachi\", at revision 1370736272, opens: \"The Second Battle of Huachi was a confrontation that occurred on 12 September 1821 between pro-independence troops led by General Antonio José de Sucre and Royalist troops led by General Melchor Aymerich, president of the Real Audiencia of Quito. Sucre, after having won the Battle of Yaguachi on 19 August, advanced towards Quito. The Spanish, who followed closely, positioned themselves to do battle in a field called Huachi, where they had already defeated Guayaquil forces a year before.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3020018, imported by tools/import/wikidata.mjs. The item's own description reads \"1821 battle of the Ecuadorian War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-09-12"
+  },
+  "place": "ambato-ecuador",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ecuadorian-war-of-independence"
+}

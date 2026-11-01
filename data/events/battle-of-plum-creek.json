@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-plum-creek",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872065",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Plum Creek"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872065"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Plum Creek\", revision 1370272020"
+    }
+  ],
+  "title": "Battle of Plum Creek",
+  "summary": "The English Wikipedia article \"Battle of Plum Creek\", at revision 1370272020, opens: \"The Battle of Plum Creek was a clash between allied Tonkawa, militia, and Rangers of the Republic of Texas and a huge Comanche war party under Chief Buffalo Hump, which took place along Plum Creek near Lockhart, Texas, on August 12, 1840, following the Great Raid of 1840 as that Comanche war party then returned to west Texas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872065, imported by tools/import/wikidata.mjs. The item's own description reads \"1840 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1840,
+    "end": 1840,
+    "date": "1840-08-12"
+  },
+  "place": "lockhart-texas",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "texas-indian-wars"
+}

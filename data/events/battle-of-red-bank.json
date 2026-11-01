@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-red-bank",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889754",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Red Bank"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889754"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Red Bank\", revision 1381311186"
+    }
+  ],
+  "title": "Battle of Red Bank",
+  "summary": "The English Wikipedia article \"Battle of Red Bank\", at revision 1381311186, opens: \"The Battle of Red Bank, also known as the Battle of Fort Mercer, was fought on October 22, 1777, during the American Revolutionary War. A force of 1,200 Hessian troops was sent to take Fort Mercer on the New Jersey side of the Delaware River just south of Philadelphia, but was defeated by a smaller force of Continental Army troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889754, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 battle of the American Revolutionary War in New Jersey\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-10-22"
+  },
+  "place": "fort-mercer",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}
