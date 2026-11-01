@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mulhouse",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q79815",
+  "sitelinks": {
+    "count": 101,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Mulhouse",
+    "pt": "Mulhouse"
+  },
+  "sources": [],
+  "names": [
+    "Mulhouse"
+  ],
+  "where": {
+    "lon": 7.3391666666667,
+    "lat": 47.748611111111,
+    "precision": "city",
+    "label": "Mulhouse"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

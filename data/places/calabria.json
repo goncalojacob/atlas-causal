@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "calabria",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1458",
+  "sitelinks": {
+    "count": 135,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Calabria",
+    "pt": "Calábria"
+  },
+  "sources": [],
+  "names": [
+    "Calabria"
+  ],
+  "where": {
+    "lon": 16.5,
+    "lat": 39,
+    "precision": "region",
+    "label": "Calabria"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

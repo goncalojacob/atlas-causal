@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "privas",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q193060",
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Privas",
+    "pt": "Privas"
+  },
+  "sources": [],
+  "names": [
+    "Privas"
+  ],
+  "where": {
+    "lon": 4.5991666666667,
+    "lat": 44.735,
+    "precision": "city",
+    "label": "Privas"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

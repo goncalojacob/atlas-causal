@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-doullens",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7509977",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Doullens"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7509977"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Doullens\", revision 1370740814"
+    }
+  ],
+  "title": "Siege of Doullens",
+  "summary": "The English Wikipedia article \"Siege of Doullens\", at revision 1370740814, opens: \"The siege of Doullens, also known as the Spanish capture of Doullens or the Storming of Doullens, took place between 14 and 31 July 1595, as part of the Franco-Spanish War (1595–1598), in the context of the French Wars of Religion. After ten days of siege, on 24 July, the combined forces of Henri de La Tour d'Auvergne, Duke of Bouillon, André de Brancas, Amiral de Villars, and François d'Orléans-Longueville, tried to relieve the city, but were severely defeated by the Spanish forces led by Don Pedro Henríquez de Acevedo, Count of Fuentes, and Don Carlos Coloma. Villars was taken prisoner and executed, and the Duke of Bouillon fled to Amiens with the rest of the French army. Finally, a few days after, on 31 July, the Spanish troops stormed Doullens. The Spaniards killed everybody in the city, military and civilians alike, shouting \"Remember Ham\" (Spanish: \"Recordad Ham\"), in retaliation for the massacre against the Spanish garrison of Ham by the French and Protestant soldiers under Bouillon's orders.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7509977, imported by tools/import/wikidata.mjs. The item's own description reads \"1595 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1595,
+    "end": 1595,
+    "date": "1595-07-14",
+    "endDate": "1595-07-31"
+  },
+  "place": "doullens",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-wars-of-religion"
+}

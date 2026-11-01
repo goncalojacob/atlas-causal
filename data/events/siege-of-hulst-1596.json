@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-hulst-1596",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2143007",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Hulst (1596)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2143007"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Hulst (1596)\", revision 1382095697"
+    }
+  ],
+  "title": "Siege of Hulst (1596)",
+  "summary": "The English Wikipedia article \"Siege of Hulst (1596)\", at revision 1382095697, opens: \"The siege of Hulst of 1596 took place between mid-July and August 18, 1596, at the city of Hulst, Province of Zeeland, Low Countries, during the Eighty Years' War, the Anglo-Spanish War (1585–1604). The siege was won by the Spanish forces of the Archduke of Austria. After a short siege, during which Maurice of Orange launched a failed attempt to relieve the city, the garrison of Dutch and English troops fell into Spanish hands on August 18, 1596.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2143007, imported by tools/import/wikidata.mjs. The item's own description reads \"1596 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1596,
+    "end": 1596,
+    "date": "1596-07",
+    "endDate": "1596-08-18"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

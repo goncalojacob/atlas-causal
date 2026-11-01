@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "saint-jean-d-angely",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q348807",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Saint-Jean-d'Angély",
+    "pt": "Saint-Jean-d'Angély"
+  },
+  "sources": [],
+  "names": [
+    "Saint-Jean-d'Angély"
+  ],
+  "where": {
+    "lon": -0.52111111111111,
+    "lat": 45.944166666667,
+    "precision": "city",
+    "label": "Saint-Jean-d'Angély"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
