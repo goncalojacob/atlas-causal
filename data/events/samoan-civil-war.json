@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "samoan-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q881762",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Samoan Civil War",
+    "pt": "Primeira Guerra Civil de Samoa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q881762"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Samoan Civil War\", revision 1370911953"
+    }
+  ],
+  "title": "Samoan Civil War",
+  "summary": "The English Wikipedia article \"Samoan Civil War\", at revision 1370911953, opens: \"The turbulent decades of the late 19th century saw several conflicts between rival Samoan factions in the Samoan Islands of the South Pacific. The political struggle lasted roughly between 1886 and 1894, primarily between Samoans contesting whether Malietoa Laupepa, Mataʻafa Iosefo or a member of the Tupua Tamasese dynasty would be King of Samoa. While largely a political struggle, there were also armed skirmishes between the factions. The military of the German Empire intervened on several occasions. A naval standoff between the United States, Germany, and the United Kingdom ensued.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q881762, imported by tools/import/wikidata.mjs. The item's own description reads \"1886–1894 conflict in the Samoan Islands of the South Pacific\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1886,
+    "end": 1894
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

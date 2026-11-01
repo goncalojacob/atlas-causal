@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "pecija-s-first-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q18210813",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Pecija's First Revolt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18210813"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pecija's First Revolt\", revision 1370703819"
+    }
+  ],
+  "title": "Pecija's First Revolt",
+  "summary": "The English Wikipedia article \"Pecija's First Revolt\", at revision 1370703819, opens: \"Pecija's First Revolt or Doljani Revolt was an uprising in Knešpolje led by Serb hajduk leader Petar Popović–Pecija (1826–1875) against the Ottoman government, that extended over the period of June—December 1858. It was a result of pressure against the local Serb populace, with past atrocities conducted by the Ottomans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18210813, imported by tools/import/wikidata.mjs. The item's own description reads \"1858 uprising against Ottoman rule in Bosnia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1858,
+    "date": "1858-06",
+    "endDate": "1858-12"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
