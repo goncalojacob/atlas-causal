@@ -3,616 +3,16 @@
   "kind": "import-queue",
   "items": [
     {
-      "id": "2026-10-31-americas-449",
-      "planned": "2026-10-31T18:29:40Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3477162",
-      "title": "Second Battle of Dalton",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-450",
-      "planned": "2026-10-31T18:29:40Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2890896",
-      "title": "Battle of Albemarle Sound",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-451",
-      "planned": "2026-10-31T18:29:40Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q630099",
-      "title": "St. Albans Raid",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-452",
-      "planned": "2026-10-31T18:29:40Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2284930",
-      "title": "Battle of Monett's Ferry",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-453",
-      "planned": "2026-10-31T18:29:40Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3291913",
-      "title": "Battle of Jenkins' Ferry",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-454",
-      "planned": "2026-10-31T18:29:40Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3542881",
-      "title": "Battle of Ware Bottom Church",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-31-americas-455",
-      "planned": "2026-10-31T18:29:40Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3327478",
-      "title": "Battle of Athens",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, docs/candidates-1415-1900.md, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-31-europe-402",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q133132",
-      "title": "Paris Commune",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 88 sitelinks; lane from P625:point."
-    },
-    {
-      "id": "2026-10-31-europe-405",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q1072140",
-      "title": "Roman Republic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 43 sitelinks; lane from P17:Q1072140."
-    },
-    {
-      "id": "2026-10-31-europe-411",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q2453505",
-      "title": "Third Partition of Poland",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 28 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-europe-413",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q16246888",
-      "title": "Great Eastern Crisis",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 27 sitelinks; lane from P276:Q23522."
-    },
-    {
-      "id": "2026-10-31-americas-456",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q695566",
-      "title": "Panic of 1873",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital-5 rank, Wikipedia:Vital articles/Level 5, History category; 27 sitelinks; lane from P276:Q30."
-    },
-    {
-      "id": "2026-10-31-asia-174",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q3591483",
-      "title": "1815 eruption of Mount Tambora",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital-5 rank, Wikipedia:Vital articles/Level 5, History category; 24 sitelinks; lane from P625:point."
-    },
-    {
-      "id": "2026-10-31-americas-457",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1353951",
-      "title": "Antarctic France",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 21 sitelinks; lane from P625:point."
-    },
-    {
-      "id": "2026-10-31-americas-459",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q977981",
-      "title": "Confederation of the Equator",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 16 sitelinks; lane from P625:point."
-    },
-    {
-      "id": "2026-10-31-americas-462",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1440788",
-      "title": "Equinoctial France",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 14 sitelinks; lane from P625:point."
-    },
-    {
-      "id": "2026-10-31-americas-463",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q881762",
-      "title": "Samoan Civil War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 14 sitelinks; lane from P276:Q162126."
-    },
-    {
-      "id": "2026-10-31-americas-465",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4120277",
-      "title": "Second Samoan Civil War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 12 sitelinks; lane from P276:Q162126."
-    },
-    {
-      "id": "2026-10-31-europe-425",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q13538490",
-      "title": "Bocskai uprising",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 9 sitelinks; lane from P276:Q39473."
-    },
-    {
-      "id": "2026-10-31-asia-185",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q838098",
-      "title": "Mutual Protection of Southeast China",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital-5 rank, Wikipedia:Vital articles/Level 5, History category; 9 sitelinks; lane from P17:Q8733."
-    },
-    {
-      "id": "2026-10-31-americas-470",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3071310",
-      "title": "War of the Supremes",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 8 sitelinks; lane from P276:Q739."
-    },
-    {
-      "id": "2026-10-31-europe-428",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q28104354",
-      "title": "Franco-Tahitian War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 8 sitelinks; lane from P276:Q118920."
-    },
-    {
-      "id": "2026-10-31-asia-186",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1164157",
-      "title": "Haw Wars",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 8 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-asia-187",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4209365",
-      "title": "Klang War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 8 sitelinks; lane from P276:Q189710."
-    },
-    {
-      "id": "2026-10-31-europe-430",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q617281",
-      "title": "Danzig rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 7 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-americas-471",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3817778",
-      "title": "Anglo-Cherokee War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 7 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-asia-190",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q13012465",
-      "title": "Siamese invasion of Kedah",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 7 sitelinks; lane from P17:Q1317579."
-    },
-    {
-      "id": "2026-10-31-americas-473",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3118971",
-      "title": "Ecuadorian–Colombian War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 7 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-asia-191",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q65042005",
-      "title": "Muharram Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-asia-192",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4763642",
-      "title": "Anglo-Khasi War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-asia-193",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q12866905",
-      "title": "1804 Mtiuleti rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-europe-433",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q3395274",
-      "title": "Brsjak Revolt",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-europe-434",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q18210813",
-      "title": "Pecija's First Revolt",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-asia-195",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q7382025",
-      "title": "Russian conquest of Bukhara",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-americas-475",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q24204921",
-      "title": "Six Years' War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 6 sitelinks; lane from P17:Q6123742."
-    },
-    {
-      "id": "2026-10-31-europe-435",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q12908420",
-      "title": "Mariovo and Prilep Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from P276:Q3041236."
-    },
-    {
-      "id": "2026-10-31-europe-436",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q670984",
-      "title": "Rappenkrieg",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-asia-197",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q60771401",
-      "title": "Yemeni–Ottoman conflicts",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-africa-258",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q722047",
-      "title": "Ashanti–Fante War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-asia-198",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q5025169",
-      "title": "Cambodian Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from P276:Q424."
-    },
-    {
-      "id": "2026-10-31-asia-199",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q65012965",
-      "title": "1840 Cambodian anti-Vietnamese Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from P17:Q424."
-    },
-    {
-      "id": "2026-10-31-asia-201",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q19708170",
-      "title": "Pahang Civil War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from P17:Q833."
-    },
-    {
-      "id": "2026-10-31-americas-476",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1382989",
-      "title": "Rogue River Wars",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 5 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-europe-437",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q13422413",
-      "title": "Franconian War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-americas-477",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4552449",
-      "title": "1712 Huilliche rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-europe-439",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q4212420",
-      "title": "Battle of Kanzhal",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from P276:Q16014682."
-    },
-    {
-      "id": "2026-10-31-americas-478",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4867844",
-      "title": "Basque-Vicuña War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-asia-202",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q6886390",
-      "title": "Moamoria rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from manual."
-    },
-    {
-      "id": "2026-10-31-africa-260",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q722041",
-      "title": "Ashanti–Akim–Akwapim War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from manual."
-    },
-    {
       "id": "2026-10-31-americas-479",
       "planned": "2026-10-31T19:37:32Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2935426",
       "title": "Bolívar's campaign to liberate New Granada",
       "parents": [],
       "edges": [],
       "rank": "list",
       "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from P276:Q8965."
-    },
-    {
-      "id": "2026-10-31-asia-204",
-      "planned": "2026-10-31T19:37:32Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q65012963",
-      "title": "1820 Cambodian anti-Vietnamese Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List rank, List of wars: 1500–1799 and List of wars: 1800–1899; 4 sitelinks; lane from P17:Q424."
     },
     {
       "id": "2026-10-31-europe-440",
@@ -3333,6 +2733,2776 @@
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
       "writer": "B"
+    },
+    {
+      "id": "2026-11-01-africa-001",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q28136798",
+      "title": "Reduction of Lagos",
+      "parents": [
+        "blockade-of-africa"
+      ],
+      "edges": [],
+      "rank": "child-of:blockade-of-africa",
+      "why": "P361 (part of) on its Wikidata item names Blockade of Africa, a held umbrella with fewer than three children. 6 sitelinks. Its class, naval operation (Q113782315), has no row in the seeds file; queued anyway and flagged."
+    },
+    {
+      "id": "2026-11-01-americas-003",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4784964",
+      "title": "Arbuthnot and Ambrister incident",
+      "parents": [
+        "seminole-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:seminole-wars",
+      "why": "P361 (part of) on its Wikidata item names the Seminole Wars, a held umbrella with fewer than three children. 1 sitelink. Its class, international incident (Q1227249), has no row in the seeds file; queued anyway and flagged."
+    },
+    {
+      "id": "2026-11-01-americas-004",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q43079734",
+      "title": "Hornet incident",
+      "parents": [
+        "ten-years-war"
+      ],
+      "edges": [],
+      "rank": "child-of:ten-years-war",
+      "why": "P361 (part of) on its Wikidata item names the Ten Years' War, a held umbrella with fewer than three children. 1 sitelink. Its class, international incident (Q1227249), has no row in the seeds file; queued anyway and flagged."
+    },
+    {
+      "id": "2026-11-01-americas-005",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q695566",
+      "title": "Panic of 1873",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "On the candidates list, refused on 1 November for a class (Q290178) missing from the seeds file. The assistant added that row the same day from the refusal log, so the item comes back under a new id."
+    },
+    {
+      "id": "2026-11-01-europe-021",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q13538490",
+      "title": "Bocskai uprising",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "On the candidates list, refused on 1 November for a class (Q13538715) missing from the seeds file. The assistant added that row the same day from the refusal log, so the item comes back under a new id."
+    },
+    {
+      "id": "2026-11-01-asia-006",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q28104354",
+      "title": "Franco-Tahitian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "On the candidates list, refused on 1 November for no reachable lane: its location, the Society Islands, has no row in the seeds file. Filed under asia, as Batman's Treaty was on 1 November, for lack of an oceania writer."
+    },
+    {
+      "id": "2026-11-01-europe-022",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q16163640",
+      "title": "October 1900 Carlist uprising",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Found reading P361 on the Carlist Wars, but its date falls after that war's own end year. Queued on its own with no parent rather than filed under a war it falls outside."
+    },
+    {
+      "id": "2026-11-01-americas-006",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2865741",
+      "title": "Articles of Capitulation of Quebec",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Found reading P361 on the Conquest of New France, but the held record's own date is a single day after this item's. Queued on its own with no parent rather than filed under a war it falls outside."
+    },
+    {
+      "id": "2026-11-01-americas-007",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q5150525",
+      "title": "Comanche Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Found reading P361 on the Texas Indian Wars, but its own start year is a century earlier. Queued on its own with no parent rather than filed under a war it falls outside."
+    },
+    {
+      "id": "2026-11-01-americas-008",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4927235",
+      "title": "Blockade of Porto Bello",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Found reading P361 on the Anglo-Spanish War of 1727-1729, but its date falls a year before that war's own start. Queued on its own with no parent rather than filed under a war it falls outside."
+    },
+    {
+      "id": "2026-11-01-europe-023",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q5708031",
+      "title": "Siege of Atella",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Found reading P361 on the Italian War of 1494-1495, but its date falls a year after that war's own end. Queued on its own with no parent rather than filed under a war it falls outside."
+    },
+    {
+      "id": "2026-11-01-europe-024",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2511359",
+      "title": "Assault on Nijmegen",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Found reading P361 on the Cologne War, but its date falls a year after that war's own end. Queued on its own with no parent rather than filed under a war it falls outside."
+    },
+    {
+      "id": "2026-11-01-americas-009",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q137703855",
+      "title": "Raid on Santiago de Cuba",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Found reading P361 on the Anglo-Spanish War of 1654-1660, but its date falls two years after that war's own end. Queued on its own with no parent rather than filed under a war it falls outside."
+    },
+    {
+      "id": "2026-11-01-europe-025",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4677263",
+      "title": "Action of 15 July 1798",
+      "parents": [
+        "mediterranean-campaign-of-1798"
+      ],
+      "edges": [],
+      "rank": "child-of:mediterranean-campaign-of-1798",
+      "why": "P361 (part of) on its Wikidata item names Mediterranean campaign of 1798, a held umbrella with fewer than three children. 7 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-026",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3432591",
+      "title": "Battle of Zealand Point",
+      "parents": [
+        "english-wars-scandinavia",
+        "gunboat-war"
+      ],
+      "edges": [],
+      "rank": "child-of:english-wars-scandinavia",
+      "why": "P361 (part of) on its Wikidata item names English Wars (Scandinavia) and Gunboat War, a held umbrella with fewer than three children. 6 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-027",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2887830",
+      "title": "Battle of Alvøen",
+      "parents": [
+        "gunboat-war"
+      ],
+      "edges": [],
+      "rank": "child-of:gunboat-war",
+      "why": "P361 (part of) on its Wikidata item names Gunboat War, a held umbrella with fewer than three children. 6 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-028",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2984978",
+      "title": "Battle of the Tagus (1831)",
+      "parents": [
+        "liberal-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:liberal-wars",
+      "why": "P361 (part of) on its Wikidata item names Liberal Wars, a held umbrella with fewer than three children. 6 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-029",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2887902",
+      "title": "Battle of Asseiceira",
+      "parents": [
+        "liberal-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:liberal-wars",
+      "why": "P361 (part of) on its Wikidata item names Liberal Wars, a held umbrella with fewer than three children. 6 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-030",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4087409",
+      "title": "Battle of Šumatovac",
+      "parents": [
+        "serbian-ottoman-wars-1876-1878"
+      ],
+      "edges": [],
+      "rank": "child-of:serbian-ottoman-wars-1876-1878",
+      "why": "P361 (part of) on its Wikidata item names Serbian–Ottoman Wars (1876–1878), a held umbrella with fewer than three children. 6 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-031",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q5162454",
+      "title": "Conquest of the Azores",
+      "parents": [
+        "war-of-the-portuguese-succession"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names War of the Portuguese Succession, a held umbrella with fewer than three children. 6 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-011",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4872061",
+      "title": "Battle of Platte Bridge",
+      "parents": [
+        "colorado-war"
+      ],
+      "edges": [],
+      "rank": "child-of:colorado-war",
+      "why": "P361 (part of) on its Wikidata item names Colorado War, a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-032",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2888176",
+      "title": "Battle of Borgo",
+      "parents": [
+        "french-conquest-of-corsica"
+      ],
+      "edges": [],
+      "rank": "child-of:french-conquest-of-corsica",
+      "why": "P361 (part of) on its Wikidata item names French conquest of Corsica, a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-033",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q7510226",
+      "title": "Siege of Maribor (1532)",
+      "parents": [
+        "habsburg-ottoman-wars-in-hungary-1526-1568"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Habsburg–Ottoman wars in Hungary (1526–1568), a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-034",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q21655930",
+      "title": "Habsburg–Ottoman war of 1565–1568",
+      "parents": [
+        "habsburg-ottoman-wars-in-hungary-1526-1568"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Habsburg–Ottoman wars in Hungary (1526–1568), a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-035",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3037792",
+      "title": "Siege of Porto",
+      "parents": [
+        "liberal-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:liberal-wars",
+      "why": "P361 (part of) on its Wikidata item names Liberal Wars, a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-036",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4069868",
+      "title": "Battle of Arpachai",
+      "parents": [
+        "russo-turkish-war-1806-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-turkish-war-1806-1812",
+      "why": "P361 (part of) on its Wikidata item names Russo-Turkish War (1806–1812), a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-037",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4329624",
+      "title": "Siege of Belaya",
+      "parents": [
+        "smolensk-war"
+      ],
+      "edges": [],
+      "rank": "child-of:smolensk-war",
+      "why": "P361 (part of) on its Wikidata item names Smolensk War, a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-038",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4871700",
+      "title": "Battle of Maya",
+      "parents": [
+        "battle-of-the-pyrenees"
+      ],
+      "edges": [],
+      "rank": "child-of:battle-of-the-pyrenees",
+      "why": "P361 (part of) on its Wikidata item names Battle of the Pyrenees, a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-039",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1557439",
+      "title": "Battle of Pfeddersheim",
+      "parents": [
+        "german-peasants-war"
+      ],
+      "edges": [],
+      "rank": "child-of:german-peasants-war",
+      "why": "P361 (part of) on its Wikidata item names German Peasants' War, a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-040",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q15977779",
+      "title": "Battle of Bucov",
+      "parents": [
+        "moldavian-magnate-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:moldavian-magnate-wars",
+      "why": "P361 (part of) on its Wikidata item names Moldavian Magnate Wars, a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-012",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4870436",
+      "title": "Battle of Bear Paw",
+      "parents": [
+        "nez-perce-war"
+      ],
+      "edges": [],
+      "rank": "child-of:nez-perce-war",
+      "why": "P361 (part of) on its Wikidata item names Nez Perce War, a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-013",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4870795",
+      "title": "Battle of Cottonwood",
+      "parents": [
+        "nez-perce-war"
+      ],
+      "edges": [],
+      "rank": "child-of:nez-perce-war",
+      "why": "P361 (part of) on its Wikidata item names Nez Perce War, a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-014",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4872889",
+      "title": "Battle of the Clearwater",
+      "parents": [
+        "nez-perce-war"
+      ],
+      "edges": [],
+      "rank": "child-of:nez-perce-war",
+      "why": "P361 (part of) on its Wikidata item names Nez Perce War, a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-015",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4870636",
+      "title": "Battle of Canyon Creek",
+      "parents": [
+        "nez-perce-war"
+      ],
+      "edges": [],
+      "rank": "child-of:nez-perce-war",
+      "why": "P361 (part of) on its Wikidata item names Nez Perce War, a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-041",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4087393",
+      "title": "Battle of Pererîta",
+      "parents": [
+        "polish-ottoman-war-1683-1699"
+      ],
+      "edges": [],
+      "rank": "child-of:polish-ottoman-war-1683-1699",
+      "why": "P361 (part of) on its Wikidata item names Polish–Ottoman War (1683–1699), a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-042",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4087395",
+      "title": "Battle of Reni",
+      "parents": [
+        "polish-ottoman-war-1683-1699"
+      ],
+      "edges": [],
+      "rank": "child-of:polish-ottoman-war-1683-1699",
+      "why": "P361 (part of) on its Wikidata item names Polish–Ottoman War (1683–1699), a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-043",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4871170",
+      "title": "Battle of Górzno",
+      "parents": [
+        "polish-swedish-war-1626-1629"
+      ],
+      "edges": [],
+      "rank": "child-of:polish-swedish-war-1626-1629",
+      "why": "P361 (part of) on its Wikidata item names Polish–Swedish War (1626–1629), a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-016",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q5686711",
+      "title": "Hayfield Fight",
+      "parents": [
+        "red-cloud-s-war"
+      ],
+      "edges": [],
+      "rank": "child-of:red-cloud-s-war",
+      "why": "P361 (part of) on its Wikidata item names Red Cloud's War, a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-044",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4924393",
+      "title": "Siege of Colchester",
+      "parents": [
+        "second-english-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-english-civil-war",
+      "why": "P361 (part of) on its Wikidata item names Second English Civil War, a held umbrella with fewer than three children. 5 sitelinks."
+    },
+    {
+      "id": "2026-11-01-asia-007",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q5037060",
+      "title": "Capture of Trincomalee",
+      "parents": [
+        "fourth-anglo-dutch-war"
+      ],
+      "edges": [],
+      "rank": "child-of:fourth-anglo-dutch-war",
+      "why": "P361 (part of) on its Wikidata item names Fourth Anglo-Dutch War, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-017",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q7510378",
+      "title": "Siege of Santo Domingo (1655)",
+      "parents": [
+        "anglo-spanish-war-1654-1660"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-spanish-war-1654-1660",
+      "why": "P361 (part of) on its Wikidata item names Anglo-Spanish War (1654–1660), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-018",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4872186",
+      "title": "Battle of Rio Nuevo",
+      "parents": [
+        "anglo-spanish-war-1654-1660"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-spanish-war-1654-1660",
+      "why": "P361 (part of) on its Wikidata item names Anglo-Spanish War (1654–1660), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-045",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q17103265",
+      "title": "Treaty of Brussels (1656)",
+      "parents": [
+        "anglo-spanish-war-1654-1660"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-spanish-war-1654-1660",
+      "why": "P361 (part of) on its Wikidata item names Anglo-Spanish War (1654–1660), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-019",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4871930",
+      "title": "Battle of Ocho Rios",
+      "parents": [
+        "anglo-spanish-war-1654-1660"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-spanish-war-1654-1660",
+      "why": "P361 (part of) on its Wikidata item names Anglo-Spanish War (1654–1660), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-046",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1034162",
+      "title": "Raid on Málaga (1656)",
+      "parents": [
+        "anglo-spanish-war-1654-1660"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-spanish-war-1654-1660",
+      "why": "P361 (part of) on its Wikidata item names Anglo-Spanish War (1654–1660), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-020",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4870194",
+      "title": "Battle for Río San Juan de Nicaragua",
+      "parents": [
+        "anglo-spanish-war-1762-1763"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-spanish-war-1762-1763",
+      "why": "P361 (part of) on its Wikidata item names Anglo-Spanish War (1762–1763), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-047",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2236985",
+      "title": "Battle of Leitzersdorf",
+      "parents": [
+        "austrian-hungarian-war-1477-1488"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Austrian–Hungarian War (1477–1488), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-048",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q7510517",
+      "title": "Siege of Wiener Neustadt",
+      "parents": [
+        "austrian-hungarian-war-1477-1488"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Austrian–Hungarian War (1477–1488), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-049",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q867236",
+      "title": "Battle of Werl",
+      "parents": [
+        "cologne-war"
+      ],
+      "edges": [],
+      "rank": "child-of:cologne-war",
+      "why": "P361 (part of) on its Wikidata item names Cologne War, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-021",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2247448",
+      "title": "Battle of Sabana Larga",
+      "parents": [
+        "dominican-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-war-of-independence",
+      "why": "P361 (part of) on its Wikidata item names Dominican War of Independence, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-022",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2890233",
+      "title": "Battle of Tortuguero",
+      "parents": [
+        "dominican-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-war-of-independence",
+      "why": "P361 (part of) on its Wikidata item names Dominican War of Independence, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-023",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2887928",
+      "title": "Battle of Eccles Hill",
+      "parents": [
+        "fenian-raids"
+      ],
+      "edges": [],
+      "rank": "child-of:fenian-raids",
+      "why": "P361 (part of) on its Wikidata item names Fenian raids, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-050",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2887863",
+      "title": "Battle of Anholt",
+      "parents": [
+        "gunboat-war"
+      ],
+      "edges": [],
+      "rank": "child-of:gunboat-war",
+      "why": "P361 (part of) on its Wikidata item names Gunboat War, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-051",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4872378",
+      "title": "Battle of Silda",
+      "parents": [
+        "gunboat-war"
+      ],
+      "edges": [],
+      "rank": "child-of:gunboat-war",
+      "why": "P361 (part of) on its Wikidata item names Gunboat War, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-052",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2889650",
+      "title": "Battle of Ponte Ferreira",
+      "parents": [
+        "liberal-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:liberal-wars",
+      "why": "P361 (part of) on its Wikidata item names Liberal Wars, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-053",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q7109930",
+      "title": "Ottoman invasion of Mani (1770)",
+      "parents": [
+        "orlov-revolt"
+      ],
+      "edges": [],
+      "rank": "child-of:orlov-revolt",
+      "why": "P361 (part of) on its Wikidata item names Orlov revolt, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-054",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q55656651",
+      "title": "Battle of Tsaritsyn (1774)",
+      "parents": [
+        "pugachev-s-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:pugachev-s-rebellion",
+      "why": "P361 (part of) on its Wikidata item names Pugachev's Rebellion, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-024",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4871555",
+      "title": "Battle of Liberty Place",
+      "parents": [
+        "reconstruction-era"
+      ],
+      "edges": [],
+      "rank": "child-of:reconstruction-era",
+      "why": "P361 (part of) on its Wikidata item names Reconstruction era, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-055",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q28109023",
+      "title": "Battle of Tordesillas (1520)",
+      "parents": [
+        "revolt-of-the-comuneros"
+      ],
+      "edges": [],
+      "rank": "child-of:revolt-of-the-comuneros",
+      "why": "P361 (part of) on its Wikidata item names Revolt of the Comuneros, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-056",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q12273305",
+      "title": "Battle of Oryahovo",
+      "parents": [
+        "romanian-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:romanian-war-of-independence",
+      "why": "P361 (part of) on its Wikidata item names Romanian War of Independence, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-057",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q113107465",
+      "title": "Battle of Derbent (1722)",
+      "parents": [
+        "russo-persian-war-1722-1723"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-persian-war-1722-1723",
+      "why": "P361 (part of) on its Wikidata item names Russo-Persian War (1722–1723), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-058",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q21644425",
+      "title": "Battle of Slobozia",
+      "parents": [
+        "russo-turkish-war-1806-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-turkish-war-1806-1812",
+      "why": "P361 (part of) on its Wikidata item names Russo-Turkish War (1806–1812), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-025",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q5176240",
+      "title": "Council House Fight",
+      "parents": [
+        "texas-indian-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:texas-indian-wars",
+      "why": "P361 (part of) on its Wikidata item names Texas–Indian wars, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-059",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3800873",
+      "title": "Invasion of Trentino (1866)",
+      "parents": [
+        "third-italian-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Third Italian War of Independence, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-026",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4488474",
+      "title": "Battle of Big Dry Wash",
+      "parents": [
+        "apache-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:apache-wars",
+      "why": "P361 (part of) on its Wikidata item names Apache Wars, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-027",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q8050377",
+      "title": "Yavapai Wars",
+      "parents": [
+        "apache-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:apache-wars",
+      "why": "P361 (part of) on its Wikidata item names Apache Wars, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-060",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q16541011",
+      "title": "Battle of Lesmont",
+      "parents": [
+        "campaign-in-north-east-france-1814"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Campaign in north-east France (1814), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-061",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q124322999",
+      "title": "Jan Zamoyski's expedition to Moldavia",
+      "parents": [
+        "moldavian-magnate-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:moldavian-magnate-wars",
+      "why": "P361 (part of) on its Wikidata item names Moldavian Magnate Wars, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-028",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4870619",
+      "title": "Battle of Camas Creek",
+      "parents": [
+        "nez-perce-war"
+      ],
+      "edges": [],
+      "rank": "child-of:nez-perce-war",
+      "why": "P361 (part of) on its Wikidata item names Nez Perce War, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-062",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q9173218",
+      "title": "Battle of Lwów (1695)",
+      "parents": [
+        "polish-ottoman-war-1683-1699"
+      ],
+      "edges": [],
+      "rank": "child-of:polish-ottoman-war-1683-1699",
+      "why": "P361 (part of) on its Wikidata item names Polish–Ottoman War (1683–1699), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-063",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4872348",
+      "title": "Battle of Selburg",
+      "parents": [
+        "polish-swedish-war-1626-1629"
+      ],
+      "edges": [],
+      "rank": "child-of:polish-swedish-war-1626-1629",
+      "why": "P361 (part of) on its Wikidata item names Polish–Swedish War (1626–1629), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-064",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4871639",
+      "title": "Battle of Maidstone",
+      "parents": [
+        "second-english-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-english-civil-war",
+      "why": "P361 (part of) on its Wikidata item names Second English Civil War, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-065",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q116483398",
+      "title": "Battle of Winwick",
+      "parents": [
+        "second-english-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-english-civil-war",
+      "why": "P361 (part of) on its Wikidata item names Second English Civil War, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-066",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q18639504",
+      "title": "Attacks on Serbs during the Serbian–Ottoman Wars (1876–1878)",
+      "parents": [
+        "serbian-ottoman-wars-1876-1878"
+      ],
+      "edges": [],
+      "rank": "child-of:serbian-ottoman-wars-1876-1878",
+      "why": "P361 (part of) on its Wikidata item names Serbian–Ottoman Wars (1876–1878), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-067",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q16087016",
+      "title": "Battle of Vranje",
+      "parents": [
+        "serbian-ottoman-wars-1876-1878"
+      ],
+      "edges": [],
+      "rank": "child-of:serbian-ottoman-wars-1876-1878",
+      "why": "P361 (part of) on its Wikidata item names Serbian–Ottoman Wars (1876–1878), a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-068",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4872245",
+      "title": "Battle of Salga",
+      "parents": [
+        "war-of-the-portuguese-succession"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names War of the Portuguese Succession, a held umbrella with fewer than three children. 4 sitelinks."
+    },
+    {
+      "id": "2026-11-01-asia-008",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4677343",
+      "title": "Action of 30 October 1762",
+      "parents": [
+        "anglo-spanish-war-1762-1763"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-spanish-war-1762-1763",
+      "why": "P361 (part of) on its Wikidata item names Anglo-Spanish War (1762–1763), a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-069",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q16158078",
+      "title": "Action of 31 May 1762",
+      "parents": [
+        "anglo-spanish-war-1762-1763"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-spanish-war-1762-1763",
+      "why": "P361 (part of) on its Wikidata item names Anglo-Spanish War (1762–1763), a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-070",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q12273842",
+      "title": "Boyadzhik massacre",
+      "parents": [
+        "april-uprising-of-1876"
+      ],
+      "edges": [],
+      "rank": "child-of:april-uprising-of-1876",
+      "why": "P361 (part of) on its Wikidata item names April Uprising of 1876, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-071",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q7510069",
+      "title": "Siege of Hainburg",
+      "parents": [
+        "austrian-hungarian-war-1477-1488"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Austrian–Hungarian War (1477–1488), a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-029",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4871349",
+      "title": "Battle of Julesburg",
+      "parents": [
+        "colorado-war"
+      ],
+      "edges": [],
+      "rank": "child-of:colorado-war",
+      "why": "P361 (part of) on its Wikidata item names Colorado War, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-030",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q3379293",
+      "title": "Battle of Azua",
+      "parents": [
+        "dominican-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-war-of-independence",
+      "why": "P361 (part of) on its Wikidata item names Dominican War of Independence, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-031",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4871539",
+      "title": "Battle of Las Carreras",
+      "parents": [
+        "dominican-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-war-of-independence",
+      "why": "P361 (part of) on its Wikidata item names Dominican War of Independence, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-072",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q11688250",
+      "title": "Wincanton Skirmish",
+      "parents": [
+        "glorious-revolution"
+      ],
+      "edges": [],
+      "rank": "child-of:glorious-revolution",
+      "why": "P361 (part of) on its Wikidata item names Glorious Revolution, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-073",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q132528606",
+      "title": "Battle of Szeged (1552)",
+      "parents": [
+        "habsburg-ottoman-wars-in-hungary-1526-1568"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Habsburg–Ottoman wars in Hungary (1526–1568), a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-074",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2890321",
+      "title": "Battle of Praia da Vitória",
+      "parents": [
+        "liberal-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:liberal-wars",
+      "why": "P361 (part of) on its Wikidata item names Liberal Wars, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-075",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4314901",
+      "title": "Second Portuguese–Ovimbundu War",
+      "parents": [
+        "portuguese-campaigns-of-pacification-and-occupation"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Portuguese campaigns of pacification and occupation, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-032",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q5354543",
+      "title": "1874 Election Massacre",
+      "parents": [
+        "reconstruction-era"
+      ],
+      "edges": [],
+      "rank": "child-of:reconstruction-era",
+      "why": "P361 (part of) on its Wikidata item names Reconstruction era, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-076",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q19692581",
+      "title": "Battle of Obilești",
+      "parents": [
+        "russo-turkish-war-1806-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-turkish-war-1806-1812",
+      "why": "P361 (part of) on its Wikidata item names Russo-Turkish War (1806–1812), a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-077",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4087461",
+      "title": "Battle of Rusçuk",
+      "parents": [
+        "russo-turkish-war-1806-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-turkish-war-1806-1812",
+      "why": "P361 (part of) on its Wikidata item names Russo-Turkish War (1806–1812), a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-078",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4873063",
+      "title": "Battle of Cape Palos (1815)",
+      "parents": [
+        "second-barbary-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-barbary-war",
+      "why": "P361 (part of) on its Wikidata item names Second Barbary War, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-033",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4872705",
+      "title": "Battle of Wahoo Swamp",
+      "parents": [
+        "second-seminole-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-seminole-war",
+      "why": "P361 (part of) on its Wikidata item names Second Seminole War, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-034",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4871527",
+      "title": "Battle of Lake Okeechobee",
+      "parents": [
+        "second-seminole-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-seminole-war",
+      "why": "P361 (part of) on its Wikidata item names Second Seminole War, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-079",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q11794856",
+      "title": "Siege of Dorogobuzh",
+      "parents": [
+        "smolensk-war"
+      ],
+      "edges": [],
+      "rank": "child-of:smolensk-war",
+      "why": "P361 (part of) on its Wikidata item names Smolensk War, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-035",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4872959",
+      "title": "Battle of the Neches",
+      "parents": [
+        "texas-indian-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:texas-indian-wars",
+      "why": "P361 (part of) on its Wikidata item names Texas–Indian wars, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-080",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3884042",
+      "title": "Operations in Valtellina (1866)",
+      "parents": [
+        "third-italian-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Third Italian War of Independence, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-081",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3884044",
+      "title": "Naval operations on Lake Garda (1866)",
+      "parents": [
+        "third-italian-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Third Italian War of Independence, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-036",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q7510366",
+      "title": "Siege of Salto",
+      "parents": [
+        "uruguayan-war"
+      ],
+      "edges": [],
+      "rank": "child-of:uruguayan-war",
+      "why": "P361 (part of) on its Wikidata item names Uruguayan War, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-037",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4871305",
+      "title": "Battle of Jaguarão",
+      "parents": [
+        "uruguayan-war"
+      ],
+      "edges": [],
+      "rank": "child-of:uruguayan-war",
+      "why": "P361 (part of) on its Wikidata item names Uruguayan War, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-038",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4871776",
+      "title": "Battle of Montenegro",
+      "parents": [
+        "war-of-the-confederation"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-confederation",
+      "why": "P361 (part of) on its Wikidata item names War of the Confederation, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-039",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2984729",
+      "title": "Battle of Islay",
+      "parents": [
+        "war-of-the-confederation"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-confederation",
+      "why": "P361 (part of) on its Wikidata item names War of the Confederation, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-040",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q5722806",
+      "title": "Battle of Portada de Guías",
+      "parents": [
+        "war-of-the-confederation"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-confederation",
+      "why": "P361 (part of) on its Wikidata item names War of the Confederation, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-041",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q6151967",
+      "title": "Treaty of Paucarpata",
+      "parents": [
+        "war-of-the-confederation"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-confederation",
+      "why": "P361 (part of) on its Wikidata item names War of the Confederation, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-082",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q124812424",
+      "title": "Siege of Giurgiu (1790)",
+      "parents": [
+        "austro-turkish-war-1788-1791"
+      ],
+      "edges": [],
+      "rank": "child-of:austro-turkish-war-1788-1791",
+      "why": "P361 (part of) on its Wikidata item names Austro-Turkish War (1788–1791), a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-083",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q16540961",
+      "title": "Battle of Berry-au-Bac",
+      "parents": [
+        "campaign-in-north-east-france-1814"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Campaign in north-east France (1814), a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-084",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q9296060",
+      "title": "Battle of Martynów (1699)",
+      "parents": [
+        "polish-ottoman-war-1683-1699"
+      ],
+      "edges": [],
+      "rank": "child-of:polish-ottoman-war-1683-1699",
+      "why": "P361 (part of) on its Wikidata item names Polish–Ottoman War (1683–1699), a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-085",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4087377",
+      "title": "Battle of Chițcani (1683)",
+      "parents": [
+        "polish-ottoman-war-1683-1699"
+      ],
+      "edges": [],
+      "rank": "child-of:polish-ottoman-war-1683-1699",
+      "why": "P361 (part of) on its Wikidata item names Polish–Ottoman War (1683–1699), a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-086",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4872587",
+      "title": "Battle of Treiden (1628)",
+      "parents": [
+        "polish-swedish-war-1626-1629"
+      ],
+      "edges": [],
+      "rank": "child-of:polish-swedish-war-1626-1629",
+      "why": "P361 (part of) on its Wikidata item names Polish–Swedish War (1626–1629), a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-087",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q928367",
+      "title": "Battle of Czarne",
+      "parents": [
+        "polish-swedish-war-1626-1629"
+      ],
+      "edges": [],
+      "rank": "child-of:polish-swedish-war-1626-1629",
+      "why": "P361 (part of) on its Wikidata item names Polish–Swedish War (1626–1629), a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-042",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q9172576",
+      "title": "Battle of Seival",
+      "parents": [
+        "ragamuffin-war"
+      ],
+      "edges": [],
+      "rank": "child-of:ragamuffin-war",
+      "why": "P361 (part of) on its Wikidata item names Ragamuffin War, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-043",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q11825462",
+      "title": "Battle of Azenha Bridge",
+      "parents": [
+        "ragamuffin-war"
+      ],
+      "edges": [],
+      "rank": "child-of:ragamuffin-war",
+      "why": "P361 (part of) on its Wikidata item names Ragamuffin War, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-044",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q9172454",
+      "title": "Battle of Fanfa",
+      "parents": [
+        "ragamuffin-war"
+      ],
+      "edges": [],
+      "rank": "child-of:ragamuffin-war",
+      "why": "P361 (part of) on its Wikidata item names Ragamuffin War, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-088",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q10751225",
+      "title": "Siege of Breslau (1757)",
+      "parents": [
+        "third-silesian-war"
+      ],
+      "edges": [],
+      "rank": "child-of:third-silesian-war",
+      "why": "P361 (part of) on its Wikidata item names Third Silesian War, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-089",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3403844",
+      "title": "Capture of Porto",
+      "parents": [
+        "war-of-the-portuguese-succession"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names War of the Portuguese Succession, a held umbrella with fewer than three children. 3 sitelinks."
+    },
+    {
+      "id": "2026-11-01-asia-009",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q131412062",
+      "title": "Raid on Sumatra",
+      "parents": [
+        "fourth-anglo-dutch-war"
+      ],
+      "edges": [],
+      "rank": "child-of:fourth-anglo-dutch-war",
+      "why": "P361 (part of) on its Wikidata item names Fourth Anglo-Dutch War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-090",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q7510339",
+      "title": "Siege of Retz",
+      "parents": [
+        "austrian-hungarian-war-1477-1488"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Austrian–Hungarian War (1477–1488), a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-091",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q19562510",
+      "title": "Battle of Nabe",
+      "parents": [
+        "dano-swedish-war-1657-1658"
+      ],
+      "edges": [],
+      "rank": "child-of:dano-swedish-war-1657-1658",
+      "why": "P361 (part of) on its Wikidata item names Dano-Swedish War (1657–1658), a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-045",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q109237282",
+      "title": "Battle of La Canela",
+      "parents": [
+        "dominican-restoration-war"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-restoration-war",
+      "why": "P361 (part of) on its Wikidata item names Dominican Restoration War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-046",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q112075257",
+      "title": "Battle of Paso del Muerto",
+      "parents": [
+        "dominican-restoration-war"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-restoration-war",
+      "why": "P361 (part of) on its Wikidata item names Dominican Restoration War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-047",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q111462579",
+      "title": "Battle of Jura",
+      "parents": [
+        "dominican-restoration-war"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-restoration-war",
+      "why": "P361 (part of) on its Wikidata item names Dominican Restoration War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-048",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q110100925",
+      "title": "Grito de Capotillo",
+      "parents": [
+        "dominican-restoration-war"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-restoration-war",
+      "why": "P361 (part of) on its Wikidata item names Dominican Restoration War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-049",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q111365397",
+      "title": "Battle of Guayacanes (1863)",
+      "parents": [
+        "dominican-restoration-war"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-restoration-war",
+      "why": "P361 (part of) on its Wikidata item names Dominican Restoration War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-050",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q113468238",
+      "title": "Battle of Arroyo Bermejo",
+      "parents": [
+        "dominican-restoration-war"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-restoration-war",
+      "why": "P361 (part of) on its Wikidata item names Dominican Restoration War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-051",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q110207457",
+      "title": "Battle of Sabana de San Pedro",
+      "parents": [
+        "dominican-restoration-war"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-restoration-war",
+      "why": "P361 (part of) on its Wikidata item names Dominican Restoration War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-052",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q27628184",
+      "title": "Battle of Fort Cachimán",
+      "parents": [
+        "dominican-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-war-of-independence",
+      "why": "P361 (part of) on its Wikidata item names Dominican War of Independence, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-053",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q265106",
+      "title": "Battle of Estrelleta",
+      "parents": [
+        "dominican-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-war-of-independence",
+      "why": "P361 (part of) on its Wikidata item names Dominican War of Independence, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-054",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q23640829",
+      "title": "Battle of Santomé",
+      "parents": [
+        "dominican-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-war-of-independence",
+      "why": "P361 (part of) on its Wikidata item names Dominican War of Independence, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-055",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4870604",
+      "title": "Battle of Cabeza de Las Marías",
+      "parents": [
+        "dominican-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-war-of-independence",
+      "why": "P361 (part of) on its Wikidata item names Dominican War of Independence, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-056",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4870954",
+      "title": "Battle of El Número",
+      "parents": [
+        "dominican-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-war-of-independence",
+      "why": "P361 (part of) on its Wikidata item names Dominican War of Independence, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-057",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4870460",
+      "title": "Battle of Beler",
+      "parents": [
+        "dominican-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-war-of-independence",
+      "why": "P361 (part of) on its Wikidata item names Dominican War of Independence, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-058",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q6394332",
+      "title": "Battle of Fuente del Rodeo",
+      "parents": [
+        "dominican-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-war-of-independence",
+      "why": "P361 (part of) on its Wikidata item names Dominican War of Independence, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-092",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4677338",
+      "title": "Action of 2 March 1808",
+      "parents": [
+        "english-wars-scandinavia",
+        "gunboat-war"
+      ],
+      "edges": [],
+      "rank": "child-of:english-wars-scandinavia",
+      "why": "P361 (part of) on its Wikidata item names English Wars (Scandinavia) and Gunboat War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-059",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q7510056",
+      "title": "Siege of Grand Pré",
+      "parents": [
+        "father-le-loutre-s-war"
+      ],
+      "edges": [],
+      "rank": "child-of:father-le-loutre-s-war",
+      "why": "P361 (part of) on its Wikidata item names Father Le Loutre's War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-060",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4870139",
+      "title": "Battle at St. Croix",
+      "parents": [
+        "father-le-loutre-s-war"
+      ],
+      "edges": [],
+      "rank": "child-of:father-le-loutre-s-war",
+      "why": "P361 (part of) on its Wikidata item names Father Le Loutre's War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-061",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q20949591",
+      "title": "Invasion of the Danish West Indies",
+      "parents": [
+        "gunboat-war"
+      ],
+      "edges": [],
+      "rank": "child-of:gunboat-war",
+      "why": "P361 (part of) on its Wikidata item names Gunboat War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-093",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q17318716",
+      "title": "Battle of Ladeira da Velha",
+      "parents": [
+        "liberal-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:liberal-wars",
+      "why": "P361 (part of) on its Wikidata item names Liberal Wars, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-094",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4870802",
+      "title": "Battle of Craibstone",
+      "parents": [
+        "marian-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:marian-civil-war",
+      "why": "P361 (part of) on its Wikidata item names Marian civil war, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-095",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4872557",
+      "title": "Battle of Tillieangus",
+      "parents": [
+        "marian-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:marian-civil-war",
+      "why": "P361 (part of) on its Wikidata item names Marian civil war, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-096",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q139779509",
+      "title": "Battle of Botoșani",
+      "parents": [
+        "moldavian-ottoman-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:moldavian-ottoman-wars",
+      "why": "P361 (part of) on its Wikidata item names Moldavian–Ottoman Wars, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-062",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q5430355",
+      "title": "Fairfield Swamp Fight",
+      "parents": [
+        "pequot-war"
+      ],
+      "edges": [],
+      "rank": "child-of:pequot-war",
+      "why": "P361 (part of) on its Wikidata item names Pequot War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-063",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q5639928",
+      "title": "Recapture of Tarapacá",
+      "parents": [
+        "peruvian-bolivian-war-of-1841-42"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Peruvian–Bolivian War of 1841–42, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-064",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q124209249",
+      "title": "Battle of Sama",
+      "parents": [
+        "peruvian-bolivian-war-of-1841-42"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Peruvian–Bolivian War of 1841–42, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-065",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q30936714",
+      "title": "Uruguay campaign",
+      "parents": [
+        "platine-war"
+      ],
+      "edges": [],
+      "rank": "child-of:platine-war",
+      "why": "P361 (part of) on its Wikidata item names Platine War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-097",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q135397833",
+      "title": "Portuguese conquest of Angónia",
+      "parents": [
+        "portuguese-campaigns-of-pacification-and-occupation"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Portuguese campaigns of pacification and occupation, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-098",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q135276043",
+      "title": "Portuguese conquest of Viye",
+      "parents": [
+        "portuguese-campaigns-of-pacification-and-occupation"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Portuguese campaigns of pacification and occupation, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-099",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q133886445",
+      "title": "Portuguese conquest of the Gaza Empire",
+      "parents": [
+        "portuguese-campaigns-of-pacification-and-occupation"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Portuguese campaigns of pacification and occupation, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-100",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q131632283",
+      "title": "Battle of Mansomine",
+      "parents": [
+        "portuguese-campaigns-of-pacification-and-occupation"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Portuguese campaigns of pacification and occupation, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-101",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q131626380",
+      "title": "Battle of Fancá",
+      "parents": [
+        "portuguese-campaigns-of-pacification-and-occupation"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Portuguese campaigns of pacification and occupation, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-102",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q131632307",
+      "title": "Battle of Buaró",
+      "parents": [
+        "portuguese-campaigns-of-pacification-and-occupation"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Portuguese campaigns of pacification and occupation, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-103",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q10293389",
+      "title": "Second Battle of Macontene",
+      "parents": [
+        "portuguese-campaigns-of-pacification-and-occupation"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "P361 (part of) on its Wikidata item names Portuguese campaigns of pacification and occupation, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-066",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q5644307",
+      "title": "Hamburg massacre",
+      "parents": [
+        "reconstruction-era"
+      ],
+      "edges": [],
+      "rank": "child-of:reconstruction-era",
+      "why": "P361 (part of) on its Wikidata item names Reconstruction era, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-104",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q135184335",
+      "title": "Battle of Irtysh River (1585)",
+      "parents": [
+        "russian-conquest-of-siberia"
+      ],
+      "edges": [],
+      "rank": "child-of:russian-conquest-of-siberia",
+      "why": "P361 (part of) on its Wikidata item names Russian conquest of Siberia, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-105",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4445365",
+      "title": "Battle of Sudbischi",
+      "parents": [
+        "russo-crimean-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-crimean-wars",
+      "why": "P361 (part of) on its Wikidata item names Russo-Crimean Wars, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-106",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q12866500",
+      "title": "Battle of Maltakva",
+      "parents": [
+        "russo-turkish-war-1806-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-turkish-war-1806-1812",
+      "why": "P361 (part of) on its Wikidata item names Russo-Turkish War (1806–1812), a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-067",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4871354",
+      "title": "Battles of the Loxahatchee",
+      "parents": [
+        "second-seminole-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-seminole-war",
+      "why": "P361 (part of) on its Wikidata item names Second Seminole War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-068",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4871959",
+      "title": "Battle of Withlacoochee",
+      "parents": [
+        "second-seminole-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-seminole-war",
+      "why": "P361 (part of) on its Wikidata item names Second Seminole War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-069",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q55489692",
+      "title": "Battle of El Salado (1869)",
+      "parents": [
+        "ten-years-war"
+      ],
+      "edges": [],
+      "rank": "child-of:ten-years-war",
+      "why": "P361 (part of) on its Wikidata item names Ten Years' War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-070",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q56317838",
+      "title": "First Battle of Las Tunas",
+      "parents": [
+        "ten-years-war"
+      ],
+      "edges": [],
+      "rank": "child-of:ten-years-war",
+      "why": "P361 (part of) on its Wikidata item names Ten Years' War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-071",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4985764",
+      "title": "Buffalo Hunters' War",
+      "parents": [
+        "texas-indian-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:texas-indian-wars",
+      "why": "P361 (part of) on its Wikidata item names Texas–Indian wars, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-072",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q125398484",
+      "title": "San Sabá fight (1831)",
+      "parents": [
+        "texas-indian-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:texas-indian-wars",
+      "why": "P361 (part of) on its Wikidata item names Texas–Indian wars, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-073",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q28502685",
+      "title": "Dissolution of the Peru–Bolivian Confederation",
+      "parents": [
+        "war-of-the-confederation"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-confederation",
+      "why": "P361 (part of) on its Wikidata item names War of the Confederation, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-074",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4871059",
+      "title": "Battle of Fort Tularosa",
+      "parents": [
+        "apache-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:apache-wars",
+      "why": "P361 (part of) on its Wikidata item names Apache Wars, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-075",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4871799",
+      "title": "Battle of Mount Gray",
+      "parents": [
+        "apache-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:apache-wars",
+      "why": "P361 (part of) on its Wikidata item names Apache Wars, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-076",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4870747",
+      "title": "Battle of Cibecue Creek",
+      "parents": [
+        "apache-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:apache-wars",
+      "why": "P361 (part of) on its Wikidata item names Apache Wars, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-077",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q5452511",
+      "title": "First Battle of Dragoon Springs",
+      "parents": [
+        "apache-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:apache-wars",
+      "why": "P361 (part of) on its Wikidata item names Apache Wars, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-078",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4871038",
+      "title": "Battle of Fort Buchanan",
+      "parents": [
+        "apache-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:apache-wars",
+      "why": "P361 (part of) on its Wikidata item names Apache Wars, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-079",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q5182816",
+      "title": "Crawford affair",
+      "parents": [
+        "apache-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:apache-wars",
+      "why": "P361 (part of) on its Wikidata item names Apache Wars, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-080",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4872952",
+      "title": "Battle of the Mimbres River",
+      "parents": [
+        "apache-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:apache-wars",
+      "why": "P361 (part of) on its Wikidata item names Apache Wars, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-081",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q7535911",
+      "title": "Skirmish in Doubtful Canyon",
+      "parents": [
+        "apache-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:apache-wars",
+      "why": "P361 (part of) on its Wikidata item names Apache Wars, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-082",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q5317415",
+      "title": "Dutch West Indies campaign",
+      "parents": [
+        "fourth-anglo-dutch-war"
+      ],
+      "edges": [],
+      "rank": "child-of:fourth-anglo-dutch-war",
+      "why": "P361 (part of) on its Wikidata item names Fourth Anglo-Dutch War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-083",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q30594956",
+      "title": "Action of 4 February 1781",
+      "parents": [
+        "fourth-anglo-dutch-war"
+      ],
+      "edges": [],
+      "rank": "child-of:fourth-anglo-dutch-war",
+      "why": "P361 (part of) on its Wikidata item names Fourth Anglo-Dutch War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-107",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1255093",
+      "title": "Battle of Wurzach",
+      "parents": [
+        "german-peasants-war"
+      ],
+      "edges": [],
+      "rank": "child-of:german-peasants-war",
+      "why": "P361 (part of) on its Wikidata item names German Peasants' War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-108",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q112232807",
+      "title": "Siege of Novara (1495)",
+      "parents": [
+        "italian-war-of-1494-1495"
+      ],
+      "edges": [],
+      "rank": "child-of:italian-war-of-1494-1495",
+      "why": "P361 (part of) on its Wikidata item names Italian War of 1494–1495, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-109",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q16950664",
+      "title": "Battle of Rapallo",
+      "parents": [
+        "italian-war-of-1494-1495"
+      ],
+      "edges": [],
+      "rank": "child-of:italian-war-of-1494-1495",
+      "why": "P361 (part of) on its Wikidata item names Italian War of 1494–1495, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-110",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q16822713",
+      "title": "Battle of Suceava (1595)",
+      "parents": [
+        "moldavian-magnate-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:moldavian-magnate-wars",
+      "why": "P361 (part of) on its Wikidata item names Moldavian Magnate Wars, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-111",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q110386830",
+      "title": "Battle of Ostróda",
+      "parents": [
+        "polish-swedish-war-1626-1629"
+      ],
+      "edges": [],
+      "rank": "child-of:polish-swedish-war-1626-1629",
+      "why": "P361 (part of) on its Wikidata item names Polish–Swedish War (1626–1629), a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-084",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q9651083",
+      "title": "Porongos Massacre",
+      "parents": [
+        "ragamuffin-war"
+      ],
+      "edges": [],
+      "rank": "child-of:ragamuffin-war",
+      "why": "P361 (part of) on its Wikidata item names Ragamuffin War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-085",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q15112371",
+      "title": "Battle of Barro Vermelho",
+      "parents": [
+        "ragamuffin-war"
+      ],
+      "edges": [],
+      "rank": "child-of:ragamuffin-war",
+      "why": "P361 (part of) on its Wikidata item names Ragamuffin War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-086",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q106548118",
+      "title": "Capture of Porto Alegre",
+      "parents": [
+        "ragamuffin-war"
+      ],
+      "edges": [],
+      "rank": "child-of:ragamuffin-war",
+      "why": "P361 (part of) on its Wikidata item names Ragamuffin War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-112",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q7510300",
+      "title": "Siege of Pembroke",
+      "parents": [
+        "second-english-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-english-civil-war",
+      "why": "P361 (part of) on its Wikidata item names Second English Civil War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-113",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q134835417",
+      "title": "Scottish invasion of England (1648)",
+      "parents": [
+        "second-english-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-english-civil-war",
+      "why": "P361 (part of) on its Wikidata item names Second English Civil War, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-114",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q122026083",
+      "title": "Battle of Houthalen",
+      "parents": [
+        "ten-days-campaign"
+      ],
+      "edges": [],
+      "rank": "child-of:ten-days-campaign",
+      "why": "P361 (part of) on its Wikidata item names Ten Days' Campaign, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-087",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q7413839",
+      "title": "San Felipe incident (1835)",
+      "parents": [
+        "texas-revolution"
+      ],
+      "edges": [],
+      "rank": "child-of:texas-revolution",
+      "why": "P361 (part of) on its Wikidata item names Texas Revolution, a held umbrella with fewer than three children. 2 sitelinks."
+    },
+    {
+      "id": "2026-11-01-africa-002",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q125768358",
+      "title": "Capture of Carolusborg (1658)",
+      "parents": [
+        "dano-swedish-war-1657-1658"
+      ],
+      "edges": [],
+      "rank": "child-of:dano-swedish-war-1657-1658",
+      "why": "P361 (part of) on its Wikidata item names Dano-Swedish War (1657–1658), a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-africa-003",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q4872243",
+      "title": "Battle of Saldanha Bay (1781)",
+      "parents": [
+        "fourth-anglo-dutch-war"
+      ],
+      "edges": [],
+      "rank": "child-of:fourth-anglo-dutch-war",
+      "why": "P361 (part of) on its Wikidata item names Fourth Anglo-Dutch War, a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-115",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q112837740",
+      "title": "Siege of Trebinje",
+      "parents": [
+        "austro-turkish-war-1716-1718"
+      ],
+      "edges": [],
+      "rank": "child-of:austro-turkish-war-1716-1718",
+      "why": "P361 (part of) on its Wikidata item names Austro-Turkish War (1716–1718), a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-088",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4744790",
+      "title": "American Ranch massacre",
+      "parents": [
+        "colorado-war"
+      ],
+      "edges": [],
+      "rank": "child-of:colorado-war",
+      "why": "P361 (part of) on its Wikidata item names Colorado War, a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-089",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q134622298",
+      "title": "Battle of Guayubín",
+      "parents": [
+        "dominican-restoration-war"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-restoration-war",
+      "why": "P361 (part of) on its Wikidata item names Dominican Restoration War, a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-090",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q134614261",
+      "title": "Battle of Sabana Burro",
+      "parents": [
+        "dominican-restoration-war"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-restoration-war",
+      "why": "P361 (part of) on its Wikidata item names Dominican Restoration War, a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-116",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q126095083",
+      "title": "Capture of Tranquebar (1801)",
+      "parents": [
+        "english-wars-scandinavia"
+      ],
+      "edges": [],
+      "rank": "child-of:english-wars-scandinavia",
+      "why": "P361 (part of) on its Wikidata item names English Wars (Scandinavia), a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-117",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q127163493",
+      "title": "Capture of Serampore (1801)",
+      "parents": [
+        "english-wars-scandinavia"
+      ],
+      "edges": [],
+      "rank": "child-of:english-wars-scandinavia",
+      "why": "P361 (part of) on its Wikidata item names English Wars (Scandinavia), a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-118",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q127163443",
+      "title": "Surrender of Tranquebar (1808)",
+      "parents": [
+        "english-wars-scandinavia"
+      ],
+      "edges": [],
+      "rank": "child-of:english-wars-scandinavia",
+      "why": "P361 (part of) on its Wikidata item names English Wars (Scandinavia), a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-119",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4872247",
+      "title": "Battle of Saltholm",
+      "parents": [
+        "english-wars-scandinavia",
+        "gunboat-war"
+      ],
+      "edges": [],
+      "rank": "child-of:english-wars-scandinavia",
+      "why": "P361 (part of) on its Wikidata item names English Wars (Scandinavia) and Gunboat War, a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-091",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4870134",
+      "title": "Battle at Chignecto",
+      "parents": [
+        "father-le-loutre-s-war"
+      ],
+      "edges": [],
+      "rank": "child-of:father-le-loutre-s-war",
+      "why": "P361 (part of) on its Wikidata item names Father Le Loutre's War, a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-092",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4871043",
+      "title": "Battle of Fort Erie (1866)",
+      "parents": [
+        "fenian-raids"
+      ],
+      "edges": [],
+      "rank": "child-of:fenian-raids",
+      "why": "P361 (part of) on its Wikidata item names Fenian raids, a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-093",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q16822756",
+      "title": "Battle of Trout River",
+      "parents": [
+        "fenian-raids"
+      ],
+      "edges": [],
+      "rank": "child-of:fenian-raids",
+      "why": "P361 (part of) on its Wikidata item names Fenian raids, a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-americas-094",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q138606214",
+      "title": "Pigeon Hill Raid",
+      "parents": [
+        "fenian-raids"
+      ],
+      "edges": [],
+      "rank": "child-of:fenian-raids",
+      "why": "P361 (part of) on its Wikidata item names Fenian raids, a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-120",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q135067811",
+      "title": "Dutch troops in England, 1688–1699",
+      "parents": [
+        "glorious-revolution"
+      ],
+      "edges": [],
+      "rank": "child-of:glorious-revolution",
+      "why": "P361 (part of) on its Wikidata item names Glorious Revolution, a held umbrella with fewer than three children. 1 sitelinks."
+    },
+    {
+      "id": "2026-11-01-europe-121",
+      "planned": "2026-11-01T18:29:37Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q140690602",
+      "title": "1688 invasion of England",
+      "parents": [
+        "glorious-revolution"
+      ],
+      "edges": [],
+      "rank": "child-of:glorious-revolution",
+      "why": "P361 (part of) on its Wikidata item names Glorious Revolution, a held umbrella with fewer than three children. 1 sitelinks."
     }
-  ]
+  ],
+  "generated": "2026-11-01"
 }
