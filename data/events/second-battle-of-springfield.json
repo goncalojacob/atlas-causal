@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-springfield",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2941587",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Second Battle of Springfield"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2941587"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Springfield\", revision 1370736605"
+    }
+  ],
+  "title": "Second Battle of Springfield",
+  "summary": "The English Wikipedia article \"Second Battle of Springfield\", at revision 1370736605, opens: \"The Second Battle of Springfield took place during the American Civil War on January 8, 1863, in Springfield, Missouri. It is sometimes known as The Battle of Springfield. Fighting was urban and house-to-house, which was rare in the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2941587, imported by tools/import/wikidata.mjs. The item's own description reads \"January 8, 1863, battle in the American Civil War fought in Springfield, Missouri\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-01-08"
+  },
+  "place": "springfield-missouri",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

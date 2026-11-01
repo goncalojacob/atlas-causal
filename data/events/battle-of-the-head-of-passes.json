@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-head-of-passes",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4090339",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of the Head of Passes"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4090339"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Head of Passes\", revision 1370600057"
+    }
+  ],
+  "title": "Battle of the Head of Passes",
+  "summary": "The English Wikipedia article \"Battle of the Head of Passes\", at revision 1370600057, opens: \"The Battle of the Head of Passes was a bloodless naval battle of the American Civil War. It was a naval raid made by the Confederate river defense fleet, also known as the “mosquito fleet” in the local media, on ships of the Union blockade squadron anchored at the Head of Passes. The mosquito fleet deployed three fire rafts, which were ignited and followed the ironclad ram CSS Manassas into the action. The attack occurred after moonset in the early hours of October 12, 1861, and routed the Union fleet, which fled in disorder down the Southwest pass of the delta. After sunrise Commodore George N. Hollins, running low on ammunition and fuel, ordered the mosquito fleet to withdraw upriver.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4090339, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-10-12"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-glatz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q94545",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Glatz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q94545"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Glatz\", revision 1382471700"
+    }
+  ],
+  "title": "Siege of Glatz",
+  "summary": "The English Wikipedia article \"Siege of Glatz\", at revision 1382471700, opens: \"The siege of Glatz took place in 1760 during the Third Silesian War when an Austrian force led by General von Laudon laid siege to and successfully stormed the fortress of Glatz from its Prussian garrison.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q94545, imported by tools/import/wikidata.mjs. The item's own description reads \"1760 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1760,
+    "end": 1760,
+    "date": "1760-06-07",
+    "endDate": "1760-07-26"
+  },
+  "place": "k-odzko",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

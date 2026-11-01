@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-boqueron-1866",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16489568",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Boquerón (1866)",
+    "pt": "Batalha do Boqueirão"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16489568"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Boquerón (1866)\", revision 1374123259"
+    }
+  ],
+  "title": "Battle of Boquerón (1866)",
+  "summary": "The English Wikipedia article \"Battle of Boquerón (1866)\", at revision 1374123259, opens: \"The Battle of Boquerón was fought on 16 July 1866 and the Battle of Sauce on 18 July 1866, between an allied force of Uruguayans, Brazilians, and Argentines on one side and Paraguay on the other in the Paraguayan War. The Spanish-born Uruguayan officer León de Pallejas (1816–1866) and the Paraguayan officer Elizardo Aquino were killed in the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16489568, imported by tools/import/wikidata.mjs. The item's own description reads \"1866 part of the Paraguayan War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866,
+    "date": "1866-07-16",
+    "endDate": "1866-07-18"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "paraguayan-war"
+}

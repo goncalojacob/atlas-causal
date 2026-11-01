@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2407735",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "First Battle of Independence"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2407735"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Independence\", revision 1370618696"
+    }
+  ],
+  "title": "First Battle of Independence",
+  "summary": "The English Wikipedia article \"First Battle of Independence\", at revision 1370618696, opens: \"The First Battle of Independence was a minor engagement of the American Civil War, occurring on August 11, 1862, in the city of Independence, located in Jackson County, Missouri. Its result was a Confederate victory, continuing the Southern domination of the Jackson County area for a few days while the recruiters completed their work.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2407735, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-08-11"
+  },
+  "place": "independence-missouri",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-saint-jean-d-angely-1621",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q15122331",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Saint-Jean-d'Angély (1621)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15122331"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Saint-Jean-d'Angély (1621)\", revision 1370744916"
+    }
+  ],
+  "title": "Siege of Saint-Jean-d'Angély (1621)",
+  "summary": "The English Wikipedia article \"Siege of Saint-Jean-d'Angély (1621)\", at revision 1370744916, opens: \"The siege of Saint-Jean-d'Angély was a siege, accomplished by the young French king Louis XIII in 1621, against the Protestant stronghold of Saint-Jean-d'Angély led by Rohan's brother Benjamin de Rohan, duc de Soubise. Saint-Jean-d'Angély was a strategic city controlling the approach to the Huguenot stronghold of La Rochelle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15122331, imported by tools/import/wikidata.mjs. The item's own description reads \"1621 17th Century battle in France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1621,
+    "end": 1621,
+    "date": "1621-05-30",
+    "endDate": "1621-06-24"
+  },
+  "place": "saint-jean-d-angely",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "huguenot-rebellions"
+}

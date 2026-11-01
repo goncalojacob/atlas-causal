@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "hartsville-tennessee",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3458917",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Hartsville, Tennessee",
+    "pt": "Hartsville (Tennessee)"
+  },
+  "sources": [],
+  "names": [
+    "Hartsville",
+    "Hartsville, Tennessee",
+    "Hartsville (Tennessee)"
+  ],
+  "where": {
+    "lon": -86.1603,
+    "lat": 36.3917,
+    "precision": "city",
+    "label": "Hartsville, Tennessee"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

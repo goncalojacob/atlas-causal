@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "crow-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5189126",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Crow War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5189126"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Crow War\", revision 1379719467"
+    }
+  ],
+  "title": "Crow War",
+  "summary": "The English Wikipedia article \"Crow War\", at revision 1379719467, opens: \"The Crow War, also known as the Crow Rebellion, or the Crow Uprising, was the only armed conflict between the United States and the Crow tribe of Montana, and the last Indian War fought in the state. In September 1887, the young medicine man Wraps-Up-His-Tail, or Sword Bearer, led a small group of warriors in a raid against a group of Blackfoot which had taken horses from the Crow reservation. Following the raid, Sword Bearer led his group back to the Crow Agency to inform the Indian agent of his victory, but an incident occurred which ended with the young leader taking his followers into the mountains. In response, the United States Army launched a successful campaign to bring the Crow back to the reservation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5189126, imported by tools/import/wikidata.mjs. The item's own description reads \"aspect of American history\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1887,
+    "end": 1887
+  },
+  "place": "montana-q1212",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

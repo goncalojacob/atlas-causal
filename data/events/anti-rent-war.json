@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "anti-rent-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4122577",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Anti-Rent War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4122577"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anti-Rent War\", revision 1377537807"
+    }
+  ],
+  "title": "Anti-Rent War",
+  "summary": "The English Wikipedia article \"Anti-Rent War\", at revision 1377537807, opens: \"The Anti-Rent War was a tenants' revolt in upstate New York between 1839 and 1845. The Anti-Renters declared their independence from the manor system run by patroons, resisting tax collectors and successfully demanding land reform. The conflict resulted in the passage of laws that made feudal tenures illegal and outlawed leases greater than 12 years.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4122577, imported by tools/import/wikidata.mjs. The item's own description reads \"tenants' revolt in upstate New York, 1839–1845.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1845
+  },
+  "place": "new-york-state",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

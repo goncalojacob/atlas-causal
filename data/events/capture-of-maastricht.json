@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-maastricht",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2056637",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Capture of Maastricht"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2056637"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Maastricht\", revision 1375986043"
+    }
+  ],
+  "title": "Capture of Maastricht",
+  "summary": "The English Wikipedia article \"Capture of Maastricht\", at revision 1375986043, opens: \"The Siege of Maastricht in 1632 was a military operation carried out by the Dutch Republic against the Spanish-held city of Maastricht during the Eighty Years’ War. Led by Frederick Henry, Prince of Orange, the Dutch forces sought to capture the strategically located city to gain control over an important crossing of the Meuse River and to weaken Spanish influence in the southern Netherlands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2056637, imported by tools/import/wikidata.mjs. The item's own description reads \"1632 siege and capture of Maastricht by Frederic Henry during the Eighty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1632,
+    "end": 1632,
+    "date": "1632-06-09",
+    "endDate": "1632-08-22"
+  },
+  "place": "maastricht",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

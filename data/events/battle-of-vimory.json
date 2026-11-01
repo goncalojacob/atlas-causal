@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-vimory",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890331",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Vimory"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890331"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vimory\", revision 1370592599"
+    }
+  ],
+  "title": "Battle of Vimory",
+  "summary": "The English Wikipedia article \"Battle of Vimory\", at revision 1370592599, opens: \"The Battle of Vimory, occurred on 26 October 1587 between the French royal (Catholic) forces of King Henry III of France commanded by Henri I, Duke of Guise and German and Swiss mercenaries commanded by Fabien I, Burgrave of Dohna and the duke of Bouillon who were hired to assist Henry of Navarre's Huguenot forces during the eighth and final war (1585-1598) of the French Wars of Religion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890331, imported by tools/import/wikidata.mjs. The item's own description reads \"1587 battle in the French Wars of Religion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1587,
+    "end": 1587,
+    "date": "1587-10-26"
+  },
+  "place": "vimory",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-wars-of-religion"
+}

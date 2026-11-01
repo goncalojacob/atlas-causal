@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-noordhorn",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2444941",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Noordhorn"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2444941"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Noordhorn\", revision 1381257518"
+    }
+  ],
+  "title": "Battle of Noordhorn",
+  "summary": "The English Wikipedia article \"Battle of Noordhorn\", at revision 1381257518, opens: \"The Battle of Noordhorn, fought on 30 September 1581, was a pitched battle of the Dutch Revolt, fought between a Spanish army commanded by Colonel Francisco Verdugo – consisting of Walloon, German, Spanish, and Albanian soldiers – and a Dutch States rebel army under the Englishman John Norreys – comprising English, Scottish, Dutch, and Walloon troops – in the province of Groningen. In 1580, the Dutch stadtholder of Groningen, George van Lalaing, Count of Rennenberg, had shifted his allegiance from the Dutch to the Spanish side. This opened a new front at the back door of the Dutch Republic, forcing the States-General to dispatch forces to the north. That year the Dutch, under the leadership of John Norreys, succeeded in relieving the town of Steenwijk. In July 1581, Rennenberg died and was replaced by the Spaniard Francisco Verdugo, whose arrival in Groningen with reinforcements changed the situation. On 30 September Verdugo forced Norreys to give battle using a strategy of attrition.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2444941, imported by tools/import/wikidata.mjs. The item's own description reads \"1581 battle during the Eighty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1581,
+    "end": 1581,
+    "date": "1581-09-30"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

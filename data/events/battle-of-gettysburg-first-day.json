@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-gettysburg-first-day",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q841268",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Gettysburg, first day"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q841268"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gettysburg, first day\", revision 1368154127"
+    }
+  ],
+  "title": "Battle of Gettysburg, first day",
+  "summary": "The English Wikipedia article \"Battle of Gettysburg, first day\", at revision 1368154127, opens: \"The first day of the Battle of Gettysburg during the American Civil War took place on July 1, 1863, and began as an engagement between isolated units of the Army of Northern Virginia under Confederate General Robert E. Lee and units of the Army of the Potomac under Union Maj. Gen. George G. Meade. It soon escalated into a major battle which culminated in the outnumbered Union forces retreating to the high ground south of Gettysburg, Pennsylvania.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q841268, imported by tools/import/wikidata.mjs. The item's own description reads \"first day of the Battle of Gettysburg during the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-07-01"
+  },
+  "place": "gettysburg-pennsylvania",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "decatur-alabama",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q79750",
+  "sitelinks": {
+    "count": 59,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Decatur, Alabama",
+    "pt": "Decatur (Alabama)"
+  },
+  "sources": [],
+  "names": [
+    "Decatur",
+    "Decatur, Alabama",
+    "Decatur (Alabama)"
+  ],
+  "where": {
+    "lon": -86.983392,
+    "lat": 34.580992,
+    "precision": "city",
+    "label": "Decatur, Alabama"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

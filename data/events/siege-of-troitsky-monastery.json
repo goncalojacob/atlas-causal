@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-troitsky-monastery",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4463439",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Siege of Troitsky monastery"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4463439"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Troitsky monastery\", revision 1370746071"
+    }
+  ],
+  "title": "Siege of Troitsky monastery",
+  "summary": "The English Wikipedia article \"Siege of Troitsky monastery\", at revision 1370746071, opens: \"The siege of Troitsky monastery was an abortive attempt of the Polish–Lithuanian irregular army (mercenaries) that acted in support of False Dmitry II to capture the Trinity Lavra of St. Sergius, north-east of Moscow. The siege lasted for 16 months, from 23 September 1608 until 12 January 1610.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4463439, imported by tools/import/wikidata.mjs. The item's own description reads \"1608 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1608,
+    "end": 1610,
+    "date": "1608-09",
+    "endDate": "1610-01"
+  },
+  "place": "sergiyev-posad",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

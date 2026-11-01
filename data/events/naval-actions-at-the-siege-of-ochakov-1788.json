@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "naval-actions-at-the-siege-of-ochakov-1788",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q9173377",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Naval actions at the Siege of Ochakov (1788)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q9173377"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Naval actions at the Siege of Ochakov (1788)\", revision 1366233961"
+    }
+  ],
+  "title": "Naval actions at the Siege of Ochakov (1788)",
+  "summary": "The English Wikipedia article \"Naval actions at the Siege of Ochakov (1788)\", at revision 1366233961, opens: \"This was a series of mainly small-ship actions which occurred along the coast of what is now Ukraine during the Russo-Turkish War (1787–1792) as Russian and Turkish ships and boats supported their land armies in the struggle for control of Ochakov, a strategic position. The main actions at sea happened on 17, 18, 28 and 29 June and 9 July 1788. On 9 July also, the larger Turkish ships left and on 14 July they fought the Russian Sevastopol Squadron about 100 miles to the south.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q9173377, imported by tools/import/wikidata.mjs. The item's own description reads \"1788 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1788,
+    "end": 1788
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1787-1792"
+}

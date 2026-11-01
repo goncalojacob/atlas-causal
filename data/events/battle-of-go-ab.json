@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-go-ab",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-31",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q720886",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-31"
+  },
+  "wikipedia": {
+    "en": "Battle of Gołąb"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q720886"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gołąb\", revision 1372480407"
+    }
+  ],
+  "title": "Battle of Gołąb",
+  "summary": "The English Wikipedia article \"Battle of Gołąb\", at revision 1372480407, opens: \"The Battle of Gołąb was fought on either 18 or 19 February 1656, between forces of the Polish–Lithuanian Commonwealth commanded by Stefan Czarniecki on one side, and on the other Swedish Empire's army commanded by Charles X Gustav. This battle was essentially a meeting engagement with Swedish troops arriving on the battlefield at different times. It is uncertain how many actually participated, and its actual date is disputed. Some sources, such as Polish-language Military Encyclopedia, claim it took place on 18 February, while historian Leszek Podhorecki wrote that it was on 19 February.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q720886, imported by tools/import/wikidata.mjs. The item's own description reads \"1656 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1656,
+    "end": 1656,
+    "date": "1656-02-18",
+    "endDate": "1656-02-19"
+  },
+  "place": "go-ab-pu-awy-county",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "deluge-history"
+}

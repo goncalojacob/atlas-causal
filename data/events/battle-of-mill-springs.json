@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-mill-springs",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2018804",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Mill Springs"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2018804"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mill Springs\", revision 1382318227"
+    }
+  ],
+  "title": "Battle of Mill Springs",
+  "summary": "The English Wikipedia article \"Battle of Mill Springs\", at revision 1382318227, opens: \"The Battle of Mill Springs, also known as the Battle of Fishing Creek in the Confederacy, and the Battle of Logan's Cross Roads or Battle of Somerset in the Union, was fought in Wayne and Pulaski counties, near the current unincorporated community of Nancy, Kentucky, on January 19, 1862, as part of the American Civil War. The Union victory concluded an early Confederate offensive campaign in south central Kentucky.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2018804, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle fought in Wayne and Pulaski counties during the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-01-19"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}
