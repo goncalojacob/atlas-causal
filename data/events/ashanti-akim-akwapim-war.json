@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ashanti-akim-akwapim-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q722041",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Ashanti–Akim–Akwapim War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q722041"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ashanti–Akim–Akwapim War\", revision 1370429097"
+    }
+  ],
+  "title": "Ashanti–Akim–Akwapim War",
+  "summary": "The English Wikipedia article \"Ashanti–Akim–Akwapim War\", at revision 1370429097, opens: \"The Ashanti–Akim–Akwapim War, also known as the Ashanti Invasion of the Gold Coast, was the expansion of West African Empire of Ashanti against the alliance of Akyem and Akuapem tribes from 1814 until 1816 for access to the coast. This battle was not a direct war on Akyem states, which were never subdued by any power, but a war to get access to the coasts in which the Akyem along with Akuapem forces allied for.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q722041, imported by tools/import/wikidata.mjs. The item's own description reads \"war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1816
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

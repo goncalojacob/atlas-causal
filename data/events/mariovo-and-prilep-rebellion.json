@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mariovo-and-prilep-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q12908420",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Mariovo and Prilep rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12908420"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mariovo and Prilep rebellion\", revision 1379963628"
+    }
+  ],
+  "title": "Mariovo and Prilep rebellion",
+  "summary": "The English Wikipedia article \"Mariovo and Prilep rebellion\", at revision 1379963628, opens: \"Mariovo and Prilep rebellion was the first recorded Slavonic Christian uprising in Ottoman North Macedonia, that took place in 1564–65. Leaders included Dimitri(ja) Stale from Satoka, priest Dimitri(ja) from Gradešnica, Matjo Nikola from Beleštevica, Stojan Pejo and priest Jakov from Staravina.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12908420, imported by tools/import/wikidata.mjs. The item's own description reads \"Military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1564,
+    "end": 1565
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

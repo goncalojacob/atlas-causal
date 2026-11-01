@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "great-seattle-fire",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5599946",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Great Seattle Fire",
+    "pt": "Grande Incêndio de Seattle"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5599946"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Seattle Fire\", revision 1361971405"
+    }
+  ],
+  "title": "Great Seattle Fire",
+  "summary": "The English Wikipedia article \"Great Seattle Fire\", at revision 1361971405, opens: \"The Great Seattle Fire was a fire that destroyed the entire central business district of Seattle, Washington, on June 6, 1889. The conflagration lasted for less than a day, burning through the afternoon and into the night, during the same summer as the Great Spokane Fire and the Great Ellensburg Fire. Seattle quickly rebuilt using brick buildings that sat 20 feet (6.1 m) above the original street level. Its population swelled during reconstruction, becoming the largest city in the newly admitted state of Washington.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5599946, imported by tools/import/wikidata.mjs. The item's own description reads \"major fire in Seattle, Washington in 1889\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1889,
+    "end": 1889,
+    "date": "1889-06-06"
+  },
+  "place": "washington-state",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

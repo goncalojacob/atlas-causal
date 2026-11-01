@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1604-arica-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6142905",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "1604 Arica earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6142905"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1604 Arica earthquake\", revision 1371064367"
+    }
+  ],
+  "title": "1604 Arica earthquake",
+  "summary": "The English Wikipedia article \"1604 Arica earthquake\", at revision 1371064367, opens: \"The 1604 Arica earthquake is an earthquake that occurred at 1:30 pm on November 24, 1604, offshore Arica, Chile. The estimated magnitude range is Ms 8.0–8.5 and up to Mw 8.7–9.0 and Mt 8.8–9.0. It had a destructive tsunami that destroyed most of Southern Peru, including Arica and Arequipa. 1,200–2,800 km (750–1,740 mi) of coastline was affected by the tsunami. The recorded effects of this earthquake are very similar to those for the 1868 Arica event, suggesting a similar magnitude and rupture area of the megathrust between the subducting Nazca plate and the overriding South American plate. Tsunami deposits have been identified on the Chatham Islands that are likely to have been caused by a trans-Pacific tsunami caused by the 1604 earthquake.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6142905, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake in South America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1604,
+    "end": 1604,
+    "date": "1604-11-24"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mystic-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q6948987",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Mystic massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6948987"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mystic massacre\", revision 1379607660"
+    }
+  ],
+  "title": "Mystic massacre",
+  "summary": "The English Wikipedia article \"Mystic massacre\", at revision 1379607660, opens: \"The Mystic massacre – also known as the Pequot massacre and the Battle of Mystic Fort – took place on May 26, 1637 during the Pequot War, when a force from the Connecticut Colony under Captain John Mason and their Narragansett and Mohegan allies set fire to the Pequot Fort near the Mystic River. They shot anyone who tried to escape the wooden palisade fortress and killed most of the village. There were between 400 and 700 Pequots killed during the attack; the only Pequot survivors were warriors who were away in a raiding party with their sachem Sassacus.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6948987, imported by tools/import/wikidata.mjs. The item's own description reads \"massacre of Native Americans during the Pequot War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1637,
+    "end": 1637,
+    "date": "1637-05-06"
+  },
+  "place": "connecticut",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "pequot-war"
+}
