@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-grunberg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888705",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Grünberg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888705"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Grünberg\", revision 1370442154"
+    }
+  ],
+  "title": "Battle of Grünberg",
+  "summary": "The English Wikipedia article \"Battle of Grünberg\", at revision 1370442154, opens: \"The Battle of Grünberg was fought between French and allied Prussian and Hanoverian troops in the Seven Years' War at village of Grünberg, Hesse, near Stangenrod. The French, led by the Jacques Philippe de Choiseul, inflicted a significant defeat on the allies, taking several thousand prisoners, and capturing 18 military standards. The allied loss prompted Duke Ferdinand of Brunswick to lift the siege of Cassel and retreat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888705, imported by tools/import/wikidata.mjs. The item's own description reads \"1761 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1761,
+    "end": 1761,
+    "date": "1761-03-21"
+  },
+  "place": "grunberg-hesse",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

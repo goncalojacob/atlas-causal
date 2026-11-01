@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-barranca-seca",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870421",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Barranca Seca"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870421"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Barranca Seca\", revision 1370433435"
+    }
+  ],
+  "title": "Battle of Barranca Seca",
+  "summary": "The English Wikipedia article \"Battle of Barranca Seca\", at revision 1370433435, opens: \"The Battle of Barranca Seca was a battle of the Second French intervention in Mexico and took place right after the Battle of Puebla on 18 May 1862. Contrary to the latter it was won by the unified reactionist Mexican-French forces. The battle was preceded by a coup de chef of the reactionist forces, which was heated by the intrigue of the Spanish high command against Almonte and Márquez and French pressure towards the replacement of Zuloaga. After the battle Almonte remained the only contender for the Commander-in-Chief office within the reactionist party and Márquez as acting General; both of them serving French interests.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870421, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle in Mexico\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-05-18"
+  },
+  "place": "veracruz-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-french-intervention-in-mexico"
+}

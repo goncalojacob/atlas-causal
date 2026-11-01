@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "disturbance-of-the-three-ports",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q493211",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Disturbance of the Three Ports"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q493211"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Disturbance of the Three Ports\", revision 1370615611"
+    }
+  ],
+  "title": "Disturbance of the Three Ports",
+  "summary": "The English Wikipedia article \"Disturbance of the Three Ports\", at revision 1370615611, opens: \"The Disturbance of the Three Ports, also known as Sampo Waeran or Sanpo no Ran, refers to riots in 1510 by Japanese citizens residing in the Korean port cities Dongnae, Changwon and Ulsan. They killed the Commander of Busan, kidnapped the Commander of Jepo, besieged Ungcheon Fortress, and plundered nearby villages, throwing the Sampo region into chaos. However, they were soon suppressed by Joseon government troops. Following this incident, Joseon closed the Sampo and cut off relations with Japan. Tsushima soon fell into hardship due to lack of supplies and desperately petitioned for the resumption of trade. In the end, the two sides signed the Imshin Treaty (壬申約條) under stricter conditions and reduced trade quotas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q493211, imported by tools/import/wikidata.mjs. The item's own description reads \"riots in 1510 by Japanese citizens residing in the Joseon port cities Dongnae, Changwon and Ulsan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1510,
+    "end": 1510,
+    "date": "1510-04-19"
+  },
+  "place": "joseon",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "kumanovo-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q12907952",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Kumanovo uprising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12907952"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kumanovo uprising\", revision 1379322708"
+    }
+  ],
+  "title": "Kumanovo uprising",
+  "summary": "The English Wikipedia article \"Kumanovo uprising\", at revision 1379322708, opens: \"The Kumanovo uprising was an uprising organized by an assembly of chiefs of the districts of Kumanovo, Kriva Palanka, and Kratovo in the Vilayet of Kosovo in 1878. The movement sought to liberate the region from the hands of the Ottoman Empire. Following the Serbian Army's liberation of Niš on 12 January 1877, the rebellion began on 20 January 1878 with guerrilla operations during the army's liberation of Vranje. The rebels received secret aid from the Serbian government. The uprising lasted four months until its suppression by the Ottomans on 20 May, during which the Ottomans retaliated with atrocities on the local population.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12907952, imported by tools/import/wikidata.mjs. The item's own description reads \"1878 uprising in Kosovo vilayet\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1878,
+    "end": 1878,
+    "date": "1878-01-20",
+    "endDate": "1878-05-20"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

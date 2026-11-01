@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "khvostov-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q11499894",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Khvostov Incident"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11499894"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Khvostov Incident\", revision 1378721415"
+    }
+  ],
+  "title": "Khvostov Incident",
+  "summary": "The English Wikipedia article \"Khvostov Incident\", at revision 1378721415, opens: \"The Khvostov Incident, called the Bunka Russian invasion in Japan, refers to a series of raids and clashes by Russian Lieutenant Nikolai Alexeyevich Khvostov of the Russian-American Company against Japanese outposts on the islands of Iturup (Etorofu) and Sakhalin in 1806–1807. Khvostov ordered his subordinate Nikolai Rezanov to attack the Japanese with his envoy..\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11499894, imported by tools/import/wikidata.mjs. The item's own description reads \"1806 military offensive\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1806,
+    "end": 1807
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battles-of-new-ulm",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q15062174",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battles of New Ulm"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15062174"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battles of New Ulm\", revision 1379093992"
+    }
+  ],
+  "title": "Battles of New Ulm",
+  "summary": "The English Wikipedia article \"Battles of New Ulm\", at revision 1379093992, opens: \"The Battles of New Ulm, also known as the New Ulm Massacre, were two battles in August 1862 between Dakota men and European settlers and militia in New Ulm, Minnesota early in the Dakota War of 1862. Dakota forces attacked New Ulm on August 19 and again on August 23, destroying much of the town but failing to fully capture it. After the second attack, New Ulm was evacuated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15062174, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-08-19"
+  },
+  "place": "new-ulm-minnesota",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dakota-war-of-1862"
+}

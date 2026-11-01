@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-famailla",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2060982",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Famaillá",
+    "pt": "Batalha de Famaillá"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2060982"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Famaillá\", revision 1370440537"
+    }
+  ],
+  "title": "Battle of Famaillá",
+  "summary": "The English Wikipedia article \"Battle of Famaillá\", at revision 1370440537, opens: \"The Battle of Famaillá, was a Federal Party victory, under the command of former Uruguayan president Manuel Oribe, over the army of the Unitarian Party under general Juan Lavalle, during the Argentine Civil War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2060982, imported by tools/import/wikidata.mjs. The item's own description reads \"1841 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1841,
+    "end": 1841,
+    "date": "1841-09-19"
+  },
+  "place": "famailla",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "argentine-civil-wars"
+}
