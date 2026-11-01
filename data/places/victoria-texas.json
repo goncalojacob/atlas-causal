@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "victoria-texas",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q784496",
+  "sitelinks": {
+    "count": 48,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Victoria, Texas",
+    "pt": "Victoria (Texas)"
+  },
+  "sources": [],
+  "names": [
+    "Victoria",
+    "Victoria, Texas",
+    "Victoria (Texas)"
+  ],
+  "where": {
+    "lon": -96.993333333333,
+    "lat": 28.816944444444,
+    "precision": "city",
+    "label": "Victoria, Texas"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

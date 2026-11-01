@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-fort-mifflin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510017",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Siege of Fort Mifflin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510017"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fort Mifflin\", revision 1382206855"
+    }
+  ],
+  "title": "Siege of Fort Mifflin",
+  "summary": "The English Wikipedia article \"Siege of Fort Mifflin\", at revision 1382206855, opens: \"The siege of Fort Mifflin or the siege of Mud Island Fort, which took place from September 26 to November 16, 1777, saw British land batteries commanded by Captain John Montresor and a British naval squadron under Vice Admiral Lord Richard Howe attempt to capture an American fort in the Delaware River that was commanded by Lieutenant Colonel Samuel Smith. The operation finally succeeded after Smith was wounded. His successor, Major Simeon Thayer, subsequently evacuated the fort on the night of November 15, enabling British troops to occupy the place the following morning.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510017, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 military action in the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-09-26",
+    "endDate": "1777-11-16"
+  },
+  "place": "fort-mifflin",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

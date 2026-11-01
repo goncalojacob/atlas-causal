@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-blandford",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870497",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Blandford"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870497"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Blandford\", revision 1370107935"
+    }
+  ],
+  "title": "Battle of Blandford",
+  "summary": "The English Wikipedia article \"Battle of Blandford\", at revision 1370107935, opens: \"The Battle of Blandford, also called the Battle of Petersburg, took place near Petersburg, Virginia on 25 April 1781, late in the American War of Independence. Roughly 2,300 British regulars under the command of Brigadier General William Phillips defeated about 1,000 American militia under Major General Baron von Steuben.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870497, imported by tools/import/wikidata.mjs. The item's own description reads \"1781 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-04-25"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

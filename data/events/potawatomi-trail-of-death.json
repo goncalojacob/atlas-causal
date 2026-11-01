@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "potawatomi-trail-of-death",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q373781",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Potawatomi Trail of Death"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q373781"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Potawatomi Trail of Death\", revision 1383078666"
+    }
+  ],
+  "title": "Potawatomi Trail of Death",
+  "summary": "The English Wikipedia article \"Potawatomi Trail of Death\", at revision 1383078666, opens: \"The Potawatomi Trail of Death was the forced removal by militia in 1838 of about 859 members of the Potawatomi nation from Indiana to reservation lands in what is now eastern Kansas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q373781, imported by tools/import/wikidata.mjs. The item's own description reads \"forced removal by militia in 1838 of members of the Potawatomi nation from Indiana\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1838,
+    "end": 1838
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "newark-delaware",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q506586",
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Newark, Delaware",
+    "pt": "Newark (Delaware)"
+  },
+  "sources": [],
+  "names": [
+    "Newark",
+    "Newark, Delaware",
+    "Newark (Delaware)"
+  ],
+  "where": {
+    "lon": -75.75,
+    "lat": 39.683333333333,
+    "precision": "city",
+    "label": "Newark, Delaware"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
