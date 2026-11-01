@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ashanti-fante-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q722047",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Ashanti–Fante War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q722047"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ashanti–Fante War\", revision 1370429103"
+    }
+  ],
+  "title": "Ashanti–Fante War",
+  "summary": "The English Wikipedia article \"Ashanti–Fante War\", at revision 1370429103, opens: \"The Ashanti–Fante War (1806–1807) was a war fought between the Ashanti Empire and the Fante Confederacy in the region of what is currently the Republic of Ghana.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q722047, imported by tools/import/wikidata.mjs. The item's own description reads \"war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1806,
+    "end": 1807
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

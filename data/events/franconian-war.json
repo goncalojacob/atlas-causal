@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "franconian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q13422413",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Franconian War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q13422413"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Franconian War\", revision 1352490238"
+    }
+  ],
+  "title": "Franconian War",
+  "summary": "The English Wikipedia article \"Franconian War\", at revision 1352490238, opens: \"The Franconian War was waged in 1523 when the Swabian League attacked several robber baron castles in Franconia, whose nobles were supporters of Hans Thomas of Absberg in the Absberg Feud.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q13422413, imported by tools/import/wikidata.mjs. The item's own description reads \"war between the Swabian Confederation and several robber baron castles\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1523,
+    "end": 1523
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
