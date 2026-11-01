@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-fort-fisher",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5452517",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "First Battle of Fort Fisher"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5452517"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Fort Fisher\", revision 1370618644"
+    }
+  ],
+  "title": "First Battle of Fort Fisher",
+  "summary": "The English Wikipedia article \"First Battle of Fort Fisher\", at revision 1370618644, opens: \"The First Battle of Fort Fisher was a naval siege in the American Civil War, when the Union tried to capture the fort guarding Wilmington, North Carolina, the South's last major Atlantic port. Led by Major General Benjamin Butler, it lasted from December 24–27, 1864.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5452517, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-12-23",
+    "endDate": "1864-12-27"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

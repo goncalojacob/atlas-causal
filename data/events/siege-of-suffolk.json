@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-suffolk",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2668382",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Siege of Suffolk"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2668382"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Suffolk\", revision 1380705166"
+    }
+  ],
+  "title": "Siege of Suffolk",
+  "summary": "The English Wikipedia article \"Siege of Suffolk\", at revision 1380705166, opens: \"The siege of Suffolk, also known as the Battle of Suffolk, took place from April 11 to May 4, 1863, near Suffolk, Virginia during the American Civil War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2668382, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-04-11",
+    "endDate": "1863-05-04"
+  },
+  "place": "suffolk-virginia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

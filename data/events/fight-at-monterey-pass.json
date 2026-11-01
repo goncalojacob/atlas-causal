@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "fight-at-monterey-pass",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2347044",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Fight at Monterey Pass"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2347044"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fight at Monterey Pass\", revision 1370618229"
+    }
+  ],
+  "title": "Fight at Monterey Pass",
+  "summary": "The English Wikipedia article \"Fight at Monterey Pass\", at revision 1370618229, opens: \"The Fight at Monterey Pass (or Gap) was an American Civil War military engagement beginning the evening of July 4, 1863, during the Retreat from Gettysburg. A Confederate wagon train of Lt. Gen. Richard S. Ewell's Second Corps, Army of Northern Virginia, withdrew after the Battle of Gettysburg, and Union cavalry under Brig. Gen. H. Judson Kilpatrick attacked the retreating Confederate column. After a lengthy delay in which a small detachment of Maryland cavalrymen delayed Kilpatrick's division, the Union cavalrymen captured numerous Confederate prisoners and destroyed hundreds of wagons.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2347044, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War at Monterey, Pennsylvania\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-07-04",
+    "endDate": "1863-07-05"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

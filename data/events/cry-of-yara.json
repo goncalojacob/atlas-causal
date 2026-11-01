@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cry-of-yara",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2174715",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Cry of Yara",
+    "pt": "Grito de Yara"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2174715"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cry of Yara\", revision 1370614382"
+    }
+  ],
+  "title": "Cry of Yara",
+  "summary": "The English Wikipedia article \"Cry of Yara\", at revision 1370614382, opens: \"The Cry of Yara was a declaration, battle cry, and uprising in eastern Cuba on 10 October 1868, initiating the Ten Years' War. The signaling of the Yara uprising occurred near Manzanillo in the eastern province of Oriente, at the sugar plantation and mill of La Demajagua, which was owned by the Céspedes family.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2174715, imported by tools/import/wikidata.mjs. The item's own description reads \"instigating event of the Ten Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1868,
+    "date": "1868-10-10"
+  },
+  "place": "cuba-q14905932",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

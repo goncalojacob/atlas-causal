@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-marion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871678",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Marion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871678"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Marion\", revision 1370449057"
+    }
+  ],
+  "title": "Battle of Marion",
+  "summary": "The English Wikipedia article \"Battle of Marion\", at revision 1370449057, opens: \"The Battle of Marion was an action that occurred on December 17–18, 1864, during the American Civil War. The fight took place in southwestern Virginia's Smyth County near Marion. A Union Army under the command of Major General George Stoneman defeated a smaller Confederate Army under the command of Major General John C. Breckinridge. The fight was mostly a stalemate for about 36 hours as the Confederate troops held better field position. After realizing that his force was nearly surrounded and low on ammunition, Breckinridge stealthily withdrew his troops during the night, escaping to the south before heading east.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871678, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-12-17",
+    "endDate": "1864-12-18"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

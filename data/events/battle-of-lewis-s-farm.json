@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-lewis-s-farm",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1129674",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Lewis's Farm"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1129674"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lewis's Farm\", revision 1370447565"
+    }
+  ],
+  "title": "Battle of Lewis's Farm",
+  "summary": "The English Wikipedia article \"Battle of Lewis's Farm\", at revision 1370447565, opens: \"The Battle of Lewis's Farm was fought on March 29, 1865, in Dinwiddie County, Virginia near the end of the American Civil War. In climactic battles at the end of the Richmond–Petersburg Campaign, usually referred to as the Siege of Petersburg, starting with Lewis's Farm, the Union Army commanded by Lieutenant General Ulysses S. Grant dislodged the Confederate Army of Northern Virginia commanded by General Robert E. Lee from defensive lines at Petersburg, Virginia and the Confederate capital of Richmond, Virginia. Many historians and the United States National Park Service consider the Battle of Lewis's Farm to be the opening battle of the Appomattox Campaign, which resulted in the surrender of Lee's army on April 9, 1865.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1129674, imported by tools/import/wikidata.mjs. The item's own description reads \"1865 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1865,
+    "end": 1865,
+    "date": "1865-03-29"
+  },
+  "place": "virginia-q1370",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}
