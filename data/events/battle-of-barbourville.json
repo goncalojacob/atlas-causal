@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-barbourville",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2640011",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Barbourville"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2640011"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Barbourville\", revision 1380779722"
+    }
+  ],
+  "title": "Battle of Barbourville",
+  "summary": "The English Wikipedia article \"Battle of Barbourville\", at revision 1380779722, opens: \"The Battle of Barbourville was one of the early engagements of the American Civil War. It took place on September 19, 1861, in Knox County, Kentucky during the campaign known as the Kentucky Confederate Offensive. The battle is considered the first Confederate victory in the commonwealth, and threw a scare into Federal commanders, who rushed troops to central Kentucky to try to repel the invasion, which was finally stopped at the Battle of Camp Wildcat in October.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2640011, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-09-19"
+  },
+  "place": "barbourville-kentucky",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}
