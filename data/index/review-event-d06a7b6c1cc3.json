@@ -19413,7 +19413,6 @@
         "wikipedia-en"
       ],
       "created": "2026-10-15",
-      "degree": 1,
       "id": "austro-prussian-war",
       "kind": "event",
       "origin": {
@@ -116687,7 +116686,6 @@
         "wikipedia-en"
       ],
       "created": "2026-10-13",
-      "degree": 1,
       "id": "counter-reformation",
       "kind": "event",
       "origin": {
@@ -130425,7 +130423,6 @@
         "wikipedia-en"
       ],
       "created": "2026-10-14",
-      "degree": 1,
       "id": "franco-prussian-war",
       "kind": "event",
       "origin": {
@@ -151485,7 +151482,6 @@
         "wikipedia-en"
       ],
       "created": "2026-10-13",
-      "degree": 1,
       "id": "meiji-restoration",
       "kind": "event",
       "origin": {
@@ -169329,7 +169325,6 @@
         "wikipedia-en"
       ],
       "created": "2026-10-13",
-      "degree": 2,
       "id": "reformation",
       "kind": "event",
       "origin": {
@@ -173783,7 +173778,6 @@
         "wikipedia-en"
       ],
       "created": "2026-10-27",
-      "degree": 1,
       "id": "saga-rebellion",
       "kind": "event",
       "origin": {
@@ -208503,7 +208497,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 2,
       "id": "thirty-years-war",
       "kind": "event",
       "origin": {
@@ -231999,6 +231993,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "austro-prussian-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "austro-serbian-alliance-of-1881",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -248667,6 +248667,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "counter-reformation",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "coup-d-etat-of-pavia",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -250750,6 +250756,12 @@
     },
     {
       "id": "franco-moroccan-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "franco-prussian-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -254007,6 +254019,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "meiji-restoration",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "mejba-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -256881,6 +256899,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "reformation",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "reformation-in-denmark-norway-and-holstein",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -257614,6 +257638,12 @@
     },
     {
       "id": "safavid-occupation-of-basra",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "saga-rebellion",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

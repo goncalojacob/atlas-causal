@@ -4489,36 +4489,6 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-11-02",
-      "from": "austro-prussian-war",
-      "id": "austro-prussian-war--franco-prussian-war--precondition-of",
-      "kind": "edge",
-      "origin": {
-        "run": "m90-writer-B",
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted",
-          "queued"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "franco-prussian-war",
-      "type": "precondition-of"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
         "telo-2007-historia-contemporanea"
       ],
       "created": "2026-09-02",
@@ -21392,36 +21362,6 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-11-02",
-      "from": "meiji-restoration",
-      "id": "meiji-restoration--saga-rebellion--caused",
-      "kind": "edge",
-      "origin": {
-        "run": "m90-writer-A",
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted",
-          "queued"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "saga-rebellion",
-      "type": "caused"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
         "wikipedia-en",
         "wikidata"
       ],
@@ -24806,66 +24746,6 @@
       "status": "active",
       "to": "battle-of-mbwila",
       "type": "precondition-of"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-11-02",
-      "from": "reformation",
-      "id": "reformation--counter-reformation--reacted-to",
-      "kind": "edge",
-      "origin": {
-        "run": "m90-writer-A",
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted",
-          "queued"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "counter-reformation",
-      "type": "reacted-to"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-11-02",
-      "from": "reformation",
-      "id": "reformation--thirty-years-war--caused",
-      "kind": "edge",
-      "origin": {
-        "run": "m90-writer-B",
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted",
-          "queued"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "thirty-years-war",
-      "type": "caused"
     },
     {
       "authors": [
