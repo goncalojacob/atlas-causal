@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-13",
   "revised": "2026-10-13",
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q228911",
-  "sitelinks": {
-    "count": 47,
-    "on": "2026-10-13"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q228911",
   "wikipedia": {
     "en": "Anglo-Zulu War",
     "pt": "Guerra Anglo-Zulu"
+  },
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-13"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": null,
   "region": "africa",
   "regionNote": "The Wikidata import wrote this lane from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "south-african-wars-1879-1915",
   "category": "war",
   "actors": []
 }

@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q145934",
-  "sitelinks": {
-    "count": 17,
-    "on": "2026-10-29"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q145934",
   "wikipedia": {
     "en": "English Armada",
     "pt": "Armada Inglesa"
+  },
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-29"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "a-coruna",
   "region": null,
   "regionNote": null,
+  "parent": "eighty-years-war",
   "category": "war",
   "actors": []
 }

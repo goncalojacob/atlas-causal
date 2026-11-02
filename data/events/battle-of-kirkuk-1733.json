@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q18162675",
+  "wikipedia": {
+    "en": "Battle of Kirkuk (1733)"
+  },
   "sitelinks": {
     "count": 11,
     "on": "2026-10-17"
-  },
-  "wikipedia": {
-    "en": "Battle of Kirkuk (1733)"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "kirkuk",
   "region": null,
   "regionNote": null,
+  "parent": "campaigns-of-nader-shah",
   "category": "war",
   "actors": []
 }

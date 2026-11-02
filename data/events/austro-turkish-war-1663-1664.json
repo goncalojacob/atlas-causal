@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q258679",
+  "wikipedia": {
+    "en": "Austro-Turkish War (1663–1664)"
+  },
   "sitelinks": {
     "count": 24,
     "on": "2026-10-17"
-  },
-  "wikipedia": {
-    "en": "Austro-Turkish War (1663–1664)"
   },
   "sources": [
     {
@@ -51,6 +51,7 @@
   "place": null,
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "ottoman-habsburg-wars",
   "category": "war",
   "actors": []
 }

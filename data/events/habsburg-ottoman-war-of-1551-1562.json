@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-30",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q118929717",
+  "wikipedia": {
+    "en": "Habsburg–Ottoman war of 1551–1562"
+  },
   "sitelinks": {
     "count": 7,
     "on": "2026-10-30"
-  },
-  "wikipedia": {
-    "en": "Habsburg–Ottoman war of 1551–1562"
   },
   "sources": [
     {
@@ -52,6 +52,7 @@
   "place": null,
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "habsburg-ottoman-wars-in-hungary-1526-1568",
   "category": "war",
   "actors": []
 }

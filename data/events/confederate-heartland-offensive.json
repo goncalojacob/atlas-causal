@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-30",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q962723",
+  "wikipedia": {
+    "en": "Confederate Heartland Offensive"
+  },
   "sitelinks": {
     "count": 8,
     "on": "2026-10-30"
-  },
-  "wikipedia": {
-    "en": "Confederate Heartland Offensive"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "kentucky",
   "region": null,
   "regionNote": null,
+  "parent": "american-civil-war",
   "category": "war",
   "actors": []
 }

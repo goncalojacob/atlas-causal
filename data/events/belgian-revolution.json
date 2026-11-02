@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q223933",
-  "sitelinks": {
-    "count": 54,
-    "on": "2026-10-17"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q223933",
   "wikipedia": {
     "en": "Belgian Revolution",
     "pt": "Revolução Belga"
+  },
+  "sitelinks": {
+    "count": 54,
+    "on": "2026-10-17"
   },
   "sources": [
     {
@@ -55,5 +55,6 @@
   "place": "southern-netherlands",
   "region": null,
   "regionNote": null,
+  "parent": "revolutions-of-1830",
   "actors": []
 }

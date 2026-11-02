@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "valdivia-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1312945",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Valdivia Expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1312945"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Valdivia Expedition\", revision 1363797990"
+    }
+  ],
+  "title": "Valdivia Expedition",
+  "summary": "The English Wikipedia article \"Valdivia Expedition\", at revision 1363797990, opens: \"The Valdivia Expedition, or Deutsche Tiefsee-Expedition, was a scientific expedition organised and funded by the German Empire under Kaiser Wilhelm II and was named after the ship which was bought and outfitted for the expedition, the SS Valdivia. It was led by the marine biologist Carl Chun and the expedition ran from 1898-1899 with the purpose of exploring the depths of the oceans below 500 fathoms, which had not been explored by the earlier Challenger Expedition.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1312945, imported by tools/import/wikidata.mjs. The item's own description reads \"German scientific expedition (1898–1899)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1899,
+    "date": "1898-07-31",
+    "endDate": "1899-05-01"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

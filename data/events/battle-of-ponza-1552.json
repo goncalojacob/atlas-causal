@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q581542",
+  "wikipedia": {
+    "en": "Battle of Ponza (1552)"
+  },
   "sitelinks": {
     "count": 15,
     "on": "2026-10-29"
-  },
-  "wikipedia": {
-    "en": "Battle of Ponza (1552)"
   },
   "sources": [
     {
@@ -53,6 +53,10 @@
   "place": "ponza",
   "region": null,
   "regionNote": null,
+  "parent": [
+    "italian-war-of-1551-1559",
+    "ottoman-habsburg-wars"
+  ],
   "category": "war",
   "actors": []
 }

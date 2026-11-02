@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-kejiwan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q133521430",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Kejiwan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q133521430"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kejiwan\", revision 1370445015"
+    }
+  ],
+  "title": "Battle of Kejiwan",
+  "summary": "The English Wikipedia article \"Battle of Kejiwan\", at revision 1370445015, opens: \"The Battle of Kejiwan took place on 9 August 1826 during the Java War between rebel forces under Prince Diponegoro and a flying column of Dutch colonial and Mangkunegaran troops. The flying column, which had been pursuing Diponegoro during his march north, was defeated in a pitched battle, allowing Diponegoro to continue his march.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q133521430, imported by tools/import/wikidata.mjs. The item's own description reads \"1826 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1826,
+    "end": 1826,
+    "date": "1826-08-09"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "java-war"
+}

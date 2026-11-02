@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q1788393",
-  "sitelinks": {
-    "count": 24,
-    "on": "2026-10-28"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1788393",
   "wikipedia": {
     "en": "Battle of Shiroyama",
     "pt": "Batalha de Shiroyama"
+  },
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "japan-q17",
   "region": null,
   "regionNote": null,
+  "parent": "meiji-era",
   "category": "war",
   "actors": []
 }

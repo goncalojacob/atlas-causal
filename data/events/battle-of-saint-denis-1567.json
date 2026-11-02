@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-31",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q1041463",
+  "wikipedia": {
+    "en": "Battle of Saint-Denis (1567)"
+  },
   "sitelinks": {
     "count": 10,
     "on": "2026-10-31"
-  },
-  "wikipedia": {
-    "en": "Battle of Saint-Denis (1567)"
   },
   "sources": [
     {
@@ -52,6 +52,7 @@
   "place": "saint-denis",
   "region": null,
   "regionNote": null,
+  "parent": "french-wars-of-religion",
   "category": "war",
   "actors": []
 }

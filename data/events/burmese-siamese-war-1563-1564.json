@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "burmese-siamese-war-1563-1564",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16141404",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Burmese–Siamese War (1563–1564)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16141404"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Burmese–Siamese War (1563–1564)\", revision 1379397130"
+    }
+  ],
+  "title": "Burmese–Siamese War (1563–1564)",
+  "summary": "The English Wikipedia article \"Burmese–Siamese War (1563–1564)\", at revision 1379397130, opens: \"The Burmese-Siamese War of 1563–1564, also known as the War over the White Elephants, was a war between the Toungoo dynasty of Burma and the Ayutthaya Kingdom of Siam. It was the second of twenty wars fought between the Burmese and Siamese that lasted well into the 19th century. The cause of the war was an attempt by the Toungoo king Bayinnaung to force the Ayutthaya kingdom into submission under his rule, as part of his campaign that later created the largest empire ever to exist in Southeast Asia. 13 years into Bayinnaung's reign, his second attempt at invasion of Siam and first as king succeeded after an extensive siege of the city of Ayutthaya. Siam became a vassal of the Toungoo dynasty, this status lasting until a 1568 revolt by Ayutthaya resulting in a short-lived independence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16141404, imported by tools/import/wikidata.mjs. The item's own description reads \"war between the Toungoo Dynasty of Burma and the Ayutthaya Kingdom of Siam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1563,
+    "end": 1564
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "burmese-siamese-wars"
+}

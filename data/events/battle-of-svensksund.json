@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q2578430",
-  "sitelinks": {
-    "count": 11,
-    "on": "2026-10-29"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q2578430",
   "wikipedia": {
     "en": "Battle of Svensksund",
     "pt": "Batalha de Svensksund"
+  },
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
   },
   "sources": [
     {
@@ -55,6 +55,7 @@
   "place": "gulf-of-finland",
   "region": null,
   "regionNote": null,
+  "parent": "russo-swedish-war-1788-1790",
   "category": "war",
   "actors": []
 }

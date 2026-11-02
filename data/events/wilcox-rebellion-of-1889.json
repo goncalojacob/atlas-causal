@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q8000330",
-  "sitelinks": {
-    "count": 3,
-    "on": "2026-10-28"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q8000330",
   "wikipedia": {
     "en": "Wilcox rebellion of 1889",
     "pt": "Rebelião de Wilcox de 1889"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
   },
   "sources": [
     {
@@ -53,5 +53,6 @@
   "place": "honolulu",
   "region": null,
   "regionNote": null,
+  "parent": "hawaiian-rebellions-1887-1895",
   "actors": []
 }

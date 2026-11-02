@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q651919",
-  "sitelinks": {
-    "count": 40,
-    "on": "2026-10-28"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q651919",
   "wikipedia": {
     "en": "Battle of Culloden",
     "pt": "Batalha de Culloden"
+  },
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-10-28"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "culloden-highland",
   "region": null,
   "regionNote": null,
+  "parent": "jacobite-risings",
   "category": "war",
   "actors": []
 }

@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-27",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q3042463",
-  "sitelinks": {
-    "count": 16,
-    "on": "2026-10-27"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q3042463",
   "wikipedia": {
     "en": "Uruguayan War",
     "pt": "Guerra do Uruguai"
+  },
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-27"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "brazil-q155",
   "region": null,
   "regionNote": null,
+  "parent": "platine-wars",
   "category": "war",
   "actors": []
 }

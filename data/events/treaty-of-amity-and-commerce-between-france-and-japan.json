@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q3536741",
-  "sitelinks": {
-    "count": 7,
-    "on": "2026-10-29"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q3536741",
   "wikipedia": {
     "en": "Treaty of Amity and Commerce between France and Japan",
     "pt": "Tratado de Amizade e Comércio entre a França e o Japão"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-29"
   },
   "sources": [
     {
@@ -54,5 +54,6 @@
   "place": "japan-q17",
   "region": null,
   "regionNote": null,
+  "parent": "ansei-treaties",
   "actors": []
 }

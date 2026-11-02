@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q288251",
-  "sitelinks": {
-    "count": 26,
-    "on": "2026-10-17"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q288251",
   "wikipedia": {
     "en": "Cisplatine War",
     "pt": "Guerra da Cisplatina"
+  },
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-17"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": null,
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "platine-wars",
   "category": "war",
   "actors": []
 }

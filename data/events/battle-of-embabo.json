@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q2887945",
+  "wikipedia": {
+    "en": "Battle of Embabo"
+  },
   "sitelinks": {
     "count": 5,
     "on": "2026-10-29"
-  },
-  "wikipedia": {
-    "en": "Battle of Embabo"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "embabo",
   "region": null,
   "regionNote": null,
+  "parent": "menelik-ii-s-conquests",
   "category": "war",
   "actors": []
 }

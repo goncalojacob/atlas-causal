@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "black-week",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q111699632",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Black Week"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q111699632"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Black Week\", revision 1379528197"
+    }
+  ],
+  "title": "Black Week",
+  "summary": "The English Wikipedia article \"Black Week\", at revision 1379528197, opens: \"Black Week refers to the week of Sunday 10 December – Sunday 17 December 1899 during the Second Boer War, when the British Army suffered three devastating defeats by the Boer Republics at the battles of Stormberg on Sunday 10 December, Magersfontein on Monday 11 December and Colenso on Friday 15 December 1899. In total, 2,776 British soldiers were killed, wounded and captured during this period.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q111699632, imported by tools/import/wikidata.mjs. The item's own description reads \"week of 10–15 December 1899 during the second Boer War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-12-10",
+    "endDate": "1899-12-15"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "second-boer-war"
+}

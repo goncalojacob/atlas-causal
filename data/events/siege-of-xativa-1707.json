@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-30",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q3486057",
+  "wikipedia": {
+    "en": "Siege of Xàtiva (1707)"
+  },
   "sitelinks": {
     "count": 7,
     "on": "2026-10-30"
-  },
-  "wikipedia": {
-    "en": "Siege of Xàtiva (1707)"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "xativa",
   "region": null,
   "regionNote": null,
+  "parent": "war-of-the-spanish-succession",
   "category": "war",
   "actors": []
 }

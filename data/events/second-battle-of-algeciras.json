@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-30",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q124649",
-  "sitelinks": {
-    "count": 7,
-    "on": "2026-10-30"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q124649",
   "wikipedia": {
     "en": "Second Battle of Algeciras",
     "pt": "Segunda Batalha de Algeciras"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-30"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "strait-of-gibraltar",
   "region": null,
   "regionNote": null,
+  "parent": "algeciras-campaign",
   "category": "war",
   "actors": []
 }

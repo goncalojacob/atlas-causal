@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "burmese-siamese-war-1792-1794",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q104901667",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Burmese–Siamese War (1792–1794)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q104901667"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Burmese–Siamese War (1792–1794)\", revision 1370607043"
+    }
+  ],
+  "title": "Burmese–Siamese War (1792–1794)",
+  "summary": "The English Wikipedia article \"Burmese–Siamese War (1792–1794)\", at revision 1370607043, opens: \"The Burmese–Siamese War (1792–1794) or the Siamese Invasion of Tavoy was the conflict between the Kingdom of Burma under Konbaung dynasty and the Kingdom of Siam under the Chakri dynasty over the town of Tavoy and the Tenasserim Coast.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q104901667, imported by tools/import/wikidata.mjs. The item's own description reads \"1792-1794 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1792,
+    "end": 1794,
+    "date": "1792-03",
+    "endDate": "1794-03"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "burmese-siamese-wars"
+}

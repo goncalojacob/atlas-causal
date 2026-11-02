@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-16",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q233500",
-  "sitelinks": {
-    "count": 27,
-    "on": "2026-10-16"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q233500",
   "wikipedia": {
     "en": "Second Anglo-Burmese War",
     "pt": "Segunda Guerra Anglo-Birmanesa"
+  },
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-16"
   },
   "sources": [
     {
@@ -55,6 +55,7 @@
   "place": "lower-myanmar",
   "region": null,
   "regionNote": null,
+  "parent": "anglo-burmese-wars",
   "category": "war",
   "actors": []
 }

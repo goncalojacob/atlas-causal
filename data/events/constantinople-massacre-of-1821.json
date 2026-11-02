@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q13632820",
+  "wikipedia": {
+    "en": "Constantinople massacre of 1821"
+  },
   "sitelinks": {
     "count": 12,
     "on": "2026-10-28"
-  },
-  "wikipedia": {
-    "en": "Constantinople massacre of 1821"
   },
   "sources": [
     {
@@ -53,5 +53,6 @@
   "place": "constantinople",
   "region": null,
   "regionNote": null,
+  "parent": "greek-war-of-independence",
   "actors": []
 }

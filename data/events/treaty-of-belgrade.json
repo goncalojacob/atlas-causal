@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q11821309",
-  "sitelinks": {
-    "count": 32,
-    "on": "2026-10-28"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q11821309",
   "wikipedia": {
     "en": "Treaty of Belgrade",
     "pt": "Tratado de Belgrado"
+  },
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-28"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "belgrade",
   "region": null,
   "regionNote": null,
+  "parent": "ottoman-habsburg-wars",
   "category": "treaty",
   "actors": []
 }

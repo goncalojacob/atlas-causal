@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-boudouaou",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q105616758",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "First Battle of Boudouaou"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q105616758"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Boudouaou\", revision 1371613325"
+    }
+  ],
+  "title": "First Battle of Boudouaou",
+  "summary": "The English Wikipedia article \"First Battle of Boudouaou\", at revision 1371613325, opens: \"The First Battle of Boudouaou in 25–26 May 1837, during the French conquest of Algeria, pitted the troupes coloniales under Colonel Maximilien Joseph Schauenburg against the troops of Kabylia of the Igawawen.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q105616758, imported by tools/import/wikidata.mjs. The item's own description reads \"1837 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1837,
+    "end": 1837,
+    "date": "1837-05-25"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "french-conquest-of-algeria"
+}

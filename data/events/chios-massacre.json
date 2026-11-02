@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q1144988",
+  "wikipedia": {
+    "en": "Chios massacre"
+  },
   "sitelinks": {
     "count": 26,
     "on": "2026-10-28"
-  },
-  "wikipedia": {
-    "en": "Chios massacre"
   },
   "sources": [
     {
@@ -53,5 +53,6 @@
   "place": "chios",
   "region": null,
   "regionNote": null,
+  "parent": "greek-war-of-independence",
   "actors": []
 }

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-vasilika-thessaloniki",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q106581319",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Vasilika (Thessaloniki)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q106581319"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vasilika (Thessaloniki)\", revision 1378553841"
+    }
+  ],
+  "title": "Battle of Vasilika (Thessaloniki)",
+  "summary": "The English Wikipedia article \"Battle of Vasilika (Thessaloniki)\", at revision 1378553841, opens: \"The Battle of Vasilika was fought on 10 June 1821 in Greece, between the Ottoman and the Greek forces led by the Captain Stamatios Kapsas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q106581319, imported by tools/import/wikidata.mjs. The item's own description reads \"battle during the Greek War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-06-10"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

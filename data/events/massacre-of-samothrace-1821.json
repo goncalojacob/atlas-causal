@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-31",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q4406932",
+  "wikipedia": {
+    "en": "Massacre of Samothrace (1821)"
+  },
   "sitelinks": {
     "count": 5,
     "on": "2026-10-31"
-  },
-  "wikipedia": {
-    "en": "Massacre of Samothrace (1821)"
   },
   "sources": [
     {
@@ -52,5 +52,6 @@
   "place": "samothrace",
   "region": null,
   "regionNote": null,
+  "parent": "greek-war-of-independence",
   "actors": []
 }

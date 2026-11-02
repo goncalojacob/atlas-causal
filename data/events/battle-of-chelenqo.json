@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-31",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q2888306",
+  "wikipedia": {
+    "en": "Battle of Chelenqo"
+  },
   "sitelinks": {
     "count": 6,
     "on": "2026-10-31"
-  },
-  "wikipedia": {
-    "en": "Battle of Chelenqo"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "chelenqo",
   "region": null,
   "regionNote": null,
+  "parent": "menelik-ii-s-conquests",
   "category": "war",
   "actors": []
 }

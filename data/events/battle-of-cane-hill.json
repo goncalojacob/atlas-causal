@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-30",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q740404",
-  "sitelinks": {
-    "count": 6,
-    "on": "2026-10-30"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q740404",
   "wikipedia": {
     "en": "Battle of Cane Hill",
     "pt": "Batalha de Cane Hill"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-30"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "cane-hill-battlefield",
   "region": null,
   "regionNote": null,
+  "parent": "american-civil-war",
   "category": "war",
   "actors": []
 }

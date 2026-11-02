@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-27",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q638587",
-  "sitelinks": {
-    "count": 43,
-    "on": "2026-10-27"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q638587",
   "wikipedia": {
     "en": "Russo-Turkish War (1735–1739)",
     "pt": "Guerra Russo-Turca (1735–1739)"
+  },
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-10-27"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": null,
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "russo-turkish-wars",
   "category": "war",
   "actors": []
 }

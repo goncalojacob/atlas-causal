@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q1086489",
-  "sitelinks": {
-    "count": 26,
-    "on": "2026-10-28"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1086489",
   "wikipedia": {
     "en": "Massacre of Vassy",
     "pt": "Massacre de Vassy"
+  },
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-28"
   },
   "sources": [
     {
@@ -54,5 +54,6 @@
   "place": "wassy",
   "region": null,
   "regionNote": null,
+  "parent": "french-wars-of-religion",
   "actors": []
 }

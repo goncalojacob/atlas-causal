@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q108413",
-  "sitelinks": {
-    "count": 49,
-    "on": "2026-10-17"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q108413",
   "wikipedia": {
     "en": "Wounded Knee Massacre",
     "pt": "Massacre de Wounded Knee"
+  },
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-10-17"
   },
   "sources": [
     {
@@ -54,5 +54,6 @@
   "place": "wounded-knee-creek",
   "region": null,
   "regionNote": null,
+  "parent": "native-american-genocide-in-the-united-states",
   "actors": []
 }

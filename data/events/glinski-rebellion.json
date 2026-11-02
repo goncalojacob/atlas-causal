@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-30",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q3917333",
+  "wikipedia": {
+    "en": "Glinski rebellion"
+  },
   "sitelinks": {
     "count": 8,
     "on": "2026-10-30"
-  },
-  "wikipedia": {
-    "en": "Glinski rebellion"
   },
   "sources": [
     {
@@ -53,5 +53,6 @@
   "place": null,
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "muscovite-lithuanian-wars",
   "actors": []
 }

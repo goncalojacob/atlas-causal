@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q123210",
-  "sitelinks": {
-    "count": 38,
-    "on": "2026-10-28"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q123210",
   "wikipedia": {
     "en": "Russo-Turkish War (1787–1792)",
     "pt": "Guerra Russo-Turca (1787–1792)"
+  },
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-10-28"
   },
   "sources": [
     {
@@ -55,6 +55,7 @@
   "place": "eastern-europe",
   "region": null,
   "regionNote": null,
+  "parent": "russo-turkish-wars",
   "category": "war",
   "actors": []
 }

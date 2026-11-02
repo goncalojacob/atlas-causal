@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-14",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q329203",
-  "sitelinks": {
-    "count": 52,
-    "on": "2026-10-14"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q329203",
   "wikipedia": {
     "en": "First Boer War",
     "pt": "Primeira Guerra dos Bôeres"
+  },
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-10-14"
   },
   "sources": [
     {
@@ -55,6 +55,7 @@
   "place": "transvaal-colony",
   "region": null,
   "regionNote": null,
+  "parent": "south-african-wars-1879-1915",
   "category": "war",
   "actors": []
 }

@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q123411905",
+  "wikipedia": {
+    "en": "Battle of Jigjiga (1900)"
+  },
   "sitelinks": {
     "count": 4,
     "on": "2026-10-29"
-  },
-  "wikipedia": {
-    "en": "Battle of Jigjiga (1900)"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "jijiga",
   "region": null,
   "regionNote": null,
+  "parent": "menelik-ii-s-conquests",
   "category": "war",
   "actors": []
 }

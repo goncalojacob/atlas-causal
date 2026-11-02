@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q2701253",
-  "sitelinks": {
-    "count": 14,
-    "on": "2026-10-29"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q2701253",
   "wikipedia": {
     "en": "Siege of Calais (1558)",
     "pt": "Cerco de Calais (1558)"
+  },
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-29"
   },
   "sources": [
     {
@@ -55,6 +55,7 @@
   "place": "calais",
   "region": null,
   "regionNote": null,
+  "parent": "italian-war-of-1551-1559",
   "category": "war",
   "actors": []
 }

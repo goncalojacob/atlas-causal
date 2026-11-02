@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-16",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q700841",
-  "sitelinks": {
-    "count": 28,
-    "on": "2026-10-16"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q700841",
   "wikipedia": {
     "en": "Ottoman–Safavid War (1532–1555)",
     "pt": "Guerra Otomano-Safávida de 1532–1555"
+  },
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-16"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "mesopotamia",
   "region": null,
   "regionNote": null,
+  "parent": "ottoman-persian-wars",
   "category": "war",
   "actors": []
 }

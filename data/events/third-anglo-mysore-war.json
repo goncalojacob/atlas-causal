@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-15",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q617350",
+  "wikipedia": {
+    "en": "Third Anglo-Mysore War"
+  },
   "sitelinks": {
     "count": 20,
     "on": "2026-10-15"
-  },
-  "wikipedia": {
-    "en": "Third Anglo-Mysore War"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "south-india",
   "region": null,
   "regionNote": null,
+  "parent": "anglo-mysore-wars",
   "category": "war",
   "actors": []
 }
