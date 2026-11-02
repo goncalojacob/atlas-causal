@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "cold-war--mozambican-civil-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mozambican Civil War\", revision 1378759830"
+    }
+  ],
+  "from": "cold-war",
+  "to": "mozambican-civil-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Mozambican Civil War\" (revision 1378759830) says: \"The Mozambican Civil War (Portuguese: Guerra Civil Moçambicana) was a civil war fought in Mozambique from 1977 to 1992 due to a combination of local strife and the polarizing effects of Cold War politics.\" The edge reads that sentence as: Cold War caused Mozambican Civil War, and nothing more.",
+  "dispute": null
+}

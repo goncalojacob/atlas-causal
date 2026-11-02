@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "polish-russian-war-1654-1667--northern-war-of-1655-1660--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Polish–Russian War (1654–1667)\", revision 1374520415"
+    }
+  ],
+  "from": "polish-russian-war-1654-1667",
+  "to": "northern-war-of-1655-1660",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Polish–Russian War (1654–1667)\" (revision 1374520415) says: \"The Russians advance into the Polish–Lithuanian Commonwealth led to the kingdom of Sweden invading Poland in 1655 under King Charles X.\" The edge reads that sentence as: Polish–Russian War (1654–1667) caused Northern War of 1655–1660, and nothing more.",
+  "dispute": null
+}

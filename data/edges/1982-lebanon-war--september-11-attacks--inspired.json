@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "1982-lebanon-war--september-11-attacks--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"September 11 attacks\", revision 1379360542"
+    }
+  ],
+  "from": "1982-lebanon-war",
+  "to": "september-11-attacks",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"September 11 attacks\" (revision 1379360542) says: \"In the 2004 video, he said he was inspired to destroy the World Trade Center's Twin Towers after watching the destruction of towers in Lebanon by Israel during the 1982 Lebanon War.\" The edge reads that sentence as: 1982 Lebanon War inspired September 11 attacks, and nothing more.",
+  "dispute": null
+}

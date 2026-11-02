@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "flight-to-varennes--execution-of-louis-xvi--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Flight to Varennes\", revision 1366319196"
+    }
+  ],
+  "from": "flight-to-varennes",
+  "to": "execution-of-louis-xvi",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Flight to Varennes\" (revision 1366319196) says: \"The King's attempted flight provoked charges of treason that ultimately led to his execution in 1793.\" The edge reads that sentence as: Flight to Varennes caused Execution of Louis XVI, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "akkerman-convention--russo-turkish-war-1828-1829--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Akkerman Convention\", revision 1371684860"
+    }
+  ],
+  "from": "akkerman-convention",
+  "to": "russo-turkish-war-1828-1829",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Akkerman Convention\" (revision 1371684860) says: \"Sultan Mahmud II's repudiation of the convention triggered the Russo-Turkish War (1828–1829).\" The edge reads that sentence as: Akkerman Convention caused Russo-Turkish War (1828–1829), and nothing more.",
+  "dispute": null
+}

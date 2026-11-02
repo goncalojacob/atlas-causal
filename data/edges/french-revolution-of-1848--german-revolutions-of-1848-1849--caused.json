@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "french-revolution-of-1848--german-revolutions-of-1848-1849--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French Revolution of 1848\", revision 1380426436"
+    }
+  ],
+  "from": "french-revolution-of-1848",
+  "to": "german-revolutions-of-1848-1849",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"French Revolution of 1848\" (revision 1380426436) says: \"As one of its immediate effects, it sparked a wave of revolutions in the German states.\" The edge reads that sentence as: French Revolution of 1848 caused German revolutions of 1848–1849, and nothing more.",
+  "dispute": null
+}

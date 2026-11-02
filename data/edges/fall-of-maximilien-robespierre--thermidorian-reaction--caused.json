@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "fall-of-maximilien-robespierre--thermidorian-reaction--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fall of Maximilien Robespierre\", revision 1370782731"
+    }
+  ],
+  "from": "fall-of-maximilien-robespierre",
+  "to": "thermidorian-reaction",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Fall of Maximilien Robespierre\" (revision 1370782731) says: \"Robespierre's fall led to the implementation of more moderate policies during the Thermidorian Reaction, which soon followed.\" The edge reads that sentence as: Fall of Maximilien Robespierre caused Thermidorian Reaction, and nothing more.",
+  "dispute": null
+}

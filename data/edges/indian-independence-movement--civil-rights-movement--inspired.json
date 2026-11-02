@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "indian-independence-movement--civil-rights-movement--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Civil rights movement\", revision 1378280882"
+    }
+  ],
+  "from": "indian-independence-movement",
+  "to": "civil-rights-movement",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Civil rights movement\" (revision 1378280882) says: \"The philosophical basis of the practice of nonviolence in the American civil rights movement was largely inspired by Mahatma Gandhi's \"non-cooperation\" policies during his involvement in the Indian independence movement, which were intended to gain attention so that the public would either \"intervene in advance\" or \"provide public pressure in support of the action to be taken\" (Erikson, 415).\" The edge reads that sentence as: Indian independence movement inspired Civil rights movement, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "chernobyl-disaster--revolutions-of-1989--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolutions of 1989\", revision 1375849372"
+    }
+  ],
+  "from": "chernobyl-disaster",
+  "to": "revolutions-of-1989",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Revolutions of 1989\" (revision 1375849372) says: \"The Chernobyl disaster in April 1986 had major political and social effects that catalyzed or at least partially caused the revolutions of 1989.\" The edge reads that sentence as: Chernobyl disaster caused Revolutions of 1989, and nothing more.",
+  "dispute": null
+}

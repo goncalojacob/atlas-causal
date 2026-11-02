@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "brabant-revolution--belgian-revolution--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Brabant Revolution\", revision 1379946324"
+    }
+  ],
+  "from": "brabant-revolution",
+  "to": "belgian-revolution",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Brabant Revolution\" (revision 1379946324) says: \"The Belgian Revolution, which broke out on 25 August 1830 after the performance of a nationalist opera in Brussels led to a minor insurrection among the capital's bourgeoisie, was inspired to some extent by the Brabant Revolution.\" The edge reads that sentence as: Brabant Revolution inspired Belgian Revolution, and nothing more.",
+  "dispute": null
+}

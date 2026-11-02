@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "irish-rebellion-of-1798--easter-rising--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Easter Rising\", revision 1375867431"
+    }
+  ],
+  "from": "irish-rebellion-of-1798",
+  "to": "easter-rising",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Easter Rising\" (revision 1375867431) says: \"The union was closely preceded by and formed partly in response to the Irish Rebellion of 1798 – whose centenary would prove an influence on the Easter Rising.\" The edge reads that sentence as: Irish Rebellion of 1798 inspired Easter Rising, and nothing more.",
+  "dispute": null
+}

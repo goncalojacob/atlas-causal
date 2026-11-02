@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "urabi-revolt--anglo-egyptian-war--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Egyptian War\", revision 1379563388"
+    }
+  ],
+  "from": "urabi-revolt",
+  "to": "anglo-egyptian-war",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Anglo-Egyptian War\" (revision 1379563388) says: \"In their 1961 essay Africa and the Victorians, Ronald Robinson and John Gallagher argue that the British invasion was ordered to quell the perceived anarchy of the ‘Urabi Revolt, as well as to protect British control over the Suez Canal in order to maintain its shipping route to the Indian Ocean.\" The edge reads that sentence as: Anglo-Egyptian War was a response to Urabi revolt, and nothing more.",
+  "dispute": null
+}

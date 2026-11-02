@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-buxar--treaty-of-allahabad--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Buxar\", revision 1381670071"
+    }
+  ],
+  "from": "battle-of-buxar",
+  "to": "treaty-of-allahabad",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Buxar\" (revision 1381670071) says: \"The defeated Indian rulers were forced to sign the Treaty of Allahabad, ending the war in 1765.\" The edge reads that sentence as: Battle of Buxar caused Treaty of Allahabad, and nothing more.",
+  "dispute": null
+}

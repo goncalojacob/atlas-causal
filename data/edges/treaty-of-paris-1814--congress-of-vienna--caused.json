@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "treaty-of-paris-1814--congress-of-vienna--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Paris (1814)\", revision 1379456047"
+    }
+  ],
+  "from": "treaty-of-paris-1814",
+  "to": "congress-of-vienna",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Treaty of Paris (1814)\" (revision 1379456047) says: \"This provision resulted in the Congress of Vienna, held between September 1814 and June 1815.\" The edge reads that sentence as: Treaty of Paris (1814) caused Congress of Vienna, and nothing more.",
+  "dispute": null
+}

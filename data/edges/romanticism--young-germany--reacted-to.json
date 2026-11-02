@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "romanticism--young-germany--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Young Germany\", revision 1369303321"
+    }
+  ],
+  "from": "romanticism",
+  "to": "young-germany",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Young Germany\" (revision 1369303321) says: \"The ideology produced poets, thinkers and journalists, all of whom reacted against the introspection and particularism of Romanticism in the national literature, which had resulted in a total separation of literature from the actualities of life.\" The edge reads that sentence as: Young Germany was a response to Romanticism, and nothing more.",
+  "dispute": null
+}

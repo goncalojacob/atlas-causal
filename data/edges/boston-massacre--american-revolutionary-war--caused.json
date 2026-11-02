@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "boston-massacre--american-revolutionary-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Boston Massacre\", revision 1380540155"
+    }
+  ],
+  "from": "boston-massacre",
+  "to": "american-revolutionary-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Boston Massacre\" (revision 1380540155) says: \"It is widely perceived as a significant event leading to the violent rebellion that followed.\" The edge reads that sentence as: Boston Massacre caused American Revolutionary War, and nothing more.",
+  "dispute": null
+}

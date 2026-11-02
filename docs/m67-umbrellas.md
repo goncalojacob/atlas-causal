@@ -9286,3 +9286,15 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-11-02: `battle-of-kup`, filed under `indian-campaign-of-ahmad-shah-durrani` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-31-asia-539`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `fall-of-maximilien-robespierre`, filed under `french-revolution` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-02-europe-155`, rank `edges-from-articles`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `flight-to-varennes`, filed under `french-revolution` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-02-europe-162`, rank `edges-from-articles`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `civil-constitution-of-the-clergy`, filed under `french-revolution` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-02-europe-164`, rank `edges-from-articles`. Its span and its subject put it inside the umbrella.

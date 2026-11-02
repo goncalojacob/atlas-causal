@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "first-anglo-dutch-war--treaty-of-westminster-1654--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Anglo-Dutch War\", revision 1375831063"
+    }
+  ],
+  "from": "first-anglo-dutch-war",
+  "to": "treaty-of-westminster-1654",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"First Anglo-Dutch War\" (revision 1375831063) says: \"The economic damage eventually led to the Treaty of Westminster in 1654 where the Dutch were forced to make minor concessions to the Commonwealth.\" The edge reads that sentence as: First Anglo-Dutch War caused Treaty of Westminster (1654), and nothing more.",
+  "dispute": null
+}

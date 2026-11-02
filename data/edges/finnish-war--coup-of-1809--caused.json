@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "finnish-war--coup-of-1809--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Finnish War\", revision 1370618279"
+    }
+  ],
+  "from": "finnish-war",
+  "to": "coup-of-1809",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Finnish War\" (revision 1370618279) says: \"As Russian forces embarked upon their unprecedented march across the frozen gulf, King Gustav IV, accused of fatal mistakes leading to the loss of Finland—was dethroned by a coup in Stockholm on 13 March, and his uncle was proclaimed Charles XIII of Sweden.\" The edge reads that sentence as: Finnish War caused Coup of 1809, and nothing more.",
+  "dispute": null
+}

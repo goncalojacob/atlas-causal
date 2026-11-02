@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "september-11-attacks--war-on-terror--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War on terror\", revision 1379084421"
+    }
+  ],
+  "from": "september-11-attacks",
+  "to": "war-on-terror",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"War on terror\" (revision 1379084421) says: \"The war on terror, officially the Global War on Terrorism (GWOT), is a global military campaign initiated by the United States in response to the September 11 attacks in 2001.\" The edge reads that sentence as: War on terror was a response to September 11 attacks, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "auspicious-incident--akkerman-convention--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Auspicious Incident\", revision 1381089790"
+    }
+  ],
+  "from": "auspicious-incident",
+  "to": "akkerman-convention",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Auspicious Incident\" (revision 1381089790) says: \"Taking advantage of the temporary weakness in the military position of the Ottoman Empire following the Auspicious Incident, the Russian Empire forced the Ottomans to accept the Akkerman Convention on 7 October 1826.\" The edge reads that sentence as: Auspicious Incident made Akkerman Convention possible, and nothing more.",
+  "dispute": null
+}

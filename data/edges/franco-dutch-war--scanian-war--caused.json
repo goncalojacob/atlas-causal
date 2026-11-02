@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "franco-dutch-war--scanian-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Scanian War\", revision 1380129440"
+    }
+  ],
+  "from": "franco-dutch-war",
+  "to": "scanian-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Scanian War\" (revision 1380129440) says: \"The war was prompted by Swedish involvement in the Franco-Dutch War.\" The edge reads that sentence as: Franco-Dutch War caused Scanian War, and nothing more.",
+  "dispute": null
+}

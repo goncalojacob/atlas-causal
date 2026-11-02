@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "oregon-treaty--pig-war-1859--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Oregon Treaty\", revision 1375247732"
+    }
+  ],
+  "from": "oregon-treaty",
+  "to": "pig-war-1859",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Oregon Treaty\" (revision 1375247732) says: \"Vague and ambiguous language led to the Pig War.\" The edge reads that sentence as: Oregon Treaty caused Pig War (1859), and nothing more.",
+  "dispute": null
+}
