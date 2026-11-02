@@ -3,622 +3,3007 @@
   "kind": "import-queue",
   "items": [
     {
-      "id": "2026-10-31-asia-490",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q104843541",
-      "title": "Burmese–Siamese War (1802–1805)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-491",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q104901667",
-      "title": "Burmese–Siamese War (1792–1794)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-africa-492",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q105616758",
-      "title": "First Battle of Boudouaou",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-493",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q106514633",
-      "title": "Burmese–Siamese War (1609–1622)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-494",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q106581319",
-      "title": "Battle of Vasilika (Thessaloniki)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-495",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q107404796",
-      "title": "Burmese–Siamese War (1797–1798)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-496",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q10747221",
-      "title": "Đại Việt–Lan Xang War (1479–1484)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-497",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q10876023",
-      "title": "Convention of Calcutta",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-498",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q110876689",
-      "title": "Siamese conquest of Lanna (1774–1775)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-africa-499",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q111699632",
-      "title": "Black Week",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-africa-500",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q115762235",
-      "title": "Anglo-Egyptian Slave Trade Convention",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-501",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q1181756",
-      "title": "Deccan Riots",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-europe-502",
-      "planned": "2026-10-31T20:38Z",
+      "id": "2026-11-02-europe-018",
+      "planned": "2026-11-02T15:25Z",
       "lane": "europe",
       "writer": "A",
-      "qid": "Q119166490",
-      "title": "Siege of Bender (1738)",
-      "parents": [],
+      "existing": "austro-turkish-war-1663-1664",
+      "title": "Austro-Turkish War (1663–1664)",
+      "parents": [
+        "ottoman-habsburg-wars"
+      ],
       "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+      "rank": "child-of:ottoman-habsburg-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Habsburg wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
     },
     {
-      "id": "2026-10-31-europe-503",
-      "planned": "2026-10-31T20:38Z",
+      "id": "2026-11-02-europe-019",
+      "planned": "2026-11-02T15:25Z",
       "lane": "europe",
       "writer": "B",
-      "qid": "Q119166596",
-      "title": "Siege of Anapa (1828)",
-      "parents": [],
+      "existing": "austro-turkish-war-1716-1718",
+      "title": "Austro-Turkish War (1716–1718)",
+      "parents": [
+        "ottoman-habsburg-wars"
+      ],
       "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+      "rank": "child-of:ottoman-habsburg-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Habsburg wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
     },
     {
-      "id": "2026-10-31-africa-504",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "africa",
+      "id": "2026-11-02-europe-020",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
       "writer": "A",
-      "qid": "Q12232059",
-      "title": "Tunisian Constitution of 1861",
-      "parents": [],
+      "existing": "battle-of-formentera",
+      "title": "Battle of Formentera",
+      "parents": [
+        "ottoman-habsburg-wars"
+      ],
       "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+      "rank": "child-of:ottoman-habsburg-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Habsburg wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
     },
     {
-      "id": "2026-10-31-americas-505",
-      "planned": "2026-10-31T20:38Z",
+      "id": "2026-11-02-europe-021",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-girolata",
+      "title": "Battle of Girolata",
+      "parents": [
+        "ottoman-habsburg-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-habsburg-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Habsburg wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-022",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "raid-of-the-balearic-islands-1558",
+      "title": "Raid of the Balearic Islands (1558)",
+      "parents": [
+        "ottoman-habsburg-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-habsburg-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Habsburg wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-023",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "rebellion-of-the-alpujarras-1568-1571",
+      "title": "Rebellion of the Alpujarras (1568–1571)",
+      "parents": [
+        "ottoman-habsburg-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-habsburg-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Habsburg wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-024",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "sack-of-mahon",
+      "title": "Sack of Mahón",
+      "parents": [
+        "ottoman-habsburg-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-habsburg-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Habsburg wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-025",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "siege-of-belgrade-1739",
+      "title": "Siege of Belgrade (1739)",
+      "parents": [
+        "ottoman-habsburg-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-habsburg-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Habsburg wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-026",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "siege-of-castelnuovo",
+      "title": "Siege of Castelnuovo",
+      "parents": [
+        "ottoman-habsburg-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-habsburg-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Habsburg wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-027",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "siege-of-coron-1533-1534",
+      "title": "Siege of Coron (1533–1534)",
+      "parents": [
+        "ottoman-habsburg-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-habsburg-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Habsburg wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-028",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "treaty-of-belgrade",
+      "title": "Treaty of Belgrade",
+      "parents": [
+        "ottoman-habsburg-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-habsburg-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Habsburg wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-029",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-brienne",
+      "title": "Battle of Brienne",
+      "parents": [
+        "german-campaign-of-1813"
+      ],
+      "edges": [],
+      "rank": "child-of:german-campaign-of-1813",
+      "why": "Wikidata (P361, part of) puts this event inside \"German campaign of 1813\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-030",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-champaubert",
+      "title": "Battle of Champaubert",
+      "parents": [
+        "german-campaign-of-1813"
+      ],
+      "edges": [],
+      "rank": "child-of:german-campaign-of-1813",
+      "why": "Wikidata (P361, part of) puts this event inside \"German campaign of 1813\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-031",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-chateau-thierry-1814",
+      "title": "Battle of Château-Thierry (1814)",
+      "parents": [
+        "german-campaign-of-1813"
+      ],
+      "edges": [],
+      "rank": "child-of:german-campaign-of-1813",
+      "why": "Wikidata (P361, part of) puts this event inside \"German campaign of 1813\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-032",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-gro-beeren",
+      "title": "Battle of Großbeeren",
+      "parents": [
+        "german-campaign-of-1813"
+      ],
+      "edges": [],
+      "rank": "child-of:german-campaign-of-1813",
+      "why": "Wikidata (P361, part of) puts this event inside \"German campaign of 1813\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-033",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-hanau",
+      "title": "Battle of Hanau",
+      "parents": [
+        "german-campaign-of-1813"
+      ],
+      "edges": [],
+      "rank": "child-of:german-campaign-of-1813",
+      "why": "Wikidata (P361, part of) puts this event inside \"German campaign of 1813\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-034",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-laon",
+      "title": "Battle of Laon",
+      "parents": [
+        "german-campaign-of-1813"
+      ],
+      "edges": [],
+      "rank": "child-of:german-campaign-of-1813",
+      "why": "Wikidata (P361, part of) puts this event inside \"German campaign of 1813\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-035",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-leipzig",
+      "title": "Battle of Leipzig",
+      "parents": [
+        "german-campaign-of-1813"
+      ],
+      "edges": [],
+      "rank": "child-of:german-campaign-of-1813",
+      "why": "Wikidata (P361, part of) puts this event inside \"German campaign of 1813\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-036",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-lutzen-1813",
+      "title": "Battle of Lützen (1813)",
+      "parents": [
+        "german-campaign-of-1813"
+      ],
+      "edges": [],
+      "rank": "child-of:german-campaign-of-1813",
+      "why": "Wikidata (P361, part of) puts this event inside \"German campaign of 1813\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-037",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-paris-1814",
+      "title": "Battle of Paris (1814)",
+      "parents": [
+        "german-campaign-of-1813"
+      ],
+      "edges": [],
+      "rank": "child-of:german-campaign-of-1813",
+      "why": "Wikidata (P361, part of) puts this event inside \"German campaign of 1813\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-038",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-the-katzbach",
+      "title": "Battle of the Katzbach",
+      "parents": [
+        "german-campaign-of-1813"
+      ],
+      "edges": [],
+      "rank": "child-of:german-campaign-of-1813",
+      "why": "Wikidata (P361, part of) puts this event inside \"German campaign of 1813\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-004",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "1874-japanese-expedition-to-taiwan",
+      "title": "1874 Japanese expedition to Taiwan",
+      "parents": [
+        "meiji-era"
+      ],
+      "edges": [],
+      "rank": "child-of:meiji-era",
+      "why": "Wikidata (P527, has part) puts this event inside \"Meiji era\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-005",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "1895-japanese-invasion-of-taiwan",
+      "title": "1895 Japanese invasion of Taiwan",
+      "parents": [
+        "meiji-era"
+      ],
+      "edges": [],
+      "rank": "child-of:meiji-era",
+      "why": "Wikidata (P527, has part) puts this event inside \"Meiji era\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-006",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "battle-of-shiroyama",
+      "title": "Battle of Shiroyama",
+      "parents": [
+        "meiji-era"
+      ],
+      "edges": [],
+      "rank": "child-of:meiji-era",
+      "why": "Wikidata (P527, has part) puts this event inside \"Meiji era\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-007",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "boshin-war",
+      "title": "Boshin War",
+      "parents": [
+        "meiji-era"
+      ],
+      "edges": [],
+      "rank": "child-of:meiji-era",
+      "why": "Wikidata (P527, has part) puts this event inside \"Meiji era\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-008",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "first-sino-japanese-war",
+      "title": "First Sino-Japanese War",
+      "parents": [
+        "meiji-era"
+      ],
+      "edges": [],
+      "rank": "child-of:meiji-era",
+      "why": "Wikidata (P527, has part) puts this event inside \"Meiji era\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-009",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "ganghwa-island-incident",
+      "title": "Ganghwa Island incident",
+      "parents": [
+        "meiji-era"
+      ],
+      "edges": [],
+      "rank": "child-of:meiji-era",
+      "why": "Wikidata (P527, has part) puts this event inside \"Meiji era\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-010",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "meiji-restoration",
+      "title": "Meiji Restoration",
+      "parents": [
+        "meiji-era"
+      ],
+      "edges": [],
+      "rank": "child-of:meiji-era",
+      "why": "Wikidata (P527, has part) puts this event inside \"Meiji era\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-011",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "nagasaki-incident",
+      "title": "Nagasaki incident",
+      "parents": [
+        "meiji-era"
+      ],
+      "edges": [],
+      "rank": "child-of:meiji-era",
+      "why": "Wikidata (P527, has part) puts this event inside \"Meiji era\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-012",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "russo-japanese-war",
+      "title": "Russo-Japanese War",
+      "parents": [
+        "meiji-era"
+      ],
+      "edges": [],
+      "rank": "child-of:meiji-era",
+      "why": "Wikidata (P527, has part) puts this event inside \"Meiji era\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-013",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "sino-japanese-friendship-and-trade-treaty",
+      "title": "Sino-Japanese Friendship and Trade Treaty",
+      "parents": [
+        "meiji-era"
+      ],
+      "edges": [],
+      "rank": "child-of:meiji-era",
+      "why": "Wikidata (P361, part of) puts this event inside \"Meiji era\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-039",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-flores-1591",
+      "title": "Battle of Flores (1591)",
+      "parents": [
+        "eighty-years-war"
+      ],
+      "edges": [],
+      "rank": "child-of:eighty-years-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Eighty Years' War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-040",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-gravelines-1588",
+      "title": "Battle of Gravelines (1588)",
+      "parents": [
+        "eighty-years-war"
+      ],
+      "edges": [],
+      "rank": "child-of:eighty-years-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Eighty Years' War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-041",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "english-armada",
+      "title": "English Armada",
+      "parents": [
+        "eighty-years-war"
+      ],
+      "edges": [],
+      "rank": "child-of:eighty-years-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Eighty Years' War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-042",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "raid-on-mount-s-bay",
+      "title": "Raid on Mount's Bay",
+      "parents": [
+        "eighty-years-war"
+      ],
+      "edges": [],
+      "rank": "child-of:eighty-years-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Eighty Years' War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-043",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "second-spanish-armada",
+      "title": "Second Spanish Armada",
+      "parents": [
+        "eighty-years-war"
+      ],
+      "edges": [],
+      "rank": "child-of:eighty-years-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Eighty Years' War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-044",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "siege-of-amiens-1597",
+      "title": "Siege of Amiens (1597)",
+      "parents": [
+        "eighty-years-war"
+      ],
+      "edges": [],
+      "rank": "child-of:eighty-years-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Eighty Years' War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-045",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "siege-of-groenlo-1606",
+      "title": "Siege of Groenlo (1606)",
+      "parents": [
+        "eighty-years-war"
+      ],
+      "edges": [],
+      "rank": "child-of:eighty-years-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Eighty Years' War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-046",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "singeing-the-king-of-spain-s-beard",
+      "title": "Singeing the King of Spain's Beard",
+      "parents": [
+        "eighty-years-war"
+      ],
+      "edges": [],
+      "rank": "child-of:eighty-years-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Eighty Years' War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-047",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "third-spanish-armada",
+      "title": "Third Spanish Armada",
+      "parents": [
+        "eighty-years-war"
+      ],
+      "edges": [],
+      "rank": "child-of:eighty-years-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Eighty Years' War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-048",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "crimean-war",
+      "title": "Crimean War",
+      "parents": [
+        "russo-turkish-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-turkish-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Russo-Turkish wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-049",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "russo-turkish-war-1568-1570",
+      "title": "Russo-Turkish War (1568–1570)",
+      "parents": [
+        "russo-turkish-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-turkish-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Russo-Turkish wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-050",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "russo-turkish-war-1672-1681",
+      "title": "Russo-Turkish War (1672–1681)",
+      "parents": [
+        "russo-turkish-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-turkish-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Russo-Turkish wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-051",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "russo-turkish-war-1735-1739",
+      "title": "Russo-Turkish War (1735–1739)",
+      "parents": [
+        "russo-turkish-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-turkish-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Russo-Turkish wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-052",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "russo-turkish-war-1768-1774",
+      "title": "Russo-Turkish War (1768–1774)",
+      "parents": [
+        "russo-turkish-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-turkish-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Russo-Turkish wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-053",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "russo-turkish-war-1787-1792",
+      "title": "Russo-Turkish War (1787–1792)",
+      "parents": [
+        "russo-turkish-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-turkish-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Russo-Turkish wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-054",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "russo-turkish-war-1806-1812",
+      "title": "Russo-Turkish War (1806–1812)",
+      "parents": [
+        "russo-turkish-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-turkish-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Russo-Turkish wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-055",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "russo-turkish-war-1828-1829",
+      "title": "Russo-Turkish War (1828–1829)",
+      "parents": [
+        "russo-turkish-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-turkish-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Russo-Turkish wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-056",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "russo-turkish-war-1877-1878",
+      "title": "Russo-Turkish War (1877–1878)",
+      "parents": [
+        "russo-turkish-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-turkish-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Russo-Turkish wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-024",
+      "planned": "2026-11-02T15:25Z",
       "lane": "americas",
       "writer": "B",
-      "qid": "Q123419661",
-      "title": "Colla–Inca War",
-      "parents": [],
+      "existing": "battle-of-belmont",
+      "title": "Battle of Belmont",
+      "parents": [
+        "american-civil-war"
+      ],
       "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+      "rank": "child-of:american-civil-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"American Civil War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
     },
     {
-      "id": "2026-10-31-africa-506",
-      "planned": "2026-10-31T20:38Z",
+      "id": "2026-11-02-americas-025",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "battle-of-cane-hill",
+      "title": "Battle of Cane Hill",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:american-civil-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"American Civil War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-026",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "battle-of-cape-girardeau",
+      "title": "Battle of Cape Girardeau",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:american-civil-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"American Civil War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-027",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "battle-of-shiloh",
+      "title": "Battle of Shiloh",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:american-civil-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"American Civil War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-028",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "confederate-heartland-offensive",
+      "title": "Confederate Heartland Offensive",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:american-civil-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"American Civil War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-029",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "first-battle-of-lexington",
+      "title": "First Battle of Lexington",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:american-civil-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"American Civil War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-030",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "first-battle-of-newtonia",
+      "title": "First Battle of Newtonia",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:american-civil-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"American Civil War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-031",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "first-battle-of-springfield",
+      "title": "First Battle of Springfield",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:american-civil-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"American Civil War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-057",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "cologne-war",
+      "title": "Cologne War",
+      "parents": [
+        "european-wars-of-religion"
+      ],
+      "edges": [],
+      "rank": "child-of:european-wars-of-religion",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"European wars of religion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-058",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "eighty-years-war",
+      "title": "Eighty Years' War",
+      "parents": [
+        "european-wars-of-religion"
+      ],
+      "edges": [],
+      "rank": "child-of:european-wars-of-religion",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"European wars of religion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-059",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "french-wars-of-religion",
+      "title": "French Wars of Religion",
+      "parents": [
+        "european-wars-of-religion"
+      ],
+      "edges": [],
+      "rank": "child-of:european-wars-of-religion",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"European wars of religion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-060",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "german-peasants-war",
+      "title": "German Peasants' War",
+      "parents": [
+        "european-wars-of-religion"
+      ],
+      "edges": [],
+      "rank": "child-of:european-wars-of-religion",
+      "why": "Wikidata (P361, part of) puts this event inside \"European wars of religion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-061",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "huguenot-rebellions",
+      "title": "Huguenot rebellions",
+      "parents": [
+        "european-wars-of-religion"
+      ],
+      "edges": [],
+      "rank": "child-of:european-wars-of-religion",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"European wars of religion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-062",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "nine-years-war-ireland",
+      "title": "Nine Years' War (Ireland)",
+      "parents": [
+        "european-wars-of-religion"
+      ],
+      "edges": [],
+      "rank": "child-of:european-wars-of-religion",
+      "why": "Wikidata (P361, part of) puts this event inside \"European wars of religion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-063",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "schmalkaldic-war",
+      "title": "Schmalkaldic War",
+      "parents": [
+        "european-wars-of-religion"
+      ],
+      "edges": [],
+      "rank": "child-of:european-wars-of-religion",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"European wars of religion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-064",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "thirty-years-war",
+      "title": "Thirty Years' War",
+      "parents": [
+        "european-wars-of-religion"
+      ],
+      "edges": [],
+      "rank": "child-of:european-wars-of-religion",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"European wars of religion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-032",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "battle-of-coleto",
+      "title": "Battle of Coleto",
+      "parents": [
+        "texas-revolution"
+      ],
+      "edges": [],
+      "rank": "child-of:texas-revolution",
+      "why": "Wikidata (P361, part of) puts this event inside \"Texas Revolution\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-033",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "battle-of-concepcion",
+      "title": "Battle of Concepción",
+      "parents": [
+        "texas-revolution"
+      ],
+      "edges": [],
+      "rank": "child-of:texas-revolution",
+      "why": "Wikidata (P361, part of) puts this event inside \"Texas Revolution\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-034",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "battle-of-goliad",
+      "title": "Battle of Goliad",
+      "parents": [
+        "texas-revolution"
+      ],
+      "edges": [],
+      "rank": "child-of:texas-revolution",
+      "why": "Wikidata (P361, part of) puts this event inside \"Texas Revolution\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-035",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "battle-of-gonzales",
+      "title": "Battle of Gonzales",
+      "parents": [
+        "texas-revolution"
+      ],
+      "edges": [],
+      "rank": "child-of:texas-revolution",
+      "why": "Wikidata (P361, part of) puts this event inside \"Texas Revolution\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-036",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "battle-of-san-jacinto",
+      "title": "Battle of San Jacinto",
+      "parents": [
+        "texas-revolution"
+      ],
+      "edges": [],
+      "rank": "child-of:texas-revolution",
+      "why": "Wikidata (P361, part of) puts this event inside \"Texas Revolution\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-037",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "battle-of-san-patricio",
+      "title": "Battle of San Patricio",
+      "parents": [
+        "texas-revolution"
+      ],
+      "edges": [],
+      "rank": "child-of:texas-revolution",
+      "why": "Wikidata (P361, part of) puts this event inside \"Texas Revolution\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-038",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "grass-fight",
+      "title": "Grass Fight",
+      "parents": [
+        "texas-revolution"
+      ],
+      "edges": [],
+      "rank": "child-of:texas-revolution",
+      "why": "Wikidata (P361, part of) puts this event inside \"Texas Revolution\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-039",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "siege-of-bexar",
+      "title": "Siege of Béxar",
+      "parents": [
+        "texas-revolution"
+      ],
+      "edges": [],
+      "rank": "child-of:texas-revolution",
+      "why": "Wikidata (P361, part of) puts this event inside \"Texas Revolution\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-065",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-almenar",
+      "title": "Battle of Almenar",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "Wikidata (P361, part of) puts this event inside \"War of the Spanish Succession\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-066",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-montjuic-1705",
+      "title": "Battle of Montjuïc (1705)",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "Wikidata (P361, part of) puts this event inside \"War of the Spanish Succession\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-067",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-saragossa",
+      "title": "Battle of Saragossa",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "Wikidata (P361, part of) puts this event inside \"War of the Spanish Succession\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-068",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "siege-of-barcelona-1705",
+      "title": "Siege of Barcelona (1705)",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "Wikidata (P361, part of) puts this event inside \"War of the Spanish Succession\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-069",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "siege-of-barcelona-1706",
+      "title": "Siege of Barcelona (1706)",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "Wikidata (P361, part of) puts this event inside \"War of the Spanish Succession\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-070",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "siege-of-xativa-1707",
+      "title": "Siege of Xàtiva (1707)",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "Wikidata (P361, part of) puts this event inside \"War of the Spanish Succession\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-071",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "war-of-the-catalans",
+      "title": "War of the Catalans",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "Wikidata (P361, part of) puts this event inside \"War of the Spanish Succession\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-014",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "battle-of-gulnabad",
+      "title": "Battle of Gulnabad",
+      "parents": [
+        "campaigns-of-nader-shah"
+      ],
+      "edges": [],
+      "rank": "child-of:campaigns-of-nader-shah",
+      "why": "Wikidata (P361, part of) puts this event inside \"Campaigns of Nader Shah\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-015",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "battle-of-kirkuk-1733",
+      "title": "Battle of Kirkuk (1733)",
+      "parents": [
+        "campaigns-of-nader-shah"
+      ],
+      "edges": [],
+      "rank": "child-of:campaigns-of-nader-shah",
+      "why": "Wikidata (P361, part of) puts this event inside \"Campaigns of Nader Shah\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-016",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "battle-of-murche-khort",
+      "title": "Battle of Murche-Khort",
+      "parents": [
+        "campaigns-of-nader-shah"
+      ],
+      "edges": [],
+      "rank": "child-of:campaigns-of-nader-shah",
+      "why": "Wikidata (P361, part of) puts this event inside \"Campaigns of Nader Shah\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-017",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "nader-shah-s-invasion-of-india",
+      "title": "Nader Shah's invasion of India",
+      "parents": [
+        "campaigns-of-nader-shah"
+      ],
+      "edges": [],
+      "rank": "child-of:campaigns-of-nader-shah",
+      "why": "Wikidata (P361, part of) puts this event inside \"Campaigns of Nader Shah\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-018",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "siege-of-isfahan",
+      "title": "Siege of Isfahan",
+      "parents": [
+        "campaigns-of-nader-shah"
+      ],
+      "edges": [],
+      "rank": "child-of:campaigns-of-nader-shah",
+      "why": "Wikidata (P361, part of) puts this event inside \"Campaigns of Nader Shah\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-019",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "siege-of-kandahar",
+      "title": "Siege of Kandahar",
+      "parents": [
+        "campaigns-of-nader-shah"
+      ],
+      "edges": [],
+      "rank": "child-of:campaigns-of-nader-shah",
+      "why": "Wikidata (P361, part of) puts this event inside \"Campaigns of Nader Shah\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-040",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "acaxee-rebellion",
+      "title": "Acaxee Rebellion",
+      "parents": [
+        "list-of-indigenous-rebellions-in-mexico-and-central-america"
+      ],
+      "edges": [],
+      "rank": "child-of:list-of-indigenous-rebellions-i",
+      "why": "Wikidata (P361, part of) puts this event inside \"List of Indigenous rebellions in Mexico and Central America\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-041",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "caste-war-of-yucatan",
+      "title": "Caste War of Yucatán",
+      "parents": [
+        "list-of-indigenous-rebellions-in-mexico-and-central-america"
+      ],
+      "edges": [],
+      "rank": "child-of:list-of-indigenous-rebellions-i",
+      "why": "Wikidata (P361, part of) puts this event inside \"List of Indigenous rebellions in Mexico and Central America\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-042",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "comanche-mexico-wars",
+      "title": "Comanche–Mexico Wars",
+      "parents": [
+        "list-of-indigenous-rebellions-in-mexico-and-central-america"
+      ],
+      "edges": [],
+      "rank": "child-of:list-of-indigenous-rebellions-i",
+      "why": "Wikidata (P361, part of) puts this event inside \"List of Indigenous rebellions in Mexico and Central America\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-043",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "mixton-war",
+      "title": "Mixtón War",
+      "parents": [
+        "list-of-indigenous-rebellions-in-mexico-and-central-america"
+      ],
+      "edges": [],
+      "rank": "child-of:list-of-indigenous-rebellions-i",
+      "why": "Wikidata (P361, part of) puts this event inside \"List of Indigenous rebellions in Mexico and Central America\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-044",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "tepehuan-revolt",
+      "title": "Tepehuán Revolt",
+      "parents": [
+        "list-of-indigenous-rebellions-in-mexico-and-central-america"
+      ],
+      "edges": [],
+      "rank": "child-of:list-of-indigenous-rebellions-i",
+      "why": "Wikidata (P361, part of) puts this event inside \"List of Indigenous rebellions in Mexico and Central America\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-045",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "yaqui-wars",
+      "title": "Yaqui Wars",
+      "parents": [
+        "list-of-indigenous-rebellions-in-mexico-and-central-america"
+      ],
+      "edges": [],
+      "rank": "child-of:list-of-indigenous-rebellions-i",
+      "why": "Wikidata (P361, part of) puts this event inside \"List of Indigenous rebellions in Mexico and Central America\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-072",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-mokra-1445",
+      "title": "Battle of Mokra (1445)",
+      "parents": [
+        "skanderbeg-s-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:skanderbeg-s-rebellion",
+      "why": "Wikidata (P361, part of) puts this event inside \"Skanderbeg's rebellion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-073",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-oranik-1456",
+      "title": "Battle of Oranik (1456)",
+      "parents": [
+        "skanderbeg-s-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:skanderbeg-s-rebellion",
+      "why": "Wikidata (P361, part of) puts this event inside \"Skanderbeg's rebellion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-074",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-otonete",
+      "title": "Battle of Otonetë",
+      "parents": [
+        "skanderbeg-s-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:skanderbeg-s-rebellion",
+      "why": "Wikidata (P361, part of) puts this event inside \"Skanderbeg's rebellion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-075",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-torvioll",
+      "title": "Battle of Torvioll",
+      "parents": [
+        "skanderbeg-s-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:skanderbeg-s-rebellion",
+      "why": "Wikidata (P361, part of) puts this event inside \"Skanderbeg's rebellion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-076",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "siege-of-kruje-1450",
+      "title": "Siege of Krujë (1450)",
+      "parents": [
+        "skanderbeg-s-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:skanderbeg-s-rebellion",
+      "why": "Wikidata (P361, part of) puts this event inside \"Skanderbeg's rebellion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-077",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "siege-of-svetigrad",
+      "title": "Siege of Svetigrad",
+      "parents": [
+        "skanderbeg-s-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:skanderbeg-s-rebellion",
+      "why": "Wikidata (P361, part of) puts this event inside \"Skanderbeg's rebellion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-078",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-saint-denis-1567",
+      "title": "Battle of Saint-Denis (1567)",
+      "parents": [
+        "french-wars-of-religion"
+      ],
+      "edges": [],
+      "rank": "child-of:french-wars-of-religion",
+      "why": "Wikidata (P361, part of) puts this event inside \"French Wars of Religion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-079",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "edict-of-amboise",
+      "title": "Edict of Amboise",
+      "parents": [
+        "french-wars-of-religion"
+      ],
+      "edges": [],
+      "rank": "child-of:french-wars-of-religion",
+      "why": "Wikidata (P361, part of) puts this event inside \"French Wars of Religion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-080",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "edict-of-beaulieu",
+      "title": "Edict of Beaulieu",
+      "parents": [
+        "french-wars-of-religion"
+      ],
+      "edges": [],
+      "rank": "child-of:french-wars-of-religion",
+      "why": "Wikidata (P361, part of) puts this event inside \"French Wars of Religion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-081",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "massacre-of-vassy",
+      "title": "Massacre of Vassy",
+      "parents": [
+        "french-wars-of-religion"
+      ],
+      "edges": [],
+      "rank": "child-of:french-wars-of-religion",
+      "why": "Wikidata (P361, part of) puts this event inside \"French Wars of Religion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-082",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "michelade",
+      "title": "Michelade",
+      "parents": [
+        "french-wars-of-religion"
+      ],
+      "edges": [],
+      "rank": "child-of:french-wars-of-religion",
+      "why": "Wikidata (P361, part of) puts this event inside \"French Wars of Religion\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-083",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-gorjani",
+      "title": "Battle of Gorjani",
+      "parents": [
+        "habsburg-ottoman-wars-in-hungary-1526-1568"
+      ],
+      "edges": [],
+      "rank": "child-of:habsburg-ottoman-wars-in-hungar",
+      "why": "Wikidata (P361, part of) puts this event inside \"Habsburg–Ottoman wars in Hungary (1526–1568)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-084",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "habsburg-ottoman-war-of-1529-1533",
+      "title": "Habsburg–Ottoman war of 1529–1533",
+      "parents": [
+        "habsburg-ottoman-wars-in-hungary-1526-1568"
+      ],
+      "edges": [],
+      "rank": "child-of:habsburg-ottoman-wars-in-hungar",
+      "why": "Wikidata (P361, part of) puts this event inside \"Habsburg–Ottoman wars in Hungary (1526–1568)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-085",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "habsburg-ottoman-war-of-1540-1547",
+      "title": "Habsburg–Ottoman war of 1540–1547",
+      "parents": [
+        "habsburg-ottoman-wars-in-hungary-1526-1568"
+      ],
+      "edges": [],
+      "rank": "child-of:habsburg-ottoman-wars-in-hungar",
+      "why": "Wikidata (P361, part of) puts this event inside \"Habsburg–Ottoman wars in Hungary (1526–1568)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-086",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "habsburg-ottoman-war-of-1551-1562",
+      "title": "Habsburg–Ottoman war of 1551–1562",
+      "parents": [
+        "habsburg-ottoman-wars-in-hungary-1526-1568"
+      ],
+      "edges": [],
+      "rank": "child-of:habsburg-ottoman-wars-in-hungar",
+      "why": "Wikidata (P361, part of) puts this event inside \"Habsburg–Ottoman wars in Hungary (1526–1568)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-087",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "siege-of-koszeg",
+      "title": "Siege of Kőszeg",
+      "parents": [
+        "habsburg-ottoman-wars-in-hungary-1526-1568"
+      ],
+      "edges": [],
+      "rank": "child-of:habsburg-ottoman-wars-in-hungar",
+      "why": "Wikidata (P361, part of) puts this event inside \"Habsburg–Ottoman wars in Hungary (1526–1568)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-046",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "cisplatine-war",
+      "title": "Cisplatine War",
+      "parents": [
+        "platine-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:platine-wars",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Platine Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-047",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "paraguayan-war",
+      "title": "Paraguayan War",
+      "parents": [
+        "platine-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:platine-wars",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Platine Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-048",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "portuguese-conquest-of-the-banda-oriental",
+      "title": "Portuguese conquest of the Banda Oriental",
+      "parents": [
+        "platine-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:platine-wars",
+      "why": "Wikidata (P527, has part) puts this event inside \"Platine Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-049",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "uruguayan-civil-war",
+      "title": "Uruguayan Civil War",
+      "parents": [
+        "platine-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:platine-wars",
+      "why": "Wikidata (P527, has part) puts this event inside \"Platine Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-050",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "uruguayan-war",
+      "title": "Uruguayan War",
+      "parents": [
+        "platine-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:platine-wars",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Platine Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-088",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-hogland",
+      "title": "Battle of Hogland",
+      "parents": [
+        "russo-swedish-war-1788-1790"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-swedish-war-1788-1790",
+      "why": "Wikidata (P361, part of) puts this event inside \"Russo-Swedish War (1788–1790)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-089",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-reval",
+      "title": "Battle of Reval",
+      "parents": [
+        "russo-swedish-war-1788-1790"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-swedish-war-1788-1790",
+      "why": "Wikidata (P361, part of) puts this event inside \"Russo-Swedish War (1788–1790)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-090",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-svensksund",
+      "title": "Battle of Svensksund",
+      "parents": [
+        "russo-swedish-war-1788-1790"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-swedish-war-1788-1790",
+      "why": "Wikidata (P361, part of) puts this event inside \"Russo-Swedish War (1788–1790)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-091",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-vyborg-bay-1790",
+      "title": "Battle of Vyborg Bay (1790)",
+      "parents": [
+        "russo-swedish-war-1788-1790"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-swedish-war-1788-1790",
+      "why": "Wikidata (P361, part of) puts this event inside \"Russo-Swedish War (1788–1790)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-092",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "theatre-war",
+      "title": "Theatre War",
+      "parents": [
+        "russo-swedish-war-1788-1790"
+      ],
+      "edges": [],
+      "rank": "child-of:russo-swedish-war-1788-1790",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Russo-Swedish War (1788–1790)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-020",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "first-anglo-mysore-war",
+      "title": "First Anglo-Mysore War",
+      "parents": [
+        "anglo-mysore-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-mysore-wars",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Anglo-Mysore wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-021",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "fourth-anglo-mysore-war",
+      "title": "Fourth Anglo-Mysore War",
+      "parents": [
+        "anglo-mysore-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-mysore-wars",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Anglo-Mysore wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-022",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "second-anglo-mysore-war",
+      "title": "Second Anglo-Mysore War",
+      "parents": [
+        "anglo-mysore-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-mysore-wars",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Anglo-Mysore wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-023",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "third-anglo-mysore-war",
+      "title": "Third Anglo-Mysore War",
+      "parents": [
+        "anglo-mysore-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-mysore-wars",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Anglo-Mysore wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-024",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "1858-treaty-of-amity-and-commerce-between-the-netherlands-and-japan",
+      "title": "1858 Treaty of Amity and Commerce between the Netherlands and Japan",
+      "parents": [
+        "ansei-treaties"
+      ],
+      "edges": [],
+      "rank": "child-of:ansei-treaties",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Ansei Treaties\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-025",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "anglo-japanese-treaty-of-amity-and-commerce",
+      "title": "Anglo-Japanese Treaty of Amity and Commerce",
+      "parents": [
+        "ansei-treaties"
+      ],
+      "edges": [],
+      "rank": "child-of:ansei-treaties",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Ansei Treaties\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-026",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "treaty-of-amity-and-commerce-between-france-and-japan",
+      "title": "Treaty of Amity and Commerce between France and Japan",
+      "parents": [
+        "ansei-treaties"
+      ],
+      "edges": [],
+      "rank": "child-of:ansei-treaties",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Ansei Treaties\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-027",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "treaty-of-amity-and-commerce-united-states-japan",
+      "title": "Treaty of Amity and Commerce (United States–Japan)",
+      "parents": [
+        "ansei-treaties"
+      ],
+      "edges": [],
+      "rank": "child-of:ansei-treaties",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Ansei Treaties\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-028",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "burmese-siamese-war-1547-1549",
+      "title": "Burmese–Siamese War (1547–1549)",
+      "parents": [
+        "burmese-siamese-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:burmese-siamese-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Burmese–Siamese wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-029",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "burmese-siamese-war-1759-1760",
+      "title": "Burmese–Siamese War (1759–1760)",
+      "parents": [
+        "burmese-siamese-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:burmese-siamese-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Burmese–Siamese wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-030",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "burmese-siamese-war-1765-1767",
+      "title": "Burmese–Siamese War (1765–1767)",
+      "parents": [
+        "burmese-siamese-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:burmese-siamese-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Burmese–Siamese wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-031",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "burmese-siamese-war-1785-1786",
+      "title": "Burmese–Siamese War (1785–1786)",
+      "parents": [
+        "burmese-siamese-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:burmese-siamese-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Burmese–Siamese wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-093",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-adwalton-moor",
+      "title": "Battle of Adwalton Moor",
+      "parents": [
+        "first-english-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-english-civil-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"First English Civil War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-094",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-edgehill",
+      "title": "Battle of Edgehill",
+      "parents": [
+        "first-english-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-english-civil-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"First English Civil War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-095",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-turnham-green",
+      "title": "Battle of Turnham Green",
+      "parents": [
+        "first-english-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-english-civil-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"First English Civil War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-096",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "first-battle-of-newbury",
+      "title": "First Battle of Newbury",
+      "parents": [
+        "first-english-civil-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-english-civil-war",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"First English Civil War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-097",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-fraustadt",
+      "title": "Battle of Fraustadt",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Great Northern War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-098",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-gemauerthof",
+      "title": "Battle of Gemauerthof",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Great Northern War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-099",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-grodno-1706",
+      "title": "Battle of Grodno (1706)",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Great Northern War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-100",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-warsaw-1705",
+      "title": "Battle of Warsaw (1705)",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Great Northern War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-101",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-kletsk",
+      "title": "Battle of Kletsk",
+      "parents": [
+        "muscovite-lithuanian-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:muscovite-lithuanian-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Muscovite–Lithuanian Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-102",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-the-siritsa-river",
+      "title": "Battle of the Siritsa River",
+      "parents": [
+        "muscovite-lithuanian-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:muscovite-lithuanian-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Muscovite–Lithuanian Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-103",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "glinski-rebellion",
+      "title": "Glinski rebellion",
+      "parents": [
+        "muscovite-lithuanian-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:muscovite-lithuanian-wars",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Muscovite–Lithuanian Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-104",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "lithuanian-muscovite-war-1487-1494",
+      "title": "Lithuanian–Muscovite War (1487–1494)",
+      "parents": [
+        "muscovite-lithuanian-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:muscovite-lithuanian-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Muscovite–Lithuanian Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-032",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "ottoman-persian-war-1743-1746",
+      "title": "Ottoman–Persian War (1743–1746)",
+      "parents": [
+        "ottoman-persian-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-persian-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Persian Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-033",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "ottoman-safavid-war-1532-1555",
+      "title": "Ottoman–Safavid War (1532–1555)",
+      "parents": [
+        "ottoman-persian-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-persian-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Persian Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-034",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "ottoman-safavid-war-1578-1590",
+      "title": "Ottoman–Safavid War (1578–1590)",
+      "parents": [
+        "ottoman-persian-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-persian-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Persian Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-035",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "ottoman-safavid-war-1623-1639",
+      "title": "Ottoman–Safavid War (1623–1639)",
+      "parents": [
+        "ottoman-persian-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-persian-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Persian Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-036",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "battle-of-ngoc-hoi-ong-a",
+      "title": "Battle of Ngọc Hồi-Đống Đa",
+      "parents": [
+        "ten-great-campaigns"
+      ],
+      "edges": [],
+      "rank": "child-of:ten-great-campaigns",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Ten Great Campaigns\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-037",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "revolt-of-the-altishahr-khojas",
+      "title": "Revolt of the Altishahr Khojas",
+      "parents": [
+        "ten-great-campaigns"
+      ],
+      "edges": [],
+      "rank": "child-of:ten-great-campaigns",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Ten Great Campaigns\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-038",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "sino-burmese-war",
+      "title": "Sino-Burmese War",
+      "parents": [
+        "ten-great-campaigns"
+      ],
+      "edges": [],
+      "rank": "child-of:ten-great-campaigns",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Ten Great Campaigns\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-039",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "sino-nepalese-war",
+      "title": "Sino-Nepalese War",
+      "parents": [
+        "ten-great-campaigns"
+      ],
+      "edges": [],
+      "rank": "child-of:ten-great-campaigns",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Ten Great Campaigns\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-040",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "first-anglo-burmese-war",
+      "title": "First Anglo-Burmese War",
+      "parents": [
+        "anglo-burmese-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-burmese-wars",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Anglo-Burmese Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-041",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "second-anglo-burmese-war",
+      "title": "Second Anglo-Burmese War",
+      "parents": [
+        "anglo-burmese-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-burmese-wars",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Anglo-Burmese Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-042",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "third-anglo-burmese-war",
+      "title": "Third Anglo-Burmese War",
+      "parents": [
+        "anglo-burmese-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-burmese-wars",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Anglo-Burmese Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-051",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "battle-of-cerrito",
+      "title": "Battle of Cerrito",
+      "parents": [
+        "argentine-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:argentine-war-of-independence",
+      "why": "Wikidata (P361, part of) puts this event inside \"Argentine War of Independence\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-052",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "battle-of-san-lorenzo",
+      "title": "Battle of San Lorenzo",
+      "parents": [
+        "argentine-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:argentine-war-of-independence",
+      "why": "Wikidata (P361, part of) puts this event inside \"Argentine War of Independence\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-053",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "cry-of-asencio",
+      "title": "Cry of Asencio",
+      "parents": [
+        "argentine-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:argentine-war-of-independence",
+      "why": "Wikidata (P361, part of) puts this event inside \"Argentine War of Independence\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-105",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "hundred-years-croatian-ottoman-war",
+      "title": "Hundred Years' Croatian–Ottoman War",
+      "parents": [
+        "croatian-ottoman-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:croatian-ottoman-wars",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Croatian–Ottoman wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-106",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "siege-of-gvozdansko",
+      "title": "Siege of Gvozdansko",
+      "parents": [
+        "croatian-ottoman-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:croatian-ottoman-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Croatian–Ottoman wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-107",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "siege-of-klis",
+      "title": "Siege of Klis",
+      "parents": [
+        "croatian-ottoman-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:croatian-ottoman-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Croatian–Ottoman wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-108",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "anglo-spanish-war-1796-1808",
+      "title": "Anglo-Spanish War (1796–1808)",
+      "parents": [
+        "french-revolutionary-and-napoleonic-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:french-revolutionary-and-napole",
+      "why": "Wikidata (P361, part of) puts this event inside \"French Revolutionary and Napoleonic Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-109",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "napoleonic-wars",
+      "title": "Napoleonic Wars",
+      "parents": [
+        "french-revolutionary-and-napoleonic-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:french-revolutionary-and-napole",
+      "why": "Wikidata (P527, has part) puts this event inside \"French Revolutionary and Napoleonic Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-110",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "war-of-the-second-coalition",
+      "title": "War of the Second Coalition",
+      "parents": [
+        "french-revolutionary-and-napoleonic-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:french-revolutionary-and-napole",
+      "why": "Wikidata (P361, part of) puts this event inside \"French Revolutionary and Napoleonic Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-043",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "chios-massacre",
+      "title": "Chios massacre",
+      "parents": [
+        "greek-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:greek-war-of-independence",
+      "why": "Wikidata (P361, part of) puts this event inside \"Greek War of Independence\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-044",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "constantinople-massacre-of-1821",
+      "title": "Constantinople massacre of 1821",
+      "parents": [
+        "greek-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:greek-war-of-independence",
+      "why": "Wikidata (P361, part of) puts this event inside \"Greek War of Independence\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-045",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "massacre-of-samothrace-1821",
+      "title": "Massacre of Samothrace (1821)",
+      "parents": [
+        "greek-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:greek-war-of-independence",
+      "why": "Wikidata (P361, part of) puts this event inside \"Greek War of Independence\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-111",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-culloden",
+      "title": "Battle of Culloden",
+      "parents": [
+        "jacobite-risings"
+      ],
+      "edges": [],
+      "rank": "child-of:jacobite-risings",
+      "why": "Wikidata (P361, part of) puts this event inside \"Jacobite risings\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-112",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-sheriffmuir",
+      "title": "Battle of Sheriffmuir",
+      "parents": [
+        "jacobite-risings"
+      ],
+      "edges": [],
+      "rank": "child-of:jacobite-risings",
+      "why": "Wikidata (P361, part of) puts this event inside \"Jacobite risings\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-113",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "jacobite-rising-of-1745",
+      "title": "Jacobite rising of 1745",
+      "parents": [
+        "jacobite-risings"
+      ],
+      "edges": [],
+      "rank": "child-of:jacobite-risings",
+      "why": "Wikidata (P361, part of) puts this event inside \"Jacobite risings\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-africa-006",
+      "planned": "2026-11-02T15:25Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q1252684",
-      "title": "Battle of Toski",
-      "parents": [],
+      "existing": "battle-of-chelenqo",
+      "title": "Battle of Chelenqo",
+      "parents": [
+        "menelik-ii-s-conquests"
+      ],
       "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+      "rank": "child-of:menelik-ii-s-conquests",
+      "why": "Wikidata (P361, part of) puts this event inside \"Menelik II's conquests\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
     },
     {
-      "id": "2026-10-31-asia-507",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q125804243",
-      "title": "Capture of the St. Michael",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-africa-508",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1276340",
-      "title": "Battle of Atbara",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-509",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q12880461",
-      "title": "Battle of Kremmydi",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-510",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q130329524",
-      "title": "Valby Expedition of January 1644",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-americas-511",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1312945",
-      "title": "Valdivia Expedition",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-europe-512",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q132616064",
-      "title": "Siege of Mehadia",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-513",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133521430",
-      "title": "Battle of Kejiwan",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-514",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q133696273",
-      "title": "Skirmish at Tegalreja",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-515",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133802796",
-      "title": "Ambush at Mount Kelir",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-516",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q133850436",
-      "title": "Battle of Siluk",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-europe-517",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q13417900",
-      "title": "Munich Coinage Treaty",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-518",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q140321634",
-      "title": "Shammar–Obaidi war (1814–1817)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-519",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q140628907",
-      "title": "Capture of Den Lille Elefant",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-520",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1456170",
-      "title": "Burmese–Siamese War (1584–1593)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-europe-521",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q1535602",
-      "title": "Golden age of alpinism",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-africa-522",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1559790",
-      "title": "Battles of Woyowoyanko",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-523",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q16141404",
-      "title": "Burmese–Siamese War (1563–1564)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-europe-524",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q1639638",
-      "title": "Treaty of Versailles (1757)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-525",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q16821560",
-      "title": "Battle of Tiruvannamalai",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-526",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q16849463",
-      "title": "Tavoy campaign (1788)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-americas-527",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q16934279",
-      "title": "Nuku Hiva Campaign",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-528",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q17035527",
-      "title": "Treaty of Amritsar (1809)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-529",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q1758978",
-      "title": "Burmese–Siamese War (1775–1776)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-americas-530",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q178346",
-      "title": "Treaty of Dancing Rabbit Creek",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-531",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q18162684",
-      "title": "Battle of Kafer Qal'eh",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-532",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q18209338",
-      "title": "Mohammad Khan Baluch's Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-americas-533",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q19107489",
-      "title": "Treaty of St. Louis (1825)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-europe-534",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q2198292",
-      "title": "Triple Alliance (1668)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-africa-535",
-      "planned": "2026-10-31T20:38Z",
+      "id": "2026-11-02-africa-007",
+      "planned": "2026-11-02T15:25Z",
       "lane": "africa",
       "writer": "B",
-      "qid": "Q2237506",
-      "title": "Battle of Ferkeh",
-      "parents": [],
+      "existing": "battle-of-embabo",
+      "title": "Battle of Embabo",
+      "parents": [
+        "menelik-ii-s-conquests"
+      ],
       "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+      "rank": "child-of:menelik-ii-s-conquests",
+      "why": "Wikidata (P361, part of) puts this event inside \"Menelik II's conquests\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
     },
     {
-      "id": "2026-10-31-asia-536",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
+      "id": "2026-11-02-africa-008",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "africa",
       "writer": "A",
-      "qid": "Q2280714",
-      "title": "Burmese–Siamese War (1593–1600)",
-      "parents": [],
+      "existing": "battle-of-jigjiga-1900",
+      "title": "Battle of Jigjiga (1900)",
+      "parents": [
+        "menelik-ii-s-conquests"
+      ],
       "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+      "rank": "child-of:menelik-ii-s-conquests",
+      "why": "Wikidata (P361, part of) puts this event inside \"Menelik II's conquests\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
     },
     {
-      "id": "2026-10-31-asia-537",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
+      "id": "2026-11-02-europe-114",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
       "writer": "B",
-      "qid": "Q233601",
-      "title": "Second Carnatic War",
-      "parents": [],
+      "existing": "battle-of-orthez",
+      "title": "Battle of Orthez",
+      "parents": [
+        "peninsular-war"
+      ],
       "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+      "rank": "child-of:peninsular-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Peninsular War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
     },
     {
-      "id": "2026-10-31-americas-538",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2446410",
-      "title": "Battle of Pacocha",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-asia-539",
-      "planned": "2026-10-31T20:38Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q24908199",
-      "title": "Battle of Kup",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
-    },
-    {
-      "id": "2026-10-31-europe-540",
-      "planned": "2026-10-31T20:38Z",
+      "id": "2026-11-02-europe-115",
+      "planned": "2026-11-02T15:25Z",
       "lane": "europe",
       "writer": "A",
-      "qid": "Q261538",
-      "title": "Andrée's Arctic balloon expedition",
-      "parents": [],
+      "existing": "battle-of-the-bidassoa",
+      "title": "Battle of the Bidassoa",
+      "parents": [
+        "peninsular-war"
+      ],
       "edges": [],
-      "rank": "list",
-      "why": "Re-queued by the assistant: refused as placeless, lane now in the seeds file."
+      "rank": "child-of:peninsular-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Peninsular War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-116",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-toulouse-1814",
+      "title": "Battle of Toulouse (1814)",
+      "parents": [
+        "peninsular-war"
+      ],
+      "edges": [],
+      "rank": "child-of:peninsular-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Peninsular War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-117",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "belgian-revolution",
+      "title": "Belgian Revolution",
+      "parents": [
+        "revolutions-of-1830"
+      ],
+      "edges": [],
+      "rank": "child-of:revolutions-of-1830",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Revolutions of 1830\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-118",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "july-revolution",
+      "title": "July Revolution",
+      "parents": [
+        "revolutions-of-1830"
+      ],
+      "edges": [],
+      "rank": "child-of:revolutions-of-1830",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Revolutions of 1830\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-119",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "november-uprising",
+      "title": "November Uprising",
+      "parents": [
+        "revolutions-of-1830"
+      ],
+      "edges": [],
+      "rank": "child-of:revolutions-of-1830",
+      "why": "Wikidata (P527, has part) puts this event inside \"Revolutions of 1830\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-046",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "battle-of-argaon",
+      "title": "Battle of Argaon",
+      "parents": [
+        "second-anglo-maratha-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-anglo-maratha-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Second Anglo-Maratha War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-047",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "battle-of-assaye",
+      "title": "Battle of Assaye",
+      "parents": [
+        "second-anglo-maratha-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-anglo-maratha-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Second Anglo-Maratha War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-048",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "battle-of-laswari",
+      "title": "Battle of Laswari",
+      "parents": [
+        "second-anglo-maratha-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-anglo-maratha-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Second Anglo-Maratha War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-africa-009",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "africa",
+      "writer": "A",
+      "existing": "anglo-zulu-war",
+      "title": "Anglo-Zulu War",
+      "parents": [
+        "south-african-wars-1879-1915"
+      ],
+      "edges": [],
+      "rank": "child-of:south-african-wars-1879-1915",
+      "why": "Wikidata (P527, has part) puts this event inside \"South African Wars (1879–1915)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-africa-010",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "africa",
+      "writer": "B",
+      "existing": "basuto-gun-war",
+      "title": "Basuto Gun War",
+      "parents": [
+        "south-african-wars-1879-1915"
+      ],
+      "edges": [],
+      "rank": "child-of:south-african-wars-1879-1915",
+      "why": "Wikidata (P361, part of) puts this event inside \"South African Wars (1879–1915)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-africa-011",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "africa",
+      "writer": "A",
+      "existing": "first-boer-war",
+      "title": "First Boer War",
+      "parents": [
+        "south-african-wars-1879-1915"
+      ],
+      "edges": [],
+      "rank": "child-of:south-african-wars-1879-1915",
+      "why": "Wikidata (P527, has part) puts this event inside \"South African Wars (1879–1915)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-120",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-bitonto",
+      "title": "Battle of Bitonto",
+      "parents": [
+        "war-of-the-polish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-polish-succession",
+      "why": "Wikidata (P361, part of) puts this event inside \"War of the Polish Succession\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-121",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "siege-of-capua-1734",
+      "title": "Siege of Capua (1734)",
+      "parents": [
+        "war-of-the-polish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-polish-succession",
+      "why": "Wikidata (P361, part of) puts this event inside \"War of the Polish Succession\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-122",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "siege-of-gaeta-1734",
+      "title": "Siege of Gaeta (1734)",
+      "parents": [
+        "war-of-the-polish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-polish-succession",
+      "why": "Wikidata (P361, part of) puts this event inside \"War of the Polish Succession\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-123",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "first-battle-of-algeciras",
+      "title": "First Battle of Algeciras",
+      "parents": [
+        "algeciras-campaign"
+      ],
+      "edges": [],
+      "rank": "child-of:algeciras-campaign",
+      "why": "Wikidata (P361, part of) puts this event inside \"Algeciras campaign\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-124",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "second-battle-of-algeciras",
+      "title": "Second Battle of Algeciras",
+      "parents": [
+        "algeciras-campaign"
+      ],
+      "edges": [],
+      "rank": "child-of:algeciras-campaign",
+      "why": "Wikidata (P361, part of) puts this event inside \"Algeciras campaign\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-africa-012",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "africa",
+      "writer": "A",
+      "existing": "battle-of-gundet",
+      "title": "Battle of Gundet",
+      "parents": [
+        "egyptian-ethiopian-war"
+      ],
+      "edges": [],
+      "rank": "child-of:egyptian-ethiopian-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Egyptian–Ethiopian War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-africa-013",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "africa",
+      "writer": "B",
+      "existing": "battle-of-gura",
+      "title": "Battle of Gura",
+      "parents": [
+        "egyptian-ethiopian-war"
+      ],
+      "edges": [],
+      "rank": "child-of:egyptian-ethiopian-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Egyptian–Ethiopian War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-054",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "overthrow-of-the-hawaiian-kingdom",
+      "title": "Overthrow of the Hawaiian Kingdom",
+      "parents": [
+        "hawaiian-rebellions-1887-1895"
+      ],
+      "edges": [],
+      "rank": "child-of:hawaiian-rebellions-1887-1895",
+      "why": "Wikidata (P361, part of) puts this event inside \"Hawaiian rebellions (1887–1895)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-055",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "wilcox-rebellion-of-1889",
+      "title": "Wilcox rebellion of 1889",
+      "parents": [
+        "hawaiian-rebellions-1887-1895"
+      ],
+      "edges": [],
+      "rank": "child-of:hawaiian-rebellions-1887-1895",
+      "why": "Wikidata (P361, part of) puts this event inside \"Hawaiian rebellions (1887–1895)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-125",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "cromwellian-conquest-of-ireland",
+      "title": "Cromwellian conquest of Ireland",
+      "parents": [
+        "irish-confederate-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:irish-confederate-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Irish Confederate Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-126",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "irish-rebellion-of-1641",
+      "title": "Irish Rebellion of 1641",
+      "parents": [
+        "irish-confederate-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:irish-confederate-wars",
+      "why": "Wikidata (P361, part of) puts this event inside \"Irish Confederate Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-127",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-ponza-1552",
+      "title": "Battle of Ponza (1552)",
+      "parents": [
+        "italian-war-of-1551-1559",
+        "ottoman-habsburg-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:italian-war-of-1551-1559",
+      "why": "Wikidata (P361, part of) puts this event inside \"Italian War of 1551–1559\" and \"Ottoman–Habsburg wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-128",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "siege-of-calais-1558",
+      "title": "Siege of Calais (1558)",
+      "parents": [
+        "italian-war-of-1551-1559"
+      ],
+      "edges": [],
+      "rank": "child-of:italian-war-of-1551-1559",
+      "why": "Wikidata (P361, part of) puts this event inside \"Italian War of 1551–1559\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-049",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "first-javanese-war-of-succession",
+      "title": "First Javanese War of Succession",
+      "parents": [
+        "javanese-wars-of-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:javanese-wars-of-succession",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Javanese Wars of Succession\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-050",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "second-javanese-war-of-succession",
+      "title": "Second Javanese War of Succession",
+      "parents": [
+        "javanese-wars-of-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:javanese-wars-of-succession",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Javanese Wars of Succession\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-africa-014",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "africa",
+      "writer": "A",
+      "existing": "battle-of-gallabat",
+      "title": "Battle of Gallabat",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Mahdist War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-africa-015",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "africa",
+      "writer": "B",
+      "existing": "battle-of-madana",
+      "title": "Battle of Madana",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Mahdist War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-051",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "battle-of-cannanore-1506",
+      "title": "Battle of Cannanore (1506)",
+      "parents": [
+        "mamluk-portuguese-conflicts"
+      ],
+      "edges": [],
+      "rank": "child-of:mamluk-portuguese-conflicts",
+      "why": "Wikidata (P361, part of) puts this event inside \"Mamluk–Portuguese conflicts\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-052",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "battle-of-chaul",
+      "title": "Battle of Chaul",
+      "parents": [
+        "mamluk-portuguese-conflicts"
+      ],
+      "edges": [],
+      "rank": "child-of:mamluk-portuguese-conflicts",
+      "why": "Wikidata (P361, part of) puts this event inside \"Mamluk–Portuguese conflicts\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-053",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "saga-rebellion",
+      "title": "Saga Rebellion",
+      "parents": [
+        "meiji-restoration"
+      ],
+      "edges": [],
+      "rank": "child-of:meiji-restoration",
+      "why": "Wikidata (P527, has part) puts this event inside \"Meiji Restoration\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-054",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "shinpuren-rebellion",
+      "title": "Shinpūren rebellion",
+      "parents": [
+        "meiji-restoration"
+      ],
+      "edges": [],
+      "rank": "child-of:meiji-restoration",
+      "why": "Wikidata (P527, has part) puts this event inside \"Meiji Restoration\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-056",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "california-genocide",
+      "title": "California genocide",
+      "parents": [
+        "native-american-genocide-in-the-united-states"
+      ],
+      "edges": [],
+      "rank": "child-of:native-american-genocide-in-the",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Native American genocide in the United States\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-americas-057",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "wounded-knee-massacre",
+      "title": "Wounded Knee Massacre",
+      "parents": [
+        "native-american-genocide-in-the-united-states"
+      ],
+      "edges": [],
+      "rank": "child-of:native-american-genocide-in-the",
+      "why": "Wikidata (P361, part of) puts this event inside \"Native American genocide in the United States\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-129",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-st-jakob-an-der-birs",
+      "title": "Battle of St. Jakob an der Birs",
+      "parents": [
+        "old-zurich-war"
+      ],
+      "edges": [],
+      "rank": "child-of:old-zurich-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Old Zurich War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-130",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-st-jakob-an-der-sihl",
+      "title": "Battle of St. Jakob an der Sihl",
+      "parents": [
+        "old-zurich-war"
+      ],
+      "edges": [],
+      "rank": "child-of:old-zurich-war",
+      "why": "Wikidata (P361, part of) puts this event inside \"Old Zurich War\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-055",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "first-opium-war",
+      "title": "First Opium War",
+      "parents": [
+        "opium-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:opium-wars",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Opium Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-056",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "second-opium-war",
+      "title": "Second Opium War",
+      "parents": [
+        "opium-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:opium-wars",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Opium Wars\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-057",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "capture-of-baghdad-1624",
+      "title": "Capture of Baghdad (1624)",
+      "parents": [
+        "ottoman-safavid-war-1623-1639"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-safavid-war-1623-1639",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Safavid War (1623–1639)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-asia-058",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "siege-of-baghdad-1625-1626",
+      "title": "Siege of Baghdad (1625–1626)",
+      "parents": [
+        "ottoman-safavid-war-1623-1639"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-safavid-war-1623-1639",
+      "why": "Wikidata (P361, part of) puts this event inside \"Ottoman–Safavid War (1623–1639)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-131",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "polish-swedish-war-1600-1611",
+      "title": "Polish–Swedish War (1600–1611)",
+      "parents": [
+        "polish-swedish-war-1600-1629"
+      ],
+      "edges": [],
+      "rank": "child-of:polish-swedish-war-1600-1629",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Polish–Swedish War (1600–1629)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
+    },
+    {
+      "id": "2026-11-02-europe-132",
+      "planned": "2026-11-02T15:25Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "polish-swedish-war-1626-1629",
+      "title": "Polish–Swedish War (1626–1629)",
+      "parents": [
+        "polish-swedish-war-1600-1629"
+      ],
+      "edges": [],
+      "rank": "child-of:polish-swedish-war-1600-1629",
+      "why": "Wikidata (P527, has part and P361, part of) puts this event inside \"Polish–Swedish War (1600–1629)\". Its dates lie inside theirs at both ends, and it shares a lane, an actor or a place with them. It has no parent now."
     },
     {
       "id": "2026-10-31-europe-541",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2634908",
       "title": "Lithuanian–Muscovite War (1534–1537)",
       "parents": [],
@@ -630,7 +3015,7 @@
       "id": "2026-10-31-americas-542",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2713453",
       "title": "Voyage of the Glorioso",
       "parents": [],
@@ -642,7 +3027,7 @@
       "id": "2026-10-31-africa-543",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q27627676",
       "title": "Battle of Abu Kru",
       "parents": [],
@@ -654,7 +3039,7 @@
       "id": "2026-10-31-americas-544",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2825907",
       "title": "Virginius Affair",
       "parents": [],
@@ -666,7 +3051,7 @@
       "id": "2026-10-31-europe-545",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2838113",
       "title": "Franco-Polish Alliance (1524)",
       "parents": [],
@@ -678,7 +3063,7 @@
       "id": "2026-10-31-asia-546",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q28458443",
       "title": "Battle of Wai",
       "parents": [],
@@ -690,7 +3075,7 @@
       "id": "2026-10-31-asia-547",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q28602668",
       "title": "Battle of Kastella",
       "parents": [],
@@ -702,7 +3087,7 @@
       "id": "2026-10-31-africa-548",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2887834",
       "title": "Battle of Amba Jebelli",
       "parents": [],
@@ -714,7 +3099,7 @@
       "id": "2026-10-31-africa-549",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2887918",
       "title": "Battle of Ayshal",
       "parents": [],
@@ -726,7 +3111,7 @@
       "id": "2026-10-31-americas-550",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2888067",
       "title": "Battle of Agua Zarca",
       "parents": [],
@@ -738,7 +3123,7 @@
       "id": "2026-10-31-africa-551",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2888398",
       "title": "Battle of Derasge",
       "parents": [],
@@ -750,7 +3135,7 @@
       "id": "2026-10-31-americas-552",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2888820",
       "title": "Battle of Huamachuco",
       "parents": [],
@@ -762,7 +3147,7 @@
       "id": "2026-10-31-africa-553",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2888919",
       "title": "Battle of Kirbekan",
       "parents": [],
@@ -774,7 +3159,7 @@
       "id": "2026-10-31-americas-554",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2889147",
       "title": "Battle of Llanos de Santa Juana",
       "parents": [],
@@ -786,7 +3171,7 @@
       "id": "2026-10-31-americas-555",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2889192",
       "title": "Battle of El Maguey",
       "parents": [],
@@ -798,7 +3183,7 @@
       "id": "2026-10-31-americas-556",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2889708",
       "title": "Battle of Puerto de Piñones",
       "parents": [],
@@ -810,7 +3195,7 @@
       "id": "2026-10-31-africa-557",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2889774",
       "title": "Battle of Rietfontein",
       "parents": [],
@@ -822,7 +3207,7 @@
       "id": "2026-10-31-africa-558",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2889955",
       "title": "Battle of Senafe",
       "parents": [],
@@ -834,7 +3219,7 @@
       "id": "2026-10-31-americas-559",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2890148",
       "title": "Battle of Tecualoya",
       "parents": [],
@@ -846,7 +3231,7 @@
       "id": "2026-10-31-americas-560",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2890158",
       "title": "Battle of Temalaca",
       "parents": [],
@@ -858,7 +3243,7 @@
       "id": "2026-10-31-asia-561",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2890241",
       "title": "Bombardment of Tourane (1847)",
       "parents": [],
@@ -870,7 +3255,7 @@
       "id": "2026-10-31-americas-562",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2890631",
       "title": "Battle of Lomas de Santa María",
       "parents": [],
@@ -882,7 +3267,7 @@
       "id": "2026-10-31-americas-563",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2913176",
       "title": "Logan's raid",
       "parents": [],
@@ -894,7 +3279,7 @@
       "id": "2026-10-31-africa-564",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2935407",
       "title": "Sudan campaign",
       "parents": [],
@@ -906,7 +3291,7 @@
       "id": "2026-10-31-africa-565",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2984893",
       "title": "Battle of Serobeti",
       "parents": [],
@@ -918,7 +3303,7 @@
       "id": "2026-10-31-asia-566",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q30672276",
       "title": "Battle of Xicheng",
       "parents": [],
@@ -930,7 +3315,7 @@
       "id": "2026-10-31-americas-567",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q3357987",
       "title": "Battle of Tarapacá",
       "parents": [],
@@ -942,7 +3327,7 @@
       "id": "2026-10-31-americas-568",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3378101",
       "title": "Battle of Punta Gruesa",
       "parents": [],
@@ -954,7 +3339,7 @@
       "id": "2026-10-31-asia-569",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q3381227",
       "title": "Maratha–Mysore wars",
       "parents": [],
@@ -966,7 +3351,7 @@
       "id": "2026-10-31-europe-570",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3550076",
       "title": "Union of the Duchy of Brittany with the Crown of France",
       "parents": [],
@@ -978,7 +3363,7 @@
       "id": "2026-10-31-europe-571",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q375717",
       "title": "Treaty of Versailles (1756)",
       "parents": [],
@@ -990,7 +3375,7 @@
       "id": "2026-10-31-asia-572",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4066889",
       "title": "Battle of Añyraqai",
       "parents": [],
@@ -1002,7 +3387,7 @@
       "id": "2026-10-31-asia-573",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4087414",
       "title": "Battle of Beicang",
       "parents": [],
@@ -1014,7 +3399,7 @@
       "id": "2026-10-31-asia-574",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4087483",
       "title": "Battle of Yangcun",
       "parents": [],
@@ -1026,7 +3411,7 @@
       "id": "2026-10-31-europe-575",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4122600",
       "title": "War of the Priests (1467–1479)",
       "parents": [],
@@ -1038,7 +3423,7 @@
       "id": "2026-10-31-europe-576",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q430726",
       "title": "Anglo-Spanish War (1585–1604)",
       "parents": [],
@@ -1050,7 +3435,7 @@
       "id": "2026-10-31-asia-577",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4335729",
       "title": "Battle of Orbulaq",
       "parents": [],
@@ -1062,7 +3447,7 @@
       "id": "2026-10-31-asia-578",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4438410",
       "title": "Battle of Chinhat",
       "parents": [],
@@ -1074,7 +3459,7 @@
       "id": "2026-10-31-americas-579",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q444530",
       "title": "Clayton–Bulwer Treaty",
       "parents": [],
@@ -1086,7 +3471,7 @@
       "id": "2026-10-31-africa-580",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4516015",
       "title": "Chimurenga",
       "parents": [],
@@ -1098,7 +3483,7 @@
       "id": "2026-10-31-asia-581",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871096",
       "title": "Battle of Gia Cuc",
       "parents": [],
@@ -1110,7 +3495,7 @@
       "id": "2026-10-31-asia-582",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871280",
       "title": "Battle of Inlon River",
       "parents": [],
@@ -1122,7 +3507,7 @@
       "id": "2026-10-31-asia-583",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871325",
       "title": "Battle of Jeonju",
       "parents": [],
@@ -1134,7 +3519,7 @@
       "id": "2026-10-31-africa-584",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871605",
       "title": "Battle of Lougou",
       "parents": [],
@@ -1146,7 +3531,7 @@
       "id": "2026-10-31-asia-585",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871920",
       "title": "Battle of Nowshera",
       "parents": [],
@@ -1158,7 +3543,7 @@
       "id": "2026-10-31-americas-586",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871978",
       "title": "Battle of Palonegro",
       "parents": [],
@@ -1170,7 +3555,7 @@
       "id": "2026-10-31-asia-587",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872032",
       "title": "Battle of Phu Lam Tao",
       "parents": [],
@@ -1182,7 +3567,7 @@
       "id": "2026-10-31-asia-588",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872034",
       "title": "Battle of Phủ Hoài",
       "parents": [],
@@ -1194,7 +3579,7 @@
       "id": "2026-10-31-asia-589",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872146",
       "title": "Battle of Quingua",
       "parents": [],
@@ -1206,7 +3591,7 @@
       "id": "2026-10-31-americas-590",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872325",
       "title": "Battle of Sauce (1816)",
       "parents": [],
@@ -1218,7 +3603,7 @@
       "id": "2026-10-31-asia-591",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872341",
       "title": "Battle of Seedaseer",
       "parents": [],
@@ -1230,7 +3615,7 @@
       "id": "2026-10-31-americas-592",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872374",
       "title": "Battle of Sideling Hill",
       "parents": [],
@@ -1242,7 +3627,7 @@
       "id": "2026-10-31-asia-593",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872458",
       "title": "Battle of Sultanpet Tope",
       "parents": [],
@@ -1254,7 +3639,7 @@
       "id": "2026-10-31-asia-594",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872549",
       "title": "Battle of Thuận An",
       "parents": [],
@@ -1266,7 +3651,7 @@
       "id": "2026-10-31-asia-595",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872624",
       "title": "Battle of Ugeumchi",
       "parents": [],
@@ -1278,7 +3663,7 @@
       "id": "2026-10-31-asia-596",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872780",
       "title": "Battle of Yesil Kol Nor",
       "parents": [],
@@ -1290,7 +3675,7 @@
       "id": "2026-10-31-asia-597",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872960",
       "title": "Battle of Nedumkotta",
       "parents": [],
@@ -1302,7 +3687,7 @@
       "id": "2026-10-31-americas-598",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5032419",
       "title": "Caning of Charles Sumner",
       "parents": [],
@@ -1314,7 +3699,7 @@
       "id": "2026-10-31-africa-599",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5037077",
       "title": "Capture of the Veloz Passagera",
       "parents": [],
@@ -1326,7 +3711,7 @@
       "id": "2026-10-31-americas-600",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5159748",
       "title": "1861 Confederate States presidential election",
       "parents": [],
@@ -1338,7 +3723,7 @@
       "id": "2026-10-31-asia-601",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q541250",
       "title": "Anglo-Persian Treaty of 1801",
       "parents": [],
@@ -1350,7 +3735,7 @@
       "id": "2026-10-31-asia-602",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5479682",
       "title": "France–Korea Treaty of 1886",
       "parents": [],
@@ -1362,7 +3747,7 @@
       "id": "2026-10-31-americas-603",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q55109500",
       "title": "Battle of Itapirú",
       "parents": [],
@@ -1374,7 +3759,7 @@
       "id": "2026-10-31-asia-604",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5526415",
       "title": "Gaselee Expedition",
       "parents": [],
@@ -1386,7 +3771,7 @@
       "id": "2026-10-31-asia-605",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q55647639",
       "title": "Battle of Amritsar (1757)",
       "parents": [],
@@ -1398,7 +3783,7 @@
       "id": "2026-10-31-americas-606",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5722741",
       "title": "Battle of Ochomogo",
       "parents": [],
@@ -1410,7 +3795,7 @@
       "id": "2026-10-31-americas-607",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5722760",
       "title": "Battle of Pablo Perez",
       "parents": [],
@@ -1422,7 +3807,7 @@
       "id": "2026-10-31-americas-608",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5742647",
       "title": "Lima campaign",
       "parents": [],
@@ -1434,7 +3819,7 @@
       "id": "2026-10-31-americas-609",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5742675",
       "title": "Tacna and Arica campaign",
       "parents": [],
@@ -1446,7 +3831,7 @@
       "id": "2026-10-31-europe-610",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q60740017",
       "title": "Malus Intercursus",
       "parents": [],
@@ -1458,7 +3843,7 @@
       "id": "2026-10-31-europe-611",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q607645",
       "title": "Bavarian War (1459–1463)",
       "parents": [],
@@ -1470,7 +3855,7 @@
       "id": "2026-10-31-asia-612",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q60791184",
       "title": "Abbas I's Shirvan campaign",
       "parents": [],
@@ -1482,7 +3867,7 @@
       "id": "2026-10-31-americas-613",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q6086122",
       "title": "Battle of Pino de Baire",
       "parents": [],
@@ -1494,7 +3879,7 @@
       "id": "2026-10-31-asia-614",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q61881584",
       "title": "Katip Sumat uprising",
       "parents": [],
@@ -1506,7 +3891,7 @@
       "id": "2026-10-31-asia-615",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q635020",
       "title": "Third Carnatic War",
       "parents": [],
@@ -1518,7 +3903,7 @@
       "id": "2026-10-31-asia-616",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q6393080",
       "title": "Kép campaign",
       "parents": [],
@@ -1530,7 +3915,7 @@
       "id": "2026-10-31-asia-617",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q65077587",
       "title": "Bengal War",
       "parents": [],
@@ -1542,7 +3927,7 @@
       "id": "2026-10-31-africa-618",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q71630263",
       "title": "Algiers expedition (1516)",
       "parents": [],
@@ -1554,7 +3939,7 @@
       "id": "2026-10-31-americas-619",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7302489",
       "title": "Reciprocity Treaty of 1875",
       "parents": [],
@@ -1566,7 +3951,7 @@
       "id": "2026-10-31-americas-620",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q74009",
       "title": "Invasion of Dominica (1761)",
       "parents": [],
@@ -1578,7 +3963,7 @@
       "id": "2026-10-31-americas-621",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7795665",
       "title": "Thompson's War",
       "parents": [],
@@ -1590,7 +3975,7 @@
       "id": "2026-10-31-americas-622",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7836950",
       "title": "Treaty of 1677",
       "parents": [],
@@ -1602,7 +3987,7 @@
       "id": "2026-10-31-americas-623",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7837007",
       "title": "Treaty of Casco (1678)",
       "parents": [],
@@ -1614,7 +3999,7 @@
       "id": "2026-10-31-americas-624",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7837035",
       "title": "Treaty of Doak's Stand",
       "parents": [],
@@ -1626,7 +4011,7 @@
       "id": "2026-10-31-asia-625",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7837229",
       "title": "Treaty of Seringapatam",
       "parents": [],
@@ -1638,7 +4023,7 @@
       "id": "2026-10-31-americas-626",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7837233",
       "title": "Treaty of Spring Wells",
       "parents": [],
@@ -1650,7 +4035,7 @@
       "id": "2026-10-31-americas-627",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7837311",
       "title": "Treaty of the Creek Agency (1818)",
       "parents": [],
@@ -1662,7 +4047,7 @@
       "id": "2026-10-31-americas-628",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7837334",
       "title": "Treaty with the Kalapuya, etc.",
       "parents": [],
@@ -1674,7 +4059,7 @@
       "id": "2026-10-31-americas-629",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7861365",
       "title": "1847 North American typhus epidemic",
       "parents": [],
@@ -1686,7 +4071,7 @@
       "id": "2026-10-31-americas-630",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7868544",
       "title": "USS Constitution vs HMS Guerriere",
       "parents": [],
@@ -1698,7 +4083,7 @@
       "id": "2026-10-31-asia-631",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q800046",
       "title": "Germany–Korea Treaty of 1883",
       "parents": [],
@@ -1710,7 +4095,7 @@
       "id": "2026-10-31-americas-632",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q8244343",
       "title": "Battle of Umbu",
       "parents": [],
@@ -1722,7 +4107,7 @@
       "id": "2026-10-31-americas-633",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q8256513",
       "title": "Breña campaign",
       "parents": [],
@@ -1734,7 +4119,7 @@
       "id": "2026-10-31-asia-634",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q85745847",
       "title": "Battle of Hutong (1658)",
       "parents": [],
@@ -1746,7 +4131,7 @@
       "id": "2026-10-31-americas-635",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q865930",
       "title": "Goliad Campaign",
       "parents": [],
@@ -1758,7 +4143,7 @@
       "id": "2026-10-31-americas-636",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q9296248",
       "title": "Second Anglo–Powhatan War",
       "parents": [],
@@ -1770,7 +4155,7 @@
       "id": "2026-10-31-americas-637",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q97585797",
       "title": "1521 Santo Domingo Slave Revolt",
       "parents": [],
@@ -1782,7 +4167,7 @@
       "id": "2026-11-01-asia-001",
       "planned": "2026-11-01T16:30:11Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q85719810",
       "title": "1781 revolt in Bihar",
       "parents": [],
@@ -1794,7 +4179,7 @@
       "id": "2026-11-01-europe-001",
       "planned": "2026-11-01T16:30:11Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1400365",
       "title": "Revolutions of 1848 in the Italian states",
       "parents": [
@@ -1808,7 +4193,7 @@
       "id": "2026-11-01-europe-002",
       "planned": "2026-11-01T16:30:11Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q23039097",
       "title": "Serb Uprising of 1737–39",
       "parents": [],
@@ -1826,7 +4211,7 @@
       "why": "List of revolutions and rebellions (rank list), 2 sitelinks; a pupils' mutiny at Rugby School, dated by the item's own point in time (P585, 1797).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-004",
@@ -1838,7 +4223,7 @@
       "why": "List of treaties (rank list), 4 sitelinks; a Denmark-Sweden peace treaty, dated by the item's own start time (P580, 1541).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-europe-005",
@@ -1850,7 +4235,7 @@
       "why": "List of treaties (rank list), 1 sitelink; a Habsburg-Transylvanian peace treaty, dated by the item's own start time (P580, 1615).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-006",
@@ -1862,7 +4247,7 @@
       "why": "List of treaties (rank list), 1 sitelink; a Habsburg succession treaty in Bohemia, dated by the item's own start time (P580, 1608).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-asia-005",
@@ -1874,7 +4259,7 @@
       "why": "List of treaties (rank list), 8 sitelinks; a land agreement at Port Phillip, dated by the item's own start time (P580, 1835).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-007",
@@ -1886,7 +4271,7 @@
       "why": "List of treaties (rank list), 5 sitelinks; a Franco-Genoese pact, dated by the item's own start time (P580, 1705).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-europe-008",
@@ -1898,7 +4283,7 @@
       "why": "List of treaties (rank list), 4 sitelinks; a Russo-Serbian alliance during the First Serbian Uprising, dated by the item's own start time (P580, 1807).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-americas-001",
@@ -1910,7 +4295,7 @@
       "why": "List of treaties (rank list), 3 sitelinks; a Seneca land-cession treaty at Buffalo Creek, New York, dated by the item's own start time (P580, 1838).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-asia-002",
@@ -1922,7 +4307,7 @@
       "why": "List of treaties (rank list), 3 sitelinks; an Ahom-Mughal boundary treaty in Assam, dated by the item's own start time (P580, 1639).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-009",
@@ -1934,7 +4319,7 @@
       "why": "List of treaties (rank list), 6 sitelinks; a Palatinate succession treaty, dated by the item's own start time (P580, 1704).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-americas-002",
@@ -1946,7 +4331,7 @@
       "why": "List of treaties (rank list), 1 sitelink; a Mexico-United States boundary treaty, dated by the item's own start time (P580, 1828).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-010",
@@ -1958,7 +4343,7 @@
       "why": "List of epidemics and pandemics (rank list), 6 sitelinks; a plague outbreak in England, dated by the item's own start time (P580, 1592).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-asia-003",
@@ -1970,7 +4355,7 @@
       "why": "List of epidemics and pandemics (rank list), 1 sitelink; an influenza pandemic the item's own description places as emerging in Asia, dated by the item's own start time (P580, 1782).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-011",
@@ -5278,6 +7663,254 @@
       "edges": [],
       "rank": "child-of:texas-revolution",
       "why": "Child of the Texas Revolution, found through a P361 search of thin umbrellas, with 1 sitelink."
+    },
+    {
+      "id": "2026-11-02-europe-010",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q720801",
+      "title": "Battle of Cecora (1595)",
+      "parents": [
+        "moldavian-magnate-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:moldavian-magnate-wars",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Moldavian Magnate Wars\" (moldavian-magnate-wars); 7 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-europe-011",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4870824",
+      "title": "Battle of Cádiz (1656)",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:anglo-spanish-war-1654-1660",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Anglo-Spanish War (1654–1660)\" (anglo-spanish-war-1654-1660); 6 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-asia-002",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q25544",
+      "title": "Battle of the Dardanelles (1807)",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:russo-turkish-war-1806-1812",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Russo-Turkish War (1806–1812)\" (russo-turkish-war-1806-1812); 6 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-europe-012",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q5037035",
+      "title": "Capture of Minorca (1798)",
+      "parents": [
+        "mediterranean-campaign-of-1798"
+      ],
+      "edges": [],
+      "rank": "child-of:mediterranean-campaign-of-1798",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Mediterranean campaign of 1798\" (mediterranean-campaign-of-1798); 5 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-americas-019",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4870349",
+      "title": "Battle of Arroyo Grande",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:uruguayan-civil-war",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Uruguayan Civil War\" (uruguayan-civil-war); 5 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-europe-013",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q21187342",
+      "title": "Uprising in Vučitrn",
+      "parents": [
+        "austro-turkish-war-1716-1718"
+      ],
+      "edges": [],
+      "rank": "child-of:austro-turkish-war-1716-1718",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Austro-Turkish War (1716–1718)\" (austro-turkish-war-1716-1718); 4 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-asia-003",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q27958319",
+      "title": "Barrackpore mutiny of 1824",
+      "parents": [
+        "first-anglo-burmese-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-anglo-burmese-war",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"First Anglo-Burmese War\" (first-anglo-burmese-war); 4 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-europe-014",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4872721",
+      "title": "Battle of Wenden (1626)",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:polish-swedish-war-1626-1629",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Polish–Swedish War (1626–1629)\" (polish-swedish-war-1626-1629); 3 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-europe-015",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q10423630",
+      "title": "War of Deposition against King Hans",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:dano-swedish-war-1501-1512",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Dano-Swedish War (1501–1512)\" (dano-swedish-war-1501-1512); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-europe-016",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q6084870",
+      "title": "Moldavian Campaign (1538)",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:moldavian-ottoman-wars",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Moldavian–Ottoman Wars\" (moldavian-ottoman-wars); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-americas-020",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q6415375",
+      "title": "Kirk–Holden war",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:reconstruction-era",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Reconstruction era\" (reconstruction-era); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-americas-021",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q5778825",
+      "title": "Battle of Callao (1838)",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:war-of-the-confederation",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"War of the Confederation\" (war-of-the-confederation); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-africa-002",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q134006616",
+      "title": "Sack of Old Oyo",
+      "parents": [
+        "yoruba-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:yoruba-wars",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Yoruba Wars\" (yoruba-wars); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-africa-003",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q130288419",
+      "title": "Battle of Òsogbo",
+      "parents": [
+        "yoruba-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:yoruba-wars",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Yoruba Wars\" (yoruba-wars); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-americas-022",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q7148030",
+      "title": "Patriot War",
+      "parents": [
+        "rebellions-of-1837-1838"
+      ],
+      "edges": [],
+      "rank": "child-of:rebellions-of-1837-1838",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Rebellions of 1837–1838\" (rebellions-of-1837-1838); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-europe-017",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q55633152",
+      "title": "Siege of Burgos (1475)",
+      "parents": [
+        "war-of-the-castilian-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-castilian-succession",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"War of the Castilian Succession\" (war-of-the-castilian-succession); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-americas-023",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q130553396",
+      "title": "Battle of Santiago (1863)",
+      "parents": [
+        "dominican-restoration-war"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-restoration-war",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Dominican Restoration War\" (dominican-restoration-war); 1 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-africa-004",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q124881814",
+      "title": "Battle of Ilorin",
+      "parents": [
+        "yoruba-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:yoruba-wars",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Yoruba Wars\" (yoruba-wars); 1 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-africa-005",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q121853652",
+      "title": "Battle of Elmina (1781)",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:fourth-anglo-dutch-war",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Fourth Anglo-Dutch War\" (fourth-anglo-dutch-war); 1 sitelinks; the writer by turn, no edge read this fire."
     }
   ]
 }
