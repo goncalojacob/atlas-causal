@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "kiriji-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q96386035",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Kiriji War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q96386035"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kiriji War\", revision 1370625878"
+    }
+  ],
+  "title": "Kiriji War",
+  "summary": "The English Wikipedia article \"Kiriji War\", at revision 1370625878, opens: \"The Kiriji War, also known as the Ekiti–Parapo War, was a 16-year-long civil war between the subethnic kingdoms of the Yoruba people, specifically divided between the Western Yoruba, which was mainly the Ibadan and Oyo-speaking Yorubas, and the Eastern Yoruba, who were the Ekiti people, Ijesha, Ijebu, YagbaEkiti people and others.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q96386035, imported by tools/import/wikidata.mjs. The item's own description reads \"Kiriji Civil War in Osun State\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1877,
+    "end": 1893,
+    "date": "1877-07-30",
+    "endDate": "1893-03-14"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "yoruba-wars"
+}

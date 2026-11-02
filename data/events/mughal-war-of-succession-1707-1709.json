@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mughal-war-of-succession-1707-1709",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q23039094",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Mughal war of succession (1707–1709)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q23039094"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mughal war of succession (1707–1709)\", revision 1378387765"
+    }
+  ],
+  "title": "Mughal war of succession (1707–1709)",
+  "summary": "The English Wikipedia article \"Mughal war of succession (1707–1709)\", at revision 1378387765, opens: \"The Mughal war of succession (1707–1709) or the Mughal Civil War was a period of political disorder and armed conflict over succession in the Mughal Empire following the death of the sixth Mughal emperor Aurangzeb in March 1707. His three sons fought among themselves with Bahadur Shah I being the only survivor and taking the throne.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q23039094, imported by tools/import/wikidata.mjs. The item's own description reads \"1707–1709 civil war in the Mughal Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1707,
+    "end": 1709,
+    "date": "1707-03",
+    "endDate": "1709-01"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

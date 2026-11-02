@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "katamanso-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q98233405",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Katamanso War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q98233405"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Katamanso War\", revision 1370625517"
+    }
+  ],
+  "title": "Katamanso War",
+  "summary": "The English Wikipedia article \"Katamanso War\", at revision 1370625517, opens: \"The Katamanso War, also known as the Battle of Dodowa, was a war that several tribes united with the British, fought and prevented Ashantis from dominating the coast in 1826. Numerous tribes in the Gold Coast such as the Fantes, Ga, Akyems, Adas were led by the British army to fight the Ashantis. It is classified as one of the \"Anglo-Ashanti Wars\" according to historical evidence at the National Archives.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q98233405, imported by tools/import/wikidata.mjs. The item's own description reads \"war that was fought between Asante’s and the British alongside other tribals both internal and external alien forces within the British colony\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1826,
+    "end": 1826,
+    "date": "1826-08-07",
+    "endDate": "1826-08-07"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

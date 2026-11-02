@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "rathore-rebellion-1679-1707",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q109592119",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Rathore rebellion (1679–1707)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q109592119"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rathore rebellion (1679–1707)\", revision 1370706359"
+    }
+  ],
+  "title": "Rathore rebellion (1679–1707)",
+  "summary": "The English Wikipedia article \"Rathore rebellion (1679–1707)\", at revision 1370706359, opens: \"The Rathore rebellion, described variously as the Rajput War, was the conflict between Rajputs of Marwar and the Mughals that started after the death of Jaswant Singh of Marwar, due to Aurangzeb's attempt to interfere in the succession of Marwar. The resistance to Mughal interference was started by the Rajput nobles under Durgadas Rathore and erupted into an all-out war between the Mughal Empire and Rajputs of Marwar supported by Mewar Rajputs. It lasted for almost thirty years. The rebellion reached a climax after the death of Aurangzeb on 3 March 1707 and the capture of Jodhpur by the Rathores on 12 March 1707.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q109592119, imported by tools/import/wikidata.mjs. The item's own description reads \"war between Rajputs and Mughals\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1679,
+    "end": 1707,
+    "date": "1679-07-23",
+    "endDate": "1707-03-12"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
