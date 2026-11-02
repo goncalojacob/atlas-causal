@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "khmelnytsky-uprising--pereiaslav-agreement--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Khmelnytsky Uprising\", revision 1379808140"
+    }
+  ],
+  "from": "khmelnytsky-uprising",
+  "to": "pereiaslav-agreement",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Khmelnytsky Uprising\" (revision 1379808140) says: \"The uprising led to the eventual incorporation of eastern Ukraine into the Tsardom of Russia, initiated by the 1654 Pereiaslav Agreement.\" The edge reads that sentence as: Khmelnytsky Uprising caused Pereiaslav Agreement, and nothing more.",
+  "dispute": null
+}

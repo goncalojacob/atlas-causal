@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "napoleonic-wars--spanish-american-wars-of-independence--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Napoleonic Wars\", revision 1375690911"
+    }
+  ],
+  "from": "napoleonic-wars",
+  "to": "spanish-american-wars-of-independence",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Napoleonic Wars\" (revision 1375690911) says: \"Independence movements emerged in Spanish America as a direct consequence of the wars, leading to the decline of the Spanish and Portuguese Empires.\" The edge reads that sentence as: Napoleonic Wars caused Spanish American wars of independence, and nothing more.",
+  "dispute": null
+}

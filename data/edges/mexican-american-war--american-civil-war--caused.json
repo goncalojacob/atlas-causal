@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "mexican-american-war--american-civil-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mexican–American War\", revision 1379967616"
+    }
+  ],
+  "from": "mexican-american-war",
+  "to": "american-civil-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Mexican–American War\" (revision 1379967616) says: \"Some scholars see the Mexican–American War as leading to the American Civil War.\" The edge reads that sentence as: Mexican–American War caused American Civil War, and nothing more.",
+  "dispute": null
+}

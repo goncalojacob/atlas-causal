@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "uruguayan-war--paraguayan-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Paraguayan War\", revision 1378705342"
+    }
+  ],
+  "from": "uruguayan-war",
+  "to": "paraguayan-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Paraguayan War\" (revision 1378705342) says: \"The war began in late 1864, as a result of a conflict between Paraguay and Brazil caused by the Uruguayan War.\" The edge reads that sentence as: Uruguayan War caused Paraguayan War, and nothing more.",
+  "dispute": null
+}

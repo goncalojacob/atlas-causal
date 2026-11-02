@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "french-revolution--revolutions-of-1848--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolutions of 1848\", revision 1379173550"
+    }
+  ],
+  "from": "french-revolution",
+  "to": "revolutions-of-1848",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Revolutions of 1848\" (revision 1379173550) says: \"The revolutions were shaped by a wide variety of causes, which were linked to the short- and long-term socioeconomic transformations brought about by industrialization and the political legacy of the French Revolution.\" The edge reads that sentence as: French Revolution was a precondition of Revolutions of 1848, and nothing more.",
+  "dispute": null
+}

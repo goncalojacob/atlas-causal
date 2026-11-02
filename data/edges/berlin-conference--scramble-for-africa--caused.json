@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "berlin-conference--scramble-for-africa--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Berlin Conference\", revision 1369494326"
+    }
+  ],
+  "from": "berlin-conference",
+  "to": "scramble-for-africa",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Berlin Conference\" (revision 1369494326) says: \"The Scramble for Africa intensified as a result of the General Act of the Berlin Conference, and especially the principle of effective occupation.\" The edge reads that sentence as: Berlin Conference caused Scramble for Africa, and nothing more.",
+  "dispute": null
+}
