@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "deccan-riots",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1181756",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Deccan Riots"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1181756"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Deccan Riots\", revision 1355949462"
+    }
+  ],
+  "title": "Deccan Riots",
+  "summary": "The English Wikipedia article \"Deccan Riots\", at revision 1355949462, opens: \"In May and June 1875, peasants of Maharashtra, some parts of Poona, and Ahmednagar districts revolted against increasing agrarian distress. The Deccan Riots of 1875 targeted conditions of debt peonage (kamiuti) to moneylenders. The rioters' specific purpose was to obtain and destroy the bonds, decrees, and other documents in the possession of the moneylenders. The peasants began a systematic attack on the moneylenders’ houses and shops. They seized and publicly burnt debt bonds and deeds signed under pressure, in ignorance, or through fraud and other documents dealing with their debts. They socially boycotted the moneylenders. Within days, the disturbances spread to other villages of the Poona and Ahmednagar districts, although there was no anti-colonial consciousness among them.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1181756, imported by tools/import/wikidata.mjs. The item's own description reads \"The Deccan riots resulted in protection for peasants and marginal peasants.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1875,
+    "end": 1875,
+    "date": "1875-05",
+    "endDate": "1875-06"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

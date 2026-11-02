@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battles-of-woyowoyanko",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1559790",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battles of Woyowoyanko"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1559790"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battles of Woyowoyanko\", revision 1380189315"
+    }
+  ],
+  "title": "Battles of Woyowoyanko",
+  "summary": "The English Wikipedia article \"Battles of Woyowoyanko\", at revision 1380189315, opens: \"The Battles of Woyowoyanko were two military engagements fought near the Woyowoyanko river in April 1883, during the wars between France and the Wassulu Empire of Samori Ture in West Africa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1559790, imported by tools/import/wikidata.mjs. The item's own description reads \"1882 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1882,
+    "end": 1882,
+    "date": "1882-04-02"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

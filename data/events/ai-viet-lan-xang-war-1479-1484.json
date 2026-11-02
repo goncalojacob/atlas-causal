@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "ai-viet-lan-xang-war-1479-1484",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q10747221",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Đại Việt–Lan Xang War (1479–1484)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10747221"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Đại Việt–Lan Xang War (1479–1484)\", revision 1379501394"
+    }
+  ],
+  "title": "Đại Việt–Lan Xang War (1479–1484)",
+  "summary": "The English Wikipedia article \"Đại Việt–Lan Xang War (1479–1484)\", at revision 1379501394, opens: \"The Đại Việt–Lan Xang War of 1479–84, also known as the White Elephant War, was a military conflict precipitated by the invasion of the Lao kingdom of Lan Xang by the Vietnamese Đại Việt Empire. The Vietnamese invasion was a continuation of Emperor Lê Thánh Tông's expansion, by which Đại Việt had conquered the kingdom of Champa in 1471. The conflict grew into a wider conflagration involving the Ai-Lao people from Sip Song Chau Tai along with the Mekong River valley Tai peoples from the Yuan kingdom of Lan Na, Lü kingdom Sip Song Pan Na, to Muang along the upper Irawaddy River. The conflict ultimately lasted approximately five years growing to threatened the southern border of Yunnan and raising the concerns of Ming China. Early gunpowder weapons played a major role in the conflict, enabling Đại Việt's aggression. Early success in the war allowed Đại Việt to capture the Lao capital of Luang Prabang and destroy the Muang Phuan city of Xiang Khouang. The war ended as a strategic victory for Lan Xang, as they were able to force the Vietnamese to withdraw with the assistance of Lan Na and Ming China. Ultimately the war contributed to closer political and economic ties between Lan Na, Lan Xang, and Ming China. In particular, Lan Na's political and economic expansion led to a \"golden age\" for that kingdom.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10747221, imported by tools/import/wikidata.mjs. The item's own description reads \"15th c. conflict in southeast Asia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1479,
+    "end": 1484
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "shammar-obaidi-war-1814-1817",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q140321634",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Shammar–Obaidi war (1814–1817)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q140321634"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Shammar–Obaidi war (1814–1817)\", revision 1373334541"
+    }
+  ],
+  "title": "Shammar–Obaidi war (1814–1817)",
+  "summary": "The English Wikipedia article \"Shammar–Obaidi war (1814–1817)\", at revision 1373334541, opens: \"In the 1800s, after the Al Obeidi, were kicked out of Najd, by the First Saudi state, they had Quickly established a presence in the Al-Jazira, and started to rival the influential Shammar tribe, and tensions had spiked quickly, as the Ottoman Empire, had tried to keep peace and control over Iraq through military alliances and negotiations with both the Sultans of the tribe.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q140321634, imported by tools/import/wikidata.mjs. The item's own description reads \"1814–1817 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1817
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

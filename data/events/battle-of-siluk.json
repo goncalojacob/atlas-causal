@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-siluk",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q133850436",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Siluk"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q133850436"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Siluk\", revision 1370589394"
+    }
+  ],
+  "title": "Battle of Siluk",
+  "summary": "The English Wikipedia article \"Battle of Siluk\", at revision 1370589394, opens: \"The Battle of Siluk was an engagement at the closing stages of the Java War between rebel forces of Prince Diponegoro, commanded by Sentot Prawirodirdjo, and Dutch colonial forces on 17 September 1829. Dutch forces, pursuing Diponegoro, attempted to surround his force at the village of Siluk, and after a battle, scattered the remnants of the rebel force while failing to capture Diponegoro.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q133850436, imported by tools/import/wikidata.mjs. The item's own description reads \"1829 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1829,
+    "end": 1829,
+    "date": "1829-09-17"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "java-war"
+}
