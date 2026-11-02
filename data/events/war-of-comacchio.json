@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "war-of-comacchio",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1113196",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "War of Comacchio"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1113196"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of Comacchio\", revision 1368840371"
+    }
+  ],
+  "title": "War of Comacchio",
+  "summary": "The English Wikipedia article \"War of Comacchio\", at revision 1368840371, opens: \"The War of Comacchio (1708–1709) was the last military conflict between a Holy Roman Emperor and a Pope. The conflict was related to the War of the Spanish Succession, but had its own origins in disputes over feudal law. It did not lead to noteworthy battles. The war ended with the capitulation of Pope Clement XI.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1113196, imported by tools/import/wikidata.mjs. The item's own description reads \"1708–1709 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1708,
+    "end": 1709,
+    "date": "1708-05-24",
+    "endDate": "1709-01-15"
+  },
+  "place": "central-italy",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ambela-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2682126",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Ambela campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2682126"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ambela campaign\", revision 1381127550"
+    }
+  ],
+  "title": "Ambela campaign",
+  "summary": "The English Wikipedia article \"Ambela campaign\", at revision 1381127550, opens: \"The Ambela campaign of 1863 was a campaign led by British Indian army against the remnants of Mujahidin movement of Syed Ahmad Barelvi, who were based at Malka at Buner and whom the British colonial authorities described as 'Hindustani fanatics'. They were supported by Pashtun tribes, notably Yousafzais, under Saidu Baba of Swat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2682126, imported by tools/import/wikidata.mjs. The item's own description reads \"1863–1864 military campaign in British India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1858
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

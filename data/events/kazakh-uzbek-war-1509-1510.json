@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "kazakh-uzbek-war-1509-1510",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7443382",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Kazakh–Uzbek War (1509–1510)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7443382"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kazakh–Uzbek War (1509–1510)\", revision 1370625578"
+    }
+  ],
+  "title": "Kazakh–Uzbek War (1509–1510)",
+  "summary": "The English Wikipedia article \"Kazakh–Uzbek War (1509–1510)\", at revision 1370625578, opens: \"In the year 1509, Shaybani Khan proceeded against the Kazakhs. At that time, although the Khan of the Kazakhs was Burunduk Khan, all of the business of government was conducted by Kasym Khan Qasim Beg, son of the late Khan Janybek Khan. In spite of his great power, Shaybani Khan did not have enough force to withstand Kasym Khan. At that period, the numbers of his army exceeded 20,000. In winter time every one stayed in some place where there was fodder for the cattle. In the middle of the winter, Shaybani Khan was engaged in plundering Kazakh territories, but he soon returned, his object being not to remain too far from his own country. Shaybani Khan made his last expedition into Kazakh territory, but the strength of his horses and soldiers was quite exhausted; he himself remained in the district of Kuk Kashana, and having detached a force, whose horses had some strength left, sent them forward. This party fell in with a few men, whom they despoiled and made prisoners. One day this same party had halted for the sake of feeding their horses, when news came that Qasim Khan, Qasim Beg was close at hand. This news alarmed them. Buyun Pir Hasan, one of Kasym Khan's Amirs, having heard of the invasion of the Uzbeks, advanced against them with his own army; he spread the report that Kasym Khan was approaching and had let himself be seen in the distance. The Uzbeks being fully persuaded that Qasim Khan was really upon them, abandoned all they had seized, even all they had brought with them and retreated, in the utmost disorder and confusion, to Shaybani Khan, bearing the news of Kasym Khan's approach. Shaybani Khan at once ordered them to sound the drum of retreat, without paying attention to anything but getting away. The Uzbek army retreated in disorder for the first time in their military career since the advent of Shaybani Khan and reached Samarkand at the end of the winter. Shaybani Khan himself went on to Khorasan, where he spent the spring.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7443382, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1509,
+    "end": 1510
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

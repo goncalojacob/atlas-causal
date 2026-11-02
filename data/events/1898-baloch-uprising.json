@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1898-baloch-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4557264",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "1898 Baloch uprising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4557264"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1898 Baloch uprising\", revision 1366266518"
+    }
+  ],
+  "title": "1898 Baloch uprising",
+  "summary": "The English Wikipedia article \"1898 Baloch uprising\", at revision 1366266518, opens: \"The 1898 Baloch uprising was a revolt that occurred in Balochistan, modern-day Pakistan. It was instigated by Sardar Mehrab Khan Gichki and Mir Baloch Khan Nousherwani.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4557264, imported by tools/import/wikidata.mjs. The item's own description reads \"Pakistani revolt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": null,
+    "date": "1898-01-06"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "rio-arriba-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7318587",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Río Arriba Rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7318587"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Río Arriba Rebellion\", revision 1380311171"
+    }
+  ],
+  "title": "Río Arriba Rebellion",
+  "summary": "The English Wikipedia article \"Río Arriba Rebellion\", at revision 1380311171, opens: \"The Río Arriba Rebellion, also known as the Chimayó Rebellion, was an 1837 Pueblo-Hispano popular revolt in New Mexico which succeeded in briefly placing José María González and Pablo Montoya as governor of Mexico's Santa Fe de Nuevo México territory. González and Montoya were both Taos Pueblo Indigenous and led the independent Cantón de Nuevo México, also known as the Junta Popular, which was the most ethnically inclusive government in the history of New Mexico. They became the only Pueblo rulers in the history of New Mexico since Po'pay and Luis Tupatu of the Pueblo confederation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7318587, imported by tools/import/wikidata.mjs. The item's own description reads \"revolt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1837,
+    "end": 1837
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

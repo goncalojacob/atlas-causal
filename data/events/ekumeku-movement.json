@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ekumeku-movement",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5350624",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Ekumeku Movement"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5350624"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ekumeku Movement\", revision 1383163551"
+    }
+  ],
+  "title": "Ekumeku Movement",
+  "summary": "The English Wikipedia article \"Ekumeku Movement\", at revision 1383163551, opens: \"The Ekumeku Movement consisted of a series of uprisings against the rising power of the Royal Niger Company of the British Empire by Anioma Igbo people. The British penetration of Nigeria met with various forms of resistance throughout the country. In the south, the British had to fight many wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5350624, imported by tools/import/wikidata.mjs. The item's own description reads \"Colonial opposition movements\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1883,
+    "end": 1914
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "other",
+  "actors": []
+}

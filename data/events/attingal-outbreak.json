@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "attingal-outbreak",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4818516",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Attingal Outbreak"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4818516"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Attingal Outbreak\", revision 1380347412"
+    }
+  ],
+  "title": "Attingal Outbreak",
+  "summary": "The English Wikipedia article \"Attingal Outbreak\", at revision 1380347412, opens: \"The Attingal Outbreak was the massacre of 150 East India Company soldiers by native Indians and the following siege of Fort Anjengo. It is often regarded as the first organized revolt against British authority in Malabar, Cochin, Travancore, and India itself. The main reason behind the resentment was large-scale corruption and the manipulation of black pepper prices by the company.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4818516, imported by tools/import/wikidata.mjs. The item's own description reads \"1721 revolt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1721,
+    "end": 1721,
+    "date": "1721-10"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

@@ -91422,6 +91422,640 @@
       },
       "refusals": [],
       "note": "Q65012963: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-americas-479",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2935426: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-africa-261",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "katamanso-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-207",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5339486: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-asia-210",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4028067: none of its classes (Q1129461) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-31-asia-212",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q86750730: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-europe-442",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "second-desmond-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-214",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "attingal-outbreak",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-443",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q11713274: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-asia-216",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-khakeekera",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-217",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "ambela-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-218",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2582156: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-europe-445",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "1859-chilean-revolution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-446",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-comacchio",
+        "edges": [],
+        "place": "central-italy"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-221",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "mughal-war-of-succession-1707-1709",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-449",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2215198 is held by the other branch"
+    },
+    {
+      "id": "2026-10-31-europe-450",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "sagbadre-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-africa-264",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "ga-fante-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-452",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q61132459: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-asia-222",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7835873: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-asia-223",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "andaman-islands-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-africa-265",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "kiriji-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-226",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "mataram-blambangan-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-453",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "avignon-comtat-venaissin-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-455",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q30607602: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-americas-489",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "california-indian-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-228",
+      "writer": "A",
+      "fired": "2026-11-02T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "1898-baloch-uprising",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-440",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "written",
+      "written": {
+        "event": "freiamtersturm",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-480",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "written",
+      "written": {
+        "event": "fraser-canyon-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-208",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2119019: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-asia-211",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q10747183: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-europe-441",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "written",
+      "written": {
+        "event": "rappenkrieg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-213",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "written",
+      "written": {
+        "event": "kazakh-uzbek-war-1509-1510",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-215",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q65083157: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-europe-444",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "written",
+      "written": {
+        "event": "1809-gottscheer-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-481",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6102459: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-americas-483",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "written",
+      "written": {
+        "event": "coeur-d-alene-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-219",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "written",
+      "written": {
+        "event": "khost-rebellion-1856-1857",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-africa-263",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "written",
+      "written": {
+        "event": "ekumeku-movement",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-447",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q56876038: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-europe-448",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q12754363: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-americas-484",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "written",
+      "written": {
+        "event": "montserrat-slave-rebellion-of-1768",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-485",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6107227: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-europe-451",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q25303213: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-americas-486",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "written",
+      "written": {
+        "event": "rio-arriba-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-487",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6107284: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-americas-488",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6415375: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-asia-224",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "written",
+      "written": {
+        "event": "chin-lushai-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-227",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "written",
+      "written": {
+        "event": "rathore-rebellion-1679-1707",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-454",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q30607597: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-europe-456",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q30684117: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-10-31-africa-266",
+      "writer": "B",
+      "fired": "2026-11-02T00:21Z",
+      "status": "written",
+      "written": {
+        "event": "soninke-marabout-war-kombo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
