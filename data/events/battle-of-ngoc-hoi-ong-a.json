@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q3539853",
-  "sitelinks": {
-    "count": 6,
-    "on": "2026-10-17"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q3539853",
   "wikipedia": {
     "en": "Battle of Ngọc Hồi-Đống Đa",
     "pt": "Batalha de Ngọc Hồi-Đống Đa"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-17"
   },
   "sources": [
     {
@@ -52,6 +52,7 @@
   "place": null,
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "ten-great-campaigns",
   "category": "war",
   "actors": []
 }

@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q1860257",
-  "sitelinks": {
-    "count": 23,
-    "on": "2026-10-17"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1860257",
   "wikipedia": {
     "en": "Cromwellian conquest of Ireland",
     "pt": "Conquista da Irlanda por Cromwell"
+  },
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-17"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": null,
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "irish-confederate-wars",
   "category": "founding",
   "actors": []
 }

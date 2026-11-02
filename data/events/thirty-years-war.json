@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
   "revised": "2026-09-24",
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -26,14 +23,17 @@
     ],
     "note": "Place from A9 P276 = Q27509, written as \"central-europe\" at `region` precision."
   },
-  "wikidata": "Q2487",
-  "sitelinks": {
-    "count": 124,
-    "on": "2026-09-22"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q2487",
   "wikipedia": {
     "en": "Thirty Years' War",
     "pt": "Guerra dos Trinta Anos"
+  },
+  "sitelinks": {
+    "count": 124,
+    "on": "2026-09-22"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "central-europe",
   "region": null,
   "regionNote": null,
+  "parent": "european-wars-of-religion",
   "category": "war",
   "actors": []
 }

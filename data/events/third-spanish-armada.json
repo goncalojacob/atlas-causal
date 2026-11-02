@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-31",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q5919490",
-  "sitelinks": {
-    "count": 7,
-    "on": "2026-10-31"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q5919490",
   "wikipedia": {
     "en": "Third Spanish Armada",
     "pt": "Terceira Armada Espanhola"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-31"
   },
   "sources": [
     {
@@ -55,6 +55,7 @@
   "place": "english-channel",
   "region": null,
   "regionNote": null,
+  "parent": "eighty-years-war",
   "category": "war",
   "actors": []
 }

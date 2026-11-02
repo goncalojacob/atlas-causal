@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-27",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q10931943",
-  "sitelinks": {
-    "count": 16,
-    "on": "2026-10-27"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q10931943",
   "wikipedia": {
     "en": "Overthrow of the Hawaiian Kingdom",
     "pt": "Queda do Reino do Havaí"
+  },
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-27"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "honolulu",
   "region": null,
   "regionNote": null,
+  "parent": "hawaiian-rebellions-1887-1895",
   "category": "revolution",
   "actors": []
 }

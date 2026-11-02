@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-30",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q2004436",
+  "wikipedia": {
+    "en": "Battle of Vyborg Bay (1790)"
+  },
   "sitelinks": {
     "count": 7,
     "on": "2026-10-30"
-  },
-  "wikipedia": {
-    "en": "Battle of Vyborg Bay (1790)"
   },
   "sources": [
     {
@@ -52,6 +52,7 @@
   "place": "vyborg",
   "region": null,
   "regionNote": null,
+  "parent": "russo-swedish-war-1788-1790",
   "category": "war",
   "actors": []
 }

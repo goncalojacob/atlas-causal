@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q73670",
+  "wikipedia": {
+    "en": "Siege of Krujë (1450)"
+  },
   "sitelinks": {
     "count": 13,
     "on": "2026-10-29"
-  },
-  "wikipedia": {
-    "en": "Siege of Krujë (1450)"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "kruje",
   "region": null,
   "regionNote": null,
+  "parent": "skanderbeg-s-rebellion",
   "category": "war",
   "actors": []
 }

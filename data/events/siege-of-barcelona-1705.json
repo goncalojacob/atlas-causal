@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-30",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q638462",
-  "sitelinks": {
-    "count": 14,
-    "on": "2026-10-30"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q638462",
   "wikipedia": {
     "en": "Siege of Barcelona (1705)",
     "pt": "Cerco de Barcelona (1705)"
+  },
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-30"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "barcelona",
   "region": null,
   "regionNote": null,
+  "parent": "war-of-the-spanish-succession",
   "category": "war",
   "actors": []
 }

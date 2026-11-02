@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q7701256",
+  "wikipedia": {
+    "en": "Tepehuán Revolt"
+  },
   "sitelinks": {
     "count": 2,
     "on": "2026-10-17"
-  },
-  "wikipedia": {
-    "en": "Tepehuán Revolt"
   },
   "sources": [
     {
@@ -51,6 +51,7 @@
   "place": null,
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "list-of-indigenous-rebellions-in-mexico-and-central-america",
   "category": "revolution",
   "actors": []
 }

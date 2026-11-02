@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-31",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q5036984",
+  "wikipedia": {
+    "en": "Capture of Baghdad (1624)"
+  },
   "sitelinks": {
     "count": 10,
     "on": "2026-10-31"
-  },
-  "wikipedia": {
-    "en": "Capture of Baghdad (1624)"
   },
   "sources": [
     {
@@ -52,6 +52,7 @@
   "place": "baghdad",
   "region": null,
   "regionNote": null,
+  "parent": "ottoman-safavid-war-1623-1639",
   "category": "war",
   "actors": []
 }

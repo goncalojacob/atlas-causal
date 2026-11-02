@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-30",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q2400227",
+  "wikipedia": {
+    "en": "Battle of Gravelines (1588)"
+  },
   "sitelinks": {
     "count": 8,
     "on": "2026-10-30"
-  },
-  "wikipedia": {
-    "en": "Battle of Gravelines (1588)"
   },
   "sources": [
     {
@@ -49,6 +49,7 @@
   "place": "gravelines",
   "region": null,
   "regionNote": null,
+  "parent": "eighty-years-war",
   "category": "war",
   "actors": []
 }

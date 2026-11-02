@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q426026",
-  "sitelinks": {
-    "count": 15,
-    "on": "2026-10-29"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q426026",
   "wikipedia": {
     "en": "Battle of Laon",
     "pt": "Batalha de Laon"
+  },
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
   },
   "sources": [
     {
@@ -55,6 +55,7 @@
   "place": "laon",
   "region": null,
   "regionNote": null,
+  "parent": "german-campaign-of-1813",
   "category": "war",
   "actors": []
 }

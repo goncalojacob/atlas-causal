@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-30",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q451404",
+  "wikipedia": {
+    "en": "Battle of St. Jakob an der Sihl"
+  },
   "sitelinks": {
     "count": 8,
     "on": "2026-10-30"
-  },
-  "wikipedia": {
-    "en": "Battle of St. Jakob an der Sihl"
   },
   "sources": [
     {
@@ -52,6 +52,7 @@
   "place": "zurich",
   "region": null,
   "regionNote": null,
+  "parent": "old-zurich-war",
   "category": "war",
   "actors": []
 }

@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q3296937",
-  "sitelinks": {
-    "count": 16,
-    "on": "2026-10-28"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q3296937",
   "wikipedia": {
     "en": "Battle of Gulnabad",
     "pt": "Batalha de Gulnabade"
+  },
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "jilanabad",
   "region": null,
   "regionNote": null,
+  "parent": "campaigns-of-nader-shah",
   "category": "war",
   "actors": []
 }

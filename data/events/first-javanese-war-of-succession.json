@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q2362089",
+  "wikipedia": {
+    "en": "First Javanese War of Succession"
+  },
   "sitelinks": {
     "count": 7,
     "on": "2026-10-17"
-  },
-  "wikipedia": {
-    "en": "First Javanese War of Succession"
   },
   "sources": [
     {
@@ -51,6 +51,7 @@
   "place": "java",
   "region": null,
   "regionNote": null,
+  "parent": "javanese-wars-of-succession",
   "category": "war",
   "actors": []
 }

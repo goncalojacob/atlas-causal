@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q3720898",
+  "wikipedia": {
+    "en": "Raid of the Balearic Islands (1558)"
+  },
   "sitelinks": {
     "count": 12,
     "on": "2026-10-29"
-  },
-  "wikipedia": {
-    "en": "Raid of the Balearic Islands (1558)"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "ciutadella-de-menorca",
   "region": null,
   "regionNote": null,
+  "parent": "ottoman-habsburg-wars",
   "category": "war",
   "actors": []
 }

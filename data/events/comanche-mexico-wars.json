@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q5150532",
+  "wikipedia": {
+    "en": "Comanche–Mexico Wars"
+  },
   "sitelinks": {
     "count": 4,
     "on": "2026-10-28"
-  },
-  "wikipedia": {
-    "en": "Comanche–Mexico Wars"
   },
   "sources": [
     {
@@ -52,6 +52,7 @@
   "place": "mexico-q96",
   "region": null,
   "regionNote": null,
+  "parent": "list-of-indigenous-rebellions-in-mexico-and-central-america",
   "category": "war",
   "actors": []
 }

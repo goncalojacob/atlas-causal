@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q233663",
-  "sitelinks": {
-    "count": 23,
-    "on": "2026-10-17"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q233663",
   "wikipedia": {
     "en": "Second Anglo-Mysore War",
     "pt": "Segunda Guerra Anglo-Maiçor"
+  },
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-17"
   },
   "sources": [
     {
@@ -52,6 +52,7 @@
   "place": "south-india",
   "region": null,
   "regionNote": null,
+  "parent": "anglo-mysore-wars",
   "category": "war",
   "actors": []
 }

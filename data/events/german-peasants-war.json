@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-16",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q154031",
-  "sitelinks": {
-    "count": 47,
-    "on": "2026-10-16"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q154031",
   "wikipedia": {
     "en": "German Peasants' War",
     "pt": "Guerra dos Camponeses"
+  },
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-16"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "holy-roman-empire-q12548",
   "region": null,
   "regionNote": null,
+  "parent": "european-wars-of-religion",
   "category": "revolution",
   "actors": []
 }

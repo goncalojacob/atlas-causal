@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-27",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q496905",
+  "wikipedia": {
+    "en": "Ganghwa Island incident"
+  },
   "sitelinks": {
     "count": 15,
     "on": "2026-10-27"
-  },
-  "wikipedia": {
-    "en": "Ganghwa Island incident"
   },
   "sources": [
     {
@@ -52,6 +52,7 @@
   "place": "ganghwa-island",
   "region": null,
   "regionNote": null,
+  "parent": "meiji-era",
   "category": "war",
   "actors": []
 }

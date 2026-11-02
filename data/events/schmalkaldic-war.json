@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q168556",
-  "sitelinks": {
-    "count": 40,
-    "on": "2026-10-17"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q168556",
   "wikipedia": {
     "en": "Schmalkaldic War",
     "pt": "Guerra de Esmalcalda"
+  },
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-10-17"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "holy-roman-empire-q12548",
   "region": null,
   "regionNote": null,
+  "parent": "european-wars-of-religion",
   "category": "war",
   "actors": []
 }

@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-30",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q2890664",
+  "wikipedia": {
+    "en": "Raid on Mount's Bay"
+  },
   "sitelinks": {
     "count": 7,
     "on": "2026-10-30"
-  },
-  "wikipedia": {
-    "en": "Raid on Mount's Bay"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "mount-s-bay",
   "region": null,
   "regionNote": null,
+  "parent": "eighty-years-war",
   "category": "war",
   "actors": []
 }

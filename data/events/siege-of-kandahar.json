@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q7510145",
-  "sitelinks": {
-    "count": 10,
-    "on": "2026-10-29"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q7510145",
   "wikipedia": {
     "en": "Siege of Kandahar",
     "pt": "Cerco de Candaar"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-29"
   },
   "sources": [
     {
@@ -55,6 +55,7 @@
   "place": "afghanistan-q889",
   "region": null,
   "regionNote": null,
+  "parent": "campaigns-of-nader-shah",
   "category": "war",
   "actors": []
 }

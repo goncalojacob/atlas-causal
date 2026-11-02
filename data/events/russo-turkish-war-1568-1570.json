@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q631799",
-  "sitelinks": {
-    "count": 41,
-    "on": "2026-10-28"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q631799",
   "wikipedia": {
     "en": "Russo-Turkish War (1568–1570)",
     "pt": "Guerra Russo-Turca (1568–1570)"
+  },
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-28"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "astrakhan",
   "region": null,
   "regionNote": null,
+  "parent": "russo-turkish-wars",
   "category": "war",
   "actors": []
 }

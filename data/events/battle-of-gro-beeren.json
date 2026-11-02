@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q339052",
-  "sitelinks": {
-    "count": 21,
-    "on": "2026-10-28"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q339052",
   "wikipedia": {
     "en": "Battle of Großbeeren",
     "pt": "Batalha de Großbeeren"
+  },
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-28"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "gro-beeren",
   "region": null,
   "regionNote": null,
+  "parent": "german-campaign-of-1813",
   "category": "war",
   "actors": []
 }

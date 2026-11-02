@@ -60,6 +60,7 @@
   "place": "joseon",
   "region": "asia",
   "regionNote": "The Wikidata import wrote this lane, named for this item in data/imports/wikidata-seeds.json. This event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "meiji-era",
   "category": "war",
   "actors": [
     {

@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q763551",
-  "sitelinks": {
-    "count": 15,
-    "on": "2026-10-29"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q763551",
   "wikipedia": {
     "en": "Battle of Brienne",
     "pt": "Batalha de Brienne"
+  },
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "brienne-le-chateau",
   "region": null,
   "regionNote": null,
+  "parent": "german-campaign-of-1813",
   "category": "war",
   "actors": []
 }

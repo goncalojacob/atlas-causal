@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q151005",
-  "sitelinks": {
-    "count": 63,
-    "on": "2026-10-17"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q151005",
   "wikipedia": {
     "en": "Battle of Leipzig",
     "pt": "Batalha das Nações"
+  },
+  "sitelinks": {
+    "count": 63,
+    "on": "2026-10-17"
   },
   "sources": [
     {
@@ -55,6 +55,7 @@
   "place": "leipzig",
   "region": null,
   "regionNote": null,
+  "parent": "german-campaign-of-1813",
   "category": "war",
   "actors": []
 }

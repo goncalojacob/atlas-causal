@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q123070",
-  "sitelinks": {
-    "count": 46,
-    "on": "2026-10-28"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q123070",
   "wikipedia": {
     "en": "Russo-Turkish War (1768–1774)",
     "pt": "Guerra Russo-Turca (1768–1774)"
+  },
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-10-28"
   },
   "sources": [
     {
@@ -52,6 +52,7 @@
   "place": "eastern-europe",
   "region": null,
   "regionNote": null,
+  "parent": "russo-turkish-wars",
   "category": "war",
   "actors": []
 }
