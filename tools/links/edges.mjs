@@ -40,13 +40,14 @@ import { createHash } from 'node:crypto';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
-import { claimIds, wikipediaApi, sleep } from '../import/wikidata.mjs';
+import { claimIds, wikipediaApi, sleep, LEAD_CACHE } from '../import/wikidata.mjs';
 import {
   fold, isChronologyOnly, namesHeldEvents, mentions, usableName, undisambiguated, CAUSAL_MARKERS,
 } from '../import/chronology.mjs';
 import { quoteFound, writeVerdictFor, EDGE_TYPES, LANES } from '../queue/queue.mjs';
 import { plainText } from '../queue/apply.mjs';
 import { readRecords } from '../lib/read.mjs';
+import { citedRevisions } from '../lib/leadcache.mjs';
 import {
   ROOT, USER_AGENT, MAXLAG, BATCH, loadCorpus, createWikidataFetcher, qidOf,
 } from './parents.mjs';
@@ -107,8 +108,9 @@ export function createWikipediaFetcher({
 
 const sha = (text) => createHash('sha1').update(text).digest('hex');
 
-export const parsePageUrl = (title) => `${wikipediaApi('en')}?action=parse&prop=text%7Cwikitext%7Crevid`
-  + `&page=${encodeURIComponent(title)}&redirects=1&format=json&disablelimitreport=1&disableeditsection=1&disabletoc=1`;
+// With `oldid` the revision is asked for by number and the title is not used.
+export const parsePageUrl = (title, oldid = null) => `${wikipediaApi('en')}?action=parse&prop=text%7Cwikitext%7Crevid`
+  + `&${oldid === null ? `page=${encodeURIComponent(title)}` : `oldid=${oldid}`}&redirects=1&format=json&disablelimitreport=1&disableeditsection=1&disabletoc=1`;
 
 export const pagePropsUrl = (titles) => `${wikipediaApi('en')}?action=query&prop=pageprops&ppprop=wikibase_item`
   + `&titles=${encodeURIComponent(titles.join('|'))}&redirects=1&format=json&formatversion=2`;
@@ -118,24 +120,64 @@ export const claimsUrl = (ids, maxlag = MAXLAG) => `${WIKIDATA_API}?action=wbget
 
 const starOf = (x) => (typeof x === 'string' ? x : x?.['*'] ?? '');
 
-// An article at one revision. The HTML is kept by revision id, so a second
-// look at the same revision costs nothing and a later run can name it.
-export async function fetchArticle(title, { fetcher, cacheDir = DEFAULT_CACHE } = {}) {
+// An article at one revision: the current one, or the one named by `oldid`.
+// The HTML is kept by revision id, so a second look at the same revision costs
+// nothing and a later run can name it.
+export async function fetchArticle(title, { fetcher, cacheDir = DEFAULT_CACHE, oldid = null } = {}) {
   await mkdir(cacheDir, { recursive: true });
-  const pointer = path.join(cacheDir, `page-${sha(parsePageUrl(title))}.json`);
+  if (oldid !== null && existsSync(path.join(cacheDir, `${oldid}.html`)) && existsSync(path.join(cacheDir, `${oldid}.title`))) {
+    return {
+      title: await readFile(path.join(cacheDir, `${oldid}.title`), 'utf8'),
+      revision: oldid,
+      html: await readFile(path.join(cacheDir, `${oldid}.html`), 'utf8'),
+    };
+  }
+  const url = parsePageUrl(title, oldid);
+  const pointer = path.join(cacheDir, `page-${sha(url)}.json`);
   let known;
-  if (existsSync(pointer)) known = JSON.parse(await readFile(pointer, 'utf8'));
+  if (oldid === null && existsSync(pointer)) known = JSON.parse(await readFile(pointer, 'utf8'));
   if (known && existsSync(path.join(cacheDir, `${known.revid}.html`))) {
     return { title: known.title, revision: known.revid, html: await readFile(path.join(cacheDir, `${known.revid}.html`), 'utf8') };
   }
-  const parsed = (await fetcher.get(parsePageUrl(title)))?.parse ?? {};
+  const parsed = (await fetcher.get(url))?.parse ?? {};
   const html = starOf(parsed.text);
   const revision = Number(parsed.revid);
   if (html === '' || !Number.isInteger(revision)) throw new Error(`no text or revision for "${title}"`);
+  if (oldid !== null && revision !== oldid) throw new Error(`asked for revision ${oldid} of "${title}" and got ${revision}`);
+  const name = parsed.title ?? title;
   await writeFile(path.join(cacheDir, `${revision}.html`), html, 'utf8');
   await writeFile(path.join(cacheDir, `${revision}.wiki`), starOf(parsed.wikitext), 'utf8');
-  await writeFile(pointer, JSON.stringify({ title: parsed.title ?? title, revid: revision }), 'utf8');
-  return { title: parsed.title ?? title, revision, html };
+  await writeFile(path.join(cacheDir, `${revision}.title`), name, 'utf8');
+  await writeFile(pointer, JSON.stringify({ title: name, revid: revision }), 'utf8');
+  return { title: name, revision, html };
+}
+
+// The revision a record's own citation names, or null where it names none.
+// An edge that quoted a newer revision would make the writer's recache move
+// the lead cache off the revision the summary cites (A15(2)), so a record
+// that cites one is read at that one. Of several, the cached lead's revision
+// if it is among them, else the latest.
+export function pinnedRevision(record, leadRevision = null) {
+  const cited = citedRevisions(record);
+  if (!cited.length) return null;
+  return cited.includes(leadRevision) ? leadRevision : Math.max(...cited);
+}
+
+export async function leadRevisionOf(record, dataDir) {
+  const qid = qidOf(record);
+  const file = path.join(path.dirname(path.resolve(dataDir)), LEAD_CACHE, `${qid}.en.json`);
+  if (!qid || !existsSync(file)) return null;
+  try {
+    const n = Number(JSON.parse(await readFile(file, 'utf8')).revid);
+    return Number.isInteger(n) ? n : null;
+  } catch {
+    return null;
+  }
+}
+
+async function fetchFor(record, { fetcher, cacheDir, dataDir }) {
+  const oldid = pinnedRevision(record, await leadRevisionOf(record, dataDir));
+  return fetchArticle(record.wikipedia.en, { fetcher, cacheDir, ...(oldid === null ? {} : { oldid }) });
 }
 
 // Titles to Wikidata ids, fifty a call, redirects followed. A title with no
@@ -520,7 +562,7 @@ export async function run({
   const articles = [];
   for (const [i, r] of subjects.entries()) {
     log(`article ${i + 1}/${subjects.length}: ${r.wikipedia.en}`);
-    const got = await fetchArticle(r.wikipedia.en, { fetcher: wikipedia, cacheDir });
+    const got = await fetchFor(r, { fetcher: wikipedia, cacheDir, dataDir });
     articles.push({ owner: r.id, ...got });
   }
 
@@ -552,7 +594,7 @@ export async function run({
   const extra = [];
   for (const [i, w] of wanted.slice(0, wikidataArticles).entries()) {
     log(`wikidata pair ${i + 1}/${Math.min(wanted.length, wikidataArticles)}: ${atlas.byId.get(w.owner).wikipedia.en}`);
-    const got = await fetchArticle(atlas.byId.get(w.owner).wikipedia.en, { fetcher: wikipedia, cacheDir });
+    const got = await fetchFor(atlas.byId.get(w.owner), { fetcher: wikipedia, cacheDir, dataDir });
     extra.push({ owner: w.owner, only: new Set([w.partner]), ...got });
   }
   if (extra.length) {

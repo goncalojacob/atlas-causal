@@ -7,13 +7,13 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, rm } from 'node:fs/promises';
+import { mkdtemp, rm, mkdir, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import {
   createWikipediaFetcher, fetchArticle, resolveTitles, linkTitle, paragraphs, splitSentences, sentencesOf,
   directionsFor, reaches, chooseSubjects, buildCandidates, wikidataPairs, buildQueue, explanationFor,
-  usedSerials, CLAUSES, parsePageUrl, claimsUrl, USER_AGENT,
+  usedSerials, CLAUSES, pinnedRevision, leadRevisionOf, parsePageUrl, claimsUrl, USER_AGENT,
 } from '../tools/links/edges.mjs';
 import { checkQueue } from '../tools/queue/queue.mjs';
 
@@ -296,4 +296,47 @@ test('each type closes in plain English, the earlier record first', () => {
     caused: 'A caused B', enabled: 'A made B possible', 'reacted-to': 'B was a response to A',
     'precondition-of': 'A was a precondition of B', inspired: 'A inspired B',
   });
+});
+
+const cites = (...revs) => ({ sources: revs.map((n) => ({ source: 'wikipedia-en', locator: `"X", revision ${n}` })) });
+
+test('a record that cites a revision is read at that revision', () => {
+  assert.equal(pinnedRevision(cites(100)), 100);
+  assert.equal(pinnedRevision(cites(100, 300, 200)), 300, 'the latest of several');
+  assert.equal(pinnedRevision(cites(100, 300), 100), 100, 'the cached lead\'s, when it is one of them');
+  assert.equal(pinnedRevision({ sources: [{ source: 'wikidata', locator: 'Q1' }] }), null);
+  assert.equal(pinnedRevision({}), null);
+});
+
+test('the cached lead says which revision it is of', async () => {
+  const dir = await mkdtemp(path.join(tmpdir(), 'oc-m105-test-'));
+  try {
+    await mkdir(path.join(dir, 'data'));
+    await mkdir(path.join(dir, 'tools', 'import', 'cache', 'wikipedia'), { recursive: true });
+    await writeFile(path.join(dir, 'tools', 'import', 'cache', 'wikipedia', 'Q3.en.json'), JSON.stringify({ revid: '555' }));
+    assert.equal(await leadRevisionOf(revolt, path.join(dir, 'data')), 555);
+    assert.equal(await leadRevisionOf(war, path.join(dir, 'data')), null);
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
+});
+
+test('an article asked for by oldid is that revision, kept by number, and a different answer is refused', async () => {
+  const dir = await mkdtemp(path.join(tmpdir(), 'oc-m105-test-'));
+  try {
+    const urls = [];
+    const answer = (revid) => async (url) => {
+      urls.push(url);
+      return { parse: { title: 'Great War', revid, text: { '*': '<p>Old text.</p>' }, wikitext: { '*': 'Old' } } };
+    };
+    const got = await fetchArticle('Great War', { fetcher: { get: answer(900) }, cacheDir: dir, oldid: 900 });
+    assert.deepEqual([got.title, got.revision, got.html], ['Great War', 900, '<p>Old text.</p>']);
+    assert.ok(urls[0].includes('oldid=900') && !urls[0].includes('page='));
+    const again = await fetchArticle('Great War', { fetcher: { get: answer(900) }, cacheDir: dir, oldid: 900 });
+    assert.equal(again.revision, 900);
+    assert.equal(urls.length, 1, 'kept by revision');
+    await assert.rejects(() => fetchArticle('Great War', { fetcher: { get: answer(901) }, cacheDir: dir, oldid: 800 }), /asked for revision 800/);
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
 });
