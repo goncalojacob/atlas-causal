@@ -3,6 +3,798 @@
   "kind": "import-queue",
   "items": [
     {
+      "id": "2026-11-02-europe-152",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "second-anglo-dutch-war",
+      "title": "Second Anglo-Dutch War",
+      "edges": [
+        {
+          "from": "second-anglo-dutch-war",
+          "to": "third-anglo-dutch-war",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Second Anglo-Dutch War",
+          "revision": 1370733738,
+          "quote": "In the short-term however, Charles's desire to avenge this setback led to the Third Anglo-Dutch War in 1672.",
+          "explanation": "The English Wikipedia article \"Second Anglo-Dutch War\" (revision 1370733738) says: \"In the short-term however, Charles's desire to avenge this setback led to the Third Anglo-Dutch War in 1672.\" The edge reads that sentence as: Second Anglo-Dutch War caused Third Anglo-Dutch War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-americas-065",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "battle-of-chancellorsville",
+      "title": "Battle of Chancellorsville",
+      "edges": [
+        {
+          "from": "battle-of-chancellorsville",
+          "to": "battle-of-gettysburg-second-day",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Chancellorsville",
+          "revision": 1380654431,
+          "quote": "One of the consequences of Chancellorsville at Gettysburg was the conduct of Daniel Sickles, who undoubtedly recalled the terrible consequences of withdrawing from Hazel Grove when he decided to ignore the commands of his general and moved his lines on the second day of battle to ensure that a minor piece of high ground, the Peach Orchard, was not available to the enemy's artillery.",
+          "explanation": "The English Wikipedia article \"Battle of Chancellorsville\" (revision 1380654431) says: \"One of the consequences of Chancellorsville at Gettysburg was the conduct of Daniel Sickles, who undoubtedly recalled the terrible consequences of withdrawing from Hazel Grove when he decided to ignore the commands of his general and moved his lines on the second day of battle to ensure that a minor piece of high ground, the Peach Orchard, was not available to the enemy's artillery.\" The edge reads that sentence as: Battle of Chancellorsville caused Battle of Gettysburg, second day, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-153",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "new-imperialism",
+      "title": "New Imperialism",
+      "edges": [
+        {
+          "from": "new-imperialism",
+          "to": "boxer-rebellion",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "New Imperialism",
+          "revision": 1379856005,
+          "quote": "At the same time, the loss of national sovereignty, along with social and legal inequalities between foreigners and natives, sparked Chinese resistance to foreign imperialism resulting in events such as the Boxer Rebellion and May Fourth movement.",
+          "explanation": "The English Wikipedia article \"New Imperialism\" (revision 1379856005) says: \"At the same time, the loss of national sovereignty, along with social and legal inequalities between foreigners and natives, sparked Chinese resistance to foreign imperialism resulting in events such as the Boxer Rebellion and May Fourth movement.\" The edge reads that sentence as: New Imperialism caused Boxer Rebellion, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-154",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "first-anglo-dutch-war",
+      "title": "First Anglo-Dutch War",
+      "edges": [
+        {
+          "from": "first-anglo-dutch-war",
+          "to": "treaty-of-westminster-1654",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "First Anglo-Dutch War",
+          "revision": 1375831063,
+          "quote": "The economic damage eventually led to the Treaty of Westminster in 1654 where the Dutch were forced to make minor concessions to the Commonwealth.",
+          "explanation": "The English Wikipedia article \"First Anglo-Dutch War\" (revision 1375831063) says: \"The economic damage eventually led to the Treaty of Westminster in 1654 where the Dutch were forced to make minor concessions to the Commonwealth.\" The edge reads that sentence as: First Anglo-Dutch War caused Treaty of Westminster (1654), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-africa-018",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "africa",
+      "writer": "A",
+      "existing": "rhodesian-bush-war",
+      "title": "Rhodesian Bush War",
+      "edges": [
+        {
+          "from": "rhodesian-bush-war",
+          "to": "mozambican-civil-war",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Rhodesian Bush War",
+          "revision": 1373754851,
+          "quote": "Beyond Zimbabwe's borders, as a result of Rhodesian aid and support for RENAMO, the Rhodesian Bush War also helped influence the outbreak of the Mozambican Civil War, which lasted from 1977 until 1992 and claimed a million lives.",
+          "explanation": "The English Wikipedia article \"Rhodesian Bush War\" (revision 1373754851) says: \"Beyond Zimbabwe's borders, as a result of Rhodesian aid and support for RENAMO, the Rhodesian Bush War also helped influence the outbreak of the Mozambican Civil War, which lasted from 1977 until 1992 and claimed a million lives.\" The edge reads that sentence as: Rhodesian Bush War caused Mozambican Civil War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-asia-064",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "century-of-humiliation",
+      "title": "Century of humiliation",
+      "edges": [
+        {
+          "from": "century-of-humiliation",
+          "to": "boxer-rebellion",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Century of humiliation",
+          "revision": 1379252391,
+          "quote": "At the same time, the loss of national sovereignty, along with social and legal inequalities between foreigners and natives, sparked Chinese resistance to foreign imperialism resulting in events such as the Boxer Rebellion and May Fourth movement.",
+          "explanation": "The English Wikipedia article \"Century of humiliation\" (revision 1379252391) says: \"At the same time, the loss of national sovereignty, along with social and legal inequalities between foreigners and natives, sparked Chinese resistance to foreign imperialism resulting in events such as the Boxer Rebellion and May Fourth movement.\" The edge reads that sentence as: Century of humiliation caused Boxer Rebellion, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-155",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "fall-of-maximilien-robespierre",
+      "title": "Fall of Maximilien Robespierre",
+      "edges": [
+        {
+          "from": "fall-of-maximilien-robespierre",
+          "to": "thermidorian-reaction",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Fall of Maximilien Robespierre",
+          "revision": 1370782731,
+          "quote": "Robespierre's fall led to the implementation of more moderate policies during the Thermidorian Reaction, which soon followed.",
+          "explanation": "The English Wikipedia article \"Fall of Maximilien Robespierre\" (revision 1370782731) says: \"Robespierre's fall led to the implementation of more moderate policies during the Thermidorian Reaction, which soon followed.\" The edge reads that sentence as: Fall of Maximilien Robespierre caused Thermidorian Reaction, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-156",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "kalmar-war",
+      "title": "Kalmar War",
+      "edges": [
+        {
+          "from": "kalmar-war",
+          "to": "torstenson-war",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Kalmar War",
+          "revision": 1381716856,
+          "quote": "Eventually, however, Danish lack of gains in the war and eventual withdrawal, and Sweden's successful military campaign and rise in power led to Sweden's counterattack in the Torstenson War where Denmark–Norway would lose and cede control of the Baltic Sea to the King of Sweden.[page needed]",
+          "explanation": "The English Wikipedia article \"Kalmar War\" (revision 1381716856) says: \"Eventually, however, Danish lack of gains in the war and eventual withdrawal, and Sweden's successful military campaign and rise in power led to Sweden's counterattack in the Torstenson War where Denmark–Norway would lose and cede control of the Baltic Sea to the King of Sweden.[page needed]\" The edge reads that sentence as: Kalmar War caused Torstenson War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-africa-019",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "africa",
+      "writer": "A",
+      "existing": "mozambican-civil-war",
+      "title": "Mozambican Civil War",
+      "edges": [
+        {
+          "from": "cold-war",
+          "to": "mozambican-civil-war",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Mozambican Civil War",
+          "revision": 1378759830,
+          "quote": "The Mozambican Civil War (Portuguese: Guerra Civil Moçambicana) was a civil war fought in Mozambique from 1977 to 1992 due to a combination of local strife and the polarizing effects of Cold War politics.",
+          "explanation": "The English Wikipedia article \"Mozambican Civil War\" (revision 1378759830) says: \"The Mozambican Civil War (Portuguese: Guerra Civil Moçambicana) was a civil war fought in Mozambique from 1977 to 1992 due to a combination of local strife and the polarizing effects of Cold War politics.\" The edge reads that sentence as: Cold War caused Mozambican Civil War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-157",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "scanian-war",
+      "title": "Scanian War",
+      "edges": [
+        {
+          "from": "franco-dutch-war",
+          "to": "scanian-war",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Scanian War",
+          "revision": 1380129440,
+          "quote": "The war was prompted by Swedish involvement in the Franco-Dutch War.",
+          "explanation": "The English Wikipedia article \"Scanian War\" (revision 1380129440) says: \"The war was prompted by Swedish involvement in the Franco-Dutch War.\" The edge reads that sentence as: Franco-Dutch War caused Scanian War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-158",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "akkerman-convention",
+      "title": "Akkerman Convention",
+      "edges": [
+        {
+          "from": "akkerman-convention",
+          "to": "russo-turkish-war-1828-1829",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Akkerman Convention",
+          "revision": 1371684860,
+          "quote": "Sultan Mahmud II's repudiation of the convention triggered the Russo-Turkish War (1828–1829).",
+          "explanation": "The English Wikipedia article \"Akkerman Convention\" (revision 1371684860) says: \"Sultan Mahmud II's repudiation of the convention triggered the Russo-Turkish War (1828–1829).\" The edge reads that sentence as: Akkerman Convention caused Russo-Turkish War (1828–1829), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-asia-065",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "battle-of-buxar",
+      "title": "Battle of Buxar",
+      "edges": [
+        {
+          "from": "battle-of-buxar",
+          "to": "treaty-of-allahabad",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Buxar",
+          "revision": 1381670071,
+          "quote": "The defeated Indian rulers were forced to sign the Treaty of Allahabad, ending the war in 1765.",
+          "explanation": "The English Wikipedia article \"Battle of Buxar\" (revision 1381670071) says: \"The defeated Indian rulers were forced to sign the Treaty of Allahabad, ending the war in 1765.\" The edge reads that sentence as: Battle of Buxar caused Treaty of Allahabad, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-americas-066",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "oregon-treaty",
+      "title": "Oregon Treaty",
+      "edges": [
+        {
+          "from": "oregon-treaty",
+          "to": "pig-war-1859",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Oregon Treaty",
+          "revision": 1375247732,
+          "quote": "Vague and ambiguous language led to the Pig War.",
+          "explanation": "The English Wikipedia article \"Oregon Treaty\" (revision 1375247732) says: \"Vague and ambiguous language led to the Pig War.\" The edge reads that sentence as: Oregon Treaty caused Pig War (1859), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-159",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "third-anglo-dutch-war",
+      "title": "Third Anglo-Dutch War",
+      "edges": [
+        {
+          "from": "raid-on-the-medway",
+          "to": "third-anglo-dutch-war",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Third Anglo-Dutch War",
+          "revision": 1370750296,
+          "quote": "By doing so, Louis hoped to gain control of the Spanish Netherlands, while Charles sought to restore the damage to his prestige caused by the 1667 Raid on the Medway.",
+          "explanation": "The English Wikipedia article \"Third Anglo-Dutch War\" (revision 1370750296) says: \"By doing so, Louis hoped to gain control of the Spanish Netherlands, while Charles sought to restore the damage to his prestige caused by the 1667 Raid on the Medway.\" The edge reads that sentence as: Third Anglo-Dutch War was a response to Raid on the Medway, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-160",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "russo-persian-war-1722-1723",
+      "title": "Russo-Persian War (1722–1723)",
+      "edges": [
+        {
+          "from": "russo-persian-war-1722-1723",
+          "to": "treaty-of-saint-petersburg-1723",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Russo-Persian War (1722–1723)",
+          "revision": 1378917281,
+          "quote": "The Russian victory forced Safavid Iran to cede their territories in the North Caucasus, South Caucasus and contemporary northern Iran to Russia, comprising the cities of Derbent (southern Dagestan) and Baku and their nearby surrounding lands, as well as the provinces of Gilan, Shirvan, Mazandaran and Astarabad via the Treaty of Saint Petersburg (1723).",
+          "explanation": "The English Wikipedia article \"Russo-Persian War (1722–1723)\" (revision 1378917281) says: \"The Russian victory forced Safavid Iran to cede their territories in the North Caucasus, South Caucasus and contemporary northern Iran to Russia, comprising the cities of Derbent (southern Dagestan) and Baku and their nearby surrounding lands, as well as the provinces of Gilan, Shirvan, Mazandaran and Astarabad via the Treaty of Saint Petersburg (1723).\" The edge reads that sentence as: Russo-Persian War (1722–1723) caused Treaty of Saint Petersburg (1723), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-161",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-malplaquet",
+      "title": "Battle of Malplaquet",
+      "edges": [
+        {
+          "from": "battle-of-malplaquet",
+          "to": "peace-of-utrecht",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Battle of Malplaquet",
+          "revision": 1381293865,
+          "quote": "By saving his army, Villars arguably enabled Louis to negotiate better terms in 1713 than those available in 1709, but he failed to prevent the loss of Mons, and the Allied advance resumed in 1710.",
+          "explanation": "The English Wikipedia article \"Battle of Malplaquet\" (revision 1381293865) says: \"By saving his army, Villars arguably enabled Louis to negotiate better terms in 1713 than those available in 1709, but he failed to prevent the loss of Mons, and the Allied advance resumed in 1710.\" The edge reads that sentence as: Battle of Malplaquet made Peace of Utrecht possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-asia-066",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "anglo-persian-war",
+      "title": "Anglo-Persian War",
+      "edges": [
+        {
+          "from": "anglo-persian-war",
+          "to": "treaty-of-paris-1857",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Anglo-Persian War",
+          "revision": 1376918836,
+          "quote": "The war resulted in the Iranians withdrawing from Herat in 1857 and signing the treaty of Paris to surrender their claims on the city in return for the British withdrawing from southern Iran.",
+          "explanation": "The English Wikipedia article \"Anglo-Persian War\" (revision 1376918836) says: \"The war resulted in the Iranians withdrawing from Herat in 1857 and signing the treaty of Paris to surrender their claims on the city in return for the British withdrawing from southern Iran.\" The edge reads that sentence as: Anglo-Persian War caused Treaty of Paris (1857), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-asia-067",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "auspicious-incident",
+      "title": "Auspicious Incident",
+      "edges": [
+        {
+          "from": "auspicious-incident",
+          "to": "akkerman-convention",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Auspicious Incident",
+          "revision": 1381089790,
+          "quote": "Taking advantage of the temporary weakness in the military position of the Ottoman Empire following the Auspicious Incident, the Russian Empire forced the Ottomans to accept the Akkerman Convention on 7 October 1826.",
+          "explanation": "The English Wikipedia article \"Auspicious Incident\" (revision 1381089790) says: \"Taking advantage of the temporary weakness in the military position of the Ottoman Empire following the Auspicious Incident, the Russian Empire forced the Ottomans to accept the Akkerman Convention on 7 October 1826.\" The edge reads that sentence as: Auspicious Incident made Akkerman Convention possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-162",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "flight-to-varennes",
+      "title": "Flight to Varennes",
+      "edges": [
+        {
+          "from": "flight-to-varennes",
+          "to": "execution-of-louis-xvi",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Flight to Varennes",
+          "revision": 1366319196,
+          "quote": "The King's attempted flight provoked charges of treason that ultimately led to his execution in 1793.",
+          "explanation": "The English Wikipedia article \"Flight to Varennes\" (revision 1366319196) says: \"The King's attempted flight provoked charges of treason that ultimately led to his execution in 1793.\" The edge reads that sentence as: Flight to Varennes caused Execution of Louis XVI, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-asia-068",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "constantinople-conference",
+      "title": "Constantinople Conference",
+      "edges": [
+        {
+          "from": "constantinople-conference",
+          "to": "russo-turkish-war-1877-1878",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Constantinople Conference",
+          "revision": 1360549379,
+          "quote": "The Ottoman Empire refused the proposed reforms, leading to the Russo-Turkish War a few months later.",
+          "explanation": "The English Wikipedia article \"Constantinople Conference\" (revision 1360549379) says: \"The Ottoman Empire refused the proposed reforms, leading to the Russo-Turkish War a few months later.\" The edge reads that sentence as: Constantinople Conference caused Russo-Turkish War (1877–1878), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-asia-069",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "egyptian-ottoman-war-1831-1833",
+      "title": "Egyptian–Ottoman War (1831–1833)",
+      "edges": [
+        {
+          "from": "greek-war-of-independence",
+          "to": "egyptian-ottoman-war-1831-1833",
+          "type": "precondition-of",
+          "confidence": "probable",
+          "article": "Egyptian–Ottoman War (1831–1833)",
+          "revision": 1379023146,
+          "quote": "The First Egyptian–Ottoman War or First Syrian War (1831–1833) was a military conflict between the Ottoman Empire and Egypt brought about by Muhammad Ali Pasha's demand to the Sublime Porte for control of Greater Syria, as reward for aiding the Sultan during the Greek War of Independence.",
+          "explanation": "The English Wikipedia article \"Egyptian–Ottoman War (1831–1833)\" (revision 1379023146) says: \"The First Egyptian–Ottoman War or First Syrian War (1831–1833) was a military conflict between the Ottoman Empire and Egypt brought about by Muhammad Ali Pasha's demand to the Sublime Porte for control of Greater Syria, as reward for aiding the Sultan during the Greek War of Independence.\" The edge reads that sentence as: Greek War of Independence was a precondition of Egyptian–Ottoman War (1831–1833), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-163",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "treaty-of-breda-1667",
+      "title": "Treaty of Breda (1667)",
+      "edges": [
+        {
+          "from": "great-fire-of-london",
+          "to": "treaty-of-breda-1667",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Treaty of Breda (1667)",
+          "revision": 1367904118,
+          "quote": "Combined with economic losses caused by the war and the Great Fire of London, Clarendon instructed Holles to agree terms \"to calm people's minds\" and \"free the king from a burden...he is finding hard to bear\".",
+          "explanation": "The English Wikipedia article \"Treaty of Breda (1667)\" (revision 1367904118) says: \"Combined with economic losses caused by the war and the Great Fire of London, Clarendon instructed Holles to agree terms \"to calm people's minds\" and \"free the king from a burden...he is finding hard to bear\".\" The edge reads that sentence as: Treaty of Breda (1667) was a response to Great Fire of London, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-164",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "civil-constitution-of-the-clergy",
+      "title": "Civil Constitution of the Clergy",
+      "edges": [
+        {
+          "from": "civil-constitution-of-the-clergy",
+          "to": "war-in-the-vendee",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Civil Constitution of the Clergy",
+          "revision": 1370659862,
+          "quote": "In 1793, the War in the Vendée was influenced by the Constitution passing due to the devout population toward the Church among other social factors.",
+          "explanation": "The English Wikipedia article \"Civil Constitution of the Clergy\" (revision 1370659862) says: \"In 1793, the War in the Vendée was influenced by the Constitution passing due to the devout population toward the Church among other social factors.\" The edge reads that sentence as: Civil Constitution of the Clergy caused War in the Vendée, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-americas-067",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "war-of-the-oranges",
+      "title": "War of the Oranges",
+      "edges": [
+        {
+          "from": "war-of-the-oranges",
+          "to": "treaty-of-badajoz-1801",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "War of the Oranges",
+          "revision": 1377704597,
+          "quote": "The war resulted in the Treaty of Badajoz, the loss of Portuguese territory, in particular losing Olivenza to Spain.",
+          "explanation": "The English Wikipedia article \"War of the Oranges\" (revision 1377704597) says: \"The war resulted in the Treaty of Badajoz, the loss of Portuguese territory, in particular losing Olivenza to Spain.\" The edge reads that sentence as: War of the Oranges caused Treaty of Badajoz (1801), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-americas-068",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "whiskey-rebellion",
+      "title": "Whiskey Rebellion",
+      "edges": [
+        {
+          "from": "american-revolution",
+          "to": "whiskey-rebellion",
+          "type": "inspired",
+          "confidence": "probable",
+          "article": "Whiskey Rebellion",
+          "revision": 1377157978,
+          "quote": "The attackers modeled their actions on the protests of the American Revolution.",
+          "explanation": "The English Wikipedia article \"Whiskey Rebellion\" (revision 1377157978) says: \"The attackers modeled their actions on the protests of the American Revolution.\" The edge reads that sentence as: American Revolution inspired Whiskey Rebellion, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-americas-069",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "texas-annexation",
+      "title": "Texas annexation",
+      "edges": [
+        {
+          "from": "texas-annexation",
+          "to": "mexican-american-war",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Texas annexation",
+          "revision": 1378893742,
+          "quote": "Texas formally joined the union on February 19, 1846, prompting the Mexican–American War in April of that year.",
+          "explanation": "The English Wikipedia article \"Texas annexation\" (revision 1378893742) says: \"Texas formally joined the union on February 19, 1846, prompting the Mexican–American War in April of that year.\" The edge reads that sentence as: Texas annexation caused Mexican–American War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-165",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "young-germany",
+      "title": "Young Germany",
+      "edges": [
+        {
+          "from": "romanticism",
+          "to": "young-germany",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Young Germany",
+          "revision": 1369303321,
+          "quote": "The ideology produced poets, thinkers and journalists, all of whom reacted against the introspection and particularism of Romanticism in the national literature, which had resulted in a total separation of literature from the actualities of life.",
+          "explanation": "The English Wikipedia article \"Young Germany\" (revision 1369303321) says: \"The ideology produced poets, thinkers and journalists, all of whom reacted against the introspection and particularism of Romanticism in the national literature, which had resulted in a total separation of literature from the actualities of life.\" The edge reads that sentence as: Young Germany was a response to Romanticism, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-africa-020",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "africa",
+      "writer": "B",
+      "existing": "anglo-egyptian-war",
+      "title": "Anglo-Egyptian War",
+      "edges": [
+        {
+          "from": "urabi-revolt",
+          "to": "anglo-egyptian-war",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Anglo-Egyptian War",
+          "revision": 1379563388,
+          "quote": "In their 1961 essay Africa and the Victorians, Ronald Robinson and John Gallagher argue that the British invasion was ordered to quell the perceived anarchy of the ‘Urabi Revolt, as well as to protect British control over the Suez Canal in order to maintain its shipping route to the Indian Ocean.",
+          "explanation": "The English Wikipedia article \"Anglo-Egyptian War\" (revision 1379563388) says: \"In their 1961 essay Africa and the Victorians, Ronald Robinson and John Gallagher argue that the British invasion was ordered to quell the perceived anarchy of the ‘Urabi Revolt, as well as to protect British control over the Suez Canal in order to maintain its shipping route to the Indian Ocean.\" The edge reads that sentence as: Anglo-Egyptian War was a response to Urabi revolt, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-asia-070",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "triple-intervention",
+      "title": "Triple Intervention",
+      "edges": [
+        {
+          "from": "franco-russian-alliance",
+          "to": "triple-intervention",
+          "type": "precondition-of",
+          "confidence": "probable",
+          "article": "Triple Intervention",
+          "revision": 1381263786,
+          "quote": "France was obligated to join Russia due to their 1893 military alliance.",
+          "explanation": "The English Wikipedia article \"Triple Intervention\" (revision 1381263786) says: \"France was obligated to join Russia due to their 1893 military alliance.\" The edge reads that sentence as: Franco-Russian Alliance was a precondition of Triple Intervention, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-americas-070",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "chattanooga-campaign",
+      "title": "Chattanooga campaign",
+      "edges": [
+        {
+          "from": "chattanooga-campaign",
+          "to": "atlanta-campaign",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Chattanooga campaign",
+          "revision": 1380714564,
+          "quote": "Bragg's defeat eliminated the last significant Confederate control of Tennessee and opened the door to an invasion of the Deep South, leading to Sherman's Atlanta campaign of 1864.",
+          "explanation": "The English Wikipedia article \"Chattanooga campaign\" (revision 1380714564) says: \"Bragg's defeat eliminated the last significant Confederate control of Tennessee and opened the door to an invasion of the Deep South, leading to Sherman's Atlanta campaign of 1864.\" The edge reads that sentence as: Chattanooga campaign caused Atlanta campaign, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-americas-071",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "shays-s-rebellion",
+      "title": "Shays's Rebellion",
+      "edges": [
+        {
+          "from": "regulator-movement-in-north-carolina",
+          "to": "shays-s-rebellion",
+          "type": "inspired",
+          "confidence": "probable",
+          "article": "Shays's Rebellion",
+          "revision": 1377911720,
+          "quote": "They called themselves Regulators, a reference to the Regulator movement of North Carolina, which sought to reform corrupt practices in the late 1760s.",
+          "explanation": "The English Wikipedia article \"Shays's Rebellion\" (revision 1377911720) says: \"They called themselves Regulators, a reference to the Regulator movement of North Carolina, which sought to reform corrupt practices in the late 1760s.\" The edge reads that sentence as: Regulator Movement in North Carolina inspired Shays's Rebellion, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-166",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "sicilian-revolution-of-1848",
+      "title": "Sicilian revolution of 1848",
+      "edges": [
+        {
+          "from": "sicilian-revolution-of-1848",
+          "to": "statuto-albertino",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Sicilian revolution of 1848",
+          "revision": 1370738410,
+          "quote": "It quickly spread across the island and throughout Italy, where it prompted Charles Albert, King of Sardinia, to follow the example of Ferdinand II and issue a written constitution, the Albertine Statute (the Albertine Statute later became the constitution of the unified Kingdom of Italy and remained in force, with changes, until 1948).",
+          "explanation": "The English Wikipedia article \"Sicilian revolution of 1848\" (revision 1370738410) says: \"It quickly spread across the island and throughout Italy, where it prompted Charles Albert, King of Sardinia, to follow the example of Ferdinand II and issue a written constitution, the Albertine Statute (the Albertine Statute later became the constitution of the unified Kingdom of Italy and remained in force, with changes, until 1948).\" The edge reads that sentence as: Statuto Albertino was a response to Sicilian revolution of 1848, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-167",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "anglo-dutch-treaty-of-1814",
+      "title": "Anglo-Dutch Treaty of 1814",
+      "edges": [
+        {
+          "from": "anglo-dutch-treaty-of-1814",
+          "to": "anglo-dutch-treaty-of-1824",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Anglo-Dutch Treaty of 1814",
+          "revision": 1379171110,
+          "quote": "Disputes arising from the treaty resulted in the signing of the Anglo-Dutch Treaty of 1824.",
+          "explanation": "The English Wikipedia article \"Anglo-Dutch Treaty of 1814\" (revision 1379171110) says: \"Disputes arising from the treaty resulted in the signing of the Anglo-Dutch Treaty of 1824.\" The edge reads that sentence as: Anglo-Dutch Treaty of 1814 caused Anglo-Dutch Treaty of 1824, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-168",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-winterthur",
+      "title": "Battle of Winterthur",
+      "edges": [
+        {
+          "from": "battle-of-winterthur",
+          "to": "first-battle-of-zurich",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Winterthur",
+          "revision": 1379901103,
+          "quote": "Although the forces involved were small, the ability of the Austrians to sustain their 11-hour assault on the French line resulted in the consolidation of three Austrian forces on the plateau north of Zürich, leading to the French defeat a few days later.",
+          "explanation": "The English Wikipedia article \"Battle of Winterthur\" (revision 1379901103) says: \"Although the forces involved were small, the ability of the Austrians to sustain their 11-hour assault on the French line resulted in the consolidation of three Austrian forces on the plateau north of Zürich, leading to the French defeat a few days later.\" The edge reads that sentence as: Battle of Winterthur caused First Battle of Zurich, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-europe-169",
+      "planned": "2026-11-02T20:33Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "brabant-revolution",
+      "title": "Brabant Revolution",
+      "edges": [
+        {
+          "from": "brabant-revolution",
+          "to": "belgian-revolution",
+          "type": "inspired",
+          "confidence": "probable",
+          "article": "Brabant Revolution",
+          "revision": 1379946324,
+          "quote": "The Belgian Revolution, which broke out on 25 August 1830 after the performance of a nationalist opera in Brussels led to a minor insurrection among the capital's bourgeoisie, was inspired to some extent by the Brabant Revolution.",
+          "explanation": "The English Wikipedia article \"Brabant Revolution\" (revision 1379946324) says: \"The Belgian Revolution, which broke out on 25 August 1830 after the performance of a nationalist opera in Brussels led to a minor insurrection among the capital's bourgeoisie, was inspired to some extent by the Brabant Revolution.\" The edge reads that sentence as: Brabant Revolution inspired Belgian Revolution, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-02-americas-064",
+      "planned": "2026-11-02T19:03Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "john-brown-s-raid-on-harpers-ferry",
+      "title": "John Brown's raid on Harpers Ferry",
+      "edges": [
+        {
+          "from": "john-brown-s-raid-on-harpers-ferry",
+          "to": "american-civil-war",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "John Brown's raid on Harpers Ferry",
+          "revision": 1380561022,
+          "quote": "John Brown's raid on Harpers Ferry was one of the last major events that led to the Civil War (see sidebar at top of article).",
+          "explanation": "The English Wikipedia article \"John Brown's raid on Harpers Ferry\" (revision 1380561022) says: \"John Brown's raid on Harpers Ferry was one of the last major events that led to the Civil War (see sidebar at top of article).\" The edge reads that sentence as: John Brown's raid on Harpers Ferry caused American Civil War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
       "id": "2026-11-02-americas-058",
       "planned": "2026-11-02T19:03Z",
       "lane": "americas",
@@ -623,28 +1415,6 @@
           "revision": 1374520415,
           "quote": "The Russians advance into the Polish–Lithuanian Commonwealth led to the kingdom of Sweden invading Poland in 1655 under King Charles X.",
           "explanation": "The English Wikipedia article \"Polish–Russian War (1654–1667)\" (revision 1374520415) says: \"The Russians advance into the Polish–Lithuanian Commonwealth led to the kingdom of Sweden invading Poland in 1655 under King Charles X.\" The edge reads that sentence as: Polish–Russian War (1654–1667) caused Northern War of 1655–1660, and nothing more."
-        }
-      ],
-      "rank": "edges-from-articles",
-      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
-    },
-    {
-      "id": "2026-11-02-americas-064",
-      "planned": "2026-11-02T19:03Z",
-      "lane": "americas",
-      "writer": "A",
-      "existing": "john-brown-s-raid-on-harpers-ferry",
-      "title": "John Brown's raid on Harpers Ferry",
-      "edges": [
-        {
-          "from": "john-brown-s-raid-on-harpers-ferry",
-          "to": "american-civil-war",
-          "type": "caused",
-          "confidence": "probable",
-          "article": "John Brown's raid on Harpers Ferry",
-          "revision": 1380561022,
-          "quote": "John Brown's raid on Harpers Ferry was one of the last major events that led to the Civil War (see sidebar at top of article).",
-          "explanation": "The English Wikipedia article \"John Brown's raid on Harpers Ferry\" (revision 1380561022) says: \"John Brown's raid on Harpers Ferry was one of the last major events that led to the Civil War (see sidebar at top of article).\" The edge reads that sentence as: John Brown's raid on Harpers Ferry caused American Civil War, and nothing more."
         }
       ],
       "rank": "edges-from-articles",
@@ -3651,7 +4421,7 @@
       "id": "2026-10-31-europe-541",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2634908",
       "title": "Lithuanian–Muscovite War (1534–1537)",
       "parents": [],
@@ -3663,7 +4433,7 @@
       "id": "2026-10-31-americas-542",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2713453",
       "title": "Voyage of the Glorioso",
       "parents": [],
@@ -3675,7 +4445,7 @@
       "id": "2026-10-31-africa-543",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q27627676",
       "title": "Battle of Abu Kru",
       "parents": [],
@@ -3687,7 +4457,7 @@
       "id": "2026-10-31-americas-544",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2825907",
       "title": "Virginius Affair",
       "parents": [],
@@ -3699,7 +4469,7 @@
       "id": "2026-10-31-europe-545",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2838113",
       "title": "Franco-Polish Alliance (1524)",
       "parents": [],
@@ -3711,7 +4481,7 @@
       "id": "2026-10-31-asia-546",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q28458443",
       "title": "Battle of Wai",
       "parents": [],
@@ -3723,7 +4493,7 @@
       "id": "2026-10-31-asia-547",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q28602668",
       "title": "Battle of Kastella",
       "parents": [],
@@ -3735,7 +4505,7 @@
       "id": "2026-10-31-africa-548",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2887834",
       "title": "Battle of Amba Jebelli",
       "parents": [],
@@ -3747,7 +4517,7 @@
       "id": "2026-10-31-africa-549",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2887918",
       "title": "Battle of Ayshal",
       "parents": [],
@@ -3759,7 +4529,7 @@
       "id": "2026-10-31-americas-550",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2888067",
       "title": "Battle of Agua Zarca",
       "parents": [],
@@ -3771,7 +4541,7 @@
       "id": "2026-10-31-africa-551",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2888398",
       "title": "Battle of Derasge",
       "parents": [],
@@ -3783,7 +4553,7 @@
       "id": "2026-10-31-americas-552",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2888820",
       "title": "Battle of Huamachuco",
       "parents": [],
@@ -3795,7 +4565,7 @@
       "id": "2026-10-31-africa-553",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2888919",
       "title": "Battle of Kirbekan",
       "parents": [],
@@ -3807,7 +4577,7 @@
       "id": "2026-10-31-americas-554",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2889147",
       "title": "Battle of Llanos de Santa Juana",
       "parents": [],
@@ -3819,7 +4589,7 @@
       "id": "2026-10-31-americas-555",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2889192",
       "title": "Battle of El Maguey",
       "parents": [],
@@ -3831,7 +4601,7 @@
       "id": "2026-10-31-americas-556",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2889708",
       "title": "Battle of Puerto de Piñones",
       "parents": [],
@@ -3843,7 +4613,7 @@
       "id": "2026-10-31-africa-557",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2889774",
       "title": "Battle of Rietfontein",
       "parents": [],
@@ -3855,7 +4625,7 @@
       "id": "2026-10-31-africa-558",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2889955",
       "title": "Battle of Senafe",
       "parents": [],
@@ -3867,7 +4637,7 @@
       "id": "2026-10-31-americas-559",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2890148",
       "title": "Battle of Tecualoya",
       "parents": [],
@@ -3879,7 +4649,7 @@
       "id": "2026-10-31-americas-560",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2890158",
       "title": "Battle of Temalaca",
       "parents": [],
@@ -3891,7 +4661,7 @@
       "id": "2026-10-31-asia-561",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2890241",
       "title": "Bombardment of Tourane (1847)",
       "parents": [],
@@ -3903,7 +4673,7 @@
       "id": "2026-10-31-americas-562",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2890631",
       "title": "Battle of Lomas de Santa María",
       "parents": [],
@@ -3915,7 +4685,7 @@
       "id": "2026-10-31-americas-563",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2913176",
       "title": "Logan's raid",
       "parents": [],
@@ -3927,7 +4697,7 @@
       "id": "2026-10-31-africa-564",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2935407",
       "title": "Sudan campaign",
       "parents": [],
@@ -3939,7 +4709,7 @@
       "id": "2026-10-31-africa-565",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2984893",
       "title": "Battle of Serobeti",
       "parents": [],
@@ -3951,7 +4721,7 @@
       "id": "2026-10-31-asia-566",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q30672276",
       "title": "Battle of Xicheng",
       "parents": [],
@@ -3963,7 +4733,7 @@
       "id": "2026-10-31-americas-567",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q3357987",
       "title": "Battle of Tarapacá",
       "parents": [],
@@ -3975,7 +4745,7 @@
       "id": "2026-10-31-americas-568",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3378101",
       "title": "Battle of Punta Gruesa",
       "parents": [],
@@ -3987,7 +4757,7 @@
       "id": "2026-10-31-asia-569",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q3381227",
       "title": "Maratha–Mysore wars",
       "parents": [],
@@ -3999,7 +4769,7 @@
       "id": "2026-10-31-europe-570",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3550076",
       "title": "Union of the Duchy of Brittany with the Crown of France",
       "parents": [],
@@ -4011,7 +4781,7 @@
       "id": "2026-10-31-europe-571",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q375717",
       "title": "Treaty of Versailles (1756)",
       "parents": [],
@@ -4023,7 +4793,7 @@
       "id": "2026-10-31-asia-572",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4066889",
       "title": "Battle of Añyraqai",
       "parents": [],
@@ -4035,7 +4805,7 @@
       "id": "2026-10-31-asia-573",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4087414",
       "title": "Battle of Beicang",
       "parents": [],
@@ -4047,7 +4817,7 @@
       "id": "2026-10-31-asia-574",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4087483",
       "title": "Battle of Yangcun",
       "parents": [],
@@ -4059,7 +4829,7 @@
       "id": "2026-10-31-europe-575",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4122600",
       "title": "War of the Priests (1467–1479)",
       "parents": [],
@@ -4071,7 +4841,7 @@
       "id": "2026-10-31-europe-576",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q430726",
       "title": "Anglo-Spanish War (1585–1604)",
       "parents": [],
@@ -4083,7 +4853,7 @@
       "id": "2026-10-31-asia-577",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4335729",
       "title": "Battle of Orbulaq",
       "parents": [],
@@ -4095,7 +4865,7 @@
       "id": "2026-10-31-asia-578",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4438410",
       "title": "Battle of Chinhat",
       "parents": [],
@@ -4107,7 +4877,7 @@
       "id": "2026-10-31-americas-579",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q444530",
       "title": "Clayton–Bulwer Treaty",
       "parents": [],
@@ -4119,7 +4889,7 @@
       "id": "2026-10-31-africa-580",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4516015",
       "title": "Chimurenga",
       "parents": [],
@@ -4131,7 +4901,7 @@
       "id": "2026-10-31-asia-581",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871096",
       "title": "Battle of Gia Cuc",
       "parents": [],
@@ -4143,7 +4913,7 @@
       "id": "2026-10-31-asia-582",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871280",
       "title": "Battle of Inlon River",
       "parents": [],
@@ -4155,7 +4925,7 @@
       "id": "2026-10-31-asia-583",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871325",
       "title": "Battle of Jeonju",
       "parents": [],
@@ -4167,7 +4937,7 @@
       "id": "2026-10-31-africa-584",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871605",
       "title": "Battle of Lougou",
       "parents": [],
@@ -4179,7 +4949,7 @@
       "id": "2026-10-31-asia-585",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871920",
       "title": "Battle of Nowshera",
       "parents": [],
@@ -4191,7 +4961,7 @@
       "id": "2026-10-31-americas-586",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871978",
       "title": "Battle of Palonegro",
       "parents": [],
@@ -4203,7 +4973,7 @@
       "id": "2026-10-31-asia-587",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872032",
       "title": "Battle of Phu Lam Tao",
       "parents": [],
@@ -4215,7 +4985,7 @@
       "id": "2026-10-31-asia-588",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872034",
       "title": "Battle of Phủ Hoài",
       "parents": [],
@@ -4227,7 +4997,7 @@
       "id": "2026-10-31-asia-589",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872146",
       "title": "Battle of Quingua",
       "parents": [],
@@ -4239,7 +5009,7 @@
       "id": "2026-10-31-americas-590",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872325",
       "title": "Battle of Sauce (1816)",
       "parents": [],
@@ -4251,7 +5021,7 @@
       "id": "2026-10-31-asia-591",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872341",
       "title": "Battle of Seedaseer",
       "parents": [],
@@ -4263,7 +5033,7 @@
       "id": "2026-10-31-americas-592",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872374",
       "title": "Battle of Sideling Hill",
       "parents": [],
@@ -4275,7 +5045,7 @@
       "id": "2026-10-31-asia-593",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872458",
       "title": "Battle of Sultanpet Tope",
       "parents": [],
@@ -4287,7 +5057,7 @@
       "id": "2026-10-31-asia-594",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872549",
       "title": "Battle of Thuận An",
       "parents": [],
@@ -4299,7 +5069,7 @@
       "id": "2026-10-31-asia-595",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872624",
       "title": "Battle of Ugeumchi",
       "parents": [],
@@ -4311,7 +5081,7 @@
       "id": "2026-10-31-asia-596",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872780",
       "title": "Battle of Yesil Kol Nor",
       "parents": [],
@@ -4323,7 +5093,7 @@
       "id": "2026-10-31-asia-597",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872960",
       "title": "Battle of Nedumkotta",
       "parents": [],
@@ -4335,7 +5105,7 @@
       "id": "2026-10-31-americas-598",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5032419",
       "title": "Caning of Charles Sumner",
       "parents": [],
@@ -4347,7 +5117,7 @@
       "id": "2026-10-31-africa-599",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5037077",
       "title": "Capture of the Veloz Passagera",
       "parents": [],
@@ -4359,7 +5129,7 @@
       "id": "2026-10-31-americas-600",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5159748",
       "title": "1861 Confederate States presidential election",
       "parents": [],
@@ -4371,7 +5141,7 @@
       "id": "2026-10-31-asia-601",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q541250",
       "title": "Anglo-Persian Treaty of 1801",
       "parents": [],
@@ -4383,7 +5153,7 @@
       "id": "2026-10-31-asia-602",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5479682",
       "title": "France–Korea Treaty of 1886",
       "parents": [],
@@ -4395,7 +5165,7 @@
       "id": "2026-10-31-americas-603",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q55109500",
       "title": "Battle of Itapirú",
       "parents": [],
@@ -4407,7 +5177,7 @@
       "id": "2026-10-31-asia-604",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5526415",
       "title": "Gaselee Expedition",
       "parents": [],
@@ -4419,7 +5189,7 @@
       "id": "2026-10-31-asia-605",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q55647639",
       "title": "Battle of Amritsar (1757)",
       "parents": [],
@@ -4431,7 +5201,7 @@
       "id": "2026-10-31-americas-606",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5722741",
       "title": "Battle of Ochomogo",
       "parents": [],
@@ -4443,7 +5213,7 @@
       "id": "2026-10-31-americas-607",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5722760",
       "title": "Battle of Pablo Perez",
       "parents": [],
@@ -4455,7 +5225,7 @@
       "id": "2026-10-31-americas-608",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5742647",
       "title": "Lima campaign",
       "parents": [],
@@ -4467,7 +5237,7 @@
       "id": "2026-10-31-americas-609",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5742675",
       "title": "Tacna and Arica campaign",
       "parents": [],
@@ -4479,7 +5249,7 @@
       "id": "2026-10-31-europe-610",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q60740017",
       "title": "Malus Intercursus",
       "parents": [],
@@ -4491,7 +5261,7 @@
       "id": "2026-10-31-europe-611",
       "planned": "2026-10-31T20:38Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q607645",
       "title": "Bavarian War (1459–1463)",
       "parents": [],
@@ -4503,7 +5273,7 @@
       "id": "2026-10-31-asia-612",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q60791184",
       "title": "Abbas I's Shirvan campaign",
       "parents": [],
@@ -4515,7 +5285,7 @@
       "id": "2026-10-31-americas-613",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q6086122",
       "title": "Battle of Pino de Baire",
       "parents": [],
@@ -4527,7 +5297,7 @@
       "id": "2026-10-31-asia-614",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q61881584",
       "title": "Katip Sumat uprising",
       "parents": [],
@@ -4539,7 +5309,7 @@
       "id": "2026-10-31-asia-615",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q635020",
       "title": "Third Carnatic War",
       "parents": [],
@@ -4551,7 +5321,7 @@
       "id": "2026-10-31-asia-616",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q6393080",
       "title": "Kép campaign",
       "parents": [],
@@ -4563,7 +5333,7 @@
       "id": "2026-10-31-asia-617",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q65077587",
       "title": "Bengal War",
       "parents": [],
@@ -4575,7 +5345,7 @@
       "id": "2026-10-31-africa-618",
       "planned": "2026-10-31T20:38Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q71630263",
       "title": "Algiers expedition (1516)",
       "parents": [],
@@ -4587,7 +5357,7 @@
       "id": "2026-10-31-americas-619",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7302489",
       "title": "Reciprocity Treaty of 1875",
       "parents": [],
@@ -4599,7 +5369,7 @@
       "id": "2026-10-31-americas-620",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q74009",
       "title": "Invasion of Dominica (1761)",
       "parents": [],
@@ -4611,7 +5381,7 @@
       "id": "2026-10-31-americas-621",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7795665",
       "title": "Thompson's War",
       "parents": [],
@@ -4623,7 +5393,7 @@
       "id": "2026-10-31-americas-622",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7836950",
       "title": "Treaty of 1677",
       "parents": [],
@@ -4635,7 +5405,7 @@
       "id": "2026-10-31-americas-623",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7837007",
       "title": "Treaty of Casco (1678)",
       "parents": [],
@@ -4647,7 +5417,7 @@
       "id": "2026-10-31-americas-624",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7837035",
       "title": "Treaty of Doak's Stand",
       "parents": [],
@@ -4659,7 +5429,7 @@
       "id": "2026-10-31-asia-625",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7837229",
       "title": "Treaty of Seringapatam",
       "parents": [],
@@ -4671,7 +5441,7 @@
       "id": "2026-10-31-americas-626",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7837233",
       "title": "Treaty of Spring Wells",
       "parents": [],
@@ -4683,7 +5453,7 @@
       "id": "2026-10-31-americas-627",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7837311",
       "title": "Treaty of the Creek Agency (1818)",
       "parents": [],
@@ -4695,7 +5465,7 @@
       "id": "2026-10-31-americas-628",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7837334",
       "title": "Treaty with the Kalapuya, etc.",
       "parents": [],
@@ -4707,7 +5477,7 @@
       "id": "2026-10-31-americas-629",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7861365",
       "title": "1847 North American typhus epidemic",
       "parents": [],
@@ -4719,7 +5489,7 @@
       "id": "2026-10-31-americas-630",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7868544",
       "title": "USS Constitution vs HMS Guerriere",
       "parents": [],
@@ -4731,7 +5501,7 @@
       "id": "2026-10-31-asia-631",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q800046",
       "title": "Germany–Korea Treaty of 1883",
       "parents": [],
@@ -4743,7 +5513,7 @@
       "id": "2026-10-31-americas-632",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q8244343",
       "title": "Battle of Umbu",
       "parents": [],
@@ -4755,7 +5525,7 @@
       "id": "2026-10-31-americas-633",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q8256513",
       "title": "Breña campaign",
       "parents": [],
@@ -4767,7 +5537,7 @@
       "id": "2026-10-31-asia-634",
       "planned": "2026-10-31T20:38Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q85745847",
       "title": "Battle of Hutong (1658)",
       "parents": [],
@@ -4779,7 +5549,7 @@
       "id": "2026-10-31-americas-635",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q865930",
       "title": "Goliad Campaign",
       "parents": [],
@@ -4791,7 +5561,7 @@
       "id": "2026-10-31-americas-636",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q9296248",
       "title": "Second Anglo–Powhatan War",
       "parents": [],
@@ -4803,7 +5573,7 @@
       "id": "2026-10-31-americas-637",
       "planned": "2026-10-31T20:38Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q97585797",
       "title": "1521 Santo Domingo Slave Revolt",
       "parents": [],
@@ -4815,7 +5585,7 @@
       "id": "2026-11-01-asia-001",
       "planned": "2026-11-01T16:30:11Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q85719810",
       "title": "1781 revolt in Bihar",
       "parents": [],
@@ -4827,7 +5597,7 @@
       "id": "2026-11-01-europe-001",
       "planned": "2026-11-01T16:30:11Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1400365",
       "title": "Revolutions of 1848 in the Italian states",
       "parents": [
@@ -4841,7 +5611,7 @@
       "id": "2026-11-01-europe-002",
       "planned": "2026-11-01T16:30:11Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q23039097",
       "title": "Serb Uprising of 1737–39",
       "parents": [],
@@ -4859,7 +5629,7 @@
       "why": "List of revolutions and rebellions (rank list), 2 sitelinks; a pupils' mutiny at Rugby School, dated by the item's own point in time (P585, 1797).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-004",
@@ -4871,7 +5641,7 @@
       "why": "List of treaties (rank list), 4 sitelinks; a Denmark-Sweden peace treaty, dated by the item's own start time (P580, 1541).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-europe-005",
@@ -4883,7 +5653,7 @@
       "why": "List of treaties (rank list), 1 sitelink; a Habsburg-Transylvanian peace treaty, dated by the item's own start time (P580, 1615).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-006",
@@ -4895,7 +5665,7 @@
       "why": "List of treaties (rank list), 1 sitelink; a Habsburg succession treaty in Bohemia, dated by the item's own start time (P580, 1608).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-asia-005",
@@ -4907,7 +5677,7 @@
       "why": "List of treaties (rank list), 8 sitelinks; a land agreement at Port Phillip, dated by the item's own start time (P580, 1835).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-007",
@@ -4919,7 +5689,7 @@
       "why": "List of treaties (rank list), 5 sitelinks; a Franco-Genoese pact, dated by the item's own start time (P580, 1705).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-europe-008",
@@ -4931,7 +5701,7 @@
       "why": "List of treaties (rank list), 4 sitelinks; a Russo-Serbian alliance during the First Serbian Uprising, dated by the item's own start time (P580, 1807).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-americas-001",
@@ -4943,7 +5713,7 @@
       "why": "List of treaties (rank list), 3 sitelinks; a Seneca land-cession treaty at Buffalo Creek, New York, dated by the item's own start time (P580, 1838).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-asia-002",
@@ -4955,7 +5725,7 @@
       "why": "List of treaties (rank list), 3 sitelinks; an Ahom-Mughal boundary treaty in Assam, dated by the item's own start time (P580, 1639).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-009",
@@ -4967,7 +5737,7 @@
       "why": "List of treaties (rank list), 6 sitelinks; a Palatinate succession treaty, dated by the item's own start time (P580, 1704).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-americas-002",
@@ -4979,7 +5749,7 @@
       "why": "List of treaties (rank list), 1 sitelink; a Mexico-United States boundary treaty, dated by the item's own start time (P580, 1828).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-010",
@@ -4991,7 +5761,7 @@
       "why": "List of epidemics and pandemics (rank list), 6 sitelinks; a plague outbreak in England, dated by the item's own start time (P580, 1592).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-asia-003",
@@ -5003,7 +5773,7 @@
       "why": "List of epidemics and pandemics (rank list), 1 sitelink; an influenza pandemic the item's own description places as emerging in Asia, dated by the item's own start time (P580, 1782).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-011",
@@ -5015,7 +5785,7 @@
       "why": "List of natural disasters by death toll (rank list), 54 sitelinks; a volcanic-winter famine year located to Northern Europe (P276), dated by the item's own point in time (P585, 1816).",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-europe-012",
@@ -5029,7 +5799,7 @@
       "why": "P527 child of the held Campaign of the Main, 5 sitelinks; dated by the item's own point in time (P585, 1866), inside the parent's span.",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-013",
@@ -5043,7 +5813,7 @@
       "why": "P527 child of the held Campaign of the Main, 5 sitelinks; dated by the item's own point in time (P585, 1866), inside the parent's span.",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-europe-014",
@@ -5057,7 +5827,7 @@
       "why": "P527 child of the held Campaign of the Main, 7 sitelinks; dated by the item's own point in time (P585, 1866), inside the parent's span.",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-015",
@@ -5071,7 +5841,7 @@
       "why": "P527 child of the held Campaign of the Main, 6 sitelinks; dated by the item's own point in time (P585, 1866), inside the parent's span.",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-europe-016",
@@ -5085,7 +5855,7 @@
       "why": "P527 child of the held Campaign of the Main, 5 sitelinks; dated by the item's own point in time (P585, 1866), inside the parent's span.",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-017",
@@ -5099,7 +5869,7 @@
       "why": "P527 child of the held Russo-Turkish War (1806-1812), 3 sitelinks; dated by the item's own point in time (P585, 1806), inside the parent's span.",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-europe-018",
@@ -5113,7 +5883,7 @@
       "why": "P527 child of the held Russo-Turkish War (1806-1812), 4 sitelinks; dated by the item's own point in time (P585, 1809), inside the parent's span.",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-europe-019",
@@ -5127,7 +5897,7 @@
       "why": "P527 child of the held Austro-Turkish War (1788-1791), 1 sitelink; dated by the item's own start time (P580, 1788), inside the parent's span.",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "A"
+      "writer": "B"
     },
     {
       "id": "2026-11-01-europe-020",
@@ -5141,13 +5911,13 @@
       "why": "P527 child of the held Third Silesian War, 20 sitelinks; dated by the item's own point in time (P585, 1760), inside the parent's span.",
       "planned": "2026-11-01T17:29:26Z",
       "edges": [],
-      "writer": "B"
+      "writer": "A"
     },
     {
       "id": "2026-11-01-africa-001",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q28136798",
       "title": "Reduction of Lagos",
       "parents": [
@@ -5161,7 +5931,7 @@
       "id": "2026-11-01-americas-003",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4784964",
       "title": "Arbuthnot and Ambrister incident",
       "parents": [
@@ -5175,7 +5945,7 @@
       "id": "2026-11-01-americas-004",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q43079734",
       "title": "Hornet incident",
       "parents": [
@@ -5189,7 +5959,7 @@
       "id": "2026-11-01-americas-005",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q695566",
       "title": "Panic of 1873",
       "parents": [],
@@ -5201,7 +5971,7 @@
       "id": "2026-11-01-europe-021",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q13538490",
       "title": "Bocskai uprising",
       "parents": [],
@@ -5213,7 +5983,7 @@
       "id": "2026-11-01-asia-006",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q28104354",
       "title": "Franco-Tahitian War",
       "parents": [],
@@ -5225,7 +5995,7 @@
       "id": "2026-11-01-europe-022",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q16163640",
       "title": "October 1900 Carlist uprising",
       "parents": [],
@@ -5237,7 +6007,7 @@
       "id": "2026-11-01-americas-006",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2865741",
       "title": "Articles of Capitulation of Quebec",
       "parents": [],
@@ -5249,7 +6019,7 @@
       "id": "2026-11-01-americas-007",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5150525",
       "title": "Comanche Wars",
       "parents": [],
@@ -5261,7 +6031,7 @@
       "id": "2026-11-01-americas-008",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4927235",
       "title": "Blockade of Porto Bello",
       "parents": [],
@@ -5273,7 +6043,7 @@
       "id": "2026-11-01-europe-023",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5708031",
       "title": "Siege of Atella",
       "parents": [],
@@ -5285,7 +6055,7 @@
       "id": "2026-11-01-europe-024",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2511359",
       "title": "Assault on Nijmegen",
       "parents": [],
@@ -5297,7 +6067,7 @@
       "id": "2026-11-01-americas-009",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q137703855",
       "title": "Raid on Santiago de Cuba",
       "parents": [],
@@ -5309,7 +6079,7 @@
       "id": "2026-11-01-europe-025",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4677263",
       "title": "Action of 15 July 1798",
       "parents": [
@@ -5323,7 +6093,7 @@
       "id": "2026-11-01-europe-026",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3432591",
       "title": "Battle of Zealand Point",
       "parents": [
@@ -5338,7 +6108,7 @@
       "id": "2026-11-01-europe-027",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2887830",
       "title": "Battle of Alvøen",
       "parents": [
@@ -5352,7 +6122,7 @@
       "id": "2026-11-01-europe-028",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2984978",
       "title": "Battle of the Tagus (1831)",
       "parents": [
@@ -5366,7 +6136,7 @@
       "id": "2026-11-01-europe-029",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2887902",
       "title": "Battle of Asseiceira",
       "parents": [
@@ -5380,7 +6150,7 @@
       "id": "2026-11-01-europe-030",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4087409",
       "title": "Battle of Šumatovac",
       "parents": [
@@ -5394,7 +6164,7 @@
       "id": "2026-11-01-europe-031",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5162454",
       "title": "Conquest of the Azores",
       "parents": [
@@ -5408,7 +6178,7 @@
       "id": "2026-11-01-americas-011",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872061",
       "title": "Battle of Platte Bridge",
       "parents": [
@@ -5422,7 +6192,7 @@
       "id": "2026-11-01-europe-032",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2888176",
       "title": "Battle of Borgo",
       "parents": [
@@ -5436,7 +6206,7 @@
       "id": "2026-11-01-europe-033",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7510226",
       "title": "Siege of Maribor (1532)",
       "parents": [
@@ -5450,7 +6220,7 @@
       "id": "2026-11-01-europe-034",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q21655930",
       "title": "Habsburg–Ottoman war of 1565–1568",
       "parents": [
@@ -5464,7 +6234,7 @@
       "id": "2026-11-01-europe-035",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3037792",
       "title": "Siege of Porto",
       "parents": [
@@ -5478,7 +6248,7 @@
       "id": "2026-11-01-europe-036",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4069868",
       "title": "Battle of Arpachai",
       "parents": [
@@ -5492,7 +6262,7 @@
       "id": "2026-11-01-europe-037",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4329624",
       "title": "Siege of Belaya",
       "parents": [
@@ -5506,7 +6276,7 @@
       "id": "2026-11-01-europe-038",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871700",
       "title": "Battle of Maya",
       "parents": [
@@ -5520,7 +6290,7 @@
       "id": "2026-11-01-europe-039",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1557439",
       "title": "Battle of Pfeddersheim",
       "parents": [
@@ -5534,7 +6304,7 @@
       "id": "2026-11-01-europe-040",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q15977779",
       "title": "Battle of Bucov",
       "parents": [
@@ -5548,7 +6318,7 @@
       "id": "2026-11-01-americas-012",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4870436",
       "title": "Battle of Bear Paw",
       "parents": [
@@ -5562,7 +6332,7 @@
       "id": "2026-11-01-americas-013",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4870795",
       "title": "Battle of Cottonwood",
       "parents": [
@@ -5576,7 +6346,7 @@
       "id": "2026-11-01-americas-014",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872889",
       "title": "Battle of the Clearwater",
       "parents": [
@@ -5590,7 +6360,7 @@
       "id": "2026-11-01-americas-015",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4870636",
       "title": "Battle of Canyon Creek",
       "parents": [
@@ -5604,7 +6374,7 @@
       "id": "2026-11-01-europe-041",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4087393",
       "title": "Battle of Pererîta",
       "parents": [
@@ -5618,7 +6388,7 @@
       "id": "2026-11-01-europe-042",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4087395",
       "title": "Battle of Reni",
       "parents": [
@@ -5632,7 +6402,7 @@
       "id": "2026-11-01-europe-043",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871170",
       "title": "Battle of Górzno",
       "parents": [
@@ -5646,7 +6416,7 @@
       "id": "2026-11-01-americas-016",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5686711",
       "title": "Hayfield Fight",
       "parents": [
@@ -5660,7 +6430,7 @@
       "id": "2026-11-01-europe-044",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4924393",
       "title": "Siege of Colchester",
       "parents": [
@@ -5674,7 +6444,7 @@
       "id": "2026-11-01-asia-007",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5037060",
       "title": "Capture of Trincomalee",
       "parents": [
@@ -5688,7 +6458,7 @@
       "id": "2026-11-01-americas-017",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7510378",
       "title": "Siege of Santo Domingo (1655)",
       "parents": [
@@ -5702,7 +6472,7 @@
       "id": "2026-11-01-americas-018",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872186",
       "title": "Battle of Rio Nuevo",
       "parents": [
@@ -5716,7 +6486,7 @@
       "id": "2026-11-01-europe-045",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q17103265",
       "title": "Treaty of Brussels (1656)",
       "parents": [
@@ -5730,7 +6500,7 @@
       "id": "2026-11-01-americas-019",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871930",
       "title": "Battle of Ocho Rios",
       "parents": [
@@ -5744,7 +6514,7 @@
       "id": "2026-11-01-europe-046",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1034162",
       "title": "Raid on Málaga (1656)",
       "parents": [
@@ -5758,7 +6528,7 @@
       "id": "2026-11-01-americas-020",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4870194",
       "title": "Battle for Río San Juan de Nicaragua",
       "parents": [
@@ -5772,7 +6542,7 @@
       "id": "2026-11-01-europe-047",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2236985",
       "title": "Battle of Leitzersdorf",
       "parents": [
@@ -5786,7 +6556,7 @@
       "id": "2026-11-01-europe-048",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7510517",
       "title": "Siege of Wiener Neustadt",
       "parents": [
@@ -5800,7 +6570,7 @@
       "id": "2026-11-01-europe-049",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q867236",
       "title": "Battle of Werl",
       "parents": [
@@ -5814,7 +6584,7 @@
       "id": "2026-11-01-americas-021",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2247448",
       "title": "Battle of Sabana Larga",
       "parents": [
@@ -5828,7 +6598,7 @@
       "id": "2026-11-01-americas-022",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2890233",
       "title": "Battle of Tortuguero",
       "parents": [
@@ -5842,7 +6612,7 @@
       "id": "2026-11-01-americas-023",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2887928",
       "title": "Battle of Eccles Hill",
       "parents": [
@@ -5856,7 +6626,7 @@
       "id": "2026-11-01-europe-050",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2887863",
       "title": "Battle of Anholt",
       "parents": [
@@ -5870,7 +6640,7 @@
       "id": "2026-11-01-europe-051",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872378",
       "title": "Battle of Silda",
       "parents": [
@@ -5884,7 +6654,7 @@
       "id": "2026-11-01-europe-052",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2889650",
       "title": "Battle of Ponte Ferreira",
       "parents": [
@@ -5898,7 +6668,7 @@
       "id": "2026-11-01-europe-053",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7109930",
       "title": "Ottoman invasion of Mani (1770)",
       "parents": [
@@ -5912,7 +6682,7 @@
       "id": "2026-11-01-europe-054",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q55656651",
       "title": "Battle of Tsaritsyn (1774)",
       "parents": [
@@ -5926,7 +6696,7 @@
       "id": "2026-11-01-americas-024",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871555",
       "title": "Battle of Liberty Place",
       "parents": [
@@ -5940,7 +6710,7 @@
       "id": "2026-11-01-europe-055",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q28109023",
       "title": "Battle of Tordesillas (1520)",
       "parents": [
@@ -5954,7 +6724,7 @@
       "id": "2026-11-01-europe-056",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q12273305",
       "title": "Battle of Oryahovo",
       "parents": [
@@ -5968,7 +6738,7 @@
       "id": "2026-11-01-europe-057",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q113107465",
       "title": "Battle of Derbent (1722)",
       "parents": [
@@ -5982,7 +6752,7 @@
       "id": "2026-11-01-europe-058",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q21644425",
       "title": "Battle of Slobozia",
       "parents": [
@@ -5996,7 +6766,7 @@
       "id": "2026-11-01-americas-025",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5176240",
       "title": "Council House Fight",
       "parents": [
@@ -6010,7 +6780,7 @@
       "id": "2026-11-01-europe-059",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q3800873",
       "title": "Invasion of Trentino (1866)",
       "parents": [
@@ -6024,7 +6794,7 @@
       "id": "2026-11-01-americas-026",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4488474",
       "title": "Battle of Big Dry Wash",
       "parents": [
@@ -6038,7 +6808,7 @@
       "id": "2026-11-01-americas-027",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q8050377",
       "title": "Yavapai Wars",
       "parents": [
@@ -6052,7 +6822,7 @@
       "id": "2026-11-01-europe-060",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q16541011",
       "title": "Battle of Lesmont",
       "parents": [
@@ -6066,7 +6836,7 @@
       "id": "2026-11-01-europe-061",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q124322999",
       "title": "Jan Zamoyski's expedition to Moldavia",
       "parents": [
@@ -6080,7 +6850,7 @@
       "id": "2026-11-01-americas-028",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4870619",
       "title": "Battle of Camas Creek",
       "parents": [
@@ -6094,7 +6864,7 @@
       "id": "2026-11-01-europe-062",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q9173218",
       "title": "Battle of Lwów (1695)",
       "parents": [
@@ -6108,7 +6878,7 @@
       "id": "2026-11-01-europe-063",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872348",
       "title": "Battle of Selburg",
       "parents": [
@@ -6122,7 +6892,7 @@
       "id": "2026-11-01-europe-064",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871639",
       "title": "Battle of Maidstone",
       "parents": [
@@ -6136,7 +6906,7 @@
       "id": "2026-11-01-europe-065",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q116483398",
       "title": "Battle of Winwick",
       "parents": [
@@ -6150,7 +6920,7 @@
       "id": "2026-11-01-europe-066",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q18639504",
       "title": "Attacks on Serbs during the Serbian–Ottoman Wars (1876–1878)",
       "parents": [
@@ -6164,7 +6934,7 @@
       "id": "2026-11-01-europe-067",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q16087016",
       "title": "Battle of Vranje",
       "parents": [
@@ -6178,7 +6948,7 @@
       "id": "2026-11-01-europe-068",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872245",
       "title": "Battle of Salga",
       "parents": [
@@ -6192,7 +6962,7 @@
       "id": "2026-11-01-asia-008",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4677343",
       "title": "Action of 30 October 1762",
       "parents": [
@@ -6206,7 +6976,7 @@
       "id": "2026-11-01-europe-069",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q16158078",
       "title": "Action of 31 May 1762",
       "parents": [
@@ -6220,7 +6990,7 @@
       "id": "2026-11-01-europe-070",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q12273842",
       "title": "Boyadzhik massacre",
       "parents": [
@@ -6234,7 +7004,7 @@
       "id": "2026-11-01-europe-071",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7510069",
       "title": "Siege of Hainburg",
       "parents": [
@@ -6248,7 +7018,7 @@
       "id": "2026-11-01-americas-029",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871349",
       "title": "Battle of Julesburg",
       "parents": [
@@ -6262,7 +7032,7 @@
       "id": "2026-11-01-americas-030",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q3379293",
       "title": "Battle of Azua",
       "parents": [
@@ -6276,7 +7046,7 @@
       "id": "2026-11-01-americas-031",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871539",
       "title": "Battle of Las Carreras",
       "parents": [
@@ -6290,7 +7060,7 @@
       "id": "2026-11-01-europe-072",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q11688250",
       "title": "Wincanton Skirmish",
       "parents": [
@@ -6304,7 +7074,7 @@
       "id": "2026-11-01-europe-073",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q132528606",
       "title": "Battle of Szeged (1552)",
       "parents": [
@@ -6318,7 +7088,7 @@
       "id": "2026-11-01-europe-074",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2890321",
       "title": "Battle of Praia da Vitória",
       "parents": [
@@ -6332,7 +7102,7 @@
       "id": "2026-11-01-europe-075",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4314901",
       "title": "Second Portuguese–Ovimbundu War",
       "parents": [
@@ -6346,7 +7116,7 @@
       "id": "2026-11-01-americas-032",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5354543",
       "title": "1874 Election Massacre",
       "parents": [
@@ -6360,7 +7130,7 @@
       "id": "2026-11-01-europe-076",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q19692581",
       "title": "Battle of Obilești",
       "parents": [
@@ -6374,7 +7144,7 @@
       "id": "2026-11-01-europe-077",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4087461",
       "title": "Battle of Rusçuk",
       "parents": [
@@ -6388,7 +7158,7 @@
       "id": "2026-11-01-europe-078",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4873063",
       "title": "Battle of Cape Palos (1815)",
       "parents": [
@@ -6402,7 +7172,7 @@
       "id": "2026-11-01-americas-033",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872705",
       "title": "Battle of Wahoo Swamp",
       "parents": [
@@ -6416,7 +7186,7 @@
       "id": "2026-11-01-americas-034",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871527",
       "title": "Battle of Lake Okeechobee",
       "parents": [
@@ -6430,7 +7200,7 @@
       "id": "2026-11-01-europe-079",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q11794856",
       "title": "Siege of Dorogobuzh",
       "parents": [
@@ -6444,7 +7214,7 @@
       "id": "2026-11-01-americas-035",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872959",
       "title": "Battle of the Neches",
       "parents": [
@@ -6458,7 +7228,7 @@
       "id": "2026-11-01-europe-080",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q3884042",
       "title": "Operations in Valtellina (1866)",
       "parents": [
@@ -6472,7 +7242,7 @@
       "id": "2026-11-01-europe-081",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3884044",
       "title": "Naval operations on Lake Garda (1866)",
       "parents": [
@@ -6486,7 +7256,7 @@
       "id": "2026-11-01-americas-036",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7510366",
       "title": "Siege of Salto",
       "parents": [
@@ -6500,7 +7270,7 @@
       "id": "2026-11-01-americas-037",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871305",
       "title": "Battle of Jaguarão",
       "parents": [
@@ -6514,7 +7284,7 @@
       "id": "2026-11-01-americas-038",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871776",
       "title": "Battle of Montenegro",
       "parents": [
@@ -6528,7 +7298,7 @@
       "id": "2026-11-01-americas-039",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2984729",
       "title": "Battle of Islay",
       "parents": [
@@ -6542,7 +7312,7 @@
       "id": "2026-11-01-americas-040",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5722806",
       "title": "Battle of Portada de Guías",
       "parents": [
@@ -6556,7 +7326,7 @@
       "id": "2026-11-01-americas-041",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q6151967",
       "title": "Treaty of Paucarpata",
       "parents": [
@@ -6570,7 +7340,7 @@
       "id": "2026-11-01-europe-082",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q124812424",
       "title": "Siege of Giurgiu (1790)",
       "parents": [
@@ -6584,7 +7354,7 @@
       "id": "2026-11-01-europe-083",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q16540961",
       "title": "Battle of Berry-au-Bac",
       "parents": [
@@ -6598,7 +7368,7 @@
       "id": "2026-11-01-europe-084",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q9296060",
       "title": "Battle of Martynów (1699)",
       "parents": [
@@ -6612,7 +7382,7 @@
       "id": "2026-11-01-europe-085",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4087377",
       "title": "Battle of Chițcani (1683)",
       "parents": [
@@ -6626,7 +7396,7 @@
       "id": "2026-11-01-europe-086",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872587",
       "title": "Battle of Treiden (1628)",
       "parents": [
@@ -6640,7 +7410,7 @@
       "id": "2026-11-01-europe-087",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q928367",
       "title": "Battle of Czarne",
       "parents": [
@@ -6654,7 +7424,7 @@
       "id": "2026-11-01-americas-042",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q9172576",
       "title": "Battle of Seival",
       "parents": [
@@ -6668,7 +7438,7 @@
       "id": "2026-11-01-americas-043",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q11825462",
       "title": "Battle of Azenha Bridge",
       "parents": [
@@ -6682,7 +7452,7 @@
       "id": "2026-11-01-americas-044",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q9172454",
       "title": "Battle of Fanfa",
       "parents": [
@@ -6696,7 +7466,7 @@
       "id": "2026-11-01-europe-088",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q10751225",
       "title": "Siege of Breslau (1757)",
       "parents": [
@@ -6710,7 +7480,7 @@
       "id": "2026-11-01-europe-089",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q3403844",
       "title": "Capture of Porto",
       "parents": [
@@ -6724,7 +7494,7 @@
       "id": "2026-11-01-asia-009",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q131412062",
       "title": "Raid on Sumatra",
       "parents": [
@@ -6738,7 +7508,7 @@
       "id": "2026-11-01-europe-090",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7510339",
       "title": "Siege of Retz",
       "parents": [
@@ -6752,7 +7522,7 @@
       "id": "2026-11-01-europe-091",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q19562510",
       "title": "Battle of Nabe",
       "parents": [
@@ -6766,7 +7536,7 @@
       "id": "2026-11-01-americas-045",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q109237282",
       "title": "Battle of La Canela",
       "parents": [
@@ -6780,7 +7550,7 @@
       "id": "2026-11-01-americas-046",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q112075257",
       "title": "Battle of Paso del Muerto",
       "parents": [
@@ -6794,7 +7564,7 @@
       "id": "2026-11-01-americas-047",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q111462579",
       "title": "Battle of Jura",
       "parents": [
@@ -6808,7 +7578,7 @@
       "id": "2026-11-01-americas-048",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q110100925",
       "title": "Grito de Capotillo",
       "parents": [
@@ -6822,7 +7592,7 @@
       "id": "2026-11-01-americas-049",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q111365397",
       "title": "Battle of Guayacanes (1863)",
       "parents": [
@@ -6836,7 +7606,7 @@
       "id": "2026-11-01-americas-050",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q113468238",
       "title": "Battle of Arroyo Bermejo",
       "parents": [
@@ -6850,7 +7620,7 @@
       "id": "2026-11-01-americas-051",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q110207457",
       "title": "Battle of Sabana de San Pedro",
       "parents": [
@@ -6864,7 +7634,7 @@
       "id": "2026-11-01-americas-052",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q27628184",
       "title": "Battle of Fort Cachimán",
       "parents": [
@@ -6878,7 +7648,7 @@
       "id": "2026-11-01-americas-053",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q265106",
       "title": "Battle of Estrelleta",
       "parents": [
@@ -6892,7 +7662,7 @@
       "id": "2026-11-01-americas-054",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q23640829",
       "title": "Battle of Santomé",
       "parents": [
@@ -6906,7 +7676,7 @@
       "id": "2026-11-01-americas-055",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4870604",
       "title": "Battle of Cabeza de Las Marías",
       "parents": [
@@ -6920,7 +7690,7 @@
       "id": "2026-11-01-americas-056",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4870954",
       "title": "Battle of El Número",
       "parents": [
@@ -6934,7 +7704,7 @@
       "id": "2026-11-01-americas-057",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4870460",
       "title": "Battle of Beler",
       "parents": [
@@ -6948,7 +7718,7 @@
       "id": "2026-11-01-americas-058",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q6394332",
       "title": "Battle of Fuente del Rodeo",
       "parents": [
@@ -6962,7 +7732,7 @@
       "id": "2026-11-01-europe-092",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4677338",
       "title": "Action of 2 March 1808",
       "parents": [
@@ -6977,7 +7747,7 @@
       "id": "2026-11-01-americas-059",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7510056",
       "title": "Siege of Grand Pré",
       "parents": [
@@ -6991,7 +7761,7 @@
       "id": "2026-11-01-americas-060",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4870139",
       "title": "Battle at St. Croix",
       "parents": [
@@ -7005,7 +7775,7 @@
       "id": "2026-11-01-americas-061",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q20949591",
       "title": "Invasion of the Danish West Indies",
       "parents": [
@@ -7019,7 +7789,7 @@
       "id": "2026-11-01-europe-093",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q17318716",
       "title": "Battle of Ladeira da Velha",
       "parents": [
@@ -7033,7 +7803,7 @@
       "id": "2026-11-01-europe-094",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4870802",
       "title": "Battle of Craibstone",
       "parents": [
@@ -7047,7 +7817,7 @@
       "id": "2026-11-01-europe-095",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872557",
       "title": "Battle of Tillieangus",
       "parents": [
@@ -7061,7 +7831,7 @@
       "id": "2026-11-01-europe-096",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q139779509",
       "title": "Battle of Botoșani",
       "parents": [
@@ -7075,7 +7845,7 @@
       "id": "2026-11-01-americas-062",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5430355",
       "title": "Fairfield Swamp Fight",
       "parents": [
@@ -7089,7 +7859,7 @@
       "id": "2026-11-01-americas-063",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5639928",
       "title": "Recapture of Tarapacá",
       "parents": [
@@ -7103,7 +7873,7 @@
       "id": "2026-11-01-americas-064",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q124209249",
       "title": "Battle of Sama",
       "parents": [
@@ -7117,7 +7887,7 @@
       "id": "2026-11-01-americas-065",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q30936714",
       "title": "Uruguay campaign",
       "parents": [
@@ -7131,7 +7901,7 @@
       "id": "2026-11-01-europe-097",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q135397833",
       "title": "Portuguese conquest of Angónia",
       "parents": [
@@ -7145,7 +7915,7 @@
       "id": "2026-11-01-europe-098",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q135276043",
       "title": "Portuguese conquest of Viye",
       "parents": [
@@ -7159,7 +7929,7 @@
       "id": "2026-11-01-europe-099",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q133886445",
       "title": "Portuguese conquest of the Gaza Empire",
       "parents": [
@@ -7173,7 +7943,7 @@
       "id": "2026-11-01-europe-100",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q131632283",
       "title": "Battle of Mansomine",
       "parents": [
@@ -7187,7 +7957,7 @@
       "id": "2026-11-01-europe-101",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q131626380",
       "title": "Battle of Fancá",
       "parents": [
@@ -7201,7 +7971,7 @@
       "id": "2026-11-01-europe-102",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q131632307",
       "title": "Battle of Buaró",
       "parents": [
@@ -7215,7 +7985,7 @@
       "id": "2026-11-01-europe-103",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q10293389",
       "title": "Second Battle of Macontene",
       "parents": [
@@ -7229,7 +7999,7 @@
       "id": "2026-11-01-americas-066",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5644307",
       "title": "Hamburg massacre",
       "parents": [
@@ -7243,7 +8013,7 @@
       "id": "2026-11-01-europe-104",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q135184335",
       "title": "Battle of Irtysh River (1585)",
       "parents": [
@@ -7257,7 +8027,7 @@
       "id": "2026-11-01-europe-105",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4445365",
       "title": "Battle of Sudbischi",
       "parents": [
@@ -7271,7 +8041,7 @@
       "id": "2026-11-01-europe-106",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q12866500",
       "title": "Battle of Maltakva",
       "parents": [
@@ -7285,7 +8055,7 @@
       "id": "2026-11-01-americas-067",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871354",
       "title": "Battles of the Loxahatchee",
       "parents": [
@@ -7299,7 +8069,7 @@
       "id": "2026-11-01-americas-068",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871959",
       "title": "Battle of Withlacoochee",
       "parents": [
@@ -7313,7 +8083,7 @@
       "id": "2026-11-01-americas-069",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q55489692",
       "title": "Battle of El Salado (1869)",
       "parents": [
@@ -7327,7 +8097,7 @@
       "id": "2026-11-01-americas-070",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q56317838",
       "title": "First Battle of Las Tunas",
       "parents": [
@@ -7341,7 +8111,7 @@
       "id": "2026-11-01-americas-071",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4985764",
       "title": "Buffalo Hunters' War",
       "parents": [
@@ -7355,7 +8125,7 @@
       "id": "2026-11-01-americas-072",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q125398484",
       "title": "San Sabá fight (1831)",
       "parents": [
@@ -7369,7 +8139,7 @@
       "id": "2026-11-01-americas-073",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q28502685",
       "title": "Dissolution of the Peru–Bolivian Confederation",
       "parents": [
@@ -7383,7 +8153,7 @@
       "id": "2026-11-01-americas-074",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871059",
       "title": "Battle of Fort Tularosa",
       "parents": [
@@ -7397,7 +8167,7 @@
       "id": "2026-11-01-americas-075",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871799",
       "title": "Battle of Mount Gray",
       "parents": [
@@ -7411,7 +8181,7 @@
       "id": "2026-11-01-americas-076",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4870747",
       "title": "Battle of Cibecue Creek",
       "parents": [
@@ -7425,7 +8195,7 @@
       "id": "2026-11-01-americas-077",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5452511",
       "title": "First Battle of Dragoon Springs",
       "parents": [
@@ -7439,7 +8209,7 @@
       "id": "2026-11-01-americas-078",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871038",
       "title": "Battle of Fort Buchanan",
       "parents": [
@@ -7453,7 +8223,7 @@
       "id": "2026-11-01-americas-079",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5182816",
       "title": "Crawford affair",
       "parents": [
@@ -7467,7 +8237,7 @@
       "id": "2026-11-01-americas-080",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872952",
       "title": "Battle of the Mimbres River",
       "parents": [
@@ -7481,7 +8251,7 @@
       "id": "2026-11-01-americas-081",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7535911",
       "title": "Skirmish in Doubtful Canyon",
       "parents": [
@@ -7495,7 +8265,7 @@
       "id": "2026-11-01-americas-082",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5317415",
       "title": "Dutch West Indies campaign",
       "parents": [
@@ -7509,7 +8279,7 @@
       "id": "2026-11-01-americas-083",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q30594956",
       "title": "Action of 4 February 1781",
       "parents": [
@@ -7523,7 +8293,7 @@
       "id": "2026-11-01-europe-107",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q1255093",
       "title": "Battle of Wurzach",
       "parents": [
@@ -7537,7 +8307,7 @@
       "id": "2026-11-01-europe-108",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q112232807",
       "title": "Siege of Novara (1495)",
       "parents": [
@@ -7551,7 +8321,7 @@
       "id": "2026-11-01-europe-109",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q16950664",
       "title": "Battle of Rapallo",
       "parents": [
@@ -7565,7 +8335,7 @@
       "id": "2026-11-01-europe-110",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q16822713",
       "title": "Battle of Suceava (1595)",
       "parents": [
@@ -7579,7 +8349,7 @@
       "id": "2026-11-01-europe-111",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q110386830",
       "title": "Battle of Ostróda",
       "parents": [
@@ -7593,7 +8363,7 @@
       "id": "2026-11-01-americas-084",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q9651083",
       "title": "Porongos Massacre",
       "parents": [
@@ -7607,7 +8377,7 @@
       "id": "2026-11-01-americas-085",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q15112371",
       "title": "Battle of Barro Vermelho",
       "parents": [
@@ -7621,7 +8391,7 @@
       "id": "2026-11-01-americas-086",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q106548118",
       "title": "Capture of Porto Alegre",
       "parents": [
@@ -7635,7 +8405,7 @@
       "id": "2026-11-01-europe-112",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7510300",
       "title": "Siege of Pembroke",
       "parents": [
@@ -7649,7 +8419,7 @@
       "id": "2026-11-01-europe-113",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q134835417",
       "title": "Scottish invasion of England (1648)",
       "parents": [
@@ -7663,7 +8433,7 @@
       "id": "2026-11-01-europe-114",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q122026083",
       "title": "Battle of Houthalen",
       "parents": [
@@ -7677,7 +8447,7 @@
       "id": "2026-11-01-americas-087",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7413839",
       "title": "San Felipe incident (1835)",
       "parents": [
@@ -7691,7 +8461,7 @@
       "id": "2026-11-01-africa-002",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q125768358",
       "title": "Capture of Carolusborg (1658)",
       "parents": [
@@ -7705,7 +8475,7 @@
       "id": "2026-11-01-africa-003",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872243",
       "title": "Battle of Saldanha Bay (1781)",
       "parents": [
@@ -7719,7 +8489,7 @@
       "id": "2026-11-01-europe-115",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q112837740",
       "title": "Siege of Trebinje",
       "parents": [
@@ -7733,7 +8503,7 @@
       "id": "2026-11-01-americas-088",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4744790",
       "title": "American Ranch massacre",
       "parents": [
@@ -7747,7 +8517,7 @@
       "id": "2026-11-01-americas-089",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q134622298",
       "title": "Battle of Guayubín",
       "parents": [
@@ -7761,7 +8531,7 @@
       "id": "2026-11-01-americas-090",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q134614261",
       "title": "Battle of Sabana Burro",
       "parents": [
@@ -7775,7 +8545,7 @@
       "id": "2026-11-01-europe-116",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q126095083",
       "title": "Capture of Tranquebar (1801)",
       "parents": [
@@ -7789,7 +8559,7 @@
       "id": "2026-11-01-europe-117",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q127163493",
       "title": "Capture of Serampore (1801)",
       "parents": [
@@ -7803,7 +8573,7 @@
       "id": "2026-11-01-europe-118",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q127163443",
       "title": "Surrender of Tranquebar (1808)",
       "parents": [
@@ -7817,7 +8587,7 @@
       "id": "2026-11-01-europe-119",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872247",
       "title": "Battle of Saltholm",
       "parents": [
@@ -7832,7 +8602,7 @@
       "id": "2026-11-01-americas-091",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4870134",
       "title": "Battle at Chignecto",
       "parents": [
@@ -7846,7 +8616,7 @@
       "id": "2026-11-01-americas-092",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871043",
       "title": "Battle of Fort Erie (1866)",
       "parents": [
@@ -7860,7 +8630,7 @@
       "id": "2026-11-01-americas-093",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q16822756",
       "title": "Battle of Trout River",
       "parents": [
@@ -7874,7 +8644,7 @@
       "id": "2026-11-01-americas-094",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q138606214",
       "title": "Pigeon Hill Raid",
       "parents": [
@@ -7888,7 +8658,7 @@
       "id": "2026-11-01-europe-120",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q135067811",
       "title": "Dutch troops in England, 1688–1699",
       "parents": [
@@ -7902,7 +8672,7 @@
       "id": "2026-11-01-europe-121",
       "planned": "2026-11-01T18:29:37Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q140690602",
       "title": "1688 invasion of England",
       "parents": [
@@ -7916,7 +8686,7 @@
       "id": "2026-11-02-asia-001",
       "planned": "2026-11-02T01:27Z",
       "lane": "asia",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q331905",
       "title": "Abolition of the han system",
       "parents": [
@@ -7930,7 +8700,7 @@
       "id": "2026-11-02-americas-001",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q6059673",
       "title": "Invasion of Jamaica",
       "parents": [],
@@ -7942,7 +8712,7 @@
       "id": "2026-11-02-europe-001",
       "planned": "2026-11-02T01:27Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2889033",
       "title": "Battle of La Favorita",
       "parents": [
@@ -7956,7 +8726,7 @@
       "id": "2026-11-02-europe-002",
       "planned": "2026-11-02T01:27Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2984910",
       "title": "Battle of Valvasone",
       "parents": [
@@ -7970,7 +8740,7 @@
       "id": "2026-11-02-europe-003",
       "planned": "2026-11-02T01:27Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q2984845",
       "title": "Battle of Peschiera",
       "parents": [
@@ -7984,7 +8754,7 @@
       "id": "2026-11-02-europe-004",
       "planned": "2026-11-02T01:27Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3042328",
       "title": "Landing at Mindelo",
       "parents": [
@@ -7998,7 +8768,7 @@
       "id": "2026-11-02-europe-005",
       "planned": "2026-11-02T01:27Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q11881372",
       "title": "Battle of S:t Mårtens",
       "parents": [
@@ -8012,7 +8782,7 @@
       "id": "2026-11-02-europe-006",
       "planned": "2026-11-02T01:27Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4677345",
       "title": "Action of 30 May 1781",
       "parents": [
@@ -8026,7 +8796,7 @@
       "id": "2026-11-02-europe-007",
       "planned": "2026-11-02T01:27Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q87648451",
       "title": "Battle of Calliano",
       "parents": [
@@ -8040,7 +8810,7 @@
       "id": "2026-11-02-africa-001",
       "planned": "2026-11-02T01:27Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q6932364",
       "title": "Muhammad Ali's rise to power",
       "parents": [
@@ -8054,7 +8824,7 @@
       "id": "2026-11-02-americas-002",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q135778871",
       "title": "Dominican coup of July 1844",
       "parents": [
@@ -8068,7 +8838,7 @@
       "id": "2026-11-02-europe-008",
       "planned": "2026-11-02T01:27Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4677232",
       "title": "Action of 11 March 1727",
       "parents": [],
@@ -8080,7 +8850,7 @@
       "id": "2026-11-02-americas-003",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q16933103",
       "title": "Battle of San Felasco Hammock",
       "parents": [
@@ -8094,7 +8864,7 @@
       "id": "2026-11-02-americas-004",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872043",
       "title": "Battle of Pine Island Ridge",
       "parents": [
@@ -8108,7 +8878,7 @@
       "id": "2026-11-02-americas-005",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q130052247",
       "title": "Battle of the Caloosahatchee",
       "parents": [
@@ -8122,7 +8892,7 @@
       "id": "2026-11-02-americas-006",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q54322448",
       "title": "Battle of Ocheesee",
       "parents": [
@@ -8136,7 +8906,7 @@
       "id": "2026-11-02-americas-007",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871874",
       "title": "Negro Fort",
       "parents": [
@@ -8150,7 +8920,7 @@
       "id": "2026-11-02-americas-008",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q129567174",
       "title": "Battle of Bonilla",
       "parents": [
@@ -8164,7 +8934,7 @@
       "id": "2026-11-02-americas-009",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q123880698",
       "title": "Battle at Pozo Hediondo",
       "parents": [
@@ -8178,7 +8948,7 @@
       "id": "2026-11-02-americas-010",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871037",
       "title": "Battle of Fort Apache",
       "parents": [
@@ -8192,7 +8962,7 @@
       "id": "2026-11-02-americas-011",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4942242",
       "title": "Bonneville Expedition (1857)",
       "parents": [
@@ -8206,7 +8976,7 @@
       "id": "2026-11-02-americas-012",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871208",
       "title": "Battle of Hembrillo Basin",
       "parents": [
@@ -8220,7 +8990,7 @@
       "id": "2026-11-02-americas-013",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q7313046",
       "title": "Post-1887 Apache Wars period",
       "parents": [
@@ -8234,7 +9004,7 @@
       "id": "2026-11-02-americas-014",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4870785",
       "title": "Battle of Cooke's Spring",
       "parents": [
@@ -8248,7 +9018,7 @@
       "id": "2026-11-02-americas-015",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871571",
       "title": "Battle of Little Dry Creek",
       "parents": [
@@ -8262,7 +9032,7 @@
       "id": "2026-11-02-americas-016",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q21070975",
       "title": "Raid on Essequibo and Demerara (1781)",
       "parents": [],
@@ -8274,7 +9044,7 @@
       "id": "2026-11-02-americas-017",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q137673300",
       "title": "Battle of Imbituba",
       "parents": [
@@ -8288,7 +9058,7 @@
       "id": "2026-11-02-europe-009",
       "planned": "2026-11-02T01:27Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q133828710",
       "title": "Great Blow",
       "parents": [
@@ -8302,7 +9072,7 @@
       "id": "2026-11-02-americas-018",
       "planned": "2026-11-02T01:27Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4871694",
       "title": "Action of April 3, 1836",
       "parents": [
@@ -8316,7 +9086,7 @@
       "id": "2026-11-02-europe-010",
       "planned": "2026-11-02T14:36Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q720801",
       "title": "Battle of Cecora (1595)",
       "parents": [
@@ -8330,7 +9100,7 @@
       "id": "2026-11-02-europe-011",
       "planned": "2026-11-02T14:36Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4870824",
       "title": "Battle of Cádiz (1656)",
       "parents": [],
@@ -8342,7 +9112,7 @@
       "id": "2026-11-02-asia-002",
       "planned": "2026-11-02T14:36Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q25544",
       "title": "Battle of the Dardanelles (1807)",
       "parents": [],
@@ -8354,7 +9124,7 @@
       "id": "2026-11-02-europe-012",
       "planned": "2026-11-02T14:36Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5037035",
       "title": "Capture of Minorca (1798)",
       "parents": [
@@ -8368,7 +9138,7 @@
       "id": "2026-11-02-americas-019",
       "planned": "2026-11-02T14:36Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4870349",
       "title": "Battle of Arroyo Grande",
       "parents": [],
@@ -8380,7 +9150,7 @@
       "id": "2026-11-02-europe-013",
       "planned": "2026-11-02T14:36Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q21187342",
       "title": "Uprising in Vučitrn",
       "parents": [
@@ -8394,7 +9164,7 @@
       "id": "2026-11-02-asia-003",
       "planned": "2026-11-02T14:36Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q27958319",
       "title": "Barrackpore mutiny of 1824",
       "parents": [
@@ -8408,7 +9178,7 @@
       "id": "2026-11-02-europe-014",
       "planned": "2026-11-02T14:36Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q4872721",
       "title": "Battle of Wenden (1626)",
       "parents": [],
@@ -8420,7 +9190,7 @@
       "id": "2026-11-02-europe-015",
       "planned": "2026-11-02T14:36Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q10423630",
       "title": "War of Deposition against King Hans",
       "parents": [],
@@ -8432,7 +9202,7 @@
       "id": "2026-11-02-europe-016",
       "planned": "2026-11-02T14:36Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q6084870",
       "title": "Moldavian Campaign (1538)",
       "parents": [],
@@ -8444,7 +9214,7 @@
       "id": "2026-11-02-americas-020",
       "planned": "2026-11-02T14:36Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q6415375",
       "title": "Kirk–Holden war",
       "parents": [],
@@ -8456,7 +9226,7 @@
       "id": "2026-11-02-americas-021",
       "planned": "2026-11-02T14:36Z",
       "lane": "americas",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q5778825",
       "title": "Battle of Callao (1838)",
       "parents": [],
@@ -8468,7 +9238,7 @@
       "id": "2026-11-02-africa-002",
       "planned": "2026-11-02T14:36Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q134006616",
       "title": "Sack of Old Oyo",
       "parents": [
@@ -8482,7 +9252,7 @@
       "id": "2026-11-02-africa-003",
       "planned": "2026-11-02T14:36Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q130288419",
       "title": "Battle of Òsogbo",
       "parents": [
@@ -8496,7 +9266,7 @@
       "id": "2026-11-02-americas-022",
       "planned": "2026-11-02T14:36Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7148030",
       "title": "Patriot War",
       "parents": [
@@ -8510,7 +9280,7 @@
       "id": "2026-11-02-europe-017",
       "planned": "2026-11-02T14:36Z",
       "lane": "europe",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q55633152",
       "title": "Siege of Burgos (1475)",
       "parents": [
@@ -8524,7 +9294,7 @@
       "id": "2026-11-02-americas-023",
       "planned": "2026-11-02T14:36Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q130553396",
       "title": "Battle of Santiago (1863)",
       "parents": [
@@ -8538,7 +9308,7 @@
       "id": "2026-11-02-africa-004",
       "planned": "2026-11-02T14:36Z",
       "lane": "africa",
-      "writer": "B",
+      "writer": "A",
       "qid": "Q124881814",
       "title": "Battle of Ilorin",
       "parents": [
@@ -8552,7 +9322,7 @@
       "id": "2026-11-02-africa-005",
       "planned": "2026-11-02T14:36Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q121853652",
       "title": "Battle of Elmina (1781)",
       "parents": [],
