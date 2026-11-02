@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "szeged",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q81581",
+  "sitelinks": {
+    "count": 96,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Szeged",
+    "pt": "Szeged"
+  },
+  "sources": [],
+  "names": [
+    "Szeged"
+  ],
+  "where": {
+    "lon": 20.166666666667,
+    "lat": 46.25,
+    "precision": "city",
+    "label": "Szeged"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

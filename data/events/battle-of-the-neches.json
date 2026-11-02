@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-neches",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872959",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of the Neches"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872959"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Neches\", revision 1370601480"
+    }
+  ],
+  "title": "Battle of the Neches",
+  "summary": "The English Wikipedia article \"Battle of the Neches\", at revision 1370601480, opens: \"The Battle of the Neches, the main engagement of the Cherokee War of 1838–1839, took place on 15–16 July in 1839 in what is now the Redland community. It resulted from the Córdova Rebellion and Texas President Mirabeau Bonaparte Lamar's determination to remove the Cherokee people from Texas. Many Cherokee had migrated there from the American Southeast to avoid being forced to Indian Territory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872959, imported by tools/import/wikidata.mjs. The item's own description reads \"July 15-16, 1839, battle in the Cherokee War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1839
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "texas-indian-wars"
+}

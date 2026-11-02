@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "operations-in-valtellina-1866",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3884042",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Operations in Valtellina (1866)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3884042"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operations in Valtellina (1866)\", revision 1370701123"
+    }
+  ],
+  "title": "Operations in Valtellina (1866)",
+  "summary": "The English Wikipedia article \"Operations in Valtellina (1866)\", at revision 1370701123, opens: \"The Operations in Valtellina was a battle of the Third Italian War of Independence and consisted in the penetration of Austrian units of the 8th Division of General Franz Kuhn von Kuhnenfeld operating in Trentino against the Italian Volunteer Corps of Giuseppe Garibaldi and in the subsequent Italian counterattack of the Mobile National Guard commanded by Colonel Enrico Guicciardi.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3884042, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the Third Italian War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866
+  },
+  "place": "valtellina",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "third-italian-war-of-independence"
+}
