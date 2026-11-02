@@ -88,6 +88,30 @@ test('nearest parent only: the wider of two parents goes, through the records an
   assert.deepEqual(nearestOnly(new Map([['battle', ['raid', 'rival']]]), () => []).get('battle').sort(), ['raid', 'rival']);
 });
 
+test('the batch\'s own filings count: a child offered a whole and its part keeps the part (M106)', () => {
+  // battle-of-maymyo is offered sino-burmese-war and ten-great-campaigns, and the
+  // same batch files sino-burmese-war under ten-great-campaigns.
+  const campaigns = ev('ten-great-campaigns', 'Q21', 1750, 1790);
+  const sino = ev('sino-burmese-war', 'Q22', 1765, 1769);
+  const maymyo = ev('battle-of-maymyo', 'Q23', 1767, 1767);
+  const map = new Map([campaigns, sino, maymyo].map((r) => [r.id, r]));
+  const lanes = new Map([...map.keys()].map((id) => [id, 'asia']));
+  const { accepted } = filterPairs([
+    { child: 'battle-of-maymyo', parent: 'ten-great-campaigns', sources: ['P361'] },
+    { child: 'battle-of-maymyo', parent: 'sino-burmese-war', sources: ['P361'] },
+    { child: 'sino-burmese-war', parent: 'ten-great-campaigns', sources: ['P361'] },
+  ], { byId: map, laneOf: lanes });
+  assert.deepEqual(accepted.get('battle-of-maymyo'), ['sino-burmese-war']);
+  assert.deepEqual(accepted.get('sino-burmese-war'), ['ten-great-campaigns']);
+});
+
+test('a parent the child already has stands: an offered parent that holds it or sits inside it is dropped', () => {
+  const held = (id) => (id === 'maymyo' ? ['sino'] : id === 'sino' ? ['campaigns'] : []);
+  const kept = nearestOnly(new Map([['maymyo', ['campaigns']], ['other', ['campaigns']]]), held);
+  assert.equal(kept.has('maymyo'), false, 'campaigns is reachable through sino already');
+  assert.deepEqual(kept.get('other'), ['campaigns']);
+});
+
 test('filterPairs counts after each filter and refuses a loop closed inside the batch', () => {
   const pairs = [
     { child: 'battle', parent: 'war', sources: ['P361'] },

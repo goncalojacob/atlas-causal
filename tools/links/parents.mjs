@@ -259,17 +259,26 @@ export function laneFits(child, parent, laneOf) {
 }
 
 // Drops, for each child, any parent that lies inside another of its parents.
-// The ancestors are read through the records' own parents and through the
-// parents the pairs give, until nothing changes.
+// The graph is the records' own parents plus every filing this batch offers,
+// and the test is run on that whole graph until nothing changes, so a filing
+// the batch makes for the parent counts too: if the batch files B under A, a
+// child offered both A and B keeps B alone (M106; the filing of
+// battle-of-maymyo went red because the batch's own filings were not read).
+// The parents a child already has stand beside the offered ones. They cannot
+// be dropped, since the writer keeps them, so an offered parent that is
+// inside one of them, or that holds one of them, goes instead.
 export function nearestOnly(byChild, corpusParents) {
   const current = new Map([...byChild].map(([c, ps]) => [c, new Set(ps)]));
   const parentsFor = (id) => [...new Set([...(corpusParents(id) ?? []), ...(current.get(id) ?? [])])];
   for (let changed = true; changed;) {
     changed = false;
     for (const [child, set] of current) {
+      const held = corpusParents(child) ?? [];
       for (const p of [...set]) {
-        const through = [...set].find((q) => q !== p && ancestorsOf(q, parentsFor).has(p));
-        if (through) { set.delete(p); changed = true; }
+        const all = [...new Set([...set, ...held])];
+        const through = all.find((q) => q !== p && ancestorsOf(q, parentsFor).has(p));
+        const holds = held.find((q) => q !== p && ancestorsOf(p, parentsFor).has(q));
+        if (through || holds) { set.delete(p); changed = true; }
       }
       if (set.size === 0) current.delete(child);
     }
@@ -310,6 +319,11 @@ export function filterPairs(pairs, { byId, laneOf }) {
       else refused.push({ child, parent, reason: verdict.reason, detail: verdict.detail });
     }
   }
+  // The writer's verdict can refuse a filing the test above counted on, so the
+  // nesting is read once more over what stands.
+  const standing = nearestOnly(accepted, parentsFromCorpus);
+  accepted.clear();
+  for (const [c, ps] of standing) accepted.set(c, ps);
   counts.writerVerdict = [...accepted.values()].reduce((n, ps) => n + ps.length, 0);
   return { counts, accepted, refused };
 }
