@@ -13,7 +13,7 @@ import path from 'node:path';
 import {
   createWikipediaFetcher, fetchArticle, resolveTitles, linkTitle, paragraphs, splitSentences, sentencesOf,
   directionsFor, reaches, chooseSubjects, buildCandidates, wikidataPairs, buildQueue, explanationFor,
-  usedSerials, parsePageUrl, claimsUrl, USER_AGENT,
+  usedSerials, CLAUSES, parsePageUrl, claimsUrl, USER_AGENT,
 } from '../tools/links/edges.mjs';
 import { checkQueue } from '../tools/queue/queue.mjs';
 
@@ -193,7 +193,7 @@ test('the queue: one item for each subject, the template explanation, ids past t
   assert.ok(item.edges.every((e) => e.confidence === 'probable'));
   assert.equal(item.edges[0].explanation, explanationFor(revoltC, { from: 'Great War', to: 'Spring Revolt', type: 'caused' }));
   assert.ok(item.edges[0].explanation.startsWith('The English Wikipedia article "Great War" (revision 777) says: "'));
-  assert.ok(item.edges[0].explanation.endsWith('The edge reads that sentence as Great War caused Spring Revolt and nothing more.'));
+  assert.ok(item.edges[0].explanation.endsWith('The edge reads that sentence as: Great War caused Spring Revolt, and nothing more.'));
   assert.equal(skipped.unjudged, candidates.length - 2);
   assert.deepEqual(checkQueue('q.json', queue, { regions: null }), []);
 });
@@ -288,4 +288,12 @@ test('an article and a batch of titles are asked once and kept by revision', asy
 
 test('Wikidata is never asked with a maxlag above five', () => {
   assert.ok(claimsUrl(['Q1', 'Q2']).includes('maxlag=5'));
+});
+
+test('each type closes in plain English, the earlier record first', () => {
+  const said = Object.fromEntries(Object.keys(CLAUSES).map((t) => [t, CLAUSES[t]('A', 'B')]));
+  assert.deepEqual(said, {
+    caused: 'A caused B', enabled: 'A made B possible', 'reacted-to': 'B was a response to A',
+    'precondition-of': 'A was a precondition of B', inspired: 'A inspired B',
+  });
 });

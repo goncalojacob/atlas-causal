@@ -590,9 +590,20 @@ export function report(result) {
 
 // --- stage 2: the queue ----------------------------------------------------
 
+// The closing clause in plain English, `from` the earlier record and `to` the
+// later. "reacted-to" runs from the earlier to the later and means the later
+// answered the earlier, so it is read the other way round.
+export const CLAUSES = Object.freeze({
+  caused: (from, to) => `${from} caused ${to}`,
+  enabled: (from, to) => `${from} made ${to} possible`,
+  'reacted-to': (from, to) => `${to} was a response to ${from}`,
+  'precondition-of': (from, to) => `${from} was a precondition of ${to}`,
+  inspired: (from, to) => `${from} inspired ${to}`,
+});
+
 export function explanationFor(candidate, { from, to, type }) {
   return `The English Wikipedia article "${candidate.article}" (revision ${candidate.revision}) says: "${candidate.quote}" `
-    + `The edge reads that sentence as ${from} ${type} ${to} and nothing more.`;
+    + `The edge reads that sentence as: ${CLAUSES[type](from, to)}, and nothing more.`;
 }
 
 // The serial numbers already used for each `<date>-<lane>`, from any queue or
