@@ -1321,6 +1321,15 @@
         }
       ]
     },
+    "battle-of-anyraqai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-arakere": {
       "from": "git",
       "versions": [
@@ -8687,6 +8696,15 @@
         }
       ]
     },
+    "logan-s-raid": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "lord-dunmore-s-war": {
       "from": "git",
       "versions": [
@@ -8744,6 +8762,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "maratha-mysore-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -12885,6 +12912,15 @@
         }
       ]
     },
+    "treaty-of-versailles-1756": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "treaty-of-versailles-1757": {
       "from": "git",
       "versions": [
@@ -13089,6 +13125,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "voyage-of-the-glorioso": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },

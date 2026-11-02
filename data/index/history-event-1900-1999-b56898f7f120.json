@@ -7527,6 +7527,15 @@
         }
       ]
     },
+    "battle-of-beicang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-beitang": {
       "from": "git",
       "versions": [
@@ -8572,6 +8581,15 @@
         }
       ]
     },
+    "battle-of-palonegro": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-paye": {
       "from": "git",
       "versions": [
@@ -9201,6 +9219,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-yangcun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },

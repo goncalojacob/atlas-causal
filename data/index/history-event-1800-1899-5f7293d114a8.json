@@ -2804,6 +2804,15 @@
         }
       ]
     },
+    "battle-of-abu-kru": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-abukir-1801": {
       "from": "git",
       "versions": [
@@ -2876,6 +2885,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "battle-of-agua-zarca": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -3119,6 +3137,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-amba-jebelli": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -3509,6 +3536,15 @@
         {
           "first": true,
           "on": "2026-10-31"
+        }
+      ]
+    },
+    "battle-of-ayshal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -4942,6 +4978,15 @@
         }
       ]
     },
+    "battle-of-chinhat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-chinkiang": {
       "from": "git",
       "versions": [
@@ -5458,6 +5503,15 @@
         }
       ]
     },
+    "battle-of-derasge": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-dermbach": {
       "from": "git",
       "versions": [
@@ -5670,6 +5724,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "battle-of-el-maguey": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -6378,6 +6441,15 @@
         }
       ]
     },
+    "battle-of-gia-cuc": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-gingindlovu": {
       "from": "git",
       "versions": [
@@ -7074,6 +7146,15 @@
         }
       ]
     },
+    "battle-of-huamachuco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-huaqui": {
       "from": "git",
       "versions": [
@@ -7185,6 +7266,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-inlon-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -7629,6 +7719,15 @@
         }
       ]
     },
+    "battle-of-kastella": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-kastraki": {
       "from": "git",
       "versions": [
@@ -7716,6 +7815,15 @@
         {
           "first": true,
           "on": "2026-11-01"
+        }
+      ]
+    },
+    "battle-of-kirbekan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -8277,6 +8385,15 @@
         }
       ]
     },
+    "battle-of-llanos-de-santa-juana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-logandeme": {
       "from": "git",
       "versions": [
@@ -8292,6 +8409,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "battle-of-lomas-de-santa-maria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -8346,6 +8472,15 @@
         {
           "first": true,
           "on": "2026-10-31"
+        }
+      ]
+    },
+    "battle-of-lougou": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -9474,6 +9609,15 @@
         }
       ]
     },
+    "battle-of-nowshera": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-nsamankow": {
       "from": "git",
       "versions": [
@@ -9972,6 +10116,24 @@
         }
       ]
     },
+    "battle-of-phu-hoai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
+    "battle-of-phu-lam-tao": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-piave-river-1809": {
       "from": "git",
       "versions": [
@@ -10251,6 +10413,15 @@
         }
       ]
     },
+    "battle-of-puerto-de-pinones": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-pulo-aura": {
       "from": "git",
       "versions": [
@@ -10275,6 +10446,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-punta-gruesa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -10329,6 +10509,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-quingua": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -11084,6 +11273,15 @@
         }
       ]
     },
+    "battle-of-sauce-1816": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-savage-s-station": {
       "from": "git",
       "versions": [
@@ -11210,6 +11408,15 @@
         }
       ]
     },
+    "battle-of-senafe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-senluo-temple": {
       "from": "git",
       "versions": [
@@ -11225,6 +11432,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-serobeti": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -11894,6 +12110,15 @@
         }
       ]
     },
+    "battle-of-tarapaca": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-tarbes": {
       "from": "git",
       "versions": [
@@ -11957,12 +12182,30 @@
         }
       ]
     },
+    "battle-of-tecualoya": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-tell-el-kebir": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-temalaca": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -13996,6 +14239,15 @@
         }
       ]
     },
+    "bombardment-of-tourane-1847": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "bombardment-of-tripoli-1828": {
       "from": "git",
       "versions": [
@@ -14873,6 +15125,15 @@
         }
       ]
     },
+    "chimurenga": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "chin-lushai-expedition": {
       "from": "git",
       "versions": [
@@ -14963,6 +15224,15 @@
             "parent"
           ],
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "clayton-bulwer-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -27522,6 +27792,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "virginius-affair": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },

@@ -3157,6 +3157,15 @@
         }
       ]
     },
+    "union-of-the-duchy-of-brittany-with-the-crown-of-france": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "urdu-bazaar-revolt": {
       "from": "git",
       "versions": [
@@ -3217,6 +3226,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "war-of-the-priests-1467-1479": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
