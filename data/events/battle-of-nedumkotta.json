@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-nedumkotta",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4872960",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Nedumkotta"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872960"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nedumkotta\", revision 1376998992"
+    }
+  ],
+  "title": "Battle of Nedumkotta",
+  "summary": "The English Wikipedia article \"Battle of Nedumkotta\", at revision 1376998992, opens: \"The Battle of Nedumkotta took place between December 1789 and May 1790, and was a reason for the opening of hostilities in the Third Anglo-Mysore War. This battle was fought between Tipu Sultan of the Kingdom of Mysore and Dharma Raja, Maharaja of Travancore. Mysore army attacked the fortified line in Thrissur district at the Travancore border known as the Nedumkotta. The Mysore army was successfully repulsed by the Travancore army under the leadership of Raja Kesavadas, Dewan of Travancore.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872960, imported by tools/import/wikidata.mjs. The item's own description reads \"1789 historical Event\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1789,
+    "end": 1790,
+    "date": "1789-12-28",
+    "endDate": "1790-05"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

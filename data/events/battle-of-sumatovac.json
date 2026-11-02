@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-sumatovac",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4087409",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Šumatovac"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4087409"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Šumatovac\", revision 1370603161"
+    }
+  ],
+  "title": "Battle of Šumatovac",
+  "summary": "The English Wikipedia article \"Battle of Šumatovac\", at revision 1370603161, opens: \"The Battle of Šumatovac or Battle of Aleksinac happened in 1876, in central Serbia, near the town of Aleksinac. The outnumbered Serbian army, led by colonel Kosta Protić, won a tactical victory in this defensive battle against the Ottoman forces. In a major tactical blunder the Ottomans spent a whole day frontally attacking a well-entrenched pentagonal redoubt defended by two Serbian battalions armed with muzzle-loading rifles and 6 cannons supported by about 40 additional artillery pieces positioned on the overlooking hills.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4087409, imported by tools/import/wikidata.mjs. The item's own description reads \"1876 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1876,
+    "date": "1876-08"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "serbian-ottoman-wars-1876-1878"
+}

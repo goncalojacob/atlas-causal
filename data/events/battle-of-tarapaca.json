@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-tarapaca",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3357987",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Tarapacá"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3357987"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tarapacá\", revision 1370590574"
+    }
+  ],
+  "title": "Battle of Tarapacá",
+  "summary": "The English Wikipedia article \"Battle of Tarapacá\", at revision 1370590574, opens: \"The Battle of Tarapacá occurred on 27 November 1879 during the Tarapacá Campaign of the War of the Pacific. A Chilean force of 2,300 soldiers divided in three columns attacked a Peruvian contingent of 4,486 troops at Tarapacá commanded by Gen Juan Buendía, resulting in a harsh defeat. The Chilean 2nd Line Regiment was the most damaged unit, losing almost half of its force, along with its commander Lt. Col. Eleuterio Ramírez and his second in command, Lt. Col. Bartolomé Vivar. The unit lost its banner, which was recovered six months later after the Battle of Tacna. Despite the victory, the Allies could not contest for the domination of the Tarapacá department, abandoning it to Chilean control.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3357987, imported by tools/import/wikidata.mjs. The item's own description reads \"1879 battle in the War of the Pacific\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879,
+    "date": "1879-11-26"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "werbach",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q61626",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Werbach",
+    "pt": "Werbach"
+  },
+  "sources": [],
+  "names": [
+    "Werbach"
+  ],
+  "where": {
+    "lon": 9.6405555555556,
+    "lat": 49.669166666667,
+    "precision": "city",
+    "label": "Werbach"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

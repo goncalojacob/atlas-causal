@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "chimurenga",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4516015",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Chimurenga"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4516015"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chimurenga\", revision 1334882226"
+    }
+  ],
+  "title": "Chimurenga",
+  "summary": "The English Wikipedia article \"Chimurenga\", at revision 1334882226, opens: \"Chimurenga is a word in Shona. The Ndebele equivalent is not as widely used since most Zimbabweans speak Shona; it is Umvukela, meaning \"revolutionary struggle\" or uprising. In specific historical terms, it also refers to the Ndebele and the Shona insurrections against administration of the British South Africa Company during the late 1890s, the Ndebeles are said to have been at the forefront of the First Chimurenga—and the war fought between African nationalist guerrillas and the predominantly-white Rhodesian government during the 1960s and the 1970s, the Rhodesian Bush War, or the Second Chimurenga/Imvukela.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4516015, imported by tools/import/wikidata.mjs. The item's own description reads \"MATABELE WAR\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1979
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

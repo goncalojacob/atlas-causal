@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-pino-de-baire",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q6086122",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Pino de Baire",
+    "pt": "Batalha de Pino de Baire"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6086122"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pino de Baire\", revision 1370586111"
+    }
+  ],
+  "title": "Battle of Pino de Baire",
+  "summary": "The English Wikipedia article \"Battle of Pino de Baire\", at revision 1370586111, opens: \"The Battle of Pino de Baire, also known as the Primera Carga al Machete, occurred on 25 October 1868 during the beginning of the Ten Years' War. It was the first instance of the reputable machete charge in the war that became a common mambí tactic.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6086122, imported by tools/import/wikidata.mjs. The item's own description reads \"1868 battle of the Ten Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1868,
+    "date": "1868-10-25"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "ten-years-war"
+}

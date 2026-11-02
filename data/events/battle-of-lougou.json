@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-lougou",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871605",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Lougou"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871605"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lougou\", revision 1370448112"
+    }
+  ],
+  "title": "Battle of Lougou",
+  "summary": "The English Wikipedia article \"Battle of Lougou\", at revision 1370448112, opens: \"The French Voulet–Chanoine Mission, led by the captains Paul Voulet and Julien Chanoine, had been dispatched in 1898 to Africa by the French government with the mission to conquer the territories between the Niger River and Lake Chad and join in uniting French territories in West Africa. After leaving French Sudan in January 1899, they ruthlessly subjugated the native peoples, meeting little resistance.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871605, imported by tools/import/wikidata.mjs. The item's own description reads \"1899 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-04-16"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "scramble-for-africa"
+}

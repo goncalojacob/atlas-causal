@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "capture-of-the-veloz-passagera",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5037077",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Capture of the Veloz Passagera"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5037077"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of the Veloz Passagera\", revision 1381888452"
+    }
+  ],
+  "title": "Capture of the Veloz Passagera",
+  "summary": "The English Wikipedia article \"Capture of the Veloz Passagera\", at revision 1381888452, opens: \"The Capture of Veloz Passagera was a single-ship action that occurred during the British Royal Navy's anti-slavery blockade of Africa in the early and mid 19th century. The sloop-of-war HMS Primrose, of 18 guns, under Captain William Broughton, captured the 20-gun Spanish slave ship Veloz Passagera, Jozé Antonio de la Vega, master.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5037077, imported by tools/import/wikidata.mjs. The item's own description reads \"1830 single-ship action\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1830,
+    "end": 1830,
+    "date": "1830-09-07"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "blockade-of-africa"
+}

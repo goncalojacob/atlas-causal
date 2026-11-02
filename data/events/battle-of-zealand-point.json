@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "battle-of-zealand-point",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3432591",
+  "wikipedia": {
+    "en": "Battle of Zealand Point"
+  },
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3432591"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Zealand Point\", revision 1370596494"
+    }
+  ],
+  "title": "Battle of Zealand Point",
+  "summary": "The English Wikipedia article \"Battle of Zealand Point\", at revision 1370596494, opens: \"The Battle of Zealand Point was fought off Zealand on 22 March 1808 during the Gunboat War. Three ships of the line and one frigate of the Royal Navy intercepted and destroyed a Danish ship of the line. The British victory in the battle resulted in the loss of the Danish navy's last ship of the line.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3432591, imported by tools/import/wikidata.mjs. The item's own description reads \"naval battle of the English Wars and the Gunboat War fought off Zealand Point, resulting in a victory of the British over the Danish forces\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-03-22"
+  },
+  "place": "sj-llands-odde",
+  "region": null,
+  "regionNote": null,
+  "parent": [
+    "english-wars-scandinavia",
+    "gunboat-war"
+  ],
+  "category": "war",
+  "actors": []
+}

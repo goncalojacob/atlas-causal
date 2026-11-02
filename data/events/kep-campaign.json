@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "kep-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q6393080",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Kép campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6393080"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kép campaign\", revision 1377313517"
+    }
+  ],
+  "title": "Kép campaign",
+  "summary": "The English Wikipedia article \"Kép campaign\", at revision 1377313517, opens: \"The Kép campaign was an important campaign in northern Vietnam during the opening months of the Sino-French War. A force of just under 3,000 French troops under the command of General François de Négrier defeated a major Chinese invasion of the Red River Delta launched by Pan Dingxin's Guangxi Army in successive engagements at Lâm, Kép and Chũ.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6393080, imported by tools/import/wikidata.mjs. The item's own description reads \"Vietnamese compaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1884,
+    "end": 1884,
+    "date": "1884-10-02",
+    "endDate": "1884-10-15"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "sino-french-war"
+}

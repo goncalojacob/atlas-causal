@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-abu-kru",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q27627676",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Abu Kru"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q27627676"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Abu Kru\", revision 1374469775"
+    }
+  ],
+  "title": "Battle of Abu Kru",
+  "summary": "The English Wikipedia article \"Battle of Abu Kru\", at revision 1374469775, opens: \"The Battle of Abu Kru was part of the British Sudan campaign. It was fought on 19 January 1885, two days after the Battle of Abu Klea, between the British and the Mahdists. The British force under Brigadier General Sir Herbert Stewart numbered 1,200 while a large number of Mahdists, probably around 13,000–14,000, were in pursuit. The British were moving to rescue General Gordon from Khartoum, and were cutting the Great Bend of the Nile, when they came under attack a short distance from rejoining the Nile.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q27627676, imported by tools/import/wikidata.mjs. The item's own description reads \"1885 battle of the British Sudan campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-01-19"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "mahdist-war"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "attacks-on-serbs-during-the-serbian-ottoman-wars-1876-1878",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "article-is-redirect",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q18639504",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Attacks on Serbs during the Serbian–Ottoman Wars (1876–1878)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18639504"
+    }
+  ],
+  "title": "Attacks on Serbs during the Serbian–Ottoman Wars (1876–1878)",
+  "summary": "Wikidata item Q18639504, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1878
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "serbian-ottoman-wars-1876-1878"
+}

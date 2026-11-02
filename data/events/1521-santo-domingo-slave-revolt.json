@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1521-santo-domingo-slave-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q97585797",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "1521 Santo Domingo Slave Revolt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q97585797"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1521 Santo Domingo Slave Revolt\", revision 1366197752"
+    }
+  ],
+  "title": "1521 Santo Domingo Slave Revolt",
+  "summary": "The English Wikipedia article \"1521 Santo Domingo Slave Revolt\", at revision 1366197752, opens: \"The 1521 Santo Domingo Slave Revolt in the Spanish colony of Santo Domingo on the island of Hispaniola took place around the time of Christmas festivities in 1521. It is the earliest recorded slave rebellion in the Americas. Just days after the rebellion, the colonial authorities introduced a set of laws to prevent another uprising. These are thought to be the earliest surviving laws created to control enslaved Africans in the New World.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q97585797, imported by tools/import/wikidata.mjs. The item's own description reads \"slave rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1521,
+    "end": 1521,
+    "date": "1521-12"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

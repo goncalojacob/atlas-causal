@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-punta-gruesa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3378101",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Punta Gruesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3378101"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Punta Gruesa\", revision 1370586788"
+    }
+  ],
+  "title": "Battle of Punta Gruesa",
+  "summary": "The English Wikipedia article \"Battle of Punta Gruesa\", at revision 1370586788, opens: \"The Battle of Punta Gruesa was a naval action that took place on May 21, 1879, during the War of the Pacific between Chile and Peru. This may be labelled as the second part of the Naval Battle of Iquique, which occurred on the same day, although it is described in many sources as a separate battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3378101, imported by tools/import/wikidata.mjs. The item's own description reads \"1879 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879,
+    "date": "1879-05-21"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-pacific"
+}

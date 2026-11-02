@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "logan-s-raid",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2913176",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Logan's raid"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2913176"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Logan's raid\", revision 1383084194"
+    }
+  ],
+  "title": "Logan's raid",
+  "summary": "The English Wikipedia article \"Logan's raid\", at revision 1383084194, opens: \"Logan's raid was a military expedition held in October, 1786 by a Kentucky militia force under Colonel Benjamin Logan against several Shawnee settlements along the Little Miami and Mad Rivers in the Ohio Country. The villages were occupied primarily by noncombatants, since most warriors had left to defend the villages of Chief Little Turtle from a separate force moving up the Wabash River under the command of General George Rogers Clark. Logan seized and burned thirteen villages, destroying the food supplies and killing or capturing many, including the aged Chief Moluntha who was soon murdered by one of Logan's men, reportedly in retaliation for the Battle of Blue Licks in the American Revolutionary War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2913176, imported by tools/import/wikidata.mjs. The item's own description reads \"1791 mass killing of Indians by Kentucky militia in Ohio\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1786,
+    "end": 1786,
+    "date": "1786-10"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "northwest-indian-war"
+}

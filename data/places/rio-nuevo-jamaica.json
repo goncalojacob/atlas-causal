@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "rio-nuevo-jamaica",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7335289",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Rio Nuevo (Jamaica)"
+  },
+  "sources": [],
+  "names": [
+    "Rio Nuevo",
+    "Rio Nuevo (Jamaica)"
+  ],
+  "where": {
+    "lon": -77.01666667,
+    "lat": 18.41666667,
+    "precision": "region",
+    "label": "Rio Nuevo (Jamaica)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

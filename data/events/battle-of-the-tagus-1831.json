@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-tagus-1831",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2984978",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of the Tagus (1831)",
+    "pt": "Batalha do Tejo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2984978"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Tagus (1831)\", revision 1370602439"
+    }
+  ],
+  "title": "Battle of the Tagus (1831)",
+  "summary": "The English Wikipedia article \"Battle of the Tagus (1831)\", at revision 1370602439, opens: \"The Battle of the Tagus took place on 11 July 1831 during the Liberal Wars. At the mouth of the Tagus river in Portugal, a French fleet attacked and subdued Miguelite fortifications with the aim of forcing the regime of Miguel I of Portugal to recognise the newly established July Monarchy in France. The damage to the forts defending access to the Tagus and the arrival of French warships at Lisbon forced Miguel's regime to cave in and comply with French demands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2984978, imported by tools/import/wikidata.mjs. The item's own description reads \"1831 naval engagement between France and Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1831,
+    "end": 1831,
+    "date": "1831-07-11"
+  },
+  "place": "tagus",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "liberal-wars"
+}

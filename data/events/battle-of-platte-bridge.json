@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-platte-bridge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872061",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Platte Bridge"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872061"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Platte Bridge\", revision 1380823459"
+    }
+  ],
+  "title": "Battle of Platte Bridge",
+  "summary": "The English Wikipedia article \"Battle of Platte Bridge\", at revision 1380823459, opens: \"The Battle of Platte Bridge, also called the Battle of Platte Bridge Station, on July 26, 1865, was the culmination of a summer offensive by the Lakota Sioux and Cheyenne Indians against the United States army. In May and June the Indians raided army outposts and stagecoach stations over a wide swath of Wyoming and Montana. In July, they assembled a large army, estimated by Cheyenne warrior George Bent to number 3,000 warriors, and descended upon Platte Bridge. The bridge, across the North Platte River near present-day Casper, Wyoming, was guarded by 120 soldiers. In an engagement near the bridge, and another against a wagon train guarded by 28 soldiers a few miles away, the Indians killed 29 soldiers while also suffering at least eight dead.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872061, imported by tools/import/wikidata.mjs. The item's own description reads \"battle fought in Wyoming in 1865\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1865,
+    "end": 1865,
+    "date": "1865-07-26"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "colorado-war"
+}

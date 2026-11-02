@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-xicheng",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q30672276",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Xicheng"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q30672276"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Xicheng\", revision 1370277083"
+    }
+  ],
+  "title": "Battle of Xicheng",
+  "summary": "The English Wikipedia article \"Battle of Xicheng\", at revision 1370277083, opens: \"The Battle of Xicheng was a military conflict between the Yehe Jurchens, their Ming allies, and the Later Jin. In the fall of 1619 Nurhaci invaded Xicheng, the home of the Yehe Jurchens. Nurhaci personally led the vanguard and took the east wall. After capturing the city the Yehe inhabitants were spared, but their Ming allies who had fought beside them were executed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q30672276, imported by tools/import/wikidata.mjs. The item's own description reads \"1619 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1619,
+    "end": 1619,
+    "date": "1619-09"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "transition-from-ming-to-qing"
+}

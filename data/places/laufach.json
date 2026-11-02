@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "laufach",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q539764",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Laufach",
+    "pt": "Laufach"
+  },
+  "sources": [],
+  "names": [
+    "Laufach"
+  ],
+  "where": {
+    "lon": 9.3,
+    "lat": 50.016666666667,
+    "precision": "city",
+    "label": "Laufach"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

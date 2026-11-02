@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "bavarian-war-1459-1463",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q607645",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Bavarian War (1459–1463)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q607645"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bavarian War (1459–1463)\", revision 1366193179"
+    }
+  ],
+  "title": "Bavarian War (1459–1463)",
+  "summary": "The English Wikipedia article \"Bavarian War (1459–1463)\", at revision 1366193179, opens: \"The Bavarian War from 1459 to 1463, also known as the Princes' War, was a result of the expansionist ambitions of the two warring Principalities, pitting Margrave, later Elector, Albert Achilles from the House of Hohenzollern, which by this time had already annexed the principalities of Brandenburg-Kulmbach and Brandenburg-Ansbach, against Duke Louis \"the Rich\" of Bavaria-Landshut from the House of Wittelsbach.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q607645, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflict, 1459–1463\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1459,
+    "end": 1463
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

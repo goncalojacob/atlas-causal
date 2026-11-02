@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "gaselee-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5526415",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Gaselee Expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5526415"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gaselee Expedition\", revision 1370620764"
+    }
+  ],
+  "title": "Gaselee Expedition",
+  "summary": "The English Wikipedia article \"Gaselee Expedition\", at revision 1370620764, opens: \"The Gaselee Expedition was a successful relief by a multi-national military force to march to Beijing and protect the diplomatic legations and foreign nationals in the city from attacks in 1900. The expedition was part of the war of the Boxer Rebellion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5526415, imported by tools/import/wikidata.mjs. The item's own description reads \"expedition during the Boxer Rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-08"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "boxer-rebellion"
+}

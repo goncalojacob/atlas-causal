@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "capture-of-trincomalee",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5037060",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Capture of Trincomalee"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5037060"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Trincomalee\", revision 1370609734"
+    }
+  ],
+  "title": "Capture of Trincomalee",
+  "summary": "The English Wikipedia article \"Capture of Trincomalee\", at revision 1370609734, opens: \"The capture of Trincomalee on 11 January 1782 was the second major engagement between Great Britain and the Dutch East India Company in the East Indies after the outbreak of the Fourth Anglo-Dutch War. After capturing Negapatam, the major Dutch outpost in India, a British force assaulted the Dutch-controlled port of Trincomalee on the eastern coast of Ceylon, and successfully stormed Fort Fredrick and Fort Ostenburg to gain control of the city and the port. In gaining control of the port, they also captured the vessels there at the time.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5037060, imported by tools/import/wikidata.mjs. The item's own description reads \"1872 battle in the Fourth Anglo-Dutch War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1782,
+    "end": 1782,
+    "date": "1782-01-11"
+  },
+  "place": "trincomalee",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "fourth-anglo-dutch-war"
+}

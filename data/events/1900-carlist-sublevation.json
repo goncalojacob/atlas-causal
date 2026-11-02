@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1900-carlist-sublevation",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q16163640",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "1900 Carlist Sublevation"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16163640"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1900 Carlist Sublevation\", revision 1370278958"
+    }
+  ],
+  "title": "1900 Carlist Sublevation",
+  "summary": "The English Wikipedia article \"1900 Carlist Sublevation\", at revision 1370278958, opens: \"The Carlist uprising of October 1900 was an attempted armed insurrection that originated in Badalona, a city on the border with Barcelona, and which spread to other towns in Spain, although the attempted rebellion quickly failed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16163640, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-10-28",
+    "endDate": "1900-11"
+  },
+  "place": "badalona",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

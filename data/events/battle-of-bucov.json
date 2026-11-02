@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-bucov",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q15977779",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Bucov"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15977779"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bucov\", revision 1370435461"
+    }
+  ],
+  "title": "Battle of Bucov",
+  "summary": "The English Wikipedia article \"Battle of Bucov\", at revision 1370435461, opens: \"The Battle of Bucov or Teleajen River was fought during the Moldavian Magnate Wars between the Polish–Lithuanian Commonwealth and the Principality of Wallachia, on October 20, 1600. Polish-Lithuanian forces under the command of Jan Zamoyski and Moldavian army of Ieremia Movilă defeated the Wallachian forces commanded by Michael the Brave.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15977779, imported by tools/import/wikidata.mjs. The item's own description reads \"1600 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1600,
+    "end": 1600,
+    "date": "1600-10-20"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "moldavian-magnate-wars"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-veterani-cave",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q125167172",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Veterani Cave"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q125167172"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Veterani Cave\", revision 1370746318"
+    }
+  ],
+  "title": "Siege of Veterani Cave",
+  "summary": "The English Wikipedia article \"Siege of Veterani Cave\", at revision 1370746318, opens: \"The siege of Veterani Cave was a military engagement during the Austro-Turkish War of 1788–1791, which took place in August 1788 during the offensive of the Ottoman army of Yusuf Pasha in Banat. After 20 days of resistance, the Habsburg garrison surrendered to the Ottomans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q125167172, imported by tools/import/wikidata.mjs. The item's own description reads \"1790 battle during the Austro-Turkish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1788,
+    "end": 1788,
+    "date": "1788-08-11",
+    "endDate": "1788-08-31"
+  },
+  "place": "dubova",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "austro-turkish-war-1788-1791"
+}

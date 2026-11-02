@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-doak-s-stand",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7837035",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Treaty of Doak's Stand"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837035"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Doak's Stand\", revision 1375720862"
+    }
+  ],
+  "title": "Treaty of Doak's Stand",
+  "summary": "The English Wikipedia article \"Treaty of Doak's Stand\", at revision 1375720862, opens: \"The Treaty of Doak's Stand was signed on October 18, 1820 between the United States and the Choctaw Indian tribe. The Treaty of Doak's Stand was the seventh of nine major treaties that were ratified from the period from 1786 through 1866 between the United States government and the Choctaw nation during a time of rapid westward expansion of white settlers. Based on the terms of the accord, the Choctaw were forced to give up approximately 5 million acres or roughly one-third of their remaining Choctaw homeland in the east in exchange for 13 million westward acres in the Canadian Kiamichi, Arkansas, and Red River watersheds. The Choctaw reluctantly signed the agreement in an effort to maintain peace as they were threatened by the US commissioners that if they did not agree to move west, they would perish.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837035, imported by tools/import/wikidata.mjs. The item's own description reads \"1820 treaty between the United States and Choctaw\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1820,
+    "end": 1820,
+    "date": "1820-10-18"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}
