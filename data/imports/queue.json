@@ -4666,6 +4666,254 @@
       "edges": [],
       "rank": "child-of:texas-revolution",
       "why": "Child of the Texas Revolution, found through a P361 search of thin umbrellas, with 1 sitelink."
+    },
+    {
+      "id": "2026-11-02-europe-010",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q720801",
+      "title": "Battle of Cecora (1595)",
+      "parents": [
+        "moldavian-magnate-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:moldavian-magnate-wars",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Moldavian Magnate Wars\" (moldavian-magnate-wars); 7 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-europe-011",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4870824",
+      "title": "Battle of Cádiz (1656)",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:anglo-spanish-war-1654-1660",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Anglo-Spanish War (1654–1660)\" (anglo-spanish-war-1654-1660); 6 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-asia-002",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q25544",
+      "title": "Battle of the Dardanelles (1807)",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:russo-turkish-war-1806-1812",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Russo-Turkish War (1806–1812)\" (russo-turkish-war-1806-1812); 6 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-europe-012",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q5037035",
+      "title": "Capture of Minorca (1798)",
+      "parents": [
+        "mediterranean-campaign-of-1798"
+      ],
+      "edges": [],
+      "rank": "child-of:mediterranean-campaign-of-1798",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Mediterranean campaign of 1798\" (mediterranean-campaign-of-1798); 5 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-americas-019",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4870349",
+      "title": "Battle of Arroyo Grande",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:uruguayan-civil-war",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Uruguayan Civil War\" (uruguayan-civil-war); 5 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-europe-013",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q21187342",
+      "title": "Uprising in Vučitrn",
+      "parents": [
+        "austro-turkish-war-1716-1718"
+      ],
+      "edges": [],
+      "rank": "child-of:austro-turkish-war-1716-1718",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Austro-Turkish War (1716–1718)\" (austro-turkish-war-1716-1718); 4 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-asia-003",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q27958319",
+      "title": "Barrackpore mutiny of 1824",
+      "parents": [
+        "first-anglo-burmese-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-anglo-burmese-war",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"First Anglo-Burmese War\" (first-anglo-burmese-war); 4 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-europe-014",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q4872721",
+      "title": "Battle of Wenden (1626)",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:polish-swedish-war-1626-1629",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Polish–Swedish War (1626–1629)\" (polish-swedish-war-1626-1629); 3 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-europe-015",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q10423630",
+      "title": "War of Deposition against King Hans",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:dano-swedish-war-1501-1512",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Dano-Swedish War (1501–1512)\" (dano-swedish-war-1501-1512); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-europe-016",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q6084870",
+      "title": "Moldavian Campaign (1538)",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:moldavian-ottoman-wars",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Moldavian–Ottoman Wars\" (moldavian-ottoman-wars); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-americas-020",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q6415375",
+      "title": "Kirk–Holden war",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:reconstruction-era",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Reconstruction era\" (reconstruction-era); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-americas-021",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q5778825",
+      "title": "Battle of Callao (1838)",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:war-of-the-confederation",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"War of the Confederation\" (war-of-the-confederation); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-africa-002",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q134006616",
+      "title": "Sack of Old Oyo",
+      "parents": [
+        "yoruba-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:yoruba-wars",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Yoruba Wars\" (yoruba-wars); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-africa-003",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q130288419",
+      "title": "Battle of Òsogbo",
+      "parents": [
+        "yoruba-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:yoruba-wars",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Yoruba Wars\" (yoruba-wars); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-americas-022",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q7148030",
+      "title": "Patriot War",
+      "parents": [
+        "rebellions-of-1837-1838"
+      ],
+      "edges": [],
+      "rank": "child-of:rebellions-of-1837-1838",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Rebellions of 1837–1838\" (rebellions-of-1837-1838); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-europe-017",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q55633152",
+      "title": "Siege of Burgos (1475)",
+      "parents": [
+        "war-of-the-castilian-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-castilian-succession",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"War of the Castilian Succession\" (war-of-the-castilian-succession); 2 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-americas-023",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q130553396",
+      "title": "Battle of Santiago (1863)",
+      "parents": [
+        "dominican-restoration-war"
+      ],
+      "edges": [],
+      "rank": "child-of:dominican-restoration-war",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Dominican Restoration War\" (dominican-restoration-war); 1 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-africa-004",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q124881814",
+      "title": "Battle of Ilorin",
+      "parents": [
+        "yoruba-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:yoruba-wars",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Yoruba Wars\" (yoruba-wars); 1 sitelinks; the writer by turn, no edge read this fire."
+    },
+    {
+      "id": "2026-11-02-africa-005",
+      "planned": "2026-11-02T14:36Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q121853652",
+      "title": "Battle of Elmina (1781)",
+      "parents": [],
+      "edges": [],
+      "rank": "child-of:fourth-anglo-dutch-war",
+      "why": "Wikidata's search index names this a P361 child of the thin umbrella \"Fourth Anglo-Dutch War\" (fourth-anglo-dutch-war); 1 sitelinks; the writer by turn, no edge read this fire."
     }
   ]
 }
