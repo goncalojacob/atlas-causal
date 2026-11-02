@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-gia-cuc",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871096",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Gia Cuc"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871096"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gia Cuc\", revision 1377313511"
+    }
+  ],
+  "title": "Battle of Gia Cuc",
+  "summary": "The English Wikipedia article \"Battle of Gia Cuc\", at revision 1377313511, opens: \"The Battle of Gia Cuc, fought on 27 and 28 March 1883, during the Tonkin Campaign between the French and Vietnamese.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871096, imported by tools/import/wikidata.mjs. The item's own description reads \"1883 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1883,
+    "end": 1883,
+    "date": "1883-03-28"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "tonkin-campaign"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "clayton-bulwer-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q444530",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Clayton–Bulwer Treaty",
+    "pt": "Tratado Clayton-Bulwer"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q444530"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Clayton–Bulwer Treaty\", revision 1368361064"
+    }
+  ],
+  "title": "Clayton–Bulwer Treaty",
+  "summary": "The English Wikipedia article \"Clayton–Bulwer Treaty\", at revision 1368361064, opens: \"The Clayton–Bulwer Treaty was a treaty signed in 1850 between the United States and the United Kingdom. The treaty was negotiated by John M. Clayton and Sir Henry Bulwer, amidst growing tensions between the two nations over Central America, a region where the British had traditionally held strong influence but also saw increasing American expansion into the area. The treaty proved instrumental in preventing the outbreak of war between the two nations by resolving tensions over American plans to construct a Nicaraguan Canal that would connect the Pacific and the Atlantic. There were three main provisions in the treaty: neither nation would build such a canal without the consent and cooperation of the other; neither would fortify nor found new colonies in the region; when a canal was built, both powers would guarantee that it would be available on a neutral basis for all shipping. Construction on the proposed canal never came to fruition, although the treaty remained in effect until 1901.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q444530, imported by tools/import/wikidata.mjs. The item's own description reads \"1850 treaty between Great Britain and the United States of America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1850,
+    "end": 1850,
+    "date": "1850-04-19"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

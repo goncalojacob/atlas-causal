@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-temalaca",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890158",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Temalaca"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890158"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Temalaca\", revision 1370590808"
+    }
+  ],
+  "title": "Battle of Temalaca",
+  "summary": "The English Wikipedia article \"Battle of Temalaca\", at revision 1370590808, opens: \"The Battle of Temalaca took place during the War of Mexican Independence on 5 November 1815 in the area around Temalaca, Puebla. The battle was fought between the royalist forces loyal to the Spanish crown and the Mexican rebels fighting for independence from the Spanish Empire. The Mexican insurgents were commanded by José María Morelos and the Spanish by Manuel de la Concha. The battle resulted in a victory for the Spanish Royalists.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890158, imported by tools/import/wikidata.mjs. The item's own description reads \"1815 battle of Mexican war for independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-11-05"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "mexican-war-of-independence"
+}

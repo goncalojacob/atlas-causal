@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-huamachuco",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2888820",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Huamachuco",
+    "pt": "Batalha de Huamachuco"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888820"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Huamachuco\", revision 1382344034"
+    }
+  ],
+  "title": "Battle of Huamachuco",
+  "summary": "The English Wikipedia article \"Battle of Huamachuco\", at revision 1382344034, opens: \"The Battle of Huamachuco was fought on the 10 July 1883, and it was the last major battle of the War of the Pacific. The Chilean soldiers, led by Colonel Alejandro Gorostiaga, decisively defeated the Peruvian army commanded by General Andrés Avelino Cáceres near the town of Huamachuco. This Chilean victory effectively eliminated Cáceres' Ejército de la Breña, ending any real threat or resistance in the Peruvian Andes. The Peruvian defeat paved the way for the Treaty of Ancón that finally put an end to the war. Also, one of Peru's greatest heroes, Colonel Leoncio Prado, died as a consequence of this battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888820, imported by tools/import/wikidata.mjs. The item's own description reads \"1883 battle of the War of the Pacific\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1883,
+    "end": 1883,
+    "date": "1883-07-10"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

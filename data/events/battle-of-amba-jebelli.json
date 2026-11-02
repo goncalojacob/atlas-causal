@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-amba-jebelli",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2887834",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Amba Jebelli"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2887834"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Amba Jebelli\", revision 1370431859"
+    }
+  ],
+  "title": "Battle of Amba Jebelli",
+  "summary": "The English Wikipedia article \"Battle of Amba Jebelli\", at revision 1370431859, opens: \"The Battle of Amba Jebelli was fought in Ethiopia in 1854 between the forces of Kassa Hailu, and the forces of Birru Goshu of Gojjam. Kassa was victorious, Birru Goshu was captured and spent the next 14 years in chains.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2887834, imported by tools/import/wikidata.mjs. The item's own description reads \"1854 battle in Ethiopia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1854,
+    "date": "1854-03"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "zemene-mesafint"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-palonegro",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871978",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Palonegro",
+    "pt": "Batalha de Palonegro"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871978"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Palonegro\", revision 1370452718"
+    }
+  ],
+  "title": "Battle of Palonegro",
+  "summary": "The English Wikipedia article \"Battle of Palonegro\", at revision 1370452718, opens: \"The Battle of Palonegro was a battle in the Santander Department of Colombia, that lasted from May 11—26, 1900, in the early days of the Thousand Days War. The commanding general of the Liberal armies, Gabriel Vargas Santos, ordered his troops to retire to Palonegro, near the city of Bucaramanga in the Santander Department of Colombia. After the battle, the war escalated, and became one of the most brutal conflicts in early 20th century South America.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871978, imported by tools/import/wikidata.mjs. The item's own description reads \"1900 battle of the Thousand Days War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-05-11",
+    "endDate": "1900-05-26"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "thousand-days-war"
+}

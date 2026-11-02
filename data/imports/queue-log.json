@@ -96190,6 +96190,620 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-541",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "lithuanian-muscovite-war-1534-1537",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-africa-543",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-abu-kru",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-545",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "franco-polish-alliance-1524",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-547",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kastella",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-africa-549",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ayshal",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-africa-551",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-derasge",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-africa-553",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kirbekan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-555",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-el-maguey",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-africa-557",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q2889774 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q2889774: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-31-americas-559",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tecualoya",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-561",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "bombardment-of-tourane-1847",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-563",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "logan-s-raid",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-africa-565",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-serobeti",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-567",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tarapaca",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-569",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "maratha-mysore-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-571",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-versailles-1756",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-573",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-beicang",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-575",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-priests-1467-1479",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-577",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-orbulaq",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-579",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "clayton-bulwer-treaty",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-581",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gia-cuc",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-583",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-jeonju",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-585",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nowshera",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-587",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-phu-lam-tao",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-589",
+      "writer": "A",
+      "fired": "2026-11-02T21:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-quingua",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-542",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "voyage-of-the-glorioso",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-544",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "virginius-affair",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-546",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-wai",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-africa-548",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-amba-jebelli",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-550",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-agua-zarca",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-552",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-huamachuco",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-554",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-llanos-de-santa-juana",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-556",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-puerto-de-pinones",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-africa-558",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-senafe",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-560",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-temalaca",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-562",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lomas-de-santa-maria",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-africa-564",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q2935407 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q2935407: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-31-asia-566",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-xicheng",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-568",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-punta-gruesa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-570",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "union-of-the-duchy-of-brittany-with-the-crown-of-france",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-572",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-anyraqai",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-574",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-yangcun",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-europe-576",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-spanish-war-1585-1604",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-578",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chinhat",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-africa-580",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "chimurenga",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-582",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-inlon-river",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-africa-584",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lougou",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-586",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-palonegro",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-asia-588",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-phu-hoai",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-31-americas-590",
+      "writer": "B",
+      "fired": "2026-11-02T21:58Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sauce-1816",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

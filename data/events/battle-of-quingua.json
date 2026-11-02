@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-quingua",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872146",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Quingua"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872146"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Quingua\", revision 1378171403"
+    }
+  ],
+  "title": "Battle of Quingua",
+  "summary": "The English Wikipedia article \"Battle of Quingua\", at revision 1378171403, opens: \"The Battle of Quingua was fought on April 23, 1899, in Quingua — now Plaridel, Bulacan, Philippines, during the Philippine–American War (1899–1902). The engagement was a two-part battle that started general Elwell S. Otis' Bulacan and Pampanga offensive a day early. The first phase was a brief victory for the young Filipino general Gregorio del Pilar when he stopped the advance of the American Cavalry led by Major J. Franklin Bell. In the second phase of the battle, Bell was reinforced by the 1st Nebraskan Infantry, who routed the Filipinos, but not before they repelled a cavalry charge that killed Colonel John M. Stotsenburg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872146, imported by tools/import/wikidata.mjs. The item's own description reads \"battle during the Philippine–American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-04-23"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-american-war"
+}

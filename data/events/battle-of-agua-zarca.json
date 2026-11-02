@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-agua-zarca",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888067",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Agua Zarca"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888067"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Agua Zarca\", revision 1352677907"
+    }
+  ],
+  "title": "Battle of Agua Zarca",
+  "summary": "The English Wikipedia article \"Battle of Agua Zarca\", at revision 1352677907, opens: \"The Battle of Agua Zarca was a military action of the Mexican War of Independence, carried out on November 5, 1819, in the outskirts of the town of Agua Zarca, Guerrero. The insurgents commanded by General Vicente Guerrero were defeated by the royalist forces; Guerrero, being threatened by the royalist forces that wanted to capture him, managed to save himself by jumping off a cliff and hiding in the mountain range of the present state that bears his name.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888067, imported by tools/import/wikidata.mjs. The item's own description reads \"1819 battle during the Mexican War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1819,
+    "end": 1819,
+    "date": "1819-11-05"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "mexican-war-of-independence"
+}
