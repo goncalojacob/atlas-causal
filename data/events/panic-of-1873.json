@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "panic-of-1873",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q695566",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Panic of 1873",
+    "pt": "Pânico de 1873"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q695566"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Panic of 1873\", revision 1382374938"
+    }
+  ],
+  "title": "Panic of 1873",
+  "summary": "The English Wikipedia article \"Panic of 1873\", at revision 1382374938, opens: \"The Panic of 1873 was a financial crisis that triggered an economic depression in Europe and North America that lasted from 1873 to 1877, continuing until 1879 in the French Third Republic and in the United Kingdom of Great Britain and Ireland. In Britain, the panic started two decades of economic stagnation known as the \"Long Depression\" that weakened the country's economic leadership. In the United States, the period of economic stagnation was known as the \"Great Depression\" until the events of 1929 and the early 1930s set a new standard.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q695566, imported by tools/import/wikidata.mjs. The item's own description reads \"financial crisis\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1873,
+    "end": 1879,
+    "date": "1873-09"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

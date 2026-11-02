@@ -9678,3 +9678,27 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-11-02: `second-anglo-powhatan-war`, filed under `anglo-powhatan-wars` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-31-americas-636`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `batman-s-treaty`, bare
+
+Writer A imported it from the planner's queue as item `2026-11-01-asia-005`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-11-02: `battle-of-ro-brunn`, filed under `campaign-of-the-main` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-016`, rank `child-of:campaign-of-the-main`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `assault-on-nijmegen`, bare
+
+Writer A imported it from the planner's queue as item `2026-11-01-europe-024`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-11-02: `conquest-of-the-azores`, filed under `war-of-the-portuguese-succession` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-031`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `second-treaty-of-buffalo-creek`, bare
+
+Writer B imported it from the planner's queue as item `2026-11-01-americas-001`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-11-02: `battle-of-sumatovac`, filed under `serbian-ottoman-wars-1876-1878` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-europe-030`, rank `child-of:serbian-ottoman-wars-1876-1878`. Its span and its subject put it inside the umbrella.

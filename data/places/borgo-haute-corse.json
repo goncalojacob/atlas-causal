@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "borgo-haute-corse",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q637242",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Borgo, Haute-Corse",
+    "pt": "Borgo (Alta Córsega)"
+  },
+  "sources": [],
+  "names": [
+    "Borgo",
+    "Borgo, Haute-Corse",
+    "Borgo (Alta Córsega)"
+  ],
+  "where": {
+    "lon": 9.4275,
+    "lat": 42.553888888889,
+    "precision": "city",
+    "label": "Borgo, Haute-Corse"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

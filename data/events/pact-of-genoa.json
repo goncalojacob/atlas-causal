@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pact-of-genoa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3360285",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Pact of Genoa",
+    "pt": "Pacto de Gênova"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3360285"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pact of Genoa\", revision 1380789754"
+    }
+  ],
+  "title": "Pact of Genoa",
+  "summary": "The English Wikipedia article \"Pact of Genoa\", at revision 1380789754, opens: \"The Pact of Genoa was a military and political alliance formed in 1705 between the Kingdom of England and Habsburg supporting landowners on behalf of the Principality of Catalonia within the framework set by the War of Spanish Succession. According to the terms of agreement, England stationed troops in Catalonia, which, united with the Catalonian forces, fought in favour of Charles VI of the Holy Roman Empire for the candidacy of the Spanish throne against the armies of Philip V of Spain, compromising the maintenance of Catalonian laws and institutions.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3360285, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1705,
+    "end": 1705,
+    "date": "1705-06-20"
+  },
+  "place": "genoa-q1449",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

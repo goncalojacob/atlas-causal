@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-asseiceira",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2887902",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Asseiceira",
+    "pt": "Batalha de Asseiceira"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2887902"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Asseiceira\", revision 1370432669"
+    }
+  ],
+  "title": "Battle of Asseiceira",
+  "summary": "The English Wikipedia article \"Battle of Asseiceira\", at revision 1370432669, opens: \"The Battle of Asseiceira, fought on 16 May, 1834, was the last and decisive engagement of the Portuguese Civil War, or \"War of the Two Brothers\", between Dom Pedro, ex-Emperor of Brazil and the usurper Dom Miguel. Dom Miguel's rebel forces were defeated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2887902, imported by tools/import/wikidata.mjs. The item's own description reads \"1834 battle of the Portuguese civil war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1834,
+    "end": 1834,
+    "date": "1834-05-16"
+  },
+  "place": "portugal-q45",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "liberal-wars"
+}

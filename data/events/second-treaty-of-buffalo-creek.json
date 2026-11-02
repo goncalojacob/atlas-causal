@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "second-treaty-of-buffalo-creek",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q28163082",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Second Treaty of Buffalo Creek"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q28163082"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Treaty of Buffalo Creek\", revision 1381467322"
+    }
+  ],
+  "title": "Second Treaty of Buffalo Creek",
+  "summary": "The English Wikipedia article \"Second Treaty of Buffalo Creek\", at revision 1381467322, opens: \"There are four treaties of Buffalo Creek, named for the Buffalo River in New York. The Second Treaty of Buffalo Creek, also known as the Treaty with the New York Indians, 1838, was signed on January 15, 1838 between the Seneca Nation, Mohawk nation, Cayuga nation, Oneida Indian Nation, Onondaga (tribe), Tuscarora (tribe) and the United States. It covered land sales of tribal reservations under the U.S. Indian Removal program, by which they planned to move most eastern tribes to Kansas Territory west of the Mississippi River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28163082, imported by tools/import/wikidata.mjs. The item's own description reads \"1838 treaty between the United States and Native Americans\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1838,
+    "end": 1838,
+    "date": "1838-01-15"
+  },
+  "place": null,
+  "region": "oceania",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}
