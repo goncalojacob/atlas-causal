@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q867154",
-  "sitelinks": {
-    "count": 15,
-    "on": "2026-10-29"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q867154",
   "wikipedia": {
     "en": "Battle of Château-Thierry (1814)",
     "pt": "Batalha de Château-Thierry (1814)"
+  },
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-29"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "chateau-thierry",
   "region": null,
   "regionNote": null,
+  "parent": "german-campaign-of-1813",
   "category": "war",
   "actors": []
 }

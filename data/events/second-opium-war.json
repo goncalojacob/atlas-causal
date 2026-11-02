@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-13",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q418151",
-  "sitelinks": {
-    "count": 66,
-    "on": "2026-10-13"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q418151",
   "wikipedia": {
     "en": "Second Opium War",
     "pt": "Segunda Guerra do Ópio"
+  },
+  "sitelinks": {
+    "count": 66,
+    "on": "2026-10-13"
   },
   "sources": [
     {
@@ -52,6 +52,7 @@
   "place": "qing-dynasty",
   "region": null,
   "regionNote": null,
+  "parent": "opium-wars",
   "category": "war",
   "actors": []
 }

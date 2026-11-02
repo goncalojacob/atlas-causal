@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q2377085",
-  "sitelinks": {
-    "count": 8,
-    "on": "2026-10-29"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q2377085",
   "wikipedia": {
     "en": "Anglo-Japanese Treaty of Amity and Commerce",
     "pt": "Tratado de amizade e comércio anglo-japonês"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-29"
   },
   "sources": [
     {
@@ -54,5 +54,6 @@
   "place": "japan-q17",
   "region": null,
   "regionNote": null,
+  "parent": "ansei-treaties",
   "actors": []
 }

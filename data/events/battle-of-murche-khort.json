@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q18205173",
+  "wikipedia": {
+    "en": "Battle of Murche-Khort"
+  },
   "sitelinks": {
     "count": 9,
     "on": "2026-10-29"
-  },
-  "wikipedia": {
-    "en": "Battle of Murche-Khort"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "murcheh-khvort",
   "region": null,
   "regionNote": null,
+  "parent": "campaigns-of-nader-shah",
   "category": "war",
   "actors": []
 }

@@ -1128,52 +1128,52 @@
   ],
   "files": {
     "citers": "index/citers-8cd350b8b0ce",
-    "core": "index/core-6e429f6d5a21.json",
+    "core": "index/core-8926534739d4.json",
     "grounds": "index/grounds-00ddde06328b.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-f0b6d8f70748.json",
+    "review": "index/review-405f453e851a.json",
     "search": "index/search-d584112a416f.json",
     "sources": "index/sources-a5cc0dd772a8.json",
     "territories": "index/territories-4002c63e6583.json"
   },
   "historyShards": [
     {
-      "file": "index/history-event-1400-1499-ba158da74463.json",
+      "file": "index/history-event-1400-1499-8b74972fc80a.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "event",
       "to": 1499
     },
     {
-      "file": "index/history-event-1500-1599-b4fb7bbf39bd.json",
+      "file": "index/history-event-1500-1599-2a2ca964747a.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "event",
       "to": 1599
     },
     {
-      "file": "index/history-event-1600-1699-c17ac26aef2e.json",
+      "file": "index/history-event-1600-1699-e3d6ef3515ab.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "event",
       "to": 1699
     },
     {
-      "file": "index/history-event-1700-1799-3b473e887ef7.json",
+      "file": "index/history-event-1700-1799-48dc7768f80a.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "event",
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-600abeeb719e.json",
+      "file": "index/history-event-1800-1899-0c9f04072600.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-6d94f84d27b4.json",
+      "file": "index/history-event-1900-1999-f1658f920563.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",

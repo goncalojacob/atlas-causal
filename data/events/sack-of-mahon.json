@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q7396810",
+  "wikipedia": {
+    "en": "Sack of Mahón"
+  },
   "sitelinks": {
     "count": 11,
     "on": "2026-10-29"
-  },
-  "wikipedia": {
-    "en": "Sack of Mahón"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "mahon",
   "region": null,
   "regionNote": null,
+  "parent": "ottoman-habsburg-wars",
   "category": "war",
   "actors": []
 }

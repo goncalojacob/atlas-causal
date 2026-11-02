@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q2058454",
-  "sitelinks": {
-    "count": 9,
-    "on": "2026-10-29"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q2058454",
   "wikipedia": {
     "en": "First Battle of Newbury",
     "pt": "Primeira Batalha de Newbury"
+  },
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-29"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "newbury-berkshire",
   "region": null,
   "regionNote": null,
+  "parent": "first-english-civil-war",
   "category": "war",
   "actors": []
 }

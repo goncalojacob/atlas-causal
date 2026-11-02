@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-30",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q3485809",
-  "sitelinks": {
-    "count": 8,
-    "on": "2026-10-30"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q3485809",
   "wikipedia": {
     "en": "Siege of Amiens (1597)",
     "pt": "Cerco de Amiens (1597)"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-30"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "amiens",
   "region": null,
   "regionNote": null,
+  "parent": "eighty-years-war",
   "category": "war",
   "actors": []
 }

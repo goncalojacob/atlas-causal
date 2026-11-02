@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-27",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q772814",
-  "sitelinks": {
-    "count": 16,
-    "on": "2026-10-27"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q772814",
   "wikipedia": {
     "en": "Caste War of Yucatán",
     "pt": "Guerra das Castas"
+  },
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-27"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "yucatan-peninsula",
   "region": null,
   "regionNote": null,
+  "parent": "list-of-indigenous-rebellions-in-mexico-and-central-america",
   "category": "war",
   "actors": []
 }

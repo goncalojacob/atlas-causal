@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q1032343",
+  "wikipedia": {
+    "en": "Habsburg–Ottoman war of 1540–1547"
+  },
   "sitelinks": {
     "count": 9,
     "on": "2026-10-29"
-  },
-  "wikipedia": {
-    "en": "Habsburg–Ottoman war of 1540–1547"
   },
   "sources": [
     {
@@ -51,6 +51,7 @@
   "place": "balkans",
   "region": null,
   "regionNote": null,
+  "parent": "habsburg-ottoman-wars-in-hungary-1526-1568",
   "category": "war",
   "actors": []
 }

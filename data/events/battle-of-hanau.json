@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q543994",
+  "wikipedia": {
+    "en": "Battle of Hanau"
+  },
   "sitelinks": {
     "count": 14,
     "on": "2026-10-29"
-  },
-  "wikipedia": {
-    "en": "Battle of Hanau"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "hanau",
   "region": null,
   "regionNote": null,
+  "parent": "german-campaign-of-1813",
   "category": "war",
   "actors": []
 }

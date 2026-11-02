@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q780921",
-  "sitelinks": {
-    "count": 28,
-    "on": "2026-10-28"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q780921",
   "wikipedia": {
     "en": "Battle of Paris (1814)",
     "pt": "Batalha de Paris"
+  },
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-28"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "paris",
   "region": null,
   "regionNote": null,
+  "parent": "german-campaign-of-1813",
   "category": "war",
   "actors": []
 }

@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q4065191",
+  "wikipedia": {
+    "en": "Anglo-Spanish War (1796–1808)"
+  },
   "sitelinks": {
     "count": 12,
     "on": "2026-10-17"
-  },
-  "wikipedia": {
-    "en": "Anglo-Spanish War (1796–1808)"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "english-channel",
   "region": null,
   "regionNote": null,
+  "parent": "french-revolutionary-and-napoleonic-wars",
   "category": "war",
   "actors": []
 }

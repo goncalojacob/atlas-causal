@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-14",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q174205",
-  "sitelinks": {
-    "count": 74,
-    "on": "2026-10-14"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q174205",
   "wikipedia": {
     "en": "Russo-Turkish War (1877–1878)",
     "pt": "Guerra Russo-Turca (1877–1878)"
+  },
+  "sitelinks": {
+    "count": 74,
+    "on": "2026-10-14"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "balkans",
   "region": null,
   "regionNote": null,
+  "parent": "russo-turkish-wars",
   "category": "war",
   "actors": []
 }

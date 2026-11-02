@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q26749",
-  "sitelinks": {
-    "count": 46,
-    "on": "2026-10-17"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q26749",
   "wikipedia": {
     "en": "War of the Second Coalition",
     "pt": "Segunda Coligação"
+  },
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-10-17"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "italian-peninsula-q145694",
   "region": null,
   "regionNote": null,
+  "parent": "french-revolutionary-and-napoleonic-wars",
   "category": "war",
   "actors": []
 }

@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q1478525",
+  "wikipedia": {
+    "en": "Battle of Edgehill"
+  },
   "sitelinks": {
     "count": 17,
     "on": "2026-10-29"
-  },
-  "wikipedia": {
-    "en": "Battle of Edgehill"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "edge-hill-warwickshire",
   "region": null,
   "regionNote": null,
+  "parent": "first-english-civil-war",
   "category": "war",
   "actors": []
 }

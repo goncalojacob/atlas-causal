@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q432515",
-  "sitelinks": {
-    "count": 11,
-    "on": "2026-10-29"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q432515",
   "wikipedia": {
     "en": "First Battle of Algeciras",
     "pt": "Primeira Batalha de Algeciras"
+  },
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-29"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "bay-of-gibraltar",
   "region": null,
   "regionNote": null,
+  "parent": "algeciras-campaign",
   "category": "war",
   "actors": []
 }

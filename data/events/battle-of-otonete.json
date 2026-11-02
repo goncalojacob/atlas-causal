@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-30",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q3302743",
+  "wikipedia": {
+    "en": "Battle of Otonetë"
+  },
   "sitelinks": {
     "count": 8,
     "on": "2026-10-30"
-  },
-  "wikipedia": {
-    "en": "Battle of Otonetë"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "debar",
   "region": null,
   "regionNote": null,
+  "parent": "skanderbeg-s-rebellion",
   "category": "war",
   "actors": []
 }

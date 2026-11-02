@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-16",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q163476",
+  "wikipedia": {
+    "en": "Ottoman–Safavid War (1623–1639)"
+  },
   "sitelinks": {
     "count": 21,
     "on": "2026-10-16"
-  },
-  "wikipedia": {
-    "en": "Ottoman–Safavid War (1623–1639)"
   },
   "sources": [
     {
@@ -51,6 +51,7 @@
   "place": "mesopotamia",
   "region": null,
   "regionNote": null,
+  "parent": "ottoman-persian-wars",
   "category": "war",
   "actors": []
 }

@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-13",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q8707",
-  "sitelinks": {
-    "count": 113,
-    "on": "2026-10-13"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q8707",
   "wikipedia": {
     "en": "Meiji Restoration",
     "pt": "Restauração Meiji"
+  },
+  "sitelinks": {
+    "count": 113,
+    "on": "2026-10-13"
   },
   "sources": [
     {
@@ -54,5 +54,6 @@
   "place": "empire-of-japan",
   "region": null,
   "regionNote": null,
+  "parent": "meiji-era",
   "actors": []
 }

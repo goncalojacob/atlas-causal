@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-13",
   "revised": "2026-10-13",
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q191282",
-  "sitelinks": {
-    "count": 77,
-    "on": "2026-10-13"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q191282",
   "wikipedia": {
     "en": "First Opium War",
     "pt": "Primeira Guerra do Ópio"
+  },
+  "sitelinks": {
+    "count": 77,
+    "on": "2026-10-13"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": null,
   "region": "asia",
   "regionNote": "The Wikidata import wrote this lane from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "opium-wars",
   "category": "war",
   "actors": []
 }

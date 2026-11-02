@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-13",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q214028",
-  "sitelinks": {
-    "count": 65,
-    "on": "2026-10-13"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q214028",
   "wikipedia": {
     "en": "July Revolution",
     "pt": "Revolução de Julho"
+  },
+  "sitelinks": {
+    "count": 65,
+    "on": "2026-10-13"
   },
   "sources": [
     {
@@ -54,5 +54,6 @@
   "place": "paris",
   "region": null,
   "regionNote": null,
+  "parent": "revolutions-of-1830",
   "actors": []
 }

@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-17",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q701644",
+  "wikipedia": {
+    "en": "Ottoman–Safavid War (1578–1590)"
+  },
   "sitelinks": {
     "count": 19,
     "on": "2026-10-17"
-  },
-  "wikipedia": {
-    "en": "Ottoman–Safavid War (1578–1590)"
   },
   "sources": [
     {
@@ -51,6 +51,7 @@
   "place": "mesopotamia",
   "region": null,
   "regionNote": null,
+  "parent": "ottoman-persian-wars",
   "category": "war",
   "actors": []
 }

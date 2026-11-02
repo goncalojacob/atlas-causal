@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,14 +21,17 @@
       "summary-from-lead"
     ]
   },
-  "wikidata": "Q685757",
-  "sitelinks": {
-    "count": 19,
-    "on": "2026-10-28"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q685757",
   "wikipedia": {
     "en": "Rebellion of the Alpujarras (1568–1571)",
     "pt": "Rebelião das Alpujarras"
+  },
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
   },
   "sources": [
     {
@@ -54,5 +54,6 @@
   "place": null,
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "ottoman-habsburg-wars",
   "actors": []
 }

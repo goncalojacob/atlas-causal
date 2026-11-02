@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-15",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q703942",
-  "sitelinks": {
-    "count": 25,
-    "on": "2026-10-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q703942",
   "wikipedia": {
     "en": "1874 Japanese expedition to Taiwan",
     "pt": "Invasão japonesa de Taiwan (1874)"
+  },
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-15"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "hengchun-peninsula",
   "region": null,
   "regionNote": null,
+  "parent": "meiji-era",
   "category": "war",
   "actors": []
 }

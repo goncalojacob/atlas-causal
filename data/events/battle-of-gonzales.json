@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-28",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q1191854",
-  "sitelinks": {
-    "count": 18,
-    "on": "2026-10-28"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1191854",
   "wikipedia": {
     "en": "Battle of Gonzales",
     "pt": "Batalha de Gonzales"
+  },
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "gonzales-texas",
   "region": null,
   "regionNote": null,
+  "parent": "texas-revolution",
   "category": "war",
   "actors": []
 }

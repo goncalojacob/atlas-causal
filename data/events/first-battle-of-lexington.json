@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-29",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q1149680",
+  "wikipedia": {
+    "en": "First Battle of Lexington"
+  },
   "sitelinks": {
     "count": 10,
     "on": "2026-10-29"
-  },
-  "wikipedia": {
-    "en": "First Battle of Lexington"
   },
   "sources": [
     {
@@ -54,6 +54,7 @@
   "place": "lexington-missouri",
   "region": null,
   "regionNote": null,
+  "parent": "american-civil-war",
   "category": "war",
   "actors": []
 }

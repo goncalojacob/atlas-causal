@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-31",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q3272485",
+  "wikipedia": {
+    "en": "Siege of Barcelona (1706)"
+  },
   "sitelinks": {
     "count": 11,
     "on": "2026-10-31"
-  },
-  "wikipedia": {
-    "en": "Siege of Barcelona (1706)"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "barcelona",
   "region": null,
   "regionNote": null,
+  "parent": "war-of-the-spanish-succession",
   "category": "war",
   "actors": []
 }

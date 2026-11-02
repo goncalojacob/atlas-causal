@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-31",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q5959281",
+  "wikipedia": {
+    "en": "Siege of Baghdad (1625–1626)"
+  },
   "sitelinks": {
     "count": 5,
     "on": "2026-10-31"
-  },
-  "wikipedia": {
-    "en": "Siege of Baghdad (1625–1626)"
   },
   "sources": [
     {
@@ -53,6 +53,7 @@
   "place": "baghdad",
   "region": null,
   "regionNote": null,
+  "parent": "ottoman-safavid-war-1623-1639",
   "category": "war",
   "actors": []
 }

@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-13",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q58947",
-  "sitelinks": {
-    "count": 59,
-    "on": "2026-10-13"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q58947",
   "wikipedia": {
     "en": "Paraguayan War",
     "pt": "Guerra do Paraguai"
+  },
+  "sitelinks": {
+    "count": 59,
+    "on": "2026-10-13"
   },
   "sources": [
     {
@@ -55,6 +55,7 @@
   "place": "southern-cone",
   "region": null,
   "regionNote": null,
+  "parent": "platine-wars",
   "category": "war",
   "actors": []
 }
