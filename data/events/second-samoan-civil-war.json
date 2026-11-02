@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "second-samoan-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4120277",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Second Samoan Civil War",
+    "pt": "Segunda Guerra Civil de Samoa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4120277"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Samoan Civil War\", revision 1370737282"
+    }
+  ],
+  "title": "Second Samoan Civil War",
+  "summary": "The English Wikipedia article \"Second Samoan Civil War\", at revision 1370737282, opens: \"The Second Samoan Civil War was a conflict that reached a head in 1898 when Germany, the United Kingdom, and the United States were locked in dispute over who should have control over the Samoan island chain, located in the South Pacific Ocean.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4120277, imported by tools/import/wikidata.mjs. The item's own description reads \"war resulting in American and German Samoa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1899
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

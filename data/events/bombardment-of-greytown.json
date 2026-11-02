@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "bombardment-of-greytown",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q891809",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Bombardment of Greytown"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q891809"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bombardment of Greytown\", revision 1375716884"
+    }
+  ],
+  "title": "Bombardment of Greytown",
+  "summary": "The English Wikipedia article \"Bombardment of Greytown\", at revision 1375716884, opens: \"Greytown, Nicaragua was a contested port on the Atlantic Coast of Central America. Nicaragua regarded it as its own former Caribbean outlet, while Britain maintained that it was always part of Mosquitia. In 1852, the protectorate granted self-governing autonomy to the tiny port. It was later bombarded and burned to the ground on July 13, 1854 by the US Navy sloop-of-war USS Cyane. Although this incident was historically minor, it had a major impact on American foreign policy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q891809, imported by tools/import/wikidata.mjs. The item's own description reads \"bombardment of Grey Town, in the Miskito Kingdom in 1854\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1854,
+    "date": "1854-07-13"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

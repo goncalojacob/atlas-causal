@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-elizabeth-city",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q684191",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Elizabeth City"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q684191"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Elizabeth City\", revision 1373673939"
+    }
+  ],
+  "title": "Battle of Elizabeth City",
+  "summary": "The English Wikipedia article \"Battle of Elizabeth City\", at revision 1373673939, opens: \"The Battle of Elizabeth City of the American Civil War was fought in the immediate aftermath of the Battle of Roanoke Island. It took place on 10 February 1862, on the Pasquotank River near Elizabeth City, North Carolina. The participants were vessels of the U.S. Navy's North Atlantic Blockading Squadron, opposed by vessels of the Confederate Navy's Mosquito Fleet; the latter were supported by a shore-based battery of four guns at Cobb's Point, near the southeastern border of the town. The battle was a part of the campaign in North Carolina that was led by Major General Ambrose E. Burnside and known as the Burnside Expedition. The result was a Union victory, with Elizabeth City and its nearby waters in their possession, and the Confederate fleet captured, sunk, or dispersed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q684191, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-02-10"
+  },
+  "place": "elizabeth-city-north-carolina",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

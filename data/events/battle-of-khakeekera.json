@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-khakeekera",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q12244168",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Khakeekera"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12244168"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Khakeekera\", revision 1370445117"
+    }
+  ],
+  "title": "Battle of Khakeekera",
+  "summary": "The English Wikipedia article \"Battle of Khakeekera\", at revision 1370445117, opens: \"The Battle of Khakeekera was a naval battle that took place in March 1811 between the combined forces of Bahrain and Kuwait on one side, and those of the Emirate of Diriyah led by Rahmah ibn Jabir al-Jalhami, the pirate Arab ruler of Dammam and some villages in Qatar, on the other. The battle took place northwest of Qatar and ended with a Bahraini victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12244168, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1811,
+    "end": 1811,
+    "date": "1811-03"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

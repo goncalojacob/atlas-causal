@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "philadelphia-nativist-riots",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7182755",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Philadelphia nativist riots"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7182755"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Philadelphia nativist riots\", revision 1377301076"
+    }
+  ],
+  "title": "Philadelphia nativist riots",
+  "summary": "The English Wikipedia article \"Philadelphia nativist riots\", at revision 1377301076, opens: \"The Philadelphia nativist riots were a series of riots that took place on May 6–8 and July 6–7, 1844, in Philadelphia, Pennsylvania, United States and the adjacent districts of Kensington and Southwark. The riots were a result of rising anti-Catholic sentiment at the growing population of Irish Catholic immigrants. The government brought in over a thousand militia—they confronted the nativist mobs and killed or wounded hundreds of anti-Catholic rioters.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7182755, imported by tools/import/wikidata.mjs. The item's own description reads \"1844 riots in Philadelphia and elsewhere\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1844,
+    "end": 1844
+  },
+  "place": "philadelphia",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

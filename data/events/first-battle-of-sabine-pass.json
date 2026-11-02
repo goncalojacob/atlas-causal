@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-sabine-pass",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2373632",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "First Battle of Sabine Pass"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2373632"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Sabine Pass\", revision 1373621532"
+    }
+  ],
+  "title": "First Battle of Sabine Pass",
+  "summary": "The English Wikipedia article \"First Battle of Sabine Pass\", at revision 1373621532, opens: \"The First Battle of Sabine Pass, also known as the Bombardment of Fort Sabine, was the first American Civil War bombardment by the United States Navy of a Confederate fort below Sabine City It was the apex in a series of naval and land skirmishes around the mouth of the Sabine River, Texas, and was four weeks before the Union Navy's first armed entry into Galveston Bay following the Battle of Galveston Harbor. Besides strengthening the Union naval blockade of the Texas coastline, the shelling and capture of Sabine Pass was to deter Confederate ground forces from moving southwestward on the Texas coast to augment Galveston's defense. It was intended to open the way for the Union invasion of Texas, which almost a year later, was attempted by a combined force of Union naval and army forces at the Second Battle of Sabine Pass.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2373632, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-09-24",
+    "endDate": "1862-09-25"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

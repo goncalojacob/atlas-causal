@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-fortin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2888567",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Fortín"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888567"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fortín\", revision 1370441004"
+    }
+  ],
+  "title": "Battle of Fortín",
+  "summary": "The English Wikipedia article \"Battle of Fortín\", at revision 1370441004, opens: \"The Battle of Fortín was a minor clash between French and Mexican forces in the early stages of the Second French intervention in Mexico in 1862, and was the first outbreak of conflict between the two nations during the conflict. Following the breakdown of French negotiations with the Mexican government both sides readied themselves for war. In the meantime, the French left behind 340 of their soldiers that had come down with illness and were recuperating in a French military hospital in Orizaba and marched towards Cordoba. The British and Spanish, unwilling to fight the Mexicans and having already negotiated a peaceful agreement with the Mexican government, began withdrawing on the day of the skirmish. After the suspicious deaths of three French soldiers, General Charles de Lorencez became concerned about the fate of the sick in Orizaba. On the pretext that a letter from Mexican General Ignacio Zaragoza threatened their well-being, he sent his army to help them.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888567, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-04-19"
+  },
+  "place": "mexico-q96",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

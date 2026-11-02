@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "freiamtersturm",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1455019",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Freiämtersturm"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1455019"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Freiämtersturm\", revision 1370620258"
+    }
+  ],
+  "title": "Freiämtersturm",
+  "summary": "The English Wikipedia article \"Freiämtersturm\", at revision 1370620258, opens: \"The Freiämtersturm in December 1830 was a bloodless revolution in the Swiss canton of Aargau. The dissatisfied rural population of the Freie Ämter region in Aargau marched on the cantonal capital of Aarau to demand changes in the cantonal constitution. The Freiämtersturm, together with other uprisings in 1830–31 led to the end of the Restoration period and the beginning of the liberal Regeneration period. The changes during the Regeneration led to the creation of the Federal State in 1848.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1455019, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1830,
+    "end": 1830,
+    "date": "1830-12-06"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "other",
+  "actors": []
+}

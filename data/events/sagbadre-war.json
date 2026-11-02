@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "sagbadre-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q104879437",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Sagbadre War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q104879437"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sagbadre War\", revision 1370729809"
+    }
+  ],
+  "title": "Sagbadre War",
+  "summary": "The English Wikipedia article \"Sagbadre War\", at revision 1370729809, opens: \"The Sagbadre War was a brief punitive expedition carried out by Denmark-Norway and its native allies against the Anlo Ewe.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q104879437, imported by tools/import/wikidata.mjs. The item's own description reads \"brief punitive expedition carried out by Denmark\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1784,
+    "end": 1784,
+    "date": "1784-03-30",
+    "endDate": "1784-06-18"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

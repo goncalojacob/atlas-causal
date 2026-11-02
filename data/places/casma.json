@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "casma",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3236687",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Casma",
+    "pt": "Casma"
+  },
+  "sources": [],
+  "names": [
+    "Casma"
+  ],
+  "where": {
+    "lon": -78.310555555556,
+    "lat": -9.4741666666667,
+    "precision": "city",
+    "label": "Casma"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

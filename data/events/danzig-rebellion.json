@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "danzig-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q617281",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Danzig rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q617281"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Danzig rebellion\", revision 1370614821"
+    }
+  ],
+  "title": "Danzig rebellion",
+  "summary": "The English Wikipedia article \"Danzig rebellion\", at revision 1370614821, opens: \"The rebellion of the city of Danzig was a revolt from December 1575 to December 1577 of the city against the outcome of the 1576 Polish–Lithuanian royal election. The Polish throne was contested by Stephen Báthory and the Holy Roman Emperor Maximillian II.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q617281, imported by tools/import/wikidata.mjs. The item's own description reads \"armed revolt in the mid-1570s of the city Danzig against the outcome of the Royal elections in Poland, which was contested by Stephen Báthory and the Holy Roman Emperor Maximillian II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1576,
+    "end": 1577
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

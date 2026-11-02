@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-osawatomie",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q775685",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Osawatomie"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q775685"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Osawatomie\", revision 1370452381"
+    }
+  ],
+  "title": "Battle of Osawatomie",
+  "summary": "The English Wikipedia article \"Battle of Osawatomie\", at revision 1370452381, opens: \"The Battle of Osawatomie was an armed engagement that occurred on August 30, 1856, when 250–400 pro-slavery Border ruffians, led by John W. Reid, attacked the town of Osawatomie, Kansas, which had been settled largely by anti-slavery Free-Staters. Reid was intent on destroying the Free-State settlement and then moving on to Topeka and Lawrence to do more of the same. Abolitionist John Brown first learned of the raiders when they shot his son Frederick. With just 40 or so men, Brown tried to defend the town against the pro-slavery partisans, but ultimately was forced to withdraw; five Free-Staters were killed in the battle, and the town of Osawatomie was subsequently looted and burned by Reid's men. The battle was one of a series of violent clashes between abolitionists and pro-slavery partisans in Kansas and Missouri during the Bleeding Kansas era.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q775685, imported by tools/import/wikidata.mjs. The item's own description reads \"1856 battle of the Bleeding Kansas era\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1856,
+    "end": 1856,
+    "date": "1856-08-30"
+  },
+  "place": "osawatomie-kansas",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "bleeding-kansas"
+}

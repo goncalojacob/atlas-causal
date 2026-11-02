@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-santa-rosa-island",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2355732",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Santa Rosa Island"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2355732"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Santa Rosa Island\", revision 1370588591"
+    }
+  ],
+  "title": "Battle of Santa Rosa Island",
+  "summary": "The English Wikipedia article \"Battle of Santa Rosa Island\", at revision 1370588591, opens: \"The Battle of Santa Rosa Island was an unsuccessful Confederate attempt to take Union-held Fort Pickens on Santa Rosa Island, Florida.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2355732, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-10-09"
+  },
+  "place": "pensacola-florida",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

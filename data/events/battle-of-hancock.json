@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-hancock",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2003883",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Hancock"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2003883"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hancock\", revision 1370442556"
+    }
+  ],
+  "title": "Battle of Hancock",
+  "summary": "The English Wikipedia article \"Battle of Hancock\", at revision 1370442556, opens: \"The Battle of Hancock was fought during the Confederate Romney Expedition of the American Civil War on January 5 and 6, 1862, near Hancock, Maryland. Major General Stonewall Jackson of the Confederate States Army, commanding his own Valley District and Brigadier General William W. Loring's force known as the Confederate Army of the Northwest, began moving against Union Army forces in the Shenandoah Valley area on January 1. After light fighting near Bath, Virginia, Jackson's men reached the vicinity of Hancock late on January 4 and briefly fired on the town with artillery. Union Brigadier General Frederick W. Lander refused a Confederate request to surrender on January 5, and that day and the next saw exchanges of artillery fire between the two sides. The Confederates burned a bridge on the Baltimore and Ohio Railroad on January 5, but withdrew on the 7th. Jackson later moved against Romney, Virginia, and occupied the town on January 15 after Union soldiers abandoned it. Romney was ordered abandoned on January 30 by the Confederate States Secretary of War after Loring complained about Jackson's orders.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2003883, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-01-06"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "black-jack-battlefield",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q20054661",
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-11-01"
+  },
+  "sources": [],
+  "names": [
+    "Black Jack Battlefield"
+  ],
+  "where": {
+    "lon": -95.130556,
+    "lat": 38.761667,
+    "precision": "point",
+    "label": "Black Jack Battlefield"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

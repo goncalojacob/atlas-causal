@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1900-san-narciso-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5873773",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "1900 San Narciso earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5873773"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1900 San Narciso earthquake\", revision 1369397236"
+    }
+  ],
+  "title": "1900 San Narciso earthquake",
+  "summary": "The English Wikipedia article \"1900 San Narciso earthquake\", at revision 1369397236, opens: \"An earthquake occurred in Venezuela on 29 October 1900 between 4:30 and 4:45 am local time. Its epicenter was off Miranda State or near the Venezuelan capital Caracas, in the Cariaco Basin. It had an estimated moment magnitude of 7.6–7.7 and a surface-wave magnitude of 7.7–8.4. It had a maximum Mercalli intensity of VIII (Severe). It caused widespread landslides and soil liquefaction, and many buildings were severely damaged or collapsed. It is the largest instrumentally recorded earthquake in the country.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5873773, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake struck off the coast of Miranda, Venezuela on October 29, 1900\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-10-29"
+  },
+  "place": "venezuela-q717",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

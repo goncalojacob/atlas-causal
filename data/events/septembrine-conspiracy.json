@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "septembrine-conspiracy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2994779",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Septembrine Conspiracy"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2994779"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Septembrine Conspiracy\", revision 1370699821"
+    }
+  ],
+  "title": "Septembrine Conspiracy",
+  "summary": "The English Wikipedia article \"Septembrine Conspiracy\", at revision 1370699821, opens: \"The Septembrine Conspiracy was an attempted assassination of Simón Bolívar when he was president of Gran Colombia. It occurred in Bogotá on September 25, 1828. Three dozen attackers, commanded by Commander Pedro Carujo, forcefully entered the Presidential Palace at midnight. After killing the guards, they went to Bolívar's room. Bolívar managed to escape through the window with the help of his partner Manuela Sáenz. In the trials that followed the attack, his main opponent, General Francisco de Paula Santander, was condemned to death, but Bolívar spared his life and exiled him instead. The events influenced the disintegration of Gran Colombia three years later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2994779, imported by tools/import/wikidata.mjs. The item's own description reads \"conspiracy and assassination attempt against Simón Bolívar\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1828,
+    "end": 1828,
+    "date": "1828-09-25"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

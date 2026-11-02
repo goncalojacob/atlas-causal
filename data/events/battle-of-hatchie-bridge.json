@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-hatchie-bridge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1497877",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Hatchie Bridge"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1497877"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hatchie Bridge\", revision 1375705852"
+    }
+  ],
+  "title": "Battle of Hatchie Bridge",
+  "summary": "The English Wikipedia article \"Battle of Hatchie Bridge\", at revision 1375705852, opens: \"The Battle of Hatchie Bridge, also known as Battle of Davis Bridge or Battle of Matamora, was fought on October 5, 1862, in Hardeman County and McNairy County, Tennessee, as the final engagement of the Iuka–Corinth Campaign of the American Civil War. Confederate Major General Earl Van Dorn's army successfully evaded capture by the Union Army, following his defeat at the Battle of Corinth.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1497877, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-10-05"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

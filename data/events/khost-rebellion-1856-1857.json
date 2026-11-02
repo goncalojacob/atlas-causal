@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "khost-rebellion-1856-1857",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q65079965",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Khost rebellion (1856–1857)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q65079965"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Khost rebellion (1856–1857)\", revision 1376918870"
+    }
+  ],
+  "title": "Khost rebellion (1856–1857)",
+  "summary": "The English Wikipedia article \"Khost rebellion (1856–1857)\", at revision 1376918870, opens: \"The Khost Rebellion of 1856–1857 was an armed uprising by the Khostwal Pashtun tribes, with the participation of the Darwesh Khel Wazirs, against the Emirate of Afghanistan. The rebellion was directed against state revenue demands, administrative abuses, and actions perceived as violations of Pashtun honor, particularly land confiscations and the abduction of local women.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q65079965, imported by tools/import/wikidata.mjs. The item's own description reads \"anti-Taxation revolt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1856,
+    "end": 1857
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

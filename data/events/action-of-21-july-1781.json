@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "action-of-21-july-1781",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1444121",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Action of 21 July 1781"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1444121"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 21 July 1781\", revision 1375196554"
+    }
+  ],
+  "title": "Action of 21 July 1781",
+  "summary": "The English Wikipedia article \"Action of 21 July 1781\", at revision 1375196554, opens: \"The action of 21 July 1781 was a naval skirmish off the harbour of Spanish River, Cape Breton, Nova Scotia, during the War of American Independence. Two light frigates of the French Navy, captained by Jean-François de Galaup, comte de Lapérouse and Louis-René Levassor de Latouche Tréville, engaged a convoy of 18 British ships and their Royal Navy escorts. The French captured one of the British escorts while the remainder of the British convoy escaped.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1444121, imported by tools/import/wikidata.mjs. The item's own description reads \"1781 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-07-21"
+  },
+  "place": "sydney-nova-scotia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-honey-hill",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2236699",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Honey Hill"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2236699"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Honey Hill\", revision 1370265754"
+    }
+  ],
+  "title": "Battle of Honey Hill",
+  "summary": "The English Wikipedia article \"Battle of Honey Hill\", at revision 1370265754, opens: \"The Battle of Honey Hill was the third battle of Savannah campaign, fought November 30, 1864, during the American Civil War. It did not involve Major General William T. Sherman's main force, marching from Atlanta to Savannah, Georgia, but was a failed Union Army expedition under Brig. Gen. John P. Hatch that attempted to cut off the Charleston and Savannah Railroad in support of Sherman's projected arrival in Savannah.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2236699, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-11-30"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

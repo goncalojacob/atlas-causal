@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "capture-of-saint-martin-1633",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5037054",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Capture of Saint Martin (1633)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5037054"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Saint Martin (1633)\", revision 1370609481"
+    }
+  ],
+  "title": "Capture of Saint Martin (1633)",
+  "summary": "The English Wikipedia article \"Capture of Saint Martin (1633)\", at revision 1370609481, opens: \"Part of the Eighty Years' War, the Capture of Saint Martin was a Spanish naval expedition against the island of Saint Martin, then occupied by the Dutch Republic. The island, claimed by Spain since Christopher Columbus' second voyage to the West Indies in 1493, lies a few hundred miles east of Puerto Rico. Its capture prevented Dutch privateers using it as a base for operations in the Caribbean.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5037054, imported by tools/import/wikidata.mjs. The item's own description reads \"1633 naval battle of the Eighty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1633,
+    "end": 1633,
+    "date": "1633-06-25",
+    "endDate": "1633-07-01"
+  },
+  "place": "saint-martin-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "eighty-years-war"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-chattanooga",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2740066",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Second Battle of Chattanooga"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2740066"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Chattanooga\", revision 1370736022"
+    }
+  ],
+  "title": "Second Battle of Chattanooga",
+  "summary": "The English Wikipedia article \"Second Battle of Chattanooga\", at revision 1370736022, opens: \"The Second Battle of Chattanooga took place during the American Civil War, beginning on August 21, 1863, as the opening battle in the Chickamauga Campaign. The larger and more famous battles were the Battles for Chattanooga in November 1863.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2740066, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-08-21"
+  },
+  "place": "chattanooga-tennessee",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

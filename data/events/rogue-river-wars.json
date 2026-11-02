@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rogue-river-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1382989",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Rogue River Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1382989"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rogue River Wars\", revision 1373404660"
+    }
+  ],
+  "title": "Rogue River Wars",
+  "summary": "The English Wikipedia article \"Rogue River Wars\", at revision 1373404660, opens: \"The Rogue River Wars were an armed conflict in 1855–1856 between the U.S. Army, local militias and volunteers, and the Native American tribes commonly grouped under the designation of Rogue River Indians, in the Rogue Valley area of what today is southern Oregon. The conflict designation usually includes only the hostilities that took place during 1855–1856, but there had been numerous previous skirmishes, as early as the 1830s, between European American settlers and the Native Americans, over territory and resources.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1382989, imported by tools/import/wikidata.mjs. The item's own description reads \"war in the Rogue River Valley in Oregon; part of the American Indian Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1855,
+    "end": 1856
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

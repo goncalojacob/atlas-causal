@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1888-rio-de-la-plata-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q634483",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "1888 Río de la Plata earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q634483"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1888 Río de la Plata earthquake\", revision 1380698180"
+    }
+  ],
+  "title": "1888 Río de la Plata earthquake",
+  "summary": "The English Wikipedia article \"1888 Río de la Plata earthquake\", at revision 1380698180, opens: \"The 1888 Río de la Plata earthquake occurred on 5 June measuring 5.5 on the Richter scale, and shook the upper Río de la Plata at 3:20 UTC-3. The epicentre was located 15 kilometres (9 mi) southwest of Colonia del Sacramento (Uruguay) and 42 kilometres (26 mi) east of Buenos Aires (Argentina), with a hypocentre at a depth of 30 kilometres (19 mi).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q634483, imported by tools/import/wikidata.mjs. The item's own description reads \"June 1888 earthquake in Argentina and Uruguay\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1888,
+    "end": 1888,
+    "date": "1888-06-05"
+  },
+  "place": "rio-de-la-plata",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

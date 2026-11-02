@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-kanzhal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4212420",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Kanzhal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4212420"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kanzhal\", revision 1370579208"
+    }
+  ],
+  "title": "Battle of Kanzhal",
+  "summary": "The English Wikipedia article \"Battle of Kanzhal\", at revision 1370579208, opens: \"The Kanzhal War or Crimean-Circassian War of 1708 was military conflict in 1708 fought between Circassians led by Kurghoqo Hatokhshoqo and Crimean Khanate alongside its allies led by Qaplan I Giray, which resulted in Circassian victory. It played a big role in decreasing foreign influence in Circassia. In 2013, the Russian Academy of Sciences described the battle as \"an important event in the history of Circassians\". It was fought near the village of Bylym on the Baksan River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4212420, imported by tools/import/wikidata.mjs. The item's own description reads \"1708 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1708,
+    "end": 1708,
+    "date": "1708-09-18"
+  },
+  "place": "bylym",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

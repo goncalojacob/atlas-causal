@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "avignon-comtat-venaissin-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q125217048",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Avignon–Comtat Venaissin War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q125217048"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Avignon–Comtat Venaissin War\", revision 1370429857"
+    }
+  ],
+  "title": "Avignon–Comtat Venaissin War",
+  "summary": "The English Wikipedia article \"Avignon–Comtat Venaissin War\", at revision 1370429857, opens: \"Following the unanimous declaration of the various district assemblies of Avignon on 12 June 1790, to secede from the Papal States and unite with France, war broke out between the municipal government of Avignon and the more conservative Comtat Venaissin, the larger county (comtat) which co-existed with Avignon and still pledged loyalty to the Papal States. Avignon, which had been inspired by the intentions of the French Revolution, soon received the support of French troops placed under its control, augmenting the Avignon forces that had laid siege to Carpentras, ending the government of the Comtat. However, hardline counter-revolutionary regions of the Comtat under the name the \"Union of St. Cecilia\" continued fighting until June 1791.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q125217048, imported by tools/import/wikidata.mjs. The item's own description reads \"war within the French Papal States (1790–1791)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1790,
+    "end": 1791
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "henry-morgan-s-raid-on-porto-bello",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q25414493",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Henry Morgan's raid on Porto Bello",
+    "pt": "O ataque de Henry Morgan a Porto Bello"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q25414493"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Henry Morgan's raid on Porto Bello\", revision 1370622650"
+    }
+  ],
+  "title": "Henry Morgan's raid on Porto Bello",
+  "summary": "The English Wikipedia article \"Henry Morgan's raid on Porto Bello\", at revision 1370622650, opens: \"Henry Morgan's raid on Porto Bello was a military event which took place in the latter half of the Anglo-Spanish war beginning on 10 July 1668. Welsh buccaneer Henry Morgan led a largely English privateer force against the heavily fortified Spanish controlled town of Porto Bello. After landing, Morgan and his men attempted to take the castles protecting the town. One such attempt involved using captured citizens as human shields to seize one of the castles. After capturing them all by force the privateers subsequently entered the city and then plundered it before Morgan demanded a large ransom from the Governor of Panama Don Agustín de Bracamonte. While the negotiations for this was going on, Bracamonte led a sizeable force from Panama City intent on recapturing the city and putting the privateers to the sword.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q25414493, imported by tools/import/wikidata.mjs. The item's own description reads \"1668 raid\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1668,
+    "end": 1668,
+    "date": "1668-07-10",
+    "endDate": "1668-08-02"
+  },
+  "place": "portobelo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

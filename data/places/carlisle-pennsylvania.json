@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "carlisle-pennsylvania",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1010228",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Carlisle, Pennsylvania",
+    "pt": "Carlisle (Pensilvânia)"
+  },
+  "sources": [],
+  "names": [
+    "Carlisle",
+    "Carlisle, Pennsylvania",
+    "Carlisle (Pensilvânia)"
+  ],
+  "where": {
+    "lon": -77.195,
+    "lat": 40.2025,
+    "precision": "city",
+    "label": "Carlisle, Pennsylvania"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

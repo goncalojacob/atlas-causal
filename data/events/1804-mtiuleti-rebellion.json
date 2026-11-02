@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1804-mtiuleti-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q12866905",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "1804 Mtiuleti rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12866905"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1804 Mtiuleti rebellion\", revision 1370278128"
+    }
+  ],
+  "title": "1804 Mtiuleti rebellion",
+  "summary": "The English Wikipedia article \"1804 Mtiuleti rebellion\", at revision 1370278128, opens: \"The 1804 Mtiuleti rebellion was a conflict in Mtiuleti region of the former Kingdom of Kartli-Kakheti, at that time part of the Georgia Governorate of the Russian Empire. It was the first major Georgian rebellion directed against the Russian administration.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12866905, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1804,
+    "end": null
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

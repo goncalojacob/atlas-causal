@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "second-desmond-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q11030407",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Second Desmond Rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11030407"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Desmond Rebellion\", revision 1372400871"
+    }
+  ],
+  "title": "Second Desmond Rebellion",
+  "summary": "The English Wikipedia article \"Second Desmond Rebellion\", at revision 1372400871, opens: \"The Second Desmond Rebellion (1579–1583) was the more widespread and bloody of the two Desmond Rebellions in Ireland launched by the FitzGerald Dynasty of Desmond in Munster against English rule. The second rebellion began in July 1579 when James FitzMaurice FitzGerald landed in Ireland with a force of Papal troops, triggering an insurrection across the south of Ireland on the part of the Desmond dynasty, their allies, and others who were dissatisfied for various reasons with English government of the country. The rebellion ended with the 1583 death of Gerald FitzGerald, 14th Earl of Desmond, and the defeat of the rebels.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11030407, imported by tools/import/wikidata.mjs. The item's own description reads \"Irish rebellion (1579–1583)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1579,
+    "end": 1583,
+    "date": "1579-07-18",
+    "endDate": "1583-11-11"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "desmond-rebellions"
+}

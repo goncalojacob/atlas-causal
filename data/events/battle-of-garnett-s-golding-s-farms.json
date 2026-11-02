@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-garnett-s-golding-s-farms",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1856667",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Garnett's & Golding's Farms"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1856667"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Garnett's & Golding's Farms\", revision 1375278945"
+    }
+  ],
+  "title": "Battle of Garnett's & Golding's Farms",
+  "summary": "The English Wikipedia article \"Battle of Garnett's & Golding's Farms\", at revision 1375278945, opens: \"The Battle of Garnett's and Golding's Farms took place June 27–28, 1862, in Henrico County, Virginia, as part of the Seven Days Battles of the American Civil War's Peninsula Campaign. While the battle at Gaines's Mill raged north of the Chickahominy River, the forces of Confederate general John B. Magruder conducted a reconnaissance in force that developed into a minor attack against the Union line south of the river at Garnett's Farm. The Confederates attacked again near Golding's Farm on the morning of June 28 but in both cases were easily repulsed. The action at the Garnett and Golding farms accomplished little beyond convincing McClellan that he was being attacked from both sides of the Chickahominy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1856667, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-06-27",
+    "endDate": "1862-06-28"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

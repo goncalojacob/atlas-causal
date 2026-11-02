@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "great-raid-of-1840",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5599827",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Great Raid of 1840"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5599827"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Raid of 1840\", revision 1383070057"
+    }
+  ],
+  "title": "Great Raid of 1840",
+  "summary": "The English Wikipedia article \"Great Raid of 1840\", at revision 1383070057, opens: \"The Great Raid of 1840 was the largest raid Native Americans ever mounted on white cities in what is now the United States. It followed the Council House Fight, in which Republic of Texas officials attempted to capture and take prisoner 33 Comanche chiefs and their wives, who had earlier promised to deliver 13 white captives they had kidnapped. Because of the small amount this Penateka band of Southern Comanche received for the ransom of nine-year-old James Putnam weeks before, they brought with them only one captive, 16-year-old Matilda Lockhart. Just as they had done to Mexicans and Santa Feans for nearly a century, the Penateka wanted to ensure they would receive a higher payment before ransoming the other whites they had abducted. This tactic, together with the terrible treatment they had given Lockhart, backfired, and the Indians found themselves taken hostage for a prisoner exchange. An attempt to escape followed by the brandishing of tomahawks the Comanche had secreted between their wives' blankets led to the massacre of all the male Indians except two elderly men, who along with the women were taken hostage.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5599827, imported by tools/import/wikidata.mjs. The item's own description reads \"largest raid mounted by Native Americans on white cities, now the US\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1840,
+    "end": 1840
+  },
+  "place": "victoria-texas",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

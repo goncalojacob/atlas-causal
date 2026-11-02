@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-carlisle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q305331",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Carlisle"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q305331"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Carlisle\", revision 1374748286"
+    }
+  ],
+  "title": "Battle of Carlisle",
+  "summary": "The English Wikipedia article \"Battle of Carlisle\", at revision 1374748286, opens: \"The Battle of Carlisle was an American Civil War skirmish fought in Pennsylvania on July 1, 1863, which was also the first day of the Battle of Gettysburg. Major General J.E.B. Stuart's Confederate cavalry briefly engaged Union militia under Major General William F. \"Baldy\" Smith at Carlisle and set fire to the Carlisle Barracks. Stuart's cavalry withdrew and arrived at Gettysburg on the second day of the battle, to the perplexity and annoyance of General Robert E. Lee.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q305331, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-07-01"
+  },
+  "place": "carlisle-pennsylvania",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

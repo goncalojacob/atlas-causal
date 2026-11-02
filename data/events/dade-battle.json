@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dade-battle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5208045",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Dade battle"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5208045"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dade battle\", revision 1380143058"
+    }
+  ],
+  "title": "Dade battle",
+  "summary": "The English Wikipedia article \"Dade battle\", at revision 1380143058, opens: \"The Dade battle was an 1835 military defeat for the United States Army. Under the Indian Removal Act of 1830 the U.S. was attempting to force the Seminoles to move away from their land in Florida provided by the Treaty of Moultrie Creek and relocate to Indian Territory under the terms of the Treaty of Payne's Landing.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5208045, imported by tools/import/wikidata.mjs. The item's own description reads \"1835 Second Seminole War battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1835,
+    "date": "1835-12-28"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "second-seminole-war"
+}

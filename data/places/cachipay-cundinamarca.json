@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "cachipay-cundinamarca",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q425657",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Cachipay, Cundinamarca"
+  },
+  "sources": [],
+  "names": [
+    "Cachipay, Cundinamarca"
+  ],
+  "where": {
+    "lon": -74.4365,
+    "lat": 4.731363,
+    "precision": "city",
+    "label": "Cachipay, Cundinamarca"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

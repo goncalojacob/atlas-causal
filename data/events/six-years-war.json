@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "six-years-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q24204921",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Six Years' War",
+    "pt": "Guerra dos Seis Anos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q24204921"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Six Years' War\", revision 1370747286"
+    }
+  ],
+  "title": "Six Years' War",
+  "summary": "The English Wikipedia article \"Six Years' War\", at revision 1370747286, opens: \"The Six Years' War was a civil war in the Dominican Republic which lasted from 2 May 1868 to 2 January 1874 that \"constituted the third war of independence fought by the Dominican people\", in this case against the administration of President Buenaventura Báez, which in 1869 negotiated the Dominican Republic's annexation to the United States. According to the Dominican intellectual Pedro Henríquez Ureña, this war was a critical phase in the creation of Dominican national consciousness because, having already differentiated themselves from the Haitians in the first war of independence and the Spaniards in the second, the Dominicans asserted their incompatibility with the United States.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q24204921, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war in the Dominican Republic, fought by revolutionaries and elements in the military against the regular Dominican Army loyal to President Báez\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1874,
+    "date": "1868-05-02",
+    "endDate": "1874-01-02"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "connecticut",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q779",
+  "sitelinks": {
+    "count": 196,
+    "on": "2026-11-01"
+  },
+  "wikipedia": {
+    "en": "Connecticut",
+    "pt": "Connecticut"
+  },
+  "sources": [],
+  "names": [
+    "Connecticut"
+  ],
+  "where": {
+    "lon": -72.7,
+    "lat": 41.6,
+    "precision": "region",
+    "label": "Connecticut"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
