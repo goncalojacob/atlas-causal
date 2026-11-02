@@ -64402,9 +64402,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "sino-burmese-war"
-      ],
+      "parent": "sino-burmese-war",
       "review": {
         "flags": [
           "imported-facts",
