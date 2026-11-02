@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "chattanooga-campaign--atlanta-campaign--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chattanooga campaign\", revision 1380714564"
+    }
+  ],
+  "from": "chattanooga-campaign",
+  "to": "atlanta-campaign",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Chattanooga campaign\" (revision 1380714564) says: \"Bragg's defeat eliminated the last significant Confederate control of Tennessee and opened the door to an invasion of the Deep South, leading to Sherman's Atlanta campaign of 1864.\" The edge reads that sentence as: Chattanooga campaign caused Atlanta campaign, and nothing more.",
+  "dispute": null
+}

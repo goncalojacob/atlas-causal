@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "great-fire-of-london--treaty-of-breda-1667--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Breda (1667)\", revision 1367904118"
+    }
+  ],
+  "from": "great-fire-of-london",
+  "to": "treaty-of-breda-1667",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Treaty of Breda (1667)\" (revision 1367904118) says: \"Combined with economic losses caused by the war and the Great Fire of London, Clarendon instructed Holles to agree terms \"to calm people's minds\" and \"free the king from a burden...he is finding hard to bear\".\" The edge reads that sentence as: Treaty of Breda (1667) was a response to Great Fire of London, and nothing more.",
+  "dispute": null
+}

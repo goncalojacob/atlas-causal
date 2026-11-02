@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "war-of-the-oranges--treaty-of-badajoz-1801--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Oranges\", revision 1377704597"
+    }
+  ],
+  "from": "war-of-the-oranges",
+  "to": "treaty-of-badajoz-1801",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"War of the Oranges\" (revision 1377704597) says: \"The war resulted in the Treaty of Badajoz, the loss of Portuguese territory, in particular losing Olivenza to Spain.\" The edge reads that sentence as: War of the Oranges caused Treaty of Badajoz (1801), and nothing more.",
+  "dispute": null
+}

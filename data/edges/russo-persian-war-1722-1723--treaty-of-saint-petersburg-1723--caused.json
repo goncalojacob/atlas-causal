@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "russo-persian-war-1722-1723--treaty-of-saint-petersburg-1723--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Persian War (1722–1723)\", revision 1378917281"
+    }
+  ],
+  "from": "russo-persian-war-1722-1723",
+  "to": "treaty-of-saint-petersburg-1723",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Russo-Persian War (1722–1723)\" (revision 1378917281) says: \"The Russian victory forced Safavid Iran to cede their territories in the North Caucasus, South Caucasus and contemporary northern Iran to Russia, comprising the cities of Derbent (southern Dagestan) and Baku and their nearby surrounding lands, as well as the provinces of Gilan, Shirvan, Mazandaran and Astarabad via the Treaty of Saint Petersburg (1723).\" The edge reads that sentence as: Russo-Persian War (1722–1723) caused Treaty of Saint Petersburg (1723), and nothing more.",
+  "dispute": null
+}

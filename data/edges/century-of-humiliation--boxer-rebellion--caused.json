@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "century-of-humiliation--boxer-rebellion--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Century of humiliation\", revision 1379252391"
+    }
+  ],
+  "from": "century-of-humiliation",
+  "to": "boxer-rebellion",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Century of humiliation\" (revision 1379252391) says: \"At the same time, the loss of national sovereignty, along with social and legal inequalities between foreigners and natives, sparked Chinese resistance to foreign imperialism resulting in events such as the Boxer Rebellion and May Fourth movement.\" The edge reads that sentence as: Century of humiliation caused Boxer Rebellion, and nothing more.",
+  "dispute": null
+}

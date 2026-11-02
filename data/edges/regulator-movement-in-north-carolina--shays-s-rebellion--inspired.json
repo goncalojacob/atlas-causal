@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "regulator-movement-in-north-carolina--shays-s-rebellion--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Shays's Rebellion\", revision 1377911720"
+    }
+  ],
+  "from": "regulator-movement-in-north-carolina",
+  "to": "shays-s-rebellion",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Shays's Rebellion\" (revision 1377911720) says: \"They called themselves Regulators, a reference to the Regulator movement of North Carolina, which sought to reform corrupt practices in the late 1760s.\" The edge reads that sentence as: Regulator Movement in North Carolina inspired Shays's Rebellion, and nothing more.",
+  "dispute": null
+}

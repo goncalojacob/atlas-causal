@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "american-revolution--whiskey-rebellion--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Whiskey Rebellion\", revision 1377157978"
+    }
+  ],
+  "from": "american-revolution",
+  "to": "whiskey-rebellion",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Whiskey Rebellion\" (revision 1377157978) says: \"The attackers modeled their actions on the protests of the American Revolution.\" The edge reads that sentence as: American Revolution inspired Whiskey Rebellion, and nothing more.",
+  "dispute": null
+}

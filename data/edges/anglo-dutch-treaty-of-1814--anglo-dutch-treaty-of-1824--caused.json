@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "anglo-dutch-treaty-of-1814--anglo-dutch-treaty-of-1824--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Dutch Treaty of 1814\", revision 1379171110"
+    }
+  ],
+  "from": "anglo-dutch-treaty-of-1814",
+  "to": "anglo-dutch-treaty-of-1824",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Anglo-Dutch Treaty of 1814\" (revision 1379171110) says: \"Disputes arising from the treaty resulted in the signing of the Anglo-Dutch Treaty of 1824.\" The edge reads that sentence as: Anglo-Dutch Treaty of 1814 caused Anglo-Dutch Treaty of 1824, and nothing more.",
+  "dispute": null
+}

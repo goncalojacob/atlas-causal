@@ -95686,6 +95686,510 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-152",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "second-anglo-dutch-war",
+        "edges": [
+          "second-anglo-dutch-war--third-anglo-dutch-war--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-153",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "new-imperialism",
+        "edges": [
+          "new-imperialism--boxer-rebellion--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-africa-018",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "rhodesian-bush-war",
+        "edges": [
+          "rhodesian-bush-war--mozambican-civil-war--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-155",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "fall-of-maximilien-robespierre",
+        "edges": [
+          "fall-of-maximilien-robespierre--thermidorian-reaction--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-africa-019",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "mozambican-civil-war",
+        "edges": [
+          "cold-war--mozambican-civil-war--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-158",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "akkerman-convention",
+        "edges": [
+          "akkerman-convention--russo-turkish-war-1828-1829--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-066",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "oregon-treaty",
+        "edges": [
+          "oregon-treaty--pig-war-1859--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-160",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "russo-persian-war-1722-1723",
+        "edges": [
+          "russo-persian-war-1722-1723--treaty-of-saint-petersburg-1723--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-asia-066",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-persian-war",
+        "edges": [
+          "anglo-persian-war--treaty-of-paris-1857--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-162",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "flight-to-varennes",
+        "edges": [
+          "flight-to-varennes--execution-of-louis-xvi--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-asia-069",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "egyptian-ottoman-war-1831-1833",
+        "edges": [
+          "greek-war-of-independence--egyptian-ottoman-war-1831-1833--precondition-of"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-164",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "civil-constitution-of-the-clergy",
+        "edges": [
+          "civil-constitution-of-the-clergy--war-in-the-vendee--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-068",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "whiskey-rebellion",
+        "edges": [
+          "american-revolution--whiskey-rebellion--inspired"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-165",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "young-germany",
+        "edges": [
+          "romanticism--young-germany--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-asia-070",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "triple-intervention",
+        "edges": [
+          "franco-russian-alliance--triple-intervention--precondition-of"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-071",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "shays-s-rebellion",
+        "edges": [
+          "regulator-movement-in-north-carolina--shays-s-rebellion--inspired"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-167",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-dutch-treaty-of-1814",
+        "edges": [
+          "anglo-dutch-treaty-of-1814--anglo-dutch-treaty-of-1824--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-169",
+      "writer": "A",
+      "fired": "2026-11-02T20:34Z",
+      "status": "written",
+      "written": {
+        "event": "brabant-revolution",
+        "edges": [
+          "brabant-revolution--belgian-revolution--inspired"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-065",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chancellorsville",
+        "edges": [
+          "battle-of-chancellorsville--battle-of-gettysburg-second-day--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-154",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "first-anglo-dutch-war",
+        "edges": [
+          "first-anglo-dutch-war--treaty-of-westminster-1654--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-asia-064",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "century-of-humiliation",
+        "edges": [
+          "century-of-humiliation--boxer-rebellion--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-156",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "kalmar-war",
+        "edges": [
+          "kalmar-war--torstenson-war--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-157",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "scanian-war",
+        "edges": [
+          "franco-dutch-war--scanian-war--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-asia-065",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-buxar",
+        "edges": [
+          "battle-of-buxar--treaty-of-allahabad--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-159",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "third-anglo-dutch-war",
+        "edges": [
+          "raid-on-the-medway--third-anglo-dutch-war--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-161",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-malplaquet",
+        "edges": [
+          "battle-of-malplaquet--peace-of-utrecht--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-asia-067",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "auspicious-incident",
+        "edges": [
+          "auspicious-incident--akkerman-convention--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-asia-068",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "constantinople-conference",
+        "edges": [
+          "constantinople-conference--russo-turkish-war-1877-1878--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-163",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-breda-1667",
+        "edges": [
+          "great-fire-of-london--treaty-of-breda-1667--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-067",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-oranges",
+        "edges": [
+          "war-of-the-oranges--treaty-of-badajoz-1801--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-069",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "texas-annexation",
+        "edges": [
+          "texas-annexation--mexican-american-war--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-africa-020",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-egyptian-war",
+        "edges": [
+          "urabi-revolt--anglo-egyptian-war--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-070",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "chattanooga-campaign",
+        "edges": [
+          "chattanooga-campaign--atlanta-campaign--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-166",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "sicilian-revolution-of-1848",
+        "edges": [
+          "sicilian-revolution-of-1848--statuto-albertino--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-168",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-winterthur",
+        "edges": [
+          "battle-of-winterthur--first-battle-of-zurich--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-064",
+      "writer": "B",
+      "fired": "2026-11-02T20:37Z",
+      "status": "written",
+      "written": {
+        "event": "john-brown-s-raid-on-harpers-ferry",
+        "edges": [
+          "john-brown-s-raid-on-harpers-ferry--american-civil-war--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

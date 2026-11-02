@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "new-imperialism--boxer-rebellion--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"New Imperialism\", revision 1379856005"
+    }
+  ],
+  "from": "new-imperialism",
+  "to": "boxer-rebellion",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"New Imperialism\" (revision 1379856005) says: \"At the same time, the loss of national sovereignty, along with social and legal inequalities between foreigners and natives, sparked Chinese resistance to foreign imperialism resulting in events such as the Boxer Rebellion and May Fourth movement.\" The edge reads that sentence as: New Imperialism caused Boxer Rebellion, and nothing more.",
+  "dispute": null
+}

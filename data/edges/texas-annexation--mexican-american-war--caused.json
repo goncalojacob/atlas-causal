@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "texas-annexation--mexican-american-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Texas annexation\", revision 1378893742"
+    }
+  ],
+  "from": "texas-annexation",
+  "to": "mexican-american-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Texas annexation\" (revision 1378893742) says: \"Texas formally joined the union on February 19, 1846, prompting the Mexican–American War in April of that year.\" The edge reads that sentence as: Texas annexation caused Mexican–American War, and nothing more.",
+  "dispute": null
+}

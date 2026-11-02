@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "john-brown-s-raid-on-harpers-ferry--american-civil-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"John Brown's raid on Harpers Ferry\", revision 1380561022"
+    }
+  ],
+  "from": "john-brown-s-raid-on-harpers-ferry",
+  "to": "american-civil-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"John Brown's raid on Harpers Ferry\" (revision 1380561022) says: \"John Brown's raid on Harpers Ferry was one of the last major events that led to the Civil War (see sidebar at top of article).\" The edge reads that sentence as: John Brown's raid on Harpers Ferry caused American Civil War, and nothing more.",
+  "dispute": null
+}

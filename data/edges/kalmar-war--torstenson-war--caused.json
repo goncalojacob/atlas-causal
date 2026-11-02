@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "kalmar-war--torstenson-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kalmar War\", revision 1381716856"
+    }
+  ],
+  "from": "kalmar-war",
+  "to": "torstenson-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Kalmar War\" (revision 1381716856) says: \"Eventually, however, Danish lack of gains in the war and eventual withdrawal, and Sweden's successful military campaign and rise in power led to Sweden's counterattack in the Torstenson War where Denmark–Norway would lose and cede control of the Baltic Sea to the King of Sweden.[page needed]\" The edge reads that sentence as: Kalmar War caused Torstenson War, and nothing more.",
+  "dispute": null
+}
