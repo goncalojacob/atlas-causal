@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "invasion-of-dominica-1761",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q74009",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Invasion of Dominica (1761)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q74009"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Dominica (1761)\", revision 1370623957"
+    }
+  ],
+  "title": "Invasion of Dominica (1761)",
+  "summary": "The English Wikipedia article \"Invasion of Dominica (1761)\", at revision 1370623957, opens: \"The Invasion of Dominica was a British military expedition to capture the Caribbean island of Dominica in June 1761, as part of the Seven Years' War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q74009, imported by tools/import/wikidata.mjs. The item's own description reads \"1761 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1761,
+    "end": 1761,
+    "date": "1761-06"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

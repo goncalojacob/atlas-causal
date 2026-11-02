@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "abbas-i-s-shirvan-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q60791184",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Abbas I's Shirvan campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q60791184"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Abbas I's Shirvan campaign\", revision 1370425568"
+    }
+  ],
+  "title": "Abbas I's Shirvan campaign",
+  "summary": "The English Wikipedia article \"Abbas I's Shirvan campaign\", at revision 1370425568, opens: \"Abbas I's Shirvan campaign took place in 1606–1607, during the Ottoman–Safavid War of 1603–1618. The Safavids had lost control over the province by the Treaty of Constantinople of 1590. In the winter of 1606, Safavid king (shah) Abbas I, invaded Shirvan. Derbent and Baku soon fell as a result of pro-Safavid uprisings and in the spring of 1607 Abbas I and his men successfully besieged \nShamakhi, the provincial capital of Shirvan. With the reconquest of Shirvan, the Safavids had recovered all territories lost to the Ottomans in 1590.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q60791184, imported by tools/import/wikidata.mjs. The item's own description reads \"1606 military campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1606,
+    "end": 1606
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-safavid-war-1603-1612"
+}

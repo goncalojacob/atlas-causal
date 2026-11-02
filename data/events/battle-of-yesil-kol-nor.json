@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-yesil-kol-nor",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872780",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Yesil Kol Nor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872780"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Yesil Kol Nor\", revision 1370595657"
+    }
+  ],
+  "title": "Battle of Yesil Kol Nor",
+  "summary": "The English Wikipedia article \"Battle of Yesil Kol Nor\", at revision 1370595657, opens: \"The Battle of Yesil Kol Nor is an 18th-century war painting created by Chinese court painters and European Jesuits. It was commissioned by the Qianlong Emperor of the Chinese Qing dynasty as part of an order of 16 large battle paintings to commemorate battles that took place in Qurman, in modern-day Tajikistan in February 1759. The battles resulted in the Qing Empire successfully regaining control of Xinjiang from the Turks who had occupied the province following the ousting of the Dzungar people from the region by Qing forces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872780, imported by tools/import/wikidata.mjs. The item's own description reads \"18th-century war painting\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1759,
+    "end": 1759,
+    "date": "1759-09"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "ten-great-campaigns"
+}
