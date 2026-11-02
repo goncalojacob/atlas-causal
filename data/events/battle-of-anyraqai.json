@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-anyraqai",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4066889",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Añyraqai"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4066889"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Añyraqai\", revision 1376006600"
+    }
+  ],
+  "title": "Battle of Añyraqai",
+  "summary": "The English Wikipedia article \"Battle of Añyraqai\", at revision 1376006600, opens: \"The Battle of Añyraqai, also known as the Battle of Anrakai, was a legendary military battle between the Kazakh Khanate and the Dzungar Khanate in April 1730. The Kazakhs defeated the Dzungars and expelled them from the northwestern part of Jetisu. This led to the Kazakhs resettling on the Ili River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4066889, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in the Kazakh-Dzungar Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1729,
+    "end": 1730,
+    "date": "1729-12",
+    "endDate": "1730-01"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "kazakh-dzungar-wars"
+}

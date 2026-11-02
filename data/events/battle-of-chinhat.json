@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-chinhat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4438410",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Chinhat"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4438410"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chinhat\", revision 1370437078"
+    }
+  ],
+  "title": "Battle of Chinhat",
+  "summary": "The English Wikipedia article \"Battle of Chinhat\", at revision 1370437078, opens: \"The Battle of Chinhat was fought on the morning of 30 June 1857, between British forces and Indian rebels, at Ismailganj, near Chinhat, Oude (Awad/Oudh). The British were led by The Chief Commissioner of Oude, Sir Henry Lawrence. The insurgent force, which consisted of mutineers from the East India Company's army and retainers of local landowners, was led by Barkat Ahmad, a mutineer officer of the Company's army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4438410, imported by tools/import/wikidata.mjs. The item's own description reads \"battle during Indian Rebellion of 1857\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1857,
+    "end": 1857,
+    "date": "1857-06-30"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "indian-rebellion-of-1857"
+}

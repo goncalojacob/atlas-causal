@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-kirbekan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888919",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Kirbekan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888919"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kirbekan\", revision 1381566614"
+    }
+  ],
+  "title": "Battle of Kirbekan",
+  "summary": "The English Wikipedia article \"Battle of Kirbekan\", at revision 1381566614, opens: \"The Battle of Kirbekan took place during the Mahdist War. It was fought February 10, 1885, when the British Nile Column, about 1,000 strong, under General Earle, stormed the heights of Kirbekan, which were held by a strong Mahdist force, and totally routed them, with heavy loss.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888919, imported by tools/import/wikidata.mjs. The item's own description reads \"1885 battle in the Mahdist War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-02-10"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "mahdist-war"
+}

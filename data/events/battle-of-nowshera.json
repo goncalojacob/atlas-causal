@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-nowshera",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871920",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Nowshera"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871920"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nowshera\", revision 1370270998"
+    }
+  ],
+  "title": "Battle of Nowshera",
+  "summary": "The English Wikipedia article \"Battle of Nowshera\", at revision 1370270998, opens: \"The Battle of Nowshera, also called the Battle of Tihri, Battle of Naushahra, or Battle of Pir Sabaq, was fought in March 1823 near Nowshera between the forces of Ranjit Singh and Afghan-Pashtun forces led by Mohammad Azim Khan, then a leading Barakzai figure in Afghan politics. The battle followed Sikh expansion across the Indus River, the temporary Sikh occupation of Peshawar in 1818, and the submission of Yar Muhammad Khan of Peshawar to the Lahore Darbar.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871920, imported by tools/import/wikidata.mjs. The item's own description reads \"1823 Sikh–Afghani battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1823,
+    "end": 1823,
+    "date": "1823-03-14"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "afghan-sikh-wars"
+}
