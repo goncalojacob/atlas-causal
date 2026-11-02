@@ -3168,6 +3168,15 @@
         }
       ]
     },
+    "battle-of-kafer-qal-eh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-kagul": {
       "from": "git",
       "versions": [
@@ -3453,6 +3462,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-kup": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -5591,6 +5609,15 @@
         }
       ]
     },
+    "battle-of-tiruvannamalai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-tlemcen-1700": {
       "from": "git",
       "versions": [
@@ -6224,12 +6251,39 @@
         }
       ]
     },
+    "burmese-siamese-war-1775-1776": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "burmese-siamese-war-1785-1786": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "burmese-siamese-war-1792-1794": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
+    "burmese-siamese-war-1797-1798": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -8591,6 +8645,15 @@
         }
       ]
     },
+    "mohammad-khan-baluch-s-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "montserrat-slave-rebellion-of-1768": {
       "from": "git",
       "versions": [
@@ -9772,6 +9835,15 @@
         }
       ]
     },
+    "second-carnatic-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "second-congress-of-rastatt": {
       "from": "git",
       "versions": [
@@ -9875,6 +9947,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "siamese-conquest-of-lanna-1774-1775": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -10037,6 +10118,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "siege-of-bender-1738": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -10723,6 +10813,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "siege-of-mehadia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -12483,6 +12582,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-versailles-1757": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },

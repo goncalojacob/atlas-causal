@@ -4358,6 +4358,12 @@
     },
     {
       "dissent": false,
+      "id": "ai-viet-lan-xang-war-1479-1484",
+      "kind": "event",
+      "locator": "Q10747221"
+    },
+    {
+      "dissent": false,
       "id": "akizuki-rebellion",
       "kind": "event",
       "locator": "Q2090046"
@@ -4520,6 +4526,12 @@
     },
     {
       "dissent": false,
+      "id": "ambush-at-mount-kelir",
+      "kind": "event",
+      "locator": "Q133802796"
+    },
+    {
+      "dissent": false,
       "id": "american-algerian-war",
       "kind": "event",
       "locator": "Q122639374"
@@ -4580,6 +4592,12 @@
     },
     {
       "dissent": false,
+      "id": "andree-s-arctic-balloon-expedition",
+      "kind": "event",
+      "locator": "Q261538"
+    },
+    {
+      "dissent": false,
       "id": "anfa-expedition-1468",
       "kind": "event",
       "locator": "Q116687226"
@@ -4631,6 +4649,12 @@
       "id": "anglo-dutch-wars",
       "kind": "event",
       "locator": "Q755170"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-egyptian-slave-trade-convention",
+      "kind": "event",
+      "locator": "Q115762235"
     },
     {
       "dissent": false,
@@ -6587,6 +6611,12 @@
       "id": "battle-of-assietta",
       "kind": "event",
       "locator": "Q693265"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-atbara",
+      "kind": "event",
+      "locator": "Q1276340"
     },
     {
       "dissent": false,
@@ -9794,6 +9824,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ferkeh",
+      "kind": "event",
+      "locator": "Q2237506"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ferozeshah",
       "kind": "event",
       "locator": "Q116222"
@@ -12068,6 +12104,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kafer-qal-eh",
+      "kind": "event",
+      "locator": "Q18162684"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kafr-el-dawwar",
       "kind": "event",
       "locator": "Q4871366"
@@ -12269,6 +12311,12 @@
       "id": "battle-of-kazan-1774",
       "kind": "event",
       "locator": "Q4090296"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kejiwan",
+      "kind": "event",
+      "locator": "Q133521430"
     },
     {
       "dissent": false,
@@ -12740,6 +12788,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kremmydi",
+      "kind": "event",
+      "locator": "Q12880461"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kringen",
       "kind": "event",
       "locator": "Q951270"
@@ -12785,6 +12839,12 @@
       "id": "battle-of-kunovica",
       "kind": "event",
       "locator": "Q12754327"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kup",
+      "kind": "event",
+      "locator": "Q24908199"
     },
     {
       "dissent": false,
@@ -15566,6 +15626,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-pacocha",
+      "kind": "event",
+      "locator": "Q2446410"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-paducah",
       "kind": "event",
       "locator": "Q2195153"
@@ -17984,6 +18050,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-siluk",
+      "kind": "event",
+      "locator": "Q133850436"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sincouwaan",
       "kind": "event",
       "locator": "Q7443119"
@@ -19544,6 +19616,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tiruvannamalai",
+      "kind": "event",
+      "locator": "Q16821560"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tlatelolco",
       "kind": "event",
       "locator": "Q387238"
@@ -19649,6 +19727,12 @@
       "id": "battle-of-tory-island",
       "kind": "event",
       "locator": "Q1134191"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-toski",
+      "kind": "event",
+      "locator": "Q1252684"
     },
     {
       "dissent": false,
@@ -20195,6 +20279,12 @@
       "id": "battle-of-vasilika",
       "kind": "event",
       "locator": "Q3403037"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vasilika-thessaloniki",
+      "kind": "event",
+      "locator": "Q106581319"
     },
     {
       "dissent": false,
@@ -21308,6 +21398,12 @@
     },
     {
       "dissent": false,
+      "id": "battles-of-woyowoyanko",
+      "kind": "event",
+      "locator": "Q1559790"
+    },
+    {
+      "dissent": false,
       "id": "bava-beccaris-massacre",
       "kind": "event",
       "locator": "Q687490"
@@ -21503,6 +21599,12 @@
       "id": "black-september",
       "kind": "event",
       "locator": "Q154288, P31 Q8465"
+    },
+    {
+      "dissent": false,
+      "id": "black-week",
+      "kind": "event",
+      "locator": "Q111699632"
     },
     {
       "dissent": false,
@@ -22040,9 +22142,33 @@
     },
     {
       "dissent": false,
+      "id": "burmese-siamese-war-1563-1564",
+      "kind": "event",
+      "locator": "Q16141404"
+    },
+    {
+      "dissent": false,
       "id": "burmese-siamese-war-1568-1569",
       "kind": "event",
       "locator": "Q20991943"
+    },
+    {
+      "dissent": false,
+      "id": "burmese-siamese-war-1584-1593",
+      "kind": "event",
+      "locator": "Q1456170"
+    },
+    {
+      "dissent": false,
+      "id": "burmese-siamese-war-1593-1600",
+      "kind": "event",
+      "locator": "Q2280714"
+    },
+    {
+      "dissent": false,
+      "id": "burmese-siamese-war-1609-1622",
+      "kind": "event",
+      "locator": "Q106514633"
     },
     {
       "dissent": false,
@@ -22064,9 +22190,33 @@
     },
     {
       "dissent": false,
+      "id": "burmese-siamese-war-1775-1776",
+      "kind": "event",
+      "locator": "Q1758978"
+    },
+    {
+      "dissent": false,
       "id": "burmese-siamese-war-1785-1786",
       "kind": "event",
       "locator": "Q2280723"
+    },
+    {
+      "dissent": false,
+      "id": "burmese-siamese-war-1792-1794",
+      "kind": "event",
+      "locator": "Q104901667"
+    },
+    {
+      "dissent": false,
+      "id": "burmese-siamese-war-1797-1798",
+      "kind": "event",
+      "locator": "Q107404796"
+    },
+    {
+      "dissent": false,
+      "id": "burmese-siamese-war-1802-1805",
+      "kind": "event",
+      "locator": "Q104843541"
     },
     {
       "dissent": false,
@@ -22442,6 +22592,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-den-lille-elefant",
+      "kind": "event",
+      "locator": "Q140628907"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-east-india-company-ship-nautilus",
       "kind": "event",
       "locator": "Q16825552"
@@ -22751,6 +22907,12 @@
       "id": "capture-of-the-rif-1792",
       "kind": "event",
       "locator": "Q107027848"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-the-st-michael",
+      "kind": "event",
+      "locator": "Q125804243"
     },
     {
       "dissent": false,
@@ -23306,6 +23468,12 @@
     },
     {
       "dissent": false,
+      "id": "colla-inca-war",
+      "kind": "event",
+      "locator": "Q123419661"
+    },
+    {
+      "dissent": false,
       "id": "colloquy-of-poissy",
       "kind": "event",
       "locator": "Q2426625"
@@ -23717,6 +23885,12 @@
       "id": "convention-of-balta-liman",
       "kind": "event",
       "locator": "Q28726448"
+    },
+    {
+      "dissent": false,
+      "id": "convention-of-calcutta",
+      "kind": "event",
+      "locator": "Q10876023"
     },
     {
       "dissent": false,
@@ -24413,6 +24587,12 @@
       "id": "deccan-famine-of-1630-1632",
       "kind": "event",
       "locator": "Q3530500"
+    },
+    {
+      "dissent": false,
+      "id": "deccan-riots",
+      "kind": "event",
+      "locator": "Q1181756"
     },
     {
       "dissent": false,
@@ -25685,6 +25865,12 @@
       "id": "first-battle-of-blida",
       "kind": "event",
       "locator": "Q3062378"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-boudouaou",
+      "kind": "event",
+      "locator": "Q105616758"
     },
     {
       "dissent": false,
@@ -27041,6 +27227,12 @@
       "id": "gnadenhutten-massacre",
       "kind": "event",
       "locator": "Q1533038"
+    },
+    {
+      "dissent": false,
+      "id": "golden-age-of-alpinism",
+      "kind": "event",
+      "locator": "Q1535602"
     },
     {
       "dissent": false,
@@ -30770,6 +30962,12 @@
     },
     {
       "dissent": false,
+      "id": "mohammad-khan-baluch-s-rebellion",
+      "kind": "event",
+      "locator": "Q18209338"
+    },
+    {
+      "dissent": false,
       "id": "mohawk-valley-raid",
       "kind": "event",
       "locator": "Q6893841"
@@ -31055,6 +31253,12 @@
       "id": "munich-agreement",
       "kind": "event",
       "locator": "Q154255, P31 Q131569"
+    },
+    {
+      "dissent": false,
+      "id": "munich-coinage-treaty",
+      "kind": "event",
+      "locator": "Q13417900"
     },
     {
       "dissent": false,
@@ -31619,6 +31823,12 @@
       "id": "november-uprising",
       "kind": "event",
       "locator": "Q462964"
+    },
+    {
+      "dissent": false,
+      "id": "nuku-hiva-campaign",
+      "kind": "event",
+      "locator": "Q16934279"
     },
     {
       "dissent": false,
@@ -35522,6 +35732,12 @@
     },
     {
       "dissent": false,
+      "id": "second-carnatic-war",
+      "kind": "event",
+      "locator": "Q233601"
+    },
+    {
+      "dissent": false,
       "id": "second-choshu-expedition",
       "kind": "event",
       "locator": "Q711793"
@@ -35984,6 +36200,12 @@
     },
     {
       "dissent": false,
+      "id": "shammar-obaidi-war-1814-1817",
+      "kind": "event",
+      "locator": "Q140321634"
+    },
+    {
+      "dissent": false,
       "id": "shangani-patrol",
       "kind": "event",
       "locator": "Q2276912"
@@ -36047,6 +36269,12 @@
       "id": "siamese-cambodian-war-1591-1594",
       "kind": "event",
       "locator": "Q1373706"
+    },
+    {
+      "dissent": false,
+      "id": "siamese-conquest-of-lanna-1774-1775",
+      "kind": "event",
+      "locator": "Q110876689"
     },
     {
       "dissent": false,
@@ -36191,6 +36419,12 @@
       "id": "siege-of-amiens-1597",
       "kind": "event",
       "locator": "Q3485809"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-anapa-1828",
+      "kind": "event",
+      "locator": "Q119166596"
     },
     {
       "dissent": false,
@@ -36449,6 +36683,12 @@
       "id": "siege-of-bellegarde-1793",
       "kind": "event",
       "locator": "Q63652"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-bender-1738",
+      "kind": "event",
+      "locator": "Q119166490"
     },
     {
       "dissent": false,
@@ -38354,6 +38594,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-mehadia",
+      "kind": "event",
+      "locator": "Q132616064"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-mekelle",
       "kind": "event",
       "locator": "Q2237609"
@@ -40172,6 +40418,12 @@
     },
     {
       "dissent": false,
+      "id": "skirmish-at-tegalreja",
+      "kind": "event",
+      "locator": "Q133696273"
+    },
+    {
+      "dissent": false,
       "id": "skirmish-at-top-malo-house",
       "kind": "event",
       "locator": "Q2984901"
@@ -41732,6 +41984,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-amritsar-1809",
+      "kind": "event",
+      "locator": "Q17035527"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-amritsar-1846",
       "kind": "event",
       "locator": "Q3305294"
@@ -42203,6 +42461,12 @@
       "id": "treaty-of-cusseta",
       "kind": "event",
       "locator": "Q1545704"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-dancing-rabbit-creek",
+      "kind": "event",
+      "locator": "Q178346"
     },
     {
       "dissent": false,
@@ -43556,6 +43820,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-st-louis-1825",
+      "kind": "event",
+      "locator": "Q19107489"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-st-mary-s-1818",
       "kind": "event",
       "locator": "Q17035574"
@@ -43868,6 +44138,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-versailles-1757",
+      "kind": "event",
+      "locator": "Q1639638"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-versailles-1768",
       "kind": "event",
       "locator": "Q961673"
@@ -44132,6 +44408,12 @@
     },
     {
       "dissent": false,
+      "id": "triple-alliance-1668",
+      "kind": "event",
+      "locator": "Q2198292"
+    },
+    {
+      "dissent": false,
       "id": "triple-alliance-1717",
       "kind": "event",
       "locator": "Q283511"
@@ -44267,6 +44549,12 @@
       "id": "tunisian-campaign",
       "kind": "event",
       "locator": "Q852365"
+    },
+    {
+      "dissent": false,
+      "id": "tunisian-constitution-of-1861",
+      "kind": "event",
+      "locator": "Q12232059"
     },
     {
       "dissent": false,
@@ -44537,6 +44825,18 @@
       "id": "valais-witch-trials",
       "kind": "event",
       "locator": "Q4382293"
+    },
+    {
+      "dissent": false,
+      "id": "valby-expedition-of-january-1644",
+      "kind": "event",
+      "locator": "Q130329524"
+    },
+    {
+      "dissent": false,
+      "id": "valdivia-expedition",
+      "kind": "event",
+      "locator": "Q1312945"
     },
     {
       "dissent": false,

@@ -13646,6 +13646,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "ai-viet-lan-xang-war-1479-1484",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "span-from-title",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Đại Việt–Lan Xang War (1479–1484)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -14470,6 +14500,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "ambush-at-mount-kelir",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "java-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Ambush at Mount Kelir"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-31",
       "id": "american-algerian-war",
       "kind": "event",
@@ -14773,6 +14834,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "andree-s-arctic-balloon-expedition",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Andrée's Arctic balloon expedition"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -15032,6 +15121,35 @@
       "revised": null,
       "status": "active",
       "title": "Anglo-Dutch wars"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "anglo-egyptian-slave-trade-convention",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Anglo-Egyptian Slave Trade Convention"
     },
     {
       "authors": [
@@ -24982,6 +25100,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Assietta"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "battle-of-atbara",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mahdist-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Atbara"
     },
     {
       "authors": [
@@ -41770,6 +41919,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "battle-of-ferkeh",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mahdist-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ferkeh"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "battle-of-ferozeshah",
       "kind": "event",
@@ -53703,6 +53883,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "battle-of-kafer-qal-eh",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "campaigns-of-nader-shah",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Kafer Qal'eh"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "battle-of-kafr-el-dawwar",
       "kind": "event",
@@ -54772,6 +54983,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Kazan (1774)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "battle-of-kejiwan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "java-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Kejiwan"
     },
     {
       "authors": [
@@ -57230,6 +57472,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "battle-of-kremmydi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Kremmydi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-kringen",
       "kind": "event",
@@ -57464,6 +57737,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Kunovica"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "battle-of-kup",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "indian-campaign-of-ahmad-shah-durrani",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Kup"
     },
     {
       "authors": [
@@ -72055,6 +72359,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "battle-of-pacocha",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Pacocha"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-11-01",
       "id": "battle-of-paducah",
       "kind": "event",
@@ -84715,6 +85048,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "battle-of-siluk",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "java-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Siluk"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-31",
       "id": "battle-of-sincouwaan",
       "kind": "event",
@@ -92971,6 +93335,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "battle-of-tiruvannamalai",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "anglo-mysore-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Tiruvannamalai"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-11-01",
       "id": "battle-of-tlatelolco",
       "kind": "event",
@@ -93520,6 +93915,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Tory Island"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "battle-of-toski",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mahdist-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Toski"
     },
     {
       "authors": [
@@ -96384,6 +96810,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Vasilika"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "battle-of-vasilika-thessaloniki",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Vasilika (Thessaloniki)"
     },
     {
       "authors": [
@@ -102233,6 +102690,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "battles-of-woyowoyanko",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battles of Woyowoyanko"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -103213,6 +103699,36 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Black September"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "black-week",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Black Week"
     },
     {
       "authors": [
@@ -106004,6 +106520,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "burmese-siamese-war-1563-1564",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "burmese-siamese-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "span-from-title",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Burmese–Siamese War (1563–1564)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-31",
       "id": "burmese-siamese-war-1568-1569",
       "kind": "event",
@@ -106023,6 +106571,100 @@
       "revised": null,
       "status": "active",
       "title": "Burmese–Siamese War (1568–1569)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "burmese-siamese-war-1584-1593",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "burmese-siamese-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Burmese–Siamese War (1584–1593)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "burmese-siamese-war-1593-1600",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "burmese-siamese-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "span-from-title",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Burmese–Siamese War (1593–1600)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "burmese-siamese-war-1609-1622",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "burmese-siamese-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Burmese–Siamese War (1609–1622)"
     },
     {
       "authors": [
@@ -106126,6 +106768,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "burmese-siamese-war-1775-1776",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "burmese-siamese-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Burmese–Siamese War (1775–1776)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-30",
       "id": "burmese-siamese-war-1785-1786",
       "kind": "event",
@@ -106142,6 +106815,99 @@
       "revised": null,
       "status": "active",
       "title": "Burmese–Siamese War (1785–1786)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "burmese-siamese-war-1792-1794",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "burmese-siamese-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Burmese–Siamese War (1792–1794)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "burmese-siamese-war-1797-1798",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "burmese-siamese-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Burmese–Siamese War (1797–1798)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "burmese-siamese-war-1802-1805",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "burmese-siamese-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Burmese–Siamese War (1802–1805)"
     },
     {
       "authors": [
@@ -108102,6 +108868,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "capture-of-den-lille-elefant",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dano-mughal-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Den Lille Elefant"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "capture-of-east-india-company-ship-nautilus",
       "kind": "event",
@@ -109726,6 +110523,37 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Capture of the Rif (1792)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "capture-of-the-st-michael",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dano-mughal-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of the St. Michael"
     },
     {
       "authors": [
@@ -112585,6 +113413,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "colla-inca-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Colla–Inca War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -114871,6 +115728,35 @@
       "revised": null,
       "status": "active",
       "title": "Convention of Balta Liman"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "convention-of-calcutta",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Convention of Calcutta"
     },
     {
       "authors": [
@@ -118587,6 +119473,35 @@
       "revised": null,
       "status": "active",
       "title": "Deccan famine of 1630–1632"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "deccan-riots",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Deccan Riots"
     },
     {
       "authors": [
@@ -125349,6 +126264,37 @@
       "revised": null,
       "status": "active",
       "title": "First Battle of Blida"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "first-battle-of-boudouaou",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-conquest-of-algeria",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Battle of Boudouaou"
     },
     {
       "authors": [
@@ -132252,6 +133198,34 @@
       "revised": "2026-10-01",
       "status": "active",
       "title": "India annexes Goa, Daman and Diu"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "golden-age-of-alpinism",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Golden age of alpinism"
     },
     {
       "authors": [
@@ -151369,6 +152343,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "mohammad-khan-baluch-s-rebellion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "campaigns-of-nader-shah",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mohammad Khan Baluch's Rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -152897,6 +153901,36 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Munich agreement"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "munich-coinage-treaty",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Munich Coinage Treaty"
     },
     {
       "authors": [
@@ -155836,6 +156870,37 @@
       "revised": null,
       "status": "active",
       "title": "November Uprising"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "nuku-hiva-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-1812",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Nuku Hiva Campaign"
     },
     {
       "authors": [
@@ -176017,6 +177082,36 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata"
+      ],
+      "created": "2026-11-02",
+      "id": "second-carnatic-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "carnatic-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Carnatic War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata",
         "wikipedia-en"
       ],
@@ -178309,6 +179404,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "shammar-obaidi-war-1814-1817",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Shammar–Obaidi war (1814–1817)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "shangani-patrol",
       "kind": "event",
@@ -178627,6 +179751,37 @@
       "revised": null,
       "status": "active",
       "title": "Siamese–Cambodian War (1591–1594)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "siamese-conquest-of-lanna-1774-1775",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "burmese-siamese-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siamese conquest of Lanna (1774–1775)"
     },
     {
       "authors": [
@@ -179392,6 +180547,37 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Amiens (1597)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "siege-of-anapa-1828",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-turkish-war-1828-1829",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Anapa (1828)"
     },
     {
       "authors": [
@@ -180717,6 +181903,37 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Bellegarde (1793)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "siege-of-bender-1738",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-turkish-war-1735-1739",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Bender (1738)"
     },
     {
       "authors": [
@@ -190607,6 +191824,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "siege-of-mehadia",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "austro-turkish-war-1716-1718",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Mehadia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "siege-of-mekelle",
       "kind": "event",
@@ -200009,6 +201257,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "skirmish-at-tegalreja",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "java-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Skirmish at Tegalreja"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "skirmish-at-top-malo-house",
       "kind": "event",
@@ -208807,6 +210086,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "treaty-of-amritsar-1809",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Amritsar (1809)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "treaty-of-amritsar-1846",
       "kind": "event",
@@ -211073,6 +212381,35 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Cusseta"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "treaty-of-dancing-rabbit-creek",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Dancing Rabbit Creek"
     },
     {
       "authors": [
@@ -217602,6 +218939,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "treaty-of-st-louis-1825",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of St. Louis (1825)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "treaty-of-st-mary-s-1818",
       "kind": "event",
@@ -219100,6 +220466,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "treaty-of-versailles-1757",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Versailles (1757)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "treaty-of-versailles-1768",
       "kind": "event",
@@ -220371,6 +221767,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "id": "triple-alliance-1668",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Triple Alliance (1668)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "triple-alliance-1717",
       "kind": "event",
@@ -221115,6 +222540,35 @@
       "revised": null,
       "status": "active",
       "title": "Tunisian campaign"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "law",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "tunisian-constitution-of-1861",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Tunisian Constitution of 1861"
     },
     {
       "authors": [
@@ -222503,6 +223957,64 @@
       "revised": null,
       "status": "active",
       "title": "Valais witch trials"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-11-02",
+      "id": "valby-expedition-of-january-1644",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dano-mughal-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Valby Expedition of January 1644"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "id": "valdivia-expedition",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Valdivia Expedition"
     },
     {
       "authors": [
@@ -229337,6 +230849,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "ai-viet-lan-xang-war-1479-1484",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "akizuki-rebellion",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -229469,6 +230987,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "ambush-at-mount-kelir",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "american-algerian-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -229512,6 +231036,12 @@
     },
     {
       "id": "andino-shopping-mall-attack",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "andree-s-arctic-balloon-expedition",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -229566,6 +231096,12 @@
     },
     {
       "id": "anglo-dutch-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "anglo-egyptian-slave-trade-convention",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -231210,6 +232746,12 @@
     },
     {
       "id": "battle-of-assietta",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-atbara",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -234197,6 +235739,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-ferkeh",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-ferozeshah",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -236309,6 +237857,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-kafer-qal-eh",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-kafr-el-dawwar",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -236496,6 +238050,12 @@
     },
     {
       "id": "battle-of-kazan-1774",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-kejiwan",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -236933,6 +238493,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-kremmydi",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-kringen",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -236976,6 +238542,12 @@
     },
     {
       "id": "battle-of-kunovica",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-kup",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -239495,6 +241067,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-pacocha",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-paducah",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -241643,6 +243221,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-siluk",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-sincouwaan",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -242999,6 +244583,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-tiruvannamalai",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-tlatelolco",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -243096,6 +244686,12 @@
     },
     {
       "id": "battle-of-tory-island",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-toski",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -243582,6 +245178,12 @@
     },
     {
       "id": "battle-of-vasilika",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-vasilika-thessaloniki",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -244601,6 +246203,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battles-of-woyowoyanko",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "bava-beccaris-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -244752,6 +246360,12 @@
     },
     {
       "id": "black-hole-of-calcutta",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "black-week",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -245207,7 +246821,31 @@
       "rule": "degree-zero"
     },
     {
+      "id": "burmese-siamese-war-1563-1564",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "burmese-siamese-war-1568-1569",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "burmese-siamese-war-1584-1593",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "burmese-siamese-war-1593-1600",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "burmese-siamese-war-1609-1622",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -245231,7 +246869,31 @@
       "rule": "degree-zero"
     },
     {
+      "id": "burmese-siamese-war-1775-1776",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "burmese-siamese-war-1785-1786",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "burmese-siamese-war-1792-1794",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "burmese-siamese-war-1797-1798",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "burmese-siamese-war-1802-1805",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -245531,6 +247193,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "capture-of-den-lille-elefant",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "capture-of-east-india-company-ship-nautilus",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -245790,6 +247458,12 @@
     },
     {
       "id": "capture-of-the-rif-1792",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "capture-of-the-st-michael",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -246275,6 +247949,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "colla-inca-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "colloquy-of-poissy",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -246612,6 +248292,12 @@
     },
     {
       "id": "convention-of-balta-liman",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "convention-of-calcutta",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -247188,6 +248874,12 @@
     },
     {
       "id": "deccan-famine-of-1630-1632",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "deccan-riots",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -248208,6 +249900,12 @@
     },
     {
       "id": "first-battle-of-blida",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "first-battle-of-boudouaou",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -249288,6 +250986,12 @@
     },
     {
       "id": "gnadenhutten-massacre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "golden-age-of-alpinism",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -252311,6 +254015,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "mohammad-khan-baluch-s-rebellion",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "mohmand-campaign-of-1897-1898",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -252522,6 +254232,12 @@
     },
     {
       "id": "mukden-incident",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "munich-coinage-treaty",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -253020,6 +254736,12 @@
     },
     {
       "id": "november-uprising",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "nuku-hiva-campaign",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -256235,6 +257957,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "second-carnatic-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "second-carnatic-war",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "second-choshu-expedition",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -256607,6 +258341,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "shammar-obaidi-war-1814-1817",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "shangani-patrol",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -256668,6 +258408,12 @@
     },
     {
       "id": "siamese-cambodian-war-1591-1594",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siamese-conquest-of-lanna-1774-1775",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -256794,6 +258540,12 @@
     },
     {
       "id": "siege-of-amiens-1597",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-anapa-1828",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -257046,6 +258798,12 @@
     },
     {
       "id": "siege-of-bellegarde-1793",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-bender-1738",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -258851,6 +260609,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-mehadia",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-mekelle",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -260489,6 +262253,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "skirmish-at-tegalreja",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "skirmish-at-top-malo-house",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -261731,6 +263501,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-amritsar-1809",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-amritsar-1846",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -262176,6 +263952,12 @@
     },
     {
       "id": "treaty-of-cusseta",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-dancing-rabbit-creek",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -263363,6 +265145,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-st-louis-1825",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-st-mary-s-1818",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -263639,6 +265427,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-versailles-1757",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-versailles-1768",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -263867,6 +265661,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "triple-alliance-1668",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "triple-alliance-1717",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -263982,6 +265782,12 @@
     },
     {
       "id": "tumult-of-thorn-torun",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "tunisian-constitution-of-1861",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -264198,6 +266004,24 @@
     },
     {
       "id": "valais-witch-trials",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "valby-expedition-of-january-1644",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "valby-expedition-of-january-1644",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "valdivia-expedition",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

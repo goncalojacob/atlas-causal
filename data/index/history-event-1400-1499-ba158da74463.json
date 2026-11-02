@@ -56,6 +56,15 @@
         }
       ]
     },
+    "ai-viet-lan-xang-war-1479-1484": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "albanian-ottoman-wars-1432-1479": {
       "from": "git",
       "versions": [
@@ -1358,6 +1367,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "colla-inca-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
