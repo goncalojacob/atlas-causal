@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-alv-en",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2887830",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Alvøen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2887830"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Alvøen\", revision 1370431828"
+    }
+  ],
+  "title": "Battle of Alvøen",
+  "summary": "The English Wikipedia article \"Battle of Alvøen\", at revision 1370431828, opens: \"The Battle of Alvøen was fought on 16 May 1808 between the British frigate HMS Tartar and five Norwegian gunboats off Bergen as part of the Gunboat War. Beginning in 1807, the Royal Navy had implemented a blockade of the Norwegian coast, leading to major sociopolitical turmoil in Norway since it was dependent on imports of foodstuffs from Denmark. Having lost most of their fleet in the Battle of Copenhagen in 1807, the Danish were unable to afford the time or money to rebuild their blue-water navy of ships of the line and frigates and so had been forced to construct gunboats for coastal defence duties.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2887830, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 naval battle of the Gunboat War between Denmark-Norway and the United Kingdom\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-05-16"
+  },
+  "place": "bergen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "gunboat-war"
+}

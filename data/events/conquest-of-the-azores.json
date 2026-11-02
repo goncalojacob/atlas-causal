@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "conquest-of-the-azores",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5162454",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Conquest of the Azores",
+    "pt": "Batalha da ilha Terceira"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5162454"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conquest of the Azores\", revision 1370612800"
+    }
+  ],
+  "title": "Conquest of the Azores",
+  "summary": "The English Wikipedia article \"Conquest of the Azores\", at revision 1370612800, opens: \"The Conquest of the Azores, but principally involving the conquest of the island of Terceira, occurred on 2 August 1583, in the Portuguese archipelago of the Azores, between forces loyal to the claimant D. António, Prior of Crato, supported by the French and English troops, and the Spanish and Portuguese forces loyal to King Philip II of Spain, I of Portugal commanded by the Admiral Don Álvaro de Bazán, Marquis of Santa Cruz, during the War of the Portuguese Succession. The victory of the Marquis of Santa Cruz resulted in the rapid Spanish conquest of the Azores, facilitating the integration of the Kingdom of Portugal and its colonial possessions into the Spanish Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5162454, imported by tools/import/wikidata.mjs. The item's own description reads \"1583 Naval battle between Spain And Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1583,
+    "end": 1583,
+    "date": "1583-07-26",
+    "endDate": "1583-08-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (from Q45670, the country the item names): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-portuguese-succession"
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "blockade-of-porto-bello",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4927235",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Blockade of Porto Bello"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4927235"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Blockade of Porto Bello\", revision 1370604638"
+    }
+  ],
+  "title": "Blockade of Porto Bello",
+  "summary": "The English Wikipedia article \"Blockade of Porto Bello\", at revision 1370604638, opens: \"The Blockade of Porto Bello was a failed British naval action against the Spanish port of Porto Bello in present-day Panama between 1726 and 1727 as part of the Anglo-Spanish War. The British were attempting to blockade the port to stop the Spanish treasure fleet leaving for Spain with its valuable cargo. However tropical disease took its toll of the seamen to the extent that the British had to leave to re-crew, during which time the Spanish were able to re-commence shipping operations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4927235, imported by tools/import/wikidata.mjs. The item's own description reads \"1726 engagement in Anglo-Spanish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1726,
+    "end": 1728
+  },
+  "place": "portobelo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

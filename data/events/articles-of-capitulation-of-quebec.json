@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "articles-of-capitulation-of-quebec",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2865741",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Articles of Capitulation of Quebec",
+    "pt": "Artigos de Capitulação de Quebec"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2865741"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Articles of Capitulation of Quebec\", revision 1374742517"
+    }
+  ],
+  "title": "Articles of Capitulation of Quebec",
+  "summary": "The English Wikipedia article \"Articles of Capitulation of Quebec\", at revision 1374742517, opens: \"The Articles of Capitulation of Quebec were agreed upon between Jean-Baptiste Nicolas Roch de Ramezay, King's Lieutenant, Admiral Sir Charles Saunders, and General George Townshend on behalf of the French and British crowns during the Seven Years' War. They were signed on 18 September 1759, shortly after British victory in the Battle of the Plains of Abraham.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2865741, imported by tools/import/wikidata.mjs. The item's own description reads \"negotiated agreements on behalf of the French and British crowns\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1759,
+    "end": 1759,
+    "date": "1759-09-18"
+  },
+  "place": "quebec-city",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

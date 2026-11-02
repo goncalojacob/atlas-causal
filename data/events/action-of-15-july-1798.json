@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "action-of-15-july-1798",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4677263",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Action of 15 July 1798"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4677263"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 15 July 1798\", revision 1378411641"
+    }
+  ],
+  "title": "Action of 15 July 1798",
+  "summary": "The English Wikipedia article \"Action of 15 July 1798\", at revision 1378411641, opens: \"The action of 15 July 1798 was a minor naval battle of the French Revolutionary Wars, fought off the Spanish Mediterranean coast by the Royal Navy ship of the line HMS Lion under Captain Manley Dixon and a squadron of four Spanish Navy frigates under Commodore Don Felix O'Neil. Lion was one of several ships sent into the Western Mediterranean by Vice-Admiral Earl St Vincent, commander of the British Mediterranean Fleet based at the Tagus in Portugal during the late spring of 1798. The Spanish squadron was a raiding force that had sailed from Cartagena in Murcia seven days earlier, and was intercepted while returning to its base after an unsuccessful cruise. Although together the Spanish vessels outweighed the British ship, individually they were weaker and Commodore O'Neil failed to ensure that his manoeuvres were co-ordinated. As a result, one of the frigates, Santa Dorotea, fell out of the line of battle and was attacked by Lion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4677263, imported by tools/import/wikidata.mjs. The item's own description reads \"1798 naval battle of the French Revolutionary Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1798,
+    "date": "1798-07-15"
+  },
+  "place": "cartagena-spain",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mediterranean-campaign-of-1798"
+}

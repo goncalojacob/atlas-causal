@@ -97407,6 +97407,624 @@
       },
       "refusals": [],
       "note": "Q23039097: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-11-01-europe-003",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q30593149: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-01-europe-005",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7157542: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-01-asia-005",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "batman-s-treaty",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-008",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q22908408: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-01-asia-002",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7836971: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-01-americas-002",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q17097259: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-01-asia-003",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q110010539: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-01-europe-012",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-werbach",
+        "edges": [],
+        "place": "werbach"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-014",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-frohnhofen",
+        "edges": [],
+        "place": "laufach"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-016",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ro-brunn",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-018",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q119166572: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-01-europe-020",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q688802: its classes disagree: Q178561 → event, Q4895508 → place"
+    },
+    {
+      "id": "2026-11-01-americas-003",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4784964: none of its classes (Q1227249) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-11-01-americas-005",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "panic-of-1873",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-asia-006",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q28104354: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-01-americas-006",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "articles-of-capitulation-of-quebec",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-americas-008",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "blockade-of-porto-bello",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-024",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "assault-on-nijmegen",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-025",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "action-of-15-july-1798",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-027",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-alv-en",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-029",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-asseiceira",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-031",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "conquest-of-the-azores",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-032",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-borgo",
+        "edges": [],
+        "place": "borgo-haute-corse"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-034",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "habsburg-ottoman-war-of-1565-1568",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-036",
+      "writer": "A",
+      "fired": "2026-11-02T22:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4069868: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-01-europe-004",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3365311: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-01-europe-006",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7837120: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-01-europe-007",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "pact-of-genoa",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-americas-001",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "second-treaty-of-buffalo-creek",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-009",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q317718: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-01-europe-010",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q64875937: none of its classes (Q133780) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-11-01-europe-011",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q209625: none of its classes (Q1162172, Q577) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-11-01-europe-013",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gerchsheim",
+        "edges": [],
+        "place": "gerchsheim"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-015",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-helmstadt",
+        "edges": [],
+        "place": "helmstadt"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-017",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-izmail-1807",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-019",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-veterani-cave",
+        "edges": [],
+        "place": "dubova"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-africa-001",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q28136798: none of its classes (Q113782315) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-11-01-americas-004",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q43079734: none of its classes (Q1227249) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-11-01-europe-021",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "bocskai-uprising",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-022",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "1900-carlist-sublevation",
+        "edges": [],
+        "place": "badalona"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-americas-007",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "comanche-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-023",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-atella",
+        "edges": [],
+        "place": "atella-basilicata"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-americas-009",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "raid-on-santiago-de-cuba-1662",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-026",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zealand-point",
+        "edges": [],
+        "place": "sj-llands-odde"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-028",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-tagus-1831",
+        "edges": [],
+        "place": "tagus"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-030",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sumatovac",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-americas-011",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-platte-bridge",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-033",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-maribor-1532",
+        "edges": [],
+        "place": "maribor"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-035",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-porto",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-037",
+      "writer": "B",
+      "fired": "2026-11-02T22:30Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-belaya",
+        "edges": [],
+        "place": "bely-tver-oblast"
+      },
+      "refusals": []
     }
   ]
 }

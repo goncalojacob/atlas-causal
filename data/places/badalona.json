@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "badalona",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q15468",
+  "sitelinks": {
+    "count": 81,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Badalona",
+    "pt": "Badalona"
+  },
+  "sources": [],
+  "names": [
+    "Badalona"
+  ],
+  "where": {
+    "lon": 2.2333333333333,
+    "lat": 41.433333333333,
+    "precision": "city",
+    "label": "Badalona"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
