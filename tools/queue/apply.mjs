@@ -823,10 +823,15 @@ export async function checkFile(file, { dataDir = DEFAULT_DATA, schemaDir = path
 // --- the command line ------------------------------------------------------
 
 export const USAGE = 'usage: node tools/queue/apply.mjs --queue <file> --writer A|B'
-  + ' [--max 5] [--data <dir>] [--log <file>] [--held <file>] [--fetcher stub:<dir>] [--cache <dir>] [--json]\n'
+  + ' [--max 5] [--data <dir>] [--log <file>] [--held <file>] [--fetcher stub:<dir>] [--cache <dir>] [--budget 400] [--json]\n'
   + '       node tools/queue/apply.mjs --check <file> [--data <dir>]';
 
-export async function main(argv) {
+// `--budget` is the number of requests the fetcher may make before it throws a
+// BudgetError, which is exit 3 and discards the fire. The default is the
+// import's own CALL_BUDGET. A run that verifies many edges, each with its own
+// revision to fetch, asks for more. `makeFetcher` is there so a test can see
+// what the flag asked for without a network.
+export async function main(argv, { makeFetcher = createFetcher } = {}) {
   let queueFile = null;
   let checkTarget = null;
   let writer = null;
@@ -836,6 +841,7 @@ export async function main(argv) {
   let fetcherArg = null;
   let cacheDir = null;
   let max = DEFAULT_MAX;
+  let budget = null;
   let asJson = false;
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
@@ -848,6 +854,7 @@ export async function main(argv) {
     else if (arg === '--fetcher') fetcherArg = argv[++i];
     else if (arg === '--cache') cacheDir = path.resolve(argv[++i]);
     else if (arg === '--max') max = Number(argv[++i]);
+    else if (arg === '--budget') budget = Number(argv[++i]);
     else if (arg === '--json') asJson = true;
     else {
       console.error(`unknown argument ${arg}\n${USAGE}`);
@@ -868,6 +875,10 @@ export async function main(argv) {
     console.error('--max takes a positive integer');
     return EXIT.usage;
   }
+  if (budget !== null && (!Number.isInteger(budget) || budget < 1)) {
+    console.error('--budget takes a positive integer');
+    return EXIT.usage;
+  }
   let fetcher = null;
   if (fetcherArg) {
     if (!fetcherArg.startsWith('stub:')) {
@@ -883,7 +894,7 @@ export async function main(argv) {
       dataDir, queueFile, logFile, writer, max, heldFile,
       // A stub answers off disk, so this fire has no network of its own and
       // the recache is not pretended to have run.
-      fetcher: fetcher ?? createFetcher(),
+      fetcher: fetcher ?? makeFetcher(budget === null ? {} : { budget }),
       offline: Boolean(fetcher),
       ...(cacheDir ? { cacheDir } : {}),
     });

@@ -65,6 +65,7 @@ node tools/validate.mjs            # schemas, cross-record rules, region derivat
 node tools/cache-evidence.mjs --fill   # A15(2): every wikipedia-en citation on disk at the revision it cites; the last step of every batch
 node tools/queue/state.mjs         # what a planner reads before it decides: the counts, the lanes, the queue, the thin umbrellas, the last plan notes
 node tools/queue/apply.mjs --queue <file> --writer A|B   # the writer: applies the planner's queue and decides nothing. --check <file> validates a queue; --fetcher stub:<dir> is the tests'
+node tools/links/parents.mjs --out <queue.json>   # offers parents to events that have none, from Wikidata P361 and P527, through the writer's own span and loop rules; needs the network. Prints how many pairs fell at each filter; the output is a queue of `existing` items
 node tools/validate.mjs --index    # also: data/index/ and the prerendered pages are byte-identical to a fresh build (main only)
 node tools/build-index.mjs         # regenerate data/index/ and the prerendered pages after touching data/
 node tools/build-palette.mjs       # regenerate data/geo/palette.json after touching the territories; before build-index, which names it
