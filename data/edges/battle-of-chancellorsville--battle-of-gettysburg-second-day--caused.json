@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-chancellorsville--battle-of-gettysburg-second-day--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chancellorsville\", revision 1380654431"
+    }
+  ],
+  "from": "battle-of-chancellorsville",
+  "to": "battle-of-gettysburg-second-day",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Chancellorsville\" (revision 1380654431) says: \"One of the consequences of Chancellorsville at Gettysburg was the conduct of Daniel Sickles, who undoubtedly recalled the terrible consequences of withdrawing from Hazel Grove when he decided to ignore the commands of his general and moved his lines on the second day of battle to ensure that a minor piece of high ground, the Peach Orchard, was not available to the enemy's artillery.\" The edge reads that sentence as: Battle of Chancellorsville caused Battle of Gettysburg, second day, and nothing more.",
+  "dispute": null
+}

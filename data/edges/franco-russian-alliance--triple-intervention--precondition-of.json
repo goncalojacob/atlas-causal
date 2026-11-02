@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "franco-russian-alliance--triple-intervention--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Triple Intervention\", revision 1381263786"
+    }
+  ],
+  "from": "franco-russian-alliance",
+  "to": "triple-intervention",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Triple Intervention\" (revision 1381263786) says: \"France was obligated to join Russia due to their 1893 military alliance.\" The edge reads that sentence as: Franco-Russian Alliance was a precondition of Triple Intervention, and nothing more.",
+  "dispute": null
+}

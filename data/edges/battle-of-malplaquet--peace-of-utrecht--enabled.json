@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-malplaquet--peace-of-utrecht--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Malplaquet\", revision 1381293865"
+    }
+  ],
+  "from": "battle-of-malplaquet",
+  "to": "peace-of-utrecht",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Malplaquet\" (revision 1381293865) says: \"By saving his army, Villars arguably enabled Louis to negotiate better terms in 1713 than those available in 1709, but he failed to prevent the loss of Mons, and the Allied advance resumed in 1710.\" The edge reads that sentence as: Battle of Malplaquet made Peace of Utrecht possible, and nothing more.",
+  "dispute": null
+}

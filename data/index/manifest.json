@@ -31,79 +31,79 @@
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-edafe37f708f.json",
+      "file": "index/attributes-1600-1699-89dec6607abb.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-b63a23f17c12.json",
+      "file": "index/attributes-1700-1799-ed40dd5e3c64.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1809-a22a22cc3cdc.json",
+      "file": "index/attributes-1800-1809-925331d7b48e.json",
       "from": 1800,
       "key": "1800-1809",
       "to": 1809
     },
     {
-      "file": "index/attributes-1810-1819-1a6166d7fffe.json",
+      "file": "index/attributes-1810-1819-f0be49a8967c.json",
       "from": 1810,
       "key": "1810-1819",
       "to": 1819
     },
     {
-      "file": "index/attributes-1820-1829-b7bfc8ad1174.json",
+      "file": "index/attributes-1820-1829-07b82e6b42f7.json",
       "from": 1820,
       "key": "1820-1829",
       "to": 1829
     },
     {
-      "file": "index/attributes-1830-1839-5853d5b30ea4.json",
+      "file": "index/attributes-1830-1839-8ea54fdee852.json",
       "from": 1830,
       "key": "1830-1839",
       "to": 1839
     },
     {
-      "file": "index/attributes-1840-1849-86bb7cffb57d.json",
+      "file": "index/attributes-1840-1849-b2010ccc5761.json",
       "from": 1840,
       "key": "1840-1849",
       "to": 1849
     },
     {
-      "file": "index/attributes-1850-1859-033f05ee634a.json",
+      "file": "index/attributes-1850-1859-cf2075568e0a.json",
       "from": 1850,
       "key": "1850-1859",
       "to": 1859
     },
     {
-      "file": "index/attributes-1860-1869-3390a98b7155.json",
+      "file": "index/attributes-1860-1869-ea841c8e5aa1.json",
       "from": 1860,
       "key": "1860-1869",
       "to": 1869
     },
     {
-      "file": "index/attributes-1870-1879-1486483f8446.json",
+      "file": "index/attributes-1870-1879-076a23b20e72.json",
       "from": 1870,
       "key": "1870-1879",
       "to": 1879
     },
     {
-      "file": "index/attributes-1880-1889-e4be2b4be395.json",
+      "file": "index/attributes-1880-1889-6d363c356024.json",
       "from": 1880,
       "key": "1880-1889",
       "to": 1889
     },
     {
-      "file": "index/attributes-1890-1899-e5ef47bffce9.json",
+      "file": "index/attributes-1890-1899-3df11f5f9482.json",
       "from": 1890,
       "key": "1890-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-3df3289422fd.json",
+      "file": "index/attributes-1900-1999-12424f038569.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -1078,7 +1078,7 @@
   ],
   "counts": {
     "actors": 2699,
-    "edges": 1312,
+    "edges": 1348,
     "events": 7615,
     "narratives": 2,
     "offices": 11,
@@ -1101,22 +1101,22 @@
       "to": 1599
     },
     {
-      "file": "index/explanations-1600-1699-f5d6e441c4df.json",
+      "file": "index/explanations-1600-1699-fbf771435668.json",
       "from": 1600,
       "to": 1699
     },
     {
-      "file": "index/explanations-1700-1799-8f010787e7ab.json",
+      "file": "index/explanations-1700-1799-dcc8945b6f99.json",
       "from": 1700,
       "to": 1799
     },
     {
-      "file": "index/explanations-1800-1899-61cee815931f.json",
+      "file": "index/explanations-1800-1899-5cf52a935a44.json",
       "from": 1800,
       "to": 1899
     },
     {
-      "file": "index/explanations-1900-1999-09332ae0e78c.json",
+      "file": "index/explanations-1900-1999-0613381137f0.json",
       "from": 1900,
       "to": 1999
     },
@@ -1127,13 +1127,13 @@
     }
   ],
   "files": {
-    "citers": "index/citers-139dd7388901",
-    "core": "index/core-052989fe8eab.json",
+    "citers": "index/citers-740defd439bb",
+    "core": "index/core-1ad72e53a359.json",
     "grounds": "index/grounds-00ddde06328b.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-426a1d6a17ea.json",
-    "search": "index/search-2f0078397d83.json",
-    "sources": "index/sources-7dc6705084e7.json",
+    "review": "index/review-db48571b49d0.json",
+    "search": "index/search-b2a9da082ce0.json",
+    "sources": "index/sources-b39ecd336a6f.json",
     "territories": "index/territories-4002c63e6583.json"
   },
   "historyShards": [
@@ -1201,28 +1201,28 @@
       "to": 1599
     },
     {
-      "file": "index/history-edge-1600-1699-432b5c242628.json",
+      "file": "index/history-edge-1600-1699-651bb2ec1471.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "edge",
       "to": 1699
     },
     {
-      "file": "index/history-edge-1700-1799-83447e7572dd.json",
+      "file": "index/history-edge-1700-1799-0120441e280a.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "edge",
       "to": 1799
     },
     {
-      "file": "index/history-edge-1800-1899-24c222b05969.json",
+      "file": "index/history-edge-1800-1899-4e34e8f6321a.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "edge",
       "to": 1899
     },
     {
-      "file": "index/history-edge-1900-1999-fe6589912d90.json",
+      "file": "index/history-edge-1900-1999-6d52f8197ce0.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "edge",
@@ -1571,8 +1571,8 @@
     }
   },
   "links": {
-    "active": 1300,
-    "explained": 1300
+    "active": 1336,
+    "explained": 1336
   },
   "officesByEvent": {
     "1908-portuguese-legislative-election": [

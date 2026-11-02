@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "sicilian-revolution-of-1848--statuto-albertino--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sicilian revolution of 1848\", revision 1370738410"
+    }
+  ],
+  "from": "sicilian-revolution-of-1848",
+  "to": "statuto-albertino",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Sicilian revolution of 1848\" (revision 1370738410) says: \"It quickly spread across the island and throughout Italy, where it prompted Charles Albert, King of Sardinia, to follow the example of Ferdinand II and issue a written constitution, the Albertine Statute (the Albertine Statute later became the constitution of the unified Kingdom of Italy and remained in force, with changes, until 1948).\" The edge reads that sentence as: Statuto Albertino was a response to Sicilian revolution of 1848, and nothing more.",
+  "dispute": null
+}

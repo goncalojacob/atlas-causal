@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-winterthur--first-battle-of-zurich--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Winterthur\", revision 1379901103"
+    }
+  ],
+  "from": "battle-of-winterthur",
+  "to": "first-battle-of-zurich",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Winterthur\" (revision 1379901103) says: \"Although the forces involved were small, the ability of the Austrians to sustain their 11-hour assault on the French line resulted in the consolidation of three Austrian forces on the plateau north of Zürich, leading to the French defeat a few days later.\" The edge reads that sentence as: Battle of Winterthur caused First Battle of Zurich, and nothing more.",
+  "dispute": null
+}

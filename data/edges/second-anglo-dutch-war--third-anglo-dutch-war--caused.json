@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "second-anglo-dutch-war--third-anglo-dutch-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Anglo-Dutch War\", revision 1370733738"
+    }
+  ],
+  "from": "second-anglo-dutch-war",
+  "to": "third-anglo-dutch-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Second Anglo-Dutch War\" (revision 1370733738) says: \"In the short-term however, Charles's desire to avenge this setback led to the Third Anglo-Dutch War in 1672.\" The edge reads that sentence as: Second Anglo-Dutch War caused Third Anglo-Dutch War, and nothing more.",
+  "dispute": null
+}

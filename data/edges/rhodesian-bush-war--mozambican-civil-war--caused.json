@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "rhodesian-bush-war--mozambican-civil-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rhodesian Bush War\", revision 1373754851"
+    }
+  ],
+  "from": "rhodesian-bush-war",
+  "to": "mozambican-civil-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Rhodesian Bush War\" (revision 1373754851) says: \"Beyond Zimbabwe's borders, as a result of Rhodesian aid and support for RENAMO, the Rhodesian Bush War also helped influence the outbreak of the Mozambican Civil War, which lasted from 1977 until 1992 and claimed a million lives.\" The edge reads that sentence as: Rhodesian Bush War caused Mozambican Civil War, and nothing more.",
+  "dispute": null
+}

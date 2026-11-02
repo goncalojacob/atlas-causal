@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "greek-war-of-independence--egyptian-ottoman-war-1831-1833--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Egyptian–Ottoman War (1831–1833)\", revision 1379023146"
+    }
+  ],
+  "from": "greek-war-of-independence",
+  "to": "egyptian-ottoman-war-1831-1833",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Egyptian–Ottoman War (1831–1833)\" (revision 1379023146) says: \"The First Egyptian–Ottoman War or First Syrian War (1831–1833) was a military conflict between the Ottoman Empire and Egypt brought about by Muhammad Ali Pasha's demand to the Sublime Porte for control of Greater Syria, as reward for aiding the Sultan during the Greek War of Independence.\" The edge reads that sentence as: Greek War of Independence was a precondition of Egyptian–Ottoman War (1831–1833), and nothing more.",
+  "dispute": null
+}

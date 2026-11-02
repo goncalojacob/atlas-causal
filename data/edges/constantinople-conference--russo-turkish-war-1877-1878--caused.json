@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "constantinople-conference--russo-turkish-war-1877-1878--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Constantinople Conference\", revision 1360549379"
+    }
+  ],
+  "from": "constantinople-conference",
+  "to": "russo-turkish-war-1877-1878",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Constantinople Conference\" (revision 1360549379) says: \"The Ottoman Empire refused the proposed reforms, leading to the Russo-Turkish War a few months later.\" The edge reads that sentence as: Constantinople Conference caused Russo-Turkish War (1877–1878), and nothing more.",
+  "dispute": null
+}

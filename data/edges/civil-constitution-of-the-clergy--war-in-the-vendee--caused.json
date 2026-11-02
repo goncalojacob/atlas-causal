@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "civil-constitution-of-the-clergy--war-in-the-vendee--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Civil Constitution of the Clergy\", revision 1370659862"
+    }
+  ],
+  "from": "civil-constitution-of-the-clergy",
+  "to": "war-in-the-vendee",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Civil Constitution of the Clergy\" (revision 1370659862) says: \"In 1793, the War in the Vendée was influenced by the Constitution passing due to the devout population toward the Church among other social factors.\" The edge reads that sentence as: Civil Constitution of the Clergy caused War in the Vendée, and nothing more.",
+  "dispute": null
+}

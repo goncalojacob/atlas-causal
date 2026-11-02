@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "raid-on-the-medway--third-anglo-dutch-war--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third Anglo-Dutch War\", revision 1370750296"
+    }
+  ],
+  "from": "raid-on-the-medway",
+  "to": "third-anglo-dutch-war",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Third Anglo-Dutch War\" (revision 1370750296) says: \"By doing so, Louis hoped to gain control of the Spanish Netherlands, while Charles sought to restore the damage to his prestige caused by the 1667 Raid on the Medway.\" The edge reads that sentence as: Third Anglo-Dutch War was a response to Raid on the Medway, and nothing more.",
+  "dispute": null
+}
