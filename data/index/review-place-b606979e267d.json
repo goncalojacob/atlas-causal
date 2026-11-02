@@ -2553,6 +2553,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "anholt-island",
+      "kind": "place",
+      "names": [
+        "Anholt",
+        "Anholt (island)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "anjangaon",
@@ -3416,7 +3444,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 3,
+      "degree": 4,
       "id": "arizona",
       "kind": "place",
       "names": [
@@ -6515,6 +6543,33 @@
       "kind": "place",
       "names": [
         "Battle of Duck Lake National Historic Site"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "battle-of-eccles-hill-national-historic-site",
+      "kind": "place",
+      "names": [
+        "Battle of Eccles Hill National Historic Site"
       ],
       "origin": {
         "tool": "wikidata"
@@ -10430,7 +10485,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "brussels",
       "kind": "place",
       "names": [
@@ -10712,7 +10767,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 17,
+      "degree": 18,
       "id": "bulgaria-q219",
       "kind": "place",
       "names": [
@@ -14820,6 +14875,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "chief-joseph-battleground-of-the-bear-s-paw",
+      "kind": "place",
+      "names": [
+        "Chief Joseph Battleground of the Bear's Paw"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-30",
       "degree": 1,
       "id": "chikhori",
@@ -15720,6 +15802,33 @@
       "names": [
         "Colachel",
         "Kolachal"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "colchester",
+      "kind": "place",
+      "names": [
+        "Colchester"
       ],
       "origin": {
         "tool": "wikidata"
@@ -18399,7 +18508,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "derbent",
       "kind": "place",
       "names": [
@@ -26372,6 +26481,33 @@
       "kind": "place",
       "names": [
         "Görlitz"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "gorzno",
+      "kind": "place",
+      "names": [
+        "Górzno"
       ],
       "origin": {
         "tool": "wikidata"
@@ -39312,6 +39448,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "lesmont",
+      "kind": "place",
+      "names": [
+        "Lesmont"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 2,
       "id": "leuven",
@@ -42361,7 +42524,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 2,
+      "degree": 3,
       "id": "malaga",
       "kind": "place",
       "names": [
@@ -42774,7 +42937,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "mani-peninsula",
       "kind": "place",
       "names": [
@@ -46327,7 +46490,7 @@
         }
       ],
       "created": "2026-11-01",
-      "degree": 1,
+      "degree": 3,
       "id": "montana-q1212",
       "kind": "place",
       "names": [
@@ -49681,7 +49844,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 3,
+      "degree": 4,
       "id": "new-orleans",
       "kind": "place",
       "names": [
@@ -51421,6 +51584,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "ocho-rios",
+      "kind": "place",
+      "names": [
+        "Ocho Rios"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-31",
       "degree": 1,
       "id": "odesa",
@@ -52645,7 +52835,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 34,
+      "degree": 35,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -54230,6 +54420,33 @@
       "names": [
         "Pereiaslav",
         "Pereiaslave"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "pererita",
+      "kind": "place",
+      "names": [
+        "Pererîta"
       ],
       "origin": {
         "tool": "wikidata"
@@ -56323,7 +56540,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 66,
+      "degree": 68,
       "id": "portugal-q45",
       "kind": "place",
       "names": [
@@ -59580,6 +59797,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "rio-nuevo-jamaica",
+      "kind": "place",
+      "names": [
+        "Rio Nuevo",
+        "Rio Nuevo (Jamaica)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "riobamba",
@@ -59970,7 +60215,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 11,
+      "degree": 12,
       "id": "romania-q218",
       "kind": "place",
       "names": [
@@ -62027,11 +62272,39 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "san-antonio",
       "kind": "place",
       "names": [
         "San Antonio"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "san-bernardino-strait",
+      "kind": "place",
+      "names": [
+        "San Bernardino Strait",
+        "Estreito de San Bernardino"
       ],
       "origin": {
         "tool": "wikidata"
@@ -62311,7 +62584,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 2,
       "id": "san-juan-river-nicaragua",
       "kind": "place",
       "names": [
@@ -62955,7 +63228,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 2,
+      "degree": 3,
       "id": "santo-domingo",
       "kind": "place",
       "names": [
@@ -64984,6 +65257,34 @@
       "names": [
         "Sikkim",
         "Siquim"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "silda-kinn",
+      "kind": "place",
+      "names": [
+        "Silda",
+        "Silda, Kinn"
       ],
       "origin": {
         "tool": "wikidata"
@@ -71536,6 +71837,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "tordesillas-q286004",
+      "kind": "place",
+      "names": [
+        "Tordesillas",
+        "Tordesilhas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "tornavento",
@@ -72165,7 +72494,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 2,
+      "degree": 3,
       "id": "trincomalee",
       "kind": "place",
       "names": [
@@ -75479,7 +75808,7 @@
         }
       ],
       "created": "2026-10-14",
-      "degree": 1,
+      "degree": 2,
       "id": "volgograd",
       "kind": "place",
       "names": [
@@ -76432,6 +76761,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "werl",
+      "kind": "place",
+      "names": [
+        "Werl"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "wermsdorf",
@@ -76880,7 +77236,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 1,
+      "degree": 2,
       "id": "wiener-neustadt",
       "kind": "place",
       "names": [

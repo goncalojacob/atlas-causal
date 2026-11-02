@@ -668,6 +668,15 @@
         }
       ]
     },
+    "battle-of-leitzersdorf": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-lipany": {
       "from": "git",
       "versions": [
@@ -2735,6 +2744,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "siege-of-wiener-neustadt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
