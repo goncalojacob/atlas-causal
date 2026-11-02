@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-camas-creek",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870619",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Camas Creek"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870619"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Camas Creek\", revision 1382315959"
+    }
+  ],
+  "title": "Battle of Camas Creek",
+  "summary": "The English Wikipedia article \"Battle of Camas Creek\", at revision 1382315959, opens: \"The Battle of Camas Creek, August 20, 1877, was a raid by the Nez Perce people on a United States Army encampment in Idaho Territory and a subsequent battle during the Nez Perce War. The Nez Perce defeated three companies of U.S. cavalry and continued their fighting retreat to escape the army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870619, imported by tools/import/wikidata.mjs. The item's own description reads \"1877 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1877,
+    "end": 1877,
+    "date": "1877-08-20"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "nez-perce-war"
+}

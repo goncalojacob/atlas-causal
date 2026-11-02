@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-wiener-neustadt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510517",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Wiener Neustadt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510517"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Wiener Neustadt\", revision 1370746450"
+    }
+  ],
+  "title": "Siege of Wiener Neustadt",
+  "summary": "The English Wikipedia article \"Siege of Wiener Neustadt\", at revision 1370746450, opens: \"The siege of Wiener Neustad, part of the Austrian–Hungarian War, was an assault from January 1486 to August 1487 on the Austrian town of Wiener Neustadt. Launched by Matthias Corvinus, King of Hungary, the 18-month siege ended with the town's surrender and allowed Hungary to take control of the surrounding regions of Styria and Lower Austria. It was the last of a series of sieges, and followed Hungary's victory in the 1485 Siege of Vienna. The broader war ended less than a year later with an armistice in 1488.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510517, imported by tools/import/wikidata.mjs. The item's own description reads \"1487 18 month siege in the Austro-Hungarian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1487,
+    "end": 1487,
+    "date": "1487-01-13",
+    "endDate": "1487-08-17"
+  },
+  "place": "wiener-neustadt",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "austrian-hungarian-war-1477-1488"
+}

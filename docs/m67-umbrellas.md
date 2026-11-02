@@ -9702,3 +9702,55 @@ Writer B imported it from the planner's queue as item `2026-11-01-americas-001`,
 ## Writer B, 2026-11-02: `battle-of-sumatovac`, filed under `serbian-ottoman-wars-1876-1878` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-11-01-europe-030`, rank `child-of:serbian-ottoman-wars-1876-1878`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-maya`, filed under `battle-of-the-pyrenees` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-038`, rank `child-of:battle-of-the-pyrenees`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-bucov`, filed under `moldavian-magnate-wars` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-040`, rank `child-of:moldavian-magnate-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-cottonwood`, filed under `nez-perce-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-013`, rank `child-of:nez-perce-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `invasion-of-trentino-1866`, filed under `third-italian-war-of-independence` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-059`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-lwow-1695`, filed under `polish-ottoman-war-1683-1699` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-062`, rank `child-of:polish-ottoman-war-1683-1699`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-maidstone`, filed under `second-english-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-064`, rank `child-of:second-english-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-pfeddersheim`, filed under `german-peasants-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-europe-039`, rank `child-of:german-peasants-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-the-clearwater`, filed under `nez-perce-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-014`, rank `child-of:nez-perce-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-leitzersdorf`, filed under `austrian-hungarian-war-1477-1488` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-europe-047`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-big-dry-wash`, filed under `apache-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-026`, rank `child-of:apache-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-camas-creek`, filed under `nez-perce-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-028`, rank `child-of:nez-perce-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-selburg`, filed under `polish-swedish-war-1626-1629` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-europe-063`, rank `child-of:polish-swedish-war-1626-1629`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-winwick`, filed under `second-english-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-europe-065`, rank `child-of:second-english-civil-war`. Its span and its subject put it inside the umbrella.

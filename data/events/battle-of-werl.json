@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-werl",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q867236",
+  "wikipedia": {
+    "en": "Battle of Werl"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q867236"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Werl\", revision 1370276793"
+    }
+  ],
+  "title": "Battle of Werl",
+  "summary": "The English Wikipedia article \"Battle of Werl\", at revision 1370276793, opens: \"The Battle of Werl occurred between 3–8 March 1586, during a month-long campaign in the Duchy of Westphalia by mercenaries fighting for the Protestant (Calvinist) Archbishop-Prince Elector of Cologne, Gebhard Truchsess von Waldburg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q867236, imported by tools/import/wikidata.mjs. The item's own description reads \"1585 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1585,
+    "end": 1585,
+    "date": "1585-03-03",
+    "endDate": "1585-03-08"
+  },
+  "place": "werl",
+  "region": null,
+  "regionNote": null,
+  "parent": "cologne-war",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "yavapai-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q8050377",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Yavapai Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8050377"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Yavapai Wars\", revision 1375552189"
+    }
+  ],
+  "title": "Yavapai Wars",
+  "summary": "The English Wikipedia article \"Yavapai Wars\", at revision 1375552189, opens: \"The Yavapai Wars, or the Tonto Wars, were a series of armed conflicts between the Yavapai and Tonto tribes against the United States in the Arizona Territory. The period began no later than 1861, with the arrival of American settlers on Yavapai and Tonto land. At the time, the Yavapai were considered a band of the Western Apache people due to their close relationship with tribes such as the Tonto and Pinal. The war culminated with the Yavapai's removal from the Camp Verde Reservation to San Carlos on February 27, 1875, an event now known as Exodus Day.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q8050377, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Apache Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1875
+  },
+  "place": "arizona",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "apache-wars"
+}
