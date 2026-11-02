@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "french-invasion-of-egypt-and-syria--nahda--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French invasion of Egypt and Syria\", revision 1371824920"
+    }
+  ],
+  "from": "french-invasion-of-egypt-and-syria",
+  "to": "nahda",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"French invasion of Egypt and Syria\" (revision 1371824920) says: \"The invasion introduced Western inventions, such as the printing press, and ideas, such as liberalism and incipient nationalism, to the Middle East, eventually leading to the establishment of Egyptian independence and modernization under Muhammad Ali Pasha in the first half of the 19th century and eventually the Nahda, or Arab Renaissance.\" The edge reads that sentence as: French invasion of Egypt and Syria caused Nahda, and nothing more.",
+  "dispute": null
+}

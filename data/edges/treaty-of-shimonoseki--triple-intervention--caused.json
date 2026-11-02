@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "treaty-of-shimonoseki--triple-intervention--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Shimonoseki\", revision 1371343803"
+    }
+  ],
+  "from": "treaty-of-shimonoseki",
+  "to": "triple-intervention",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Treaty of Shimonoseki\" (revision 1371343803) says: \"The conditions imposed by Japan on China led to the Triple Intervention of Russia, France, and Germany, western powers all active in China, with established enclaves and ports, just six days after its signing.\" The edge reads that sentence as: Treaty of Shimonoseki caused Triple Intervention, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "great-famine-ireland--revolutions-of-1848--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Famine (Ireland)\", revision 1379041433"
+    }
+  ],
+  "from": "great-famine-ireland",
+  "to": "revolutions-of-1848",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Great Famine (Ireland)\" (revision 1379041433) says: \"The impact of blight on food supply caused 100,000 deaths outside Ireland, and influenced much of the unrest that culminated in European Revolutions of 1848.\" The edge reads that sentence as: Great Famine (Ireland) caused Revolutions of 1848, and nothing more.",
+  "dispute": null
+}

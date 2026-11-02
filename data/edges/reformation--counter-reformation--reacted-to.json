@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "reformation--counter-reformation--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Reformation\", revision 1379628507"
+    }
+  ],
+  "from": "reformation",
+  "to": "counter-reformation",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Reformation\" (revision 1379628507) says: \"The Counter-Reformation comprised the Catholic response to the Reformation, with the Council of Trent clarifying ambiguous or disputed Catholic positions and abuses that had been subject to critique by reformers.\" The edge reads that sentence as: Counter-Reformation was a response to Reformation, and nothing more.",
+  "dispute": null
+}

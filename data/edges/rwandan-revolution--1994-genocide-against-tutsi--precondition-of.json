@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "rwandan-revolution--1994-genocide-against-tutsi--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rwandan genocide\", revision 1376069741"
+    }
+  ],
+  "from": "rwandan-revolution",
+  "to": "1994-genocide-against-tutsi",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Rwandan genocide\" (revision 1376069741) says: \"The genocide was rooted in long-standing ethnic tensions, most recently from the Rwandan Hutu Revolution from 1959 to 1962, which resulted in Rwandan Tutsi fleeing to Uganda due to the ethnic violence that had occurred.\" The edge reads that sentence as: Rwandan Revolution was a precondition of 1994 Genocide against Tutsi, and nothing more.",
+  "dispute": null
+}

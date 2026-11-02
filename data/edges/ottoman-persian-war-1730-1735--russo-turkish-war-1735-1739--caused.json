@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ottoman-persian-war-1730-1735--russo-turkish-war-1735-1739--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Turkish War (1735–1739)\", revision 1381566835"
+    }
+  ],
+  "from": "ottoman-persian-war-1730-1735",
+  "to": "russo-turkish-war-1735-1739",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Russo-Turkish War (1735–1739)\" (revision 1381566835) says: \"The Russo-Turkish War of 1735–1739 between Russia and the Ottoman Empire was caused by the Ottoman Empire's war with Persia and the continuing raids by the Crimean Tatars.\" The edge reads that sentence as: Ottoman–Persian War (1730–1735) caused Russo-Turkish War (1735–1739), and nothing more.",
+  "dispute": null
+}

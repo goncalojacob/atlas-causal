@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "treaty-of-portsmouth--japan-korea-treaty-of-1910--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Portsmouth\", revision 1369694651"
+    }
+  ],
+  "from": "treaty-of-portsmouth",
+  "to": "japan-korea-treaty-of-1910",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Treaty of Portsmouth\" (revision 1369694651) says: \"Born from the Taft–Katsura agreement, Article 2 of the treaty acknowledged that Japan possessed in Korea paramount political, military and economical interests, and later resulted in the annexation of Korea to Japan in 1910.\" The edge reads that sentence as: Treaty of Portsmouth caused Japan–Korea Treaty of 1910, and nothing more.",
+  "dispute": null
+}
