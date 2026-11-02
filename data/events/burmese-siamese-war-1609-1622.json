@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "burmese-siamese-war-1609-1622",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q106514633",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Burmese–Siamese War (1609–1622)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q106514633"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Burmese–Siamese War (1609–1622)\", revision 1379560445"
+    }
+  ],
+  "title": "Burmese–Siamese War (1609–1622)",
+  "summary": "The English Wikipedia article \"Burmese–Siamese War (1609–1622)\", at revision 1379560445, opens: \"The Burmese–Siamese War (1609–1622) was a war fought between the Toungoo Kingdom of Burma and the Ayutthaya Kingdom of Siam. The war was over territory disputes in the Tenasserim. The Mon supported by the Siamese raid lower Burma. Burma and Siam battle in the Tenasserim coastal region and Lan Na. The Burmese were victorious in this war, regaining Mawlamyine (1618), Dawei (1622), and Lanna (1622), captured by King Naresuan in the previous war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q106514633, imported by tools/import/wikidata.mjs. The item's own description reads \"1609-1622 war between the Toungoo Dynasty of Burma and the Ayutthaya Kingdom of Siam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1609,
+    "end": 1622
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "burmese-siamese-wars"
+}

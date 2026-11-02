@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mohammad-khan-baluch-s-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q18209338",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Mohammad Khan Baluch's Rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18209338"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mohammad Khan Baluch's Rebellion\", revision 1379831010"
+    }
+  ],
+  "title": "Mohammad Khan Baluch's Rebellion",
+  "summary": "The English Wikipedia article \"Mohammad Khan Baluch's Rebellion\", at revision 1379831010, opens: \"In the aftermath of Nader's crippling defeat and expulsion from Ottoman Baghdad, the commander who was put in charge of the 12,000 soldiers to maintain the siege of the city, Mohammad Khan Baloch, fled from Mesopotamia and returned to southern Persia, where, taking advantage of Nader's shattered prestige due to his ignominious defeat at the hands of Topal Pasha at the Battle of Samarra, Mohammad Khan raised the banner of rebellion in the south of the country. He also allied with Sheikh Ahmad Madani's revolt.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18209338, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1733,
+    "end": 1734
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "campaigns-of-nader-shah"
+}

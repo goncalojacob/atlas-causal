@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "colla-inca-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q123419661",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Colla–Inca War",
+    "pt": "Guerra Colla-Inca"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q123419661"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colla–Inca War\", revision 1381352235"
+    }
+  ],
+  "title": "Colla–Inca War",
+  "summary": "The English Wikipedia article \"Colla–Inca War\", at revision 1381352235, opens: \"The Colla–Inca War or Incan conquest of the Colla Kingdom was a military conflict fought between the Inca Empire and the Colla Kingdom between 1445 and 1450. It is one of the first wars of conquest led by Pachacuti.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q123419661, imported by tools/import/wikidata.mjs. The item's own description reads \"15th century military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1445,
+    "end": 1450
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

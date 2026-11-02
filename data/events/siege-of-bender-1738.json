@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-bender-1738",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q119166490",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Bender (1738)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q119166490"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Bender (1738)\", revision 1370739489"
+    }
+  ],
+  "title": "Siege of Bender (1738)",
+  "summary": "The English Wikipedia article \"Siege of Bender (1738)\", at revision 1370739489, opens: \"The Siege of Bender (1738) was fought during the Austro-Russian–Turkish War (1735–39).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q119166490, imported by tools/import/wikidata.mjs. The item's own description reads \"1738 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1738,
+    "end": 1738
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1735-1739"
+}

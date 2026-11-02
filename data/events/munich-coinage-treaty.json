@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "munich-coinage-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q13417900",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Munich Coinage Treaty"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q13417900"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Munich Coinage Treaty\", revision 1255237163"
+    }
+  ],
+  "title": "Munich Coinage Treaty",
+  "summary": "The English Wikipedia article \"Munich Coinage Treaty\", at revision 1255237163, opens: \"The Munich Coinage Treaty of 1837 was a treaty between six southern German states who agreed to form the South German Coinage Union and to unify their currencies together with some of the central German states. The Munich Coinage Treaty was updated by the South German Coinage Convention of 1845. The agreement is less commonly known as the Munich Coin Treaty.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q13417900, imported by tools/import/wikidata.mjs. The item's own description reads \"1837 treaty between southern German states\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1837,
+    "end": null
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}
