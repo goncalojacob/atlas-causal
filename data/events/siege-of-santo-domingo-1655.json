@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-santo-domingo-1655",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510378",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Santo Domingo (1655)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510378"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Santo Domingo (1655)\", revision 1374475922"
+    }
+  ],
+  "title": "Siege of Santo Domingo (1655)",
+  "summary": "The English Wikipedia article \"Siege of Santo Domingo (1655)\", at revision 1374475922, opens: \"The siege of Santo Domingo was fought between April 23, 1655 and April 30, 1655, at the Spanish Colony of Santo Domingo. A force of 2,400 Spanish troops led by Governor Don Bernardino Meneses y Bracamonte, Count of Peñalba successfully resisted a force of 13,120 soldiers led by General Robert Venables and 34 ships under Admiral Sir William Penn\nof the English Commonwealth.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510378, imported by tools/import/wikidata.mjs. The item's own description reads \"1655 siege of the Anglo-Spanish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1655,
+    "end": 1655,
+    "date": "1655-04-23",
+    "endDate": "1655-04-30"
+  },
+  "place": "santo-domingo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-spanish-war-1654-1660"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-oryahovo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q12273305",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Oryahovo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12273305"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Oryahovo\", revision 1377301560"
+    }
+  ],
+  "title": "Battle of Oryahovo",
+  "summary": "The English Wikipedia article \"Battle of Oryahovo\", at revision 1377301560, opens: \"The Battle of Oryahovo took place between 19 and 21 November 1877 and was one of the principal engagements of the Romanian War of Independence. The conflict involved allied Romanian and Russian forces acting to subdue the Ottoman garrison stationed at the fortress town of Rahova.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12273305, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the Russo-Turkish War of 1877-1878\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1877,
+    "end": 1877,
+    "date": "1877-11-19",
+    "endDate": "1877-11-21"
+  },
+  "place": "bulgaria-q219",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "romanian-war-of-independence"
+}

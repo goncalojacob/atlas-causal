@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-slobozia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q21644425",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Slobozia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q21644425"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Slobozia\", revision 1370589561"
+    }
+  ],
+  "title": "Battle of Slobozia",
+  "summary": "The English Wikipedia article \"Battle of Slobozia\", at revision 1370589561, opens: \"The Battle of Slobozia was fought between Russia and the Ottoman Empire as a part of the Napoleonic Wars during the Rusçuk–Slobozia operation within the Russo-Turkish War of 1806–1812. The primary battle occurred on the left bank of the Danube River near the small village of Slobozia in Wallachia. Four miles (6.4 km) to the southeast on the right bank of the Danube was the Ottoman fortress at Rusçuk. The Russian investment of the Ottoman forces at Slobozia, including the final battle, lasted approximately two and a half months, from 28 August to 14 November 1811, ending when Russian Commander Mikhail Kutuzov ultimately accepted the surrender of the Ottoman forces commanded by Ahmed Pasha.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q21644425, imported by tools/import/wikidata.mjs. The item's own description reads \"1811 conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1811,
+    "end": 1812,
+    "date": "1811-06-20",
+    "endDate": "1812-05-27"
+  },
+  "place": "romania-q218",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "russo-turkish-war-1806-1812"
+}

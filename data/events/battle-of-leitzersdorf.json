@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-leitzersdorf",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2236985",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Leitzersdorf"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2236985"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Leitzersdorf\", revision 1370447422"
+    }
+  ],
+  "title": "Battle of Leitzersdorf",
+  "summary": "The English Wikipedia article \"Battle of Leitzersdorf\", at revision 1370447422, opens: \"The Battle of Leitzersdorf was a battle between the Holy Roman Empire and the Kingdom of Hungary in 1484. Fuelled by the earlier conflicts of Matthias Corvinus and Frederick III, Holy Roman Emperor it marked the end of anti-Ottoman preparations and initiations of a holy war. It was the only open field battle of the Austro-Hungarian War, and the defeat meant – in long terms – the loss of the Archduchy of Austria for the Holy Roman Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2236985, imported by tools/import/wikidata.mjs. The item's own description reads \"1484 battle between the Holy Roman Empire and the Kingdom of Hungary during the Austrian-Hungarian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1484,
+    "end": 1484
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "austrian-hungarian-war-1477-1488"
+}

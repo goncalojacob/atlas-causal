@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-brussels-1656",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q17103265",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Treaty of Brussels (1656)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17103265"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Brussels (1656)\", revision 1380379875"
+    }
+  ],
+  "title": "Treaty of Brussels (1656)",
+  "summary": "The English Wikipedia article \"Treaty of Brussels (1656)\", at revision 1380379875, opens: \"The Treaty of Brussels was an agreement between representatives of Philip IV of Spain and Charles II, the leader of the exiled royalists of England, Ireland, and Scotland.\nIt was signed in Brussels, in the Spanish Netherlands, on 2 April 1656. James Butler 1st Marquess of Ormonde and Henry Wilmot, 1st Earl of Rochester signed on behalf of Charles. Alonso de Cárdenas, a former Spanish ambassador to London, signed on behalf of Philip.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17103265, imported by tools/import/wikidata.mjs. The item's own description reads \"1656 treaty between Spain and English Royalists\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1656,
+    "end": 1656,
+    "date": "1656-04-02"
+  },
+  "place": "brussels",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": [],
+  "parent": "anglo-spanish-war-1654-1660"
+}

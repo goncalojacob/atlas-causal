@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-colchester",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4924393",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Colchester"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4924393"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Colchester\", revision 1370740308"
+    }
+  ],
+  "title": "Siege of Colchester",
+  "summary": "The English Wikipedia article \"Siege of Colchester\", at revision 1370740308, opens: \"The siege of Colchester occurred in the summer of 1648 when the Second English Civil War reignited in several areas of Britain. Colchester found itself in the thick of the unrest when a Royalist army on its way through East Anglia to raise support for the King, was attacked by Lord-General Thomas Fairfax at the head of a Parliamentary force. The Parliamentarians' initial attack forced the Royalist army to retreat behind the town's walls, but they were unable to bring about victory, so they settled down to a siege. Despite the horrors of the siege, the Royalists resisted for eleven weeks and only surrendered following the defeat of the Royalist army in Northern England at the Battle of Preston (1648).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4924393, imported by tools/import/wikidata.mjs. The item's own description reads \"1648 siege that occurred during the Second English Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1648,
+    "end": 1648,
+    "date": "1648-06-12",
+    "endDate": "1648-08-28"
+  },
+  "place": "colchester",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-english-civil-war"
+}

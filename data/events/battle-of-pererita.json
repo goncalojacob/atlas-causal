@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-pererita",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4087393",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Pererîta"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4087393"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pererîta\", revision 1370271768"
+    }
+  ],
+  "title": "Battle of Pererîta",
+  "summary": "The English Wikipedia article \"Battle of Pererîta\", at revision 1370271768, opens: \"The Battle of Pererîta was a clash between the troops of the Polish–Lithuanian Commonwealth and Turkish–Tatar detachments on 13 September 1691 in the village of Pererîta, located in present-day Moldova. The battle was part of the Polish campaign against Moldavia, taking place within the broader context of the Polish–Ottoman War (1683–1699) and the Great Turkish War, and resulted in a Polish–Lithuanian victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4087393, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1691,
+    "end": 1691,
+    "date": "1691-09-13"
+  },
+  "place": "pererita",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "polish-ottoman-war-1683-1699"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-salga",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872245",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Salga",
+    "pt": "Batalha da Salga"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872245"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Salga\", revision 1370273450"
+    }
+  ],
+  "title": "Battle of Salga",
+  "summary": "The English Wikipedia article \"Battle of Salga\", at revision 1370273450, opens: \"The Battle of Salga occurred on 25 July 1581, around the Bay of Salga and along the coastal part of the parish of Vila de São Sebastião, on the island of Terceira in the Portuguese Azores, between Spanish and Portuguese forces. The latter, in the name of António, Prior of Crato, successfully defended the island against the personal union with the Spanish crown during the War of the Portuguese Succession.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872245, imported by tools/import/wikidata.mjs. The item's own description reads \"1581 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1581,
+    "end": 1581,
+    "date": "1581-07-25"
+  },
+  "place": "portugal-q45",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-portuguese-succession"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "hayfield-fight",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5686711",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Hayfield Fight"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5686711"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hayfield Fight\", revision 1379259656"
+    }
+  ],
+  "title": "Hayfield Fight",
+  "summary": "The English Wikipedia article \"Hayfield Fight\", at revision 1379259656, opens: \"The Hayfield Fight on August 1, 1867 was an engagement of Red Cloud's War near Fort C. F. Smith, Montana, between 21 soldiers of the U.S. Army, a hay-cutting crew of nine civilians, and several hundred Native Americans, mostly Cheyenne and Arapaho, with some Lakota Sioux. Armed with newly issued breechloading Springfield Model 1866 rifles, the heavily outnumbered soldiers held off the native warriors and inflicted casualties.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5686711, imported by tools/import/wikidata.mjs. The item's own description reads \"part of Red Cloud's War in Montana (August 1, 1867)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1867,
+    "end": 1867,
+    "date": "1867-08-01"
+  },
+  "place": "montana-q1212",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "red-cloud-s-war"
+}

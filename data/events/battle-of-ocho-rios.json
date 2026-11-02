@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-ocho-rios",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871930",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Ocho Rios",
+    "pt": "Batalha de Ocho Rios"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871930"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ocho Rios\", revision 1370452052"
+    }
+  ],
+  "title": "Battle of Ocho Rios",
+  "summary": "The English Wikipedia article \"Battle of Ocho Rios\", at revision 1370452052, opens: \"The Battle of Ocho Rios also known as Battle of Las Chorreras was a military action which took place on the island of Jamaica on 30 October 1657 where a Spanish force under Cristóbal Arnaldo Isasi hoping to take back the island was defeated by the English occupying force under the acting governor Colonel Edward D'Oyley.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871930, imported by tools/import/wikidata.mjs. The item's own description reads \"1657 battle of the Anglo-Spanish War of 1654–60\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1657,
+    "end": 1657,
+    "date": "1657-10-30"
+  },
+  "place": "ocho-rios",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-spanish-war-1654-1660"
+}

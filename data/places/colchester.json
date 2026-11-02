@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "colchester",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q184163",
+  "sitelinks": {
+    "count": 72,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Colchester",
+    "pt": "Colchester"
+  },
+  "sources": [],
+  "names": [
+    "Colchester"
+  ],
+  "where": {
+    "lon": 0.903611,
+    "lat": 51.888611,
+    "precision": "city",
+    "label": "Colchester"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

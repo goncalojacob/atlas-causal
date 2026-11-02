@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-maya",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871700",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Maya"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871700"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Maya\", revision 1370449341"
+    }
+  ],
+  "title": "Battle of Maya",
+  "summary": "The English Wikipedia article \"Battle of Maya\", at revision 1370449341, opens: \"The Battle of Maya saw an Imperial French corps led by Jean-Baptiste Drouet, Comte d'Erlon attack the British 2nd Division under William Stewart at the Maya Pass—a choke point in the western Pyrenees. Despite the fact that Commander-in-Chief Wellington was taken by surprise, the outnumbered British soldiers fought stoutly. Since the British position was a choke point, the French were unable to effectively exploit their numerical superiority. By the afternoon, the French gained the upper hand and were pressing forward, but the late arrival of a brigade from the British 7th Division stabilized the situation. The British forces slipped away under the cover of night and the French did not pursue effectively. The Peninsular War battle at Maya was part of the Battle of the Pyrenees, which ended in a significant Anglo-Allied victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871700, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-07-25"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "battle-of-the-pyrenees"
+}

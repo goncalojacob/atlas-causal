@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-ponte-ferreira",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889650",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Ponte Ferreira",
+    "pt": "Batalha de Ponte Ferreira"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889650"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ponte Ferreira\", revision 1370586393"
+    }
+  ],
+  "title": "Battle of Ponte Ferreira",
+  "summary": "The English Wikipedia article \"Battle of Ponte Ferreira\", at revision 1370586393, opens: \"The Battle of Ponte Ferreira, fought on 22–23 July 1832, was the first major battle of the Portuguese Civil War between the forces of Dom Pedro, ex-Emperor of Brazil and Regent for his daughter Maria da Glória, and the army of his brother Dom Miguel, who had usurped the throne of Portugal. Though technically a victory for Pedro's forces, it gave him no lasting advantage because the enemy were not pursued and were able to return in full strength, as a result of which he was besieged in Porto for an entire year.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889650, imported by tools/import/wikidata.mjs. The item's own description reads \"1832 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1832,
+    "end": 1832,
+    "date": "1832-07-23"
+  },
+  "place": "portugal-q45",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "liberal-wars"
+}

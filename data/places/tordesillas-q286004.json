@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "tordesillas-q286004",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q286004",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Tordesillas",
+    "pt": "Tordesilhas"
+  },
+  "sources": [],
+  "names": [
+    "Tordesillas",
+    "Tordesilhas"
+  ],
+  "where": {
+    "lon": -5.0004844,
+    "lat": 41.5008635,
+    "precision": "city",
+    "label": "Tordesillas"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
