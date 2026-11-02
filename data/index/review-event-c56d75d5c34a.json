@@ -13715,6 +13715,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 2,
       "id": "akkerman-convention",
       "kind": "event",
       "origin": {
@@ -14593,7 +14594,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-13",
-      "degree": 1,
+      "degree": 2,
       "id": "american-civil-war",
       "kind": "event",
       "origin": {
@@ -14655,6 +14656,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-13",
+      "degree": 1,
       "id": "american-revolution",
       "kind": "event",
       "origin": {
@@ -15053,6 +15055,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-30",
+      "degree": 1,
       "id": "anglo-dutch-treaty-of-1814",
       "kind": "event",
       "origin": {
@@ -15082,6 +15085,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 1,
       "id": "anglo-dutch-treaty-of-1824",
       "kind": "event",
       "origin": {
@@ -15169,6 +15173,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-14",
+      "degree": 1,
       "id": "anglo-egyptian-war",
       "kind": "event",
       "origin": {
@@ -15749,6 +15754,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-30",
+      "degree": 1,
       "id": "anglo-persian-war",
       "kind": "event",
       "origin": {
@@ -18506,6 +18512,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 1,
       "id": "atlanta-campaign",
       "kind": "event",
       "origin": {
@@ -19162,6 +19169,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "degree": 1,
       "id": "auspicious-incident",
       "kind": "event",
       "origin": {
@@ -30644,6 +30652,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 1,
       "id": "battle-of-buxar",
       "kind": "event",
       "origin": {
@@ -34440,6 +34449,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-17",
+      "degree": 1,
       "id": "battle-of-chancellorsville",
       "kind": "event",
       "origin": {
@@ -45694,6 +45704,7 @@
         "wikipedia-en"
       ],
       "created": "2026-11-01",
+      "degree": 1,
       "id": "battle-of-gettysburg-second-day",
       "kind": "event",
       "origin": {
@@ -63079,6 +63090,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-27",
+      "degree": 1,
       "id": "battle-of-malplaquet",
       "kind": "event",
       "origin": {
@@ -99937,6 +99949,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "degree": 1,
       "id": "battle-of-winterthur",
       "kind": "event",
       "origin": {
@@ -103118,6 +103131,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-17",
+      "degree": 1,
       "id": "belgian-revolution",
       "kind": "event",
       "origin": {
@@ -105476,7 +105490,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 4,
       "id": "boxer-rebellion",
       "kind": "event",
       "origin": {
@@ -105597,6 +105611,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-30",
+      "degree": 1,
       "id": "brabant-revolution",
       "kind": "event",
       "origin": {
@@ -111553,6 +111568,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 1,
       "id": "century-of-humiliation",
       "kind": "event",
       "origin": {
@@ -112053,6 +112069,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 1,
       "id": "chattanooga-campaign",
       "kind": "event",
       "origin": {
@@ -113250,6 +113267,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "civil-constitution-of-the-clergy",
       "kind": "event",
       "origin": {
@@ -113457,6 +113475,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-13",
+      "degree": 1,
       "id": "cold-war",
       "kind": "event",
       "origin": {
@@ -115168,6 +115187,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 1,
       "id": "constantinople-conference",
       "kind": "event",
       "origin": {
@@ -122590,6 +122610,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-16",
+      "degree": 1,
       "id": "egyptian-ottoman-war-1831-1833",
       "kind": "event",
       "origin": {
@@ -124054,7 +124075,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "execution-of-louis-xvi",
       "kind": "event",
       "origin": {
@@ -124734,6 +124755,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "fall-of-maximilien-robespierre",
       "kind": "event",
       "origin": {
@@ -126018,6 +126040,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-16",
+      "degree": 1,
       "id": "first-anglo-dutch-war",
       "kind": "event",
       "origin": {
@@ -127878,6 +127901,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "degree": 1,
       "id": "first-battle-of-zurich",
       "kind": "event",
       "origin": {
@@ -129661,7 +129685,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "flight-to-varennes",
       "kind": "event",
       "origin": {
@@ -130316,6 +130340,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-16",
+      "degree": 1,
       "id": "franco-dutch-war",
       "kind": "event",
       "origin": {
@@ -130468,7 +130493,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "franco-russian-alliance",
       "kind": "event",
       "origin": {
@@ -134122,6 +134147,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "degree": 1,
       "id": "great-fire-of-london",
       "kind": "event",
       "origin": {
@@ -135715,6 +135741,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-13",
+      "degree": 1,
       "id": "greek-war-of-independence",
       "kind": "event",
       "origin": {
@@ -142821,6 +142848,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-27",
+      "degree": 1,
       "id": "john-brown-s-raid-on-harpers-ferry",
       "kind": "event",
       "origin": {
@@ -143324,6 +143352,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-30",
+      "degree": 1,
       "id": "kalmar-war",
       "kind": "event",
       "origin": {
@@ -151881,7 +151910,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-13",
-      "degree": 1,
+      "degree": 2,
       "id": "mexican-american-war",
       "kind": "event",
       "origin": {
@@ -153603,6 +153632,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-14",
+      "degree": 2,
       "id": "mozambican-civil-war",
       "kind": "event",
       "origin": {
@@ -155731,6 +155761,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-14",
+      "degree": 1,
       "id": "new-imperialism",
       "kind": "event",
       "origin": {
@@ -159006,6 +159037,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-17",
+      "degree": 1,
       "id": "oregon-treaty",
       "kind": "event",
       "origin": {
@@ -162277,6 +162309,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-17",
+      "degree": 1,
       "id": "peace-of-utrecht",
       "kind": "event",
       "origin": {
@@ -163826,6 +163859,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-27",
+      "degree": 1,
       "id": "pig-war-1859",
       "kind": "event",
       "origin": {
@@ -168348,6 +168382,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "degree": 1,
       "id": "raid-on-the-medway",
       "kind": "event",
       "origin": {
@@ -169465,6 +169500,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 1,
       "id": "regulator-movement-in-north-carolina",
       "kind": "event",
       "origin": {
@@ -171009,6 +171045,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 1,
       "id": "rhodesian-bush-war",
       "kind": "event",
       "origin": {
@@ -171432,6 +171469,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-30",
+      "degree": 1,
       "id": "romanticism",
       "kind": "event",
       "origin": {
@@ -172359,6 +172397,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-17",
+      "degree": 1,
       "id": "russo-persian-war-1722-1723",
       "kind": "event",
       "origin": {
@@ -172934,6 +172973,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 1,
       "id": "russo-turkish-war-1828-1829",
       "kind": "event",
       "origin": {
@@ -172964,6 +173004,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-14",
+      "degree": 1,
       "id": "russo-turkish-war-1877-1878",
       "kind": "event",
       "origin": {
@@ -174718,6 +174759,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-16",
+      "degree": 1,
       "id": "scanian-war",
       "kind": "event",
       "origin": {
@@ -175093,6 +175135,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-17",
+      "degree": 1,
       "id": "second-anglo-dutch-war",
       "kind": "event",
       "origin": {
@@ -179667,6 +179710,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-27",
+      "degree": 1,
       "id": "shays-s-rebellion",
       "kind": "event",
       "origin": {
@@ -180209,6 +180253,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 1,
       "id": "sicilian-revolution-of-1848",
       "kind": "event",
       "origin": {
@@ -204047,6 +204092,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 1,
       "id": "statuto-albertino",
       "kind": "event",
       "origin": {
@@ -206397,6 +206443,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-17",
+      "degree": 1,
       "id": "texas-annexation",
       "kind": "event",
       "origin": {
@@ -207440,6 +207487,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 1,
       "id": "thermidorian-reaction",
       "kind": "event",
       "origin": {
@@ -207561,6 +207609,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-16",
+      "degree": 2,
       "id": "third-anglo-dutch-war",
       "kind": "event",
       "origin": {
@@ -209053,6 +209102,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "torstenson-war",
       "kind": "event",
       "origin": {
@@ -210144,6 +210194,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-16",
+      "degree": 1,
       "id": "treaty-of-allahabad",
       "kind": "event",
       "origin": {
@@ -210702,6 +210753,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 1,
       "id": "treaty-of-badajoz-1801",
       "kind": "event",
       "origin": {
@@ -211527,6 +211579,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 1,
       "id": "treaty-of-breda-1667",
       "kind": "event",
       "origin": {
@@ -217407,6 +217460,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-31",
+      "degree": 1,
       "id": "treaty-of-paris-1857",
       "kind": "event",
       "origin": {
@@ -218546,6 +218600,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-29",
+      "degree": 1,
       "id": "treaty-of-saint-petersburg-1723",
       "kind": "event",
       "origin": {
@@ -221235,6 +221290,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-31",
+      "degree": 1,
       "id": "treaty-of-westminster-1654",
       "kind": "event",
       "origin": {
@@ -222067,7 +222123,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "triple-intervention",
       "kind": "event",
       "origin": {
@@ -223852,6 +223908,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-17",
+      "degree": 1,
       "id": "urabi-revolt",
       "kind": "event",
       "origin": {
@@ -225451,6 +225508,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-16",
+      "degree": 1,
       "id": "war-in-the-vendee",
       "kind": "event",
       "origin": {
@@ -226368,6 +226426,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-27",
+      "degree": 1,
       "id": "war-of-the-oranges",
       "kind": "event",
       "origin": {
@@ -227532,6 +227591,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-30",
+      "degree": 1,
       "id": "whiskey-rebellion",
       "kind": "event",
       "origin": {
@@ -228796,6 +228856,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-28",
+      "degree": 1,
       "id": "young-germany",
       "kind": "event",
       "origin": {
@@ -231111,12 +231172,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "akkerman-convention",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "akure-benin-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -231261,12 +231316,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "american-revolution",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "amur-annexation",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -231327,18 +231376,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "anglo-dutch-treaty-of-1814",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "anglo-dutch-treaty-of-1824",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "anglo-dutch-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -231346,12 +231383,6 @@
     },
     {
       "id": "anglo-egyptian-slave-trade-convention",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "anglo-egyptian-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -231442,12 +231473,6 @@
     },
     {
       "id": "anglo-persian-capture-of-hormuz",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "anglo-persian-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -231879,12 +231904,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "atlanta-campaign",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "atlantic-revolutions",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -231982,12 +232001,6 @@
     },
     {
       "id": "augsburg-interim",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "auspicious-incident",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -233955,12 +233968,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-buxar",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "battle-of-buzenval-1871",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -234616,12 +234623,6 @@
     },
     {
       "id": "battle-of-champion-hill",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-chancellorsville",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -236638,12 +236639,6 @@
     },
     {
       "id": "battle-of-gettysburg-first-day",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-gettysburg-second-day",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -239692,12 +239687,6 @@
     },
     {
       "id": "battle-of-maloyaroslavets",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-malplaquet",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -245955,12 +245944,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-winterthur",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "battle-of-wireless-ridge",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -246507,12 +246490,6 @@
       "rule": "summary-imported"
     },
     {
-      "id": "belgian-revolution",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "belle-epoque",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -246904,12 +246881,6 @@
     },
     {
       "id": "bozhou-rebellion",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "brabant-revolution",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -247851,12 +247822,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "century-of-humiliation",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "chambre-introuvable",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -247912,12 +247877,6 @@
     },
     {
       "id": "charter-of-1830",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "chattanooga-campaign",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -248127,12 +248086,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "civil-constitution-of-the-clergy",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "civil-war-in-poland-1704-1706",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -248152,12 +248105,6 @@
     },
     {
       "id": "coeur-d-alene-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "cold-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -248416,12 +248363,6 @@
     },
     {
       "id": "conservative-order",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "constantinople-conference",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -249537,12 +249478,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "egyptian-ottoman-war-1831-1833",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "egyptian-ottoman-war-1839-1841",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -249837,12 +249772,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "fall-of-maximilien-robespierre",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "fall-of-osaka-castle",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -250036,12 +249965,6 @@
     },
     {
       "id": "first-anglo-burmese-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "first-anglo-dutch-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -250354,12 +250277,6 @@
     },
     {
       "id": "first-battle-of-zawiya",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "first-battle-of-zurich",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -250714,12 +250631,6 @@
     },
     {
       "id": "fox-wars",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "franco-dutch-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -251295,12 +251206,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "great-fire-of-london",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "great-fire-of-new-york",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -251578,12 +251483,6 @@
     },
     {
       "id": "greek-raid-on-alexandria-1825",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "greek-war-of-independence",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -252573,12 +252472,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "john-brown-s-raid-on-harpers-ferry",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "johnson-county-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -252664,12 +252557,6 @@
     },
     {
       "id": "kalender-celebi-rebellion",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "kalmar-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -254313,12 +254200,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "mozambican-civil-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "mud-march-american-civil-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -254656,12 +254537,6 @@
     },
     {
       "id": "new-granada-civil-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "new-imperialism",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -255028,12 +254903,6 @@
     },
     {
       "id": "ordos-campaign-1592",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "oregon-treaty",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -255615,12 +255484,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "peace-of-utrecht",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "peace-of-vasvar",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -255862,12 +255725,6 @@
     },
     {
       "id": "philadelphia-nativist-riots",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "pig-war-1859",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -256629,12 +256486,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "raid-on-the-medway",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "raid-on-wells-1692",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -256798,12 +256649,6 @@
     },
     {
       "id": "regency-era",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "regulator-movement-in-north-carolina",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -257049,12 +256894,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "rhodesian-bush-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "richmond-theatre-fire",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -257116,12 +256955,6 @@
     },
     {
       "id": "romanian-war-of-independence",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "romanticism",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -257259,12 +257092,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "russo-persian-war-1722-1723",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "russo-persian-war-1804-1813",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -257356,18 +257183,6 @@
     },
     {
       "id": "russo-turkish-war-1806-1812",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "russo-turkish-war-1828-1829",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "russo-turkish-war-1877-1878",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -257631,12 +257446,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "scanian-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "schmalkaldic-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -257674,12 +257483,6 @@
     },
     {
       "id": "second-anglo-burmese-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "second-anglo-dutch-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -258423,12 +258226,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "shays-s-rebellion",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "sheep-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -258520,12 +258317,6 @@
     },
     {
       "id": "siboga-expedition",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "sicilian-revolution-of-1848",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -262629,12 +262420,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "statuto-albertino",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "stecklikrieg",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -263007,12 +262792,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "texas-annexation",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "texas-declaration-of-independence",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -263067,12 +262846,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "thermidorian-reaction",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "thessaly-rebellion-1600",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -263086,12 +262859,6 @@
     },
     {
       "id": "third-anglo-burmese-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "third-anglo-dutch-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -263343,12 +263110,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "torstenson-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "toungoo-ava-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -263535,12 +263296,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "treaty-of-allahabad",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "treaty-of-altranstadt-1706",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -263644,12 +263399,6 @@
     },
     {
       "id": "treaty-of-aynal-kavak",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-badajoz-1801",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -263812,12 +263561,6 @@
     },
     {
       "id": "treaty-of-breda-1650",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-breda-1667",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -264897,12 +264640,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "treaty-of-paris-1857",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "treaty-of-paris-1900",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -265084,12 +264821,6 @@
     },
     {
       "id": "treaty-of-saint-germain-en-laye-1679",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "treaty-of-saint-petersburg-1723",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -265587,12 +265318,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "treaty-of-westminster-1654",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "treaty-of-westminster-1674",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -265995,12 +265720,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "urabi-revolt",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "urdu-bazaar-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -266223,12 +265942,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "war-in-the-vendee",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "war-of-1812",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -266350,12 +266063,6 @@
     },
     {
       "id": "war-of-the-montferrat-succession",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "war-of-the-oranges",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -266529,12 +266236,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "whiskey-rebellion",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "whiskey-ring",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -266698,12 +266399,6 @@
     },
     {
       "id": "yoruba-wars",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "young-germany",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

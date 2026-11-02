@@ -1832,6 +1832,12 @@
     },
     {
       "dissent": false,
+      "id": "akkerman-convention--russo-turkish-war-1828-1829--caused",
+      "kind": "edge",
+      "locator": "\"Akkerman Convention\", revision 1371684860"
+    },
+    {
+      "dissent": false,
       "id": "algerian-war--angola-war-begins-1961--precondition-of",
       "kind": "edge",
       "locator": "\"Algerian War\", revision 1373081356"
@@ -1847,6 +1853,12 @@
       "id": "algerian-war--suez-crisis--precondition-of",
       "kind": "edge",
       "locator": "\"Algerian War\", revision 1374452636, § After the Philippeville massacre"
+    },
+    {
+      "dissent": false,
+      "id": "american-revolution--whiskey-rebellion--inspired",
+      "kind": "edge",
+      "locator": "\"Whiskey Rebellion\", revision 1377157978"
     },
     {
       "dissent": false,
@@ -1889,6 +1901,12 @@
       "id": "amsterdam-treaty--treaty-of-nice--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of Nice\", revision 1345303290"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-dutch-treaty-of-1814--anglo-dutch-treaty-of-1824--caused",
+      "kind": "edge",
+      "locator": "\"Anglo-Dutch Treaty of 1814\", revision 1379171110"
     },
     {
       "dissent": false,
@@ -1943,6 +1961,12 @@
       "id": "anglo-irish-treaty--the-troubles--precondition-of",
       "kind": "edge",
       "locator": "\"The Troubles\", revision 1375596184, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-persian-war--treaty-of-paris-1857--caused",
+      "kind": "edge",
+      "locator": "\"Anglo-Persian War\", revision 1376918836"
     },
     {
       "dissent": false,
@@ -2111,6 +2135,12 @@
       "id": "attack-on-the-moncada-barracks--cuban-revolution--caused",
       "kind": "edge",
       "locator": "\"Moncada Barracks\", revision 1370861034, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "auspicious-incident--akkerman-convention--enabled",
+      "kind": "edge",
+      "locator": "\"Auspicious Incident\", revision 1381089790"
     },
     {
       "dissent": false,
@@ -2396,6 +2426,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-buxar--treaty-of-allahabad--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Buxar\", revision 1381670071"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cajamarca--battle-of-vilcaconga--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Vilcaconga\", revision 1370592503, § Battle"
@@ -2495,6 +2531,12 @@
       "id": "battle-of-chacabuco--battle-of-maipu--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Maipú\", revision 1370268820, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chancellorsville--battle-of-gettysburg-second-day--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Chancellorsville\", revision 1380654431"
     },
     {
       "dissent": false,
@@ -2915,6 +2957,12 @@
       "id": "battle-of-magersfontein--second-battle-of-colenso--reacted-to",
       "kind": "edge",
       "locator": "\"Second Battle of Colenso\", revision 1370736054, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-malplaquet--peace-of-utrecht--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Malplaquet\", revision 1381293865"
     },
     {
       "dissent": false,
@@ -3650,6 +3698,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-winterthur--first-battle-of-zurich--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Winterthur\", revision 1379901103"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-wolgast--edict-of-restitution--precondition-of",
       "kind": "edge",
       "locator": "\"Thirty Years' War\", revision 1376343040, § Danish intervention"
@@ -3779,6 +3833,12 @@
       "id": "boxer-rebellion--xinhai-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"Boxer Rebellion\", revision 1372943833"
+    },
+    {
+      "dissent": false,
+      "id": "brabant-revolution--belgian-revolution--inspired",
+      "kind": "edge",
+      "locator": "\"Brabant Revolution\", revision 1379946324"
     },
     {
       "dissent": false,
@@ -4088,6 +4148,12 @@
     },
     {
       "dissent": false,
+      "id": "century-of-humiliation--boxer-rebellion--caused",
+      "kind": "edge",
+      "locator": "\"Century of humiliation\", revision 1379252391"
+    },
+    {
+      "dissent": false,
       "id": "chadian-intervention-in-northern-mali--battle-of-ifoghas--enabled",
       "kind": "edge",
       "locator": "\"Battle of Ifoghas\", revision 1370443583, § Deployment of Franco-Chadian forces in the Kidal region"
@@ -4136,6 +4202,12 @@
     },
     {
       "dissent": false,
+      "id": "chattanooga-campaign--atlanta-campaign--caused",
+      "kind": "edge",
+      "locator": "\"Chattanooga campaign\", revision 1380714564"
+    },
+    {
+      "dissent": false,
       "id": "chernobyl-disaster--revolutions-of-1989--caused",
       "kind": "edge",
       "locator": "\"Revolutions of 1989\", revision 1375849372"
@@ -4163,6 +4235,18 @@
       "id": "chinese-spring-offensive--battle-of-the-punchbowl--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of the Punchbowl\", revision 1370601885, § Prelude"
+    },
+    {
+      "dissent": false,
+      "id": "civil-constitution-of-the-clergy--war-in-the-vendee--caused",
+      "kind": "edge",
+      "locator": "\"Civil Constitution of the Clergy\", revision 1370659862"
+    },
+    {
+      "dissent": false,
+      "id": "cold-war--mozambican-civil-war--caused",
+      "kind": "edge",
+      "locator": "\"Mozambican Civil War\", revision 1378759830"
     },
     {
       "dissent": false,
@@ -4271,6 +4355,12 @@
       "id": "conquest-of-tunis-1573--conquest-of-tunis-1574--reacted-to",
       "kind": "edge",
       "locator": "\"Conquest of Tunis (1574)\", revision 1370612776"
+    },
+    {
+      "dissent": false,
+      "id": "constantinople-conference--russo-turkish-war-1877-1878--caused",
+      "kind": "edge",
+      "locator": "\"Constantinople Conference\", revision 1360549379"
     },
     {
       "dissent": false,
@@ -4892,6 +4982,12 @@
     },
     {
       "dissent": false,
+      "id": "fall-of-maximilien-robespierre--thermidorian-reaction--caused",
+      "kind": "edge",
+      "locator": "\"Fall of Maximilien Robespierre\", revision 1370782731"
+    },
+    {
+      "dissent": false,
       "id": "fall-of-tenochtitlan--battle-of-colhuacatonco--caused",
       "kind": "edge",
       "locator": "\"Battle of Colhuacatonco\", revision 1370437482"
@@ -4967,6 +5063,12 @@
       "id": "finnish-war--coup-of-1809--caused",
       "kind": "edge",
       "locator": "\"Finnish War\", revision 1370618279"
+    },
+    {
+      "dissent": false,
+      "id": "first-anglo-dutch-war--treaty-of-westminster-1654--caused",
+      "kind": "edge",
+      "locator": "\"First Anglo-Dutch War\", revision 1375831063"
     },
     {
       "dissent": false,
@@ -5204,6 +5306,12 @@
     },
     {
       "dissent": false,
+      "id": "flight-to-varennes--execution-of-louis-xvi--caused",
+      "kind": "edge",
+      "locator": "\"Flight to Varennes\", revision 1366319196"
+    },
+    {
+      "dissent": false,
       "id": "fontainebleau-agreements--first-indochina-war--caused",
       "kind": "edge",
       "locator": "\"Fontainebleau Agreements\", revision 1312816323"
@@ -5219,6 +5327,18 @@
       "id": "fourth-battle-of-gao--battle-of-imenas--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Imenas\", revision 1370265996, § Background and deployment"
+    },
+    {
+      "dissent": false,
+      "id": "franco-dutch-war--scanian-war--caused",
+      "kind": "edge",
+      "locator": "\"Scanian War\", revision 1380129440"
+    },
+    {
+      "dissent": false,
+      "id": "franco-russian-alliance--triple-intervention--precondition-of",
+      "kind": "edge",
+      "locator": "\"Triple Intervention\", revision 1381263786"
     },
     {
       "dissent": false,
@@ -5522,6 +5642,12 @@
     },
     {
       "dissent": false,
+      "id": "great-fire-of-london--treaty-of-breda-1667--reacted-to",
+      "kind": "edge",
+      "locator": "\"Treaty of Breda (1667)\", revision 1367904118"
+    },
+    {
+      "dissent": false,
       "id": "great-leap-forward--cultural-revolution--caused",
       "kind": "edge",
       "locator": "\"Great Leap Forward\", revision 1379962036"
@@ -5549,6 +5675,12 @@
       "id": "greek-civil-war--nato-founding-1949--precondition-of",
       "kind": "edge",
       "locator": "\"Greek Civil War\", revision 1374372236"
+    },
+    {
+      "dissent": false,
+      "id": "greek-war-of-independence--egyptian-ottoman-war-1831-1833--precondition-of",
+      "kind": "edge",
+      "locator": "\"Egyptian–Ottoman War (1831–1833)\", revision 1379023146"
     },
     {
       "dissent": false,
@@ -6023,6 +6155,18 @@
       "id": "japanese-invasion-of-sakhalin--treaty-of-portsmouth--enabled",
       "kind": "edge",
       "locator": "\"Japanese invasion of Sakhalin\", revision 1371432298, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "john-brown-s-raid-on-harpers-ferry--american-civil-war--caused",
+      "kind": "edge",
+      "locator": "\"John Brown's raid on Harpers Ferry\", revision 1380561022"
+    },
+    {
+      "dissent": false,
+      "id": "kalmar-war--torstenson-war--caused",
+      "kind": "edge",
+      "locator": "\"Kalmar War\", revision 1381716856"
     },
     {
       "dissent": false,
@@ -6536,6 +6680,12 @@
     },
     {
       "dissent": false,
+      "id": "new-imperialism--boxer-rebellion--caused",
+      "kind": "edge",
+      "locator": "\"New Imperialism\", revision 1379856005"
+    },
+    {
+      "dissent": false,
       "id": "new-laws--battle-of-inaquito--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Iñaquito\", revision 1370443968"
@@ -6827,6 +6977,12 @@
       "id": "orange-revolution--euromaidan--precondition-of",
       "kind": "edge",
       "locator": "\"Orange Revolution\", revision 1372581321"
+    },
+    {
+      "dissent": false,
+      "id": "oregon-treaty--pig-war-1859--caused",
+      "kind": "edge",
+      "locator": "\"Oregon Treaty\", revision 1375247732"
     },
     {
       "dissent": false,
@@ -7214,6 +7370,12 @@
     },
     {
       "dissent": false,
+      "id": "raid-on-the-medway--third-anglo-dutch-war--reacted-to",
+      "kind": "edge",
+      "locator": "\"Third Anglo-Dutch War\", revision 1370750296"
+    },
+    {
+      "dissent": false,
       "id": "railway-protection-movement--wuchang-uprising--enabled",
       "kind": "edge",
       "locator": "\"Railway Protection Movement\", revision 1361142110, lead"
@@ -7253,6 +7415,12 @@
       "id": "reformation--thirty-years-war--caused",
       "kind": "edge",
       "locator": "\"Thirty Years' War\", revision 1376022805"
+    },
+    {
+      "dissent": false,
+      "id": "regulator-movement-in-north-carolina--shays-s-rebellion--inspired",
+      "kind": "edge",
+      "locator": "\"Shays's Rebellion\", revision 1377911720"
     },
     {
       "dissent": false,
@@ -7313,6 +7481,18 @@
       "id": "revolutions-of-1989--yugoslav-wars--precondition-of",
       "kind": "edge",
       "locator": "\"Revolutions of 1989\", revision 1375849372, lead"
+    },
+    {
+      "dissent": false,
+      "id": "rhodesian-bush-war--mozambican-civil-war--caused",
+      "kind": "edge",
+      "locator": "\"Rhodesian Bush War\", revision 1373754851"
+    },
+    {
+      "dissent": false,
+      "id": "romanticism--young-germany--reacted-to",
+      "kind": "edge",
+      "locator": "\"Young Germany\", revision 1369303321"
     },
     {
       "dissent": false,
@@ -7460,6 +7640,12 @@
     },
     {
       "dissent": false,
+      "id": "russo-persian-war-1722-1723--treaty-of-saint-petersburg-1723--caused",
+      "kind": "edge",
+      "locator": "\"Russo-Persian War (1722–1723)\", revision 1378917281"
+    },
+    {
+      "dissent": false,
       "id": "russo-ukrainian-war--full-scale-russo-ukrainian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
@@ -7565,6 +7751,12 @@
       "id": "scramble-for-africa--world-war-i--precondition-of",
       "kind": "edge",
       "locator": "\"Scramble for Africa\", revision 1373841219"
+    },
+    {
+      "dissent": false,
+      "id": "second-anglo-dutch-war--third-anglo-dutch-war--caused",
+      "kind": "edge",
+      "locator": "\"Second Anglo-Dutch War\", revision 1370733738"
     },
     {
       "dissent": false,
@@ -7745,6 +7937,12 @@
       "id": "setif-and-guelma-massacre--algerian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Sétif and Guelma massacre\", revision 1373304371, lead"
+    },
+    {
+      "dissent": false,
+      "id": "sicilian-revolution-of-1848--statuto-albertino--reacted-to",
+      "kind": "edge",
+      "locator": "\"Sicilian revolution of 1848\", revision 1370738410"
     },
     {
       "dissent": false,
@@ -8603,6 +8801,12 @@
       "id": "tet-offensive--paris-peace-accords--precondition-of",
       "kind": "edge",
       "locator": "\"Tet Offensive\", revision 1376040932, lead"
+    },
+    {
+      "dissent": false,
+      "id": "texas-annexation--mexican-american-war--caused",
+      "kind": "edge",
+      "locator": "\"Texas annexation\", revision 1378893742"
     },
     {
       "dissent": false,
@@ -9662,6 +9866,12 @@
     },
     {
       "dissent": false,
+      "id": "urabi-revolt--anglo-egyptian-war--reacted-to",
+      "kind": "edge",
+      "locator": "\"Anglo-Egyptian War\", revision 1379563388"
+    },
+    {
+      "dissent": false,
       "id": "uruguayan-war--paraguayan-war--caused",
       "kind": "edge",
       "locator": "\"Paraguayan War\", revision 1378705342"
@@ -9839,6 +10049,12 @@
       "id": "war-of-the-mantuan-succession--siege-of-s-hertogenbosch--enabled",
       "kind": "edge",
       "locator": "\"Thirty Years' War\", revision 1376343040, § Danish intervention"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-oranges--treaty-of-badajoz-1801--caused",
+      "kind": "edge",
+      "locator": "\"War of the Oranges\", revision 1377704597"
     },
     {
       "dissent": false,

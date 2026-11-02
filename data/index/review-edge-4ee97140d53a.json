@@ -3261,6 +3261,36 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "akkerman-convention",
+      "id": "akkerman-convention--russo-turkish-war-1828-1829--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "russo-turkish-war-1828-1829",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "macqueen-1997-decolonization",
         "wikipedia-en"
       ],
@@ -3366,6 +3396,36 @@
       "status": "active",
       "to": "angola-independence-1975",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "american-revolution",
+      "id": "american-revolution--whiskey-rebellion--inspired",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "whiskey-rebellion",
+      "type": "inspired"
     },
     {
       "authors": [
@@ -3549,6 +3609,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "from": "anglo-dutch-treaty-of-1814",
+      "id": "anglo-dutch-treaty-of-1814--anglo-dutch-treaty-of-1824--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "anglo-dutch-treaty-of-1824",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "from": "anglo-french-war-1778-1783",
       "id": "anglo-french-war-1778-1783--battle-of-fort-royal--enabled",
@@ -3707,6 +3797,36 @@
       "status": "active",
       "to": "the-troubles",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "anglo-persian-war",
+      "id": "anglo-persian-war--treaty-of-paris-1857--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-paris-1857",
+      "type": "caused"
     },
     {
       "authors": [
@@ -4482,6 +4602,36 @@
       "status": "active",
       "to": "cuban-revolution",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "auspicious-incident",
+      "id": "auspicious-incident--akkerman-convention--enabled",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "akkerman-convention",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -5496,6 +5646,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "from": "battle-of-buxar",
+      "id": "battle-of-buxar--treaty-of-allahabad--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-allahabad",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-10-01",
       "from": "battle-of-cajamarca",
       "id": "battle-of-cajamarca--battle-of-vilcaconga--precondition-of",
@@ -5772,6 +5952,36 @@
       "status": "active",
       "to": "battle-of-maipu",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "battle-of-chancellorsville",
+      "id": "battle-of-chancellorsville--battle-of-gettysburg-second-day--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-gettysburg-second-day",
+      "type": "caused"
     },
     {
       "authors": [
@@ -7279,6 +7489,36 @@
       "status": "active",
       "to": "second-battle-of-colenso",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "battle-of-malplaquet",
+      "id": "battle-of-malplaquet--peace-of-utrecht--enabled",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "peace-of-utrecht",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -10107,6 +10347,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "from": "battle-of-winterthur",
+      "id": "battle-of-winterthur--first-battle-of-zurich--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-battle-of-zurich",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "from": "battle-of-wolgast",
       "id": "battle-of-wolgast--edict-of-restitution--precondition-of",
@@ -10636,6 +10906,36 @@
       "status": "active",
       "to": "troika-bailout-2011",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "brabant-revolution",
+      "id": "brabant-revolution--belgian-revolution--inspired",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "belgian-revolution",
+      "type": "inspired"
     },
     {
       "authors": [
@@ -11872,6 +12172,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "from": "century-of-humiliation",
+      "id": "century-of-humiliation--boxer-rebellion--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "boxer-rebellion",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "from": "chadian-intervention-in-northern-mali",
       "id": "chadian-intervention-in-northern-mali--battle-of-ifoghas--enabled",
@@ -12043,6 +12373,36 @@
         "wikipedia-en"
       ],
       "created": "2026-11-02",
+      "from": "chattanooga-campaign",
+      "id": "chattanooga-campaign--atlanta-campaign--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "atlanta-campaign",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
       "from": "chernobyl-disaster",
       "id": "chernobyl-disaster--revolutions-of-1989--caused",
       "kind": "edge",
@@ -12146,6 +12506,66 @@
       "status": "active",
       "to": "battle-of-the-punchbowl",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "civil-constitution-of-the-clergy",
+      "id": "civil-constitution-of-the-clergy--war-in-the-vendee--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "war-in-the-vendee",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "cold-war",
+      "id": "cold-war--mozambican-civil-war--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "mozambican-civil-war",
+      "type": "caused"
     },
     {
       "authors": [
@@ -12522,6 +12942,36 @@
       "status": "active",
       "to": "conquest-of-tunis-1574",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "constantinople-conference",
+      "id": "constantinople-conference--russo-turkish-war-1877-1878--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "russo-turkish-war-1877-1878",
+      "type": "caused"
     },
     {
       "authors": [
@@ -15785,6 +16235,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "from": "fall-of-maximilien-robespierre",
+      "id": "fall-of-maximilien-robespierre--thermidorian-reaction--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "thermidorian-reaction",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "from": "fall-of-tenochtitlan",
       "id": "fall-of-tenochtitlan--battle-of-colhuacatonco--caused",
@@ -16027,6 +16507,36 @@
       "revised": null,
       "status": "active",
       "to": "coup-of-1809",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "first-anglo-dutch-war",
+      "id": "first-anglo-dutch-war--treaty-of-westminster-1654--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-westminster-1654",
       "type": "caused"
     },
     {
@@ -16920,6 +17430,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "from": "flight-to-varennes",
+      "id": "flight-to-varennes--execution-of-louis-xvi--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "execution-of-louis-xvi",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-10-12",
       "from": "fontainebleau-agreements",
       "id": "fontainebleau-agreements--first-indochina-war--caused",
@@ -16994,6 +17534,66 @@
       "revised": "2026-10-13",
       "status": "active",
       "to": "battle-of-imenas",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "franco-dutch-war",
+      "id": "franco-dutch-war--scanian-war--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "scanian-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "franco-russian-alliance",
+      "id": "franco-russian-alliance--triple-intervention--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "triple-intervention",
       "type": "precondition-of"
     },
     {
@@ -18225,6 +18825,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "from": "great-fire-of-london",
+      "id": "great-fire-of-london--treaty-of-breda-1667--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-breda-1667",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-10-13",
       "from": "great-leap-forward",
       "id": "great-leap-forward--cultural-revolution--caused",
@@ -18357,6 +18987,36 @@
       "revised": "2026-10-13",
       "status": "active",
       "to": "nato-founding-1949",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "greek-war-of-independence",
+      "id": "greek-war-of-independence--egyptian-ottoman-war-1831-1833--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "egyptian-ottoman-war-1831-1833",
       "type": "precondition-of"
     },
     {
@@ -20247,6 +20907,66 @@
       "status": "active",
       "to": "treaty-of-portsmouth",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "john-brown-s-raid-on-harpers-ferry",
+      "id": "john-brown-s-raid-on-harpers-ferry--american-civil-war--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "american-civil-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "kalmar-war",
+      "id": "kalmar-war--torstenson-war--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "torstenson-war",
+      "type": "caused"
     },
     {
       "authors": [
@@ -22566,6 +23286,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "from": "new-imperialism",
+      "id": "new-imperialism--boxer-rebellion--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "boxer-rebellion",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-30",
       "from": "new-laws",
       "id": "new-laws--battle-of-inaquito--precondition-of",
@@ -23628,6 +24378,36 @@
       "status": "active",
       "to": "euromaidan",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "oregon-treaty",
+      "id": "oregon-treaty--pig-war-1859--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "pig-war-1859",
+      "type": "caused"
     },
     {
       "authors": [
@@ -25209,6 +25989,36 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "raid-on-the-medway",
+      "id": "raid-on-the-medway--third-anglo-dutch-war--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "third-anglo-dutch-war",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "wikidata"
       ],
@@ -25376,6 +26186,36 @@
       "status": "active",
       "to": "thirty-years-war",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "regulator-movement-in-north-carolina",
+      "id": "regulator-movement-in-north-carolina--shays-s-rebellion--inspired",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "shays-s-rebellion",
+      "type": "inspired"
     },
     {
       "authors": [
@@ -25795,6 +26635,66 @@
       "status": "active",
       "to": "yugoslav-wars",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "rhodesian-bush-war",
+      "id": "rhodesian-bush-war--mozambican-civil-war--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "mozambican-civil-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "romanticism",
+      "id": "romanticism--young-germany--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "young-germany",
+      "type": "reacted-to"
     },
     {
       "authors": [
@@ -26339,6 +27239,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-11-02",
+      "from": "russo-persian-war-1722-1723",
+      "id": "russo-persian-war-1722-1723--treaty-of-saint-petersburg-1723--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-saint-petersburg-1723",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "russo-ukrainian-war",
       "id": "russo-ukrainian-war--full-scale-russo-ukrainian-war--precondition-of",
@@ -26802,6 +27732,36 @@
       "status": "active",
       "to": "world-war-i",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "second-anglo-dutch-war",
+      "id": "second-anglo-dutch-war--third-anglo-dutch-war--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "third-anglo-dutch-war",
+      "type": "caused"
     },
     {
       "authors": [
@@ -27546,6 +28506,36 @@
       "status": "active",
       "to": "algerian-war",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "sicilian-revolution-of-1848",
+      "id": "sicilian-revolution-of-1848--statuto-albertino--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "statuto-albertino",
+      "type": "reacted-to"
     },
     {
       "authors": [
@@ -30809,6 +31799,36 @@
       "status": "active",
       "to": "paris-peace-accords",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "texas-annexation",
+      "id": "texas-annexation--mexican-american-war--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "mexican-american-war",
+      "type": "caused"
     },
     {
       "authors": [
@@ -34168,6 +35188,36 @@
         "wikipedia-en"
       ],
       "created": "2026-11-02",
+      "from": "urabi-revolt",
+      "id": "urabi-revolt--anglo-egyptian-war--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "anglo-egyptian-war",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
       "from": "uruguayan-war",
       "id": "uruguayan-war--paraguayan-war--caused",
       "kind": "edge",
@@ -34866,6 +35916,36 @@
       "status": "active",
       "to": "siege-of-s-hertogenbosch",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-11-02",
+      "from": "war-of-the-oranges",
+      "id": "war-of-the-oranges--treaty-of-badajoz-1801--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-badajoz-1801",
+      "type": "caused"
     },
     {
       "authors": [
@@ -36801,5 +37881,12 @@
     }
   ],
   "schema": 1,
-  "warnings": []
+  "warnings": [
+    {
+      "id": "romanticism--young-germany--reacted-to",
+      "kind": "edge",
+      "message": "\"romanticism\" may start after \"young-germany\": the intervals overlap (lenient bound passes)",
+      "rule": "strict-arrow"
+    }
+  ]
 }

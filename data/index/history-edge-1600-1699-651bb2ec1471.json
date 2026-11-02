@@ -614,6 +614,15 @@
         }
       ]
     },
+    "first-anglo-dutch-war--treaty-of-westminster-1654--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "first-battle-of-guararapes--second-battle-of-guararapes--precondition-of": {
       "from": "git",
       "versions": [
@@ -626,6 +635,24 @@
             "explanation"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "franco-dutch-war--scanian-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
+    "great-fire-of-london--treaty-of-breda-1667--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -656,6 +683,15 @@
             "explanation"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "kalmar-war--torstenson-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -779,6 +815,15 @@
         }
       ]
     },
+    "raid-on-the-medway--third-anglo-dutch-war--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "recapture-of-angola--battle-of-mbwila--precondition-of": {
       "from": "git",
       "versions": [
@@ -821,6 +866,15 @@
             "explanation"
           ],
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "second-anglo-dutch-war--third-anglo-dutch-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
