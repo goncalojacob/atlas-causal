@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-amritsar-1757",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q55647639",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Amritsar (1757)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q55647639"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Amritsar (1757)\", revision 1372776617"
+    }
+  ],
+  "title": "Battle of Amritsar (1757)",
+  "summary": "The English Wikipedia article \"Battle of Amritsar (1757)\", at revision 1372776617, opens: \"The Battle of Amritsar, also known as the Battle of Gohalwar, was fought between the Durrani Empire and Shaheedan Misl of the Dal Khalsa on 11 November 1757. Following the fourth invasion of Ahmad Shah Durrani, his army was attacked by Sikh bands under the command of Ala Singh and Baba Deep Singh. Following the attacks, Ahmad Shah desecrated the Sikh holy site known as the Shri Harmandir Sahib in Amritsar. The news of the desecration reached Baba Deep Singh who vowed to liberate the holy site from the Afghans. This resulted in a pitched battle being fought in the village of Gohalwar, near Amritsar. The battle resulted in Baba Deep Singh being killed and an Afghan victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q55647639, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in 1757\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1757,
+    "date": "1757-11"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "indian-campaign-of-ahmad-shah-durrani"
+}
