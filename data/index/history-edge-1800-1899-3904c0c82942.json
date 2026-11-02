@@ -62,6 +62,15 @@
         }
       ]
     },
+    "austro-prussian-war--franco-prussian-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "baring-crisis--panic-of-1893--precondition-of": {
       "from": "git",
       "versions": [
@@ -980,6 +989,15 @@
             "explanation"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "meiji-restoration--saga-rebellion--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },

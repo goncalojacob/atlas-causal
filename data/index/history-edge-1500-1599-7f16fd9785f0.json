@@ -977,6 +977,24 @@
         }
       ]
     },
+    "reformation--counter-reformation--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
+    "reformation--thirty-years-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "siege-of-anzele--cuanza-river-campaign--precondition-of": {
       "from": "git",
       "versions": [

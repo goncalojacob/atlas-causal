@@ -2114,6 +2114,12 @@
     },
     {
       "dissent": false,
+      "id": "austro-prussian-war--franco-prussian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Franco-Prussian War\", revision 1382519034"
+    },
+    {
+      "dissent": false,
       "id": "bali-strait-incident--battle-of-port-louis--precondition-of",
       "kind": "edge",
       "locator": "\"Bali Strait incident\", revision 1376479036"
@@ -6314,6 +6320,12 @@
     },
     {
       "dissent": false,
+      "id": "meiji-restoration--saga-rebellion--caused",
+      "kind": "edge",
+      "locator": "\"Meiji Restoration\", revision 1383165154"
+    },
+    {
+      "dissent": false,
       "id": "mexican-war-of-independence--spanish-attempts-to-reconquer-mexico--reacted-to",
       "kind": "edge",
       "locator": "\"Spanish attempts to reconquer Mexico\", revision 1370748284, lead"
@@ -7127,6 +7139,18 @@
       "id": "recapture-of-angola--battle-of-mbwila--precondition-of",
       "kind": "edge",
       "locator": "\"Recapture of Angola\", revision 1370706489"
+    },
+    {
+      "dissent": false,
+      "id": "reformation--counter-reformation--reacted-to",
+      "kind": "edge",
+      "locator": "\"Reformation\", revision 1383410964"
+    },
+    {
+      "dissent": false,
+      "id": "reformation--thirty-years-war--caused",
+      "kind": "edge",
+      "locator": "\"Thirty Years' War\", revision 1382339793"
     },
     {
       "dissent": false,
