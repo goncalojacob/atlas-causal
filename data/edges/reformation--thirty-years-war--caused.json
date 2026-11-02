@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "reformation--thirty-years-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Thirty Years' War\", revision 1382339793"
+    }
+  ],
+  "from": "reformation",
+  "to": "thirty-years-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Thirty Years' War\" (revision 1382339793) says: \"Its causes derived from religious conflict within the Holy Roman Empire, sparked by the 16th-century Reformation.\" The edge reads that sentence as: Reformation caused Thirty Years' War, and nothing more.",
+  "dispute": null
+}

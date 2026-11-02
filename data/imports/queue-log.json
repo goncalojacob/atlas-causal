@@ -95237,6 +95237,62 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-133",
+      "writer": "A",
+      "fired": "2026-11-02T17:07Z",
+      "status": "written",
+      "written": {
+        "event": "reformation",
+        "edges": [
+          "reformation--counter-reformation--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-asia-059",
+      "writer": "A",
+      "fired": "2026-11-02T17:07Z",
+      "status": "written",
+      "written": {
+        "event": "meiji-restoration",
+        "edges": [
+          "meiji-restoration--saga-rebellion--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-134",
+      "writer": "B",
+      "fired": "2026-11-02T17:10Z",
+      "status": "written",
+      "written": {
+        "event": "thirty-years-war",
+        "edges": [
+          "reformation--thirty-years-war--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-135",
+      "writer": "B",
+      "fired": "2026-11-02T17:10Z",
+      "status": "written",
+      "written": {
+        "event": "franco-prussian-war",
+        "edges": [
+          "austro-prussian-war--franco-prussian-war--precondition-of"
+        ],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
