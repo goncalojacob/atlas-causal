@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-santome",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q23640829",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Santomé"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q23640829"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Santomé\", revision 1370588638"
+    }
+  ],
+  "title": "Battle of Santomé",
+  "summary": "The English Wikipedia article \"Battle of Santomé\", at revision 1370588638, opens: \"The Battle of Santomé was a major battle during the years after the Dominican War of Independence and was fought on 22 December 1855, in the province of San Juan. A detachment of Dominican troops forming part of the Army of the South, led by General José María Cabral, defeated an outnumbering Haitian force led by Antoine Pierrot. Almost 700 Haitian soldiers perished in the battle, and the rest, many of them wounded, were forced to retreat, being pushed back as far as the Fortress of Cachimán and subsequently beyond the border. The Haitians met defeat on the same day at the Battle of Cambronal.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q23640829, imported by tools/import/wikidata.mjs. The item's own description reads \"1855 battle of the Dominican War of Independence (1844-1856)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1855,
+    "end": 1855,
+    "date": "1855-12-22"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "dominican-war-of-independence"
+}

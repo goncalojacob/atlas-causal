@@ -9754,3 +9754,95 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-11-02: `battle-of-winwick`, filed under `second-english-civil-war` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-11-01-europe-065`, rank `child-of:second-english-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `siege-of-hainburg`, filed under `austrian-hungarian-war-1477-1488` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-071`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-azua`, filed under `dominican-war-of-independence` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-030`, rank `child-of:dominican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `1874-election-massacre`, filed under `reconstruction-era` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-032`, rank `child-of:reconstruction-era`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-wahoo-swamp`, filed under `second-seminole-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-033`, rank `child-of:second-seminole-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-martynow-1699`, filed under `polish-ottoman-war-1683-1699` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-084`, rank `child-of:polish-ottoman-war-1683-1699`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-treiden-1628`, filed under `polish-swedish-war-1626-1629` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-086`, rank `child-of:polish-swedish-war-1626-1629`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-seival`, filed under `ragamuffin-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-042`, rank `child-of:ragamuffin-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-fanfa`, filed under `ragamuffin-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-044`, rank `child-of:ragamuffin-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `siege-of-retz`, filed under `austrian-hungarian-war-1477-1488` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-090`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-la-canela`, filed under `dominican-restoration-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-045`, rank `child-of:dominican-restoration-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-jura`, filed under `dominican-restoration-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-047`, rank `child-of:dominican-restoration-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-guayacanes-1863`, filed under `dominican-restoration-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-049`, rank `child-of:dominican-restoration-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-estrelleta`, filed under `dominican-war-of-independence` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-053`, rank `child-of:dominican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-las-carreras`, filed under `dominican-war-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-031`, rank `child-of:dominican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-cape-palos-1815`, filed under `second-barbary-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-europe-078`, rank `child-of:second-barbary-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-islay`, filed under `war-of-the-confederation` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-039`, rank `child-of:war-of-the-confederation`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `treaty-of-paucarpata`, filed under `war-of-the-confederation` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-041`, rank `child-of:war-of-the-confederation`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-azenha-bridge`, filed under `ragamuffin-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-043`, rank `child-of:ragamuffin-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `raid-on-sumatra`, filed under `fourth-anglo-dutch-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-asia-009`, rank `child-of:fourth-anglo-dutch-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-paso-del-muerto`, filed under `dominican-restoration-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-046`, rank `child-of:dominican-restoration-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `grito-de-capotillo`, filed under `dominican-restoration-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-048`, rank `child-of:dominican-restoration-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-arroyo-bermejo`, filed under `dominican-restoration-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-050`, rank `child-of:dominican-restoration-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-santome`, filed under `dominican-war-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-054`, rank `child-of:dominican-war-of-independence`. Its span and its subject put it inside the umbrella.

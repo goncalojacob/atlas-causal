@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-praia-da-vitoria",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890321",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Praia da Vitória",
+    "pt": "Batalha da Praia da Vitória"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890321"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Praia da Vitória\", revision 1370586590"
+    }
+  ],
+  "title": "Battle of Praia da Vitória",
+  "summary": "The English Wikipedia article \"Battle of Praia da Vitória\", at revision 1370586590, opens: \"The Battle of Praia Bay was fought by the coast of Terceira Island on August 11, 1829, between Portuguese liberals and a Miguelite fleet as part of the Portuguese civil war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890321, imported by tools/import/wikidata.mjs. The item's own description reads \"1829 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1829,
+    "end": 1829,
+    "date": "1829-08-18"
+  },
+  "place": "portugal-q45",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "liberal-wars"
+}

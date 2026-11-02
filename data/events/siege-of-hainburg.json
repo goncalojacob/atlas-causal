@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-hainburg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510069",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Hainburg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510069"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Hainburg\", revision 1370741744"
+    }
+  ],
+  "title": "Siege of Hainburg",
+  "summary": "The English Wikipedia article \"Siege of Hainburg\", at revision 1370741744, opens: \"The siege of Hainburg was a two-siege of Hainburg conducted by Matthias I, King of Hungary, during the Austro-Hungarian War (1477–88). The first siege was broken in July 1482 by the Imperial Army of the Holy Roman Empire. Corvinus laid siege to the town again in August 1482, this time with better preparations, and took Hainburg in September 1482.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510069, imported by tools/import/wikidata.mjs. The item's own description reads \"1482 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1482,
+    "end": 1482,
+    "date": "1482-07",
+    "endDate": "1482-09"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "austrian-hungarian-war-1477-1488"
+}

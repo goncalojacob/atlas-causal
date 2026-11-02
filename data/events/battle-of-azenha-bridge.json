@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-azenha-bridge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q11825462",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Azenha Bridge",
+    "pt": "Combate da Ponte da Azenha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11825462"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Azenha Bridge\", revision 1370432816"
+    }
+  ],
+  "title": "Battle of Azenha Bridge",
+  "summary": "The English Wikipedia article \"Battle of Azenha Bridge\", at revision 1370432816, opens: \"The Battle of Azenha Bridge was the first battle of the Ragamuffin War, which took place on the night of the 19th to the 20th of September 1835. It gave way to the capture of Porto Alegre by the rebels on the following day.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11825462, imported by tools/import/wikidata.mjs. The item's own description reads \"1835 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1835,
+    "date": "1835-09-19",
+    "endDate": "1835-09-20"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "ragamuffin-war"
+}
