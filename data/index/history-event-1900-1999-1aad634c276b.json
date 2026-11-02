@@ -13597,6 +13597,15 @@
         }
       ]
     },
+    "gaselee-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "geneva-act-of-the-lisbon-agreement-on-appellations-of-origin-and-geographical-indications": {
       "from": "git",
       "versions": [

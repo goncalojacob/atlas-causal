@@ -254,6 +254,15 @@
         }
       ]
     },
+    "abbas-i-s-shirvan-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "acadian-civil-war": {
       "from": "git",
       "versions": [
@@ -1544,6 +1553,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "battle-of-hutong-1658": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -6771,6 +6789,15 @@
         }
       ]
     },
+    "second-anglo-powhatan-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "second-battle-of-guararapes": {
       "from": "git",
       "versions": [
@@ -8622,6 +8649,15 @@
         }
       ]
     },
+    "treaty-of-1677": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "treaty-of-aix-la-chapelle-1668": {
       "from": "git",
       "versions": [
@@ -8763,6 +8799,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "treaty-of-casco-1678": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },

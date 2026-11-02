@@ -1361,6 +1361,15 @@
         }
       ]
     },
+    "bavarian-war-1459-1463": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "bohemian-hungarian-war-1468-1478": {
       "from": "git",
       "versions": [
