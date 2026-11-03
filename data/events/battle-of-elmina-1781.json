@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-elmina-1781",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q121853652",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Battle of Elmina (1781)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q121853652"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Elmina (1781)\", revision 1375871599"
+    }
+  ],
+  "title": "Battle of Elmina (1781)",
+  "summary": "The English Wikipedia article \"Battle of Elmina (1781)\", at revision 1375871599, opens: \"The Battle of Elmina was a significant engagement that transpired during the Fourth Anglo-Dutch War. In this military encounter, British forces undertook an operation with the aim of capturing the strategic Elmina Fort. However, their efforts ended in failure, as the British were unable to secure control of the fortification.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q121853652, imported by tools/import/wikidata.mjs. The item's own description reads \"1781 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-02-18",
+    "endDate": "1781-02-20"
+  },
+  "place": "elmina-castle",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "fourth-anglo-dutch-war"
+}

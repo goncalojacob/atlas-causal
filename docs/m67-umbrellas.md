@@ -9970,3 +9970,23 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-11-03: `battle-of-cooke-s-spring`, filed under `apache-wars` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-11-02-americas-014`, rank `child-of:apache-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-03: `moldavian-campaign-1538`, filed under `moldavian-ottoman-wars` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-02-europe-016`, rank `child-of:moldavian-ottoman-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-03: `battle-of-arroyo-grande`, filed under `uruguayan-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-02-americas-019`, rank `child-of:uruguayan-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-03: `sack-of-old-oyo`, filed under `yoruba-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-02-africa-002`, rank `child-of:yoruba-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-03: `patriot-war`, filed under `rebellions-of-1837-1838` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-02-americas-022`, rank `child-of:rebellions-of-1837-1838`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-03: `battle-of-santiago-1863`, filed under `dominican-restoration-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-02-americas-023`, rank `child-of:dominican-restoration-war`. Its span and its subject put it inside the umbrella.

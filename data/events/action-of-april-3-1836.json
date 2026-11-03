@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "action-of-april-3-1836",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871694",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Action of April 3, 1836"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871694"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of April 3, 1836\", revision 1378725987"
+    }
+  ],
+  "title": "Action of April 3, 1836",
+  "summary": "The English Wikipedia article \"Action of April 3, 1836\", at revision 1378725987, opens: \"The battle of Matamoros was a naval engagement during the Texas Revolution on April 3, 1836, between the brig Montezuma of the Mexican Navy and the schooner Invincible of the Texas Navy. The Mexican ship was outmaneuvered and repeatedly hit before running aground and being abandoned. The Port of Matamoros, also known as Los Brazos de Santiago, was the Mexican army's primary resupply base for the operations of General Santa Anna, who was finally defeated on April 21, 1836, outside Houston at the battle of San Jacinto.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871694, imported by tools/import/wikidata.mjs. The item's own description reads \"1836 naval engagement of the Texas Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1836,
+    "end": 1836,
+    "date": "1836-04-03"
+  },
+  "place": "mexico-q96",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "texas-revolution"
+}
