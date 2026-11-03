@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "bonneville-expedition-1857",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4942242",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Bonneville Expedition (1857)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4942242"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bonneville Expedition (1857)\", revision 1379348540"
+    }
+  ],
+  "title": "Bonneville Expedition (1857)",
+  "summary": "The English Wikipedia article \"Bonneville Expedition (1857)\", at revision 1379348540, opens: \"The Bonneville Expedition was a military operation launched by the United States Army in 1857 at the beginning of the Chiricahua Apache Wars. Colonel Benjamin Bonneville, Lieutenant Colonel Dixon S. Miles, and Colonel William W. Loring commanded parties which headed west from Fort Fillmore, New Mexico Territory. The expedition quickly engaged Apaches in two small but significant battles, the first in the Black Range and the second along the Gila River near present-day Safford, Arizona.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4942242, imported by tools/import/wikidata.mjs. The item's own description reads \"United States military operation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1857,
+    "end": 1857,
+    "date": "1857-05",
+    "endDate": "1857-07"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "apache-wars"
+}

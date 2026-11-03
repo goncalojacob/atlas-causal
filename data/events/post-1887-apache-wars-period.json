@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "post-1887-apache-wars-period",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7313046",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Post-1887 Apache Wars period"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7313046"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Post-1887 Apache Wars period\", revision 1370704919"
+    }
+  ],
+  "title": "Post-1887 Apache Wars period",
+  "summary": "The English Wikipedia article \"Post-1887 Apache Wars period\", at revision 1370704919, opens: \"The post-1887 Apache Wars period of the Apache Wars refers to campaigns by the United States and Mexico against the Apaches.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7313046, imported by tools/import/wikidata.mjs. The item's own description reads \"campaign period\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1887,
+    "end": 1924
+  },
+  "place": "southwestern-united-states",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "apache-wars"
+}

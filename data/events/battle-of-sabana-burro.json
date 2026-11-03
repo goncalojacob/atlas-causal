@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-sabana-burro",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q134614261",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Battle of Sabana Burro"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q134614261"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sabana Burro\", revision 1370587888"
+    }
+  ],
+  "title": "Battle of Sabana Burro",
+  "summary": "The English Wikipedia article \"Battle of Sabana Burro\", at revision 1370587888, opens: \"The Battle of Sabana Burro was a major battle of the Dominican Restoration War. It was fought in Hato Mayor, at the junction of the Iguamo and Guamira rivers. Genaro Díaz was in charge of this battle, entering at dawn on May 4, 1864. The restorers sent a column to the center of the savannah to bombard the Spanish.. In the end, the Dominicans defeated the Spanish, in which they acquired one of the two Spanish cannons.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q134614261, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-05-04"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "dominican-restoration-war"
+}

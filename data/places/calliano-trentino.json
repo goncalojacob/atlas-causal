@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "calliano-trentino",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q257694",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Calliano, Trentino",
+    "pt": "Calliano (Trento)"
+  },
+  "sources": [],
+  "names": [
+    "Calliano",
+    "Calliano, Trentino",
+    "Calliano (Trento)"
+  ],
+  "where": {
+    "lon": 11.1154043,
+    "lat": 45.9391024,
+    "precision": "city",
+    "label": "Calliano, Trentino"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

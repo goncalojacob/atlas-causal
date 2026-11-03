@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dutch-troops-in-england-1688-1699",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q135067811",
+  "wikipedia": {
+    "en": "Dutch troops in England, 1688–1699"
+  },
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q135067811"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch troops in England, 1688–1699\", revision 1338546381"
+    }
+  ],
+  "title": "Dutch troops in England, 1688–1699",
+  "summary": "The English Wikipedia article \"Dutch troops in England, 1688–1699\", at revision 1338546381, opens: \"During the English Glorious Revolution of 1688–1699, Dutch troops led by William of Orange were deployed on English soil following William's landing at Brixham on 5 November 1688. The Disbanding the Army Act 1698 required the army to be disbanded, with some exceptions, by 26th March 1699.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q135067811, imported by tools/import/wikidata.mjs. The item's own description reads \"1688–1699 military occupation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1688,
+    "end": 1699,
+    "date": "1688-12-16",
+    "endDate": "1699-03"
+  },
+  "place": "london",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

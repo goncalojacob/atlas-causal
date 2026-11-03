@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-fort-erie-1866",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871043",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Battle of Fort Erie (1866)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871043"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Erie (1866)\", revision 1381821284"
+    }
+  ],
+  "title": "Battle of Fort Erie (1866)",
+  "summary": "The English Wikipedia article \"Battle of Fort Erie (1866)\", at revision 1381821284, opens: \"During the 1866 Fenian raids into the Province of Canada, the Battle of Fort Erie was a surrounding and forcing of the Fenian invaders' surrender following a skirmish near Fort Erie and the further-away Battle of Ridgeway on June 2. The Fenian force, withdrawing from Ridgeway, met a small force of Canadian militia at Fort Erie, then known as the village of Waterloo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871043, imported by tools/import/wikidata.mjs. The item's own description reads \"1866 skirmish during the Fenian Raids\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866,
+    "date": "1866-06-02"
+  },
+  "place": "old-fort-erie",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "fenian-raids"
+}

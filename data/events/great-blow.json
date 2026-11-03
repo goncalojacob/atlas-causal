@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "great-blow",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q133828710",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Great Blow"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q133828710"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Blow\", revision 1378704392"
+    }
+  ],
+  "title": "Great Blow",
+  "summary": "The English Wikipedia article \"Great Blow\", at revision 1378704392, opens: \"The Great Blow or Great Blowe was a pro-royalist riot and resultant explosion that took place on 24 April 1648 in Norwich during the Second English Civil War. 98 barrels of gunpowder were accidentally detonated in Committee House, causing the largest explosion recorded in England during the 17th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q133828710, imported by tools/import/wikidata.mjs. The item's own description reads \"1648 riot and explosion in Norwich\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1648,
+    "end": 1648,
+    "date": "1648-04-24"
+  },
+  "place": "norwich",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "second-english-civil-war"
+}

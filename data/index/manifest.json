@@ -25,31 +25,31 @@
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-1bf93c13a4be.json",
+      "file": "index/attributes-1500-1599-b40dc70dbea5.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-8f39f8a59992.json",
+      "file": "index/attributes-1600-1699-d7c5d5aa4c4b.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-b61cdf5d8d5b.json",
+      "file": "index/attributes-1700-1799-9f99f40d7cb6.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1809-85f4e8661ef2.json",
+      "file": "index/attributes-1800-1809-a217c144f655.json",
       "from": 1800,
       "key": "1800-1809",
       "to": 1809
     },
     {
-      "file": "index/attributes-1810-1819-0511853f06b3.json",
+      "file": "index/attributes-1810-1819-c7abb19fad6f.json",
       "from": 1810,
       "key": "1810-1819",
       "to": 1819
@@ -61,7 +61,7 @@
       "to": 1829
     },
     {
-      "file": "index/attributes-1830-1839-5cb5d41f7f08.json",
+      "file": "index/attributes-1830-1839-1e9007f5d7cb.json",
       "from": 1830,
       "key": "1830-1839",
       "to": 1839
@@ -73,37 +73,37 @@
       "to": 1849
     },
     {
-      "file": "index/attributes-1850-1859-3463f1864f86.json",
+      "file": "index/attributes-1850-1859-df641dcda46a.json",
       "from": 1850,
       "key": "1850-1859",
       "to": 1859
     },
     {
-      "file": "index/attributes-1860-1869-d78164b2d96b.json",
+      "file": "index/attributes-1860-1869-a95eb71acc32.json",
       "from": 1860,
       "key": "1860-1869",
       "to": 1869
     },
     {
-      "file": "index/attributes-1870-1879-21bdba403ab0.json",
+      "file": "index/attributes-1870-1879-b0435ba02dcc.json",
       "from": 1870,
       "key": "1870-1879",
       "to": 1879
     },
     {
-      "file": "index/attributes-1880-1889-39595c6349ea.json",
+      "file": "index/attributes-1880-1889-16e02f730228.json",
       "from": 1880,
       "key": "1880-1889",
       "to": 1889
     },
     {
-      "file": "index/attributes-1890-1899-e78d19f0c605.json",
+      "file": "index/attributes-1890-1899-03d78a53981f.json",
       "from": 1890,
       "key": "1890-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-f45ba30f1138.json",
+      "file": "index/attributes-1900-1999-54ad2014c7ea.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -121,7 +121,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-0cfcfb05dd5a.json",
+      "file": "index/attributes-place-3dad64008883.json",
       "from": null,
       "key": "place",
       "to": null
@@ -998,19 +998,19 @@
       "id": "law"
     },
     {
-      "count": 84,
+      "count": 85,
       "id": "other"
     },
     {
-      "count": 209,
+      "count": 210,
       "id": "revolution"
     },
     {
-      "count": 657,
+      "count": 660,
       "id": "treaty"
     },
     {
-      "count": 5228,
+      "count": 5264,
       "id": "war"
     }
   ],
@@ -1079,10 +1079,10 @@
   "counts": {
     "actors": 2699,
     "edges": 1348,
-    "events": 7871,
+    "events": 7913,
     "narratives": 2,
     "offices": 11,
-    "places": 2895,
+    "places": 2913,
     "presences": 6691,
     "regions": 5,
     "relations": 138,
@@ -1127,14 +1127,14 @@
     }
   ],
   "files": {
-    "citers": "index/citers-9815b95d89ef",
-    "core": "index/core-c2dd8a42c6fb.json",
-    "grounds": "index/grounds-742038c5ff67.json",
+    "citers": "index/citers-d7a2c3a16f62",
+    "core": "index/core-92bdbcd282a5.json",
+    "grounds": "index/grounds-07a63cec4028.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-d28e15310f87.json",
-    "search": "index/search-5c1f1d634f4b.json",
-    "sources": "index/sources-9f0a1a161baf.json",
-    "territories": "index/territories-471e08ee1fe3.json"
+    "review": "index/review-cb1dfae1792e.json",
+    "search": "index/search-d4169370459f.json",
+    "sources": "index/sources-8d33d703fe16.json",
+    "territories": "index/territories-76f3bd10677c.json"
   },
   "historyShards": [
     {
@@ -1145,28 +1145,28 @@
       "to": 1499
     },
     {
-      "file": "index/history-event-1500-1599-50e30cb027da.json",
+      "file": "index/history-event-1500-1599-aa1fcd247452.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "event",
       "to": 1599
     },
     {
-      "file": "index/history-event-1600-1699-9bd9934da904.json",
+      "file": "index/history-event-1600-1699-1825a36cd40e.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "event",
       "to": 1699
     },
     {
-      "file": "index/history-event-1700-1799-e1da6a98875d.json",
+      "file": "index/history-event-1700-1799-757657988e7a.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "event",
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-d6974e92934d.json",
+      "file": "index/history-event-1800-1899-8ec5b2b599c8.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
@@ -1299,7 +1299,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-e15c3f66486c.json",
+      "file": "index/history-place-place-82dde24a093c.json",
       "from": null,
       "key": "place",
       "kind": "place",

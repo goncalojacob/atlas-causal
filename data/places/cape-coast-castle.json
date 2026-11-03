@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "cape-coast-castle",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1254826",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Cape Coast Castle",
+    "pt": "Castelo da Costa do Cabo"
+  },
+  "sources": [],
+  "names": [
+    "Cape Coast Castle",
+    "Castelo da Costa do Cabo"
+  ],
+  "where": {
+    "lon": -1.24125,
+    "lat": 5.1035833333333,
+    "precision": "point",
+    "label": "Cape Coast Castle"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

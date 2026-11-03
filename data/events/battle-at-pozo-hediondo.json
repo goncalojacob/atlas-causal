@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-at-pozo-hediondo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q123880698",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Battle at Pozo Hediondo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q123880698"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle at Pozo Hediondo\", revision 1370430538"
+    }
+  ],
+  "title": "Battle at Pozo Hediondo",
+  "summary": "The English Wikipedia article \"Battle at Pozo Hediondo\", at revision 1370430538, opens: \"The Battle at Pozo Hediondo took place on January 20, 1851, during the Apache Wars. On January 20, 1851, a Mexican Patrol spotted a cloud of dust just south of Pozo Hediondo where it was believed the cloud of dust was created by a returning Indians from the North with the goods they had taken from a raid. The Mexican troops set up to ambush the Indian caravan. The Mexican forces outnumbered the Apache two to one and would attack them with bullets and arrows, forcing the Apache to abandon all the stock and goods they had just raided. Ignacio Pesqueria sent his Mexican troops to pursue the retreating Indians but failed to realize that Mangas Coloradas was coming up the valley to surprise attack the Mexican troops. The next three hours would consist of hand-to-hand combat, being referred to as \"a war to the knife\" by Coloradas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q123880698, imported by tools/import/wikidata.mjs. The item's own description reads \"1851 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1851,
+    "end": 1851,
+    "date": "1851-01-20"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "apache-wars"
+}

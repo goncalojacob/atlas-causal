@@ -99846,6 +99846,614 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-11-01-americas-085",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-barro-vermelho",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-112",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-pembroke",
+        "edges": [],
+        "place": "pembroke-castle"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-114",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-houthalen",
+        "edges": [],
+        "place": "houthalen"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-africa-002",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-carolusborg-1658",
+        "edges": [],
+        "place": "cape-coast-castle"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-115",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q112837740: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-01-americas-089",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-guayubin",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-116",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-tranquebar-1801",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-118",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "surrender-of-tranquebar-1808",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-americas-091",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-at-chignecto",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-americas-093",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-trout-river",
+        "edges": [],
+        "place": "huntingdon-quebec"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-120",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "dutch-troops-in-england-1688-1699",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-asia-001",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q331905: none of its classes (Q322732, Q3075355, Q2520735) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-11-02-europe-001",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-la-favorita",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-003",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-peschiera",
+        "edges": [],
+        "place": "peschiera-del-garda"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-005",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-s-t-martens",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-007",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-calliano",
+        "edges": [],
+        "place": "calliano-trentino"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-002",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q135778871: none of its classes (Q10290435) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-11-02-americas-003",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-san-felasco-hammock",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-005",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-caloosahatchee",
+        "edges": [],
+        "place": "fort-myers-florida"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-007",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "negro-fort",
+        "edges": [],
+        "place": "fort-gadsden"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-009",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-at-pozo-hediondo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-011",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "bonneville-expedition-1857",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-013",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "post-1887-apache-wars-period",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-015",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-little-dry-creek",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-017",
+      "writer": "A",
+      "fired": "2026-11-03T00:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-imbituba",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-americas-086",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-porto-alegre",
+        "edges": [],
+        "place": "porto-alegre"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-113",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "scottish-invasion-of-england-1648",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-americas-087",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "san-felipe-incident-1835",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-africa-003",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-saldanha-bay-1781",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-americas-088",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "american-ranch-massacre",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-americas-090",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sabana-burro",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-117",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-serampore-1801",
+        "edges": [],
+        "place": "serampore"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-119",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-saltholm",
+        "edges": [],
+        "place": "saltholm"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-americas-092",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fort-erie-1866",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-americas-094",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "pigeon-hill-raid",
+        "edges": [],
+        "place": "pigeon-hill-st-armand"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-01-europe-121",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "1688-invasion-of-england",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-001",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6059673: none of its classes (Q1384330) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-11-02-europe-002",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-valvasone",
+        "edges": [],
+        "place": "tagliamento"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-004",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3042328: none of its classes (Q348120) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-11-02-europe-006",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4677345: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-02-africa-001",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6932364: none of its classes (Q136659230) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-11-02-europe-008",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4677232: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-11-02-americas-004",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-pine-island-ridge",
+        "edges": [],
+        "place": "pine-island-ridge-florida"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-006",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ocheesee",
+        "edges": [],
+        "place": "apalachicola-river"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-008",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bonilla",
+        "edges": [],
+        "place": "minas-cuba"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-010",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fort-apache",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-012",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hembrillo-basin",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-014",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cooke-s-spring",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-016",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "raid-on-essequibo-and-demerara-1781",
+        "edges": [],
+        "place": "essequibo-colony"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-009",
+      "writer": "B",
+      "fired": "2026-11-03T00:11Z",
+      "status": "written",
+      "written": {
+        "event": "great-blow",
+        "edges": [],
+        "place": "norwich"
+      },
+      "refusals": []
     }
   ]
 }

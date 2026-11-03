@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-houthalen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q122026083",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Battle of Houthalen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q122026083"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Houthalen\", revision 1379924922"
+    }
+  ],
+  "title": "Battle of Houthalen",
+  "summary": "The English Wikipedia article \"Battle of Houthalen\", at revision 1379924922, opens: \"The Battle of Houthalen was a battle of the Ten Days' Campaign during the Belgian Revolution that took place on 6 August 1831. The Dutch army defeated the Belgian rebels and continued further to the Belgian inlands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q122026083, imported by tools/import/wikidata.mjs. The item's own description reads \"1831 battle of the Ten Days' Campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1831,
+    "end": 1831,
+    "date": "1831-08-06"
+  },
+  "place": "houthalen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ten-days-campaign"
+}
