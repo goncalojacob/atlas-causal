@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "slaughter-of-the-knezes--first-serbian-uprising--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slaughter of the Knezes\", revision 1368885440"
+    }
+  ],
+  "from": "slaughter-of-the-knezes",
+  "to": "first-serbian-uprising",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Slaughter of the Knezes\" (revision 1368885440) says: \"The event triggered the First Serbian Uprising, aimed at putting an end to the centuries of Ottoman occupation.\" The edge reads that sentence as: Slaughter of the Knezes caused First Serbian Uprising, and nothing more.",
+  "dispute": null
+}

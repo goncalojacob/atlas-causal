@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "wincanton-skirmish",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q11688250",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Wincanton Skirmish"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11688250"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Wincanton Skirmish\", revision 1377256381"
+    }
+  ],
+  "title": "Wincanton Skirmish",
+  "summary": "The English Wikipedia article \"Wincanton Skirmish\", at revision 1377256381, opens: \"The Wincanton Skirmish took place on 30 November 1688 in Wincanton, Somerset during the 1688 invasion of England. A small cavalry patrol of the English Army under Patrick Sarsfield clashed with a detachment of the Dutch States Army's Scots Brigade in one of only two minor battles fought in England during the Glorious Revolution.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11688250, imported by tools/import/wikidata.mjs. The item's own description reads \"1688 military engagement\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1688,
+    "end": 1688,
+    "date": "1688-11-20"
+  },
+  "place": "wincanton",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "glorious-revolution"
+}

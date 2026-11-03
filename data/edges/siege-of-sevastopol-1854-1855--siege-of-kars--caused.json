@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "siege-of-sevastopol-1854-1855--siege-of-kars--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Kars\", revision 1371138080"
+    }
+  ],
+  "from": "siege-of-sevastopol-1854-1855",
+  "to": "siege-of-kars",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Siege of Kars\" (revision 1371138080) says: \"On September 11, gunfire was fired in the fortress in honor of the fact that the long siege of Sevastopol ended with the victory of the Allies, which fueled the desire of the Russians to storm.\" The edge reads that sentence as: Siege of Sevastopol (1854–1855) caused Siege of Kars, and nothing more.",
+  "dispute": null
+}

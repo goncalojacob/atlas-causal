@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "grito-de-capotillo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q110100925",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Grito de Capotillo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q110100925"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Grito de Capotillo\", revision 1368935090"
+    }
+  ],
+  "title": "Grito de Capotillo",
+  "summary": "The English Wikipedia article \"Grito de Capotillo\", at revision 1368935090, opens: \"The Grito de Capotillo is considered the act that began the Dominican Restoration War that sought the Independence of Dominican Republic from the Kingdom of Spain, which had annexed it in 1861. This battle cry, initiated by Dominican rebels on August 16, 1863, was the third proclamation of Dominican independence from an occupying force, succeeding prior proclamations such as the formations of the Republic of Spanish Haiti and the First Dominican Republic of 1821 and 1844, respectively.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q110100925, imported by tools/import/wikidata.mjs. The item's own description reads \"act that triggered the Dominican Restoration War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-08-16"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "dominican-restoration-war"
+}

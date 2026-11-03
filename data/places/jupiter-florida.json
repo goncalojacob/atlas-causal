@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jupiter-florida",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q986329",
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Jupiter, Florida",
+    "pt": "Júpiter (Flórida)"
+  },
+  "sources": [],
+  "names": [
+    "Jupiter",
+    "Jupiter, Florida",
+    "Júpiter (Flórida)"
+  ],
+  "where": {
+    "lon": -80.105,
+    "lat": 26.926111111111,
+    "precision": "city",
+    "label": "Jupiter, Florida"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

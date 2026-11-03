@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-aslanduz--siege-of-lankaran--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Lankaran\", revision 1370742809"
+    }
+  ],
+  "from": "battle-of-aslanduz",
+  "to": "siege-of-lankaran",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Siege of Lankaran\" (revision 1370742809) says: \"Due to Abbas Mirza's withdrawal towards Tabriz following the battle of Aslanduz, Kotlyarevsky had time to attack Lankaran.\" The edge reads that sentence as: Battle of Aslanduz made Siege of Lankaran possible, and nothing more.",
+  "dispute": null
+}

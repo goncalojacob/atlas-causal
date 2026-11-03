@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "war-of-the-julich-succession--rappenkrieg--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Jülich Succession\", revision 1371645533"
+    }
+  ],
+  "from": "war-of-the-julich-succession",
+  "to": "rappenkrieg",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"War of the Jülich Succession\" (revision 1371645533) says: \"The war, though brief, severely depleted the coffers of all the involved parties, leading to increased taxes, which in turn triggered the Rappenkrieg.\" The edge reads that sentence as: War of the Jülich Succession caused Rappenkrieg, and nothing more.",
+  "dispute": null
+}

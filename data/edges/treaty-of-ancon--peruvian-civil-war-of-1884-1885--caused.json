@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "treaty-of-ancon--peruvian-civil-war-of-1884-1885--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Ancón\", revision 1381181794"
+    }
+  ],
+  "from": "treaty-of-ancon",
+  "to": "peruvian-civil-war-of-1884-1885",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Treaty of Ancón\" (revision 1381181794) says: \"Dissatisfaction with the treaty led to the Peruvian Civil War of 1884–1885, which overthrew Iglesias' government.\" The edge reads that sentence as: Treaty of Ancón caused Peruvian Civil War of 1884–1885, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "1874-election-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5354543",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "1874 Election Massacre",
+    "pt": "Massacre da eleição de 1874"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5354543"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1874 Election Massacre\", revision 1383086193"
+    }
+  ],
+  "title": "1874 Election Massacre",
+  "summary": "The English Wikipedia article \"1874 Election Massacre\", at revision 1383086193, opens: \"The Election Massacre of 1874, or Coup of 1874, took place on election day, November 3, 1874, near Eufaula in Barbour County, Alabama. Freedmen comprised a majority of the population and had been electing Republican candidates to office. Members of an Alabama chapter of the White League, a paramilitary group supporting the Democratic Party's drive to regain political power in the county and state, used firearms to ambush Black Republicans at the polls.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5354543, imported by tools/import/wikidata.mjs. The item's own description reads \"whites massacre African Americans\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1874,
+    "end": 1874
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "election",
+  "actors": [],
+  "parent": "reconstruction-era"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "boyadzhik-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q12273842",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Boyadzhik massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12273842"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Boyadzhik massacre\", revision 1358602723"
+    }
+  ],
+  "title": "Boyadzhik massacre",
+  "summary": "The English Wikipedia article \"Boyadzhik massacre\", at revision 1358602723, opens: \"The Boyadzhik massacre was the massacre of 145 Bulgarian civilians committed by irregular Ottoman troops in the Bulgarian village of Boyadzhik on and after 24 May [O.S. 11 May] 1876.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12273842, imported by tools/import/wikidata.mjs. The item's own description reads \"Ottoman massacre of Bulgarian civilians\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1876,
+    "date": "1876-05-24"
+  },
+  "place": "bulgaria-q219",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "april-uprising-of-1876"
+}

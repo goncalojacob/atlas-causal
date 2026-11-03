@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "1688-invasion-of-england",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q140690602",
+  "wikipedia": {
+    "en": "1688 invasion of England"
+  },
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q140690602"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1688 invasion of England\", revision 1381428560"
+    }
+  ],
+  "title": "1688 invasion of England",
+  "summary": "The English Wikipedia article \"1688 invasion of England\", at revision 1381428560, opens: \"The 1688 invasion of England by William of Orange was a large-scale military operation mounted by the Dutch Republic to secure England as an ally against France in the coming Nine Years' War. Although framed as a defence of English liberties, the expedition was planned primarily to prevent an Anglo-French alignment and avoid a repeat of the crisis of 1672. With an invitation from seven prominent Englishmen providing political cover, William assembled one of the largest fleets in European history, carrying an experienced and well-equipped army to England in November 1688. The Royal Navy attempted to intercept the invasion fleet, but was outnumbered and hampered by adverse winds, allowing the Dutch to land at Torbay largely unopposed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q140690602, imported by tools/import/wikidata.mjs. The item's own description reads \"1688 invasion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1688,
+    "end": 1688,
+    "date": "1688-11",
+    "endDate": "1688-12"
+  },
+  "place": "north-sea",
+  "region": null,
+  "regionNote": null,
+  "parent": "glorious-revolution",
+  "category": "war",
+  "actors": []
+}

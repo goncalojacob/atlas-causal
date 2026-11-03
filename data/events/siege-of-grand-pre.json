@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-grand-pre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510056",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Grand Pré"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510056"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Grand Pré\", revision 1375230172"
+    }
+  ],
+  "title": "Siege of Grand Pré",
+  "summary": "The English Wikipedia article \"Siege of Grand Pré\", at revision 1375230172, opens: \"The siege of Grand Pré happened during Father Le Loutre's War and was fought between the British and the Wabanaki Confederacy and Acadian militia. The siege happened at Fort Vieux Logis, Grand-Pré. The native and Acadia militia laid siege to Fort Vieux Logis for a week in November 1749. One historian states that the intent of the siege was to help facilitate the Acadian Exodus from the region.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510056, imported by tools/import/wikidata.mjs. The item's own description reads \"1749 siege in Nova Scotia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1749,
+    "end": 1749,
+    "date": "1749-11-27",
+    "endDate": "1749-12-04"
+  },
+  "place": "grand-pre-nova-scotia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "father-le-loutre-s-war"
+}

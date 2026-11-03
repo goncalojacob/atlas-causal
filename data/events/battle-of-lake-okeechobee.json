@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-lake-okeechobee",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871527",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Lake Okeechobee"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871527"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lake Okeechobee\", revision 1374227312"
+    }
+  ],
+  "title": "Battle of Lake Okeechobee",
+  "summary": "The English Wikipedia article \"Battle of Lake Okeechobee\", at revision 1374227312, opens: \"The Battle of Lake Okeechobee was one of the major battles of the Seminole Wars. It was fought between 1,000 U.S. Army troops of the 1st, 4th, and 6th Infantry Regiments and 132 Missouri Volunteers under the command of Colonel Zachary Taylor, and about 400 Seminole warriors led by chiefs Abiaka, Billy Bowlegs, Halpatter Tustenuggee (Alligator) and Wild Cat on 25 December 1837. The Seminoles defended their large encampment by Lake Okeechobee against an attack by Zachary Taylor's troops. Zachary Taylor's march to Lake Okeechobee was part of a larger offensive into South Florida that was planned by General Thomas Jesup. The battle was a victory for the Seminoles, as they held off the U.S. troops long enough to safely evacuate their encampment. Due to the large number of casualties his troops suffered, Zachary Taylor was forced to end his offensive into South Florida, and he marched his army over 100 miles back to Tampa Bay.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871527, imported by tools/import/wikidata.mjs. The item's own description reads \"1837 battle in Second Seminole War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1837,
+    "end": 1837,
+    "date": "1837-12-25"
+  },
+  "place": "lake-okeechobee",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-seminole-war"
+}

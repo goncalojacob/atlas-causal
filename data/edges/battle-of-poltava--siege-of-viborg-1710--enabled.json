@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-poltava--siege-of-viborg-1710--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Viborg (1710)\", revision 1382468191"
+    }
+  ],
+  "from": "battle-of-poltava",
+  "to": "siege-of-viborg-1710",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Siege of Viborg (1710)\" (revision 1382468191) says: \"Later plans were put on hold because of other ongoing conflicts but, after the Russian success at the Battle of Poltava in June 1709, the men and resources were available to capture the town.\" The edge reads that sentence as: Battle of Poltava made Siege of Viborg (1710) possible, and nothing more.",
+  "dispute": null
+}

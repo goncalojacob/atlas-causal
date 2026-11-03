@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-valvasone",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2984910",
+  "wikipedia": {
+    "en": "Battle of Valvasone"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-03"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2984910"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Valvasone\", revision 1382090583"
+    }
+  ],
+  "title": "Battle of Valvasone",
+  "summary": "The English Wikipedia article \"Battle of Valvasone\", at revision 1382090583, opens: \"The Battle of Valvasone was fought on 16 March 1797 during the War of the First Coalition between the French Army of Italy commanded by General Napoleon Bonaparte and a Habsburg Austrian army under Archduke Charles. Taking place along the shallow banks of the Tagliamento River near Valvasone, the engagement resulted from Bonaparte’s strategic spring offensive aimed at advancing into the Austrian heartland following the fall of Mantua.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2984910, imported by tools/import/wikidata.mjs. The item's own description reads \"1797 battle of the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1797,
+    "end": 1797,
+    "date": "1797-03-16"
+  },
+  "place": "tagliamento",
+  "region": null,
+  "regionNote": null,
+  "parent": "italian-campaign-of-1796-1797",
+  "category": "war",
+  "actors": []
+}

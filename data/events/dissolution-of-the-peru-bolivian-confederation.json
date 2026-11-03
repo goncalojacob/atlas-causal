@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dissolution-of-the-peru-bolivian-confederation",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q28502685",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Dissolution of the Peru–Bolivian Confederation"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q28502685"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dissolution of the Peru–Bolivian Confederation\", revision 1276935994"
+    }
+  ],
+  "title": "Dissolution of the Peru–Bolivian Confederation",
+  "summary": "The English Wikipedia article \"Dissolution of the Peru–Bolivian Confederation\", at revision 1276935994, opens: \"The dissolution of the Peru–Bolivian Confederation was the process of internal disintegration within the Peru–Bolivian Confederation which resulted in the end of the country's and its confederate government's existence as a sovereign state, being succeeded by Bolivia and a unified Peruvian state.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28502685, imported by tools/import/wikidata.mjs. The item's own description reads \"process leading to the 1839 dissolution of the Peru–Bolivian Confederation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1839,
+    "date": "1839-08-25"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "other",
+  "actors": [],
+  "parent": "war-of-the-confederation"
+}

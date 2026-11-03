@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ten-days-campaign--siege-of-antwerp-1832--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Antwerp (1832)\", revision 1370738913"
+    }
+  ],
+  "from": "ten-days-campaign",
+  "to": "siege-of-antwerp-1832",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Siege of Antwerp (1832)\" (revision 1370738913) says: \"When the Dutch withdrew from Belgium after the campaign called the Ten Days' Campaign, they left a garrison in the citadel of Antwerp, which resulted in a second operation of the Armée du Nord of Marshal Gérard, who returned with his army to Belgium November 15, 1832, when he laid siege to Antwerp.\" The edge reads that sentence as: Ten Days' Campaign caused Siege of Antwerp (1832), and nothing more.",
+  "dispute": null
+}

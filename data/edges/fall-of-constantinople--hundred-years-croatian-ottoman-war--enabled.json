@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "fall-of-constantinople--hundred-years-croatian-ottoman-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hundred Years' Croatian–Ottoman War\", revision 1382719117"
+    }
+  ],
+  "from": "fall-of-constantinople",
+  "to": "hundred-years-croatian-ottoman-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Hundred Years' Croatian–Ottoman War\" (revision 1382719117) says: \"The fall of Constantinople in 1453 enabled the Ottoman Empire to engage more troops in their Balkan campaigns.\" The edge reads that sentence as: Fall of Constantinople made Hundred Years' Croatian–Ottoman War possible, and nothing more.",
+  "dispute": null
+}

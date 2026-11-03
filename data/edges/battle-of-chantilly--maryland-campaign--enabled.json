@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-chantilly--maryland-campaign--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chantilly\", revision 1374518450"
+    }
+  ],
+  "from": "battle-of-chantilly",
+  "to": "maryland-campaign",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Chantilly\" (revision 1374518450) says: \"Although Jackson's turning movement was foiled and he was unable to block the Union retreat or destroy Pope's army, National Park Service historians count Chantilly as a strategic Confederate victory because it neutralized any threat from Pope's army and cleared the way for Lee to begin his Maryland Campaign.\" The edge reads that sentence as: Battle of Chantilly made Maryland campaign possible, and nothing more.",
+  "dispute": null
+}

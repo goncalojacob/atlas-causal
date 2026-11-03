@@ -3,6 +3,2160 @@
   "kind": "import-queue",
   "items": [
     {
+      "id": "2026-11-03-europe-001",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "treaty-of-berlin-1742",
+      "title": "Treaty of Berlin (1742)",
+      "edges": [
+        {
+          "from": "treaty-of-berlin-1742",
+          "to": "battle-of-dettingen",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Treaty of Berlin (1742)",
+          "revision": 1381367708,
+          "quote": "However, Prussia's former ally King Louis XV of France was upset by this peace agreement that gave the united Austrian, British and Hanoverian forces a free hand to oust the French troops at the 1743 Battle of Dettingen - an alienation that ultimately led to the Diplomatic Revolution of 1756.",
+          "explanation": "The English Wikipedia article \"Treaty of Berlin (1742)\" (revision 1381367708) says: \"However, Prussia's former ally King Louis XV of France was upset by this peace agreement that gave the united Austrian, British and Hanoverian forces a free hand to oust the French troops at the 1743 Battle of Dettingen - an alienation that ultimately led to the Diplomatic Revolution of 1756.\" The edge reads that sentence as: Treaty of Berlin (1742) made Battle of Dettingen possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-001",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "battle-of-krtsanisi",
+      "title": "Battle of Krtsanisi",
+      "edges": [
+        {
+          "from": "battle-of-krtsanisi",
+          "to": "persian-expedition-of-1796",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Battle of Krtsanisi",
+          "revision": 1379001086,
+          "quote": "Subsequently, in order to restore Russian prestige, Catherine the Great launched a punitive campaign against Iran in 1796, but it was soon recalled after Catherine's death the same year.",
+          "explanation": "The English Wikipedia article \"Battle of Krtsanisi\" (revision 1379001086) says: \"Subsequently, in order to restore Russian prestige, Catherine the Great launched a punitive campaign against Iran in 1796, but it was soon recalled after Catherine's death the same year.\" The edge reads that sentence as: Persian expedition of 1796 was a response to Battle of Krtsanisi, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-001",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "inca-civil-war",
+      "title": "Inca Civil War",
+      "edges": [
+        {
+          "from": "inca-civil-war",
+          "to": "spanish-conquest-of-the-inca-empire",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Inca Civil War",
+          "revision": 1376090005,
+          "quote": "The Inca Civil War has been characterized as an important factor in enabling the Spanish conquest of the Inca Empire.",
+          "explanation": "The English Wikipedia article \"Inca Civil War\" (revision 1376090005) says: \"The Inca Civil War has been characterized as an important factor in enabling the Spanish conquest of the Inca Empire.\" The edge reads that sentence as: Inca Civil War made Spanish conquest of the Inca Empire possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-002",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "kabo-reform",
+      "title": "Kabo Reform",
+      "edges": [
+        {
+          "from": "donghak-peasant-revolution",
+          "to": "kabo-reform",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Kabo Reform",
+          "revision": 1373255970,
+          "quote": "The Kabo Reform (Korean: 갑오개혁; Hanja: 甲午改革) describes a series of sweeping reforms suggested to the government of Korea, beginning in 1894 and ending in 1896 during the reign of Gojong of Korea in response to the Donghak Peasant Revolution.",
+          "explanation": "The English Wikipedia article \"Kabo Reform\" (revision 1373255970) says: \"The Kabo Reform (Korean: 갑오개혁; Hanja: 甲午改革) describes a series of sweeping reforms suggested to the government of Korea, beginning in 1894 and ending in 1896 during the reign of Gojong of Korea in response to the Donghak Peasant Revolution.\" The edge reads that sentence as: Kabo Reform was a response to Donghak Peasant Revolution, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-003",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "ottoman-safavid-war-1603-1612",
+      "title": "Ottoman–Safavid war (1603–1612)",
+      "edges": [
+        {
+          "from": "long-turkish-war",
+          "to": "ottoman-safavid-war-1603-1612",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Ottoman–Safavid war (1603–1612)",
+          "revision": 1382224417,
+          "quote": "When Abbas I decided to attack the Ottomans to recover the large territories lost in the previous war, the Ottomans were engaged heavily in the European front due to the Long Turkish War started in 1593.",
+          "explanation": "The English Wikipedia article \"Ottoman–Safavid war (1603–1612)\" (revision 1382224417) says: \"When Abbas I decided to attack the Ottomans to recover the large territories lost in the previous war, the Ottomans were engaged heavily in the European front due to the Long Turkish War started in 1593.\" The edge reads that sentence as: Long Turkish War made Ottoman–Safavid war (1603–1612) possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-004",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "tobacco-protest",
+      "title": "Tobacco Protest",
+      "edges": [
+        {
+          "from": "tobacco-protest",
+          "to": "persian-constitutional-revolution",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Tobacco Protest",
+          "revision": 1361415065,
+          "quote": "The fatwa has been called a \"stunning\" demonstration of the power of the marja'-i taqlid, and the protest itself has been cited as one of the issues that led to the Persian Constitutional Revolution a few years later.",
+          "explanation": "The English Wikipedia article \"Tobacco Protest\" (revision 1361415065) says: \"The fatwa has been called a \"stunning\" demonstration of the power of the marja'-i taqlid, and the protest itself has been cited as one of the issues that led to the Persian Constitutional Revolution a few years later.\" The edge reads that sentence as: Tobacco Protest caused Persian Constitutional Revolution, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-002",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "convention-of-london-1840",
+      "title": "Convention of London (1840)",
+      "edges": [
+        {
+          "from": "convention-of-london-1840",
+          "to": "oriental-crisis-of-1840",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Convention of London (1840)",
+          "revision": 1360263331,
+          "quote": "Because Muhammad Ali of Egypt did not accept the terms of the convention, the Oriental Crisis of 1840 resulted.",
+          "explanation": "The English Wikipedia article \"Convention of London (1840)\" (revision 1360263331) says: \"Because Muhammad Ali of Egypt did not accept the terms of the convention, the Oriental Crisis of 1840 resulted.\" The edge reads that sentence as: Convention of London (1840) caused Oriental Crisis of 1840, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-003",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-lissa-1811",
+      "title": "Battle of Lissa (1811)",
+      "edges": [
+        {
+          "from": "battle-of-trafalgar",
+          "to": "battle-of-lissa-1811",
+          "type": "inspired",
+          "confidence": "probable",
+          "article": "Battle of Lissa (1811)",
+          "revision": 1380913966,
+          "quote": "A protégé of Horatio Nelson, Hoste recalled the inspirational effect of Nelson's signal before the Battle of Trafalgar and raised his own: \"Remember Nelson\", which was greeted with wild cheering from the British squadron.",
+          "explanation": "The English Wikipedia article \"Battle of Lissa (1811)\" (revision 1380913966) says: \"A protégé of Horatio Nelson, Hoste recalled the inspirational effect of Nelson's signal before the Battle of Trafalgar and raised his own: \"Remember Nelson\", which was greeted with wild cheering from the British squadron.\" The edge reads that sentence as: Battle of Trafalgar inspired Battle of Lissa (1811), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-004",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "li-lobanov-treaty",
+      "title": "Li–Lobanov Treaty",
+      "edges": [
+        {
+          "from": "li-lobanov-treaty",
+          "to": "convention-for-the-lease-of-the-liaotung-peninsula",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Li–Lobanov Treaty",
+          "revision": 1316224784,
+          "quote": "Rather than protecting China from Japanese territorial ambitions, the treaty opened the door towards further Russian expansionism in the form of the Russia–Qing Convention of 1898, in which China was forced to lease the southern tip of the Liaodong Peninsula to Russia and allow a southern extension of Russia's China Eastern Railway to be built from northern Harbin to the port city of Dalian.",
+          "explanation": "The English Wikipedia article \"Li–Lobanov Treaty\" (revision 1316224784) says: \"Rather than protecting China from Japanese territorial ambitions, the treaty opened the door towards further Russian expansionism in the form of the Russia–Qing Convention of 1898, in which China was forced to lease the southern tip of the Liaodong Peninsula to Russia and allow a southern extension of Russia's China Eastern Railway to be built from northern Harbin to the port city of Dalian.\" The edge reads that sentence as: Li–Lobanov Treaty made Convention for the Lease of the Liaotung Peninsula possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-002",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "platine-war",
+      "title": "Platine War",
+      "edges": [
+        {
+          "from": "uruguayan-civil-war",
+          "to": "platine-war",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Platine War",
+          "revision": 1381540168,
+          "quote": "Uruguay's internal troubles, including the longrunning Uruguayan Civil War (La Guerra Grande – \"The Great War\"), were heavily influential factors leading to the Platine War.",
+          "explanation": "The English Wikipedia article \"Platine War\" (revision 1381540168) says: \"Uruguay's internal troubles, including the longrunning Uruguayan Civil War (La Guerra Grande – \"The Great War\"), were heavily influential factors leading to the Platine War.\" The edge reads that sentence as: Uruguayan Civil War caused Platine War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-003",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "primera-junta",
+      "title": "Primera Junta",
+      "edges": [
+        {
+          "from": "may-revolution",
+          "to": "primera-junta",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Primera Junta",
+          "revision": 1376164957,
+          "quote": "It was formed on 25 May 1810, as a result of the events of the May Revolution.",
+          "explanation": "The English Wikipedia article \"Primera Junta\" (revision 1376164957) says: \"It was formed on 25 May 1810, as a result of the events of the May Revolution.\" The edge reads that sentence as: May Revolution caused Primera Junta, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-005",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "siege-of-kars",
+      "title": "Siege of Kars",
+      "edges": [
+        {
+          "from": "siege-of-sevastopol-1854-1855",
+          "to": "siege-of-kars",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Siege of Kars",
+          "revision": 1371138080,
+          "quote": "On September 11, gunfire was fired in the fortress in honor of the fact that the long siege of Sevastopol ended with the victory of the Allies, which fueled the desire of the Russians to storm.",
+          "explanation": "The English Wikipedia article \"Siege of Kars\" (revision 1371138080) says: \"On September 11, gunfire was fired in the fortress in honor of the fact that the long siege of Sevastopol ended with the victory of the Allies, which fueled the desire of the Russians to storm.\" The edge reads that sentence as: Siege of Sevastopol (1854–1855) caused Siege of Kars, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-005",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "war-of-the-julich-succession",
+      "title": "War of the Jülich Succession",
+      "edges": [
+        {
+          "from": "war-of-the-julich-succession",
+          "to": "rappenkrieg",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "War of the Jülich Succession",
+          "revision": 1371645533,
+          "quote": "The war, though brief, severely depleted the coffers of all the involved parties, leading to increased taxes, which in turn triggered the Rappenkrieg.",
+          "explanation": "The English Wikipedia article \"War of the Jülich Succession\" (revision 1371645533) says: \"The war, though brief, severely depleted the coffers of all the involved parties, leading to increased taxes, which in turn triggered the Rappenkrieg.\" The edge reads that sentence as: War of the Jülich Succession caused Rappenkrieg, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-006",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "sino-russian-border-conflicts",
+      "title": "Sino-Russian border conflicts",
+      "edges": [
+        {
+          "from": "sino-russian-border-conflicts",
+          "to": "treaty-of-nerchinsk",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Sino-Russian border conflicts",
+          "revision": 1370747179,
+          "quote": "The hostilities culminated in the Qing siege of the Cossack fort of Albazin in 1686 and resulted in the Treaty of Nerchinsk in 1689 which gave the land to China.",
+          "explanation": "The English Wikipedia article \"Sino-Russian border conflicts\" (revision 1370747179) says: \"The hostilities culminated in the Qing siege of the Cossack fort of Albazin in 1686 and resulted in the Treaty of Nerchinsk in 1689 which gave the land to China.\" The edge reads that sentence as: Sino-Russian border conflicts caused Treaty of Nerchinsk, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-006",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "anglo-french-war-1778-1783",
+      "title": "Anglo-French War (1778–1783)",
+      "edges": [
+        {
+          "from": "anglo-french-war-1778-1783",
+          "to": "french-revolution",
+          "type": "precondition-of",
+          "confidence": "probable",
+          "article": "Anglo-French War (1778–1783)",
+          "revision": 1370901054,
+          "quote": "The cost of participation in the American war inexorably led to France's own bankruptcy six years later, setting the stage for the French Revolution.",
+          "explanation": "The English Wikipedia article \"Anglo-French War (1778–1783)\" (revision 1370901054) says: \"The cost of participation in the American war inexorably led to France's own bankruptcy six years later, setting the stage for the French Revolution.\" The edge reads that sentence as: Anglo-French War (1778–1783) was a precondition of French Revolution, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-007",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "convention-of-kutahya",
+      "title": "Convention of Kütahya",
+      "edges": [
+        {
+          "from": "convention-of-kutahya",
+          "to": "egyptian-ottoman-war-1839-1841",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Convention of Kütahya",
+          "revision": 1320609244,
+          "quote": "But the settlement of the Peace Agreement was not satisfactory to either party, resulting in the Second Ottoman-Egyptian War in 1839–1841.",
+          "explanation": "The English Wikipedia article \"Convention of Kütahya\" (revision 1320609244) says: \"But the settlement of the Peace Agreement was not satisfactory to either party, resulting in the Second Ottoman-Egyptian War in 1839–1841.\" The edge reads that sentence as: Convention of Kütahya caused Egyptian–Ottoman War (1839–1841), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-008",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "mudan-incident",
+      "title": "Mudan incident",
+      "edges": [
+        {
+          "from": "mudan-incident",
+          "to": "1874-japanese-expedition-to-taiwan",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Mudan incident",
+          "revision": 1363455951,
+          "quote": "Because the Ryukyu Kingdom was a tributary state of Qing China as well as within the Japanese sphere of influence (to whom they also had a tributary relationship), the massacre was used as a pretext for Japan to invade southern Taiwan in 1874 to avenge \"Japanese nationals\" and subsequently annex the Ryukyu Kingdom in 1879.",
+          "explanation": "The English Wikipedia article \"Mudan incident\" (revision 1363455951) says: \"Because the Ryukyu Kingdom was a tributary state of Qing China as well as within the Japanese sphere of influence (to whom they also had a tributary relationship), the massacre was used as a pretext for Japan to invade southern Taiwan in 1874 to avenge \"Japanese nationals\" and subsequently annex the Ryukyu Kingdom in 1879.\" The edge reads that sentence as: 1874 Japanese expedition to Taiwan was a response to Mudan incident, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-004",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "battle-of-chantilly",
+      "title": "Battle of Chantilly",
+      "edges": [
+        {
+          "from": "battle-of-chantilly",
+          "to": "maryland-campaign",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Battle of Chantilly",
+          "revision": 1374518450,
+          "quote": "Although Jackson's turning movement was foiled and he was unable to block the Union retreat or destroy Pope's army, National Park Service historians count Chantilly as a strategic Confederate victory because it neutralized any threat from Pope's army and cleared the way for Lee to begin his Maryland Campaign.",
+          "explanation": "The English Wikipedia article \"Battle of Chantilly\" (revision 1374518450) says: \"Although Jackson's turning movement was foiled and he was unable to block the Union retreat or destroy Pope's army, National Park Service historians count Chantilly as a strategic Confederate victory because it neutralized any threat from Pope's army and cleared the way for Lee to begin his Maryland Campaign.\" The edge reads that sentence as: Battle of Chantilly made Maryland campaign possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-007",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "hundred-years-croatian-ottoman-war",
+      "title": "Hundred Years' Croatian–Ottoman War",
+      "edges": [
+        {
+          "from": "fall-of-constantinople",
+          "to": "hundred-years-croatian-ottoman-war",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Hundred Years' Croatian–Ottoman War",
+          "revision": 1382719117,
+          "quote": "The fall of Constantinople in 1453 enabled the Ottoman Empire to engage more troops in their Balkan campaigns.",
+          "explanation": "The English Wikipedia article \"Hundred Years' Croatian–Ottoman War\" (revision 1382719117) says: \"The fall of Constantinople in 1453 enabled the Ottoman Empire to engage more troops in their Balkan campaigns.\" The edge reads that sentence as: Fall of Constantinople made Hundred Years' Croatian–Ottoman War possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-008",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "siege-of-ostend",
+      "title": "Siege of Ostend",
+      "edges": [
+        {
+          "from": "siege-of-ostend",
+          "to": "twelve-years-truce",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Siege of Ostend",
+          "revision": 1374175777,
+          "quote": "In this regard, it has been described as a pyrrhic victory, as the financial burden contributed to Spain's bankruptcy in 1607, and led the subsequent Twelve Years' Truce.",
+          "explanation": "The English Wikipedia article \"Siege of Ostend\" (revision 1374175777) says: \"In this regard, it has been described as a pyrrhic victory, as the financial burden contributed to Spain's bankruptcy in 1607, and led the subsequent Twelve Years' Truce.\" The edge reads that sentence as: Siege of Ostend caused Twelve Years' Truce, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-009",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "treaty-of-the-bulls-of-guisando",
+      "title": "Treaty of the Bulls of Guisando",
+      "edges": [
+        {
+          "from": "treaty-of-the-bulls-of-guisando",
+          "to": "war-of-the-castilian-succession",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Treaty of the Bulls of Guisando",
+          "revision": 1351645852,
+          "quote": "This was one of the events that eventually led to the War of the Castilian Succession a few years later.",
+          "explanation": "The English Wikipedia article \"Treaty of the Bulls of Guisando\" (revision 1351645852) says: \"This was one of the events that eventually led to the War of the Castilian Succession a few years later.\" The edge reads that sentence as: Treaty of the Bulls of Guisando caused War of the Castilian Succession, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-010",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "war-against-sigismund",
+      "title": "War against Sigismund",
+      "edges": [
+        {
+          "from": "war-against-sigismund",
+          "to": "polish-swedish-war-1600-1611",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "War against Sigismund",
+          "revision": 1371449306,
+          "quote": "The war eventually resulted in the deposition of Sigismund (with Duke Charles taking over the government and later also acceding to the throne), the dissolution of the Polish–Swedish union, and the beginning of an eleven-year war.",
+          "explanation": "The English Wikipedia article \"War against Sigismund\" (revision 1371449306) says: \"The war eventually resulted in the deposition of Sigismund (with Duke Charles taking over the government and later also acceding to the throne), the dissolution of the Polish–Swedish union, and the beginning of an eleven-year war.\" The edge reads that sentence as: War against Sigismund caused Polish–Swedish War (1600–1611), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-011",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-fehmarn-1644",
+      "title": "Battle of Fehmarn (1644)",
+      "edges": [
+        {
+          "from": "battle-of-fehmarn-1644",
+          "to": "treaty-of-bromsebro-1645",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Battle of Fehmarn (1644)",
+          "revision": 1370440658,
+          "quote": "This paved the way for negotiations and eventually the treaty of Brömsebro on 13 August 1645.",
+          "explanation": "The English Wikipedia article \"Battle of Fehmarn (1644)\" (revision 1370440658) says: \"This paved the way for negotiations and eventually the treaty of Brömsebro on 13 August 1645.\" The edge reads that sentence as: Battle of Fehmarn (1644) made Treaty of Brömsebro (1645) possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-012",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-gitschin",
+      "title": "Battle of Gitschin",
+      "edges": [
+        {
+          "from": "battle-of-gitschin",
+          "to": "battle-of-koniggratz",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Gitschin",
+          "revision": 1370441663,
+          "quote": "The victory, thereafter, made possible the junction of the first and second Prussian army corps, and had as an ultimate result the Austrian defeat at the Battle of Königgrätz.",
+          "explanation": "The English Wikipedia article \"Battle of Gitschin\" (revision 1370441663) says: \"The victory, thereafter, made possible the junction of the first and second Prussian army corps, and had as an ultimate result the Austrian defeat at the Battle of Königgrätz.\" The edge reads that sentence as: Battle of Gitschin caused Battle of Königgrätz, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-013",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "cantonal-rebellion",
+      "title": "Cantonal Rebellion",
+      "edges": [
+        {
+          "from": "third-carlist-war",
+          "to": "cantonal-rebellion",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Cantonal Rebellion",
+          "revision": 1380209948,
+          "quote": "Cantons were established throughout southern and eastern Spain, where government forces had little presence due to the ongoing Carlist War in the north.",
+          "explanation": "The English Wikipedia article \"Cantonal Rebellion\" (revision 1380209948) says: \"Cantons were established throughout southern and eastern Spain, where government forces had little presence due to the ongoing Carlist War in the north.\" The edge reads that sentence as: Third Carlist War made Cantonal Rebellion possible, and nothing more."
+        },
+        {
+          "from": "cantonal-rebellion",
+          "to": "coup-d-etat-of-pavia",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Cantonal Rebellion",
+          "revision": 1380209948,
+          "quote": "The repression of the Cantonal Revolution resulted in the strengthening of the political influence of the Spanish Army, which carried out a coup d'état against the Republic, established a military government and eventually restored the monarchy.",
+          "explanation": "The English Wikipedia article \"Cantonal Rebellion\" (revision 1380209948) says: \"The repression of the Cantonal Revolution resulted in the strengthening of the political influence of the Spanish Army, which carried out a coup d'état against the Republic, established a military government and eventually restored the monarchy.\" The edge reads that sentence as: Cantonal Rebellion caused Coup d'état of Pavía, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "2 sentences of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-014",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "congress-of-paris-1856",
+      "title": "Congress of Paris (1856)",
+      "edges": [
+        {
+          "from": "congress-of-paris-1856",
+          "to": "paris-declaration-respecting-maritime-law",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Congress of Paris (1856)",
+          "revision": 1367322307,
+          "quote": "Also important appeared to be a multilateral agreement on some basic legal principles of maritime warfare, resulting in the separate Paris Declaration Respecting Maritime Law, that was acceded by altogether 55 nations.",
+          "explanation": "The English Wikipedia article \"Congress of Paris (1856)\" (revision 1367322307) says: \"Also important appeared to be a multilateral agreement on some basic legal principles of maritime warfare, resulting in the separate Paris Declaration Respecting Maritime Law, that was acceded by altogether 55 nations.\" The edge reads that sentence as: Congress of Paris (1856) caused Paris Declaration Respecting Maritime Law, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-015",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "eden-agreement",
+      "title": "Eden Agreement",
+      "edges": [
+        {
+          "from": "eden-agreement",
+          "to": "french-revolution",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Eden Agreement",
+          "revision": 1362634990,
+          "quote": "This treaty is often considered to be one of the grievances of the French people that sparked the French Revolution.",
+          "explanation": "The English Wikipedia article \"Eden Agreement\" (revision 1362634990) says: \"This treaty is often considered to be one of the grievances of the French people that sparked the French Revolution.\" The edge reads that sentence as: Eden Agreement caused French Revolution, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-016",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "heidelberg-disputation",
+      "title": "Heidelberg Disputation",
+      "edges": [
+        {
+          "from": "heidelberg-disputation",
+          "to": "leipzig-debate",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Heidelberg Disputation",
+          "revision": 1346462642,
+          "quote": "This disputation also led to Johann Eck's challenging Martin Luther to the Leipzig Debate.",
+          "explanation": "The English Wikipedia article \"Heidelberg Disputation\" (revision 1346462642) says: \"This disputation also led to Johann Eck's challenging Martin Luther to the Leipzig Debate.\" The edge reads that sentence as: Heidelberg Disputation caused Leipzig Debate, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-005",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "pottawatomie-massacre",
+      "title": "Pottawatomie massacre",
+      "edges": [
+        {
+          "from": "sacking-of-lawrence",
+          "to": "pottawatomie-massacre",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Pottawatomie massacre",
+          "revision": 1374859516,
+          "quote": "In reaction to the sacking of Lawrence by pro-slavery forces on May 21, and the telegraphed news of the severe attack on Massachusetts Senator Charles Sumner, John Brown and a band of abolitionist settlers—some of them members of the Pottawatomie Rifles—responded violently.",
+          "explanation": "The English Wikipedia article \"Pottawatomie massacre\" (revision 1374859516) says: \"In reaction to the sacking of Lawrence by pro-slavery forces on May 21, and the telegraphed news of the severe attack on Massachusetts Senator Charles Sumner, John Brown and a band of abolitionist settlers—some of them members of the Pottawatomie Rifles—responded violently.\" The edge reads that sentence as: Pottawatomie massacre was a response to Sacking of Lawrence, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-017",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "siege-of-namur-1692",
+      "title": "Siege of Namur (1692)",
+      "edges": [
+        {
+          "from": "siege-of-namur-1692",
+          "to": "battle-of-steenkerque",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Siege of Namur (1692)",
+          "revision": 1370743846,
+          "quote": "Concerned that King William III planned to recapture the stronghold, King Louis XIV subsequently ordered his commander-in-chief, the duc de Luxembourg, to join battle with the Allies in the field, resulting in the bloody Battle of Steenkerque on 3 August.",
+          "explanation": "The English Wikipedia article \"Siege of Namur (1692)\" (revision 1370743846) says: \"Concerned that King William III planned to recapture the stronghold, King Louis XIV subsequently ordered his commander-in-chief, the duc de Luxembourg, to join battle with the Allies in the field, resulting in the bloody Battle of Steenkerque on 3 August.\" The edge reads that sentence as: Siege of Namur (1692) caused Battle of Steenkerque, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-009",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "slaughter-of-the-knezes",
+      "title": "Slaughter of the Knezes",
+      "edges": [
+        {
+          "from": "slaughter-of-the-knezes",
+          "to": "first-serbian-uprising",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Slaughter of the Knezes",
+          "revision": 1368885440,
+          "quote": "The event triggered the First Serbian Uprising, aimed at putting an end to the centuries of Ottoman occupation.",
+          "explanation": "The English Wikipedia article \"Slaughter of the Knezes\" (revision 1368885440) says: \"The event triggered the First Serbian Uprising, aimed at putting an end to the centuries of Ottoman occupation.\" The edge reads that sentence as: Slaughter of the Knezes caused First Serbian Uprising, and nothing more."
+        },
+        {
+          "from": "slaughter-of-the-knezes",
+          "to": "serbian-revolution",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Slaughter of the Knezes",
+          "revision": 1368885440,
+          "quote": "The economic hardships, evil administration, violence and \"Slaughter of the Knezes\" led to the uprising against the Dahije in 1804 and the start of the Serbian Revolution.",
+          "explanation": "The English Wikipedia article \"Slaughter of the Knezes\" (revision 1368885440) says: \"The economic hardships, evil administration, violence and \"Slaughter of the Knezes\" led to the uprising against the Dahije in 1804 and the start of the Serbian Revolution.\" The edge reads that sentence as: Slaughter of the Knezes caused Serbian Revolution, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "2 sentences of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-018",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "stecklikrieg",
+      "title": "Stecklikrieg",
+      "edges": [
+        {
+          "from": "stecklikrieg",
+          "to": "act-of-mediation",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Stecklikrieg",
+          "revision": 1381892212,
+          "quote": "The Stecklikrieg (\"War of Sticks\") was a civil war in Switzerland in 1802 that resulted in the collapse of the Helvetic Republic, the renewed French occupation of Switzerland and ultimately the Act of Mediation dictated by Napoleon Bonaparte on 19 February 1803.",
+          "explanation": "The English Wikipedia article \"Stecklikrieg\" (revision 1381892212) says: \"The Stecklikrieg (\"War of Sticks\") was a civil war in Switzerland in 1802 that resulted in the collapse of the Helvetic Republic, the renewed French occupation of Switzerland and ultimately the Act of Mediation dictated by Napoleon Bonaparte on 19 February 1803.\" The edge reads that sentence as: Stecklikrieg caused Act of Mediation, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-019",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "suleiman-i-s-campaign-of-1529",
+      "title": "Suleiman I's campaign of 1529",
+      "edges": [
+        {
+          "from": "hungarian-campaign-of-1527-1528",
+          "to": "suleiman-i-s-campaign-of-1529",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Suleiman I's campaign of 1529",
+          "revision": 1370748941,
+          "quote": "This was in response to Ferdinand I's daring assault on Ottoman Hungary.",
+          "explanation": "The English Wikipedia article \"Suleiman I's campaign of 1529\" (revision 1370748941) says: \"This was in response to Ferdinand I's daring assault on Ottoman Hungary.\" The edge reads that sentence as: Suleiman I's campaign of 1529 was a response to Hungarian campaign of 1527–1528, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-006",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "treaty-of-ancon",
+      "title": "Treaty of Ancón",
+      "edges": [
+        {
+          "from": "treaty-of-ancon",
+          "to": "peruvian-civil-war-of-1884-1885",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Treaty of Ancón",
+          "revision": 1381181794,
+          "quote": "Dissatisfaction with the treaty led to the Peruvian Civil War of 1884–1885, which overthrew Iglesias' government.",
+          "explanation": "The English Wikipedia article \"Treaty of Ancón\" (revision 1381181794) says: \"Dissatisfaction with the treaty led to the Peruvian Civil War of 1884–1885, which overthrew Iglesias' government.\" The edge reads that sentence as: Treaty of Ancón caused Peruvian Civil War of 1884–1885, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-020",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "treaty-of-kalisz-1813",
+      "title": "Treaty of Kalisz (1813)",
+      "edges": [
+        {
+          "from": "convention-of-tauroggen",
+          "to": "treaty-of-kalisz-1813",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Treaty of Kalisz (1813)",
+          "revision": 1346280811,
+          "quote": "The events that led to this alliance date back to 30 December 1812, at Tauroggen when Lieutenant-General Ludwig Yorck von Wartenburg, on behalf of his Prussian troops, and General Hans Karl von Diebitsch of the Russian Army signed the Convention of Tauroggen.",
+          "explanation": "The English Wikipedia article \"Treaty of Kalisz (1813)\" (revision 1346280811) says: \"The events that led to this alliance date back to 30 December 1812, at Tauroggen when Lieutenant-General Ludwig Yorck von Wartenburg, on behalf of his Prussian troops, and General Hans Karl von Diebitsch of the Russian Army signed the Convention of Tauroggen.\" The edge reads that sentence as: Convention of Tauroggen caused Treaty of Kalisz (1813), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-010",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "battle-of-manila-1762",
+      "title": "Battle of Manila (1762)",
+      "edges": [
+        {
+          "from": "battle-of-manila-1762",
+          "to": "british-occupation-of-manila",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Manila (1762)",
+          "revision": 1378886751,
+          "quote": "The British won, leading to an eighteen-month occupation of Manila.",
+          "explanation": "The English Wikipedia article \"Battle of Manila (1762)\" (revision 1378886751) says: \"The British won, leading to an eighteen-month occupation of Manila.\" The edge reads that sentence as: Battle of Manila (1762) caused British occupation of Manila, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-011",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "battle-of-sezawa",
+      "title": "Battle of Sezawa",
+      "edges": [
+        {
+          "from": "battle-of-sezawa",
+          "to": "battles-of-kawanakajima",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Sezawa",
+          "revision": 1370274128,
+          "quote": "However, his success alarmed the Uesugi clan of Echigo Province (bordering Shinano to the north), and they subsequently invaded, leading to the famous Battles of Kawanakajima between Shingen and Uesugi Kenshin.",
+          "explanation": "The English Wikipedia article \"Battle of Sezawa\" (revision 1370274128) says: \"However, his success alarmed the Uesugi clan of Echigo Province (bordering Shinano to the north), and they subsequently invaded, leading to the famous Battles of Kawanakajima between Shingen and Uesugi Kenshin.\" The edge reads that sentence as: Battle of Sezawa caused Battles of Kawanakajima, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-021",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "february-flood-of-1825",
+      "title": "February flood of 1825",
+      "edges": [
+        {
+          "from": "february-flood-of-1825",
+          "to": "groningen-epidemic",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "February flood of 1825",
+          "revision": 1372828871,
+          "quote": "The Groningen epidemic of 1826, probably caused by a rare outbreak of malaria tropica, was partly the result of the extensive floods and has also been described by Jan Kruys in his diary.",
+          "explanation": "The English Wikipedia article \"February flood of 1825\" (revision 1372828871) says: \"The Groningen epidemic of 1826, probably caused by a rare outbreak of malaria tropica, was partly the result of the extensive floods and has also been described by Jan Kruys in his diary.\" The edge reads that sentence as: February flood of 1825 caused Groningen epidemic, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-007",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "koshamain-s-war",
+      "title": "Koshamain's War",
+      "edges": [
+        {
+          "from": "tumu-crisis",
+          "to": "koshamain-s-war",
+          "type": "precondition-of",
+          "confidence": "probable",
+          "article": "Koshamain's War",
+          "revision": 1370626132,
+          "quote": "Following the Tumu Crisis in 1449, Ming China's influence over northern peoples waned, causing Ainu trade with China to decline and their dependence on Wajin trade to increase; the Ainu resentment over territorial invasion and \"unfair\" Japanese trading ran high during the lead up to the war.",
+          "explanation": "The English Wikipedia article \"Koshamain's War\" (revision 1370626132) says: \"Following the Tumu Crisis in 1449, Ming China's influence over northern peoples waned, causing Ainu trade with China to decline and their dependence on Wajin trade to increase; the Ainu resentment over territorial invasion and \"unfair\" Japanese trading ran high during the lead up to the war.\" The edge reads that sentence as: Tumu Crisis was a precondition of Koshamain's War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-008",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "modoc-war",
+      "title": "Modoc War",
+      "edges": [
+        {
+          "from": "california-genocide",
+          "to": "modoc-war",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Modoc War",
+          "revision": 1370628363,
+          "quote": "The fighting was in response to the California genocide, when agents of the United States government assisted by private citizens began the systematic killing of thousands of indigenous peoples of California in the mid-19th century.",
+          "explanation": "The English Wikipedia article \"Modoc War\" (revision 1370628363) says: \"The fighting was in response to the California genocide, when agents of the United States government assisted by private citizens began the systematic killing of thousands of indigenous peoples of California in the mid-19th century.\" The edge reads that sentence as: Modoc War was a response to California genocide, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-012",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "treaty-of-bassein-1802",
+      "title": "Treaty of Bassein (1802)",
+      "edges": [
+        {
+          "from": "treaty-of-bassein-1802",
+          "to": "second-anglo-maratha-war",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Treaty of Bassein (1802)",
+          "revision": 1365254079,
+          "quote": "However, the treaty was not acceptable to all Maratha chieftains and resulted in the Second Anglo-Maratha War.",
+          "explanation": "The English Wikipedia article \"Treaty of Bassein (1802)\" (revision 1365254079) says: \"However, the treaty was not acceptable to all Maratha chieftains and resulted in the Second Anglo-Maratha War.\" The edge reads that sentence as: Treaty of Bassein (1802) caused Second Anglo-Maratha War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-022",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "treaty-of-breda-1650",
+      "title": "Treaty of Breda (1650)",
+      "edges": [
+        {
+          "from": "treaty-of-breda-1650",
+          "to": "anglo-scottish-war-1650-1652",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Treaty of Breda (1650)",
+          "revision": 1352370515,
+          "quote": "For various reasons, the Scots objected to the execution, and the Treaty of Breda led to the Anglo-Scottish war (1650–1652).",
+          "explanation": "The English Wikipedia article \"Treaty of Breda (1650)\" (revision 1352370515) says: \"For various reasons, the Scots objected to the execution, and the Treaty of Breda led to the Anglo-Scottish war (1650–1652).\" The edge reads that sentence as: Treaty of Breda (1650) caused Anglo-Scottish war (1650–1652), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-009",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "battle-of-blackburn-s-ford",
+      "title": "Battle of Blackburn's Ford",
+      "edges": [
+        {
+          "from": "battle-of-blackburn-s-ford",
+          "to": "first-battle-of-bull-run",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Blackburn's Ford",
+          "revision": 1373519505,
+          "quote": "The repulse at Blackburn's Ford led McDowell to seek to attack the Confederates at a different point along their line, leading to the First Battle of Bull Run three days later.",
+          "explanation": "The English Wikipedia article \"Battle of Blackburn's Ford\" (revision 1373519505) says: \"The repulse at Blackburn's Ford led McDowell to seek to attack the Confederates at a different point along their line, leading to the First Battle of Bull Run three days later.\" The edge reads that sentence as: Battle of Blackburn's Ford caused First Battle of Bull Run, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-023",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-kozludzha",
+      "title": "Battle of Kozludzha",
+      "edges": [
+        {
+          "from": "battle-of-kozludzha",
+          "to": "treaty-of-kucuk-kaynarca",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Kozludzha",
+          "revision": 1382459698,
+          "quote": "Nevertheless, a peace treaty favorable to Russia would soon be signed—owing to the battle.",
+          "explanation": "The English Wikipedia article \"Battle of Kozludzha\" (revision 1382459698) says: \"Nevertheless, a peace treaty favorable to Russia would soon be signed—owing to the battle.\" The edge reads that sentence as: Battle of Kozludzha caused Treaty of Küçük Kaynarca, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-013",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "chichibu-incident",
+      "title": "Chichibu incident",
+      "edges": [
+        {
+          "from": "meiji-restoration",
+          "to": "chichibu-incident",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Chichibu incident",
+          "revision": 1366263460,
+          "quote": "It was one of many similar uprisings in Japan around that time, occurring in reaction to the dramatic changes to society in the wake of the 1868 Meiji Restoration.",
+          "explanation": "The English Wikipedia article \"Chichibu incident\" (revision 1366263460) says: \"It was one of many similar uprisings in Japan around that time, occurring in reaction to the dramatic changes to society in the wake of the 1868 Meiji Restoration.\" The edge reads that sentence as: Chichibu incident was a response to Meiji Restoration, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-024",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "government-reforms-of-alexander-ii-of-russia",
+      "title": "Government reforms of Alexander II of Russia",
+      "edges": [
+        {
+          "from": "crimean-war",
+          "to": "government-reforms-of-alexander-ii-of-russia",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Government reforms of Alexander II of Russia",
+          "revision": 1379613425,
+          "quote": "The extreme difficulties of financing the Crimean War, and the military weakness caused by an ineffective railway system, made economic reforms a high priority.",
+          "explanation": "The English Wikipedia article \"Government reforms of Alexander II of Russia\" (revision 1379613425) says: \"The extreme difficulties of financing the Crimean War, and the military weakness caused by an ineffective railway system, made economic reforms a high priority.\" The edge reads that sentence as: Government reforms of Alexander II of Russia was a response to Crimean War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-025",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "post-unification-italian-brigandage",
+      "title": "Post-unification Italian brigandage",
+      "edges": [
+        {
+          "from": "unification-of-italy",
+          "to": "post-unification-italian-brigandage",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Post-unification Italian brigandage",
+          "revision": 1380426421,
+          "quote": "According to Marxist theoretician Nicola Zitara, Southern Italy experienced social unrest, especially among the lower classes, due to poor conditions and the fact that the unification of Italy had only benefited the land-owning bourgeoisie, so many turned to brigandage in the mountains of Basilicata, Campania, Calabria and Abruzzo.",
+          "explanation": "The English Wikipedia article \"Post-unification Italian brigandage\" (revision 1380426421) says: \"According to Marxist theoretician Nicola Zitara, Southern Italy experienced social unrest, especially among the lower classes, due to poor conditions and the fact that the unification of Italy had only benefited the land-owning bourgeoisie, so many turned to brigandage in the mountains of Basilicata, Campania, Calabria and Abruzzo.\" The edge reads that sentence as: Unification of Italy caused Post-unification Italian brigandage, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-026",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "siege-of-antwerp-1832",
+      "title": "Siege of Antwerp (1832)",
+      "edges": [
+        {
+          "from": "ten-days-campaign",
+          "to": "siege-of-antwerp-1832",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Siege of Antwerp (1832)",
+          "revision": 1370738913,
+          "quote": "When the Dutch withdrew from Belgium after the campaign called the Ten Days' Campaign, they left a garrison in the citadel of Antwerp, which resulted in a second operation of the Armée du Nord of Marshal Gérard, who returned with his army to Belgium November 15, 1832, when he laid siege to Antwerp.",
+          "explanation": "The English Wikipedia article \"Siege of Antwerp (1832)\" (revision 1370738913) says: \"When the Dutch withdrew from Belgium after the campaign called the Ten Days' Campaign, they left a garrison in the citadel of Antwerp, which resulted in a second operation of the Armée du Nord of Marshal Gérard, who returned with his army to Belgium November 15, 1832, when he laid siege to Antwerp.\" The edge reads that sentence as: Ten Days' Campaign caused Siege of Antwerp (1832), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-027",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "siege-of-lankaran",
+      "title": "Siege of Lankaran",
+      "edges": [
+        {
+          "from": "battle-of-aslanduz",
+          "to": "siege-of-lankaran",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Siege of Lankaran",
+          "revision": 1370742809,
+          "quote": "Due to Abbas Mirza's withdrawal towards Tabriz following the battle of Aslanduz, Kotlyarevsky had time to attack Lankaran.",
+          "explanation": "The English Wikipedia article \"Siege of Lankaran\" (revision 1370742809) says: \"Due to Abbas Mirza's withdrawal towards Tabriz following the battle of Aslanduz, Kotlyarevsky had time to attack Lankaran.\" The edge reads that sentence as: Battle of Aslanduz made Siege of Lankaran possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-010",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "upper-canada-rebellion",
+      "title": "Upper Canada Rebellion",
+      "edges": [
+        {
+          "from": "upper-canada-rebellion",
+          "to": "caroline-affair",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Upper Canada Rebellion",
+          "revision": 1370752547,
+          "quote": "They obtained supplies from supporters in the United States, resulting in the Caroline affair.",
+          "explanation": "The English Wikipedia article \"Upper Canada Rebellion\" (revision 1370752547) says: \"They obtained supplies from supporters in the United States, resulting in the Caroline affair.\" The edge reads that sentence as: Upper Canada Rebellion caused Caroline affair, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-011",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "battle-of-cepeda-1859",
+      "title": "Battle of Cepeda (1859)",
+      "edges": [
+        {
+          "from": "battle-of-cepeda-1859",
+          "to": "battle-of-pavon",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Cepeda (1859)",
+          "revision": 1370436648,
+          "quote": "That would eventually led to the Battle of Pavón and the growing predominance of Buenos Aires Province.",
+          "explanation": "The English Wikipedia article \"Battle of Cepeda (1859)\" (revision 1370436648) says: \"That would eventually led to the Battle of Pavón and the growing predominance of Buenos Aires Province.\" The edge reads that sentence as: Battle of Cepeda (1859) caused Battle of Pavón, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-012",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "battle-of-old-church",
+      "title": "Battle of Old Church",
+      "edges": [
+        {
+          "from": "battle-of-old-church",
+          "to": "battle-of-cold-harbor",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Battle of Old Church",
+          "revision": 1370271159,
+          "quote": "The door was open for Sheridan's capture of the important Old Cold Harbor crossroads the next day, leading to the start of the bloody Battle of Cold Harbor.",
+          "explanation": "The English Wikipedia article \"Battle of Old Church\" (revision 1370271159) says: \"The door was open for Sheridan's capture of the important Old Cold Harbor crossroads the next day, leading to the start of the bloody Battle of Cold Harbor.\" The edge reads that sentence as: Battle of Old Church made Battle of Cold Harbor possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-014",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "battle-of-taku-forts-1859",
+      "title": "Battle of Taku Forts (1859)",
+      "edges": [
+        {
+          "from": "battle-of-taku-forts-1859",
+          "to": "battle-of-taku-forts-1860",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Taku Forts (1859)",
+          "revision": 1370590412,
+          "quote": "The battle not only was a loss for the British, it caused them to have to assemble another massive fleet of 18,000 troops which fought in the Third Battle of Taku Forts.",
+          "explanation": "The English Wikipedia article \"Battle of Taku Forts (1859)\" (revision 1370590412) says: \"The battle not only was a loss for the British, it caused them to have to assemble another massive fleet of 18,000 troops which fought in the Third Battle of Taku Forts.\" The edge reads that sentence as: Battle of Taku Forts (1859) caused Battle of Taku Forts (1860), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-africa-001",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "africa",
+      "writer": "B",
+      "existing": "battle-of-wad-ras",
+      "title": "Battle of Wad Ras",
+      "edges": [
+        {
+          "from": "battle-of-wad-ras",
+          "to": "treaty-of-wad-ras",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Wad Ras",
+          "revision": 1370846102,
+          "quote": "Following the successive defeats suffered by Morocco in its confrontations against Spanish troops and in particular after the Battle of Wad Ras, Sultan Muhammad IV of Morocco was forced to ask for peace from Queen Isabella II of Spain through the Treaty of Wad Ras, signed in Tetouan on 26 April 1860.",
+          "explanation": "The English Wikipedia article \"Battle of Wad Ras\" (revision 1370846102) says: \"Following the successive defeats suffered by Morocco in its confrontations against Spanish troops and in particular after the Battle of Wad Ras, Sultan Muhammad IV of Morocco was forced to ask for peace from Queen Isabella II of Spain through the Treaty of Wad Ras, signed in Tetouan on 26 April 1860.\" The edge reads that sentence as: Battle of Wad Ras caused Treaty of Wad Ras, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-013",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "first-cevallos-expedition",
+      "title": "First Cevallos expedition",
+      "edges": [
+        {
+          "from": "first-cevallos-expedition",
+          "to": "first-treaty-of-san-ildefonso",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "First Cevallos expedition",
+          "revision": 1370619263,
+          "quote": "During this conflict, Cevallos recaptured Colónia do Sacramento, resulting in the settlement being permanently ceded to the Spain as part of the terms of the First Treaty of San Ildefonso.",
+          "explanation": "The English Wikipedia article \"First Cevallos expedition\" (revision 1370619263) says: \"During this conflict, Cevallos recaptured Colónia do Sacramento, resulting in the settlement being permanently ceded to the Spain as part of the terms of the First Treaty of San Ildefonso.\" The edge reads that sentence as: First Cevallos expedition caused First Treaty of San Ildefonso, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-028",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "french-invasion-of-malta",
+      "title": "French invasion of Malta",
+      "edges": [
+        {
+          "from": "french-invasion-of-malta",
+          "to": "french-occupation-of-malta",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "French invasion of Malta",
+          "revision": 1371106535,
+          "quote": "The invasion therefore ended the 268-year-long Hospitaller rule in Malta, and resulted in the French occupation of Malta.",
+          "explanation": "The English Wikipedia article \"French invasion of Malta\" (revision 1371106535) says: \"The invasion therefore ended the 268-year-long Hospitaller rule in Malta, and resulted in the French occupation of Malta.\" The edge reads that sentence as: French invasion of Malta caused French occupation of Malta, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-015",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "massacre-of-aleppo-1850",
+      "title": "Massacre of Aleppo (1850)",
+      "edges": [
+        {
+          "from": "tanzimat",
+          "to": "massacre-of-aleppo-1850",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Massacre of Aleppo (1850)",
+          "revision": 1366253005,
+          "quote": "It has been argued, however, that The Events reflect instead more complex social dynamics, particularly the disruption caused by the sweeping reforms implemented by the Ottoman Empire in its nineteenth-century attempts at modernization, also known as the Tanzimat, and by the Empire's incorporation into the modern world economic system.",
+          "explanation": "The English Wikipedia article \"Massacre of Aleppo (1850)\" (revision 1366253005) says: \"It has been argued, however, that The Events reflect instead more complex social dynamics, particularly the disruption caused by the sweeping reforms implemented by the Ottoman Empire in its nineteenth-century attempts at modernization, also known as the Tanzimat, and by the Empire's incorporation into the modern world economic system.\" The edge reads that sentence as: Tanzimat caused Massacre of Aleppo (1850), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-029",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "moscow-plague-riot-of-1771",
+      "title": "Moscow plague riot of 1771",
+      "edges": [
+        {
+          "from": "1770-1772-russian-plague",
+          "to": "moscow-plague-riot-of-1771",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Moscow plague riot of 1771",
+          "revision": 1379200176,
+          "quote": "The Plague Riot (Russian: Чумной бунт, romanized: Chumnoy bunt) was a riot in Moscow in 1771 between 15 and 17 September, caused by an outbreak of bubonic plague.",
+          "explanation": "The English Wikipedia article \"Moscow plague riot of 1771\" (revision 1379200176) says: \"The Plague Riot (Russian: Чумной бунт, romanized: Chumnoy bunt) was a riot in Moscow in 1771 between 15 and 17 September, caused by an outbreak of bubonic plague.\" The edge reads that sentence as: 1770–1772 Russian plague caused Moscow plague riot of 1771, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-030",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "siege-of-amiens-1597",
+      "title": "Siege of Amiens (1597)",
+      "edges": [
+        {
+          "from": "siege-of-amiens-1597",
+          "to": "peace-of-vervins",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Siege of Amiens (1597)",
+          "revision": 1374174871,
+          "quote": "As a result of the victory, Henry was in a strong position to enact the Edict of Nantes and to negotiate the peace of Vervins which was signed with Spain the following spring.",
+          "explanation": "The English Wikipedia article \"Siege of Amiens (1597)\" (revision 1374174871) says: \"As a result of the victory, Henry was in a strong position to enact the Edict of Nantes and to negotiate the peace of Vervins which was signed with Spain the following spring.\" The edge reads that sentence as: Siege of Amiens (1597) made Peace of Vervins possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-031",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "siege-of-viborg-1710",
+      "title": "Siege of Viborg (1710)",
+      "edges": [
+        {
+          "from": "battle-of-poltava",
+          "to": "siege-of-viborg-1710",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Siege of Viborg (1710)",
+          "revision": 1382468191,
+          "quote": "Later plans were put on hold because of other ongoing conflicts but, after the Russian success at the Battle of Poltava in June 1709, the men and resources were available to capture the town.",
+          "explanation": "The English Wikipedia article \"Siege of Viborg (1710)\" (revision 1382468191) says: \"Later plans were put on hold because of other ongoing conflicts but, after the Russian success at the Battle of Poltava in June 1709, the men and resources were available to capture the town.\" The edge reads that sentence as: Battle of Poltava made Siege of Viborg (1710) possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-032",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "treaty-of-yazhelbitsy",
+      "title": "Treaty of Yazhelbitsy",
+      "edges": [
+        {
+          "from": "treaty-of-yazhelbitsy",
+          "to": "battle-of-shelon",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Treaty of Yazhelbitsy",
+          "revision": 1280320099,
+          "quote": "In the end, the discrepancies and controversial wording of the Treaty of Yazhelbitsy led to another confrontation between Moscow and Novgorod in 1471 which further weakened Novgorod.",
+          "explanation": "The English Wikipedia article \"Treaty of Yazhelbitsy\" (revision 1280320099) says: \"In the end, the discrepancies and controversial wording of the Treaty of Yazhelbitsy led to another confrontation between Moscow and Novgorod in 1471 which further weakened Novgorod.\" The edge reads that sentence as: Treaty of Yazhelbitsy caused Battle of Shelon, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-033",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-chashniki",
+      "title": "Battle of Chashniki",
+      "edges": [
+        {
+          "from": "battle-of-chashniki",
+          "to": "battle-of-smoliani",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Chashniki",
+          "revision": 1370436929,
+          "quote": "This led to yet another French defeat, the Battle of Smoliani, on 14 November 1812.",
+          "explanation": "The English Wikipedia article \"Battle of Chashniki\" (revision 1370436929) says: \"This led to yet another French defeat, the Battle of Smoliani, on 14 November 1812.\" The edge reads that sentence as: Battle of Chashniki caused Battle of Smoliani, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-014",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "battle-of-whitestone-hill",
+      "title": "Battle of Whitestone Hill",
+      "edges": [
+        {
+          "from": "battle-of-whitestone-hill",
+          "to": "battle-of-killdeer-mountain",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Whitestone Hill",
+          "revision": 1377293585,
+          "quote": "This led to a renewed operation in 1864 against the Sioux and the Battle of Killdeer Mountain.",
+          "explanation": "The English Wikipedia article \"Battle of Whitestone Hill\" (revision 1377293585) says: \"This led to a renewed operation in 1864 against the Sioux and the Battle of Killdeer Mountain.\" The edge reads that sentence as: Battle of Whitestone Hill caused Battle of Killdeer Mountain, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-015",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "caroline-affair",
+      "title": "Caroline affair",
+      "edges": [
+        {
+          "from": "caroline-affair",
+          "to": "webster-ashburton-treaty",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Caroline affair",
+          "revision": 1369740349,
+          "quote": "The situation nearly led to armed conflict between the two nations but was eventually addressed through diplomatic negotiations that also resolved other territorial disputes in the Webster–Ashburton Treaty of 1842.",
+          "explanation": "The English Wikipedia article \"Caroline affair\" (revision 1369740349) says: \"The situation nearly led to armed conflict between the two nations but was eventually addressed through diplomatic negotiations that also resolved other territorial disputes in the Webster–Ashburton Treaty of 1842.\" The edge reads that sentence as: Webster–Ashburton Treaty was a response to Caroline affair, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-016",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "hadzi-prodan-s-rebellion",
+      "title": "Hadži-Prodan's rebellion",
+      "edges": [
+        {
+          "from": "hadzi-prodan-s-rebellion",
+          "to": "second-serbian-uprising",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Hadži-Prodan's rebellion",
+          "revision": 1377048169,
+          "quote": "The atrocities that followed the rebellion sparked the Second Serbian Uprising under the leadership of Miloš Obrenović.",
+          "explanation": "The English Wikipedia article \"Hadži-Prodan's rebellion\" (revision 1377048169) says: \"The atrocities that followed the rebellion sparked the Second Serbian Uprising under the leadership of Miloš Obrenović.\" The edge reads that sentence as: Hadži-Prodan's rebellion caused Second Serbian Uprising, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-017",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "battle-of-chinkiang",
+      "title": "Battle of Chinkiang",
+      "edges": [
+        {
+          "from": "battle-of-chinkiang",
+          "to": "treaty-of-nanking",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Chinkiang",
+          "revision": 1380896002,
+          "quote": "As a result, the Daoguang Emperor decided to sue for peace and agreed to sign the Treaty of Nanking, which brought hostilities to an end.",
+          "explanation": "The English Wikipedia article \"Battle of Chinkiang\" (revision 1380896002) says: \"As a result, the Daoguang Emperor decided to sue for peace and agreed to sign the Treaty of Nanking, which brought hostilities to an end.\" The edge reads that sentence as: Battle of Chinkiang caused Treaty of Nanking, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-034",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "battle-of-koniginhof",
+      "title": "Battle of Königinhof",
+      "edges": [
+        {
+          "from": "battle-of-koniginhof",
+          "to": "battle-of-koniggratz",
+          "type": "precondition-of",
+          "confidence": "probable",
+          "article": "Battle of Königinhof",
+          "revision": 1370446637,
+          "quote": "As one of the preliminary engagements leading up to the Battle of Königgrätz, it resulted in a victory for Prussian forces despite stiff Austrian resistance.",
+          "explanation": "The English Wikipedia article \"Battle of Königinhof\" (revision 1370446637) says: \"As one of the preliminary engagements leading up to the Battle of Königgrätz, it resulted in a victory for Prussian forces despite stiff Austrian resistance.\" The edge reads that sentence as: Battle of Königinhof was a precondition of Battle of Königgrätz, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-018",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "battle-of-langfang",
+      "title": "Battle of Langfang",
+      "edges": [
+        {
+          "from": "battle-of-the-taku-forts-1900",
+          "to": "battle-of-langfang",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Battle of Langfang",
+          "revision": 1381524212,
+          "quote": "The unexpected attack on Seymour by the Chinese army was prompted by an allied European and Japanese attack on the Dagu Forts two days beforehand.",
+          "explanation": "The English Wikipedia article \"Battle of Langfang\" (revision 1381524212) says: \"The unexpected attack on Seymour by the Chinese army was prompted by an allied European and Japanese attack on the Dagu Forts two days beforehand.\" The edge reads that sentence as: Battle of Langfang was a response to Battle of the Taku Forts (1900), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-019",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "battle-of-ong-ang-1885",
+      "title": "Battle of Đồng Đăng (1885)",
+      "edges": [
+        {
+          "from": "battle-of-ong-ang-1885",
+          "to": "battle-of-bang-bo-zhennan-pass",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Đồng Đăng (1885)",
+          "revision": 1370603011,
+          "quote": "Three weeks later the Chinese attacked the Đồng Đăng garrison, precipitating a series of events that led to the French defeat at the Battle of Bang Bo (24 March 1885).",
+          "explanation": "The English Wikipedia article \"Battle of Đồng Đăng (1885)\" (revision 1370603011) says: \"Three weeks later the Chinese attacked the Đồng Đăng garrison, precipitating a series of events that led to the French defeat at the Battle of Bang Bo (24 March 1885).\" The edge reads that sentence as: Battle of Đồng Đăng (1885) caused Battle of Bang Bo (Zhennan Pass), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-035",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-wartenburg",
+      "title": "Battle of Wartenburg",
+      "edges": [
+        {
+          "from": "battle-of-wartenburg",
+          "to": "battle-of-leipzig",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Battle of Wartenburg",
+          "revision": 1370276737,
+          "quote": "The battle allowed the Army of Silesia to cross the Elbe, ultimately leading to the Battle of Leipzig.",
+          "explanation": "The English Wikipedia article \"Battle of Wartenburg\" (revision 1370276737) says: \"The battle allowed the Army of Silesia to cross the Elbe, ultimately leading to the Battle of Leipzig.\" The edge reads that sentence as: Battle of Wartenburg made Battle of Leipzig possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-036",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "campaign-in-north-east-france-1814",
+      "title": "Campaign in north-east France (1814)",
+      "edges": [
+        {
+          "from": "campaign-in-north-east-france-1814",
+          "to": "treaty-of-paris-1814",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Campaign in north-east France (1814)",
+          "revision": 1370607680,
+          "quote": "As a result, the victorious Coalition negotiated the Treaty of Paris, under which Napoleon was exiled to the island of Elba and the borders of France were returned to where they had been in 1792.",
+          "explanation": "The English Wikipedia article \"Campaign in north-east France (1814)\" (revision 1370607680) says: \"As a result, the victorious Coalition negotiated the Treaty of Paris, under which Napoleon was exiled to the island of Elba and the borders of France were returned to where they had been in 1792.\" The edge reads that sentence as: Campaign in north-east France (1814) caused Treaty of Paris (1814), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-016",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "lefebvre-s-charles-town-expedition",
+      "title": "Lefebvre's Charles Town expedition",
+      "edges": [
+        {
+          "from": "lefebvre-s-charles-town-expedition",
+          "to": "siege-of-pensacola-1707",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Lefebvre's Charles Town expedition",
+          "revision": 1375845218,
+          "quote": "In response to the Franco-Spanish expedition, Carolinians led Native American raiding expeditions that besieged Pensacola, one of the few remaining Spanish outposts in Florida.",
+          "explanation": "The English Wikipedia article \"Lefebvre's Charles Town expedition\" (revision 1375845218) says: \"In response to the Franco-Spanish expedition, Carolinians led Native American raiding expeditions that besieged Pensacola, one of the few remaining Spanish outposts in Florida.\" The edge reads that sentence as: Siege of Pensacola (1707) was a response to Lefebvre's Charles Town expedition, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-017",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "rush-bagot-treaty",
+      "title": "Rush–Bagot Treaty",
+      "edges": [
+        {
+          "from": "rush-bagot-treaty",
+          "to": "treaty-of-washington-1871",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Rush–Bagot Treaty",
+          "revision": 1332209002,
+          "quote": "The treaty eventually led to the Treaty of Washington of 1871, which completed disarmament.",
+          "explanation": "The English Wikipedia article \"Rush–Bagot Treaty\" (revision 1332209002) says: \"The treaty eventually led to the Treaty of Washington of 1871, which completed disarmament.\" The edge reads that sentence as: Rush–Bagot Treaty caused Treaty of Washington (1871), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-020",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "safavid-conquest-of-shirvan",
+      "title": "Safavid conquest of Shirvan",
+      "edges": [
+        {
+          "from": "safavid-conquest-of-shirvan",
+          "to": "battle-of-sharur",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Safavid conquest of Shirvan",
+          "revision": 1375207686,
+          "quote": "Ismail's victory alarmed the ruler of the Aq Qoyunlu, Alvand, who subsequently proceeded north from Tabriz, and crossed the Aras River in order to challenge the Safavid forces; a pitched battle was fought at Sharur in which Ismail's army came out victorious despite being outnumbered by four to one.",
+          "explanation": "The English Wikipedia article \"Safavid conquest of Shirvan\" (revision 1375207686) says: \"Ismail's victory alarmed the ruler of the Aq Qoyunlu, Alvand, who subsequently proceeded north from Tabriz, and crossed the Aras River in order to challenge the Safavid forces; a pitched battle was fought at Sharur in which Ismail's army came out victorious despite being outnumbered by four to one.\" The edge reads that sentence as: Safavid conquest of Shirvan caused Battle of Sharur, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-037",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "siege-of-moscow-1618",
+      "title": "Siege of Moscow (1618)",
+      "edges": [
+        {
+          "from": "siege-of-moscow-1618",
+          "to": "truce-of-deulino",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Siege of Moscow (1618)",
+          "revision": 1370743684,
+          "quote": "This forced the Russian government to accept the difficult conditions of the Truce of Deulino.",
+          "explanation": "The English Wikipedia article \"Siege of Moscow (1618)\" (revision 1370743684) says: \"This forced the Russian government to accept the difficult conditions of the Truce of Deulino.\" The edge reads that sentence as: Siege of Moscow (1618) caused Truce of Deulino, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-038",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "siege-of-narva-1581",
+      "title": "Siege of Narva (1581)",
+      "edges": [
+        {
+          "from": "siege-of-narva-1581",
+          "to": "treaty-of-plussa",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Siege of Narva (1581)",
+          "revision": 1370743908,
+          "quote": "The conquest also forced the Tsar to acknowledge his defeat and sign a humiliating treaty only 2 years later.",
+          "explanation": "The English Wikipedia article \"Siege of Narva (1581)\" (revision 1370743908) says: \"The conquest also forced the Tsar to acknowledge his defeat and sign a humiliating treaty only 2 years later.\" The edge reads that sentence as: Siege of Narva (1581) caused Treaty of Plussa, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-039",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "siege-of-orleans-1563",
+      "title": "Siege of Orléans (1563)",
+      "edges": [
+        {
+          "from": "siege-of-orleans-1563",
+          "to": "edict-of-amboise",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Siege of Orléans (1563)",
+          "revision": 1380766837,
+          "quote": "As a result the captive Louis, Prince of Condé and Anne de Montmorency at Catherine de' Medici's direction were able to negotiate a compromise end to the first war in the Edict of Amboise.",
+          "explanation": "The English Wikipedia article \"Siege of Orléans (1563)\" (revision 1380766837) says: \"As a result the captive Louis, Prince of Condé and Anne de Montmorency at Catherine de' Medici's direction were able to negotiate a compromise end to the first war in the Edict of Amboise.\" The edge reads that sentence as: Siege of Orléans (1563) made Edict of Amboise possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-040",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "swedish-invasion-of-brandenburg",
+      "title": "Swedish invasion of Brandenburg",
+      "edges": [
+        {
+          "from": "swedish-invasion-of-brandenburg",
+          "to": "scanian-war",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Swedish invasion of Brandenburg",
+          "revision": 1375948359,
+          "quote": "The Swedish invasion sparked the Swedish-Brandenburg War that, following further declarations of war by European powers allied with Brandenburg, expanded into a North European conflict that did not end until 1679.",
+          "explanation": "The English Wikipedia article \"Swedish invasion of Brandenburg\" (revision 1375948359) says: \"The Swedish invasion sparked the Swedish-Brandenburg War that, following further declarations of war by European powers allied with Brandenburg, expanded into a North European conflict that did not end until 1679.\" The edge reads that sentence as: Swedish invasion of Brandenburg caused Scanian War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-041",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "existing": "american-algerian-war",
+      "title": "American-Algerian War",
+      "edges": [
+        {
+          "from": "american-revolutionary-war",
+          "to": "american-algerian-war",
+          "type": "precondition-of",
+          "confidence": "probable",
+          "article": "American-Algerian War",
+          "revision": 1382319805,
+          "quote": "Occurring after the U.S. became independent from the British Empire as a result of the American Revolutionary War, Algiers declared war on the United States after realizing that American merchant shipping was no longer under the protection of the Royal Navy.",
+          "explanation": "The English Wikipedia article \"American-Algerian War\" (revision 1382319805) says: \"Occurring after the U.S. became independent from the British Empire as a result of the American Revolutionary War, Algiers declared war on the United States after realizing that American merchant shipping was no longer under the protection of the Royal Navy.\" The edge reads that sentence as: American Revolutionary War was a precondition of American-Algerian War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-042",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "assassination-of-john-the-fearless",
+      "title": "Assassination of John the Fearless",
+      "edges": [
+        {
+          "from": "assassination-of-john-the-fearless",
+          "to": "treaty-of-troyes",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Assassination of John the Fearless",
+          "revision": 1364093278,
+          "quote": "This led to the Treaty of Troyes a year later in 1420, which gave the successor of the crown of France temporarily to King Henry V of England.",
+          "explanation": "The English Wikipedia article \"Assassination of John the Fearless\" (revision 1364093278) says: \"This led to the Treaty of Troyes a year later in 1420, which gave the successor of the crown of France temporarily to King Henry V of England.\" The edge reads that sentence as: Assassination of John the Fearless caused Treaty of Troyes, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-018",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "battle-of-paducah",
+      "title": "Battle of Paducah",
+      "edges": [
+        {
+          "from": "battle-of-paducah",
+          "to": "battle-of-fort-pillow",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Battle of Paducah",
+          "revision": 1370452606,
+          "quote": "One historian has argued that the anger of Forrest's men towards the Black troops who thwarted their attack and refused Forrest's demand to surrender led to the massacre of surrendering Black troops at Fort Pillow, Tennessee two weeks later.",
+          "explanation": "The English Wikipedia article \"Battle of Paducah\" (revision 1370452606) says: \"One historian has argued that the anger of Forrest's men towards the Black troops who thwarted their attack and refused Forrest's demand to surrender led to the massacre of surrendering Black troops at Fort Pillow, Tennessee two weeks later.\" The edge reads that sentence as: Battle of Paducah caused Battle of Fort Pillow, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-043",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "battle-of-rathmines",
+      "title": "Battle of Rathmines",
+      "edges": [
+        {
+          "from": "battle-of-rathmines",
+          "to": "cromwellian-conquest-of-ireland",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Battle of Rathmines",
+          "revision": 1374309808,
+          "quote": "Victory secured Dublin for the Commonwealth, enabling another 12,000 troops to land unimpeded a few days later, and begin the Cromwellian conquest of Ireland.",
+          "explanation": "The English Wikipedia article \"Battle of Rathmines\" (revision 1374309808) says: \"Victory secured Dublin for the Commonwealth, enabling another 12,000 troops to land unimpeded a few days later, and begin the Cromwellian conquest of Ireland.\" The edge reads that sentence as: Battle of Rathmines made Cromwellian conquest of Ireland possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-021",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "battle-of-the-strait-of-hormuz-1553",
+      "title": "Battle of the Strait of Hormuz (1553)",
+      "edges": [
+        {
+          "from": "ottoman-campaign-against-hormuz",
+          "to": "battle-of-the-strait-of-hormuz-1553",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Battle of the Strait of Hormuz (1553)",
+          "revision": 1370602416,
+          "quote": "Piri Reis' attack on Muscat and Hormuz the previous year had triggered a Portuguese response from Goa, in the form of 30 galleons and caravels, 70 oar ships, and 3,000 soldiers commanded by the Viceroy himself, Dom Afonso de Noronha.",
+          "explanation": "The English Wikipedia article \"Battle of the Strait of Hormuz (1553)\" (revision 1370602416) says: \"Piri Reis' attack on Muscat and Hormuz the previous year had triggered a Portuguese response from Goa, in the form of 30 galleons and caravels, 70 oar ships, and 3,000 soldiers commanded by the Viceroy himself, Dom Afonso de Noronha.\" The edge reads that sentence as: Battle of the Strait of Hormuz (1553) was a response to Ottoman campaign against Hormuz, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-044",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "dalecarlian-rebellion-of-1743",
+      "title": "Dalecarlian Rebellion of 1743",
+      "edges": [
+        {
+          "from": "russo-swedish-war-1741-1743",
+          "to": "dalecarlian-rebellion-of-1743",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Dalecarlian Rebellion of 1743",
+          "revision": 1378904227,
+          "quote": "This dissatisfaction was strongest in Dalecarlia, partly because the Hats had introduced restrictions in the Dalecarlians' free exchange of goods with neighboring Norway, but mainly because of the unlucky Russo-Swedish War (1741–43) to which the peasants had to provide soldiers.",
+          "explanation": "The English Wikipedia article \"Dalecarlian Rebellion of 1743\" (revision 1378904227) says: \"This dissatisfaction was strongest in Dalecarlia, partly because the Hats had introduced restrictions in the Dalecarlians' free exchange of goods with neighboring Norway, but mainly because of the unlucky Russo-Swedish War (1741–43) to which the peasants had to provide soldiers.\" The edge reads that sentence as: Russo-Swedish War (1741–1743) caused Dalecarlian Rebellion of 1743, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-019",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "first-battle-of-mesilla",
+      "title": "First Battle of Mesilla",
+      "edges": [
+        {
+          "from": "first-battle-of-mesilla",
+          "to": "new-mexico-campaign",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "First Battle of Mesilla",
+          "revision": 1379349966,
+          "quote": "The victory paved the way for the Confederate New Mexico Campaign the following year.",
+          "explanation": "The English Wikipedia article \"First Battle of Mesilla\" (revision 1379349966) says: \"The victory paved the way for the Confederate New Mexico Campaign the following year.\" The edge reads that sentence as: First Battle of Mesilla made New Mexico campaign possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-022",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "indian-campaign-of-ahmad-shah-durrani",
+      "title": "Indian campaign of Ahmad Shah Durrani",
+      "edges": [
+        {
+          "from": "indian-campaign-of-ahmad-shah-durrani",
+          "to": "battle-of-plassey",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Indian campaign of Ahmad Shah Durrani",
+          "revision": 1377371027,
+          "quote": "Mere months later, the army of the Bengal Subah, weakened due to the Afghan invasion, were utterly defeated at the Battle of Plassey, beginning the rise of British power in India.",
+          "explanation": "The English Wikipedia article \"Indian campaign of Ahmad Shah Durrani\" (revision 1377371027) says: \"Mere months later, the army of the Bengal Subah, weakened due to the Afghan invasion, were utterly defeated at the Battle of Plassey, beginning the rise of British power in India.\" The edge reads that sentence as: Indian campaign of Ahmad Shah Durrani made Battle of Plassey possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-023",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "mohammad-khan-baluch-s-rebellion",
+      "title": "Mohammad Khan Baluch's Rebellion",
+      "edges": [
+        {
+          "from": "battle-of-samarra-1733",
+          "to": "mohammad-khan-baluch-s-rebellion",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Mohammad Khan Baluch's Rebellion",
+          "revision": 1379831010,
+          "quote": "In the aftermath of Nader's crippling defeat and expulsion from Ottoman Baghdad, the commander who was put in charge of the 12,000 soldiers to maintain the siege of the city, Mohammad Khan Baloch, fled from Mesopotamia and returned to southern Persia, where, taking advantage of Nader's shattered prestige due to his ignominious defeat at the hands of Topal Pasha at the Battle of Samarra, Mohammad Khan raised the banner of rebellion in the south of the country.",
+          "explanation": "The English Wikipedia article \"Mohammad Khan Baluch's Rebellion\" (revision 1379831010) says: \"In the aftermath of Nader's crippling defeat and expulsion from Ottoman Baghdad, the commander who was put in charge of the 12,000 soldiers to maintain the siege of the city, Mohammad Khan Baloch, fled from Mesopotamia and returned to southern Persia, where, taking advantage of Nader's shattered prestige due to his ignominious defeat at the hands of Topal Pasha at the Battle of Samarra, Mohammad Khan raised the banner of rebellion in the south of the country.\" The edge reads that sentence as: Battle of Samarra (1733) made Mohammad Khan Baluch's Rebellion possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-africa-002",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "africa",
+      "writer": "B",
+      "existing": "battle-of-italeni",
+      "title": "Battle of Italeni",
+      "edges": [
+        {
+          "from": "battle-of-italeni",
+          "to": "battle-of-blood-river",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Battle of Italeni",
+          "revision": 1370266163,
+          "quote": "However, it has been speculated that, without the lessons learnt as a result of the Battle of Italeni - such as fighting from the shelter of ox-wagons whenever possible and choosing the place of battle rather than being enticed into unfavourable terrain - the Voortrekkers would not have succeeded in finally beating the Zulus at the Battle of Blood River eight months later.",
+          "explanation": "The English Wikipedia article \"Battle of Italeni\" (revision 1370266163) says: \"However, it has been speculated that, without the lessons learnt as a result of the Battle of Italeni - such as fighting from the shelter of ox-wagons whenever possible and choosing the place of battle rather than being enticed into unfavourable terrain - the Voortrekkers would not have succeeded in finally beating the Zulus at the Battle of Blood River eight months later.\" The edge reads that sentence as: Battle of Italeni made Battle of Blood River possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-africa-003",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "africa",
+      "writer": "A",
+      "existing": "battle-of-sikkak",
+      "title": "Battle of Sikkak",
+      "edges": [
+        {
+          "from": "battle-of-sikkak",
+          "to": "siege-of-constantine",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Battle of Sikkak",
+          "revision": 1370589378,
+          "quote": "France used the peace brought about by the victory to concentrate their limited forces against the Beylik of Constantine, winning the 1837 Siege of Constantine.",
+          "explanation": "The English Wikipedia article \"Battle of Sikkak\" (revision 1370589378) says: \"France used the peace brought about by the victory to concentrate their limited forces against the Beylik of Constantine, winning the 1837 Siege of Constantine.\" The edge reads that sentence as: Battle of Sikkak made Siege of Constantine possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-024",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "miao-rebellion-1854-1873",
+      "title": "Miao Rebellion (1854–1873)",
+      "edges": [
+        {
+          "from": "taiping-rebellion",
+          "to": "miao-rebellion-1854-1873",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Miao Rebellion (1854–1873)",
+          "revision": 1370628188,
+          "quote": "The eruption of the Taiping Rebellion led the Qing government to increase taxation, and to simultaneously withdraw troops from the already restive region, thus allowing a rebellion to unfold.",
+          "explanation": "The English Wikipedia article \"Miao Rebellion (1854–1873)\" (revision 1370628188) says: \"The eruption of the Taiping Rebellion led the Qing government to increase taxation, and to simultaneously withdraw troops from the already restive region, thus allowing a rebellion to unfold.\" The edge reads that sentence as: Taiping Rebellion made Miao Rebellion (1854–1873) possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-020",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "1851-chilean-revolution",
+      "title": "1851 Chilean revolution",
+      "edges": [
+        {
+          "from": "revolutions-of-1848",
+          "to": "1851-chilean-revolution",
+          "type": "inspired",
+          "confidence": "probable",
+          "article": "1851 Chilean revolution",
+          "revision": 1370278887,
+          "quote": "The European Revolutions of 1848 also inspired and encouraged opposition political movements, who increasingly saw armed action as the most realistic means of forcing political change.·",
+          "explanation": "The English Wikipedia article \"1851 Chilean revolution\" (revision 1370278887) says: \"The European Revolutions of 1848 also inspired and encouraged opposition political movements, who increasingly saw armed action as the most realistic means of forcing political change.·\" The edge reads that sentence as: Revolutions of 1848 inspired 1851 Chilean revolution, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-025",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "B",
+      "existing": "albanian-revolt-of-1845",
+      "title": "Albanian revolt of 1845",
+      "edges": [
+        {
+          "from": "tanzimat",
+          "to": "albanian-revolt-of-1845",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Albanian revolt of 1845",
+          "revision": 1370104623,
+          "quote": "The Tanzimat reforms triggered a series of uprisings in Albanian Vilayets.",
+          "explanation": "The English Wikipedia article \"Albanian revolt of 1845\" (revision 1370104623) says: \"The Tanzimat reforms triggered a series of uprisings in Albanian Vilayets.\" The edge reads that sentence as: Tanzimat caused Albanian revolt of 1845, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-021",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "northeast-coast-campaign-1745",
+      "title": "Northeast Coast campaign (1745)",
+      "edges": [
+        {
+          "from": "siege-of-louisbourg-1745",
+          "to": "northeast-coast-campaign-1745",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Northeast Coast campaign (1745)",
+          "revision": 1375093114,
+          "quote": "In response to the New England expedition against Louisbourg which finished in June 1745, the Wabanaki retaliated by attacking the New England border.",
+          "explanation": "The English Wikipedia article \"Northeast Coast campaign (1745)\" (revision 1375093114) says: \"In response to the New England expedition against Louisbourg which finished in June 1745, the Wabanaki retaliated by attacking the New England border.\" The edge reads that sentence as: Northeast Coast campaign (1745) was a response to Siege of Louisbourg (1745), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-022",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "existing": "treaty-of-fort-wayne-1809",
+      "title": "Treaty of Fort Wayne (1809)",
+      "edges": [
+        {
+          "from": "treaty-of-fort-wayne-1809",
+          "to": "tecumseh-s-war",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Treaty of Fort Wayne (1809)",
+          "revision": 1372198832,
+          "quote": "The treaty led to a war with the United States begun by Shawnee leader Tecumseh and other dissenting tribesmen in what came to be called \"Tecumseh's War\".",
+          "explanation": "The English Wikipedia article \"Treaty of Fort Wayne (1809)\" (revision 1372198832) says: \"The treaty led to a war with the United States begun by Shawnee leader Tecumseh and other dissenting tribesmen in what came to be called \"Tecumseh's War\".\" The edge reads that sentence as: Treaty of Fort Wayne (1809) caused Tecumseh's War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-americas-023",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "americas",
+      "writer": "A",
+      "existing": "treaty-of-st-louis-1804",
+      "title": "Treaty of St. Louis (1804)",
+      "edges": [
+        {
+          "from": "treaty-of-st-louis-1804",
+          "to": "black-hawk-war",
+          "type": "reacted-to",
+          "confidence": "probable",
+          "article": "Treaty of St. Louis (1804)",
+          "revision": 1367504159,
+          "quote": "Black Hawk eventually led the Black Hawk War to fight its terms.",
+          "explanation": "The English Wikipedia article \"Treaty of St. Louis (1804)\" (revision 1367504159) says: \"Black Hawk eventually led the Black Hawk War to fight its terms.\" The edge reads that sentence as: Black Hawk War was a response to Treaty of St. Louis (1804), and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-europe-045",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "europe",
+      "writer": "B",
+      "existing": "appeal-war",
+      "title": "Appeal War",
+      "edges": [
+        {
+          "from": "christmas-flood-of-1717",
+          "to": "appeal-war",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Appeal War",
+          "revision": 1377786699,
+          "quote": "The trigger was the Christmas flood of 1717, which caused widespread destruction in coastal parts of the principality.",
+          "explanation": "The English Wikipedia article \"Appeal War\" (revision 1377786699) says: \"The trigger was the Christmas flood of 1717, which caused widespread destruction in coastal parts of the principality.\" The edge reads that sentence as: Christmas Flood of 1717 caused Appeal War, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
+      "id": "2026-11-03-asia-026",
+      "planned": "2026-11-03T00:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "existing": "battle-of-kejiwan",
+      "title": "Battle of Kejiwan",
+      "edges": [
+        {
+          "from": "battle-of-kejiwan",
+          "to": "battle-of-delanggu",
+          "type": "enabled",
+          "confidence": "probable",
+          "article": "Battle of Kejiwan",
+          "revision": 1370445015,
+          "quote": "His victory enabled him to continue his movement northwards to link up with another rebel army under Kyai Maja after capturing the town of Delanggu.",
+          "explanation": "The English Wikipedia article \"Battle of Kejiwan\" (revision 1370445015) says: \"His victory enabled him to continue his movement northwards to link up with another rebel army under Kyai Maja after capturing the town of Delanggu.\" The edge reads that sentence as: Battle of Kejiwan made Battle of Delanggu possible, and nothing more."
+        }
+      ],
+      "rank": "edges-from-articles",
+      "why": "One sentence of the English Wikipedia link this event to another event the atlas holds, and each is quoted in full."
+    },
+    {
       "id": "2026-11-02-europe-152",
       "planned": "2026-11-02T20:33Z",
       "lane": "europe",

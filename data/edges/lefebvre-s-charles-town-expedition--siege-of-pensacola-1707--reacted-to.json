@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "lefebvre-s-charles-town-expedition--siege-of-pensacola-1707--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lefebvre's Charles Town expedition\", revision 1375845218"
+    }
+  ],
+  "from": "lefebvre-s-charles-town-expedition",
+  "to": "siege-of-pensacola-1707",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Lefebvre's Charles Town expedition\" (revision 1375845218) says: \"In response to the Franco-Spanish expedition, Carolinians led Native American raiding expeditions that besieged Pensacola, one of the few remaining Spanish outposts in Florida.\" The edge reads that sentence as: Siege of Pensacola (1707) was a response to Lefebvre's Charles Town expedition, and nothing more.",
+  "dispute": null
+}

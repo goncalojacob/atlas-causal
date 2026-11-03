@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "hungarian-campaign-of-1527-1528--suleiman-i-s-campaign-of-1529--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Suleiman I's campaign of 1529\", revision 1370748941"
+    }
+  ],
+  "from": "hungarian-campaign-of-1527-1528",
+  "to": "suleiman-i-s-campaign-of-1529",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Suleiman I's campaign of 1529\" (revision 1370748941) says: \"This was in response to Ferdinand I's daring assault on Ottoman Hungary.\" The edge reads that sentence as: Suleiman I's campaign of 1529 was a response to Hungarian campaign of 1527–1528, and nothing more.",
+  "dispute": null
+}

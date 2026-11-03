@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "capture-of-porto",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3403844",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Capture of Porto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3403844"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Porto\", revision 1370609420"
+    }
+  ],
+  "title": "Capture of Porto",
+  "summary": "The English Wikipedia article \"Capture of Porto\", at revision 1370609420, opens: \"The Capture of Porto took place in October 1580 by the Spanish forces commanded by Don Sancho d'Avila during the War of the Portuguese Succession. The city was captured easily by the Spanish troops, thereby finishing off the Prior of Crato's army and its final defeat in Mainland Portugal, thus assuring the personal union of Portugal and Spain for 60 years under the Iberian Union.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3403844, imported by tools/import/wikidata.mjs. The item's own description reads \"1580 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1580,
+    "end": 1580,
+    "date": "1580-10-24"
+  },
+  "place": "porto",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-portuguese-succession"
+}

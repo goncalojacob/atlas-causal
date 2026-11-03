@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "stecklikrieg--act-of-mediation--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Stecklikrieg\", revision 1381892212"
+    }
+  ],
+  "from": "stecklikrieg",
+  "to": "act-of-mediation",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Stecklikrieg\" (revision 1381892212) says: \"The Stecklikrieg (\"War of Sticks\") was a civil war in Switzerland in 1802 that resulted in the collapse of the Helvetic Republic, the renewed French occupation of Switzerland and ultimately the Act of Mediation dictated by Napoleon Bonaparte on 19 February 1803.\" The edge reads that sentence as: Stecklikrieg caused Act of Mediation, and nothing more.",
+  "dispute": null
+}

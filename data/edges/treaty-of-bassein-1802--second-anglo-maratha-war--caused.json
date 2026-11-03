@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "treaty-of-bassein-1802--second-anglo-maratha-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Bassein (1802)\", revision 1365254079"
+    }
+  ],
+  "from": "treaty-of-bassein-1802",
+  "to": "second-anglo-maratha-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Treaty of Bassein (1802)\" (revision 1365254079) says: \"However, the treaty was not acceptable to all Maratha chieftains and resulted in the Second Anglo-Maratha War.\" The edge reads that sentence as: Treaty of Bassein (1802) caused Second Anglo-Maratha War, and nothing more.",
+  "dispute": null
+}

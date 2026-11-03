@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-fehmarn-1644--treaty-of-bromsebro-1645--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fehmarn (1644)\", revision 1370440658"
+    }
+  ],
+  "from": "battle-of-fehmarn-1644",
+  "to": "treaty-of-bromsebro-1645",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Fehmarn (1644)\" (revision 1370440658) says: \"This paved the way for negotiations and eventually the treaty of Brömsebro on 13 August 1645.\" The edge reads that sentence as: Battle of Fehmarn (1644) made Treaty of Brömsebro (1645) possible, and nothing more.",
+  "dispute": null
+}

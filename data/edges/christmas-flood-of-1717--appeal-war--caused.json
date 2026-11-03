@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "christmas-flood-of-1717--appeal-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Appeal War\", revision 1377786699"
+    }
+  ],
+  "from": "christmas-flood-of-1717",
+  "to": "appeal-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Appeal War\" (revision 1377786699) says: \"The trigger was the Christmas flood of 1717, which caused widespread destruction in coastal parts of the principality.\" The edge reads that sentence as: Christmas Flood of 1717 caused Appeal War, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-czarne",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q928367",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Czarne"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q928367"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Czarne\", revision 1370109462"
+    }
+  ],
+  "title": "Battle of Czarne",
+  "summary": "The English Wikipedia article \"Battle of Czarne\", at revision 1370109462, opens: \"The Battle of Czarne, 12 to 17 April 1627, took place during the Polish–Swedish War (1626–1629) around Czarne in Poland. A Polish–Lithuanian Commonwealth army under Stanisław Koniecpolski confronted a Swedish force led by von Lauenstein, Maximilian Teuffel, and von Kötteritz.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q928367, imported by tools/import/wikidata.mjs. The item's own description reads \"1627 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1627,
+    "end": 1627,
+    "date": "1627-04-12",
+    "endDate": "1627-04-17"
+  },
+  "place": "czarne",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "polish-swedish-war-1626-1629"
+}

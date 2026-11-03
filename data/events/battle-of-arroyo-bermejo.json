@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-arroyo-bermejo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q113468238",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Arroyo Bermejo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q113468238"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Arroyo Bermejo\", revision 1370432566"
+    }
+  ],
+  "title": "Battle of Arroyo Bermejo",
+  "summary": "The English Wikipedia article \"Battle of Arroyo Bermejo\", at revision 1370432566, opens: \"The Battle of Arroyo Bermejo, also known as the Combat of Arroyo Bermejo or Action of Arroyo Bermejo, was a military engagement that took place on September 29, 1863, in Monte Plata, during the Dominican Restoration War, between Spanish troops led by Lieutenant General Pedro Santana and Dominican forces led by General Gregorio Luperón. The engagement ended in a Dominican victory, forcing the Spanish forces to withdraw toward Santo Domingo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q113468238, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-09-29"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "dominican-restoration-war"
+}

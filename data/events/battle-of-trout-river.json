@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-trout-river",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16822756",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Battle of Trout River"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16822756"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Trout River\", revision 1383076345"
+    }
+  ],
+  "title": "Battle of Trout River",
+  "summary": "The English Wikipedia article \"Battle of Trout River\", at revision 1383076345, opens: \"The Battle of Trout River was a military conflict that occurred on 27 May 1870. It was a part of the Fenian raids. This battle occurred outside of Huntingdon, Quebec, Canada, near the international border about 20 kilometres (12 mi) north of Malone, New York, United States. The location of this battle should not be confused with Trout River in the Northwest Territories.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16822756, imported by tools/import/wikidata.mjs. The item's own description reads \"1870 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1870,
+    "date": "1870-05-27"
+  },
+  "place": "huntingdon-quebec",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "fenian-raids"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "porto-alegre",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q40269",
+  "sitelinks": {
+    "count": 111,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Porto Alegre",
+    "pt": "Porto Alegre"
+  },
+  "sources": [],
+  "names": [
+    "Porto Alegre"
+  ],
+  "where": {
+    "lon": -51.23,
+    "lat": -30.032777777778,
+    "precision": "city",
+    "label": "Porto Alegre"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

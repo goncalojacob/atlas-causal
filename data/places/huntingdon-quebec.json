@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "huntingdon-quebec",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q141764",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Huntingdon, Quebec",
+    "pt": "Huntingdon (Quebec)"
+  },
+  "sources": [],
+  "names": [
+    "Huntingdon",
+    "Huntingdon, Quebec",
+    "Huntingdon (Quebec)"
+  ],
+  "where": {
+    "lon": -74.166666666667,
+    "lat": 45.083333333333,
+    "precision": "city",
+    "label": "Huntingdon, Quebec"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

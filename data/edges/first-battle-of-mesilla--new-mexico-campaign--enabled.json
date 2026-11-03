@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-mesilla--new-mexico-campaign--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Mesilla\", revision 1379349966"
+    }
+  ],
+  "from": "first-battle-of-mesilla",
+  "to": "new-mexico-campaign",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"First Battle of Mesilla\" (revision 1379349966) says: \"The victory paved the way for the Confederate New Mexico Campaign the following year.\" The edge reads that sentence as: First Battle of Mesilla made New Mexico campaign possible, and nothing more.",
+  "dispute": null
+}

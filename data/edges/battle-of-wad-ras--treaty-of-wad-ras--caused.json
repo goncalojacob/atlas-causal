@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-wad-ras--treaty-of-wad-ras--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wad Ras\", revision 1370846102"
+    }
+  ],
+  "from": "battle-of-wad-ras",
+  "to": "treaty-of-wad-ras",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Wad Ras\" (revision 1370846102) says: \"Following the successive defeats suffered by Morocco in its confrontations against Spanish troops and in particular after the Battle of Wad Ras, Sultan Muhammad IV of Morocco was forced to ask for peace from Queen Isabella II of Spain through the Treaty of Wad Ras, signed in Tetouan on 26 April 1860.\" The edge reads that sentence as: Battle of Wad Ras caused Treaty of Wad Ras, and nothing more.",
+  "dispute": null
+}

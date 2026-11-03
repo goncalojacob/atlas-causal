@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sack-of-old-oyo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q134006616",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Sack of Old Oyo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q134006616"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sack of Old Oyo\", revision 1381778574"
+    }
+  ],
+  "title": "Sack of Old Oyo",
+  "summary": "The English Wikipedia article \"Sack of Old Oyo\", at revision 1381778574, opens: \"The Sack of Old Oyo, also known as the Sack of Katunga, refers to the destruction and abandonment of Old Oyo, also known as Katungawhich was the capital and largest city of the Oyo Empire,\n in the 1830s, during the period of the Fula jihads in West Africa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q134006616, imported by tools/import/wikidata.mjs. The item's own description reads \"1830s sack\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1830,
+      "max": 1839
+    },
+    "end": {
+      "min": 1830,
+      "max": 1839
+    }
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "yoruba-wars"
+}

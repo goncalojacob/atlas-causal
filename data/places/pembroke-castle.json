@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "pembroke-castle",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1422235",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Pembroke Castle",
+    "pt": "Castelo de Pembroke"
+  },
+  "sources": [],
+  "names": [
+    "Pembroke Castle",
+    "Castelo de Pembroke"
+  ],
+  "where": {
+    "lon": -4.920555555555556,
+    "lat": 51.676944444444445,
+    "precision": "point",
+    "label": "Pembroke Castle"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

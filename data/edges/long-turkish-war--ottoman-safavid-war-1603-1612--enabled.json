@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "long-turkish-war--ottoman-safavid-war-1603-1612--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman–Safavid war (1603–1612)\", revision 1382224417"
+    }
+  ],
+  "from": "long-turkish-war",
+  "to": "ottoman-safavid-war-1603-1612",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Ottoman–Safavid war (1603–1612)\" (revision 1382224417) says: \"When Abbas I decided to attack the Ottomans to recover the large territories lost in the previous war, the Ottomans were engaged heavily in the European front due to the Long Turkish War started in 1593.\" The edge reads that sentence as: Long Turkish War made Ottoman–Safavid war (1603–1612) possible, and nothing more.",
+  "dispute": null
+}

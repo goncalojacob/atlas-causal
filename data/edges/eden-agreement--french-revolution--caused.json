@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "eden-agreement--french-revolution--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eden Agreement\", revision 1362634990"
+    }
+  ],
+  "from": "eden-agreement",
+  "to": "french-revolution",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Eden Agreement\" (revision 1362634990) says: \"This treaty is often considered to be one of the grievances of the French people that sparked the French Revolution.\" The edge reads that sentence as: Eden Agreement caused French Revolution, and nothing more.",
+  "dispute": null
+}

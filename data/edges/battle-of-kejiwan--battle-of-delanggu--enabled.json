@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-kejiwan--battle-of-delanggu--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kejiwan\", revision 1370445015"
+    }
+  ],
+  "from": "battle-of-kejiwan",
+  "to": "battle-of-delanggu",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Kejiwan\" (revision 1370445015) says: \"His victory enabled him to continue his movement northwards to link up with another rebel army under Kyai Maja after capturing the town of Delanggu.\" The edge reads that sentence as: Battle of Kejiwan made Battle of Delanggu possible, and nothing more.",
+  "dispute": null
+}

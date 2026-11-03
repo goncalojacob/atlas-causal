@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "treaty-of-berlin-1742--battle-of-dettingen--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Berlin (1742)\", revision 1381367708"
+    }
+  ],
+  "from": "treaty-of-berlin-1742",
+  "to": "battle-of-dettingen",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Treaty of Berlin (1742)\" (revision 1381367708) says: \"However, Prussia's former ally King Louis XV of France was upset by this peace agreement that gave the united Austrian, British and Hanoverian forces a free hand to oust the French troops at the 1743 Battle of Dettingen - an alienation that ultimately led to the Diplomatic Revolution of 1756.\" The edge reads that sentence as: Treaty of Berlin (1742) made Battle of Dettingen possible, and nothing more.",
+  "dispute": null
+}

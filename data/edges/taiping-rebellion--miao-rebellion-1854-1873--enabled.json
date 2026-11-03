@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "taiping-rebellion--miao-rebellion-1854-1873--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Miao Rebellion (1854–1873)\", revision 1370628188"
+    }
+  ],
+  "from": "taiping-rebellion",
+  "to": "miao-rebellion-1854-1873",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Miao Rebellion (1854–1873)\" (revision 1370628188) says: \"The eruption of the Taiping Rebellion led the Qing government to increase taxation, and to simultaneously withdraw troops from the already restive region, thus allowing a rebellion to unfold.\" The edge reads that sentence as: Taiping Rebellion made Miao Rebellion (1854–1873) possible, and nothing more.",
+  "dispute": null
+}

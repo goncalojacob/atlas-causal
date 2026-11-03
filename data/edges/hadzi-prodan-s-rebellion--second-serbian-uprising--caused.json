@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "hadzi-prodan-s-rebellion--second-serbian-uprising--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hadži-Prodan's rebellion\", revision 1377048169"
+    }
+  ],
+  "from": "hadzi-prodan-s-rebellion",
+  "to": "second-serbian-uprising",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Hadži-Prodan's rebellion\" (revision 1377048169) says: \"The atrocities that followed the rebellion sparked the Second Serbian Uprising under the leadership of Miloš Obrenović.\" The edge reads that sentence as: Hadži-Prodan's rebellion caused Second Serbian Uprising, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "first-cevallos-expedition--first-treaty-of-san-ildefonso--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Cevallos expedition\", revision 1370619263"
+    }
+  ],
+  "from": "first-cevallos-expedition",
+  "to": "first-treaty-of-san-ildefonso",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"First Cevallos expedition\" (revision 1370619263) says: \"During this conflict, Cevallos recaptured Colónia do Sacramento, resulting in the settlement being permanently ceded to the Spain as part of the terms of the First Treaty of San Ildefonso.\" The edge reads that sentence as: First Cevallos expedition caused First Treaty of San Ildefonso, and nothing more.",
+  "dispute": null
+}

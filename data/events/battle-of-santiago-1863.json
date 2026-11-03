@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-santiago-1863",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q130553396",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Battle of Santiago (1863)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q130553396"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Santiago (1863)\", revision 1370588614"
+    }
+  ],
+  "title": "Battle of Santiago (1863)",
+  "summary": "The English Wikipedia article \"Battle of Santiago (1863)\", at revision 1370588614, opens: \"The Battle of Santiago took place on September 6, 1863, during the Dominican Restoration War. Dominican troops launched repeated frontal assaults on Fort San Luis, which were repelled by Spanish rifle and artillery fire, inflicting heavy Dominican losses. A column of 3,000 Spanish reinforcements then entered Santiago, while the Dominicans defended the forts of Dios, Patria, and Libertad. The Spanish attacked Fort Patria and were repelled by Dominican cannon fire, suffering 153 casualties, but ultimately captured all three forts.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q130553396, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-09-06",
+    "endDate": "1863-09-13"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "dominican-restoration-war"
+}

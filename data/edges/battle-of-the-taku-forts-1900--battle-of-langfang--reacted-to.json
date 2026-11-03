@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-taku-forts-1900--battle-of-langfang--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Langfang\", revision 1381524212"
+    }
+  ],
+  "from": "battle-of-the-taku-forts-1900",
+  "to": "battle-of-langfang",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Langfang\" (revision 1381524212) says: \"The unexpected attack on Seymour by the Chinese army was prompted by an allied European and Japanese attack on the Dagu Forts two days beforehand.\" The edge reads that sentence as: Battle of Langfang was a response to Battle of the Taku Forts (1900), and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "assassination-of-john-the-fearless--treaty-of-troyes--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Assassination of John the Fearless\", revision 1364093278"
+    }
+  ],
+  "from": "assassination-of-john-the-fearless",
+  "to": "treaty-of-troyes",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Assassination of John the Fearless\" (revision 1364093278) says: \"This led to the Treaty of Troyes a year later in 1420, which gave the successor of the crown of France temporarily to King Henry V of England.\" The edge reads that sentence as: Assassination of John the Fearless caused Treaty of Troyes, and nothing more.",
+  "dispute": null
+}

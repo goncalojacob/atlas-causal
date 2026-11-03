@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "pigeon-hill-st-armand",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7193288",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Pigeon Hill (St. Armand)"
+  },
+  "sources": [],
+  "names": [
+    "Pigeon Hill",
+    "Pigeon Hill (St. Armand)"
+  ],
+  "where": {
+    "lon": -72.93916666666667,
+    "lat": 45.04194444444445,
+    "precision": "city",
+    "label": "Pigeon Hill (St. Armand)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

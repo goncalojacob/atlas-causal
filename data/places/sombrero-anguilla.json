@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "sombrero-anguilla",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q730092",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Sombrero, Anguilla",
+    "pt": "Sombrero (ilha)"
+  },
+  "sources": [],
+  "names": [
+    "Sombrero",
+    "Sombrero, Anguilla",
+    "Sombrero (ilha)"
+  ],
+  "where": {
+    "lon": -63.425277777778,
+    "lat": 18.589166666667,
+    "precision": "region",
+    "label": "Sombrero, Anguilla"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
