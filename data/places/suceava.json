@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "suceava",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q46400",
+  "sitelinks": {
+    "count": 64,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Suceava",
+    "pt": "Suceava"
+  },
+  "sources": [],
+  "names": [
+    "Suceava"
+  ],
+  "where": {
+    "lon": 26.255555555556,
+    "lat": 47.651388888889,
+    "precision": "city",
+    "label": "Suceava"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

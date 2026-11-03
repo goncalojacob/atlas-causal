@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-mount-gray",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871799",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Mount Gray"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871799"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mount Gray\", revision 1380654697"
+    }
+  ],
+  "title": "Battle of Mount Gray",
+  "summary": "The English Wikipedia article \"Battle of Mount Gray\", at revision 1380654697, opens: \"The Battle of Mount Gray was an engagement of the Apache Wars fought at the foothills of Gray Mountain on April 7, 1864. A troop of the United States Army's California Column attacked a superior force of Chiricahua Apaches at their camp and routed them from the field.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871799, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Apache Wars in New Mexico (1864)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-04-07"
+  },
+  "place": "peloncillo-mountains-hidalgo-county",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "apache-wars"
+}

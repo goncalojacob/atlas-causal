@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-ostroda",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q110386830",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Ostróda"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q110386830"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ostróda\", revision 1374783253"
+    }
+  ],
+  "title": "Battle of Ostróda",
+  "summary": "The English Wikipedia article \"Battle of Ostróda\", at revision 1374783253, opens: \"The Battle of Ostróda was a battle that took place on the 23rd of October 1628 in Ostróda during the Polish–Swedish War (1626–1629) between the Polish–Lithuanian Commonwealth commanded by Hetman Stanisław Koniecpolski and Jakub Butler against the Swedish Empire commanded by colonel Wolf Heinrich von Baudissin. It resulted in a Polish victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q110386830, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in 1628 part of the Polish-Swedish War (1626-1629)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1628,
+    "end": 1628,
+    "date": "1628-10-23"
+  },
+  "place": "ostroda",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "polish-swedish-war-1626-1629"
+}

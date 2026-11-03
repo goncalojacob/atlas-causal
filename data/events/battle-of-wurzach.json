@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-wurzach",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1255093",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Wurzach"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1255093"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wurzach\", revision 1370594614"
+    }
+  ],
+  "title": "Battle of Wurzach",
+  "summary": "The English Wikipedia article \"Battle of Wurzach\", at revision 1370594614, opens: \"The Battle of Wurzach, was a battle during the German Peasants' War that took place near Bad Wurzach in the present-day district of Ravensburg in Upper Swabia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1255093, imported by tools/import/wikidata.mjs. The item's own description reads \"1525 battle in the German Peasants' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1525,
+    "end": 1525,
+    "date": "1525-04-14"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "german-peasants-war"
+}

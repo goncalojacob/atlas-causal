@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "doubtful-canyon",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5300191",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Doubtful Canyon"
+  },
+  "sources": [],
+  "names": [
+    "Doubtful Canyon"
+  ],
+  "where": {
+    "lon": -109.087,
+    "lat": 32.3514,
+    "precision": "region",
+    "label": "Doubtful Canyon"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

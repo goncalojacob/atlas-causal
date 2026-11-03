@@ -9846,3 +9846,71 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-11-02: `battle-of-santome`, filed under `dominican-war-of-independence` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-054`, rank `child-of:dominican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-tillieangus`, filed under `marian-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-095`, rank `child-of:marian-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `fairfield-swamp-fight`, filed under `pequot-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-062`, rank `child-of:pequot-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-sama`, filed under `peruvian-bolivian-war-of-1841-42` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-064`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `portuguese-conquest-of-angonia`, filed under `portuguese-campaigns-of-pacification-and-occupation` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-097`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `portuguese-conquest-of-the-gaza-empire`, filed under `portuguese-campaigns-of-pacification-and-occupation` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-099`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `second-battle-of-macontene`, filed under `portuguese-campaigns-of-pacification-and-occupation` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-103`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-withlacoochee`, filed under `second-seminole-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-068`, rank `child-of:second-seminole-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `san-saba-fight-1831`, filed under `texas-indian-wars` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-072`, rank `child-of:texas-indian-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `dutch-west-indies-campaign`, filed under `fourth-anglo-dutch-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-americas-082`, rank `child-of:fourth-anglo-dutch-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-11-02: `battle-of-wurzach`, filed under `german-peasants-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-11-01-europe-107`, rank `child-of:german-peasants-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-el-numero`, filed under `dominican-war-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-056`, rank `child-of:dominican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-fuente-del-rodeo`, filed under `dominican-war-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-058`, rank `child-of:dominican-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `battle-of-craibstone`, filed under `marian-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-europe-094`, rank `child-of:marian-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `uruguay-campaign`, filed under `platine-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-065`, rank `child-of:platine-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `portuguese-conquest-of-viye`, filed under `portuguese-campaigns-of-pacification-and-occupation` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-europe-098`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `dissolution-of-the-peru-bolivian-confederation`, filed under `war-of-the-confederation` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-073`, rank `child-of:war-of-the-confederation`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-11-02: `porongos-massacre`, filed under `ragamuffin-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-11-01-americas-084`, rank `child-of:ragamuffin-war`. Its span and its subject put it inside the umbrella.

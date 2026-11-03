@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-fort-tularosa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871059",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Fort Tularosa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871059"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Tularosa\", revision 1379347101"
+    }
+  ],
+  "title": "Battle of Fort Tularosa",
+  "summary": "The English Wikipedia article \"Battle of Fort Tularosa\", at revision 1379347101, opens: \"The Battle of Fort Tularosa occurred in May 1880 near the present-day town of Aragon in Catron County, New Mexico. In an ongoing campaign to keep from being forced to live on reservations, Chiricahua Apache warriors led by Victorio attacked Fort Tularosa north of San Francisco Plaza. Buffalo Soldiers from the United States Army's 9th Cavalry, led by Sergeant George Jordan, repulsed the attack.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871059, imported by tools/import/wikidata.mjs. The item's own description reads \"1880 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1880,
+    "end": 1880,
+    "date": "1880-05-14"
+  },
+  "place": "aragon-new-mexico",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "apache-wars"
+}

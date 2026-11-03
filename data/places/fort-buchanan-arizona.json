@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "fort-buchanan-arizona",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q376168",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Fort Buchanan, Arizona"
+  },
+  "sources": [],
+  "names": [
+    "Fort Buchanan",
+    "Fort Buchanan, Arizona"
+  ],
+  "where": {
+    "lon": -110.70694444444,
+    "lat": 31.6575,
+    "precision": "point",
+    "label": "Fort Buchanan, Arizona"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

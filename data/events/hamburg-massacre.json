@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "hamburg-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5644307",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Hamburg massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5644307"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hamburg massacre\", revision 1372310401"
+    }
+  ],
+  "title": "Hamburg massacre",
+  "summary": "The English Wikipedia article \"Hamburg massacre\", at revision 1372310401, opens: \"The Hamburg massacre occurred in the United States town of Hamburg, South Carolina, in July 1876, leading up to the last election season of the Reconstruction era. It was the first of a series of civil disturbances planned and carried out by white Democrats in the majority-black Republican Edgefield District, with the goal of suppressing black Americans' civil rights and voting rights and disrupting Republican meetings, through actual and threatened violence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5644307, imported by tools/import/wikidata.mjs. The item's own description reads \"U.S. incident of racial violence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1876,
+    "date": "1876-07"
+  },
+  "place": "south-carolina-q1456",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "reconstruction-era"
+}
