@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "campaign-in-north-east-france-1814--treaty-of-paris-1814--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Campaign in north-east France (1814)\", revision 1370607680"
+    }
+  ],
+  "from": "campaign-in-north-east-france-1814",
+  "to": "treaty-of-paris-1814",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Campaign in north-east France (1814)\" (revision 1370607680) says: \"As a result, the victorious Coalition negotiated the Treaty of Paris, under which Napoleon was exiled to the island of Elba and the borders of France were returned to where they had been in 1792.\" The edge reads that sentence as: Campaign in north-east France (1814) caused Treaty of Paris (1814), and nothing more.",
+  "dispute": null
+}

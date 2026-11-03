@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "may-revolution--primera-junta--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Primera Junta\", revision 1376164957"
+    }
+  ],
+  "from": "may-revolution",
+  "to": "primera-junta",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Primera Junta\" (revision 1376164957) says: \"It was formed on 25 May 1810, as a result of the events of the May Revolution.\" The edge reads that sentence as: May Revolution caused Primera Junta, and nothing more.",
+  "dispute": null
+}

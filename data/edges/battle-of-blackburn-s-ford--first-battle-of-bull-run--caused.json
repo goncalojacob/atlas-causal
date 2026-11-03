@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-blackburn-s-ford--first-battle-of-bull-run--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Blackburn's Ford\", revision 1373519505"
+    }
+  ],
+  "from": "battle-of-blackburn-s-ford",
+  "to": "first-battle-of-bull-run",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Blackburn's Ford\" (revision 1373519505) says: \"The repulse at Blackburn's Ford led McDowell to seek to attack the Confederates at a different point along their line, leading to the First Battle of Bull Run three days later.\" The edge reads that sentence as: Battle of Blackburn's Ford caused First Battle of Bull Run, and nothing more.",
+  "dispute": null
+}

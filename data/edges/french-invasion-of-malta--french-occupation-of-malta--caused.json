@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "french-invasion-of-malta--french-occupation-of-malta--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French invasion of Malta\", revision 1371106535"
+    }
+  ],
+  "from": "french-invasion-of-malta",
+  "to": "french-occupation-of-malta",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"French invasion of Malta\" (revision 1371106535) says: \"The invasion therefore ended the 268-year-long Hospitaller rule in Malta, and resulted in the French occupation of Malta.\" The edge reads that sentence as: French invasion of Malta caused French occupation of Malta, and nothing more.",
+  "dispute": null
+}

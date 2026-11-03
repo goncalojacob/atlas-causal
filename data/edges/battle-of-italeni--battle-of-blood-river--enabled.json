@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-italeni--battle-of-blood-river--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Italeni\", revision 1370266163"
+    }
+  ],
+  "from": "battle-of-italeni",
+  "to": "battle-of-blood-river",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Italeni\" (revision 1370266163) says: \"However, it has been speculated that, without the lessons learnt as a result of the Battle of Italeni - such as fighting from the shelter of ox-wagons whenever possible and choosing the place of battle rather than being enticed into unfavourable terrain - the Voortrekkers would not have succeeded in finally beating the Zulus at the Battle of Blood River eight months later.\" The edge reads that sentence as: Battle of Italeni made Battle of Blood River possible, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "1770-1772-russian-plague--moscow-plague-riot-of-1771--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Moscow plague riot of 1771\", revision 1379200176"
+    }
+  ],
+  "from": "1770-1772-russian-plague",
+  "to": "moscow-plague-riot-of-1771",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Moscow plague riot of 1771\" (revision 1379200176) says: \"The Plague Riot (Russian: Чумной бунт, romanized: Chumnoy bunt) was a riot in Moscow in 1771 between 15 and 17 September, caused by an outbreak of bubonic plague.\" The edge reads that sentence as: 1770–1772 Russian plague caused Moscow plague riot of 1771, and nothing more.",
+  "dispute": null
+}

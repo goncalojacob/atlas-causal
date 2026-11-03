@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "siege-of-louisbourg-1745--northeast-coast-campaign-1745--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Northeast Coast campaign (1745)\", revision 1375093114"
+    }
+  ],
+  "from": "siege-of-louisbourg-1745",
+  "to": "northeast-coast-campaign-1745",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Northeast Coast campaign (1745)\" (revision 1375093114) says: \"In response to the New England expedition against Louisbourg which finished in June 1745, the Wabanaki retaliated by attacking the New England border.\" The edge reads that sentence as: Northeast Coast campaign (1745) was a response to Siege of Louisbourg (1745), and nothing more.",
+  "dispute": null
+}

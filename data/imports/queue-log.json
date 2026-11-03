@@ -100698,6 +100698,1366 @@
         "place": "elmina-castle"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-001",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-berlin-1742",
+        "edges": [
+          "treaty-of-berlin-1742--battle-of-dettingen--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-001",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "inca-civil-war",
+        "edges": [
+          "inca-civil-war--spanish-conquest-of-the-inca-empire--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-003",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-safavid-war-1603-1612",
+        "edges": [
+          "long-turkish-war--ottoman-safavid-war-1603-1612--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-002",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "convention-of-london-1840",
+        "edges": [
+          "convention-of-london-1840--oriental-crisis-of-1840--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-004",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "li-lobanov-treaty",
+        "edges": [
+          "li-lobanov-treaty--convention-for-the-lease-of-the-liaotung-peninsula--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-003",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "primera-junta",
+        "edges": [
+          "may-revolution--primera-junta--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-005",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-julich-succession",
+        "edges": [
+          "war-of-the-julich-succession--rappenkrieg--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-006",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-french-war-1778-1783",
+        "edges": [
+          "anglo-french-war-1778-1783--french-revolution--precondition-of"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-008",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "mudan-incident",
+        "edges": [
+          "mudan-incident--1874-japanese-expedition-to-taiwan--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-007",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "hundred-years-croatian-ottoman-war",
+        "edges": [
+          "fall-of-constantinople--hundred-years-croatian-ottoman-war--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-009",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-the-bulls-of-guisando",
+        "edges": [
+          "treaty-of-the-bulls-of-guisando--war-of-the-castilian-succession--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-011",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fehmarn-1644",
+        "edges": [
+          "battle-of-fehmarn-1644--treaty-of-bromsebro-1645--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-013",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "cantonal-rebellion",
+        "edges": [
+          "third-carlist-war--cantonal-rebellion--enabled",
+          "cantonal-rebellion--coup-d-etat-of-pavia--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-015",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "eden-agreement",
+        "edges": [
+          "eden-agreement--french-revolution--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-005",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "pottawatomie-massacre",
+        "edges": [
+          "sacking-of-lawrence--pottawatomie-massacre--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-009",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "slaughter-of-the-knezes",
+        "edges": [
+          "slaughter-of-the-knezes--first-serbian-uprising--caused",
+          "slaughter-of-the-knezes--serbian-revolution--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-019",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "suleiman-i-s-campaign-of-1529",
+        "edges": [
+          "hungarian-campaign-of-1527-1528--suleiman-i-s-campaign-of-1529--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-020",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-kalisz-1813",
+        "edges": [
+          "convention-of-tauroggen--treaty-of-kalisz-1813--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-011",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sezawa",
+        "edges": [
+          "battle-of-sezawa--battles-of-kawanakajima--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-007",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "koshamain-s-war",
+        "edges": [
+          "tumu-crisis--koshamain-s-war--precondition-of"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-012",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-bassein-1802",
+        "edges": [
+          "treaty-of-bassein-1802--second-anglo-maratha-war--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-009",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-blackburn-s-ford",
+        "edges": [
+          "battle-of-blackburn-s-ford--first-battle-of-bull-run--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-013",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "chichibu-incident",
+        "edges": [
+          "meiji-restoration--chichibu-incident--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-025",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "post-unification-italian-brigandage",
+        "edges": [
+          "unification-of-italy--post-unification-italian-brigandage--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-027",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-lankaran",
+        "edges": [
+          "battle-of-aslanduz--siege-of-lankaran--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-011",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cepeda-1859",
+        "edges": [
+          "battle-of-cepeda-1859--battle-of-pavon--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-014",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-taku-forts-1859",
+        "edges": [
+          "battle-of-taku-forts-1859--battle-of-taku-forts-1860--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-013",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "first-cevallos-expedition",
+        "edges": [
+          "first-cevallos-expedition--first-treaty-of-san-ildefonso--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-015",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "massacre-of-aleppo-1850",
+        "edges": [
+          "tanzimat--massacre-of-aleppo-1850--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-030",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-amiens-1597",
+        "edges": [
+          "siege-of-amiens-1597--peace-of-vervins--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-032",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-yazhelbitsy",
+        "edges": [
+          "treaty-of-yazhelbitsy--battle-of-shelon--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-014",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-whitestone-hill",
+        "edges": [
+          "battle-of-whitestone-hill--battle-of-killdeer-mountain--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-016",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "hadzi-prodan-s-rebellion",
+        "edges": [
+          "hadzi-prodan-s-rebellion--second-serbian-uprising--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-034",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-koniginhof",
+        "edges": [
+          "battle-of-koniginhof--battle-of-koniggratz--precondition-of"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-019",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ong-ang-1885",
+        "edges": [
+          "battle-of-ong-ang-1885--battle-of-bang-bo-zhennan-pass--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-036",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "campaign-in-north-east-france-1814",
+        "edges": [
+          "campaign-in-north-east-france-1814--treaty-of-paris-1814--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-017",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "rush-bagot-treaty",
+        "edges": [
+          "rush-bagot-treaty--treaty-of-washington-1871--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-037",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-moscow-1618",
+        "edges": [
+          "siege-of-moscow-1618--truce-of-deulino--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-039",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-orleans-1563",
+        "edges": [
+          "siege-of-orleans-1563--edict-of-amboise--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-041",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "american-algerian-war",
+        "edges": [
+          "american-revolutionary-war--american-algerian-war--precondition-of"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-018",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-paducah",
+        "edges": [
+          "battle-of-paducah--battle-of-fort-pillow--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-021",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-strait-of-hormuz-1553",
+        "edges": [
+          "ottoman-campaign-against-hormuz--battle-of-the-strait-of-hormuz-1553--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-019",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-mesilla",
+        "edges": [
+          "first-battle-of-mesilla--new-mexico-campaign--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-023",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "mohammad-khan-baluch-s-rebellion",
+        "edges": [
+          "battle-of-samarra-1733--mohammad-khan-baluch-s-rebellion--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-africa-003",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sikkak",
+        "edges": [
+          "battle-of-sikkak--siege-of-constantine--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-020",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "1851-chilean-revolution",
+        "edges": [
+          "revolutions-of-1848--1851-chilean-revolution--inspired"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-021",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "northeast-coast-campaign-1745",
+        "edges": [
+          "siege-of-louisbourg-1745--northeast-coast-campaign-1745--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-023",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-st-louis-1804",
+        "edges": [
+          "treaty-of-st-louis-1804--black-hawk-war--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-026",
+      "writer": "A",
+      "fired": "2026-11-03T00:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kejiwan",
+        "edges": [
+          "battle-of-kejiwan--battle-of-delanggu--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-001",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-krtsanisi",
+        "edges": [
+          "battle-of-krtsanisi--persian-expedition-of-1796--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-002",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "kabo-reform",
+        "edges": [
+          "donghak-peasant-revolution--kabo-reform--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-004",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "tobacco-protest",
+        "edges": [
+          "tobacco-protest--persian-constitutional-revolution--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-003",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lissa-1811",
+        "edges": [
+          "battle-of-trafalgar--battle-of-lissa-1811--inspired"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-002",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "platine-war",
+        "edges": [
+          "uruguayan-civil-war--platine-war--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-005",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-kars",
+        "edges": [
+          "siege-of-sevastopol-1854-1855--siege-of-kars--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-006",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "sino-russian-border-conflicts",
+        "edges": [
+          "sino-russian-border-conflicts--treaty-of-nerchinsk--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-007",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "convention-of-kutahya",
+        "edges": [
+          "convention-of-kutahya--egyptian-ottoman-war-1839-1841--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-004",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chantilly",
+        "edges": [
+          "battle-of-chantilly--maryland-campaign--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-008",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-ostend",
+        "edges": [
+          "siege-of-ostend--twelve-years-truce--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-010",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "war-against-sigismund",
+        "edges": [
+          "war-against-sigismund--polish-swedish-war-1600-1611--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-012",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gitschin",
+        "edges": [
+          "battle-of-gitschin--battle-of-koniggratz--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-014",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "congress-of-paris-1856",
+        "edges": [
+          "congress-of-paris-1856--paris-declaration-respecting-maritime-law--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-016",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "heidelberg-disputation",
+        "edges": [
+          "heidelberg-disputation--leipzig-debate--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-017",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-namur-1692",
+        "edges": [
+          "siege-of-namur-1692--battle-of-steenkerque--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-018",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "stecklikrieg",
+        "edges": [
+          "stecklikrieg--act-of-mediation--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-006",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-ancon",
+        "edges": [
+          "treaty-of-ancon--peruvian-civil-war-of-1884-1885--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-010",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-manila-1762",
+        "edges": [
+          "battle-of-manila-1762--british-occupation-of-manila--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-021",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "february-flood-of-1825",
+        "edges": [
+          "february-flood-of-1825--groningen-epidemic--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-008",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "modoc-war",
+        "edges": [
+          "california-genocide--modoc-war--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-022",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-breda-1650",
+        "edges": [
+          "treaty-of-breda-1650--anglo-scottish-war-1650-1652--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-023",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kozludzha",
+        "edges": [
+          "battle-of-kozludzha--treaty-of-kucuk-kaynarca--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-024",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "government-reforms-of-alexander-ii-of-russia",
+        "edges": [
+          "crimean-war--government-reforms-of-alexander-ii-of-russia--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-026",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-antwerp-1832",
+        "edges": [
+          "ten-days-campaign--siege-of-antwerp-1832--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-010",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "upper-canada-rebellion",
+        "edges": [
+          "upper-canada-rebellion--caroline-affair--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-012",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-old-church",
+        "edges": [
+          "battle-of-old-church--battle-of-cold-harbor--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-africa-001",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-wad-ras",
+        "edges": [
+          "battle-of-wad-ras--treaty-of-wad-ras--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-028",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "french-invasion-of-malta",
+        "edges": [
+          "french-invasion-of-malta--french-occupation-of-malta--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-029",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "moscow-plague-riot-of-1771",
+        "edges": [
+          "1770-1772-russian-plague--moscow-plague-riot-of-1771--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-031",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-viborg-1710",
+        "edges": [
+          "battle-of-poltava--siege-of-viborg-1710--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-033",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chashniki",
+        "edges": [
+          "battle-of-chashniki--battle-of-smoliani--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-015",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "caroline-affair",
+        "edges": [
+          "caroline-affair--webster-ashburton-treaty--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-017",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chinkiang",
+        "edges": [
+          "battle-of-chinkiang--treaty-of-nanking--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-018",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-langfang",
+        "edges": [
+          "battle-of-the-taku-forts-1900--battle-of-langfang--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-035",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-wartenburg",
+        "edges": [
+          "battle-of-wartenburg--battle-of-leipzig--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-016",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "lefebvre-s-charles-town-expedition",
+        "edges": [
+          "lefebvre-s-charles-town-expedition--siege-of-pensacola-1707--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-020",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "safavid-conquest-of-shirvan",
+        "edges": [
+          "safavid-conquest-of-shirvan--battle-of-sharur--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-038",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-narva-1581",
+        "edges": [
+          "siege-of-narva-1581--treaty-of-plussa--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-040",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "swedish-invasion-of-brandenburg",
+        "edges": [
+          "swedish-invasion-of-brandenburg--scanian-war--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-042",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "assassination-of-john-the-fearless",
+        "edges": [
+          "assassination-of-john-the-fearless--treaty-of-troyes--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-043",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-rathmines",
+        "edges": [
+          "battle-of-rathmines--cromwellian-conquest-of-ireland--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-044",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "dalecarlian-rebellion-of-1743",
+        "edges": [
+          "russo-swedish-war-1741-1743--dalecarlian-rebellion-of-1743--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-022",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "indian-campaign-of-ahmad-shah-durrani",
+        "edges": [
+          "indian-campaign-of-ahmad-shah-durrani--battle-of-plassey--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-africa-002",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-italeni",
+        "edges": [
+          "battle-of-italeni--battle-of-blood-river--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-024",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "miao-rebellion-1854-1873",
+        "edges": [
+          "taiping-rebellion--miao-rebellion-1854-1873--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-asia-025",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "albanian-revolt-of-1845",
+        "edges": [
+          "tanzimat--albanian-revolt-of-1845--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-americas-022",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-fort-wayne-1809",
+        "edges": [
+          "treaty-of-fort-wayne-1809--tecumseh-s-war--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-03-europe-045",
+      "writer": "B",
+      "fired": "2026-11-03T08:08Z",
+      "status": "written",
+      "written": {
+        "event": "appeal-war",
+        "edges": [
+          "christmas-flood-of-1717--appeal-war--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

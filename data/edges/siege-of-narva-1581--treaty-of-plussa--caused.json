@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "siege-of-narva-1581--treaty-of-plussa--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Narva (1581)\", revision 1370743908"
+    }
+  ],
+  "from": "siege-of-narva-1581",
+  "to": "treaty-of-plussa",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Siege of Narva (1581)\" (revision 1370743908) says: \"The conquest also forced the Tsar to acknowledge his defeat and sign a humiliating treaty only 2 years later.\" The edge reads that sentence as: Siege of Narva (1581) caused Treaty of Plussa, and nothing more.",
+  "dispute": null
+}

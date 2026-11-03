@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-old-church--battle-of-cold-harbor--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Old Church\", revision 1370271159"
+    }
+  ],
+  "from": "battle-of-old-church",
+  "to": "battle-of-cold-harbor",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Old Church\" (revision 1370271159) says: \"The door was open for Sheridan's capture of the important Old Cold Harbor crossroads the next day, leading to the start of the bloody Battle of Cold Harbor.\" The edge reads that sentence as: Battle of Old Church made Battle of Cold Harbor possible, and nothing more.",
+  "dispute": null
+}

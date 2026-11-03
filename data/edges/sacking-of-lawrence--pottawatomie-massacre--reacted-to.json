@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "sacking-of-lawrence--pottawatomie-massacre--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pottawatomie massacre\", revision 1374859516"
+    }
+  ],
+  "from": "sacking-of-lawrence",
+  "to": "pottawatomie-massacre",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Pottawatomie massacre\" (revision 1374859516) says: \"In reaction to the sacking of Lawrence by pro-slavery forces on May 21, and the telegraphed news of the severe attack on Massachusetts Senator Charles Sumner, John Brown and a band of abolitionist settlers—some of them members of the Pottawatomie Rifles—responded violently.\" The edge reads that sentence as: Pottawatomie massacre was a response to Sacking of Lawrence, and nothing more.",
+  "dispute": null
+}

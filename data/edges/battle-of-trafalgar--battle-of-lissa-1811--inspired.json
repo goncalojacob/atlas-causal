@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-trafalgar--battle-of-lissa-1811--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lissa (1811)\", revision 1380913966"
+    }
+  ],
+  "from": "battle-of-trafalgar",
+  "to": "battle-of-lissa-1811",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Lissa (1811)\" (revision 1380913966) says: \"A protégé of Horatio Nelson, Hoste recalled the inspirational effect of Nelson's signal before the Battle of Trafalgar and raised his own: \"Remember Nelson\", which was greeted with wild cheering from the British squadron.\" The edge reads that sentence as: Battle of Trafalgar inspired Battle of Lissa (1811), and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "siege-of-orleans-1563--edict-of-amboise--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Orléans (1563)\", revision 1380766837"
+    }
+  ],
+  "from": "siege-of-orleans-1563",
+  "to": "edict-of-amboise",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Siege of Orléans (1563)\" (revision 1380766837) says: \"As a result the captive Louis, Prince of Condé and Anne de Montmorency at Catherine de' Medici's direction were able to negotiate a compromise end to the first war in the Edict of Amboise.\" The edge reads that sentence as: Siege of Orléans (1563) made Edict of Amboise possible, and nothing more.",
+  "dispute": null
+}

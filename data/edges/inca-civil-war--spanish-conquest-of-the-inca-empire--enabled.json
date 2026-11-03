@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "inca-civil-war--spanish-conquest-of-the-inca-empire--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Inca Civil War\", revision 1376090005"
+    }
+  ],
+  "from": "inca-civil-war",
+  "to": "spanish-conquest-of-the-inca-empire",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Inca Civil War\" (revision 1376090005) says: \"The Inca Civil War has been characterized as an important factor in enabling the Spanish conquest of the Inca Empire.\" The edge reads that sentence as: Inca Civil War made Spanish conquest of the Inca Empire possible, and nothing more.",
+  "dispute": null
+}

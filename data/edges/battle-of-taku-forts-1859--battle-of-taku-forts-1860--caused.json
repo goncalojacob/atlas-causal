@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-taku-forts-1859--battle-of-taku-forts-1860--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Taku Forts (1859)\", revision 1370590412"
+    }
+  ],
+  "from": "battle-of-taku-forts-1859",
+  "to": "battle-of-taku-forts-1860",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Taku Forts (1859)\" (revision 1370590412) says: \"The battle not only was a loss for the British, it caused them to have to assemble another massive fleet of 18,000 troops which fought in the Third Battle of Taku Forts.\" The edge reads that sentence as: Battle of Taku Forts (1859) caused Battle of Taku Forts (1860), and nothing more.",
+  "dispute": null
+}

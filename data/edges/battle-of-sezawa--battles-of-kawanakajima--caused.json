@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-sezawa--battles-of-kawanakajima--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sezawa\", revision 1370274128"
+    }
+  ],
+  "from": "battle-of-sezawa",
+  "to": "battles-of-kawanakajima",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Sezawa\" (revision 1370274128) says: \"However, his success alarmed the Uesugi clan of Echigo Province (bordering Shinano to the north), and they subsequently invaded, leading to the famous Battles of Kawanakajima between Shingen and Uesugi Kenshin.\" The edge reads that sentence as: Battle of Sezawa caused Battles of Kawanakajima, and nothing more.",
+  "dispute": null
+}

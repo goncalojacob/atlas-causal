@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "indian-campaign-of-ahmad-shah-durrani--battle-of-plassey--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Indian campaign of Ahmad Shah Durrani\", revision 1377371027"
+    }
+  ],
+  "from": "indian-campaign-of-ahmad-shah-durrani",
+  "to": "battle-of-plassey",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Indian campaign of Ahmad Shah Durrani\" (revision 1377371027) says: \"Mere months later, the army of the Bengal Subah, weakened due to the Afghan invasion, were utterly defeated at the Battle of Plassey, beginning the rise of British power in India.\" The edge reads that sentence as: Indian campaign of Ahmad Shah Durrani made Battle of Plassey possible, and nothing more.",
+  "dispute": null
+}

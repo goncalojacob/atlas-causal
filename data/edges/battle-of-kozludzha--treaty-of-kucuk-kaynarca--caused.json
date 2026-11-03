@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-kozludzha--treaty-of-kucuk-kaynarca--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kozludzha\", revision 1382459698"
+    }
+  ],
+  "from": "battle-of-kozludzha",
+  "to": "treaty-of-kucuk-kaynarca",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Kozludzha\" (revision 1382459698) says: \"Nevertheless, a peace treaty favorable to Russia would soon be signed—owing to the battle.\" The edge reads that sentence as: Battle of Kozludzha caused Treaty of Küçük Kaynarca, and nothing more.",
+  "dispute": null
+}

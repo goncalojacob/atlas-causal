@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "slaughter-of-the-knezes--serbian-revolution--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slaughter of the Knezes\", revision 1368885440"
+    }
+  ],
+  "from": "slaughter-of-the-knezes",
+  "to": "serbian-revolution",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Slaughter of the Knezes\" (revision 1368885440) says: \"The economic hardships, evil administration, violence and \"Slaughter of the Knezes\" led to the uprising against the Dahije in 1804 and the start of the Serbian Revolution.\" The edge reads that sentence as: Slaughter of the Knezes caused Serbian Revolution, and nothing more.",
+  "dispute": null
+}

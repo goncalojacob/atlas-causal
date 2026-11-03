@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "tanzimat--albanian-revolt-of-1845--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Albanian revolt of 1845\", revision 1370104623"
+    }
+  ],
+  "from": "tanzimat",
+  "to": "albanian-revolt-of-1845",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Albanian revolt of 1845\" (revision 1370104623) says: \"The Tanzimat reforms triggered a series of uprisings in Albanian Vilayets.\" The edge reads that sentence as: Tanzimat caused Albanian revolt of 1845, and nothing more.",
+  "dispute": null
+}

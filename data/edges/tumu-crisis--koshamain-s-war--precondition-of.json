@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "tumu-crisis--koshamain-s-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Koshamain's War\", revision 1370626132"
+    }
+  ],
+  "from": "tumu-crisis",
+  "to": "koshamain-s-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Koshamain's War\" (revision 1370626132) says: \"Following the Tumu Crisis in 1449, Ming China's influence over northern peoples waned, causing Ainu trade with China to decline and their dependence on Wajin trade to increase; the Ainu resentment over territorial invasion and \"unfair\" Japanese trading ran high during the lead up to the war.\" The edge reads that sentence as: Tumu Crisis was a precondition of Koshamain's War, and nothing more.",
+  "dispute": null
+}

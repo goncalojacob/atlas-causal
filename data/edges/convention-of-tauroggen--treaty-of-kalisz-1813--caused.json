@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "convention-of-tauroggen--treaty-of-kalisz-1813--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Kalisz (1813)\", revision 1346280811"
+    }
+  ],
+  "from": "convention-of-tauroggen",
+  "to": "treaty-of-kalisz-1813",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Treaty of Kalisz (1813)\" (revision 1346280811) says: \"The events that led to this alliance date back to 30 December 1812, at Tauroggen when Lieutenant-General Ludwig Yorck von Wartenburg, on behalf of his Prussian troops, and General Hans Karl von Diebitsch of the Russian Army signed the Convention of Tauroggen.\" The edge reads that sentence as: Convention of Tauroggen caused Treaty of Kalisz (1813), and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "california-genocide--modoc-war--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Modoc War\", revision 1370628363"
+    }
+  ],
+  "from": "california-genocide",
+  "to": "modoc-war",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Modoc War\" (revision 1370628363) says: \"The fighting was in response to the California genocide, when agents of the United States government assisted by private citizens began the systematic killing of thousands of indigenous peoples of California in the mid-19th century.\" The edge reads that sentence as: Modoc War was a response to California genocide, and nothing more.",
+  "dispute": null
+}

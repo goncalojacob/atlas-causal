@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "upper-canada-rebellion--caroline-affair--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Upper Canada Rebellion\", revision 1370752547"
+    }
+  ],
+  "from": "upper-canada-rebellion",
+  "to": "caroline-affair",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Upper Canada Rebellion\" (revision 1370752547) says: \"They obtained supplies from supporters in the United States, resulting in the Caroline affair.\" The edge reads that sentence as: Upper Canada Rebellion caused Caroline affair, and nothing more.",
+  "dispute": null
+}

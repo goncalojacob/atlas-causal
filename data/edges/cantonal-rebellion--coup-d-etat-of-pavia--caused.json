@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "cantonal-rebellion--coup-d-etat-of-pavia--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cantonal Rebellion\", revision 1380209948"
+    }
+  ],
+  "from": "cantonal-rebellion",
+  "to": "coup-d-etat-of-pavia",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Cantonal Rebellion\" (revision 1380209948) says: \"The repression of the Cantonal Revolution resulted in the strengthening of the political influence of the Spanish Army, which carried out a coup d'état against the Republic, established a military government and eventually restored the monarchy.\" The edge reads that sentence as: Cantonal Rebellion caused Coup d'état of Pavía, and nothing more.",
+  "dispute": null
+}

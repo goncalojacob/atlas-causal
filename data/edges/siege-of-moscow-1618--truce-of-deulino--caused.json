@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "siege-of-moscow-1618--truce-of-deulino--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Moscow (1618)\", revision 1370743684"
+    }
+  ],
+  "from": "siege-of-moscow-1618",
+  "to": "truce-of-deulino",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Siege of Moscow (1618)\" (revision 1370743684) says: \"This forced the Russian government to accept the difficult conditions of the Truce of Deulino.\" The edge reads that sentence as: Siege of Moscow (1618) caused Truce of Deulino, and nothing more.",
+  "dispute": null
+}

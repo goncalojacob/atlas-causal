@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "convention-of-kutahya--egyptian-ottoman-war-1839-1841--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Convention of Kütahya\", revision 1320609244"
+    }
+  ],
+  "from": "convention-of-kutahya",
+  "to": "egyptian-ottoman-war-1839-1841",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Convention of Kütahya\" (revision 1320609244) says: \"But the settlement of the Peace Agreement was not satisfactory to either party, resulting in the Second Ottoman-Egyptian War in 1839–1841.\" The edge reads that sentence as: Convention of Kütahya caused Egyptian–Ottoman War (1839–1841), and nothing more.",
+  "dispute": null
+}

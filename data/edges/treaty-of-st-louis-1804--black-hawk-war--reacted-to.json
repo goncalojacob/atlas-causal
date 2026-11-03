@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "treaty-of-st-louis-1804--black-hawk-war--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of St. Louis (1804)\", revision 1367504159"
+    }
+  ],
+  "from": "treaty-of-st-louis-1804",
+  "to": "black-hawk-war",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Treaty of St. Louis (1804)\" (revision 1367504159) says: \"Black Hawk eventually led the Black Hawk War to fight its terms.\" The edge reads that sentence as: Black Hawk War was a response to Treaty of St. Louis (1804), and nothing more.",
+  "dispute": null
+}
