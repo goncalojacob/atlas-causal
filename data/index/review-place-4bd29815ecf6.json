@@ -7054,7 +7054,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 3,
       "id": "bay-of-cadiz",
       "kind": "place",
       "names": [
@@ -11859,7 +11859,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 3,
+      "degree": 4,
       "id": "callao",
       "kind": "place",
       "names": [
@@ -13080,7 +13080,7 @@
         }
       ],
       "created": "2026-10-30",
-      "degree": 1,
+      "degree": 2,
       "id": "castle-of-burgos",
       "kind": "place",
       "names": [
@@ -13806,7 +13806,7 @@
         }
       ],
       "created": "2026-10-29",
-      "degree": 2,
+      "degree": 3,
       "id": "cesis",
       "kind": "place",
       "names": [
@@ -15313,6 +15313,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "chisinau",
+      "kind": "place",
+      "names": [
+        "Chișinău",
+        "Quixinau"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -18023,7 +18051,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 5,
+      "degree": 6,
       "id": "dardanelles",
       "kind": "place",
       "names": [
@@ -21567,6 +21595,35 @@
       "kind": "place",
       "names": [
         "Elmina"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "elmina-castle",
+      "kind": "place",
+      "names": [
+        "Elmina Castle",
+        "Fort São Jorge da Mina",
+        "Castelo de São Jorge da Mina"
       ],
       "origin": {
         "tool": "wikidata"
@@ -31383,6 +31440,33 @@
       "kind": "place",
       "names": [
         "Illinois"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "ilorin",
+      "kind": "place",
+      "names": [
+        "Ilorin"
       ],
       "origin": {
         "tool": "wikidata"
@@ -45486,7 +45570,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 3,
+      "degree": 4,
       "id": "menorca",
       "kind": "place",
       "names": [
@@ -45845,7 +45929,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 18,
+      "degree": 19,
       "id": "mexico-q96",
       "kind": "place",
       "names": [
@@ -53396,6 +53480,34 @@
         "Osawatomie",
         "Osawatomie, Kansas",
         "Osawatomie (Kansas)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "osogbo",
+      "kind": "place",
+      "names": [
+        "Osogbo",
+        "Oxobô"
       ],
       "origin": {
         "tool": "wikidata"

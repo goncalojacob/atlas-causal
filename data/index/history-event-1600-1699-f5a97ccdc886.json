@@ -920,6 +920,15 @@
         }
       ]
     },
+    "battle-of-cadiz-1656": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-camaret": {
       "from": "git",
       "versions": [
@@ -3954,6 +3963,15 @@
         {
           "first": true,
           "on": "2026-10-31"
+        }
+      ]
+    },
+    "battle-of-wenden-1626": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },

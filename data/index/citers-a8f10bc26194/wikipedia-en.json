@@ -13070,6 +13070,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-april-3-1836",
+      "kind": "event",
+      "locator": "\"Action of April 3, 1836\", revision 1378725987"
+    },
+    {
+      "dissent": false,
       "id": "action-of-august-1702",
       "kind": "event",
       "locator": "\"Action of August 1702\", revision 1381175904"
@@ -15398,6 +15404,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-arroyo-grande",
+      "kind": "event",
+      "locator": "\"Battle of Arroyo Grande\", revision 1382683172"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-arroyo-grande-1818",
       "kind": "event",
       "locator": "\"Battle of Arroyo Grande (1818)\", revision 1382676874"
@@ -16664,6 +16676,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cadiz-1656",
+      "kind": "event",
+      "locator": "\"Battle of Cádiz (1656)\", revision 1370109471"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cadiz-1702",
       "kind": "event",
       "locator": "\"Battle of Cádiz (1702)\", revision 1374725741"
@@ -16721,6 +16739,12 @@
       "id": "battle-of-callao",
       "kind": "event",
       "locator": "\"Battle of Callao\", revision 1381423327"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-callao-1838",
+      "kind": "event",
+      "locator": "\"Battle of Callao (1838)\", revision 1370108448"
     },
     {
       "dissent": false,
@@ -17201,6 +17225,12 @@
       "id": "battle-of-cau-giay-1883",
       "kind": "event",
       "locator": "\"Battle of Cầu Giấy (1883)\", revision 1370438104"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cecora-1595",
+      "kind": "event",
+      "locator": "\"Battle of Cecora (1595)\", revision 1370436595"
     },
     {
       "dissent": false,
@@ -18647,6 +18677,12 @@
       "id": "battle-of-elmina-1637",
       "kind": "event",
       "locator": "\"Battle of Elmina (1637)\", revision 1375872702"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-elmina-1781",
+      "kind": "event",
+      "locator": "\"Battle of Elmina (1781)\", revision 1375871599"
     },
     {
       "dissent": false,
@@ -20765,6 +20801,12 @@
       "id": "battle-of-ile-ronde",
       "kind": "event",
       "locator": "\"Battle of Île Ronde\", revision 1370602888"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ilorin",
+      "kind": "event",
+      "locator": "\"Battle of Ilorin\", revision 1370443654"
     },
     {
       "dissent": false,
@@ -24836,6 +24878,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-osogbo",
+      "kind": "event",
+      "locator": "\"Battle of Òsogbo\", revision 1370602894"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ostrach",
       "kind": "event",
       "locator": "\"Battle of Ostrach\", revision 1370271312"
@@ -26966,6 +27014,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-santiago-1863",
+      "kind": "event",
+      "locator": "\"Battle of Santiago (1863)\", revision 1370588614"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-santiago-de-cuba",
       "kind": "event",
       "locator": "\"Battle of Santiago de Cuba\", revision 1377907298"
@@ -28700,6 +28754,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-dardanelles-1807",
+      "kind": "event",
+      "locator": "\"Battle of the Dardanelles (1807)\", revision 1370599141"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-downs",
       "kind": "event",
       "locator": "\"Battle of the Downs\", revision 1370599272"
@@ -30371,6 +30431,12 @@
       "id": "battle-of-wenden-1601",
       "kind": "event",
       "locator": "\"Battle of Wenden (1601)\", revision 1373817999"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wenden-1626",
+      "kind": "event",
+      "locator": "\"Battle of Wenden (1626)\", revision 1370593622"
     },
     {
       "dissent": false,
@@ -32501,6 +32567,12 @@
       "id": "capture-of-minorca-1708",
       "kind": "event",
       "locator": "\"Capture of Minorca (1708)\", revision 1374762883"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-minorca-1798",
+      "kind": "event",
+      "locator": "\"Capture of Minorca (1798)\", revision 1378436141"
     },
     {
       "dissent": false,
@@ -40826,6 +40898,12 @@
     },
     {
       "dissent": false,
+      "id": "moldavian-campaign-1538",
+      "kind": "event",
+      "locator": "\"Moldavian Campaign (1538)\", revision 1374693027"
+    },
+    {
+      "dissent": false,
       "id": "moldavian-magnate-wars",
       "kind": "event",
       "locator": "\"Moldavian Magnate Wars\", revision 1371135483"
@@ -42509,6 +42587,12 @@
       "id": "pastry-war",
       "kind": "event",
       "locator": "\"Pastry War\", revision 1377329824"
+    },
+    {
+      "dissent": false,
+      "id": "patriot-war",
+      "kind": "event",
+      "locator": "\"Patriot War\", revision 1380704309"
     },
     {
       "dissent": false,
@@ -44906,6 +44990,12 @@
     },
     {
       "dissent": false,
+      "id": "sack-of-old-oyo",
+      "kind": "event",
+      "locator": "\"Sack of Old Oyo\", revision 1381778574"
+    },
+    {
+      "dissent": false,
       "id": "sack-of-rome-1527",
       "kind": "event",
       "locator": "\"Sack of Rome (1527)\", revision 1372345219"
@@ -46715,6 +46805,12 @@
       "id": "siege-of-burgos",
       "kind": "event",
       "locator": "\"Siege of Burgos\", revision 1378579642"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-burgos-1475",
+      "kind": "event",
+      "locator": "\"Siege of Burgos (1475)\", revision 1370739879"
     },
     {
       "dissent": false,

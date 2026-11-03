@@ -2465,6 +2465,15 @@
         }
       ]
     },
+    "siege-of-burgos-1475": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "siege-of-ceuta-1419": {
       "from": "git",
       "versions": [

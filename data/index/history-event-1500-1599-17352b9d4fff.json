@@ -859,6 +859,15 @@
         }
       ]
     },
+    "battle-of-cecora-1595": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-cempoala": {
       "from": "git",
       "versions": [
@@ -5719,6 +5728,15 @@
             "parent"
           ],
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "moldavian-campaign-1538": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },

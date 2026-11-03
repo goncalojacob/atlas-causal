@@ -13329,6 +13329,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-03",
+      "id": "action-of-april-3-1836",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "texas-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action of April 3, 1836"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "action-of-august-1702",
       "kind": "event",
@@ -25712,6 +25744,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-03",
+      "id": "battle-of-arroyo-grande",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "uruguayan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Arroyo Grande"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-29",
       "id": "battle-of-arroyo-grande-1818",
       "kind": "event",
@@ -32353,6 +32416,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-03",
+      "id": "battle-of-cadiz-1656",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "anglo-spanish-war-1654-1660",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cádiz (1656)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "battle-of-cadiz-1702",
       "kind": "event",
@@ -32656,6 +32750,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Callao"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-03",
+      "id": "battle-of-callao-1838",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-confederation",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Callao (1838)"
     },
     {
       "authors": [
@@ -35169,6 +35294,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Cầu Giấy (1883)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-03",
+      "id": "battle-of-cecora-1595",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "moldavian-magnate-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cecora (1595)"
     },
     {
       "authors": [
@@ -42825,6 +42982,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Elmina (1637)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-03",
+      "id": "battle-of-elmina-1781",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "fourth-anglo-dutch-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Elmina (1781)"
     },
     {
       "authors": [
@@ -53963,6 +54152,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Île Ronde"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-03",
+      "id": "battle-of-ilorin",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "yoruba-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ilorin"
     },
     {
       "authors": [
@@ -75592,6 +75813,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-03",
+      "id": "battle-of-osogbo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "yoruba-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Òsogbo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-30",
       "id": "battle-of-ostrach",
       "kind": "event",
@@ -86740,6 +86993,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-03",
+      "id": "battle-of-santiago-1863",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dominican-restoration-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Santiago (1863)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-28",
       "id": "battle-of-santiago-de-cuba",
       "kind": "event",
@@ -95817,6 +96101,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-03",
+      "id": "battle-of-the-dardanelles-1807",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-turkish-war-1806-1812",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Dardanelles (1807)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "battle-of-the-downs",
       "kind": "event",
@@ -104628,6 +104943,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Wenden (1601)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-03",
+      "id": "battle-of-wenden-1626",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "polish-swedish-war-1626-1629",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Wenden (1626)"
     },
     {
       "authors": [
@@ -115793,6 +116139,37 @@
       "revised": null,
       "status": "active",
       "title": "Capture of Minorca (1708)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-03",
+      "id": "capture-of-minorca-1798",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mediterranean-campaign-of-1798",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Minorca (1798)"
     },
     {
       "authors": [
@@ -159918,6 +160295,37 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "other",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-03",
+      "id": "moldavian-campaign-1538",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "moldavian-ottoman-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Moldavian Campaign (1538)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -168872,6 +169280,37 @@
       "revised": null,
       "status": "active",
       "title": "Pastry War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-03",
+      "id": "patriot-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "rebellions-of-1837-1838",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Patriot War"
     },
     {
       "authors": [
@@ -181292,6 +181731,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-11-03",
+      "id": "sack-of-old-oyo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "yoruba-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Sack of Old Oyo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "id": "sack-of-rome-1527",
       "kind": "event",
@@ -191126,6 +191596,37 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Burgos"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-11-03",
+      "id": "siege-of-burgos-1475",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-castilian-succession",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Burgos (1475)"
     },
     {
       "authors": [
@@ -240357,6 +240858,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "action-of-april-3-1836",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "action-of-august-1702",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -242355,6 +242862,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-arroyo-grande",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-arroyo-grande-1818",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -243531,6 +244044,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-cadiz-1656",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-cadiz-1702",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -243580,6 +244099,12 @@
     },
     {
       "id": "battle-of-callao",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-callao-1838",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -244012,6 +244537,12 @@
     },
     {
       "id": "battle-of-cau-giay-1883",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-cecora-1595",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -245392,6 +245923,12 @@
     },
     {
       "id": "battle-of-elizabeth-city",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-elmina-1781",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -247396,6 +247933,12 @@
     },
     {
       "id": "battle-of-ichi",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-ilorin",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -251169,6 +251712,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-osogbo",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-ostrach",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -253047,6 +253596,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-santiago-1863",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-santiago-de-cuba",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -254649,6 +255204,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-the-dardanelles-1807",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-the-downs",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -256114,6 +256675,12 @@
     },
     {
       "id": "battle-of-wenden-1601",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-wenden-1626",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -257932,6 +258499,12 @@
     },
     {
       "id": "capture-of-minorca-1708",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "capture-of-minorca-1798",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -264723,6 +265296,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "moldavian-campaign-1538",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "moldavian-magnate-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -266014,6 +266593,12 @@
     },
     {
       "id": "pastry-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "patriot-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -268023,6 +268608,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "sack-of-old-oyo",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "sack-of-rome-1527",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -269638,6 +270229,12 @@
     },
     {
       "id": "siege-of-burgos",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-burgos-1475",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

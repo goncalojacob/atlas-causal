@@ -2430,6 +2430,15 @@
         }
       ]
     },
+    "battle-of-elmina-1781": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-emsdorf": {
       "from": "git",
       "versions": [
@@ -6830,6 +6839,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "capture-of-minorca-1798": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },

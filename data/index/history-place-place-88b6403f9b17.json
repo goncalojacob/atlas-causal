@@ -5638,6 +5638,15 @@
         }
       ]
     },
+    "chisinau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "chitcani": {
       "from": "git",
       "versions": [
@@ -7962,6 +7971,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "elmina-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -11648,6 +11666,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "ilorin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -19825,6 +19852,15 @@
         {
           "first": true,
           "on": "2026-11-01"
+        }
+      ]
+    },
+    "osogbo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
