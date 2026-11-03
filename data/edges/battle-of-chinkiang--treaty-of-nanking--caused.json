@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-chinkiang--treaty-of-nanking--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chinkiang\", revision 1380896002"
+    }
+  ],
+  "from": "battle-of-chinkiang",
+  "to": "treaty-of-nanking",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Chinkiang\" (revision 1380896002) says: \"As a result, the Daoguang Emperor decided to sue for peace and agreed to sign the Treaty of Nanking, which brought hostilities to an end.\" The edge reads that sentence as: Battle of Chinkiang caused Treaty of Nanking, and nothing more.",
+  "dispute": null
+}

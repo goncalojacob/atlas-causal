@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "congress-of-paris-1856--paris-declaration-respecting-maritime-law--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Congress of Paris (1856)\", revision 1367322307"
+    }
+  ],
+  "from": "congress-of-paris-1856",
+  "to": "paris-declaration-respecting-maritime-law",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Congress of Paris (1856)\" (revision 1367322307) says: \"Also important appeared to be a multilateral agreement on some basic legal principles of maritime warfare, resulting in the separate Paris Declaration Respecting Maritime Law, that was acceded by altogether 55 nations.\" The edge reads that sentence as: Congress of Paris (1856) caused Paris Declaration Respecting Maritime Law, and nothing more.",
+  "dispute": null
+}

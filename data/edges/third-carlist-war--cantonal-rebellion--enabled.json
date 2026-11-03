@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "third-carlist-war--cantonal-rebellion--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cantonal Rebellion\", revision 1380209948"
+    }
+  ],
+  "from": "third-carlist-war",
+  "to": "cantonal-rebellion",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Cantonal Rebellion\" (revision 1380209948) says: \"Cantons were established throughout southern and eastern Spain, where government forces had little presence due to the ongoing Carlist War in the north.\" The edge reads that sentence as: Third Carlist War made Cantonal Rebellion possible, and nothing more.",
+  "dispute": null
+}

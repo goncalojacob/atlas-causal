@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "treaty-of-yazhelbitsy--battle-of-shelon--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Yazhelbitsy\", revision 1280320099"
+    }
+  ],
+  "from": "treaty-of-yazhelbitsy",
+  "to": "battle-of-shelon",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Treaty of Yazhelbitsy\" (revision 1280320099) says: \"In the end, the discrepancies and controversial wording of the Treaty of Yazhelbitsy led to another confrontation between Moscow and Novgorod in 1471 which further weakened Novgorod.\" The edge reads that sentence as: Treaty of Yazhelbitsy caused Battle of Shelon, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "donghak-peasant-revolution--kabo-reform--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kabo Reform\", revision 1373255970"
+    }
+  ],
+  "from": "donghak-peasant-revolution",
+  "to": "kabo-reform",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Kabo Reform\" (revision 1373255970) says: \"The Kabo Reform (Korean: 갑오개혁; Hanja: 甲午改革) describes a series of sweeping reforms suggested to the government of Korea, beginning in 1894 and ending in 1896 during the reign of Gojong of Korea in response to the Donghak Peasant Revolution.\" The edge reads that sentence as: Kabo Reform was a response to Donghak Peasant Revolution, and nothing more.",
+  "dispute": null
+}

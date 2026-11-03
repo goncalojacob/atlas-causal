@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-ong-ang-1885--battle-of-bang-bo-zhennan-pass--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Đồng Đăng (1885)\", revision 1370603011"
+    }
+  ],
+  "from": "battle-of-ong-ang-1885",
+  "to": "battle-of-bang-bo-zhennan-pass",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Đồng Đăng (1885)\" (revision 1370603011) says: \"Three weeks later the Chinese attacked the Đồng Đăng garrison, precipitating a series of events that led to the French defeat at the Battle of Bang Bo (24 March 1885).\" The edge reads that sentence as: Battle of Đồng Đăng (1885) caused Battle of Bang Bo (Zhennan Pass), and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "swedish-invasion-of-brandenburg--scanian-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Swedish invasion of Brandenburg\", revision 1375948359"
+    }
+  ],
+  "from": "swedish-invasion-of-brandenburg",
+  "to": "scanian-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Swedish invasion of Brandenburg\" (revision 1375948359) says: \"The Swedish invasion sparked the Swedish-Brandenburg War that, following further declarations of war by European powers allied with Brandenburg, expanded into a North European conflict that did not end until 1679.\" The edge reads that sentence as: Swedish invasion of Brandenburg caused Scanian War, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "february-flood-of-1825--groningen-epidemic--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"February flood of 1825\", revision 1372828871"
+    }
+  ],
+  "from": "february-flood-of-1825",
+  "to": "groningen-epidemic",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"February flood of 1825\" (revision 1372828871) says: \"The Groningen epidemic of 1826, probably caused by a rare outbreak of malaria tropica, was partly the result of the extensive floods and has also been described by Jan Kruys in his diary.\" The edge reads that sentence as: February flood of 1825 caused Groningen epidemic, and nothing more.",
+  "dispute": null
+}

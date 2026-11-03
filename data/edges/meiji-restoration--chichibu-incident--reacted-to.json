@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "meiji-restoration--chichibu-incident--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chichibu incident\", revision 1366263460"
+    }
+  ],
+  "from": "meiji-restoration",
+  "to": "chichibu-incident",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Chichibu incident\" (revision 1366263460) says: \"It was one of many similar uprisings in Japan around that time, occurring in reaction to the dramatic changes to society in the wake of the 1868 Meiji Restoration.\" The edge reads that sentence as: Chichibu incident was a response to Meiji Restoration, and nothing more.",
+  "dispute": null
+}

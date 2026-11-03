@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "li-lobanov-treaty--convention-for-the-lease-of-the-liaotung-peninsula--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Li–Lobanov Treaty\", revision 1316224784"
+    }
+  ],
+  "from": "li-lobanov-treaty",
+  "to": "convention-for-the-lease-of-the-liaotung-peninsula",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Li–Lobanov Treaty\" (revision 1316224784) says: \"Rather than protecting China from Japanese territorial ambitions, the treaty opened the door towards further Russian expansionism in the form of the Russia–Qing Convention of 1898, in which China was forced to lease the southern tip of the Liaodong Peninsula to Russia and allow a southern extension of Russia's China Eastern Railway to be built from northern Harbin to the port city of Dalian.\" The edge reads that sentence as: Li–Lobanov Treaty made Convention for the Lease of the Liaotung Peninsula possible, and nothing more.",
+  "dispute": null
+}

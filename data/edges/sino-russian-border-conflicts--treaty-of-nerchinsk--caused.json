@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "sino-russian-border-conflicts--treaty-of-nerchinsk--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sino-Russian border conflicts\", revision 1370747179"
+    }
+  ],
+  "from": "sino-russian-border-conflicts",
+  "to": "treaty-of-nerchinsk",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Sino-Russian border conflicts\" (revision 1370747179) says: \"The hostilities culminated in the Qing siege of the Cossack fort of Albazin in 1686 and resulted in the Treaty of Nerchinsk in 1689 which gave the land to China.\" The edge reads that sentence as: Sino-Russian border conflicts caused Treaty of Nerchinsk, and nothing more.",
+  "dispute": null
+}

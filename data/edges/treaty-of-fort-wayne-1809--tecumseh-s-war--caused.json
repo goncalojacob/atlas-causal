@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "treaty-of-fort-wayne-1809--tecumseh-s-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Fort Wayne (1809)\", revision 1372198832"
+    }
+  ],
+  "from": "treaty-of-fort-wayne-1809",
+  "to": "tecumseh-s-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Treaty of Fort Wayne (1809)\" (revision 1372198832) says: \"The treaty led to a war with the United States begun by Shawnee leader Tecumseh and other dissenting tribesmen in what came to be called \"Tecumseh's War\".\" The edge reads that sentence as: Treaty of Fort Wayne (1809) caused Tecumseh's War, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "unification-of-italy--post-unification-italian-brigandage--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Post-unification Italian brigandage\", revision 1380426421"
+    }
+  ],
+  "from": "unification-of-italy",
+  "to": "post-unification-italian-brigandage",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Post-unification Italian brigandage\" (revision 1380426421) says: \"According to Marxist theoretician Nicola Zitara, Southern Italy experienced social unrest, especially among the lower classes, due to poor conditions and the fact that the unification of Italy had only benefited the land-owning bourgeoisie, so many turned to brigandage in the mountains of Basilicata, Campania, Calabria and Abruzzo.\" The edge reads that sentence as: Unification of Italy caused Post-unification Italian brigandage, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "safavid-conquest-of-shirvan--battle-of-sharur--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Safavid conquest of Shirvan\", revision 1375207686"
+    }
+  ],
+  "from": "safavid-conquest-of-shirvan",
+  "to": "battle-of-sharur",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Safavid conquest of Shirvan\" (revision 1375207686) says: \"Ismail's victory alarmed the ruler of the Aq Qoyunlu, Alvand, who subsequently proceeded north from Tabriz, and crossed the Aras River in order to challenge the Safavid forces; a pitched battle was fought at Sharur in which Ismail's army came out victorious despite being outnumbered by four to one.\" The edge reads that sentence as: Safavid conquest of Shirvan caused Battle of Sharur, and nothing more.",
+  "dispute": null
+}

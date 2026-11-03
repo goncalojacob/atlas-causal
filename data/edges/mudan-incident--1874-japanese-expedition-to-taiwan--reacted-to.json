@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "mudan-incident--1874-japanese-expedition-to-taiwan--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mudan incident\", revision 1363455951"
+    }
+  ],
+  "from": "mudan-incident",
+  "to": "1874-japanese-expedition-to-taiwan",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Mudan incident\" (revision 1363455951) says: \"Because the Ryukyu Kingdom was a tributary state of Qing China as well as within the Japanese sphere of influence (to whom they also had a tributary relationship), the massacre was used as a pretext for Japan to invade southern Taiwan in 1874 to avenge \"Japanese nationals\" and subsequently annex the Ryukyu Kingdom in 1879.\" The edge reads that sentence as: 1874 Japanese expedition to Taiwan was a response to Mudan incident, and nothing more.",
+  "dispute": null
+}

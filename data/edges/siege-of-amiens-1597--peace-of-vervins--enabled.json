@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "siege-of-amiens-1597--peace-of-vervins--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Amiens (1597)\", revision 1374174871"
+    }
+  ],
+  "from": "siege-of-amiens-1597",
+  "to": "peace-of-vervins",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Siege of Amiens (1597)\" (revision 1374174871) says: \"As a result of the victory, Henry was in a strong position to enact the Edict of Nantes and to negotiate the peace of Vervins which was signed with Spain the following spring.\" The edge reads that sentence as: Siege of Amiens (1597) made Peace of Vervins possible, and nothing more.",
+  "dispute": null
+}

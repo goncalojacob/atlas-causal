@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "tobacco-protest--persian-constitutional-revolution--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tobacco Protest\", revision 1361415065"
+    }
+  ],
+  "from": "tobacco-protest",
+  "to": "persian-constitutional-revolution",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Tobacco Protest\" (revision 1361415065) says: \"The fatwa has been called a \"stunning\" demonstration of the power of the marja'-i taqlid, and the protest itself has been cited as one of the issues that led to the Persian Constitutional Revolution a few years later.\" The edge reads that sentence as: Tobacco Protest caused Persian Constitutional Revolution, and nothing more.",
+  "dispute": null
+}

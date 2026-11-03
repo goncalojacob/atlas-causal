@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-manila-1762--british-occupation-of-manila--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Manila (1762)\", revision 1378886751"
+    }
+  ],
+  "from": "battle-of-manila-1762",
+  "to": "british-occupation-of-manila",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Manila (1762)\" (revision 1378886751) says: \"The British won, leading to an eighteen-month occupation of Manila.\" The edge reads that sentence as: Battle of Manila (1762) caused British occupation of Manila, and nothing more.",
+  "dispute": null
+}

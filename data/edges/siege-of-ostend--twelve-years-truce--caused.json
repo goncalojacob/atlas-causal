@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "siege-of-ostend--twelve-years-truce--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Ostend\", revision 1374175777"
+    }
+  ],
+  "from": "siege-of-ostend",
+  "to": "twelve-years-truce",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Siege of Ostend\" (revision 1374175777) says: \"In this regard, it has been described as a pyrrhic victory, as the financial burden contributed to Spain's bankruptcy in 1607, and led the subsequent Twelve Years' Truce.\" The edge reads that sentence as: Siege of Ostend caused Twelve Years' Truce, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "anglo-french-war-1778-1783--french-revolution--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-French War (1778–1783)\", revision 1370901054"
+    }
+  ],
+  "from": "anglo-french-war-1778-1783",
+  "to": "french-revolution",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Anglo-French War (1778–1783)\" (revision 1370901054) says: \"The cost of participation in the American war inexorably led to France's own bankruptcy six years later, setting the stage for the French Revolution.\" The edge reads that sentence as: Anglo-French War (1778–1783) was a precondition of French Revolution, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-whitestone-hill--battle-of-killdeer-mountain--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Whitestone Hill\", revision 1377293585"
+    }
+  ],
+  "from": "battle-of-whitestone-hill",
+  "to": "battle-of-killdeer-mountain",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Battle of Whitestone Hill\" (revision 1377293585) says: \"This led to a renewed operation in 1864 against the Sioux and the Battle of Killdeer Mountain.\" The edge reads that sentence as: Battle of Whitestone Hill caused Battle of Killdeer Mountain, and nothing more.",
+  "dispute": null
+}

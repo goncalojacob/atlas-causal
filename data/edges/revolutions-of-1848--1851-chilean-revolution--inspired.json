@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "revolutions-of-1848--1851-chilean-revolution--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1851 Chilean revolution\", revision 1370278887"
+    }
+  ],
+  "from": "revolutions-of-1848",
+  "to": "1851-chilean-revolution",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"1851 Chilean revolution\" (revision 1370278887) says: \"The European Revolutions of 1848 also inspired and encouraged opposition political movements, who increasingly saw armed action as the most realistic means of forcing political change.·\" The edge reads that sentence as: Revolutions of 1848 inspired 1851 Chilean revolution, and nothing more.",
+  "dispute": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "tanzimat--massacre-of-aleppo-1850--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Massacre of Aleppo (1850)\", revision 1366253005"
+    }
+  ],
+  "from": "tanzimat",
+  "to": "massacre-of-aleppo-1850",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Massacre of Aleppo (1850)\" (revision 1366253005) says: \"It has been argued, however, that The Events reflect instead more complex social dynamics, particularly the disruption caused by the sweeping reforms implemented by the Ottoman Empire in its nineteenth-century attempts at modernization, also known as the Tanzimat, and by the Empire's incorporation into the modern world economic system.\" The edge reads that sentence as: Tanzimat caused Massacre of Aleppo (1850), and nothing more.",
+  "dispute": null
+}

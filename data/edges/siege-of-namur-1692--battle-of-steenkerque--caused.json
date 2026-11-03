@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "siege-of-namur-1692--battle-of-steenkerque--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Namur (1692)\", revision 1370743846"
+    }
+  ],
+  "from": "siege-of-namur-1692",
+  "to": "battle-of-steenkerque",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Siege of Namur (1692)\" (revision 1370743846) says: \"Concerned that King William III planned to recapture the stronghold, King Louis XIV subsequently ordered his commander-in-chief, the duc de Luxembourg, to join battle with the Allies in the field, resulting in the bloody Battle of Steenkerque on 3 August.\" The edge reads that sentence as: Siege of Namur (1692) caused Battle of Steenkerque, and nothing more.",
+  "dispute": null
+}

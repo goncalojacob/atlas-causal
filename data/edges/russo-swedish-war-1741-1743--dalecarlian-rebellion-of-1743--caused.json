@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "russo-swedish-war-1741-1743--dalecarlian-rebellion-of-1743--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dalecarlian Rebellion of 1743\", revision 1378904227"
+    }
+  ],
+  "from": "russo-swedish-war-1741-1743",
+  "to": "dalecarlian-rebellion-of-1743",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Dalecarlian Rebellion of 1743\" (revision 1378904227) says: \"This dissatisfaction was strongest in Dalecarlia, partly because the Hats had introduced restrictions in the Dalecarlians' free exchange of goods with neighboring Norway, but mainly because of the unlucky Russo-Swedish War (1741–43) to which the peasants had to provide soldiers.\" The edge reads that sentence as: Russo-Swedish War (1741–1743) caused Dalecarlian Rebellion of 1743, and nothing more.",
+  "dispute": null
+}

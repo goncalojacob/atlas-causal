@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "treaty-of-breda-1650--anglo-scottish-war-1650-1652--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Breda (1650)\", revision 1352370515"
+    }
+  ],
+  "from": "treaty-of-breda-1650",
+  "to": "anglo-scottish-war-1650-1652",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English Wikipedia article \"Treaty of Breda (1650)\" (revision 1352370515) says: \"For various reasons, the Scots objected to the execution, and the Treaty of Breda led to the Anglo-Scottish war (1650–1652).\" The edge reads that sentence as: Treaty of Breda (1650) caused Anglo-Scottish war (1650–1652), and nothing more.",
+  "dispute": null
+}
