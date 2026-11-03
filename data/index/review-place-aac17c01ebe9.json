@@ -3138,6 +3138,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "aragon-new-mexico",
+      "kind": "place",
+      "names": [
+        "Aragon",
+        "Aragon, New Mexico"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 6,
       "id": "aranjuez",
@@ -9688,6 +9716,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "botosani",
+      "kind": "place",
+      "names": [
+        "Botoșani"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "bouchain",
@@ -15545,6 +15600,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "cibecue-arizona",
+      "kind": "place",
+      "names": [
+        "Cibecue",
+        "Cibecue, Arizona"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "cienfuegos",
@@ -17774,7 +17857,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "danish-west-indies",
       "kind": "place",
       "names": [
@@ -19679,6 +19762,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "doubtful-canyon",
+      "kind": "place",
+      "names": [
+        "Doubtful Canyon"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-31",
       "degree": 1,
       "id": "doullens",
@@ -19752,6 +19862,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "dragoon-mountains",
+      "kind": "place",
+      "names": [
+        "Dragoon Mountains"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -23154,6 +23291,34 @@
       "kind": "place",
       "names": [
         "Fort Brown"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "fort-buchanan-arizona",
+      "kind": "place",
+      "names": [
+        "Fort Buchanan",
+        "Fort Buchanan, Arizona"
       ],
       "origin": {
         "tool": "wikidata"
@@ -26722,7 +26887,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 3,
       "id": "grand-pre-nova-scotia",
       "kind": "place",
       "names": [
@@ -31791,6 +31956,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "irtysh",
+      "kind": "place",
+      "names": [
+        "Irtysh",
+        "Rio Irtich",
+        "Rio Irtixe"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "irun",
@@ -33662,6 +33856,35 @@
       "names": [
         "Juncal Island",
         "Ilha Juncal"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "jupiter-florida",
+      "kind": "place",
+      "names": [
+        "Jupiter",
+        "Jupiter, Florida",
+        "Júpiter (Flórida)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -38935,6 +39158,33 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q4871541, the battle of Las Tres Acequias, read on 2026-09-30: A9's first step as A12 (2) corrects it, and the ground itself — near San Bernardo, south of Santiago — has no item of its own this pass could reach. `precision` is `point` because the item is a battle and the point it carries is the battlefield's, not a settlement's.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "las-tunas",
+      "kind": "place",
+      "names": [
+        "Las Tunas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -45702,6 +45952,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "mimbres-river",
+      "kind": "place",
+      "names": [
+        "Mimbres River"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-23",
       "degree": 1,
       "id": "minas-gerais-captaincy",
@@ -51155,7 +51432,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 13,
+      "degree": 14,
       "id": "north-sea",
       "kind": "place",
       "names": [
@@ -51418,7 +51695,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 3,
       "id": "novara",
       "kind": "place",
       "names": [
@@ -52943,6 +53220,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "ostroda",
+      "kind": "place",
+      "names": [
+        "Ostróda"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "otlukbeli",
@@ -54363,6 +54667,34 @@
       "review": {
         "flags": [
           "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "peloncillo-mountains-hidalgo-county",
+      "kind": "place",
+      "names": [
+        "Peloncillo Mountains",
+        "Peloncillo Mountains (Hidalgo County)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
         ],
         "status": "draft"
       },
@@ -58749,7 +59081,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "rapallo",
       "kind": "place",
       "names": [
@@ -59937,6 +60269,34 @@
       "kind": "place",
       "names": [
         "Ringtheater"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "rio-cauto-cuba",
+      "kind": "place",
+      "names": [
+        "Río Cauto",
+        "Río Cauto, Cuba"
       ],
       "origin": {
         "tool": "wikidata"
@@ -66247,6 +66607,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "sombrero-anguilla",
+      "kind": "place",
+      "names": [
+        "Sombrero",
+        "Sombrero, Anguilla",
+        "Sombrero (ilha)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -66399,7 +66788,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 3,
+      "degree": 4,
       "id": "south-carolina-q1456",
       "kind": "place",
       "names": [
@@ -67531,6 +67920,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "st-croix-nova-scotia",
+      "kind": "place",
+      "names": [
+        "St. Croix",
+        "St. Croix, Nova Scotia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-31",
       "degree": 1,
       "id": "st-fagans",
@@ -68507,6 +68924,33 @@
       "kind": "place",
       "names": [
         "Subarnarekha River"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-02",
+      "degree": 1,
+      "id": "suceava",
+      "kind": "place",
+      "names": [
+        "Suceava"
       ],
       "origin": {
         "tool": "wikidata"
@@ -70676,7 +71120,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 6,
+      "degree": 7,
       "id": "texas",
       "kind": "place",
       "names": [

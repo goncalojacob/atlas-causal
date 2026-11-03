@@ -281,6 +281,15 @@
         }
       ]
     },
+    "battle-of-botosani": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "battle-of-breadfield": {
       "from": "git",
       "versions": [
@@ -944,6 +953,15 @@
         {
           "first": true,
           "on": "2026-10-31"
+        }
+      ]
+    },
+    "battle-of-rapallo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -2630,6 +2648,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-novara-1495": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },

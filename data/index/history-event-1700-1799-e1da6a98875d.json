@@ -685,6 +685,15 @@
         }
       ]
     },
+    "action-of-4-february-1781": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "action-of-6-july-1746": {
       "from": "git",
       "versions": [
@@ -1189,6 +1198,15 @@
         {
           "first": true,
           "on": "2026-10-31"
+        }
+      ]
+    },
+    "battle-at-st-croix": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
@@ -7353,6 +7371,15 @@
         }
       ]
     },
+    "dutch-west-indies-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
+        }
+      ]
+    },
     "dzungar-conquest-of-tibet": {
       "from": "git",
       "versions": [
@@ -11009,6 +11036,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "siege-of-grand-pre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-02"
         }
       ]
     },
