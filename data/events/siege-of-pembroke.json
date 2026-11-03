@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-pembroke",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510300",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Siege of Pembroke"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510300"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Pembroke\", revision 1370744356"
+    }
+  ],
+  "title": "Siege of Pembroke",
+  "summary": "The English Wikipedia article \"Siege of Pembroke\", at revision 1370744356, opens: \"The siege of Pembroke took place in 1648 during the Second English Civil War. In the engagement, Parliamentarian troops led by Oliver Cromwell besieged Pembroke Castle in Wales. The Castle had become a refuge for rebellious Parliamentarian soldiers after the end of the First English Civil War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510300, imported by tools/import/wikidata.mjs. The item's own description reads \"1648 battle that took place during the Second English Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1648,
+    "end": 1648,
+    "date": "1648-05-31",
+    "endDate": "1648-07-11"
+  },
+  "place": "pembroke-castle",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-english-civil-war"
+}

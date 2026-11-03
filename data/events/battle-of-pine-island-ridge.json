@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-pine-island-ridge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872043",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Battle of Pine Island Ridge"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872043"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pine Island Ridge\", revision 1373201963"
+    }
+  ],
+  "title": "Battle of Pine Island Ridge",
+  "summary": "The English Wikipedia article \"Battle of Pine Island Ridge\", at revision 1373201963, opens: \"The Battle of Pine Island Ridge was a battle during the Second Seminole War fought on March 22, 1838, at the site of Pine Island Ridge in South Florida. U.S. troops under the command of Lieutenant Colonel James Bankhead and Major William Lauderdale attacked a large Seminole village on top of Pine Island Ridge, an island in the Everglades at the time. The village was headed by Abiaka, who had recently become the principal chief of the Seminole Indians. As the U.S. troops approached the village, they were fired upon by Seminole warriors perched in the trees on Pine Island Ridge, who held off the U.S. troops long enough for Abiaka and the other villagers to escape. The attack ended in failure for the U.S. troops as they failed to kill or capture any of the Seminoles, who successfully evacuated their village without casualties. The battle was the closest the United States came to catching Abiaka during the Seminole Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872043, imported by tools/import/wikidata.mjs. The item's own description reads \"1838 battle of Second Seminole War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1838,
+    "end": 1838,
+    "date": "1838-03-22"
+  },
+  "place": "pine-island-ridge-florida",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-seminole-war"
+}

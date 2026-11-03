@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "surrender-of-tranquebar-1808",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q127163443",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Surrender of Tranquebar (1808)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q127163443"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Surrender of Tranquebar (1808)\", revision 1370749063"
+    }
+  ],
+  "title": "Surrender of Tranquebar (1808)",
+  "summary": "The English Wikipedia article \"Surrender of Tranquebar (1808)\", at revision 1370749063, opens: \"The Surrender of Tranquebar or the Capture of Tranquebar was a surrender of the capital of Danish India, Tranquebar, in 1808 to the British East India Company as a result of the English Wars. The capital surrendered almost immediately after the arrival of a British force.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q127163443, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 capture of a European fort in India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-02-12"
+  },
+  "place": "tharangambadi",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": [],
+  "parent": "english-wars-scandinavia"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-guayubin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q134622298",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Battle of Guayubín"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q134622298"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Guayubín\", revision 1370442248"
+    }
+  ],
+  "title": "Battle of Guayubín",
+  "summary": "The English Wikipedia article \"Battle of Guayubín\", at revision 1370442248, opens: \"The Battle of Guayubín was a battle of the Dominican Restoration War that took place on August 19, 1863. Dominican forces attacked Spanish cavalry and a marching column during its movement through the northwest, resulting in scattered skirmishes and a Spanish withdrawal toward Guayubín.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q134622298, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-08-19"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "dominican-restoration-war"
+}

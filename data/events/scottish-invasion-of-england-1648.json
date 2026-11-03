@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "scottish-invasion-of-england-1648",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q134835417",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Scottish invasion of England (1648)",
+    "pt": "Invasão escocesa da Inglaterra (1648)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q134835417"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Scottish invasion of England (1648)\", revision 1381456493"
+    }
+  ],
+  "title": "Scottish invasion of England (1648)",
+  "summary": "The English Wikipedia article \"Scottish invasion of England (1648)\", at revision 1381456493, opens: \"A Scottish invasion of England took place near Carlisle on 8 July 1648 as part of the Second English Civil War. The First English Civil War between Royalist supporters of Charles I and an alliance of Parliamentarian and Scottish forces had ended in 1646 with Charles defeated and imprisoned. He continued to negotiate with several factions among his opponents and this sparked the Second English Civil War in 1648. It began with a series of mutinies and Royalist uprisings in England and Wales. A Scottish faction which supported Charles, known as the Engagers, raised an army under the command of James Hamilton, Duke of Hamilton. This marched south to support the uprisings; crossing into England it combined with English Royalists under Marmaduke Langdale and continued along the west coast road some 24,000 strong. Much smaller Parliamentarian forces commanded by Major General John Lambert fell back in front of it.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q134835417, imported by tools/import/wikidata.mjs. The item's own description reads \"1648 invasion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1648,
+    "end": 1648,
+    "date": "1648-07-08",
+    "endDate": "1648-08-24"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "second-english-civil-war"
+}

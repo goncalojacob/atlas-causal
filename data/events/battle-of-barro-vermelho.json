@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-barro-vermelho",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q15112371",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Battle of Barro Vermelho",
+    "pt": "Batalha do Barro Vermelho"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15112371"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Barro Vermelho\", revision 1370433449"
+    }
+  ],
+  "title": "Battle of Barro Vermelho",
+  "summary": "The English Wikipedia article \"Battle of Barro Vermelho\", at revision 1370433449, opens: \"The Battle of Barro Vermelho, also known as the Battle of Rio Pardo, was an engagement of the Ragamuffin War fought in April 1838. Around 5,000 men were present in the field, an atypically large number for the conflict; the battle was one of the rebels' most important victories during the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15112371, imported by tools/import/wikidata.mjs. The item's own description reads \"1838 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1838,
+    "end": 1838,
+    "date": "1838-04-30"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "ragamuffin-war"
+}

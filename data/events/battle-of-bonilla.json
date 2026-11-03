@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-bonilla",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q129567174",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-11-03"
+  },
+  "wikipedia": {
+    "en": "Battle of Bonilla"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q129567174"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bonilla\", revision 1370108026"
+    }
+  ],
+  "title": "Battle of Bonilla",
+  "summary": "The English Wikipedia article \"Battle of Bonilla\", at revision 1370108026, opens: \"The Battle of Bonilla was a military engagement of the Ten Years' War. It took place on November 28, 1868, at Minas, in Puerto Príncipe in Cuba. After the Las Clavellinas Uprising in the province, the Spanish colonial government sent experienced military officers to quell the rebellion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q129567174, imported by tools/import/wikidata.mjs. The item's own description reads \"1868 battle of the Ten Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1868,
+    "date": "1868-11-28"
+  },
+  "place": "minas-cuba",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ten-years-war"
+}
