@@ -607,3 +607,59 @@ events an hour, four times the night of 15 October.
 
 **To resume.** Re-enable the planner and the two writers. Sections 12, 14
 and 16 still hold.
+
+## 19. 27 October to 3 November: the local writer, then the connections
+
+**The owner's words.** 27 October: "try to find the most effective way that
+will get as many events as possible. we will only add the connections
+later". 2 November: "Good, finish the events still queued", "The plan should
+include making some events parents and others children" and "Send a fable
+agent to review the plan and make recommendations for changes. Then start".
+The Fable review was the owner's own exception to section 12.
+
+**The local writer.** The writer step is a script, `tools/queue/apply.mjs`,
+so it ran on the assistant's machine with no model, from scripts in the
+session scratchpad: `local-writer.sh` (one fire, writers A and B), the loop
+`writer-loop-v3.sh` (waits for Wikidata's lag under four seconds, lands each
+fire through `tick.sh` after the fast suite), `fix-filings.mjs` (drops a
+filing dated outside its parent or under a measured umbrella with no written
+case), `fix-placeless.sh` (puts the planner's lane for a placeless item into
+the seeds file and queues it again) and `skip-qids.txt` (items the import
+would write wrongly: a bad Wikidata date, a place with no English or
+Portuguese name, an alias of a held record, a list page). The cloud writers
+stayed off. The writer stops whenever the machine sleeps or the session
+ends.
+
+**Events.** The site went from 2,653 to 7,929 events, in snapshots 39 to 63.
+The planner queued events from the vital-article lists, the lists of wars,
+revolutions and treaties, then a list of Wikidata items the assistant wrote
+to `docs/candidates-1415-1900.md`. The owner switched the planner off on 2
+November; the writer finished its queue on 3 November.
+
+**Parents and children.** `tools/links/parents.mjs` read Wikidata's "part
+of" and "has part" for the events with no parent and kept a pair only where
+the child lies inside the parent at both ends, shares its lane or names its
+actor or place, and no parent is reachable through another. 214 events
+gained a parent. A single parent is written as a string.
+
+**Causal links.** `tools/links/edges.mjs` reads each event's English article
+at the revision the record already cites, keeps each sentence that names
+exactly two held events, and applies the writer's own rules first: no third
+held event, no sentence that only gives order, the arrow of time, no pair
+already linked, no cycle. Over all 7,221 articles that left 24,229
+sentences, 3,328 with causal wording. Two independent Sonnet readers judged
+those; a link is kept only where both accept it with the same type, and its
+explanation is a fixed template around the quote. 164 links were written,
+from 1,283 to 1,447, and the writer refused none. A link must quote the
+revision its record cites: the lead cache holds one revision per article.
+
+**What waits for the owner.**
+- The graph's opening view names no event at this size.
+- A writer on GitHub, so the work goes on while the machine sleeps.
+- The 28 United States Congress terms, imported as "legislative term".
+- Wikidata ids for the old records that have none, so they are not
+  imported twice.
+- More links: judge the 20,900 sentences without causal wording, or let a
+  reader decide on sentences that name a third event.
+- More parents: the infobox "part of" field for the events still without
+  one.
