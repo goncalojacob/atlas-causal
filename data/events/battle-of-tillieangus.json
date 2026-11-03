@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-tillieangus",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872557",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Tillieangus"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872557"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tillieangus\", revision 1370591080"
+    }
+  ],
+  "title": "Battle of Tillieangus",
+  "summary": "The English Wikipedia article \"Battle of Tillieangus\", at revision 1370591080, opens: \"The Battle of Tillieangus was fought on 10 October 1571 between the Clan Gordon and the Clan Forbes near White Hill of Tillyangus, Aberdeenshire, Scotland. It was part of the Marian civil war in which the Gordons supported Mary, Queen of Scots and the Forbeses supported her son, James VI of Scotland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872557, imported by tools/import/wikidata.mjs. The item's own description reads \"1571 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1571,
+    "end": 1571,
+    "date": "1571-10-10"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "marian-civil-war"
+}

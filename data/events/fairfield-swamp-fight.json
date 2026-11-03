@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "fairfield-swamp-fight",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5430355",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Fairfield Swamp Fight"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5430355"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fairfield Swamp Fight\", revision 1376814355"
+    }
+  ],
+  "title": "Fairfield Swamp Fight",
+  "summary": "The English Wikipedia article \"Fairfield Swamp Fight\", at revision 1376814355, opens: \"The Fairfield Swamp Fight was the last engagement of the Pequot War and marked defeat of the Pequot tribe in the war and the loss of their recognition as a political entity in the 17th century. The participants in the conflict were the Pequot and the English with their allied tribes. The Fairfield Swamp Fight occurred July 13–14, 1637 in what is present-day Fairfield, Connecticut. The town of Fairfield was founded after the battle in 1639.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5430355, imported by tools/import/wikidata.mjs. The item's own description reads \"Battle during the Pequot War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1637,
+    "end": 1637
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "pequot-war"
+}

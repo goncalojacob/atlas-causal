@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cibecue-creek",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870747",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Cibecue Creek"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870747"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cibecue Creek\", revision 1370437310"
+    }
+  ],
+  "title": "Battle of Cibecue Creek",
+  "summary": "The English Wikipedia article \"Battle of Cibecue Creek\", at revision 1370437310, opens: \"The Battle of Cibecue Creek was an engagement of the Apache Wars, fought in August 1881 between the United States and White Mountain Apaches in Arizona, at Cibecue Creek on the Fort Apache Indian Reservation. After an army expedition of scouts, U.S. Army soldiers 'arrested' a prominent Cibecue Apache medicine man named Nock-ay-det-klinne. The U.S. Army soldiers were taking Nock-ay-det-klinné back to the fort when they were ambushed by Apache warriors. During the conflict, the U.S. Army soldiers killed Nock-ay-det-klinné. Most of the 23 Apache scouts mutinied, in the largest such action of its kind in U.S. history. The soldiers retreated to Fort Apache. The following day, the White Mountain Apache mounted a counter-attack. The events sparked general unrest and led to White Mountain Apache warriors leaving the Fort Apache Indian Reservation to join forces with the Apache leader of the Bedonkohe band of Chiricahua Apache named Goyąąłé, better known as Geronimo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870747, imported by tools/import/wikidata.mjs. The item's own description reads \"1881 battle during the Apache Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1881,
+    "end": 1881,
+    "date": "1881-08-30"
+  },
+  "place": "cibecue-arizona",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "apache-wars"
+}

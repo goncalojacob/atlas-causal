@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "invasion-of-the-danish-west-indies",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q20949591",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-11-02"
+  },
+  "wikipedia": {
+    "en": "Invasion of the Danish West Indies"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20949591"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of the Danish West Indies\", revision 1378700240"
+    }
+  ],
+  "title": "Invasion of the Danish West Indies",
+  "summary": "The English Wikipedia article \"Invasion of the Danish West Indies\", at revision 1378700240, opens: \"The second British Invasion of the Danish West Indies took place in December 1807 when a British fleet captured the Danish islands of Saint Thomas on 22 December and Saint Croix on 25 December. The Danes did not resist and the invasion was bloodless. This British occupation of the Danish West Indies lasted until 20 November 1815, when Britain returned the islands to Denmark.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20949591, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1807,
+    "end": 1807,
+    "date": "1807-12-22",
+    "endDate": "1807-12-25"
+  },
+  "place": "danish-west-indies",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "gunboat-war"
+}
