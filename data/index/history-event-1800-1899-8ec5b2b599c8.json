@@ -1836,6 +1836,15 @@
         }
       ]
     },
+    "american-ranch-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "amur-annexation": {
       "from": "git",
       "versions": [
@@ -2810,6 +2819,15 @@
         {
           "first": true,
           "on": "2026-11-02"
+        }
+      ]
+    },
+    "battle-at-pozo-hediondo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -3800,6 +3818,15 @@
         }
       ]
     },
+    "battle-of-barro-vermelho": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-barrosa": {
       "from": "git",
       "versions": [
@@ -4160,6 +4187,15 @@
         {
           "first": true,
           "on": "2026-10-31"
+        }
+      ]
+    },
+    "battle-of-bonilla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -5359,6 +5395,15 @@
         }
       ]
     },
+    "battle-of-cooke-s-spring": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-coolela": {
       "from": "git",
       "versions": [
@@ -6219,6 +6264,15 @@
         }
       ]
     },
+    "battle-of-fort-apache": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-fort-blakeley": {
       "from": "git",
       "versions": [
@@ -6270,6 +6324,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-fort-erie-1866": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -7002,6 +7065,15 @@
         }
       ]
     },
+    "battle-of-guayubin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-gujrat": {
       "from": "git",
       "versions": [
@@ -7317,6 +7389,15 @@
         }
       ]
     },
+    "battle-of-hembrillo-basin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-high-bridge": {
       "from": "git",
       "versions": [
@@ -7434,6 +7515,15 @@
         }
       ]
     },
+    "battle-of-houthalen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-huamachuco": {
       "from": "git",
       "versions": [
@@ -7518,6 +7608,15 @@
         {
           "first": true,
           "on": "2026-10-31"
+        }
+      ]
+    },
+    "battle-of-imbituba": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -8751,6 +8850,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-little-dry-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -10068,6 +10176,15 @@
         }
       ]
     },
+    "battle-of-ocheesee": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-ochomogo": {
       "from": "git",
       "versions": [
@@ -10599,6 +10716,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-pine-island-ridge": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -11291,6 +11417,15 @@
         }
       ]
     },
+    "battle-of-sabana-burro": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-sacile": {
       "from": "git",
       "versions": [
@@ -11408,6 +11543,15 @@
         }
       ]
     },
+    "battle-of-saltholm": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-sama": {
       "from": "git",
       "versions": [
@@ -11441,6 +11585,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-san-felasco-hammock": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -12881,6 +13034,15 @@
         }
       ]
     },
+    "battle-of-the-caloosahatchee": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-the-chateauguay": {
       "from": "git",
       "versions": [
@@ -13376,6 +13538,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "battle-of-trout-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -14923,6 +15094,15 @@
         }
       ]
     },
+    "bonneville-expedition-1857": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "boshin-war": {
       "from": "git",
       "versions": [
@@ -15518,6 +15698,15 @@
         }
       ]
     },
+    "capture-of-porto-alegre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "capture-of-rome": {
       "from": "git",
       "versions": [
@@ -15533,6 +15722,15 @@
         {
           "first": true,
           "on": "2026-11-01"
+        }
+      ]
+    },
+    "capture-of-serampore-1801": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -15560,6 +15758,15 @@
         {
           "first": true,
           "on": "2026-11-02"
+        }
+      ]
+    },
+    "capture-of-tranquebar-1801": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -21559,6 +21766,15 @@
         }
       ]
     },
+    "negro-fort": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "negros-revolution": {
       "from": "git",
       "versions": [
@@ -22652,6 +22868,15 @@
         }
       ]
     },
+    "pigeon-hill-raid": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "pikysyry-campaign": {
       "from": "git",
       "versions": [
@@ -22817,6 +23042,15 @@
         {
           "first": true,
           "on": "2026-10-30"
+        }
+      ]
+    },
+    "post-1887-apache-wars-period": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -23739,6 +23973,15 @@
         {
           "first": true,
           "on": "2026-11-01"
+        }
+      ]
+    },
+    "san-felipe-incident-1835": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -26506,6 +26749,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "surrender-of-tranquebar-1808": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },

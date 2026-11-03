@@ -1192,6 +1192,15 @@
         }
       ]
     },
+    "battle-at-chignecto": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-at-port-la-joye": {
       "from": "git",
       "versions": [
@@ -1816,6 +1825,15 @@
         {
           "first": true,
           "on": "2026-10-31"
+        }
+      ]
+    },
+    "battle-of-calliano": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -3657,6 +3675,15 @@
         }
       ]
     },
+    "battle-of-la-favorita": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-la-guaira": {
       "from": "git",
       "versions": [
@@ -4544,6 +4571,15 @@
         }
       ]
     },
+    "battle-of-peschiera": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "battle-of-petrovaradin": {
       "from": "git",
       "versions": [
@@ -5132,6 +5168,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-saldanha-bay-1781": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -6059,6 +6104,15 @@
         {
           "first": true,
           "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-valvasone": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -9752,6 +9806,15 @@
         {
           "first": true,
           "on": "2026-10-29"
+        }
+      ]
+    },
+    "raid-on-essequibo-and-demerara-1781": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },

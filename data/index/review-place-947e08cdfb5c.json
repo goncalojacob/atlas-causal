@@ -2941,6 +2941,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "apalachicola-river",
+      "kind": "place",
+      "names": [
+        "Apalachicola River"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "apostoles",
@@ -3499,7 +3526,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 4,
+      "degree": 5,
       "id": "arizona",
       "kind": "place",
       "names": [
@@ -11859,6 +11886,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "calliano-trentino",
+      "kind": "place",
+      "names": [
+        "Calliano",
+        "Calliano, Trentino",
+        "Calliano (Trento)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "calugareni",
@@ -12260,6 +12316,34 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "cape-coast-castle",
+      "kind": "place",
+      "names": [
+        "Cape Coast Castle",
+        "Castelo da Costa do Cabo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -21975,6 +22059,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "essequibo-colony",
+      "kind": "place",
+      "names": [
+        "Essequibo",
+        "Essequibo (colony)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -23421,6 +23533,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "fort-gadsden",
+      "kind": "place",
+      "names": [
+        "Fort Gadsden",
+        "Forte Gadsden"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-28",
       "degree": 1,
       "id": "fort-harmar",
@@ -23792,6 +23932,34 @@
           "place-written-by-hand"
         ],
         "note": "Written by hand because the import could not: Q7510020 carries its own P625 and names no located item a tool can read a name off. The point is that P625 unchanged; the name is the one the battle's own article gives the site.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "fort-myers-florida",
+      "kind": "place",
+      "names": [
+        "Fort Myers",
+        "Fort Myers, Florida"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -30490,6 +30658,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "houthalen",
+      "kind": "place",
+      "names": [
+        "Houthalen"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-29",
       "degree": 1,
       "id": "hoyerswerda",
@@ -30701,6 +30896,35 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "huntingdon-quebec",
+      "kind": "place",
+      "names": [
+        "Huntingdon",
+        "Huntingdon, Quebec",
+        "Huntingdon (Quebec)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -32207,7 +32431,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "isthmus-of-chignecto",
       "kind": "place",
       "names": [
@@ -41026,7 +41250,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 32,
+      "degree": 33,
       "id": "london",
       "kind": "place",
       "names": [
@@ -45958,6 +46182,34 @@
       "kind": "place",
       "names": [
         "Mimbres River"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "minas-cuba",
+      "kind": "place",
+      "names": [
+        "Minas",
+        "Minas, Cuba"
       ],
       "origin": {
         "tool": "wikidata"
@@ -51432,7 +51684,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 14,
+      "degree": 15,
       "id": "north-sea",
       "kind": "place",
       "names": [
@@ -51673,6 +51925,33 @@
         "Northern Thailand",
         "Região Norte",
         "Norte da Tailândia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "norwich",
+      "kind": "place",
+      "names": [
+        "Norwich"
       ],
       "origin": {
         "tool": "wikidata"
@@ -52447,7 +52726,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "old-fort-erie",
       "kind": "place",
       "names": [
@@ -54736,6 +55015,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "pembroke-castle",
+      "kind": "place",
+      "names": [
+        "Pembroke Castle",
+        "Castelo de Pembroke"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 3,
       "id": "pennsylvania",
@@ -55219,6 +55526,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "peschiera-del-garda",
+      "kind": "place",
+      "names": [
+        "Peschiera del Garda"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 2,
       "id": "peshawar",
@@ -55636,6 +55970,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "pigeon-hill-st-armand",
+      "kind": "place",
+      "names": [
+        "Pigeon Hill",
+        "Pigeon Hill (St. Armand)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -55655,6 +56017,34 @@
           "a9-place"
         ],
         "note": "Place written by the run that imported the event, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record its P276 names was not here, so the event came out placeless. The point and the names are the item's own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "pine-island-ridge-florida",
+      "kind": "place",
+      "names": [
+        "Pine Island Ridge",
+        "Pine Island Ridge, Florida"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -56969,6 +57359,33 @@
       "review": {
         "flags": [
           "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "porto-alegre",
+      "kind": "place",
+      "names": [
+        "Porto Alegre"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
         ],
         "status": "draft"
       },
@@ -62523,7 +62940,7 @@
         }
       ],
       "created": "2026-10-31",
-      "degree": 1,
+      "degree": 2,
       "id": "saldanha-bay",
       "kind": "place",
       "names": [
@@ -62650,6 +63067,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "saltholm",
+      "kind": "place",
+      "names": [
+        "Saltholm"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -64794,6 +65238,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "serampore",
+      "kind": "place",
+      "names": [
+        "Serampore",
+        "Serampur"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -67359,7 +67831,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 3,
+      "degree": 4,
       "id": "southwestern-united-states",
       "kind": "place",
       "names": [
@@ -70051,6 +70523,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-11-03",
+      "degree": 1,
+      "id": "tagliamento",
+      "kind": "place",
+      "names": [
+        "Tagliamento",
+        "Rio Tagliamento"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-11-02",
       "degree": 1,
       "id": "tagus",
@@ -71230,7 +71730,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 3,
       "id": "tharangambadi",
       "kind": "place",
       "names": [
@@ -74216,7 +74716,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 109,
+      "degree": 110,
       "id": "united-states-q30",
       "kind": "place",
       "names": [

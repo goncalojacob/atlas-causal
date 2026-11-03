@@ -1025,6 +1025,15 @@
         }
       ]
     },
+    "apalachicola-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "apostoles": {
       "from": "git",
       "versions": [
@@ -4343,6 +4352,15 @@
         }
       ]
     },
+    "calliano-trentino": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "calugareni": {
       "from": "git",
       "versions": [
@@ -4487,6 +4505,15 @@
             "names"
           ],
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "cape-coast-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -8121,6 +8148,15 @@
         }
       ]
     },
+    "essequibo-colony": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "estonia-q191": {
       "from": "git",
       "versions": [
@@ -8731,6 +8767,15 @@
         }
       ]
     },
+    "fort-gadsden": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "fort-harmar": {
       "from": "git",
       "versions": [
@@ -8860,6 +8905,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "fort-myers-florida": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -11312,6 +11366,15 @@
         }
       ]
     },
+    "houthalen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "hoyerswerda": {
       "from": "git",
       "versions": [
@@ -11399,6 +11462,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "huntingdon-quebec": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -17083,6 +17155,15 @@
         }
       ]
     },
+    "minas-cuba": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "minas-gerais-captaincy": {
       "from": "git",
       "versions": [
@@ -19215,6 +19296,15 @@
         }
       ]
     },
+    "norwich": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "novara": {
       "from": "git",
       "versions": [
@@ -20354,6 +20444,15 @@
         }
       ]
     },
+    "pembroke-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "pennsylvania": {
       "from": "git",
       "versions": [
@@ -20519,6 +20618,15 @@
         }
       ]
     },
+    "peschiera-del-garda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "peshawar": {
       "from": "git",
       "versions": [
@@ -20672,12 +20780,30 @@
         }
       ]
     },
+    "pigeon-hill-st-armand": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "pillpinto-district": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "pine-island-ridge-florida": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -21195,6 +21321,15 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "porto-alegre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -23405,6 +23540,15 @@
         }
       ]
     },
+    "saltholm": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
+        }
+      ]
+    },
     "salto-uruguay": {
       "from": "git",
       "versions": [
@@ -24186,6 +24330,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "serampore": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
@@ -26157,6 +26310,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "tagliamento": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-11-03"
         }
       ]
     },
