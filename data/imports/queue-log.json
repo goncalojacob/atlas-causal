@@ -100454,6 +100454,250 @@
         "place": "norwich"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-018",
+      "writer": "A",
+      "fired": "2026-11-03T00:19Z",
+      "status": "written",
+      "written": {
+        "event": "action-of-april-3-1836",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-011",
+      "writer": "A",
+      "fired": "2026-11-03T00:19Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cadiz-1656",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-012",
+      "writer": "A",
+      "fired": "2026-11-03T00:19Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-minorca-1798",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-013",
+      "writer": "A",
+      "fired": "2026-11-03T00:19Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q21187342: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-11-02-europe-014",
+      "writer": "A",
+      "fired": "2026-11-03T00:19Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-wenden-1626",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-016",
+      "writer": "A",
+      "fired": "2026-11-03T00:19Z",
+      "status": "written",
+      "written": {
+        "event": "moldavian-campaign-1538",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-021",
+      "writer": "A",
+      "fired": "2026-11-03T00:19Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-callao-1838",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-africa-003",
+      "writer": "A",
+      "fired": "2026-11-03T00:19Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-osogbo",
+        "edges": [],
+        "place": "osogbo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-017",
+      "writer": "A",
+      "fired": "2026-11-03T00:19Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-burgos-1475",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-africa-004",
+      "writer": "A",
+      "fired": "2026-11-03T00:19Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ilorin",
+        "edges": [],
+        "place": "ilorin"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-europe-010",
+      "writer": "B",
+      "fired": "2026-11-03T00:26Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-cecora-1595",
+        "edges": [],
+        "place": "chisinau"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-asia-002",
+      "writer": "B",
+      "fired": "2026-11-03T00:26Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-dardanelles-1807",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-019",
+      "writer": "B",
+      "fired": "2026-11-03T00:26Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-arroyo-grande",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-asia-003",
+      "writer": "B",
+      "fired": "2026-11-03T00:26Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q27958319: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-11-02-europe-015",
+      "writer": "B",
+      "fired": "2026-11-03T00:26Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q10423630: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-11-02-americas-020",
+      "writer": "B",
+      "fired": "2026-11-03T00:26Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6415375: it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    {
+      "id": "2026-11-02-africa-002",
+      "writer": "B",
+      "fired": "2026-11-03T00:26Z",
+      "status": "written",
+      "written": {
+        "event": "sack-of-old-oyo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-022",
+      "writer": "B",
+      "fired": "2026-11-03T00:26Z",
+      "status": "written",
+      "written": {
+        "event": "patriot-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-americas-023",
+      "writer": "B",
+      "fired": "2026-11-03T00:26Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-santiago-1863",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-11-02-africa-005",
+      "writer": "B",
+      "fired": "2026-11-03T00:26Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-elmina-1781",
+        "edges": [],
+        "place": "elmina-castle"
+      },
+      "refusals": []
     }
   ]
 }

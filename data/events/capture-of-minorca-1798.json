@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-minorca-1798",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-11-03",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q5037035",
+  "wikipedia": {
+    "en": "Capture of Minorca (1798)"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-11-03"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5037035"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Minorca (1798)\", revision 1378436141"
+    }
+  ],
+  "title": "Capture of Minorca (1798)",
+  "summary": "The English Wikipedia article \"Capture of Minorca (1798)\", at revision 1378436141, opens: \"The capture of Minorca occurred in November 1798 during the Mediterranean campaign of 1798 of the War of the Second Coalition. The Spanish-held island of Menorca, historically called Minorca by English-speakers, was invaded and occupied by a British expeditionary force of 6,000 troops and 20 warships under Captain John Duckworth and Colonel Charles Stuart. British forces landed on 7 November and following several skirmishes forced the outnumbered Spanish garrison under the governor of Menorca Juan Nepomuceno de Quesada to fully surrender by 15 November. The British occupied the island for almost four years, using it as a major naval base, before permanently returning it to Spain in 1802 as a result of the Treaty of Amiens.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5037035, imported by tools/import/wikidata.mjs. The item's own description reads \"1798 invasion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1798,
+    "date": "1798-11-07",
+    "endDate": "1798-11-15"
+  },
+  "place": "menorca",
+  "region": null,
+  "regionNote": null,
+  "parent": "mediterranean-campaign-of-1798",
+  "category": "war",
+  "actors": []
+}
